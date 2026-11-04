@@ -1,0 +1,442 @@
+{
+ "video_id": "engines-20261115-1-en",
+ "brand_id": "engines",
+ "language": "en",
+ "title": "Otto's four-stroke patent",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261115-1-en, Reihe Motorgeschichte. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "In 1876 Nikolaus August Otto built the first four-stroke engine. What his 1877 US patent and German patent 532 actually say.",
+  "companion_text": "Patents as listed on Google Patents and DEPATISnet (retrieved 01.11.2026). Slow-motion factor and milliseconds refer to the example speed of 180 rpm.",
+  "hashtags": [
+   "enginehistory",
+   "otto",
+   "fourstroke",
+   "patent",
+   "invention"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Science Museum, Otto four-stroke",
+   "title": "Science Museum, Otto-Viertakter (SMG_OTTO)",
+   "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8405692",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "US patent 194,047",
+   "title": "US-Patent 194,047 (P_OTTO_US)",
+   "url": "https://patents.google.com/patent/US194047A/en",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S3",
+   "label": "DPMA, patent DE 532",
+   "title": "DPMA, Patent DE 532 (P_OTTO_DE)",
+   "url": "https://depatisnet.dpma.de/DepatisNet/depatisnet?action=bibdat&docid=DE000000000532A",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "That sequence is already written down in a patent from eighteen seventy-seven.",
+   "on_screen": "Four-stroke, patented",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "How old is the four-stroke engine?",
+   "on_screen": "Otto's four-stroke patent",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Otto's four-stroke patent",
+   "on_screen": "Otto's four-stroke patent",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Otto's four-stroke patent",
+   "on_screen": "Otto's four-stroke patent",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Otto's four-stroke patent",
+   "on_screen": "Otto's four-stroke patent",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Intake, compression, ignition, exhaust. That sequence is already written down in a patent from eighteen seventy-seven.",
+   "data": {
+    "claim": "Four-stroke, patented",
+    "claim_lines": [
+     "Four-stroke,",
+     "patented 1877"
+    ],
+    "claim_highlight": "1877",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1440
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "US patent 194,047 · retrieved 2026-11-01",
+    "ref_rpm": 180.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_board",
+   "spoken": "In eighteen seventy-six, Nikolaus August Otto builds the first four-stroke engine, as the Science Museum in London describes it. The replica there makes three horsepower at a hundred and eighty revolutions per minute.",
+   "data": {
+    "title": "The first four-stroke",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1876",
+      "at": 0.0
+     }
+    ],
+    "rows": [
+     {
+      "text": "Nikolaus August Otto",
+      "at": "w:Otto"
+     },
+     {
+      "text": "four-stroke engine",
+      "at": "w:four"
+     },
+     {
+      "text": "3 hp at 180 rpm (replica)",
+      "at": "w:replica"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Science Museum, Otto four-stroke · retrieved 2026-11-01",
+    "ref_rpm": 180.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_board",
+   "spoken": "The American patent is granted on the fourteenth of August, eighteen seventy-seven. Its title is Improvement in gas-motor engines, and the inventor named is Nicolaus A. Otto of Deutz.",
+   "data": {
+    "title": "US patent 194,047",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1877",
+      "at": 0.0
+     }
+    ],
+    "doc": {
+     "head": "US PATENT 194,047",
+     "lines": [
+      "Improvement in",
+      "gas-motor engines"
+     ],
+     "stamp": "1877",
+     "at": "w:title"
+    },
+    "rows": [
+     {
+      "text": "granted 14 August 1877",
+      "at": "w:granted"
+     },
+     {
+      "text": "inventor: Nicolaus A. Otto",
+      "at": "w:inventor"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "US patent 194,047 · retrieved 2026-11-01",
+    "ref_rpm": 180.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_cutaway",
+   "spoken": "The third claim spells out the sequence: gas and air are drawn in on one stroke, compressed on the return stroke and then ignited. That is exactly what our cutaway shows.",
+   "data": {
+    "title": "Claim 3",
+    "labels": [
+     "vin",
+     "chamber"
+    ],
+    "labels_at": [
+     "w:drawn",
+     "w:compressed"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      "w:drawn",
+      20
+     ],
+     [
+      "w:compressed",
+      200
+     ],
+     [
+      "w:ignited",
+      330
+     ],
+     [
+      1,
+      450
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "US patent 194,047 · retrieved 2026-11-01",
+    "ref_rpm": 180.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_board",
+   "spoken": "German patent number five hundred and thirty-two is simply called Gasmotor, gas engine. According to the patent office, the applicant is the Gasmotorenfabrik Deutz, and no inventor is listed. The claim describes the four strokes over two crankshaft revolutions.",
+   "data": {
+    "title": "German patent 532",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1877",
+      "at": 0.0
+     }
+    ],
+    "doc": {
+     "head": "GERMAN PATENT NO. 532",
+     "lines": [
+      "Gasmotor",
+      "Gasmotorenfabrik Deutz"
+     ],
+     "stamp": "532",
+     "at": "w:Gasmotor"
+    },
+    "rows": [
+     {
+      "text": "no inventor listed",
+      "at": "w:inventor"
+     },
+     {
+      "text": "4 strokes, 2 revolutions",
+      "at": "w:strokes"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "DPMA, patent DE 532 · retrieved 2026-11-01",
+    "ref_rpm": 180.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S3"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Intake, compression, ignition, exhaust, patented since eighteen seventy-seven. Understand engines: follow Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Understand",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Understand",
+    "rows": [
+     {
+      "text": "1876",
+      "at": "w:Intake"
+     },
+     {
+      "text": "patent 1877",
+      "at": "w:patented"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Understand engines",
+     "hl": "REVLORE",
+     "at": "w:Understand"
+    },
+    "ref_rpm": 180.0
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

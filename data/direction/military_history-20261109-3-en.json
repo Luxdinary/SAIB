@@ -1,0 +1,548 @@
+{
+  "video_id": "military_history-20261109-3-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "The Tin Before the Tin Opener",
+  "notes": "Woche 1, Reihe Nachschub. Lebensmitteltechnik und Versorgung; kein Erfindungsjahr des Dosenöffners genannt (keine Quelle).",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://lindahall.org/bryan-donkin",
+      "title": "Scientist of the Day – Bryan Donkin, Linda Hall Library",
+      "label": "Linda Hall Library",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8021379/worlds-oldest-tin-empty-roast-veal-tin-1823",
+      "title": "'World's oldest tin', empty roast veal tin, 1823 (1965-239/5), Science Museum Group",
+      "label": "Science Museum Group",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Erfindungsjahr des Dosenöffners in keiner Quelle; im Video nur 'noch lange nicht'.",
+    "Gewicht 7 Pfund (voll?) gegenüber 0,62 kg leer; im Video nur das Leergewicht nicht genannt."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you preserve food for an army and navy in 1813, with no tin opener?",
+      "on_screen": "Tins without an opener?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "First the tin opener, then the tin? It was the other way round.",
+      "on_screen": "The tin came first",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Tins were already supplied to the army and navy in 1813.",
+      "on_screen": "Tinned food since 1813",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Without hammer and chisel, the tin stayed shut.",
+      "on_screen": "Hammer, not opener",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch how a tin from 1823 is made.",
+      "on_screen": "A tin from 1823",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you preserve food for an army and navy in 1813, with no tin opener?",
+      "data": {
+        "question": "Tinned food for the forces, without an opener?",
+        "question_em": "without an opener",
+        "card_title": "Food tin",
+        "card_meta": "ENGLAND · 1813",
+        "card_no": "FILE 18",
+        "stamp": "1813",
+        "drawing": "tin_1823.svg",
+        "packet_label": "Tin",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:1813",
+        "packet_at": "w:food",
+        "em_at": "w:opener"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "Frenchman Nicolas Appert is the first to sell preserved food, in glass bottles with corks. In 1810 Englishman Peter Durand patents tinned iron cans.",
+      "data": {
+        "mode": "map",
+        "headline": "From glass to tin",
+        "places": [
+          {
+            "label": "Durand",
+            "code": "patent 1810",
+            "x": 600,
+            "y": 80,
+            "at": "w:Durand"
+          },
+          {
+            "label": "Appert",
+            "code": "glass bottles",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Appert"
+          }
+        ],
+        "route_at": "w:preserved",
+        "route_label": "glass with corks",
+        "route_label_at": "w:corks",
+        "wait_at": "w:1810",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Patent 1810",
+        "chip_at": "w:patents",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Tin",
+        "packet_at": "w:Englishman",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "tinned iron can",
+        "line_label_at": "w:cans",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:measures",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "Bryan Donkin and John Hall buy the patent and open a factory in 1812. One surviving tin measures 14 by 18 by 18 centimetres and is made of tinned steel.",
+      "data": {
+        "headline": "A tin from 1823",
+        "drawing": "tin_1823.svg",
+        "sheet_title": "SHEET 2 · TIN OF 1823",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Factory since 1812",
+            "x": 200,
+            "y": 170,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:1812"
+          },
+          {
+            "label": "14 × 18 × 18 cm",
+            "x": 380,
+            "y": 300,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:measures"
+          },
+          {
+            "label": "Tinned steel",
+            "x": 200,
+            "y": 330,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:steel"
+          },
+          {
+            "label": "Opening: hammer, chisel",
+            "x": 500,
+            "y": 230,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:tin"
+          }
+        ],
+        "zoom": {
+          "x": 200,
+          "y": 300,
+          "scale": 1.12,
+          "at": "w:measures",
+          "back_at": "w:steel",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "From 1813 they supply tins to the British Army and Navy. The tins are opened with hammer and chisel, because the tin opener is still a long way off.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Tin first, opener later",
+        "left": {
+          "tag": "1813",
+          "title": "Supplied",
+          "at": "w:1813",
+          "rows": [
+            {
+              "text": "to Army and Navy",
+              "at": "w:Navy"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Opening",
+          "title": "Hammer and chisel",
+          "at": "w:hammer",
+          "rows": [
+            {
+              "text": "no tin opener yet",
+              "at": "w:opener"
+            }
+          ]
+        },
+        "verdict": "The tin came before the opener",
+        "verdict_at": "w:long",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "To the Arctic too: William Parry takes tins on all four voyages of the 1820s. A roast veal tin from 1823 is made for the 1824 expedition.",
+      "data": {
+        "headline": "Into the ice",
+        "nodes": [
+          {
+            "label": "Arctic",
+            "code": "Parry",
+            "at": "w:Arctic"
+          },
+          {
+            "label": "4 voyages",
+            "code": "1820s",
+            "at": "w:voyages"
+          },
+          {
+            "label": "Tin of 1823",
+            "code": "roast veal",
+            "at": "w:veal"
+          },
+          {
+            "label": "Expedition",
+            "code": "1824",
+            "at": "w:expedition"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Tin",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "1810 the patent, 1812 the factory, 1813 the first delivery to the Army and Navy.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1810 to 1813",
+        "items": [
+          {
+            "year": "1810",
+            "title": "Durand's patent",
+            "sub": "tinned iron can",
+            "at": "w:1810"
+          },
+          {
+            "year": "1812",
+            "title": "Factory",
+            "sub": "Donkin and Hall",
+            "at": "w:1812"
+          },
+          {
+            "year": "1813",
+            "title": "Delivery",
+            "sub": "Army and Navy",
+            "at": "w:1813",
+            "sub_at": "w:Army"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "The empty roast veal tin from 1823 is now in the Science Museum collection, with its own cardboard box. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Roast veal tin",
+        "card_meta": "1823 · EMPTY",
+        "card_no": "FILE 18",
+        "stamp": "1823",
+        "drawing": "tin_1823.svg",
+        "statement": "The tin from 1823 survives",
+        "statement_at": "w:veal",
+        "stamp_at": "w:1823",
+        "note": "Science Museum, object 1965-239/5",
+        "note_at": "w:collection",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Tin",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Contents: preserved?",
+          "tone": "muted",
+          "offset": 2.2
+        },
+        {
+          "beat": "b2",
+          "text": "Patent: 1810",
+          "tone": "amber",
+          "offset": 8.1
+        },
+        {
+          "beat": "b3",
+          "text": "Factory: 1812",
+          "tone": "amber",
+          "offset": 6.6
+        },
+        {
+          "beat": "b4",
+          "text": "Opener: hammer",
+          "tone": "amber",
+          "offset": 8.1
+        },
+        {
+          "beat": "b5",
+          "text": "Destination: Arctic",
+          "tone": "muted",
+          "offset": 1.2
+        },
+        {
+          "beat": "b6",
+          "text": "Delivery: 1813",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b7",
+          "text": "Tin: in a museum",
+          "tone": "muted",
+          "offset": 5.6
+        }
+      ]
+    },
+    "description": "From 1813 the army and navy received food in tins. They were opened with hammer and chisel. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "tinnedfood",
+      "historyoftechnology",
+      "history",
+      "supply",
+      "invention"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

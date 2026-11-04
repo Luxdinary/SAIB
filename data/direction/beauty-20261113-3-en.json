@@ -1,0 +1,447 @@
+{
+ "video_id": "beauty-20261113-3-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "“Nobody checks cosmetics”",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Vor dem Verkauf braucht jedes Produkt in der EU einen Sicherheitsbericht einer qualifizierten Person; in den USA verlangt MoCRA Belege zur Sicherheit. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Safety report",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Checked?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "Article 3: safe",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "assessed beforehand",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "a qualified person",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "US: safety records",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Report in the background",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Read first, then apply",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Who checks the cream? In the US, the law doesn't prescribe specific tests. But since MoCRA, the responsible person has to keep records that adequately support the safety of their products.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra",
+   "title": "U.S. FDA: Modernization of Cosmetics Regulation Act of 2022 (MoCRA)",
+   "checked_at": "2026-11-01",
+   "label": "FDA: MoCRA"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Nobody checks cosmetics before they go on sale. That's not true.",
+   "on_screen": "Who checks the cream?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Every cosmetic in the EU needs a safety report before it's sold.",
+   "on_screen": "Every cosmetic in the EU needs a safety report before it's s",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Who actually checks that a cream is safe before it goes on sale?",
+   "on_screen": "Who actually checks that a cream is safe before it goes on s",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Think nobody checks cosmetics, and you've never heard of the safety report.",
+   "on_screen": "Think nobody checks cosmetics, and you've never heard of the",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch who assesses the safety of a cream in the EU.",
+   "on_screen": "Watch who assesses the safety of a cream in the EU.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Nobody checks cosmetics before they go on sale. That's not true.",
+   "data": {
+    "obj": "jar",
+    "title": "Cream",
+    "sub": "no brand",
+    "glyph": "shield",
+    "gtext": "report",
+    "focus": "glyph",
+    "question": "Who checks the cream?",
+    "badge": "Myth?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "Article 3 of the EU cosmetics regulation says a cosmetic must be safe for human health when used under normal or reasonably foreseeable conditions. That's the basic duty. Presentation, labelling, instructions and warnings all count towards that.",
+   "data": {
+    "headline": "The basic duty",
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Article 3",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "safe for human health"
+     },
+     {
+      "text": "under normal use"
+     },
+     {
+      "text": "and reasonably foreseeable use"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_timeline",
+   "spoken": "How is that shown? Before a product goes on the market, the responsible person must make sure it has been through a safety assessment and that a safety report exists. New information after launch goes into the report.",
+   "data": {
+    "headline": "Assess first, then sell",
+    "nodes": [
+     {
+      "date": "1",
+      "text": "safety assessment"
+     },
+     {
+      "date": "2",
+      "text": "safety report under Annex I"
+     },
+     {
+      "date": "3",
+      "text": "placed on the market"
+     },
+     {
+      "date": "4",
+      "text": "report kept up to date"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_steps",
+   "spoken": "And not just anyone can do it. The safety assessment is carried out by a person with a university qualification in pharmacy, toxicology, medicine or a similar subject.",
+   "data": {
+    "headline": "Who assesses",
+    "items": [
+     {
+      "title": "Pharmacy",
+      "sub": "university degree",
+      "icon": "book"
+     },
+     {
+      "title": "Toxicology",
+      "sub": "university degree",
+      "icon": "shield"
+     },
+     {
+      "title": "Medicine or similar",
+      "sub": "or recognised as equivalent",
+      "icon": "doc"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_versus",
+   "spoken": "In the US, the law doesn't prescribe specific tests. But since MoCRA, the responsible person has to keep records that adequately support the safety of their products. Animal testing isn't required there to market a cosmetic.",
+   "data": {
+    "headline": "EU and US",
+    "mode": "compare",
+    "left": {
+     "tag": "EU",
+     "title": "Safety report",
+     "rows": [
+      {
+       "text": "before sale"
+      },
+      {
+       "text": "by a qualified person"
+      }
+     ]
+    },
+    "right": {
+     "tag": "US",
+     "title": "Safety records",
+     "rows": [
+      {
+       "text": "no set tests",
+       "mark": "open"
+      },
+      {
+       "text": "records since MoCRA"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_facts",
+   "spoken": "So cosmetics are checked before sale. Not by an authority issuing an approval, but through a qualified assessment that the responsible person stands behind.",
+   "data": {
+    "headline": "What it means",
+    "rows": [
+     {
+      "text": "checked before sale"
+     },
+     {
+      "text": "through a qualified assessment"
+     },
+     {
+      "text": "no official approval",
+      "mark": "gap"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Read first, then judge. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Read first, then judge",
+    "block_text": "Read the facts first",
+    "done_text": "Facts read"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

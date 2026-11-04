@@ -1,0 +1,110 @@
+# Bildaufbauten Revlore (engines) für den Tagesläufer. Stand 03.11.2026, Revlore-Sitzung (ersetzt den Entwurf der Tagesläufer-Sitzung).
+# Vorlage und Feldbeschreibung: config/aufbauten.vorlage.yaml. Szenencode: brands/engines/zeitlupe/scenes.py (Abschnitt 7).
+#
+# Ehrlicher Stand: A (Röntgen) und B (Messplatz) laufen nur mit dem gerechneten Modell des Sicherungsautomaten (zt_mcb, zt_curve);
+# jedes andere Bauteil braucht ein eigenes Modell und bleibt im Konzeptplan als "braucht Modell". Allgemein, nur mit Daten und
+# ohne eigenes Modell, geht der neue Aufbau F (Kennlinie): Foto oder Clip plus Diagramm aus einer Formel (zt_chart); bei Motor-
+# themen dazu der vorhandene Zylinder (zlx_cutaway). Die Zahlen im Diagramm rechnet der Code aus der Formel; der Sprechtext darf nur
+# Werte nennen, die aus der Formel oder der Quelle stammen. Modellwerte (zum Beispiel 1.500 kg) werden im Bild als Modellwert genannt.
+# Zusätzliche Schlüssel je Thema (`titel`, `hinweis`) kennt der Loader nicht; sie sind Gedächtnisstütze für Mensch und Prompt.
+aufbauten:
+  - kuerzel: A
+    name: Röntgen
+    gebaut: true
+    szenentypen: [zt_photo, zt_mcb, zt_curve]
+    beispielplan: data/direction/engines-20261104-1-de.T1.json
+    beispielplan_en: data/direction/engines-20261104-1-en.T1.json
+    hinweis: "Scanlinie öffnet das Schnittmodell an derselben Stelle wie das Foto, Teile beschriftet. zt_mcb gilt nur für den Sicherungsautomaten; andere Bauteile brauchen ein eigenes Modell. Das Testvideo (Nr. 75) ist fertig."
+    themen: []
+  - kuerzel: B
+    name: Messplatz
+    gebaut: true
+    szenentypen: [zt_photo, zt_mcb, zt_curve]
+    beispielplan: data/direction/engines-20261104-1-de.T1.json
+    beispielplan_en: data/direction/engines-20261104-1-en.T1.json
+    hinweis: "Modell links, rechts Uhr, Messbalken oder Messschrieb; Zeitraffer (thermal) oder Zeitlupe (magnetic) im Band. Nur mit vorhandenem Modell des Sicherungsautomaten."
+    themen: []
+  - kuerzel: F
+    name: Kennlinie
+    gebaut: true
+    szenentypen: [zt_photo, zt_chart, zlx_cutaway]
+    beispielplan: data/direction/engines-20261126-1-de.kennlinie.json
+    hinweis: >-
+      Foto oder Clip (assets.hero, Ordner assets/higgsfield/testvideo, Standbilder der Bibliothek mit
+      brands/engines/zeitlupe/still_to_clip.py zu einem 24-s-Clip machen), dann ein Diagramm (zt_chart: x und y mit min, max, ticks,
+      label; series mit formula und params oder knots; points, bands, rules; photo + ground_at blendet vom Foto ins Diagramm),
+      bei Motorthemen dazwischen der Zylinder (zlx_cutaway). Formel nur aus 0-9, a-z, + - * / ( ) , und den Namen sin cos tan exp log log10
+      sqrt pi radians degrees; x ist die waagerechte Achse. Mindestens drei Szenentypen, höchstens 14 s ohne Bildwechsel (Punkte, Bänder
+      und Linien an Sprechwörtern setzen). Beschriftung als Idealwert, Modellwert oder schematisch, wo es zutrifft.
+    themen:
+      # --- Motor (Quellen aus dem Kalender, Faktencheck 01.11.2026) ---
+      - nr: 38
+        titel: "Die Formel hinter der Verdichtung"
+        hinweis: "formula 100*(1-1/x**(g-1)), params g = 1.4 (Gamma 1,4), x 4 bis 16; Punkte 8:1 56,5 %, 10:1 60,2 %, 14:1 65,2 %; Idealwerte. Beispielplan."
+        quellen:
+          - {url: "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e9421a34d0cd5c5fc4fc81365975503e_MIT2_61S17_lec3.pdf", titel: "MIT 2.61, Vorlesung 3, S. 3: eta = 1 - 1/rc^(gamma-1), S. 5 Grenzen", checked_at: "2026-11-01"}
+          - {url: "https://www.grc.nasa.gov/WWW/k-12/airplane/engcomp.html", titel: "NASA Glenn, Verdichtungsverhältnis", checked_at: "2026-11-01"}
+      - nr: 40
+        titel: "14 zu 1: ein Benziner mit Dieselverdichtung"
+        hinweis: "Dieselbe Kurve wie Nr. 38, Punkt 14:1 = 65,2 % ideal hervorgehoben; 14,0:1 als Herstellerangabe (Mazda) kennzeichnen; keine Klopfgrenzen-Zahl nennen."
+        quellen:
+          - {url: "https://newsroom.mazda.com/en/publicity/release/2010/201010/101020a.html", titel: "Mazda Newsroom, SKYACTIV-G 14,0:1 (Herstellerangabe)", checked_at: "2026-11-01"}
+          - {url: "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e9421a34d0cd5c5fc4fc81365975503e_MIT2_61S17_lec3.pdf", titel: "MIT 2.61, Vorlesung 3, S. 3: Idealwirkungsgrad", checked_at: "2026-11-01"}
+      - nr: 10
+        titel: "Hubraum selbst ausrechnen"
+        hinweis: "formula 4*pi/4*x**2*4 (vier Zylinder, Hub 4 in, x = Bohrung in in); Punkt Bohrung 4 in = 201 in³ (Wright 1903, 50,26 in³ je Zylinder)."
+        quellen:
+          - {url: "https://www.grc.nasa.gov/www/k-12/airplane/stroke.html", titel: "NASA Glenn, Bohrung und Hub: Hubraum = Pi/4 x Bohrung² x Hub x Zylinder", checked_at: "2026-11-01"}
+      - nr: 53
+        titel: "Mitteldruck: die faire Vergleichszahl"
+        hinweis: "formula b*2*x/1200 (b = Mitteldruck in bar als param, 2 L Hubraum) = Leistung in kW, x = Drehzahl 1000 bis 7000/min; zwei Linien als Modellwerte, 12 bar (Sauger 10–15) und 20 bar (Turbo 15–25)."
+        quellen:
+          - {url: "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/cf3aaf55ae71710c9bfd3056515b9b67_MIT2_61S17_lec2.pdf", titel: "MIT 2.61, Vorlesung 2, S. 3: BMEP-Formel", checked_at: "2026-11-01"}
+          - {url: "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/583ccfe7bc14d0c18bb75efcf0ab2f05_MIT2_61S17_lec15.pdf", titel: "MIT 2.61, Vorlesung 15, S. 4: Mitteldruck Sauger 10–15 bar, Turbo 15–25 bar", checked_at: "2026-11-01"}
+      - nr: 50
+        titel: "Start-Stopp: Neustarten kostet weniger, als man denkt"
+        hinweis: "Linie y = x (Kraftstoff im Stand, in Sekunden Leerlauf), Regel y = 0,7 \"Warmstart (Bosch)\"; Schnittpunkt bei 0,7 s. Keine Prozentangabe, keine Aussage zu Verschleiß."
+        quellen:
+          - {url: "https://www.bosch-mobility.com/en/company/milestones/", titel: "Bosch Mobility, Meilensteine: Warmstart entspricht 0,7 s Leerlauf", checked_at: "2026-11-01"}
+          - {url: "https://www.fueleconomy.gov/feg/hybridanimation/stopstart/stopstartoverview.html", titel: "fueleconomy.gov, Start-Stopp-Systeme", checked_at: "2026-11-01"}
+      # --- Technik (Quellen am 03.11.2026 abgerufen und gelesen) ---
+      - nr: 77
+        titel: "Wechselstrom: 100 Richtungswechsel pro Sekunde"
+        hinweis: "formula sin(2*pi*50*x/1000), x in ms 0 bis 40, y -1 bis 1; Nulldurchgänge alle 10 ms; die 100 Wechsel pro Sekunde sind gerechnet (zwei je Periode bei 50 Hz), nicht aus der Quelle. Quelle nur: 50 Hz als Mittelwert."
+        quellen:
+          - {url: "https://www.entsoe.eu/news/2018/11/12/frequency-deviations-in-continental-europe-discussions-ongoing-to-find-a-solution/", titel: "ENTSO-E 2018: Systemfrequenz des kontinentaleuropäischen Netzes, Mittelwert 50 Hz", checked_at: "2026-11-03"}
+      - nr: 84
+        titel: "Warum die letzten Prozent beim Laden langsamer gehen"
+        hinweis: "Nur schematisch (knots). Zahlen nur aus der Quelle: 4,20 V je Zelle; mit hohem Strom etwa 70 % schnell; Bereit-Punkt etwa 85 %; voll, wenn der Strom auf 3 bis 5 % der Ah-Angabe fällt; vollständige Ladung 2–3 h (Energiezelle, Tabelle: 180 min). Keine Kapazitätsangabe erfinden."
+        quellen:
+          - {url: "https://batteryuniversity.com/article/bu-409-charging-lithium-ion", titel: "Battery University BU-409: Charging Lithium-ion (Stufe 1 Konstantstrom, Stufe 2 Sättigung)", checked_at: "2026-11-03"}
+      - nr: 87
+        titel: "28.800 Halbschwingungen pro Stunde"
+        hinweis: "formula 8*x, x in s 0 bis 10; Punkte 1 s = 8 Schläge und 10 s = 80; Regel \"× 3600 = 28.800 je Stunde\" als Rechnung. Ein Schlag ist eine Schwingung der Unruh, ein voller Zyklus zwei Schläge (Quelle). Sekundärquelle."
+        quellen:
+          - {url: "https://en.wikipedia.org/wiki/Balance_wheel", titel: "Wikipedia, Balance wheel: heutige Uhren 8 Schläge je Sekunde (28.800 BPH); ein Zyklus = zwei Schläge", checked_at: "2026-11-03"}
+      - nr: 107
+        titel: "Hydraulischer Wagenheber: kleiner Kolben, großer Kolben"
+        hinweis: "Zwei Linien auf Log-Achsen über dem Flächenverhältnis x 1 bis 20: Kraft ×x (y = x) und Weg ×1/x (y = 1/x); Idealwerte ohne Reibung; das Produkt bleibt 1 (die Anlage leistet nicht mehr Arbeit, als man hineinsteckt). Keine Wartungs- oder Bedienanleitung."
+        quellen:
+          - {url: "https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics", titel: "OpenStax University Physics Bd. 1, 14.3: F1/A1 = F2/A2, kleinerer Weg, nicht mehr Arbeit", checked_at: "2026-11-03"}
+      - nr: 111
+        titel: "Doppelte Geschwindigkeit, vierfache Bremsenergie (Arbeitstitel zu \"Scheibenbremse\")"
+        hinweis: "formula 0.5*m*(x/3.6)**2/1000, params m = 1500 (Modellwert 1.500 kg, so nennen) (als Modellwert nennen), x in km/h 0 bis 150; Punkte 50, 100 und 130 km/h. Nur die Formel Ek = 1/2 m v² aus der Quelle; keine Aussage zur Bremsscheibentemperatur."
+        quellen:
+          - {url: "https://www.grc.nasa.gov/WWW/K-12/BGA/Mike/energy_ans.htm", titel: "NASA Glenn, Energy Activity Answers: Ek = 1/2 m V² (Beispiel 1 kg, 2,2 m/s = 2,42 J)", checked_at: "2026-11-03"}
+  - kuerzel: C
+    name: Nebeneinander
+    gebaut: false
+    szenentypen: []
+    hinweis: "geteiltes Bild, zwei Modelle oder zwei Kurven; laut Konzeptplan neu zu bauen"
+  - kuerzel: D
+    name: Im Einsatz
+    gebaut: false
+    szenentypen: []
+    hinweis: "Ort oder Gerät bildfüllend, Mechanik als Bild im Bild; laut Konzeptplan neu zu bauen"
+  - kuerzel: E
+    name: Patentblatt
+    gebaut: false
+    szenentypen: []
+    hinweis: "Patentzeichnung als Blatt, Teile bewegt; laut Konzeptplan neu zu bauen"

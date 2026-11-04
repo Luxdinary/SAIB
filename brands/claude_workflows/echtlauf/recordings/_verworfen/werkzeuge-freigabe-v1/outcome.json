@@ -1,0 +1,100 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 13348,
+          "output_tokens": 137,
+          "num_turns": 2,
+          "duration_s": 2.2
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 13418,
+          "output_tokens": 207,
+          "num_turns": 2,
+          "duration_s": 3.2
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Write"
+          ],
+          "exit": 0,
+          "input_tokens": 13535,
+          "output_tokens": 562,
+          "num_turns": 2,
+          "duration_s": 4.2
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Write"
+          ],
+          "exit": 0,
+          "input_tokens": 13567,
+          "output_tokens": 578,
+          "num_turns": 2,
+          "duration_s": 4.7
+        }
+      ],
+      "reproducible": true
+    },
+    "L3": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 20789,
+          "output_tokens": 862,
+          "num_turns": 3,
+          "duration_s": 8.2
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 20579,
+          "output_tokens": 793,
+          "num_turns": 3,
+          "duration_s": 8.3
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

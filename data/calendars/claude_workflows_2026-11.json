@@ -1,0 +1,3364 @@
+[
+  {
+    "topic_id": "claude_workflows-20261109-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Eine lange CLAUDE.md hilft nicht mehr: Die Doku rät zu kurzen Dateien und verschiebt Abläufe in Skills",
+    "source_urls": [
+      "https://code.claude.com/docs/en/best-practices",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-09T12:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Je länger die CLAUDE.md, desto besser",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M1",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261109-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "CLAUDE.md wird zu Beginn jeder Sitzung geladen; /init schreibt einen ersten Entwurf aus deiner Codebasis",
+    "source_urls": [
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/commands"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-09T14:00:00+01:00",
+    "status": "planned",
+    "title": "CLAUDE.md – die Datei, die Claude Code zuerst liest",
+    "notes": "Reihe: Grundlagen / How it works; Thema G1; aus altem Kalender (05.11.) übernommen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261109-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "CLAUDE.md ist eine Bitte, ein Hook ist ein Gesetz: ein PreToolUse-Hook mit Exit-Code 2 blockiert die Änderung an der .env deterministisch",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-09T18:00:00+01:00",
+    "status": "planned",
+    "title": "Hooks – Regeln, die Claude Code nicht umgehen kann",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H1; Testvideo vorhanden: 05 Produktion\\2026-11-06 Claude-Code-Hooks (alte ID claude_workflows-20261106-2-de); Produktion liegt bei der Sitzung Qualitätsrunde",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261109-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A longer CLAUDE.md doesn't help more: the docs recommend short files and moving procedures into skills",
+    "source_urls": [
+      "https://code.claude.com/docs/en/best-practices",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-09T15:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: the longer your CLAUDE.md, the better",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M1",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261109-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "CLAUDE.md loads at the start of every session; /init drafts the first version from your codebase",
+    "source_urls": [
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/commands"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-09T20:00:00+01:00",
+    "status": "planned",
+    "title": "CLAUDE.md – the file Claude Code reads first",
+    "notes": "Reihe: Grundlagen / How it works; Thema G1; aus altem Kalender (05.11.) übernommen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261109-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "CLAUDE.md is a request, a hook is a rule: a PreToolUse hook exiting with code 2 blocks edits to .env deterministically",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-09T23:00:00+01:00",
+    "status": "planned",
+    "title": "Hooks – rules Claude Code can't talk its way around",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H1; Testvideo vorhanden: 05 Produktion\\2026-11-06 Claude-Code-Hooks (alte ID claude_workflows-20261106-2-de); Produktion liegt bei der Sitzung Qualitätsrunde",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261110-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Claude Code arbeitet in drei Phasen – Kontext sammeln, handeln, Ergebnis prüfen – und nutzt dabei durchgehend Werkzeuge",
+    "source_urls": [
+      "https://code.claude.com/docs/en/how-claude-code-works",
+      "https://code.claude.com/docs/en/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-10T12:00:00+01:00",
+    "status": "planned",
+    "title": "Wie Claude Code eine Aufgabe abarbeitet",
+    "notes": "Reihe: Grundlagen / How it works; Thema G4",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261110-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Eine Deny-Regel Read(./.env) sperrt Geheimnisse und schlägt jede Allow-Regel; --allowedTools gibt Werkzeuge nur für einen Lauf frei",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permissions",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "medium",
+    "publish_at": "2026-11-10T14:00:00+01:00",
+    "status": "planned",
+    "title": "Deny-Regeln – so sperrst du Claude Code von der .env aus",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H2; aus altem Kalender (07.11.) übernommen; Grenze laut Doku nennen: Deny greift nicht bei Skripten, die Dateien indirekt lesen",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261110-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Fakten, die immer gelten, gehören in die CLAUDE.md; Abläufe und lange Referenzen in einen Skill, der nur bei Bedarf lädt",
+    "source_urls": [
+      "https://code.claude.com/docs/en/features-overview",
+      "https://code.claude.com/docs/en/costs"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-10T18:00:00+01:00",
+    "status": "planned",
+    "title": "CLAUDE.md oder Skill?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V1",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261110-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Claude Code works in three phases – gather context, take action, verify results – using tools throughout",
+    "source_urls": [
+      "https://code.claude.com/docs/en/how-claude-code-works",
+      "https://code.claude.com/docs/en/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-10T15:00:00+01:00",
+    "status": "planned",
+    "title": "How Claude Code works through a task",
+    "notes": "Reihe: Grundlagen / How it works; Thema G4",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261110-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A Read(./.env) deny rule locks secrets away and beats any allow rule; --allowedTools approves tools for one run only",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permissions",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "medium",
+    "publish_at": "2026-11-10T20:00:00+01:00",
+    "status": "planned",
+    "title": "Deny rules – lock Claude Code out of your .env",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H2; aus altem Kalender (07.11.) übernommen; Grenze laut Doku nennen: Deny greift nicht bei Skripten, die Dateien indirekt lesen",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261110-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Facts that always apply go in CLAUDE.md; procedures and long references go in a skill that loads only when needed",
+    "source_urls": [
+      "https://code.claude.com/docs/en/features-overview",
+      "https://code.claude.com/docs/en/costs"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-10T23:00:00+01:00",
+    "status": "planned",
+    "title": "CLAUDE.md or a skill?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V1",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261111-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Mehr Kontext ist nicht automatisch besser: Mit wachsender Tokenzahl sinken Genauigkeit und Erinnerung (Context Rot)",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+      "https://code.claude.com/docs/en/context-window"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-11T12:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Mehr Kontext ist immer besser",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M2",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261111-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "/init, /memory, /mcp, /context und /compact – die Befehle, die die Doku für den Einstieg in ein Projekt nennt",
+    "source_urls": [
+      "https://code.claude.com/docs/en/commands",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-11T14:00:00+01:00",
+    "status": "planned",
+    "title": "5 Befehle für die erste Sitzung",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W1",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261111-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ordner .claude/skills/<name>/ anlegen, SKILL.md mit Beschreibung schreiben, mit /<name> aufrufen oder Claude selbst wählen lassen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/skills",
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-11T18:00:00+01:00",
+    "status": "planned",
+    "title": "Deinen ersten Skill anlegen",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H5",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261111-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "More context isn't automatically better: accuracy and recall degrade as token count grows (context rot)",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+      "https://code.claude.com/docs/en/context-window"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-11T15:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: more context is always better",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M2",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261111-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "/init, /memory, /mcp, /context and /compact – the commands the docs name for starting in a repo",
+    "source_urls": [
+      "https://code.claude.com/docs/en/commands",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-11T20:00:00+01:00",
+    "status": "planned",
+    "title": "5 commands for your first session",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W1",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261111-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Create .claude/skills/<name>/, write a SKILL.md with a description, call it with /<name> or let Claude pick it",
+    "source_urls": [
+      "https://code.claude.com/docs/en/skills",
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-11T23:00:00+01:00",
+    "status": "planned",
+    "title": "Create your first skill",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H5",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261112-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Wenn das Kontextfenster voll wird, fasst Claude Code zusammen; frühe Anweisungen können verloren gehen, CLAUDE.md wird neu geladen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/context-window",
+      "https://code.claude.com/docs/en/how-claude-code-works"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-12T12:00:00+01:00",
+    "status": "planned",
+    "title": "Was beim Kompaktieren verloren geht",
+    "notes": "Reihe: Grundlagen / How it works; Thema G3",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261112-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "/compact fasst das Gespräch zusammen und arbeitet weiter, /clear beginnt für eine neue Aufgabe von vorn",
+    "source_urls": [
+      "https://code.claude.com/docs/en/commands",
+      "https://code.claude.com/docs/en/context-window"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-12T14:00:00+01:00",
+    "status": "planned",
+    "title": "/compact oder /clear?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V5",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261112-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Checkpoints ersetzen keine Versionsverwaltung: Änderungen durch Bash-Befehle und externe Änderungen werden nicht erfasst",
+    "source_urls": [
+      "https://code.claude.com/docs/en/checkpointing",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-12T18:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Checkpoints ersetzen Git",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M3",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261112-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "When the context window fills, Claude Code summarizes; early instructions can get lost while CLAUDE.md is reloaded",
+    "source_urls": [
+      "https://code.claude.com/docs/en/context-window",
+      "https://code.claude.com/docs/en/how-claude-code-works"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-12T15:00:00+01:00",
+    "status": "planned",
+    "title": "What compaction keeps and what it drops",
+    "notes": "Reihe: Grundlagen / How it works; Thema G3",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261112-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "/compact summarizes and keeps going, /clear starts over for an unrelated task",
+    "source_urls": [
+      "https://code.claude.com/docs/en/commands",
+      "https://code.claude.com/docs/en/context-window"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-12T20:00:00+01:00",
+    "status": "planned",
+    "title": "/compact or /clear?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V5",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261112-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Checkpoints are no replacement for version control: changes made by bash commands or outside tools are not tracked",
+    "source_urls": [
+      "https://code.claude.com/docs/en/checkpointing",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-12T23:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: checkpoints replace git",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M3",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261113-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "claude mcp add --transport http mit Name und URL, bei Bedarf mit /mcp anmelden, dann die neuen Werkzeuge nutzen – Beispiel: der Doku-Server von Claude Code",
+    "source_urls": [
+      "https://code.claude.com/docs/en/mcp-quickstart",
+      "https://code.claude.com/docs/en/mcp"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-13T12:00:00+01:00",
+    "status": "planned",
+    "title": "Einen MCP-Server in drei Schritten verbinden",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H7",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261113-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Neben deiner CLAUDE.md sammelt Claude mit Auto Memory eigene Erkenntnisse; mit /memory siehst und bearbeitest du sie",
+    "source_urls": [
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/commands"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-13T14:00:00+01:00",
+    "status": "planned",
+    "title": "Auto Memory – Claude schreibt sich selbst Notizen",
+    "notes": "Reihe: Grundlagen / How it works; Thema G2",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261113-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Shift+Tab wechselt den Modus, zweimal Esc spult zurück, Strg+R durchsucht den Verlauf, Alt+V fügt ein Bild ein",
+    "source_urls": [
+      "https://code.claude.com/docs/en/interactive-mode",
+      "https://code.claude.com/docs/en/keybindings"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-13T18:00:00+01:00",
+    "status": "planned",
+    "title": "4 Tastenkürzel, die Zeit sparen",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W2; Windows-Varianten der Kürzel laut interactive-mode",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261113-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "claude mcp add --transport http with a name and URL, authenticate with /mcp if needed, then use the new tools – example: the Claude Code docs server",
+    "source_urls": [
+      "https://code.claude.com/docs/en/mcp-quickstart",
+      "https://code.claude.com/docs/en/mcp"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-13T15:00:00+01:00",
+    "status": "planned",
+    "title": "Connect an MCP server in three steps",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H7",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261113-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Besides your CLAUDE.md, auto memory lets Claude keep its own learnings; /memory shows and edits them",
+    "source_urls": [
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/commands"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-13T20:00:00+01:00",
+    "status": "planned",
+    "title": "Auto memory – Claude takes its own notes",
+    "notes": "Reihe: Grundlagen / How it works; Thema G2",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261113-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Shift+Tab cycles modes, double Esc rewinds, Ctrl+R searches history, Alt+V pastes an image",
+    "source_urls": [
+      "https://code.claude.com/docs/en/interactive-mode",
+      "https://code.claude.com/docs/en/keybindings"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-13T23:00:00+01:00",
+    "status": "planned",
+    "title": "4 shortcuts that save time",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W2; Windows-Varianten der Kürzel laut interactive-mode",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261114-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein Skill bringt Wissen in dein Gespräch, ein Subagent erledigt eine Aufgabe in einem eigenen Kontext und meldet nur das Ergebnis",
+    "source_urls": [
+      "https://code.claude.com/docs/en/features-overview",
+      "https://code.claude.com/docs/en/sub-agents"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-14T12:00:00+01:00",
+    "status": "planned",
+    "title": "Skill oder Subagent?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V2",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261114-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Viele Skills kosten wenig Kontext: Geladen werden nur die Beschreibungen, der Inhalt erst beim Aufruf",
+    "source_urls": [
+      "https://code.claude.com/docs/en/skills",
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-14T14:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Viele Skills verstopfen den Kontext",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M6",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261114-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein PostToolUse-Hook mit Matcher Edit|Write startet deinen Formatierer jedes Mal, nachdem Claude eine Datei geändert hat",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/hooks"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-14T18:00:00+01:00",
+    "status": "planned",
+    "title": "Code nach jeder Änderung automatisch formatieren",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H3",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261114-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A skill brings knowledge into your conversation, a subagent does a task in its own context and reports only the result",
+    "source_urls": [
+      "https://code.claude.com/docs/en/features-overview",
+      "https://code.claude.com/docs/en/sub-agents"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-14T15:00:00+01:00",
+    "status": "planned",
+    "title": "Skill or subagent?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V2",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261114-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Many skills cost little context: only descriptions load up front, the body only on use",
+    "source_urls": [
+      "https://code.claude.com/docs/en/skills",
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-14T20:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: lots of skills clog your context",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M6",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261114-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A PostToolUse hook matching Edit|Write runs your formatter every time Claude has changed a file",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/hooks"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-14T23:00:00+01:00",
+    "status": "planned",
+    "title": "Auto-format code after every edit",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H3",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261115-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein Subagent arbeitet in einem eigenen Kontextfenster mit eigenem Systemprompt, eigenen Werkzeugen und Rechten und liefert nur das Ergebnis zurück",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://code.claude.com/docs/en/features-overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-15T12:00:00+01:00",
+    "status": "planned",
+    "title": "Subagenten – ein eigenes Kontextfenster pro Aufgabe",
+    "notes": "Reihe: Grundlagen / How it works; Thema G6",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261115-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Read, Edit, Bash, Grep, Glob, WebFetch: welche eingebauten Werkzeuge Claude Code hat und welche eine Freigabe brauchen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/tools-reference",
+      "https://code.claude.com/docs/en/how-claude-code-works"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-15T14:00:00+01:00",
+    "status": "planned",
+    "title": "Die Werkzeuge von Claude Code",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W12",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261115-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Berechtigungsregeln erlauben oder sperren Werkzeuge nach Muster; Hooks prüfen mit eigener Logik und können mehr als Ja oder Nein",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permissions",
+      "https://code.claude.com/docs/en/hooks-guide"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "medium",
+    "publish_at": "2026-11-15T18:00:00+01:00",
+    "status": "planned",
+    "title": "Berechtigungsregel oder Hook?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V3; Sicherheitsthema; Vorrang laut permissions › Precedence among rules, hooks, and mods",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261115-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A subagent runs in its own context window with its own system prompt, tools and permissions and hands back only the result",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://code.claude.com/docs/en/features-overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-15T15:00:00+01:00",
+    "status": "planned",
+    "title": "Subagents – a separate context window per task",
+    "notes": "Reihe: Grundlagen / How it works; Thema G6",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261115-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Read, Edit, Bash, Grep, Glob, WebFetch: Claude Code's built-in tools and which ones need permission",
+    "source_urls": [
+      "https://code.claude.com/docs/en/tools-reference",
+      "https://code.claude.com/docs/en/how-claude-code-works"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-15T20:00:00+01:00",
+    "status": "planned",
+    "title": "The tools inside Claude Code",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W12",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261115-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Permission rules allow or deny tools by pattern; hooks run your own logic and can do more than yes or no",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permissions",
+      "https://code.claude.com/docs/en/hooks-guide"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "medium",
+    "publish_at": "2026-11-15T23:00:00+01:00",
+    "status": "planned",
+    "title": "Permission rule or hook?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V3; Sicherheitsthema; Vorrang laut permissions › Precedence among rules, hooks, and mods",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261116-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Großbuchstaben und CRITICAL helfen aktuellen Modellen nicht, sondern führen eher dazu, dass Claude Regeln übertreibt",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-16T12:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: WICHTIG in Großbuchstaben wirkt besser",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M9",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261116-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Von einem Skill liegt nur die Beschreibung im Kontext; der Inhalt der SKILL.md wird erst geladen, wenn er gebraucht wird",
+    "source_urls": [
+      "https://code.claude.com/docs/en/skills",
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-16T14:00:00+01:00",
+    "status": "planned",
+    "title": "Skills – Wissen, das erst bei Bedarf geladen wird",
+    "notes": "Reihe: Grundlagen / How it works; Thema G7",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261116-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein Notification-Hook schickt dir eine Desktop-Meldung, sobald Claude Code eine Eingabe oder Freigabe braucht",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/terminal-config"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-16T18:00:00+01:00",
+    "status": "planned",
+    "title": "Benachrichtigung, wenn Claude auf dich wartet",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H4",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261116-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Caps and CRITICAL don't help current models; piling on emphasis mostly makes Claude over-apply the rule",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-16T15:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: IMPORTANT in caps works better",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M9",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261116-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Only a skill's description sits in context; the SKILL.md body loads when the skill is actually used",
+    "source_urls": [
+      "https://code.claude.com/docs/en/skills",
+      "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-16T20:00:00+01:00",
+    "status": "planned",
+    "title": "Skills – knowledge that loads only when needed",
+    "notes": "Reihe: Grundlagen / How it works; Thema G7",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261116-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A Notification hook sends a desktop alert whenever Claude Code needs input or a permission decision",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/terminal-config"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-16T23:00:00+01:00",
+    "status": "planned",
+    "title": "Get notified when Claude needs you",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H4",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261117-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Claude Code merkt sich Dateistände automatisch; zweimal Esc oder /rewind öffnet das Menü zum Zurückspulen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/checkpointing",
+      "https://code.claude.com/docs/en/interactive-mode"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-17T12:00:00+01:00",
+    "status": "planned",
+    "title": "Checkpoints – zurück zum Stand vor der Änderung",
+    "notes": "Reihe: Grundlagen / How it works; Thema G5",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261117-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Eine Markdown-Datei in .claude/agents/ legt Beschreibung, Werkzeuge und Modell eines Subagenten fest; Claude kann sie auf Bitte auch selbst anlegen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://code.claude.com/docs/en/commands"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-17T14:00:00+01:00",
+    "status": "planned",
+    "title": "Einen eigenen Subagenten bauen",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H6; /agents druckt laut Doku nur einen Hinweis, legt nichts an",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261117-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Welches Modell für welche Aufgabe: die Auswahlhilfe von Anthropic und die Modell-Aliase in Claude Code, inklusive opusplan",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/about-claude/models/choosing-a-model",
+      "https://code.claude.com/docs/en/model-config"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-17T18:00:00+01:00",
+    "status": "planned",
+    "title": "Opus, Sonnet oder Haiku?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V6; Modellnamen Stand 01.11.2026: Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261117-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Claude Code tracks file states automatically; double Esc or /rewind opens the rewind menu",
+    "source_urls": [
+      "https://code.claude.com/docs/en/checkpointing",
+      "https://code.claude.com/docs/en/interactive-mode"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-17T15:00:00+01:00",
+    "status": "planned",
+    "title": "Checkpoints – rewind to before the edit",
+    "notes": "Reihe: Grundlagen / How it works; Thema G5",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261117-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A Markdown file in .claude/agents/ sets a subagent's description, tools and model; Claude can also write it for you when asked",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://code.claude.com/docs/en/commands"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-17T20:00:00+01:00",
+    "status": "planned",
+    "title": "Build your own subagent",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H6; /agents druckt laut Doku nur einen Hinweis, legt nichts an",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261117-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Which model for which job: Anthropic's model guide and the model aliases in Claude Code, including opusplan",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/about-claude/models/choosing-a-model",
+      "https://code.claude.com/docs/en/model-config"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-17T23:00:00+01:00",
+    "status": "planned",
+    "title": "Opus, Sonnet or Haiku?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V6; Modellnamen Stand 01.11.2026: Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261118-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "/clear beginnt ein neues Gespräch, die Projekterinnerung aus CLAUDE.md und Auto Memory bleibt erhalten",
+    "source_urls": [
+      "https://code.claude.com/docs/en/commands",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-18T12:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: /clear löscht Claudes Gedächtnis",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M15",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261118-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "PreToolUse, PostToolUse, Stop und SessionStart – wann sie feuern und wofür die Doku sie einsetzt",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks",
+      "https://code.claude.com/docs/en/hooks-guide"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-18T14:00:00+01:00",
+    "status": "planned",
+    "title": "4 Hook-Ereignisse, die du kennen solltest",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W3",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261118-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Regeln in .claude/rules/ lassen sich auf Pfade beschränken und gelten dann nur, wenn Claude in diesem Teil der Codebasis arbeitet",
+    "source_urls": [
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-18T18:00:00+01:00",
+    "status": "planned",
+    "title": "Regeln nur für bestimmte Ordner: .claude/rules/",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H12",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261118-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "/clear starts a fresh conversation, but project memory from CLAUDE.md and auto memory stays",
+    "source_urls": [
+      "https://code.claude.com/docs/en/commands",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-18T15:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: /clear wipes Claude's memory",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M15",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261118-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "PreToolUse, PostToolUse, Stop and SessionStart – when they fire and what the docs use them for",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks",
+      "https://code.claude.com/docs/en/hooks-guide"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-18T20:00:00+01:00",
+    "status": "planned",
+    "title": "4 hook events worth knowing",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W3",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261118-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Rules in .claude/rules/ can be scoped to paths and only apply when Claude works in that part of the codebase",
+    "source_urls": [
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-18T23:00:00+01:00",
+    "status": "planned",
+    "title": "Rules for specific folders: .claude/rules/",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H12",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261119-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Fast Mode gibt es für Opus 5.5 (für Opus 5 und 4.8 als Vorschau) zu höheren Preisen; für Opus 4.8 ist er seit 30.10.2026 abgekündigt",
+    "source_urls": [
+      "https://code.claude.com/docs/en/fast-mode",
+      "https://code.claude.com/docs/en/changelog"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-19T12:00:00+01:00",
+    "status": "planned",
+    "title": "Fast Mode – schneller, aber nicht für jedes Modell",
+    "notes": "Reihe: Grundlagen / How it works; Thema G17; Abkündigung: Entfernung für Opus 4.8 am 30.11.2026 laut Changelog 2.1.316; Datum vor Skript neu prüfen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261119-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein Output Style ändert Rolle und Ton dauerhaft, --append-system-prompt hängt Text nur für einen Aufruf an den Systemprompt",
+    "source_urls": [
+      "https://code.claude.com/docs/en/output-styles",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-19T14:00:00+01:00",
+    "status": "planned",
+    "title": "Output Style oder --append-system-prompt?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V9",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261119-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "bypassPermissions überspringt alle Prüfungen und ist laut Doku nur für isolierte Container und VMs gedacht",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permission-modes",
+      "https://code.claude.com/docs/en/security"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "medium",
+    "publish_at": "2026-11-19T18:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: bypassPermissions ist auf dem eigenen Rechner harmlos",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M4; Sicherheitsthema",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261119-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Fast mode exists for Opus 5.5 (research preview on Opus 5 and 4.8) at higher prices; on Opus 4.8 it is deprecated since 30 Oct 2026",
+    "source_urls": [
+      "https://code.claude.com/docs/en/fast-mode",
+      "https://code.claude.com/docs/en/changelog"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-19T15:00:00+01:00",
+    "status": "planned",
+    "title": "Fast mode – faster, but not on every model",
+    "notes": "Reihe: Grundlagen / How it works; Thema G17; Abkündigung: Entfernung für Opus 4.8 am 30.11.2026 laut Changelog 2.1.316; Datum vor Skript neu prüfen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261119-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "An output style changes role and tone persistently, --append-system-prompt adds text to the system prompt for one call",
+    "source_urls": [
+      "https://code.claude.com/docs/en/output-styles",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-19T20:00:00+01:00",
+    "status": "planned",
+    "title": "Output style or --append-system-prompt?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V9",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261119-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "bypassPermissions skips every check and per the docs is meant for isolated containers and VMs only",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permission-modes",
+      "https://code.claude.com/docs/en/security"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "medium",
+    "publish_at": "2026-11-19T23:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: bypassPermissions is fine on your own machine",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M4; Sicherheitsthema",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261120-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Mit @pfad/zur/datei bindet die CLAUDE.md weitere Dateien ein, die zusammen mit ihr in den Kontext geladen werden",
+    "source_urls": [
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/claude-directory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-20T12:00:00+01:00",
+    "status": "planned",
+    "title": "CLAUDE.md aufteilen mit @-Importen",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H13",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261120-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein MCP-Server gilt je nach Geltungsbereich nur für dich in einem Projekt, für das ganze Team über .mcp.json oder für alle deine Projekte",
+    "source_urls": [
+      "https://code.claude.com/docs/en/mcp",
+      "https://code.claude.com/docs/en/features-overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-20T14:00:00+01:00",
+    "status": "planned",
+    "title": "MCP-Server: lokal, Projekt oder Benutzer",
+    "notes": "Reihe: Grundlagen / How it works; Thema G8",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261120-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "-p, --output-format, --max-turns und --bare: was jeder Schalter im nicht interaktiven Modus bewirkt",
+    "source_urls": [
+      "https://code.claude.com/docs/en/cli-reference",
+      "https://code.claude.com/docs/en/headless"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-20T18:00:00+01:00",
+    "status": "planned",
+    "title": "4 Schalter für Claude Code in Skripten",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W4",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261120-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "With @path/to/file a CLAUDE.md imports other files that load into context alongside it",
+    "source_urls": [
+      "https://code.claude.com/docs/en/memory",
+      "https://code.claude.com/docs/en/claude-directory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-20T15:00:00+01:00",
+    "status": "planned",
+    "title": "Split your CLAUDE.md with @ imports",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H13",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261120-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Depending on scope, an MCP server applies to you in one project, to the whole team via .mcp.json, or to all your projects",
+    "source_urls": [
+      "https://code.claude.com/docs/en/mcp",
+      "https://code.claude.com/docs/en/features-overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-20T20:00:00+01:00",
+    "status": "planned",
+    "title": "MCP servers: local, project or user scope",
+    "notes": "Reihe: Grundlagen / How it works; Thema G8",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261120-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "-p, --output-format, --max-turns and --bare: what each flag does in non-interactive mode",
+    "source_urls": [
+      "https://code.claude.com/docs/en/cli-reference",
+      "https://code.claude.com/docs/en/headless"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-20T23:00:00+01:00",
+    "status": "planned",
+    "title": "4 flags for Claude Code in scripts",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W4",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261121-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "MCP verbindet Claude mit Werkzeugen und Daten, ein Skill bringt Claude bei, wie es sie benutzt",
+    "source_urls": [
+      "https://code.claude.com/docs/en/features-overview",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-21T12:00:00+01:00",
+    "status": "planned",
+    "title": "MCP oder Skill?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V10",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261121-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Subagenten schonen deinen Hauptkontext, verbrauchen aber eigene Anfragen, die auf dieselben Nutzungslimits zählen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-21T14:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Subagenten sind gratis",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M5",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261121-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Mit /statusline oder einem eigenen Skript zeigt die Statuszeile Modell und belegten Kontext in Prozent dauerhaft an",
+    "source_urls": [
+      "https://code.claude.com/docs/en/statusline",
+      "https://code.claude.com/docs/en/context-window"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-21T18:00:00+01:00",
+    "status": "planned",
+    "title": "Statuszeile mit Kontextanzeige",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H8",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261121-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "MCP connects Claude to tools and data, a skill teaches Claude how to use them",
+    "source_urls": [
+      "https://code.claude.com/docs/en/features-overview",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-21T15:00:00+01:00",
+    "status": "planned",
+    "title": "MCP or skill?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V10",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261121-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Subagents spare your main context but make their own requests that count toward the same usage limits",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-21T20:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: subagents are free",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M5",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261121-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "With /statusline or your own script the status line keeps model and context usage in percent on screen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/statusline",
+      "https://code.claude.com/docs/en/context-window"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-21T23:00:00+01:00",
+    "status": "planned",
+    "title": "A status line that shows your context",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H8",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261122-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Im Planmodus analysiert Claude und schlägt einen Plan vor, ohne Dateien zu ändern; erst nach deiner Freigabe wird umgesetzt",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permission-modes",
+      "https://code.claude.com/docs/en/common-workflows"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-22T12:00:00+01:00",
+    "status": "planned",
+    "title": "Planmodus – erst lesen, dann ändern",
+    "notes": "Reihe: Grundlagen / How it works; Thema G11",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261122-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Kontext früh leeren, passendes Modell wählen, MCP-Last senken, Anweisungen in Skills verschieben, Ausführliches an Subagenten geben",
+    "source_urls": [
+      "https://code.claude.com/docs/en/costs",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-22T14:00:00+01:00",
+    "status": "planned",
+    "title": "5 Wege, Tokens zu sparen",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W5",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261122-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "settings.json im Projekt teilt das Team, settings.local.json gilt nur für dich, die Benutzerdatei für alle Projekte – mit fester Rangfolge",
+    "source_urls": [
+      "https://code.claude.com/docs/en/settings",
+      "https://code.claude.com/docs/en/permissions"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-22T18:00:00+01:00",
+    "status": "planned",
+    "title": "Projekt, lokal oder Benutzer: welche settings.json gilt?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V11",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261122-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "In plan mode Claude analyzes and proposes a plan without editing files; changes start only after you approve",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permission-modes",
+      "https://code.claude.com/docs/en/common-workflows"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-22T15:00:00+01:00",
+    "status": "planned",
+    "title": "Plan mode – read first, edit later",
+    "notes": "Reihe: Grundlagen / How it works; Thema G11",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261122-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Clear context early, pick the right model, cut MCP overhead, move instructions into skills, delegate verbose work to subagents",
+    "source_urls": [
+      "https://code.claude.com/docs/en/costs",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-22T20:00:00+01:00",
+    "status": "planned",
+    "title": "5 ways to spend fewer tokens",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W5",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261122-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Project settings.json is shared, settings.local.json is yours alone, the user file covers all projects – in a fixed order of precedence",
+    "source_urls": [
+      "https://code.claude.com/docs/en/settings",
+      "https://code.claude.com/docs/en/permissions"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-22T23:00:00+01:00",
+    "status": "planned",
+    "title": "Project, local or user: which settings.json wins?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V11",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261123-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Eine geänderte CLAUDE.md wirkt nicht mitten in der Sitzung, sondern erst nach Neustart, /clear oder /compact",
+    "source_urls": [
+      "https://code.claude.com/docs/en/prompt-caching",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-23T12:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Eine geänderte CLAUDE.md wirkt sofort",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M13",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261123-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Inhaltssuchen beachten .gitignore; eingecheckten generierten Code hältst du mit Read-Deny-Regeln aus dem Kontext",
+    "source_urls": [
+      "https://code.claude.com/docs/en/large-codebases",
+      "https://code.claude.com/docs/en/permissions"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-23T14:00:00+01:00",
+    "status": "planned",
+    "title": "Was Claude Code in großen Projekten nicht liest",
+    "notes": "Reihe: Grundlagen / How it works; Thema G14",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261123-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "claude -p mit --output-format json und --json-schema liefert eine Antwort, die zu deinem Schema passt, im Feld structured_output",
+    "source_urls": [
+      "https://code.claude.com/docs/en/headless",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-23T18:00:00+01:00",
+    "status": "planned",
+    "title": "Geprüftes JSON aus Claude Code holen",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H10",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261123-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "An edited CLAUDE.md doesn't apply mid-session; it reloads at session start or after /clear or /compact",
+    "source_urls": [
+      "https://code.claude.com/docs/en/prompt-caching",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-23T15:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: CLAUDE.md edits apply instantly",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M13",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261123-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Content searches respect .gitignore; Read deny rules keep checked-in generated code out of context",
+    "source_urls": [
+      "https://code.claude.com/docs/en/large-codebases",
+      "https://code.claude.com/docs/en/permissions"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-23T20:00:00+01:00",
+    "status": "planned",
+    "title": "What Claude Code skips in large repos",
+    "notes": "Reihe: Grundlagen / How it works; Thema G14",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261123-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "claude -p with --output-format json and --json-schema returns output matching your schema in the structured_output field",
+    "source_urls": [
+      "https://code.claude.com/docs/en/headless",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-23T23:00:00+01:00",
+    "status": "planned",
+    "title": "Get validated JSON out of Claude Code",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H10",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261124-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Mit -p läuft Claude Code nicht interaktiv, liefert das Ergebnis auf der Kommandozeile und lässt sich in Skripte einbauen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/headless",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-24T12:00:00+01:00",
+    "status": "planned",
+    "title": "Claude Code ohne Chatfenster: der Modus -p",
+    "notes": "Reihe: Grundlagen / How it works; Thema G13",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261124-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "/install-github-app richtet GitHub App, Secret und Workflow ein; danach reagiert Claude auf @claude in Issues und Pull Requests",
+    "source_urls": [
+      "https://code.claude.com/docs/en/github-actions",
+      "https://code.claude.com/docs/en/headless"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-24T14:00:00+01:00",
+    "status": "planned",
+    "title": "@claude im GitHub-Issue",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H9",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261124-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Im Standardmodus fragt Claude Code nach; dontAsk erlaubt nur vorab freigegebene Werkzeuge und lehnt alles andere ab",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permission-modes",
+      "https://code.claude.com/docs/en/headless"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "medium",
+    "publish_at": "2026-11-24T18:00:00+01:00",
+    "status": "planned",
+    "title": "Standardmodus oder dontAsk?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V4; Sicherheitsthema",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261124-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "With -p Claude Code runs non-interactively, prints the result and plugs into scripts",
+    "source_urls": [
+      "https://code.claude.com/docs/en/headless",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-24T15:00:00+01:00",
+    "status": "planned",
+    "title": "Claude Code without a chat: the -p mode",
+    "notes": "Reihe: Grundlagen / How it works; Thema G13",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261124-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "/install-github-app sets up the GitHub app, secret and workflow; then Claude responds to @claude in issues and pull requests",
+    "source_urls": [
+      "https://code.claude.com/docs/en/github-actions",
+      "https://code.claude.com/docs/en/headless"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-24T20:00:00+01:00",
+    "status": "planned",
+    "title": "@claude in a GitHub issue",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H9",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261124-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Default mode asks you; dontAsk allows only pre-approved tools and denies everything else",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permission-modes",
+      "https://code.claude.com/docs/en/headless"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "medium",
+    "publish_at": "2026-11-24T23:00:00+01:00",
+    "status": "planned",
+    "title": "Default mode or dontAsk?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V4; Sicherheitsthema",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261125-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Claude Code arbeitet laut Doku auch in Notiz- und anderen Ordnern ohne Code",
+    "source_urls": [
+      "https://code.claude.com/docs/en/common-workflows",
+      "https://code.claude.com/docs/en/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-25T12:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Claude Code ist nur für Code",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M8",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261125-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "/doctor, /code-review, /batch, /debug, /loop und /claude-api sind schon dabei – was sie tun",
+    "source_urls": [
+      "https://code.claude.com/docs/en/skills",
+      "https://code.claude.com/docs/en/troubleshooting"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-25T14:00:00+01:00",
+    "status": "planned",
+    "title": "Mitgelieferte Skills in Claude Code",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W6",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261125-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "claude --worktree startet eine Sitzung im eigenen Worktree; eine zweite Sitzung arbeitet parallel, ohne Dateien der ersten zu überschreiben",
+    "source_urls": [
+      "https://code.claude.com/docs/en/worktrees",
+      "https://code.claude.com/docs/en/common-workflows"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-25T18:00:00+01:00",
+    "status": "planned",
+    "title": "Zwei Aufgaben gleichzeitig mit --worktree",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H11",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261125-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Per the docs Claude Code also works in notes and other non-code folders",
+    "source_urls": [
+      "https://code.claude.com/docs/en/common-workflows",
+      "https://code.claude.com/docs/en/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-25T15:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: Claude Code is only for code",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M8",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261125-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "/doctor, /code-review, /batch, /debug, /loop and /claude-api come built in – what they do",
+    "source_urls": [
+      "https://code.claude.com/docs/en/skills",
+      "https://code.claude.com/docs/en/troubleshooting"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-25T20:00:00+01:00",
+    "status": "planned",
+    "title": "Skills that ship with Claude Code",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W6",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261125-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "claude --worktree starts a session in its own worktree; a second session works in parallel without overwriting the first",
+    "source_urls": [
+      "https://code.claude.com/docs/en/worktrees",
+      "https://code.claude.com/docs/en/common-workflows"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-25T23:00:00+01:00",
+    "status": "planned",
+    "title": "Two tasks at once with --worktree",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H11",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261126-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Claude Code verwaltet Prompt-Caching automatisch; ein Modellwechsel mitten in der Sitzung bedeutet einen langsamen Durchlauf ohne Cache",
+    "source_urls": [
+      "https://code.claude.com/docs/en/prompt-caching",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-caching"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-26T12:00:00+01:00",
+    "status": "planned",
+    "title": "Prompt-Caching in Claude Code",
+    "notes": "Reihe: Grundlagen / How it works; Thema G9",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261126-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "--continue öffnet die letzte Sitzung im Ordner, --resume lässt dich eine frühere Sitzung auswählen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sessions",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-26T14:00:00+01:00",
+    "status": "planned",
+    "title": "--continue oder --resume?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V13",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261126-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Read-Deny-Regeln greifen bei Claudes Dateiwerkzeugen und erkannten Befehlen wie cat, nicht aber bei Skripten, die Dateien indirekt öffnen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permissions",
+      "https://code.claude.com/docs/en/sandboxing"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "medium",
+    "publish_at": "2026-11-26T18:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Eine Read-Sperre blockiert jeden Zugriff",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M10; Sicherheitsthema; Sandbox als Ergänzung laut permissions › How permissions interact with sandboxing",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261126-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Claude Code manages prompt caching automatically; switching models mid-session means one slow, uncached turn",
+    "source_urls": [
+      "https://code.claude.com/docs/en/prompt-caching",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-caching"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-26T15:00:00+01:00",
+    "status": "planned",
+    "title": "Prompt caching in Claude Code",
+    "notes": "Reihe: Grundlagen / How it works; Thema G9",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261126-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "--continue reopens the most recent session in the folder, --resume lets you pick an earlier one",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sessions",
+      "https://code.claude.com/docs/en/cli-reference"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-26T20:00:00+01:00",
+    "status": "planned",
+    "title": "--continue or --resume?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V13",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261126-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Read deny rules cover Claude's file tools and recognized commands like cat, not scripts that open files indirectly",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permissions",
+      "https://code.claude.com/docs/en/sandboxing"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "medium",
+    "publish_at": "2026-11-26T23:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: a Read deny rule blocks every access",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M10; Sicherheitsthema; Sandbox als Ergänzung laut permissions › How permissions interact with sandboxing",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261127-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "/sandbox isoliert Bash-Befehle im Dateisystem und im Netzwerk und reduziert so Freigabe-Dialoge, ohne die Kontrolle abzugeben",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sandboxing",
+      "https://code.claude.com/docs/en/security"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "medium",
+    "publish_at": "2026-11-27T12:00:00+01:00",
+    "status": "planned",
+    "title": "Bash-Befehle in die Sandbox schicken",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H14; Sicherheitshinweis: Grenzen der Sandbox laut Doku nennen",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261127-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Die Effort-Stufe steuert, wie gründlich das Modell arbeitet; der Standard hängt vom Modell ab und lässt sich in Claude Code einstellen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/model-config",
+      "https://platform.claude.com/docs/en/build-with-claude/effort"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-27T14:00:00+01:00",
+    "status": "planned",
+    "title": "Effort – wie viel Claude nachdenkt",
+    "notes": "Reihe: Grundlagen / How it works; Thema G10; Standardwerte je Modell vor dem Skript erneut prüfen (choosing-a-model)",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261127-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Explore, Plan und der allgemeine Agent: welche Subagenten Claude Code mitbringt und warum Explore und Plan ohne CLAUDE.md starten",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://code.claude.com/docs/en/how-claude-code-works"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-27T18:00:00+01:00",
+    "status": "planned",
+    "title": "Die eingebauten Subagenten",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W7; Liste der eingebauten Subagenten vor Skript vollständig aus cc/sub-agents übernehmen",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261127-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "/sandbox isolates bash commands at file system and network level, cutting permission prompts while keeping control",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sandboxing",
+      "https://code.claude.com/docs/en/security"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "medium",
+    "publish_at": "2026-11-27T15:00:00+01:00",
+    "status": "planned",
+    "title": "Run bash commands in the sandbox",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H14; Sicherheitshinweis: Grenzen der Sandbox laut Doku nennen",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261127-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "The effort level sets how thoroughly the model works; the default depends on the model and can be changed in Claude Code",
+    "source_urls": [
+      "https://code.claude.com/docs/en/model-config",
+      "https://platform.claude.com/docs/en/build-with-claude/effort"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-27T20:00:00+01:00",
+    "status": "planned",
+    "title": "Effort – how hard Claude thinks",
+    "notes": "Reihe: Grundlagen / How it works; Thema G10; Standardwerte je Modell vor dem Skript erneut prüfen (choosing-a-model)",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261127-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Explore, Plan and the general-purpose agent: Claude Code's built-in subagents and why Explore and Plan start without CLAUDE.md",
+    "source_urls": [
+      "https://code.claude.com/docs/en/sub-agents",
+      "https://code.claude.com/docs/en/how-claude-code-works"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-27T23:00:00+01:00",
+    "status": "planned",
+    "title": "The built-in subagents",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W7; Liste der eingebauten Subagenten vor Skript vollständig aus cc/sub-agents übernehmen",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261128-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Adaptives Denken und die Effort-Stufe sind zwei Regler; die Doku erklärt, wann du welchen benutzt",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/effort",
+      "https://platform.claude.com/docs/en/build-with-claude/extended-thinking"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-28T12:00:00+01:00",
+    "status": "planned",
+    "title": "Thinking oder Effort?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V14; Detail aus pl thinking#thinking-and-effort vor Skript lesen",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261128-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "ultrathink hebt nur die Effort-Stufe für eine einzelne Runde an und lässt sich seit Version 2.1.316 abschalten",
+    "source_urls": [
+      "https://code.claude.com/docs/en/model-config",
+      "https://code.claude.com/docs/en/changelog"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-28T14:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: ultrathink ist ein Zauberwort",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M7; Changelog 2.1.316 (31.10.2026): CLAUDE_CODE_DISABLE_ULTRATHINK",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261128-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein Stop-Hook führt dein Prüfskript aus, sobald Claude fertig sein will, und schickt Claude bei Fehlern zurück an die Arbeit",
+    "source_urls": [
+      "https://code.claude.com/docs/en/best-practices",
+      "https://code.claude.com/docs/en/hooks-guide"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-28T18:00:00+01:00",
+    "status": "planned",
+    "title": "Tests erzwingen mit einem Stop-Hook",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H15; Blockgrenze für Stop-Hooks (hooks-guide: block cap) erwähnen",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261128-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Adaptive thinking and the effort level are two different controls; the docs explain which one to reach for",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/effort",
+      "https://platform.claude.com/docs/en/build-with-claude/extended-thinking"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-28T15:00:00+01:00",
+    "status": "planned",
+    "title": "Thinking or effort?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V14; Detail aus pl thinking#thinking-and-effort vor Skript lesen",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261128-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "ultrathink only raises the effort level for a single turn, and since version 2.1.316 it can be turned off",
+    "source_urls": [
+      "https://code.claude.com/docs/en/model-config",
+      "https://code.claude.com/docs/en/changelog"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-11-28T20:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: ultrathink is a magic word",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M7; Changelog 2.1.316 (31.10.2026): CLAUDE_CODE_DISABLE_ULTRATHINK",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261128-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A Stop hook runs your check whenever Claude tries to finish and sends Claude back to work if it fails",
+    "source_urls": [
+      "https://code.claude.com/docs/en/best-practices",
+      "https://code.claude.com/docs/en/hooks-guide"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-28T23:00:00+01:00",
+    "status": "planned",
+    "title": "Enforce your tests with a Stop hook",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H15; Blockgrenze für Stop-Hooks (hooks-guide: block cap) erwähnen",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261129-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Claude verarbeitet jede PDF-Seite als Text und als Bild und kann so auch Diagramme, Bilder und Tabellen auswerten",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/pdf-support",
+      "https://platform.claude.com/docs/en/build-with-claude/vision"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-29T12:00:00+01:00",
+    "status": "planned",
+    "title": "Claude liest PDFs mit Diagrammen und Tabellen",
+    "notes": "Reihe: Grundlagen / How it works; Thema G12; Plattform-Doku (API); für claude.ai vor dem Skript Gültigkeit prüfen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261129-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Klar formulieren, Beispiele geben, mit XML-Tags gliedern, Denken zulassen – die Grundtechniken des offiziellen Leitfadens",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-29T14:00:00+01:00",
+    "status": "planned",
+    "title": "4 Prompt-Techniken aus der Anthropic-Doku",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W9",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261129-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Subagenten arbeiten innerhalb einer Sitzung; Agent-Teams sind koordinierte Sitzungen und laut Doku experimentell und standardmäßig aus",
+    "source_urls": [
+      "https://code.claude.com/docs/en/agent-teams",
+      "https://code.claude.com/docs/en/sub-agents"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-29T18:00:00+01:00",
+    "status": "planned",
+    "title": "Subagent oder Agent-Team?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V12; Agent-Teams experimentell (CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS)",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261129-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Claude processes each PDF page as text and as an image, so it can read charts, pictures and tables too",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/pdf-support",
+      "https://platform.claude.com/docs/en/build-with-claude/vision"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-29T15:00:00+01:00",
+    "status": "planned",
+    "title": "Claude reads PDFs, charts and tables included",
+    "notes": "Reihe: Grundlagen / How it works; Thema G12; Plattform-Doku (API); für claude.ai vor dem Skript Gültigkeit prüfen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261129-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Be clear, give examples, structure with XML tags, let Claude think – the basics of the official guide",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-11-29T20:00:00+01:00",
+    "status": "planned",
+    "title": "4 prompting techniques from Anthropic's docs",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W9",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261129-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Subagents work inside one session; agent teams are coordinated sessions and per the docs experimental and off by default",
+    "source_urls": [
+      "https://code.claude.com/docs/en/agent-teams",
+      "https://code.claude.com/docs/en/sub-agents"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-11-29T23:00:00+01:00",
+    "status": "planned",
+    "title": "Subagent or agent team?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V12; Agent-Teams experimentell (CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS)",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261130-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Die Doku verlangt, jedem MCP-Server vor dem Verbinden zu vertrauen; Server, die fremde Inhalte laden, bergen Prompt-Injection-Risiken",
+    "source_urls": [
+      "https://code.claude.com/docs/en/mcp",
+      "https://code.claude.com/docs/en/security"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "medium",
+    "publish_at": "2026-11-30T12:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Jeder MCP-Server ist geprüft",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M11; Sicherheitsthema",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261130-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein Plugin bündelt Skills, Subagenten, Hooks und MCP-Server, die Claude Code als Einheit installiert, meist aus einem Marketplace",
+    "source_urls": [
+      "https://code.claude.com/docs/en/plugins/overview",
+      "https://code.claude.com/docs/en/plugins/install"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-30T14:00:00+01:00",
+    "status": "planned",
+    "title": "Plugins – Skills, Agenten und Hooks als Paket",
+    "notes": "Reihe: Grundlagen / How it works; Thema G15",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261130-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Marketplace mit /plugin marketplace add hinzufügen, Plugin auswählen, installieren – Skills und Hooks sind danach verfügbar",
+    "source_urls": [
+      "https://code.claude.com/docs/en/plugins/install",
+      "https://code.claude.com/docs/en/plugins/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-30T18:00:00+01:00",
+    "status": "planned",
+    "title": "Ein Plugin aus dem Marketplace installieren",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H16",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261130-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "The docs say to verify you trust each MCP server first; servers that fetch external content carry prompt injection risk",
+    "source_urls": [
+      "https://code.claude.com/docs/en/mcp",
+      "https://code.claude.com/docs/en/security"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "medium",
+    "publish_at": "2026-11-30T15:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: every MCP server is vetted",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M11; Sicherheitsthema",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261130-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A plugin bundles skills, subagents, hooks and MCP servers that Claude Code installs as one unit, usually from a marketplace",
+    "source_urls": [
+      "https://code.claude.com/docs/en/plugins/overview",
+      "https://code.claude.com/docs/en/plugins/install"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-11-30T20:00:00+01:00",
+    "status": "planned",
+    "title": "Plugins – skills, agents and hooks in one package",
+    "notes": "Reihe: Grundlagen / How it works; Thema G15",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261130-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Add a marketplace with /plugin marketplace add, pick a plugin, install it – its skills and hooks are then available",
+    "source_urls": [
+      "https://code.claude.com/docs/en/plugins/install",
+      "https://code.claude.com/docs/en/plugins/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-11-30T23:00:00+01:00",
+    "status": "planned",
+    "title": "Install a plugin from a marketplace",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H16",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261201-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Mit --worktree arbeitet jede Claude-Code-Sitzung in einem eigenen Git-Worktree, damit gleichzeitige Änderungen nicht kollidieren",
+    "source_urls": [
+      "https://code.claude.com/docs/en/worktrees",
+      "https://code.claude.com/docs/en/common-workflows"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-12-01T12:00:00+01:00",
+    "status": "planned",
+    "title": "Git-Worktrees – parallele Sitzungen ohne Konflikte",
+    "notes": "Reihe: Grundlagen / How it works; Thema G16",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261201-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "/keybindings legt ~/.claude/keybindings.json an, in der du Aktionen wie die Verlaufssuche neu belegst",
+    "source_urls": [
+      "https://code.claude.com/docs/en/keybindings",
+      "https://code.claude.com/docs/en/interactive-mode"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-12-01T14:00:00+01:00",
+    "status": "planned",
+    "title": "Eigene Tastenkürzel für Claude Code",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H17",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261201-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Geplante Aufgaben laufen in der Cloud, in der Desktop-App nur bei laufendem Rechner, /loop nur innerhalb einer Sitzung",
+    "source_urls": [
+      "https://code.claude.com/docs/en/routines",
+      "https://code.claude.com/docs/en/desktop-scheduled-tasks",
+      "https://code.claude.com/docs/en/scheduled-tasks"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-12-01T18:00:00+01:00",
+    "status": "planned",
+    "title": "Zeitgesteuert: Cloud, Desktop oder /loop?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V15; Cloud-Aufgaben (früher Routines) laut Doku Research Preview",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261201-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "With --worktree each Claude Code session works in its own git worktree so concurrent edits don't collide",
+    "source_urls": [
+      "https://code.claude.com/docs/en/worktrees",
+      "https://code.claude.com/docs/en/common-workflows"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-12-01T15:00:00+01:00",
+    "status": "planned",
+    "title": "Git worktrees – parallel sessions without collisions",
+    "notes": "Reihe: Grundlagen / How it works; Thema G16",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261201-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "/keybindings creates ~/.claude/keybindings.json, where you rebind actions such as history search",
+    "source_urls": [
+      "https://code.claude.com/docs/en/keybindings",
+      "https://code.claude.com/docs/en/interactive-mode"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-12-01T20:00:00+01:00",
+    "status": "planned",
+    "title": "Custom keyboard shortcuts for Claude Code",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H17",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261201-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Scheduled tasks run in the cloud, desktop tasks only while your computer is on, /loop only inside a session",
+    "source_urls": [
+      "https://code.claude.com/docs/en/routines",
+      "https://code.claude.com/docs/en/desktop-scheduled-tasks",
+      "https://code.claude.com/docs/en/scheduled-tasks"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-12-01T23:00:00+01:00",
+    "status": "planned",
+    "title": "Scheduled: cloud, desktop or /loop?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V15; Cloud-Aufgaben (früher Routines) laut Doku Research Preview",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261202-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Im Auto Mode prüft ein zweites Modell, der Klassifikator, jede Aktion statt dir; bypassPermissions prüft gar nichts",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permission-modes",
+      "https://code.claude.com/docs/en/auto-mode-config"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "medium",
+    "publish_at": "2026-12-02T12:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Auto Mode heißt alles erlauben",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M12; Sicherheitsthema",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261202-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "/context, /doctor und /hooks zeigen, ob CLAUDE.md, Einstellungen, Hooks und MCP-Server wirklich geladen sind",
+    "source_urls": [
+      "https://code.claude.com/docs/en/debug-your-config",
+      "https://code.claude.com/docs/en/troubleshooting"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-12-02T14:00:00+01:00",
+    "status": "planned",
+    "title": "Wenn Claude Code deine Einstellung ignoriert",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W10",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261202-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Bild per Drag-and-drop oder aus der Zwischenablage einfügen (unter Windows Alt+V) und im Prompt als [Image #N] ansprechen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/common-workflows",
+      "https://code.claude.com/docs/en/interactive-mode"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-12-02T18:00:00+01:00",
+    "status": "planned",
+    "title": "Screenshots direkt an Claude Code geben",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H18",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261202-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "In auto mode a second model, the classifier, reviews each action instead of you; bypassPermissions checks nothing",
+    "source_urls": [
+      "https://code.claude.com/docs/en/permission-modes",
+      "https://code.claude.com/docs/en/auto-mode-config"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "medium",
+    "publish_at": "2026-12-02T15:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: auto mode means allow everything",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M12; Sicherheitsthema",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261202-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "/context, /doctor and /hooks show whether CLAUDE.md, settings, hooks and MCP servers actually loaded",
+    "source_urls": [
+      "https://code.claude.com/docs/en/debug-your-config",
+      "https://code.claude.com/docs/en/troubleshooting"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-12-02T20:00:00+01:00",
+    "status": "planned",
+    "title": "When Claude Code ignores your settings",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W10",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261202-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Drag and drop an image or paste it from the clipboard (Alt+V on Windows) and refer to it as [Image #N] in your prompt",
+    "source_urls": [
+      "https://code.claude.com/docs/en/common-workflows",
+      "https://code.claude.com/docs/en/interactive-mode"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-12-02T23:00:00+01:00",
+    "status": "planned",
+    "title": "Hand screenshots straight to Claude Code",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H18",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261203-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "claude --version zeigt deine Version; Changelog und der wöchentliche What's-new-Überblick zeigen, was sich geändert hat",
+    "source_urls": [
+      "https://code.claude.com/docs/en/changelog",
+      "https://code.claude.com/docs/en/whats-new/index"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-12-03T12:00:00+01:00",
+    "status": "planned",
+    "title": "Welche Claude-Code-Version habe ich – und was ist neu?",
+    "notes": "Reihe: Grundlagen / How it works; Thema G18; Stand Changelog 31.10.2026: Version 2.1.316; vor dem Skript aktuelle Version neu ablesen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261203-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Mit Structured Outputs hält die Antwort ein JSON-Schema ein, statt sich auf eine Bitte im Prompt zu verlassen",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+      "https://code.claude.com/docs/en/headless"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-12-03T14:00:00+01:00",
+    "status": "planned",
+    "title": "Structured Outputs oder JSON per Prompt?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V16",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261203-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Claude reagiert am besten auf klare, ausdrückliche Anweisungen; wer mehr will als das Minimum, muss es sagen",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-12-03T18:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Claude weiß schon, was du meinst",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M14",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261203-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "claude --version shows your version; the changelog and the weekly what's-new digest show what changed",
+    "source_urls": [
+      "https://code.claude.com/docs/en/changelog",
+      "https://code.claude.com/docs/en/whats-new/index"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-12-03T15:00:00+01:00",
+    "status": "planned",
+    "title": "Which Claude Code version am I on – and what's new?",
+    "notes": "Reihe: Grundlagen / How it works; Thema G18; Stand Changelog 31.10.2026: Version 2.1.316; vor dem Skript aktuelle Version neu ablesen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261203-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "With structured outputs the response follows a JSON schema instead of relying on a request in the prompt",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+      "https://code.claude.com/docs/en/headless"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-12-03T20:00:00+01:00",
+    "status": "planned",
+    "title": "Structured outputs or JSON by prompt?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V16",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261203-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Claude responds best to clear, explicit instructions; if you want more than the minimum, ask for it",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://code.claude.com/docs/en/best-practices"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-12-03T23:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: Claude knows what you mean",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M14",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261204-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein SessionStart-Hook mit Matcher compact gibt nach jeder Zusammenfassung die Regeln zurück, die nicht verloren gehen dürfen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/context-window"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-12-04T12:00:00+01:00",
+    "status": "planned",
+    "title": "Wichtiges nach dem Kompaktieren wieder einspielen",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H19",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261204-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Über die Chrome-Integration kann Claude Code laufende Web-Anwendungen im Browser prüfen und debuggen",
+    "source_urls": [
+      "https://code.claude.com/docs/en/chrome",
+      "https://code.claude.com/docs/en/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-12-04T14:00:00+01:00",
+    "status": "planned",
+    "title": "Claude Code mit Chrome",
+    "notes": "Reihe: Grundlagen / How it works; Thema G20; Voraussetzungen (Erweiterung, Pläne) vor dem Skript aus cc/chrome übernehmen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261204-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Default, Proactive, Concise, Explanatory und Learning: wie jeder Stil Ton und Antworten von Claude Code ändert",
+    "source_urls": [
+      "https://code.claude.com/docs/en/output-styles",
+      "https://code.claude.com/docs/en/commands"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-12-04T18:00:00+01:00",
+    "status": "planned",
+    "title": "Die eingebauten Output Styles",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W11",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261204-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A SessionStart hook with the compact matcher feeds back the rules that must survive every summary",
+    "source_urls": [
+      "https://code.claude.com/docs/en/hooks-guide",
+      "https://code.claude.com/docs/en/context-window"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-12-04T15:00:00+01:00",
+    "status": "planned",
+    "title": "Re-inject key context after compaction",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H19",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261204-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Through the Chrome integration Claude Code can inspect and debug live web apps in the browser",
+    "source_urls": [
+      "https://code.claude.com/docs/en/chrome",
+      "https://code.claude.com/docs/en/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-12-04T20:00:00+01:00",
+    "status": "planned",
+    "title": "Claude Code with Chrome",
+    "notes": "Reihe: Grundlagen / How it works; Thema G20; Voraussetzungen (Erweiterung, Pläne) vor dem Skript aus cc/chrome übernehmen",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261204-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Default, Proactive, Concise, Explanatory and Learning: how each style changes Claude Code's tone and answers",
+    "source_urls": [
+      "https://code.claude.com/docs/en/output-styles",
+      "https://code.claude.com/docs/en/commands"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-12-04T23:00:00+01:00",
+    "status": "planned",
+    "title": "The built-in output styles",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W11",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261205-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Claude Code läuft im Terminal, in der Desktop-App, in VS Code und JetBrains; die Doku vergleicht, was wo geht",
+    "source_urls": [
+      "https://code.claude.com/docs/en/platforms",
+      "https://code.claude.com/docs/en/desktop"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-12-05T12:00:00+01:00",
+    "status": "planned",
+    "title": "Terminal, Desktop oder VS Code?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V7",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261205-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "In Claude Code läuft Prompt-Caching automatisch; /usage zeigt, wie viel aus dem Cache kam",
+    "source_urls": [
+      "https://code.claude.com/docs/en/prompt-caching",
+      "https://code.claude.com/docs/en/costs"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-12-05T14:00:00+01:00",
+    "status": "planned",
+    "title": "Mythos: Prompt-Caching muss man selbst einschalten",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M16; Formulierung /usage vor Skript in cc/costs prüfen (Session-Block)",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261205-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Ein paar gut gewählte Beispiele (Few-Shot) im Prompt zeigen Claude Format und Ton genauer als jede Beschreibung",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-12-05T18:00:00+01:00",
+    "status": "planned",
+    "title": "Bessere Antworten mit Beispielen im Prompt",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H20",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261205-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Claude Code runs in the terminal, the desktop app, VS Code and JetBrains; the docs compare what works where",
+    "source_urls": [
+      "https://code.claude.com/docs/en/platforms",
+      "https://code.claude.com/docs/en/desktop"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-12-05T15:00:00+01:00",
+    "status": "planned",
+    "title": "Terminal, desktop or VS Code?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V7",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261205-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "In Claude Code prompt caching runs automatically; /usage shows how much was served from cache",
+    "source_urls": [
+      "https://code.claude.com/docs/en/prompt-caching",
+      "https://code.claude.com/docs/en/costs"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "myth",
+    "risk_level": "low",
+    "publish_at": "2026-12-05T20:00:00+01:00",
+    "status": "planned",
+    "title": "Myth: you have to switch on prompt caching",
+    "notes": "Reihe: Mythos-Check / Myth check; Thema M16; Formulierung /usage vor Skript in cc/costs prüfen (Session-Block)",
+    "tags": [
+      "reihe:Mythos-Check"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261205-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "A few well-chosen examples (few-shot) show Claude format and tone more precisely than any description",
+    "source_urls": [
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "howto",
+    "risk_level": "low",
+    "publish_at": "2026-12-05T23:00:00+01:00",
+    "status": "planned",
+    "title": "Better answers with examples in your prompt",
+    "notes": "Reihe: In drei Schritten / In three steps; Thema H20",
+    "tags": [
+      "reihe:In drei Schritten"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261206-1-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Mit Remote Control steuerst du eine Claude-Code-Sitzung, die auf deinem Rechner läuft, vom Handy aus weiter",
+    "source_urls": [
+      "https://code.claude.com/docs/en/remote-control",
+      "https://code.claude.com/docs/en/platforms"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-12-06T12:00:00+01:00",
+    "status": "planned",
+    "title": "Remote Control – die lokale Sitzung am Handy weiterführen",
+    "notes": "Reihe: Grundlagen / How it works; Thema G19; Trusted Devices ist laut Doku Beta; nicht als Kernaussage verwenden",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261206-2-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "MAX_THINKING_TOKENS, CLAUDE_CODE_DISABLE_AUTO_MEMORY und DISABLE_TELEMETRY – was sie laut Doku steuern",
+    "source_urls": [
+      "https://code.claude.com/docs/en/env-vars",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-12-06T14:00:00+01:00",
+    "status": "planned",
+    "title": "3 Umgebungsvariablen für Claude Code",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W8",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261206-3-de",
+    "brand_id": "claude_workflows",
+    "language": "de",
+    "angle": "Lokal arbeitet Claude Code auf deinem Rechner, im Web in einer Cloud-VM, die auch weiterläuft, wenn dein Rechner aus ist",
+    "source_urls": [
+      "https://code.claude.com/docs/en/claude-code-on-the-web",
+      "https://code.claude.com/docs/en/platforms"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-12-06T18:00:00+01:00",
+    "status": "planned",
+    "title": "Lokal oder in der Cloud?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V8; 'weiterläuft' vor Skript in cc/claude-code-on-the-web bestätigen",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261206-1-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Remote Control lets you continue a Claude Code session that runs on your computer from your phone",
+    "source_urls": [
+      "https://code.claude.com/docs/en/remote-control",
+      "https://code.claude.com/docs/en/platforms"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "explainer",
+    "risk_level": "low",
+    "publish_at": "2026-12-06T15:00:00+01:00",
+    "status": "planned",
+    "title": "Remote Control – continue a local session on your phone",
+    "notes": "Reihe: Grundlagen / How it works; Thema G19; Trusted Devices ist laut Doku Beta; nicht als Kernaussage verwenden",
+    "tags": [
+      "reihe:Grundlagen"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261206-2-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "MAX_THINKING_TOKENS, CLAUDE_CODE_DISABLE_AUTO_MEMORY and DISABLE_TELEMETRY – what they control per the docs",
+    "source_urls": [
+      "https://code.claude.com/docs/en/env-vars",
+      "https://code.claude.com/docs/en/memory"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "listicle",
+    "risk_level": "low",
+    "publish_at": "2026-12-06T20:00:00+01:00",
+    "status": "planned",
+    "title": "3 environment variables for Claude Code",
+    "notes": "Reihe: Werkzeugkiste / Toolbox; Thema W8",
+    "tags": [
+      "reihe:Werkzeugkiste"
+    ]
+  },
+  {
+    "topic_id": "claude_workflows-20261206-3-en",
+    "brand_id": "claude_workflows",
+    "language": "en",
+    "angle": "Locally Claude Code works on your machine, on the web in a cloud VM that keeps running when your computer is off",
+    "source_urls": [
+      "https://code.claude.com/docs/en/claude-code-on-the-web",
+      "https://code.claude.com/docs/en/platforms"
+    ],
+    "source_checked_at": "2026-11-01",
+    "format": "comparison",
+    "risk_level": "low",
+    "publish_at": "2026-12-06T23:00:00+01:00",
+    "status": "planned",
+    "title": "Local or in the cloud?",
+    "notes": "Reihe: Entweder-oder / This or that; Thema V8; 'weiterläuft' vor Skript in cc/claude-code-on-the-web bestätigen",
+    "tags": [
+      "reihe:Entweder-oder"
+    ]
+  }
+]

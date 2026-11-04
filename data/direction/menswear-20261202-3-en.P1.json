@@ -1,0 +1,355 @@
+{
+ "video_id": "menswear-20261202-3-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Twill or plain weave: how to tell the weave",
+ "notes": "Pilot P1 (EN) of the Suitwerk format Kreidestrich (Format-Bibel, OneDrive Business, 02 Marke, Suitwerk), series Under the linen tester, calendar topic menswear-20261202-3. Same pictures and source as the German pilot; new Gemini voice (Algenib). Weave computed thread by thread from the binding; colours in the magnified weave only to tell warp and weft apart. No brand, no retailer, no buying advice.",
+ "layout": {
+  "format": "kreidestrich",
+  "series": "stoff",
+  "series_topic": "Weave",
+  "explainer": false,
+  "zone_top": 290,
+  "zone_h": 950,
+  "caption_bottom_px": 560,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "description": "Two dark suit fabrics, same colour, and yet woven differently: plain weave or twill. Drawn thread by thread: how warp and weft cross, why a twill has a diagonal line and how to tell the weave on your own jacket. Illustration, source: Woolmark, Introduction to Wovenwear.",
+  "companion_text": "Suitwerk shows menswear in detail, drawn rather than claimed. No advertising, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "suitfabric",
+   "tailoring",
+   "twill",
+   "fabricknowledge"
+  ],
+  "zone_lower_right_px": 940
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Background from the LAYER of the Kreidestrich format (brands/menswear/kreidestrich/scenes.py), no clips, no AI images."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "title": "The Woolmark Company: Introduction to Wovenwear (Training Manual), S. 9 Weave Types und S. 10 Product Selection",
+   "checked_at": "2026-11-02",
+   "label": "Woolmark, Introduction to Wovenwear, p. 9"
+  }
+ ],
+ "unverified": [
+  "Term 'weave draft' and the convention 'dark square = warp up': no primary source retrieved; the video says 'squared paper' and 'here' as its own legend.",
+  "Shift by exactly one thread per weft in the basic twill: not literal in S1, follows from over 2 under 2 with a twill line; computed in the picture.",
+  "Drape, creasing, density, durability: not used.",
+  "Threads per centimetre: not stated; the grid is a magnification without scale."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "How is your suit fabric actually woven?",
+   "on_screen": "How is your suit woven?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "question"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Navy is navy? Not under a linen tester.",
+   "on_screen": "Same fabric?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "two basic weaves in S1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "One of these fabrics looks the same on both sides.",
+   "on_screen": "Front = back?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "S1: no distinction between face and back"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "If you only look at the colour, you miss how the cloth is built.",
+   "on_screen": "Only the colour?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "no real risk"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Two suit fabrics, same colour. And yet they are woven differently.",
+   "on_screen": "Same fabric?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Two swatches on the cutting table, chalk line, not-equal sign, the linen tester moves onto the first swatch",
+   "why": {
+    "truth": "two weaves from S1",
+    "visual": "core of the format"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Two fabrics that look alike, the linen tester shows the difference."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "kw_hook",
+   "duration_hint": 7,
+   "spoken": "Two suit fabrics, same colour, same wool. And yet they are woven differently. Only a linen tester shows you the difference.",
+   "data": {
+    "question": "Same fabric?",
+    "question_at": 0.2,
+    "chalk_at": "w:same",
+    "swatches": [
+     {
+      "kind": "plain",
+      "label": "Fabric A"
+     },
+     {
+      "kind": "twill",
+      "label": "Fabric B"
+     }
+    ],
+    "labels_at": "w:wool",
+    "neq_at": "w:differently",
+    "lens_at": "w:linen",
+    "lens2_at": "w:difference+0.4",
+    "source": "Woolmark: Introduction to Wovenwear, p. 9 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "kw_weave",
+   "duration_hint": 13,
+   "spoken": "Fabric A is a plain weave. The lengthwise threads are the warp, the crosswise thread is the weft. It goes over one warp thread, then under the next, always alternating. The next weft does the exact opposite. That is the simplest weave.",
+   "data": {
+    "kind": "plain",
+    "title": "Plain weave",
+    "title_at": "w:plain",
+    "warp_at": "w:warp",
+    "weft_at": "w:weft",
+    "rows_at": "w:goes",
+    "first_row": 2.4,
+    "row_step": 0.5,
+    "formula": {
+     "text": "1 over · 1 under",
+     "at": "w:over"
+    },
+    "colors_note": "Colours only to tell them apart",
+    "note": {
+     "text": "the simplest weave",
+     "at": "w:simplest"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, p. 9 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "kw_weave",
+   "duration_hint": 12,
+   "spoken": "Fabric B is a twill. Here the weft goes over two warp threads and under two. Each new weft moves along by one thread. That creates a diagonal line, the twill line.",
+   "data": {
+    "kind": "twill",
+    "title": "Twill",
+    "title_at": "w:twill",
+    "warp_at": "w:warp",
+    "weft_at": "w:weft",
+    "rows_at": "w:goes",
+    "first_row": 1.8,
+    "row_step": 0.45,
+    "formula": {
+     "text": "2 over · 2 under",
+     "at": "w:over"
+    },
+    "shift_at": "w:moves",
+    "diag_at": "w:diagonal",
+    "colors_note": "Colours only to tell them apart",
+    "note": {
+     "text": "the twill line",
+     "at": "w:twill#2"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, p. 9 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "kw_draft",
+   "duration_hint": 10,
+   "spoken": "On squared paper, thread by thread: Each dark square here means: warp on top. The plain weave becomes a chessboard, the twill a staircase.",
+   "data": {
+    "legend": {
+     "text": "dark = warp on top",
+     "at": "w:square"
+    },
+    "start_at": "w:paper+0.5",
+    "row_step": 0.38,
+    "left": {
+     "kind": "plain",
+     "title": "Plain weave",
+     "word": "Chessboard",
+     "word_at": "w:chessboard"
+    },
+    "right": {
+     "kind": "twill",
+     "title": "Twill",
+     "word": "Staircase",
+     "word_at": "w:staircase"
+    },
+    "source": "Drawn after Woolmark: Introduction to Wovenwear, p. 9"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "kw_flip",
+   "duration_hint": 11,
+   "spoken": "Now turn both fabrics over. The plain weave looks the same on both sides. The twill has a face: there the line usually runs from top right to bottom left.",
+   "data": {
+    "flip_at": "w:turn",
+    "left": {
+     "kind": "plain",
+     "title": "Plain weave",
+     "front": "Front",
+     "back": "Back",
+     "verdict": "front = back",
+     "at": "w:same"
+    },
+    "right": {
+     "kind": "twill",
+     "title": "Twill",
+     "front": "Front",
+     "back": "Back",
+     "verdict": "front ≠ back",
+     "return_at": "w:face",
+     "at": "w:there"
+    },
+    "arrow_at": "w:right",
+    "source": "Woolmark: Introduction to Wovenwear, p. 9 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "kw_close",
+   "duration_hint": 14,
+   "spoken": "Both are genuine suit fabrics. For worsted suits, Woolmark lists plain weaves, twills and gabardines. Hold your sleeve at an angle to the light: if you see fine diagonals, it is a twill. Follow Suitwerk for menswear with an eye for detail.",
+   "data": {
+    "kinds": [
+     "plain",
+     "twill"
+    ],
+    "chip": {
+     "text": "Worsted suits: plain, twill, gabardine",
+     "at": "w:Woolmark"
+    },
+    "lines": [
+     {
+      "text": "Plain: grid",
+      "at": "w:genuine"
+     },
+     {
+      "text": "Twill: diagonal",
+      "at": "w:genuine+0.6"
+     }
+    ],
+    "tilt_at": "w:Hold",
+    "rule": {
+     "text": "Fine diagonals: twill",
+     "at": "w:see"
+    },
+    "sign_at": "w:Follow",
+    "claim": "Menswear with an eye for detail.",
+    "source": "Woolmark: Introduction to Wovenwear, p. 10 · accessed 02.11.2026",
+    "sign_note": "Test: sleeve to the light"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  }
+ ]
+}

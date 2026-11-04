@@ -1,0 +1,1505 @@
+{
+ "video_id": "yt03-toolkits-walkthrough-de",
+ "slug": "03-toolkits-walkthrough",
+ "lang": "de",
+ "title": "Belegt. Datiert. Vorzeigbar. Ein Rundgang durch beide Toolkits.",
+ "short_title": "Rundgang Toolkits",
+ "version": "Fassung 3 (Langvideo, Planung), Entwurf 2026-11-02. Freigegebener Wortlaut aus SKRIPTE/03-toolkits-walkthrough.de.md Fassung 2 (Stefan, 29.10. und 01.11.2026) unverändert; neu und zur Freigabe: Kaltstart (c0s0), Überblick (c0s2), Kapitel 4 (c4) und der letzte Satz (Verweis auf Video 01 statt auf Video 04), im Feld new=true markiert. Die Seiten von scutoria.com (Produktseiten, Generator, Konto, Nachweisordner, Handbücher, Vorher ansehen) sind als paper-Szenen nachgebaut und werden durch Bildschirmbilder der echten Seiten ersetzt, sobald scutoria.com live ist.",
+ "sources": [
+  {
+   "id": "Q1",
+   "label": "scutoria.com, Produktseite des KI-Richtlinien-Toolkits, Stand 23. Oktober 2026",
+   "short": "Scutoria, Produktseite KI-Richtlinien-Toolkit, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q2",
+   "label": "Scutoria, Handbuch des KI-Richtlinien-Toolkits, Abschnitt 0, Fassung vom 23. Oktober 2026; Scutoria, Handbuch des Sicherheitsnachweis-Toolkits, Abschnitt 0, Fassung vom 23. Oktober 2026",
+   "short": "Scutoria, Handbücher beider Toolkits, Abschn. 0, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q3",
+   "label": "scutoria.com, Produktseite des KI-Richtlinien-Toolkits, Stand 23. Oktober 2026; Europäische Kommission, AI literacy, questions and answers, Stand 20. Oktober 2026 · digital-strategy.ec.europa.eu · Abruf 2026-10-23",
+   "short": "Produktseite KI-Richtlinien · EU-Kommission, AI literacy Q&A · Abruf 23.10.2026"
+  },
+  {
+   "id": "Q4",
+   "label": "scutoria.com, Produktseite Sicherheitsnachweis, Stand 23.10.2026; RL (EU) 2022/2555, Art. 2 Abs. 1 und 2, Art. 3, Art. 21 Abs. 1 bis 3, Art. 23 Abs. 4, Art. 34 Abs. 4 und 5, Anh. I und II · EUR-Lex · Abruf 2026-10-19; Empf. 2003/361/EG, Anhang, Art. 2, 3 und 6 · Abruf 2026-10-19",
+   "short": "Produktseite Sicherheitsnachweis · NIS2 · Empf. 2003/361/EG · Abruf 19.10.2026"
+  },
+  {
+   "id": "Q5",
+   "label": "scutoria.com, Produktseite des Sicherheitsnachweis-Toolkits, Stand 23. Oktober 2026; Scutoria, Handbuch des Sicherheitsnachweis-Toolkits, Abschnitt 0, Fassung vom 23. Oktober 2026",
+   "short": "Scutoria, Produktseite und Handbuch Sicherheitsnachweis, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q6",
+   "label": "scutoria.com, Produktseite des KI-Richtlinien-Toolkits, Stand 23. Oktober 2026; scutoria.com, Produktseite des Sicherheitsnachweis-Toolkits, Stand 23. Oktober 2026",
+   "short": "Scutoria, Produktseiten beider Toolkits, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q7",
+   "label": "Verordnung (EU) 2024/1689, Art. 4 und Art. 113 Buchst. a, konsolidierte Fassung vom 27. Juli 2026; Verordnung (EU) 2026/1744, Art. 1 Nr. 5 · EUR-Lex · Abruf 2026-10-23",
+   "short": "VO (EU) 2024/1689 Art. 4, 113 · VO (EU) 2026/1744 · Abruf 23.10.2026"
+  },
+  {
+   "id": "Q8",
+   "label": "Verordnung (EU) 2024/1689, Art. 4; Verordnung (EU) 2016/679, Art. 24 Abs. 1; Richtlinie (EU) 2016/943, Art. 2 Abs. 1 Buchst. c · EUR-Lex · Abruf 2026-10-18 und 2026-10-19",
+   "short": "KI-VO Art. 4 · DSGVO Art. 24 · RL 2016/943 Art. 2 · Abruf 18./19.10.2026"
+  },
+  {
+   "id": "Q9",
+   "label": "NIST SP 800-63B-4, Juli 2025, Abschnitte 3.1.1.1 und 3.1.1.2 · Abruf 2026-10-19; BSI-Pressemitteilungen vom 31. Januar 2025 und 30. Januar 2026 · Abruf 2026-10-19; Durchführungsverordnung (EU) 2024/2690, Anhang 11.6.2 · Abruf 2026-10-19",
+   "short": "NIST SP 800-63B-4 · BSI · DVO (EU) 2024/2690 Anh. 11.6.2 · Abruf 19.10.2026"
+  },
+  {
+   "id": "Q10",
+   "label": "Scutoria, Handbuch des KI-Richtlinien-Toolkits, Abschnitt 8, Punkt 8.9, Fassung vom 23. Oktober 2026",
+   "short": "Scutoria, Handbuch KI-Richtlinien, Punkt 8.9, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q11",
+   "label": "Scutoria, Handbuch des KI-Richtlinien-Toolkits, Abschnitt 0, Fassung vom 23. Oktober 2026; scutoria.com, Produktseite des KI-Richtlinien-Toolkits, Stand 23. Oktober 2026",
+   "short": "Scutoria, Handbuch und Produktseite KI-Richtlinien, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q12",
+   "label": "Scutoria, Handbuch des Sicherheitsnachweis-Toolkits, Abschnitt 0, Fassung vom 23. Oktober 2026",
+   "short": "Scutoria, Handbuch Sicherheitsnachweis, Abschn. 0, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q13",
+   "label": "scutoria.com, Produktseite des Sicherheitsnachweis-Toolkits, Stand 23. Oktober 2026",
+   "short": "Scutoria, Produktseite Sicherheitsnachweis, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q14",
+   "label": "Scutoria, Handbuch des KI-Richtlinien-Toolkits, Abschnitt 0, Fassung vom 23. Oktober 2026",
+   "short": "Scutoria, Handbuch KI-Richtlinien, Abschn. 0, 23.10.2026",
+   "checked": true
+  }
+ ],
+ "chapters": [
+  {
+   "id": "c0",
+   "num": "",
+   "title": "Wer nach einem datierten Dokument fragt",
+   "kicker": "SCUTORIA · RUNDGANG",
+   "card": false,
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_envelopes_desk.start.png",
+     "new": true,
+     "data": {
+      "kicker": "Beispielfall · nachgestellt",
+      "time": "MO 09:00",
+      "place": "Büro, Muster Elektrotechnik e.U. (erfunden)",
+      "obj": {
+       "label": "Posteingang · zwei Anfragen",
+       "from": "einkauf@kunde.example",
+       "subject": "Bitte Antwort mit Datum und Unterschrift",
+       "lines": [
+        "Kunde: Fragebogen, unterschrieben, datiert",
+        "Versicherer: Was ist vorhanden?",
+        "Im Büro: ein Blatt in der Lade, ohne Datum"
+       ]
+      },
+      "obj_at": "@Anfragen",
+      "highlight": {
+       "line": 2,
+       "label": "ohne Datum",
+       "at": "@Blatt"
+      }
+     },
+     "say": [
+      {
+       "text": "Montag, neun Uhr. Im Postfach liegen zwei Anfragen. Ein Kunde will seinen Fragebogen mit Datum und Unterschrift zurück, ein Versicherer fragt, was vorhanden ist. In der Lade liegt ein Blatt mit Regeln, ohne Datum und ohne Unterschrift.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Die Frage dieses Videos",
+      "text": "Fragt jemand nach einem *datierten Dokument*?",
+      "sub": "Was Sie bekommen, wie der Generator läuft, was es nicht ist, was es kostet.",
+      "sub_at": "@Rundgang"
+     },
+     "say": [
+      {
+       "text": "Fragt ein Kunde, ein Versicherer oder Ihre Belegschaft nach einem datierten Dokument? Ein Rundgang durch beide Toolkits: was Sie bekommen, wie der Generator läuft, was es nicht ist, was es kostet."
+      }
+     ]
+    },
+    {
+     "type": "chapters",
+     "new": true,
+     "data": {
+      "headline": "In diesem Video",
+      "items": [
+       {
+        "num": "1",
+        "title": "Drei Wege, auf denen die Frage kommt",
+        "at": "@Wege"
+       },
+       {
+        "num": "2",
+        "title": "Was Sie bekommen, wie der Generator läuft",
+        "at": "@bekommen"
+       },
+       {
+        "num": "3",
+        "title": "Die vier Marker und die Handbücher",
+        "at": "@Marker"
+       },
+       {
+        "num": "4",
+        "title": "Was tun Sie? Zwei Fälle",
+        "at": "@Fälle"
+       },
+       {
+        "num": "5",
+        "title": "Der Beispielbetrieb in beiden Toolkits",
+        "at": "@Beispielbetrieb"
+       },
+       {
+        "num": "6",
+        "title": "Was das Toolkit nicht ist",
+        "at": "@Toolkit"
+       },
+       {
+        "num": "7",
+        "title": "Handbücher, Muster, Preis",
+        "at": "@Preis"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Wir gehen so vor: die drei Wege, auf denen die Frage kommt, was Sie bekommen und wie der Generator läuft, die vier Marker und die Handbücher, zwei Fälle, in denen Sie entscheiden, der Beispielbetrieb, was das Toolkit nicht ist, und am Ende Handbücher, Muster und Preis."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "num": "1",
+   "title": "Drei Wege, auf denen die Frage kommt",
+   "kicker": "1 · Die Lage",
+   "scenes": [
+    {
+     "type": "steps",
+     "bg": "yt/lib_envelopes_desk.start.png",
+     "data": {
+      "headline": "Die Frage kommt auf *drei Wegen*",
+      "items": [
+       {
+        "title": "Ein Kunde schickt einen Fragebogen",
+        "sub": "und will eine unterschriebene Antwort mit Datum",
+        "at": "@größerer"
+       },
+       {
+        "title": "Das Formular eines Versicherers",
+        "sub": "fragt, was vorhanden ist",
+        "at": "@Formular"
+       },
+       {
+        "title": "Eine neue Kollegin",
+        "sub": "fragt, was in den Textassistenten darf",
+        "at": "@Kollegin"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Die Frage kommt auf drei Wegen. Ein größerer Kunde schickt einen Sicherheitsfragebogen und will eine unterschriebene Antwort mit Datum. Das Formular eines Versicherers fragt, was vorhanden ist. Eine neue Kollegin fragt, was in den Textassistenten hinein darf und was nicht."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Jedes Mal dieselbe Frage",
+      "text": "Was gilt hier, seit wann, und *wer hat es entschieden*?",
+      "sub": "Ein datiertes Dokument: Datum, Unterschrift, Dokumentnummer, offene Punkte aufgeführt.",
+      "sub_at": "@datiertes"
+     },
+     "say": [
+      {
+       "text": "Jedes Mal ist es dieselbe Frage: Was gilt hier, seit wann, und wer hat es entschieden? Ein Blatt in der Lade beantwortet das nicht. Ein datiertes Dokument schon: ein Datum, eine Unterschrift, eine Dokumentnummer, und die offenen Punkte neben den geregelten aufgeführt."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Der *Beispielbetrieb*",
+      "note": "Erfunden. Keine echte Person kommt darin vor.",
+      "note_at": "@echte",
+      "doc": {
+       "label": "Muster Elektrotechnik e.U. · erfunden",
+       "title": "Österreich, 10 bis 49 Beschäftigte",
+       "lines": [
+        {
+         "text": "Elektrotechnikbetrieb",
+         "at": "@Elektrotechnikbetrieb"
+        },
+        {
+         "text": "3 im Büro nutzen einen Textassistenten",
+         "at": "@drei"
+        },
+        {
+         "text": "2 Monteure: privat auf dem Telefon",
+         "at": "@Monteure",
+         "mark": "open"
+        },
+        {
+         "text": "Ein Kunde hat einen Fragebogen geschickt",
+         "at": "@Fragebogen",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Für diesen Rundgang nehmen wir einen Beispielbetrieb. Er ist erfunden: ein Elektrotechnikbetrieb mit zehn bis neunundvierzig Beschäftigten in Österreich. Keine echte Person kommt darin vor.",
+       "source": "Q1"
+      },
+      {
+       "text": "Im Büro benutzen drei Personen einen Textassistenten für Angebote, Zusammenfassungen und Übersetzungen. Zwei Monteure haben ihn sich privat auf dem Telefon eingerichtet. Und ein Kunde hat einen Fragebogen geschickt. Beide Toolkits gehen von diesem Betrieb aus, und Sie ersetzen, was bei Ihnen anders ist.",
+       "source": "Q2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "num": "2",
+   "title": "Was Sie bekommen und wie der Generator läuft",
+   "kicker": "2 · Was Sie bekommen",
+   "scenes": [
+    {
+     "type": "compare",
+     "bg": "yt/lib_laptop_side.start.png",
+     "data": {
+      "headline": "Zwei Toolkits, *ein Ablauf*",
+      "left": {
+       "title": "Toolkit 01 · KI-Richtlinien",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "die Regeln für KI-Tools im Betrieb",
+         "at": "@Regeln"
+        }
+       ]
+      },
+      "right": {
+       "title": "Toolkit 02 · Sicherheitsnachweis",
+       "tone": "green",
+       "at": "@Sicherheitsnachweis",
+       "rows": [
+        {
+         "text": "die Antwort auf den Sicherheitsfragebogen",
+         "at": "@Antwort"
+        },
+        {
+         "text": "Fragen, sieben Dokumente, ein Handbuch",
+         "at": "@Generator"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Scutoria verkauft zwei Toolkits. Toolkit eins ist das KI-Richtlinien-Toolkit, die blaue Linie: die Regeln für KI-Tools in Ihrem Betrieb. Toolkit zwei ist das Sicherheitsnachweis-Toolkit, die türkise Linie: die Antwort auf den Sicherheitsfragebogen Ihres Kunden oder Versicherers. Beide laufen gleich. Sie beantworten Fragen, der Generator schreibt sieben datierte Dokumente und ein Handbuch, und Sie unterschreiben, hängen aus, senden und bewahren auf."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Toolkit 01: *was Sie bekommen*",
+      "note": "Sieben Dokumente und ein Handbuch.",
+      "doc": {
+       "label": "scutoria.com · KI-Richtlinien-Toolkit",
+       "title": "Was Sie bekommen",
+       "lines": [
+        {
+         "text": "D1 KI-Nutzungsrichtlinie: neun Paragrafen, unterschrieben",
+         "at": "@KI-Nutzungsrichtlinie"
+        },
+        {
+         "text": "D2 Die eine Seite zum Aushängen",
+         "at": "@Aushängen"
+        },
+        {
+         "text": "D3 Tool-Register mit Freigabeformular",
+         "at": "@Tool-Register"
+        },
+        {
+         "text": "D4 Schulungsnachweis · D5 Kennzeichnungs-Checkliste",
+         "at": "@Schulungsnachweis"
+        },
+        {
+         "text": "D6 Plan der Inkraftsetzung, fünfzehn Schritte",
+         "at": "@Inkraftsetzung"
+        },
+        {
+         "text": "D7 Nachweisseite: geregelt, geplant, offen",
+         "at": "@Nachweisseite",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Was Sie in Toolkit eins bekommen. Eine KI-Nutzungsrichtlinie: neun Paragrafen aus Ihren Antworten, von der Leitung unterschrieben. Die eine Seite zum Aushängen: die Zweifelsregel, was nie in ein Tool hinein darf, was geprüft wird, wohin Vorfälle gemeldet werden; aus der Richtlinie übernommen, damit beide sich nicht widersprechen können. Ein Tool-Register mit Freigabeformular: eine Zeile je Tool, sieben Fragen je Tool, und „unklar“ ist ein Befund, kein Versäumnis. Ein Schulungsnachweis: Teilnehmerliste je Gruppe und Übersicht je Person, die interne Aufzeichnung, die die Europäische Kommission für Artikel vier der KI-Verordnung beschreibt. Eine Kennzeichnungs-Checkliste nach Artikel fünfzig. Ein Plan der Inkraftsetzung mit fünfzehn Schritten. Und eine Nachweisseite: eine Seite, datiert, mit Dokumentnummer, was geregelt ist, was geplant, was offen.",
+       "source": "Q3"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Toolkit 02: *was Sie bekommen*",
+      "doc": {
+       "label": "scutoria.com · Sicherheitsnachweis-Toolkit",
+       "title": "Was Sie bekommen",
+       "lines": [
+        {
+         "text": "D1 Selbstauskunft: neun Abschnitte, vier Antworten",
+         "at": "@Selbstauskunft"
+        },
+        {
+         "text": "D2 Maßnahmenplan: Priorität, Verantwortliche, Termin",
+         "at": "@Maßnahmenplan"
+        },
+        {
+         "text": "D3 Notfallkarte · D4 Nachweisliste",
+         "at": "@Notfallkarte"
+        },
+        {
+         "text": "D5 Antwortschreiben mit Abgleichstabelle",
+         "at": "@Antwortschreiben"
+        },
+        {
+         "text": "D6 Klausel-Prüfliste · D7 Nachweisseite",
+         "at": "@Klausel-Prüfliste"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Was Sie in Toolkit zwei bekommen. Eine Selbstauskunft Informationssicherheit: neun Abschnitte, vier ehrliche Antworten je Feld, von der Leitung unterschrieben; das Dokument, das Sie dem Fragebogen beilegen. Ein Maßnahmenplan: Jedes „teilweise“ und jedes „noch nicht“ wird eine Maßnahme mit Priorität, Verantwortlichen und Termin in einer von drei Wellen. Eine Notfallkarte: eine Seite für die Wand und die Lade. Eine Nachweisliste: je Frage der Beleg, den Kunde oder Versicherer annehmen. Ein Antwortschreiben, das die Lücken mit Terminen nennt, mit einer Tabelle, die achtzehn typische Fragen und die zehn Bereiche des Artikels einundzwanzig Absatz zwei der Richtlinie NIS zwei den Abschnitten Ihrer Selbstauskunft zuordnet. Eine Klausel-Prüfliste für die Sicherheitsklauseln, die Kunden in Verträge schreiben. Und wieder die Nachweisseite, eine datierte Seite.",
+       "source": "Q4"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_screen_blur.start.png",
+     "data": {
+      "headline": "Der *Generator*: Toolkit 01",
+      "note": "Der Beispielbetrieb ist vorbelegt; Sie ändern nur, was abweicht.",
+      "note_at": "@vorbelegt",
+      "doc": {
+       "label": "scutoria.com · Generator Toolkit 01",
+       "title": "34 Fragen, 29 Pflichtfragen, 9 Blöcke",
+       "lines": [
+        {
+         "text": "Ihr Betrieb · die Tools · zulässige Verwendungen",
+         "at": "@Betrieb"
+        },
+        {
+         "text": "Was nie hinein darf · unvermeidbarer Personenbezug",
+         "at": "@nie"
+        },
+        {
+         "text": "Prüfung · Kennzeichnung · Einweisung und Inkraftsetzung",
+         "at": "@Prüfung"
+        },
+        {
+         "text": "Jede Frage nennt ihren Handbuchabschnitt",
+         "at": "@Handbuchabschnitt",
+         "mark": "hl"
+        },
+        {
+         "text": "Unterbrechen und zurückkommen, jederzeit",
+         "at": "@unterbrechen"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Jetzt der Generator. Toolkit eins stellt vierunddreißig Fragen, davon neunundzwanzig Pflichtfragen, in neun Blöcken: Ihr Betrieb, die Tools, zulässige Verwendungen, was nie hinein darf, unvermeidbarer Personenbezug, Prüfung vor der Verwendung, Kennzeichnung, Einweisung und Inkraftsetzung. Der Beispielbetrieb ist vorbelegt, Sie ändern nur, was abweicht. Jede Frage nennt den Handbuchabschnitt, der sie erklärt. Sie können jederzeit unterbrechen und zurückkommen.",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Toolkit 02: *vier Antworten*",
+      "note": "„Noch nicht, bis Ende des Quartals“ ist vollständig.",
+      "note_at": "@vollständige",
+      "doc": {
+       "label": "scutoria.com · Generator Toolkit 02",
+       "title": "47 Fragen, 24 davon Statusfragen",
+       "lines": [
+        {
+         "text": "Vorhanden",
+         "at": "@vorhanden"
+        },
+        {
+         "text": "Teilweise",
+         "at": "@teilweise"
+        },
+        {
+         "text": "Noch nicht, mit Termin",
+         "at": "@noch",
+         "mark": "hl"
+        },
+        {
+         "text": "Nicht anwendbar, mit Grund",
+         "at": "@anwendbar"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Toolkit zwei stellt siebenundvierzig Fragen, davon vierzig Pflichtfragen. Vierundzwanzig davon sind Statusfragen mit vier Antworten: vorhanden, teilweise, noch nicht mit Termin, nicht anwendbar mit Grund. „Noch nicht, bis Ende des Quartals“ ist eine vollständige Antwort. Ein Fragebogen, der sie bekommt, erfährt mehr als aus einem „Ja“, das bei der ersten Nachfrage zerfällt.",
+       "source": "Q5"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Vorschau und Download",
+      "text": "Ändern Sie eine Antwort, *die Dokumente folgen*.",
+      "sub": "PDF zum Ablegen und Drucken, DOCX und XLSX zum Bearbeiten, alles als ein ZIP.",
+      "sub_at": "@PDF"
+     },
+     "say": [
+      {
+       "text": "Sind die Antworten drin, sehen Sie im Browser eine Vorschau jedes Dokuments. Dann laden Sie herunter: PDF zum Ablegen und Drucken, DOCX und XLSX zum Bearbeiten, alles als ein ZIP. Ändern Sie eine Antwort, die Dokumente folgen.",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "bg": "yt/lib_key_board.start.png",
+     "data": {
+      "headline": "Das *Konto*",
+      "left": {
+       "title": "Gespeichert",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "Anmeldung per Link, ohne Passwort",
+         "at": "@Link"
+        },
+        {
+         "text": "Ihre E-Mail-Adresse",
+         "at": "@E-Mail-Adresse"
+        },
+        {
+         "text": "Ihre Antworten und die Läufe",
+         "at": "@Antworten"
+        }
+       ]
+      },
+      "right": {
+       "title": "Nie gefragt",
+       "tone": "red",
+       "at": "@nie",
+       "rows": [
+        {
+         "text": "Namen von Beschäftigten",
+         "at": "@Namen"
+        },
+        {
+         "text": "Passwörter oder Zugangsdaten",
+         "at": "@Passwörtern"
+        },
+        {
+         "text": "Keine Tracking-Cookies",
+         "at": "@Tracking-Cookies"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das Konto. Sie melden sich mit einem Link an, der per E-Mail kommt; ein Passwort gibt es nicht. Scutoria speichert Ihre E-Mail-Adresse, Ihre Antworten und die Läufe des Generators. Der Generator fragt nie nach Namen von Beschäftigten, nach Passwörtern oder Zugangsdaten. Keine Tracking-Cookies.",
+       "source": "Q6"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/shot02_evidence_folder.start.png",
+     "data": {
+      "headline": "Der *Nachweisordner*",
+      "note": "So wissen Sie, was neu zu machen ist.",
+      "note_at": "@wissen",
+      "doc": {
+       "label": "Konto · Muster Elektrotechnik e.U.",
+       "title": "Eingefrorene Fassungen",
+       "lines": [
+        {
+         "text": "Eingefroren: die Fassung zum Vorzeigen",
+         "at": "@frieren"
+        },
+        {
+         "text": "Recht oder Vorlage ändert sich: Aktualisierung",
+         "at": "@Ändert"
+        },
+        {
+         "text": "Der Ordner zeigt: älter als die Aktualisierung",
+         "at": "@älter",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Im Konto liegt der Nachweisordner. Ist ein Dokumentensatz fertig, frieren Sie dort eine Fassung ein. Das ist die Fassung, die Sie einem Kunden, einem Versicherer oder einer Behörde zeigen. Ändert sich während Ihrer Lizenz das Recht oder eine Vorlage, aktualisieren wir Vorlagen und Handbuch, und der Ordner zeigt, welche eingefrorenen Fassungen älter sind als die Aktualisierung. So wissen Sie, was neu zu machen ist.",
+       "source": "Q1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "num": "3",
+   "title": "Die vier Marker und die Handbücher",
+   "kicker": "3 · Was gilt",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_law_books.start.png",
+     "data": {
+      "kicker": "Warum vorzeigbar",
+      "text": "Jede Regel hat eine Begründung, jede Begründung eine *Quelle*.",
+      "sub": "Die Form zählt, nie die Farbe allein.",
+      "sub_at": "@Form"
+     },
+     "say": [
+      {
+       "text": "Warum können Sie diese Dokumente vorzeigen? Weil jede Regel darin eine Begründung im Handbuch hat, und jede Begründung eine Quelle mit Abrufdatum. Was nicht geklärt ist, wird markiert, nicht versteckt. Dafür trägt jede Aussage, auf die es ankommt, einen von vier Markern. Die Form zählt, nie die Farbe allein."
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Ein gefülltes Quadrat: *Fakt*. Artikel 4 der KI-Verordnung, zur KI-Kompetenz, gilt seit 2. Februar 2025.",
+      "origin": "Beispiel nach: Verordnung (EU) 2024/1689, Art. 4 und Art. 113"
+     },
+     "say": [
+      {
+       "text": "Ein gefülltes Quadrat: Fakt. Am Original gelesen, mit Abrufdatum. Ein Beispiel: Artikel vier der KI-Verordnung, zur KI-Kompetenz, gilt seit 2. Februar 2025.",
+       "marker": "fakt",
+       "source": "Q7"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Eine Raute: *Auslegung*",
+      "left": {
+       "title": "Kommen am nächsten",
+       "tone": "violet",
+       "rows": [
+        {
+         "text": "KI-Verordnung Art. 4",
+         "at": "@Artikel"
+        },
+        {
+         "text": "DSGVO Art. 24 Abs. 1",
+         "at": "@vierundzwanzig"
+        },
+        {
+         "text": "Geschäftsgeheimnis-Richtlinie",
+         "at": "@Geschäftsgeheimnis-Richtlinie"
+        }
+       ]
+      },
+      "right": {
+       "title": "Unsere Schlussfolgerung",
+       "tone": "violet",
+       "at": "@Unsere",
+       "rows": [
+        {
+         "text": "Grund für eine schriftliche Richtlinie",
+         "at": "@Grund"
+        },
+        {
+         "text": "markiert als Auslegung, nicht als Fakt",
+         "at": "@markiert"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Eine Raute: Auslegung. Unsere Schlussfolgerung, über die sich streiten lässt. Ein Beispiel: Weder die KI-Verordnung noch die DSGVO verlangen ausdrücklich eine schriftliche KI-Richtlinie. Artikel vier der KI-Verordnung, Artikel vierundzwanzig Absatz eins der DSGVO und die Geschäftsgeheimnis-Richtlinie kommen am nächsten. Unsere Auslegung: Diese drei sind der Grund für eine schriftliche Richtlinie. Das Handbuch markiert das als Auslegung, nicht als Fakt.",
+       "marker": "auslegung",
+       "source": "Q8"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "bg": "yt/lib_key_board.start.png",
+     "data": {
+      "headline": "Ein halber Kreis: *Unsicher*",
+      "left": {
+       "title": "DVO zu NIS2",
+       "tone": "amber",
+       "rows": [
+        {
+         "text": "Passwortwechsel in festen Intervallen",
+         "at": "@Passwortwechsel"
+        }
+       ]
+      },
+      "right": {
+       "title": "NIST und BSI",
+       "tone": "amber",
+       "at": "@NIST",
+       "rows": [
+        {
+         "text": "gegen Wechsel ohne Verdacht",
+         "at": "@periodischen"
+        },
+        {
+         "text": "Handbuch zeigt beide Positionen",
+         "at": "@beide"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Ein halber Kreis: Unsicher. Quellen widersprechen sich oder die Rechtslage ist offen. Ein Beispiel aus Toolkit zwei: Die Durchführungsverordnung zu NIS zwei verlangt Passwortwechsel in festen Intervallen. NIST rät von periodischen Wechseln ohne Verdacht ab, und das deutsche BSI hat öffentlich gegen erzwungene Wechsel argumentiert. Das ist offen: Das Handbuch zeigt beide Positionen und sagt, was wann geprüft wurde. Ihr Betrieb entscheidet.",
+       "marker": "unsicher",
+       "source": "Q9"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Ein gestrichelter Kreis: Lücke",
+      "text": "Keine Quelle: *Ihr Betrieb* trägt seinen Rhythmus ein.",
+      "sub": "Wie oft einweisen, wie lange aufbewahren: Das Feld bleibt absichtlich offen.",
+      "sub_at": "@wie"
+     },
+     "say": [
+      {
+       "text": "Ein gestrichelter Kreis: Lücke. Keine Quelle beantwortet die Frage, Sie entscheiden, und das Feld bleibt absichtlich offen. Ein Beispiel: wie oft die Einweisung wiederholt wird und wie lange der Nachweis aufbewahrt wird. Dafür haben wir keine Quelle gefunden. Das Dokument lässt das Feld offen, und Ihr Betrieb trägt seinen eigenen Rhythmus ein.",
+       "marker": "luecke",
+       "source": "Q10"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_folders_closed.start.png",
+     "data": {
+      "headline": "Die *Handbücher*",
+      "note": "Vor dem Kauf lesbar, online und als PDF.",
+      "note_at": "@online",
+      "doc": {
+       "label": "scutoria.com · Handbücher",
+       "title": "Offene Punkte, aufgeführt",
+       "lines": [
+        {
+         "text": "Toolkit 01: 26 Seiten",
+         "at": "@sechsundzwanzig"
+        },
+        {
+         "text": "Toolkit 02: 40 Seiten",
+         "at": "@vierzig"
+        },
+        {
+         "text": "Toolkit 01: 17 Punkte, 8 offen (Abschnitt 8)",
+         "at": "@siebzehn",
+         "mark": "open"
+        },
+        {
+         "text": "Toolkit 02: 23 Punkte, 13 offen (Abschnitt 6)",
+         "at": "@dreiundzwanzig",
+         "mark": "open"
+        },
+        {
+         "text": "Jeder Punkt mit Stand und Datum der letzten Prüfung",
+         "at": "@Datum"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die Handbücher sind der Ort der Marker. Das Handbuch von Toolkit eins hat sechsundzwanzig Seiten auf Deutsch, das Handbuch von Toolkit zwei vierzig. Beide stehen online und als PDF, und Sie können sie vor dem Kauf lesen. Sie müssen sie nicht zuerst lesen: Jede Frage im Generator verweist auf den Abschnitt, der sie erklärt. Das Handbuch ist da, wenn jemand fragt, warum eine Regel sagt, was sie sagt.",
+       "source": "Q6"
+      },
+      {
+       "text": "Und jedes Handbuch endet mit seinen offenen Punkten. In Toolkit eins siebzehn Punkte zum Stand 23. Oktober 2026, davon acht offen, in Abschnitt acht. In Toolkit zwei dreiundzwanzig Punkte, davon dreizehn offen, in Abschnitt sechs. Jeder Punkt trägt seinen Stand und das Datum der letzten Prüfung. Aufgeführt, nicht versteckt.",
+       "source": "Q6"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Die *Quellen* hinter den Handbüchern",
+      "left": {
+       "title": "Toolkit 01",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "KI-Verordnung, konsolidiert 27.07.2026",
+         "at": "@konsolidierten"
+        },
+        {
+         "text": "Kommission: Art. 50, KI-Kompetenz",
+         "at": "@Leitlinien"
+        },
+        {
+         "text": "Datenschutzaufsicht, BSI, WKO",
+         "at": "@deutschen"
+        }
+       ]
+      },
+      "right": {
+       "title": "Toolkit 02",
+       "tone": "green",
+       "at": "@zwei",
+       "rows": [
+        {
+         "text": "NIS2 mit DVO, DORA, DSGVO, CRA",
+         "at": "@Richtlinie"
+        },
+        {
+         "text": "AT- und DE-Gesetz, sechs Versichererformulare",
+         "at": "@Formulare"
+        },
+        {
+         "text": "NIST, CISA · andere Länder: Lücke",
+         "at": "@Ländernotizen"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die Quellen hinter den Handbüchern. Für Toolkit eins: die KI-Verordnung in der konsolidierten Fassung vom 27. Juli 2026, die Leitlinien der Kommission zu Artikel fünfzig, die Antworten der Kommission zur KI-Kompetenz, die deutschen Datenschutzaufsichtsbehörden und das BSI, die Wirtschaftskammer Österreich. Für Toolkit zwei: die Richtlinie NIS zwei und ihre Durchführungsverordnung, DORA, die DSGVO, der Cyber Resilience Act, das österreichische und das deutsche Gesetz dazu, die Formulare von sechs Cyberversicherern, NIST und CISA. Ländernotizen gibt es für Österreich und Deutschland; andere Mitgliedstaaten sind als Lücke markiert.",
+       "source": "Q6"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "num": "4",
+   "title": "Was tun Sie? Zwei Fälle",
+   "kicker": "4 · Was tun Sie?",
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/shot02_evidence_folder.start.png",
+     "new": true,
+     "data": {
+      "kicker": "Fall 1 · nachgestellt",
+      "time": "DO 10:00",
+      "place": "Büro, Muster Elektrotechnik e.U. (erfunden)",
+      "obj": {
+       "label": "E-Mail · Versicherer",
+       "from": "antrag@versicherer.example",
+       "subject": "Bitte aktuellen Stand Ihrer Maßnahmen senden",
+       "lines": [
+        "Gewünscht: aktueller Stand, mit Datum",
+        "Nachweisordner: eine eingefrorene Fassung",
+        "Hinweis: älter als die Aktualisierung"
+       ]
+      },
+      "obj_at": "@Versicherer",
+      "highlight": {
+       "line": 2,
+       "label": "älter",
+       "at": "@älter"
+      }
+     },
+     "say": [
+      {
+       "text": "Zwei Fälle zum Mitentscheiden. Beide sind erfunden, die Quellen dahinter nicht. Fall eins. Donnerstag, zehn Uhr. Ein Versicherer bittet um den aktuellen Stand der Maßnahmen, mit Datum. Im Nachweisordner liegt eine eingefrorene Fassung, und der Ordner zeigt an, dass sie älter ist als die letzte Aktualisierung von Vorlagen und Handbuch.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Die eingefrorene Fassung schicken, sie ist unterschrieben",
+        "at": "@eingefrorene"
+       },
+       {
+        "key": "B",
+        "text": "Das PDF von Hand nachbessern und schicken",
+        "at": "@Hand"
+       },
+       {
+        "key": "C",
+        "text": "Antworten prüfen, neu erzeugen, neu einfrieren, schicken",
+        "at": "@Generator"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: Die eingefrorene Fassung schicken, sie ist ja unterschrieben. B: Das PDF von Hand nachbessern und schicken. C: Im Generator die Antworten prüfen, den Dokumentensatz neu erzeugen, unterschreiben, eine neue Fassung einfrieren und diese schicken. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie A wählen",
+      "headline": "Unterschrieben, aber nicht mehr der Stand",
+      "items": [
+       {
+        "time": "10:05",
+        "text": "Eingefrorene Fassung verschickt",
+        "tone": "neutral",
+        "at": "@fünf"
+       },
+       {
+        "time": "",
+        "text": "Ihr Datum liegt vor der Aktualisierung",
+        "tone": "amber",
+        "at": "@Datum"
+       },
+       {
+        "time": "",
+        "text": "Was sich seither geändert hat, fehlt",
+        "tone": "amber",
+        "at": "@seither"
+       },
+       {
+        "time": "",
+        "text": "Der Ordner hatte es angezeigt",
+        "tone": "red",
+        "at": "@zeigt"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "A geht schnell. Im Beispiel geht die eingefrorene Fassung um fünf nach zehn hinaus. Sie trägt ein Datum vor der Aktualisierung, und was sich seither an Vorlagen oder Handbuch geändert hat, steht nicht darin.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "Genau dafür zeigt der Nachweisordner, welche eingefrorenen Fassungen älter sind als die Aktualisierung: damit Sie wissen, was neu zu machen ist.",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Neu erzeugen, neu einfrieren",
+       "sub": "Antworten prüfen, Dokumente erzeugen, unterschreiben, Fassung einfrieren, senden.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Alte Fassung schicken",
+        "note": "älterer Stand als der aktuelle",
+        "at": "@älteren"
+       },
+       {
+        "key": "B",
+        "text": "PDF von Hand ändern",
+        "note": "passt nicht mehr zu den Antworten",
+        "at": "@PDF"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C, nach unserer Auslegung. Ändern Sie eine Antwort, folgen die Dokumente, und eine neue Fassung, unterschrieben und eingefroren, ist wieder die Fassung, die Sie zeigen. A schickt einen älteren Stand. B macht aus dem PDF ein Dokument, das nicht mehr zu Ihren Antworten und zu keiner eingefrorenen Fassung passt.",
+       "marker": "auslegung",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "case",
+     "bg": "yt/lib_meeting_table.start.png",
+     "new": true,
+     "data": {
+      "kicker": "Fall 2 · nachgestellt",
+      "time": "MI 15:30",
+      "place": "Büro der Inhaberin, Einweisung geplant",
+      "obj": {
+       "label": "Schulungsnachweis · Entwurf",
+       "from": "KI-Richtlinien-Toolkit",
+       "subject": "Wiederholung und Aufbewahrung",
+       "lines": [
+        "Datum der Einweisung: eingetragen",
+        "Teilnehmende je Gruppe: eingetragen",
+        "Wiederholung: Feld offen",
+        "Aufbewahrung: Feld offen"
+       ]
+      },
+      "obj_at": "@Schulungsnachweises",
+      "highlight": {
+       "line": 2,
+       "label": "Lücke",
+       "at": "@offen"
+      }
+     },
+     "say": [
+      {
+       "text": "Fall zwei. Mittwoch, halb vier. Die Inhaberin geht den Entwurf des Schulungsnachweises durch. Datum und Teilnehmende stehen drin. Zwei Felder sind offen: wie oft die Einweisung wiederholt wird und wie lange der Nachweis aufbewahrt wird.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "„Jährlich, gesetzlich vorgeschrieben“ eintragen",
+        "at": "@Jährlich"
+       },
+       {
+        "key": "B",
+        "text": "Die Felder offen lassen, bis jemand fragt",
+        "at": "@Felder"
+       },
+       {
+        "key": "C",
+        "text": "Eigenen Rhythmus festlegen, als Entscheidung eintragen",
+        "at": "@eigenen"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: „Jährlich, gesetzlich vorgeschrieben“ eintragen, das klingt verbindlich. B: Die Felder offen lassen, bis jemand fragt. C: Einen eigenen Rhythmus und eine eigene Aufbewahrungsdauer festlegen und als Entscheidung des Betriebs eintragen. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie A wählen",
+      "headline": "Aus der Lücke wird eine Behauptung",
+      "items": [
+       {
+        "time": "heute",
+        "text": "Eingetragen: „gesetzlich vorgeschrieben“",
+        "tone": "neutral",
+        "at": "@steht"
+       },
+       {
+        "time": "Wochen später",
+        "text": "Ein Kunde fragt: welche Vorschrift?",
+        "tone": "amber",
+        "at": "@Wochen"
+       },
+       {
+        "time": "",
+        "text": "Keine Quelle gefunden: offener Punkt",
+        "tone": "amber",
+        "at": "@Rhythmus"
+       },
+       {
+        "time": "",
+        "text": "Die Angabe lässt sich nicht belegen",
+        "tone": "red",
+        "at": "@Behauptung"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "A klingt verbindlich. Im Beispiel steht im Nachweis „jährlich, gesetzlich vorgeschrieben“. Wochen später fragt ein Kunde, welche Vorschrift das ist.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "Für den Rhythmus der Wiederholung und die Dauer der Aufbewahrung haben wir keine Quelle gefunden; das Handbuch führt das als offenen Punkt.",
+       "marker": "luecke",
+       "source": "Q10"
+      },
+      {
+       "text": "Unsere Auslegung: Wer eine Vorschrift nennt, die keine Quelle trägt, macht aus einer Lücke eine Behauptung.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Eigenen Rhythmus festlegen",
+       "sub": "Als Entscheidung des Betriebs eintragen, mit Datum. Keine Vorschrift erfinden.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "„Gesetzlich vorgeschrieben“",
+        "note": "dafür keine Quelle gefunden",
+        "at": "@erfinden"
+       },
+       {
+        "key": "B",
+        "text": "Felder offen lassen",
+        "note": "ehrlich, aber ohne Entscheidung",
+        "at": "@ehrlich"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C, nach unserer Auslegung. Wo eine Quelle fehlt, lässt das Handbuch die Entscheidung bei Ihrem Betrieb, statt eine Regel zu erfinden. Sie legen den Rhythmus fest, tragen ihn ein, und der Nachweis zeigt ihn als Ihre Entscheidung, mit Datum. B ist ehrlich, aber dann bleibt offen, was Sie selbst entscheiden können.",
+       "marker": "auslegung",
+       "source": "Q14"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "num": "5",
+   "title": "Der Beispielbetrieb in beiden Toolkits",
+   "kicker": "5 · Der Beispielbetrieb",
+   "scenes": [
+    {
+     "type": "paper",
+     "bg": "yt/lib_documents_desk.start.png",
+     "data": {
+      "headline": "Toolkit 01: *die Richtlinie*",
+      "doc": {
+       "label": "Muster D1 · KI-Nutzungsrichtlinie",
+       "title": "Neun Paragrafen",
+       "lines": [
+        {
+         "text": "Textassistent im Büro, zwei Monteure privat",
+         "at": "@Textassistent",
+         "mark": "open"
+        },
+        {
+         "text": "Freigegebene Tools · was hinein darf",
+         "at": "@freigegeben"
+        },
+        {
+         "text": "Was nie hinein darf · Prüfung vor der Verwendung",
+         "at": "@nie"
+        },
+        {
+         "text": "Meldung von Vorfällen · wer im Zweifel entscheidet",
+         "at": "@Vorfälle"
+        },
+        {
+         "text": "Unterschrieben, Geltungsbeginn nach der Einweisung",
+         "at": "@Geltungsbeginn",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Zurück zum Beispielbetrieb, dem erfundenen Elektrotechnikbetrieb. In Toolkit eins sagen seine Antworten: ein Textassistent im Büro für Angebote, Zusammenfassungen und Übersetzungen, und zwei Monteure, die sich privat einen auf dem Telefon eingerichtet haben. Die Richtlinie, die herauskommt, hat neun Paragrafen: welche Tools freigegeben sind, was hinein darf, was nie hinein darf, was vor der Verwendung geprüft wird, wohin Vorfälle gemeldet werden, wer im Zweifel entscheidet. Von der Leitung unterschrieben, mit einem Geltungsbeginn nach der Einweisung.",
+       "source": "Q11"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/shot01_notice_board.start.png",
+     "data": {
+      "headline": "Aushang und *Nachweisseite*",
+      "doc": {
+       "label": "Muster D2 und D7",
+       "title": "Die Seite, die Sie hinlegen",
+       "lines": [
+        {
+         "text": "D2: Zweifelsregel und was nie hinein darf",
+         "at": "@Zweifelsregel"
+        },
+        {
+         "text": "D7: geregelt",
+         "at": "@geregelt",
+         "mark": "ok"
+        },
+        {
+         "text": "D7: geplant",
+         "at": "@geplant",
+         "mark": "open"
+        },
+        {
+         "text": "D7: offen, mit Datum und Dokumentnummer",
+         "at": "@offen",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die eine Seite zum Aushängen wiederholt die Zweifelsregel und das, was nie hinein darf. Und die Nachweisseite zeigt auf einer Seite, was geregelt ist, was geplant und was noch offen, mit Datum und Dokumentnummer. Das ist die Seite, die Sie hinlegen, wenn jemand fragt.",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/shot02_questionnaire_desk.start.png",
+     "data": {
+      "headline": "Toolkit 02: ein *Mischbild*",
+      "doc": {
+       "label": "Muster D1 · Selbstauskunft",
+       "title": "Antworten mit Stand",
+       "lines": [
+        {
+         "text": "MFA bei E-Mail: vorhanden",
+         "at": "@E-Mail",
+         "mark": "ok"
+        },
+        {
+         "text": "MFA bei der Cloud-Konsole: noch nicht",
+         "at": "@Cloud-Konsole",
+         "mark": "open"
+        },
+        {
+         "text": "Tägliche Sicherung, keine Kopie außer Reichweite",
+         "at": "@tägliche",
+         "mark": "open"
+        },
+        {
+         "text": "Wiederherstellung nie geprobt",
+         "at": "@Wiederherstellung",
+         "mark": "open"
+        },
+        {
+         "text": "Kein Notfallplan · ein alter Werkstattrechner",
+         "at": "@Notfallplan",
+         "mark": "risk"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "In Toolkit zwei beantwortet derselbe Betrieb den Fragebogen seines Kunden. Das Beispiel zeigt ein realistisches Mischbild: Multi-Faktor-Authentifizierung bei E-Mail ja, bei der Cloud-Konsole noch nicht; tägliche Sicherung, aber keine Kopie außer Reichweite; Wiederherstellung nie geprobt; kein Notfallplan; ein alter Werkstattrechner.",
+       "source": "Q12"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Was der Kunde *bekommt*",
+      "items": [
+       {
+        "title": "Selbstauskunft, Feld für Feld",
+        "sub": "mit Stand und Datum",
+        "at": "@Selbstauskunft"
+       },
+       {
+        "title": "Maßnahmenplan mit Terminen",
+        "sub": "technische Punkte für die IT-Betreuung markiert",
+        "at": "@Maßnahmenplan"
+       },
+       {
+        "title": "Notfallkarte an der Wand",
+        "at": "@Notfallkarte"
+       },
+       {
+        "title": "Antwortschreiben mit den Lücken",
+        "sub": "alle Muster frei auf den Produktseiten",
+        "at": "@Antwortschreiben"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Die Selbstauskunft zeigt genau das, Feld für Feld, mit Stand und Datum. Der Maßnahmenplan macht aus jedem „teilweise“ und „noch nicht“ eine Maßnahme mit Verantwortlichen und Termin; die technischen sind für die IT-Betreuung markiert. Die Notfallkarte kommt an die Wand. Und das Antwortschreiben an den Kunden nennt die Lücken mit ihren Terminen. Alle Dokumente des Beispielbetriebs stehen frei zum Herunterladen auf den Produktseiten.",
+       "source": "Q13"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "num": "6",
+   "title": "Was das Toolkit nicht ist",
+   "kicker": "6 · Was es nicht ist",
+   "scenes": [
+    {
+     "type": "compare",
+     "bg": "yt/lib_archive_shelf.start.png",
+     "data": {
+      "headline": "Keine Rechtsberatung, *kein Audit*",
+      "left": {
+       "title": "Toolkit 01",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "zeigt, was Sie entschieden haben",
+         "at": "@entschieden"
+        },
+        {
+         "text": "seit wann, für welche Tools",
+         "at": "@seit"
+        }
+       ]
+      },
+      "right": {
+       "title": "Toolkit 02",
+       "tone": "green",
+       "at": "@Audit",
+       "rows": [
+        {
+         "text": "kein Audit, kein Zertifikat",
+         "at": "@Zertifikat"
+        },
+        {
+         "text": "was Sie an einem Datum vorweisen können",
+         "at": "@vorweisen"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Was das Toolkit nicht ist. Für Toolkit eins: Es ist keine Rechtsberatung, und kein Dokument behauptet, dass Ihr Betrieb eine Vorschrift erfüllt. Die Dokumente zeigen, was Sie entschieden haben, seit wann, für welche Tools und wer davon weiß.",
+       "source": "Q1"
+      },
+      {
+       "text": "Für Toolkit zwei: Es ist keine Rechtsberatung, kein Audit und kein Zertifikat, und kein Dokument behauptet, dass Ihr Betrieb sicher ist oder ein Gesetz erfüllt. Die Dokumente zeigen, was Sie an einem Datum vorweisen können, was Sie bis wann tun werden und wer dafür einsteht.",
+       "source": "Q13"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Wo eine Quelle fehlt",
+      "text": "Ihr Betrieb *entscheidet*, die Dokumente halten es mit Datum fest.",
+      "sub": "Keine erfundene Regel. Die offenen Punkte sind aufgeführt, mit ihrem Stand.",
+      "sub_at": "@offenen"
+     },
+     "say": [
+      {
+       "text": "Wo eine Quelle fehlt, sagt das Handbuch das und lässt die Entscheidung bei Ihrem Betrieb, statt eine Regel zu erfinden. Die offenen Punkte sind aufgeführt, mit ihrem Stand. Ihr Betrieb entscheidet, und die Dokumente halten die Entscheidung mit Datum fest.",
+       "source": "Q14"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "num": "7",
+   "title": "Handbücher, Muster, Preis",
+   "kicker": "7 · Handbücher und Preis",
+   "end_seconds": 20.0,
+   "scenes": [
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Vor dem Kauf: die *Handbücher*",
+      "note": "Lesen Sie sie mit Ihrem eigenen Betrieb im Kopf.",
+      "note_at": "@Kopf",
+      "doc": {
+       "label": "scutoria.com · Vorher ansehen",
+       "title": "Muster des Beispielbetriebs",
+       "lines": [
+        {
+         "text": "Handbücher online und als PDF",
+         "at": "@PDF"
+        },
+        {
+         "text": "Richtlinie · Aushang · Nachweisseite",
+         "at": "@Richtlinie"
+        },
+        {
+         "text": "Selbstauskunft · Notfallkarte · Antwortschreiben",
+         "at": "@Selbstauskunft"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Lesen Sie vor dem Kauf die Handbücher. Beide sind frei auf scutoria.com, online und als PDF; die Links stehen in der Beschreibung. Laden Sie die Dokumente des erfundenen Beispielbetriebs herunter: die Richtlinie, die eine Seite zum Aushängen, die Nachweisseite, die Selbstauskunft, die Notfallkarte, das Antwortschreiben. Lesen Sie sie mit Ihrem eigenen Betrieb im Kopf."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Beide Toolkits, ein Preis",
+      "text": "199 Euro im Jahr, *die ersten zehn* zahlen 99.",
+      "sub": "Ein Betrieb, zwölf Monate, keine automatische Verlängerung, Zahlung über Stripe.",
+      "sub_at": "@Lizenz"
+     },
+     "say": [
+      {
+       "text": "Dann die Toolkits. Das KI-Richtlinien-Toolkit und das Sicherheitsnachweis-Toolkit haben denselben Preis. Das Toolkit kostet 199 Euro im Jahr. Die ersten zehn Käufer zahlen 99. Der Gründerpreis zählt je Toolkit. Eine Lizenz gilt für einen Betrieb und seine Beschäftigten. Zwölf Monate ab Kauf, keine automatische Verlängerung. Zahlung über Stripe; der Zugang beginnt sofort nach der Zahlung. Nach dem Ende der Lizenz bleibt Ihr Nachweisordner zugänglich. Umsatzsteuer laut Kasse.",
+       "source": "Q6"
+      }
+     ]
+    },
+    {
+     "type": "close",
+     "new": true,
+     "data": {
+      "rule": "Hier ist Scutoria. Synthetische Stimme, Quellen am Bildschirm.",
+      "memo": {
+       "label": "Handbücher und Muster, vor dem Kauf lesbar",
+       "url": "scutoria.com",
+       "at": "@Skript"
+      },
+      "toolkit": {
+       "label": "Als Nächstes: Womit die KI-Regeln anfangen",
+       "url": "Video 01",
+       "at": "@Nächstes"
+      },
+      "claim": "Belegt. Datiert. Vorzeigbar.",
+      "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+     },
+     "say": [
+      {
+       "text": "Hier ist Scutoria. Die Stimme, die Sie hören, ist synthetisch. Das Skript wurde mit einem KI-Tool entworfen und von uns Satz für Satz geprüft. Jede Zahl und jede Rechtsaussage trägt ihre Quelle am Bildschirm. Quellenbasiert, keine Rechtsberatung."
+      },
+      {
+       "text": "Als Nächstes auf diesem Kanal: Ihre Belegschaft nutzt schon KI, und womit die Regeln anfangen."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "reels": [
+  {
+   "id": "r1",
+   "chapter": "c1",
+   "title": "Drei Wege, eine Frage",
+   "kicker": "Aus Video 03 · Rundgang",
+   "scenes": [
+    "c1s0",
+    "c1s1",
+    "c1s2"
+   ]
+  },
+  {
+   "id": "r2",
+   "chapter": "c2",
+   "title": "Vier Antworten und der Nachweisordner",
+   "kicker": "Aus Video 03 · Rundgang",
+   "scenes": [
+    "c2s4",
+    "c2s5",
+    "c2s6",
+    "c2s7"
+   ]
+  },
+  {
+   "id": "r3",
+   "chapter": "c3",
+   "title": "Vier Marker",
+   "kicker": "Aus Video 03 · Rundgang",
+   "scenes": [
+    "c3s1",
+    "c3s2",
+    "c3s3",
+    "c3s4"
+   ]
+  },
+  {
+   "id": "r4",
+   "chapter": "c4",
+   "title": "Was tun Sie? Die ältere Fassung",
+   "kicker": "Aus Video 03 · Was tun Sie?",
+   "scenes": [
+    "c4s0",
+    "c4s1",
+    "c4s2",
+    "c4s3"
+   ]
+  },
+  {
+   "id": "r5",
+   "chapter": "c4",
+   "title": "Was tun Sie? Das offene Feld",
+   "kicker": "Aus Video 03 · Was tun Sie?",
+   "scenes": [
+    "c4s4",
+    "c4s5",
+    "c4s6",
+    "c4s7"
+   ]
+  }
+ ]
+}

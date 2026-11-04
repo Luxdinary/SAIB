@@ -1,0 +1,100 @@
+id: ai_security-20261109-1-en
+version: F2
+title: "Myth: we're too small to be a target"
+reihe: "Was tust du?"
+short: "Mythos zu klein EN"
+note: "Topic C01, EN localisation, myth as the wrong option. Example case staged; statements from S1 (BSI SME page), S2 (UK Cyber Security Breaches Survey 2025) and S3 (BSI two-factor). The old video in format B stays where it is."
+description: "A phishing email in the shared inbox, and your first thought: we're far too small. What do you do? Why the evidence says otherwise, and the one step that helps today."
+hashtags: [myth, phishing, smallbusiness, cybersecurity, whatwouldyoudo]
+sources:
+  - {id: S1, url: "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/KMU/KMU_node.html", title: "BSI: Informationen für kleine und mittlere Unternehmen", checked_at: "2026-11-01", label: "BSI (German federal office), SMEs"}
+  - {id: S2, url: "https://www.gov.uk/government/statistics/cyber-security-breaches-survey-2025/cyber-security-breaches-survey-2025", title: "UK Government: Cyber Security Breaches Survey 2025", checked_at: "2026-11-01", label: "UK Government, Breaches Survey 2025"}
+  - {id: S3, url: "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Zwei-Faktor-Authentisierung/zwei-faktor-authentisierung_node.html", title: "BSI: Zwei-Faktor-Authentisierung", checked_at: "2026-11-01", label: "BSI, two-factor"}
+unverified:
+  - "Loss amounts: not used."
+  - "The sequence of the example case (shared inbox, colleague enters her password) is invented and marked as an example; the consequences (customer data stolen, further attacks) come from S1."
+  - "That waiting until an incident is too late (option B) is Scutoria's reading, marked on screen."
+pick: demonstration
+hooks:
+  - {type: question, spoken: "We're far too small for attackers. Aren't we?", screen: "Too small to be a target?"}
+  - {type: misconception, spoken: "Too small for hackers? Germany's BSI sees it differently.", screen: "Small = safe?", src: [S1]}
+  - {type: surprising_fact, spoken: "35 percent of UK micro businesses identified phishing attacks in 2025.", screen: "35% of micro businesses", src: [S2]}
+  - {type: concrete_risk, spoken: "Attackers rarely pick small firms on purpose. They hit them anyway.", screen: "Not picked, still hit", src: [S1]}
+  - {type: demonstration, spoken: "Monday, 7:50 a.m. An email in the shared inbox: mailbox almost full.", screen: "MON 07:50 · Mailbox almost full?"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Monday, 7:50 a.m. There's an email in your shared inbox: Mailbox almost full, please confirm here. Your first thought: Who'd want anything from us? We're nine people."
+    d:
+      kicker: "Example case · staged"
+      time: "MON 07:50"
+      place: "Office of a nine-person joinery"
+      mail_at: 0.6
+      mail: {from: "Mailbox service (example)", addr: "service@mail-help.example", time: "07:48", subject: "Mailbox almost full", lines: ["Your storage is almost full.", "Please confirm here,", "or emails will be lost."]}
+      highlight: {line: 1, label: "link", at: "@confirm"}
+  - f: problem
+    t: sc_choice
+    s: "What do you do? A: Nothing, nobody's after us. B: You'll deal with it if something actually happens. C: You switch on two-step login for the inbox today. Remember your choice."
+    src: [S1]
+    d:
+      question: "What do you do?"
+      options:
+        - {key: A, text: "Nothing, nobody's after us", at: "@Nothing"}
+        - {key: B, text: "Only if something happens", at: "@deal"}
+        - {key: C, text: "Switch on two-step login today", at: "@switch"}
+      think: {seconds: 2.4, at: "@Remember"}
+      hint: "Remember your choice."
+  - f: explanation
+    t: sc_inspect
+    s: "Germany's BSI says small firms are usually not picked on purpose. They get caught in attacks that run widely and automatically. And the UK government counted for 2025: 35 percent of micro businesses identified phishing attacks."
+    src: [S1, S2]
+    d:
+      kicker: "What the sources say"
+      headline: "How attacks hit"
+      rows:
+        - {label: "Choice", value: "rarely on purpose", verdict: "BSI", at: "@picked"}
+        - {label: "Method", value: "wide, automated", verdict: "BSI", at: "@widely"}
+        - {label: "Phishing", value: "35% of micro firms", verdict: "UK 2025", at: "@percent"}
+      fact: {kind: fakt, text: "Small firms get caught in wide, automated attacks.", source: "BSI · SME page", at: 1.4}
+  - f: demonstration
+    t: sc_timeline
+    s: "Let's play out A. The email went to a huge number of inboxes, yours is one of them. A colleague clicks and enters her password. According to the BSI, criminals then steal customer data and use it for further attacks."
+    src: [S1]
+    d:
+      kicker: "Choice A, played out"
+      tag: "Example"
+      headline: "Nobody's after us"
+      items:
+        - {time: "MON 07:50", text: "Email to huge numbers of inboxes", at: "@inboxes"}
+        - {time: "MON 09:12", text: "Colleague enters her password", tone: amber, at: "@clicks"}
+        - {time: "Then", text: "Customer data stolen", tone: red, at: "@steal"}
+        - {time: "Later", text: "Further attacks with the data", at: "@further"}
+      source: {kind: fakt, label: "BSI · consequences for SMEs", at: 1.0}
+  - f: insight
+    t: sc_step
+    s: "The right answer is C. The BSI advises switching on two-factor login wherever a service offers it, especially for email. Then a stolen password alone isn't enough. A relies on luck, B waits until it's too late."
+    src: [S3, S1]
+    d:
+      mode: rule
+      kicker: "The one step"
+      card: {letter: C, title: "Two-step for your inbox", sub: "today, not after the incident", at: 0.2}
+      strikes:
+        - {text: "A: Do nothing", note: "attacks run wide", at: "@luck"}
+        - {text: "B: Wait for an incident", note: "too late by then", at: "@waits"}
+      sources:
+        - {kind: fakt, label: "BSI · switch on two-factor"}
+        - {kind: fakt, label: "BSI · SME page"}
+        - {kind: auslegung, label: "B: Scutoria's reading"}
+      sources_at: "@BSI"
+  - f: close
+    t: sc_close
+    s: "Small doesn't mean invisible. What would you have picked? Tell me in the comments."
+    d:
+      kicker: "Series · What would you do?"
+      rule: "Small isn't invisible."
+      rule_at: 0.3
+      question: {text: "What would you have picked?", at: "@What"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Sourced. Dated. Ready to show."
+      disclaimer: "Source-based. No legal advice."

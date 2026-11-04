@@ -1,0 +1,705 @@
+{
+  "video_id": "megaconstruction-20261111-2-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Burj Khalifa: 828 metres standing on a 3.7-metre concrete raft",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Bauaufgabe. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261111-2-en.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-10-30). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.som.com/projects/burj-khalifa/",
+      "title": "SOM (Architekt): Burj Khalifa – 828 m, fertig 2010",
+      "label": "SOM, Burj Khalifa",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.burjkhalifa.ae/the-tower/structures/",
+      "title": "Burj Khalifa (Emaar): Structures – Fundamentplatte 3,7 m, 12.500 m³ in vier Betonagen, Pfähle 1,5 m Ø, 43 m",
+      "label": "Burj Khalifa, Structures",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.skyscrapercenter.com/building/burj-khalifa/3",
+      "title": "CTBUH Skyscraper Center: Burj Khalifa (Baubeginn 2004)",
+      "label": "CTBUH, Skyscraper Center",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffel Tower), Key figures",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.stephanskirche.at/faq.php",
+      "title": "Dompfarre St. Stephan: FAQ (Südturm 136,4 m)",
+      "label": "St. Stephen's parish, FAQ",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Geschosszahl (SOM 160/162, CTBUH 163) widersprüchlich, weggelassen.",
+    "Zahl der Pfähle nicht ermittelt: Pfahlgruppe im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H2"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "828 metres tall. And all of it rests on a slab of concrete 3.7 metres thick.",
+      "on_screen": "828 m on a 3.7 m slab",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Burj Khalifa, really?",
+      "on_screen": "How big is the Burj Khalifa, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate the Burj Khalifa.",
+      "on_screen": "the Burj Khalifa: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Burj Khalifa depends on how it is built.",
+      "on_screen": "the Burj Khalifa: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Burj Khalifa take shape in the model.",
+      "on_screen": "the Burj Khalifa as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "What does an 828 metre tower stand on? At the Burj Khalifa in Dubai, that was exactly the engineering task.",
+      "data": {
+        "kicker": "Task · Burj Khalifa",
+        "question": "What does an 828 m tower stand on?",
+        "question_at": 0.05,
+        "pins": [
+          {
+            "anchor": "top",
+            "text": "828 m",
+            "kind": "dim",
+            "at": "@828"
+          }
+        ],
+        "tag": {
+          "text": "Dubai · built 2004 to 2010",
+          "at": "@Dubai",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "According to the architects SOM, the tower is 828 metres tall. Work began in 2004 and it was finished in 2010. All that height has to go safely into the ground.",
+      "data": {
+        "headline": "The load case",
+        "load": {
+          "label": "Height (SOM)",
+          "value": "828",
+          "unit": "m",
+          "sub": "started 2004, finished 2010",
+          "at": "@828",
+          "dy": 540
+        },
+        "goal": {
+          "text": "Carry the load into the ground",
+          "at": "@ground",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "The solution lies underground: a thick slab of concrete, and below it long piles that reach deep into the ground.",
+      "data": {
+        "headline": "The principle",
+        "note": "pile group schematic",
+        "pins": [
+          {
+            "anchor": "raft",
+            "text": "Foundation raft",
+            "at": "@slab",
+            "side": "down"
+          }
+        ],
+        "rule": {
+          "text": "The raft spreads, the piles carry down.",
+          "at": "@piles",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "The foundation raft is 3.7 metres thick and holds 12,500 cubic metres of concrete, poured in four stages. Below it sit piles 1.5 metres across, each 43 metres long.",
+      "data": {
+        "headline": "How it was built",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Raft thickness",
+            "qty": "3.7 m",
+            "at": "@3.7"
+          },
+          {
+            "pos": "2",
+            "part": "Concrete in the raft, m³",
+            "qty": "12,500",
+            "at": "@12,500"
+          },
+          {
+            "pos": "3",
+            "part": "Concrete pours",
+            "qty": "4",
+            "at": "@four"
+          },
+          {
+            "pos": "4",
+            "part": "Pile: Ø 1.5 m, length",
+            "qty": "43 m",
+            "at": "@43"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Let's check: the Eiffel Tower is 330 metres tall. 828 divided by 330 is 2.51, so two and a half Eiffel Towers stacked up. And the tower is 224 times as tall as its raft is thick.",
+      "data": {
+        "headline": "Checked",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "Burj Khalifa ÷ Eiffel Tower",
+            "a": {
+              "value": 828,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 330,
+              "unit": "m"
+            },
+            "unit": "×",
+            "round": 0.01,
+            "decimals": 2,
+            "expect": 2.51,
+            "at": "@330",
+            "result_at": "@2.51"
+          },
+          {
+            "label": "Tower height ÷ raft thickness",
+            "a": {
+              "value": 828,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 3.7,
+              "unit": "m"
+            },
+            "unit": "×",
+            "round": 1,
+            "decimals": 0,
+            "prefix": "≈ ",
+            "expect": 224,
+            "at": "@raft",
+            "result_at": "@224"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "SE"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "An 828 metre tower, carried by 3.7 metres of concrete and 43 metre piles. Follow Gigastruct for the next engineering task.",
+      "data": {
+        "statement": "Solved: raft plus piles",
+        "sheet": "SHEET 08",
+        "rows": [
+          [
+            "Task",
+            "Found 828 m safely"
+          ],
+          [
+            "Solution",
+            "3.7 m raft, 43 m piles"
+          ],
+          [
+            "Concrete",
+            "12,500 m³ in the raft"
+          ],
+          [
+            "Built",
+            "2004 to 2010"
+          ]
+        ],
+        "cta": {
+          "text": "Follow Gigastruct",
+          "at": "@Follow"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "TASK",
+        "IDEA",
+        "BUILD",
+        "MATHS",
+        "TEST"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 0,
+        "b3": 1,
+        "b4": 2,
+        "b5": 3,
+        "b6": 5
+      }
+    },
+    "description": "The Burj Khalifa is 828 m tall – and stands on a 3.7 m concrete raft with piles 43 m long. Calculated against the Eiffel Tower and Vienna's St. Stephen's Cathedral.",
+    "companion_text": "Calculated: 828 m ÷ 330 m = 2.51; 828 m ÷ 136.4 m = 6.07. Sources: SOM, Burj Khalifa (Emaar), CTBUH, SETE, St. Stephen's parish. Stylised 3D model, pile group schematic. Follow Gigastruct.",
+    "hashtags": [
+      "burjkhalifa",
+      "skyscraper",
+      "foundations",
+      "dubai",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "828 m ÷ 330 m = 2,51",
+        "result": "zweieinhalb Eiffeltürme",
+        "sources": [
+          "S1",
+          "SE"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "828 m ÷ 136,4 m = 6,07",
+        "result": "gut sechs Südtürme des Stephansdoms",
+        "sources": [
+          "S1",
+          "S4"
+        ]
+      },
+      {
+        "id": "C9",
+        "calculation": "828 m ÷ 3,7 m = 223,8",
+        "result": "rund 224-mal so hoch wie die Platte dick",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "prism",
+          "height": 640,
+          "width": 95,
+          "shape": "oct",
+          "levels": 80,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              0.3,
+              0.75
+            ],
+            [
+              0.6,
+              0.45
+            ],
+            [
+              0.85,
+              0.25
+            ],
+            [
+              1,
+              0.15
+            ]
+          ],
+          "spire": [
+            188,
+            8
+          ],
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "raft",
+          "kind": "box",
+          "size": [
+            130,
+            3.7,
+            130
+          ],
+          "color": "accent",
+          "pos": [
+            0,
+            -3.7,
+            0
+          ]
+        },
+        {
+          "id": "piles",
+          "kind": "piles",
+          "nx": 9,
+          "nz": 9,
+          "spacing": 14,
+          "r": 0.75,
+          "len": 43,
+          "color": "model_inner",
+          "pos": [
+            0,
+            -3.7,
+            0
+          ]
+        },
+        {
+          "id": "eiffel",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 1,
+          "pos": [
+            260,
+            0,
+            0
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "raft": [
+          65,
+          -1.8,
+          65
+        ],
+        "rafttop": [
+          -30,
+          0,
+          65
+        ],
+        "pile": [
+          14,
+          -30,
+          63
+        ],
+        "top": [
+          0,
+          828,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 6,
+            "el1": 9,
+            "fit0": 0.4,
+            "fit1": 0.45,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 85,
+            "az1": 95,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.35,
+            "fit1": 0.38,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {}
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "az0": 30,
+            "az1": 40,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.8,
+            "fit1": 0.85,
+            "zone": 330,
+            "cy": 560,
+            "box": [
+              [
+                -70,
+                -50,
+                -70
+              ],
+              [
+                70,
+                10,
+                70
+              ]
+            ]
+          },
+          "props": {
+            "tower.fade": 0.2
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "az0": 50,
+            "az1": 35,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.85,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 470,
+            "box": [
+              [
+                -70,
+                -50,
+                -70
+              ],
+              [
+                70,
+                10,
+                70
+              ]
+            ]
+          },
+          "props": {
+            "tower.visible": 0,
+            "piles.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.75",
+                1
+              ]
+            ],
+            "raft.visible": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.25",
+                1
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 20,
+            "az1": 10,
+            "el0": 6,
+            "el1": 8,
+            "fit0": 0.4,
+            "fit1": 0.42,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {
+            "eiffel.visible": 1
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 55,
+            "az1": 45,
+            "el0": 8,
+            "el1": 5,
+            "fit0": 0.4,
+            "fit1": 0.38,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

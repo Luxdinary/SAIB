@@ -1,0 +1,579 @@
+{
+  "video_id": "claude_workflows-20261110-1-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Wie Claude Code eine Aufgabe abarbeitet",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent A: Thema 10.11. Thema 1 (G4), Reihe Grundlagen. Q1-Aufbau nach claude_workflows-20261109-3-de. Quellen am 01.11.2026 als Markdown abgerufen (how-claude-code-works.md, overview.md). Leitobjekt: der Testlauf npm test (Beispiel der Doku: fix the failing tests), offen solange ein Test fehlschlägt, grün nach der Prüfung. Die Terminal-Szene folgt dem Doku-Beispiel („Claude might“), die Zeilen sind Beschreibungen, keine echte Ausgabe.",
+  "hook": {
+    "id": "H5",
+    "note": "Demonstration mit höchster Bewertung: ein Satz als Auftrag, die Phasen folgen sichtbar."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Was macht Claude Code eigentlich, nachdem du auf Enter gedrückt hast?",
+      "on_screen": "Was passiert nach Enter?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Prompt, dann leeres Fenster",
+      "why": {
+        "visual": "kaum Handlung"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude Code schreibt einfach Code? Laut Doku sammelt es zuerst Kontext und prüft am Ende.",
+      "on_screen": "Nur Code schreiben?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Text wird durchgestrichen",
+      "why": {
+        "truth": "Phasen gehen laut Doku ineinander über, „zuerst“ ist vereinfacht"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Ohne Werkzeuge könnte Claude nur mit Text antworten. Werkzeuge machen es zum Agenten.",
+      "on_screen": "Ohne Werkzeuge nur Text",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Werkzeugleiste erscheint",
+      "why": {
+        "truth": "how-it-works: Without tools, Claude can only respond with text"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wer nicht weiß, wie Claude Code arbeitet, greift oft zu spät ein.",
+      "on_screen": "Zu spät eingegriffen?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Stopp-Hand",
+      "why": {
+        "truth": "Folgerung, nicht wörtlich belegt"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Du schreibst nur: Repariere die fehlschlagenden Tests. Was macht Claude Code daraus?",
+      "on_screen": "Was macht Claude daraus?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Auftrag im Fenster, Marker, Klick, Frage",
+      "why": {
+        "truth": "Beispiel wörtlich aus der Doku (fix the failing tests)",
+        "visual": "Auftrag und Testlauf sichtbar"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "How Claude Code works: the agentic loop (gather context, take action, verify results; phases blend together; tools throughout; you can interrupt at any point); models reason, tools act, Claude Code is the agentic harness; five tool categories; example: fix the failing tests",
+      "url": "https://code.claude.com/docs/en/how-claude-code-works",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, How it works"
+    },
+    {
+      "id": "S2",
+      "title": "Overview: Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools",
+      "url": "https://code.claude.com/docs/en/overview",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Overview"
+    }
+  ],
+  "unverified": [
+    "Wie Claude Code die einzelnen Schritte im Terminal genau anzeigt: nicht geprüft; die Terminalzeilen beschreiben die Schritte des Doku-Beispiels, keine echte Ausgabe (animierte Darstellung).",
+    "Dateiname login.test.ts und „1 Test schlägt fehl“: Beispielwerte.",
+    "Dass Claude bei jeder Aufgabe genau diese Reihenfolge wählt: nicht behauptet; die Doku sagt „Claude might“ und dass sich die Schleife der Aufgabe anpasst."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "npm test",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Tests: schlagen fehl",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Plan: drei Phasen",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "Schleife: läuft",
+          "tone": "accent"
+        },
+        {
+          "beat": "b4",
+          "text": "Werkzeuge: bereit",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Schleife: prüft",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Tests: bestanden",
+          "tone": "ok"
+        },
+        {
+          "beat": "b7",
+          "text": "Tests: bestanden",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Laut Claude-Code-Dokumentation arbeitet Claude in drei Phasen: Kontext sammeln, handeln, Ergebnis prüfen. Die Phasen gehen ineinander über, Werkzeuge kommen durchgehend zum Einsatz, und du kannst jederzeit eingreifen. Das Modell denkt, Claude Code stellt die Werkzeuge bereit und verwaltet den Kontext.",
+    "companion_text": "Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk. Grundlage: Claude-Code-Dokumentation (How Claude Code works, Overview), abgerufen am 01.11.2026. Editor und Terminal sind eine animierte Darstellung, keine Bildschirmaufnahme; die Schritte folgen dem Beispiel der Doku. Grenze: Die Reihenfolge ist kein fester Ablauf, die Schleife passt sich laut Doku der Aufgabe an.",
+    "hashtags": [
+      "claudecode",
+      "kiagent",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "Aufgabe in drei Phasen"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Du schreibst nur: Repariere die fehlschlagenden Tests. Was macht Claude Code daraus?",
+      "data": {
+        "question": "Was macht Claude daraus?",
+        "chip": "nur ein Satz?",
+        "tabs": [
+          {
+            "name": "Auftrag",
+            "active": true
+          },
+          "npm test"
+        ],
+        "file": "npm test",
+        "lines": [
+          [
+            [
+              "com",
+              "# Dein Auftrag"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "> "
+            ],
+            [
+              "",
+              "Repariere die"
+            ]
+          ],
+          [
+            [
+              "",
+              "  fehlschlagenden "
+            ],
+            [
+              "kw",
+              "Tests"
+            ]
+          ]
+        ],
+        "focus_line": 2,
+        "zoom": 1.08,
+        "chip_word": "nur",
+        "mark_word": "Repariere",
+        "env_word": "Tests",
+        "click_word": "fehlschlagenden",
+        "question_word": "Was"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:schreibst"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Laut Dokumentation arbeitet Claude jede Aufgabe in drei Phasen ab: Kontext sammeln, handeln, Ergebnis prüfen. Dabei nutzt Claude durchgehend Werkzeuge, und jedes Ergebnis fließt in den nächsten Schritt.",
+      "data": {
+        "kicker": "Claude Code Docs · How it works",
+        "page_title": "How Claude Code works",
+        "quotes": [
+          "three phases: gather context, take action, and verify results",
+          "Claude uses tools throughout"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Kontext sammeln, handeln, prüfen",
+        "page_word": "Dokumentation",
+        "quote1_word": "Phasen",
+        "translation_word": "Ergebnis",
+        "quote2_word": "Werkzeuge"
+      },
+      "overlay": {
+        "title": "Drei Phasen",
+        "marker_at": "w:Phasen",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Phasen gehen ineinander über, und die Schleife passt sich an. Für eine Frage reicht oft Kontext sammeln, ein Bugfix läuft mehrmals durch alle drei. Und du kannst jederzeit eingreifen und die Richtung ändern.",
+      "data": {
+        "headline": "",
+        "gate": 3,
+        "chip": "bis es fertig ist",
+        "nodes": [
+          {
+            "label": "Dein Prompt"
+          },
+          {
+            "label": "Kontext sammeln"
+          },
+          {
+            "label": "Handeln"
+          },
+          {
+            "label": "Prüfen",
+            "hook": true
+          },
+          {
+            "label": "fertig"
+          }
+        ],
+        "travel_word": "Phasen",
+        "gate_word": "mehrmals",
+        "travel_end_word": "drei"
+      },
+      "overlay": {
+        "title": "Eine Schleife",
+        "marker_at": "w:ineinander",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Werkzeuge fallen in fünf Gruppen: Dateien lesen und bearbeiten, suchen, Befehle ausführen, im Web nachschlagen und Code-Intelligenz für Typfehler und Definitionen.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Dateien",
+            "code": "lesen, bearbeiten, anlegen",
+            "at_word": "Dateien"
+          },
+          {
+            "title": "Suche",
+            "code": "Muster, Regex, Codebasis",
+            "at_word": "suchen"
+          },
+          {
+            "title": "Ausführung",
+            "code": "Shell, Tests, git",
+            "at_word": "Befehle"
+          },
+          {
+            "title": "Web",
+            "code": "suchen, Doku abrufen",
+            "at_word": "Web"
+          },
+          {
+            "title": "Code-Intelligenz",
+            "code": "Typfehler, Definitionen",
+            "at_word": "Code-Intelligenz"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "Fünf Werkzeuggruppen",
+        "marker": "fakt",
+        "marker_at": "w:Werkzeuge",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Bei deinen Tests könnte das so aussehen: Claude startet die Testsuite und liest die Fehlerausgabe. Dann sucht es die passenden Dateien, liest sie, ändert den Code und lässt zum Schluss die Tests erneut laufen.",
+      "data": {
+        "title": "claude · demo-projekt",
+        "focus_line": 2,
+        "stamp": "prüfen",
+        "annotation": "Ergebnis lenkt nächsten Schritt",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Repariere die fehlschlagenden Tests"
+              ]
+            ],
+            "at_word": "Bei"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Testsuite starten: npm test"
+              ]
+            ],
+            "at_word": "startet"
+          },
+          {
+            "kind": "err",
+            "text": "  1 Test schlägt fehl: login.test.ts",
+            "at_word": "Fehlerausgabe"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Dateien suchen und lesen"
+              ]
+            ],
+            "at_word": "sucht"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Code ändern"
+              ]
+            ],
+            "at_word": "ändert"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Tests erneut: bestanden"
+              ]
+            ],
+            "at_word": "erneut"
+          }
+        ],
+        "mark_word": "Fehlerausgabe",
+        "click_word": "passenden",
+        "stamp_word": "erneut",
+        "annotation_word": "laufen",
+        "height": 560,
+        "file": "npm test",
+        "file_open_word": "Testsuite",
+        "file_word": "laufen",
+        "top": 20
+      },
+      "overlay": {
+        "title": "Die Schleife in Aktion",
+        "example": true,
+        "marker_at": "w:könnte",
+        "dim_at": "w:passenden",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Dahinter stecken zwei Teile: Das Modell denkt und entscheidet, welche Werkzeuge es nutzt. Claude Code ist die Schicht drumherum, die Werkzeuge bereitstellt und den Kontext verwaltet.",
+      "data": {
+        "top": {
+          "title": "Modell",
+          "verdict": "denkt",
+          "rows": [
+            "plant die Schritte",
+            "entscheidet je Schritt"
+          ]
+        },
+        "bottom": {
+          "title": "Claude Code",
+          "verdict": "handelt",
+          "rows": [
+            "stellt Werkzeuge bereit",
+            "verwaltet den Kontext"
+          ]
+        },
+        "top_word": "Modell",
+        "bottom_word": "Schicht"
+      },
+      "overlay": {
+        "title": "Denken und Handeln",
+        "marker": "auslegung",
+        "marker_at": "w:Teile",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Kontext, Handeln, Prüfen, so oft wie nötig. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "npm test: bestanden",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Tests erneut: bestanden"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Schleife beendet"
+          }
+        ],
+        "statement": "Kontext. Handeln. Prüfen. So oft wie nötig.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Kontext",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+{
+  "video_id": "megaconstruction-20261110-2-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Gotthard-Basistunnel: 10 Jahre, 445.000 Züge durch den Berg",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Nachgerechnet. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261110-2-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-10-30). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://news.sbb.ch/de/019e72ae-25de-7db5-9dcc-a87bb7d034bb/gotthard-basistunnel-zehn-jahre-schnellere-verbindungen-fuer-die-reisenden-und-effizienterer-gueterverkehr",
+      "title": "SBB News: Gotthard-Basistunnel – zehn Jahre (57 km; 276.000 Güter- und 169.000 Personenzüge; 35 Mio. CHF Unterhalt/Jahr; Zürich–Lugano unter 2 h)",
+      "label": "SBB News, 10 Jahre GBT",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.bav.admin.ch/de/10-jahre-gotthard-basistunnel",
+      "title": "Bundesamt für Verkehr: 10 Jahre Gotthard-Basistunnel",
+      "label": "BAV, 10 Jahre GBT",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffelturm), Key figures",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Maximale Felsüberdeckung: alptransit.ch nicht abrufbar, weggelassen.",
+    "Entgleisung 2023 bewusst nicht thematisiert."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "445.000 Züge in zehn Jahren. Alle durch einen einzigen Tunnel.",
+      "on_screen": "445.000 Züge in 10 Jahren",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist der Gotthard-Basistunnel wirklich?",
+      "on_screen": "Wie groß ist der Gotthard-Basistunnel wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen der Gotthard-Basistunnel.",
+      "on_screen": "der Gotthard-Basistunnel: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei der Gotthard-Basistunnel schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "der Gotthard-Basistunnel: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie der Gotthard-Basistunnel im Modell entsteht.",
+      "on_screen": "der Gotthard-Basistunnel im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "445.000 Züge in zehn Jahren, alle durch einen einzigen Tunnel. Was leistet der Gotthard-Basistunnel wirklich? Die SBB hat nach zehn Jahren Bilanz gezogen.",
+      "data": {
+        "kicker": "Nachgerechnet · Gotthard",
+        "question": "445.000 Züge durch einen Tunnel?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "57 km · in Betrieb seit 2016",
+          "at": "@Gotthard",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_build",
+      "spoken": "Die Daten der SBB: 57 Kilometer lang, laut SBB der längste Eisenbahntunnel der Welt, im Juni 2016 in Betrieb gegangen. Seitdem fuhren 276.000 Güterzüge und 169.000 Personenzüge hindurch.",
+      "data": {
+        "headline": "Die Daten",
+        "table_title": "Bilanz nach 10 Jahren",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Tunnellänge",
+            "qty": "57 km",
+            "at": "@57"
+          },
+          {
+            "pos": "2",
+            "part": "In Betrieb seit",
+            "qty": "6/2016",
+            "at": "@Juni"
+          },
+          {
+            "pos": "3",
+            "part": "Güterzüge",
+            "qty": "276.000",
+            "at": "@276.000"
+          },
+          {
+            "pos": "4",
+            "part": "Personenzüge",
+            "qty": "169.000",
+            "at": "@169.000"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_calc",
+      "spoken": "Nachgerechnet: 276.000 plus 169.000 ergibt 445.000 Züge, mehr als die Hälfte davon Güterzüge. Verteilt auf zehn Jahre, also 3.652 Tage, sind das im Schnitt rund 122 Züge pro Tag. Tag für Tag, zehn Jahre lang.",
+      "data": {
+        "headline": "Die Rechnung",
+        "sheet_dy": 400,
+        "calcs": [
+          {
+            "label": "Güterzüge + Personenzüge",
+            "a": {
+              "value": 276000,
+              "unit": ""
+            },
+            "op": "+",
+            "b": {
+              "value": 169000,
+              "unit": ""
+            },
+            "unit": "Züge",
+            "expect": 445000,
+            "at": "@276.000",
+            "result_at": "@445.000"
+          },
+          {
+            "label": "Züge ÷ Tage (01.06.2016–01.06.2026)",
+            "a": {
+              "value": 445000,
+              "unit": ""
+            },
+            "op": "÷",
+            "b": {
+              "value": 3652,
+              "unit": "Tage"
+            },
+            "unit": "pro Tag",
+            "round": 1,
+            "decimals": 0,
+            "prefix": "≈ ",
+            "expect": 122,
+            "at": "@3.652",
+            "result_at": "@122"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_calc",
+      "spoken": "Und wie lang sind 57 Kilometer? Der Eiffelturm ist 330 Meter hoch. Hingelegt passt er rund 173 Mal hintereinander in den Tunnel.",
+      "data": {
+        "headline": "Der Vergleich",
+        "sheet_dy": 470,
+        "sheet_title": "Vergleich",
+        "calcs": [
+          {
+            "label": "Tunnel ÷ Eiffelturm (liegend)",
+            "a": {
+              "value": 57000,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 330,
+              "unit": "m"
+            },
+            "unit": "×",
+            "round": 1,
+            "decimals": 0,
+            "prefix": "≈ ",
+            "expect": 173,
+            "at": "@330",
+            "result_at": "@173"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "SE"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Zürich–Lugano dauert heute unter zwei Stunden, rund 50 Minuten weniger als 2015. Der Unterhalt kostet laut SBB rund 35 Millionen Franken pro Jahr. Folge Gigastruct für die nächste Rechnung.",
+      "data": {
+        "statement": "Ergebnis: 122 Züge pro Tag",
+        "sheet": "BLATT 06",
+        "rows": [
+          [
+            "Züge",
+            "445.000 in 10 Jahren"
+          ],
+          [
+            "Schnitt",
+            "rund 122 pro Tag"
+          ],
+          [
+            "Fahrzeit",
+            "Zürich–Lugano < 2 h"
+          ],
+          [
+            "Unterhalt",
+            "rund 35 Mio. CHF/Jahr"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "BEHAUPTUNG",
+        "DATEN",
+        "RECHNUNG",
+        "VERGLEICH",
+        "ERGEBNIS"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 5
+      }
+    },
+    "description": "Zehn Jahre Gotthard-Basistunnel in Zahlen: 57 km, 445.000 Züge, rund 122 pro Tag, Zürich–Lugano unter zwei Stunden. Laut SBB, Stand Juni 2026.",
+    "companion_text": "Gerechnet: 276.000 + 169.000 = 445.000; 445.000 ÷ 3.652 Tage = 121,9; 57.000 m ÷ 330 m = 172,7. Quellen: SBB, BAV, SETE. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "gotthard",
+      "basistunnel",
+      "sbb",
+      "schweiz",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "276.000 + 169.000 = 445.000 Züge",
+        "result": "445.000",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "01.06.2016–01.06.2026 = 3.652 Tage; 445.000 ÷ 3.652 = 121,9 Züge pro Tag",
+        "result": "rund 122 pro Tag",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C3",
+        "calculation": "57.000 m ÷ 330 m = 172,7",
+        "result": "173 liegende Eiffeltürme",
+        "sources": [
+          "S1",
+          "SE"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "ridge",
+          "kind": "ridge",
+          "length": 3000,
+          "width": 1800,
+          "height": 760,
+          "color": "compare",
+          "bores": [
+            {
+              "z": 20,
+              "y": 120,
+              "r": 6,
+              "color": "accent"
+            },
+            {
+              "z": -20,
+              "y": 120,
+              "r": 6,
+              "color": "accent"
+            }
+          ],
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "fade": 0.45
+          }
+        },
+        {
+          "id": "lying",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 1,
+          "pos": [
+            0,
+            0,
+            1100
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "tube": [
+          1500,
+          120,
+          20
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [],
+            "az0": 20,
+            "az1": 10,
+            "el0": 10,
+            "el1": 8,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 560,
+            "cy": 830,
+            "box": [
+              [
+                1300,
+                60,
+                -200
+              ],
+              [
+                1700,
+                180,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.45,
+            "ridge.pulse": [
+              [
+                0,
+                0
+              ],
+              [
+                "%1",
+                1
+              ]
+            ]
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [],
+            "az0": 60,
+            "az1": 75,
+            "el0": 14,
+            "el1": 12,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 470,
+            "box": [
+              [
+                1300,
+                60,
+                -200
+              ],
+              [
+                1700,
+                180,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.45
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "az0": 88,
+            "az1": 92,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 560,
+            "box": [
+              [
+                1300,
+                60,
+                -200
+              ],
+              [
+                1700,
+                180,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.45,
+            "ridge.pulse": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.5",
+                1
+              ],
+              [
+                "%0.51",
+                0
+              ],
+              [
+                "%1",
+                1
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "az0": 70,
+            "az1": 60,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 560,
+            "box": [
+              [
+                -200,
+                0,
+                900
+              ],
+              [
+                500,
+                330,
+                1300
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.45,
+            "lying.visible": 1
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [],
+            "az0": 30,
+            "az1": 20,
+            "el0": 18,
+            "el1": 24,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 520,
+            "box": [
+              [
+                1300,
+                60,
+                -200
+              ],
+              [
+                1700,
+                180,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.45
+          }
+        }
+      }
+    }
+  }
+}

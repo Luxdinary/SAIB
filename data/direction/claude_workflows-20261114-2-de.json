@@ -1,0 +1,610 @@
+{
+  "video_id": "claude_workflows-20261114-2-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Mythos: Viele Skills verstopfen den Kontext",
+  "notes": "Woche 1 (Plan-Agent D, 01.11.2026). Reihe Mythos-Check, Thema M6. Vorlage Promptwerk 0.9, Qualitätsrunde Q1. Leitobjekt SKILL.md. Mythos wird laut Doku eingeschränkt, nicht nur widerlegt: Beschreibungen kosten wenig, die Liste hat aber ein Budget (1 % des Kontextfensters). Quellen am 01.11.2026 als Markdown geöffnet. Alle Oberflächen animiert.",
+  "hook": {
+    "id": "H1",
+    "note": "Frage mit der höchsten Bewertung; der Ordner mit zwanzig Skills macht den Mythos sichtbar."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Zwanzig Skills im Projekt. Verstopfen die nicht deinen Kontext, bevor du etwas fragst?",
+      "on_screen": "Verstopfen viele Skills den Kontext?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Ordner .claude/skills mit zwanzig Einträgen, Marker, Frage",
+      "why": {
+        "truth": "Frage, keine Behauptung; Antwort in beiden Quellen",
+        "visual": "Ordnerliste zeigt die Menge"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Mehr Skills, voller Kontext? Laut Doku stimmt das so nicht.",
+      "on_screen": "Mehr Skills = voller Kontext?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Gleichung wird eingeschränkt",
+      "why": {
+        "visual": "wenig Handlung"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Ein Skill kostet beim Start laut Doku nur rund hundert Tokens.",
+      "on_screen": "~100 Tokens pro Skill",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Zahl groß im Bild",
+      "why": {
+        "truth": "Zahl aus der Plattform-Doku, Claude-Code-Doku nennt keine Tokenzahl"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Zu viele Skills, und Claude Code lässt Beschreibungen weg.",
+      "on_screen": "Beschreibungen fallen weg",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Liste wird gekürzt",
+      "why": {
+        "relevance": "Grenze statt Kern des Mythos"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, was von einem Skill wirklich im Kontext liegt.",
+      "on_screen": "Was liegt wirklich im Kontext?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "SKILL.md, Kopf markiert",
+      "why": {
+        "curiosity": "schwächer als die Frage"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Extend Claude with skills (Claude Code Docs): descriptions loaded, full content only when invoked; body loads only when used; skill listing budget 1% of context window, descriptions dropped; /context, /skill-doctor; disable-model-invocation",
+      "url": "https://code.claude.com/docs/en/skills",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Skills"
+    },
+    {
+      "id": "S2",
+      "title": "Agent Skills overview (Claude Platform Docs): progressive disclosure; Level 1 metadata ~100 tokens per Skill; many Skills without context penalty; Level 2 when triggered; Level 3 as needed",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Plattform-Doku, Agent Skills"
+    }
+  ],
+  "unverified": [
+    "Die Zahl ~100 Tokens pro Skill steht in der Plattform-Doku (Agent Skills, Level 1); die Claude-Code-Doku nennt keine Tokenzahl. Im Video als „rund hundert Tokens“ mit Quelle Plattform-Doku.",
+    "Wie Claude Code den Aufruf eines Skills im Terminal genau anzeigt: nicht geprüft; Abschluss-Terminal ist animiert und als Beispiel gekennzeichnet.",
+    "Ordner mit zwanzig Skills und der Skill api-styleguide sind erfundene Beispiele."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "SKILL.md",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "20 Skills: alles geladen?",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Start: nur Beschreibung",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "Inhalt: erst beim Aufruf",
+          "tone": "accent"
+        },
+        {
+          "beat": "b4",
+          "text": "Kopf: immer im Kontext",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Rest: bei Bedarf",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Liste: Budget 1 %",
+          "tone": "amber"
+        },
+        {
+          "beat": "b7",
+          "text": "Kosten: /skill-doctor",
+          "tone": "accent"
+        },
+        {
+          "beat": "b8",
+          "text": "Inhalt: bei Bedarf",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Verstopfen viele Skills den Kontext? Laut Claude-Code- und Plattform-Doku lädt Claude zuerst nur Name und Beschreibung jedes Skills, den Inhalt der SKILL.md erst beim Aufruf. Grenze: Die Liste der Beschreibungen hat ein Budget von 1 % des Kontextfensters.",
+    "companion_text": "Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk. Grundlage: Claude-Code-Doku (Extend Claude with skills) und Plattform-Doku (Agent Skills, Progressive Disclosure), abgerufen am 01.11.2026. Editor und Terminal sind eine animierte Darstellung, keine Bildschirmaufnahme; Ordner und Skill-Namen sind Beispiele. Grenze laut Doku: Bei sehr vielen Skills lässt Claude Code Beschreibungen weg, zuerst bei selten genutzten; ein aufgerufener Skill bleibt danach im Kontext. Die Angabe ~100 Tokens pro Skill stammt aus der Plattform-Doku.",
+    "hashtags": [
+      "claudecode",
+      "skills",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "Skills und Kontext"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Zwanzig Skills im Projekt. Verstopfen die nicht deinen Kontext, bevor du etwas fragst?",
+      "data": {
+        "question": "Verstopfen viele Skills den Kontext?",
+        "chip": "Kontext voll?",
+        "tabs": [
+          {
+            "name": "skills/",
+            "active": true
+          },
+          "SKILL.md"
+        ],
+        "file": "SKILL.md",
+        "lines": [
+          [
+            [
+              "com",
+              "# .claude/skills/"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "├ "
+            ],
+            [
+              "",
+              "api-styleguide/SKILL.md"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "├ "
+            ],
+            [
+              "",
+              "deploy/SKILL.md"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "├ "
+            ],
+            [
+              "",
+              "release/SKILL.md"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "└ "
+            ],
+            [
+              "kw",
+              "… und 17 weitere"
+            ]
+          ]
+        ],
+        "focus_line": 4,
+        "zoom": 1.1,
+        "mark_word": "zwanzig",
+        "env_word": "Skills",
+        "click_word": "Projekt",
+        "question_word": "Verstopfen",
+        "chip_word": "Kontext"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Verstopfen"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Die Doku widerspricht: Du kannst viele Skills installieren, ohne Nachteil für den Kontext. Bis einer ausgelöst wird, liegen nur Name und Beschreibung dort.",
+      "data": {
+        "kicker": "Claude Docs · Agent Skills",
+        "page_title": "Agent Skills",
+        "quotes": [
+          "you can install many Skills without context penalty",
+          "only its name and description occupy context"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Viele Skills, kein Kontext-Nachteil.",
+        "page_word": "Doku",
+        "quote1_word": "viele",
+        "translation_word": "Nachteil",
+        "quote2_word": "Name"
+      },
+      "overlay": {
+        "title": "Nur der Kopf zählt",
+        "marker_at": "w:viele",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "spoken": "Claude lädt in Stufen. Beim Start rund hundert Tokens pro Skill für Name und Beschreibung. Die SKILL.md erst, wenn er ausgelöst wird. Zusatzdateien nur bei Bedarf.",
+      "data": {
+        "headline": "",
+        "gate": 1,
+        "chip": "erst beim Aufruf",
+        "nodes": [
+          {
+            "label": "Name + Beschreibung",
+            "tag": "~100 Tokens"
+          },
+          {
+            "label": "SKILL.md",
+            "hook": true
+          },
+          {
+            "label": "Zusatzdateien",
+            "tag": "bei Bedarf"
+          }
+        ],
+        "step": 210,
+        "travel_word": "Start",
+        "gate_word": "ausgelöst",
+        "travel_end_word": "Zusatzdateien"
+      },
+      "overlay": {
+        "title": "Laden in drei Stufen",
+        "marker_at": "w:Stufen",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Diesen Kopf siehst du oben in jeder SKILL.md: name und description. Nur er liegt ständig im Kontext.",
+      "data": {
+        "tabs": [
+          {
+            "name": "api-styleguide/SKILL.md",
+            "active": true
+          }
+        ],
+        "focus_line": 2,
+        "pre_line": 1,
+        "callout": "nur das ist immer im Kontext",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "punc",
+              "---"
+            ]
+          ],
+          [
+            [
+              "key",
+              "name"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "api-styleguide"
+            ]
+          ],
+          [
+            [
+              "key",
+              "description"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "Regeln für neue Endpunkte"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "---"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# API-Styleguide"
+            ]
+          ],
+          [
+            [
+              "",
+              "Ausführliche Regeln, Beispiele …"
+            ]
+          ],
+          [
+            [
+              "",
+              "Details: siehe REFERENCE.md"
+            ]
+          ]
+        ],
+        "line_h": 56,
+        "zoom": 1.08,
+        "typed_word": "oben",
+        "pre_word": "name",
+        "mark_word": "description",
+        "click_word": "Nur",
+        "callout_word": "ständig"
+      },
+      "overlay": {
+        "title": "Der Kopf der SKILL.md",
+        "example": true,
+        "marker_at": "w:Kopf",
+        "dim_at": "w:Nur",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Der Unterschied zur CLAUDE.md: Deren Inhalt ist immer geladen. Beim Skill kommt der Inhalt erst beim Aufruf und kostet bis dahin fast nichts.",
+      "data": {
+        "top": {
+          "title": "CLAUDE.md",
+          "verdict": "immer",
+          "rows": [
+            "Inhalt immer geladen",
+            "auch wenn unbenutzt"
+          ]
+        },
+        "bottom": {
+          "title": "SKILL.md",
+          "verdict": "bei Bedarf",
+          "rows": [
+            "Beschreibung immer",
+            "Inhalt beim Aufruf"
+          ]
+        },
+        "top_word": "CLAUDE",
+        "bottom_word": "Skill"
+      },
+      "overlay": {
+        "title": "Immer oder bei Bedarf",
+        "marker": "auslegung",
+        "marker_at": "w:Unterschied",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Eine Grenze gibt es: Die Liste hat ein Budget von einem Prozent des Kontextfensters. Bei vielen Skills lässt Claude Code Beschreibungen weg, zuerst bei selten genutzten.",
+      "data": {
+        "kicker": "Claude Code Docs · Skills",
+        "page_title": "Extend Claude with skills",
+        "quotes": [
+          "The budget scales at 1% of the model's context window.",
+          "drops some descriptions to fit the listing's character budget"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Budget 1 %, danach fallen Texte weg.",
+        "page_word": "Grenze",
+        "quote1_word": "Budget",
+        "quote2_word": "lässt",
+        "translation_word": "zuerst"
+      },
+      "overlay": {
+        "title": "Die Grenze: 1 % Budget",
+        "marker_at": "w:Budget",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Prüf es selbst: Slash context zeigt, wie groß die Liste ist, slash skill-doctor, was jeder Skill kostet. Skills, die nur du aufrufst, bekommen disable-model-invocation.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Größe der Liste sehen",
+            "code": "/context",
+            "at_word": "Slash"
+          },
+          {
+            "title": "Kosten je Skill",
+            "code": "/skill-doctor",
+            "at_word": "skill"
+          },
+          {
+            "title": "Nur du rufst ihn auf",
+            "code": "disable-model-invocation: true",
+            "at_word": "bekommen"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "Selbst nachprüfen",
+        "marker": "fakt",
+        "marker_at": "w:Slash",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Viele Skills kosten wenig: Ihr Inhalt kommt erst, wenn du ihn brauchst. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "SKILL.md: bei Bedarf",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Skill(api-styleguide)"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  SKILL.md lädt erst jetzt"
+          }
+        ],
+        "statement": "Viele Skills, wenig Kontext: Inhalt erst bei Bedarf.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Viele",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

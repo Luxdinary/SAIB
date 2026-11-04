@@ -1,0 +1,63 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 9631,
+          "output_tokens": 179,
+          "num_turns": 2,
+          "duration_s": 4.0
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 9632,
+          "output_tokens": 189,
+          "num_turns": 2,
+          "duration_s": 3.5
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [],
+          "exit": 0,
+          "input_tokens": 4708,
+          "output_tokens": 11,
+          "num_turns": 1,
+          "duration_s": 2.0
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [],
+          "exit": 0,
+          "input_tokens": 4708,
+          "output_tokens": 14,
+          "num_turns": 1,
+          "duration_s": 2.0
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

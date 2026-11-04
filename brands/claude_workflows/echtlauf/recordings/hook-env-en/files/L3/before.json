@@ -1,0 +1,6 @@
+{
+  ".claude/hooks/schutz.js": "// PreToolUse hook: blocks Edit and Write on the file .env (exit code 2)\nlet d = \"\";\nprocess.stdin.on(\"data\", c => d += c).on(\"end\", () => {\n  const p = (JSON.parse(d).tool_input || {}).file_path || \"\";\n  if (/(^|[\\\\/])\\.env$/.test(p)) {\n    console.error(\"Blocked by hook: .env is protected.\");\n    process.exit(2);\n  }\n  process.exit(0);\n});\n",
+  ".claude/settings.json": "{\n  \"hooks\": {\n    \"PreToolUse\": [\n      {\n        \"matcher\": \"Edit|Write\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"node \\\"$CLAUDE_PROJECT_DIR/.claude/hooks/schutz.js\\\"\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+  ".env": "# Sample data, no real credentials\nDEBUG=false\nAPI_KEY=demo-9c2e-NOT-REAL\n",
+  "CLAUDE.md": "# Project rules\n\n- Never change the file .env.\n"
+}

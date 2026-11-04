@@ -1,0 +1,92 @@
+id: claude_workflows
+name: Promptwerk
+niche: Claude workflows and prompts
+style: clean_saas
+phase: 2
+enabled: true
+languages:
+- de
+- en
+primary_language: de
+risk_default: low
+rules:
+- 'no screen recordings: UI scenes are animations labelled "Animierte Darstellung"
+  (Stefan, 2026-10-30); no private data'
+- every workflow must match the Anthropic documentation; say "tested" only if it actually
+  ran, with the Claude Code version
+palette:
+  bg: '#171923'
+  accent: '#A78BFA'
+  text: '#F8FAFC'
+  surface: '#272932'
+  muted: '#93959A'
+  scheme: dark
+  window: '#1E2029'
+  terminal: '#101218'
+  hairline: rgba(248,250,252,0.10)
+  signal_green: '#4ADE80'
+  signal_red: '#F87171'
+  signal_amber: '#FBBF24'
+  on_signal: '#0B0C10'
+  code_key: '#C4B5FD'
+  code_str: '#86EFAC'
+  code_punc: '#94A3B8'
+  code_com: '#7C8294'
+fonts:
+  display:
+    family: Inter
+    weight: 800
+    file: assets/fonts/inter/Inter[opsz,wght].ttf
+    license: OFL-1.1
+  body:
+    family: Inter
+    weight: 400
+    file: assets/fonts/inter/Inter[opsz,wght].ttf
+    license: OFL-1.1
+  mono:
+    family: JetBrains Mono
+    weight: 500
+    file: assets/fonts/jetbrainsmono/JetBrainsMono[wght].ttf
+    license: OFL-1.1
+motif: code-window
+tempo: snappy
+bg_pattern: dot-grid
+layout: shared 9:16 layout, see docs/design-system.md
+audience: people who use Claude or Claude Code for real work and want workflows that
+  provably work
+tone: precise, friendly, zero hype; show the steps, name the Claude version
+ai_label:
+  de: KI-generiert
+  en: AI-generated
+address: du
+scenes: brands/claude_workflows/scenes.py
+production:
+  closing_sentence:
+    de: Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt.
+    en: Follow Promptwerk for more Claude workflows, step by step.
+  domain: ''
+  ai_note:                       # format Echtlauf (02.11.2026): voice and script are generated, the terminal is a recording
+    de: KI-generiert sind Stimme, Sprechtext und die als „KI-Bild“ markierten Bilder. Das Terminal ist eine echte Aufzeichnung.
+    en: AI-generated voice, script and the images marked "AI image". The terminal is a real recording.
+template_doc: OneDrive/Business/02 Marke/Promptwerk/Format-Bibel.md
+explainer:
+  enabled: true
+  voice_tag:
+    de: SYNTHETISCHE STIMME
+    en: SYNTHETIC VOICE
+  opening:
+    de: Synthetische Stimme · Quellen am Bildschirm · Terminal animiert
+    en: Synthetic voice · Sources on screen · Terminal is animated
+  opening_seconds: 3.5
+  source_y: 1112
+  colors:
+    fakt: '#A78BFA'
+    auslegung: '#F0ABFC'
+    unsicher: '#FBBF24'
+    luecke: '#F87171'
+    beispiel: '#8A93A6'
+  note: 'Fakt = Markenakzent Violett (aktive Farbe: Marker, Cursor, Klick). Weil die
+    Marke selbst violett ist, steht Auslegung als helles Orchidee #F0ABFC; Form und
+    Wort unterscheiden ohnehin. Gruen #4ADE80 nur erreichter Schutz, Rot nur das abgewehrte
+    Risiko (Sperrzeile). source_y 1112: unter der Szenenzone (endet y 1100), ueber
+    den Untertiteln (ab etwa y 1310).'

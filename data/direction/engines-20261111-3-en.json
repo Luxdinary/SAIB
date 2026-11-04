@@ -1,0 +1,474 @@
+{
+  "video_id": "engines-20261111-3-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "How to read a valve timing diagram",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261111-3-en, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Four numbers describe when the valves open and close. How to read a valve timing diagram, with typical values from the MIT lecture.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.\nTypical ranges from MIT 2.61, lecture 8; the model uses values inside these ranges, not a specific engine.",
+    "hashtags": [
+      "enginetech",
+      "valvetiming",
+      "camshaft",
+      "valves",
+      "howto"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, lecture 8",
+      "title": "MIT 2.61, Vorlesung 8 (L8)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "NASA Glenn, four-stroke engine",
+      "title": "NASA Glenn, Viertaktmotor (N1)",
+      "url": "https://www.grc.nasa.gov/www/k-12/airplane/engopt.html",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "demonstration",
+      "spoken": "Here is how to read them.",
+      "on_screen": "Four numbers, two valves",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "surprising_fact",
+      "spoken": "How to read a valve timing diagram",
+      "on_screen": "How to read a valve timing diagram",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "question",
+      "spoken": "What do the numbers in a timing diagram mean?",
+      "on_screen": "How to read a valve timing diagram",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "misconception",
+      "spoken": "How to read a valve timing diagram",
+      "on_screen": "How to read a valve timing diagram",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "concrete_risk",
+      "spoken": "How to read a valve timing diagram",
+      "on_screen": "How to read a valve timing diagram",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Four numbers describe when an engine's valves open and close. Here is how to read them.",
+      "data": {
+        "claim": "Four numbers, two valves",
+        "claim_lines": [
+          "Four numbers,",
+          "two valves"
+        ],
+        "claim_highlight": "Four numbers,",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:valves",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_chart",
+      "spoken": "The valve timing diagram shows valve lift over crank angle. It spans two turns, seven hundred and twenty degrees, because the camshaft turns only half as fast as the crankshaft. The curves show how far each valve is open at any moment.",
+      "data": {
+        "title": "Lift over angle",
+        "kind": "valve_lift",
+        "series_at": [
+          "w:lift",
+          1.2
+        ],
+        "dot": true,
+        "theta": [
+          [
+            0,
+            -180
+          ],
+          [
+            1,
+            540
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:camshaft",
+        "kicker": "2 · THE DIAGRAM",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "Number one: intake opens, typically up to fifteen degrees before top dead centre, according to the lecture. Number two: intake closes, typically thirty to fifty degrees after bottom dead centre. Watch the first two marks appear.",
+      "data": {
+        "title": "Intake: open and close",
+        "kind": "valve_lift",
+        "series_at": [
+          0.0,
+          0.02
+        ],
+        "marks": [
+          {
+            "x": -10,
+            "label": "1 intake opens",
+            "at": "w:opens",
+            "side": "l",
+            "row": 0
+          },
+          {
+            "x": 220,
+            "label": "2 intake closes",
+            "at": "w:closes",
+            "row": 1
+          }
+        ],
+        "theta": [
+          [
+            0,
+            -40
+          ],
+          [
+            1,
+            260
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:lecture",
+        "kicker": "3 · INTAKE"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "Number three: exhaust opens, thirty to fifty degrees before bottom dead centre. Number four: exhaust closes, up to fifteen degrees after top dead centre. And here are the two exhaust marks.",
+      "data": {
+        "title": "Exhaust: open and close",
+        "kind": "valve_lift",
+        "series_at": [
+          0.0,
+          0.02
+        ],
+        "marks": [
+          {
+            "x": 500,
+            "label": "3 exhaust opens",
+            "at": "w:opens",
+            "side": "l",
+            "row": 0,
+            "color": "steel"
+          },
+          {
+            "x": 10,
+            "label": "4 exhaust closes",
+            "at": "w:closes",
+            "row": 1,
+            "color": "steel"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            460
+          ],
+          [
+            1,
+            760
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:opens",
+        "kicker": "4 · EXHAUST"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rv_cutaway",
+      "spoken": "Each number has a reason. Opening early lets the cylinder pressure escape before the exhaust stroke. Closing late uses the momentum of the incoming air at high engine speed. Both are about getting gas in and out as well as possible.",
+      "data": {
+        "title": "Why like that?",
+        "notes": [
+          {
+            "text": "blowdown",
+            "at": "w:Opening",
+            "side": "r",
+            "y": 780,
+            "color": "exhaust",
+            "to": [
+              850,
+              425
+            ]
+          },
+          {
+            "text": "ram effect",
+            "at": "w:Closing",
+            "side": "l",
+            "y": 640,
+            "to": [
+              280,
+              425
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            460
+          ],
+          [
+            1,
+            960
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:reason",
+        "kicker": "5 · THE REASONS",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "rv_chart",
+      "spoken": "And where the exhaust is not yet closed and the intake is already open, you find the overlap. With these four numbers you can read any valve timing diagram.",
+      "data": {
+        "title": "Four numbers",
+        "kind": "valve_lift",
+        "series_at": [
+          0.0,
+          0.02
+        ],
+        "dot": true,
+        "bands": [
+          {
+            "x0": -10,
+            "x1": 10,
+            "label": "Overlap",
+            "at": "w:overlap"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            -180
+          ],
+          [
+            1,
+            540
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:overlap",
+        "kicker": "6 · THE CORE",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Intake opens, intake closes, exhaust opens, exhaust closes. Understand engines: follow Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "intake",
+            "at": "w:Intake"
+          },
+          {
+            "text": "exhaust",
+            "at": "w:exhaust"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

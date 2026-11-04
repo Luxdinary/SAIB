@@ -1,0 +1,570 @@
+{
+  "video_id": "military_history-20261114-1-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "550 km Grenze: der Limes als Bausystem",
+  "notes": "Woche 1, Reihe Gebaut für den Ernstfall. Bauwerk und Grenzsystem; UNESCO-Seite war nicht abrufbar, daher DLK und KuLaDig.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.deutsche-limeskommission.de/index.php?id=4",
+      "title": "Welterbe FRE: Allgemeines, Deutsche Limeskommission",
+      "label": "Deutsche Limeskommission",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.kuladig.de/Objektansicht/O-135501-20150813-34",
+      "title": "Rekonstruierte Limespalisade bei Hohenstein-Steckenroth, KuLaDig (Thomas Becker, hessenARCHÄOLOGIE 2015)",
+      "label": "KuLaDig: Palisade",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.kuladig.de/Objektansicht/P-TB-20110317-0001",
+      "title": "Obergermanisch-Raetischer Limes in Hessen, KuLaDig nach Hessischem Landesamt für Denkmalpflege 2011",
+      "label": "KuLaDig: Limes Hessen",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Zahl der Türme: ca. 900 (DLK) oder mehr als 900 (KuLaDig); im Video rund 900."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie baut man eine Grenze von 550 Kilometern, vom Rhein bis zur Donau?",
+      "on_screen": "550 km Grenze, wie gebaut?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Der Limes war eine durchgehende Steinmauer? Meist war er Palisade, Graben und Wall.",
+      "on_screen": "Keine durchgehende Mauer",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Am Main bildete 52 Kilometer lang der Fluss die Grenze.",
+      "on_screen": "Ein Fluss als Grenze",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne gebaute Grenze keine Zollkontrolle.",
+      "on_screen": "Grenze und Zoll",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie Palisade, Graben und Wall zusammengehören.",
+      "on_screen": "Palisade, Graben, Wall",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie baut man eine Grenze von 550 Kilometern, vom Rhein bis zur Donau?",
+      "data": {
+        "question": "550 Kilometer Grenze, aber wie?",
+        "question_em": "aber wie",
+        "card_title": "Limes",
+        "card_meta": "RHEIN BIS DONAU",
+        "card_no": "AKTE 25",
+        "stamp": "550 km",
+        "drawing": "limes_section.svg",
+        "packet_label": "Grenze",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:550",
+        "packet_at": "w:Grenze",
+        "em_at": "w:Donau"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Der Obergermanisch-Raetische Limes reicht vom Rhein nördlich von Koblenz bis zur Donau bei Kelheim. Er ist Deutschlands größtes Bodendenkmal.",
+      "data": {
+        "mode": "map",
+        "headline": "Vom Rhein zur Donau",
+        "places": [
+          {
+            "label": "Rhein",
+            "code": "bei Koblenz",
+            "x": 600,
+            "y": 80,
+            "at": "w:Rhein"
+          },
+          {
+            "label": "Donau",
+            "code": "bei Kelheim",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Donau"
+          }
+        ],
+        "route_at": "w:reicht",
+        "route_label": "550 km Landgrenze",
+        "route_label_at": "w:Koblenz",
+        "wait_at": "w:Kelheim",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "größtes Bodendenkmal",
+        "chip_at": "w:Bodendenkmal",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Grenze",
+        "packet_at": "w:Limes",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Rhein bis Donau",
+        "line_label_at": "w:Deutschlands",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Eichenstämmen",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Um 120 nach Christus steht hier eine Palisade aus gespaltenen Eichenstämmen, die glatte Seite nach außen. Wall und Graben kommen später, frühestens Ende des zweiten Jahrhunderts.",
+      "data": {
+        "headline": "Holz, dann Erde",
+        "drawing": "limes_section.svg",
+        "sheet_title": "BLATT 2 · QUERSCHNITT",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Palisade: Eiche, gespalten",
+            "x": 95,
+            "y": 290,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Palisade"
+          },
+          {
+            "label": "Glatte Seite nach außen",
+            "x": 40,
+            "y": 350,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:glatte"
+          },
+          {
+            "label": "Graben, später",
+            "x": 210,
+            "y": 470,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Graben"
+          },
+          {
+            "label": "Wall, später",
+            "x": 320,
+            "y": 390,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Wall"
+          }
+        ],
+        "zoom": {
+          "x": 150,
+          "y": 380,
+          "scale": 1.12,
+          "at": "w:Eichenstämmen",
+          "back_at": "w:zweiten",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Je nach Provinz sieht die Grenze anders aus. In Obergermanien Palisade, Graben und Wall, in Raetien Palisade und eine Steinmauer.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Zwei Provinzen, zwei Bauweisen",
+        "left": {
+          "tag": "Obergermanien",
+          "title": "Holz und Erde",
+          "at": "w:Obergermanien",
+          "rows": [
+            {
+              "text": "Palisade, Graben, Wall",
+              "at": "w:Wall"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Raetien",
+          "title": "Holz und Stein",
+          "at": "w:Raetien",
+          "rows": [
+            {
+              "text": "Palisade, Steinmauer",
+              "at": "w:Steinmauer"
+            }
+          ]
+        },
+        "verdict": "Ein System, zwei Bauweisen",
+        "verdict_at": "w:Steinmauer",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "In Zahlen: 550 Kilometer, rund 900 Wachttürme, 120 Kastelle. Nur am Main ersetzt 52 Kilometer lang der Fluss die gebaute Grenze.",
+      "data": {
+        "headline": "In Zahlen",
+        "nodes": [
+          {
+            "label": "550 km",
+            "code": "Länge",
+            "at": "w:550"
+          },
+          {
+            "label": "≈ 900 Wachttürme",
+            "code": "rund",
+            "at": "w:900"
+          },
+          {
+            "label": "120 Kastelle",
+            "code": "entlang",
+            "at": "w:120"
+          },
+          {
+            "label": "52 km am Main",
+            "code": "Flussgrenze",
+            "at": "w:Main"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "count": {
+          "to": 900,
+          "label": "TÜRME",
+          "at": "w:900",
+          "until": "w:Main"
+        },
+        "total": {
+          "to": 52,
+          "pre": "",
+          "label": "KM FLUSS",
+          "at": "w:52"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "Ausgebaut wird unter Hadrian um 120, unter Antoninus Pius um 160 und unter Septimius Severus. Grenzverkehr mit Zoll läuft bis Mitte des dritten Jahrhunderts.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 120 bis ins 3. Jh.",
+        "items": [
+          {
+            "year": "120",
+            "title": "Hadrian",
+            "sub": "Palisade",
+            "at": "w:120"
+          },
+          {
+            "year": "160",
+            "title": "Antoninus Pius",
+            "sub": "Ausbau",
+            "at": "w:160"
+          },
+          {
+            "year": "3. Jh.",
+            "title": "Grenzverkehr",
+            "sub": "mit Zoll bis Mitte 3. Jh.",
+            "at": "w:Mitte",
+            "sub_at": "w:Zoll"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Seit dem 15. Juli 2005 ist der Limes Welterbe. Bei Hohenstein-Steckenroth steht seit 2010 ein rekonstruierter Abschnitt der Palisade, etwa zehn Meter lang. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Limes",
+        "card_meta": "RHEIN BIS DONAU",
+        "card_no": "AKTE 25",
+        "stamp": "2005",
+        "drawing": "limes_section.svg",
+        "statement": "550 km Grenze, heute Welterbe",
+        "statement_at": "w:Welterbe",
+        "stamp_at": "w:2005",
+        "note": "Rekonstruktion bei Hohenstein, 2010",
+        "note_at": "w:rekonstruierter",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Grenze",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Länge: 550 km",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Verlauf: Rhein–Donau",
+          "tone": "amber",
+          "offset": 5.6
+        },
+        {
+          "beat": "b3",
+          "text": "Palisade: um 120",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b4",
+          "text": "Bauweise: 2 Varianten",
+          "tone": "amber",
+          "offset": 1.2
+        },
+        {
+          "beat": "b5",
+          "text": "Türme: ≈ 900",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b6",
+          "text": "Grenzverkehr: Zoll",
+          "tone": "muted",
+          "offset": 8.6
+        },
+        {
+          "beat": "b7",
+          "text": "Welterbe: 2005",
+          "tone": "muted",
+          "offset": 2.2
+        }
+      ]
+    },
+    "description": "Der Obergermanisch-Raetische Limes: 550 km vom Rhein bis zur Donau, rund 900 Türme, 120 Kastelle, Palisade, Graben und Wall. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "limes",
+      "römer",
+      "welterbe",
+      "geschichte",
+      "archäologie"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

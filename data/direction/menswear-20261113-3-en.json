@@ -1,0 +1,625 @@
+{
+ "video_id": "menswear-20261113-3-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Pockets give away the occasion",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema B04 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S4; als Tendenz erzählt, nicht als Gesetz; Ticket Pocket bewusst ausgelassen (eigenes Thema B10).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Jacket, pockets",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "pocket: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "other occasion",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "evening: no flap",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "casual: patch",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "a tendency, no law",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "three pockets",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "pocket shows occasion",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Jetted, flap or patch: what the pockets on a jacket say about the occasion. Based on Woolmark (black tie, Huntsman) and the Anderson & Sheppard gallery, as a tendency rather than a law.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "jacket",
+   "pockets",
+   "tailoring",
+   "styletips"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/ko/z.archive/archive-industry/suiting/black-tie-dress-code-explained/",
+   "title": "Woolmark, Black tie dress code explained: Taschen gepaspelt, Schlitze ohne Patte, damit die Silhouette glatt bleibt",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Black Tie"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.anderson-sheppard.co.uk/bespoke-gallery/",
+   "title": "Anderson & Sheppard, Bespoke Gallery: Dinnerjackets mit Paspeltaschen; Tweed- und Shetland-Sakkos mit geraden Pattentaschen; Leinen- und Cordsakkos mit aufgesetzten Taschen; auch Anzüge mit aufgesetzten Pattentaschen",
+   "checked_at": "2026-11-01",
+   "label": "Anderson & Sheppard, Galerie"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.anderson-sheppard.co.uk/thenotebook/the-anderson-sheppard-linen-jacket/",
+   "title": "Anderson & Sheppard, The linen jacket: aufgesetzte Taschen passen zum insgesamt lässigen Charakter der Jacke",
+   "checked_at": "2026-11-01",
+   "label": "A&S, Leinenjacke"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.woolmark.com/z.archive/archive-industry/suiting/on-the-row-huntsman/",
+   "title": "Woolmark, On the Row: Huntsman: Taschen mit Kellerfalte, damit Patronen Platz haben; in der Stadt liegt die Tasche flach",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Huntsman"
+  }
+ ],
+ "unverified": [
+  "Kellerfalte (Huntsman, S4): nur gesprochen und als Etikett, keine eigene Zeichnung; gezeigt wird das Sakko mit Pattentasche.",
+  "Aufgesetzte Pattentaschen am Anzug (S2): als aufgesetzte Tasche gezeichnet, Patte darauf gibt es nicht als Zeichnung.",
+  "Stoffe (Tweed, Leinen, Cord) nur gesprochen; alle Sakkos in derselben Grundfarbe."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What do a jacket's pockets say?",
+   "on_screen": "What do a jacket's pockets say?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko mit Pattentaschen, Lupe auf der Patte",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Pockets are no side detail: they show the occasion",
+   "on_screen": "Pockets are no side detail: they show the occasion",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Sakko mit Pattentaschen, Lupe auf der Patte",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "A bellows pleat, so the cartridges fit",
+   "on_screen": "A bellows pleat, so the cartridges fit",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "visual": "Sakko mit Pattentaschen, Lupe auf der Patte",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Flaps on a dinner jacket? Woolmark says jetted.",
+   "on_screen": "Flaps on a dinner jacket? Woolmark says jetted.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Sakko mit Pattentaschen, Lupe auf der Patte",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "A slit, a flap, a patch: three occasions",
+   "on_screen": "A slit, a flap, a patch: three occasions",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko mit Pattentaschen, Lupe auf der Patte",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die drei Taschenarten als Frage, die Lupe auf der Patte."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "A slit, a flap or a patch: the pockets on a jacket often give away the occasion. How do you read them?",
+   "data": {
+    "question": "What do a jacket's pockets say?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "lapel": "notch",
+     "pockets": "flap",
+     "strain": false
+    },
+    "target": "pocket",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:flap",
+    "loupe_at": "w:flap",
+    "nie_at": "w:How",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 12,
+   "spoken": "Two jackets from the Anderson and Sheppard gallery. On the left, a dinner jacket with jetted pockets, just a slit. On the right, a tweed jacket with straight flap pockets. Same spot, a different occasion.",
+   "data": {
+    "headline": "Evening or tweed?",
+    "left": {
+     "title": "Dinner jacket",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak",
+      "dinner": true,
+      "neck": "bow",
+      "pockets": "jetted",
+      "strain": false
+     },
+     "target": "pocket",
+     "tag": "jetted, no flap",
+     "pulses": [
+      {
+       "target": "pocket",
+       "at": "w:slit"
+      }
+     ]
+    },
+    "right": {
+     "title": "Tweed jacket",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "lapel": "notch",
+      "pockets": "flap",
+      "strain": false
+     },
+     "tag": "straight flap pockets",
+     "pulses": [
+      {
+       "target": "pocket",
+       "at": "w:flap"
+      }
+     ]
+    },
+    "left_at": "w:Two",
+    "left_tag_at": "w:jetted",
+    "right_at": "w:right",
+    "right_tag_at": "w:straight",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Anderson"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 11,
+   "spoken": "Why no flap on a dinner jacket? According to Woolmark, black tie pockets are jetted: slits without flaps. That keeps the silhouette smooth. Anderson and Sheppard's dinner jackets show the same.",
+   "data": {
+    "headline": "Why no flap?",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "pockets": "jetted",
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Black tie",
+      "tags": [
+       {
+        "spot": "pocket",
+        "text": "jetted pocket",
+        "sub": "a slit, no flap",
+        "tone": "always",
+        "at": "w:jetted"
+       },
+       {
+        "spot": "waist",
+        "text": "smooth silhouette",
+        "sub": "says Woolmark",
+        "tone": "always",
+        "at": "w:silhouette"
+       }
+      ],
+      "focus_at": "w:Anderson"
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Woolmark"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "Now the relaxed end. Anderson and Sheppard show linen and corduroy jackets with patch pockets. Of their own linen jacket, the house says the patch pockets suit its overall casual character.",
+   "data": {
+    "headline": "And casual?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "lapel": "notch",
+     "pockets": "flap",
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "lapel": "notch",
+     "pockets": "patch",
+     "strain": false
+    },
+    "target": "pocket",
+    "zoom": 1.45,
+    "label": "Patch: a casual character",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:relaxed",
+    "zoom_at": "w:linen",
+    "flip_at": "w:patch",
+    "label_at": "w:suit"
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 300,
+     "y": 940,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Anderson"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 14,
+   "spoken": "A Woolmark portrait of the tailor Huntsman adds this: in the country, a pocket gets a bellows pleat so cartridges fit. In town, it lies flat. Still, it is a tendency: Anderson and Sheppard also make suits with patch pockets.",
+   "data": {
+    "headline": "Country and town",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "notch",
+       "pockets": "flap",
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Says Huntsman",
+      "tags": [
+       {
+        "spot": "pocket",
+        "text": "country: bellows",
+        "sub": "room for cartridges",
+        "tone": "always",
+        "at": "w:bellows"
+       },
+       {
+        "spot": "pocket",
+        "text": "town: flat",
+        "sub": "says Huntsman",
+        "tone": "always",
+        "at": "w:town"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "notch",
+       "pockets": "patch",
+       "strain": false
+      },
+      "at": "w:Anderson",
+      "title": "On suits too",
+      "tags": [
+       {
+        "spot": "pocket",
+        "text": "patch pockets",
+        "sub": "Anderson & Sheppard",
+        "tone": "sometimes",
+        "at": "w:suits"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S4",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Woolmark"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "In short: jetted pockets without flaps belong to the dinner jacket. Straight flap pockets appear on tweed and Shetland at Anderson and Sheppard. And patch pockets on linen and corduroy, matching the casual character.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "No flap: dinner jacket",
+      "sub": "jetted, a smooth silhouette",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "pockets": "jetted",
+       "strain": false
+      },
+      "at": "w:jetted",
+      "ring": "pocket",
+      "ring_at": "w:dinner"
+     },
+     {
+      "title": "Flap: tweed, Shetland",
+      "sub": "straight flap pockets",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "notch",
+       "pockets": "flap",
+       "strain": false
+      },
+      "at": "w:Straight",
+      "ring": "pocket",
+      "ring_at": "w:tweed"
+     },
+     {
+      "title": "Patch: linen, corduroy",
+      "sub": "matching the casual character",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "notch",
+       "pockets": "flap",
+       "strain": false
+      },
+      "at": "w:patch",
+      "then": {
+       "pockets": "patch"
+      },
+      "then_at": "w:linen"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "A slit for the evening, a flap for tweed, a patch for linen. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "lapel": "notch",
+     "pockets": "patch",
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "pockets": "jetted",
+     "strain": false
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "pocket",
+    "fix_at": "w:slit",
+    "ring_at": "w:evening",
+    "statement_at": "w:linen",
+    "chip_at": "w:eye",
+    "statement": "Slit, flap or patch.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

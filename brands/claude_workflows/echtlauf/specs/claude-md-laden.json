@@ -1,0 +1,31 @@
+{
+  "id": "claude-md-laden",
+  "topic_id": "claude_workflows-20261109-2-de",
+  "language": "de",
+  "title": "Was Claude zu Beginn liest",
+  "model": "haiku",
+  "tools": "Read,Grep,Glob",
+  "probe": "kranich-07",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "README.md": "# Testprojekt\n\nBeispielordner für ein Promptwerk-Video. Alle Werte sind erfunden.\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Ohne CLAUDE.md",
+      "prompt": "Wie heißt unser Testserver? Antworte in einem Satz."
+    },
+    {
+      "id": "L2",
+      "title": "Mit CLAUDE.md",
+      "prompt": "Wie heißt unser Testserver? Antworte in einem Satz.",
+      "files": {
+        "CLAUDE.md": "# Projekt\n\n- Der Testserver heißt kranich-07 (Beispielwert).\n"
+      }
+    }
+  ]
+}

@@ -1,0 +1,647 @@
+{
+  "video_id": "megaconstruction-20261112-1-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Brooklyn Bridge: Als der Bau Arbeiter und Chefingenieur krank machte",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261112-1-de. Thema: brooklyn. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Brooklyn Bridge",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Fundamente unter Wasser",
+          "tone": "amber",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "Bau 1869–1883",
+          "tone": "accent",
+          "at": "@1869"
+        },
+        {
+          "beat": "b3",
+          "text": "Caissons in Druckluft",
+          "tone": "amber",
+          "at": "@Caissons"
+        },
+        {
+          "beat": "b4",
+          "text": "Chefingenieur erkrankt",
+          "tone": "red",
+          "at": "@1872"
+        },
+        {
+          "beat": "b4",
+          "text": "Emily übermittelt",
+          "tone": "accent",
+          "at": "@Emily"
+        },
+        {
+          "beat": "b5",
+          "text": "4 Kabel, je 5.434 Drähte",
+          "tone": "accent",
+          "at": "@5.434"
+        }
+      ]
+    },
+    "description": "Die Brooklyn Bridge (1869–1883): Für die Fundamente arbeiteten Männer in Druckluft-Caissons unter dem East River, rund 110 erkrankten. Auch Chefingenieur Washington Roebling.",
+    "companion_text": "Gerechnet: 1.595,5 ft = 486 m; 78,5 ft = 23,9 m; 44,5 ft = 13,6 m. Quellen: NYC DOT, ASCE, Library of Congress. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "brooklynbridge",
+      "newyork",
+      "baugeschichte",
+      "hängebrücke",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "1.595,5 ft × 0,3048 = 486,3 m",
+        "result": "rund 486 m Hauptspannweite",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "78,5 ft × 0,3048 = 23,9 m; 44,5 ft × 0,3048 = 13,6 m",
+        "result": "rund 24 m und 14 m",
+        "sources": [
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "bed",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -30,
+            0
+          ]
+        },
+        {
+          "id": "water",
+          "kind": "water",
+          "size": 60000,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "bridge",
+          "kind": "bridge",
+          "type": "suspension",
+          "x0": -820,
+          "x1": 820,
+          "deck_y": 40,
+          "deck_w": 26,
+          "deck_t": 5,
+          "towers": [
+            -243,
+            243
+          ],
+          "tower_h": 48,
+          "tower_w": 16,
+          "ground_y": -10,
+          "piers": [
+            -560,
+            -420,
+            420,
+            560
+          ],
+          "sag_min": 4,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cny",
+          "kind": "box",
+          "size": [
+            52,
+            6,
+            31
+          ],
+          "color": "accent",
+          "pos": [
+            -243,
+            -29.9,
+            0
+          ]
+        },
+        {
+          "id": "cbk",
+          "kind": "box",
+          "size": [
+            52,
+            6,
+            31
+          ],
+          "color": "accent",
+          "pos": [
+            243,
+            -19.6,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "cny": [
+          -243,
+          -24,
+          16
+        ],
+        "cbk": [
+          243,
+          -14,
+          16
+        ],
+        "span": [
+          0,
+          46,
+          13
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "cy": 840
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 90,
+            "az1": 84,
+            "el0": 4,
+            "el1": 8,
+            "fit0": 1.0,
+            "fit1": 0.95,
+            "cy": 820
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -280,
+                -36,
+                -20
+              ],
+              [
+                280,
+                10,
+                20
+              ]
+            ],
+            "az0": 80,
+            "az1": 70,
+            "el0": -4,
+            "el1": 2,
+            "fit0": 0.9,
+            "fit1": 0.95,
+            "cy": 800
+          },
+          "props": {
+            "water.opacity": 0.35
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 14,
+            "el1": 18,
+            "fit0": 0.9,
+            "fit1": 0.95,
+            "cy": 860
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -260,
+                30,
+                -20
+              ],
+              [
+                -220,
+                95,
+                20
+              ]
+            ],
+            "az0": 60,
+            "az1": 80,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.5,
+            "fit1": 0.6,
+            "cy": 800
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 110,
+            "az1": 100,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 1.0,
+            "fit1": 0.9,
+            "cy": 860
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.nyc.gov/html/dot/html/infrastructure/brooklyn-bridge.shtml",
+      "title": "NYC DOT: Brooklyn Bridge (1869–1883; Hauptspannweite 1.595,5 ft)",
+      "label": "NYC DOT, Brooklyn Bridge",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/issues/magazine-issue/article/2022/07/new-yorks-brooklyn-bridge-is-an-engineering-marvel",
+      "title": "ASCE Civil Engineering, 07/2022: Caissons 102 × 172 ft, 78,5 / 44,5 ft tief; rund 110 Fälle von Caisson-Krankheit; 4 Kabel à 5.434 Drähte; Eröffnung 24.05.1883",
+      "label": "ASCE Civil Engineering 2022",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.asce.org/about-civil-engineering/history-and-heritage/notable-civil-engineers/washington-augustus-roebling",
+      "title": "ASCE: Washington Augustus Roebling (1872 bewusstlos aus dem Caisson)",
+      "label": "ASCE, W. A. Roebling",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "https://blogs.loc.gov/headlinesandheroes/2018/10/the-brooklyn-bridge/",
+      "title": "Library of Congress: The Brooklyn Bridge (bei Eröffnung längste Hängebrücke)",
+      "label": "Library of Congress, 2018",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Todeszahlen widersprüchlich (5 bis 40 je nach Quelle): nicht genannt.",
+    "Caisson-Tiefen: Bezugsebene in den Quellen nicht festgelegt, daher 'rund'.",
+    "Fahrbahnhöhe und Turmhöhe im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Für diese Brücke arbeiteten Männer in Druckluftkammern unter dem East River.",
+      "on_screen": "Gebaut in Druckluft unter dem Fluss",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Brooklyn Bridge wirklich?",
+      "on_screen": "Wie groß ist die Brooklyn Bridge wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen die Brooklyn Bridge.",
+      "on_screen": "die Brooklyn Bridge: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Brooklyn Bridge schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Brooklyn Bridge: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Brooklyn Bridge im Modell entsteht.",
+      "on_screen": "die Brooklyn Bridge im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "Für diese Brücke arbeiteten Männer in Druckluftkammern unter dem East River. Rund 110 erkrankten an der Taucherkrankheit.",
+      "data": {
+        "kicker": "Baugeschichte · Brooklyn Bridge",
+        "question": "Gebaut in Druckluft unter dem Fluss",
+        "question_at": "@Für",
+        "number": {
+          "value": "110",
+          "unit": "erkrankt",
+          "at_word": "110",
+          "y": 640
+        },
+        "badge": {
+          "text": "Brooklyn Bridge, 1883",
+          "at_word": "Taucherkrankheit",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Rund"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "Die Brooklyn Bridge in New York wurde von 1869 bis 1883 gebaut. Ihre Hauptspannweite misst rund 486 Meter.",
+      "data": {
+        "headline": "Brooklyn Bridge, New York",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "1869",
+            "unit": "",
+            "label": "Baubeginn",
+            "at_word": "1869"
+          },
+          {
+            "value": "486",
+            "unit": "m",
+            "label": "Hauptspannweite",
+            "at_word": "486"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · New York",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_section",
+      "spoken": "Für die Türme versenkte man riesige Holzkästen, sogenannte Caissons, mit Druckluft auf den Grund. Auf der New Yorker Seite rund 24 Meter tief, auf der Brooklyner Seite rund 14.",
+      "data": {
+        "headline": "Kästen aus Holz und Druckluft",
+        "note": "Modell schematisch",
+        "note_dy": 190,
+        "callouts": [
+          {
+            "anchor": "cny",
+            "text": "New York: rund 24 m",
+            "side": "down",
+            "at_word": "New"
+          },
+          {
+            "anchor": "cbk",
+            "text": "Brooklyn: rund 14 m",
+            "side": "down",
+            "at_word": "Brooklyner"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "3 · Caissons",
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "seconds": 0.7,
+          "x": 540,
+          "y": 960
+        },
+        "vignette": true
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gs_phases",
+      "spoken": "1869 starb Planer John Roebling nach einem Unfall. Sein Sohn Washington übernahm, wurde 1872 bewusstlos aus einem Caisson geholt und blieb schwer krank. Seine Frau Emily gab seine Anweisungen an die Baustelle weiter.",
+      "data": {
+        "headline": "Eine Familie baut weiter",
+        "rail_dy": 210,
+        "steps": [
+          {
+            "label": "1869: John Roebling",
+            "sub": "stirbt nach einem Unfall",
+            "at_word": "starb"
+          },
+          {
+            "label": "1872: Washington",
+            "sub": "bewusstlos aus dem Caisson",
+            "at_word": "1872"
+          },
+          {
+            "label": "Emily Roebling",
+            "sub": "gibt die Anweisungen weiter",
+            "at_word": "Emily"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "kicker": "4 · Eine Familie baut",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "Getragen wird die Brücke von vier Hauptkabeln, jedes aus 5.434 Drähten.",
+      "data": {
+        "headline": "Vier Kabel aus Draht",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "4",
+            "unit": "",
+            "label": "Hauptkabel",
+            "at_word": "vier"
+          },
+          {
+            "value": "5.434",
+            "unit": "",
+            "label": "Drähte je Kabel",
+            "at_word": "5.434"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · Kabel",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "Am 24. Mai 1883 wurde sie eröffnet, damals die längste Hängebrücke der Welt. Folge Gigastruct, dann siehst du das nächste Bauwerk.",
+      "data": {
+        "mode": "closing",
+        "statement": "Eröffnet am 24. Mai 1883.",
+        "chip": {
+          "text": "Folge Gigastruct",
+          "at_word": "Folge",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ],
+      "overlay": {
+        "kicker": "6 · 1883",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

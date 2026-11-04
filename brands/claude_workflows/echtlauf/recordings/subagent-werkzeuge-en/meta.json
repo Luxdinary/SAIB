@@ -1,0 +1,89 @@
+{
+  "spec": "subagent-werkzeuge-en",
+  "recorded_at": "2026-11-02T18:11:26+02:00",
+  "claude_code": "2.1.309",
+  "model_alias": "haiku",
+  "language": "en",
+  "isolation": [
+    "--setting-sources",
+    "project,local",
+    "--strict-mcp-config",
+    "--disable-slash-commands",
+    "--no-session-persistence"
+  ],
+  "sandbox": "C:\\Automation\\promptwerk-sandbox\\subagent-werkzeuge-en",
+  "runs": {
+    "L1": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Have the subagent pruefer fix the typos in text.md.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Agent,Read,Edit",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Task",
+        "Edit",
+        "Read"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 17289,
+      "num_turns": 4,
+      "total_cost_usd": 0.00234321,
+      "is_error": false,
+      "permission_denials": 0
+    },
+    "L2": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Have the subagent pruefer fix the typos in text.md.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Agent,Read,Edit",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Task",
+        "Edit",
+        "Read"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 10017,
+      "num_turns": 2,
+      "total_cost_usd": 0.0012992,
+      "is_error": false,
+      "permission_denials": 0
+    }
+  }
+}

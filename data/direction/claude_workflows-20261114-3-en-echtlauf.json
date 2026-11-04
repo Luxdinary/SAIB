@@ -1,0 +1,311 @@
+{
+  "video_id": "claude_workflows-20261114-3-en-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Format code after every edit: two real runs with a PostToolUse hook",
+  "notes": "Week 1, series Same task, different switch. Own English recording format-hook-en: same edit without and with a PostToolUse hook (matcher Edit|Write), twice each. The formatter is a small sample script, not Prettier.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Can Claude Code format your code automatically after every edit?",
+      "on_screen": "Formatted after every edit?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "HOO",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "question"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "You have to ask Claude to format? Not with a hook.",
+      "on_screen": "Ask every time?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "HOO",
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 2"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "After the edit, the formatter ran without Claude calling it.",
+      "on_screen": "Ran by itself",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 2"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Without a hook, the double quotes stayed.",
+      "on_screen": "Unformatted",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Two real runs: the same edit, once with a hook.",
+      "on_screen": "With and without",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "structure"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "HOO",
+      "title": "Automate actions with hooks: hooks give deterministic control, certain actions always happen rather than relying on the LLM to choose to run them; a PreToolUse hook that exits with code 2 blocks the edit; hooks can format files after edits",
+      "url": "https://code.claude.com/docs/en/hooks-guide",
+      "checked_at": "2026-11-02",
+      "label": "Claude Code docs, Hooks"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/format-hook-en",
+      "checked_at": "2026-11-02",
+      "label": "Own recording",
+      "title": "Own recording format-hook-en, 2026-11-02: Claude Code 2.1.309, test folder with sample data, every run twice"
+    }
+  ],
+  "unverified": [
+    "The formatter format.js is a small sample (single quotes, header line), not a real formatter like Prettier. The docs use Prettier as their example."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "format-hook-en"
+    },
+    "short_title": "Formatieren per Hook EN",
+    "description": "Real run, recorded on Nov 2, 2026 with Claude Code 2.1.309 (model claude-haiku-5-5). Same edit to app.js, every run twice: without a hook the file stayed unformatted. With a PostToolUse hook (matcher Edit|Write), a small sample formatter ran after every edit, and Claude noticed it when it read the file again.",
+    "companion_text": "Base command per run: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Edit,Write. Hook in .claude/settings.json: PostToolUse, matcher Edit|Write, node .claude/hooks/format.js. The sample formatter turns double quotes into single quotes and adds a header line. Source: Claude Code docs, Hooks, retrieved Nov 2, 2026. Paths shortened in the frame (test folder = .). Behaviour can change with version and model. Not an official Anthropic channel.",
+    "hashtags": [
+      "claudecode",
+      "aiworkflow",
+      "coding",
+      "developer",
+      "hooks"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "HOO",
+        "R1"
+      ],
+      "spoken": "Can Claude Code format your code automatically after every edit, without you having to remember to ask for it? Two real runs, one small change.",
+      "data": {
+        "run": "L2",
+        "question": "Formatted after every edit?",
+        "type_word": "code",
+        "chips_word": "Two",
+        "rec": "format-hook-en"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "The test folder holds app.js with double quotes. Next to it sits a small sample formatter, not Prettier: it turns double quotes into single quotes and adds a header line at the top.",
+      "data": {
+        "run": "L2",
+        "show": "app.js",
+        "highlight_text": "Hello",
+        "label": "Sample data",
+        "view_word": "app.js",
+        "highlight_word": "double",
+        "tag_word": "sample",
+        "rec": "format-hook-en"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "HOO"
+      ],
+      "spoken": "The hook lives in settings.json: event PostToolUse, matcher Edit or Write. So it runs after every file change Claude makes, and Claude does not have to call it.",
+      "data": {
+        "run": "L2",
+        "highlight_text": "PostToolUse",
+        "max_rows": 7,
+        "kicker": "Claude Code docs, Hooks",
+        "quote": "… with an Edit|Write matcher, so it runs only after file-editing tools.",
+        "translation": "Runs only after tools that change files.",
+        "highlight_word": "PostToolUse",
+        "doc_word": "matcher",
+        "translation_word": "change",
+        "rec": "format-hook-en"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run one, no hook. Claude read app.js, added the function double and exported it. It said it ran nothing, since the change was simple. The double quotes stayed.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "text_rows": 6,
+        "stamp_true": "formatted",
+        "stamp_false": "unformatted",
+        "rec": "format-hook-en"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run two, with the hook. Same edit. Then Claude read the file again and noticed on its own that a hook had reformatted it. Claude never called the hook, it ran by itself.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "text_rows": 6,
+        "stamp_true": "formatted",
+        "stamp_false": "unformatted",
+        "rec": "format-hook-en"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "demonstration",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "This is app.js after run two: a header line at the top and single quotes, without Claude having to do anything for it.",
+      "data": {
+        "run": "L2",
+        "state": "after",
+        "show": "app.js",
+        "highlight_text": "formatted",
+        "label": "After the run",
+        "view_word": "app.js",
+        "highlight_word": "header",
+        "tag_word": "single",
+        "rec": "format-hook-en"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "HOO"
+      ],
+      "spoken": "Both runs ran twice, with the same result. The hook ran after the edit every time. In real projects, according to the docs, that is where a formatter like Prettier goes.",
+      "data": {
+        "headline": "2 runs, twice each",
+        "probe_good": true,
+        "stamp_true": "formatted",
+        "stamp_false": "unformatted",
+        "note": "In real projects: for example Prettier (per the docs).",
+        "note_source": "Claude Code docs, Hooks",
+        "rows_word": "Both",
+        "row_gap": 0.8,
+        "note_word": "projects",
+        "rec": "format-hook-en"
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "Formatting belongs in a hook, not in a request you have to repeat. Follow Promptwerk for more Claude workflows, step by step.",
+      "data": {
+        "statement": "Format with a hook, not a request.",
+        "claim": "Promptwerk · real runs",
+        "statement_word": "Formatting",
+        "claim_word": "Follow",
+        "rec": "format-hook-en"
+      }
+    }
+  ]
+}

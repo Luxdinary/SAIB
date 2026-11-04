@@ -1,0 +1,553 @@
+{
+  "video_id": "military_history-20261111-3-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Chain Home: Radar aus Bawdsey",
+  "notes": "Woche 1, Reihe Signal und Nachricht. Mess- und Funkprinzip, Masten, Stationen; keine Kampfdetails. Watson-Watt nur als Name.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://heritage.suffolk.gov.uk/Monument/MSF18066",
+      "title": "RAF Bawdsey, Chain Home Station CH26 (BAW 051), Suffolk Heritage Explorer",
+      "label": "Suffolk HER Bawdsey",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.lindahall.org/about/news/scientist-of-the-day/robert-watson-watt/",
+      "title": "Scientist of the Day – Robert Watson-Watt, Linda Hall Library",
+      "label": "Linda Hall Library",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Höhe der Sendemasten: 350, 358 oder 360 Fuß; im Video 350 Fuß laut Suffolk HER.",
+    "Inbetriebnahme: Mai 1937 oder 24.09.1937 (voll einsatzbereit); im Video Mai 1937 als erste Station."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Kann ein Funksender ein Flugzeug sichtbar machen, das niemand sieht?",
+      "on_screen": "Ein Flugzeug im Funksignal?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Radar war eine Erfindung aus dem Nichts? Es begann mit der Vermessung der Ionosphäre.",
+      "on_screen": "Radar aus der Ionosphäre?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Das erste Echo lieferte 1935 ein gewöhnlicher BBC-Sender.",
+      "on_screen": "Ein BBC-Sender als Radar",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ein Echo, ein Billionstel eines Billionstels so stark wie der Sender.",
+      "on_screen": "Ein winziges Echo",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 3,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "",
+      "why": {
+        "truth": "nicht belegt, nicht wählbar"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie eine Funkwelle zurückkommt.",
+      "on_screen": "Die Welle kehrt zurück",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Kann ein Funksender ein Flugzeug sichtbar machen, das niemand sieht?",
+      "data": {
+        "question": "Ein Flugzeug im Funksignal?",
+        "question_em": "Funksignal",
+        "card_title": "Chain Home",
+        "card_meta": "BAWDSEY · 1937",
+        "card_no": "AKTE 13",
+        "stamp": "1935",
+        "drawing": "chain_home_masts.svg",
+        "packet_label": "Echo",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Flugzeug",
+        "packet_at": "w:sichtbar",
+        "em_at": "w:niemand"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Robert Watson-Watt misst ab 1927 mit Funkwellen die Höhe der Ionosphäre. Am 12. Februar 1935 rechnet er vor: Ein Flugzeugrumpf aus Metall wirft Funkwellen zurück. Das Echo wäre winzig, aber messbar.",
+      "data": {
+        "mode": "map",
+        "headline": "Erst gerechnet",
+        "places": [
+          {
+            "label": "Sender",
+            "code": "Funkwelle",
+            "x": 600,
+            "y": 80,
+            "at": "w:Funkwellen"
+          },
+          {
+            "label": "Flugzeug",
+            "code": "Metallrumpf",
+            "x": 190,
+            "y": 500,
+            "rx": 165,
+            "ry": 95,
+            "at": "w:Flugzeugrumpf"
+          }
+        ],
+        "route_at": "w:Ionosphäre",
+        "route_label": "Welle hin, Echo zurück",
+        "route_label_at": "w:zurück",
+        "wait_at": "w:rechnet",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "12.2.1935: Rechnung",
+        "chip_at": "w:Februar",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Echo",
+        "packet_at": "w:Echo",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "winzig, aber messbar",
+        "line_label_at": "w:messbar",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Ausschlag",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Zwei Wochen später, am 26. Februar 1935, steht bei Daventry ein Empfänger im Feld eines BBC-Senders. Ein Flugzeug fliegt durch, und auf dem Oszilloskop erscheint ein Ausschlag: das Echo.",
+      "data": {
+        "headline": "Der Versuch von Daventry",
+        "drawing": "chain_home_masts.svg",
+        "sheet_title": "BLATT 2 · SENDEN UND EMPFANGEN",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Sender",
+            "x": 130,
+            "y": 90,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:BBC"
+          },
+          {
+            "label": "Funkwelle hinaus",
+            "x": 300,
+            "y": 160,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Flugzeug"
+          },
+          {
+            "label": "Echo zurück",
+            "x": 450,
+            "y": 260,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Ausschlag"
+          },
+          {
+            "label": "Empfänger",
+            "x": 350,
+            "y": 400,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Echo"
+          }
+        ],
+        "zoom": {
+          "x": 380,
+          "y": 300,
+          "scale": 1.12,
+          "at": "w:Ausschlag",
+          "back_at": "w:Echo",
+          "grow": "up"
+        },
+        "headline_lines": 2,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Daraus wird eine Station. In Bawdsey stehen vier Sendemasten aus Stahl, 350 Fuß hoch, und vier Empfangstürme aus Holz, 240 Fuß hoch.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Senden und hören",
+        "left": {
+          "tag": "Senden",
+          "title": "4 Stahlmasten",
+          "at": "w:Sendemasten",
+          "rows": [
+            {
+              "text": "350 Fuß hoch",
+              "at": "w:350"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Hören",
+          "title": "4 Holztürme",
+          "at": "w:Empfangstürme",
+          "rows": [
+            {
+              "text": "240 Fuß hoch",
+              "at": "w:240"
+            }
+          ]
+        },
+        "verdict": "Bawdsey: Station CH26",
+        "verdict_at": "w:Holz",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Gepulste Sendungen liefern die Entfernung, die Empfangstürme über Phasenunterschiede die Richtung. So entsteht eine Kette von Southampton bis zu den Shetlandinseln, mit fast 100 Meilen Reichweite.",
+      "data": {
+        "headline": "Die Kette",
+        "nodes": [
+          {
+            "label": "Pulse",
+            "code": "Entfernung",
+            "at": "w:Gepulste"
+          },
+          {
+            "label": "Phase",
+            "code": "Richtung",
+            "at": "w:Richtung"
+          },
+          {
+            "label": "Southampton",
+            "code": "Süden",
+            "at": "w:Southampton"
+          },
+          {
+            "label": "Shetlandinseln",
+            "code": "Norden",
+            "at": "w:Shetlandinseln"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": "Stationen entlang der Küste"
+          }
+        ],
+        "packet_label": "Echo",
+        "total": {
+          "to": 100,
+          "pre": "fast",
+          "label": "MEILEN",
+          "at": "w:Reichweite"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1935 das erste Echo, 1936 kauft das Luftfahrtministerium Bawdsey Manor, und im Mai 1937 geht dort die erste Chain-Home-Station in Betrieb.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1935 bis 1937",
+        "items": [
+          {
+            "year": "1935",
+            "title": "Erstes Echo",
+            "sub": "Daventry, 26. Februar",
+            "at": "w:1935"
+          },
+          {
+            "year": "1936",
+            "title": "Bawdsey Manor",
+            "sub": "Kauf durch das Air Ministry",
+            "at": "w:1936"
+          },
+          {
+            "year": "1937",
+            "title": "Erste Station",
+            "sub": "in Betrieb im Mai",
+            "at": "w:1937",
+            "sub_at": "w:Betrieb"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Heute steht in Bawdsey noch der Sendebau aus Ziegel und Beton. Daneben sieht man die Sockel der Masten. Im Herrenhaus ist eine Schule. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Bawdsey",
+        "card_meta": "SUFFOLK · HEUTE",
+        "card_no": "AKTE 13",
+        "stamp": "Grade II",
+        "drawing": "chain_home_masts.svg",
+        "statement": "Der Sendebau steht noch, die Masten nicht",
+        "statement_at": "w:Sendebau",
+        "ghost_at": "w:Sockel",
+        "stamp_at": "w:Ziegel",
+        "note": "Sockel der Masten im Feld",
+        "note_at": "w:Masten",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Echo",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Signal: gesucht",
+          "tone": "muted",
+          "offset": 1.2
+        },
+        {
+          "beat": "b2",
+          "text": "Echo: berechnet",
+          "tone": "amber",
+          "offset": 13.0
+        },
+        {
+          "beat": "b3",
+          "text": "Echo: gemessen",
+          "tone": "amber",
+          "offset": 4.7
+        },
+        {
+          "beat": "b4",
+          "text": "Station: Bawdsey",
+          "tone": "amber",
+          "offset": 2.7
+        },
+        {
+          "beat": "b5",
+          "text": "Kette: an der Küste",
+          "tone": "amber",
+          "offset": 8.1
+        },
+        {
+          "beat": "b6",
+          "text": "Bawdsey: in Betrieb",
+          "tone": "muted",
+          "offset": 6.6
+        },
+        {
+          "beat": "b7",
+          "text": "Sendebau: erhalten",
+          "tone": "muted",
+          "offset": 3.2
+        }
+      ]
+    },
+    "description": "1935 zeigte ein BBC-Sender erstmals das Echo eines Flugzeugs. Daraus wurde Chain Home mit hohen Masten an der Küste. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "radar",
+      "funktechnik",
+      "technikgeschichte",
+      "geschichte",
+      "chainhome"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

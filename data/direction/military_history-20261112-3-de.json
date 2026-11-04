@@ -1,0 +1,553 @@
+{
+  "video_id": "military_history-20261112-3-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Dazzle: Hat der Zickzack funktioniert?",
+  "notes": "Woche 1, Reihe Mythos geprüft. U-Boot-Krieg nur als Hintergrund, keine Gewaltbilder; Treffgenauigkeitsrechnung der Studie bewusst weggelassen.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0020233",
+      "title": "Scott-Samuel, Baddeley, Palmer, Cuthill: Dazzle Camouflage Affects Speed Perception, PLoS ONE 6(6) e20233, 2011",
+      "label": "PLoS ONE 2011",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-12160",
+      "title": "John Everett: A Convoy of the First World War (BHC0668), Royal Museums Greenwich",
+      "label": "RMG: BHC0668",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Museumstext: Dazzle habe Schiffe schwerer anzumessen gemacht; die Studie nennt das untested. Im Video nur der Studienbefund."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Kann ein greller Zickzack-Anstrich ein Schiff schützen, gerade weil er auffällt?",
+      "on_screen": "Schutz durch Auffallen?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Tarnung heißt verstecken? Dazzle wollte auffallen und täuschen.",
+      "on_screen": "Tarnen durch Auffallen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Im Labor wirkt Zickzack rund sieben Prozent langsamer.",
+      "on_screen": "7 Prozent langsamer?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Die Admiralität konnte 1918 keine klare Wirkung belegen.",
+      "on_screen": "Ohne klares Ergebnis",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie ein Muster Bewegung langsamer wirken lässt.",
+      "on_screen": "Ein Muster bremst",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Kann ein greller Zickzack-Anstrich ein Schiff schützen, gerade weil er auffällt?",
+      "data": {
+        "question": "Schutz durch Auffallen?",
+        "question_em": "Auffallen",
+        "card_title": "Dazzle-Anstrich",
+        "card_meta": "ERSTER WELTKRIEG",
+        "card_no": "AKTE 21",
+        "stamp": "1918",
+        "drawing": "dazzle_ship.svg",
+        "packet_label": "Muster",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Schiff",
+        "packet_at": "w:Zickzack-Anstrich",
+        "em_at": "w:auffällt"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Im Ersten Weltkrieg schlägt der Maler Norman Wilkinson vor, Schiffe mit Zickzacklinien zu bemalen. Der Anstrich soll Kurs, Größe und Geschwindigkeit verschleiern.",
+      "data": {
+        "mode": "map",
+        "headline": "Täuschen statt verstecken",
+        "places": [
+          {
+            "label": "Schiff",
+            "code": "Zickzack",
+            "x": 600,
+            "y": 80,
+            "at": "w:Schiffe"
+          },
+          {
+            "label": "Beobachter",
+            "code": "in der Ferne",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Kurs"
+          }
+        ],
+        "route_at": "w:Zickzacklinien",
+        "route_label": "Kurs? Tempo?",
+        "route_label_at": "w:Kurs",
+        "wait_at": "w:bemalen",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Idee: Norman Wilkinson",
+        "chip_at": "w:Wilkinson",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Muster",
+        "packet_at": "w:Maler",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Täuschung statt Tarnung",
+        "line_label_at": "w:verschleiern",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:asymmetrisches",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Jede Schiffsseite bekommt ein anderes, asymmetrisches Muster. Ein Gemälde von John Everett um 1918 zeigt solche Schiffe im Geleitzug.",
+      "data": {
+        "headline": "Jede Seite anders",
+        "drawing": "dazzle_ship.svg",
+        "sheet_title": "BLATT 2 · ANSTRICH",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Muster je Seite anders",
+            "x": 200,
+            "y": 340,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Muster"
+          },
+          {
+            "label": "Asymmetrisch",
+            "x": 300,
+            "y": 270,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:asymmetrisches"
+          },
+          {
+            "label": "Gemälde um 1918",
+            "x": 350,
+            "y": 210,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Gemälde"
+          },
+          {
+            "label": "Schiffe im Geleitzug",
+            "x": 150,
+            "y": 200,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Geleitzug"
+          }
+        ],
+        "zoom": {
+          "x": 300,
+          "y": 320,
+          "scale": 1.12,
+          "at": "w:asymmetrisches",
+          "back_at": "w:Geleitzug",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Hat es funktioniert? Eine Auswertung der Admiralität von 1918 bleibt ohne klares Ergebnis. Eine Studie von 2011 testet die Muster im Labor am Bildschirm.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Zwei Prüfungen",
+        "left": {
+          "tag": "1918",
+          "title": "Admiralität",
+          "at": "w:Admiralität",
+          "rows": [
+            {
+              "text": "kein klares Ergebnis",
+              "at": "w:Ergebnis"
+            }
+          ]
+        },
+        "right": {
+          "tag": "2011",
+          "title": "Laborstudie",
+          "at": "w:2011",
+          "rows": [
+            {
+              "text": "Muster am Bildschirm",
+              "at": "w:Bildschirm"
+            }
+          ]
+        },
+        "verdict": "Erst 2011 gemessen",
+        "verdict_at": "w:Bildschirm",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Getestet werden fünf Muster bei zwei Tempi. Nur bei hohem Kontrast und schneller Bewegung wirken Zickzack und Karo etwa sieben Prozent langsamer.",
+      "data": {
+        "headline": "Der Versuch",
+        "nodes": [
+          {
+            "label": "5 Muster",
+            "code": "Streifen, Karo",
+            "at": "w:Muster"
+          },
+          {
+            "label": "2 Tempi",
+            "code": "3,33 / 20 °/s",
+            "at": "w:Tempi"
+          },
+          {
+            "label": "Hoher Kontrast",
+            "code": "100 %",
+            "at": "w:Kontrast"
+          },
+          {
+            "label": "Zickzack, Karo",
+            "code": "7 % langsamer",
+            "at": "w:Karo"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "total": {
+          "to": 7,
+          "pre": "≈",
+          "label": "% LANGSAMER",
+          "at": "w:Prozent"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "Um 1918 das Gemälde, 1918 die Auswertung ohne klares Ergebnis, und 2011 die Messung im Labor.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1918 bis 2011",
+        "items": [
+          {
+            "year": "1918",
+            "title": "Gemälde Everett",
+            "sub": "Schiffe im Dazzle-Anstrich",
+            "at": "w:1918"
+          },
+          {
+            "year": "1918",
+            "title": "Auswertung",
+            "sub": "ohne klares Ergebnis",
+            "at": "w:1918#2"
+          },
+          {
+            "year": "2011",
+            "title": "Laborstudie",
+            "sub": "PLoS ONE",
+            "at": "w:2011"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Für Schiffe der Weltkriege findet die Studie keinen Beleg. Everetts Gemälde gehört heute zur Sammlung des National Maritime Museum in Greenwich. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Dazzle",
+        "card_meta": "BHC0668",
+        "card_no": "AKTE 21",
+        "stamp": "Kein Beleg",
+        "drawing": "dazzle_ship.svg",
+        "statement": "Ein Effekt im Labor, kein Beleg auf See",
+        "statement_at": "w:Schiffe",
+        "stamp_at": "w:Beleg",
+        "note": "National Maritime Museum, Greenwich",
+        "note_at": "w:Greenwich",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Muster",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Ziel: täuschen",
+          "tone": "muted",
+          "offset": 5.2
+        },
+        {
+          "beat": "b2",
+          "text": "Idee: Wilkinson",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b3",
+          "text": "Muster: je Seite anders",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b4",
+          "text": "Auswertung: unklar",
+          "tone": "amber",
+          "offset": 6.1
+        },
+        {
+          "beat": "b5",
+          "text": "Labor: ≈ 7 %",
+          "tone": "muted",
+          "offset": 10.1
+        },
+        {
+          "beat": "b6",
+          "text": "Messung: 2011",
+          "tone": "muted",
+          "offset": 5.6
+        },
+        {
+          "beat": "b7",
+          "text": "Auf See: kein Beleg",
+          "tone": "muted",
+          "offset": 4.2
+        }
+      ]
+    },
+    "description": "Mythos geprüft: Dazzle-Anstrich sollte Kurs und Tempo von Schiffen verschleiern. Im Labor wirken Zickzackmuster rund 7 % langsamer, für Schiffe gibt es keinen Beleg. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "mythos",
+      "tarnung",
+      "wahrnehmung",
+      "geschichte",
+      "dazzle"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

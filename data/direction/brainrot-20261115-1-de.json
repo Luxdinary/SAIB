@@ -1,0 +1,473 @@
+{
+  "video_id": "brainrot-20261115-1-de",
+  "brand_id": "brainrot",
+  "language": "de",
+  "title": "Der höchste Baum der Welt – Plümo und das Lineal",
+  "notes": "Zonkfruit Vorlage 1.0, Produktion Woche 1 (01.11.2026), Reihe E. Aufbau wie das freigegebene Testvideo Q1 (Erdbeere keine Beere). Nur Aussagen aus den Kalenderquellen.",
+  "hook": {
+    "id": "H1",
+    "note": "erster Kandidat der Themenspezifikation"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Der höchste Baum ist nicht der dickste. Es ist ein Küstenmammutbaum. Lineal schmollt.",
+      "on_screen": "*379 Fuß*: ein Küstenmammutbaum.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Lineal fliegt zur Rekordtür, Stempel VIEL ZU KURZ",
+      "why": {
+        "truth": "NPS: Küstenmammutbaum ist der höchste Baum; Riesenmammutbaum massiger, aber kleiner",
+        "visual": "Lineal mit Stempel ist sofort lesbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Welcher Baum ist eigentlich der höchste der Welt?",
+      "on_screen": "Welcher Baum ist *am höchsten*?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "visual": "Baum wächst aus dem Bild"
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Der höchste bekannte Baum misst 379 Fuß und heißt Hyperion.",
+      "on_screen": "Hyperion: *379 Fuß*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "visual": "Balken bis 379 Fuß"
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wer beim Quiz den dicksten Baum nennt, verliert den Punkt.",
+      "on_screen": "Der dickste? *Punkt weg.*",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Quizkarte"
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Ich mess den höchsten Baum der Welt. Mit einem Lineal.",
+      "on_screen": "Lineal gegen *Mammutbaum*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Plümo hält Lineal an den Stamm"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.nps.gov/articles/000/coast-redwood.htm",
+      "title": "National Park Service, Coast Redwood: the trunk reaches over 350 feet, making it the tallest tree in the world; redwood forests grow natively in a narrow band along the Pacific Coast from central California to southern Oregon; they depend on a maritime climate; in the dry summer fog accounts for nearly 40% of their water uptake",
+      "checked_at": "2026-11-01",
+      "label": "National Park Service (USA)"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.nps.gov/muwo/planyourvisit/english.htm",
+      "title": "NPS Muir Woods visitor guide: the tallest coast redwood reaches 379 feet above the forest floor of Redwood National Park; in Muir Woods the tallest is over 258 feet, about the height of a 23-story building; the giant sequoia grows larger in bulk but shorter than the coast redwood",
+      "checked_at": "2026-11-01",
+      "label": "NPS, Muir Woods"
+    },
+    {
+      "id": "S3",
+      "url": "https://learning.parks.ca.gov/wp-content/uploads/2025/05/02-RedwoodEd-secinathistory.pdf",
+      "title": "California State Parks, Redwood Ed, Natural History of the Coast Redwoods: coast redwoods grow to the greatest height of any tree; the record changes as new trees are discovered and measured; in 2006 the Hyperion Tree in Redwood National Park was measured at 378.1 feet; according to Save-the-Redwoods League it was re-measured at 379.1 feet",
+      "checked_at": "2026-11-01",
+      "label": "California State Parks"
+    }
+  ],
+  "unverified": [],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 500,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.4,
+    "progress_y": 1550,
+    "ai_label_bottom_px": 318,
+    "status_y": 1440,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Plümo dachte, der dickste Baum ist auch der höchste. Falsch: Der Küstenmammutbaum ist der höchste Baum der Welt. Der Rekordhalter Hyperion im Redwood-Nationalpark wurde 2006 mit 378,1 Fuß gemessen und später mit 379,1 Fuß nachgemessen.",
+    "companion_text": "Zonkfruit: eine erfundene Frucht, echte Fakten. Folge Zonkfruit für mehr.",
+    "hashtags": [
+      "baum",
+      "rekord",
+      "wusstestdu",
+      "funfact",
+      "zonkfruit",
+      "comedy"
+    ],
+    "platform_texts": {
+      "tiktok": {
+        "title": "Der höchste Baum der Welt ist nicht der dickste. Plümo hat nachgemessen.",
+        "description": "Plümo dachte, der dickste Baum ist auch der höchste. Falsch: Der Küstenmammutbaum ist der höchste Baum der Welt. Der Rekordhalter Hyperion im Redwood-Nationalpark wurde 2006 mit 378,1 Fuß gemessen und später mit 379,1 Fuß nachgemessen.",
+        "hashtags": [
+          "baum",
+          "rekord",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy"
+        ]
+      },
+      "instagram": {
+        "title": "Der höchste Baum der Welt ist nicht der dickste. Plümo hat nachgemessen.",
+        "description": "Plümo dachte, der dickste Baum ist auch der höchste. Falsch: Der Küstenmammutbaum ist der höchste Baum der Welt. Der Rekordhalter Hyperion im Redwood-Nationalpark wurde 2006 mit 378,1 Fuß gemessen und später mit 379,1 Fuß nachgemessen.",
+        "hashtags": [
+          "baum",
+          "rekord",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy",
+          "reels"
+        ]
+      },
+      "youtube": {
+        "title": "Der höchste Baum der Welt ist nicht der dickste. Plümo hat nachgemessen. #Shorts",
+        "description": "Plümo dachte, der dickste Baum ist auch der höchste. Falsch: Der Küstenmammutbaum ist der höchste Baum der Welt. Der Rekordhalter Hyperion im Redwood-Nationalpark wurde 2006 mit 378,1 Fuß gemessen und später mit 379,1 Fuß nachgemessen.",
+        "hashtags": [
+          "Shorts",
+          "baum",
+          "rekord",
+          "wusstestdu",
+          "funfact"
+        ]
+      }
+    },
+    "status_bar": {
+      "file": "Rekordhalle",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Höchster = dickster?",
+          "tone": "amber",
+          "offset": 0.5
+        },
+        {
+          "beat": "b1",
+          "text": "Dick-Idee: abgelehnt",
+          "tone": "pop",
+          "offset": 1.98
+        },
+        {
+          "beat": "b3",
+          "text": "Küste, Meeresklima, Nebel",
+          "tone": "lime",
+          "offset": 10.87
+        },
+        {
+          "beat": "b4",
+          "text": "Hyperion: 379,1 Fuß",
+          "tone": "lime",
+          "offset": 10.87
+        },
+        {
+          "beat": "b5",
+          "text": "Muir Woods: über 258 Fuß",
+          "tone": "lime",
+          "offset": 0.2
+        },
+        {
+          "beat": "b6",
+          "text": "Plümo: Größe offen",
+          "tone": "amber",
+          "offset": 7.76
+        },
+        {
+          "beat": "b7",
+          "text": "Plümo: liegt kurz",
+          "tone": "muted",
+          "offset": 0.3
+        }
+      ]
+    }
+  },
+  "assets": {},
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "zonk_scan",
+      "spoken": "Der höchste Baum ist nicht der dickste. Es ist ein Küstenmammutbaum. Lineal schmollt.",
+      "data": {
+        "mode": "hook",
+        "head": "*379 Fuß*: ein Küstenmammutbaum.",
+        "head_at": 0.2,
+        "sign": "REKORDHALLE",
+        "items": [
+          {
+            "kind": "ruler"
+          }
+        ],
+        "stamp_reject": "VIEL ZU KURZ",
+        "cue_scan": "höchste",
+        "cue_verdict": "nicht",
+        "cue_club": "Küstenmammutbaum",
+        "cue_know": "Lineal"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "zonk_word",
+      "spoken": "Moment. Ich dachte, der dickste Baum ist auch der höchste. Aber nicht dick gewinnt. Der Riesenmammutbaum ist massiger, aber kleiner als der Küstenmammutbaum. Ich war geschockt. Mein Lineal: zu kurz.",
+      "data": {
+        "word_a": "Dick",
+        "word_b": "ste",
+        "left": "Plümo: *dick = hoch*",
+        "right": "Echt: *höher, nicht dicker*",
+        "cue_left": "dachte",
+        "cue_strike": "nicht",
+        "cue_right": "massiger",
+        "cue_react": "Ich",
+        "item": "ruler",
+        "cue_shock": "geschockt",
+        "cue_item": "Lineal",
+        "cue_never": "kurz"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "zonk_diagram",
+      "spoken": "Wo wächst der Riese? In einem schmalen Band an der Pazifikküste. Er braucht Meeresklima. Im trockenen Sommer kommt fast 40 Prozent seines Wassers aus Nebel. Ohne Hände zeig ich's mit dem Blatt.",
+      "data": {
+        "headline": "Wo wächst der *Riese*?",
+        "inner": "redwood",
+        "disc": [
+          "#2E5A3A",
+          "#E6F4E8",
+          "#9CCBA6"
+        ],
+        "cue_q": "Riese",
+        "labels": [
+          {
+            "text": "schmales Band: *Küste*",
+            "pos": "tr",
+            "cue": "Band"
+          },
+          {
+            "text": "braucht *Meeresklima*",
+            "pos": "l",
+            "cue": "Meeresklima"
+          },
+          {
+            "text": "Nebel: *fast 40 %* Wasser",
+            "pos": "b",
+            "cue": "Nebel"
+          }
+        ],
+        "cue_hands": "Hände",
+        "cue_leaf": "Blatt"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 730,
+          "seconds": 0.7
+        },
+        "marker_at": "w:Pazifikküste"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "zonk_zoom",
+      "spoken": "Ganz genau. Der Stamm wird über 350 Fuß hoch. Der Rekordhalter steht im Redwood-Nationalpark: 2006 gemessen mit 378,1 Fuß, später nachgemessen: 379,1. Sein Name: Hyperion. Klingt wie ein Raumschiff.",
+      "data": {
+        "kind": "redwood",
+        "lens": "ruler",
+        "lens_bg": "#1E3A28",
+        "cue_mag": "genau",
+        "callouts": [
+          {
+            "text": "Stamm: *über 350 Fuß*",
+            "cue": "Stamm"
+          },
+          {
+            "text": "Rekord: *379,1 Fuß*",
+            "cue": "Rekordhalter"
+          }
+        ],
+        "cue_nut": "Fuß",
+        "stamp": {
+          "text": "Hyperion!",
+          "cue": "Hyperion"
+        },
+        "cue_react": "Klingt",
+        "cue_fast": "Raumschiff"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Stamm",
+        "marker_at": "w:Stamm"
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "zonk_compare",
+      "spoken": "Muir Woods: über 258 Fuß, etwa so hoch wie ein Haus mit 23 Stockwerken. Hyperion: 379. Ich hab mich auch vermessen: ein Lineal. Rekorde können sich ändern. Ich wachse noch.",
+      "data": {
+        "headline": "Wie hoch ist *hoch*?",
+        "bars": [
+          {
+            "label": "Muir Woods",
+            "value": "258+ Fuß",
+            "h": 0.62,
+            "color": "#8FD14F",
+            "cue": "Muir"
+          },
+          {
+            "label": "Hyperion",
+            "value": "379 Fuß",
+            "h": 0.9,
+            "color": "#B7FF00",
+            "kind": "redwood",
+            "cue": "Hyperion"
+          },
+          {
+            "label": "Plümo",
+            "value": "1 Lineal",
+            "h": 0.2,
+            "color": "#FF43C0",
+            "cue": "Lineal"
+          }
+        ],
+        "stamp": {
+          "text": "Stand: 379 Fuß",
+          "cue": "Rekorde"
+        },
+        "cue_react": "wachse"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Muir"
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "zonk_scan",
+      "spoken": "Merke: Der Küstenmammutbaum ist der höchste Baum der Welt, Rekord 379 Fuß. Gut, jetzt ich. Lineal angelegt. Ergebnis: Größe nicht ermittelbar. Ich bin wohl zu rund.",
+      "data": {
+        "mode": "unknown",
+        "sign": "REKORDHALLE",
+        "merke": "*Rekord 379 Fuß*: der Küstenmammutbaum.",
+        "display": "Größe: nicht ermittelbar",
+        "plumps": "PLUMPS",
+        "cue_build": "Rekord",
+        "cue_go": "Gut",
+        "cue_scan": "Lineal",
+        "cue_result": "Ergebnis",
+        "cue_back": "wohl"
+      },
+      "overlay": {
+        "marker": "auslegung",
+        "marker_at": "w:Merke"
+      },
+      "source_ids": []
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "zonk_loop",
+      "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+      "data": {
+        "sign": "REKORDHALLE",
+        "cta": "Mehr Zonkfruit? *Folgen.*",
+        "cue_cta": "Mehr",
+        "cue_up": "steh",
+        "cue_lie": "liegen",
+        "cue_ch": "Kanal"
+      },
+      "overlay": {
+        "marker": "none",
+        "head_until": "w:steh"
+      },
+      "source_ids": []
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+{
+ "video_id": "ai_security-20261113-2-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "A shared AI chat is a public link",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema E10, Reihe KI im Büro. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Shared chat. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Shared chat",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Link: shared",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Access: anyone with link",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Expiry date: none",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Account: personal or business?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Old links: still open?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Links: check today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Customer data in link: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Share an AI chat by link and anyone with the link can read it. What ChatGPT and Claude document, and where to close shared links again.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "chatgpt",
+   "claude",
+   "aiatwork",
+   "privacy",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_hook_dataroom.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: dataroom, lanes, desk, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq",
+   "title": "OpenAI Help Center: Sharing conversations and scheduled tasks in ChatGPT",
+   "checked_at": "2026-11-01",
+   "label": "OpenAI, shared links"
+  },
+  {
+   "id": "S2",
+   "url": "https://privacy.claude.com/en/articles/10593882-share-and-unshare-chats",
+   "title": "Anthropic Privacy Center: Share and unshare chats",
+   "checked_at": "2026-11-01",
+   "label": "Anthropic, sharing chats"
+  }
+ ],
+ "unverified": [
+  "Whether a link was forwarded cannot be checked: not claimed."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "You shared an AI chat by link. Do you know who else can read it?",
+   "on_screen": "Who else can read your chat?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Not in search engines means private? Not according to OpenAI.",
+   "on_screen": "Not searchable = private?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Shared ChatGPT links have no expiry date.",
+   "on_screen": "No expiry date",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A shared chat with customer details is readable by anyone who has the link.",
+   "on_screen": "Customer details in a shared chat?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch where this link travels.",
+   "on_screen": "Where does the link go?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "You shared an AI chat by link. Do you know who else can read it?",
+   "data": {
+    "question": "Who else can read your chat?",
+    "doc_label": "Chat link",
+    "chat_title": "AI chat",
+    "bot_line": "Link copied",
+    "typed": "Share",
+    "badge": "Who else?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "With ChatGPT on a personal account, anyone who has the link can view the shared chat. Claude is similar: anyone with the link sees a snapshot with every message sent before sharing.",
+   "data": {
+    "headline": "Who sees a shared chat",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Your chat",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n1",
+      "label": "Link",
+      "icon": "&#9993;"
+     },
+     {
+      "id": "n2",
+      "label": "Anyone with the link",
+      "icon": "&#9823;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "share"
+     },
+     {
+      "label": "forward"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Who exactly?"
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "OpenAI also says shared pages are not intended for search engines. But that doesn't make a link private. Anyone who has it can forward it. And you can't set an expiry date.",
+   "data": {
+    "headline": "What OpenAI says",
+    "file_label": "Shared chat",
+    "card": {
+     "title": "A shared link",
+     "rows": [
+      {
+       "text": "not meant for search engines",
+       "ok": null
+      },
+      {
+       "text": "still not private",
+       "ok": "open"
+      },
+      {
+       "text": "no expiry date",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "Business accounts are different. Links from ChatGPT Business or Enterprise workspaces stay restricted to that workspace. On Claude Team and Enterprise plans, chats can only be shared within your own organisation.",
+   "data": {
+    "headline": "Personal or business account",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.5,
+    "left": {
+     "title": "Personal account",
+     "rows": [
+      {
+       "text": "anyone with the link",
+       "ok": "open"
+      },
+      {
+       "text": "can be forwarded",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Business account",
+     "rows": [
+      {
+       "text": "own workspace only",
+       "ok": null
+      },
+      {
+       "text": "own organisation only",
+       "ok": null
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "You can close shared links again. In ChatGPT, you'll find them under Data controls, Shared links. In Claude, you unshare a chat by setting it back to private.",
+   "data": {
+    "headline": "Close the links again",
+    "file_label": "Shared chat",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "ChatGPT",
+      "sub": "Data controls, Shared links",
+      "at": 0.6
+     },
+     {
+      "title": "Claude",
+      "sub": "set the chat to private",
+      "at": 1.0
+     }
+    ],
+    "approval": "Old links deleted?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Your step for today: check which chats you've already shared. Delete links nobody needs any more. And only share chats with customer or company details inside a business account, if at all.",
+   "data": {
+    "headline": "Five minutes for shared chats",
+    "items": [
+     {
+      "title": "Review your shared links",
+      "sub": "what's still open?",
+      "at": 2.0
+     },
+     {
+      "title": "Delete old links",
+      "sub": "there's no expiry",
+      "at": 4.8
+     },
+     {
+      "title": "Sensitive stays internal",
+      "sub": "business account, if at all",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Shared stays open until you close it. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Shared stays open",
+    "file_label": "Shared chat",
+    "button": "Share link",
+    "block_text": "No links with customer data",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

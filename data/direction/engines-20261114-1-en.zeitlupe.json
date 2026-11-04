@@ -1,0 +1,410 @@
+{
+ "video_id": "engines-20261114-1-en",
+ "brand_id": "engines",
+ "language": "en",
+ "title": "Higher octane does not mean more power",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261114-1-en, Reihe Mythos-Check. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "The octane number measures knock resistance, not energy content. Why higher octane only helps an engine that runs at its knock limit.",
+  "companion_text": "Not a fuel recommendation: the vehicle maker specifies the right fuel. Slow-motion factor and milliseconds refer to the example speed of 3000 rpm.",
+  "hashtags": [
+   "enginetech",
+   "octane",
+   "petrol",
+   "myth",
+   "knock"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Chevron, motor gasolines",
+   "title": "Chevron, Ottokraftstoffe (C1)",
+   "url": "https://www.chevron.com/-/media/chevron/operations/documents/motor-gas-tech-review.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "MIT 2.61, lecture 10",
+   "title": "MIT 2.61, Vorlesung 10 (L10)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/35c1c5bbf304c0f41e1de0cec0b0ee85_MIT2_61S17_lec10.pdf",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Let us look at what the number really measures.",
+   "on_screen": "More octane = more power?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Higher octane does not mean more power",
+   "on_screen": "Higher octane does not mean more power",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Does premium fuel give more power?",
+   "on_screen": "Higher octane does not mean more power",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Higher octane does not mean more power",
+   "on_screen": "Higher octane does not mean more power",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Higher octane does not mean more power",
+   "on_screen": "Higher octane does not mean more power",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "More octane, more power? For most engines, that is not quite right. Let us look at what the number really measures.",
+   "data": {
+    "claim": "More octane = more power?",
+    "claim_lines": [
+     "More octane =",
+     "more power?"
+    ],
+    "claim_highlight": "power?",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "Chevron, motor gasolines · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_board",
+   "spoken": "The idea sounds logical: a higher number, so there must be more in it. But the octane number does not measure how much energy the petrol contains. What the number describes is in the engineering literature.",
+   "data": {
+    "title": "The myth",
+    "mode": "verdict",
+    "claim_lines": [
+     "“More octane means",
+     "more power”"
+    ],
+    "verdict_at": "w:But",
+    "verdict": "Not quite",
+    "rows": [
+     {
+      "text": "octane is not energy",
+      "at": "w:energy"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Chevron, motor gasolines · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_cutaway",
+   "spoken": "The octane number describes knock resistance, as Chevron's fuel review puts it. In other words, how well the petrol resists self-ignition before the flame from the spark arrives. It is measured in a test engine against isooctane, rated one hundred, and normal heptane, rated zero.",
+   "data": {
+    "title": "Knock resistance",
+    "knock": true,
+    "notes": [
+     {
+      "text": "self-ignition",
+      "at": "w:self",
+      "side": "r",
+      "y": 640,
+      "color": "fire",
+      "to": [
+       628,
+       536
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      300
+     ],
+     [
+      "w:self",
+      368
+     ],
+     [
+      1,
+      480
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Chevron, motor gasolines · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_cutaway",
+   "spoken": "So higher octane helps where knock is holding the engine back. According to the engineering lecture, a knock sensor then pulls the spark timing back, and the engine no longer fires at the best moment. The lecture lists many measures against knock: cooling, charge air cooling, fast combustion, and higher octane.",
+   "data": {
+    "title": "At the knock limit",
+    "knock": true,
+    "notes": [
+     {
+      "text": "knock sensor",
+      "at": "w:sensor",
+      "side": "r",
+      "y": 1000,
+      "to": [
+       728,
+       960
+      ]
+     },
+     {
+      "text": "spark retarded",
+      "at": "w:back",
+      "side": "l",
+      "y": 760,
+      "to": [
+       540,
+       400
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, lecture 10 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_board",
+   "spoken": "If an engine is not running at its knock limit, higher octane brings no extra energy. Which fuel is right is set by the engine maker. Higher octane does not add energy per litre.",
+   "data": {
+    "title": "When it matters",
+    "mode": "compare",
+    "left": {
+     "title": "no knock limit",
+     "rows": [
+      "no extra energy"
+     ],
+     "at": "w:If"
+    },
+    "right": {
+     "title": "at the limit",
+     "rows": [
+      "less spark retard"
+     ],
+     "at": "w:limit"
+    },
+    "rows_at": [
+     "w:energy"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Chevron, motor gasolines · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Octane measures knock resistance, not energy. Understand engines: follow Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Understand",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Understand",
+    "rows": [
+     {
+      "text": "knock resistance",
+      "at": "w:knock"
+     },
+     {
+      "text": "not energy",
+      "at": "w:energy"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Understand engines",
+     "hl": "REVLORE",
+     "at": "w:Understand"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

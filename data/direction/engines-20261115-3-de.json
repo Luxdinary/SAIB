@@ -1,0 +1,417 @@
+{
+  "video_id": "engines-20261115-3-de",
+  "brand_id": "engines",
+  "language": "de",
+  "title": "Was in einer Zündkerze steckt",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261115-3-de, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Anschluss, Isolator aus Aluminiumoxid, Entstörwiderstand, Gehäuse, Dichtring und zwei Elektroden: der Aufbau einer Zündkerze im Schnitt.",
+    "companion_text": "Folge Revlore: Motorentechnik verstehen, ein Bauteil nach dem anderen.\nAngaben laut NGK. Keine Wechsel- oder Kaufempfehlung.",
+    "hashtags": [
+      "motorentechnik",
+      "zündkerze",
+      "zündung",
+      "aufbau",
+      "ngk"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "NGK, Aufbau der Zündkerze",
+      "title": "NGK, Aufbau der Zündkerze (K3)",
+      "url": "https://www.ngkntk.com/newsroom/feature/emea/parts-of-a-spark-plug/",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "NGK, Zündkerzen im Fokus",
+      "title": "NGK, Zündkerzen im Fokus (K2)",
+      "url": "https://www.ngkntk.com/newsroom/feature/emea/2024/ngk-spark-plugs-under-the-spotlight/",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Von oben nach unten, Teil für Teil.",
+      "on_screen": "Bis 9500 Funken pro Minute",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie ist eine Zündkerze aufgebaut?",
+      "on_screen": "Was in einer Zündkerze steckt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Was in einer Zündkerze steckt",
+      "on_screen": "Was in einer Zündkerze steckt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was in einer Zündkerze steckt",
+      "on_screen": "Was in einer Zündkerze steckt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Was in einer Zündkerze steckt",
+      "on_screen": "Was in einer Zündkerze steckt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Eine Zündkerze zündet laut NGK bis zu neuntausendfünfhundert Mal pro Minute. So ist sie aufgebaut. Von oben nach unten, Teil für Teil.",
+      "data": {
+        "claim": "Bis 9500 Funken pro Minute",
+        "claim_lines": [
+          "Bis 9500 Funken",
+          "pro Minute"
+        ],
+        "claim_highlight": "9500",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1440
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:NGK",
+        "source": false
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_plug",
+      "spoken": "Oben der Anschluss für das Zündkabel. Darunter der Isolator aus Aluminiumoxid, einer Keramik. Er trennt die hohe Spannung in der Mitte vom Metall außen. Ohne diese Trennung würde der Strom einen kürzeren Weg nehmen, statt über den Funkenspalt zu springen.",
+      "data": {
+        "title": "Anschluss und Isolator",
+        "labels": [
+          "terminal",
+          "insulator"
+        ],
+        "labels_at": [
+          "w:Anschluss",
+          "w:Isolator"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Aluminiumoxid",
+        "kicker": "2 · OBEN",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_plug",
+      "spoken": "Im Inneren sitzt ein Entstörwiderstand aus einer Kohlenstoff-Glas-Verbindung. Außen das Metallgehäuse mit dem Sechskant. Und der Dichtring leitet laut NGK Wärme an den Zylinderkopf ab. Er dämpft elektrische Störungen durch den Funken.",
+      "data": {
+        "title": "Widerstand und Gehäuse",
+        "labels": [
+          "resistor",
+          "hex",
+          "gasket"
+        ],
+        "labels_at": [
+          "w:Entstörwiderstand",
+          "w:Metallgehäuse",
+          "w:Dichtring"
+        ],
+        "heat_at": [
+          "w:Wärme"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:NGK",
+        "kicker": "3 · DIE MITTE"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rv_plug",
+      "spoken": "Ganz unten die Mittelelektrode. Laut NGK ist sie normalerweise zwei Komma sechs Millimeter dick, bei Iridiumkerzen nur null Komma sechs. Gegenüber die Masseelektrode, und dazwischen springt der Funke. Der Abstand zwischen beiden ist der Elektrodenabstand.",
+      "data": {
+        "title": "Die Elektroden",
+        "labels": [
+          "center",
+          "ground"
+        ],
+        "labels_at": [
+          "w:Mittelelektrode",
+          "w:Masseelektrode"
+        ],
+        "sparks_at": [
+          "w:Funke"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Iridiumkerzen",
+        "kicker": "4 · UNTEN"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_board",
+      "spoken": "Die erste NGK-Kerze entstand neunzehnhundertsechsunddreißig, Iridiumkerzen gibt es seit neunzehnhundertsiebenundneunzig. Je nach Drehzahl zündet eine Kerze laut NGK dreihundertfünfzig bis neuntausendfünfhundert Mal pro Minute. Das sind bis zu rund hundertsechzig Funken pro Sekunde.",
+      "data": {
+        "title": "Von 1936 bis heute",
+        "mode": "history",
+        "years": [
+          {
+            "year": "1936",
+            "at": 0.0
+          },
+          {
+            "year": "1997",
+            "at": "w:Iridiumkerzen"
+          }
+        ],
+        "rows": [
+          {
+            "text": "erste NGK-Kerze 1936",
+            "at": "w:NGK"
+          },
+          {
+            "text": "Iridium seit 1997",
+            "at": "w:Iridiumkerzen"
+          },
+          {
+            "text": "350 bis 9500 Funken/min",
+            "at": "w:Drehzahl"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Iridiumkerzen",
+        "kicker": "5 · DIE ENTWICKLUNG",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Anschluss, Isolator, Gehäuse, Elektroden, ein Funke. Motorentechnik verstehen: Folge Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "Isolator",
+            "at": "w:Isolator"
+          },
+          {
+            "text": "Elektroden",
+            "at": "w:Elektroden"
+          },
+          {
+            "text": "1 Funke",
+            "at": "w:Funke"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Motorentechnik verstehen",
+          "at": "w:Motorentechnik"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1440
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

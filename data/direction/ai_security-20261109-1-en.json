@@ -1,0 +1,462 @@
+{
+ "video_id": "ai_security-20261109-1-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Myth: we're too small to be a target",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema C01, Reihe Mythos-Check. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Business inbox. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Business inbox",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Belief: too small",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Attacks: automated",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "Customer data: at risk",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "UK 2025: 43% affected",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Phishing: most common",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Two-factor: check today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Unknown link: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Too small for hackers? Automated attacks hit small firms too. What the UK government survey 2025 found, and three steps for today.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "smallbusiness",
+   "cybersecurity",
+   "phishing",
+   "cyberessentials",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/KMU/KMU_node.html",
+   "title": "BSI: Kleine und mittlere Unternehmen – Informationen und Hilfestellungen für KMU",
+   "checked_at": "2026-11-01",
+   "label": "BSI (Germany), SME page"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.gov.uk/government/statistics/cyber-security-breaches-survey-2025/cyber-security-breaches-survey-2025",
+   "title": "UK Government: Cyber security breaches survey 2025 (official statistics)",
+   "checked_at": "2026-11-01",
+   "label": "UK Gov, Breaches Survey 2025"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Zwei-Faktor-Authentisierung/zwei-faktor-authentisierung_node.html",
+   "title": "BSI: Zwei-Faktor-Authentisierung – mehr Sicherheit für Geräte und Daten",
+   "checked_at": "2026-11-01",
+   "label": "BSI (Germany), two-factor"
+  }
+ ],
+ "unverified": [
+  "Damage amounts: not used.",
+  "Whether UK figures apply elsewhere: not claimed."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Too small for hackers? Germany's cyber security agency disagrees.",
+   "on_screen": "Too small to be a target?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "BSI: KMU meist nicht gezielt, sondern von automatisierten Angriffen getroffen"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Why would anyone attack a business as small as yours?",
+   "on_screen": "Why would anyone pick you?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "In the UK, 43 percent of businesses reported a breach or attack in a year.",
+   "on_screen": "43% of UK firms: breach in 12 months",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "43 % laut Survey 2025"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A phishing email doesn't check how big your business is.",
+   "on_screen": "Phishing doesn't check your size",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "Phishing häufigste Angriffsart"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch how an automated attack reaches your inbox.",
+   "on_screen": "How a mass attack reaches you",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Too small for hackers? Germany's federal cyber security agency disagrees.",
+   "data": {
+    "question": "Too small to be a target?",
+    "doc_label": "Mass email",
+    "chat_title": "Business inbox",
+    "bot_line": "1 new message",
+    "typed": "Your invoice is due",
+    "badge": "Random?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 12,
+   "spoken": "According to the BSI, small and medium-sized businesses are increasingly the target of cyber attacks. Usually they are not picked on purpose. They get caught in attacks that run at scale and automatically.",
+   "data": {
+    "headline": "Not targeted, still hit",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Automated attack",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n1",
+      "label": "Thousands of inboxes",
+      "icon": "&#9993;"
+     },
+     {
+      "id": "n2",
+      "label": "Your business",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "at scale"
+     },
+     {
+      "label": "also hits"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 7.0,
+     "label": "Not chosen, just reached"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "The BSI describes what happens next: data from customers and partners is stolen, changed, deleted or encrypted. And criminals use the stolen data for further attacks.",
+   "data": {
+    "headline": "What happens next",
+    "file_label": "Business inbox",
+    "card": {
+     "title": "According to the BSI",
+     "rows": [
+      {
+       "text": "customer data stolen",
+       "ok": null
+      },
+      {
+       "text": "data encrypted",
+       "ok": null
+      },
+      {
+       "text": "reused for new attacks",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 15,
+   "spoken": "The UK government shows how common this is. In its survey for 2025, 43 percent of businesses reported a breach or attack in the last twelve months. Among micro businesses, 35 percent identified phishing attacks.",
+   "data": {
+    "headline": "Myth and finding",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.0,
+    "left": {
+     "title": "Myth",
+     "rows": [
+      {
+       "text": "too small to matter",
+       "ok": "open"
+      },
+      {
+       "text": "only big firms get attacked",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Finding 2025 (UK)",
+     "rows": [
+      {
+       "text": "43% of firms: breach or attack",
+       "ok": null
+      },
+      {
+       "text": "micro firms: 35% phishing",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "The most common way in is phishing. It was involved for 85 percent of the businesses affected. In the survey interviews, people often said phishing takes a lot of time because of the sheer volume.",
+   "data": {
+    "headline": "The most common way in: phishing",
+    "file_label": "Business inbox",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Email spotted",
+      "sub": "report and delete",
+      "at": 0.6
+     },
+     {
+      "title": "Link clicked",
+      "sub": "account at risk",
+      "at": 1.0
+     }
+    ],
+    "approval": "Check first, then click?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 13,
+   "spoken": "So, three things for today: talk to your team about phishing. Turn on two-factor login for your email account, as the BSI recommends. And look at the support pages for small businesses from your national cyber agency.",
+   "data": {
+    "headline": "Three steps for today",
+    "items": [
+     {
+      "title": "Brief your team on phishing",
+      "sub": "know the most common trick",
+      "at": 2.0
+     },
+     {
+      "title": "Two-factor for your inbox",
+      "sub": "start with email",
+      "at": 4.8
+     },
+     {
+      "title": "Use official guidance",
+      "sub": "e.g. the BSI's SME pages",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Small doesn't mean invisible. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Small doesn't mean invisible",
+    "file_label": "Business inbox",
+    "button": "Open link",
+    "block_text": "Check first, then click",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

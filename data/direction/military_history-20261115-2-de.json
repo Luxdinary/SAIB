@@ -1,0 +1,547 @@
+{
+  "video_id": "military_history-20261115-2-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Die Josephinische Landesaufnahme",
+  "notes": "Woche 1, Reihe Karte, Zeit und Kurs. Historische Kartografie; kein Bezug zum heutigen Bundesheer. Geheimhaltung nur für Galizien-Blätter belegt.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://iaepan.edu.pl/galicja/index-en.html",
+      "title": "Galicia on the Josephine topographic map 1779–1783, Institute of Archaeology and Ethnology PAN",
+      "label": "IAE PAN: Galizien",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://austria-forum.org/af/AEIOU/Landesaufnahme",
+      "title": "Landesaufnahme, AEIOU Österreich-Lexikon, Austria-Forum",
+      "label": "AEIOU Österreich-Lexikon",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Beginn 1763 (IAE PAN) oder 1764 (AEIOU); im Video 1764.",
+    "Blattzahl 3.589 (AEIOU) oder über 3.500 (IAE PAN); im Video 3589."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie kartiert man ein ganzes Reich von Hand, Blatt für Blatt?",
+      "on_screen": "Ein Reich von Hand kartiert?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Alte Landkarten waren gedruckt? Diese blieben Handzeichnungen, zum Teil geheim.",
+      "on_screen": "Gezeichnet, nicht gedruckt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "3589 Kartenblätter, alle von Hand gezeichnet.",
+      "on_screen": "3589 Blätter von Hand",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Im Siebenjährigen Krieg fehlten verlässliche Karten.",
+      "on_screen": "Ohne Karten",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie ein Zoll auf dem Blatt 1000 Schritt wird.",
+      "on_screen": "1 Zoll = 1000 Schritt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie kartiert man ein ganzes Reich von Hand, Blatt für Blatt?",
+      "data": {
+        "question": "Ein ganzes Reich, von Hand gezeichnet?",
+        "question_em": "von Hand",
+        "card_title": "Landesaufnahme",
+        "card_meta": "1764–1787",
+        "card_no": "AKTE 29",
+        "stamp": "1:28800",
+        "drawing": "josephine_sheet.svg",
+        "packet_label": "Kartenblatt",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Hand",
+        "packet_at": "w:Blatt",
+        "em_at": "w:Reich"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Im Siebenjährigen Krieg fehlen den österreichischen Truppen verlässliche Karten. 1764 schlägt Feldmarschall Daun eine Aufnahme durch Generalstabsoffiziere vor.",
+      "data": {
+        "mode": "map",
+        "headline": "Karten fehlen",
+        "places": [
+          {
+            "label": "Wien",
+            "code": "Vorschlag 1764",
+            "x": 600,
+            "y": 80,
+            "at": "w:Daun"
+          },
+          {
+            "label": "Erblande",
+            "code": "ohne Karten",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Karten"
+          }
+        ],
+        "route_at": "w:Aufnahme",
+        "route_label": "keine verlässlichen Karten",
+        "route_label_at": "w:verlässliche",
+        "wait_at": "w:1764",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Vorschlag 1764: Daun",
+        "chip_at": "w:Feldmarschall",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Kartenblatt",
+        "packet_at": "w:Generalstabsoffiziere",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "die Aufnahme beginnt",
+        "line_label_at": "w:vor",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Schritt",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Der Maßstab ist 1 zu 28.800: Ein Zoll auf dem Blatt sind 1000 Schritt. Jedes Blatt ist etwa 63 mal 42 Zentimeter groß, von Hand gezeichnet und farbig.",
+      "data": {
+        "headline": "Ein Blatt, 1 : 28.800",
+        "drawing": "josephine_sheet.svg",
+        "sheet_title": "BLATT 2 · KARTENBLATT",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "1 : 28.800",
+            "x": 180,
+            "y": 380,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Maßstab"
+          },
+          {
+            "label": "1 Zoll = 1000 Schritt",
+            "x": 130,
+            "y": 380,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Schritt"
+          },
+          {
+            "label": "ca. 63 × 42 cm",
+            "x": 400,
+            "y": 100,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:63"
+          },
+          {
+            "label": "Von Hand, farbig",
+            "x": 230,
+            "y": 220,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Hand"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 230,
+          "scale": 1.12,
+          "at": "w:Schritt",
+          "back_at": "w:farbig",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Eine einheitliche Dreiecksvermessung gibt es noch nicht. Tirol, Vorarlberg und die italienischen Gebiete werden gar nicht aufgenommen.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Eine Karte mit Lücken",
+        "left": {
+          "tag": "Fehlt",
+          "title": "Dreiecksnetz",
+          "at": "w:Dreiecksvermessung",
+          "rows": [
+            "noch nicht einheitlich"
+          ]
+        },
+        "right": {
+          "tag": "Ausgespart",
+          "title": "Tirol, Vorarlberg, Italien",
+          "at": "w:Tirol",
+          "rows": [
+            {
+              "text": "nicht aufgenommen",
+              "at": "w:aufgenommen"
+            }
+          ]
+        },
+        "verdict": "Gezeichnet, aber nicht vollständig",
+        "verdict_at": "w:aufgenommen",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Bis 1787 entstehen 3589 Blätter für rund 570.000 Quadratkilometer. Allein Galizien füllt 413 Blätter, zusammen rund 115 Quadratmeter.",
+      "data": {
+        "headline": "Das Werk in Zahlen",
+        "nodes": [
+          {
+            "label": "3.589 Blätter",
+            "code": "bis 1787",
+            "at": "w:3589"
+          },
+          {
+            "label": "570.000 km²",
+            "code": "Fläche",
+            "at": "w:570.000"
+          },
+          {
+            "label": "Galizien",
+            "code": "413 Blätter",
+            "at": "w:Galizien"
+          },
+          {
+            "label": "115 m²",
+            "code": "Papierfläche",
+            "at": "w:115"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1764 der Beginn, 1787 das Ende der Aufnahme, und erst 1873 wird die Galizien-Karte auf der Weltausstellung in Wien öffentlich gezeigt.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1764 bis 1873",
+        "items": [
+          {
+            "year": "1764",
+            "title": "Beginn",
+            "sub": "Vorschlag Daun",
+            "at": "w:1764"
+          },
+          {
+            "year": "1787",
+            "title": "Ende",
+            "sub": "3.589 Blätter",
+            "at": "w:1787"
+          },
+          {
+            "year": "1873",
+            "title": "Weltausstellung Wien",
+            "sub": "Galizien-Karte gezeigt",
+            "at": "w:1873"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Die Galizien-Blätter bleiben geheim und werden nie gedruckt. Alle Blätter liegen heute im Kriegsarchiv in Wien, Teil des Österreichischen Staatsarchivs. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Landesaufnahme",
+        "card_meta": "1764–1787",
+        "card_no": "AKTE 29",
+        "stamp": "Geheim",
+        "drawing": "josephine_sheet.svg",
+        "statement": "Von Hand gezeichnet, nie gedruckt",
+        "statement_at": "w:gedruckt",
+        "stamp_at": "w:geheim",
+        "note": "Kriegsarchiv, Österreichisches Staatsarchiv",
+        "note_at": "w:Staatsarchivs",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Kartenblatt",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Blatt: leer",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b2",
+          "text": "Vorschlag: 1764",
+          "tone": "amber",
+          "offset": 4.7
+        },
+        {
+          "beat": "b3",
+          "text": "Maßstab: 1:28.800",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b4",
+          "text": "Lücken: Tirol, Italien",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b5",
+          "text": "Blätter: 3.589",
+          "tone": "muted",
+          "offset": 1.7
+        },
+        {
+          "beat": "b6",
+          "text": "Gezeigt: 1873",
+          "tone": "muted",
+          "offset": 5.2
+        },
+        {
+          "beat": "b7",
+          "text": "Ort: Kriegsarchiv",
+          "tone": "muted",
+          "offset": 6.6
+        }
+      ]
+    },
+    "description": "Die Josephinische Landesaufnahme 1764–1787: 3589 handgezeichnete Blätter im Maßstab 1:28.800, ein Zoll für 1000 Schritt. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "kartografie",
+      "habsburg",
+      "geschichte",
+      "landesaufnahme",
+      "karte"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

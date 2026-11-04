@@ -1,0 +1,358 @@
+{
+ "video_id": "menswear-20261111-3-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Super 100s: what the number on the cloth means",
+ "notes": "Woche 1 im Format Kreidestrich (K1), Reihe Unter dem Fadenzähler, Kalenderthema menswear-20261111-3 (Stoffkunde C02). Quellen S1 und S2 im Originaltext gelesen. Alter Plan bleibt unverändert.",
+ "layout": {
+  "format": "kreidestrich",
+  "series": "stoff",
+  "explainer": false,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 560,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "series_topic": "Super number",
+  "description": "Super 100s is not a grade but an upper limit for the mean fibre diameter: at most 18.75 microns. Each step of ten is half a micron finer. Illustration, sources: Woolmark Specification F-6 (IWTO Super S), Woolmark Introduction to Wovenwear.",
+  "companion_text": "Suitwerk shows menswear in detail, drawn rather than claimed. No advertising, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "suitfabric",
+   "fabricknowledge",
+   "super100s",
+   "wool"
+  ]
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Kreidestrich, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "checked_at": "2026-11-02",
+   "title": "The Woolmark Company: Introduction to Wovenwear (Training Manual), S. 6 (Super S system developed by IWTO, administered by The Woolmark Company; related to the mean fibre diameter; Super 80's < 19.75 micron to Super 250's < 11.25 micron)",
+   "label": "Woolmark, Introduction to Wovenwear"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/product-specifications/f-6_fibre_quality_2016-1_22oct14_f.pdf",
+   "checked_at": "2026-11-02",
+   "label": "Woolmark Specification F-6",
+   "title": "Woolmark Specification F-6: 2016, Wool Fibre Quality (Super S scheme owned by IWTO, administered by Woolmark; Pure New Wool with up to 5% decorative yarn; requirement applies at the final product stage; no measurement tolerance; Table 1: Super 80s 19.75 to Super 250s 11.25 µm, Super 100s 18.75, Super 150s 16.25)"
+  }
+ ],
+ "unverified": [
+  "Zusammenhang mit Weichheit, Haltbarkeit oder Preis: nicht verwendet.",
+  "US-Wollkennzeichnungsrecht (16 CFR 300.20a): im alten Plan, hier nicht verwendet.",
+  "Querschnitte im Bild sind schematische Kreise mit dem Grenzdurchmesser im Maßstab, keine gemessenen Fasern."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What is behind this label on the cloth?",
+   "on_screen": "What is behind it?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "question"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Most people read this number wrong.",
+   "on_screen": "Read it wrong?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 3,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "not measurable, below the gate"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The answer is in the thread, not the label.",
+   "on_screen": "The answer is in the thread",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "vague"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "If you only read the label, you miss the cloth.",
+   "on_screen": "Only the label?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "no real risk"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Super 100s sounds like a grade. It measures one thing.",
+   "on_screen": "What does it count?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Zwei Stoffmuster mit Super-Zahl, der Fadenzähler fährt darüber",
+   "why": {
+    "truth": "shown, not claimed",
+    "visual": "core of the Kreidestrich format"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Vorführung im Format Kreidestrich."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "kw_hook",
+   "duration_hint": 9,
+   "spoken": "Super 100s, Super 150s: numbers like these appear on some suit fabrics. They sound like a grade for quality. But they measure just one thing.",
+   "data": {
+    "question": "What does it count?",
+    "question_at": 0.2,
+    "chalk_at": "w:numbers",
+    "swatches": [
+     {
+      "kind": "twill",
+      "label": "Super 100s"
+     },
+     {
+      "kind": "twill",
+      "label": "Super 150s"
+     }
+    ],
+    "labels_at": 0.6,
+    "neq_at": "w:grade",
+    "lens_at": "w:measure",
+    "lens2_at": "w:thing",
+    "source": "Woolmark: Introduction to Wovenwear, p. 6 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "kw_fibre",
+   "duration_hint": 11,
+   "spoken": "Go down to a single wool fibre, in cross-section. The Super number describes its mean diameter, measured in microns. A micron is a thousandth of a millimetre. The system comes from the wool body IWTO and is administered by Woolmark.",
+   "data": {
+    "title": {
+     "text": "One fibre in cross-section",
+     "at": 0.1
+    },
+    "px_per_um": 16,
+    "items": [
+     {
+      "label": "Super 100s",
+      "um": 18.75,
+      "sub": "max. 18.75 µm",
+      "at": "w:diameter"
+     }
+    ],
+    "bar_um": 10,
+    "note": {
+     "text": "Cross-section, schematic",
+     "at": "w:microns"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, p. 6 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "demonstration",
+   "scene_type": "kw_range",
+   "duration_hint": 13,
+   "spoken": "Important: the number is an upper limit. Super 100s means a mean of at most 18.75 microns. Super 150s means at most 16.25. Each step of ten lowers the limit by half a micron. The scale runs from Super 80s to Super 250s.",
+   "data": {
+    "title": {
+     "text": "An upper limit",
+     "at": 0.1
+    },
+    "unit": "µm",
+    "min": 11,
+    "max": 20,
+    "step": 0.25,
+    "label_every": 4,
+    "marks": [
+     {
+      "value": 18.75,
+      "label": "Super 100s",
+      "sub": "max. 18.75 µm",
+      "at": "w:Super",
+      "up": true
+     },
+     {
+      "value": 16.25,
+      "label": "Super 150s",
+      "sub": "max. 16.25 µm",
+      "at": "w:Super#2",
+      "up": false
+     }
+    ],
+    "band": {
+     "from": 11,
+     "to": 18.75,
+     "label": "allowed for Super 100s",
+     "at": "w:most"
+    },
+    "note": {
+     "text": "Step: 0.5 µm",
+     "at": "w:step"
+    },
+    "source": "IWTO/Woolmark Specification F-6, Table 1 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "kw_fibre",
+   "duration_hint": 13,
+   "spoken": "Finer means thinner. Slide the cross-sections on top of each other and you see the difference. It is measured on the finished fabric, with no measuring tolerance, and only for pure new wool with at most five percent decorative yarn. Because the mean diameter can rise during processing, Woolmark advises raw wool that is half a micron to a micron finer.",
+   "data": {
+    "title": {
+     "text": "Finer means thinner",
+     "at": 0.1
+    },
+    "px_per_um": 13,
+    "items": [
+     {
+      "label": "Super 80s",
+      "um": 19.75,
+      "sub": "max. 19.75 µm",
+      "at": 0.4
+     },
+     {
+      "label": "Super 100s",
+      "um": 18.75,
+      "sub": "max. 18.75 µm",
+      "at": 0.9
+     },
+     {
+      "label": "Super 150s",
+      "um": 16.25,
+      "sub": "max. 16.25 µm",
+      "at": 1.4
+     }
+    ],
+    "bar_um": 10,
+    "stack_at": "w:top",
+    "note": {
+     "text": "on the finished fabric, no tolerance",
+     "at": "w:finished"
+    },
+    "source": "Woolmark Specification F-6 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "close",
+   "scene_type": "kw_close",
+   "duration_hint": 11,
+   "spoken": "Remember: Super 100s is an upper limit for the mean fibre diameter. The number measures nothing else. Follow Suitwerk for menswear with an eye for detail.",
+   "data": {
+    "kinds": [
+     "twill",
+     "twill"
+    ],
+    "chip": {
+     "text": "Super S: mean fibre diameter",
+     "at": 0.3
+    },
+    "lines": [
+     {
+      "text": "100s: 18.75 µm",
+      "at": "w:limit"
+     },
+     {
+      "text": "150s: 16.25 µm",
+      "at": "w:limit+0.6"
+     }
+    ],
+    "rule": {
+     "text": "One number, one diameter",
+     "at": "w:number"
+    },
+    "sign_at": "w:Follow",
+    "claim": "Menswear with an eye for detail.",
+    "sign_note": "A limit, not a reading",
+    "source": "Woolmark Specification F-6 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S2"
+   ]
+  }
+ ]
+}

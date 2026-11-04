@@ -1,0 +1,108 @@
+{
+  "spec": "grossbuchstaben-en",
+  "runs": {
+    "L1": {
+      "title": "Plain rule",
+      "prompt": "Summarize notiz.txt in one sentence. Reply in English.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 9.57,
+      "lines": [
+        {
+          "t": 5.606,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 7.274,
+          "kind": "tool",
+          "id": "toolu_01CZVHPSsEKaD6AR2WXqCkvv",
+          "text": "Read: .\\notiz.txt"
+        },
+        {
+          "t": 7.416,
+          "kind": "result",
+          "id": "toolu_01CZVHPSsEKaD6AR2WXqCkvv",
+          "text": "1\tThe warehouse in Linz holds 120 pallets. The warehouse in Wels holds 80 pallets. On Friday 40 more pallets arrive.\n2"
+        },
+        {
+          "t": 8.963,
+          "kind": "text",
+          "text": "The note says that the warehouse in Linz holds 120 pallets, the warehouse in Wels holds 80 pallets, and 40 more pallets arrive on Friday.\n\nSource: `notiz.txt`\n\nEnd of report."
+        },
+        {
+          "t": 9.011,
+          "kind": "end",
+          "text": "Done after 9.0 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 3438,
+        "num_turns": 2,
+        "total_cost_usd": 0.00088322,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Rule with IMPORTANT",
+      "prompt": "Summarize notiz.txt in one sentence. Reply in English.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 9.519,
+      "lines": [
+        {
+          "t": 4.792,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 6.901,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 6.903,
+          "kind": "tool",
+          "id": "toolu_01PBUJhgukVRxVtWBWWY4SYk",
+          "text": "Read: .\\notiz.txt"
+        },
+        {
+          "t": 6.936,
+          "kind": "result",
+          "id": "toolu_01PBUJhgukVRxVtWBWWY4SYk",
+          "text": "1\tThe warehouse in Linz holds 120 pallets. The warehouse in Wels holds 80 pallets. On Friday 40 more pallets arrive.\n2"
+        },
+        {
+          "t": 8.961,
+          "kind": "text",
+          "text": "The note says the Linz warehouse holds 120 pallets, the Wels warehouse holds 80, and 40 more pallets arrive on Friday.\n\nSource: `notiz.txt`\n\nEnd of report."
+        },
+        {
+          "t": 8.97,
+          "kind": "end",
+          "text": "Done after 9.0 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 4252,
+        "num_turns": 2,
+        "total_cost_usd": 0.00047281000000000005,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

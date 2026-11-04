@@ -1,0 +1,375 @@
+{
+ "video_id": "ai_security-20261112-3-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "A traffic light for what goes into AI tools",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Vor dem Upload\". Topic E06, EN localisation. No legal advice. Example case staged; statements from S1 (German data protection authorities' AI guidance) and S2 (BSI). The traffic light is Scutoria's classification.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "A colleague wants AI to polish a job reference, names removed. Is that enough? What German data protection authorities say, and a traffic light for the team.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on IT and AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "dataprotection",
+   "aiatwork",
+   "gdpr",
+   "smallbusiness",
+   "beforeyouupload"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf",
+   "title": "DSK: Orientierungshilfe Künstliche Intelligenz und Datenschutz (06.05.2024)",
+   "checked_at": "2026-11-01",
+   "label": "German data protection authorities (DSK), AI guidance"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.html",
+   "title": "BSI: Generative KI-Modelle – Chancen und Risiken",
+   "checked_at": "2026-11-01",
+   "label": "BSI, generative AI"
+  }
+ ],
+ "unverified": [
+  "The traffic light itself is Scutoria's classification, not a DSK requirement; marked as interpretation on screen.",
+  "No legal advice on legal bases in individual cases; the DSK guidance is German, GDPR rules apply EU-wide.",
+  "The sequence of the example case (colleague, private AI account) is invented; the job-reference example comes from S1."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Can this go into the AI chat? A simple traffic light decides in seconds.",
+   "on_screen": "Can this go into the AI chat?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Names deleted, so it's anonymous? Often not, say German data regulators.",
+   "on_screen": "No names = anonymous?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Regulators say employers should provide their own accounts for work use of AI.",
+   "on_screen": "Work account, not private",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A reference without names, and everyone still knows who it's about.",
+   "on_screen": "No names, still recognisable",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Thursday, 2 p.m. A job reference is about to go into an AI chat.",
+   "on_screen": "THU 14:00 · A reference for the AI?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Thursday, 2 p.m. Your colleague wants an AI to polish a job reference. She removed the names first.",
+   "data": {
+    "kicker": "Example case · staged",
+    "time": "THU 14:00",
+    "place": "HR office of a car dealership",
+    "mail_at": "@colleague",
+    "mail": {
+     "from": "AI chat (example)",
+     "addr": "private account",
+     "time": "14:00",
+     "subject": "Make this friendlier",
+     "lines": [
+      "Please make this sound friendlier:",
+      "sales adviser, Example Motors,",
+      "three years, new-car department."
+     ]
+    },
+    "highlight": {
+     "line": 1,
+     "label": "recognisable",
+     "at": "@names"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "She was careful: name gone, address gone. But Germany's data protection authorities say a person can be identified from the context. Their example: a job reference for a sales adviser at one particular car dealership.",
+   "data": {
+    "kicker": "What you check",
+    "headline": "Is it anonymous?",
+    "rows": [
+     {
+      "label": "Name",
+      "value": "deleted",
+      "verdict": "done",
+      "at": "@name"
+     },
+     {
+      "label": "Address",
+      "value": "deleted",
+      "verdict": "done",
+      "at": "@address"
+     },
+     {
+      "label": "Context",
+      "value": "role, dealership",
+      "verdict": "recognisable",
+      "at": "@context"
+     }
+    ],
+    "fact": {
+     "kind": "fakt",
+     "text": "A person can be identifiable from the context.",
+     "source": "DSK · AI guidance",
+     "at": "@example"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "What do you do? A: Fine, the names are gone. B: She uses her private AI account, that's her business. C: You first check whether this may go in at all. Remember your choice.",
+   "data": {
+    "question": "What do you do?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Fine, the names are gone",
+      "at": "@Fine"
+     },
+     {
+      "key": "B",
+      "text": "Use a private AI account",
+      "at": "@private"
+     },
+     {
+      "key": "C",
+      "text": "Check first, then upload",
+      "at": "@check"
+     }
+    ],
+    "think": {
+     "seconds": 2.4,
+     "at": "@Remember"
+    },
+    "hint": "Remember your choice."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "The right answer is C. The authorities say: if you process personal data in AI applications, you need a legal basis for it. And employers should provide their own devices and accounts for work use of AI. A misses the context, B misses the work account.",
+   "data": {
+    "mode": "rule",
+    "kicker": "The one step",
+    "card": {
+     "letter": "C",
+     "title": "Check first, then upload",
+     "sub": "personal data needs a legal basis",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: The names are gone",
+      "note": "context counts",
+      "at": "@misses"
+     },
+     {
+      "text": "B: Private AI account",
+      "note": "use a work account",
+      "at": "@misses+1.6"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "DSK · legal basis"
+     },
+     {
+      "kind": "fakt",
+      "label": "DSK · own devices and accounts"
+     }
+    ],
+    "sources_at": "@legal"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "benefit",
+   "scene_type": "sc_step",
+   "spoken": "From this you can build a traffic light for the team. Green: public material, like text from your website. Amber: internal things like quotes, only in tools with a business account. Red: data about customers or staff, only after checking.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "The data traffic light",
+    "card": {
+     "letter": "!",
+     "title": "Green, amber, red",
+     "sub": "a classification, not a DSK rule",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "Green: public, e.g. website",
+      "at": "@Green",
+      "mark": "green"
+     },
+     {
+      "text": "Amber: internal, work account",
+      "at": "@Amber",
+      "mark": "amber"
+     },
+     {
+      "text": "Red: customers and staff",
+      "at": "@Red",
+      "mark": "red"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "auslegung",
+      "label": "Traffic light: Scutoria's reading"
+     }
+    ],
+    "sources_at": 1.0
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Colour first, then the chat. Which colour would the reference be? Tell me in the comments.",
+   "data": {
+    "kicker": "Series · Before the upload",
+    "rule": "Colour first, then the chat.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Which colour would it be?",
+     "at": "@Which"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice."
+   },
+   "source_ids": []
+  }
+ ]
+}

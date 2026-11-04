@@ -1,0 +1,459 @@
+{
+  "video_id": "engines-20261111-2-de",
+  "brand_id": "engines",
+  "language": "de",
+  "title": "Zu früh, zu spät, genau richtig: der Zündzeitpunkt",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261111-2-de, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Warum die Zündkerze vor dem oberen Totpunkt zündet, was zu früh und zu spät bedeutet und warum ein paar Grad weniger kosten als gedacht.",
+    "companion_text": "Folge Revlore: Motorentechnik verstehen, ein Bauteil nach dem anderen.\nDruckkurven schematisch; Zündzeitpunkte sind Beispielwerte aus der MIT-Vorlesung 9. Keine Einstellanleitung.",
+    "hashtags": [
+      "motorentechnik",
+      "zündung",
+      "zündzeitpunkt",
+      "klopfen",
+      "ottomotor"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, Vorlesung 9",
+      "title": "MIT 2.61, Vorlesung 9 (L9)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "Bosch, Klopfsensor",
+      "title": "Bosch, Klopfsensor (B5)",
+      "url": "https://www.bosch-mobility.com/en/solutions/sensors/knock-sensor/",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Aber deutlich weniger, als man denkt.",
+      "on_screen": "Ein paar Grad zu spät?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wann genau zündet die Zündkerze?",
+      "on_screen": "Zu früh, zu spät, genau richtig: der Zündzeitpunkt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Zu früh, zu spät, genau richtig: der Zündzeitpunkt",
+      "on_screen": "Zu früh, zu spät, genau richtig: der Zündzeitpunkt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Zu früh, zu spät, genau richtig: der Zündzeitpunkt",
+      "on_screen": "Zu früh, zu spät, genau richtig: der Zündzeitpunkt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Zu früh, zu spät, genau richtig: der Zündzeitpunkt",
+      "on_screen": "Zu früh, zu spät, genau richtig: der Zündzeitpunkt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Zündet die Kerze ein paar Grad zu spät, verliert der Motor Kraft. Aber deutlich weniger, als man denkt.",
+      "data": {
+        "claim": "Ein paar Grad zu spät?",
+        "claim_lines": [
+          "Ein paar Grad",
+          "zu spät?"
+        ],
+        "claim_highlight": "zu spät?",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:weniger",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_cutaway",
+      "spoken": "Die Verbrennung braucht Zeit. Deshalb zündet die Kerze schon vor dem oberen Totpunkt, damit der höchste Druck kurz danach auf den Kolben trifft. Die Fachvorlesung nennt dafür als Beispiel dreißig Grad vor dem oberen Totpunkt.",
+      "data": {
+        "title": "Vor dem Totpunkt",
+        "stroke_dims": true,
+        "dims_at": "w:Totpunkt",
+        "labels": [
+          {
+            "key": "plug",
+            "side": "l",
+            "y": 640
+          }
+        ],
+        "labels_at": [
+          "w:Kerze"
+        ],
+        "notes": [
+          {
+            "text": "30° vor OT",
+            "at": "w:Beispiel",
+            "side": "l",
+            "y": 880,
+            "to": [
+              540,
+              500
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            250
+          ],
+          [
+            1,
+            420
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Fachvorlesung",
+        "kicker": "2 · DER ZEITPUNKT",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "Hier siehst du den Druck im Zylinder, schematisch. Zu früh gezündet steigt der Druck schon, während der Kolben noch hochfährt. Zu spät gezündet kommt er erst, wenn der Kolben schon wieder abwärts läuft. Die Kurven sind schematisch.",
+      "data": {
+        "title": "Zylinderdruck",
+        "kind": "pressure",
+        "cases": [
+          {
+            "label": "zu früh",
+            "spark": -50,
+            "color": "steel",
+            "dash": "12 8"
+          },
+          {
+            "label": "optimal",
+            "spark": -30,
+            "color": "accent"
+          },
+          {
+            "label": "zu spät",
+            "spark": -10,
+            "color": "muted",
+            "dash": "4 8"
+          }
+        ],
+        "series_at": [
+          "w:Druck",
+          "w:früh",
+          1.4,
+          "w:spät"
+        ],
+        "marks": [
+          {
+            "x": 0,
+            "label": "OT",
+            "at": "w:hochfährt",
+            "color": "steel",
+            "row": 3
+          }
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:früh",
+        "kicker": "3 · DER DRUCK",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rv_board",
+      "spoken": "Laut Vorlesung ist die Kurve um das Optimum flach. Fünf bis sieben Grad zu spät kosten nur etwa ein Prozent Drehmoment. Zu früh steigen dagegen Wärmeverluste und Klopfneigung, zu spät wird Arbeit verschenkt.",
+      "data": {
+        "title": "Zu früh, zu spät",
+        "mode": "compare",
+        "left": {
+          "title": "zu früh",
+          "rows": [
+            "mehr Wärmeverlust",
+            "Klopfneigung"
+          ],
+          "at": "w:früh"
+        },
+        "right": {
+          "title": "zu spät",
+          "rows": [
+            "5–7°: ≈ 1 % Moment",
+            "Arbeit verschenkt"
+          ],
+          "at": "w:spät"
+        },
+        "rows_at": [
+          "w:Prozent",
+          "w:verschenkt"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:flach",
+        "kicker": "4 · DER PREIS",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_cutaway",
+      "spoken": "Damit der Motor nicht ins Klopfen gerät, hört ein Klopfsensor am Kurbelgehäuse mit. Erkennt er Klopfen, verstellt das Steuergerät den Zündzeitpunkt, so beschreibt es Bosch. So bleibt der Motor unter der Klopfgrenze.",
+      "data": {
+        "title": "Der Klopfsensor",
+        "knock": true,
+        "notes": [
+          {
+            "text": "Klopfsensor",
+            "at": "w:Klopfsensor",
+            "side": "r",
+            "y": 1000,
+            "to": [
+              728,
+              960
+            ]
+          },
+          {
+            "text": "Zündung verstellt",
+            "at": "w:verstellt",
+            "side": "l",
+            "y": 760,
+            "to": [
+              540,
+              400
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Bosch",
+        "kicker": "5 · DER WÄCHTER",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Zu früh droht Klopfen, zu spät fehlt Arbeit, dazwischen liegt das Optimum. Motorentechnik verstehen: Folge Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "zu früh",
+            "at": "w:früh"
+          },
+          {
+            "text": "zu spät",
+            "at": "w:spät"
+          },
+          {
+            "text": "Optimum",
+            "at": "w:Optimum"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Motorentechnik verstehen",
+          "at": "w:Motorentechnik"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none"
+      },
+      "source_ids": []
+    }
+  ]
+}

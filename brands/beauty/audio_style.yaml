@@ -1,0 +1,21 @@
+tts:
+  provider: gemini
+  model: gemini-2.5-flash-preview-tts
+  voices:
+    de: Leda
+    en: Aoede
+  speaking_rate: 0.97
+  style_instruction:
+    de: Sprich ruhig, warm und klar auf Deutsch, wie eine sachkundige Freundin, ohne Verkaufston.
+    en: Speak calmly, warmly and clearly, like a knowledgeable friend, never like an advert.
+music:
+  mood: light acoustic, soft pads, 80 bpm
+  file: null                 # no licensed music source chosen yet (project-wide open point)
+  license_proof: null
+  gain_db: -18
+  duck_db: -10
+loudness:
+  target_lufs: -16
+  true_peak_dbtp: -1.5
+sfx:
+  enabled: false

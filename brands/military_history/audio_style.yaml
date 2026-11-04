@@ -1,0 +1,21 @@
+tts:
+  provider: gemini
+  model: gemini-2.5-flash-preview-tts
+  voices:
+    de: Charon
+    en: Charon
+  speaking_rate: 0.97
+  style_instruction:
+    de: Sprich ruhig und klar auf Deutsch, measured, factual, respectful.
+    en: Speak clearly in English, measured, factual, respectful.
+music:
+  mood: restrained documentary score, sparse percussion, 65 bpm
+  file: null
+  license_proof: null
+  gain_db: -18
+  duck_db: -10
+loudness:
+  target_lufs: -16
+  true_peak_dbtp: -1.5
+sfx:
+  enabled: false

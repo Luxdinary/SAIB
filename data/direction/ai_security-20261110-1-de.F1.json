@@ -1,0 +1,415 @@
+{
+ "video_id": "ai_security-20261110-1-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Die Mail vom Chef, der dringend überweisen lässt",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Was tust du?\". Thema D01. Beispielfall nachgestellt; Mechanik und Empfehlungen aus S1 (Polizei Berlin) und S2 (FBI IC3), Faktenbasis aus dem Plan vom 01.11.2026.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Eine Mail im Namen deines Chefs: Übernahme, Überweisung ins Ausland, heute noch. Was tust du? Ein nachgestellter Fall und der eine Schritt, den die Polizei rät.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "ceofraud",
+   "chefbetrug",
+   "buchhaltung",
+   "kmu",
+   "wastustdu"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.berlin.de/polizei/aufgaben/praevention/betrug/artikel.693958.php",
+   "title": "Polizei Berlin: Geschäftsführer-Schwindel (CEO-Fraud)",
+   "checked_at": "2026-11-02",
+   "label": "Polizei Berlin, CEO-Fraud"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ic3.gov/PSA/2024/PSA240911",
+   "title": "FBI IC3 PSA I-091124-PSA: Business Email Compromise (11.09.2024)",
+   "checked_at": "2026-11-02",
+   "label": "FBI IC3, Warnung vom 11.09.2024"
+  }
+ ],
+ "unverified": [
+  "Schadenssummen für Deutschland oder Österreich: nicht verwendet.",
+  "Ablauf im Beispielfall (Uhrzeiten, Antwort des Täters, Gespräch am Montag) ist erfunden und als Beispiel gekennzeichnet."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Dein Chef will per Mail eine dringende Überweisung ins Ausland. Was tust du?",
+   "on_screen": "Dringend überweisen. Was tust du?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Der Name stimmt, also ist es der Chef? Nicht unbedingt.",
+   "on_screen": "Name stimmt = Chef?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Ihr Wissen holen die Täter laut Polizei aus Handelsregister und Firmenwebsite.",
+   "on_screen": "Wissen aus dem Handelsregister",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Eine Mail im Namen deines Chefs, und das Geld ist im Ausland.",
+   "on_screen": "Mail vom Chef?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Donnerstag, sechzehn Uhr achtundvierzig. Eine Mail von deinem Chef.",
+   "on_screen": "DO 16:48 · Mail vom Chef",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Donnerstag, sechzehn Uhr achtundvierzig. Eine Mail von deinem Chef: Wir übernehmen ein Unternehmen. Bitte heute noch eine größere Summe ins Ausland überweisen.",
+   "data": {
+    "kicker": "Beispielfall · nachgestellt",
+    "time": "DO 16:48",
+    "place": "Buchhaltung eines Elektrobetriebs",
+    "mail_at": "@Mail",
+    "mail": {
+     "from": "Thomas Beispiel, Chef",
+     "addr": "t.beispiel@elektro.example",
+     "time": "16:48",
+     "subject": "Vertraulich: Übernahme",
+     "lines": [
+      "Wir übernehmen ein Unternehmen.",
+      "Bitte heute noch überweisen,",
+      "Konto im Anhang, Bank im Ausland."
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "Ausland",
+     "at": "@Ausland"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "Du schaust hin. Der Name: dein Chef. Das Thema: eine Übernahme, klingt plausibel. Das Konto: im Ausland, bei einer Übernahme vielleicht normal. Laut Polizei Berlin holen sich die Täter solches Wissen aus Handelsregister, Website und Geschäftsberichten.",
+   "data": {
+    "kicker": "Was du prüfst",
+    "headline": "Klingt das echt?",
+    "rows": [
+     {
+      "label": "Absender",
+      "value": "Name des Chefs",
+      "verdict": "wirkt echt",
+      "at": "@Name"
+     },
+     {
+      "label": "Thema",
+      "value": "Übernahme",
+      "verdict": "plausibel",
+      "at": "@Thema"
+     },
+     {
+      "label": "Konto",
+      "value": "Bank im Ausland",
+      "verdict": "erklärbar",
+      "at": "@Konto"
+     }
+    ],
+    "finding": {
+     "text": "Alles klingt plausibel.",
+     "at": "@vielleicht"
+    },
+    "fact": {
+     "kind": "fakt",
+     "text": "Täter nutzen Handelsregister, Website und Geschäftsberichte.",
+     "source": "Polizei Berlin · CEO-Fraud",
+     "at": "@Laut"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "Was tust du? A: Du überweist, der Chef hat es eilig. B: Du antwortest auf die Mail und fragst nach. C: Du rufst deinen Chef unter seiner bekannten Nummer an. Merk dir deine Wahl.",
+   "data": {
+    "question": "Was tust du?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Sofort überweisen",
+      "at": "@überweist"
+     },
+     {
+      "key": "B",
+      "text": "Auf die Mail antworten",
+      "at": "@antwortest"
+     },
+     {
+      "key": "C",
+      "text": "Chef unter bekannter Nummer anrufen",
+      "at": "@rufst"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Merk"
+    },
+    "hint": "Merk dir deine Wahl."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "sc_timeline",
+   "spoken": "Spielen wir B durch. Deine Rückfrage geht an die Adresse aus der Mail. Antworten kann also der Täter: Passt, bitte erledigen. Du überweist. Am Montag fragt dein Chef, wovon du redest.",
+   "data": {
+    "kicker": "Wahl B, durchgespielt",
+    "tag": "Beispiel",
+    "headline": "Du fragst per Mail nach",
+    "items": [
+     {
+      "time": "DO 16:52",
+      "text": "Deine Rückfrage geht raus",
+      "at": "@Rückfrage"
+     },
+     {
+      "time": "DO 17:03",
+      "text": "Antwort: Passt, bitte erledigen.",
+      "tone": "amber",
+      "at": "@Antworten"
+     },
+     {
+      "time": "DO 17:10",
+      "text": "Du überweist",
+      "at": "@überweist"
+     },
+     {
+      "time": "MO 08:30",
+      "text": "Der Chef weiß von nichts",
+      "tone": "red",
+      "at": "@Montag"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "Polizei Berlin · Absender prüfen",
+     "at": 1.0
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Richtig ist C. Die Polizei rät: bei ungewöhnlichen Zahlungen die Absenderadresse prüfen und den Auftrag per Rückruf bestätigen lassen. Die Antwort auf dieselbe Mail ist keine Bestätigung, sie landet beim Absender.",
+   "data": {
+    "mode": "rule",
+    "kicker": "Der eine Schritt",
+    "card": {
+     "letter": "C",
+     "title": "Rückruf beim Chef",
+     "sub": "unter der Nummer, die ihr kennt",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Sofort überweisen",
+      "note": "keine Prüfung",
+      "at": 3.0
+     },
+     {
+      "text": "B: Antwort auf die Mail",
+      "note": "gleicher Absender",
+      "at": "@Antwort"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "Polizei Berlin · Rückruf"
+     },
+     {
+      "kind": "auslegung",
+      "label": "B: Auslegung Scutoria"
+     }
+    ],
+    "sources_at": "@Polizei"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Und wenn das Geld schon weg ist? Dann zählt Zeit. Sofort die Bank anrufen und einen Rückruf der Überweisung verlangen. Dann Anzeige bei der Polizei.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "Schon überwiesen?",
+    "card": {
+     "letter": "!",
+     "title": "Dann zählt Zeit",
+     "sub": "sofort handeln, nicht abwarten",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "Bank: Überweisung zurückrufen",
+      "at": "@Bank"
+     },
+     {
+      "text": "Anzeige bei der Polizei",
+      "at": "@Anzeige"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "Polizei Berlin · FBI IC3"
+     }
+    ],
+    "sources_at": "@Zeit"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Erst zurückrufen, dann überweisen. Leg das heute für alle fest, die Zahlungen freigeben. Was hättest du gewählt? Schreib es in die Kommentare.",
+   "data": {
+    "kicker": "Reihe · Was tust du?",
+    "rule": "Erst Rückruf, dann Zahlung.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Was hättest du gewählt?",
+     "at": "@Was"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+   },
+   "source_ids": []
+  }
+ ]
+}

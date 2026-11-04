@@ -1,0 +1,454 @@
+{
+ "video_id": "ai_security-20261111-1-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Prompt injection: hidden instructions for your AI",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema E03, Reihe KI im Büro. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: AI assistant. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "AI assistant",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Inbox: AI reads along",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Input: can be rigged",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Source: website, file",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Instruction: invisible?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Access: too broad?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Approval: set it today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "No approval: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "When your AI reads websites or files, they can carry instructions, even invisible ones. What OWASP and the NCSC say, and why your AI shouldn't send anything on its own.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "promptinjection",
+   "aisecurity",
+   "owasp",
+   "aiatwork",
+   "smallbusiness"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+   "title": "OWASP Gen AI Security Project: LLM01:2025 Prompt Injection",
+   "checked_at": "2026-11-01",
+   "label": "OWASP, LLM01 prompt injection"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ncsc.gov.uk/blog-post/thinking-about-security-ai-systems",
+   "title": "NCSC blog: Thinking about the security of AI systems",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, security of AI systems"
+  }
+ ],
+ "unverified": [
+  "Incidents with specific products: not named.",
+  "Whether a given tool is vulnerable: not claimed."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Your AI summarises your emails. What if an email gives it orders?",
+   "on_screen": "What if an email gives your AI orders?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Only you control your AI? A website can too.",
+   "on_screen": "Only you control your AI?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "On the OWASP list of AI risks, prompt injection comes first.",
+   "on_screen": "OWASP's number one AI risk",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "LLM01:2025 ist Eintrag Nummer eins der Liste"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A rigged website can slip instructions to your AI.",
+   "on_screen": "A website slips your AI orders",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Look at what is hidden in this text for the AI.",
+   "on_screen": "What's hidden here for the AI?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Your AI summarises your emails. What if an email gives it orders?",
+   "data": {
+    "question": "What if an email gives your AI orders?",
+    "doc_label": "Offer.pdf",
+    "chat_title": "AI assistant",
+    "bot_line": "Summarising your email",
+    "typed": "Summarise this email",
+    "badge": "Orders?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "The UK's NCSC calls prompt injection one of the most widely reported weaknesses of today's language models. It means input designed to make a model behave in an unintended way.",
+   "data": {
+    "headline": "What prompt injection is",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Rigged input",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n1",
+      "label": "Language model",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n2",
+      "label": "Unwanted action",
+      "icon": "&#9888;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "hidden instruction"
+     },
+     {
+      "label": "follows it"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 7.5,
+     "label": "Not what you planned"
+    }
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "The OWASP list separates two routes. Direct: someone types the instruction in themselves. Indirect: the AI processes outside content, such as websites or files, and the instruction is hidden inside.",
+   "data": {
+    "headline": "Two routes into your AI",
+    "file_label": "AI assistant",
+    "card": {
+     "title": "According to OWASP",
+     "rows": [
+      {
+       "text": "direct: typed into the box",
+       "ok": null
+      },
+      {
+       "text": "indirect: a website",
+       "ok": "open"
+      },
+      {
+       "text": "indirect: a file",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "The tricky part: according to OWASP, these instructions don't even have to be visible to people. It's enough that the model processes the content. You read an offer, the AI reads more.",
+   "data": {
+    "headline": "What you see, what the AI reads",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 5.5,
+    "left": {
+     "title": "What you see",
+     "rows": [
+      {
+       "text": "an ordinary offer",
+       "ok": null
+      },
+      {
+       "text": "nothing unusual",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "What the AI processes",
+     "rows": [
+      {
+       "text": "invisible text as well",
+       "ok": "open"
+      },
+      {
+       "text": "a possible instruction",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "That's why OWASP advises: give the AI only the access it really needs for its task. And require approval by a human for high-risk actions.",
+   "data": {
+    "headline": "What OWASP advises",
+    "file_label": "AI assistant",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "AI reads and drafts",
+      "sub": "you approve",
+      "at": 0.6
+     },
+     {
+      "title": "AI acts alone",
+      "sub": "send, pay, delete",
+      "at": 1.0
+     }
+    ],
+    "approval": "Approved by a human?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 13,
+   "spoken": "For your business, that means: let an AI assistant summarise emails, but not send or pay on its own. Check which accounts an AI tool can reach. And read results before anything goes out.",
+   "data": {
+    "headline": "Three rules for AI assistants",
+    "items": [
+     {
+      "title": "AI reads, you decide",
+      "sub": "nothing sent without approval",
+      "at": 2.0
+     },
+     {
+      "title": "Check its access",
+      "sub": "which accounts can it reach?",
+      "at": 4.8
+     },
+     {
+      "title": "Read it first",
+      "sub": "before anything goes out",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "The AI reads, you decide. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "The AI reads, you decide",
+    "file_label": "AI assistant",
+    "button": "Send",
+    "block_text": "Send only after approval",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

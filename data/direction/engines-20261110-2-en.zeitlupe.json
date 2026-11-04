@@ -1,0 +1,426 @@
+{
+ "video_id": "engines-20261110-2-en",
+ "brand_id": "engines",
+ "language": "en",
+ "title": "Valve overlap: both valves open at once",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261110-2-en, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Around top dead centre, the intake and exhaust valves are briefly open at the same time. What happens then, and why fixed valve timing is a compromise.",
+  "companion_text": "Schematic model: valve timing values are typical textbook values, not a specific engine. Slow-motion factor and milliseconds refer to the example speed of 3000 rpm.",
+  "hashtags": [
+   "enginetech",
+   "valves",
+   "valvetiming",
+   "camshaft",
+   "howitworks"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "MIT 2.61, lecture 8",
+   "title": "MIT 2.61, Vorlesung 8 (L8)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "US DOE, engine technologies",
+   "title": "US-DOE, Motortechnik (F2)",
+   "url": "https://www.fueleconomy.gov/feg/tech_engine_more.shtml",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "It is in every valve timing diagram.",
+   "on_screen": "Both valves open",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Are both valves ever open at the same time?",
+   "on_screen": "Valve overlap: both valves open at once",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Valve overlap: both valves open at once",
+   "on_screen": "Valve overlap: both valves open at once",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Valve overlap: both valves open at once",
+   "on_screen": "Valve overlap: both valves open at once",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Valve overlap: both valves open at once",
+   "on_screen": "Valve overlap: both valves open at once",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "For a brief moment, both valves in the cylinder are open at the same time. That is not a fault. It is in every valve timing diagram.",
+   "data": {
+    "claim": "Both valves open",
+    "claim_lines": [
+     "Both valves",
+     "open at once"
+    ],
+    "claim_highlight": "at once",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1440
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "MIT 2.61, lecture 8 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_chart",
+   "spoken": "Here are the lift curves of both valves over two turns. Grey is the exhaust, blue is the intake. Around top dead centre the two curves overlap: that is valve overlap. Watch the dot as it runs along the curves.",
+   "data": {
+    "title": "Valve lift",
+    "kind": "valve_lift",
+    "series_at": [
+     "w:exhaust",
+     "w:intake"
+    ],
+    "dot": true,
+    "bands": [
+     {
+      "x0": -10,
+      "x1": 10,
+      "label": "Overlap",
+      "at": "w:overlap"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      -180
+     ],
+     [
+      1,
+      540
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, lecture 8 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_cutaway",
+   "spoken": "According to the lecture, the exhaust typically closes up to fifteen degrees after top dead centre, and the intake opens up to fifteen degrees before it. In that window exhaust gas can even flow back into the intake, especially at low speed and load. In the picture, that is the grey flow in the intake port.",
+   "data": {
+    "title": "Briefly both open",
+    "labels": [
+     "vex",
+     "vin"
+    ],
+    "labels_at": [
+     "w:exhaust",
+     "w:intake"
+    ],
+    "notes": [
+     {
+      "text": "Backflow",
+      "at": "w:back",
+      "side": "l",
+      "y": 900,
+      "color": "exhaust",
+      "to": [
+       280,
+       425
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      640
+     ],
+     [
+      1,
+      790
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, lecture 8 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_board",
+   "spoken": "Then more residual gas stays in the cylinder. The US Department of Energy calls fixed valve timing a compromise between low and high engine speeds. Variable timing saves three to four percent, according to the agency.",
+   "data": {
+    "title": "Fixed or variable",
+    "mode": "compare",
+    "left": {
+     "title": "fixed timing",
+     "engine": {
+      "fuel": "petrol"
+     },
+     "rows": [
+      "a compromise",
+      "all speeds"
+     ],
+     "at": "w:fixed"
+    },
+    "right": {
+     "title": "variable",
+     "engine": {
+      "fuel": "petrol"
+     },
+     "rows": [
+      "adapts",
+      "3 to 4 % less fuel"
+     ],
+     "at": "w:Variable"
+    },
+    "rows_at": [
+     "w:compromise",
+     "w:saves"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, lecture 8 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_chart",
+   "spoken": "So the overlap is only a few degrees of crank angle wide. But it helps decide how much residual gas stays in the cylinder and how well it fills with a fresh charge. That is why engineers care about those few degrees.",
+   "data": {
+    "title": "A few degrees",
+    "kind": "valve_lift",
+    "series_at": [
+     0.0,
+     0.05
+    ],
+    "dot": true,
+    "bands": [
+     {
+      "x0": -10,
+      "x1": 10,
+      "label": "Overlap",
+      "at": "w:overlap"
+     }
+    ],
+    "marks": [
+     {
+      "x": 0,
+      "label": "OT",
+      "at": "w:crank",
+      "color": "steel",
+      "row": 1
+     }
+    ],
+    "theta": [
+     [
+      0,
+      -40
+     ],
+     [
+      1,
+      40
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, lecture 8 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Exhaust still open, intake already open, briefly both at once. Understand engines: follow Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Understand",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Understand",
+    "rows": [
+     {
+      "text": "exhaust open",
+      "at": "w:Exhaust"
+     },
+     {
+      "text": "intake open",
+      "at": "w:intake"
+     },
+     {
+      "text": "briefly both",
+      "at": "w:both"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Understand engines",
+     "hl": "REVLORE",
+     "at": "w:Understand"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

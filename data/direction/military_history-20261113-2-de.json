@@ -1,0 +1,541 @@
+{
+  "video_id": "military_history-20261113-2-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Nightingales Rosendiagramm",
+  "notes": "Woche 1, Reihe Nachschub. Nur Diagramm und Organisation; keine Kranken, keine Lazarettszenen. 'Rosendiagramm' nur im Titel (Quellen: polar area diagram, coxcomb).",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.sciencemuseum.org.uk/objects-and-stories/florence-nightingale-pioneer-statistician",
+      "title": "Florence Nightingale: pioneer statistician, Science Museum, 2018",
+      "label": "Science Museum",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.florence-nightingale.co.uk/about-florence-nightingale/",
+      "title": "About Florence Nightingale, Florence Nightingale Museum London",
+      "label": "Nightingale Museum",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Genaue Todeszahlen nennt keine Quelle; im Video keine Zahlen dazu."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie bringt man zwei Jahre voller Zahlen in ein einziges Diagramm?",
+      "on_screen": "Zwei Jahre, ein Diagramm?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Nightingale war nur Pflegerin? Sie war auch eine Pionierin der Statistik.",
+      "on_screen": "Pflegerin und Statistikerin",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "1858 wurde sie als erste Frau in die Statistical Society gewählt.",
+      "on_screen": "Die erste Frau, 1858",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Vermeidbare Krankheiten, sichtbar in Blau.",
+      "on_screen": "Vermeidbar, in Blau",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie ein Diagramm Keil für Keil entsteht.",
+      "on_screen": "Keil für Keil",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie bringt man zwei Jahre voller Zahlen in ein einziges Diagramm?",
+      "data": {
+        "question": "Zwei Jahre Zahlen in einem Diagramm?",
+        "question_em": "einem Diagramm",
+        "card_title": "Polardiagramm",
+        "card_meta": "LONDON · 1859",
+        "card_no": "AKTE 23",
+        "stamp": "1859",
+        "drawing": "nightingale_polar.svg",
+        "packet_label": "Diagramm",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Jahre",
+        "packet_at": "w:Zahlen",
+        "em_at": "w:Diagramm"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Im November 1854 kommt Florence Nightingale mit 38 Pflegerinnen in Scutari an. Ihr späteres Diagramm vergleicht zwei Jahre, Monat für Monat.",
+      "data": {
+        "mode": "map",
+        "headline": "Ankunft in Scutari",
+        "places": [
+          {
+            "label": "London",
+            "code": "Statistik",
+            "x": 600,
+            "y": 80,
+            "at": "w:Nightingale"
+          },
+          {
+            "label": "Scutari",
+            "code": "Nov. 1854",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Scutari"
+          }
+        ],
+        "route_at": "w:kommt",
+        "route_label": "38 Pflegerinnen",
+        "route_label_at": "w:38",
+        "wait_at": "w:Diagramm",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Ankunft: November 1854",
+        "chip_at": "w:November",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Diagramm",
+        "packet_at": "w:späteres",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "2 Jahre, Monat für Monat",
+        "line_label_at": "w:Monat#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Fläche",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Jeder Keil steht für einen Monat. Seine Fläche zeigt die Zahl der Todesfälle. Drei Farben trennen die Ursachen: vermeidbare Krankheiten, Verwundungen und andere.",
+      "data": {
+        "headline": "Ein Keil pro Monat",
+        "drawing": "nightingale_polar.svg",
+        "sheet_title": "BLATT 2 · POLARDIAGRAMM",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "1 Keil = 1 Monat",
+            "x": 300,
+            "y": 250,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Keil"
+          },
+          {
+            "label": "Fläche = Anzahl",
+            "x": 220,
+            "y": 200,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Fläche"
+          },
+          {
+            "label": "3 Farben = 3 Ursachen",
+            "x": 140,
+            "y": 330,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Farben"
+          },
+          {
+            "label": "Blau: vermeidbare Krankheit",
+            "x": 230,
+            "y": 370,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:vermeidbare"
+          }
+        ],
+        "zoom": {
+          "x": 200,
+          "y": 290,
+          "scale": 1.12,
+          "at": "w:Fläche",
+          "back_at": "w:andere",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Die rechte Hälfte zeigt das Jahr nach ihrer Ankunft, 1854 bis 1855. Die linke Hälfte zeigt das Jahr nach ihren Reformen, 1855 bis 1856.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Zwei Jahre im Vergleich",
+        "left": {
+          "tag": "1854–55",
+          "title": "Nach der Ankunft",
+          "at": "w:rechte",
+          "rows": [
+            "rechte Hälfte"
+          ]
+        },
+        "right": {
+          "tag": "1855–56",
+          "title": "Nach den Reformen",
+          "at": "w:linke",
+          "rows": [
+            "linke Hälfte"
+          ]
+        },
+        "verdict": "Ein Bild, zwei Jahre",
+        "verdict_at": "w:1856",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Der Weg des Diagramms: 1856 zurück in London, Zusammenarbeit mit Harriet Martineau, und 1859 eine Ausklappseite in ihrem Buch England and Her Soldiers.",
+      "data": {
+        "headline": "Vom Zahlenblatt zum Buch",
+        "nodes": [
+          {
+            "label": "London",
+            "code": "1856",
+            "at": "w:London"
+          },
+          {
+            "label": "Martineau",
+            "code": "Autorin",
+            "at": "w:Martineau"
+          },
+          {
+            "label": "Ausklappseite",
+            "code": "1859",
+            "at": "w:Ausklappseite"
+          },
+          {
+            "label": "Das Buch",
+            "code": "Martineau 1859",
+            "at": "w:Buch"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Diagramm",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1854 die Ankunft in Scutari, 1858 wird sie als erste Frau in die Statistical Society gewählt, 1859 erscheint das Diagramm.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1854 bis 1859",
+        "items": [
+          {
+            "year": "1854",
+            "title": "Ankunft in Scutari",
+            "sub": "mit 38 Pflegerinnen",
+            "at": "w:1854"
+          },
+          {
+            "year": "1858",
+            "title": "Statistical Society",
+            "sub": "erste Frau als Mitglied",
+            "at": "w:1858"
+          },
+          {
+            "year": "1859",
+            "title": "Diagramm gedruckt",
+            "sub": "England and Her Soldiers",
+            "at": "w:1859"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Die Gesellschaft heißt heute Royal Statistical Society. Und das Florence Nightingale Museum liegt am St Thomas' Hospital in London. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Polardiagramm",
+        "card_meta": "1859 · AUSKLAPPSEITE",
+        "card_no": "AKTE 23",
+        "stamp": "1858",
+        "drawing": "nightingale_polar.svg",
+        "statement": "Daten als Werkzeug",
+        "statement_at": "w:Royal",
+        "stamp_at": "w:Statistical",
+        "note": "Florence Nightingale Museum, London",
+        "note_at": "w:Museum",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Diagramm",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Daten: offen",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Ankunft: Scutari",
+          "tone": "amber",
+          "offset": 5.2
+        },
+        {
+          "beat": "b3",
+          "text": "Keile: 12 Monate",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b4",
+          "text": "Vergleich: 2 Jahre",
+          "tone": "amber",
+          "offset": 2.7
+        },
+        {
+          "beat": "b5",
+          "text": "Druck: 1859",
+          "tone": "muted",
+          "offset": 6.6
+        },
+        {
+          "beat": "b6",
+          "text": "Society: 1858",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b7",
+          "text": "Museum: London",
+          "tone": "muted",
+          "offset": 5.6
+        }
+      ]
+    },
+    "description": "Florence Nightingale als Statistikerin: ein Polar-Diagramm, ein Keil pro Monat, zwei Jahre im Vergleich. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "statistik",
+      "nightingale",
+      "datenvisualisierung",
+      "geschichte",
+      "diagramm"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

@@ -1,0 +1,419 @@
+{
+ "video_id": "ai_security-20261111-2-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Myth: change your passwords every 90 days",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Was tust du?\". Topic C02 (myth as the starting point), EN localisation. Example case staged; statements from S1 (NCSC), S2 (NIST SP 800-63B) and S3 (BSI).",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Your computer wants a new password again. What do you do? Why NIST and the NCSC advise against calendar-based changes, and when changing really helps.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "passwords",
+   "myth",
+   "cybersecurity",
+   "smallbusiness",
+   "whatwouldyoudo"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ncsc.gov.uk/blog-post/problems-forcing-regular-password-expiry",
+   "title": "NCSC: The problems with forcing regular password expiry",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, password expiry"
+  },
+  {
+   "id": "S2",
+   "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+   "title": "NIST SP 800-63B: Authentication and Lifecycle Management",
+   "checked_at": "2026-11-01",
+   "label": "NIST SP 800-63B"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html",
+   "title": "BSI: Sichere Passwörter erstellen",
+   "checked_at": "2026-11-01",
+   "label": "BSI (German federal office), passwords"
+  }
+ ],
+ "unverified": [
+  "Specific expiry periods in companies (e.g. 90 days): only in the calendar title, not stated as a fact in the video; the example case says 'like every quarter'.",
+  "The sequence of the example case (data breach, derived password) is invented and marked as an example; the mechanism (deriving from the old password) comes from S1."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "A new password, again? What do you do?",
+   "on_screen": "A new password, again?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Change your password regularly? That's exactly what NIST and the NCSC advise against.",
+   "on_screen": "Calendar changes = safer?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The UK's NCSC has advised against forced password changes since 2015.",
+   "on_screen": "Advised against since 2015",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Forced to change, people often pick a password that can be derived from the old one.",
+   "on_screen": "New, but guessable",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Monday, 8 a.m. Your computer demands a new password. Like every quarter.",
+   "on_screen": "MON 08:00 · Password expiring",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Monday, 8 a.m. Your computer says: Your password is expiring, please set a new one now. Like every quarter.",
+   "data": {
+    "kicker": "Example case · staged",
+    "time": "MON 08:00",
+    "place": "Office of a letting agency",
+    "mail_at": "@computer",
+    "mail": {
+     "from": "IT notice (example)",
+     "addr": "it@lettings.example",
+     "time": "08:00",
+     "subject": "Password expiring",
+     "lines": [
+      "Your password expires soon.",
+      "Please set a new one now.",
+      "Like every quarter."
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "calendar",
+     "at": "@quarter"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "What do you do? A: You add a number to your old password. B: You make up a new one and write it on a sticky note. C: You ask why you change by the calendar at all. Remember your choice.",
+   "data": {
+    "question": "What do you do?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Old password plus a number",
+      "at": "@add"
+     },
+     {
+      "key": "B",
+      "text": "New one, on a sticky note",
+      "at": "@make"
+     },
+     {
+      "key": "C",
+      "text": "Question the calendar rule",
+      "at": "@ask"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Remember"
+    },
+    "hint": "Remember your choice."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "sc_inspect",
+   "spoken": "Here's what the UK's NCSC says: people forced to change often pick a password similar to the old one. Attackers can then derive it. New passwords are more likely to be written down or forgotten. And many pick a weaker one.",
+   "data": {
+    "kicker": "According to the NCSC",
+    "headline": "What forcing it does",
+    "rows": [
+     {
+      "label": "Similar",
+      "value": "derived from the old",
+      "verdict": "effect",
+      "at": "@similar"
+     },
+     {
+      "label": "Notes",
+      "value": "more often written down",
+      "verdict": "effect",
+      "at": "@written"
+     },
+     {
+      "label": "Weaker",
+      "value": "easier to remember",
+      "verdict": "effect",
+      "at": "@weaker"
+     }
+    ],
+    "fact": {
+     "kind": "fakt",
+     "text": "Forced changes often make passwords weaker.",
+     "source": "NCSC · password expiry",
+     "at": 1.2
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "sc_timeline",
+   "spoken": "Let's play out A. Your old password turns up in a data breach. Because the new one is similar, an attacker derives it. He tries it and he's in. The calendar change protected nothing.",
+   "data": {
+    "kicker": "Choice A, played out",
+    "tag": "Example",
+    "headline": "New, but guessable",
+    "items": [
+     {
+      "time": "MON 08:01",
+      "text": "Old password plus a number",
+      "at": 0.6
+     },
+     {
+      "time": "Later",
+      "text": "Old password in a breach",
+      "tone": "amber",
+      "at": "@breach"
+     },
+     {
+      "time": "Then",
+      "text": "The new one is derived",
+      "at": "@derives"
+     },
+     {
+      "time": "After that",
+      "text": "The attacker is in",
+      "tone": "red",
+      "at": "@he's"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "NCSC · derivable passwords",
+     "at": 1.0
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "The right answer is C. The US standards institute NIST says users must not be forced to change passwords periodically. Change them when there's evidence they've fallen into the wrong hands, for example after a breach.",
+   "data": {
+    "mode": "rule",
+    "kicker": "The one step",
+    "card": {
+     "letter": "C",
+     "title": "Change on suspicion",
+     "sub": "not by the calendar",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Old plus a number",
+      "note": "derivable",
+      "at": 3.5
+     },
+     {
+      "text": "B: New one on a note",
+      "note": "written down",
+      "at": 5.0
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "NIST SP 800-63B"
+     },
+     {
+      "kind": "fakt",
+      "label": "NCSC · password expiry"
+     }
+    ],
+    "sources_at": "@NIST"
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "sc_step",
+   "spoken": "Your step for today: check whether your business still has a rule to change passwords by the calendar. Use long, unique passwords for every account instead. Germany's BSI puts it simply: the longer, the better.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "Your step today",
+    "card": {
+     "letter": "!",
+     "title": "Check the rule",
+     "sub": "long, unique passwords, no calendar",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "Check for a calendar rule",
+      "at": "@check"
+     },
+     {
+      "text": "Long, unique password per account",
+      "at": "@Use"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "BSI · the longer, the better"
+     }
+    ],
+    "sources_at": "@BSI"
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Change on suspicion, not by the calendar. What would you have picked? Tell me in the comments.",
+   "data": {
+    "kicker": "Series · What would you do?",
+    "rule": "Change on suspicion.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "What would you have picked?",
+     "at": "@What"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice."
+   },
+   "source_ids": []
+  }
+ ]
+}

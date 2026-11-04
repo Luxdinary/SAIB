@@ -1,0 +1,459 @@
+{
+ "video_id": "ai_security-20261114-1-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "The fake Microsoft support call",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema D06, Reihe So läuft die Masche. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Remote access. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Remote access",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Call: Microsoft?",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Remote access: requested",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Computer: remote-controlled",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Real support: won't call",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Password by phone: never",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Rule: share today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Stranger's access: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "A call from 'Microsoft support', a pop-up with a phone number, then remote access: how the scam works according to Microsoft and Germany's BSI, and how to end it.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "techsupportscam",
+   "microsoft",
+   "socialengineering",
+   "smallbusiness",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams-2ebf91bd-f94c-2a8a-e541-f5c800d18435",
+   "title": "Microsoft Support: Protect yourself from tech support scams",
+   "checked_at": "2026-11-01",
+   "label": "Microsoft, tech support scams"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Social-Engineering/social-engineering_node.html",
+   "title": "BSI: Social Engineering – der Mensch als Schwachstelle",
+   "checked_at": "2026-11-01",
+   "label": "BSI (Germany), social engineering"
+  }
+ ],
+ "unverified": [
+  "Loss figures: not used.",
+  "Specific remote tools: not named."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Microsoft calls: your computer is infected. What do you do?",
+   "on_screen": "Microsoft is calling?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "An error message with a hotline is real? Never at Microsoft.",
+   "on_screen": "Error message with a hotline?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Genuine Microsoft error messages never include a phone number.",
+   "on_screen": "Never a phone number",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One call from 'Microsoft support', and a stranger is controlling your computer.",
+   "on_screen": "Fake support on the phone?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "Microsoft: ruft nicht unaufgefordert an; Betrüger wollen Fernzugriff"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Look at what this pop-up wants from you.",
+   "on_screen": "What does this pop-up want?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "One call from 'Microsoft support', and a stranger is controlling your computer.",
+   "data": {
+    "question": "Fake support on the phone?",
+    "doc_label": "Warning",
+    "chat_title": "Microsoft support?",
+    "bot_line": "Your PC is infected",
+    "typed": "Call the hotline",
+    "badge": "Real?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 14,
+   "spoken": "This is how Microsoft describes the scam: criminals call and pretend to be support, sometimes with a spoofed caller ID. Or a website shows a fake error message with a phone number. Then they ask you to install software for remote access.",
+   "data": {
+    "headline": "How the support scam works",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Call or pop-up",
+      "icon": "&#9742;"
+     },
+     {
+      "id": "n1",
+      "label": "Fake support",
+      "icon": "&#9823;"
+     },
+     {
+      "id": "n2",
+      "label": "Remote access",
+      "icon": "&#9888;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "hotline"
+     },
+     {
+      "label": "please install"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 9.0,
+     "label": "Who's in control?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "With remote access, the scammers present normal system messages as problems. At best, they want money for a fix nobody needs. At worst, they install malware or ransomware.",
+   "data": {
+    "headline": "What remote access is used for",
+    "file_label": "Remote access",
+    "card": {
+     "title": "According to Microsoft",
+     "rows": [
+      {
+       "text": "normal messages shown as errors",
+       "ok": "open"
+      },
+      {
+       "text": "money for a fake fix",
+       "ok": "open"
+      },
+      {
+       "text": "malware installed",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "Microsoft is clear: if you didn't ask, it won't call you to offer support. Genuine error messages never include a phone number. And Microsoft never asks for payment in cryptocurrency or gift cards.",
+   "data": {
+    "headline": "Real or scam",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.5,
+    "left": {
+     "title": "Scam",
+     "rows": [
+      {
+       "text": "unexpected call",
+       "ok": "open"
+      },
+      {
+       "text": "pop-up with a hotline",
+       "ok": "open"
+      },
+      {
+       "text": "gift cards, Bitcoin",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Microsoft says",
+     "rows": [
+      {
+       "text": "won't call unless you asked",
+       "ok": null
+      },
+      {
+       "text": "errors without a number",
+       "ok": null
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Germany's BSI describes a similar pattern: the supposed administrator who calls and needs your password to fix something. Its advice: never give out passwords or login details over the phone or by email.",
+   "data": {
+    "headline": "On the phone",
+    "file_label": "Remote access",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Hang up",
+      "sub": "call back yourself",
+      "at": 0.6
+     },
+     {
+      "title": "Grant access",
+      "sub": "scammer at your PC",
+      "at": 1.0
+     }
+    ],
+    "approval": "Caller verified?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "For your team: hang up on unexpected support calls. Never call a number from a pop-up. And only allow remote access for your own IT provider, when you contacted them yourself.",
+   "data": {
+    "headline": "Three rules for the team",
+    "items": [
+     {
+      "title": "Unexpected call",
+      "sub": "hang up",
+      "at": 2.0
+     },
+     {
+      "title": "Pop-up with a number",
+      "sub": "don't call it",
+      "at": 4.8
+     },
+     {
+      "title": "Remote access",
+      "sub": "only your own IT provider",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Hanging up is allowed. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Hanging up is allowed",
+    "file_label": "Remote access",
+    "button": "Allow access",
+    "block_text": "No access for callers",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

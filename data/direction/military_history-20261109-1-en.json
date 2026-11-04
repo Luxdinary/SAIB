@@ -1,0 +1,550 @@
+{
+  "video_id": "military_history-20261109-1-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Polybius' Torch Telegraph",
+  "notes": "Woche 1, Reihe Signal und Nachricht. Reine Nachrichtentechnik, kein Kampfbild. Das Beispiel Tafel 2, Stelle 5 ist ein Beispielwert.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/10*.html",
+      "title": "Polybius, The Histories, Book X 43–47, Loeb 1925 (W. R. Paton), LacusCurtius, University of Chicago",
+      "label": "Polybios X (Loeb)",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://histos.org/index.php/histos/article/view/366",
+      "title": "Daniel W. Moore: Proof Through the Night, Histos 11 (2017)",
+      "label": "Histos 11 (2017)",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Praktikabilität umstritten (Riepl 1913, Donaldson 1988 laut Moore); nicht im Video.",
+    "Das Visier vergrößerte laut Anmerkung der Edition nicht; im Video nur 'Visier mit zwei Röhren'."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you send a whole sentence across many miles in antiquity, using only fire?",
+      "on_screen": "A whole sentence, sent by fire?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Fire signals only said yes or no? Polybius spelled out words with them.",
+      "on_screen": "Fire that spells",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Every letter needed two torch signals.",
+      "on_screen": "Two signals per letter",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Something unexpected, and the beacon has nothing to say.",
+      "on_screen": "The beacon falls silent",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch five tablets organise the alphabet.",
+      "on_screen": "Five tablets, one alphabet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you send a whole sentence across many miles in antiquity, using only fire?",
+      "data": {
+        "question": "A whole sentence, sent by fire?",
+        "question_em": "by fire",
+        "card_title": "Torch telegraph",
+        "card_meta": "POLYBIUS · BOOK X",
+        "card_no": "FILE 16",
+        "stamp": "X 43–47",
+        "drawing": "polybios_torches.svg",
+        "packet_label": "Tablet",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:antiquity",
+        "packet_at": "w:sentence",
+        "em_at": "w:fire"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "Simple beacons only report what was agreed beforehand. The water clock of Aeneas also knows only agreed messages. Anything unexpected stays silent.",
+      "data": {
+        "mode": "map",
+        "headline": "Only what was agreed",
+        "places": [
+          {
+            "label": "Sender",
+            "code": "beacon",
+            "x": 600,
+            "y": 80,
+            "at": "w:beacons"
+          },
+          {
+            "label": "Receiver",
+            "code": "days away",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:agreed"
+          }
+        ],
+        "route_at": "w:report",
+        "route_label": "only agreed signals",
+        "route_label_at": "w:water",
+        "wait_at": "w:Aeneas",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Water clock of Aeneas",
+        "chip_at": "w:messages",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Tablet",
+        "packet_at": "w:knows",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "The unexpected?",
+        "line_label_at": "w:unexpected",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Torches",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "Polybius spreads the alphabet over five tablets of five letters each. Torches on the left show the tablet, torches on the right the letter. A sighting device with two tubes helps reading.",
+      "data": {
+        "headline": "Five tablets, two fires",
+        "drawing": "polybios_torches.svg",
+        "sheet_title": "SHEET 2 · SIGNAL STATION",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "5 tablets of 5 letters",
+            "x": 145,
+            "y": 505,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:tablets"
+          },
+          {
+            "label": "Left: the tablet",
+            "x": 100,
+            "y": 168,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:left"
+          },
+          {
+            "label": "Right: the letter",
+            "x": 360,
+            "y": 168,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:right"
+          },
+          {
+            "label": "Sight with two tubes",
+            "x": 250,
+            "y": 125,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:sighting"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 250,
+          "scale": 1.12,
+          "at": "w:Torches",
+          "back_at": "w:sighting",
+          "grow": "up"
+        },
+        "headline_lines": 2,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "Each letter therefore needs two signals. To start, the sender raises two torches, and the receiver answers with two. Only then does the message begin.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "First, the handshake",
+        "left": {
+          "tag": "Sender",
+          "title": "Start",
+          "at": "w:sender",
+          "rows": [
+            {
+              "text": "raises two torches",
+              "at": "w:raises"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Receiver",
+          "title": "Reply",
+          "at": "w:receiver",
+          "rows": [
+            {
+              "text": "answers with two",
+              "at": "w:answers"
+            }
+          ]
+        },
+        "verdict": "1 letter = 2 signals",
+        "verdict_at": "w:message",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "example": true,
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "An example: tablet two, position five. Two torches on the left, five on the right. The receiver looks it up and writes the letter down.",
+      "data": {
+        "headline": "One letter",
+        "nodes": [
+          {
+            "label": "Left: 2 torches",
+            "code": "tablet 2",
+            "at": "w:left"
+          },
+          {
+            "label": "Right: 5 torches",
+            "code": "position 5",
+            "at": "w:right"
+          },
+          {
+            "label": "Look it up",
+            "code": "tab. 2, no. 5",
+            "at": "w:looks"
+          },
+          {
+            "label": "Write it down",
+            "code": "the letter",
+            "at": "w:writes"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Tablet",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "So, three stages: the beacon, the water clock of Aeneas, and the torch alphabet of Cleoxenus and Democleitus, improved by Polybius.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Three stages",
+        "items": [
+          {
+            "year": "1",
+            "title": "Beacon",
+            "sub": "agreed signals only",
+            "at": "w:beacon"
+          },
+          {
+            "year": "2",
+            "title": "Water clock",
+            "sub": "Aeneas Tacticus",
+            "at": "w:water"
+          },
+          {
+            "year": "3",
+            "title": "Torch alphabet",
+            "sub": "Cleoxenus and Democleitus",
+            "at": "w:torch",
+            "sub_at": "w:Polybius"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "No device survives, only his text in Book Ten of the Histories. According to Polybius, the system only works with practice. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Polybius, Book X",
+        "card_meta": "HISTORIES · 43–47",
+        "card_no": "FILE 16",
+        "stamp": "Book X",
+        "drawing": "polybios_torches.svg",
+        "statement": "Only the text survives",
+        "statement_at": "w:text",
+        "stamp_at": "w:Ten",
+        "note": "Loeb translation 1925, free online",
+        "note_at": "w:practice",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow",
+        "ghost_at": "w:device"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Tablet",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Message: pending",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Beacon: agreed only",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b3",
+          "text": "Alphabet: 5 tablets",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b4",
+          "text": "Start: 2 torches",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b5",
+          "text": "Letter: read",
+          "tone": "muted",
+          "offset": 10.5
+        },
+        {
+          "beat": "b6",
+          "text": "Method: improved",
+          "tone": "muted",
+          "offset": 9.0
+        },
+        {
+          "beat": "b7",
+          "text": "Text: survives",
+          "tone": "muted",
+          "offset": 2.7
+        }
+      ]
+    },
+    "description": "Polybius describes a torch alphabet: five tablets, torches on the left for the tablet, on the right for the letter. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "ancienthistory",
+      "communication",
+      "history",
+      "cryptography",
+      "polybius"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

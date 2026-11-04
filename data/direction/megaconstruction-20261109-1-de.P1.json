@@ -1,0 +1,1321 @@
+{
+  "video_id": "megaconstruction-20261109-1-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Große Mauer aus dem All sichtbar? NASA sagt: nein",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Prüfstand. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261109-1-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.nasa.gov/image-article/great-wall/",
+      "title": "NASA: Great Wall (Bildartikel 02.04.2009, Foto Leroy Chiao, Expedition 10)",
+      "label": "NASA, Great Wall (2009)",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://eol.jsc.nasa.gov/faq/",
+      "title": "NASA JSC, Gateway to Astronaut Photography: FAQ",
+      "label": "NASA JSC, Astronautenfotos FAQ",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://science.nasa.gov/blogs/earth-matters/2012/12/24/december-puzzler-answer/",
+      "title": "NASA Earth Observatory, Earth Matters 24.12.2012",
+      "label": "NASA Earth Observatory, 2012",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Breite der Mauer und Bahnhöhe der ISS: keine Werte aus geöffneten Quellen, daher keine Rechnung."
+  ],
+  "hook": {
+    "id": "H2"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Die Chinesische Mauer soll man aus dem All sehen können.",
+      "on_screen": "Aus dem All sichtbar? NASA: nicht mit bloßem Auge",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Kann man die Chinesische Mauer wirklich aus dem All sehen?",
+      "on_screen": "Aus dem All sichtbar?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "die Chinesische Mauer in Zahlen: belegt und nachgerechnet.",
+      "on_screen": "die Chinesische Mauer in Zahlen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Chinesische Mauer schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Chinesische Mauer: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Chinesische Mauer im Modell entsteht.",
+      "on_screen": "die Chinesische Mauer im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Die Chinesische Mauer soll man aus dem All sehen können. Stimmt das? Die NASA hat dazu eine klare Antwort.",
+      "data": {
+        "kicker": "Prüfstand · Chinesische Mauer",
+        "question": "Sieht man die Mauer aus dem All?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Behauptung: aus dem All sichtbar",
+          "at": "@Stimmt",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_principle",
+      "spoken": "Oft heißt es sogar, sie sei das einzige Bauwerk, das man aus dem All sieht. Die NASA nennt das einen Mythos. Vom Mond aus ist sie nicht zu sehen, aus der Erdumlaufbahn mit bloßem Auge schwer bis gar nicht.",
+      "data": {
+        "headline": "Der Befund",
+        "note": "laut NASA",
+        "rule": {
+          "text": "Mond: nein. Umlaufbahn: bloßes Auge kaum.",
+          "at": "@Mond",
+          "dy": 640
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_load",
+      "spoken": "Der Grund ist nicht nur die Entfernung. Entscheidend ist der Kontrast, schreibt die NASA. Die Mauer hebt sich kaum von Vegetation und Boden ab. Satellitensensoren erkennen sie deshalb leichter als das menschliche Auge.",
+      "data": {
+        "headline": "Der Grund",
+        "load": {
+          "label": "Entscheidend",
+          "value": "Kontrast",
+          "unit": "",
+          "sub": "nicht nur die Entfernung",
+          "at": "@Kontrast",
+          "dy": 540
+        },
+        "goal": {
+          "key": "BILD",
+          "text": "Mauer hebt sich kaum ab",
+          "at": "@Vegetation",
+          "dy": 420
+        },
+        "pins": [
+          {
+            "anchor": "wall",
+            "text": "Mauer",
+            "at": "@Mauer",
+            "side": "up"
+          }
+        ]
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_proof",
+      "spoken": "Mit Teleobjektiv sieht es anders aus. Leroy Chiao, Kommandant der Expedition 10, hat die Mauer von der Raumstation aus fotografiert. Auch auf manchen hochauflösenden Astronautenfotos ist sie zu erkennen. Das Foto entstand also mit langer Brennweite, nicht mit bloßem Auge.",
+      "data": {
+        "headline": "Die Gegenprobe",
+        "stamp": {
+          "date": "EXPEDITION 10",
+          "event": "Foto von der ISS",
+          "at": "@Expedition",
+          "dy": 150
+        },
+        "pins": [
+          {
+            "anchor": "far",
+            "text": "Teleobjektiv: ja",
+            "at": "@fotografiert",
+            "side": "up"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Also: fotografierbar ja, mit bloßem Auge nein. Chinas erster Astronaut Yang Liwei sagte, er habe die Mauer nicht gesehen. Unsichtbar ist sie im All also nicht, aber man sieht sie eben auch nicht einfach so. Folge Gigastruct für den nächsten Prüfstand.",
+      "data": {
+        "statement": "Urteil: mit bloßem Auge nein",
+        "sheet": "BLATT 02",
+        "rows": [
+          [
+            "Mond",
+            "nicht sichtbar"
+          ],
+          [
+            "Umlaufbahn",
+            "bloßes Auge: kaum"
+          ],
+          [
+            "Kamera",
+            "mit Teleobjektiv: ja"
+          ],
+          [
+            "Quelle",
+            "NASA"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "BEHAUPTUNG",
+        "BEFUND",
+        "GRUND",
+        "GEGENPROBE",
+        "URTEIL"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 5
+      }
+    },
+    "description": "Kann man die Chinesische Mauer aus dem All sehen? Laut NASA nicht mit bloßem Auge – der Grund ist vor allem der Kontrast. Mit Teleobjektiv ist sie fotografierbar.",
+    "companion_text": "Quellen: NASA (Bildartikel 2009), NASA JSC Astronautenfoto-FAQ, NASA Earth Observatory 2012. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "chinesischemauer",
+      "mythos",
+      "nasa",
+      "ingenieurskunst",
+      "megabauwerk"
+    ],
+    "computations": [],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 40000,
+          "grid": 200,
+          "pos": [
+            0,
+            -2,
+            0
+          ]
+        },
+        {
+          "id": "ridge",
+          "kind": "ridge",
+          "length": 6000,
+          "width": 1100,
+          "height": 180,
+          "color": "model_inner",
+          "pos": [
+            0,
+            -2,
+            0
+          ],
+          "props": {
+            "fade": 1
+          }
+        },
+        {
+          "id": "ridge2",
+          "kind": "ridge",
+          "length": 7000,
+          "width": 1600,
+          "height": 260,
+          "color": "compare",
+          "pos": [
+            400,
+            -2,
+            -1500
+          ],
+          "props": {
+            "fade": 1
+          }
+        },
+        {
+          "id": "wall",
+          "kind": "path",
+          "points": [
+            [
+              -2900,
+              168,
+              29.6
+            ],
+            [
+              -2850,
+              168,
+              30.0
+            ],
+            [
+              -2800,
+              168,
+              29.2
+            ],
+            [
+              -2750,
+              168,
+              27.4
+            ],
+            [
+              -2700,
+              168,
+              24.6
+            ],
+            [
+              -2650,
+              168,
+              20.8
+            ],
+            [
+              -2600,
+              168,
+              16.3
+            ],
+            [
+              -2550,
+              168,
+              11.2
+            ],
+            [
+              -2500,
+              168,
+              5.7
+            ],
+            [
+              -2450,
+              168,
+              -0.1
+            ],
+            [
+              -2400,
+              168,
+              -5.8
+            ],
+            [
+              -2350,
+              168,
+              -11.3
+            ],
+            [
+              -2300,
+              168,
+              -16.4
+            ],
+            [
+              -2250,
+              168,
+              -20.9
+            ],
+            [
+              -2200,
+              168,
+              -24.6
+            ],
+            [
+              -2150,
+              168,
+              -27.5
+            ],
+            [
+              -2100,
+              168,
+              -29.3
+            ],
+            [
+              -2050,
+              168,
+              -30.0
+            ],
+            [
+              -2000,
+              168,
+              -29.6
+            ],
+            [
+              -1950,
+              168,
+              -28.1
+            ],
+            [
+              -1900,
+              168,
+              -25.6
+            ],
+            [
+              -1850,
+              168,
+              -22.2
+            ],
+            [
+              -1800,
+              168,
+              -17.9
+            ],
+            [
+              -1750,
+              168,
+              -13.0
+            ],
+            [
+              -1700,
+              168,
+              -7.6
+            ],
+            [
+              -1650,
+              168,
+              -1.9
+            ],
+            [
+              -1600,
+              168,
+              3.9
+            ],
+            [
+              -1550,
+              168,
+              9.5
+            ],
+            [
+              -1500,
+              168,
+              14.7
+            ],
+            [
+              -1450,
+              168,
+              19.5
+            ],
+            [
+              -1400,
+              168,
+              23.5
+            ],
+            [
+              -1350,
+              168,
+              26.6
+            ],
+            [
+              -1300,
+              168,
+              28.8
+            ],
+            [
+              -1250,
+              168,
+              29.9
+            ],
+            [
+              -1200,
+              168,
+              29.9
+            ],
+            [
+              -1150,
+              168,
+              28.8
+            ],
+            [
+              -1100,
+              168,
+              26.6
+            ],
+            [
+              -1050,
+              168,
+              23.4
+            ],
+            [
+              -1000,
+              168,
+              19.4
+            ],
+            [
+              -950,
+              168,
+              14.7
+            ],
+            [
+              -900,
+              168,
+              9.4
+            ],
+            [
+              -850,
+              168,
+              3.8
+            ],
+            [
+              -800,
+              168,
+              -1.9
+            ],
+            [
+              -750,
+              168,
+              -7.6
+            ],
+            [
+              -700,
+              168,
+              -13.0
+            ],
+            [
+              -650,
+              168,
+              -18.0
+            ],
+            [
+              -600,
+              168,
+              -22.2
+            ],
+            [
+              -550,
+              168,
+              -25.7
+            ],
+            [
+              -500,
+              168,
+              -28.2
+            ],
+            [
+              -450,
+              168,
+              -29.6
+            ],
+            [
+              -400,
+              168,
+              -30.0
+            ],
+            [
+              -350,
+              168,
+              -29.2
+            ],
+            [
+              -300,
+              168,
+              -27.4
+            ],
+            [
+              -250,
+              168,
+              -24.6
+            ],
+            [
+              -200,
+              168,
+              -20.9
+            ],
+            [
+              -150,
+              168,
+              -16.4
+            ],
+            [
+              -100,
+              168,
+              -11.3
+            ],
+            [
+              -50,
+              168,
+              -5.7
+            ],
+            [
+              0,
+              168,
+              0.0
+            ],
+            [
+              50,
+              168,
+              5.7
+            ],
+            [
+              100,
+              168,
+              11.3
+            ],
+            [
+              150,
+              168,
+              16.4
+            ],
+            [
+              200,
+              168,
+              20.9
+            ],
+            [
+              250,
+              168,
+              24.6
+            ],
+            [
+              300,
+              168,
+              27.4
+            ],
+            [
+              350,
+              168,
+              29.2
+            ],
+            [
+              400,
+              168,
+              30.0
+            ],
+            [
+              450,
+              168,
+              29.6
+            ],
+            [
+              500,
+              168,
+              28.2
+            ],
+            [
+              550,
+              168,
+              25.7
+            ],
+            [
+              600,
+              168,
+              22.2
+            ],
+            [
+              650,
+              168,
+              18.0
+            ],
+            [
+              700,
+              168,
+              13.0
+            ],
+            [
+              750,
+              168,
+              7.6
+            ],
+            [
+              800,
+              168,
+              1.9
+            ],
+            [
+              850,
+              168,
+              -3.8
+            ],
+            [
+              900,
+              168,
+              -9.4
+            ],
+            [
+              950,
+              168,
+              -14.7
+            ],
+            [
+              1000,
+              168,
+              -19.4
+            ],
+            [
+              1050,
+              168,
+              -23.4
+            ],
+            [
+              1100,
+              168,
+              -26.6
+            ],
+            [
+              1150,
+              168,
+              -28.8
+            ],
+            [
+              1200,
+              168,
+              -29.9
+            ],
+            [
+              1250,
+              168,
+              -29.9
+            ],
+            [
+              1300,
+              168,
+              -28.8
+            ],
+            [
+              1350,
+              168,
+              -26.6
+            ],
+            [
+              1400,
+              168,
+              -23.5
+            ],
+            [
+              1450,
+              168,
+              -19.5
+            ],
+            [
+              1500,
+              168,
+              -14.7
+            ],
+            [
+              1550,
+              168,
+              -9.5
+            ],
+            [
+              1600,
+              168,
+              -3.9
+            ],
+            [
+              1650,
+              168,
+              1.9
+            ],
+            [
+              1700,
+              168,
+              7.6
+            ],
+            [
+              1750,
+              168,
+              13.0
+            ],
+            [
+              1800,
+              168,
+              17.9
+            ],
+            [
+              1850,
+              168,
+              22.2
+            ],
+            [
+              1900,
+              168,
+              25.6
+            ],
+            [
+              1950,
+              168,
+              28.1
+            ],
+            [
+              2000,
+              168,
+              29.6
+            ],
+            [
+              2050,
+              168,
+              30.0
+            ],
+            [
+              2100,
+              168,
+              29.3
+            ],
+            [
+              2150,
+              168,
+              27.5
+            ],
+            [
+              2200,
+              168,
+              24.6
+            ],
+            [
+              2250,
+              168,
+              20.9
+            ],
+            [
+              2300,
+              168,
+              16.4
+            ],
+            [
+              2350,
+              168,
+              11.3
+            ],
+            [
+              2400,
+              168,
+              5.8
+            ],
+            [
+              2450,
+              168,
+              0.1
+            ],
+            [
+              2500,
+              168,
+              -5.7
+            ],
+            [
+              2550,
+              168,
+              -11.2
+            ],
+            [
+              2600,
+              168,
+              -16.3
+            ],
+            [
+              2650,
+              168,
+              -20.8
+            ],
+            [
+              2700,
+              168,
+              -24.6
+            ],
+            [
+              2750,
+              168,
+              -27.4
+            ],
+            [
+              2800,
+              168,
+              -29.2
+            ],
+            [
+              2850,
+              168,
+              -30.0
+            ],
+            [
+              2900,
+              168,
+              -29.6
+            ]
+          ],
+          "width": 16,
+          "height": 12,
+          "color": "model"
+        },
+        {
+          "id": "wt0",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            -2700,
+            166,
+            24.6
+          ]
+        },
+        {
+          "id": "wt1",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            -2250,
+            166,
+            -20.9
+          ]
+        },
+        {
+          "id": "wt2",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            -1800,
+            166,
+            -17.9
+          ]
+        },
+        {
+          "id": "wt3",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            -1350,
+            166,
+            26.6
+          ]
+        },
+        {
+          "id": "wt4",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            -900,
+            166,
+            9.4
+          ]
+        },
+        {
+          "id": "wt5",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            -450,
+            166,
+            -29.6
+          ]
+        },
+        {
+          "id": "wt6",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            0,
+            166,
+            0.0
+          ]
+        },
+        {
+          "id": "wt7",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            450,
+            166,
+            29.6
+          ]
+        },
+        {
+          "id": "wt8",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            900,
+            166,
+            -9.4
+          ]
+        },
+        {
+          "id": "wt9",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            1350,
+            166,
+            -26.6
+          ]
+        },
+        {
+          "id": "wt10",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            1800,
+            166,
+            17.9
+          ]
+        },
+        {
+          "id": "wt11",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            2250,
+            166,
+            20.9
+          ]
+        },
+        {
+          "id": "wt12",
+          "kind": "box",
+          "size": [
+            22,
+            26,
+            22
+          ],
+          "color": "model",
+          "pos": [
+            2700,
+            166,
+            -24.6
+          ]
+        }
+      ],
+      "anchors": {
+        "wall": [
+          0,
+          182,
+          0
+        ],
+        "land": [
+          -220,
+          120,
+          330
+        ],
+        "far": [
+          600,
+          182,
+          25
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [],
+            "az0": 28,
+            "az1": 18,
+            "el0": 22,
+            "el1": 18,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 560,
+            "cy": 830,
+            "box": [
+              [
+                -160,
+                150,
+                -40
+              ],
+              [
+                160,
+                200,
+                40
+              ]
+            ]
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [],
+            "az0": 55,
+            "az1": 45,
+            "el0": 40,
+            "el1": 55,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 330,
+            "cy": 560,
+            "box": [
+              [
+                -1200,
+                150,
+                -300
+              ],
+              [
+                1200,
+                200,
+                300
+              ]
+            ]
+          },
+          "props": {
+            "ridge2.fade": [
+              [
+                0,
+                1
+              ],
+              [
+                "%0.5",
+                1
+              ],
+              [
+                "%0.7",
+                0.4
+              ]
+            ]
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "az0": 60,
+            "az1": 75,
+            "el0": 14,
+            "el1": 10,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 545,
+            "box": [
+              [
+                -160,
+                150,
+                -40
+              ],
+              [
+                160,
+                200,
+                40
+              ]
+            ]
+          },
+          "props": {}
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "az0": 20,
+            "az1": 5,
+            "el0": 30,
+            "el1": 45,
+            "fit0": 0.95,
+            "fit1": 0.7,
+            "zone": 260,
+            "cy": 680,
+            "box": [
+              [
+                -160,
+                150,
+                -40
+              ],
+              [
+                160,
+                200,
+                40
+              ]
+            ]
+          },
+          "props": {}
+        },
+        "b5": {
+          "cam": {
+            "target": [],
+            "az0": 35,
+            "az1": 25,
+            "el0": 25,
+            "el1": 20,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 520,
+            "box": [
+              [
+                -160,
+                150,
+                -40
+              ],
+              [
+                160,
+                200,
+                40
+              ]
+            ]
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "video_id": "ai_security-20261105-1-de-A2",
+  "brand_id": "ai_security",
+  "language": "de",
+  "title": "Deine Kundenliste im KI-Chat: Wer darf sie verwenden?",
+  "notes": "Fassung A2 nach der zweiten Kritik (30.10.2026): Kundenliste.xlsx als roter Faden, kein Logo-Intro, keine Endkarte, Amber nur für offene Fragen, Rot nur für die Upload-Sperre, keine Haken bei offenen Risikofragen, keine URL-Zeilen im Bild (Quellen in post.json). Länge 65-90 s. Neue Vertonung (Gemini Flash TTS DE, ca. 0,02 USD, von Stefan freigegeben).",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "status_bar": {
+      "file": "Kundenliste.xlsx",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Upload: angehalten",
+          "tone": "amber",
+          "offset": 2.4
+        },
+        {
+          "beat": "b2",
+          "text": "Zugang? Einstellung? Freigabe?",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "Einstellung: wird geprüft",
+          "tone": "amber"
+        },
+        {
+          "beat": "b4",
+          "text": "Zugang: wird geprüft",
+          "tone": "amber"
+        },
+        {
+          "beat": "b5",
+          "text": "Speicherung: offen",
+          "tone": "amber"
+        },
+        {
+          "beat": "b6",
+          "text": "Freigabe: offen",
+          "tone": "amber"
+        },
+        {
+          "beat": "b7",
+          "text": "Upload: blockiert bis Freigabe",
+          "tone": "red",
+          "offset": 0.9
+        }
+      ]
+    },
+    "description": "Deine Kundenliste im KI-Chat: Wer darf sie verwenden? Training, Speicherung und betriebliche Freigabe sind drei verschiedene Fragen. Drei Checks vor jedem Upload.",
+    "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+    "hashtags": [
+      "kisicherheit",
+      "datenschutz",
+      "kleinunternehmen",
+      "claude",
+      "dsgvo"
+    ],
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+      "title": "Is my data used for model training? (consumer, Anthropic Privacy Center, updated 2026-03-16)",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://privacy.claude.com/en/articles/7996875-can-you-delete-data-that-i-sent-via-api",
+      "title": "Can you delete data that I sent via API? (updated 2026-03-16)",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.html",
+      "title": "Generative KI-Modelle - Chancen und Risiken (BSI, 21.01.2025)",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S4",
+      "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
+      "title": "How do I change my model improvement privacy settings? (updated 2026-08-03)",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S5",
+      "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
+      "title": "How long do you store my data? (consumer, updated 2026-07-01)",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S6",
+      "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+      "title": "Is my data used for model training? (commercial customers, updated 2026-08-18)",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S7",
+      "url": "https://www.anthropic.com/legal/commercial-terms",
+      "title": "Anthropic Commercial Terms of Service (effective 2025-06-17)",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S8",
+      "url": "https://privacy.claude.com/en/articles/9265372-who-owns-and-manages-the-data-of-my-team",
+      "title": "Who owns and manages the data of my team? (updated 2026-03-16)",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S9",
+      "url": "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data",
+      "title": "How long do you store my organization's data? (updated 2026-07-01)",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Standardzustand des Schalters 'Help Improve our AI models' bei neuen Konten - nicht behauptet.",
+    "Dass Training aus Firmendaten freigibt - wird ausdrücklich NICHT behauptet (Gegenteil wird gesagt).",
+    "Team-/Enterprise-Pläne: nur die offizielle Aussage 'Primary Owner verwaltet die Daten' [S8]; keine Aussage zu deren Trainingsnutzung über [S6]/[S7] hinaus.",
+    "Serverstandort/EU-Hosting - nicht verwendet."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Darfst du vertrauliche Firmendaten einfach in Claude eingeben?",
+      "on_screen": "Firmendaten in Claude eingeben: erlaubt?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S6"
+      ],
+      "visual": "Dokument fliegt in ein Chatfenster"
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Training aus, Datenschutz erledigt? Das ist der Denkfehler.",
+      "on_screen": "Training aus = Datenschutz erledigt?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S4",
+        "S7"
+      ],
+      "visual": "Schalter kippt, NEIN-Stempel"
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Mit Training an bleiben deine Chats bis zu fünf Jahre in Anthropics Trainings-Pipeline.",
+      "on_screen": "Bis zu 5 Jahre im Training",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S5"
+      ],
+      "visual": "Kalender blättert"
+    },
+    {
+      "id": "H4",
+      "type": "demonstration",
+      "spoken": "Dieser eine Schalter entscheidet, ob Claude aus deinem Chat lernt.",
+      "on_screen": "Dieser Schalter entscheidet",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "visual": "Zoom auf den Schalter"
+    },
+    {
+      "id": "H6",
+      "type": "concrete_risk",
+      "spoken": "Deine Kundenliste im KI-Chat. Wer darf sie verwenden?",
+      "on_screen": "Wer darf sie verwenden?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S6"
+      ],
+      "visual": "Kundenliste.xlsx nähert sich dem Chat und stoppt vor dem Upload (Vorschlag der zweiten Kritik)",
+      "why": {
+        "truth": "Frage, kein behaupteter Datenabfluss",
+        "visual": "Datei bleibt das Objekt der ganzen Geschichte"
+      }
+    }
+  ],
+  "hook": {
+    "id": "H6",
+    "note": "Hook aus der zweiten Kritik; die Datei vor dem Upload ist der rote Faden."
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "duration_hint": 5,
+      "spoken": "Deine Kundenliste im KI-Chat. Wer darf sie verwenden?",
+      "data": {
+        "mode": "approach",
+        "question": "Wer darf sie verwenden?",
+        "doc_label": "Kundenliste.xlsx",
+        "chat_title": "KI-Chat",
+        "bot_line": "Wie kann ich helfen?",
+        "placeholder": "Datei hier ablegen",
+        "fly_at": 0.2,
+        "question_at": 1.9,
+        "risk_open": true
+      },
+      "source_ids": []
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "file_fork",
+      "duration_hint": 11,
+      "spoken": "Das hängt von drei Dingen ab: über welchen Zugang die Datei geht, wie das Konto eingestellt ist, und ob euer Betrieb diese Daten überhaupt freigegeben hat.",
+      "data": {
+        "file_label": "Kundenliste.xlsx",
+        "paths_at": 0.2,
+        "routes": [
+          {
+            "title": "Privatkonto",
+            "sub": "Free, Pro, Max: Kontoeinstellung",
+            "at": 0.5
+          },
+          {
+            "title": "Firmenzugang",
+            "sub": "API, Team, Enterprise: Vertrag",
+            "at": 0.9
+          }
+        ],
+        "approval": "Freigabe im Betrieb?",
+        "approval_at": 2.6,
+        "risk_open": true
+      },
+      "source_ids": [
+        "S1",
+        "S6",
+        "S7"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "duration_hint": 14,
+      "spoken": "Bei privaten Claude-Konten, also Free, Pro und Max, entscheidet die Einstellung Help Improve our AI models mit, ob Chats zum Training genutzt werden. Ausnahmen gibt es trotzdem: etwa, wenn ein Chat zur Sicherheitsprüfung markiert wird.",
+      "data": {
+        "headline": "Privatkonto: die Einstellung",
+        "url": "claude.ai/settings/data-privacy-controls",
+        "title": "Settings > Privacy (Schema)",
+        "rows": [
+          {
+            "label": "Help Improve our AI models",
+            "state": "on"
+          },
+          {
+            "label": "Weitere Optionen",
+            "state": "off"
+          }
+        ],
+        "focus_row": 0,
+        "cursor_at": 2.0,
+        "zoom_at": 4.2,
+        "flip_at": 7.0,
+        "zoom": 1.2,
+        "image": null,
+        "note": "Schematische Darstellung",
+        "risk_open": true
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "file_beside",
+      "duration_hint": 13,
+      "spoken": "Beim API-Zugang sagt Anthropic: Daten werden nicht zum Training genutzt, außer es ist anders vereinbart. Bei Team- und Enterprise-Konten verwaltet der Primary Owner die Daten, nicht die einzelne Person. Beides beantwortet aber nicht, wie lange etwas gespeichert wird.",
+      "data": {
+        "headline": "Firmenzugang: der Vertrag",
+        "file_label": "Kundenliste.xlsx",
+        "card": {
+          "title": "Zugangs- und Vertragskarte",
+          "rows": [
+            {
+              "text": "API: kein Training, außer anders vereinbart",
+              "ok": null
+            },
+            {
+              "text": "Team/Enterprise: Primary Owner verwaltet",
+              "ok": null
+            },
+            {
+              "text": "Speicherdauer: nicht damit beantwortet",
+              "ok": "open"
+            }
+          ]
+        },
+        "tag": "offen: euer Vertrag",
+        "row_step": 3.2,
+        "risk_open": true
+      },
+      "source_ids": [
+        "S2",
+        "S6",
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "comparison",
+      "duration_hint": 14,
+      "spoken": "Training und Speicherung sind zwei verschiedene Fragen. Bei privaten Konten mit Training an können Chats de-identifiziert bis zu fünf Jahre in Trainings-Pipelines bleiben. Training aus heißt also nicht, dass alle Datenschutzfragen gelöst sind.",
+      "data": {
+        "headline": "Training ist nicht Speicherung",
+        "mode": "versus",
+        "left_at": 0.4,
+        "right_at": 6.0,
+        "left": {
+          "title": "Training",
+          "rows": [
+            {
+              "text": "Privatkonto: nur wenn erlaubt",
+              "ok": null
+            },
+            {
+              "text": "Sicherheitsprüfung: Nutzung möglich",
+              "ok": "open"
+            },
+            {
+              "text": "API: nicht, außer vereinbart",
+              "ok": null
+            }
+          ]
+        },
+        "right": {
+          "title": "Speicherung",
+          "rows": [
+            {
+              "text": "Training an: bis 5 Jahre, de-identifiziert",
+              "ok": "open"
+            },
+            {
+              "text": "API: Löschung nach 30 Tagen",
+              "ok": null
+            },
+            {
+              "text": "Kein Löschen auf Zuruf (API)",
+              "ok": "open"
+            }
+          ]
+        },
+        "risk_open": true
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S9"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "key_takeaway",
+      "duration_hint": 12,
+      "spoken": "Darum vor jedem Upload drei Fragen: Ist dieser Zugang für Firmendaten freigegeben? Sind diese Daten dafür überhaupt nötig? Und sind Vertrag und Einstellungen geprüft?",
+      "data": {
+        "headline": "Drei Fragen vor dem Upload",
+        "marker": "?",
+        "items": [
+          {
+            "title": "Zugang freigegeben?",
+            "sub": "Privatkonto oder Firmenzugang: was ist erlaubt?",
+            "at": 2.0
+          },
+          {
+            "title": "Daten nötig?",
+            "sub": "Muss die Kundenliste überhaupt hinein?",
+            "at": 5.0
+          },
+          {
+            "title": "Vertrag und Einstellungen geprüft?",
+            "sub": "Training, Speicherung, Löschung geklärt?",
+            "at": 8.0
+          }
+        ],
+        "risk_open": true
+      },
+      "source_ids": []
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "file_close",
+      "duration_hint": 8,
+      "spoken": "Erst prüfen, dann hochladen. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+      "data": {
+        "headline": "Erst prüfen, dann hochladen",
+        "file_label": "Kundenliste.xlsx",
+        "button": "Hochladen",
+        "block_text": "Upload blockiert: bis Freigabe",
+        "block_at": 0.8,
+        "domain": "scutoria.com",
+        "domain_at": 2.0,
+        "claim": "Belegt. Datiert. Vorzeigbar.",
+        "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+      },
+      "source_ids": []
+    }
+  ]
+}

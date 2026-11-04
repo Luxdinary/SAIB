@@ -1,0 +1,438 @@
+{
+ "video_id": "beauty-20261110-2-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "The responsible person",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Jedes Produkt auf dem EU-Markt braucht eine verantwortliche Person in der EU, die für die Einhaltung der Regeln haftet. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Label",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Who is responsible?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "A person in the EU",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "Maker or importer",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "US since MoCRA",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Name on the label",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Read the address",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Read first, then apply",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Who is responsible? That's why every pack in the EU shows the name or company and the address of the responsible person. For imported products, the country of origin is added.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra",
+   "title": "U.S. FDA: Modernization of Cosmetics Regulation Act of 2022 (MoCRA)",
+   "checked_at": "2026-11-01",
+   "label": "FDA: MoCRA"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Who actually answers for your cream if something isn't right?",
+   "on_screen": "Who is responsible?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "In the EU, no cosmetic can be sold without a responsible person inside the EU.",
+   "on_screen": "In the EU, no cosmetic can be sold without a responsible per",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Imported products have nobody accountable in the EU. They do: the importer.",
+   "on_screen": "Imported products have nobody accountable in the EU. They do",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Miss the address on the pack, and you won't know who to contact.",
+   "on_screen": "Miss the address on the pack, and you won't know who to cont",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch where the pack shows who is responsible for the product.",
+   "on_screen": "Watch where the pack shows who is responsible for the produc",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Who actually answers for your cream if something isn't right?",
+   "data": {
+    "obj": "label",
+    "word": "NAME · ADDRESS",
+    "line": 5,
+    "question": "Who is responsible?",
+    "badge": "Who?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "In the EU, the answer is Article 4 of the cosmetics regulation. A product can only be placed on the market if a responsible person inside the EU has been named for it. That person makes sure the rules are followed.",
+   "data": {
+    "headline": "A person in the EU",
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Article 4",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "named for every product"
+     },
+     {
+      "text": "based inside the EU"
+     },
+     {
+      "text": "makes sure the rules are followed"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_timeline",
+   "spoken": "Who that is depends on where the product comes from. For products made in the EU, it's the manufacturer. For imports, it's the importer. Either can appoint another person in the EU by written mandate. The mandate has to be accepted in writing, too.",
+   "data": {
+    "headline": "Who it is",
+    "nodes": [
+     {
+      "date": "EU-made",
+      "text": "the manufacturer in the EU"
+     },
+     {
+      "date": "Import",
+      "text": "the importer"
+     },
+     {
+      "date": "Mandate",
+      "text": "in writing, to another person in the EU"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "In the US, the responsible person only arrived with the MoCRA law in 2022. There, it's the manufacturer, packer or distributor whose name appears on the label.",
+   "data": {
+    "headline": "EU and US",
+    "mode": "compare",
+    "left": {
+     "tag": "EU",
+     "title": "Article 4",
+     "rows": [
+      {
+       "text": "a person based in the EU"
+      },
+      {
+       "text": "maker or importer"
+      }
+     ]
+    },
+    "right": {
+     "tag": "US",
+     "title": "MoCRA 2022",
+     "rows": [
+      {
+       "text": "the name on the label"
+      },
+      {
+       "text": "maker, packer, distributor"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "That's why every pack in the EU shows the name or company and the address of the responsible person. For imported products, the country of origin is added. The details can be abbreviated, as long as the person can still be identified.",
+   "data": {
+    "headline": "What the pack shows",
+    "rows": [
+     {
+      "text": "name or company"
+     },
+     {
+      "text": "address of the responsible person"
+     },
+     {
+      "text": "for imports: country of origin"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "For you, that means: look for the name and address on the pack. That's who stands behind the product, and who you can contact.",
+   "data": {
+    "headline": "How to find them",
+    "items": [
+     {
+      "title": "Turn the pack",
+      "sub": "back or bottom",
+      "icon": "doc"
+     },
+     {
+      "title": "Name and address",
+      "sub": "the responsible person",
+      "icon": "book"
+     },
+     {
+      "title": "If you have questions",
+      "sub": "this is who to contact",
+      "icon": "drop"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Read the address first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Read first, then apply",
+    "block_text": "Read the address first",
+    "done_text": "Address read"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

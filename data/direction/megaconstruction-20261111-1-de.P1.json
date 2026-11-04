@@ -1,0 +1,1063 @@
+{
+  "video_id": "megaconstruction-20261111-1-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Wie eine 660-Tonnen-Kugel Taipei 101 ruhig hält",
+  "notes": "Pilot Format \"Bauaufgabe\" (02.11.2026, Format-Bibel OneDrive\\Business\\02 Marke\\Gigastruct\\Format-Bibel.md). Kalender megaconstruction-20261111-1-de. Eigene Plandatei; der alte Plan megaconstruction-20261111-1-de.json bleibt unverändert. Zahlen am 02.11.2026 auf den Seiten von Betreiber, STRUCTURE magazine und Thornton Tomasetti nachgelesen.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.taipei-101.com.tw/en/observatory/feature",
+      "title": "Taipei 101 (Betreiber), Observatory feature: TMD dient vor allem gegen Schwanken bei starkem Wind (Arbeitskomfort); Kugel ca. 5,5 m, 41 Lagen à 12,5 cm Stahl, verschweißt, 660 t (metrisch); 92 Stahlseile à 8,9 cm Durchmesser, 42 m lang, Sicherheitsfaktor 4 (ein Viertel der Seile trägt die Kugel); 8 hydraulische Viskosedämpfer unter der Kugel; Prallring begrenzt den Ausschlag auf 150 cm; Bildunterschrift 8. August 2015, Taifun Soudelor, Dämpfer schwingt; Besucher können den Dämpfer sehen",
+      "label": "Taipei 101 (Betreiber)",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.structuremag.org/article/dynamic-loading-solutions-in-taipei-101/",
+      "title": "STRUCTURE magazine: Taipei 101, 508 m, 101 Etagen; Bemessungswind bis 156 km/h bei 100 Jahren Wiederkehr; pendelartiger TMD zwischen 86. und 92. Etage, ca. 660 Megagramm, etwa 0,24 % der Gebäudemasse; Ziel Tragsicherheit und Komfort bei Windschwingungen",
+      "label": "STRUCTURE magazine",
+      "checked_at": "2026-11-02"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.thorntontomasetti.com/taipei-101s-tmd-explained/",
+      "title": "Thornton Tomasetti (Tragwerksplaner): 730-Tonnen-TMD (US-Tonnen), hängt an der 92. Etage, mindert Gebäudebewegung durch Wind und Erdbeben",
+      "label": "Thornton Tomasetti",
+      "checked_at": "2026-11-02"
+    }
+  ],
+  "unverified": [
+    "Minderung der Schwingung in Prozent: in keiner geprüften Quelle belegt, nicht genannt.",
+    "Wie stark der Dämpfer bei Taifun Soudelor tatsächlich ausschlug: nicht belegt; das Video zeigt nur die Grenze von 150 cm.",
+    "Turmform, Lage der Kugel im Turm, Anordnung der Seile, Prallring und Dämpfer im Modell schematisch; Ausschlag von Turm und Kugel im Prinzipbild überhöht.",
+    "Gesamtmasse des Turms nicht direkt belegt: 275.000 t ist rückgerechnet aus 660 t und 'etwa 0,24 %' (STRUCTURE), daher 'etwa'."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie hält man einen 508 Meter hohen Turm im Taifun ruhig?",
+      "on_screen": "Wie hält man 508 Meter im Taifun ruhig?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Turm im 3D-Modell, Windpfeile, Turm schwankt leicht",
+      "why": {
+        "truth": "Höhe und Taifun-Bemessung aus STRUCTURE"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "surprising_fact",
+      "spoken": "Oben in Taipei 101 hängt eine Stahlkugel mit 660 Tonnen.",
+      "on_screen": "660 Tonnen hängen im Turm",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Kugel im aufgeschnittenen Turm",
+      "why": {
+        "truth": "Betreiberangabe"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die Kugel in Taipei 101 ist keine Deko. Sie arbeitet gegen den Wind.",
+      "on_screen": "Keine Deko: ein Pendel gegen den Wind",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Kugel schwingt gegen den Turm",
+      "why": {
+        "truth": "Zweck laut Betreiber"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "In 400 Metern Höhe merkt man jeden Sturm, wenn niemand gegensteuert.",
+      "on_screen": "Sturm in 400 m Höhe",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 3,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Turm schwankt (überhöht)",
+      "why": {
+        "truth": "Wahrnehmbarkeit ohne Dämpfer nicht beziffert"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie aus 41 Stahlplatten ein 660-Tonnen-Pendel wird.",
+      "on_screen": "41 Platten, 660 Tonnen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Platten stapeln sich zur Kugel",
+      "why": {
+        "truth": "Betreiberangabe"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Wie hält man einen 508 Meter hohen Turm im Taifun ruhig? Diese Bauaufgabe hatte Taipei 101.",
+      "data": {
+        "kicker": "Bauaufgabe · Taipei 101",
+        "question": "Wie hält man 508 Meter im Taifun ruhig?",
+        "question_at": 0.05,
+        "pins": [],
+        "tag": {
+          "text": "Taipeh, Taiwan · 101 Etagen",
+          "at": "@Bauaufgabe",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "Ausgelegt ist er auf Wind bis 156 Kilometer pro Stunde. Laut Betreiber soll vor allem das Schwanken klein bleiben.",
+      "data": {
+        "headline": "Der Lastfall",
+        "load": {
+          "label": "Bemessungswind",
+          "value": "156",
+          "unit": "km/h",
+          "sub": "Wiederkehr: einmal in 100 Jahren",
+          "at": "@156",
+          "dy": 540
+        },
+        "goal": {
+          "text": "Schwanken klein halten",
+          "at": "@Schwanken",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S2",
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "Die Lösung: ein Pendel. Oben im Turm hängt eine Stahlkugel. Drückt der Wind den Turm zur Seite, schwingt sie dagegen.",
+      "data": {
+        "headline": "Das Prinzip",
+        "note": "vereinfacht · überhöht",
+        "pins": [
+          {
+            "anchor": "ball",
+            "text": "Stahlkugel",
+            "at": "@Stahlkugel",
+            "side": "down"
+          },
+          {
+            "anchor": "windface",
+            "text": "Wind",
+            "at": "@Drückt",
+            "side": "down"
+          }
+        ],
+        "rule": {
+          "text": "Turm hin, Kugel zurück: Sie bremst.",
+          "at": "@schwingt",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "Gebaut aus 41 Lagen Stahl, je 12,5 Zentimeter dick, verschweißt zu einer Kugel: 660 Tonnen. Sie hängt an 92 Stahlseilen. Darunter schlucken acht Dämpfer die Bewegung.",
+      "data": {
+        "headline": "So wurde sie gebaut",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Stahllagen je 12,5 cm",
+            "qty": "41",
+            "at": "@41"
+          },
+          {
+            "pos": "2",
+            "part": "Kugel Ø 5,5 m, geschweißt",
+            "qty": "660 t",
+            "at": "@660"
+          },
+          {
+            "pos": "3",
+            "part": "Stahlseile je 42 m",
+            "qty": "92",
+            "at": "@92"
+          },
+          {
+            "pos": "4",
+            "part": "Hydraulische Dämpfer",
+            "qty": "8",
+            "at": "@acht"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Nachgerechnet: 660 Tonnen sind etwa 0,24 Prozent der Turmmasse. Der Turm wiegt also rund 275.000 Tonnen. Und die Seile: 92 geteilt durch Sicherheitsfaktor vier, schon 23 würden die Kugel halten.",
+      "data": {
+        "headline": "Nachgerechnet",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "Turmmasse = Kugel ÷ Anteil an Gebäudemasse",
+            "a": {
+              "value": 660,
+              "unit": "t"
+            },
+            "op": "÷",
+            "b": {
+              "value": 0.0024,
+              "show": "0,24 %"
+            },
+            "unit": "t",
+            "round": 1000,
+            "prefix": "≈ ",
+            "expect": 275000,
+            "at": "@660",
+            "result_at": "@275"
+          },
+          {
+            "label": "Seile, die die Kugel tragen (rechnerisch)",
+            "a": {
+              "value": 92,
+              "unit": "Seile"
+            },
+            "op": "÷",
+            "b": {
+              "value": 4
+            },
+            "unit": "Seile",
+            "expect": 23,
+            "at": "@92",
+            "result_at": "@23"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2",
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "gb_proof",
+      "spoken": "Bei Taifun Soudelor am 8. August 2015 zeigt der Betreiber die Kugel in Bewegung. Ein Prallring begrenzt ihren Weg auf 150 Zentimeter.",
+      "data": {
+        "headline": "Die Probe",
+        "stamp": {
+          "date": "08.08.2015",
+          "event": "Taifun Soudelor",
+          "at": "@Soudelor",
+          "dy": 120
+        },
+        "pins": [
+          {
+            "anchor": "ring",
+            "text": "Prallring",
+            "at": "@Prallring",
+            "side": "down"
+          }
+        ],
+        "limit": {
+          "label": "Größter Weg der Kugel",
+          "value": 150,
+          "unit": "cm",
+          "ticks": [
+            0,
+            50,
+            100,
+            150
+          ],
+          "at": "@150",
+          "dy": 525
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Ruhe in 508 Metern Höhe, dank einem Pendel. Folge Gigastruct für die nächste Bauaufgabe.",
+      "data": {
+        "statement": "Gelöst: ein Pendel im Turm",
+        "sheet": "BLATT 01",
+        "rows": [
+          [
+            "Aufgabe",
+            "Ruhe in 508 m Höhe"
+          ],
+          [
+            "Lösung",
+            "Pendel, 660 t, 92 Seile"
+          ],
+          [
+            "Bremse",
+            "8 Dämpfer, max. 150 cm"
+          ],
+          [
+            "Stand",
+            "Quellen geprüft 11/2026"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "AUFGABE",
+        "PRINZIP",
+        "BAU",
+        "RECHNUNG",
+        "PROBE"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 0,
+        "b3": 1,
+        "b4": 2,
+        "b5": 3,
+        "b6": 4,
+        "b7": 5
+      }
+    },
+    "description": "Wie hält man einen 508 Meter hohen Turm im Taifun ruhig? Taipei 101 löst es mit einem 660-Tonnen-Pendel. Problem, Lösung und Bau, nachgerechnet mit Zahlen des Betreibers.",
+    "companion_text": "660 t metrisch (= 730 US-Tonnen laut Thornton Tomasetti). Rechnungen: 660 t ÷ 0,24 % ≈ 275.000 t; 92 Seile ÷ Sicherheitsfaktor 4 = 23 Seile. Quellen: Taipei 101 (Betreiber), STRUCTURE magazine, Thornton Tomasetti. Stilisiertes 3D-Modell, schematisch. Folge Gigastruct.",
+    "hashtags": [
+      "taipei101",
+      "wolkenkratzer",
+      "schwingungstilger",
+      "bauingenieur",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "660 t ÷ 0,0024 = 275.000 t",
+        "result": "Turmmasse etwa 275.000 t (rückgerechnet, weil die Quelle 'etwa 0,24 %' sagt)",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "92 Seile ÷ 4 = 23 Seile",
+        "result": "Sicherheitsfaktor 4: ein Viertel der Seile trägt die Kugel (Betreiber)",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C3",
+        "calculation": "41 × 12,5 cm = 512,5 cm",
+        "result": "Stapelhöhe der Lagen, nur zur Modellprüfung (Kugel laut Betreiber etwa 5,5 m); nicht im Video",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C4",
+        "calculation": "150 cm ÷ 42 m: asin(1,5 / 42) = 2,05°",
+        "result": "Seilwinkel bei größtem Ausschlag im Modell (schematisch, maßstäblich)",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 40,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "prism",
+          "height": 470,
+          "width": 62,
+          "levels": 72,
+          "profile": [
+            [
+              0,
+              1.15
+            ],
+            [
+              0.17,
+              0.95
+            ],
+            [
+              0.18,
+              0.72
+            ],
+            [
+              0.255,
+              0.98
+            ],
+            [
+              0.26,
+              0.72
+            ],
+            [
+              0.335,
+              0.98
+            ],
+            [
+              0.34,
+              0.72
+            ],
+            [
+              0.415,
+              0.98
+            ],
+            [
+              0.42,
+              0.72
+            ],
+            [
+              0.495,
+              0.98
+            ],
+            [
+              0.5,
+              0.72
+            ],
+            [
+              0.575,
+              0.98
+            ],
+            [
+              0.58,
+              0.72
+            ],
+            [
+              0.655,
+              0.98
+            ],
+            [
+              0.66,
+              0.72
+            ],
+            [
+              0.735,
+              0.98
+            ],
+            [
+              0.74,
+              0.72
+            ],
+            [
+              0.815,
+              0.98
+            ],
+            [
+              0.83,
+              0.55
+            ],
+            [
+              1.0,
+              0.35
+            ]
+          ],
+          "spire": [
+            38,
+            8
+          ],
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "tmd",
+          "kind": "tmd",
+          "r": 2.75,
+          "plates": 41,
+          "t": 0.125,
+          "hang": 42,
+          "cables": 92,
+          "dampers": 8,
+          "pos": [
+            0,
+            398,
+            0
+          ]
+        },
+        {
+          "id": "wind",
+          "kind": "wind",
+          "count": 8,
+          "y0": 80,
+          "y1": 440,
+          "dist": 140,
+          "len": 70,
+          "w": 2.2,
+          "spread": 30,
+          "drift": 30,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "wind": 0
+          }
+        }
+      ],
+      "anchors": {
+        "top": [
+          0,
+          508,
+          0
+        ],
+        "ball": [
+          0,
+          395.5,
+          0
+        ],
+        "windface": [
+          -20,
+          392,
+          0
+        ],
+        "ring": [
+          0,
+          394.6,
+          0
+        ],
+        "ballside": [
+          2.75,
+          398,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 40,
+            "az1": 28,
+            "el0": 4,
+            "el1": 9,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {
+            "wind.wind": [
+              [
+                0,
+                0
+              ],
+              [
+                1.5,
+                0.7
+              ]
+            ],
+            "tower.lean": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0.12
+              ],
+              [
+                3.5,
+                -0.08
+              ],
+              [
+                5,
+                0.12
+              ],
+              [
+                6.5,
+                -0.05
+              ]
+            ]
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 84,
+            "az1": 96,
+            "el0": 3,
+            "el1": 6,
+            "fit0": 0.4,
+            "fit1": 0.42,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {
+            "wind.wind": [
+              [
+                0,
+                0.6
+              ],
+              [
+                "@156",
+                1
+              ]
+            ],
+            "tower.lean": [
+              [
+                0,
+                0
+              ],
+              [
+                1.5,
+                0.6
+              ],
+              [
+                3,
+                0.1
+              ],
+              [
+                4.5,
+                0.7
+              ],
+              [
+                6,
+                0.05
+              ],
+              [
+                7.5,
+                0.6
+              ],
+              [
+                9,
+                0.1
+              ],
+              [
+                10.5,
+                0.55
+              ],
+              [
+                12,
+                0.1
+              ]
+            ]
+          }
+        },
+        "b3": {
+          "cam": {
+            "p0": [
+              0,
+              401,
+              78
+            ],
+            "p1": [
+              0,
+              400,
+              68
+            ],
+            "l0": [
+              0,
+              398,
+              0
+            ],
+            "l1": [
+              0,
+              398,
+              0
+            ],
+            "dy": 380
+          },
+          "props": {
+            "tower.fade": [
+              [
+                0,
+                0.4
+              ],
+              [
+                1.5,
+                0.07
+              ]
+            ],
+            "wind.wind": 0.9,
+            "tower.lean": [
+              [
+                0,
+                0
+              ],
+              [
+                "@Drückt",
+                0
+              ],
+              [
+                "@Drückt+1.2",
+                1.0
+              ],
+              [
+                "@schwingt+0.8",
+                0.15
+              ],
+              [
+                "@dagegen+0.6",
+                0.35
+              ],
+              [
+                "@dagegen+1.6",
+                0.05
+              ]
+            ],
+            "tmd.swing": [
+              [
+                0,
+                0
+              ],
+              [
+                "@Drückt",
+                0
+              ],
+              [
+                "@Drückt+1.2",
+                0
+              ],
+              [
+                "@schwingt+0.8",
+                -5
+              ],
+              [
+                "@dagegen+0.6",
+                -2.2
+              ],
+              [
+                "@dagegen+1.6",
+                -0.5
+              ]
+            ],
+            "tmd.floor": 0,
+            "tmd.frame": 0
+          }
+        },
+        "b4": {
+          "cam": {
+            "p0": [
+              30,
+              402,
+              50
+            ],
+            "p1": [
+              38,
+              406,
+              62
+            ],
+            "l0": [
+              0,
+              397,
+              0
+            ],
+            "l1": [
+              0,
+              398,
+              0
+            ],
+            "dy": 460
+          },
+          "props": {
+            "tower.visible": 0,
+            "wind.wind": 0,
+            "tmd.plates": [
+              [
+                0,
+                0
+              ],
+              [
+                "@41",
+                2
+              ],
+              [
+                "@verschweißt",
+                41
+              ]
+            ],
+            "tmd.cables": [
+              [
+                0,
+                0
+              ],
+              [
+                "@92",
+                0
+              ],
+              [
+                "@92+1.4",
+                92
+              ]
+            ],
+            "tmd.dampers": [
+              [
+                0,
+                0
+              ],
+              [
+                "@acht",
+                0
+              ],
+              [
+                "@acht+1.2",
+                8
+              ]
+            ],
+            "tmd.ring": [
+              [
+                0,
+                0
+              ],
+              [
+                "@acht-0.1",
+                0
+              ],
+              [
+                "@acht",
+                1
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "p0": [
+              18,
+              401,
+              34
+            ],
+            "p1": [
+              16,
+              400.5,
+              32
+            ],
+            "l0": [
+              0,
+              399.5,
+              0
+            ],
+            "l1": [
+              0,
+              399.5,
+              0
+            ],
+            "dy": 380
+          },
+          "props": {
+            "tower.visible": 0,
+            "wind.wind": 0,
+            "tmd.hl": [
+              [
+                0,
+                0
+              ],
+              [
+                "@23-0.1",
+                0
+              ],
+              [
+                "@23",
+                23
+              ]
+            ]
+          }
+        },
+        "b6": {
+          "cam": {
+            "p0": [
+              6,
+              402,
+              55
+            ],
+            "p1": [
+              3,
+              401,
+              57
+            ],
+            "l0": [
+              0,
+              396,
+              0
+            ],
+            "l1": [
+              0,
+              396,
+              0
+            ],
+            "dy": 300
+          },
+          "props": {
+            "tower.visible": 0,
+            "wind.wind": 0,
+            "tmd.swing": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0.8
+              ],
+              [
+                2,
+                -0.8
+              ],
+              [
+                3,
+                1.1
+              ],
+              [
+                4,
+                -1.1
+              ],
+              [
+                "@150-0.6",
+                0
+              ],
+              [
+                "@150+0.4",
+                1.5
+              ],
+              [
+                "@150+1.6",
+                1.5
+              ],
+              [
+                "@150+3.0",
+                0
+              ]
+            ]
+          }
+        },
+        "b7": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 25,
+            "az1": 15,
+            "el0": 10,
+            "el1": 5,
+            "fit0": 0.44,
+            "fit1": 0.4,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {
+            "tower.fade": 0.3,
+            "wind.wind": 0.3,
+            "tmd.floor": 0
+          }
+        }
+      }
+    }
+  }
+}

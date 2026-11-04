@@ -1,0 +1,619 @@
+{
+  "video_id": "claude_workflows-20261111-3-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Create your first skill",
+  "notes": "Englische Fassung von claude_workflows-20261111-3-de (Plan-Agent B, 01.11.2026): sprachlich angepasst, gleiche Quellen und Szenen. Leitobjekt SKILL.md, Beispiel-Skill diff-check (Beispielwert).",
+  "hook": {
+    "id": "H1",
+    "note": "A familiar problem (the same checklist again and again); the SKILL.md tab hints at the fix."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Pasting the same checklist into the chat over and over? That's a job for a skill.",
+      "on_screen": "Same checklist, every time?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor with checklist, SKILL.md tab, question",
+      "why": {
+        "truth": "the docs name exactly this trigger",
+        "visual": "checklist and tab"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Skills are complicated? It's a folder with one Markdown file.",
+      "on_screen": "Complicated? One folder, one file.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Folder and file",
+      "why": {
+        "visual": "little action"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Until you need a skill, Claude only knows its name and description.",
+      "on_screen": "Only the description, at first",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Rail",
+      "why": {
+        "relevance": "topic of the basics series"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Write a vague description, and Claude won't pick your skill.",
+      "on_screen": "Vague description, no skill",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Description gets marked",
+      "why": {
+        "truth": "docs: the description drives selection; 'won't pick' sharpened"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a checklist turn into a command you call with a slash.",
+      "on_screen": "Checklist becomes a command",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor types SKILL.md",
+      "why": {
+        "curiosity": "less recognition"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Extend Claude with skills (Claude Code Docs): create a skill when you keep pasting the same instructions; a skill's body loads only when it's used; Create your first skill; directory name becomes the command; description helps Claude decide; personal and project skill paths",
+      "url": "https://code.claude.com/docs/en/skills",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, skills"
+    },
+    {
+      "id": "S2",
+      "title": "Skill authoring best practices (Claude Docs): only name and description pre-loaded at startup; always write descriptions in third person; include what the Skill does and when to use it",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices",
+      "checked_at": "2026-11-01",
+      "label": "Claude docs, skill guide"
+    }
+  ],
+  "unverified": [
+    "How Claude Code shows a loaded skill in the terminal: not checked; the closing window is an animation.",
+    "The name 'diff-check', the description text and the instructions are examples, not from the docs (docs example: summarize-changes).",
+    "That Claude always loads a skill when a request matches: not supported; the video only says the description helps Claude decide."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "SKILL.md",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Checklist: in the chat",
+          "tone": "amber"
+        },
+        {
+          "beat": "b2",
+          "text": "Skill: missing",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "loads on demand",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "SKILL.md: written",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Call: / or a question",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Description: 3rd person",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "3 steps",
+          "tone": "accent"
+        },
+        {
+          "beat": "b8",
+          "text": "SKILL.md: created",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Your first Claude Code skill in three steps: create a folder under .claude/skills/, write a SKILL.md with a clear description, then call it with /name or just ask. Until then, only the description sits in context.",
+    "companion_text": "More Claude workflows, step by step: follow Promptwerk. Based on the skills page of the Claude Code docs and Anthropic's skill authoring guide. The 'diff-check' skill is an example; the windows are an animation, not a screen recording. Whether Claude loads a skill on its own depends on whether your request matches the description; /name calls it directly.",
+    "hashtags": [
+      "claudecode",
+      "skills",
+      "aiworkflow",
+      "coding",
+      "developer"
+    ],
+    "short_title": "Erster Skill"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Pasting the same checklist into the chat over and over? That's a job for a skill.",
+      "data": {
+        "question": "Same checklist, every time?",
+        "chip": "job for a skill",
+        "tabs": [
+          {
+            "name": "prompt.txt",
+            "active": true
+          },
+          "SKILL.md"
+        ],
+        "file": "SKILL.md",
+        "lines": [
+          [
+            [
+              "com",
+              "# Before every commit:"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "1. "
+            ],
+            [
+              "",
+              "Summarize the diff"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "2. "
+            ],
+            [
+              "",
+              "List the risks"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "3. "
+            ],
+            [
+              "",
+              "Check the tests"
+            ]
+          ]
+        ],
+        "focus_line": 0,
+        "zoom": 1.1,
+        "question_word": "Pasting",
+        "mark_word": "checklist",
+        "click_word": "chat",
+        "env_word": "skill",
+        "chip_word": "job"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:skill"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "The docs name exactly this case: you keep pasting the same instructions. And unlike CLAUDE.md, a skill's body only loads when it's used, so long reference material costs almost nothing until you need it.",
+      "data": {
+        "kicker": "Claude Code Docs · Skills",
+        "page_title": "Extend Claude with skills",
+        "quotes": [
+          "when you keep pasting the same instructions",
+          "a skill's body loads only when it's used"
+        ],
+        "translation_label": "In short",
+        "translation": "Loads only when needed",
+        "page_word": "docs",
+        "quote1_word": "pasting",
+        "quote2_word": "unlike",
+        "translation_word": "loads"
+      },
+      "overlay": {
+        "title": "When a skill fits",
+        "marker_at": "w:pasting",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "spoken": "At startup, Claude only knows each skill's name and description. Only when your request matches, or you call it, does Claude read the full SKILL.md.",
+      "data": {
+        "headline": "",
+        "gate": 3,
+        "chip": "only when needed",
+        "nodes": [
+          {
+            "label": "Session start"
+          },
+          {
+            "label": "Name + description"
+          },
+          {
+            "label": "Request matches"
+          },
+          {
+            "label": "SKILL.md loads",
+            "hook": true
+          },
+          {
+            "label": "Instructions"
+          }
+        ],
+        "travel_word": "startup",
+        "travel_end_word": "call",
+        "gate_word": "read"
+      },
+      "overlay": {
+        "title": "How a skill loads",
+        "marker_at": "w:name",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Step one: in your project's skills folder, create a folder; its name becomes the command. Step two: SKILL.md. Up top, the description: what the skill does and when to use it.",
+      "data": {
+        "tabs": [
+          {
+            "name": "diff-check/SKILL.md",
+            "active": true
+          },
+          ".claude/skills/"
+        ],
+        "focus_line": 2,
+        "callout": "When Claude loads the skill",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "punc",
+              "---"
+            ]
+          ],
+          [
+            [
+              "key",
+              "name"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "diff-check"
+            ]
+          ],
+          [
+            [
+              "key",
+              "description"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "Summarizes changes"
+            ]
+          ],
+          [
+            [
+              "str",
+              "  in the diff. Use when someone asks"
+            ]
+          ],
+          [
+            [
+              "str",
+              "  what has changed."
+            ]
+          ],
+          [
+            [
+              "punc",
+              "---"
+            ]
+          ],
+          [
+            [
+              "key",
+              "## Instructions"
+            ]
+          ],
+          [
+            [
+              "",
+              "Summarize the diff in three points"
+            ]
+          ],
+          [
+            [
+              "",
+              "and list any risks."
+            ]
+          ]
+        ],
+        "line_h": 44,
+        "zoom": 1.08,
+        "pre_line": 1,
+        "pre_word": "name",
+        "typed_word": "SKILL",
+        "mark_word": "description",
+        "click_word": "does",
+        "callout_word": "when"
+      },
+      "overlay": {
+        "title": "Folder and SKILL.md",
+        "example": true,
+        "marker_at": "w:Step",
+        "dim_at": "w:does",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Step three: call it. Type a slash and the name, or just ask: what did I change? If that matches the description, Claude loads the skill itself.",
+      "data": {
+        "top": {
+          "title": "/diff-check",
+          "verdict": "you",
+          "rows": [
+            "type the name",
+            "folder name = command"
+          ]
+        },
+        "bottom": {
+          "title": "What did I change?",
+          "verdict": "Claude",
+          "rows": [
+            "matches the description",
+            "Claude loads it itself"
+          ]
+        },
+        "top_word": "Type",
+        "bottom_word": "ask"
+      },
+      "overlay": {
+        "title": "Step three: call it",
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:call",
+        "dim_at": "w:matches",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "That's why the description matters most. The skill guide says: third person, plus what the skill does and when to use it.",
+      "data": {
+        "kicker": "Claude Docs · Agent Skills",
+        "page_title": "Skill authoring best practices",
+        "quotes": [
+          "Always write in third person.",
+          "include both what the Skill does and when to use it"
+        ],
+        "translation_label": "In short",
+        "translation": "Third person: what and when",
+        "page_word": "guide",
+        "quote1_word": "third",
+        "quote2_word": "does",
+        "translation_word": "when"
+      },
+      "overlay": {
+        "title": "The description decides",
+        "marker_at": "w:description",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "So: create the folder, write SKILL.md with a clear description, then call it or just ask.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Create the folder",
+            "code": ".claude/skills/diff-check/",
+            "at_word": "folder"
+          },
+          {
+            "title": "Write SKILL.md",
+            "code": "description: what + when",
+            "at_word": "SKILL"
+          },
+          {
+            "title": "Call it or ask",
+            "code": "/diff-check",
+            "at_word": "call"
+          }
+        ]
+      },
+      "overlay": {
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:folder",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "title": "In three steps"
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "One folder, one file, one clear description. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "SKILL.md: created",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/diff-check"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Skill: diff-check"
+          }
+        ],
+        "statement": "One folder. One SKILL.md. One clear description.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_word": "One",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+ "video_id": "ai_security-20261114-3-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Ein Passwortmanager fürs Team",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Fünf Minuten, die gefehlt haben\". F2 im Format \"Was tust du?\", rückwärts erzählt. Beispielfall nachgestellt: Betrieb, Portal, Uhrzeiten und Ablauf sind erfunden; Mechanik (ein geknacktes Passwort öffnet alle Konten, die es nutzen; über das Mailkonto lassen sich weitere Passwörter zurücksetzen) und Schritte aus S1 bis S3, am 02.11.2026 gelesen (S3 neu). Der alte Plan ai_security-20261114-3-de.json bleibt unverändert.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Montagmorgen: Euer Passwort beim Großhändler wurde geändert, und ihr wart es nicht. Wir spulen zurück bis zur Entscheidung, die gefehlt hat. Ein nachgestellter Fall mit dem einen Schritt, den BSI und NCSC raten.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur IT- und KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "passwortmanager",
+   "passwort",
+   "kmu",
+   "itsicherheit",
+   "fuenfminuten"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/Passwort-Manager/passwort-manager_node.html",
+   "title": "BSI: Passwörter verwalten mit dem Passwort-Manager",
+   "checked_at": "2026-11-02",
+   "label": "BSI, Passwort-Manager"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers",
+   "title": "NCSC: Top tips for staying secure online – Managing your passwords",
+   "checked_at": "2026-11-02",
+   "label": "NCSC, Passwörter verwalten"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Wegweiser_Checklisten_Flyer/Checkliste_BSI_ProPK_Phishing.pdf?__blob=publicationFile&v=5",
+   "title": "BSI und Polizei (ProPK): Phishing – Checkliste für den Ernstfall (PDF)",
+   "checked_at": "2026-11-02",
+   "label": "BSI und Polizei, Checkliste"
+  }
+ ],
+ "unverified": [
+  "Einzelne Produkte: bewusst nicht genannt.",
+  "Ablauf im Beispielfall (Großhändler-Portal, Sonntag 23:14, Passwort anderswo geknackt, Entscheidung vor Jahren) ist erfunden und als Beispiel gekennzeichnet.",
+  "Neu am 02.11.2026 geprüft: S1 (über ein übernommenes Mailkonto lassen sich weitere Dienste per Passwort-Zurücksetzen übernehmen; zweiter Faktor für wichtige Konten wie E-Mail), S2 (zweiter Faktor auch für den Passwortmanager) und S3 (neues Passwort, alle aktiven Sitzungen beenden, weitere Konten prüfen; die Checkliste gilt für weitergegebene Zugangsdaten, hier auf ein übernommenes Konto übertragen).",
+  "NCSC nennt die Zwei-Schritt-Bestätigung als wichtigsten ersten Schritt; in diesem Video steht der Passwortmanager im Mittelpunkt, der zweite Faktor nur als Schutz des Managers."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Wie viele Passwörter merkt sich dein Team, und wie viele davon sind gleich?",
+   "on_screen": "Wie viele Passwörter sind gleich?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Ein starkes Passwort für alles reicht? Laut BSI nicht.",
+   "on_screen": "Ein starkes Passwort für alles?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Wer in dein Mailkonto kommt, kann laut BSI andere Passwörter zurücksetzen.",
+   "on_screen": "Mailkonto weg, alles weg",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein geknacktes Passwort, und die Täter kommen in jedes Konto, das es nutzt.",
+   "on_screen": "Ein Passwort, alle Konten offen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Montag, sieben Uhr fünfzig. Euer Passwort wurde geändert, und ihr wart es nicht.",
+   "on_screen": "MO 07:50 · Passwort geändert. Nicht von euch.",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "Uhrzeit groß, die Mail des Portals kommt als Papierkarte herein, die Zeile 'Das waren nicht Sie?' wird markiert",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Montag, sieben Uhr fünfzig. Mail vom Großhändler: Ihr Passwort wurde geändert. Ihr wart das nicht. Und dasselbe Passwort nutzt ihr auch fürs Mailkonto.",
+   "data": {
+    "kicker": "Beispielfall · nachgestellt",
+    "time": "MO 07:50",
+    "place": "Büro einer Gärtnerei",
+    "mail_at": "@Großhändler",
+    "mail": {
+     "from": "Gartenbedarf Beispiel",
+     "addr": "konto@gartenbedarf-beispiel.example",
+     "time": "07:50",
+     "subject": "Passwort geändert",
+     "lines": [
+      "Ihr Passwort wurde am Sonntag",
+      "um 23:14 Uhr geändert.",
+      "Das waren nicht Sie?"
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "nicht ihr",
+     "at": "@nicht"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_timeline",
+   "spoken": "Spulen wir zurück. Sonntagabend meldet sich jemand mit eurem Passwort an. Vor Wochen wurde es woanders geknackt. Und vor Jahren habt ihr entschieden: ein starkes Passwort, für alle Konten. Laut BSI kommen Kriminelle dann in alle diese Konten.",
+   "data": {
+    "kicker": "Zurückgespult",
+    "tag": "Beispiel",
+    "headline": "Ein Passwort, viele Konten",
+    "items": [
+     {
+      "time": "MO 07:50",
+      "text": "Portal-Passwort geändert",
+      "tone": "red",
+      "at": 0.3
+     },
+     {
+      "time": "SO 23:14",
+      "text": "Fremde Anmeldung",
+      "tone": "amber",
+      "at": "@Sonntagabend"
+     },
+     {
+      "time": "Vor Wochen",
+      "text": "Anderswo geknackt",
+      "tone": "amber",
+      "at": "@Wochen"
+     },
+     {
+      "time": "Vor Jahren",
+      "text": "Ein Passwort für alle Konten",
+      "tone": "amber",
+      "at": "@Jahren"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "BSI · ein Passwort, alle Konten",
+     "at": "@BSI"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "sc_choice",
+   "spoken": "Was änderst du? A: Ein noch stärkeres Passwort, wieder für alle. B: Nur das Portal-Passwort ändern. C: Ein Passwortmanager, je Konto ein eigenes Passwort. Entscheide dich jetzt.",
+   "data": {
+    "question": "Was änderst du?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Stärkeres Passwort, für alle",
+      "at": "@stärkeres"
+     },
+     {
+      "key": "B",
+      "text": "Nur das Portal-Passwort ändern",
+      "at": "@Portal"
+     },
+     {
+      "key": "C",
+      "text": "Passwortmanager, je Konto eigenes",
+      "at": "@Passwortmanager"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Entscheide"
+    },
+    "hint": "Entscheide dich jetzt."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Richtig ist C. Laut BSI ist für jeden Zugang ein eigenes, starkes Passwort am sichersten. Ein Passwortmanager merkt sie sich, geschützt durch ein Masterpasswort und einen zweiten Faktor. Fangt mit dem Mailkonto an. A und B lassen die übrigen Konten offen.",
+   "data": {
+    "mode": "rule",
+    "kicker": "Der eine Schritt",
+    "card": {
+     "letter": "C",
+     "title": "Passwortmanager fürs Team",
+     "sub": "je Konto eigenes, Mailkonto zuerst",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Stärker, aber für alle",
+      "note": "ein Leck öffnet alle",
+      "at": "@lassen-0.6"
+     },
+     {
+      "text": "B: Nur das Portal ändern",
+      "note": "Mailkonto bleibt offen",
+      "at": "@lassen"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "BSI · eigenes Passwort je Konto"
+     },
+     {
+      "kind": "fakt",
+      "label": "NCSC · Manager mit zweitem Faktor"
+     }
+    ],
+    "sources_at": "@BSI"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Schon übernommen? Sofort ein neues Passwort vergeben und alle aktiven Sitzungen beenden. Dann prüfen, wo dasselbe Passwort noch steckt.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "Schon passiert?",
+    "card": {
+     "letter": "!",
+     "title": "Sofort neu absichern",
+     "sub": "nicht abwarten",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "Neues Passwort, Sitzungen beenden",
+      "at": "@neues"
+     },
+     {
+      "text": "Gleiches Passwort? Überall ändern",
+      "at": "@prüfen"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "BSI und Polizei · Checkliste"
+     }
+    ],
+    "sources_at": "@sofort"
+   },
+   "source_ids": [
+    "S3"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Jedes Konto ein eigenes Passwort: Das sind die fünf Minuten, die gefehlt haben. Was hättest du gewählt? Schreib es in die Kommentare.",
+   "data": {
+    "kicker": "Reihe · Fünf Minuten",
+    "rule": "Je Konto ein eigenes Passwort.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Was hättest du gewählt?",
+     "at": "@hättest"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+   },
+   "source_ids": []
+  }
+ ]
+}

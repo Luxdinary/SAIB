@@ -1,0 +1,569 @@
+{
+  "video_id": "megaconstruction-20261114-2-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Forth Bridge: Stahl-Antwort auf das Tay-Bridge-Unglück",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Damals gelöst. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261114-2-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.networkrail.co.uk/who-we-are/our-history/iconic-infrastructure/the-history-of-the-forth-bridge-fife",
+      "title": "Network Rail: The history of the Forth Bridge (Tay-Einsturz 12/1879; 1881 Hängebrücke aufgegeben; Arrol & Co; Bau ab 1883, fertig 11/1889; Eröffnung 04.03.1890; 53.000 t Stahl; 6,5 Mio. Nieten; 2 × 518 m; Türme 110 m; 4.600 Männer; 3 Mio. £)",
+      "label": "Network Rail, Forth Bridge",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.thethreebridges.com/about/world-heritage-site/",
+      "title": "Forth Bridges Forum: World Heritage Site (seit 2015; Spannweiten 521 m; über 4.500 Männer)",
+      "label": "Forth Bridges Forum",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "UNESCO-Seite und Historic Environment Scotland nicht erreichbar.",
+    "Spannweite 518 m (Network Rail) gegen 521 m (Forum): Network Rail verwendet.",
+    "Ob die Auslegerbauweise ursächlich auf den Tay-Einsturz zurückgeht: nur 'nach', nicht 'wegen'."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Zehn Jahre nach einem Einsturz baute Schottland Großbritanniens erste große Stahlbrücke.",
+      "on_screen": "Nach dem Einsturz: 53.000 t Stahl",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Forth Bridge wirklich?",
+      "on_screen": "Wie groß ist die Forth Bridge wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen die Forth Bridge.",
+      "on_screen": "die Forth Bridge: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Forth Bridge schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Forth Bridge: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Forth Bridge im Modell entsteht.",
+      "on_screen": "die Forth Bridge im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Wie baut man eine Brücke über den Forth, kurz nachdem eine andere große Brücke in Schottland eingestürzt ist? Das war die Bauaufgabe ab 1883.",
+      "data": {
+        "kicker": "Damals gelöst · Forth Bridge",
+        "question": "Eine Brücke nach dem Einsturz?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Schottland · eröffnet 1890",
+          "at": "@Schottland",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "Damals: Im Dezember 1879 stürzte die Tay Bridge ein. Die Arbeit an der geplanten Hängebrücke über den Forth wurde gestoppt, 1881 gab man die Pläne auf.",
+      "data": {
+        "headline": "Damals",
+        "load": {
+          "label": "Tay Bridge eingestürzt",
+          "value": "1879",
+          "unit": "",
+          "sub": "Forth-Hängebrücke 1881 aufgegeben",
+          "at": "@1879",
+          "dy": 540
+        },
+        "goal": {
+          "text": "Neu planen, neu bauen",
+          "at": "@1881",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "Die Lösung: eine Auslegerbrücke aus Stahl. Drei Doppelausleger tragen zwei eingehängte Mittelstücke. Jede der beiden Hauptöffnungen ist 518 Meter weit.",
+      "data": {
+        "headline": "Die Lösung",
+        "note": "Fachwerk schematisch",
+        "pins": [
+          {
+            "anchor": "arm",
+            "text": "Ausleger",
+            "at": "@Doppelausleger",
+            "side": "up"
+          },
+          {
+            "anchor": "susp",
+            "text": "Mittelstück",
+            "at": "@Mittelstücke",
+            "side": "down"
+          }
+        ],
+        "rule": {
+          "text": "Ausleger tragen, Mittelstücke hängen ein.",
+          "at": "@518",
+          "dy": 680
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "Gebaut hat sie die Firma Arrol aus Glasgow, ab 1883. In der Spitze arbeiteten über 4.500 Männer auf der Baustelle. Verbaut wurden 53.000 Tonnen Stahl und 6,5 Millionen Nieten.",
+      "data": {
+        "headline": "So wurde sie gebaut",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Baubeginn (Arrol & Co)",
+            "qty": "1883",
+            "at": "@Arrol"
+          },
+          {
+            "pos": "2",
+            "part": "Männer, in der Spitze über",
+            "qty": "4.500",
+            "at": "@4.500"
+          },
+          {
+            "pos": "3",
+            "part": "Stahl, Tonnen",
+            "qty": "53.000",
+            "at": "@53.000"
+          },
+          {
+            "pos": "4",
+            "part": "Nieten, Millionen",
+            "qty": "6,5",
+            "at": "@6,5"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_proof",
+      "spoken": "Fertig war der Bau im November 1889, die Kosten lagen bei 3 Millionen Pfund. Am 4. März 1890 wurde die Brücke eröffnet.",
+      "data": {
+        "headline": "Die Probe",
+        "stamp": {
+          "date": "04.03.1890",
+          "event": "Eröffnung",
+          "at": "@März",
+          "dy": 150
+        },
+        "pins": [
+          {
+            "anchor": "tower",
+            "text": "Türme 110 m",
+            "kind": "dim",
+            "at": "@Brücke"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Heute: Seit 2015 ist die Forth Bridge UNESCO-Welterbe. Folge Gigastruct für die nächste Bauaufgabe.",
+      "data": {
+        "statement": "Gelöst: Stahl im Ausleger",
+        "sheet": "BLATT 16",
+        "rows": [
+          [
+            "Aufgabe",
+            "Brücke nach dem Tay-Einsturz"
+          ],
+          [
+            "Lösung",
+            "Auslegerbrücke, 2 × 518 m"
+          ],
+          [
+            "Bau",
+            "1883 bis 1889"
+          ],
+          [
+            "Heute",
+            "UNESCO-Welterbe seit 2015"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "AUFGABE",
+        "DAMALS",
+        "LÖSUNG",
+        "BAU",
+        "HEUTE"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 4,
+        "b6": 5
+      }
+    },
+    "description": "Die Forth Bridge (1883–1890): Nach dem Einsturz der Tay Bridge entstand in Schottland Großbritanniens erste große Stahlkonstruktion – 53.000 t Stahl, 6,5 Mio. Nieten.",
+    "companion_text": "Gerechnet: 1.700 ft = 518 m. Quellen: Network Rail, Forth Bridges Forum. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "forthbridge",
+      "schottland",
+      "baugeschichte",
+      "stahlbrücke",
+      "welterbe"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "1.700 ft × 0,3048 = 518,2 m",
+        "result": "518 m je Hauptöffnung",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "bed",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -30,
+            0
+          ]
+        },
+        {
+          "id": "water",
+          "kind": "water",
+          "size": 60000,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "bridge",
+          "kind": "bridge",
+          "type": "cantilever",
+          "x0": -1230,
+          "x1": 1230,
+          "deck_y": 46,
+          "deck_w": 24,
+          "deck_t": 5,
+          "towers": [
+            -600,
+            0,
+            600
+          ],
+          "tower_h": 64,
+          "arm": 170,
+          "below": 40,
+          "member_r": 2.6,
+          "ground_y": -30,
+          "piers": [
+            -1000,
+            -900,
+            -800,
+            800,
+            900,
+            1000
+          ],
+          "cable_color": "accent",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "arm": [
+          -430,
+          70,
+          12
+        ],
+        "susp": [
+          -300,
+          50,
+          12
+        ],
+        "tower": [
+          0,
+          110,
+          0
+        ],
+        "span": [
+          -300,
+          46,
+          12
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 60,
+            "az1": 45,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {
+            "water.opacity": 0.7
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 88,
+            "az1": 92,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {
+            "water.opacity": 0.7
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 30,
+            "az1": 40,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "water.opacity": 0.7
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 50,
+            "az1": 35,
+            "el0": 12,
+            "el1": 16,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {
+            "water.opacity": 0.7,
+            "bridge.reveal": [
+              [
+                0,
+                0.15
+              ],
+              [
+                "%0.85",
+                1
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 260,
+            "cy": 680
+          },
+          "props": {
+            "water.opacity": 0.7
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 25,
+            "az1": 15,
+            "el0": 14,
+            "el1": 10,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {
+            "water.opacity": 0.7
+          }
+        }
+      }
+    }
+  }
+}

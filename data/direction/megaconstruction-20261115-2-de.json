@@ -1,0 +1,558 @@
+{
+  "video_id": "megaconstruction-20261115-2-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Eiffelturm: 18.038 Teile in 2 Jahren, 2 Monaten, 5 Tagen",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261115-2-de. Thema: eiffelbau. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Eiffelturm",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Turm im Bau",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "fertig 31.03.1889",
+          "tone": "green",
+          "at": "@1889"
+        },
+        {
+          "beat": "b3",
+          "text": "vorgefertigt im Werk",
+          "tone": "accent",
+          "at": "@Werk"
+        },
+        {
+          "beat": "b3",
+          "text": "vernietet vor Ort",
+          "tone": "accent",
+          "at": "@vernietet"
+        },
+        {
+          "beat": "b4",
+          "text": "Gerüst 7.300 t",
+          "tone": "accent",
+          "at": "@7.300"
+        }
+      ]
+    },
+    "description": "Der Eiffelturm war in 2 Jahren, 2 Monaten und 5 Tagen fertig: 18.038 vorgefertigte Teile, 2,5 Millionen Nieten. Wie die Serienfertigung das möglich machte.",
+    "companion_text": "Gerechnet: 26.01.1887 bis 31.03.1889 = 26 Monate; 2.500.000 ÷ 18.038 = 138,6 Nieten je Teil. Quellen: SETE (Google Arts & Culture, Key figures), ASCE. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "eiffelturm",
+      "paris",
+      "baugeschichte",
+      "nieten",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "26.01.1887 + 2 J + 2 M + 5 T = 31.03.1889; 2 × 12 + 2 = 26 Monate",
+        "result": "gut 26 Monate",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "2.500.000 ÷ 18.038 = 138,6",
+        "result": "rund 139 Nieten je Teil",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "tower",
+          "height": 300,
+          "base": 125,
+          "count": 1,
+          "color": "model",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "top": [
+          0,
+          300,
+          0
+        ],
+        "mid": [
+          20,
+          120,
+          20
+        ],
+        "low": [
+          55,
+          30,
+          55
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 35,
+            "az1": 25,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 860,
+            "cy": 760
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 60,
+            "az1": 50,
+            "el0": 10,
+            "el1": 6,
+            "fit0": 0.65,
+            "fit1": 0.6,
+            "zone": 860,
+            "cy": 760
+          },
+          "props": {
+            "tower.build": [
+              [
+                0,
+                0.05
+              ],
+              [
+                "%0.95",
+                1
+              ]
+            ]
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -70,
+                0,
+                -70
+              ],
+              [
+                70,
+                140,
+                70
+              ]
+            ],
+            "az0": 30,
+            "az1": 45,
+            "el0": 12,
+            "el1": 8,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "cy": 800
+          },
+          "props": {
+            "tower.build": [
+              [
+                0,
+                0.2
+              ],
+              [
+                "%0.9",
+                0.47
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 100,
+            "az1": 90,
+            "el0": 4,
+            "el1": 8,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 860,
+            "cy": 780
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 140,
+            "az1": 160,
+            "el0": 14,
+            "el1": 8,
+            "fit0": 0.6,
+            "fit1": 0.55,
+            "zone": 860,
+            "cy": 760
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://artsandculture.google.com/story/the-construction-of-the-eiffel-tower-tour-eiffel/UgWBgIpO0RsA8A?hl=en",
+      "title": "SETE (Betreiber) bei Google Arts & Culture: The construction of the Eiffel Tower (26.01.1887–31.03.1889; 2 Jahre, 2 Monate, 5 Tage; 18.038 Teile; 2,5 Mio. Nieten; 150–300 Arbeiter, 150 im Werk Levallois-Perret)",
+      "label": "SETE, Google Arts & Culture",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/eiffel-tower",
+      "title": "ASCE: Eiffel Tower (18.038 Teile, 2,5 Mio. Nieten; im Werk verschraubt, zerlegt, vor Ort vernietet; ursprünglich 300 m; höchstes Bauwerk bis 1930)",
+      "label": "ASCE, Eiffel Tower",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffelturm), Key figures",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Zweites Startdatum (1. Juli 1887, Montage) nicht verwendet; die 2 Jahre, 2 Monate, 5 Tage passen zum 26.01.1887.",
+    "Bauablauf im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "18.038 Metallteile und zweieinhalb Millionen Nieten.",
+      "on_screen": "18.038 Teile in 26 Monaten",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist der Eiffelturm wirklich?",
+      "on_screen": "Wie groß ist der Eiffelturm wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen der Eiffelturm.",
+      "on_screen": "der Eiffelturm: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei der Eiffelturm schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "der Eiffelturm: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie der Eiffelturm im Modell entsteht.",
+      "on_screen": "der Eiffelturm im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "18.038 Metallteile und zweieinhalb Millionen Nieten. Der Eiffelturm war in gut 26 Monaten fertig.",
+      "data": {
+        "kicker": "Baugeschichte · Eiffelturm",
+        "question": "18.038 Teile in 26 Monaten",
+        "question_at": "@18.038",
+        "number": {
+          "value": "2,5 Mio.",
+          "unit": "Nieten",
+          "at_word": "Nieten",
+          "y": 640
+        },
+        "badge": {
+          "text": "Paris, 1887 bis 1889",
+          "at_word": "fertig",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Der"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "Mit den Fundamenten begann der Bau am 26. Januar 1887. Am 31. März 1889 war der Turm fertig, nach zwei Jahren, zwei Monaten und fünf Tagen.",
+      "data": {
+        "headline": "Zwei Jahre, zwei Monate, fünf Tage",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "1887",
+            "unit": "",
+            "label": "Baubeginn",
+            "at_word": "1887"
+          },
+          {
+            "value": "1889",
+            "unit": "",
+            "label": "fertig",
+            "at_word": "1889"
+          },
+          {
+            "value": "26",
+            "unit": "Mon.",
+            "label": "Bauzeit",
+            "at_word": "zwei"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · Bauzeit",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "gs_phases",
+      "spoken": "Das Geheimnis war Vorfertigung. Im Werk in Levallois-Perret wurden die Teile probeweise verschraubt, dann zerlegt und zur Baustelle gebracht. Erst dort wurden sie endgültig vernietet. Im Schnitt kamen auf jedes Teil rund 139 Nieten.",
+      "data": {
+        "headline": "Serienfertigung um 1888",
+        "rail_dy": 210,
+        "steps": [
+          {
+            "label": "Im Werk verschraubt",
+            "sub": "Levallois-Perret",
+            "at_word": "Werk"
+          },
+          {
+            "label": "Zerlegt, transportiert",
+            "sub": "zur Baustelle",
+            "at_word": "zerlegt"
+          },
+          {
+            "label": "Vor Ort vernietet",
+            "sub": "rund 139 Nieten je Teil",
+            "at_word": "vernietet"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "3 · Vorfertigung",
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "Auf der Baustelle arbeiteten 150 bis 300 Mann, im Werk weitere 150. Das Metallgerüst wiegt laut Betreiber 7.300 Tonnen. Wenige hundert Mann also, für einen Turm aus 18.038 Teilen.",
+      "data": {
+        "headline": "Wenige Hände, viel Eisen",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "150–300",
+            "unit": "",
+            "label": "auf der Baustelle",
+            "at_word": "150"
+          },
+          {
+            "value": "150",
+            "unit": "",
+            "label": "im Werk",
+            "at_word": "weitere"
+          },
+          {
+            "value": "7.300",
+            "unit": "t",
+            "label": "Metallgerüst",
+            "at_word": "7.300"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "SE"
+      ],
+      "overlay": {
+        "kicker": "4 · Mannschaft",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "Ursprünglich 300 Meter hoch, war er bis 1930 das höchste Bauwerk der Welt. Folge Gigastruct, dann siehst du das nächste Bauwerk.",
+      "data": {
+        "mode": "closing",
+        "statement": "Bis 1930 das höchste Bauwerk.",
+        "chip": {
+          "text": "Folge Gigastruct",
+          "at_word": "Folge",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · Rekord",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

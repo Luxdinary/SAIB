@@ -1,0 +1,636 @@
+{
+ "video_id": "menswear-20261110-2-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Black tie: what the dinner suit really needs",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema E01 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S2; keine Gürtelschlaufen-Regel, keine Herkunftsgeschichte, kein weißes Dinnerjackett.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Black tie",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "black tie: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "more than a suit",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "jacket: silk lapels",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "bow tie, not a tie",
+     "tone": "red"
+    },
+    {
+     "beat": "b5",
+     "text": "one, never both",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "silk, bow, waistcoat",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "ensemble complete",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "What belongs to black tie? Debrett's describes a defined ensemble: dinner jacket with silk lapels, braided trousers, white evening shirt, hand-tied bow tie, waistcoat or cummerbund, lace-ups. Plus Moss.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "blacktie",
+   "dinnersuit",
+   "dresscode",
+   "styletips"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://debretts.com/etiquette-category/events-and-dress-codes/",
+   "title": "Debrett's, Events and Dress Codes (Black Tie): schwarzes Dinnerjackett aus Barathea oder feinem Fischgrat, ein- oder zweireihig, ohne Schlitze, seidene steigende Revers oder Schalkragen, bezogene Knöpfe; Hose mit einer Borte je Außennaht; weißes Abendhemd mit Umlegekragen; handgebundene schwarze Fliege; Weste oder Kummerbund, nie beides; schwarze polierte oder Lack-Schnürschuhe, schwarze Seidensocken; lange Krawatte bei formellen Privatanlässen meist unpassend",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.moss.co.uk/inside-pocket/post/black-tie-dressing",
+   "title": "Moss, Black tie dressing: traditioneller Look mit Satinrevers, weißem Abendhemd, schwarzer Seidenfliege, schwarzer Weste oder Kummerbund und schwarzen Lackschuhen",
+   "checked_at": "2026-11-01",
+   "label": "Moss, Inside Pocket"
+  }
+ ],
+ "unverified": [
+  "Gürtelschlaufen und Hosenträger: in den Quellen nicht belegt, nicht im Video.",
+  "Herkunft des Smokings (Edward VII., Henry Poole): nicht als Fakt, nicht im Video.",
+  "Weißes Dinnerjackett und weißes Einstecktuch (Debrett's): aus Zeitgründen nicht im Video."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Black tie: what belongs?",
+   "on_screen": "Black tie: what belongs?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Black tie is not just a dark suit",
+   "on_screen": "Black tie is not just a dark suit",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Waistcoat or cummerbund, but never both",
+   "on_screen": "Waistcoat or cummerbund, but never both",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A long tie with a dinner suit? Debrett's says usually not.",
+   "on_screen": "A long tie with a dinner suit? Debrett's says usually not.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "From suit to dinner jacket in one picture",
+   "on_screen": "From suit to dinner jacket in one picture",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die Einladung als Ausgangslage, die Lupe auf dem Seidenrevers."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 5,
+   "spoken": "The invitation says black tie. So what does that really include, and what does it not?",
+   "data": {
+    "question": "Black tie: what belongs?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "target": "lapel",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:black",
+    "loupe_at": "w:black",
+    "nie_at": "w:what",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 11,
+   "spoken": "Black tie is more than a dark suit. Debrett's describes a clearly defined ensemble, piece by piece. Moss shows the traditional look the same way: satin lapels, a white shirt, a black bow tie.",
+   "data": {
+    "headline": "Suit or dinner suit?",
+    "left": {
+     "title": "Dark suit",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "lapel": "notch",
+      "strain": false
+     },
+     "target": "neck",
+     "tag": "a day suit with a tie"
+    },
+    "right": {
+     "title": "Dinner jacket",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak",
+      "dinner": true,
+      "neck": "bow",
+      "strain": false
+     },
+     "tag": "a defined ensemble",
+     "pulses": [
+      {
+       "target": "lapel",
+       "at": "w:satin"
+      },
+      {
+       "target": "neck",
+       "at": "w:bow"
+      }
+     ]
+    },
+    "left_at": "w:dark",
+    "left_tag_at": "w:suit",
+    "right_at": "w:Debrett",
+    "right_tag_at": "w:ensemble",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "According to Debrett's, the jacket is black, in barathea or a fine herringbone. It has silk-faced peak lapels or a shawl collar, and covered buttons. It may be single or double-breasted, but without vents.",
+   "data": {
+    "headline": "The jacket",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Single",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "silk facings",
+        "sub": "peak or shawl",
+        "tone": "always",
+        "at": "w:silk"
+       },
+       {
+        "spot": "button:0",
+        "text": "covered buttons",
+        "sub": "says Debrett's",
+        "tone": "always",
+        "at": "w:covered"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": "w:double",
+      "title": "Double-breasted",
+      "tags": [
+       {
+        "spot": "hem",
+        "text": "no vents",
+        "sub": "single or double",
+        "tone": "always",
+        "at": "w:vents"
+       }
+      ]
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 13,
+   "spoken": "Then the neck. Debrett's finds the Hollywood look, with a long tie, usually out of place at formal private events. Instead: a black bow tie, tied by hand, and a white evening shirt with a turn-down collar.",
+   "data": {
+    "headline": "Bow tie or long tie?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "tie",
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "target": "neck",
+    "zoom": 1.5,
+    "label": "Bow tie, tied by hand",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:neck",
+    "zoom_at": "w:Hollywood",
+    "error_at": "w:tie",
+    "flip_at": "w:bow",
+    "label_at": "w:hand"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 330,
+     "y": 470,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Hollywood"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 14,
+   "spoken": "Under the jacket, Debrett's rule: the waistcoat is the elegant choice, the cummerbund optional, but never both together. The trousers carry one braid on each outside seam. With them, black polished or patent lace-ups and black silk socks.",
+   "data": {
+    "headline": "Underneath and below",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Underneath",
+      "tags": [
+       {
+        "spot": "waist",
+        "text": "waistcoat: elegant",
+        "sub": "says Debrett's",
+        "tone": "always",
+        "at": "w:waistcoat"
+       },
+       {
+        "spot": "pocket",
+        "text": "or cummerbund",
+        "sub": "optional",
+        "tone": "sometimes",
+        "at": "w:cummerbund"
+       },
+       {
+        "spot": "quarters",
+        "text": "never both",
+        "sub": "not together",
+        "tone": "never",
+        "at": "w:never"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "legs",
+       "break": "none",
+       "shoe": "oxford"
+      },
+      "at": "w:trousers",
+      "title": "Trousers, shoes",
+      "tags": [
+       {
+        "spot": "crease",
+        "text": "one braid per leg",
+        "sub": "on the outside seam",
+        "tone": "always",
+        "at": "w:braid"
+       },
+       {
+        "spot": "lacing",
+        "text": "lace-ups",
+        "sub": "patent or polished",
+        "tone": "always",
+        "at": "w:patent"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "In short: a black jacket with silk lapels, trousers with a braid. A black bow tie, tied by hand. And underneath, a waistcoat or a cummerbund, but never both.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Silk lapels",
+      "sub": "peak or shawl",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": "w:black",
+      "ring": "lapel",
+      "ring_at": "w:silk"
+     },
+     {
+      "title": "Bow tie, tied by hand",
+      "sub": "no long tie",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "tie",
+       "strain": false
+      },
+      "at": "w:bow",
+      "then": {
+       "neck": "bow"
+      },
+      "then_at": "w:hand"
+     },
+     {
+      "title": "Waistcoat or cummerbund",
+      "sub": "never both together",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": "w:waistcoat",
+      "ring": "waist",
+      "ring_at": "w:never"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "From a dark suit to a full ensemble: that is black tie. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "notch",
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "lapel",
+    "fix_at": "w:ensemble",
+    "ring_at": "w:black",
+    "statement_at": "w:black",
+    "chip_at": "w:eye",
+    "statement": "Black tie, complete.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

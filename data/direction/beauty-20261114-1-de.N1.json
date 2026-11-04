@@ -1,0 +1,386 @@
+{
+ "video_id": "beauty-20261114-1-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Gesetzliche Pflicht ist kein Vorteil",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261114-1-de.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (bottle), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Eine Aussage, die nur das gesetzlich Vorgeschriebene wiederholt, darf nicht als besonderer Vorzug des Produkts erscheinen. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Vorteil oder Pflicht? Der Grundsatz dahinter steht in Artikel 20 der Verordnung über kosmetische Mittel: Werbung darf keine Merkmale oder Funktionen vortäuschen, die ein Produkt nicht besitzt.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32013R0655",
+   "title": "Verordnung (EU) Nr. 655/2013 der Kommission: gemeinsame Kriterien zur Begründung von Werbeaussagen, Anhang",
+   "checked_at": "2026-11-01",
+   "label": "VO (EU) 655/2013"
+  },
+  {
+   "id": "S2",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Eine gesetzliche Pflicht darf in der EU nicht als besonderer Vorteil beworben werden.",
+   "on_screen": "Vorteil oder Pflicht?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Darf eine Creme mit etwas werben, das ohnehin jede Creme erfüllen muss?",
+   "on_screen": "Darf eine Creme mit etwas werben, das ohnehin jede Creme erf",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Was auf der Packung als Vorteil steht, ist auch einer. Nicht immer.",
+   "on_screen": "Was auf der Packung als Vorteil steht, ist auch einer. Nicht",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer gesetzliche Pflichten für Extras hält, zahlt womöglich für Selbstverständliches.",
+   "on_screen": "Wer gesetzliche Pflichten für Extras hält, zahlt womöglich f",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, welche Werbeaussage die EU als bloße Pflicht entlarvt.",
+   "on_screen": "Schau, welche Werbeaussage die EU als bloße Pflicht entlarvt",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Eine gesetzliche Pflicht darf in der EU nicht als besonderer Vorteil beworben werden.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Vorteil oder Pflicht?",
+    "badge": "Extra?",
+    "kicker": "Direkter Vergleich · Werbeaussage",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "Das steht in der Verordnung 655 aus 2013 unter Rechtskonformität. Werbeaussagen, die einen Nutzen vermitteln, der nur in der Erfüllung der rechtlichen Mindestanforderungen besteht, sind unzulässig. Ebenfalls unzulässig ist die Behauptung, ein Produkt sei von einer Behörde zugelassen.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Pflicht ist kein Extra",
+    "zoom": "Pflicht",
+    "flip": false,
+    "doc": {
+     "act": "VO (EU) 655/2013",
+     "ref": "Anhang, Kriterium 1.3",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "Nutzen nur aus Mindestanforderung"
+     },
+     {
+      "text": "als Vorteil beworben: unzulässig",
+      "mark": "gap"
+     }
+    ],
+    "kicker": "Worum es geht",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "Ähnlich ist es bei der Redlichkeit. Eine Werbeaussage darf einem Produkt keine einzigartigen Eigenschaften zusprechen, wenn ähnliche Produkte dieselben Eigenschaften haben.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "Was nicht geht",
+    "left": {
+     "tag": "Mindestanforderung",
+     "title": "als Vorteil",
+     "rows": [
+      {
+       "text": "Kriterium 1.3",
+       "mark": "gap"
+      }
+     ],
+     "product": {
+      "kind": "bottle"
+     }
+    },
+    "right": {
+     "tag": "Gemeinsamkeit",
+     "title": "als einzigartig",
+     "rows": [
+      {
+       "text": "Kriterium 4.2",
+       "mark": "gap"
+      }
+     ],
+     "product": {
+      "kind": "bottle"
+     }
+    },
+    "kicker": "Unter der Lupe"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "Wie könnte das aussehen? Ein Beispiel zur Einordnung: Jede Creme in der EU muss eine Liste der Bestandteile tragen und sicher sein. Wer genau das als besonderen Pluspunkt herausstellt, verkauft eine Pflicht als Extra.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "Zur Einordnung",
+    "items": [
+     {
+      "title": "Liste der Bestandteile",
+      "sub": "Pflicht nach Artikel 19",
+      "icon": "doc"
+     },
+     {
+      "title": "sicher bei normaler Verwendung",
+      "sub": "Pflicht nach Artikel 3",
+      "icon": "shield"
+     },
+     {
+      "title": "als Pluspunkt beworben?",
+      "sub": "dann ist es eine Pflicht als Extra",
+      "icon": "check"
+     }
+    ],
+    "kicker": "Im Vergleich",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "Der Grundsatz dahinter steht in Artikel 20 der Verordnung über kosmetische Mittel: Werbung darf keine Merkmale oder Funktionen vortäuschen, die ein Produkt nicht besitzt.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Der Grundsatz",
+    "zoom": "Pflicht",
+    "flip": true,
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 20 Absatz 1"
+    },
+    "rows": [
+     {
+      "text": "keine vorgetäuschten Merkmale"
+     },
+     {
+      "text": "keine vorgetäuschten Funktionen"
+     }
+    ],
+    "kicker": "Laut Quelle",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "Für dich heißt das: Frag bei jedem Pluspunkt, ob er nicht ohnehin für alle Kosmetik gilt. Wenn ja, ist er kein Grund, genau dieses Produkt zu wählen.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "Die Prüffrage",
+    "items": [
+     {
+      "title": "Pluspunkt lesen",
+      "sub": "auf Tube oder Packung",
+      "icon": "doc"
+     },
+     {
+      "title": "gilt das für alle?",
+      "sub": "Pflicht oder Extra",
+      "icon": "check"
+     },
+     {
+      "title": "Pflicht?",
+      "sub": "dann kein echter Vorteil",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Im Alltag",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Erst prüfen, dann glauben. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Merksatz",
+    "rule": "Erst prüfen, dann glauben.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    },
+    "question": {
+     "text": "Wirbt deine Packung mit einer Pflicht?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung."
+   }
+  }
+ ]
+}

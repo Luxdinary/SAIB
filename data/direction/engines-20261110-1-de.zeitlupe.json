@@ -1,0 +1,882 @@
+{
+ "video_id": "engines-20261110-1-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Ein Arbeitsspiel dauert 100 Millisekunden",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261110-1-de, Reihe Nachgerechnet. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Wie lange dauert ein Arbeitsspiel? Bei 1200 Umdrehungen pro Minute genau 100 Millisekunden, nachgerechnet mit der MIT-Vorlesung.",
+  "companion_text": "6000 U/min ist ein gewähltes Rechenbeispiel. Zeitlupenfaktor und Millisekunden beziehen sich auf die Beispieldrehzahl 1200/min.",
+  "hashtags": [
+   "motorentechnik",
+   "viertakter",
+   "nachgerechnet",
+   "drehzahl",
+   "physik"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "MIT 2.61, Vorlesung 9",
+   "title": "MIT 2.61, Vorlesung 9 (L9)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "NASA Glenn, Viertaktmotor",
+   "title": "NASA Glenn, Viertaktmotor (N1)",
+   "url": "https://www.grc.nasa.gov/www/k-12/airplane/engopt.html",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Ansaugen, verdichten, zünden, ausstoßen.",
+   "on_screen": "Alle vier Takte in 100 ms",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Wie lange dauert ein Arbeitsspiel?",
+   "on_screen": "Ein Arbeitsspiel dauert 100 Millisekunden",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Ein Arbeitsspiel dauert 100 Millisekunden",
+   "on_screen": "Ein Arbeitsspiel dauert 100 Millisekunden",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein Arbeitsspiel dauert 100 Millisekunden",
+   "on_screen": "Ein Arbeitsspiel dauert 100 Millisekunden",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Ein Arbeitsspiel dauert 100 Millisekunden",
+   "on_screen": "Ein Arbeitsspiel dauert 100 Millisekunden",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Ansaugen, verdichten, zünden, ausstoßen. Bei zwölfhundert Umdrehungen pro Minute dauert das alles zusammen nur hundert Millisekunden.",
+   "data": {
+    "claim": "Alle vier Takte in 100 ms",
+    "claim_lines": [
+     "Alle vier Takte",
+     "in 100 ms"
+    ],
+    "claim_highlight": "100 ms",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1440
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "MIT 2.61, Vorlesung 9 · abgerufen 01.11.2026",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Ein Arbeitsspiel besteht aus vier Takten. Dafür dreht die Kurbelwelle zweimal, also um siebenhundertzwanzig Grad. Erst danach beginnt das nächste Arbeitsspiel. Die Leiste unten zeigt, wo wir gerade sind.",
+   "data": {
+    "title": "Zwei Umdrehungen",
+    "labels": [
+     "crank"
+    ],
+    "labels_at": [
+     "w:Kurbelwelle"
+    ],
+    "notes": [
+     {
+      "text": "4 Takte",
+      "at": "w:Takten",
+      "side": "l",
+      "y": 760,
+      "to": [
+       540,
+       600
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "zl_strip": true,
+    "source": "NASA Glenn, Viertaktmotor · abgerufen 01.11.2026",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_readout",
+   "spoken": "Die Fachvorlesung rechnet es vor. Bei tausend Umdrehungen pro Minute dreht die Kurbel sechs Grad pro Millisekunde. Bei zwölfhundert sind es sieben Komma zwei Grad, und siebenhundertzwanzig Grad dauern damit genau hundert Millisekunden. Das ist die Grundrechnung.",
+   "data": {
+    "title": "Grad pro Millisekunde",
+    "gauge_max": 7,
+    "gauge_value": 1.2,
+    "gauge_unit": "× 1000 U/min",
+    "gauge_at": "w:Umdrehungen",
+    "lines": [
+     {
+      "text": "1000 U/min → 6° pro ms",
+      "hl": "6°",
+      "at": "w:Kurbel"
+     },
+     {
+      "text": "1200 U/min → 7,2° pro ms",
+      "hl": "7,2°",
+      "at": "w:sind"
+     },
+     {
+      "text": "720° ÷ 7,2 °/ms = 100 ms",
+      "hl": "100 ms",
+      "at": "w:dauern"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 9 · abgerufen 01.11.2026",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_chart",
+   "spoken": "Auf die Zeitachse gelegt bekommt jeder Takt fünfundzwanzig Millisekunden. In dieser Zeit muss Luft einströmen, verdichtet werden, verbrennen und den Zylinder wieder verlassen. Ventile, Funke, Flamme: alles muss in dieses Raster passen.",
+   "data": {
+    "title": "100 ms auf der Zeitachse",
+    "kind": "custom",
+    "xlim": [
+     0,
+     100
+    ],
+    "ylim": [
+     0,
+     1.15
+    ],
+    "scheme": false,
+    "xlabel": "Zeit in ms",
+    "ylabel": "Kolbenhöhe",
+    "xticks": [
+     [
+      0,
+      "0"
+     ],
+     [
+      25,
+      "25"
+     ],
+     [
+      50,
+      "50"
+     ],
+     [
+      75,
+      "75"
+     ],
+     [
+      100,
+      "100"
+     ]
+    ],
+    "series": [
+     {
+      "label": "Kolben",
+      "pts": [
+       [
+        0,
+        1.0
+       ],
+       [
+        1,
+        0.9948
+       ],
+       [
+        2,
+        0.9795
+       ],
+       [
+        3,
+        0.9543
+       ],
+       [
+        4,
+        0.9199
+       ],
+       [
+        5,
+        0.8773
+       ],
+       [
+        6,
+        0.8274
+       ],
+       [
+        7,
+        0.7716
+       ],
+       [
+        8,
+        0.7112
+       ],
+       [
+        9,
+        0.6476
+       ],
+       [
+        10,
+        0.5822
+       ],
+       [
+        11,
+        0.5164
+       ],
+       [
+        12,
+        0.4516
+       ],
+       [
+        13,
+        0.3888
+       ],
+       [
+        14,
+        0.3291
+       ],
+       [
+        15,
+        0.2732
+       ],
+       [
+        16,
+        0.2218
+       ],
+       [
+        17,
+        0.1754
+       ],
+       [
+        18,
+        0.1342
+       ],
+       [
+        19,
+        0.0985
+       ],
+       [
+        20,
+        0.0683
+       ],
+       [
+        21,
+        0.0436
+       ],
+       [
+        22,
+        0.0245
+       ],
+       [
+        23,
+        0.0109
+       ],
+       [
+        24,
+        0.0027
+       ],
+       [
+        25,
+        0.0
+       ],
+       [
+        26,
+        0.0027
+       ],
+       [
+        27,
+        0.0109
+       ],
+       [
+        28,
+        0.0245
+       ],
+       [
+        29,
+        0.0436
+       ],
+       [
+        30,
+        0.0683
+       ],
+       [
+        31,
+        0.0985
+       ],
+       [
+        32,
+        0.1342
+       ],
+       [
+        33,
+        0.1754
+       ],
+       [
+        34,
+        0.2218
+       ],
+       [
+        35,
+        0.2732
+       ],
+       [
+        36,
+        0.3291
+       ],
+       [
+        37,
+        0.3888
+       ],
+       [
+        38,
+        0.4516
+       ],
+       [
+        39,
+        0.5164
+       ],
+       [
+        40,
+        0.5822
+       ],
+       [
+        41,
+        0.6476
+       ],
+       [
+        42,
+        0.7112
+       ],
+       [
+        43,
+        0.7716
+       ],
+       [
+        44,
+        0.8274
+       ],
+       [
+        45,
+        0.8773
+       ],
+       [
+        46,
+        0.9199
+       ],
+       [
+        47,
+        0.9543
+       ],
+       [
+        48,
+        0.9795
+       ],
+       [
+        49,
+        0.9948
+       ],
+       [
+        50,
+        1.0
+       ],
+       [
+        51,
+        0.9948
+       ],
+       [
+        52,
+        0.9795
+       ],
+       [
+        53,
+        0.9543
+       ],
+       [
+        54,
+        0.9199
+       ],
+       [
+        55,
+        0.8773
+       ],
+       [
+        56,
+        0.8274
+       ],
+       [
+        57,
+        0.7716
+       ],
+       [
+        58,
+        0.7112
+       ],
+       [
+        59,
+        0.6476
+       ],
+       [
+        60,
+        0.5822
+       ],
+       [
+        61,
+        0.5164
+       ],
+       [
+        62,
+        0.4516
+       ],
+       [
+        63,
+        0.3888
+       ],
+       [
+        64,
+        0.3291
+       ],
+       [
+        65,
+        0.2732
+       ],
+       [
+        66,
+        0.2218
+       ],
+       [
+        67,
+        0.1754
+       ],
+       [
+        68,
+        0.1342
+       ],
+       [
+        69,
+        0.0985
+       ],
+       [
+        70,
+        0.0683
+       ],
+       [
+        71,
+        0.0436
+       ],
+       [
+        72,
+        0.0245
+       ],
+       [
+        73,
+        0.0109
+       ],
+       [
+        74,
+        0.0027
+       ],
+       [
+        75,
+        0.0
+       ],
+       [
+        76,
+        0.0027
+       ],
+       [
+        77,
+        0.0109
+       ],
+       [
+        78,
+        0.0245
+       ],
+       [
+        79,
+        0.0436
+       ],
+       [
+        80,
+        0.0683
+       ],
+       [
+        81,
+        0.0985
+       ],
+       [
+        82,
+        0.1342
+       ],
+       [
+        83,
+        0.1754
+       ],
+       [
+        84,
+        0.2218
+       ],
+       [
+        85,
+        0.2732
+       ],
+       [
+        86,
+        0.3291
+       ],
+       [
+        87,
+        0.3888
+       ],
+       [
+        88,
+        0.4516
+       ],
+       [
+        89,
+        0.5164
+       ],
+       [
+        90,
+        0.5822
+       ],
+       [
+        91,
+        0.6476
+       ],
+       [
+        92,
+        0.7112
+       ],
+       [
+        93,
+        0.7716
+       ],
+       [
+        94,
+        0.8274
+       ],
+       [
+        95,
+        0.8773
+       ],
+       [
+        96,
+        0.9199
+       ],
+       [
+        97,
+        0.9543
+       ],
+       [
+        98,
+        0.9795
+       ],
+       [
+        99,
+        0.9948
+       ],
+       [
+        100,
+        1.0
+       ]
+      ],
+      "color": "accent"
+     }
+    ],
+    "series_at": [
+     "w:Zeitachse"
+    ],
+    "legend": false,
+    "draw_seconds": 1.6,
+    "bands": [
+     {
+      "x0": 0,
+      "x1": 25,
+      "label": "Ansaugen",
+      "at": "w:Luft",
+      "row": 0
+     },
+     {
+      "x0": 25,
+      "x1": 50,
+      "label": "Verdichten",
+      "at": "w:verdichtet",
+      "row": 1
+     },
+     {
+      "x0": 50,
+      "x1": 75,
+      "label": "Arbeiten",
+      "at": "w:verbrennen",
+      "color": "fire",
+      "row": 0
+     },
+     {
+      "x0": 75,
+      "x1": 100,
+      "label": "Ausstoßen",
+      "at": "w:verlassen",
+      "color": "exhaust",
+      "row": 1
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 9 · abgerufen 01.11.2026",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Und bei mehr Drehzahl wird es noch knapper. Gerechnet mit denselben Zahlen bleiben bei sechstausend Umdrehungen pro Minute für ein ganzes Arbeitsspiel nur zwanzig Millisekunden. Das ist fünfmal schneller als bei zwölfhundert. Bei dieser Drehzahl öffnet jedes Ventil fünfzig Mal pro Sekunde.",
+   "data": {
+    "title": "Fünfmal schneller",
+    "notes": [
+     {
+      "text": "nur 20 ms",
+      "at": "w:Millisekunden",
+      "side": "l",
+      "y": 880,
+      "to": [
+       540,
+       700
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      2160
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 9 · abgerufen 01.11.2026",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Zwei Umdrehungen, vier Takte, hundert Millisekunden. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "2 Umdrehungen",
+      "at": "w:Umdrehungen"
+     },
+     {
+      "text": "4 Takte",
+      "at": "w:Takte"
+     },
+     {
+      "text": "100 ms",
+      "at": "w:Millisekunden"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    },
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

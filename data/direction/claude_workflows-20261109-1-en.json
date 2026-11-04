@@ -1,0 +1,606 @@
+{
+  "video_id": "claude_workflows-20261109-1-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Myth: the longer your CLAUDE.md, the better",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent A: englische Fassung von claude_workflows-20261109-1-de, sprachlich angepasst (eigene Hook-Formulierung), gleiche Quellen und Szenen.",
+  "hook": {
+    "id": "H2",
+    "note": "Myth format: the claim as a question, the docs say the opposite (memory: longer files reduce adherence)."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Do you put everything in CLAUDE.md so Claude never forgets?",
+      "on_screen": "Everything in CLAUDE.md?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor with a growing CLAUDE.md",
+      "why": {
+        "curiosity": "answer feels obvious"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "A longer CLAUDE.md means Claude follows it better? The docs say the opposite.",
+      "on_screen": "Longer means better?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Editor with a long CLAUDE.md, marker on the release procedure, question",
+      "why": {
+        "truth": "memory: Longer files consume more context and reduce adherence",
+        "curiosity": "goes against intuition"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Every line in your CLAUDE.md takes a little of Claude's attention on every task.",
+      "on_screen": "Every line costs",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "lines light up one by one",
+      "why": {
+        "visual": "little action"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Your most important rule sits on line three hundred. It might get lost right there.",
+      "on_screen": "A rule on line 300?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "scroll down to a deep line",
+      "why": {
+        "truth": "best-practices: the line gets lost when the file has grown long; line number is an example"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Here's how to trim a bloated CLAUDE.md in a few steps.",
+      "on_screen": "Trim your CLAUDE.md",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "steps /doctor, .claude/rules/, skill",
+      "why": {
+        "curiosity": "no tension"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Best practices for Claude Code: Keep CLAUDE.md short (every line takes a little of Claude's attention on every task; what belongs in it); Put team procedures in skills; /doctor, /doctor prompt-audit; .claude/rules/ with paths",
+      "url": "https://code.claude.com/docs/en/best-practices",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, best practices"
+    },
+    {
+      "id": "S2",
+      "title": "How Claude remembers your project: Write effective instructions (target under 200 lines; longer files consume more context and reduce adherence); My CLAUDE.md is too large (/doctor proposes trims)",
+      "url": "https://code.claude.com/docs/en/memory",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, memory"
+    }
+  ],
+  "unverified": [
+    "At what length Claude starts missing rules in practice: not documented; the docs only give the under-200-lines target and say longer files reduce adherence.",
+    "How /doctor displays its trim suggestions in the terminal: not checked, not shown in the video.",
+    "The CLAUDE.md lines and the release procedure in the hook are example values (example chip)."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "CLAUDE.md",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "CLAUDE.md: growing",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Target: under 200 lines",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "Loads: every session",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Content: essentials only",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Procedures: in skills",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Trim: /doctor",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "CLAUDE.md: short",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Is a longer CLAUDE.md better? Not according to the Claude Code docs: aim for under 200 lines per file, because longer files consume more context and reduce adherence. Keep what Claude can't work out from the code; move procedures into skills and folder-specific rules into .claude/rules/.",
+    "companion_text": "More Claude workflows, step by step: follow Promptwerk. Based on the Claude Code docs (Best practices, Memory), retrieved 2026-11-01. The editor and terminal are an animation, not a screen recording. Limit: a short CLAUDE.md is still context; the docs say there's no guarantee Claude follows it. Rules with zero exceptions belong in hooks or deny rules.",
+    "hashtags": [
+      "claudecode",
+      "claudemd",
+      "aiworkflow",
+      "coding",
+      "developers"
+    ],
+    "short_title": "Mythos lange CLAUDE.md"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "A longer CLAUDE.md means Claude follows it better? The docs say the opposite.",
+      "data": {
+        "question": "Longer means better?",
+        "chip": "one more line?",
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          }
+        ],
+        "file": "CLAUDE.md",
+        "lines": [
+          [
+            [
+              "com",
+              "# Project rules"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Tests: npm test"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Folder layout explained …"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "kw",
+              "Release"
+            ],
+            [
+              "",
+              " in 14 steps:"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "",
+              "1. Bump the version …"
+            ]
+          ]
+        ],
+        "focus_line": 3,
+        "zoom": 1.08,
+        "mark_word": "longer",
+        "env_word": "CLAUDE",
+        "click_word": "follows",
+        "question_word": "better",
+        "chip_word": "opposite"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:longer"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "The memory page in the Claude Code docs is specific: target under two hundred lines per file. Longer files eat more context, and Claude follows them less reliably.",
+      "data": {
+        "kicker": "Claude Code Docs · Memory",
+        "page_title": "How Claude remembers your project",
+        "quotes": [
+          "target under 200 lines per CLAUDE.md file",
+          "Longer files consume more context and reduce adherence."
+        ],
+        "translation_label": "In short",
+        "translation": "Longer files, weaker adherence.",
+        "page_word": "memory",
+        "quote1_word": "hundred",
+        "quote2_word": "Longer",
+        "translation_word": "reliably"
+      },
+      "overlay": {
+        "title": "Short beats long",
+        "marker_at": "w:target",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Here's why: Claude Code loads CLAUDE.md into every session. So every line takes a little of Claude's attention on every task, relevant or not. Splitting it into imports doesn't help either: imported files load right along with it.",
+      "data": {
+        "headline": "",
+        "gate": 1,
+        "chip": "every line counts",
+        "nodes": [
+          {
+            "label": "Session starts"
+          },
+          {
+            "label": "CLAUDE.md",
+            "hook": true
+          },
+          {
+            "label": "Task: bug fix"
+          },
+          {
+            "label": "Task: tests"
+          },
+          {
+            "label": "Task: docs"
+          }
+        ],
+        "travel_word": "every",
+        "travel_end_word": "relevant",
+        "gate_word": "attention",
+        "shell_chip": "loads in full",
+        "shell_word": "loads"
+      },
+      "overlay": {
+        "title": "Every line, every task",
+        "marker_at": "w:why",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Keep only what Claude can't work out from the code itself: the exact test and typecheck commands, misleading spots, decisions that live outside the repo, and anything you've corrected twice.",
+      "data": {
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          }
+        ],
+        "lines": [
+          [
+            [
+              "com",
+              "# Commands"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "One test: "
+            ],
+            [
+              "str",
+              "pnpm vitest run <file>"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Typecheck: "
+            ],
+            [
+              "str",
+              "pnpm tsc --noEmit"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# Conventions"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Use the helpers in src/lib/errors.ts"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "src/legacy/ is live, don't copy it"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# Gotchas"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Integration tests need DATABASE_URL"
+            ]
+          ]
+        ],
+        "focus_line": 5,
+        "pre_line": 1,
+        "line_h": 54,
+        "zoom": 1.08,
+        "callout": "not in the code",
+        "callout_num": "1",
+        "typed_word": "code",
+        "pre_word": "test",
+        "mark_word": "misleading",
+        "click_word": "decisions",
+        "callout_word": "twice"
+      },
+      "overlay": {
+        "title": "What stays in",
+        "example": true,
+        "marker_at": "w:Keep",
+        "dim_at": "w:decisions",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "The takeaway: more text doesn't mean more effect. A long procedure, like your release, belongs in a skill. Claude only reads all of it when a task actually calls for it.",
+      "data": {
+        "top": {
+          "title": "CLAUDE.md · long",
+          "verdict": "diluted",
+          "rows": [
+            "release steps inside",
+            "loads on every task"
+          ]
+        },
+        "bottom": {
+          "title": "CLAUDE.md · short",
+          "verdict": "works",
+          "rows": [
+            "essentials only",
+            "procedure in a skill"
+          ]
+        },
+        "top_word": "more",
+        "bottom_word": "procedure"
+      },
+      "overlay": {
+        "title": "Less does more",
+        "marker": "auslegung",
+        "marker_at": "w:takeaway",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "To trim it down: slash doctor suggests cuts, and prompt-audit flags outdated or conflicting instructions. Rules for one folder go in .claude/rules, procedures go in a skill.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Get trim suggestions",
+            "code": "/doctor",
+            "at_word": "doctor"
+          },
+          {
+            "title": "Find conflicts",
+            "code": "/doctor prompt-audit",
+            "at_word": "prompt"
+          },
+          {
+            "title": "Move folder rules out",
+            "code": ".claude/rules/",
+            "at_word": "Rules"
+          },
+          {
+            "title": "Procedures as a skill",
+            "code": ".claude/skills/<name>/SKILL.md",
+            "at_word": "procedures"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "Trim it in four steps",
+        "marker": "fakt",
+        "marker_at": "w:trim",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Short and specific beats long and complete. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "CLAUDE.md: short",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/doctor"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Suggestion: cut the folder layout"
+          }
+        ],
+        "statement": "Short and specific beats long and complete.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_word": "Short",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,629 @@
+{
+  "video_id": "engines-20261109-2-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "Why each cylinder fires only every second turn",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261109-2-en, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Why does a cylinder in a four-stroke engine fire only every second turn? Four strokes, two crankshaft turns, one camshaft turn: the working cycle in a cutaway model.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.\nSchematic model: valve timing and ignition timing are typical textbook values, not a specific engine. Tooth counts are example values.",
+    "hashtags": [
+      "enginetech",
+      "fourstroke",
+      "camshaft",
+      "crankshaft",
+      "howitworks"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "NASA Glenn, four-stroke engine",
+      "title": "NASA Glenn, Viertaktmotor (Q1_S1)",
+      "url": "https://www.grc.nasa.gov/www/k-12/airplane/engopt.html",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "label": "MIT 2.61, lecture 8",
+      "title": "MIT 2.61, Vorlesung 8 (L8)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S3",
+      "label": "MIT 2.61, lecture 9",
+      "title": "MIT 2.61, Vorlesung 9 (L9)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S4",
+      "label": "MIT 2.61, lecture 2",
+      "title": "MIT 2.61, Vorlesung 2 (L2)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/cf3aaf55ae71710c9bfd3056515b9b67_MIT2_61S17_lec2.pdf",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S5",
+      "label": "Schaeffler, timing drive",
+      "title": "Schaeffler, Steuertrieb (Q1_S5)",
+      "url": "https://qualitaet-ist-mehrwert.de/teile-news/kfz/steuertrieb-der-taktgeber-im-motor/",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Valve timing (IVO 10 BTDC, IVC 40 ABDC, EVO 40 BBDC, EVC 10 ATDC) are typical values inside the MIT 2.61 ranges; spoken only as opens/closes.",
+    "Spark 30 BTDC is the MBT example from MIT 2.61 lecture 9; spoken only as just before top dead centre.",
+    "Tooth counts 20 and 40 are example values; only the 2:1 ratio is sourced."
+  ],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "In a four-stroke engine, each cylinder fires only once every two revolutions.",
+      "on_screen": "Firing only every second turn",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Why does the camshaft turn at half speed?",
+      "on_screen": "Why each cylinder fires only every second turn",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Why each cylinder fires only every second turn",
+      "on_screen": "Why each cylinder fires only every second turn",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Why each cylinder fires only every second turn",
+      "on_screen": "Why each cylinder fires only every second turn",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Why each cylinder fires only every second turn",
+      "on_screen": "Why each cylinder fires only every second turn",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "In a four-stroke engine, each cylinder fires only once every two revolutions.",
+      "data": {
+        "claim": "Firing only every second turn",
+        "claim_lines": [
+          "Firing only every",
+          "second turn"
+        ],
+        "claim_highlight": "second",
+        "claim_at": 0.05,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1440
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:revolutions",
+        "source": false
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_exploded",
+      "spoken": "Here is why: one working cycle takes four strokes of the piston. And each stroke is half a turn of the crankshaft. Down, up, down, up: four strokes, two full turns.",
+      "data": {
+        "title": "4 strokes = 1 cycle",
+        "assemble_at": "w:And",
+        "dims_at": "w:stroke#2",
+        "count_at": "w:strokes",
+        "fade_in": true,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            "w:each",
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:cycle",
+        "kicker": "2 · THE REASON",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "spoken": "Stroke one, intake: the intake valve opens, the piston moves down, and fresh air flows in. The blue fill shows the fresh charge.",
+      "data": {
+        "title": "Intake",
+        "labels": [
+          "vin",
+          "piston"
+        ],
+        "labels_at": [
+          "w:intake#2",
+          "w:piston"
+        ],
+        "notes": [
+          {
+            "text": "Fresh air",
+            "at": "w:air",
+            "side": "l",
+            "y": 640,
+            "to": [
+              280,
+              425
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            180
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:intake#2",
+        "kicker": "3 · STROKE 1 OF 4",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "spoken": "Stroke two, compression: the intake valve closes, and the piston moves up and squeezes the charge.",
+      "data": {
+        "title": "Compression",
+        "labels": [
+          "chamber"
+        ],
+        "labels_at": [
+          "w:charge"
+        ],
+        "notes": [
+          {
+            "text": "Intake closed",
+            "at": "w:closes",
+            "side": "l",
+            "y": 760,
+            "to": [
+              452,
+              432
+            ]
+          },
+          {
+            "text": "Pressure rises",
+            "at": "w:squeezes",
+            "side": "r",
+            "y": 900,
+            "to": [
+              540,
+              560
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            180
+          ],
+          [
+            "w:closes",
+            220
+          ],
+          [
+            1,
+            325
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:closes",
+        "kicker": "4 · STROKE 2 OF 4"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "spoken": "Stroke three, power: just before top dead centre, the spark plug fires. The pressure drives the piston down. Only this stroke delivers work. This is the only moment when the gas pushes on the piston.",
+      "data": {
+        "title": "Power",
+        "labels": [
+          {
+            "key": "plug",
+            "side": "l",
+            "y": 640
+          }
+        ],
+        "labels_at": [
+          "w:plug"
+        ],
+        "stroke_dims": true,
+        "dims_at": "w:centre",
+        "notes": [
+          {
+            "text": "Delivers work",
+            "at": "w:delivers",
+            "side": "l",
+            "y": 880,
+            "to": [
+              480,
+              640
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            325
+          ],
+          [
+            "w:fires",
+            330
+          ],
+          [
+            1,
+            490
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:centre",
+        "kicker": "5 · STROKE 3 OF 4"
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "spoken": "Stroke four, exhaust: just before bottom dead centre, the exhaust valve opens. The piston pushes the exhaust gas out. Then the cycle starts again at the top.",
+      "data": {
+        "title": "Exhaust",
+        "labels": [
+          "vex"
+        ],
+        "labels_at": [
+          "w:exhaust#2"
+        ],
+        "notes": [
+          {
+            "text": "Exhaust gas",
+            "at": "w:exhaust#3",
+            "side": "r",
+            "y": 780,
+            "color": "exhaust",
+            "to": [
+              850,
+              425
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            490
+          ],
+          [
+            "w:opens",
+            500
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:opens",
+        "kicker": "6 · STROKE 4 OF 4"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b7",
+      "function": "demonstration",
+      "scene_type": "rv_drive",
+      "spoken": "So each valve opens only once in two revolutions. That is why the crankshaft drives the camshaft through a belt or chain, at half speed. And that is why the camshaft gear has twice as many teeth. The camshaft makes one turn while the crankshaft makes two.",
+      "data": {
+        "title": "Timing drive 2 : 1",
+        "teeth_crank": 20,
+        "teeth_cam": 40,
+        "note": "",
+        "note_at": "w:twice",
+        "half_at": "w:half",
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:drives",
+        "kicker": "7 · TIMING DRIVE",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "id": "b8",
+      "function": "insight",
+      "scene_type": "rv_readout",
+      "spoken": "Do the maths: at three thousand revolutions per minute, each cylinder fires fifteen hundred times a minute. That is twenty-five ignitions per second.",
+      "data": {
+        "title": "Worked out",
+        "gauge_max": 7,
+        "gauge_value": 3,
+        "gauge_unit": "× 1000 rpm",
+        "gauge_at": "w:revolutions",
+        "lines": [
+          {
+            "text": "3000 rpm ÷ 2 = 1500 ignitions/min",
+            "hl": "1500",
+            "at": "w:times"
+          },
+          {
+            "text": "1500 ÷ 60 s = 25 ignitions/s",
+            "hl": "25",
+            "at": "w:ignitions"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:revolutions",
+        "kicker": "8 · THE CORE",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "id": "b9",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Four strokes, two turns, one ignition. Understand engines: follow Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "4 strokes",
+            "at": "w:strokes"
+          },
+          {
+            "text": "2 turns",
+            "at": "w:turns"
+          },
+          {
+            "text": "1 ignition",
+            "at": "w:ignition"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            360
+          ],
+          [
+            1,
+            1440
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

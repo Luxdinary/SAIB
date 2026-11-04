@@ -1,0 +1,114 @@
+id: ai_security-20261113-2-en
+version: F2
+title: "A shared AI chat is a public link"
+short: "Geteilter KI-Chat EN"
+reihe: "Vor dem Upload"
+note: "F2 EN (localised from the DE spec), series Before the upload. Example case staged: firm, chat content, times and forwarding are invented; rules on links, expiry, copies and managing links from S1 and S2, re-read 02.11.2026 (the OpenAI help page has since been revised). The old plan ai_security-20261113-2-en.json stays unchanged."
+description: "You want to share an AI chat with customer details by link, just with the owner. What do you do? A staged case with three answers and what OpenAI and Anthropic themselves say about shared links."
+hashtags: [chatgpt, claude, aiatwork, privacy, beforetheupload]
+sources:
+  - {id: S1, url: "https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq", title: "OpenAI Help Center: Sharing conversations and scheduled tasks in ChatGPT", checked_at: "2026-11-02", label: "OpenAI, shared links"}
+  - {id: S2, url: "https://privacy.claude.com/en/articles/10593882-share-and-unshare-chats", title: "Anthropic Privacy Center: Share and unshare chats", checked_at: "2026-11-02", label: "Anthropic, sharing chats"}
+unverified:
+  - "Whether a link was forwarded cannot be checked: not claimed."
+  - "The sequence of the example case (payment reminders, the owner, forwarding to the accountant, times) is invented and marked as an example."
+  - "The old plan's line that shared pages are not intended for search engines is no longer on the OpenAI page on 02.11.2026: not used."
+  - "Newly checked 02.11.2026: OpenAI advises against putting financial details or other sensitive personal information in shared content; deleting a link does not remove copies others already saved; Claude: Settings > Privacy > Shared chats (Free, Pro, Max, Ultra)."
+pick: demonstration
+hooks:
+  - {type: question, spoken: "You share an AI chat by link. Do you know who else can read it?", screen: "Chat shared. Who else can read it?"}
+  - {type: misconception, spoken: "The link only goes to one person, so it stays private? Not according to OpenAI.", screen: "One recipient = private?", src: [S1]}
+  - {type: surprising_fact, spoken: "Shared ChatGPT links have no expiry date you can set.", screen: "No expiry date for the link", src: [S1]}
+  - {type: concrete_risk, spoken: "A shared chat with customer details is readable by anyone who has the link.", screen: "Customer details in a chat link?", src: [S1, S2]}
+  - {type: demonstration, spoken: "Wednesday, 2:05 p.m. You're about to share a chat full of customer details.", screen: "WED 14:05 · Share a chat with customer data?", visual: "clock, the chat window arrives as a paper card, the line with customer details is marked"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Wednesday, 2:05 p.m. You've drafted payment reminders with ChatGPT, with names, addresses and amounts. For the owner, you click Share."
+    d:
+      kicker: "Example case · staged"
+      time: "WED 14:05"
+      place: "Office of a decorating firm"
+      mail_at: "@ChatGPT"
+      mail: {from: "ChatGPT · personal account", addr: "Chat: payment reminders", time: "14:05", subject: "Share link", lines: ["Reminders to your customers,", "with names, addresses, amounts.", "Create and copy link?"]}
+      highlight: {line: 1, label: "customer data", at: "@names"}
+  - f: problem
+    t: sc_inspect
+    s: "Recipient: only the owner. The link: a long random string. The account: your personal one. Looks private. But OpenAI says that on personal accounts, anyone with the link can view the chat."
+    src: [S1]
+    d:
+      kicker: "What you check"
+      headline: "Just for the owner?"
+      rows:
+        - {label: "Recipient", value: "only the owner", verdict: "trusted", at: "@Recipient"}
+        - {label: "Link", value: "long random string", verdict: "looks private", at: "@link"}
+        - {label: "Account", value: "your personal one", verdict: "as always", at: "@account"}
+      finding: {text: "Looks private.", at: "@Looks"}
+      fact: {kind: fakt, text: "Anyone who has the link can view the shared chat.", source: "OpenAI · shared links help page", at: "@OpenAI"}
+  - f: problem
+    t: sc_choice
+    s: "What do you do? A: Send the link, it's only going to her. B: Send the link and delete it later. C: Take the customer details out first, then share. Remember your choice."
+    src: [S1]
+    d:
+      question: "What do you do?"
+      options:
+        - {key: A, text: "Send it, it's only going to her", at: "@only"}
+        - {key: B, text: "Send it, delete the link later", at: "@delete"}
+        - {key: C, text: "Remove customer details, then share", at: "@Take"}
+      think: {seconds: 2.6, at: "@Remember"}
+      hint: "Remember your choice."
+  - f: demonstration
+    t: sc_timeline
+    s: "Let's play out B. The owner forwards the link to your accountant. You can't set an expiry date. And when you delete it later: anyone who already continued the chat keeps a copy."
+    src: [S1]
+    d:
+      kicker: "Choice B, played out"
+      tag: "Example"
+      headline: "Share now, delete later"
+      items:
+        - {time: "WED 14:06", text: "Link goes to the owner", at: 0.6}
+        - {time: "WED 14:20", text: "Forwarded to the accountant", tone: amber, at: "@forwards"}
+        - {time: "Weeks later", text: "No expiry date", tone: amber, at: "@expiry"}
+        - {time: "After deleting", text: "Continued copy stays", tone: red, at: "@anyone"}
+      source: {kind: fakt, label: "OpenAI · expiry and copies", at: 1.0}
+  - f: insight
+    t: sc_step
+    s: "The right answer is C. OpenAI itself says: don't put financial details or other sensitive personal information in shared content. A and B don't change what's inside: the link shows everything, and a copy can stay."
+    src: [S1]
+    d:
+      mode: rule
+      kicker: "The one step"
+      card: {letter: C, title: "No customer data in links", sub: "take it out first, then share", at: 0.2}
+      strikes:
+        - {text: "A: It's only going to her", note: "anyone with the link", at: "@change"}
+        - {text: "B: Delete it later", note: "copies stay", at: "@copy"}
+      sources:
+        - {kind: fakt, label: "OpenAI · no sensitive data in shares"}
+        - {kind: fakt, label: "OpenAI · links and copies"}
+      sources_at: "@OpenAI"
+  - f: insight
+    t: sc_step
+    s: "Already shared? Then tidy up: in ChatGPT under Data controls, Shared links; in Claude under Privacy, Shared chats. Delete what nobody needs."
+    src: [S1, S2]
+    d:
+      mode: fallback
+      kicker: "Already shared?"
+      card: {letter: "!", title: "Tidy up your links now", sub: "delete what nobody needs any more", at: 0.2}
+      steps:
+        - {text: "ChatGPT: Data controls, Links", at: "@ChatGPT"}
+        - {text: "Claude: Privacy, Shared chats", at: "@Claude"}
+      sources:
+        - {kind: fakt, label: "OpenAI · Anthropic help pages"}
+      sources_at: "@tidy"
+  - f: close
+    t: sc_close
+    s: "Customer details don't belong in a shared link. What would you have picked? Tell me in the comments."
+    d:
+      kicker: "Series · Before the upload"
+      rule: "No customer data in chat links."
+      rule_at: 0.3
+      question: {text: "What would you have picked?", at: "@What"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Sourced. Dated. Ready to show."
+      disclaimer: "Source-based. No legal advice."

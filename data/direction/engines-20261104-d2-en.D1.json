@@ -1,0 +1,631 @@
+{
+  "video_id": "engines-20261104-d2-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "AC Power: 100 Direction Changes per Second",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 488,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "format": "zeitlupe",
+    "explainer": false,
+    "short_title": "AC Power 100 Changes",
+    "description": "The power grid in continental Europe runs at an average of 50 hertz. That works out to 100 changes of direction per second. The video shows them as a slow-motion model. Electrical work belongs in the hands of a qualified electrician.",
+    "companion_text": "The sine curve is a 50 hertz model, not a measurement. The source only confirms the 50 hertz average; the number of direction changes is calculated.",
+    "hashtags": [
+      "tech",
+      "electricity",
+      "alternatingcurrent",
+      "gridfrequency",
+      "calculated"
+    ],
+    "sound": {
+      "palette": "tech",
+      "mood": "tech",
+      "levels": {
+        "sfx_peak_db": -18
+      }
+    }
+  },
+  "assets": {
+    "folder": "assets/higgsfield/library",
+    "hero": {
+      "b1": "C:\\Automation\\faceless-network\\brands\\engines\\assets\\higgsfield\\daily\\rl_real_plug_socket_d30.mp4",
+      "b5": "C:\\Automation\\faceless-network\\brands\\engines\\assets\\higgsfield\\daily\\rl_real_pcb_relays_d30.mp4",
+      "b7": "C:\\Automation\\faceless-network\\brands\\engines\\assets\\higgsfield\\daily\\rl_real_plug_socket_d30.mp4"
+    },
+    "scrim": 0.2
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "label": "ENTSO-E 2018, grid frequency",
+      "title": "ENTSO-E 2018: System frequency of the continental European grid, average 50 Hz",
+      "url": "https://www.entsoe.eu/news/2018/11/12/frequency-deviations-in-continental-europe-discussions-ongoing-to-find-a-solution/",
+      "checked_at": "2026-11-04"
+    }
+  ],
+  "unverified": [
+    "The 100 direction changes per second are calculated (two per cycle at 50 Hz), not taken from the source; the source only confirms 50 Hz as an average."
+  ],
+  "notes": "English version from the same scenes as engines-20261104-d2-de; text localised, not rewritten.",
+  "hook": {
+    "id": "H3",
+    "note": "Verifiable fact with a clear number, can be shown on screen as a curve and in slow motion."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How often does the current in your wall socket change direction?",
+      "on_screen": "How often does current change direction?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "Photo of a wall socket with the question as an overlay.",
+      "why": {
+        "clarity": "Clear question with an unambiguous answer.",
+        "curiosity": "No surprise of its own."
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Current from a wall socket doesn't flow steadily in one direction.",
+      "on_screen": "Current doesn't flow in just one direction",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Wall socket, then a sine curve with a zero line.",
+      "why": {
+        "truth": "Clears up the misconception; the source only confirms the frequency.",
+        "visual": "The curve shows the reversal."
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "At 50 hertz, the current changes direction 100 times per second.",
+      "on_screen": "100 direction changes per second",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Wall socket as a photo, then the curve with its zero crossings.",
+      "why": {
+        "truth": "50 hertz confirmed, 100 changes calculated.",
+        "curiosity": "A clear number that surprises."
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "In a wall socket the current keeps changing direction; electrical work belongs in the hands of a qualified electrician.",
+      "on_screen": "Electrics: call a pro, don't try it yourself",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Wall socket with a safety notice.",
+      "why": {
+        "relevance": "Everyday relevance.",
+        "curiosity": "Little curiosity."
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "We slow the change down until you can see it.",
+      "on_screen": "The change in slow motion",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "A dot slowly travels along the sine curve.",
+      "why": {
+        "visual": "Shows the format.",
+        "curiosity": "Names no number."
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "zt_photo",
+      "spoken": "At 50 hertz, the current changes direction 100 times per second. You don't notice it. We slow the change down until you can see it.",
+      "data": {
+        "claim_lines": [
+          "50 hertz,",
+          "100 changes per second"
+        ],
+        "claim_highlight": "100",
+        "claim_at": 0.02,
+        "source": "ENTSO-E 2018 · retrieved 04.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {}
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "zt_chart",
+      "spoken": "First, the number. The grid in continental Europe runs at an average of 50 hertz. One hertz is one oscillation per second. At 50 hertz, that's 50 full oscillations every second. The curve is a model, not a measurement.",
+      "data": {
+        "x": {
+          "min": 0,
+          "max": 40,
+          "label": "Time in ms",
+          "ticks": [
+            [
+              0,
+              "0"
+            ],
+            [
+              10,
+              "10"
+            ],
+            [
+              20,
+              "20"
+            ],
+            [
+              30,
+              "30"
+            ],
+            [
+              40,
+              "40"
+            ]
+          ]
+        },
+        "y": {
+          "min": -1,
+          "max": 1,
+          "label": "Voltage, normalised",
+          "ticks": [
+            [
+              -1,
+              "-1"
+            ],
+            [
+              0,
+              "0"
+            ],
+            [
+              1,
+              "1"
+            ]
+          ]
+        },
+        "series": [
+          {
+            "formula": "sin(2*pi*50*x/1000)",
+            "x0": 0,
+            "x1": 40,
+            "text": "Model, 50 Hz",
+            "from": "w:First",
+            "to": "w:measurement"
+          }
+        ],
+        "points": [
+          {
+            "x": 5,
+            "y": 1,
+            "text": "Peak up",
+            "at": "w:average",
+            "side": "right",
+            "up": true
+          },
+          {
+            "x": 15,
+            "y": -1,
+            "text": "Peak down",
+            "at": "w:full",
+            "side": "right"
+          }
+        ],
+        "bands": [
+          {
+            "x0": 0,
+            "x1": 20,
+            "text": "one oscillation",
+            "at": "w:oscillation#2"
+          }
+        ],
+        "rules": [
+          {
+            "y": 0,
+            "text": "Zero line"
+          }
+        ],
+        "photo": false,
+        "mode": "stand",
+        "source": "ENTSO-E 2018 · retrieved 04.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {}
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "zt_curve",
+      "spoken": "Each oscillation has one half going up and one going down. In one half the current flows in one direction, in the other it flows back. In between lies a zero crossing. Each oscillation has two changes, which makes 100 per second. Calculated, not from the source.",
+      "data": {
+        "zones": [],
+        "points": [
+          {
+            "m": 2,
+            "t": 0.6,
+            "text": "Upper half",
+            "side": "right",
+            "at": "w:up"
+          },
+          {
+            "m": 4,
+            "t": 0.3,
+            "text": "Lower half",
+            "side": "right",
+            "at": "w:down"
+          },
+          {
+            "m": 8,
+            "t": 0.15,
+            "text": "Zero crossing",
+            "side": "left",
+            "at": "w:crossing"
+          }
+        ],
+        "curve": {
+          "knots": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              0.4
+            ],
+            [
+              10,
+              0.1
+            ]
+          ],
+          "from": "w:Each",
+          "to": "w:changes",
+          "text": "schematic"
+        },
+        "source": "ENTSO-E 2018 · retrieved 04.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {}
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "zt_chart",
+      "spoken": "Now the model runs in slow motion. The dot rises, turns around and crosses the zero line. That's where the direction changes. Then it moves down, crosses the line again, and the next change follows. The changes come at equal intervals.",
+      "data": {
+        "x": {
+          "min": 0,
+          "max": 40,
+          "label": "Time in ms",
+          "ticks": [
+            [
+              0,
+              "0"
+            ],
+            [
+              10,
+              "10"
+            ],
+            [
+              20,
+              "20"
+            ],
+            [
+              30,
+              "30"
+            ],
+            [
+              40,
+              "40"
+            ]
+          ]
+        },
+        "y": {
+          "min": -1,
+          "max": 1,
+          "label": "Voltage, normalised",
+          "ticks": [
+            [
+              -1,
+              "-1"
+            ],
+            [
+              0,
+              "0"
+            ],
+            [
+              1,
+              "1"
+            ]
+          ]
+        },
+        "series": [
+          {
+            "formula": "sin(2*pi*50*x/1000)",
+            "x0": 0,
+            "x1": 40,
+            "text": "Model, slow motion",
+            "from": "w:Now",
+            "to": "w:intervals"
+          }
+        ],
+        "points": [
+          {
+            "x": 10,
+            "y": 0,
+            "text": "Change",
+            "at": "w:That's",
+            "hot": true,
+            "side": "right",
+            "up": true
+          },
+          {
+            "x": 20,
+            "y": 0,
+            "text": "Change",
+            "at": "w:crosses#2",
+            "hot": true,
+            "side": "right",
+            "up": true
+          },
+          {
+            "x": 30,
+            "y": 0,
+            "text": "Change",
+            "at": "w:next",
+            "hot": true,
+            "side": "right",
+            "up": true
+          }
+        ],
+        "bands": [
+          {
+            "x0": 0,
+            "x1": 10,
+            "text": "Current rising",
+            "at": "w:rises"
+          }
+        ],
+        "rules": [
+          {
+            "y": 0,
+            "text": "Zero line"
+          }
+        ],
+        "photo": false,
+        "mode": "stand",
+        "source": "ENTSO-E 2018 · retrieved 04.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {}
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "zt_photo",
+      "spoken": "The grid frequency drifts at times. That's why the source gives 50 hertz as an average. The calculation holds for exactly this value.",
+      "data": {
+        "claim_lines": [
+          "Average",
+          "50 hertz"
+        ],
+        "claim_highlight": "Average",
+        "claim_at": 0.3,
+        "note": {
+          "text": "Average, not an instant value",
+          "at": "w:source"
+        },
+        "source": "ENTSO-E 2018 · retrieved 04.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {}
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "zt_chart",
+      "spoken": "A device plugged into the socket goes through these changes constantly. Electrical work belongs in the hands of a qualified electrician.",
+      "data": {
+        "x": {
+          "min": 0,
+          "max": 40,
+          "label": "Time in ms",
+          "ticks": [
+            [
+              0,
+              "0"
+            ],
+            [
+              10,
+              "10"
+            ],
+            [
+              20,
+              "20"
+            ],
+            [
+              30,
+              "30"
+            ],
+            [
+              40,
+              "40"
+            ]
+          ]
+        },
+        "y": {
+          "min": -1,
+          "max": 1,
+          "label": "Voltage, normalised",
+          "ticks": [
+            [
+              -1,
+              "-1"
+            ],
+            [
+              0,
+              "0"
+            ],
+            [
+              1,
+              "1"
+            ]
+          ]
+        },
+        "series": [
+          {
+            "formula": "sin(2*pi*50*x/1000)",
+            "x0": 0,
+            "x1": 40,
+            "text": "Model, 50 Hz",
+            "from": "w:A",
+            "to": "w:electrician"
+          }
+        ],
+        "points": [
+          {
+            "x": 5,
+            "y": 1,
+            "text": "Socket",
+            "at": "w:socket",
+            "side": "right",
+            "up": true
+          },
+          {
+            "x": 15,
+            "y": -1,
+            "text": "Change",
+            "at": "w:changes",
+            "side": "right"
+          }
+        ],
+        "bands": [
+          {
+            "x0": 20,
+            "x1": 40,
+            "text": "Qualified electrician",
+            "at": "w:electrician"
+          }
+        ],
+        "rules": [
+          {
+            "y": 0,
+            "text": "Zero line"
+          }
+        ],
+        "photo": false,
+        "mode": "stand",
+        "source": "ENTSO-E 2018 · retrieved 04.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {}
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "zt_photo",
+      "spoken": "50 hertz means 100 changes per second.",
+      "data": {
+        "brand": {
+          "text": "REVLORE · SLOW MOTION",
+          "hl": "REVLORE",
+          "at": "w:hertz"
+        },
+        "note": {
+          "text": "Model, not a measurement",
+          "at": "w:changes"
+        }
+      },
+      "source_ids": [],
+      "overlay": {}
+    }
+  ],
+  "sound_cues": [
+    {
+      "beat": "b1",
+      "at": "start",
+      "cue": "bett_ein"
+    },
+    {
+      "beat": "b2",
+      "at": "w:average",
+      "cue": "tick"
+    },
+    {
+      "beat": "b3",
+      "at": "w:crossing",
+      "cue": "click"
+    },
+    {
+      "beat": "b4",
+      "at": "w:That's",
+      "cue": "click"
+    },
+    {
+      "beat": "b7",
+      "at": "end",
+      "cue": "bett_aus_schlussakkord"
+    }
+  ]
+}

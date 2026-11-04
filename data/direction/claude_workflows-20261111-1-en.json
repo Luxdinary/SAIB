@@ -1,0 +1,516 @@
+{
+  "video_id": "claude_workflows-20261111-1-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Myth: more context is always better",
+  "notes": "Englische Fassung von claude_workflows-20261111-1-de (Plan-Agent B, 01.11.2026): sprachlich angepasst, gleiche Quellen und Szenen. Leitobjekt /context.",
+  "hook": {
+    "id": "H2",
+    "note": "Myth stated with a counter-question; the editor list shows the 'dump everything in' pattern the docs refute."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "The more Claude sees of your project, the better the answer. Right?",
+      "on_screen": "More seen = better?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor with a long list",
+      "why": {
+        "truth": "a question; the answer is verbatim in the docs",
+        "visual": "little action"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Dump in every file, every log, the whole history. More context, better answers? A myth.",
+      "on_screen": "More context = better answers?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor with a 'dump it all in' list, marker, question, myth chip",
+      "why": {
+        "truth": "docs: more context isn't automatically better",
+        "visual": "list fills, /context tab lights up"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "As the token count grows, accuracy and recall degrade. That's straight from the docs.",
+      "on_screen": "More tokens, less accuracy",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Docs page with marker",
+      "why": {
+        "curiosity": "sounds like docs"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Old conversation crowds out the files Claude needs next.",
+      "on_screen": "Old history crowds out new files",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "List pushes lines out",
+      "why": {
+        "truth": "docs: crowds out the files you need next; image sharpened"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "See what's already in your context before you ask your first question.",
+      "on_screen": "What's in context already?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Rail fills up",
+      "why": {
+        "curiosity": "no myth moment"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Context windows (Claude Docs): working memory; more context isn’t automatically better; accuracy and recall degrade (context rot); curating what’s in context just as important",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+      "checked_at": "2026-11-01",
+      "label": "Claude docs, context windows"
+    },
+    {
+      "id": "S2",
+      "title": "Explore the context window (Claude Code Docs): what loads before you type; file reads add to context; subagent in its own context window; /context, /clear, /compact with a focus",
+      "url": "https://code.claude.com/docs/en/context-window",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, context window"
+    }
+  ],
+  "unverified": [
+    "At what token count accuracy noticeably drops: not quantified in the sources; no number in the video.",
+    "How /context lays out its breakdown (colours, category names): not checked; the video only names the command and shows no output.",
+    "That Claude always answers better with less context: not supported, not claimed (only: more isn't automatically better)."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "/context",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Context: dump it all in",
+          "tone": "amber"
+        },
+        {
+          "beat": "b2",
+          "text": "more isn't better",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "loaded before you type",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Subagent: own context",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Curation counts",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Context: under watch",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "Context: curated",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "More context isn't automatically better: according to Anthropic's docs, accuracy and recall degrade as the token count grows (context rot). Curating what's in context matters as much as the space you have. /context, /clear, /compact and subagents keep it lean.",
+    "companion_text": "More Claude workflows, step by step: follow Promptwerk. Based on the Claude docs 'Context windows' and the Claude Code docs 'Explore the context window'. The docs give no threshold at which accuracy drops, so the video names no number. The windows in the video are an animation, not a screen recording.",
+    "hashtags": [
+      "claudecode",
+      "contextwindow",
+      "aiworkflow",
+      "coding",
+      "developer"
+    ],
+    "short_title": "Mehr Kontext"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Dump in every file, every log, the whole history. More context, better answers? A myth.",
+      "data": {
+        "question": "More context = better answers?",
+        "chip": "Myth?",
+        "tabs": [
+          {
+            "name": "prompt.txt",
+            "active": true
+          },
+          "/context"
+        ],
+        "file": "/context",
+        "lines": [
+          [
+            [
+              "com",
+              "# For Claude"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "every file in "
+            ],
+            [
+              "kw",
+              "src/"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "all logs from this week"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "the entire chat history"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "the full docs"
+            ]
+          ]
+        ],
+        "focus_line": 1,
+        "zoom": 1.1,
+        "env_word": "context",
+        "mark_word": "file",
+        "click_word": "history",
+        "question_word": "More",
+        "chip_word": "myth"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:myth"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Anthropic's docs say the opposite: more context isn't automatically better. As the token count grows, accuracy and recall degrade. They call it context rot.",
+      "data": {
+        "kicker": "Claude Docs · Context windows",
+        "page_title": "Context windows",
+        "quotes": [
+          "more context isn’t automatically better",
+          "As token count grows, accuracy and recall degrade"
+        ],
+        "translation_label": "In short",
+        "translation": "More tokens, less accuracy",
+        "page_word": "docs",
+        "quote1_word": "more",
+        "translation_word": "accuracy",
+        "quote2_word": "token"
+      },
+      "overlay": {
+        "title": "More isn't better",
+        "marker_at": "w:more",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "And before you even type, a lot is already loaded: CLAUDE.md, auto memory, MCP tool names and skill descriptions. Then every file Claude reads adds to it, plus its own replies. It all shares one window.",
+      "data": {
+        "headline": "",
+        "gate": 4,
+        "chip": "+ every file read",
+        "nodes": [
+          {
+            "label": "CLAUDE.md"
+          },
+          {
+            "label": "Auto memory"
+          },
+          {
+            "label": "MCP tool names"
+          },
+          {
+            "label": "Skill descriptions"
+          },
+          {
+            "label": "Files",
+            "hook": true
+          }
+        ],
+        "travel_word": "CLAUDE",
+        "travel_end_word": "skill",
+        "gate_word": "file"
+      },
+      "overlay": {
+        "title": "What fills your context",
+        "marker_at": "w:CLAUDE",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "For heavy reading, the docs offer a way out: a subagent reads the files in its own separate context window. Only the summary comes back to your conversation, so the large file reads stay out of yours.",
+      "data": {
+        "top": {
+          "title": "Main session",
+          "verdict": "full",
+          "rows": [
+            "reads everything itself",
+            "it all stays in history"
+          ]
+        },
+        "bottom": {
+          "title": "Subagent",
+          "verdict": "lean",
+          "rows": [
+            "reads in its own context",
+            "returns only a summary"
+          ]
+        },
+        "top_word": "heavy",
+        "bottom_word": "subagent"
+      },
+      "overlay": {
+        "title": "Offload the reading",
+        "marker_at": "w:subagent",
+        "dim_at": "w:summary",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "And here's the core, straight from the docs: curating what's in context matters just as much as how much space you have.",
+      "data": {
+        "kicker": "Claude Docs · Context windows",
+        "page_title": "Context windows",
+        "quotes": [
+          "curating what’s in context just as important"
+        ],
+        "translation_label": "In short",
+        "translation": "Choose what goes in, not how much",
+        "page_word": "docs",
+        "quote1_word": "curating",
+        "translation_word": "space"
+      },
+      "overlay": {
+        "title": "Curate, don't pile on",
+        "marker_at": "w:curating",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "To keep it lean: slash context shows what's taking up space. Slash clear between tasks. Before a long new task, slash compact with a focus. And hand heavy reading to a subagent.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "See what's using space",
+            "code": "/context",
+            "at_word": "context"
+          },
+          {
+            "title": "Clear between tasks",
+            "code": "/clear",
+            "at_word": "clear"
+          },
+          {
+            "title": "Compact with a focus",
+            "code": "/compact focus on …",
+            "at_word": "compact"
+          },
+          {
+            "title": "Hand off heavy reading",
+            "code": "Subagent",
+            "at_word": "subagent"
+          }
+        ]
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:context",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "title": "Four levers"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "It's not how much is in context, it's what's in it. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "Context: curated",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/context"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Usage by category"
+          }
+        ],
+        "statement": "Not more context. The right context.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_word": "not",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

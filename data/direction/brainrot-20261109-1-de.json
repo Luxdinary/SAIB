@@ -1,0 +1,462 @@
+{
+  "video_id": "brainrot-20261109-1-de",
+  "brand_id": "brainrot",
+  "language": "de",
+  "title": "Warum der Himmel blau ist – Plümo und die Farbrolle",
+  "notes": "Zonkfruit Vorlage 1.0, Produktion Woche 1 (01.11.2026), Reihe A. Aufbau wie das freigegebene Testvideo Q1 (Erdbeere keine Beere). Nur Aussagen aus den Kalenderquellen.",
+  "hook": {
+    "id": "H1",
+    "note": "erster Kandidat der Themenspezifikation"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Der Himmel ist nicht blau angemalt. Ich hab mit der Farbrolle nachgeprüft.",
+      "on_screen": "Der Himmel ist *nicht* angemalt.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Farbrolle fliegt zur Faktentür, Stempel IRRTUM",
+      "why": {
+        "truth": "NASA und Met Office: Blau entsteht durch Streuung des Sonnenlichts in der Luft",
+        "visual": "Farbrolle an der Tür ist sofort lesbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Warum ist der Himmel blau und nicht lila?",
+      "on_screen": "Warum nicht *lila*?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Himmel wechselt kurz auf Lila"
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Violettes Licht wird sogar noch stärker gestreut als blaues.",
+      "on_screen": "Violett streut *noch mehr*.",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Balken Violett über Blau"
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wer beim Quiz sagt, der Himmel sei einfach blau gefärbt, verliert den Punkt.",
+      "on_screen": "Blau gefärbt? *Punkt weg.*",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Quizkarte"
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Ich halte meine Farbrolle an den Himmel. Schau, was passiert.",
+      "on_screen": "Farbrolle an den *Himmel*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Plümo mit Farbrolle"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://spaceplace.nasa.gov/blue-sky/en/",
+      "title": "NASA Space Place, Why Is the Sky Blue?: sunlight is scattered in all directions by all the gases and particles in the air; blue light is scattered more than the other colors because it travels as shorter, smaller waves",
+      "checked_at": "2026-11-01",
+      "label": "NASA Space Place"
+    },
+    {
+      "id": "S2",
+      "url": "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/why-is-the-sky-blue",
+      "title": "Met Office, Why is the sky blue?: Rayleigh scattering, gas molecules scatter shorter wavelengths much more than longer ones; violet scatters even more than blue, but our eyes respond more strongly to blue and sunlight contains less violet",
+      "checked_at": "2026-11-01",
+      "label": "Met Office (UK-Wetterdienst)"
+    }
+  ],
+  "unverified": [],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 500,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.4,
+    "progress_y": 1550,
+    "ai_label_bottom_px": 318,
+    "status_y": 1440,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Plümo wollte den Himmel überstreichen. Dabei ist da oben gar keine Farbe: Die Luft streut das Sonnenlicht, und Blau wird stärker gestreut als die anderen Farben. Warum nicht lila? Unsere Augen mögen Blau lieber.",
+    "companion_text": "Zonkfruit: eine erfundene Frucht, echte Fakten. Folge Zonkfruit für mehr.",
+    "hashtags": [
+      "himmel",
+      "physik",
+      "wusstestdu",
+      "funfact",
+      "zonkfruit",
+      "comedy"
+    ],
+    "platform_texts": {
+      "tiktok": {
+        "title": "Der Himmel ist nicht angemalt. Plümo hat nachgeprüft.",
+        "description": "Plümo wollte den Himmel überstreichen. Dabei ist da oben gar keine Farbe: Die Luft streut das Sonnenlicht, und Blau wird stärker gestreut als die anderen Farben. Warum nicht lila? Unsere Augen mögen Blau lieber.",
+        "hashtags": [
+          "himmel",
+          "physik",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy"
+        ]
+      },
+      "instagram": {
+        "title": "Der Himmel ist nicht angemalt. Plümo hat nachgeprüft.",
+        "description": "Plümo wollte den Himmel überstreichen. Dabei ist da oben gar keine Farbe: Die Luft streut das Sonnenlicht, und Blau wird stärker gestreut als die anderen Farben. Warum nicht lila? Unsere Augen mögen Blau lieber.",
+        "hashtags": [
+          "himmel",
+          "physik",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy",
+          "reels"
+        ]
+      },
+      "youtube": {
+        "title": "Der Himmel ist nicht angemalt. Plümo hat nachgeprüft. #Shorts",
+        "description": "Plümo wollte den Himmel überstreichen. Dabei ist da oben gar keine Farbe: Die Luft streut das Sonnenlicht, und Blau wird stärker gestreut als die anderen Farben. Warum nicht lila? Unsere Augen mögen Blau lieber.",
+        "hashtags": [
+          "Shorts",
+          "himmel",
+          "physik",
+          "wusstestdu",
+          "funfact"
+        ]
+      }
+    },
+    "status_bar": {
+      "file": "Faktentür",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Himmel: angemalt?",
+          "tone": "amber",
+          "offset": 0.5
+        },
+        {
+          "beat": "b1",
+          "text": "Farbrolle: abgelehnt",
+          "tone": "pop",
+          "offset": 1.53
+        },
+        {
+          "beat": "b3",
+          "text": "Luft streut Sonnenlicht",
+          "tone": "lime",
+          "offset": 6.87
+        },
+        {
+          "beat": "b4",
+          "text": "Blau: kurze Wellen",
+          "tone": "lime",
+          "offset": 1.09
+        },
+        {
+          "beat": "b5",
+          "text": "Lila? Augen mögen Blau",
+          "tone": "lime",
+          "offset": 9.09
+        },
+        {
+          "beat": "b6",
+          "text": "Plümo: Farbe offen",
+          "tone": "amber",
+          "offset": 8.2
+        },
+        {
+          "beat": "b7",
+          "text": "Plümo: liegt kurz",
+          "tone": "muted",
+          "offset": 0.3
+        }
+      ]
+    }
+  },
+  "assets": {},
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "zonk_scan",
+      "spoken": "Der Himmel ist nicht blau angemalt. Ich hab mit der Farbrolle nachgeprüft.",
+      "data": {
+        "mode": "hook",
+        "head": "Der Himmel ist *nicht* angemalt.",
+        "head_at": 0.2,
+        "sign": "NUR FAKTEN",
+        "items": [
+          {
+            "kind": "paint_roller"
+          }
+        ],
+        "stamp_reject": "IRRTUM",
+        "cue_scan": "Himmel",
+        "cue_verdict": "nicht",
+        "cue_club": "Farbrolle",
+        "cue_know": "nachgeprüft"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "zonk_word",
+      "spoken": "Moment. Ich dachte, da oben hat jemand Blaufarbe verteilt. Aber da ist keine Farbe, nur Luft und Sonnenlicht. Ich war geschockt. Ich hatte extra eine Farbrolle gekauft.",
+      "data": {
+        "word_a": "Blau",
+        "word_b": "farbe",
+        "left": "Plümo: *Blaufarbe*",
+        "right": "Echt: *Luft + Licht*",
+        "cue_left": "dachte",
+        "cue_strike": "keine",
+        "cue_right": "Luft",
+        "cue_react": "Ich",
+        "item": "paint_roller",
+        "cue_shock": "geschockt",
+        "cue_item": "Farbrolle",
+        "cue_never": "gekauft"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "zonk_diagram",
+      "spoken": "Was passiert da oben? Das Sonnenlicht trifft auf die Gase und Teilchen der Luft. Die streuen das Licht in alle Richtungen. Und Blau wird stärker gestreut als die anderen Farben. Ohne Hände zeig ich es mit dem Blatt.",
+      "data": {
+        "headline": "Was macht die *Luft*?",
+        "inner": "sun",
+        "disc": [
+          "#1F5FD8",
+          "#BFE4FF",
+          "#5FA8F0"
+        ],
+        "cue_q": "Luft",
+        "labels": [
+          {
+            "text": "Gase und *Teilchen*",
+            "pos": "tr",
+            "cue": "Gase"
+          },
+          {
+            "text": "streuen in *alle* Richtungen",
+            "pos": "l",
+            "cue": "streuen"
+          },
+          {
+            "text": "Blau: *stärker* gestreut",
+            "pos": "b",
+            "cue": "Blau"
+          }
+        ],
+        "cue_hands": "Hände",
+        "cue_leaf": "Blatt"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 730,
+          "seconds": 0.7
+        },
+        "marker_at": "w:Gase"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "zonk_zoom",
+      "spoken": "Ganz genau. Blaues Licht läuft in kürzeren, kleineren Wellen. Rotes Licht in längeren. Die kurzen streuen die Gase viel stärker. Fachleute nennen das Rayleigh-Streuung. Klingt wie Niesen. Gesundheit.",
+      "data": {
+        "kind": "sky_blue",
+        "lens": "wave_blue",
+        "lens_bg": "#101830",
+        "cue_mag": "genau",
+        "callouts": [
+          {
+            "text": "Blau: *kurze* Wellen",
+            "cue": "Blaues"
+          },
+          {
+            "text": "Rot: *lange* Wellen",
+            "cue": "Rotes"
+          }
+        ],
+        "cue_nut": "kleineren",
+        "stamp": {
+          "text": "Rayleigh!",
+          "cue": "Rayleigh"
+        },
+        "cue_react": "Niesen",
+        "cue_fast": "Gesundheit"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Blaues",
+        "marker_at": "w:Blaues"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "zonk_compare",
+      "spoken": "Rot wird weniger gestreut, Blau viel stärker, und Violett sogar noch stärker. Warum ist der Himmel dann nicht lila? Unsere Augen reagieren stärker auf Blau, und im Sonnenlicht steckt weniger Violett. Ich hab trotzdem lila geschaut.",
+      "data": {
+        "headline": "Warum nicht *lila*?",
+        "bars": [
+          {
+            "label": "Rot",
+            "value": "weniger",
+            "h": 0.3,
+            "color": "#FF4D4D",
+            "cue": "Rot"
+          },
+          {
+            "label": "Blau",
+            "value": "viel",
+            "h": 0.75,
+            "color": "#4D7CFF",
+            "cue": "Blau"
+          },
+          {
+            "label": "Violett",
+            "value": "noch mehr",
+            "h": 0.95,
+            "color": "#A97BFF",
+            "cue": "Violett"
+          }
+        ],
+        "stamp": {
+          "text": "Augen: Blau!",
+          "cue": "Augen"
+        },
+        "cue_react": "trotzdem"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Rot"
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "zonk_scan",
+      "spoken": "Merke: Der Himmel ist nicht angemalt. Die Luft streut das Blau zu uns. Gut, jetzt ich. Scanner läuft. Ergebnis: Farbe nicht ermittelbar. Ich bin wohl einfach grün.",
+      "data": {
+        "mode": "unknown",
+        "sign": "NUR FAKTEN",
+        "merke": "Der Himmel ist *Streulicht*, kein Anstrich.",
+        "display": "Farbe: nicht ermittelbar",
+        "plumps": "PLUMPS",
+        "cue_build": "streut",
+        "cue_go": "Gut",
+        "cue_scan": "Scanner",
+        "cue_result": "Ergebnis",
+        "cue_back": "wohl"
+      },
+      "overlay": {
+        "marker": "auslegung",
+        "marker_at": "w:Merke"
+      },
+      "source_ids": []
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "zonk_loop",
+      "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+      "data": {
+        "sign": "NUR FAKTEN",
+        "cta": "Mehr Zonkfruit? *Folgen.*",
+        "cue_cta": "Mehr",
+        "cue_up": "steh",
+        "cue_lie": "liegen",
+        "cue_ch": "Kanal"
+      },
+      "overlay": {
+        "marker": "none",
+        "head_until": "w:steh"
+      },
+      "source_ids": []
+    }
+  ]
+}

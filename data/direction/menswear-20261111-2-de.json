@@ -1,0 +1,561 @@
+{
+ "video_id": "menswear-20261111-2-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Hosenträger: statt Gürtel, nicht zusätzlich",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema A02 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S4. 'Nicht beides' ist Logik (Hosenträger als Alternative), keine zitierte Regel; Clips nicht als falsch dargestellt.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Hose, Bund",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Gürtel dazu: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "doppelter Halt",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "eingeknöpft",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Smoking: nie Gürtel",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Weste: kein Gürtel",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "statt, nicht dazu",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Hosenträger: allein",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Hosenträger und Gürtel zugleich? Drake's beschreibt Hosenträger als Alternative zum Gürtel. Dazu: Knöpfe oder Clips, warum die Smokinghose keine Gürtelschlaufen hat (Suitsupply, Proper Cloth) und was Debrett's sagt.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "hosenträger",
+   "smoking",
+   "stilregeln",
+   "anzug"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.drakes.com/blogs/news/why-braces-matter",
+   "title": "Drake's, Why braces matter: Hosenträger als Alternative zu Gürtel oder Seitenverstellern; Einknöpfen traditioneller als Clips, Knöpfe mitgeliefert; Hose hängt ruhiger von den Schultern",
+   "checked_at": "2026-11-01",
+   "label": "Drake's, Why braces matter"
+  },
+  {
+   "id": "S2",
+   "url": "https://suitsupply.com/en-us/journal/blacktie-attire-decoded.html",
+   "title": "Suitsupply, Black tie attire decoded: Smokinghosen ohne Gürtelschlaufen, mit innen liegenden Hosenträgerknöpfen und Seitenverstellern",
+   "checked_at": "2026-11-01",
+   "label": "Suitsupply, Black Tie"
+  },
+  {
+   "id": "S3",
+   "url": "https://propercloth.com/reference/custom-trouser-design-business-casual-and-formal/",
+   "title": "Proper Cloth, Custom trouser design: zum Smoking nie ein Gürtel, traditionell Hosenträger und Seitenversteller",
+   "checked_at": "2026-11-01",
+   "label": "Proper Cloth, Trousers"
+  },
+  {
+   "id": "S4",
+   "url": "https://debretts.com/addressing-the-dress-code/",
+   "title": "Debrett's, Addressing the Dress Code: kein Gürtel zur Weste oder zum Zweireiher",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  }
+ ],
+ "unverified": [
+  "Keine Quelle sagt wörtlich 'nie Gürtel und Hosenträger zugleich'; im Video als Folgerung aus 'Alternative' formuliert.",
+  "Clip-Hosenträger: laut Drake's nur weniger traditionell, nicht falsch."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Hosenträger und Gürtel?",
+   "on_screen": "Hosenträger und Gürtel?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Gürtel plus Hosenträger? Doppelt gemoppelt.",
+   "on_screen": "Gürtel plus Hosenträger? Doppelt gemoppelt.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Smokinghosen haben keine Gürtelschlaufen",
+   "on_screen": "Smokinghosen haben keine Gürtelschlaufen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Unter Hosenträgern hat ein Gürtel nichts zu halten",
+   "on_screen": "Unter Hosenträgern hat ein Gürtel nichts zu halten",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Gürtel raus, Hosenträger rein",
+   "on_screen": "Gürtel raus, Hosenträger rein",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die verbreitete Doppellösung als Frage; Antwort: statt, nicht zusätzlich."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 7,
+   "spoken": "Hosenträger, und dazu noch ein Gürtel, nach dem Motto: sicher ist sicher? Genau das wäre doppelt gemoppelt. Hosenträger kommen statt des Gürtels, nicht zusätzlich.",
+   "data": {
+    "question": "Hosenträger und Gürtel?",
+    "object": {
+     "kind": "torso",
+     "hold": "braces",
+     "tie_tip": 520
+    },
+    "target": "brace",
+    "badge": "?",
+    "question_at": 0.3,
+    "hold_end": true,
+    "badge_at": "w:Gürtel",
+    "loupe_at": "w:Gürtel",
+    "nie_at": "w:doppelt"
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 14,
+   "spoken": "Der Londoner Herrenausstatter Drake's beschreibt Hosenträger als Alternative: zum Gürtel oder zu Seitenverstellern am Bund. Die Hose hängt dann von den Schultern und fällt ruhiger. Ein Gürtel hätte darunter nichts mehr zu halten.",
+   "data": {
+    "headline": "Was hält die Hose?",
+    "object": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "braces",
+     "tie_tip": 520
+    },
+    "target": "belt",
+    "zoom": 1.4,
+    "label": "Hosenträger statt Gürtel",
+    "strain": false,
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Drake",
+    "zoom_at": "w:Hosenträger",
+    "flip_at": "w:Alternative",
+    "label_at": "w:Schultern"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Drake"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Wie werden Hosenträger eigentlich befestigt? Laut Drake's ist das Einknöpfen die traditionellere Art. Die Knöpfe für den Bund liefert Drake's gleich mit. Clips gehen auch, sie gelten nur als weniger traditionell.",
+   "data": {
+    "headline": "Knöpfe oder Clips?",
+    "stages": [
+     {
+      "object": {
+       "kind": "torso",
+       "hold": "braces",
+       "neck": "none"
+      },
+      "at": 0.0,
+      "tags": [
+       {
+        "spot": "brace",
+        "text": "zum Einknöpfen",
+        "sub": "traditioneller",
+        "tone": "always",
+        "at": "w:Einknöpfen"
+       },
+       {
+        "spot": "waistband",
+        "text": "Knöpfe am Bund",
+        "sub": "liefert Drake's mit",
+        "tone": "always",
+        "at": "w:Knöpfe"
+       },
+       {
+        "spot": "brace_r",
+        "text": "Clips",
+        "sub": "weniger traditionell",
+        "tone": "sometimes",
+        "at": "w:Clips"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Drake"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Am deutlichsten zeigt es der Smoking. Laut Suitsupply hat die Smokinghose nie Gürtelschlaufen, sondern innen liegende Knöpfe für Hosenträger und Seitenversteller. Proper Cloth sagt es ebenso klar: Zum Smoking kein Gürtel.",
+   "data": {
+    "headline": "Beim Smoking",
+    "left": {
+     "title": "Smoking",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "dinner": true,
+      "lapel": "shawl",
+      "neck": "bow"
+     },
+     "tag": "Hose ohne Gürtelschlaufen",
+     "pulses": [
+      {
+       "target": "waist",
+       "at": "w:kein",
+       "tone": "red"
+      }
+     ]
+    },
+    "right": {
+     "title": "Darunter",
+     "object": {
+      "kind": "torso",
+      "hold": "braces",
+      "neck": "none"
+     },
+     "target": "brace",
+     "tag": "Knöpfe innen, Versteller",
+     "pulses": [
+      {
+       "target": "brace",
+       "at": "w:Hosenträger"
+      },
+      {
+       "target": "waistband",
+       "at": "w:Seitenversteller"
+      }
+     ]
+    },
+    "left_at": "w:Smoking",
+    "left_tag_at": "w:Gürtelschlaufen",
+    "right_at": "w:innen",
+    "right_tag_at": "w:Seitenversteller",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Suitsupply"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "Debrett's, der britische Ratgeber für Etikette, nennt zwei weitere Fälle: Zur Weste und zum Zweireiher gehört kein Gürtel. Wo Hosenträger schon halten, braucht die Hose keinen zweiten Halt mehr.",
+   "data": {
+    "headline": "Und sonst?",
+    "object": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0,
+      1
+     ]
+    },
+    "target": "belt",
+    "zoom": 1.3,
+    "label": "Kein Gürtel zum Zweireiher",
+    "strain": false,
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Debrett",
+    "zoom_at": "w:nennt",
+    "error_at": "w:Weste",
+    "flip_at": "w:Zweireiher",
+    "label_at": "w:kein"
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "Kurz gesagt: Hosenträger ersetzen den Gürtel, sie ergänzen ihn nicht. Eingeknöpft ist die traditionelle Art, Clips gehen auch. Und zum Smoking trägst du nie einen Gürtel.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Statt Gürtel, nicht dazu",
+      "sub": "eins von beiden hält die Hose",
+      "object": {
+       "kind": "torso",
+       "hold": "belt",
+       "tie_tip": 520
+      },
+      "at": "w:Hosenträger",
+      "then": {
+       "hold": "braces"
+      },
+      "then_at": "w:ersetzen"
+     },
+     {
+      "title": "Knöpfe: traditionell",
+      "sub": "laut Drake's, Clips gehen auch",
+      "object": {
+       "kind": "torso",
+       "hold": "braces",
+       "tie_tip": 520
+      },
+      "at": "w:Eingeknöpft",
+      "ring": "brace",
+      "ring_at": "w:traditionelle"
+     },
+     {
+      "title": "Smoking: nie Gürtel",
+      "sub": "Suitsupply, Proper Cloth",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "dinner": true,
+       "lapel": "shawl",
+       "neck": "bow"
+      },
+      "at": "w:Smoking",
+      "ring": "waist",
+      "ring_at": "w:Gürtel",
+      "ring_tone": "red"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Die Hose hält von oben, ohne Gürtel dazu. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "braces",
+     "tie_tip": 520
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "brace",
+    "fix_at": "w:Hose",
+    "ring_at": "w:oben",
+    "statement_at": "w:ohne",
+    "chip_at": "w:Blick",
+    "statement": "Statt. Nicht zusätzlich.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

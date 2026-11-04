@@ -1,0 +1,516 @@
+{
+  "video_id": "claude_workflows-20261111-1-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Mythos: Mehr Kontext ist immer besser",
+  "notes": "Produktion Woche 1 (Plan-Agent B, 01.11.2026): Thema 11.11. Thema 1 (M2), Reihe Mythos-Check. Promptwerk Vorlage 0.9 mit Qualitätsrunde Q1. Leitobjekt /context (Tab im Hook, Statusleiste). Aussagen gegen die Kalenderquellen geprüft (beide am 01.11.2026 als Markdown abgerufen). Keine Terminal-Szene, weil pw_terminal die Fokuszeile immer rot markiert (rot nur für Fehler); Wunsch an scenes.py im Bericht.",
+  "hook": {
+    "id": "H2",
+    "note": "Mythos als Behauptung mit Gegenfrage; die Liste im Editor zeigt das „alles rein“-Muster, das die Doku widerlegt."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Je mehr Claude über dein Projekt sieht, desto besser die Antwort, oder?",
+      "on_screen": "Mehr sehen = besser?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor mit langer Liste",
+      "why": {
+        "truth": "Frage, Antwort wörtlich in der Doku",
+        "visual": "wenig Handlung"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Jede Datei, jedes Log, der ganze Verlauf: Hilft mehr Kontext immer? Das ist ein Mythos.",
+      "on_screen": "Mehr Kontext = bessere Antworten?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor mit „alles rein“-Liste, Marker, Frage, Chip Mythos",
+      "why": {
+        "truth": "Doku: more context isn’t automatically better",
+        "visual": "Liste füllt sich, Tab /context leuchtet"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Mit wachsender Tokenzahl lassen Genauigkeit und Erinnerung nach. So steht es in der Doku.",
+      "on_screen": "Mehr Tokens, weniger Genauigkeit",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Doku-Seite mit Marker",
+      "why": {
+        "curiosity": "klingt nach Doku"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Alter Verlauf verdrängt die Dateien, die Claude als Nächstes braucht.",
+      "on_screen": "Alter Verlauf verdrängt Neues",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Liste schiebt Zeilen hinaus",
+      "why": {
+        "truth": "Doku sagt: crowds out the files you need next; Bild zugespitzt"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, was schon in deinem Kontext liegt, bevor du die erste Frage stellst.",
+      "on_screen": "Was liegt schon im Kontext?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Ablaufschiene füllt sich",
+      "why": {
+        "curiosity": "kein Mythos-Moment"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Context windows (Claude Docs): working memory; more context isn’t automatically better; accuracy and recall degrade (context rot); curating what’s in context just as important",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Doku, Kontextfenster"
+    },
+    {
+      "id": "S2",
+      "title": "Explore the context window (Claude Code Docs): what loads before you type; file reads add to context; subagent in its own context window; /context, /clear, /compact with a focus",
+      "url": "https://code.claude.com/docs/en/context-window",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Kontextfenster"
+    }
+  ],
+  "unverified": [
+    "Ab welcher Tokenzahl die Genauigkeit spürbar nachlässt: in den Quellen nicht beziffert, im Video keine Zahl.",
+    "Wie /context seine Aufteilung genau darstellt (Farben, Kategorien-Namen): nicht geprüft; im Video nur als Befehl genannt, keine Ausgabe gezeigt.",
+    "Dass Claude mit weniger Kontext in jedem Fall besser antwortet: nicht belegt, nicht behauptet (nur: mehr ist nicht automatisch besser)."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "/context",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Kontext: alles rein",
+          "tone": "amber"
+        },
+        {
+          "beat": "b2",
+          "text": "mehr ist nicht besser",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "belegt vor dem Tippen",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Subagent: eigener Kontext",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Auswahl zählt",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Kontext: im Blick",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "Kontext: ausgewählt",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Mehr Kontext ist nicht automatisch besser: Laut Claude-Dokumentation lassen Genauigkeit und Erinnerung mit wachsender Tokenzahl nach (Context Rot). Was im Kontext steht, auszuwählen, ist genauso wichtig wie der Platz. Mit /context, /clear, /compact und Subagenten hältst du ihn schlank.",
+    "companion_text": "Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt. Grundlage: Claude-Doku „Context windows“ und Claude-Code-Doku „Explore the context window“. Die Doku nennt keine Schwelle, ab der Genauigkeit nachlässt; das Video nennt deshalb keine Zahl. Die Fenster im Video sind eine animierte Darstellung, keine Bildschirmaufnahme.",
+    "hashtags": [
+      "claudecode",
+      "kontextfenster",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "Mehr Kontext"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Jede Datei, jedes Log, der ganze Verlauf: Hilft mehr Kontext immer? Das ist ein Mythos.",
+      "data": {
+        "question": "Mehr Kontext = bessere Antworten?",
+        "chip": "Mythos?",
+        "tabs": [
+          {
+            "name": "prompt.txt",
+            "active": true
+          },
+          "/context"
+        ],
+        "file": "/context",
+        "lines": [
+          [
+            [
+              "com",
+              "# Für Claude"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "alle Dateien aus "
+            ],
+            [
+              "kw",
+              "src/"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "alle Logs der Woche"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "der ganze Chatverlauf"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "die komplette Doku"
+            ]
+          ]
+        ],
+        "focus_line": 1,
+        "zoom": 1.1,
+        "env_word": "Kontext",
+        "mark_word": "Datei",
+        "click_word": "Verlauf",
+        "question_word": "Hilft",
+        "chip_word": "Mythos"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Mythos"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Claude-Dokumentation sagt das Gegenteil: Mehr Kontext ist nicht automatisch besser. Mit wachsender Tokenzahl lassen Genauigkeit und Erinnerung nach. Das nennt die Doku Context Rot.",
+      "data": {
+        "kicker": "Claude Docs · Context windows",
+        "page_title": "Context windows",
+        "quotes": [
+          "more context isn’t automatically better",
+          "As token count grows, accuracy and recall degrade"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Mehr Kontext: nicht automatisch besser",
+        "page_word": "Claude",
+        "quote1_word": "Mehr",
+        "translation_word": "automatisch",
+        "quote2_word": "wachsender"
+      },
+      "overlay": {
+        "title": "Mehr ist nicht besser",
+        "marker_at": "w:Mehr",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Dabei lädt schon vor deiner ersten Eingabe einiges: CLAUDE.md, Auto Memory, MCP-Werkzeugnamen und Skill-Beschreibungen. Danach kommt jede gelesene Datei dazu, auch Claudes eigene Antworten. Alles landet im selben Fenster.",
+      "data": {
+        "headline": "",
+        "gate": 4,
+        "chip": "+ jede Datei",
+        "nodes": [
+          {
+            "label": "CLAUDE.md"
+          },
+          {
+            "label": "Auto Memory"
+          },
+          {
+            "label": "MCP-Werkzeugnamen"
+          },
+          {
+            "label": "Skill-Beschreibungen"
+          },
+          {
+            "label": "Dateien",
+            "hook": true
+          }
+        ],
+        "travel_word": "CLAUDE",
+        "travel_end_word": "Skill",
+        "gate_word": "Datei"
+      },
+      "overlay": {
+        "title": "Was den Kontext füllt",
+        "marker_at": "w:CLAUDE",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Für große Lesearbeit nennt die Doku einen Ausweg: Ein Subagent liest die Dateien in seinem eigenen Kontextfenster. Zurück in dein Gespräch kommt nur die Zusammenfassung.",
+      "data": {
+        "top": {
+          "title": "Hauptgespräch",
+          "verdict": "voll",
+          "rows": [
+            "liest alles selbst",
+            "alles bleibt im Verlauf"
+          ]
+        },
+        "bottom": {
+          "title": "Subagent",
+          "verdict": "schlank",
+          "rows": [
+            "liest im eigenen Kontext",
+            "gibt nur Zusammenfassung"
+          ]
+        },
+        "top_word": "große",
+        "bottom_word": "Subagent"
+      },
+      "overlay": {
+        "title": "Lesen auslagern",
+        "marker_at": "w:Subagent",
+        "dim_at": "w:Zusammenfassung",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Der Kern steht ebenfalls in der Doku: Auszuwählen, was im Kontext steht, ist genauso wichtig wie der verfügbare Platz.",
+      "data": {
+        "kicker": "Claude Docs · Context windows",
+        "page_title": "Context windows",
+        "quotes": [
+          "curating what’s in context just as important"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Auswahl ist so wichtig wie Platz",
+        "page_word": "Doku",
+        "quote1_word": "Auszuwählen",
+        "translation_word": "genauso"
+      },
+      "overlay": {
+        "title": "Auswahl statt Menge",
+        "marker_at": "w:Auszuwählen",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "So hältst du ihn schlank: Mit slash context siehst du jederzeit, was Platz belegt. Zwischen Aufgaben slash clear. Vor einer langen Aufgabe slash compact mit Fokus. Und große Lesearbeit an einen Subagenten.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Belegung ansehen",
+            "code": "/context",
+            "at_word": "context"
+          },
+          {
+            "title": "Zwischen Aufgaben leeren",
+            "code": "/clear",
+            "at_word": "clear"
+          },
+          {
+            "title": "Mit Fokus kompaktieren",
+            "code": "/compact focus on …",
+            "at_word": "compact"
+          },
+          {
+            "title": "Lesearbeit abgeben",
+            "code": "Subagent",
+            "at_word": "Subagenten"
+          }
+        ]
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:context",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "title": "Vier Hebel"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Nicht die Menge zählt, sondern was wirklich im Kontext steht. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "Kontext: ausgewählt",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/context"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Belegung nach Kategorie"
+          }
+        ],
+        "statement": "Nicht mehr Kontext. Der richtige Kontext.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Nicht",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

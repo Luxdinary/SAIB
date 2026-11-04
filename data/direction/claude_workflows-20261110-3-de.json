@@ -1,0 +1,591 @@
+{
+  "video_id": "claude_workflows-20261110-3-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "CLAUDE.md oder Skill?",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent A: Thema 10.11. Thema 3 (V1), Reihe Entweder-oder. Q1-Aufbau nach claude_workflows-20261109-3-de. Quellen am 01.11.2026 als Markdown abgerufen (features-overview.md, costs.md). Leitobjekt CLAUDE.md: offen, solange der ganze API-Styleguide darin steht, grün, wenn sie schlank ist. Vergleich mit den Werten aus der Tabelle „CLAUDE.md vs Skill“ (daher Marker Fakt). Kein SKILL.md-Pfad im Bild, weil er in den beiden Kalenderquellen nicht steht (nur in best-practices, Thema 09.11.-1).",
+  "hook": {
+    "id": "H1",
+    "note": "Entweder-oder-Frage am Beispiel der Doku (API-Styleguide)."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Dein ganzer API-Styleguide steht in der CLAUDE.md. Gehört er dorthin oder in einen Skill?",
+      "on_screen": "CLAUDE.md oder Skill?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor mit CLAUDE.md, Marker auf dem Styleguide-Abschnitt, Frage",
+      "why": {
+        "truth": "Beispiel der Doku: CLAUDE.md + Skills (API style guide)",
+        "visual": "Abschnitt sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Alles in die CLAUDE.md? Für Nachschlagewissen rät die Doku zu einem Skill.",
+      "on_screen": "Alles in die CLAUDE.md?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Datei wächst",
+      "why": {
+        "visual": "wenig Handlung"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Von einem Skill sieht Claude zu Beginn nur die Beschreibung. Der Rest lädt bei Bedarf.",
+      "on_screen": "Nur die Beschreibung",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Karte klappt auf",
+      "why": {
+        "curiosity": "setzt Wissen über Skills voraus"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Lange Anleitungen in der CLAUDE.md kosten Tokens, auch bei ganz anderen Aufgaben.",
+      "on_screen": "Tokens für nichts?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Zähler läuft",
+      "why": {
+        "truth": "costs: tokens are present even when you're doing unrelated work"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie du einen Styleguide aus der CLAUDE.md in einen Skill verschiebst.",
+      "on_screen": "Vom CLAUDE.md in den Skill",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Abschnitt wandert",
+      "why": {
+        "truth": "Dateiaufbau eines Skills steht nicht in den Kalenderquellen"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Extend Claude Code: CLAUDE.md vs Skill (Loads: every session, automatically / on demand; can trigger workflows with /<name>; best for 'always do X' rules / reference material, invocable workflows; keep CLAUDE.md under 200 lines); context cost by feature; skills: descriptions at session start, full content when used; disable-model-invocation: true; CLAUDE.md + Skills combination (API conventions vs full API style guide)",
+      "url": "https://code.claude.com/docs/en/features-overview",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Extend Claude Code"
+    },
+    {
+      "id": "S2",
+      "title": "Manage costs effectively: Move instructions from CLAUDE.md to skills (tokens are present even when you're doing unrelated work; skills load on-demand only when invoked; aim under 200 lines)",
+      "url": "https://code.claude.com/docs/en/costs",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Costs"
+    }
+  ],
+  "unverified": [
+    "Wie und wo eine Skill-Datei angelegt wird (Ordner, Dateiname): steht nicht in den Kalenderquellen dieses Themas; im Video nicht gezeigt.",
+    "Wie viele Tokens ein bestimmter Abschnitt kostet: nicht beziffert; die Doku sagt nur, dass CLAUDE.md-Inhalt in jeder Anfrage steht und Skill-Beschreibungen wenig kosten.",
+    "Die Zeilen der CLAUDE.md und der Befehl /api-styleguide sind Beispielwerte."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "CLAUDE.md",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "CLAUDE.md: mit Styleguide",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Kosten: jede Anfrage",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "Skill: lädt bei Bedarf",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Styleguide: im Skill",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "immer oder bei Bedarf",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "CLAUDE.md: schlank",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "CLAUDE.md: schlank",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "CLAUDE.md oder Skill? Laut Claude-Code-Dokumentation lädt die CLAUDE.md in jede Sitzung und kostet in jeder Anfrage Kontext. Ein Skill lädt zu Beginn nur seine Beschreibung, den vollen Inhalt erst bei Bedarf. Faustregel: Was immer gilt, in die CLAUDE.md; Nachschlagewissen und Abläufe, die du mit /<name> startest, in einen Skill.",
+    "companion_text": "Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk. Grundlage: Claude-Code-Dokumentation (Extend Claude Code, Manage costs effectively), abgerufen am 01.11.2026. Editor und Terminal sind eine animierte Darstellung, keine Bildschirmaufnahme. Grenzen laut Doku: Auch die Beschreibung eines Skills steht in jeder Anfrage, außer mit disable-model-invocation: true. Welche Skills Claude lädt, entscheidet Claude anhand der Beschreibungen; ist sie vage, kann Claude den falschen Skill laden oder einen passenden übersehen.",
+    "hashtags": [
+      "claudecode",
+      "claudemd",
+      "skills",
+      "kiworkflow",
+      "entwickler"
+    ],
+    "short_title": "CLAUDE.md oder Skill"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Dein ganzer API-Styleguide steht in der CLAUDE.md. Gehört er dorthin oder in einen Skill?",
+      "data": {
+        "question": "CLAUDE.md oder Skill?",
+        "chip": "immer geladen?",
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          }
+        ],
+        "file": "CLAUDE.md",
+        "lines": [
+          [
+            [
+              "com",
+              "# Konventionen"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Tests: "
+            ],
+            [
+              "str",
+              "npm test"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# "
+            ],
+            [
+              "kw",
+              "API-Styleguide"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Endpunkte im Plural"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Fehler als JSON-Objekt …"
+            ]
+          ]
+        ],
+        "focus_line": 2,
+        "zoom": 1.08,
+        "mark_word": "API-Styleguide",
+        "env_word": "CLAUDE",
+        "click_word": "Gehört",
+        "question_word": "dorthin",
+        "chip_word": "Skill"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:ganzer"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "spoken": "Das Problem: Die CLAUDE.md lädt zu Beginn jeder Sitzung und steht in jeder Anfrage. Lange Anleitungen darin kosten laut Doku auch dann Tokens, wenn du an etwas ganz anderem arbeitest. Skills laden dagegen erst bei Bedarf.",
+      "data": {
+        "kicker": "Claude Code Docs · Costs",
+        "page_title": "Manage costs effectively",
+        "quotes": [
+          "those tokens are present even when you're doing unrelated work",
+          "Skills load on-demand only when invoked"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Immer im Kontext, auch wenn unnötig",
+        "page_word": "Problem",
+        "quote1_word": "Tokens",
+        "translation_word": "anderem",
+        "quote2_word": "Skills"
+      },
+      "overlay": {
+        "title": "Immer geladen",
+        "marker_at": "w:Doku",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Ein Skill lädt anders. Zu Beginn sieht Claude nur seinen Namen und seine Beschreibung. Den vollen Inhalt lädt Claude erst, wenn du ihn aufrufst oder die Aufgabe dazu passt.",
+      "data": {
+        "headline": "",
+        "gate": 4,
+        "chip": "erst bei Bedarf",
+        "nodes": [
+          {
+            "label": "Sitzung startet"
+          },
+          {
+            "label": "CLAUDE.md",
+            "tag": "ganz"
+          },
+          {
+            "label": "Skill",
+            "tag": "nur Beschreibung"
+          },
+          {
+            "label": "Aufgabe passt"
+          },
+          {
+            "label": "Skill ganz",
+            "hook": true
+          }
+        ],
+        "travel_word": "Beginn",
+        "travel_end_word": "aufrufst",
+        "gate_word": "Aufgabe"
+      },
+      "overlay": {
+        "title": "Skills laden bei Bedarf",
+        "marker_at": "w:Beschreibung",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "So sieht es aus: In der CLAUDE.md bleibt nur die Regel, dass du den API-Konventionen folgst. Der vollständige Styleguide wandert in einen Skill.",
+      "data": {
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          }
+        ],
+        "lines": [
+          [
+            [
+              "com",
+              "# Befehle"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Tests: "
+            ],
+            [
+              "str",
+              "npm test"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# Konventionen"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Folge unseren API-Konventionen"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Nie direkt auf main pushen"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# Details"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Styleguide: Skill "
+            ],
+            [
+              "str",
+              "/api-styleguide"
+            ]
+          ]
+        ],
+        "focus_line": 3,
+        "pre_line": 6,
+        "line_h": 56,
+        "zoom": 1.08,
+        "callout": "Rest lädt bei Bedarf",
+        "callout_num": "1",
+        "typed_word": "CLAUDE",
+        "mark_word": "Regel",
+        "click_word": "API-Konventionen",
+        "pre_word": "Styleguide",
+        "callout_word": "Skill"
+      },
+      "overlay": {
+        "title": "Schlank statt komplett",
+        "example": true,
+        "marker_at": "w:aus",
+        "dim_at": "w:API",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Faustregel: Was immer gilt, gehört in die CLAUDE.md, also Befehle, Konventionen und Nie-Regeln. Nachschlagewissen und Abläufe, die du mit Slash startest, gehören in einen Skill.",
+      "data": {
+        "top": {
+          "title": "CLAUDE.md",
+          "verdict": "immer",
+          "rows": [
+            "lädt in jede Sitzung",
+            "Befehle, Nie-Regeln"
+          ]
+        },
+        "bottom": {
+          "title": "Skill",
+          "verdict": "bei Bedarf",
+          "rows": [
+            "Nachschlagewissen",
+            "startbar mit /<name>"
+          ]
+        },
+        "top_word": "immer",
+        "bottom_word": "Nachschlagewissen"
+      },
+      "overlay": {
+        "title": "Immer oder bei Bedarf",
+        "marker": "fakt",
+        "marker_at": "w:Faustregel",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Konkret: CLAUDE.md unter zweihundert Zeilen halten und Nachschlagewissen in Skills verschieben. Soll ein Skill erst laden, wenn du ihn aufrufst, setzt du disable-model-invocation auf true.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "CLAUDE.md schlank halten",
+            "code": "unter 200 Zeilen",
+            "at_word": "zweihundert"
+          },
+          {
+            "title": "Nachschlagewissen auslagern",
+            "code": "Skill, lädt bei Bedarf",
+            "at_word": "Nachschlagewissen"
+          },
+          {
+            "title": "Nur auf Aufruf laden",
+            "code": "disable-model-invocation: true",
+            "at_word": "disable"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "In drei Schritten",
+        "marker": "fakt",
+        "marker_at": "w:Konkret",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Was immer gilt, in die CLAUDE.md, alles andere in einen Skill. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "CLAUDE.md: schlank",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/api-styleguide"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Skill lädt bei Bedarf"
+          }
+        ],
+        "statement": "Immer gültig: CLAUDE.md. Bei Bedarf: Skill.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Was",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

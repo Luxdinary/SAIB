@@ -1,0 +1,531 @@
+{
+ "video_id": "menswear-20261113-1-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Worsted or woollen: two routes to a yarn",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema C03 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Anzug/Mantel als Tendenz, Kammgarnflanell als Ausnahme genannt.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Two yarns",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "the difference: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "cloth: smooth, full",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "carded or combed",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "combing: short out",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "suits: mostly worsted",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "carded, combed",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "combed: smooth",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Worsted or woollen? The difference lies in the route to the yarn: carded and loosely twisted, or combed as well and tightly twisted. Based on Woolmark and the wool textile body IWTO.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "suitfabric",
+   "worsted",
+   "wool",
+   "tailoring"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/industry/product-development/wool-processing/",
+   "title": "Woolmark, Wool processing: Streichgarn meist aus kürzeren Fasern für dicke, warme Produkte; Kammgarn aus den längsten Fasern für flachere, leichtere, glattere Stoffe; Kämmen entfernt Kurzfasern (Noils) und Pflanzenreste",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Wool processing"
+  },
+  {
+   "id": "S2",
+   "url": "https://iwto.org/wp-content/uploads/2024/08/IWTO-Wool-Notes-Final-2024-Digital.pdf",
+   "title": "IWTO Wool Notes 2024: Streichgarn ohne Kämmen, locker gedreht, luftig; Kammgarn gekämmt, eng gedreht, glatt und fest; Kammgarngewebe für Anzüge, Hosen, Röcke, Streichgarngewebe meist Oberbekleidung",
+   "checked_at": "2026-11-01",
+   "label": "IWTO, Wool Notes 2024"
+  },
+  {
+   "id": "S3",
+   "url": "https://iwto.org/wool-supply-chain/first-stage-processing/",
+   "title": "IWTO, First-stage processing: kardierte Fasern meist für Streichgarn, gekämmter Kammzug (Top) für Kammgarn; zu kurze Fasern werden beim Kämmen entfernt",
+   "checked_at": "2026-11-01",
+   "label": "IWTO, erste Verarbeitung"
+  }
+ ],
+ "unverified": [
+  "'worsted weight' (Strickgarnstärke) ist nicht gemeint; nur im englischen Hook-Kandidaten H2 erwähnt.",
+  "Keine Aussagen zu Super-Zahlen, Faserfeinheit oder Herkunft der Wolle."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Worsted or woollen?",
+   "on_screen": "Worsted or woollen?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Worsted here has nothing to do with knitting yarn weight",
+   "on_screen": "Worsted here has nothing to do with knitting yarn weight",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "One step separates worsted from woollen: combing",
+   "on_screen": "One step separates worsted from woollen: combing",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Woollen for a suit? Usually thicker and heavier",
+   "on_screen": "Woollen for a suit? Usually thicker and heavier",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "What combing takes out of the wool",
+   "on_screen": "What combing takes out of the wool",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Zwei Begriffe vom Etikett, eine Frage nach dem Unterschied."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Worsted or woollen: both are wool, and yet the cloths feel completely different. Where does that come from?",
+   "data": {
+    "question": "Worsted or woollen?",
+    "object": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#2A3550"
+    },
+    "target": "weave",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:both",
+    "loupe_at": "w:both",
+    "nie_at": "w:Where",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "Put two cloths side by side. Worsted cloth, says Woolmark, is flatter, lighter and smoother, typical of classic tailoring. Woollen cloth comes out thicker and warmer, more for thick, warm pieces.",
+   "data": {
+    "headline": "Smooth or full?",
+    "from": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#2A3550"
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "woollen",
+     "colour": "#4A5068"
+    },
+    "target": "weave",
+    "zoom": 1.4,
+    "label": "The difference: the yarn",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Put",
+    "zoom_at": "w:Worsted",
+    "flip_at": "w:Woollen",
+    "label_at": "w:thicker"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 751,
+     "y": 879,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Woolmark"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "The difference lies in the route to the yarn. Woollen yarn is mostly spun from shorter fibres that are only carded and loosely twisted. Worsted takes the longest fibres, combs them, and twists them tightly.",
+   "data": {
+    "headline": "Two routes to a yarn",
+    "stages": [
+     {
+      "object": {
+       "kind": "yarn",
+       "spin": "woollen"
+      },
+      "at": 0.0,
+      "title": "Woollen",
+      "tags": [
+       {
+        "spot": "fibre",
+        "text": "shorter fibres",
+        "sub": "mostly",
+        "tone": "always",
+        "at": "w:shorter"
+       },
+       {
+        "spot": "center",
+        "text": "carded only",
+        "sub": "loosely twisted",
+        "tone": "always",
+        "at": "w:carded"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "yarn",
+       "spin": "worsted"
+      },
+      "at": "w:Worsted",
+      "title": "Worsted",
+      "tags": [
+       {
+        "spot": "fibre",
+        "text": "longest fibres",
+        "sub": "then combed",
+        "tone": "always",
+        "at": "w:longest"
+       },
+       {
+        "spot": "center",
+        "text": "tightly twisted",
+        "sub": "smooth and firm",
+        "tone": "always",
+        "at": "w:tightly"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Woollen"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "The decisive step, as the wool textile body IWTO describes it: combing removes the fibres that are too short, known as noils, along with plant matter. What is left is the top, and worsted yarn is spun from it.",
+   "data": {
+    "headline": "The combing step",
+    "from": {
+     "kind": "yarn",
+     "spin": "woollen"
+    },
+    "to": {
+     "kind": "yarn",
+     "spin": "worsted"
+    },
+    "target": "fibre",
+    "zoom": 1.4,
+    "label": "Short fibres out: the top",
+    "hold_end": true,
+    "pointer_at": "w:combing",
+    "zoom_at": "w:short",
+    "flip_at": "w:left",
+    "label_at": "w:top"
+   },
+   "source_ids": [
+    "S3",
+    "S1"
+   ],
+   "overlay": {
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:IWTO"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "That shapes how each one is used. According to IWTO, worsted cloth goes into suits, trousers and skirts, while woollen cloth is thicker and heavier, mostly for outerwear. A tendency, not a rule: worsted flannel exists too.",
+   "data": {
+    "headline": "Which for what?",
+    "left": {
+     "title": "Worsted",
+     "object": {
+      "kind": "swatch",
+      "weave": "worsted",
+      "colour": "#2A3550"
+     },
+     "tag": "suits, trousers, skirts",
+     "tag2": "also worsted flannel",
+     "tag2_at": "w:flannel"
+    },
+    "right": {
+     "title": "Woollen",
+     "object": {
+      "kind": "swatch",
+      "weave": "woollen",
+      "colour": "#4A5068"
+     },
+     "tag": "mostly outerwear",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:thicker"
+      }
+     ]
+    },
+    "left_at": "w:worsted",
+    "left_tag_at": "w:suits",
+    "right_at": "w:woollen",
+    "right_tag_at": "w:outerwear",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:IWTO"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "In short: woollen yarn is only carded and loosely twisted, which makes it full and warm. Worsted is also combed and tightly twisted, smooth and firm. So in a suit, you will mostly find worsted.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Woollen: carded",
+      "sub": "loosely twisted, full, warm",
+      "object": {
+       "kind": "yarn",
+       "spin": "woollen"
+      },
+      "at": "w:woollen",
+      "ring": "fibre",
+      "ring_at": "w:loosely"
+     },
+     {
+      "title": "Worsted: combed",
+      "sub": "tightly twisted, smooth, firm",
+      "object": {
+       "kind": "yarn",
+       "spin": "woollen"
+      },
+      "at": "w:Worsted",
+      "then": {
+       "kind": "yarn",
+       "spin": "worsted"
+      },
+      "then_at": "w:combed"
+     },
+     {
+      "title": "Suits: mostly worsted",
+      "sub": "a tendency, not a rule",
+      "object": {
+       "kind": "swatch",
+       "weave": "worsted",
+       "colour": "#2A3550"
+      },
+      "at": "w:suit",
+      "ring": "center",
+      "ring_at": "w:mostly"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Combed, it turns smooth; carded, it stays full. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "swatch",
+     "weave": "woollen",
+     "colour": "#4A5068"
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#2A3550"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "center",
+    "fix_at": "w:Combed",
+    "ring_at": "w:smooth",
+    "statement_at": "w:carded",
+    "chip_at": "w:eye",
+    "statement": "Combed means smooth.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,698 @@
+{
+  "video_id": "claude_workflows-20261110-2-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Deny-Regeln – so sperrst du Claude Code von der .env aus",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent A: Thema 10.11. Thema 2 (H2), Reihe In drei Schritten, Risiko mittel. Q1-Aufbau nach claude_workflows-20261109-3-de. Quellen am 01.11.2026 als Markdown abgerufen (permissions.md, cli-reference.md). Leitobjekt .env mit Schloss (Hook-Tab, Datei-Chip im Terminal schließt grün beim Wort „gesperrt“, Statusleiste). Grenze laut Doku als eigene Szene (b6) und im Begleittext: Deny-Regeln greifen nicht bei Skripten, die Dateien selbst öffnen. Abgrenzung zu 09.11.-3 (Hook blockiert Edit): hier Lesesperre über Berechtigungsregeln, kein Hook.",
+  "hook": {
+    "id": "H1",
+    "note": "Frage nach der Grenze: führt direkt zur Grenze laut Doku (Risiko mittel)."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Eine Zeile in der settings.json sperrt Claude von deiner .env aus. Wo endet die Sperre?",
+      "on_screen": "Wo endet die Sperre?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor mit settings.json, Marker auf Read(./.env), .env-Tab mit offenem Schloss",
+      "why": {
+        "truth": "permissions: Read(./.env) als Deny-Regel; Grenze steht in der Warnung",
+        "curiosity": "Frage nach der Grenze"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "„Lies nie die .env“ in der CLAUDE.md sperrt? Durchsetzen kann das nur Claude Code.",
+      "on_screen": "Eine Bitte ist keine Sperre",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "CLAUDE.md-Zeile wird durchgestrichen",
+      "why": {
+        "visual": "überschneidet sich mit dem Hooks-Video"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Eine Deny-Regel schlägt jede Allow-Regel, egal wie genau die Allow-Regel ist.",
+      "on_screen": "Deny schlägt Allow",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "zwei Regeln, eine fällt",
+      "why": {
+        "truth": "permissions: rule specificity doesn't change the order"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne Deny-Regel darf Claude deine .env im Projektordner lesen, ohne zu fragen.",
+      "on_screen": "Deine .env ist lesbar",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": ".env öffnet sich",
+      "why": {
+        "truth": "permissions-Tabelle: Read-only, Approval required: No, within the working directory",
+        "visual": "wenig Handlung"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie eine Deny-Regel cat .env im Terminal stoppt.",
+      "on_screen": "Deny stoppt cat .env",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Terminal, cat .env, Sperrzeile",
+      "why": {
+        "truth": "Ablauf belegt, Anzeige animiert"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Configure permissions: rules evaluated deny, then ask, then allow; an allow rule can't carve an exception out of a deny rule; permission rules are enforced by Claude Code, not by the model; Read deny rule Read(./.env) also blocks Edit and Write on the same path; applies to cat, head, tail and redirections, not to scripts that open files themselves (sandbox for OS-level enforcement); project settings at .claude/settings.json; /permissions; a tool denied at any level can't be allowed by --allowedTools",
+      "url": "https://code.claude.com/docs/en/permissions",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Permissions"
+    },
+    {
+      "id": "S2",
+      "title": "CLI reference: --allowedTools (tools that execute without prompting for permission); --disallowedTools (deny rules)",
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, CLI"
+    }
+  ],
+  "unverified": [
+    "Wortlaut der Sperrmeldung im Terminal: nicht belegt; die Zeile „blockiert: Read(./.env)“ ist eine animierte Darstellung, kein Originaltext von Claude Code.",
+    "Dass --allowedTools nur für einen Lauf gilt (Kalender-Angle): steht so nicht in den Quellen; im Video nur „beim Start“ und dass eine Deny-Regel stärker bleibt (permissions: If a tool is denied at any level, no other level can allow it).",
+    "Mods (plugins/mods) können laut permissions-Seite ohne verwaltete Einstellungen oder Team-/Enterprise-Login einen von einer Deny-Regel abgelehnten Aufruf genehmigen; im Video nicht behandelt, deshalb kein „immer“ und kein Versprechen.",
+    "Die Sandbox ist nur als Hinweis genannt (Systemebene); Details und Betriebssysteme stehen auf der Sandboxing-Seite, die keine Kalenderquelle ist."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": ".env",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Lesen: erlaubt",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "CLAUDE.md: keine Sperre",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "Reihenfolge: deny zuerst",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "deny: Read(./.env)",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Read: gesperrt",
+          "tone": "ok",
+          "offset": 4.5
+        },
+        {
+          "beat": "b6",
+          "text": "Skripte: nicht erfasst",
+          "tone": "amber"
+        },
+        {
+          "beat": "b7",
+          "text": "deny: eingetragen",
+          "tone": "accent"
+        },
+        {
+          "beat": "b8",
+          "text": "Read: gesperrt",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Eine Deny-Regel Read(./.env) in der settings.json sperrt die Lesewerkzeuge von Claude Code für deine .env, auch cat, head und tail, und blockiert Edit und Write auf dieselbe Datei. Claude Code prüft deny vor ask und allow; eine Allow-Regel kann keine Ausnahme machen. Grenze laut Doku: Skripte, die Dateien selbst öffnen, erfasst die Regel nicht.",
+    "companion_text": "Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk. Grundlage: Claude-Code-Dokumentation (Permissions, CLI reference), abgerufen am 01.11.2026. Editor und Terminal sind eine animierte Darstellung, keine Bildschirmaufnahme. Grenzen laut Doku: Read- und Edit-Deny-Regeln gelten für die eingebauten Dateiwerkzeuge, erkannte Bash-Befehle wie cat, head, tail und Umleitungen. Sie gelten nicht für Skripte (etwa Python oder Node), die Dateien selbst öffnen, und nicht für Befehle wie grep -r, die die Datei nicht beim Namen nennen. Für eine Sperre auf Systemebene schaltest du die Sandbox ein. NotebookEdit deckt eine Read-Regel nicht ab; dafür eine Edit-Deny-Regel ergänzen.",
+    "hashtags": [
+      "claudecode",
+      "sicherheit",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "Deny-Regeln"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Eine Zeile in der settings.json sperrt Claude von deiner .env aus. Wo endet die Sperre?",
+      "data": {
+        "question": "Wo endet die Sperre?",
+        "chip": "nur eine Zeile?",
+        "tabs": [
+          {
+            "name": "settings.json",
+            "active": true
+          },
+          ".env"
+        ],
+        "file": ".env",
+        "lines": [
+          [
+            [
+              "punc",
+              "{"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "key",
+              "\"permissions\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"deny\""
+            ],
+            [
+              "punc",
+              ": ["
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "str",
+              "\"Read(./.env)\""
+            ]
+          ],
+          [
+            [
+              "punc",
+              "    ]  }"
+            ]
+          ]
+        ],
+        "focus_line": 3,
+        "zoom": 1.08,
+        "mark_word": "Zeile",
+        "click_word": "sperrt",
+        "env_word": ".env",
+        "question_word": "Wo",
+        "chip_word": "endet"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Zeile"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Eine Bitte in der CLAUDE.md reicht nicht. Laut Dokumentation setzt Claude Code die Berechtigungsregeln durch, nicht das Modell.",
+      "data": {
+        "kicker": "Claude Code Docs · Permissions",
+        "page_title": "Configure permissions",
+        "quotes": [
+          "they don't change what Claude Code allows",
+          "Permission rules are enforced by Claude Code, not by the model."
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Claude Code erzwingt, nicht das Modell",
+        "page_word": "Dokumentation",
+        "quote1_word": "reicht",
+        "quote2_word": "Berechtigungsregeln",
+        "translation_word": "Modell"
+      },
+      "overlay": {
+        "title": "Regeln statt Bitten",
+        "marker_at": "w:Dokumentation",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Bei jedem Werkzeugaufruf prüft Claude Code zuerst deny, dann ask, dann allow. Der erste Treffer entscheidet. Eine Allow-Regel kann keine Ausnahme aus einer Deny-Regel machen.",
+      "data": {
+        "headline": "",
+        "gate": 1,
+        "chip": "Treffer: gesperrt",
+        "nodes": [
+          {
+            "label": "Werkzeugaufruf"
+          },
+          {
+            "label": "deny",
+            "hook": true
+          },
+          {
+            "label": "ask",
+            "tag": "fragt nach"
+          },
+          {
+            "label": "allow",
+            "tag": "ohne Frage"
+          },
+          {
+            "label": "ausführen"
+          }
+        ],
+        "travel_word": "zuerst",
+        "travel_end_word": "allow",
+        "gate_word": "Treffer"
+      },
+      "overlay": {
+        "title": "Deny kommt zuerst",
+        "marker_at": "w:Werkzeugaufruf",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "In der settings.json deines Projekts trägst du unter deny die Regel Read für die .env ein. Sie blockiert auch Edit und Write.",
+      "data": {
+        "tabs": [
+          {
+            "name": ".claude/settings.json",
+            "active": true
+          },
+          ".env"
+        ],
+        "lines": [
+          [
+            [
+              "punc",
+              "{"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "key",
+              "\"permissions\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"deny\""
+            ],
+            [
+              "punc",
+              ": ["
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "str",
+              "\"Read(./.env)\""
+            ],
+            [
+              "punc",
+              ","
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "str",
+              "\"Read(./secrets/**)\""
+            ]
+          ],
+          [
+            [
+              "punc",
+              "    ]"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "  }"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "}"
+            ]
+          ]
+        ],
+        "focus_line": 3,
+        "pre_line": 2,
+        "line_h": 54,
+        "zoom": 1.08,
+        "callout": "sperrt auch Edit und Write",
+        "callout_num": "1",
+        "typed_word": "Projekts",
+        "pre_word": "deny",
+        "mark_word": "Read",
+        "click_word": ".env",
+        "callout_word": "blockiert"
+      },
+      "overlay": {
+        "title": "Deny-Regel eintragen",
+        "example": true,
+        "marker_at": "w:settings",
+        "dim_at": "w:env",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Fragt Claude jetzt nach dem Inhalt der .env, wird das Lesen gesperrt. Auch cat, head oder tail erkennt Claude Code als Lesen.",
+      "data": {
+        "title": "claude · demo-projekt",
+        "focus_line": 2,
+        "stamp": "deny",
+        "annotation": "auch cat, head und tail",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Was steht in der .env?"
+              ]
+            ],
+            "at_word": "Fragt"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Read(.env)"
+              ]
+            ],
+            "at_word": "Inhalt"
+          },
+          {
+            "kind": "err",
+            "text": "  blockiert: Read(./.env)",
+            "at_word": "Lesen"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Bash(cat .env)"
+              ]
+            ],
+            "at_word": "cat"
+          },
+          {
+            "kind": "err",
+            "text": "  blockiert: Read(./.env)",
+            "at_word": "tail"
+          }
+        ],
+        "mark_word": "Lesen",
+        "stamp_word": "gesperrt",
+        "click_word": "cat",
+        "annotation_word": "erkennt",
+        "height": 540,
+        "file": ".env",
+        "file_open_word": ".env",
+        "file_word": "gesperrt",
+        "top": 20
+      },
+      "overlay": {
+        "title": "Die Sperre greift",
+        "example": true,
+        "marker_at": "w:Fragt",
+        "dim_at": "w:gesperrt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Grenze laut Doku: Dateiwerkzeuge und cat erfasst die Regel, ein Python- oder Node-Skript, das die Datei selbst öffnet, aber nicht. Für Sperren auf Systemebene gibt es die Sandbox.",
+      "data": {
+        "top": {
+          "title": "Read, cat, head",
+          "verdict": "gesperrt",
+          "rows": [
+            "Dateiwerkzeuge",
+            "erkannte Bash-Befehle"
+          ]
+        },
+        "bottom": {
+          "title": "eigenes Skript",
+          "verdict": "Lücke",
+          "rows": [
+            "öffnet die Datei selbst",
+            "dafür: Sandbox"
+          ]
+        },
+        "top_word": "Dateiwerkzeuge",
+        "bottom_word": "Python"
+      },
+      "overlay": {
+        "title": "Wo die Sperre endet",
+        "marker": "fakt",
+        "marker_at": "w:Doku",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "So setzt du es um: Deny-Regel eintragen, mit slash permissions prüfen. Und gibst du beim Start mit allowedTools Werkzeuge frei, bleibt die Deny-Regel trotzdem stärker.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Deny-Regel eintragen",
+            "code": "\"deny\": [\"Read(./.env)\"]",
+            "at_word": "Deny-Regel"
+          },
+          {
+            "title": "Regeln prüfen",
+            "code": "/permissions",
+            "at_word": "permissions"
+          },
+          {
+            "title": "Start-Freigabe: Deny bleibt",
+            "code": "--allowedTools",
+            "at_word": "allowedTools"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "In drei Schritten",
+        "marker": "fakt",
+        "marker_at": "w:setzt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Deny sperrt die Werkzeuge, für Skripte brauchst du die Sandbox. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": ".env: Lesen gesperrt",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Read(.env)"
+              ]
+            ]
+          },
+          {
+            "kind": "err",
+            "text": "  blockiert: Read(./.env)"
+          }
+        ],
+        "statement": "Deny sperrt Werkzeuge. Für Skripte: Sandbox.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Deny",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

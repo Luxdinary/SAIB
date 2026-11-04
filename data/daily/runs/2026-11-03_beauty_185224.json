@@ -1,0 +1,98 @@
+{
+  "brand_id": "beauty",
+  "brand_name": "Dewlane",
+  "date": "2026-11-03",
+  "provider": "claude_cli",
+  "model": "claude-sonnet-5-5",
+  "dry_run": true,
+  "topics": [
+    {
+      "key": "nr:6",
+      "nr": "6",
+      "title": "„Aluminium im Deo ist gefährlich“",
+      "aufbau": "C",
+      "aufbau_note": "",
+      "langs": {
+        "de": {
+          "video_id": "beauty-20261103-3-de",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\beauty-20261103-3-de.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [],
+          "llm_calls": 4,
+          "llm_tokens_in": 16,
+          "llm_tokens_out": 27003,
+          "llm_tokens_cache": 55427,
+          "llm_usd": 0.0,
+          "dry_run_exit": 6,
+          "dry_run_note": "[fail  ] NOT visual_cuts_static: longest stretch without a visual change 15.1 s (max 14); [warn  ] NOT visual_cuts_rhythm: 54 visual events, median interval 0.9 s (target 1.2-8.0)",
+          "dry_run_done": true,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [
+            "Trockenlauf: Mock-Länge 90.2 s (keine echte Stimme); Prüfung als Auszug 90 s",
+            "Trockenlauf: Mock-Länge 90.2 s (keine echte Stimme); Prüfung als Auszug 90 s"
+          ],
+          "errors": [
+            "Trockenlauf Exit 6: [fail  ] NOT visual_cuts_static: longest stretch without a visual change 15.1 s (max 14); [warn  ] NOT visual_cuts_rhythm: 54 visual events, median interval 0.9 s (target 1.2-8.0)"
+          ]
+        },
+        "en": {
+          "video_id": "beauty-20261103-3-en",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\beauty-20261103-3-en.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [
+            "Sprechtext 1217 Zeichen (etwa 82 s Stimme), Ziel 1053–1211"
+          ],
+          "llm_calls": 2,
+          "llm_tokens_in": 8,
+          "llm_tokens_out": 9285,
+          "llm_tokens_cache": 18101,
+          "llm_usd": 0.0,
+          "dry_run_exit": 6,
+          "dry_run_note": "[warn  ] NOT visual_cuts_rhythm: 54 visual events, median interval 0.8 s (target 1.2-8.0); [fail  ] NOT readability_text_limits: b3: nh_effect.rows[0].title: 26 chars > 24; b4: nh_lens.section.film_label: 27 chars > 22",
+          "dry_run_done": false,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [
+            "Trockenlauf: Mock-Länge 91.5 s (keine echte Stimme); Prüfung als Auszug 91 s"
+          ],
+          "errors": [
+            "Trockenlauf Exit 6: [warn  ] NOT visual_cuts_rhythm: 54 visual events, median interval 0.8 s (target 1.2-8.0); [fail  ] NOT readability_text_limits: b3: nh_effect.rows[0].title: 26 chars > 24; b4: nh_lens.section.film_label: 27 chars > 22"
+          ]
+        }
+      },
+      "marked": false,
+      "notes": [],
+      "errors": []
+    }
+  ],
+  "skipped": [
+    "Nr. 1 · INCI-Liste lesen: Was ganz vorne steht · Reihe Unter der Lupe · Aufbau B · Tag 04.11.: reserviert für die Marken-Sitzung (Tag 04.11.)",
+    "Nr. 62 · Nachcremen verlängert den Schutz nicht · Reihe Im Alltag angewendet · Aufbau A · Tag 04.11.: reserviert für die Marken-Sitzung (Tag 04.11.)",
+    "Nr. 3 · „Parabene sind verboten“ · Reihe Direkter Vergleich · Aufbau C · Tag 05.11.: reserviert für die Marken-Sitzung (Tag 05.11.)",
+    "Nr. 46 · „Wasserfest“: 40 oder 80 Minuten · Reihe Im Alltag angewendet · Aufbau D · Tag 05.11.: reserviert für die Marken-Sitzung (Tag 05.11.)"
+  ],
+  "errors": [],
+  "started_at": "2026-11-03T16:47:26+00:00",
+  "finished_at": "2026-11-03T16:52:24+00:00"
+}

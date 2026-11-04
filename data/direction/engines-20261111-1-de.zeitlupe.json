@@ -1,0 +1,452 @@
+{
+ "video_id": "engines-20261111-1-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Otto gegen Diesel: Funke oder Hitze",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261111-1-de, Reihe Gegenübergestellt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Benziner zünden ein vorgemischtes Gemisch mit dem Funken, Diesel spritzen in heiße Luft und brennen wie eine Kerze. Der Unterschied im Schnittmodell.",
+  "companion_text": "",
+  "hashtags": [
+   "motorentechnik",
+   "diesel",
+   "benziner",
+   "zündung",
+   "vergleich"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "MIT 2.61, Vorlesung 9",
+   "title": "MIT 2.61, Vorlesung 9 (L9)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "US-DOE AFDC, Benzinmotor",
+   "title": "US-DOE AFDC, Benzinmotor (A1)",
+   "url": "https://afdc.energy.gov/vehicles/how-do-gasoline-cars-work",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S3",
+   "label": "US-DOE AFDC, Dieselmotor",
+   "title": "US-DOE AFDC, Dieselmotor (A2)",
+   "url": "https://afdc.energy.gov/vehicles/how-do-diesel-cars-work",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Schau genau hin.",
+   "on_screen": "Funke oder Hitze?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Ein Diesel hat keine Zündkerze.",
+   "on_screen": "Otto gegen Diesel: Funke oder Hitze",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Otto gegen Diesel: Funke oder Hitze",
+   "on_screen": "Otto gegen Diesel: Funke oder Hitze",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Otto gegen Diesel: Funke oder Hitze",
+   "on_screen": "Otto gegen Diesel: Funke oder Hitze",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Otto gegen Diesel: Funke oder Hitze",
+   "on_screen": "Otto gegen Diesel: Funke oder Hitze",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Benziner und Diesel sehen im Schnitt fast gleich aus. Der große Unterschied ist, wie die Ladung zündet. Schau genau hin.",
+   "data": {
+    "claim": "Funke oder Hitze?",
+    "claim_lines": [
+     "Funke",
+     "oder Hitze?"
+    ],
+    "claim_highlight": "Hitze",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "US-DOE AFDC, Benzinmotor · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_board",
+   "spoken": "Links ein Benziner, rechts ein Diesel. Der Benziner zündet mit einem Funken aus der Zündkerze. Der Diesel hat keine Zündkerze: Sein Kraftstoff entzündet sich in der heißen, verdichteten Luft von selbst.",
+   "data": {
+    "title": "Benziner und Diesel",
+    "mode": "compare",
+    "left": {
+     "title": "Benziner",
+     "engine": {
+      "fuel": "petrol",
+      "injector": "port"
+     },
+     "rows": [
+      "Funke",
+      "Zündkerze"
+     ],
+     "at": "w:Links"
+    },
+    "right": {
+     "title": "Diesel",
+     "engine": {
+      "fuel": "diesel"
+     },
+     "rows": [
+      "Selbstzündung",
+      "Einspritzdüse"
+     ],
+     "at": "w:rechts"
+    },
+    "rows_at": [
+     "w:Funken",
+     "w:selbst"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "US-DOE AFDC, Benzinmotor · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Beim Benziner sind Luft und Kraftstoff schon gemischt, wenn der Funke kommt. Die Fachvorlesung nennt das eine Vormischflamme. Sie breitet sich vom Funken aus durch das fertige Gemisch aus. Der Funke ist also nur der Startschuss. Im Bild siehst du die Einspritzdüse im Saugrohr.",
+   "data": {
+    "title": "Vormischflamme",
+    "injector": "port",
+    "labels": [
+     {
+      "key": "plug",
+      "side": "l",
+      "y": 640
+     }
+    ],
+    "labels_at": [
+     "w:Funke"
+    ],
+    "notes": [
+     {
+      "text": "schon gemischt",
+      "at": "w:gemischt",
+      "side": "r",
+      "y": 900,
+      "to": [
+       560,
+       520
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 9 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "explanation",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Beim Diesel wird der Kraftstoff erst in die heiße, verdichtete Luft gespritzt. Er brennt dort, wo er sich gerade mit Luft mischt. Die Vorlesung vergleicht diese Diffusionsflamme mit einer Kerze.",
+   "data": {
+    "title": "Diffusionsflamme",
+    "fuel": "diesel",
+    "notes": [
+     {
+      "text": "Einspritzdüse",
+      "at": "w:gespritzt",
+      "side": "r",
+      "y": 640,
+      "to": [
+       540,
+       420
+      ]
+     },
+     {
+      "text": "wie eine Kerze",
+      "at": "w:Kerze",
+      "side": "l",
+      "y": 880,
+      "color": "fire",
+      "to": [
+       500,
+       590
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 9 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S3"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_board",
+   "spoken": "Das ist der Kern: Vormischflamme gegen Diffusionsflamme, Funke gegen Hitze. Darum braucht der eine eine Zündkerze und der andere nicht. Daraus folgen viele weitere Unterschiede, die wir in dieser Reihe nacheinander zeigen.",
+   "data": {
+    "title": "Der Unterschied",
+    "mode": "compare",
+    "left": {
+     "title": "Benziner",
+     "rows": [
+      "Vormischflamme",
+      "Funke zündet",
+      "mit Zündkerze"
+     ],
+     "at": 0.02
+    },
+    "right": {
+     "title": "Diesel",
+     "rows": [
+      "Diffusionsflamme",
+      "Hitze zündet",
+      "ohne Zündkerze"
+     ],
+     "at": 0.05
+    },
+    "rows_at": [
+     "w:Vormischflamme",
+     "w:Funke",
+     "w:braucht"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 9 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S3"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Funke oder Hitze, vorgemischt oder Kerzenflamme. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "Funke",
+      "at": "w:Funke"
+     },
+     {
+      "text": "Hitze",
+      "at": "w:Hitze"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

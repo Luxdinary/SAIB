@@ -1,0 +1,397 @@
+{
+ "video_id": "beauty-20261113-1-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Das offene Tiegel-Symbol",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261113-1-de.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (jar), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Der geöffnete Tiegel mit Zahl und M sagt, wie viele Monate ein Produkt nach dem Öffnen sicher verwendet werden kann; Pflicht nur bei Produkten, die länger als 30 Monate halten. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Was heißt „12M“? Warum zählt die Zeit nach dem Öffnen? Die FDA nennt Beispiele: Applikatoren wie Mascarabürsten kommen bei jedem Gebrauch mit Bakterien in Kontakt, Emulsionen können sich trennen, und Feuchtigkeit im Bad kann Keimwachstum erleichtern.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-labeling/shelf-life-and-expiration-dating-cosmetics",
+   "title": "U.S. FDA: Shelf Life and Expiration Dating of Cosmetics",
+   "checked_at": "2026-11-01",
+   "label": "FDA: Shelf life"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was bedeutet der kleine offene Tiegel mit „12M“ auf deiner Creme?",
+   "on_screen": "Was heißt „12M“?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Das Tiegel-Symbol mit „12M“ sagt nicht, wie lange eine Creme ungeöffnet hält.",
+   "on_screen": "Das Tiegel-Symbol mit „12M“ sagt nicht, wie lange eine Creme",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Das offene Tiegel-Symbol ist ein Haltbarkeitsdatum. Es zählt erst ab dem Öffnen.",
+   "on_screen": "Das offene Tiegel-Symbol ist ein Haltbarkeitsdatum. Es zählt",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer das Symbol übersieht, benutzt eine geöffnete Creme womöglich länger als vorgesehen.",
+   "on_screen": "Wer das Symbol übersieht, benutzt eine geöffnete Creme womög",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wann das offene Tiegel-Symbol auf der Packung steht.",
+   "on_screen": "Schau, wann das offene Tiegel-Symbol auf der Packung steht.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Was bedeutet der kleine offene Tiegel mit „12M“ auf deiner Creme?",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Was heißt „12M“?",
+    "badge": "Monate?",
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME",
+     "big": "12M"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "Das Symbol steht in Anhang VII der Verordnung über kosmetische Mittel und heißt dort „geöffnet haltbar“. Die Zahl dahinter sagt, wie lange ein Produkt nach dem Öffnen sicher und ohne Schaden verwendet werden kann. Angegeben wird der Zeitraum in Monaten oder Jahren.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Geöffnet haltbar",
+    "zoom": "12M",
+    "flip": false,
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Anhang VII, Nummer 2",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "Zahl plus M",
+      "value": "12M"
+     },
+     {
+      "text": "Monate nach dem Öffnen"
+     },
+     {
+      "text": "sicher und ohne Schaden verwendbar"
+     }
+    ],
+    "kicker": "Worum es geht",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME",
+     "big": "12M"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "Wann steht es auf der Packung? Hält ein Produkt höchstens 30 Monate, braucht es ein Mindesthaltbarkeitsdatum. Hält es länger, entfällt das Datum, und an seine Stelle tritt das offene Tiegel-Symbol.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_time",
+   "data": {
+    "headline": "Datum oder Symbol",
+    "nodes": [
+     {
+      "date": "≤ 30 M",
+      "text": "Mindesthaltbarkeitsdatum auf der Packung"
+     },
+     {
+      "date": "> 30 M",
+      "text": "kein Datum vorgeschrieben"
+     },
+     {
+      "date": "dann",
+      "text": "offenes Tiegel-Symbol mit Monaten"
+     }
+    ],
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME",
+     "big": "12M"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "In den USA gibt es keine solche Pflicht. Laut FDA verlangt das Gesetz dort für Kosmetik weder Haltbarkeitsangaben noch Verfallsdaten. Die Haltbarkeit festzulegen gehört zur Verantwortung des Herstellers.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "EU und USA",
+    "left": {
+     "tag": "EU",
+     "title": "Symbol oder Datum",
+     "rows": [
+      {
+       "text": "Pflicht nach Artikel 19"
+      },
+      {
+       "text": "Monate nach dem Öffnen"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "right": {
+     "tag": "USA",
+     "title": "keine Pflicht",
+     "rows": [
+      {
+       "text": "kein Datum vorgeschrieben",
+       "mark": "gap"
+      },
+      {
+       "text": "Verantwortung des Herstellers"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "kicker": "Im Vergleich"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "Warum zählt die Zeit nach dem Öffnen? Die FDA nennt Beispiele: Applikatoren wie Mascarabürsten kommen bei jedem Gebrauch mit Bakterien in Kontakt, Emulsionen können sich trennen, und Feuchtigkeit im Bad kann Keimwachstum erleichtern.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Was nach dem Öffnen passiert",
+    "zoom": "12M",
+    "flip": true,
+    "doc": {},
+    "rows": [
+     {
+      "text": "Applikatoren: Kontakt mit Keimen"
+     },
+     {
+      "text": "Emulsionen können sich trennen"
+     },
+     {
+      "text": "Feuchtigkeit im Bad"
+     }
+    ],
+    "kicker": "Laut Quelle",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME",
+     "big": "12M"
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "Für dich heißt das: Schreib das Datum des Öffnens auf die Packung. Dann weißt du, wann die angegebenen Monate vorbei sind.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "So nutzt du es",
+    "items": [
+     {
+      "title": "Symbol suchen",
+      "sub": "offener Tiegel mit Zahl",
+      "icon": "check"
+     },
+     {
+      "title": "Öffnungsdatum notieren",
+      "sub": "direkt auf die Packung",
+      "icon": "doc"
+     },
+     {
+      "title": "Monate zählen",
+      "sub": "ab diesem Tag",
+      "icon": "hourglass"
+     }
+    ],
+    "kicker": "Im Alltag",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME",
+     "big": "12M"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Erst das Symbol lesen, dann auftragen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Merksatz",
+    "rule": "Erst lesen, dann auftragen.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "jar",
+     "line1": "CREME",
+     "big": "12M"
+    },
+    "question": {
+     "text": "Wie viele Monate zeigt dein Tiegel?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung."
+   }
+  }
+ ]
+}

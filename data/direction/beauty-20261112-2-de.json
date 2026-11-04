@@ -1,0 +1,443 @@
+{
+ "video_id": "beauty-20261112-2-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Gute Herstellungspraxis: ISO 22716",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Kosmetik muss nach guter Herstellungspraxis hergestellt werden; die harmonisierte Norm dafür ist ISO 22716. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Herstellung",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Wie hergestellt?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "Artikel 8",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "ISO 22716",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Qualität, nicht alles",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "in der Akte erklärt",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Charge lesen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Erst lesen, dann auftragen",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Wie wird Kosmetik hergestellt? In der Produktinformationsdatei jedes Produkts steht eine Beschreibung der Herstellungsmethode und eine Erklärung, dass gute Herstellungspraxis eingehalten wird.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.iso.org/standard/36437.html",
+   "title": "ISO 22716:2007 Cosmetics – Good Manufacturing Practices (GMP)",
+   "checked_at": "2026-11-01",
+   "label": "ISO 22716:2007"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Wer regelt eigentlich, wie deine Creme hergestellt wird?",
+   "on_screen": "Wie wird Kosmetik hergestellt?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Für die Herstellung von Kosmetik gibt es in der EU eine eigene Norm: ISO 22716.",
+   "on_screen": "Für die Herstellung von Kosmetik gibt es in der EU eine eige",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Wie eine Creme hergestellt wird, regelt niemand. Doch: Das EU-Recht verlangt gute Herstellungspraxis.",
+   "on_screen": "Wie eine Creme hergestellt wird, regelt niemand. Doch: Das E",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ohne gute Herstellungspraxis könnte eine Charge anders ausfallen als die nächste.",
+   "on_screen": "Ohne gute Herstellungspraxis könnte eine Charge anders ausfa",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, was die Norm ISO 22716 abdeckt und was nicht.",
+   "on_screen": "Schau, was die Norm ISO 22716 abdeckt und was nicht.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Wer regelt eigentlich, wie deine Creme hergestellt wird?",
+   "data": {
+    "obj": "jar",
+    "title": "Charge",
+    "sub": "Herstellung",
+    "glyph": "shield",
+    "gtext": "GMP",
+    "focus": "glyph",
+    "question": "Wie wird Kosmetik hergestellt?",
+    "badge": "Regeln?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "Artikel 8 der Verordnung über kosmetische Mittel verlangt, dass Kosmetik nach guter Herstellungspraxis hergestellt wird. Das Ziel ist ein hohes Schutzniveau für die Gesundheit.",
+   "data": {
+    "headline": "Gute Herstellungspraxis",
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 8",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "Pflicht für jede Herstellung"
+     },
+     {
+      "text": "auf Englisch: Good Manufacturing Practice"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_steps",
+   "spoken": "Wie das geht, beschreibt eine Norm: ISO 22716. Sie gibt Leitlinien für Herstellung, Kontrolle, Lagerung und Versand. Wer nach den einschlägigen harmonisierten Normen arbeitet, bei dem wird gute Herstellungspraxis vermutet.",
+   "data": {
+    "headline": "Was ISO 22716 abdeckt",
+    "items": [
+     {
+      "title": "Herstellung",
+      "sub": "wie produziert wird",
+      "icon": "drop"
+     },
+     {
+      "title": "Kontrolle und Lagerung",
+      "sub": "Qualität sichern",
+      "icon": "shield"
+     },
+     {
+      "title": "Versand",
+      "sub": "bis das Produkt das Werk verlässt",
+      "icon": "doc"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "Die Norm hat aber Grenzen. Sie behandelt die Qualität des Produkts, nicht den Arbeitsschutz im Werk und nicht den Umweltschutz. Forschung und Entwicklung sowie der Vertrieb fertiger Produkte sind ebenfalls nicht erfasst.",
+   "data": {
+    "headline": "Was die Norm abdeckt",
+    "mode": "compare",
+    "left": {
+     "tag": "abgedeckt",
+     "title": "Qualität",
+     "rows": [
+      {
+       "text": "Herstellung, Kontrolle"
+      },
+      {
+       "text": "Lagerung, Versand"
+      }
+     ]
+    },
+    "right": {
+     "tag": "nicht abgedeckt",
+     "title": "Anderes",
+     "rows": [
+      {
+       "text": "Arbeitsschutz, Umwelt",
+       "mark": "gap"
+      },
+      {
+       "text": "Forschung, Vertrieb",
+       "mark": "gap"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "In der Produktinformationsdatei jedes Produkts steht eine Beschreibung der Herstellungsmethode und eine Erklärung, dass gute Herstellungspraxis eingehalten wird. Auch Spuren verbotener Stoffe sind nur erlaubt, wenn sie bei guter Herstellungspraxis technisch nicht zu vermeiden sind.",
+   "data": {
+    "headline": "In der Akte",
+    "rows": [
+     {
+      "text": "Beschreibung der Herstellungsmethode"
+     },
+     {
+      "text": "Erklärung zur guten Herstellungspraxis"
+     },
+     {
+      "text": "Artikel 11, Buchstabe c"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "Für dich heißt das: Die Chargennummer auf der Packung verbindet dein Produkt mit genau dieser Herstellung. Notier sie, wenn du ein Problem melden willst.",
+   "data": {
+    "headline": "Was du davon hast",
+    "items": [
+     {
+      "title": "Chargennummer finden",
+      "sub": "auf Packung oder Behälter",
+      "icon": "doc"
+     },
+     {
+      "title": "verbindet mit der Herstellung",
+      "sub": "genau diese Charge",
+      "icon": "shield"
+     },
+     {
+      "title": "bei Problemen",
+      "sub": "Charge mit angeben",
+      "icon": "book"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Erst die Charge lesen, dann auftragen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung.",
+    "brand_at": "w:Beauty",
+    "button": "Auftragen",
+    "headline": "Erst lesen, dann auftragen",
+    "block_text": "Erst die Charge lesen",
+    "done_text": "Charge gelesen"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

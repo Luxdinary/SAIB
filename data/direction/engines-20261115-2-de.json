@@ -1,0 +1,461 @@
+{
+  "video_id": "engines-20261115-2-de",
+  "brand_id": "engines",
+  "language": "de",
+  "title": "Diesel: Zündung in vier Phasen",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261115-2-de, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Zündverzug, vorgemischte Verbrennung, mischungsgesteuerte Phase, Nachbrennen: wie ein Diesel verbrennt und was die Cetanzahl damit zu tun hat.",
+    "companion_text": "Folge Revlore: Motorentechnik verstehen, ein Bauteil nach dem anderen.\nWärmefreisetzung schematisch, keine Messkurve.",
+    "hashtags": [
+      "motorentechnik",
+      "diesel",
+      "verbrennung",
+      "cetanzahl",
+      "selbstzündung"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, Vorlesung 15",
+      "title": "MIT 2.61, Vorlesung 15 (L15)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/583ccfe7bc14d0c18bb75efcf0ab2f05_MIT2_61S17_lec15.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "Chevron, Dieselkraftstoffe",
+      "title": "Chevron, Dieselkraftstoffe (C2)",
+      "url": "https://www.chevron.com/-/media/chevron/operations/documents/diesel-fuel-tech-review.pdf",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Dazwischen liegt eine kurze Pause, und sie prägt die ganze Verbrennung.",
+      "on_screen": "Erst spritzen, dann warten",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie verbrennt ein Diesel?",
+      "on_screen": "Diesel: Zündung in vier Phasen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Diesel: Zündung in vier Phasen",
+      "on_screen": "Diesel: Zündung in vier Phasen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Diesel: Zündung in vier Phasen",
+      "on_screen": "Diesel: Zündung in vier Phasen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Diesel: Zündung in vier Phasen",
+      "on_screen": "Diesel: Zündung in vier Phasen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Ein Diesel zündet nicht in dem Moment, in dem er einspritzt. Dazwischen liegt eine kurze Pause, und sie prägt die ganze Verbrennung.",
+      "data": {
+        "claim": "Erst spritzen, dann warten",
+        "claim_lines": [
+          "Erst spritzen,",
+          "dann warten"
+        ],
+        "claim_highlight": "warten",
+        "claim_at": 0.05,
+        "counters": false,
+        "fuel": "diesel",
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Pause",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_cutaway",
+      "spoken": "Der Kraftstoff wird in die heiße, verdichtete Luft gespritzt. Bis er sich entzündet, vergeht der Zündverzug. In dieser Zeit verdampft er und mischt sich mit der Luft. Je nach Last kommen dabei laut Vorlesung neunzehn bis achtzig Teile Luft auf ein Teil Kraftstoff.",
+      "data": {
+        "title": "Zündverzug",
+        "fuel": "diesel",
+        "notes": [
+          {
+            "text": "Einspritzung",
+            "at": "w:gespritzt",
+            "side": "r",
+            "y": 640,
+            "to": [
+              540,
+              420
+            ]
+          },
+          {
+            "text": "Zündverzug",
+            "at": "w:Zündverzug",
+            "side": "l",
+            "y": 880,
+            "color": "amber",
+            "to": [
+              500,
+              590
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            300
+          ],
+          [
+            "w:Zündverzug",
+            350
+          ],
+          [
+            1,
+            420
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Zündverzug",
+        "kicker": "2 · DIE PAUSE",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "Die Fachvorlesung teilt die Dieselverbrennung in vier Phasen. Erst der Zündverzug. Dann verbrennt schlagartig, was sich schon gemischt hat: die vorgemischte Phase. Dieser steile Druckanstieg macht laut Vorlesung auch den typischen Dieselklang. Achte auf die steile Spitze in der Kurve.",
+      "data": {
+        "title": "Wärmefreisetzung",
+        "kind": "hrr",
+        "series_at": [
+          "w:vorgemischte"
+        ],
+        "legend": false,
+        "bands": [
+          {
+            "x0": -5,
+            "x1": 0,
+            "label": "Verzug",
+            "at": "w:Zündverzug",
+            "color": "amber",
+            "row": 0
+          },
+          {
+            "x0": 0,
+            "x1": 7,
+            "label": "vorgemischt",
+            "at": "w:vorgemischte",
+            "color": "fire",
+            "row": 2
+          }
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Phasen",
+        "kicker": "3 · PHASE 1 UND 2",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "Danach brennt der Kraftstoff nur so schnell, wie er sich mit Luft mischt: die mischungsgesteuerte Phase. Zum Schluss folgt eine späte Nachverbrennung. Jetzt bestimmt das Mischen das Tempo.",
+      "data": {
+        "title": "Vier Phasen",
+        "kind": "hrr",
+        "series_at": [
+          0.0
+        ],
+        "legend": false,
+        "draw_seconds": 0.6,
+        "bands": [
+          {
+            "x0": -5,
+            "x1": 0,
+            "label": "Verzug",
+            "at": 0.0,
+            "color": "amber",
+            "row": 0
+          },
+          {
+            "x0": 0,
+            "x1": 7,
+            "label": "vorgemischt",
+            "at": 0.02,
+            "color": "fire",
+            "row": 2
+          },
+          {
+            "x0": 7,
+            "x1": 28,
+            "label": "Mischung",
+            "at": "w:mischungsgesteuerte",
+            "row": 4
+          },
+          {
+            "x0": 28,
+            "x1": 50,
+            "label": "spät",
+            "at": "w:Nachverbrennung",
+            "color": "steel",
+            "row": 6
+          }
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:mischungsgesteuerte",
+        "kicker": "4 · PHASE 3 UND 4"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_readout",
+      "spoken": "Hier kommt der Kraftstoff ins Spiel. Eine hohe Cetanzahl bedeutet laut Chevron einen kurzen Zündverzug. Die Mindest-Cetanzahl liegt in Europa bei einundfünfzig, in den USA bei vierzig. Cetan selbst hat die Zahl hundert, Methylnaphthalin null.",
+      "data": {
+        "title": "Mindest-Cetanzahl",
+        "figure": "bars",
+        "bar_max": 60,
+        "lines_y": 1000,
+        "bars": [
+          {
+            "label": "Europa",
+            "value": 51,
+            "text": "51",
+            "at": "w:Europa"
+          },
+          {
+            "label": "USA (ASTM D975)",
+            "value": 40,
+            "text": "40",
+            "at": "w:USA"
+          }
+        ],
+        "lines": [
+          {
+            "text": "hohe Cetanzahl → kurzer Verzug",
+            "hl": "kurzer Verzug",
+            "at": "w:kurzen"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Chevron",
+        "kicker": "5 · DIE CETANZAHL",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Verzug, vorgemischt, mischungsgesteuert, Nachbrennen. Motorentechnik verstehen: Folge Revlore.",
+      "data": {
+        "fuel": "diesel",
+        "chips": [
+          {
+            "text": "Verzug",
+            "at": "w:Verzug"
+          },
+          {
+            "text": "vorgemischt",
+            "at": "w:vorgemischt"
+          },
+          {
+            "text": "Mischung",
+            "at": "w:mischungsgesteuert"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Motorentechnik verstehen",
+          "at": "w:Motorentechnik"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

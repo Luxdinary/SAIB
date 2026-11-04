@@ -1,0 +1,597 @@
+{
+  "video_id": "claude_workflows-20261111-2-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "5 Befehle für die erste Sitzung",
+  "notes": "Produktion Woche 1 (Plan-Agent B, 01.11.2026): Thema 11.11. Thema 2 (W1), Reihe Werkzeugkiste. pw_steps mit 5 Einträgen (kompakt). Leitobjekt CLAUDE.md (fehlt → Entwurf → verfeinert → angelegt). Wichtig: Die Befehlsreferenz nennt /init, /memory und /mcp für die erste Sitzung; /context und /compact unter „During a task“, wenn das Gespräch lang wird. Das Video trennt das so.",
+  "hook": {
+    "id": "H1",
+    "note": "Frage nach der Auswahl; der Schrägstrich öffnet die Liste, CLAUDE.md fehlt noch (Tab bernstein)."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Neues Projekt, keine CLAUDE.md, nach dem Schrägstrich eine lange Liste. Womit anfangen?",
+      "on_screen": "Welche 5 Befehle zuerst?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Befehlsliste nach „/“, Marker, Frage",
+      "why": {
+        "truth": "Doku nennt den Ablauf für die erste Sitzung",
+        "visual": "Liste und Tab CLAUDE.md"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Du musst alle Befehle von Claude Code kennen? Für den Start reichen fünf.",
+      "on_screen": "Alle Befehle lernen? Nein.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Liste schrumpft auf fünf",
+      "why": {
+        "truth": "„reichen“ ist Auslegung"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Die Befehlsreferenz sagt dir selbst, womit du in einem neuen Repo anfängst.",
+      "on_screen": "Die Doku nennt die Reihenfolge",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Doku-Seite",
+      "why": {
+        "curiosity": "wenig Spannung"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne CLAUDE.md startet Claude jede Sitzung ohne deine Projektregeln.",
+      "on_screen": "Ohne CLAUDE.md keine Projektregeln",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "leerer Tab",
+      "why": {
+        "truth": "zugespitzt; Doku: CLAUDE.md gibt dauerhaften Kontext"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, was slash init in einem neuen Projekt anlegt.",
+      "on_screen": "Was /init anlegt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Editor tippt CLAUDE.md",
+      "why": {
+        "relevance": "nur ein Befehl"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Commands (Claude Code Docs): Commands across a typical workflow (First session in a repo: /init, /memory, /mcp; During a task: /context, /compact); command table",
+      "url": "https://code.claude.com/docs/en/commands",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Befehle"
+    },
+    {
+      "id": "S2",
+      "title": "How Claude remembers your project (Claude Code Docs): /init analyzes your codebase, suggests improvements if CLAUDE.md exists; /memory lists memory files and toggles auto memory",
+      "url": "https://code.claude.com/docs/en/memory",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Memory"
+    }
+  ],
+  "unverified": [
+    "Wie die Befehlsliste nach „/“ genau aussieht: nicht geprüft; der Hook zeigt eine animierte, verkürzte Liste.",
+    "Inhalt der CLAUDE.md im Beispiel (npm-Befehle, Ordner): erfunden, als Beispielwert gekennzeichnet; was /init tatsächlich schreibt, hängt vom Projekt ab.",
+    "Die Doku-Liste für die erste Sitzung nennt außerdem Subagenten und /permissions; das Video beschränkt sich auf die fünf Befehle des Kalenders."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "CLAUDE.md",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "CLAUDE.md: fehlt",
+          "tone": "amber"
+        },
+        {
+          "beat": "b2",
+          "text": "Reihenfolge: offen",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "Reihenfolge: aus der Doku",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "CLAUDE.md: Entwurf",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "CLAUDE.md: verfeinert",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "5 Befehle: bereit",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "CLAUDE.md: angelegt",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Fünf Befehle für die erste Sitzung mit Claude Code: /init schreibt einen Entwurf der CLAUDE.md, /memory verfeinert ihn, /mcp richtet Server ein. Wird das Gespräch lang, zeigt /context, was das Fenster füllt, und /compact fasst zusammen.",
+    "companion_text": "Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt. Grundlage: Befehlsreferenz und Memory-Seite der Claude-Code-Dokumentation. Die CLAUDE.md im Video ist ein Beispiel; die Fenster sind eine animierte Darstellung, keine Bildschirmaufnahme. Die Doku nennt für die erste Sitzung außerdem Subagenten und /permissions.",
+    "hashtags": [
+      "claudecode",
+      "befehle",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "5 Befehle erste Sitzung"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Neues Projekt, keine CLAUDE.md, nach dem Schrägstrich eine lange Liste. Womit anfangen?",
+      "data": {
+        "question": "Welche Befehle zuerst?",
+        "chip": "erste Sitzung",
+        "tabs": [
+          {
+            "name": "claude",
+            "active": true
+          },
+          "CLAUDE.md"
+        ],
+        "file": "CLAUDE.md",
+        "lines": [
+          [
+            [
+              "acc",
+              "> "
+            ],
+            [
+              "",
+              "/"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "kw",
+              "/init"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "kw",
+              "/memory"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "kw",
+              "/mcp"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "kw",
+              "/context"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "kw",
+              "/compact"
+            ]
+          ]
+        ],
+        "focus_line": 0,
+        "zoom": 1.1,
+        "line_h": 60,
+        "env_word": "CLAUDE",
+        "mark_word": "Schrägstrich",
+        "click_word": "Liste",
+        "question_word": "Womit",
+        "chip_word": "anfangen"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Liste"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Befehlsreferenz nennt für die erste Sitzung in einem neuen Repo eine klare Reihenfolge: zuerst slash init, dann slash memory zum Verfeinern.",
+      "data": {
+        "kicker": "Claude Code Docs · Commands",
+        "page_title": "Commands",
+        "quotes": [
+          "First session in a repo.",
+          "Run /init to generate a starter CLAUDE.md, then /memory to refine it."
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Erst /init, dann /memory zum Verfeinern",
+        "page_word": "Befehlsreferenz",
+        "quote1_word": "erste",
+        "quote2_word": "init",
+        "translation_word": "memory"
+      },
+      "overlay": {
+        "title": "Die Doku sagt, womit",
+        "marker_at": "w:erste",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Danach kommt slash mcp für die Server, die dein Projekt braucht. Wird das Gespräch später lang, zeigt dir slash context, was das Fenster füllt, und slash compact fasst es zusammen, um Platz zu schaffen.",
+      "data": {
+        "headline": "",
+        "gate": 3,
+        "chip": "wenn es lang wird",
+        "nodes": [
+          {
+            "label": "/init",
+            "tag": "Entwurf"
+          },
+          {
+            "label": "/memory",
+            "tag": "verfeinern"
+          },
+          {
+            "label": "/mcp",
+            "tag": "Server"
+          },
+          {
+            "label": "/context",
+            "hook": true
+          },
+          {
+            "label": "/compact",
+            "tag": "zusammenfassen"
+          }
+        ],
+        "travel_word": "Danach",
+        "travel_end_word": "compact",
+        "gate_word": "lang"
+      },
+      "overlay": {
+        "title": "Wann welcher Befehl",
+        "marker_at": "w:mcp",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Slash init analysiert deine Codebasis und schreibt Build-Befehle, Testanweisungen und Konventionen in die CLAUDE.md. Gibt es schon eine, schlägt es Verbesserungen vor, statt sie einfach zu überschreiben.",
+      "data": {
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          }
+        ],
+        "focus_line": 5,
+        "callout": "Vorschläge statt Überschreiben",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "com",
+              "# Projekt"
+            ]
+          ],
+          [
+            [
+              "key",
+              "## Build-Befehle"
+            ]
+          ],
+          [
+            [
+              "",
+              "npm run build"
+            ]
+          ],
+          [
+            [
+              "key",
+              "## Tests"
+            ]
+          ],
+          [
+            [
+              "",
+              "npm test"
+            ]
+          ],
+          [
+            [
+              "key",
+              "## Konventionen"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Komponenten in "
+            ],
+            [
+              "str",
+              "src/components/"
+            ]
+          ]
+        ],
+        "line_h": 50,
+        "zoom": 1.08,
+        "typed_word": "Codebasis",
+        "pre_line": 1,
+        "pre_word": "Build",
+        "mark_word": "Konventionen",
+        "click_word": "CLAUDE",
+        "callout_word": "Verbesserungen"
+      },
+      "overlay": {
+        "title": "/init schreibt den Entwurf",
+        "example": true,
+        "marker_at": "w:analysiert",
+        "dim_at": "w:CLAUDE",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Den ersten Entwurf liefert slash init. Die Feinarbeit machst du mit slash memory: Es öffnet deine CLAUDE.md und schaltet Auto Memory ein oder aus.",
+      "data": {
+        "top": {
+          "title": "/init",
+          "verdict": "Entwurf",
+          "rows": [
+            "analysiert die Codebasis",
+            "überschreibt nichts"
+          ]
+        },
+        "bottom": {
+          "title": "/memory",
+          "verdict": "Feinarbeit",
+          "rows": [
+            "öffnet deine CLAUDE.md",
+            "Auto Memory an oder aus"
+          ]
+        },
+        "top_word": "Entwurf",
+        "bottom_word": "Feinarbeit"
+      },
+      "overlay": {
+        "title": "Entwurf, dann Feinarbeit",
+        "marker": "auslegung",
+        "marker_at": "w:Feinarbeit",
+        "dim_at": "w:öffnet",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Hier die fünf zum Mitnehmen: slash init, slash memory und slash mcp für den Start. Und wenn es lang wird: slash context und slash compact.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Start-CLAUDE.md erzeugen",
+            "code": "/init",
+            "at_word": "init"
+          },
+          {
+            "title": "CLAUDE.md verfeinern",
+            "code": "/memory",
+            "at_word": "memory"
+          },
+          {
+            "title": "Server einrichten",
+            "code": "/mcp",
+            "at_word": "mcp"
+          },
+          {
+            "title": "Sehen, was den Kontext füllt",
+            "code": "/context",
+            "at_word": "context"
+          },
+          {
+            "title": "Gespräch zusammenfassen",
+            "code": "/compact",
+            "at_word": "compact"
+          }
+        ]
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:init",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "title": "Fünf Befehle"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Erst richtig einrichten, dann den Kontext gut im Blick behalten. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "CLAUDE.md: angelegt",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/init"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Entwurf: CLAUDE.md"
+          }
+        ],
+        "statement": "Erst einrichten. Dann den Kontext im Blick.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Erst",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

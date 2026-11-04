@@ -1,0 +1,559 @@
+{
+  "video_id": "military_history-20261110-3-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Chinesische Mauer: aus dem All mit bloßem Auge sichtbar?",
+  "notes": "Woche 1, Reihe Mythos geprüft. Astronauten nur als Fotograf ohne Namen; keine Zitate.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/PDFs/great_wall_less_great_from_space.pdf",
+      "title": "China's Wall Less Great in View from Space, NASA, 09.05.2005",
+      "label": "NASA (2005)",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3972694",
+      "title": "López-Gil: Is it Really Possible to See the Great Wall of China from Space with a Naked Eye? Journal of Optometry 1(1), 2008",
+      "label": "Journal of Optometry",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.nasa.gov/image-article/great-wall/",
+      "title": "Great Wall (image article), NASA, 02.04.2009",
+      "label": "NASA (2009)",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Aussagen einzelner Astronauten nicht primär geprüft; nicht im Video."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Kann man die Chinesische Mauer aus dem All mit bloßem Auge sehen?",
+      "on_screen": "Mit bloßem Auge aus dem All?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Die Mauer sieht man sogar vom Mond? Das sagt man seit 1938, belegt ist es nicht.",
+      "on_screen": "Sichtbar vom Mond?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Aus dem Orbit ist die Mauer wie ein Kabel aus einem halben Kilometer.",
+      "on_screen": "Ein Kabel aus 500 m",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Eine Mauer in der Farbe des Bodens verschwindet.",
+      "on_screen": "Getarnt vom Boden",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie schmal sechs Meter aus 160 Kilometern sind.",
+      "on_screen": "6 Meter aus 160 km",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Kann man die Chinesische Mauer aus dem All mit bloßem Auge sehen?",
+      "data": {
+        "question": "Die Mauer aus dem All, mit bloßem Auge?",
+        "question_em": "bloßem Auge",
+        "card_title": "Große Mauer",
+        "card_meta": "CHINA · AUS DEM ORBIT",
+        "card_no": "AKTE 20",
+        "stamp": "Mythos?",
+        "drawing": "great_wall_orbit.svg",
+        "packet_label": "Blick",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:All",
+        "packet_at": "w:Mauer",
+        "em_at": "w:Auge"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Die Mauer ist rund 7300 Kilometer lang. Doch entscheidend ist nicht die Länge, sondern die Breite: meist weniger als sechs Meter.",
+      "data": {
+        "mode": "map",
+        "headline": "Lang, aber schmal",
+        "places": [
+          {
+            "label": "Länge",
+            "code": "≈ 7.300 km",
+            "x": 600,
+            "y": 80,
+            "at": "w:Kilometer"
+          },
+          {
+            "label": "Breite",
+            "code": "meist < 6 m",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Breite"
+          }
+        ],
+        "route_at": "w:Doch",
+        "route_label": "Länge hilft nicht",
+        "route_label_at": "w:Länge",
+        "wait_at": "w:entscheidend",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "unter 6 m breit",
+        "chip_at": "w:sechs",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Blick",
+        "packet_at": "w:Mauer",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Die Breite entscheidet",
+        "line_label_at": "w:Meter",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Kabel",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Aus 160 Kilometern Höhe wirkt das wie ein zwei Zentimeter dickes Kabel aus über einem halben Kilometer. Dafür bräuchte man eine 7,7-mal bessere Sehschärfe als normal.",
+      "data": {
+        "headline": "Ein Kabel aus 500 m",
+        "drawing": "great_wall_orbit.svg",
+        "sheet_title": "BLATT 2 · SICHTLINIE",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Orbit ≈ 160 km",
+            "x": 380,
+            "y": 172,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:160"
+          },
+          {
+            "label": "Wie ein 2-cm-Kabel",
+            "x": 380,
+            "y": 505,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Kabel"
+          },
+          {
+            "label": "aus über 500 m",
+            "x": 380,
+            "y": 340,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:halben"
+          },
+          {
+            "label": "Sehschärfe × 7,7",
+            "x": 600,
+            "y": 330,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Sehschärfe"
+          }
+        ],
+        "zoom": {
+          "x": 380,
+          "y": 340,
+          "scale": 1.12,
+          "at": "w:Kabel",
+          "back_at": "w:normal",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Seit 1938 heißt es, man sehe die Mauer sogar vom Mond. Die NASA sagt: aus niedriger Umlaufbahn mit bloßem Auge meist nicht, vom Mond aus sicher nicht.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Mythos und Befund",
+        "left": {
+          "tag": "Mythos",
+          "title": "Vom Mond sichtbar",
+          "at": "w:1938",
+          "rows": [
+            {
+              "text": "seit 1938 erzählt",
+              "at": "w:Mond"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Befund",
+          "title": "Bloßes Auge: nein",
+          "at": "w:NASA",
+          "rows": [
+            {
+              "text": "Orbit: meist nicht",
+              "at": "w:Umlaufbahn"
+            },
+            {
+              "text": "Mond: sicher nicht",
+              "at": "w:sicher"
+            }
+          ]
+        },
+        "verdict": "Laut NASA ein Mythos",
+        "verdict_at": "w:sicher",
+        "dim_left_at": "w:NASA",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Mit Kamera geht es: Von der ISS entsteht am 24. November 2004 das erste bestätigte Foto, mit 180-Millimeter-Objektiv, an einem sonnigen Tag mit frischem Schnee.",
+      "data": {
+        "headline": "Mit Teleobjektiv",
+        "nodes": [
+          {
+            "label": "ISS",
+            "code": "Umlaufbahn",
+            "at": "w:ISS"
+          },
+          {
+            "label": "Erstes Foto",
+            "code": "24.11.2004",
+            "at": "w:Foto"
+          },
+          {
+            "label": "180 mm",
+            "code": "Teleobjektiv",
+            "at": "w:180-Millimeter-Objektiv"
+          },
+          {
+            "label": "Sonne und Schnee",
+            "code": "Kontrast",
+            "at": "w:Schnee"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Blick",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1938 ist der Mondmythos belegt, 2004 entsteht das erste Foto, und 2009 veröffentlicht die NASA einen Bildartikel dazu.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1938 bis 2009",
+        "items": [
+          {
+            "year": "1938",
+            "title": "Mondmythos belegt",
+            "sub": "älteste Fundstelle laut NASA",
+            "at": "w:1938"
+          },
+          {
+            "year": "2004",
+            "title": "Erstes Foto",
+            "sub": "ISS, 180-mm-Objektiv",
+            "at": "w:2004"
+          },
+          {
+            "year": "2009",
+            "title": "NASA-Bildartikel",
+            "sub": "Mauer mit Teleobjektiv",
+            "at": "w:2009"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Gut sichtbar aus der Umlaufbahn sind laut NASA eher Städte bei Nacht, Flughäfen und Stauseen. Die Mauer ist zu schmal und hat die Farbe des Bodens. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Große Mauer",
+        "card_meta": "AUS DEM ORBIT",
+        "card_no": "AKTE 20",
+        "stamp": "Mythos",
+        "drawing": "great_wall_orbit.svg",
+        "statement": "Zu schmal fürs bloße Auge",
+        "statement_at": "w:schmal",
+        "stamp_at": "w:Flughäfen",
+        "note": "Farbe wie der Boden ringsum",
+        "note_at": "w:Farbe",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Blick",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Blick: aus dem Orbit",
+          "tone": "muted",
+          "offset": 3.7
+        },
+        {
+          "beat": "b2",
+          "text": "Breite: unter 6 m",
+          "tone": "amber",
+          "offset": 7.6
+        },
+        {
+          "beat": "b3",
+          "text": "Sehschärfe: zu gering",
+          "tone": "amber",
+          "offset": 11.5
+        },
+        {
+          "beat": "b4",
+          "text": "Mond: Mythos",
+          "tone": "amber",
+          "offset": 6.1
+        },
+        {
+          "beat": "b5",
+          "text": "Foto: mit Teleobjektiv",
+          "tone": "muted",
+          "offset": 7.6
+        },
+        {
+          "beat": "b6",
+          "text": "Befund: 2009 erklärt",
+          "tone": "muted",
+          "offset": 5.6
+        },
+        {
+          "beat": "b7",
+          "text": "Bloßes Auge: nein",
+          "tone": "muted",
+          "offset": 9.6
+        }
+      ]
+    },
+    "description": "Mythos geprüft: Die Chinesische Mauer ist aus dem Orbit mit bloßem Auge kaum zu sehen, vom Mond gar nicht. Entscheidend ist die Breite. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "mythos",
+      "chinesischemauer",
+      "raumfahrt",
+      "nasa",
+      "geschichte"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

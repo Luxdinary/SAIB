@@ -1,0 +1,269 @@
+{
+  "video_id": "claude_workflows-20261111-1-en-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "More context, better result? Reading the whole file versus searching",
+  "notes": "Week 1, series Docs versus reality (replaces Myth check). Own English recording kontext-suche-en: same question, Read only versus Read and Grep, twice each. Both found Zwettl; input tokens run 1: 98,284 and 98,105, run 2: 19,295 and 19,068. File view of the large kunden.csv added afterwards from the spec (first 12 lines), because the recorder first skipped files over 20 KB.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Does it help Claude Code to load more into its context?",
+      "on_screen": "More context, better?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "CON",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "question"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "More context is always better? Per the docs, accuracy drops as tokens grow.",
+      "on_screen": "Always better?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "CON"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "context rot"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "For the same answer, Claude read 19,000 tokens once and 98,000 the other time.",
+      "on_screen": "19,000 versus 98,000",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "outcome.json"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Without search, Claude paged through a customer list in big chunks.",
+      "on_screen": "Read it all",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Two real runs: read the whole file versus a targeted search.",
+      "on_screen": "Read versus search",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "structure"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "CON",
+      "title": "Context windows: more context isn't automatically better; as token count grows, accuracy and recall degrade, a phenomenon known as context rot; curating what's in context is just as important as how much space is available",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+      "checked_at": "2026-11-02",
+      "label": "Claude docs, Context windows"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/kontext-suche-en",
+      "checked_at": "2026-11-02",
+      "label": "Own recording",
+      "title": "Own recording kontext-suche-en, 2026-11-02: Claude Code 2.1.309, test folder with sample data, every run twice"
+    }
+  ],
+  "unverified": [
+    "The run does not show context rot itself: both runs found the right value. It only shows the difference in consumption.",
+    "Token count = input tokens of the whole run (input, cache creation, cache read) from the claude -p result."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "kontext-suche-en"
+    },
+    "short_title": "Mehr Kontext ist nicht besser EN",
+    "description": "Real run, recorded on Nov 2, 2026 with Claude Code 2.1.309 (model claude-haiku-5-5). Wanted: one customer in a list of 6,000 made-up rows, every run twice. With Read only, Claude paged through the file and found the value, with about 98,000 input tokens. With Grep, it found it directly, with about 19,000 tokens.",
+    "companion_text": "Base command per run: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read. Run 1 with --tools Read, run 2 with --tools Read,Grep. Tokens: input tokens of the whole run. Source: Claude docs, Context windows, retrieved Nov 2, 2026. Paths shortened in the frame (test folder = .). Behaviour can change with version and model. Not an official Anthropic channel.",
+    "hashtags": [
+      "claudecode",
+      "aiworkflow",
+      "coding",
+      "developer",
+      "context"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "CON",
+        "R1"
+      ],
+      "spoken": "Does it help Claude Code to load more into its context? I asked the same question twice, once without a search tool and once with one.",
+      "data": {
+        "run": "L1",
+        "question": "More context, better?",
+        "type_word": "question",
+        "chips_word": "without",
+        "rec": "kontext-suche-en"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "The test folder holds a customer list with 6,000 made-up rows. We are looking for a single customer, K-4711, somewhere in the middle. The question: which city is this customer in?",
+      "data": {
+        "run": "L1",
+        "show": "kunden.csv",
+        "max_rows": 8,
+        "label": "Sample data, 6,000 rows",
+        "view_word": "customer",
+        "tag_word": "made-up",
+        "rec": "kontext-suche-en"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run one, with the Read tool only. Claude read the first big chunk, about 1,770 rows, and noticed it only went up to K-2772. It jumped further down, worked out from the numbering where K-4711 had to be, and found it on line 3713: Zwettl.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "text_rows": 3,
+        "stamp_true": "found",
+        "stamp_false": "not found",
+        "rec": "kontext-suche-en"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run two, with Grep. Claude searched for K-4711 directly and got exactly one match on line 3713. It then read only the first three rows to check which column holds the city.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "text_rows": 3,
+        "stamp_true": "found",
+        "stamp_false": "not found",
+        "rec": "kontext-suche-en"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "CON"
+      ],
+      "spoken": "Both runs ran twice, and both found Zwettl every time. But run one read about 98,000 tokens, and run two about 19,000. That is roughly five times as much for the same answer. According to the docs, accuracy and recall drop as the token count grows.",
+      "data": {
+        "headline": "Input tokens per run",
+        "metric": "input_tokens",
+        "metric_unit": "tokens",
+        "probe_good": true,
+        "note": "More tokens: accuracy and recall degrade (per the docs).",
+        "note_source": "Claude docs, Context windows",
+        "rows_word": "Both",
+        "row_gap": 0.8,
+        "note_word": "roughly",
+        "rec": "kontext-suche-en"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "Here both got there, but the targeted search was far cheaper. Give Claude a way to search instead of making it read everything. Follow Promptwerk for more Claude workflows, step by step.",
+      "data": {
+        "statement": "Search instead of reading everything.",
+        "claim": "Promptwerk · real runs",
+        "statement_word": "targeted",
+        "claim_word": "Follow",
+        "rec": "kontext-suche-en"
+      }
+    }
+  ]
+}

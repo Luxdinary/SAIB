@@ -1,0 +1,125 @@
+{
+  "spec": "regel-oder-hook",
+  "recorded_at": "2026-11-02T17:51:03+02:00",
+  "claude_code": "2.1.309",
+  "model_alias": "haiku",
+  "language": "de",
+  "isolation": [
+    "--setting-sources",
+    "project,local",
+    "--strict-mcp-config",
+    "--disable-slash-commands",
+    "--no-session-persistence"
+  ],
+  "sandbox": "C:\\Automation\\promptwerk-sandbox\\regel-oder-hook",
+  "runs": {
+    "L1": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Setze in config.json den port auf 8080.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Edit,Write",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Edit",
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 7110,
+      "num_turns": 3,
+      "total_cost_usd": 0.0011146600000000002,
+      "is_error": false,
+      "permission_denials": 1
+    },
+    "L2": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Setze in config.json den port auf 8080.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Edit,Write",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Edit",
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 5308,
+      "num_turns": 3,
+      "total_cost_usd": 0.00034091000000000004,
+      "is_error": false,
+      "permission_denials": 0
+    },
+    "L3": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Setze in config.json debug auf true.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Edit,Write",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Edit",
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 8627,
+      "num_turns": 3,
+      "total_cost_usd": 0.0006729100000000001,
+      "is_error": false,
+      "permission_denials": 1
+    }
+  }
+}

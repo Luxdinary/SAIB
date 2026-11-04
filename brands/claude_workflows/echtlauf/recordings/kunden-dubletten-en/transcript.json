@@ -1,0 +1,144 @@
+{
+  "spec": "kunden-dubletten-en",
+  "runs": {
+    "L1": {
+      "title": "Vague prompt",
+      "prompt": "Remove duplicate customers from kunden.csv and save the result as bereinigt.csv. How many customers are left? Reply in English.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 18.744,
+      "lines": [
+        {
+          "t": 5.374,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 7.498,
+          "kind": "tool",
+          "id": "toolu_01PMxayRcbfm6psjmnqEsV3Z",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 7.529,
+          "kind": "result",
+          "id": "toolu_01PMxayRcbfm6psjmnqEsV3Z",
+          "text": "1\tName;E-Mail;Ort\n2\tGasthaus Brunner;tisch@gasthaus-brunner.at;Bad Ischl\n3\tGruber & Söhne;Office@Gruber.at;Steyr\n… (39 more lines)"
+        },
+        {
+          "t": 12.538,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 14.95,
+          "kind": "tool",
+          "id": "toolu_01LxqAfCfMhAuU2mtT6fmJCz",
+          "text": "Write: .\\bereinigt.csv"
+        },
+        {
+          "t": 14.99,
+          "kind": "result",
+          "id": "toolu_01LxqAfCfMhAuU2mtT6fmJCz",
+          "text": "File created successfully at: .\\bereinigt.csv (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 16.833,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 18.167,
+          "kind": "text",
+          "text": "I saved the cleaned file as `bereinigt.csv` in the same folder. **31 customers are left**, down from 40.\n\nI treated two rows as duplicates when they had the same email address, ignoring case and stray spaces. The first occurrence was kept:\n\n- **Gasthaus Brunner** (row 17 removed)\n- **Gruber & Söhne** (row 6 removed; the email differs only in case)\n- **Pichler Elektro** (row 20 removed)\n- **Café Lindner** (row 26 removed)\n- **Bauer IT** (row 27 removed)\n- **Bäckerei Huber** (row 31 removed)\n- **Pfeiffer Autohaus** (row 34 removed)\n- **Anna Berger** (row 33 removed; the email had a trailing space)\n- **Müller GmbH** (row 32 \"Mueller GmbH\" removed; same email as the row kept, but the spelling of the name differs)\n\nThe last one is a judgment call. If you want matching by name as well as email, \"Mueller GmbH\" should stay, which would leave 32 customers."
+        },
+        {
+          "t": 18.194,
+          "kind": "end",
+          "text": "Done after 18.2 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 12851,
+        "num_turns": 3,
+        "total_cost_usd": 0.00205538,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Precise prompt",
+      "prompt": "Remove duplicate customers from kunden.csv and save the result as bereinigt.csv. Two rows are the same customer if the e-mail is the same, ignoring upper and lower case and spaces at the edges. How many customers are left? Reply in English.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 24.109,
+      "lines": [
+        {
+          "t": 7.554,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 10.562,
+          "kind": "tool",
+          "id": "toolu_01RPHGfEpEukhuznjLzngWCp",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 10.662,
+          "kind": "result",
+          "id": "toolu_01RPHGfEpEukhuznjLzngWCp",
+          "text": "1\tName;E-Mail;Ort\n2\tGasthaus Brunner;tisch@gasthaus-brunner.at;Bad Ischl\n3\tGruber & Söhne;Office@Gruber.at;Steyr\n… (39 more lines)"
+        },
+        {
+          "t": 17.169,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 19.568,
+          "kind": "tool",
+          "id": "toolu_016gkZuwa5stBX4QsrxZLq5w",
+          "text": "Write: .\\bereinigt.csv"
+        },
+        {
+          "t": 19.653,
+          "kind": "result",
+          "id": "toolu_016gkZuwa5stBX4QsrxZLq5w",
+          "text": "File created successfully at: .\\bereinigt.csv (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 23.435,
+          "kind": "text",
+          "text": "There are **31 customers** left.\n\nI removed 9 duplicate rows from the 40 in `kunden.csv`, keeping the first occurrence of each e-mail (matched case-insensitively, with edge spaces trimmed). The removed rows were 6, 17, 20, 26, 27, 31, 32, 33 and 34. Row 33 (`anna.berger@mail.at `, with a trailing space) matched row 23.\n\nThe result is saved as `bereinigt.csv` in the same folder. I kept the header and the original capitalisation of the kept rows. The file was written as UTF-8 with LF line endings, so if the original used CRLF or a BOM, the new file will differ in that respect."
+        },
+        {
+          "t": 23.503,
+          "kind": "end",
+          "text": "Done after 23.5 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 16038,
+        "num_turns": 3,
+        "total_cost_usd": 0.00256404,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

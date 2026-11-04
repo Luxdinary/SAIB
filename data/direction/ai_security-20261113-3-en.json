@@ -1,0 +1,460 @@
+{
+ "video_id": "ai_security-20261113-3-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Myth: phishing emails are full of typos",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema C11, Reihe Mythos-Check. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Business inbox. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Business inbox",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Check: spelling",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Email: genuine or not?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Sign: pressure",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Form: flawless",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Source: unchecked",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Rule: share today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Link under pressure: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Bad spelling gives phishing away? AI-written emails read cleanly. What the NCSC and Germany's BSI say, and which signs actually count.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "phishing",
+   "myth",
+   "aisecurity",
+   "smallbusiness",
+   "scam"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, lanes, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ncsc.gov.uk/report/impact-of-ai-on-cyber-threat",
+   "title": "NCSC assessment: The near-term impact of AI on the cyber threat (24.01.2024)",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, AI and the cyber threat"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Spam-Phishing-Co/Passwortdiebstahl-durch-Phishing/Wie-erkenne-ich-Phishing-in-E-Mails-und-auf-Webseiten/wie-erkenne-ich-phishing-in-e-mails-und-auf-webseiten_node.html",
+   "title": "BSI: Wie erkenne ich Phishing in E-Mails und auf Webseiten?",
+   "checked_at": "2026-11-01",
+   "label": "BSI (Germany), spotting phishing"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Leistungen-und-Kooperationen/Digitaler-Verbraucherschutz/Digitalbarometer/Online-Betrug2026/cymon2026_online-betrug_node.html",
+   "title": "BSI: Fokusthema Online-Betrug und KI – Cybersicherheitsmonitor 2026",
+   "checked_at": "2026-11-01",
+   "label": "BSI, Cyber Security Monitor 2026"
+  }
+ ],
+ "unverified": [
+  "Share of AI-written phishing: not used (no figure in the sources)."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "You can spot phishing by the bad spelling? Not with AI.",
+   "on_screen": "Phishing always has typos?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "NCSC: KI macht Social Engineering wirksamer und schwerer zu erkennen"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "How do you spot a phishing email without a single mistake?",
+   "on_screen": "And if it's flawless?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Only 19 percent have ever checked the source of an image, a German survey found.",
+   "on_screen": "Only 19% check the source",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A perfectly worded email from the bank can still be fake.",
+   "on_screen": "Perfect wording, still fake?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Read this email. Can you find a mistake?",
+   "on_screen": "Can you find a mistake?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "You can spot phishing by the bad spelling? Not with AI.",
+   "data": {
+    "question": "Phishing always has typos?",
+    "doc_label": "Email from the bank",
+    "chat_title": "Business inbox",
+    "bot_line": "Please confirm your account",
+    "typed": "Confirm account",
+    "badge": "Flawless?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 14,
+   "spoken": "The UK's NCSC assesses that AI almost certainly makes social engineering, tricking people, more effective and harder to detect. It will become harder for everyone to judge whether an email is genuine.",
+   "data": {
+    "headline": "What the NCSC expects",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "AI tool",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n1",
+      "label": "Flawless email",
+      "icon": "&#9993;"
+     },
+     {
+      "id": "n2",
+      "label": "Your inbox",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "writes"
+     },
+     {
+      "label": "lands in"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 1,
+     "at": 8.0,
+     "label": "Harder to detect"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 14,
+   "spoken": "That's why Germany's BSI lists signs that have nothing to do with language: urgent demands, threats such as blocking your account, requests for PINs or card numbers, links or forms. And a familiar sender with an unusual request.",
+   "data": {
+    "headline": "How to spot phishing",
+    "file_label": "Business inbox",
+    "card": {
+     "title": "According to the BSI",
+     "rows": [
+      {
+       "text": "pressure and threats",
+       "ok": "open"
+      },
+      {
+       "text": "asks for PIN or card",
+       "ok": "open"
+      },
+      {
+       "text": "known sender, odd request",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "The myth checks the form. The real signs check the intent. An email can be flawless and still pile on the pressure. That's what to look for.",
+   "data": {
+    "headline": "Form or intent",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 5.5,
+    "left": {
+     "title": "Myth: the form",
+     "rows": [
+      {
+       "text": "spelling mistakes",
+       "ok": "open"
+      },
+      {
+       "text": "clumsy language",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Sign: the intent",
+     "rows": [
+      {
+       "text": "pressure, threats",
+       "ok": null
+      },
+      {
+       "text": "asks for data or money",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "Checking still falls short. In the BSI's Cyber Security Monitor 2026, only 28 percent had ever looked for inconsistencies in AI content. And only 19 percent had checked the source of an image or video.",
+   "data": {
+    "headline": "Checking is still rare",
+    "file_label": "Business inbox",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Source checked",
+      "sub": "19% of respondents",
+      "at": 0.6
+     },
+     {
+      "title": "Gut feeling",
+      "sub": "assumed genuine",
+      "at": 1.0
+     }
+    ],
+    "approval": "Source checked?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "For your team, that means: if there's pressure, a threat or a request for data, don't click. Check with the sender through a channel you already know. And go to the bank or service directly, not through the link in the email.",
+   "data": {
+    "headline": "Three rules instead of spelling",
+    "items": [
+     {
+      "title": "Pressure = stop",
+      "sub": "don't click",
+      "at": 2.0
+     },
+     {
+      "title": "Check the sender",
+      "sub": "via a known channel",
+      "at": 4.8
+     },
+     {
+      "title": "Open the site yourself",
+      "sub": "not through the link",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Check the intent, not the spelling. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Intent, not spelling",
+    "file_label": "Business inbox",
+    "button": "Confirm account",
+    "block_text": "Check the sender first",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

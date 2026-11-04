@@ -1,0 +1,162 @@
+{
+  "spec": "format-hook",
+  "runs": {
+    "L1": {
+      "title": "Ohne Hook",
+      "prompt": "Füge in app.js eine Funktion verdoppeln(x) hinzu, die x * 2 zurückgibt, und exportiere sie.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 14.644,
+      "lines": [
+        {
+          "t": 7.766,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 9.862,
+          "kind": "tool",
+          "id": "toolu_01XE4DVhn6bm6w9Y3vUSNw19",
+          "text": "Read: .\\app.js"
+        },
+        {
+          "t": 9.938,
+          "kind": "result",
+          "id": "toolu_01XE4DVhn6bm6w9Y3vUSNw19",
+          "text": "1\tfunction begruessen(name) {\n2\t  return \"Hallo \" + name;\n3\t}\n… (3 weitere Zeilen)"
+        },
+        {
+          "t": 11.925,
+          "kind": "tool",
+          "id": "toolu_01Gno8iTucqUQaJmTug8Tp6G",
+          "text": "Edit: .\\app.js"
+        },
+        {
+          "t": 11.965,
+          "kind": "result",
+          "id": "toolu_01Gno8iTucqUQaJmTug8Tp6G",
+          "text": "The file .\\app.js has been updated successfully. (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 14.052,
+          "kind": "text",
+          "text": "Ich habe in `app.js` die Funktion `verdoppeln(x)` hinzugefügt, die `x * 2` zurückgibt, und sie zusammen mit `begruessen` exportiert:\n\n```js\nfunction verdoppeln(x) {\n  return x * 2;\n}\n\nmodule.exports = { begruessen, verdoppeln };\n```\n\nIch habe den Code nicht ausgeführt, die Änderung ist aber einfach und lässt sich direkt am Code nachvollziehen."
+        },
+        {
+          "t": 14.077,
+          "kind": "end",
+          "text": "Ende nach 14.1 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Edit",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 6395,
+        "num_turns": 3,
+        "total_cost_usd": 0.00102921,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Mit PostToolUse-Hook",
+      "prompt": "Füge in app.js eine Funktion verdoppeln(x) hinzu, die x * 2 zurückgibt, und exportiere sie.",
+      "settings": {
+        "hooks": {
+          "PostToolUse": [
+            {
+              "matcher": "Edit|Write",
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/format.js\""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "allowed_tools": [],
+      "wall": 16.167,
+      "lines": [
+        {
+          "t": 8.293,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 10.07,
+          "kind": "tool",
+          "id": "toolu_018LqG3v91wpkSmVp87qAE4E",
+          "text": "Read: .\\app.js"
+        },
+        {
+          "t": 10.104,
+          "kind": "result",
+          "id": "toolu_018LqG3v91wpkSmVp87qAE4E",
+          "text": "1\tfunction begruessen(name) {\n2\t  return \"Hallo \" + name;\n3\t}\n… (3 weitere Zeilen)"
+        },
+        {
+          "t": 11.62,
+          "kind": "tool",
+          "id": "toolu_01JUXddqAqkZGXvHHujy3XB9",
+          "text": "Edit: .\\app.js"
+        },
+        {
+          "t": 11.875,
+          "kind": "result",
+          "id": "toolu_01JUXddqAqkZGXvHHujy3XB9",
+          "text": "The file .\\app.js has been updated successfully. (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 13.329,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 13.455,
+          "kind": "tool",
+          "id": "toolu_01YJ88YRFh5F9m3N1ukqXfXN",
+          "text": "Read: .\\app.js"
+        },
+        {
+          "t": 13.473,
+          "kind": "result",
+          "id": "toolu_01YJ88YRFh5F9m3N1ukqXfXN",
+          "text": "1\t// formatiert mit format.js\n2\tfunction begruessen(name) {\n3\t  return 'Hallo ' + name;\n… (8 weitere Zeilen)"
+        },
+        {
+          "t": 15.601,
+          "kind": "text",
+          "text": "Ich habe `verdoppeln(x)` in `app.js` hinzugefügt. Die Funktion gibt `x * 2` zurück und wird zusammen mit `begruessen` exportiert:\n\n```js\nfunction verdoppeln(x) {\n  return x * 2;\n}\n\nmodule.exports = { begruessen, verdoppeln };\n```\n\nNach meiner Änderung hat ein PostToolUse-Hook (vermutlich ein Formatter aus `format.js`) die Datei umformatiert. Er hat einen Kommentar `// formatiert mit format.js` oben eingefügt und die Anführungszeichen in `begruessen` von `\"` auf `'` geändert. Das habe ich nicht angefasst; die Funktionalität ist unverändert."
+        },
+        {
+          "t": 15.615,
+          "kind": "end",
+          "text": "Ende nach 15.6 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Edit",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 7401,
+        "num_turns": 4,
+        "total_cost_usd": 0.00065183,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

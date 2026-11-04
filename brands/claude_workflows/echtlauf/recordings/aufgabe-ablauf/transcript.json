@@ -1,0 +1,235 @@
+{
+  "spec": "aufgabe-ablauf",
+  "runs": {
+    "L1": {
+      "title": "Mit Testlauf",
+      "prompt": "Der Test in test.js schlägt fehl. Finde den Fehler und behebe ihn. Prüfe danach mit node test.js.",
+      "settings": null,
+      "allowed_tools": [
+        "Bash(node test.js)"
+      ],
+      "wall": 15.72,
+      "lines": [
+        {
+          "t": 5.828,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 7.578,
+          "kind": "tool",
+          "id": "toolu_01MZUPXVGj6gwcjptKnYFAh7",
+          "text": "Bash: cd \".\" && ls -la && cat test.js && echo \"-----\" && node test.js; echo \"exit: $?\""
+        },
+        {
+          "t": 7.623,
+          "kind": "denied",
+          "id": "toolu_01MZUPXVGj6gwcjptKnYFAh7",
+          "text": "This Bash command contains multiple operations. The following part requires approval: echo \"exit: $?\""
+        },
+        {
+          "t": 8.863,
+          "kind": "tool",
+          "id": "toolu_01K5rzY7G3WTK6f5KHdxRzcy",
+          "text": "Bash: cd \".\" && ls -la && cat test.js"
+        },
+        {
+          "t": 9.029,
+          "kind": "tool",
+          "id": "toolu_014yVGBrsyTEbCju8HYnfHwW",
+          "text": "Bash: cd \".\" && node test.js"
+        },
+        {
+          "t": 10.889,
+          "kind": "result",
+          "id": "toolu_01K5rzY7G3WTK6f5KHdxRzcy",
+          "text": "total 6\ndrwxr-xr-x 1 Stefa 197121   0 Nov  2 17:35 .\ndrwxr-xr-x 1 Stefa 197121   0 Nov  2 17:35 ..\n… (10 weitere Zeilen)"
+        },
+        {
+          "t": 11.116,
+          "kind": "denied",
+          "id": "toolu_014yVGBrsyTEbCju8HYnfHwW",
+          "text": "Exit code 1\nTEST FEHLER: summe(2, 3) ergab -1"
+        },
+        {
+          "t": 12.188,
+          "kind": "tool",
+          "id": "toolu_01VzYqyxLHrGwsiaDr8erFqW",
+          "text": "Read: .\\summe.js"
+        },
+        {
+          "t": 12.22,
+          "kind": "result",
+          "id": "toolu_01VzYqyxLHrGwsiaDr8erFqW",
+          "text": "1\tfunction summe(a, b) {\n2\t  return a - b;\n3\t}\n… (2 weitere Zeilen)"
+        },
+        {
+          "t": 13.23,
+          "kind": "text",
+          "text": "The bug is in `summe.js`: the function subtracts instead of adding. I'll fix that."
+        },
+        {
+          "t": 13.447,
+          "kind": "tool",
+          "id": "toolu_01NPi5DEwsgFyS6HtjEdmSxF",
+          "text": "Edit: .\\summe.js"
+        },
+        {
+          "t": 13.478,
+          "kind": "result",
+          "id": "toolu_01NPi5DEwsgFyS6HtjEdmSxF",
+          "text": "The file .\\summe.js has been updated successfully. (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 13.732,
+          "kind": "tool",
+          "id": "toolu_01WptYn9z74hSreYrq9xpym1",
+          "text": "Bash: cd \".\" && node test.js"
+        },
+        {
+          "t": 13.925,
+          "kind": "result",
+          "id": "toolu_01WptYn9z74hSreYrq9xpym1",
+          "text": "TEST OK"
+        },
+        {
+          "t": 15.106,
+          "kind": "text",
+          "text": "Der Fehler lag in `summe.js`: Die Funktion `summe` rechnete `a - b` statt `a + b`. Bei `summe(2, 3)` ergab das `-1` statt `5`.\n\nIch habe die Zeile in `summe.js` auf `return a + b;` geändert. Danach hat `node test.js` die Ausgabe `TEST OK` geliefert."
+        },
+        {
+          "t": 15.147,
+          "kind": "end",
+          "text": "Ende nach 15.1 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Bash",
+          "Edit",
+          "Glob",
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 9405,
+        "num_turns": 7,
+        "total_cost_usd": 0.00270616,
+        "is_error": false,
+        "permission_denials": 1
+      }
+    },
+    "L2": {
+      "title": "Ohne Bash",
+      "prompt": "Der Test in test.js schlägt fehl. Finde den Fehler und behebe ihn. Prüfe danach mit node test.js.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 17.711,
+      "lines": [
+        {
+          "t": 7.036,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 9.098,
+          "kind": "tool",
+          "id": "toolu_01Vudjbn7JvG3m7iR3WgGL2i",
+          "text": "Read: .\\test.js"
+        },
+        {
+          "t": 9.143,
+          "kind": "result",
+          "id": "toolu_01Vudjbn7JvG3m7iR3WgGL2i",
+          "text": "1\tconst summe = require(\"./summe\");\n2\tconst r = summe(2, 3);\n3\tif (r === 5) {\n… (6 weitere Zeilen)"
+        },
+        {
+          "t": 9.415,
+          "kind": "tool",
+          "id": "toolu_01MLchYA2dWkwQPwQ7uAiXvK",
+          "text": "Glob: **/*"
+        },
+        {
+          "t": 10.631,
+          "kind": "result",
+          "id": "toolu_01MLchYA2dWkwQPwQ7uAiXvK",
+          "text": "summe.js\ntest.js"
+        },
+        {
+          "t": 12.2,
+          "kind": "tool",
+          "id": "toolu_01SRqvS8HgRhifCCp63rQSu4",
+          "text": "Read: .\\summe.js"
+        },
+        {
+          "t": 12.233,
+          "kind": "result",
+          "id": "toolu_01SRqvS8HgRhifCCp63rQSu4",
+          "text": "1\tfunction summe(a, b) {\n2\t  return a - b;\n3\t}\n… (2 weitere Zeilen)"
+        },
+        {
+          "t": 13.836,
+          "kind": "text",
+          "text": "The bug is in `summe.js`: the function subtracts instead of adding. I'll fix that and run the test."
+        },
+        {
+          "t": 14.127,
+          "kind": "tool",
+          "id": "toolu_01YXkc6ZrzVaUAWX5pKKpcfp",
+          "text": "Edit: .\\summe.js"
+        },
+        {
+          "t": 14.172,
+          "kind": "result",
+          "id": "toolu_01YXkc6ZrzVaUAWX5pKKpcfp",
+          "text": "The file .\\summe.js has been updated successfully. (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 14.312,
+          "kind": "tool",
+          "id": "toolu_016h4XcypTbQ88Dzbb1NZJhV",
+          "text": "Bash: cd \".\" && node test.js"
+        },
+        {
+          "t": 14.317,
+          "kind": "denied",
+          "id": "toolu_016h4XcypTbQ88Dzbb1NZJhV",
+          "text": "<tool_use_error>Error: No such tool available: Bash. Bash is disabled for this session, in subagents as well as here.</tool_use_error>"
+        },
+        {
+          "t": 16.206,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 17.119,
+          "kind": "text",
+          "text": "Der Fehler lag in `summe.js`: Die Funktion gab `a - b` zurück, also `2 - 3 = -1`, der Test erwartet aber 5. Ich habe das in `a + b` geändert.\n\nIch konnte `node test.js` nicht ausführen, weil das Bash-Tool in dieser Sitzung deaktiviert ist. Stattdessen habe ich den Code gelesen: `summe(2, 3)` ergibt jetzt `5`, und der Test prüft genau das. Der Test sollte also mit `TEST OK` durchlaufen. Bitte führe `node test.js` im Ordner `.` aus, um das zu bestätigen."
+        },
+        {
+          "t": 17.141,
+          "kind": "end",
+          "text": "Ende nach 17.1 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Edit",
+          "Glob",
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 10155,
+        "num_turns": 6,
+        "total_cost_usd": 0.00147021,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

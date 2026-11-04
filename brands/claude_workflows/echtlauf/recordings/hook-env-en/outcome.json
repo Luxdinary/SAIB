@@ -1,0 +1,127 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16395,
+          "output_tokens": 276,
+          "num_turns": 3,
+          "duration_s": 4.3
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16395,
+          "output_tokens": 288,
+          "num_turns": 3,
+          "duration_s": 3.5
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [],
+          "exit": 0,
+          "input_tokens": 5440,
+          "output_tokens": 607,
+          "num_turns": 1,
+          "duration_s": 5.1
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 11405,
+          "output_tokens": 609,
+          "num_turns": 2,
+          "duration_s": 5.8
+        }
+      ],
+      "reproducible": true
+    },
+    "L3": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [],
+          "exit": 0,
+          "input_tokens": 5440,
+          "output_tokens": 455,
+          "num_turns": 1,
+          "duration_s": 4.0
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [],
+          "exit": 0,
+          "input_tokens": 5440,
+          "output_tokens": 652,
+          "num_turns": 1,
+          "duration_s": 4.6
+        }
+      ],
+      "reproducible": true
+    },
+    "L4": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16413,
+          "output_tokens": 590,
+          "num_turns": 3,
+          "duration_s": 5.1
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16413,
+          "output_tokens": 541,
+          "num_turns": 3,
+          "duration_s": 5.4
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

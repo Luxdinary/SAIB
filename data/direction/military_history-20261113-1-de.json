@@ -1,0 +1,552 @@
+{
+  "video_id": "military_history-20261113-1-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Vindolanda: Briefe auf Holz aus einem Römerkastell",
+  "notes": "Woche 1, Reihe Signal und Nachricht. Alltag und Schrifttechnik; Personen nur als Absenderin und Empfängerin des Dokuments.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://artsandculture.google.com/asset/writing-tablet-with-a-letter-inviting-sulpicia-lepidina-the-commander-s-wife-to-a-birthday-party/kAHBJkxO7nDWsw",
+      "title": "Writing-tablet with a letter inviting Sulpicia Lepidina to a birthday party, British Museum 1986,1001.64",
+      "label": "British Museum",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://romaninscriptionsofbritain.org/inscriptions/TabVindol291",
+      "title": "Tab.Vindol. 291, Birthday Invitation of Sulpicia Lepidina, Roman Inscriptions of Britain",
+      "label": "RIB: Tab.Vindol. 291",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Datierung 97/103 (British Museum) oder 97–105 (RIB); im Video 97 bis 105 laut RIB."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie schreibt man um das Jahr 100 einen Brief an der Grenze des Römischen Reichs?",
+      "on_screen": "Ein Brief vom Rand des Reichs?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Römer schrieben nur in Stein? Dieser Brief steht mit Tinte auf dünnem Holz.",
+      "on_screen": "Tinte auf Holz",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Eine Geburtstagseinladung vom Hadrianswall, gefunden 1985.",
+      "on_screen": "Einladung zum Geburtstag",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Holz und Tinte, und trotzdem überdauert.",
+      "on_screen": "Es hat überdauert",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie ein Holztäfelchen gefaltet und adressiert wurde.",
+      "on_screen": "Gefaltet und adressiert",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie schreibt man um das Jahr 100 einen Brief an der Grenze des Römischen Reichs?",
+      "data": {
+        "question": "Ein Brief vom Rand des Reichs?",
+        "question_em": "Rand des Reichs",
+        "card_title": "Tab. Vindol. 291",
+        "card_meta": "VINDOLANDA · UM 100",
+        "card_no": "AKTE 22",
+        "stamp": "1985",
+        "drawing": "vindolanda_tablet.svg",
+        "packet_label": "Brief",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:100",
+        "packet_at": "w:Brief",
+        "em_at": "w:Grenze"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Vindolanda ist ein Kastell südlich des Hadrianswalls. Dort wird 1985 ein Brief gefunden: eine Einladung zum Geburtstag am 11. September.",
+      "data": {
+        "mode": "map",
+        "headline": "Ein Fund am Wall",
+        "places": [
+          {
+            "label": "Vindolanda",
+            "code": "Kastell",
+            "x": 600,
+            "y": 80,
+            "at": "w:Vindolanda"
+          },
+          {
+            "label": "Hadrianswall",
+            "code": "nördlich",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Hadrianswalls"
+          }
+        ],
+        "route_at": "w:südlich",
+        "route_label": "südlich der Mauer",
+        "route_label_at": "w:Kastell",
+        "wait_at": "w:1985",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Fund 1985",
+        "chip_at": "w:gefunden",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Brief",
+        "packet_at": "w:Brief",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Einladung zum 11. September",
+        "line_label_at": "w:September",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Schreiber",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Der Brief steht mit Tinte auf dünnem Holz, gefaltet aus zwei Teilen, 223 Millimeter lang. Ein Schreiber schreibt den Hauptteil, die letzten vier Zeilen die Absenderin selbst.",
+      "data": {
+        "headline": "Tinte auf Holz",
+        "drawing": "vindolanda_tablet.svg",
+        "sheet_title": "BLATT 2 · DIPTYCHON",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Tinte auf Holz",
+            "x": 120,
+            "y": 190,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Tinte"
+          },
+          {
+            "label": "Gefaltet: 2 Teile",
+            "x": 360,
+            "y": 215,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:gefaltet"
+          },
+          {
+            "label": "223 mm lang",
+            "x": 360,
+            "y": 140,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:223"
+          },
+          {
+            "label": "4 Zeilen eigenhändig",
+            "x": 520,
+            "y": 230,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:letzten"
+          }
+        ],
+        "zoom": {
+          "x": 360,
+          "y": 215,
+          "scale": 1.12,
+          "at": "w:Schreiber",
+          "back_at": "w:Absenderin",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Absenderin ist Claudia Severa, Frau eines Kommandanten. Empfängerin ist Sulpicia Lepidina, Frau des Präfekten der neunten Bataverkohorte. Die Adresse steht auf der Rückseite.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Von wem, an wen",
+        "left": {
+          "tag": "Von",
+          "title": "Claudia Severa",
+          "at": "w:Claudia",
+          "rows": [
+            {
+              "text": "Frau eines Kommandanten",
+              "at": "w:Kommandanten"
+            }
+          ]
+        },
+        "right": {
+          "tag": "An",
+          "title": "Sulpicia Lepidina",
+          "at": "w:Sulpicia",
+          "rows": [
+            {
+              "text": "9. Kohorte der Bataver",
+              "at": "w:Bataverkohorte"
+            }
+          ]
+        },
+        "verdict": "Adresse auf der Rückseite",
+        "verdict_at": "w:Adresse",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Der Weg des Briefs: geschrieben im nahen Kastell, gefaltet, adressiert, nach Vindolanda gebracht, und 1985 wieder ausgegraben.",
+      "data": {
+        "headline": "Der Weg des Briefs",
+        "nodes": [
+          {
+            "label": "Nahes Kastell",
+            "code": "geschrieben",
+            "at": "w:geschrieben"
+          },
+          {
+            "label": "Gefaltet",
+            "code": "2 Teile",
+            "at": "w:gefaltet"
+          },
+          {
+            "label": "Adressiert",
+            "code": "Rückseite",
+            "at": "w:adressiert"
+          },
+          {
+            "label": "Vindolanda",
+            "code": "Fund 1985",
+            "at": "w:1985"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Brief",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "Datiert wird der Brief auf 97 bis 105 nach Christus. 1985 wird er gefunden, 1986 kommt er ins British Museum.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 97 bis 1986",
+        "items": [
+          {
+            "year": "97–105",
+            "title": "Brief geschrieben",
+            "sub": "Datierung laut RIB",
+            "at": "w:97"
+          },
+          {
+            "year": "1985",
+            "title": "Fund",
+            "sub": "Vindolanda",
+            "at": "w:1985"
+          },
+          {
+            "year": "1986",
+            "title": "British Museum",
+            "sub": "Reg.-Nr. 1986,1001.64",
+            "at": "w:1986"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Die Zeilen der Absenderin gelten als eines der frühesten Beispiele lateinischer Schrift von Frauenhand. Das Täfelchen liegt heute im British Museum. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Tab. Vindol. 291",
+        "card_meta": "VINDOLANDA · UM 100",
+        "card_no": "AKTE 22",
+        "stamp": "1985",
+        "drawing": "vindolanda_tablet.svg",
+        "statement": "Eine der frühesten Handschriften einer Frau",
+        "statement_at": "w:frühesten",
+        "stamp_at": "w:Täfelchen",
+        "note": "British Museum 1986,1001.64",
+        "note_at": "w:British",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Brief",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Brief: unterwegs",
+          "tone": "muted",
+          "offset": 4.2
+        },
+        {
+          "beat": "b2",
+          "text": "Fund: 1985",
+          "tone": "amber",
+          "offset": 4.7
+        },
+        {
+          "beat": "b3",
+          "text": "Hand: Schreiber + eigene",
+          "tone": "amber",
+          "offset": 8.1
+        },
+        {
+          "beat": "b4",
+          "text": "Adresse: Rückseite",
+          "tone": "amber",
+          "offset": 9.1
+        },
+        {
+          "beat": "b5",
+          "text": "Ziel: Vindolanda",
+          "tone": "muted",
+          "offset": 5.6
+        },
+        {
+          "beat": "b6",
+          "text": "Datiert: 97–105",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b7",
+          "text": "Ort: British Museum",
+          "tone": "muted",
+          "offset": 9.6
+        }
+      ]
+    },
+    "description": "Ein Brief auf Holz vom Hadrianswall: eine Geburtstagseinladung um 100 n. Chr., die letzten Zeilen von Frauenhand. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "römer",
+      "vindolanda",
+      "geschichte",
+      "schrift",
+      "archäologie"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

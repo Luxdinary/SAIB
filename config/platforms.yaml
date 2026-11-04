@@ -1,0 +1,35 @@
+# Platform rules, verified 2026-10-29 (sources in OneDrive\Business\01 Idee und Strategie\Recherche\Faktencheck 2026-10-29.md).
+# Values marked NOT_VERIFIED were not found in official documentation and must not be relied on.
+platforms:
+  tiktok:
+    aspect: "9:16"
+    min_seconds_for_rewards: 61          # Creator Rewards: videos over 1 minute (Creator Academy, 2026-08-18)
+    daily_post_limit_per_account: 15     # docs.upload-post.com/guides/rate-limits
+    ai_label_field: is_aigc              # Upload-Post parameter
+    account_type_required: personal      # Rewards only on personal accounts
+    rewards_available_in_austria: false
+    caption_max_chars: 2200              # NOT_VERIFIED (common value; confirm in Upload-Post docs before use)
+  instagram:
+    aspect: "9:16"
+    daily_post_limit_per_account: 50     # conservative: Meta content_publishing_limit quota_total 50
+    ai_label_field: is_ai_generated
+    account_type_required: creator
+    caption_max_chars: 2200              # NOT_VERIFIED
+  youtube:
+    aspect: "9:16"
+    daily_post_limit_per_account: 30     # docs.upload-post.com/guides/rate-limits
+    ai_label_field: containsSyntheticMedia
+    shorts_max_seconds: 180              # NOT_VERIFIED (YouTube help states up to 3 minutes since 2024-10; confirm)
+    title_max_chars: 100
+
+publisher:
+  name: upload-post
+  docs: https://docs.upload-post.com
+  endpoint_upload: /api/upload           # docs.upload-post.com/api/upload-video
+  schedule_field: scheduled_date         # ISO 8601, up to 365 days ahead
+  max_schedule_days_ahead: 365
+  status_by: request_id                  # status endpoint keyed by request_id / job_id
+  commercial_fields: [brand_content_toggle, brand_organic_toggle, hasPaidProductPlacement]
+  privacy_field: privacy_level
+  idempotency_field: external_id         # NOT_VERIFIED as an Upload-Post field name; we always send our own video_id and check status before re-sending
+  mcp_server: https://mcp.upload-post.com/mcp

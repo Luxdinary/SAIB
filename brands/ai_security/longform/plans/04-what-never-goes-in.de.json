@@ -1,0 +1,1426 @@
+{
+ "video_id": "yt04-what-never-goes-in-de",
+ "slug": "04-what-never-goes-in",
+ "lang": "de",
+ "title": "Was nie in ein KI-Tool darf. Fünf Datenarten und die Zweifelsregel.",
+ "short_title": "Was nie hineingehört",
+ "version": "Fassung 3 (Langvideo), Entwurf 2026-11-02. Freigegebener Wortlaut aus SKRIPTE/04-what-never-goes-in.de.md Fassung 2 (Stefan, 29.10. und 01.11.2026) unverändert; neu und zur Freigabe: Kaltstart (c0s0), Überblick (c0s2), Kapitel 4 (c4) und der letzte Satz (Verweis auf Video 05 statt auf den Rundgang, weil 03 auf die Website wartet), im Feld new=true markiert.",
+ "sources": [
+  {
+   "id": "D19",
+   "label": "Datenschutzkonferenz, Orientierungshilfe vom 6. Mai 2024, Abschnitte 1.9 und 3.1, S. 7 und 12 · Abruf 2026-10-23",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 1.9, 3.1 · Abruf 23.10.2026"
+  },
+  {
+   "id": "S1",
+   "label": "Richtlinie (EU) 2016/943, Art. 2 Abs. 1 Buchst. a bis c · EUR-Lex · Abruf 2026-10-18; § 26b Abs. 1 Z 3 UWG · ris.bka.gv.at; § 2 Nr. 1 Buchst. b GeschGehG · gesetze-im-internet.de · Abruf 2026-10-23",
+   "short": "RL (EU) 2016/943 Art. 2 · § 26b UWG · § 2 GeschGehG · Abruf 18./23.10.2026"
+  },
+  {
+   "id": "D24",
+   "label": "Datenschutzkonferenz, Orientierungshilfe vom 6. Mai 2024, Abschnitt 2.4, S. 10 bis 11 · Abruf 2026-10-18",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 2.4 · Abruf 18.10.2026"
+  },
+  {
+   "id": "D31",
+   "label": "Datenschutzkonferenz, Orientierungshilfe vom 6. Mai 2024, Abschnitt 3.1, S. 12 · Abruf 2026-10-18",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 3.1, S. 12 · Abruf 18.10.2026"
+  },
+  {
+   "id": "B16",
+   "label": "BSI, Generative KI-Modelle, Version 2.0 vom 17. Januar 2025, M16, S. 49 · Abruf 2026-10-18",
+   "short": "BSI, Generative KI-Modelle 2.0, M16 · Abruf 18.10.2026"
+  },
+  {
+   "id": "A3",
+   "label": "Verordnung (EU) 2024/1689, Anhang III Nr. 4 Buchst. a und b, konsolidierte Fassung vom 27. Juli 2026 · EUR-Lex · Abruf 2026-10-19",
+   "short": "KI-VO Anhang III Nr. 4 · Abruf 19.10.2026"
+  },
+  {
+   "id": "D2",
+   "label": "Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, Version 1.0 vom 6. Mai 2024, Abschnitte 2.2, 2.4 und 3.1 · datenschutzkonferenz-online.de · Abruf 2026-10-18",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 2.2, 2.4, 3.1 · Abruf 18.10.2026"
+  },
+  {
+   "id": "B16b",
+   "label": "BSI, Generative KI-Modelle, Chancen und Risiken für Industrie und Behörden, Version 2.0 vom 17. Januar 2025, Maßnahme M16, S. 49 · bsi.bund.de · Abruf 2026-10-18",
+   "short": "BSI, Generative KI-Modelle 2.0, M16, S. 49 · Abruf 18.10.2026"
+  },
+  {
+   "id": "O812",
+   "label": "Zuletzt geprüft 2026-10-19 · offener Punkt 8.12",
+   "short": "Handbuch KI-Richtlinien, offener Punkt 8.12 · geprüft 19.10.2026"
+  },
+  {
+   "id": "G9",
+   "label": "Verordnung (EU) 2016/679, Art. 9 Abs. 1 · EUR-Lex · Abruf 2026-10-23",
+   "short": "DSGVO Art. 9 Abs. 1 · Abruf 23.10.2026"
+  },
+  {
+   "id": "G33",
+   "label": "Verordnung (EU) 2016/679, Art. 4 Nr. 12, Art. 33 Abs. 1 und 5 · EUR-Lex · Abruf 2026-10-23",
+   "short": "DSGVO Art. 4 Nr. 12, Art. 33 · Abruf 23.10.2026"
+  }
+ ],
+ "chapters": [
+  {
+   "id": "c0",
+   "num": "",
+   "title": "Was nie in ein KI-Tool darf",
+   "kicker": "SCUTORIA · WAS NIE HINEINGEHÖRT",
+   "card": false,
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_office_night.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Beispielfall · nachgestellt",
+      "time": "MO 08:05",
+      "place": "Büro, Muster Elektrotechnik e.U. (erfunden)",
+      "obj": {
+       "label": "Textassistent · Neuer Chat",
+       "from": "Eingabe",
+       "subject": "Antwort auf Beschwerde formulieren",
+       "lines": [
+        "Kundin, Name und Anschrift",
+        "Baustelle, Termin, was schiefging",
+        "Telefonnummer für den Rückruf",
+        "„Bitte freundlich, aber bestimmt“"
+       ]
+      },
+      "obj_at": "@Beschwerde",
+      "highlight": {
+       "line": 0,
+       "label": "Personenbezug",
+       "at": "@Sekunden"
+      }
+     },
+     "say": [
+      {
+       "text": "Montag, acht Uhr fünf. Im Büro liegt eine Beschwerde einer Kundin. Die Antwort soll freundlich und bestimmt sein, also wandert die ganze Mail in den Textassistenten. Das dauert zehn Sekunden.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Die Frage dieses Videos",
+      "text": "Fügt jemand in Ihrem Büro gerade eine *Kundenbeschwerde* in ein KI-Tool ein?",
+      "sub": "Fünf Datenarten, die nie hinein dürfen, und eine Regel für alles andere.",
+      "sub_at": "@Fünf"
+     },
+     "say": [
+      {
+       "text": "Fügt jemand in Ihrem Büro gerade eine Kundenbeschwerde in ein KI-Tool ein?"
+      },
+      {
+       "text": "Fünf Datenarten, die nie hinein dürfen, und eine Regel für alles andere."
+      }
+     ]
+    },
+    {
+     "type": "chapters",
+     "new": true,
+     "data": {
+      "headline": "In diesem Video",
+      "items": [
+       {
+        "num": "1",
+        "title": "Ein gewöhnlicher Tag",
+        "at": "@Tag"
+       },
+       {
+        "num": "2",
+        "title": "Die Liste und die Zweifelsregel",
+        "at": "@Liste"
+       },
+       {
+        "num": "3",
+        "title": "Die Quellen",
+        "at": "@Quellen"
+       },
+       {
+        "num": "4",
+        "title": "Was tun Sie? Zwei Fälle",
+        "at": "@Fälle"
+       },
+       {
+        "num": "5",
+        "title": "Der Beispielbetrieb",
+        "at": "@Beispielbetrieb"
+       },
+       {
+        "num": "6",
+        "title": "Was es nicht ist",
+        "at": "@nicht"
+       },
+       {
+        "num": "7",
+        "title": "Zwei freie Tools",
+        "at": "@Tools"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Wir gehen so vor: ein gewöhnlicher Tag, die Liste und die Zweifelsregel, die Quellen, zwei Fälle, in denen Sie entscheiden, der Beispielbetrieb, was das alles nicht ist, und am Ende zwei freie Tools."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "num": "1",
+   "title": "Ein gewöhnlicher Tag",
+   "kicker": "1 · Die Lage",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_workshop_bench.mp4",
+     "data": {
+      "kicker": "Der erfundene Betrieb",
+      "text": "Entschieden hat das niemand. Es ist passiert, *Aufgabe für Aufgabe*.",
+      "sub": "Drei im Büro nutzen einen Textassistenten, zwei Monteure privat auf dem Telefon.",
+      "sub_at": "@Drei"
+     },
+     "say": [
+      {
+       "text": "Wir benutzen in jedem Video denselben erfundenen Betrieb: einen Elektrotechnikbetrieb mit zehn bis neunundvierzig Beschäftigten in Österreich. Keine Person darin ist echt. Drei Personen im Büro benutzen einen Textassistenten für Angebote, Zusammenfassungen und Übersetzungen. Zwei Monteure haben sich denselben Assistenten privat auf dem Telefon eingerichtet. Entschieden hat das niemand. Es ist passiert, Aufgabe für Aufgabe.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Was an einem gewöhnlichen Tag *hineingeht*",
+      "note": "Jede Person hat allein entschieden, im Moment.",
+      "note_at": "@Jede",
+      "doc": {
+       "label": "Eingaben · ein Tag · Beispiel",
+       "title": "Nichts davon war böse gemeint",
+       "lines": [
+        {
+         "text": "Mängelrüge mit Namen, Anschrift, Baustelle",
+         "at": "@Mängelrüge",
+         "mark": "risk"
+        },
+        {
+         "text": "Kalkulationsblatt für einen Auftrag",
+         "at": "@Kalkulationsblatt",
+         "mark": "risk"
+        },
+        {
+         "text": "Zutrittscode zu einem Kundenobjekt",
+         "at": "@Zutrittscode",
+         "mark": "risk"
+        },
+        {
+         "text": "Krankmeldung eines Kollegen",
+         "at": "@Krankmeldung",
+         "mark": "risk"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Sehen Sie sich an, was an einem gewöhnlichen Tag hineingeht. Eine Mängelrüge an einen Kunden, mit Namen, Anschrift und dem, was auf der Baustelle schiefging. Ein Kalkulationsblatt für einen Auftrag, weil der Assistent Tabellen gut aufräumt. Der Zutrittscode zu einem Kundenobjekt, weil er in derselben E-Mail stand wie die Auftragsbeschreibung. Die Krankmeldung eines Kollegen, um sie für die Ablage zu kürzen. Nichts davon war böse gemeint. Jede Person hat allein entschieden, im Moment, ohne etwas, woran sie sich halten konnte.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Daraus folgen drei Dinge",
+      "items": [
+       {
+        "title": "Personenbezogene Daten",
+        "sub": "Eingabe und Übermittlung brauchen je eine Rechtsgrundlage",
+        "at": "@Erstens"
+       },
+       {
+        "title": "Geschäftsgeheimnisse",
+        "sub": "nur mit angemessenen Geheimhaltungsmaßnahmen",
+        "at": "@Zweitens"
+       },
+       {
+        "title": "Ein Zutrittscode im Tool",
+        "sub": "ist ein Zutrittscode außer Haus",
+        "at": "@Drittens"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Daraus folgen drei Dinge."
+      },
+      {
+       "text": "Erstens: Angaben, mit denen ein Kunde, eine beschäftigte Person oder eine Bewerberin erkennbar ist, sind personenbezogene Daten. Für die Eingabe in eine KI-Anwendung und für die Übermittlung an den Anbieter ist jeweils eine Rechtsgrundlage nach der DSGVO nötig.",
+       "marker": "fakt",
+       "source": "D19"
+      },
+      {
+       "text": "Zweitens: Kalkulationen, Preise, Verträge und Kundenlisten sind nur so lange Geschäftsgeheimnisse, wie der Betrieb angemessene Maßnahmen trifft, um sie geheim zu halten.",
+       "marker": "fakt",
+       "source": "S1"
+      },
+      {
+       "text": "Drittens: Ein Zutrittscode in einem Tool ist ein Zutrittscode außer Haus."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Unsere Auslegung",
+      "text": "Eine Regel verlagert die Entscheidung von der Tastatur auf den *Betrieb*.",
+      "sub": "Einmal, schriftlich: die Liste, die Zweifelsregel, zwei Tools.",
+      "sub_at": "@Darum"
+     },
+     "say": [
+      {
+       "text": "Unsere Auslegung: Eine Regel verlagert diese Entscheidung von jeder Person an der Tastatur auf den Betrieb, einmal, schriftlich. Darum geht es in diesem Video: um die Liste, die Zweifelsregel und zwei Tools, die Sie Ihrer Belegschaft morgen geben können.",
+       "marker": "auslegung"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "num": "2",
+   "title": "Die Liste und die Zweifelsregel",
+   "kicker": "2 · Die Liste",
+   "scenes": [
+    {
+     "type": "steps",
+     "bg": "yt/lib_documents_desk.mp4",
+     "data": {
+      "headline": "Fünf Datenarten kommen *nie* in ein KI-Tool",
+      "items": [
+       {
+        "title": "Kunden, Beschäftigte, Bewerber",
+        "sub": "Namen, Anschriften, Geburtsdaten, Kundennummern, Kennzeichen",
+        "at": "@Eins"
+       },
+       {
+        "title": "Zugangsdaten",
+        "sub": "Passwörter, Schlüssel, Zutrittscodes, Token",
+        "at": "@Zwei"
+       },
+       {
+        "title": "Vertrauliches des Betriebs",
+        "sub": "Kalkulationen, Preise, Verträge, Kundenlisten",
+        "at": "@Kalkulationen"
+       },
+       {
+        "title": "Gesundheitsangaben",
+        "sub": "Krankmeldung, Diagnose, ein Wort wie „Operation“",
+        "at": "@Vier"
+       },
+       {
+        "title": "Unterlagen Dritter",
+        "sub": "unter Vertraulichkeit übergeben",
+        "at": "@Unterlagen"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Hier ist die Liste: Paragraf drei der Nutzungsrichtlinie im KI-Richtlinien-Toolkit, für jeden Betrieb gleich. Fünf Datenarten kommen nie in ein KI-Tool, über welchen Zugang auch immer."
+      },
+      {
+       "text": "Eins. Angaben zu Kunden, Beschäftigten und Bewerbern, mit denen eine Person erkennbar ist: Namen, Anschriften, Geburtsdaten, Kundennummern, ein Kennzeichen."
+      },
+      {
+       "text": "Zwei. Zugangsdaten: Passwörter, Schlüssel, Zutrittscodes, Token."
+      },
+      {
+       "text": "Drei. Kalkulationen, Preise, Verträge, Kundenlisten und alles andere, was der Betrieb vertraulich hält."
+      },
+      {
+       "text": "Vier. Gesundheitsangaben: eine Krankmeldung, eine Diagnose, ein Wort wie „Operation“ in einer E-Mail über einen Kollegen."
+      },
+      {
+       "text": "Fünf. Unterlagen Dritter, die unter Vertraulichkeit übergeben wurden: die Pläne eines Kunden, eine Ausschreibung mit Vertraulichkeitsklausel."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "bg": "yt/lib_screen_blur.mp4",
+     "data": {
+      "headline": "*Über welchen Zugang auch immer*",
+      "left": {
+       "title": "Gilt für",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "das betriebliche Konto",
+         "at": "@betriebliche"
+        },
+        {
+         "text": "ein privates Konto",
+         "at": "@privates"
+        },
+        {
+         "text": "die App auf dem privaten Telefon",
+         "at": "@App"
+        }
+       ]
+      },
+      "right": {
+       "title": "Warum",
+       "tone": "amber",
+       "at": "@Datenschutzaufsichtsbehörden",
+       "rows": [
+        {
+         "text": "private Accounts und Geräte: Profile Einzelner",
+         "at": "@Profile"
+        },
+        {
+         "text": "eigene Datenarten in eigenen Worten ergänzen",
+         "at": "@ergänzt"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "„Über welchen Zugang auch immer“ ist der wichtige Teil: das betriebliche Konto, ein privates Konto, die App auf dem privaten Telefon. Die deutschen Datenschutzaufsichtsbehörden raten, dass Beschäftigte nicht mit privaten Accounts und Geräten mit KI-Anwendungen arbeiten müssen sollten, weil auf diese Weise Profile einzelner Beschäftigter entstehen können.",
+       "marker": "fakt",
+       "source": "D24"
+      },
+      {
+       "text": "Der Betrieb ergänzt seine eigenen Datenarten, in seinen eigenen Worten, damit die Leute, die damit umgehen, sie wiedererkennen."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Die Regel, die die Liste schließt",
+      "text": "Im Zweifel nichts eingeben, sondern die *benannte Person* fragen.",
+      "sub": "Sie muss erreichbar sein. Deshalb steht die Regel ganz oben auf der einen Seite.",
+      "sub_at": "@erreichbar"
+     },
+     "say": [
+      {
+       "text": "Dann kommt die Regel, die die Liste schließt. Im Zweifel nichts eingeben, sondern die benannte Person fragen. Unsere Auslegung: Eine Aufzählung ohne Zweifelsregel ist unvollständig, weil kein Katalog alle Fälle trifft. Die Regel funktioniert nur, wenn diese Person erreichbar ist, persönlich oder telefonisch. Deshalb steht sie auf der einen Seite an erster Stelle, über der Liste.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Wenn sich der *Personenbezug* nicht trennen lässt",
+      "items": [
+       {
+        "title": "Gar nicht mit einem KI-Tool",
+        "at": "@gar"
+       },
+       {
+        "title": "Mit Platzhaltern, Angaben nachher einsetzen",
+        "at": "@Platzhaltern"
+       },
+       {
+        "title": "Nur in einem freigegebenen Tool",
+        "sub": "das Register gibt es für personenbezogene Daten frei",
+        "at": "@Register"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Manche Aufgaben betreffen eine Person und lassen sich nicht von ihr trennen. Die Richtlinie gibt dem Betrieb drei Wege zur Wahl. Eine Aufgabe mit Personenbezug wird gar nicht mit einem KI-Tool erledigt. Oder der Text wird mit Platzhaltern formuliert, und die Angaben werden nachher außerhalb des Tools eingesetzt. Oder die Aufgabe wird nur in einem Tool erledigt, das das Register für personenbezogene Daten freigibt."
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Namen und Anschriften zu entfernen reicht regelmäßig nicht; aus dem Zusammenhang lässt sich ein *Personenbezug* herstellen.",
+      "origin": "Sinngemäß nach: Datenschutzkonferenz, Orientierungshilfe KI und Datenschutz, 6. Mai 2024, Abschnitt 3.1, S. 12"
+     },
+     "say": [
+      {
+       "text": "Warum nicht einfach den Namen löschen? Weil das regelmäßig nicht reicht. Die Datenschutzaufsicht hält fest: Um die Eingabe personenbezogener Daten zu vermeiden, reicht es regelmäßig nicht, Namen und Anschriften einer Eingabe zu entfernen, weil sich aus dem Zusammenhang ein Personenbezug herstellen lässt. Bei Anwendungen, deren Bestimmung es ist, Querbezüge aus unstrukturierten Daten herzustellen, sei diese Gefahr besonders hoch.",
+       "marker": "fakt",
+       "source": "D31"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Die *Platzhalter-Regel*",
+      "note": "Auch Datum, Straße und Auftrag können auf eine Person zeigen.",
+      "note_at": "@Datum",
+      "doc": {
+       "label": "Mängelrüge · Entwurf mit Platzhaltern",
+       "title": "Sehr geehrte [Kunde],",
+       "lines": [
+        {
+         "text": "zu unserem Termin am [Datum] im [Objekt]",
+         "at": "@Kunde",
+         "mark": "hl"
+        },
+        {
+         "text": "bedauern wir, dass …",
+         "at": "@Klammern"
+        },
+        {
+         "text": "Angaben setzt jemand nachher außerhalb des Tools ein",
+         "at": "@Nachher",
+         "mark": "ok"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die Platzhalter-Regel ist der praktikable Mittelweg für einen kleinen Betrieb. Sie schreiben die Mängelrüge mit „Kunde“ und „Objekt“ in eckigen Klammern statt der Angaben. Nachher, außerhalb des Tools, setzt jemand sie ein. Das Datum des Termins, die Straße und der Auftrag können immer noch auf eine Person zeigen; deshalb decken die Platzhalter auch das ab, nicht nur den Namen.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Eine Gewohnheit gehört dazu",
+      "text": "Prüfen *vor der Verwendung*, jedes Mal.",
+      "sub": "Zahlen, Namen, Fristen und Fundstellen liest die Person, die das Ergebnis benutzt.",
+      "sub_at": "@Zahlen"
+     },
+     "say": [
+      {
+       "text": "Eine Gewohnheit gehört noch zur Liste: prüfen vor der Verwendung. Zahlen, Namen, Fristen und Fundstellen liest und prüft die Person, die das Ergebnis benutzt, jedes Mal. Das deutsche BSI verlangt, dass Nutzende Ausgaben des Modells kritisch hinterfragen, ihre Inhalte gegebenenfalls anpassen und ihre Weiterverwendung einschränken können.",
+       "marker": "fakt",
+       "source": "B16"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_screen_blur.mp4",
+     "data": {
+      "headline": "Freies Tool 1: *„Darf das hinein?“*",
+      "note": "Läuft im Browser und sendet nichts.",
+      "doc": {
+       "label": "scutoria.com · Tool",
+       "title": "Vier Fragen, eine Ampel",
+       "lines": [
+        {
+         "text": "Was steht im Text oder in der Datei?",
+         "at": "@Vier"
+        },
+        {
+         "text": "Welches Konto würden Sie benutzen?",
+         "at": "@Konto"
+        },
+        {
+         "text": "Trainiert der Anbieter mit Ihren Eingaben?",
+         "at": "@trainiert"
+        },
+        {
+         "text": "Was ist die Aufgabe?",
+         "at": "@Aufgabe"
+        },
+        {
+         "text": "Rot: nein · Gelb: erst klären · Grün: ja, mit Prüfung",
+         "at": "@Rot",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Zwei freie Tools machen daraus etwas, das Ihre Belegschaft heute benutzen kann. Beide laufen im Browser und senden nichts. Das erste heißt „Darf das hinein?“. Vier Fragen: Was steht im Text oder in der Datei, welches Konto würden Sie benutzen, trainiert der Anbieter seine Modelle mit Ihren Eingaben, und was ist die Aufgabe. Sie kreuzen an, und eine Ampel antwortet. Rot: Nein, so nicht. Gelb: Noch nicht, erst klären. Grün: Ja, mit der üblichen Prüfung. Unter der Ampel stehen die Gründe und was Sie stattdessen tun."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Die vierte Frage",
+      "text": "Keine KI für *Entscheidungen über eine Person*.",
+      "sub": "Einstellung, Beurteilung, Beförderung, Kündigung, Aufgabenzuteilung: Hochrisiko nach Anhang III.",
+      "sub_at": "@Anhang"
+     },
+     "say": [
+      {
+       "text": "Die vierte Frage fängt einen Fall ab, den die Liste nicht trifft: eine Entscheidung über eine Person. Einstellung, Beurteilung, Beförderung, Kündigung, Aufgabenzuteilung. Dafür werden KI-Tools nicht eingesetzt, egal mit welchen Daten. Anhang drei der KI-Verordnung führt Systeme für Einstellung, Auswahl, Beförderung, Kündigung, Aufgabenzuweisung und Beobachtung als Hochrisiko.",
+       "marker": "fakt",
+       "source": "A3"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Freies Tool 2: *„Steht da etwas Persönliches drin?“*",
+      "note": "Nehmen Sie Grün als nichts Offensichtliches.",
+      "note_at": "@Nehmen",
+      "doc": {
+       "label": "scutoria.com · Tool",
+       "title": "Markiert, während Sie tippen",
+       "lines": [
+        {
+         "text": "E-Mail-Adressen, Telefonnummern, IBANs",
+         "at": "@E-Mail-Adressen"
+        },
+        {
+         "text": "Namen, Adressen, Gesundheitsbegriffe, Zugangsdaten",
+         "at": "@Namen"
+        },
+        {
+         "text": "Ein Klick ersetzt sie durch Platzhalter",
+         "at": "@Klick",
+         "mark": "ok"
+        },
+        {
+         "text": "Grenze: findet Muster, nicht alles",
+         "at": "@Grenze",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das zweite Tool heißt „Steht da etwas Persönliches drin?“. Sie fügen einen Text ein. Während Sie tippen, markiert es E-Mail-Adressen, Telefonnummern, IBANs, Namen, Adressen, Gesundheitsbegriffe und Zugangsdaten. Ein Klick ersetzt sie durch Platzhalter. Seine Grenze steht auf der Seite: Es findet Muster. Ein Name ohne Anrede, ein Spitzname, eine seltene Berufsbezeichnung oder eine Anschrift ohne Hausnummer kann unmarkiert bleiben. Nehmen Sie Grün als nichts Offensichtliches."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "num": "3",
+   "title": "Die Quellen",
+   "kicker": "3 · Was gilt",
+   "scenes": [
+    {
+     "type": "compare",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "headline": "Die Liste stützt sich auf *zwei deutsche Stellen*",
+      "left": {
+       "title": "Datenschutzkonferenz",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "klare, dokumentierte interne Regeln",
+         "at": "@klare"
+        }
+       ]
+      },
+      "right": {
+       "title": "BSI, Maßnahme M16",
+       "tone": "blue",
+       "at": "@BSI",
+       "rows": [
+        {
+         "text": "zulässige Eingaben festlegen, verbindlich",
+         "at": "@Eingaben"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Jetzt die Quellen, mit ihren Markern."
+      },
+      {
+       "text": "Die Liste stützt sich auf zwei deutsche Stellen. Die Datenschutzaufsichtsbehörden empfehlen klare, dokumentierte interne Regeln, ob, unter welchen Bedingungen und wofür welche KI-Anwendungen benutzt werden dürfen.",
+       "marker": "fakt",
+       "source": "D2"
+      },
+      {
+       "text": "Das BSI verlangt von Arbeitgebern, festzulegen, welche Eingaben zulässig sind und wie Ausgaben weiterverwendet werden, verbindlich, etwa in Richtlinien.",
+       "marker": "fakt",
+       "source": "B16b"
+      },
+      {
+       "text": "Unsere Auslegung: Beide Stellen sind deutsch. Ihre Empfehlungen sind fachlicher Stand, kein Recht, und binden außerhalb Deutschlands niemanden.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Der stärkste Grund: das *Geschäftsgeheimnis*",
+      "doc": {
+       "label": "Richtlinie (EU) 2016/943 · Art. 2",
+       "title": "Drei Bedingungen",
+       "lines": [
+        {
+         "text": "a  geheim, nicht allgemein bekannt",
+         "at": "@drei"
+        },
+        {
+         "text": "b  von kommerziellem Wert, weil geheim",
+         "at": "@Bedingungen"
+        },
+        {
+         "text": "c  angemessene Geheimhaltungsmaßnahmen",
+         "at": "@dritte",
+         "mark": "hl"
+        },
+        {
+         "text": "Österreich: UWG · Deutschland: GeschGehG",
+         "at": "@Österreich"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Der stärkste Grund für die Liste ist das Geschäftsgeheimnis. Nach der Geschäftsgeheimnis-Richtlinie ist eine Information nur dann ein Geschäftsgeheimnis, wenn sie drei Bedingungen erfüllt. Die dritte: Sie ist Gegenstand von den Umständen entsprechenden angemessenen Geheimhaltungsmaßnahmen. In Österreich steht das im Gesetz gegen den unlauteren Wettbewerb, in Deutschland im Geschäftsgeheimnisgesetz.",
+       "marker": "fakt",
+       "source": "S1"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Offen",
+      "text": "Gilt eine Nutzungsrichtlinie als *angemessene Maßnahme*?",
+      "sub": "Ohne Regel kein Anhaltspunkt, mit Regel ein Nachweis. Ob angemessen: Einzelfall.",
+      "sub_at": "@Ohne"
+     },
+     "say": [
+      {
+       "text": "Das ist offen: ob eine Nutzungsrichtlinie als eine solche angemessene Maßnahme gilt. Eine Gerichtsentscheidung zu dieser Frage haben wir nicht gesucht. Das Handbuch sagt deshalb nur dies: Ohne Regel fehlt jeder Anhaltspunkt, dass der Betrieb überhaupt eine Maßnahme getroffen hat; mit Regel kann der Betrieb zeigen, dass er eine getroffen hat. Ob sie angemessen ist, wird im Einzelfall entschieden.",
+       "marker": "unsicher",
+       "source": "O812"
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Gesundheitsdaten sind eine *besondere Kategorie*: Ihre Verarbeitung ist untersagt, außer eine Ausnahme nach Absatz 2 greift.",
+      "origin": "Sinngemäß nach: Verordnung (EU) 2016/679 (DSGVO), Art. 9 Abs. 1"
+     },
+     "say": [
+      {
+       "text": "Gesundheitsangaben haben ihre eigene Regel. Artikel neun der DSGVO macht sie zu einer besonderen Kategorie: Die Verarbeitung ist untersagt, außer eine der Ausnahmen in Absatz zwei greift.",
+       "marker": "fakt",
+       "source": "G9"
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "bg": "yt/lib_office_shelf.mp4",
+     "data": {
+      "kicker": "Wenn es doch passiert",
+      "tag": false,
+      "headline": "Mögliche *Datenschutzverletzung*",
+      "items": [
+       {
+        "time": "Eingabe",
+        "text": "in ein Tool, das nicht freigegeben ist",
+        "tone": "amber",
+        "at": "@Gelangen"
+       },
+       {
+        "time": "bekannt geworden",
+        "text": "Uhr beginnt",
+        "tone": "neutral",
+        "at": "@bekannt"
+       },
+       {
+        "time": "möglichst 72 Std.",
+        "text": "Meldung an die Aufsicht, außer kein Risiko",
+        "tone": "blue",
+        "at": "@zweiundsiebzig"
+       },
+       {
+        "time": "immer",
+        "text": "jede Verletzung dokumentieren",
+        "tone": "blue",
+        "at": "@dokumentiert"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Und wenn es doch passiert: Gelangen personenbezogene Daten in ein Tool oder Konto, das der Betrieb nicht freigegeben hat, kann das eine Verletzung des Schutzes personenbezogener Daten sein. Der Verantwortliche meldet sie der Aufsichtsbehörde unverzüglich und möglichst binnen zweiundsiebzig Stunden, nachdem sie ihm bekannt wurde, es sei denn, sie führt voraussichtlich nicht zu einem Risiko für die Rechte und Freiheiten natürlicher Personen. Jede Verletzung wird dokumentiert.",
+       "marker": "fakt",
+       "source": "G33"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Unsere Auslegung",
+      "text": "Die Meldung selbst hat für die meldende Person *keine Folgen*.",
+      "sub": "Ein Betrieb, der die Meldung bestraft, erfährt von Vorfällen zuletzt."
+     },
+     "say": [
+      {
+       "text": "Ob eine bestimmte Eingabe eine solche Verletzung ist, wird im Einzelfall entschieden. Deshalb sagt die Richtlinie, dass die Meldung selbst für die meldende Person keine Folgen hat: Ein Betrieb, der die Meldung bestraft, erfährt von Vorfällen zuletzt.",
+       "marker": "auslegung"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "num": "4",
+   "title": "Was tun Sie? Zwei Fälle",
+   "kicker": "4 · Was tun Sie?",
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/shot04_access_code.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Fall 1 · nachgestellt",
+      "time": "DI 11:20",
+      "place": "Büro, Arbeitsanweisung für die Montage",
+      "obj": {
+       "label": "E-Mail · Auftrag",
+       "from": "hausverwaltung@beispiel.example",
+       "subject": "Wallbox Tiefgarage, Auftrag",
+       "lines": [
+        "Stellplätze 12 bis 18, Zuleitung neu",
+        "Zugang über die Einfahrt Nord",
+        "Code Tiefgarage: ● ● ● ●",
+        "Ansprechpartner vor Ort: Hausmeister"
+       ]
+      },
+      "obj_at": "@Auftragsmail",
+      "highlight": {
+       "line": 2,
+       "label": "Zutrittscode",
+       "at": "@Code"
+      }
+     },
+     "say": [
+      {
+       "text": "Zwei Fälle zum Mitentscheiden. Beide sind erfunden, die Quellen dahinter nicht. Fall eins. Dienstag, elf Uhr zwanzig. Eine Auftragsmail soll in eine kurze Arbeitsanweisung für die Montage umgeschrieben werden. In der Mail steht auch der Code für die Tiefgarage des Kunden.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Einfügen, der Code ist ja kein Passwort",
+        "at": "@Einfügen"
+       },
+       {
+        "key": "B",
+        "text": "Einfügen und den Chat danach löschen",
+        "at": "@löschen"
+       },
+       {
+        "key": "C",
+        "text": "Code vorher entfernen, getrennt weitergeben",
+        "at": "@entfernen"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: Einfügen, der Code ist ja kein Passwort. B: Einfügen und den Chat danach löschen. C: Den Code vorher entfernen, durch einen Platzhalter ersetzen und ihn der Montage auf anderem Weg geben. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie B wählen",
+      "headline": "Gelöscht im Verlauf, nicht im Betrieb",
+      "items": [
+       {
+        "time": "11:21",
+        "text": "Mail eingefügt, Code inklusive",
+        "tone": "amber",
+        "at": "@eingefügt"
+       },
+       {
+        "time": "11:24",
+        "text": "Arbeitsanweisung fertig, Chat gelöscht",
+        "tone": "neutral",
+        "at": "@gelöscht"
+       },
+       {
+        "time": "",
+        "text": "Was der Anbieter speichert: steht in seinen Bedingungen",
+        "tone": "amber",
+        "at": "@Bedingungen"
+       },
+       {
+        "time": "",
+        "text": "Der Code hat den Betrieb verlassen",
+        "tone": "red",
+        "at": "@verlassen"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "B fühlt sich sicher an. Im Beispiel ist die Mail um elf Uhr einundzwanzig eingefügt, der Code inklusive, und drei Minuten später ist der Chat gelöscht.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "Was der Anbieter mit der Eingabe tut und wie lange er sie aufbewahrt, steht in seinen Bedingungen, nicht im Chatverlauf. Sicher ist nur: Der Code hat den Betrieb verlassen. Ein Zutrittscode in einem Tool ist ein Zutrittscode außer Haus.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Code raus, Platzhalter rein",
+       "sub": "Zugangsdaten stehen auf der Liste. Der Code geht getrennt an die Montage.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "„Kein Passwort“",
+        "note": "Zutrittscodes sind Zugangsdaten",
+        "at": "@Zugangsdaten"
+       },
+       {
+        "key": "B",
+        "text": "Chat löschen",
+        "note": "zu spät, die Eingabe ist draußen",
+        "at": "@draußen"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C. Zugangsdaten stehen auf der Liste, und Zutrittscodes gehören ausdrücklich dazu. A übersieht das, und B löscht zu spät, die Eingabe ist da schon draußen. Die Arbeitsanweisung lässt sich genauso gut mit einem Platzhalter schreiben; den Code bekommt die Montage auf dem Weg, den der Betrieb dafür hat.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "case",
+     "bg": "yt/shot04_sick_note.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Fall 2 · nachgestellt",
+      "time": "MI 07:50",
+      "place": "Büro, Wochenplanung",
+      "obj": {
+       "label": "Nachricht · Monteur",
+       "from": "Monteur (erfunden)",
+       "subject": "Bin noch zwei Wochen krank",
+       "lines": [
+        "Nach der OP am Knie noch zwei Wochen",
+        "Attest kommt per Post",
+        "Baustelle Schulstraße bitte umplanen",
+        "Sorry für die Umstände"
+       ]
+      },
+      "obj_at": "@schreibt",
+      "highlight": {
+       "line": 0,
+       "label": "Gesundheitsangabe",
+       "at": "@Ablage"
+      }
+     },
+     "say": [
+      {
+       "text": "Fall zwei. Mittwoch, sieben Uhr fünfzig. Ein Monteur schreibt, dass er nach einer Operation am Knie noch zwei Wochen krank ist, und bittet, seine Baustelle umzuplanen. Die Büroleitung will daraus eine kurze Notiz für die Ablage und einen neuen Wochenplan.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Nachricht einfügen, nur den Namen weglassen",
+        "at": "@Namen"
+       },
+       {
+        "key": "B",
+        "text": "Das Wort „OP“ löschen, den Rest einfügen",
+        "at": "@löschen"
+       },
+       {
+        "key": "C",
+        "text": "Ohne Gesundheitsangaben: [Monteur] ab [Datum] nicht verfügbar",
+        "at": "@verfügbar"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: Die Nachricht einfügen und nur den Namen weglassen. B: Das Wort Operation löschen und den Rest einfügen. C: Gar nichts aus der Nachricht einfügen und die Umplanung so formulieren: ein Monteur ab einem Datum zwei Wochen nicht verfügbar. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie A wählen",
+      "headline": "Ohne Namen, aber nicht ohne Person",
+      "items": [
+       {
+        "time": "07:52",
+        "text": "Nachricht ohne Namen eingefügt",
+        "tone": "neutral",
+        "at": "@fehlt"
+       },
+       {
+        "time": "",
+        "text": "Knie-OP, Baustelle, zwei Wochen bleiben drin",
+        "tone": "amber",
+        "at": "@Baustelle"
+       },
+       {
+        "time": "",
+        "text": "Im Betrieb ist klar, wer gemeint ist",
+        "tone": "amber",
+        "at": "@klar"
+       },
+       {
+        "time": "",
+        "text": "Eine Gesundheitsangabe zu einer Person",
+        "tone": "red",
+        "at": "@Gesundheitsangabe"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "A wirkt vorsichtig. Im Beispiel fehlt nur der Name. Knieoperation, Baustelle und zwei Wochen stehen weiter drin, und im Betrieb ist sofort klar, wer gemeint ist.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "Damit bleibt es eine Gesundheitsangabe zu einer erkennbaren Person, und für die gilt Artikel neun der DSGVO: Die Verarbeitung ist untersagt, außer eine Ausnahme greift.",
+       "marker": "fakt",
+       "source": "G9"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Planen ohne Gesundheitsangaben",
+       "sub": "Für den Wochenplan reicht: wer fehlt, ab wann, wie lange. Der Grund gehört nicht hinein.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Nur den Namen weglassen",
+        "note": "Zusammenhang verrät die Person",
+        "at": "@Zusammenhang"
+       },
+       {
+        "key": "B",
+        "text": "Nur „OP“ löschen",
+        "note": "Krankmeldung bleibt Krankmeldung",
+        "at": "@Krankmeldung"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C. Für einen Wochenplan reicht, wer fehlt, ab wann und wie lange; der Grund gehört nicht hinein. A scheitert am Zusammenhang, wie bei jeder Eingabe, aus der man die Person erkennt. Und B macht aus einer Krankmeldung keine andere Nachricht: Eine Krankmeldung bleibt eine Gesundheitsangabe. Im Zweifel gilt die Regel von vorhin: nichts eingeben, sondern fragen.",
+       "marker": "auslegung",
+       "source": "D31"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "num": "5",
+   "title": "Der Beispielbetrieb",
+   "kicker": "5 · Der Beispielbetrieb",
+   "scenes": [
+    {
+     "type": "paper",
+     "bg": "yt/lib_workshop_bench.mp4",
+     "data": {
+      "headline": "Muster Elektrotechnik: *Frage D1*",
+      "doc": {
+       "label": "Generator · Beispielbetrieb",
+       "title": "Eigene Datenarten und Wege",
+       "lines": [
+        {
+         "text": "Ergänzt: Kalkulationsblätter je Auftrag",
+         "at": "@Kalkulationsblätter"
+        },
+        {
+         "text": "Ergänzt: Zutrittscodes zu Kundenobjekten",
+         "at": "@Zutrittscodes"
+        },
+        {
+         "text": "Gewählt: Platzhalter-Regel",
+         "at": "@Platzhalter-Regel",
+         "mark": "hl"
+        },
+        {
+         "text": "Büroleitung setzt die Angaben nachher ein",
+         "at": "@Büroleitung"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Zurück zum erfundenen Betrieb, der in den Musterdokumenten Muster Elektrotechnik heißt. Im Generator hat er Frage D1 beantwortet und zwei eigene Datenarten ergänzt: die Kalkulationsblätter je Auftrag und die Zutrittscodes zu Kundenobjekten. Für unvermeidbare personenbezogene Daten hat er die Platzhalter-Regel gewählt: Die Mängelrüge wird mit „Kunde“ und „Objekt“ in Klammern geschrieben, und die Büroleitung setzt die Angaben nachher ein.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Das schwierigste Feld: die *zwei Monteure*",
+      "left": {
+       "title": "Entweder",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "Zugang über ein betriebliches Konto",
+         "at": "@Entweder"
+        }
+       ]
+      },
+      "right": {
+       "title": "Oder",
+       "tone": "amber",
+       "at": "@oder",
+       "rows": [
+        {
+         "text": "dienstliche Nutzung privat endet mit Geltungsbeginn",
+         "at": "@endet"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die zwei Monteure mit der privaten App waren das schwierigste Feld. Unsere Auslegung: Eine Regel, die nur das Tool nennt, erlaubt stillschweigend die Nutzung über den privaten Zugang. Deshalb nennt die Regel Tool und Zugangsweg, und der Betrieb musste wählen: Entweder bekommen die beiden Zugang über ein betriebliches Konto, oder ihre dienstliche Nutzung auf dem privaten Telefon endet mit dem Geltungsbeginn.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/shot01_notice_board.mp4",
+     "data": {
+      "headline": "Für die Wand: *die eine Seite*",
+      "doc": {
+       "label": "Aushang · Muster Elektrotechnik",
+       "title": "Im Zweifel: nichts eingeben, sondern fragen.",
+       "lines": [
+        {
+         "text": "Das kommt nie in ein KI-Tool: 5 + 2 Datenarten, je mit Kästchen",
+         "at": "@kommt"
+        },
+        {
+         "text": "Nur über den betrieblichen Zugang",
+         "at": "@Nur"
+        },
+        {
+         "text": "Vor der Verwendung prüfen, jedes Mal",
+         "at": "@Vor"
+        },
+        {
+         "text": "Passiert ist passiert: melden, ohne Folgen",
+         "at": "@Passiert",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das kommt dabei für die Wand heraus: die eine Seite. Oben die Zweifelsregel: „Im Zweifel: nichts eingeben, sondern fragen.“ Dann „Das kommt nie in ein KI-Tool, gleich über welchen Zugang“: die fünf Datenarten und die zwei, die der Betrieb ergänzt hat, jede mit einem Kästchen zum Ankreuzen bei der Einweisung. Dann „Nur über den betrieblichen Zugang.“ Dann „Vor der Verwendung prüfen, jedes Mal.“ Dann „Passiert ist passiert: melden“, mit dem Satz, dass die Meldung selbst keine Folgen hat."
+      },
+      {
+       "text": "Die Seite enthält keinen Paragrafen der Richtlinie vollständig. Ihr Inhalt wird aus der Richtlinie übernommen und nie gesondert entschieden, damit Aushang und Richtlinie sich nicht widersprechen können.",
+       "marker": "auslegung"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "num": "6",
+   "title": "Was es nicht ist",
+   "kicker": "6 · Was es nicht ist",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "kicker": "Keine Rechtsberatung",
+      "text": "Die Dokumente zeigen, was Sie *entschieden* haben.",
+      "sub": "Die Ampel entscheidet nichts anstelle Ihres Betriebs. Die Prüfung findet Muster.",
+      "sub_at": "@Ampel"
+     },
+     "say": [
+      {
+       "text": "Was das nicht ist. Der Satz, den wir für das Toolkit verwenden: Es ist keine Rechtsberatung, und kein Dokument behauptet, dass Ihr Betrieb eine Vorschrift erfüllt. Die Dokumente zeigen, was Sie entschieden haben, seit wann, für welche Tools und wer davon weiß."
+      },
+      {
+       "text": "Dasselbe gilt für die zwei Tools. Die Ampel wendet die neun Regelbereiche der Nutzungsrichtlinie an; sie ist keine Rechtsberatung und entscheidet nichts anstelle Ihres Betriebs. Die Prüfung auf Personenbezug findet Muster; nehmen Sie Grün als nichts Offensichtliches."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Was *offen* bleibt",
+      "left": {
+       "title": "Unsicher",
+       "tone": "amber",
+       "rows": [
+        {
+         "text": "Richtlinie als angemessene Geheimhaltung?",
+         "at": "@angemessene"
+        },
+        {
+         "text": "offener Punkt 8.12",
+         "at": "@zwölf"
+        }
+       ]
+      },
+      "right": {
+       "title": "Lücke",
+       "tone": "red",
+       "at": "@Toolkit",
+       "rows": [
+        {
+         "text": "nur Österreich und Deutschland geprüft",
+         "at": "@geprüft"
+        },
+        {
+         "text": "andere Länder: Kammer oder Datenschutzbehörde",
+         "at": "@Kammer"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Was offen bleibt. Ob eine Richtlinie eine angemessene Geheimhaltungsmaßnahme ist: keine Gerichtsentscheidung gesucht, offener Punkt acht zwölf im Handbuch.",
+       "marker": "unsicher",
+       "source": "O812"
+      },
+      {
+       "text": "Und das Toolkit hat nur Österreich und Deutschland geprüft. Für andere Mitgliedstaaten nennt es die Lücke und verweist Sie an Ihre eigene Kammer oder Datenschutzbehörde. Ihr Betrieb entscheidet, was auf seine Liste kommt und wer gefragt wird.",
+       "marker": "luecke"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "num": "7",
+   "title": "Zwei freie Tools und das Toolkit",
+   "kicker": "7 · Tools und Toolkit",
+   "end_seconds": 20.0,
+   "scenes": [
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Frei auf *scutoria.com*",
+      "left": {
+       "title": "„Darf das hinein?“",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "vier Fragen, eine Ampel, bevor Sie einfügen",
+         "at": "@vier"
+        }
+       ]
+      },
+      "right": {
+       "title": "„Steht da Persönliches drin?“",
+       "tone": "blue",
+       "at": "@Persönliches",
+       "rows": [
+        {
+         "text": "sehen, was erkennbar macht, Platzhalter setzen",
+         "at": "@Platzhalter"
+        },
+        {
+         "text": "beide im Browser, senden nichts",
+         "at": "@Browser"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Zwei Dinge sind frei auf scutoria.com, und die Links stehen in der Beschreibung. Das Tool „Darf das hinein?“: vier Fragen, eine Ampel, bevor Sie einfügen. Das Tool „Steht da etwas Persönliches drin?“: Text einfügen, sehen, was eine Person erkennbar macht, durch Platzhalter ersetzen. Beide laufen im Browser und senden nichts. Teilen Sie den Link mit Kolleginnen und Kollegen."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "KI-Richtlinien-Toolkit",
+      "text": "Die Regel *schriftlich*, mit Datum und Unterschrift.",
+      "sub": "Handbuch online, vor dem Kauf lesbar · 199 Euro im Jahr · die ersten zehn Käufer zahlen 99",
+      "sub_at": "@Handbuch"
+     },
+     "say": [
+      {
+       "text": "Wenn Sie die Regel schriftlich wollen, mit Datum und Unterschrift: das KI-Richtlinien-Toolkit. Die Nutzungsrichtlinie mit der Liste in Paragraf drei und der Platzhalter-Regel in Paragraf vier, die eine Seite zum Aushängen, das Tool-Register, der Schulungsnachweis und die Nachweisseite, aus Ihren Antworten erzeugt. Das Handbuch steht online; lesen Sie es vor dem Kauf. Das Toolkit kostet 199 Euro im Jahr. Die ersten zehn Käufer zahlen 99."
+      }
+     ]
+    },
+    {
+     "type": "close",
+     "new": true,
+     "data": {
+      "rule": "Hier ist Scutoria. Synthetische Stimme, Quellen am Bildschirm.",
+      "memo": {
+       "label": "Frei: Darf das hinein? · Steht da etwas Persönliches drin?",
+       "url": "scutoria.com",
+       "at": "@Skript"
+      },
+      "toolkit": {
+       "label": "Als Nächstes: Artikel 4, Einweisung und Nachweis",
+       "url": "Video 05",
+       "at": "@Nächstes"
+      },
+      "claim": "Belegt. Datiert. Vorzeigbar.",
+      "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+     },
+     "say": [
+      {
+       "text": "Hier ist Scutoria. Die Stimme, die Sie hören, ist synthetisch. Das Skript wurde mit einem KI-Tool entworfen und von uns Satz für Satz geprüft. Jede Zahl und jede Rechtsaussage trägt ihre Quelle am Bildschirm. Quellenbasiert, keine Rechtsberatung."
+      },
+      {
+       "text": "Als Nächstes auf diesem Kanal: Artikel vier der KI-Verordnung, die Einweisung, die Sie halten, und der Nachweis, den Sie führen."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "reels": [
+  {
+   "id": "r1",
+   "chapter": "c1",
+   "title": "Was an einem Tag hineingeht",
+   "kicker": "Aus Video 04 · Was nie hineingehört",
+   "scenes": [
+    "c1s1",
+    "c1s2",
+    "c1s3"
+   ]
+  },
+  {
+   "id": "r2",
+   "chapter": "c2",
+   "title": "Fünf Datenarten und die Zweifelsregel",
+   "kicker": "Aus Video 04 · Was nie hineingehört",
+   "scenes": [
+    "c2s0",
+    "c2s1",
+    "c2s2"
+   ]
+  },
+  {
+   "id": "r3",
+   "chapter": "c2",
+   "title": "Warum Namen löschen nicht reicht",
+   "kicker": "Aus Video 04 · Was nie hineingehört",
+   "scenes": [
+    "c2s3",
+    "c2s4",
+    "c2s5"
+   ]
+  },
+  {
+   "id": "r4",
+   "chapter": "c3",
+   "title": "Wenn es doch passiert",
+   "kicker": "Aus Video 04 · Was nie hineingehört",
+   "scenes": [
+    "c3s3",
+    "c3s4",
+    "c3s5"
+   ]
+  },
+  {
+   "id": "r5",
+   "chapter": "c4",
+   "title": "Was tun Sie? Der Tiefgaragen-Code",
+   "kicker": "Aus Video 04 · Was tun Sie?",
+   "scenes": [
+    "c4s0",
+    "c4s1",
+    "c4s2",
+    "c4s3"
+   ]
+  },
+  {
+   "id": "r6",
+   "chapter": "c4",
+   "title": "Was tun Sie? Die Krankmeldung",
+   "kicker": "Aus Video 04 · Was tun Sie?",
+   "scenes": [
+    "c4s4",
+    "c4s5",
+    "c4s6",
+    "c4s7"
+   ]
+  }
+ ]
+}

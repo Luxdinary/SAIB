@@ -1,0 +1,15 @@
+{
+  "name": "faceless-network",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rendering side (HyperFrames) of Stefan's AI short-video network",
+  "type": "module",
+  "scripts": {
+    "hyperframes": "hyperframes",
+    "render:demo": "node scripts/render_demos.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": {
+    "hyperframes": "0.8.217"
+  }
+}

@@ -1,0 +1,442 @@
+{
+ "video_id": "beauty-20261113-2-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "Notification in the CPNP",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Vor dem Verkauf meldet die verantwortliche Person jedes Produkt elektronisch an die Kommission; das ist keine Zulassung. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Notification",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Approved?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "notified, not approved",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "8 items",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "label and photo",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "nano: 6 months ahead",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Notified ≠ approved",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Read first, then apply",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Approved or notified? Certain nanomaterials have an extra rule. They have to be notified six months before the product is placed on the market. If the Commission has safety concerns, it can ask the scientific committee for an assessment.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-products-specific-topics/nanomaterials_en",
+   "title": "Europäische Kommission: Nanomaterials (Cosmetics)",
+   "checked_at": "2026-11-01",
+   "label": "EU Commission: nanomaterials"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Cosmetics in the EU are approved by an authority. That's not quite how it works.",
+   "on_screen": "Approved or notified?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Before a cream goes on sale in the EU, it's entered into a Commission portal.",
+   "on_screen": "Before a cream goes on sale in the EU, it's entered into a C",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Did you know every cosmetic in the EU is notified electronically before it goes on sale?",
+   "on_screen": "Did you know every cosmetic in the EU is notified electronic",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Confuse notification with approval, and you read more into a product than is there.",
+   "on_screen": "Confuse notification with approval, and you read more into a",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch what goes into a product's notification.",
+   "on_screen": "Watch what goes into a product's notification.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Cosmetics in the EU are approved by an authority. That's not quite how it works.",
+   "data": {
+    "obj": "tube",
+    "title": "CPNP",
+    "sub": "notification",
+    "glyph": "doc",
+    "gtext": "Art. 13",
+    "focus": "title",
+    "question": "Approved or notified?",
+    "badge": "Myth?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "Cosmetics are notified, not approved. Under Article 13 of the EU cosmetics regulation, the responsible person sends certain information electronically to the European Commission before the product is placed on the market. The portal is called the CPNP.",
+   "data": {
+    "headline": "Notified before sale",
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Article 13",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "before placing on the market"
+     },
+     {
+      "text": "electronically to the Commission"
+     },
+     {
+      "text": "portal: CPNP"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_steps",
+   "spoken": "That includes the product's category and name, the responsible person's name and address, the country of origin for imports, the member state, and a contact person. Plus any nanomaterials, certain substances classed as CMR, and the frame formulation for prompt medical treatment.",
+   "data": {
+    "headline": "What's notified",
+    "items": [
+     {
+      "title": "Product and category",
+      "sub": "name, origin, member state",
+      "icon": "doc"
+     },
+     {
+      "title": "Responsible person",
+      "sub": "address, contact",
+      "icon": "book"
+     },
+     {
+      "title": "Nano, CMR, frame formulation",
+      "sub": "for prompt medical treatment",
+      "icon": "shield"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "Once the product is on the market, the original label and, where readable, a photo of the packaging are added. An approval decision isn't part of this process.",
+   "data": {
+    "headline": "Notified vs approved",
+    "mode": "myth",
+    "left": {
+     "tag": "Myth",
+     "title": "approved by an authority",
+     "rows": [
+      {
+       "text": "an approval decision",
+       "mark": "gap"
+      }
+     ]
+    },
+    "right": {
+     "tag": "Source",
+     "title": "notified online",
+     "rows": [
+      {
+       "text": "details, label, photo",
+       "mark": "fact"
+      },
+      {
+       "text": "no decision",
+       "mark": "fact"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_timeline",
+   "spoken": "Certain nanomaterials have an extra rule. They have to be notified six months before the product is placed on the market. If the Commission has safety concerns, it can ask the scientific committee for an assessment.",
+   "data": {
+    "headline": "Extra rule for nano",
+    "nodes": [
+     {
+      "date": "−6 months",
+      "text": "notified in the CPNP"
+     },
+     {
+      "date": "Concerns?",
+      "text": "Commission asks the SCCS"
+     },
+     {
+      "date": "Launch",
+      "text": "placed on the market"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_facts",
+   "spoken": "For you, that means: notification isn't approval. So a claim of being approved by an authority doesn't fit cosmetics in the EU.",
+   "data": {
+    "headline": "The takeaway",
+    "rows": [
+     {
+      "text": "notified doesn't mean approved"
+     },
+     {
+      "text": "“approved by an authority” doesn't fit",
+      "mark": "gap"
+     },
+     {
+      "text": "safety rests with the responsible person"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Read first, then believe. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Read first, then believe",
+    "block_text": "Read the claim first",
+    "done_text": "Claim read"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

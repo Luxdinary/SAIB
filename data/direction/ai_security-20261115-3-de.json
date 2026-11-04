@@ -1,0 +1,454 @@
+{
+ "video_id": "ai_security-20261115-3-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Neue Bankverbindung per Mail? Erst anrufen",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema D02, Reihe So läuft die Masche. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Lieferantenrechnung. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Lieferantenrechnung",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Bankverbindung: geändert",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Absender: echt, Inhalt?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Zielgruppe: auch klein",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Zweiter Kanal: fehlt",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Überweisung: zurückrufen?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Regel: heute festlegen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Neue IBAN ohne Rückruf: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Ein Lieferant meldet per Mail eine neue Bankverbindung, vielleicht sogar von seiner echten Adresse. Warum FBI und Polizei einen Rückruf über einen zweiten Weg raten.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "rechnungsbetrug",
+   "bec",
+   "buchhaltung",
+   "kmu",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, lanes, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ic3.gov/PSA/2024/PSA240911",
+   "title": "FBI IC3 PSA I-091124-PSA: Business Email Compromise – The $55 Billion Scam (11.09.2024)",
+   "checked_at": "2026-11-01",
+   "label": "FBI IC3, BEC-Warnung 2024"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.berlin.de/polizei/aufgaben/praevention/betrug/artikel.693958.php",
+   "title": "Polizei Berlin: Geschäftsführer-Schwindel (CEO-Fraud)",
+   "checked_at": "2026-11-01",
+   "label": "Polizei Berlin, Betrug per Mail"
+  }
+ ],
+ "unverified": [
+  "Häufigkeit der Masche in Deutschland: nicht verwendet."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Dein Lieferant hat eine neue Bankverbindung. Woher weißt du, dass die Mail von ihm ist?",
+   "on_screen": "Ist die Mail wirklich von ihm?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Die Mail kommt von der echten Adresse, also ist sie echt? Nicht unbedingt.",
+   "on_screen": "Echte Adresse = echte Mail?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Das FBI hat diese Masche in 186 Ländern gemeldet bekommen.",
+   "on_screen": "Gemeldet in 186 Ländern",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Eine Mail mit neuer Bankverbindung, und deine nächste Zahlung geht an Betrüger.",
+   "on_screen": "Neue IBAN per Mail?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "IC3: Änderungen von Kontodaten über zweiten Kanal prüfen"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, was sich auf dieser Rechnung geändert hat.",
+   "on_screen": "Was ist hier anders?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Eine Mail mit neuer Bankverbindung, und deine nächste Zahlung geht an Betrüger.",
+   "data": {
+    "question": "Neue IBAN per Mail?",
+    "doc_label": "Rechnung.pdf",
+    "chat_title": "Lieferant",
+    "bot_line": "Bitte neue Bankverbindung nutzen",
+    "typed": "Neue IBAN ab sofort",
+    "badge": "Echt?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Das FBI beschreibt Business Email Compromise so: Täter übernehmen echte Geschäfts- oder Privatpostfächer, durch Täuschung oder Einbruch. Die Mail kann also tatsächlich von der echten Adresse kommen.",
+   "data": {
+    "headline": "Wenn das echte Postfach lügt",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Übernommenes Postfach",
+      "icon": "&#9993;"
+     },
+     {
+      "id": "n1",
+      "label": "Neue Bankverbindung",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n2",
+      "label": "Deine Zahlung",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "schreibt dir"
+     },
+     {
+      "label": "du zahlst"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 0,
+     "at": 7.5,
+     "label": "Postfach übernommen?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Laut FBI trifft die Masche kleine lokale Betriebe ebenso wie große Konzerne. Gemeldet wurde sie aus allen 50 US-Bundesstaaten und 186 Ländern. Das Geld läuft oft über Banken in mehreren Ländern.",
+   "data": {
+    "headline": "Wen es trifft",
+    "file_label": "Lieferantenrechnung",
+    "card": {
+     "title": "Laut FBI",
+     "rows": [
+      {
+       "text": "kleine lokale Betriebe",
+       "ok": null
+      },
+      {
+       "text": "große Konzerne",
+       "ok": null
+      },
+      {
+       "text": "186 Länder gemeldet",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "Darum rät das FBI ausdrücklich: Anfragen zur Änderung von Kontodaten über einen zweiten Kanal prüfen. Eine Antwort auf dieselbe Mail ist kein zweiter Kanal. Ein Anruf unter der Nummer, die du schon kennst, schon.",
+   "data": {
+    "headline": "Was als Prüfung zählt",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.0,
+    "left": {
+     "title": "Keine Prüfung",
+     "rows": [
+      {
+       "text": "Antwort auf die Mail",
+       "ok": "open"
+      },
+      {
+       "text": "Nummer aus der Mail",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Zweiter Kanal",
+     "rows": [
+      {
+       "text": "bekannte Telefonnummer",
+       "ok": null
+      },
+      {
+       "text": "Ansprechpartner wie immer",
+       "ok": null
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "Und wenn das Geld schon weg ist? Die Polizei rät: sofort bei der Bank einen Rückruf der Überweisung veranlassen und Anzeige erstatten. Laut FBI kann schnelles Melden helfen, Gelder einzufrieren.",
+   "data": {
+    "headline": "Geld schon überwiesen?",
+    "file_label": "Lieferantenrechnung",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Sofort zur Bank",
+      "sub": "Rückruf veranlassen",
+      "at": 0.6
+     },
+     {
+      "title": "Abwarten",
+      "sub": "Geld wandert weiter",
+      "at": 1.0
+     }
+    ],
+    "approval": "Anzeige erstattet?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Für deine Buchhaltung heißt das: Jede neue Bankverbindung wird per Rückruf unter der bekannten Nummer bestätigt. Die Nummer kommt aus deinen Unterlagen, nie aus der Mail. Und ist etwas schiefgegangen: sofort Bank und Polizei.",
+   "data": {
+    "headline": "Eine Regel für die Buchhaltung",
+    "items": [
+     {
+      "title": "Neue IBAN = Rückruf",
+      "sub": "vor der ersten Zahlung",
+      "at": 2.0
+     },
+     {
+      "title": "Nummer aus den Unterlagen",
+      "sub": "nie aus der Mail",
+      "at": 4.8
+     },
+     {
+      "title": "Fehler passiert?",
+      "sub": "sofort Bank und Polizei",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Neue Bankverbindung? Erst anrufen. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Neue IBAN? Erst anrufen",
+    "file_label": "Lieferantenrechnung",
+    "button": "Überweisen",
+    "block_text": "Erst Rückruf, dann Zahlung",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

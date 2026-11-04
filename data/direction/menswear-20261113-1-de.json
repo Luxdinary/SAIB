@@ -1,0 +1,531 @@
+{
+ "video_id": "menswear-20261113-1-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Kammgarn oder Streichgarn: der Weg zum Garn",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema C03 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Anzug/Mantel als Tendenz, Kammgarnflanell als Ausnahme genannt.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Zwei Garne",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Unterschied: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "Stoff: glatt, füllig",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "kardiert oder gekämmt",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Kämmen: Kurze raus",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Anzug: meist Kammgarn",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "kardiert, gekämmt",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "gekämmt: glatt",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Kammgarn oder Streichgarn? Der Unterschied liegt im Weg zum Garn: kardiert und locker gedreht oder zusätzlich gekämmt und eng gedreht. Nach Woolmark und dem Wollverband IWTO.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "anzugstoff",
+   "kammgarn",
+   "wolle",
+   "stoffkunde"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/industry/product-development/wool-processing/",
+   "title": "Woolmark, Wool processing: Streichgarn meist aus kürzeren Fasern für dicke, warme Produkte; Kammgarn aus den längsten Fasern für flachere, leichtere, glattere Stoffe; Kämmen entfernt Kurzfasern (Noils) und Pflanzenreste",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Wool processing"
+  },
+  {
+   "id": "S2",
+   "url": "https://iwto.org/wp-content/uploads/2024/08/IWTO-Wool-Notes-Final-2024-Digital.pdf",
+   "title": "IWTO Wool Notes 2024: Streichgarn ohne Kämmen, locker gedreht, luftig; Kammgarn gekämmt, eng gedreht, glatt und fest; Kammgarngewebe für Anzüge, Hosen, Röcke, Streichgarngewebe meist Oberbekleidung",
+   "checked_at": "2026-11-01",
+   "label": "IWTO, Wool Notes 2024"
+  },
+  {
+   "id": "S3",
+   "url": "https://iwto.org/wool-supply-chain/first-stage-processing/",
+   "title": "IWTO, First-stage processing: kardierte Fasern meist für Streichgarn, gekämmter Kammzug (Top) für Kammgarn; zu kurze Fasern werden beim Kämmen entfernt",
+   "checked_at": "2026-11-01",
+   "label": "IWTO, erste Verarbeitung"
+  }
+ ],
+ "unverified": [
+  "'worsted weight' (Strickgarnstärke) ist nicht gemeint; nur im englischen Hook-Kandidaten H2 erwähnt.",
+  "Keine Aussagen zu Super-Zahlen, Faserfeinheit oder Herkunft der Wolle."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Kammgarn oder Streichgarn?",
+   "on_screen": "Kammgarn oder Streichgarn?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Gleiche Wolle, gleicher Stoff? Nicht ganz.",
+   "on_screen": "Gleiche Wolle, gleicher Stoff? Nicht ganz.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Ein Schritt trennt Kammgarn von Streichgarn: das Kämmen",
+   "on_screen": "Ein Schritt trennt Kammgarn von Streichgarn: das Kämmen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Streichgarn im Anzug? Meist dicker und schwerer",
+   "on_screen": "Streichgarn im Anzug? Meist dicker und schwerer",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Was beim Kämmen aus der Wolle herausfällt",
+   "on_screen": "Was beim Kämmen aus der Wolle herausfällt",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kammgarnstoff, Lupe auf der Bindung",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Zwei Begriffe vom Etikett, eine Frage nach dem Unterschied."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Kammgarn oder Streichgarn: Beides ist Wolle, und trotzdem fühlen sich die Stoffe ganz anders an. Woher kommt das?",
+   "data": {
+    "question": "Kammgarn oder Streichgarn?",
+    "object": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#2A3550"
+    },
+    "target": "weave",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Wolle",
+    "loupe_at": "w:Wolle",
+    "nie_at": "w:Woher",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "Leg zwei Stoffe nebeneinander. Kammgarnstoff ist laut Woolmark flacher, leichter und glatter, typisch für die klassische Schneiderei. Streichgarnstoff ist dicker und wärmer, eher für kräftige, warme Stücke.",
+   "data": {
+    "headline": "Glatt oder füllig?",
+    "from": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#2A3550"
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "woollen",
+     "colour": "#4A5068"
+    },
+    "target": "weave",
+    "zoom": 1.4,
+    "label": "Der Unterschied: das Garn",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Leg",
+    "zoom_at": "w:Kammgarnstoff",
+    "flip_at": "w:Streichgarnstoff",
+    "label_at": "w:dicker"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 751,
+     "y": 879,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Woolmark"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "Der Unterschied entsteht auf dem Weg zum Garn. Streichgarn entsteht meist aus kürzeren Fasern, die nur kardiert und locker gedreht werden. Für Kammgarn nimmt man die längsten Fasern, kämmt sie und dreht sie eng.",
+   "data": {
+    "headline": "Zwei Wege zum Garn",
+    "stages": [
+     {
+      "object": {
+       "kind": "yarn",
+       "spin": "woollen"
+      },
+      "at": 0.0,
+      "title": "Streichgarn",
+      "tags": [
+       {
+        "spot": "fibre",
+        "text": "kürzere Fasern",
+        "sub": "meistens",
+        "tone": "always",
+        "at": "w:kürzeren"
+       },
+       {
+        "spot": "center",
+        "text": "nur kardiert",
+        "sub": "locker gedreht",
+        "tone": "always",
+        "at": "w:kardiert"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "yarn",
+       "spin": "worsted"
+      },
+      "at": "w:Kammgarn",
+      "title": "Kammgarn",
+      "tags": [
+       {
+        "spot": "fibre",
+        "text": "längste Fasern",
+        "sub": "dann gekämmt",
+        "tone": "always",
+        "at": "w:längsten"
+       },
+       {
+        "spot": "center",
+        "text": "eng gedreht",
+        "sub": "glatt und fest",
+        "tone": "always",
+        "at": "w:eng"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Streichgarn"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "Den entscheidenden Schritt beschreibt der Wollverband IWTO: Beim Kämmen fallen die zu kurzen Fasern heraus, die Kämmlinge, und mit ihnen Pflanzenreste. Übrig bleibt der Kammzug. Aus ihm wird Kammgarn gesponnen.",
+   "data": {
+    "headline": "Der Kämmschritt",
+    "from": {
+     "kind": "yarn",
+     "spin": "woollen"
+    },
+    "to": {
+     "kind": "yarn",
+     "spin": "worsted"
+    },
+    "target": "fibre",
+    "zoom": 1.4,
+    "label": "Kurzfasern raus: Kammzug",
+    "hold_end": true,
+    "pointer_at": "w:Kämmen",
+    "zoom_at": "w:kurzen",
+    "flip_at": "w:Übrig",
+    "label_at": "w:Kammzug"
+   },
+   "source_ids": [
+    "S3",
+    "S1"
+   ],
+   "overlay": {
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:IWTO"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Daraus folgt die übliche Verwendung. Laut IWTO wird Kammgarngewebe für Anzüge, Hosen und Röcke genutzt. Streichgarngewebe ist dicker und schwerer, meist für Oberbekleidung. Eine Tendenz, keine Regel: Es gibt zum Beispiel auch Kammgarnflanell.",
+   "data": {
+    "headline": "Wofür welches?",
+    "left": {
+     "title": "Kammgarn",
+     "object": {
+      "kind": "swatch",
+      "weave": "worsted",
+      "colour": "#2A3550"
+     },
+     "tag": "Anzüge, Hosen, Röcke",
+     "tag2": "auch Kammgarnflanell",
+     "tag2_at": "w:Kammgarnflanell"
+    },
+    "right": {
+     "title": "Streichgarn",
+     "object": {
+      "kind": "swatch",
+      "weave": "woollen",
+      "colour": "#4A5068"
+     },
+     "tag": "meist Oberbekleidung",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:dicker"
+      }
+     ]
+    },
+    "left_at": "w:Kammgarngewebe",
+    "left_tag_at": "w:Anzüge",
+    "right_at": "w:Streichgarngewebe",
+    "right_tag_at": "w:Oberbekleidung",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:IWTO"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "Kurz gesagt: Streichgarn wird nur kardiert und locker gedreht, das macht es füllig und warm. Kammgarn wird zusätzlich gekämmt und eng gedreht, glatt und fest. Im Anzug findest du deshalb meist Kammgarn.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Streichgarn: kardiert",
+      "sub": "locker gedreht, füllig, warm",
+      "object": {
+       "kind": "yarn",
+       "spin": "woollen"
+      },
+      "at": "w:Streichgarn",
+      "ring": "fibre",
+      "ring_at": "w:locker"
+     },
+     {
+      "title": "Kammgarn: gekämmt",
+      "sub": "eng gedreht, glatt und fest",
+      "object": {
+       "kind": "yarn",
+       "spin": "woollen"
+      },
+      "at": "w:Kammgarn",
+      "then": {
+       "kind": "yarn",
+       "spin": "worsted"
+      },
+      "then_at": "w:gekämmt"
+     },
+     {
+      "title": "Anzug: meist Kammgarn",
+      "sub": "eine Tendenz, keine Regel",
+      "object": {
+       "kind": "swatch",
+       "weave": "worsted",
+       "colour": "#2A3550"
+      },
+      "at": "w:Anzug",
+      "ring": "center",
+      "ring_at": "w:meist"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Gekämmt wird es glatt, kardiert bleibt es füllig. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "swatch",
+     "weave": "woollen",
+     "colour": "#4A5068"
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#2A3550"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "center",
+    "fix_at": "w:Gekämmt",
+    "ring_at": "w:glatt",
+    "statement_at": "w:kardiert",
+    "chip_at": "w:Blick",
+    "statement": "Gekämmt wird glatt.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

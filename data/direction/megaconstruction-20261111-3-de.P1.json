@@ -1,0 +1,845 @@
+{
+  "video_id": "megaconstruction-20261111-3-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Kiel-Kanal in 5 Zahlen: 98,6 km, 24.866 Schiffe, 310-m-Schleuse",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Nachgerechnet. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261111-3-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.wsa-nord-ostsee-kanal.wsv.de/Webs/WSA/WSA-Nord-Ostsee-Kanal/DE/1_Wasserstrasse/1_Nord-Ostsee-Kanal/Nord-Ostsee-Kanal_text.html",
+      "title": "WSA Nord-Ostsee-Kanal: Länge 98,637 km; 162/90/11 m; eröffnet 21.06.1895",
+      "label": "WSA Nord-Ostsee-Kanal",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.bmv.de/SharedDocs/DE/Pressemitteilungen/2025/058-schnieder-verkehrsfreigabe-nord-ostsee-kanal.html",
+      "title": "BMV, Pressemitteilung 10.11.2025: 24.866 Schiffe, 75,56 Mio. t (2024)",
+      "label": "BMV, Pressemitteilung 2025",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.baken-net.de/image_pdf/5.schleusenkammer.pdf",
+      "title": "WSD-Faltblatt Schleusenkammer: Große Schleusen 310 × 42 m, 1911–1914",
+      "label": "WSD, Faltblatt Schleusen",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.wna-nord-ostsee-kanal.wsv.de/Webs/WNA/WNA-NOK/DE/4_Presse/3_Publikationen/005_NOK/Broschuere_NOK_dt_dl.pdf?__blob=publicationFile&v=2",
+      "title": "WNA, Broschüre NOK: Wegersparnis um Skagen ca. 250 sm (ca. 460 km)",
+      "label": "WNA, Broschüre NOK",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Vergleich mit Suez und Panama (WSA-Startseite, ohne Jahr) veraltet, nicht verwendet.",
+    "Länge im Modell stark verkürzt, Querschnitt schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Fast 25.000 Schiffe fuhren 2024 durch einen Kanal, der 1895 eröffnet wurde.",
+      "on_screen": "25.000 Schiffe durch einen Kanal von 1895",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist der Nord-Ostsee-Kanal wirklich?",
+      "on_screen": "Wie groß ist der Nord-Ostsee-Kanal wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen der Nord-Ostsee-Kanal.",
+      "on_screen": "der Nord-Ostsee-Kanal: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei der Nord-Ostsee-Kanal schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "der Nord-Ostsee-Kanal: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie der Nord-Ostsee-Kanal im Modell entsteht.",
+      "on_screen": "der Nord-Ostsee-Kanal im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Fast 25.000 Schiffe fuhren 2024 durch einen Kanal, der 1895 eröffnet wurde. Wie viel Weg spart er ihnen wirklich?",
+      "data": {
+        "kicker": "Nachgerechnet · Nord-Ostsee-Kanal",
+        "question": "Wie viel Weg spart dieser Kanal?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Brunsbüttel – Kiel · seit 1895",
+          "at": "@1895",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_build",
+      "spoken": "Die Daten: Der Nord-Ostsee-Kanal verbindet die Nordsee bei Brunsbüttel mit der Ostsee bei Kiel. Er ist rund 98,6 Kilometer lang, die Wasserfläche 162 Meter breit, das Wasser 11 Meter tief, außer auf der Oststrecke.",
+      "data": {
+        "headline": "Die Daten",
+        "table_title": "Datenblatt",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Länge",
+            "qty": "98,6 km",
+            "at": "@98,6"
+          },
+          {
+            "pos": "2",
+            "part": "Breite Wasserfläche",
+            "qty": "162 m",
+            "at": "@162"
+          },
+          {
+            "pos": "3",
+            "part": "Wassertiefe (ohne Oststrecke)",
+            "qty": "11 m",
+            "at": "@11"
+          },
+          {
+            "pos": "4",
+            "part": "Eröffnet",
+            "qty": "1895",
+            "at": "@Oststrecke"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "An beiden Enden liegen die großen Schleusen aus den Jahren 1911 bis 1914, mit Kammern von 310 mal 42 Metern.",
+      "data": {
+        "headline": "Die Schleusen",
+        "note": "Länge im Modell verkürzt",
+        "pins": [
+          {
+            "anchor": "lock",
+            "text": "310 × 42 m",
+            "kind": "dim",
+            "at": "@310"
+          }
+        ],
+        "rule": {
+          "text": "Große Schleusen an beiden Enden, 1911–1914",
+          "at": "@Enden",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_calc",
+      "spoken": "Jetzt die Rechnung. Der Kanal spart im Schnitt rund 460 Kilometer Umweg um Skagen. 460 geteilt durch 98,6 ergibt 4,67. Der Umweg ist also gut viereinhalbmal so lang wie der Kanal.",
+      "data": {
+        "headline": "Die Rechnung",
+        "sheet_dy": 470,
+        "calcs": [
+          {
+            "label": "Ersparnis (Umweg Skagen) ÷ Kanallänge",
+            "a": {
+              "value": 460,
+              "unit": "km"
+            },
+            "op": "÷",
+            "b": {
+              "value": 98.6,
+              "unit": "km"
+            },
+            "unit": "×",
+            "round": 0.01,
+            "decimals": 2,
+            "expect": 4.67,
+            "at": "@460",
+            "result_at": "@4,67"
+          }
+        ]
+      },
+      "source_ids": [
+        "S4",
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Und der Verkehr? 2024 fuhren 24.866 Schiffe hindurch. Geteilt durch 366 Tage, 2024 war ein Schaltjahr, sind das rund 68 Schiffe am Tag.",
+      "data": {
+        "headline": "Der Vergleich",
+        "sheet_dy": 470,
+        "sheet_title": "Verkehr 2024",
+        "calcs": [
+          {
+            "label": "Schiffe 2024 ÷ Tage (Schaltjahr)",
+            "a": {
+              "value": 24866,
+              "unit": ""
+            },
+            "op": "÷",
+            "b": {
+              "value": 366,
+              "unit": "Tage"
+            },
+            "unit": "pro Tag",
+            "round": 1,
+            "decimals": 0,
+            "prefix": "≈ ",
+            "expect": 68,
+            "at": "@24.866",
+            "result_at": "@68"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Ergebnis: rund 460 Kilometer weniger, für rund 68 Schiffe am Tag. Folge Gigastruct für die nächste Rechnung.",
+      "data": {
+        "statement": "Ergebnis: rund 460 km gespart",
+        "sheet": "BLATT 09",
+        "rows": [
+          [
+            "Kanal",
+            "98,6 km, seit 1895"
+          ],
+          [
+            "Umweg",
+            "rund 460 km um Skagen"
+          ],
+          [
+            "Verkehr",
+            "24.866 Schiffe (2024)"
+          ],
+          [
+            "Schnitt",
+            "rund 68 am Tag"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S4"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "BEHAUPTUNG",
+        "DATEN",
+        "RECHNUNG",
+        "VERGLEICH",
+        "ERGEBNIS"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 1,
+        "b4": 2,
+        "b5": 3,
+        "b6": 5
+      }
+    },
+    "description": "Der Nord-Ostsee-Kanal in fünf Zahlen: 98,6 km lang, eröffnet 1895, Schleusen 310 × 42 m, 460 km Umweg gespart, 24.866 Schiffe im Jahr 2024.",
+    "companion_text": "Gerechnet: 460 km ÷ 98,6 km = 4,67; 24.866 ÷ 366 = 67,9 Schiffe pro Tag. Quellen: WSA NOK, BMV, WSD-Faltblatt, WNA-Broschüre. Stilisiertes 3D-Modell, verkürzt. Folge Gigastruct.",
+    "hashtags": [
+      "nordostseekanal",
+      "kielkanal",
+      "schifffahrt",
+      "schleswigholstein",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "460 km ÷ 98,6 km = 4,67",
+        "result": "gut viereinhalbmal so weit",
+        "sources": [
+          "S1",
+          "S4"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "24.866 Schiffe ÷ 366 Tage = 67,9",
+        "result": "rund 68 Schiffe pro Tag (2024)",
+        "sources": [
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "canal",
+          "kind": "path",
+          "points": [
+            [
+              -3000,
+              -0.5,
+              -218.6
+            ],
+            [
+              -2850,
+              -0.5,
+              -232.4
+            ],
+            [
+              -2700,
+              -0.5,
+              -243.5
+            ],
+            [
+              -2550,
+              -0.5,
+              -251.9
+            ],
+            [
+              -2400,
+              -0.5,
+              -257.3
+            ],
+            [
+              -2250,
+              -0.5,
+              -259.8
+            ],
+            [
+              -2100,
+              -0.5,
+              -259.3
+            ],
+            [
+              -1950,
+              -0.5,
+              -255.9
+            ],
+            [
+              -1800,
+              -0.5,
+              -249.5
+            ],
+            [
+              -1650,
+              -0.5,
+              -240.3
+            ],
+            [
+              -1500,
+              -0.5,
+              -228.3
+            ],
+            [
+              -1350,
+              -0.5,
+              -213.6
+            ],
+            [
+              -1200,
+              -0.5,
+              -196.6
+            ],
+            [
+              -1050,
+              -0.5,
+              -177.2
+            ],
+            [
+              -900,
+              -0.5,
+              -155.9
+            ],
+            [
+              -750,
+              -0.5,
+              -132.7
+            ],
+            [
+              -600,
+              -0.5,
+              -108.0
+            ],
+            [
+              -450,
+              -0.5,
+              -82.1
+            ],
+            [
+              -300,
+              -0.5,
+              -55.3
+            ],
+            [
+              -150,
+              -0.5,
+              -27.8
+            ],
+            [
+              0,
+              -0.5,
+              0.0
+            ],
+            [
+              150,
+              -0.5,
+              27.8
+            ],
+            [
+              300,
+              -0.5,
+              55.3
+            ],
+            [
+              450,
+              -0.5,
+              82.1
+            ],
+            [
+              600,
+              -0.5,
+              108.0
+            ],
+            [
+              750,
+              -0.5,
+              132.7
+            ],
+            [
+              900,
+              -0.5,
+              155.9
+            ],
+            [
+              1050,
+              -0.5,
+              177.2
+            ],
+            [
+              1200,
+              -0.5,
+              196.6
+            ],
+            [
+              1350,
+              -0.5,
+              213.6
+            ],
+            [
+              1500,
+              -0.5,
+              228.3
+            ],
+            [
+              1650,
+              -0.5,
+              240.3
+            ],
+            [
+              1800,
+              -0.5,
+              249.5
+            ],
+            [
+              1950,
+              -0.5,
+              255.9
+            ],
+            [
+              2100,
+              -0.5,
+              259.3
+            ],
+            [
+              2250,
+              -0.5,
+              259.8
+            ],
+            [
+              2400,
+              -0.5,
+              257.3
+            ],
+            [
+              2550,
+              -0.5,
+              251.9
+            ],
+            [
+              2700,
+              -0.5,
+              243.5
+            ],
+            [
+              2850,
+              -0.5,
+              232.4
+            ],
+            [
+              3000,
+              -0.5,
+              218.6
+            ]
+          ],
+          "width": 162,
+          "height": 1.2,
+          "color": "water"
+        },
+        {
+          "id": "lockw",
+          "kind": "box",
+          "size": [
+            310,
+            12,
+            120
+          ],
+          "color": "model",
+          "pos": [
+            -3160,
+            0,
+            -218.6
+          ]
+        },
+        {
+          "id": "locke",
+          "kind": "box",
+          "size": [
+            310,
+            12,
+            120
+          ],
+          "color": "model",
+          "pos": [
+            3160,
+            0,
+            218.6
+          ]
+        },
+        {
+          "id": "ship",
+          "kind": "box",
+          "size": [
+            160,
+            22,
+            26
+          ],
+          "color": "boat",
+          "pos": [
+            -2600,
+            0,
+            -190
+          ]
+        },
+        {
+          "id": "ship2",
+          "kind": "box",
+          "size": [
+            120,
+            18,
+            22
+          ],
+          "color": "boat",
+          "pos": [
+            1800,
+            0,
+            230
+          ]
+        },
+        {
+          "id": "xs",
+          "kind": "box",
+          "size": [
+            6,
+            11,
+            162
+          ],
+          "color": "water",
+          "pos": [
+            0,
+            -11,
+            0
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "w162": [
+          0,
+          2,
+          81
+        ],
+        "w90": [
+          0,
+          -11,
+          45
+        ],
+        "d11": [
+          3,
+          -5.5,
+          -81
+        ],
+        "lock": [
+          3160,
+          12,
+          218.6
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "canal"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 30,
+            "el1": 24,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [],
+            "az0": 80,
+            "az1": 90,
+            "el0": 12,
+            "el1": 8,
+            "fit0": 0.8,
+            "fit1": 0.85,
+            "zone": 300,
+            "cy": 470,
+            "box": [
+              [
+                -150,
+                -12,
+                -100
+              ],
+              [
+                150,
+                4,
+                100
+              ]
+            ]
+          },
+          "props": {
+            "xs.visible": 1
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "lockw"
+            ],
+            "az0": 40,
+            "az1": 55,
+            "el0": 22,
+            "el1": 18,
+            "fit0": 0.6,
+            "fit1": 0.7,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "canal"
+            ],
+            "az0": 20,
+            "az1": 30,
+            "el0": 40,
+            "el1": 34,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "ship"
+            ],
+            "az0": 60,
+            "az1": 45,
+            "el0": 16,
+            "el1": 20,
+            "fit0": 0.5,
+            "fit1": 0.6,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "canal"
+            ],
+            "az0": 50,
+            "az1": 40,
+            "el0": 30,
+            "el1": 36,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

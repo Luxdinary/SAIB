@@ -1,0 +1,217 @@
+{
+  "spec": "werkzeuge-freigabe",
+  "runs": {
+    "L1": {
+      "title": "Read",
+      "prompt": "Lies notiz.txt und nenne die erste Zeile.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 16.961,
+      "lines": [
+        {
+          "t": 13.643,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 15.066,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 15.155,
+          "kind": "tool",
+          "id": "toolu_01Q9pfrmE9Ap35QA86mGvTWF",
+          "text": "Read: .\\notiz.txt"
+        },
+        {
+          "t": 15.278,
+          "kind": "result",
+          "id": "toolu_01Q9pfrmE9Ap35QA86mGvTWF",
+          "text": "1\tEinkaufsliste: Brot, Milch\n2"
+        },
+        {
+          "t": 16.197,
+          "kind": "text",
+          "text": "Die erste Zeile in `notiz.txt` lautet: **Einkaufsliste: Brot, Milch**"
+        },
+        {
+          "t": 16.227,
+          "kind": "end",
+          "text": "Ende nach 16.2 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Bash",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 2784,
+        "num_turns": 2,
+        "total_cost_usd": 0.00026852,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Write",
+      "prompt": "Lege die Datei gruss.txt mit dem Inhalt Hallo an.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 26.54,
+      "lines": [
+        {
+          "t": 19.476,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 21.707,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 21.899,
+          "kind": "tool",
+          "id": "toolu_013StY8Zeu1yAc6XSH3Lni5h",
+          "text": "Read: .\\gruss.txt"
+        },
+        {
+          "t": 22.12,
+          "kind": "denied",
+          "id": "toolu_013StY8Zeu1yAc6XSH3Lni5h",
+          "text": "File does not exist. Note: your current working directory is .."
+        },
+        {
+          "t": 23.249,
+          "kind": "tool",
+          "id": "toolu_01Cpj8wDJ9baCJpEgNpxvDPi",
+          "text": "Write: .\\gruss.txt"
+        },
+        {
+          "t": 23.344,
+          "kind": "denied",
+          "id": "toolu_01Cpj8wDJ9baCJpEgNpxvDPi",
+          "text": "Claude requested permissions to write to .\\gruss.txt, but you haven't granted it yet."
+        },
+        {
+          "t": 25.108,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 25.787,
+          "kind": "text",
+          "text": "Ich konnte die Datei `gruss.txt` nicht anlegen. Der Schreibzugriff auf `.\\gruss.txt` wurde nicht freigegeben. Die Datei existiert noch nicht.\n\nWenn du die Schreibberechtigung für diesen Ordner erteilst, lege ich die Datei mit dem Inhalt `Hallo` sofort an. Alternativ kannst du sie selbst mit dem Inhalt `Hallo` erstellen."
+        },
+        {
+          "t": 25.839,
+          "kind": "end",
+          "text": "Ende nach 25.8 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Bash",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 6494,
+        "num_turns": 3,
+        "total_cost_usd": 0.0007373200000000001,
+        "is_error": false,
+        "permission_denials": 1
+      }
+    },
+    "L3": {
+      "title": "Bash",
+      "prompt": "Führe node zeige.js aus und sag mir, was es ausgibt.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 18.091,
+      "lines": [
+        {
+          "t": 7.743,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 10.017,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 10.365,
+          "kind": "tool",
+          "id": "toolu_01DZYsfp6eDwFtTVZ5xuriKi",
+          "text": "Bash: cd \".\" && node zeige.js"
+        },
+        {
+          "t": 10.399,
+          "kind": "denied",
+          "id": "toolu_01DZYsfp6eDwFtTVZ5xuriKi",
+          "text": "This Bash command contains multiple operations. The following part requires approval: node zeige.js"
+        },
+        {
+          "t": 13.208,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 13.635,
+          "kind": "text",
+          "text": "Der Befehl wurde vom Berechtigungssystem abgelehnt, bevor er lief. Ich schaue mir zuerst den Inhalt von `zeige.js` an, damit du weißt, was ausgeführt würde."
+        },
+        {
+          "t": 13.81,
+          "kind": "tool",
+          "id": "toolu_01CZkvPVWAL6n9oe5dDcKjka",
+          "text": "Read: .\\zeige.js"
+        },
+        {
+          "t": 13.868,
+          "kind": "result",
+          "id": "toolu_01CZkvPVWAL6n9oe5dDcKjka",
+          "text": "1\t// schreibt lief.txt, damit sichtbar ist, ob das Skript wirklich lief\n2\trequire(\"fs\").writeFileSync(\"lief.txt\", \"gelaufen\\n\");\n3\tconsole.log(\"fertig\");\n… (1 weitere Zeilen)"
+        },
+        {
+          "t": 15.947,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 17.415,
+          "kind": "text",
+          "text": "Ich habe `zeige.js` nicht ausgeführt. Das Berechtigungssystem hat den Befehl `node zeige.js` abgelehnt, und ich habe das nicht umgangen. Wenn du die Freigabe erteilst, starte ich es erneut.\n\nAus dem Quellcode ergibt sich, was passieren würde:\n\n- **Ausgabe:** `fertig`\n- **Nebenwirkung:** Es legt die Datei `lief.txt` im Verzeichnis `werkzeuge-freigabe` an (oder überschreibt sie) mit dem Inhalt `gelaufen`.\n\nDas Skript selbst ist harmlos. Es liest nichts außer seiner eigenen Zeile und schreibt nur die eine Datei. Du kannst es auch selbst im Terminal starten:\n\n```\ncd .\nnode zeige.js\n```\n\nFalls die Freigabe bei dir an der Kombination von `cd` und `node` hängt, reicht `node zeige.js` aus dem richtigen Verzeichnis."
+        },
+        {
+          "t": 17.464,
+          "kind": "end",
+          "text": "Ende nach 17.5 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Bash",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 9756,
+        "num_turns": 3,
+        "total_cost_usd": 0.0009902600000000002,
+        "is_error": false,
+        "permission_denials": 1
+      }
+    }
+  }
+}

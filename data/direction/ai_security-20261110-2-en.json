@@ -1,0 +1,486 @@
+{
+ "video_id": "ai_security-20261110-2-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Your website chat is an AI? Then it has to say so",
+ "notes": "EN-Fassung von ai_security-20261110-2-de (Woche 1, 01.11.2026), sprachlich angepasst, gleiche Quellen und Bildfolge.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Website chat",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "AI notice: missing",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Duty: since 2 August 2026",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "Role: provider?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Notice: at first contact",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "AI images: deepfake?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Labelling: open",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Live: blocked until AI notice",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Your website chat answers with AI? Since 2 August 2026, the AI Act's transparency rules apply in the EU: chatbots must disclose that they are AI, and realistic AI images must be labelled.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "aiact",
+   "ailabelling",
+   "smallbusiness",
+   "chatbot",
+   "aisecurity"
+  ],
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, lanes, dataroom, lanes, split, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+   "title": "Commission Guidelines on the transparency obligations under Article 50 AI Act, C(2026) 5054, 20.07.2026 (Rn. 2, 6-7, 11-12, 19, 29, 32-34, 42, 113, Beispiele fuer Nicht-Deepfakes)",
+   "checked_at": "2026-10-30",
+   "label": "EU Commission, Art. 50 guidelines"
+  },
+  {
+   "id": "S2",
+   "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+   "title": "AI Act, Article 50: Transparency obligations for providers and deployers of certain AI systems (AI Act Service Desk, European Commission)",
+   "checked_at": "2026-10-30",
+   "label": "AI Act Art. 50"
+  },
+  {
+   "id": "S3",
+   "url": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+   "title": "Transparency obligations under Article 50 of the AI Act - FAQ (European Commission): anwendbar ab 2. August 2026",
+   "checked_at": "2026-10-30",
+   "label": "EU Commission, Art. 50 FAQ"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.upload-post.com/api/upload-video",
+   "title": "Upload-Post API - Upload video: is_aigc (TikTok), is_ai_generated (Instagram), containsSyntheticMedia (YouTube)",
+   "checked_at": "2026-10-30",
+   "label": "Upload-Post, API docs"
+  }
+ ],
+ "unverified": [
+  "Transition period to 2 December 2026 for machine-readable marking under Art. 50(2): not used.",
+  "Whether a platform label alone satisfies Art. 50(4): not claimed; only named as a practical step.",
+  "Fine amounts: not used."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Your website chat answers with AI. Do your customers know?",
+   "on_screen": "Do customers know an AI is answering?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kundenfrage fliegt in den Website-Chat, Warnmarke 'KI?'",
+   "why": {
+    "truth": "Frage, keine Behauptung; Pflicht aus Art. 50(1) belegt",
+    "visual": "Chatfenster ist das Objekt des ganzen Videos"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Only big companies have to label AI? That's the mistake.",
+   "on_screen": "Only big firms must label AI?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Aussage mit Fragezeichen",
+   "why": {
+    "truth": "Leitlinien Rn. 12 und 19: beruflicher Einsatz genügt; Anbieterpflicht nicht größenabhängig"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Since August 2026, an AI chat has to say that it's an AI.",
+   "on_screen": "Since Aug 2026: AI chat must say so",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "visual": "Datum und Chatfenster",
+   "why": {
+    "truth": "Ausnahme 'offensichtlich' bleibt, daher 4"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "An AI photo of your shop that looks real can count as a deepfake.",
+   "on_screen": "AI photo of your shop: deepfake?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Foto-Karte mit Fragezeichen",
+   "why": {
+    "truth": "Definition Art. 3(60): ähnelt existierenden Orten und wirkt echt"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Look at what's missing from this chat window.",
+   "on_screen": "What's missing in this chat?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "Chat ohne KI-Hinweis",
+   "why": {
+    "clarity": "ohne Ton unklar, worum es geht"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage mit höchster Bewertung; Chatfenster ist zugleich der rote Faden."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Your website chat answers with AI. Do your customers know?",
+   "data": {
+    "question": "Do customers know an AI is answering?",
+    "doc_label": "Customer question",
+    "chat_title": "Website chat",
+    "bot_line": "Hi! How can I help?",
+    "typed": "Are you open tomorrow?",
+    "badge": "AI?",
+    "fly_at": 0.3,
+    "question_at": 2.0
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 10,
+   "spoken": "Since the second of August 2026, the transparency rules of the EU AI Act apply. They don't only cover big companies, but also businesses that use AI in a professional capacity.",
+   "data": {
+    "headline": "Since 2 August 2026: transparency",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "AI system",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n1",
+      "label": "Your business",
+      "icon": "&#9783;"
+     },
+     {
+      "id": "n2",
+      "label": "Customer",
+      "icon": "&#9823;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "used at work"
+     },
+     {
+      "label": "contact"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 6.0,
+     "label": "Do they find out?"
+    }
+   },
+   "source_ids": [
+    "S3",
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "For the chat, the rule is: people must be told that they're talking to an AI. The duty lies with the provider. If you built the chat yourself and run it under your own name, then according to the European Commission, that's you.",
+   "data": {
+    "headline": "Who has to disclose it?",
+    "file_label": "Website chat",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Your own chat",
+      "sub": "built by you, your name",
+      "at": 0.6
+     },
+     {
+      "title": "Bought-in chat",
+      "sub": "provider is the maker",
+      "at": 1.0
+     }
+    ],
+    "approval": "Notice visible in the chat?",
+    "approval_at": 8.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "The notice must be clear and distinguishable, at the latest at the first interaction. The only exception is when it's obvious to a reasonably attentive person that they're talking to an AI.",
+   "data": {
+    "headline": "Article 50: how and when",
+    "file_label": "Website chat",
+    "card": {
+     "title": "The AI notice",
+     "rows": [
+      {
+       "text": "clear and distinguishable",
+       "ok": null
+      },
+      {
+       "text": "at the first interaction",
+       "ok": null
+      },
+      {
+       "text": "exception: if obvious",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "open: is it obvious?",
+    "row_step": 3.0,
+    "risk_open": true,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 15,
+   "spoken": "Second rule: deepfakes. If you publish AI images or videos at work that resemble real people or places and appear authentic, you must label them. Clearly drawn or impossible scenes usually don't count, according to the guidelines.",
+   "data": {
+    "headline": "AI images: when to label?",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 8.0,
+    "left": {
+     "title": "Label it",
+     "rows": [
+      {
+       "text": "resembles real people, places",
+       "ok": null
+      },
+      {
+       "text": "appears authentic",
+       "ok": null
+      },
+      {
+       "text": "published at work",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "Usually not a deepfake",
+     "rows": [
+      {
+       "text": "clearly drawn",
+       "ok": null
+      },
+      {
+       "text": "obviously impossible",
+       "ok": null
+      },
+      {
+       "text": "borderline: check each case",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 13,
+   "spoken": "For your business, that means: say right away in the chat that an AI is answering. Label realistic AI images. And when uploading, set the AI label that TikTok, Instagram and YouTube offer.",
+   "data": {
+    "headline": "Three steps for your business",
+    "items": [
+     {
+      "title": "Chat: AI notice first",
+      "sub": "in the first window, easy to read",
+      "at": 2.0
+     },
+     {
+      "title": "Label AI images",
+      "sub": "if they look real",
+      "at": 4.6
+     },
+     {
+      "title": "AI label when uploading",
+      "sub": "TikTok, Instagram, YouTube",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Label first, then go live. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Label first, then go live",
+    "file_label": "Website chat",
+    "button": "Go live",
+    "block_text": "Live only with an AI notice",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,583 @@
+{
+  "video_id": "menswear-20261103-2-de",
+  "brand_id": "menswear",
+  "language": "de",
+  "title": "Super 100s: was die Zahl bedeutet und was nicht",
+  "layout": {
+    "format": "kreidestrich",
+    "series": "stoff",
+    "series_topic": "Super-Zahl",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 950,
+    "caption_bottom_px": 560,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.4,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "description": "Super 100s, Super 150s: Die Zahl auf dem Anzugetikett wirkt wie eine Note. Tatsächlich nennt sie nach der IWTO-Regel nur eine Obergrenze für den mittleren Faserdurchmesser der Wolle. Auf dem Zuschneidetisch siehst du, was die Zahl festlegt und was nicht.",
+    "companion_text": "Suitwerk zeigt Herrenstil im Detail, gezeichnet statt behauptet. Keine Werbung, keine Produktempfehlung.",
+    "hashtags": [
+      "herrenmode",
+      "anzugstoff",
+      "stoffkunde",
+      "super100s",
+      "wolle"
+    ],
+    "short_title": "Super 100s und die Zahl",
+    "zone_lower_right_px": 940,
+    "sound_note": "Schneiderei: Kreide auf Tuch, Metallklick, Papierrascheln, Stoff-Whoosh, leiser Abschlussakkord.",
+    "sound": {
+      "palette": "paper",
+      "mood": "warm"
+    },
+    "sound_cues": [
+      {
+        "beat": "b1",
+        "at": "start",
+        "cue": "bett_ein"
+      },
+      {
+        "beat": "b1",
+        "at": "w:Zahl",
+        "cue": "click"
+      },
+      {
+        "beat": "b1",
+        "at": "w:wirklich",
+        "cue": "swipe_leise"
+      },
+      {
+        "beat": "b2",
+        "at": "w:aber",
+        "cue": "stamp"
+      },
+      {
+        "beat": "b3",
+        "at": "w:18,75",
+        "cue": "tick"
+      },
+      {
+        "beat": "b3",
+        "at": "w:Zehnerstufe",
+        "cue": "whoosh_leise"
+      },
+      {
+        "beat": "b4",
+        "at": "w:Gemessen",
+        "cue": "click"
+      },
+      {
+        "beat": "b5",
+        "at": "w:Höchstgrenze",
+        "cue": "stamp"
+      },
+      {
+        "beat": "b6",
+        "at": "w:nichts",
+        "cue": "swipe_leise"
+      },
+      {
+        "beat": "b7",
+        "at": "w:Folge",
+        "cue": "chime"
+      },
+      {
+        "beat": "b7",
+        "at": "end",
+        "cue": "bett_aus_schlussakkord"
+      }
+    ]
+  },
+  "assets": {
+    "folder": "assets/clips",
+    "background": {},
+    "hero": {},
+    "scrim": 0.0,
+    "note": "Fotos aus Higgsfield (Nano Banana), Nachweis brands/menswear/assets/higgsfield/testvideo/LICENSE.md und library/LICENSE.md; LAYER kopiert sie ins Projekt."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/product-specifications/f-6_fibre_quality_2016-1_22oct14_f.pdf",
+      "title": "Woolmark-Spezifikation F-6: Super-S-System der IWTO, Tabelle Super 80s bis 250s, Messung nach IWTO-08 am Endprodukt",
+      "checked_at": "2026-11-03",
+      "label": "Woolmark, Spezifikation F-6"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.law.cornell.edu/cfr/text/16/300.20a",
+      "title": "16 CFR 300.20a: Falschetikettierung bei Super 100's, wenn der mittlere Faserdurchmesser über 18,75 µm liegt",
+      "checked_at": "2026-11-03",
+      "label": "US-Verordnung 16 CFR 300.20a"
+    },
+    {
+      "id": "S3",
+      "url": "https://cashmere.org/definition-cashmere-wool.php",
+      "title": "CCMI gibt den IWTO-Code wieder: Super nur für reine Schurwolle, Wert nach maximalem mittlerem Faserdurchmesser",
+      "checked_at": "2026-11-03",
+      "label": "CCMI: IWTO-Code zu Super"
+    }
+  ],
+  "unverified": [
+    "Ob eine höhere Super-Zahl besser, feiner im Griff oder empfindlicher ist, ist mit den geöffneten Quellen nicht belegt und steht deshalb nicht im Skript.",
+    "Aussagen zu Haltbarkeit oder Gewicht eines Stoffs mit bestimmter Super-Zahl sind nicht belegt; das Skript sagt nur, dass die geprüfte Regel dazu nichts festlegt.",
+    "Die Werte stammen aus dem Woolmark-Anhang (Stand 1. Juli 2013); neuere Fassungen wurden nicht geprüft."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Was bedeutet die Zahl hinter Super auf dem Etikett?",
+      "on_screen": "Super 100s: was heißt das?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "Zwei Stoffmuster mit Etikett auf dem Zuschneidetisch, Kreidefragezeichen.",
+      "why": {
+        "truth": "Frage, keine Behauptung"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Die Super-Zahl ist keine Note für den Stoff.",
+      "on_screen": "Super-Zahl ≠ Note",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Kreide streicht das Wort Note neben der Zahl durch.",
+      "why": {
+        "truth": "S1 nennt nur den Faserdurchmesser als Kriterium"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Super 100s heißt nur: höchstens 18,75 Mikrometer Faserdurchmesser.",
+      "on_screen": "Höchstens 18,75 µm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Die Zahl 18,75 µm in Kreide neben einem dunklen Stoffmuster.",
+      "why": {
+        "truth": "Tabelle in S1, Wert in S2 bestätigt"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Die Zahl auf dem Etikett ist kein Messwert deines Stoffs.",
+      "on_screen": "Grenze, kein Messwert",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Ein Etikett am Sakko, Kreidering um die Super-Zahl.",
+      "why": {
+        "truth": "S2: Falschetikett nur, wenn der Durchschnitt über der Grenze liegt"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Zwei Etiketten, zwei Super-Zahlen. Was sagt die Zahl wirklich?",
+      "on_screen": "Was sagt die Zahl?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Zwei reale Stoffmuster auf dem Zuschneidetisch, Kreide setzt ein Fragezeichen dazwischen.",
+      "why": {
+        "truth": "Frage zu zwei Zahlen, die Antwort folgt aus S1"
+      }
+    }
+  ],
+  "hook": {
+    "id": "H5",
+    "note": "Zwei reale Stoffe nebeneinander, die Frage nach der Zahl trägt die ganze Erklärung."
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "kw_photo",
+      "spoken": "Zwei Etiketten, zwei Super-Zahlen. Was sagt die Zahl wirklich? Sie ist keine Note, sondern ein Grenzwert.",
+      "data": {
+        "shots": [
+          {
+            "src": "testvideo/sw_tv_pair_light.jpg",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "pan": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "clip": "testvideo/sw_tv_k1_pair.mp4"
+          },
+          {
+            "src": "library/sw_real_swatch_fan.jpg",
+            "at": "w:Zahl",
+            "zoom": [
+              1.04,
+              1.16
+            ],
+            "pan": [
+              0,
+              0,
+              -20,
+              0
+            ]
+          },
+          {
+            "src": "library/sw_real_threadcounter.jpg",
+            "at": "w:Grenzwert",
+            "zoom": [
+              1.04,
+              1.14
+            ],
+            "pan": [
+              0,
+              0,
+              20,
+              0
+            ]
+          }
+        ],
+        "dim": 0.22,
+        "question": {
+          "text": "Was sagt die Zahl?",
+          "at": 0.2
+        },
+        "chalk_at": "w:wirklich",
+        "source": "Woolmark: Spezifikation F-6 · Abruf 03.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "kw_hook",
+      "spoken": "Super 100s und Super 150s klingen nach Rangfolge. Die Regel nennt aber nur eine Größe: den mittleren Faserdurchmesser. Das Super-System gehört der IWTO, Woolmark verwaltet es.",
+      "data": {
+        "question": "Rangfolge der Stoffe?",
+        "question_at": "w:Super",
+        "chalk_at": "w:Rangfolge",
+        "swatches": [
+          {
+            "label": "Super 100s",
+            "kind": "plain"
+          },
+          {
+            "label": "Super 150s",
+            "kind": "plain"
+          }
+        ],
+        "labels_at": "w:150s",
+        "neq_at": "w:aber",
+        "source": "Woolmark F-6; 16 CFR 300.20a · Abruf 03.11.2026",
+        "backdrop": {
+          "src": "library/sw_mood_cuttingtable.jpg",
+          "dim": 0.5
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "kw_flip",
+      "spoken": "Super 100s heißt: höchstens 18,75 Mikrometer. Super 150s heißt: höchstens 16,25 Mikrometer. Je Zehnerstufe wird die Grenze um 0,5 Mikrometer feiner.",
+      "data": {
+        "left": {
+          "kind": "plain",
+          "title": "Super 100s",
+          "front": "höchstens 18,75 µm",
+          "back": "Grenze, kein Messwert"
+        },
+        "right": {
+          "kind": "plain",
+          "title": "Super 150s",
+          "front": "höchstens 16,25 µm",
+          "back": "je Stufe 0,5 µm feiner"
+        },
+        "flip_at": "w:Zehnerstufe",
+        "left_at": "w:18,75",
+        "right_at": "w:16,25",
+        "arrow_at": "w:feiner",
+        "source": "Woolmark: Spezifikation F-6, Tabelle · Abruf 03.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "kw_photo",
+      "spoken": "Beide Stoffe liegen nebeneinander. Das Gewebe siehst du, den Faserdurchmesser nicht. Gemessen wird er am fertigen Produkt, und Super gilt nur für reine Schurwolle.",
+      "data": {
+        "shots": [
+          {
+            "src": "library/sw_real_threadcounter.jpg",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "pan": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "src": "library/sw_fabric_worsted_plain.jpg",
+            "at": "w:Gewebe",
+            "zoom": [
+              1.04,
+              1.16
+            ],
+            "pan": [
+              0,
+              0,
+              -20,
+              0
+            ]
+          },
+          {
+            "src": "library/sw_real_yarn.jpg",
+            "at": "w:Faserdurchmesser",
+            "zoom": [
+              1.04,
+              1.14
+            ],
+            "pan": [
+              0,
+              0,
+              20,
+              0
+            ]
+          }
+        ],
+        "dim": 0.3,
+        "question": {
+          "text": "Gewebe oder Faser?",
+          "at": 0.2
+        },
+        "chalk_at": "w:Gemessen",
+        "source": "Woolmark F-6; CCMI (IWTO-Code) · Abruf 03.11.2026"
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "kw_flip",
+      "spoken": "Die Zahl ist also eine Höchstgrenze, kein Messwert dieses Stoffs. Der Stoff darf feiner sein. Eine Messtoleranz sieht die Spezifikation nicht vor. In den USA ist ein Etikett falsch, wenn der Durchschnitt über der Grenze liegt.",
+      "data": {
+        "left": {
+          "kind": "plain",
+          "title": "Etikett",
+          "front": "Super 100s",
+          "back": "Höchstgrenze 18,75 µm"
+        },
+        "right": {
+          "kind": "plain",
+          "title": "Stoff",
+          "front": "mittlerer Durchmesser",
+          "back": "gleich oder feiner"
+        },
+        "flip_at": "w:feiner",
+        "left_at": "w:Höchstgrenze",
+        "right_at": "w:Messwert",
+        "arrow_at": "w:Durchschnitt",
+        "source": "Woolmark F-6; 16 CFR 300.20a · Abruf 03.11.2026"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "kw_photo",
+      "spoken": "Von Gewicht oder Bindung steht in dieser Regel nichts. Das ist der ganze Inhalt der Zahl. So liest du das Etikett genauer.",
+      "data": {
+        "shots": [
+          {
+            "src": "library/sw_real_wardrobe.jpg",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "pan": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "src": "library/sw_real_three_patterns.jpg",
+            "at": "w:Bindung",
+            "zoom": [
+              1.04,
+              1.16
+            ],
+            "pan": [
+              0,
+              0,
+              -20,
+              0
+            ]
+          },
+          {
+            "src": "testvideo/sw_tv_jacket_front.jpg",
+            "at": "w:Etikett",
+            "zoom": [
+              1.04,
+              1.14
+            ],
+            "pan": [
+              0,
+              0,
+              20,
+              0
+            ]
+          }
+        ],
+        "dim": 0.25,
+        "question": {
+          "text": "Nur der Durchmesser",
+          "at": 0.2
+        },
+        "chalk_at": "w:nichts",
+        "source": "Woolmark: Spezifikation F-6 · Abruf 03.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "kw_close",
+      "spoken": "Lies dein Etikett: Steht dort Super und eine Zahl, ist das eine Obergrenze in Mikrometern. Mehr sagt sie nicht. Folge Suitwerk für Herrenstil mit Blick fürs Detail.",
+      "data": {
+        "kinds": [
+          "plain",
+          "twill"
+        ],
+        "chip": {
+          "text": "Super 100s: höchstens 18,75 µm",
+          "at": "w:Etikett"
+        },
+        "lines": [
+          {
+            "text": "Super: Obergrenze",
+            "at": "w:Super"
+          },
+          {
+            "text": "Einheit: Mikrometer",
+            "at": "w:Mikrometern"
+          }
+        ],
+        "rule": {
+          "text": "Zahl = Grenze, kein Messwert",
+          "at": "w:Mehr"
+        },
+        "sign_at": "w:Folge",
+        "claim": "Herrenstil mit Blick fürs Detail.",
+        "source": "Woolmark: Spezifikation F-6 · Abruf 03.11.2026",
+        "sign_note": "Test: Etikett lesen",
+        "shots": [
+          {
+            "src": "testvideo/sw_tv_jacket_threequarter.jpg",
+            "at": "w:Lies",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "pan": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "dim": 0.3,
+            "clip": "testvideo/sw_tv_k3_jacket.mp4"
+          },
+          {
+            "src": "testvideo/sw_tv_lapel_dark.jpg",
+            "at": "w:Folge",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "dim": 0.6,
+            "clip": "testvideo/sw_tv_k4_lapel.mp4"
+          }
+        ],
+        "swatch_photos": [
+          "library/sw_fabric_worsted_plain.jpg",
+          "testvideo/sw_tv_fabric_twill_face.jpg"
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "notes": "Tagesläufer-Prototyp (2026-11-03). Herkunft: Konzeptplan Nr. 2 der Reihe Unter dem Fadenzähler, Thema Super 100s. Alle Aussagen stützen sich auf Woolmark F-6, 16 CFR 300.20a und den CCMI-Hinweis zum IWTO-Code; Bilder ausschließlich aus der vorhandenen Materialliste, nichts Neues erzeugt."
+}

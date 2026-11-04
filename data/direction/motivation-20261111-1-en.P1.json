@@ -1,0 +1,463 @@
+{
+ "video_id": "motivation-20261111-1-en",
+ "brand_id": "motivation",
+ "language": "en",
+ "title": "Reread or test yourself? An experiment with 120 students",
+ "notes": "English version of pilot P1, Gritwerk format \"Laborbuch\" (Format-Bibel: OneDrive\\Business\\02 Marke\\Gritwerk\\Format-Bibel.md), calendar topic motivation-20261111-1-en. Same facts as the German plan motivation-20261111-1-de.P1.json; Experiment 1 of Roediger & Karpicke 2006 read in full text on 02.11.2026 (p. 250 setup, p. 251 results).",
+ "layout": {
+  "format": "laborbuch",
+  "explainer": false,
+  "laborbuch": {
+   "no": "001",
+   "study": "Roediger & Karpicke 2006",
+   "status": "holds"
+  },
+  "zone_top": 300,
+  "zone_h": 800,
+  "caption_bottom_px": 600,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "risk_level": "low",
+  "description": "Reread a text or test yourself? In a published experiment with 120 students, rereading was ahead after five minutes, testing after two days and after one week. Setup, measure, result, limits and state of research, retold from the original study. Plus a small test for you, with a counting rule.",
+  "companion_text": "Gritwerk retells published experiments: setup, measure, result, limits, replication status. Not run by us.",
+  "hashtags": [
+   "studytips",
+   "learning",
+   "psychology",
+   "research",
+   "gritwerk"
+  ]
+ },
+ "assets": {
+  "note": "Hintergrund und Laborbuchseite aus dem LAYER des Formats Laborbuch (brands/motivation/laborbuch/scenes.py), keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://doi.org/10.1111/j.1467-9280.2006.01693.x",
+   "title": "Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+   "checked_at": "2026-11-02",
+   "label": "Roediger & Karpicke 2006"
+  },
+  {
+   "id": "S2",
+   "url": "https://doi.org/10.3102/0034654316689306",
+   "title": "Adesope, O. O., Trevisan, D. A., & Sundararajan, N. (2017). Rethinking the use of tests: A meta-analysis of practice testing. Review of Educational Research, 87(3), 659–701.",
+   "checked_at": "2026-11-02",
+   "label": "Adesope et al. 2017"
+  },
+  {
+   "id": "S3",
+   "url": "https://doi.org/10.1177/1529100612453266",
+   "title": "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving students' learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+   "checked_at": "2026-11-02",
+   "label": "Dunlosky et al. 2013"
+  }
+ ],
+ "unverified": [
+  "Not in the video: \"rereading is useless\", \"better grades\", generalising to all subjects, ages or test formats.",
+  "Effect sizes of the meta-analyses (Hedges' g) not given: only abstracts read, they state no number.",
+  "Experiment 2 (SSSS vs STTT, confidence 4.8 vs 4.0 of 7) read in full text, not used in the video.",
+  "The viewer test (n = 1) is a Gritwerk measuring idea, not tested in any study; labelled n = 1 on screen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Reread a text, or test yourself?",
+   "on_screen": "Reread or test yourself?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Question large on the notebook page, 120 dots for 120 participants, stamp \"Result flips\"",
+   "why": {
+    "choice": "question plus the hinted turn; everything checked in the full text"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "demonstration",
+   "spoken": "One hundred twenty dots, one hundred twenty students, two ways to learn.",
+   "on_screen": "",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "note": "alternative, weaker"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "concrete_risk",
+   "spoken": "If you only reread before an exam, you may feel more ready than you are.",
+   "on_screen": "",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "note": "relies on Experiment 2, not used in the pilot"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "surprising_fact",
+   "spoken": "After five minutes rereading wins. After one week it loses.",
+   "on_screen": "",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "note": "used as the end of the hook"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "misconception",
+   "spoken": "Rereading feels like learning. An experiment measured it.",
+   "on_screen": "",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "note": "alternative"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Question, then the turn from H4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "lb_hook",
+   "duration_hint": 9,
+   "spoken": "Reread a text, or test yourself? An experiment with one hundred twenty students compared exactly that. After five minutes, rereading was ahead. After one week, it was not.",
+   "data": {
+    "question": "Reread or test yourself?",
+    "dots": {
+     "n": 120,
+     "label": "students, aged 18–24",
+     "at": 0.5
+    },
+    "meta": {
+     "text": "Washington University · Experiment 1",
+     "at": "@compared"
+    },
+    "tease": {
+     "text": "after 5 min: rereading ahead",
+     "at": "@five"
+    },
+    "stamp": {
+     "text": "Result flips",
+     "at": "@week"
+    },
+    "cite": "Roediger & Karpicke 2006 · Psychol. Sci. 17(3) · Exp. 1, p. 250"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "lb_setup",
+   "duration_hint": 17,
+   "spoken": "Here is how it worked. Everyone read two short science texts, seven minutes each. They read one text a second time. For the other, they wrote down everything they remembered, with no feedback. A third took the final test after five minutes, a third after two days, a third after one week.",
+   "data": {
+    "headline": "How it worked",
+    "sheets": [
+     {
+      "title": "Text: The Sun",
+      "sub": "science text, 256 words"
+     },
+     {
+      "title": "Text: Sea Otters",
+      "sub": "science text, 275 words"
+     }
+    ],
+    "sheets_at": 0.5,
+    "read": {
+     "text": "7 minutes reading each",
+     "at": "@seven"
+    },
+    "arms": [
+     {
+      "icon": "read",
+      "title": "Reread",
+      "sub": "one text, 7 minutes",
+      "at": "@second"
+     },
+     {
+      "icon": "write",
+      "title": "Test yourself",
+      "sub": "write it down, no feedback",
+      "at": "@other"
+     }
+    ],
+    "groups": {
+     "n": 120,
+     "label": "Final test: 3 groups of 40",
+     "at": "@final",
+     "split": [
+      {
+       "label": "5 min",
+       "sub": "n = 40",
+       "at": "@five"
+      },
+      {
+       "label": "2 days",
+       "sub": "n = 40",
+       "at": "@two#2"
+      },
+      {
+       "label": "1 week",
+       "sub": "n = 40",
+       "at": "@week"
+      }
+     ]
+    },
+    "cite": "Roediger & Karpicke 2006 · Psychol. Sci. 17(3) · Exp. 1, p. 250"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "lb_measure",
+   "duration_hint": 8,
+   "spoken": "The measure was what came back. Each text was split into thirty idea units. Every unit written down correctly scored one point.",
+   "data": {
+    "headline": "Measured: what came back",
+    "sheet_label": "The Sun",
+    "units": {
+     "n": 30,
+     "label": "30 idea units per text",
+     "at": "@thirty"
+    },
+    "rule": {
+     "text": "1 unit = 1 point",
+     "at": "@correctly"
+    },
+    "sample": {
+     "fill": 21,
+     "text": "First recall in the study: avg 20.9 of 30",
+     "at": "@scored"
+    },
+    "cite": "Roediger & Karpicke 2006 · Psychol. Sci. 17(3) · Exp. 1, p. 250"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "lb_result",
+   "duration_hint": 12,
+   "spoken": "After five minutes: rereading eighty-one percent, testing seventy-five. After two days it flips, fifty-four versus sixty-eight. After one week, forty-two versus fifty-six.",
+   "data": {
+    "headline": "Result",
+    "unit": "share recalled, in %",
+    "series": [
+     {
+      "label": "reread",
+      "kind": "a"
+     },
+     {
+      "label": "self-tested",
+      "kind": "b"
+     }
+    ],
+    "groups": [
+     {
+      "label": "5 min",
+      "values": [
+       81,
+       75
+      ],
+      "fmt": "{}%",
+      "at": "@five",
+      "value_at": [
+       "@eighty",
+       "@seventy"
+      ]
+     },
+     {
+      "label": "2 days",
+      "values": [
+       54,
+       68
+      ],
+      "fmt": "{}%",
+      "at": "@two",
+      "value_at": [
+       "@fifty",
+       "@sixty"
+      ]
+     },
+     {
+      "label": "1 week",
+      "values": [
+       42,
+       56
+      ],
+      "fmt": "{}%",
+      "at": "@week",
+      "value_at": [
+       "@forty",
+       "@fifty#2"
+      ]
+     }
+    ],
+    "turn_mark": {
+     "text": "flips",
+     "at": "@flips",
+     "between": 0
+    },
+    "gap": {
+     "text": "+14 points",
+     "group": 2,
+     "at": "@fifty#2+0.6"
+    },
+    "cite": "Roediger & Karpicke 2006 · Psychol. Sci. 17(3) · Exp. 1, p. 251"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "lb_verdict",
+   "duration_hint": 13,
+   "spoken": "The limits: students at one university, two texts, one lab. But the finding does not stand alone. A meta-analysis from twenty seventeen found testing more effective than rereading across many studies.",
+   "data": {
+    "limits_title": "Limits",
+    "limits": [
+     {
+      "text": "students, aged 18–24, one university",
+      "at": "@students"
+     },
+     {
+      "text": "two short texts, free recall",
+      "at": "@texts"
+     },
+     {
+      "text": "in the lab, no feedback",
+      "at": "@lab"
+     }
+    ],
+    "status": {
+     "level": "haelt",
+     "at": "@finding",
+     "stamp_at": "@effective"
+    },
+    "evidence": [
+     {
+      "text": "Meta-analysis 2017: testing beats rereading",
+      "cite": "Adesope, Trevisan & Sundararajan, Rev. Educ. Res.",
+      "at": "@meta"
+     },
+     {
+      "text": "Review 2013: testing of high utility",
+      "cite": "Dunlosky et al., Psychol. Sci. Public Interest",
+      "at": "@studies"
+     }
+    ],
+    "cite": "Adesope et al. 2017 · Dunlosky et al. 2013"
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "lb_try",
+   "duration_hint": 15,
+   "spoken": "Your test: two sections. Reread one, close the book on the other and write down what you know. After a week, write down both and count. It proves nothing, but you will see for yourself. More real experiments: follow Gritwerk.",
+   "data": {
+    "title": "Your test · n = 1",
+    "steps": [
+     {
+      "text": "Pick two sections of equal length",
+      "at": "@sections"
+     },
+     {
+      "text": "A: reread. B: close the book, write it down",
+      "at": "@close"
+     },
+     {
+      "text": "After 1 week: write down both",
+      "at": "@week"
+     }
+    ],
+    "rule": {
+     "text": "Rule: each correct idea = 1 point",
+     "at": "@count"
+    },
+    "caveat": {
+     "text": "n = 1 shows you something, proves nothing",
+     "at": "@proves"
+    },
+    "sign_at": "@More",
+    "claim": "Method, not slogans.",
+    "disclaimer": "Study-based. No therapy or health advice."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  }
+ ]
+}

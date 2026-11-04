@@ -1,0 +1,244 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Faceless-Maschine Bauplan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+  /* Layout: Handbuch einer Werkstatt – schmale Lesespalte, Kapitel mit Werkzeug-Etiketten, Tabellen als Stücklisten */
+  :root {
+    --bg: #f6f7f5; --panel: #ffffff; --fg: #1d2421; --muted: #5d6a64; --line: #d9dfdb;
+    --accent: #0d6b5f; --accent-soft: #e2f0ec; --warn: #a3471f; --warn-soft: #fbece4;
+    --display: "Archivo", "Arial Narrow", system-ui, sans-serif; --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif; --mono: "JetBrains Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #121715; --panel: #1a211e; --fg: #e5ece8; --muted: #9aa8a1; --line: #2c3632; --accent: #4cc1ae; --accent-soft: #173029; --warn: #f0956b; --warn-soft: #33221a; color-scheme: dark } }
+  :root[data-theme="dark"] { --bg: #121715; --panel: #1a211e; --fg: #e5ece8; --muted: #9aa8a1; --line: #2c3632; --accent: #4cc1ae; --accent-soft: #173029; --warn: #f0956b; --warn-soft: #33221a; color-scheme: dark }
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 80px; }
+  main { max-width: 860px; margin: 0 auto; display: grid; gap: 44px; }
+  header { display: grid; gap: 12px; border-bottom: 3px solid var(--fg); padding-bottom: 24px; }
+  .kicker { font-family: var(--mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 6vw, 54px); line-height: 1.04; margin: 0; text-wrap: balance; }
+  .lead { font-size: 19px; color: var(--muted); margin: 0; max-width: 62ch; }
+  section { display: grid; gap: 14px; min-width: 0; }
+  h2 { font-family: var(--display); font-weight: 700; font-size: 26px; margin: 0; display: flex; gap: 12px; align-items: baseline; text-wrap: balance; }
+  h2 .tag { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--accent); border: 1.5px solid var(--accent); border-radius: 4px; padding: 1px 7px; }
+  h3 { font-family: var(--display); font-weight: 700; font-size: 19px; margin: 8px 0 0; }
+  p, li { max-width: 68ch; } p { margin: 0; } ul, ol { margin: 0; padding-left: 22px; display: grid; gap: 6px; }
+  code, .mono { font-family: var(--mono); font-size: .86em; background: var(--accent-soft); color: var(--fg); padding: 1px 5px; border-radius: 4px; }
+  pre { font-family: var(--mono); font-size: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; overflow-x: auto; margin: 0; line-height: 1.5; }
+  pre code { background: none; padding: 0; }
+  .tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+  table { border-collapse: collapse; width: 100%; font-size: 15.5px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  th { font-family: var(--mono); font-size: 12.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); font-weight: 600; background: var(--bg); }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+  .hinweis { border-left: 4px solid var(--warn); background: var(--warn-soft); padding: 12px 16px; border-radius: 0 6px 6px 0; display: grid; gap: 6px; }
+  .hinweis strong { color: var(--warn); }
+  .ok { border-left-color: var(--accent); background: var(--accent-soft); } .ok strong { color: var(--accent); }
+  .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .flow div { background: var(--panel); border: 1px solid var(--line); border-top: 4px solid var(--accent); border-radius: 6px; padding: 10px 12px; font-size: 15px; display: grid; gap: 2px; min-width: 0; }
+  .flow b { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: .04em; }
+  .uhr { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+  a { color: var(--accent); }
+</style>
+
+<main>
+  <header>
+    <div class="kicker">Bauplan · Stand 29.10.2026</div>
+    <h1>Die Faceless-Maschine</h1>
+    <p class="lead">So läuft ein System, in dem Claude täglich Kurzvideos für mehrere TikTok-, Instagram- und YouTube-Kanäle baut, ein Mensch sie per Handy freigibt und sie automatisch zur richtigen Uhrzeit gepostet werden. Mit allen Programmen, Konten, Skills und Automationen.</p>
+  </header>
+
+  <section>
+    <h2><span class="tag">0</span>Das Prinzip in einem Satz</h2>
+    <p>Claude schlägt abends Themen vor, du tippst am Handy eins pro Kanal an, morgens baut Claude die Videos, du gibst sie frei, und ein Posting-Dienst veröffentlicht sie zu festen Zeiten. Abends wertet Claude die Zahlen aus und schlägt die nächsten Themen vor.</p>
+    <div class="flow">
+      <div><b>19:30</b>Statistik lesen, pro Kanal 10 Themen vorschlagen</div>
+      <div><b>Abends, Handy</b>Du wählst pro Kanal ein Thema</div>
+      <div><b>09:00</b>Claude baut die gewählten Videos</div>
+      <div><b>Tagsüber</b>Du schaust die Vorschau an und gibst frei</div>
+      <div><b>Stündlich</b>Freigaben abholen, bei Upload-Post einplanen</div>
+      <div><b>Slot-Zeit</b>Upload-Post postet auf alle Plattformen</div>
+    </div>
+    <div class="hinweis ok"><strong>Goldene Regel</strong><p>Nichts wird gepostet, was nicht ausdrücklich freigegeben wurde. Claude gibt nie selbst frei.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="tag">1</span>Was du brauchst: Konten und Kosten</h2>
+    <div class="tbl"><table>
+      <tr><th>Dienst</th><th>Wofür</th><th>Kosten</th></tr>
+      <tr><td>Claude (Pro oder Max)</td><td>Baut Skripte, Videos, plant ein, wertet aus; geplante Aufgaben in der Desktop-App</td><td>ab ca. 20 $/Monat, für tägliche Videos besser Max</td></tr>
+      <tr><td>Upload-Post</td><td>Postet per API auf TikTok, Instagram und YouTube, ein Profil pro Kanal</td><td>Basic-Plan ca. 24 $/Monat (TikTok ist im Gratis-Plan nicht dabei)</td></tr>
+      <tr><td>Google AI Studio (Gemini API)</td><td>Stimmen (Text-to-Speech), Video-Analyse</td><td>gratis, ca. 10 Stimmen pro Tag und Modell, danach Ausweich-Modell</td></tr>
+      <tr><td>TikTok, Instagram, YouTube</td><td>Je Kanal ein Konto; Instagram muss ein Profi-Konto sein (Creator oder Business)</td><td>gratis</td></tr>
+      <tr><td>Google Drive für Desktop</td><td>Fertige Videos plus Beschreibung landen automatisch im Drive-Ordner</td><td>gratis (15 GB)</td></tr>
+      <tr><td>Optional: Higgsfield</td><td>KI-Bilder und animierte Clips (z. B. für Stickman-Geschichten)</td><td>Plus-Abo, ca. 3 $ Credits pro 45-s-Video</td></tr>
+      <tr><td>Optional: Hugging Face (FLUX)</td><td>Gratis-Bildgenerator für gemalte Hintergründe</td><td>gratis, kleines Tageslimit</td></tr>
+    </table></div>
+  </section>
+
+  <section>
+    <h2><span class="tag">2</span>Der Rechner</h2>
+    <p>Alles läuft auf einem Windows-PC in einem <strong>eigenen Windows-Benutzer</strong> (bei uns „Automations“) mit einem <strong>eigenen Claude-Konto</strong>. So kommen sich private Arbeit und Automation nicht in die Quere, und beide Konten können gleichzeitig laufen.</p>
+    <ul>
+      <li>Der Projektordner liegt außerhalb der Benutzerprofile, z. B. <code>C:\Automation\faceless-channel</code>, damit beide Benutzer darauf zugreifen können.</li>
+      <li>Der PC muss zu den Aufgaben-Zeiten an sein. Den Automations-Benutzer nicht abmelden, sondern nur „Benutzer wechseln“, sonst laufen die geplanten Aufgaben nicht.</li>
+    </ul>
+    <h3>Software installieren (einmal, im Automations-Benutzer)</h3>
+    <div class="tbl"><table>
+      <tr><th>Programm</th><th>Wofür</th><th>Installation</th></tr>
+      <tr><td>Claude Desktop-App</td><td>Chat, Code-Tab, geplante Aufgaben</td><td>claude.ai/download, mit dem Automations-Konto anmelden</td></tr>
+      <tr><td>Node.js (LTS)</td><td>Werkzeuge im Ordner <code>tools/</code>, Video-Renderer HyperFrames</td><td>nodejs.org</td></tr>
+      <tr><td>Python 3.13</td><td>Stimmen, Wort-Timing, Musik, Linienkampf-Generator</td><td>python.org, bei der Installation „Add python.exe to PATH“ anhaken</td></tr>
+      <tr><td>ffmpeg</td><td>Videos schneiden, umwandeln, verkleinern</td><td><code>winget install Gyan.FFmpeg</code></td></tr>
+      <tr><td>HyperFrames</td><td>Rendert die Animationen (HTML/Three.js) zu MP4</td><td>läuft ohne Installation über <code>npx -y hyperframes@0.8.186</code></td></tr>
+      <tr><td>Python-Pakete</td><td>google-genai, faster-whisper, numpy, pygame-ce, imageio-ffmpeg, edge-tts, requests, yt-dlp</td><td><code>python -m pip install -r automation\umzug\requirements.txt</code></td></tr>
+      <tr><td>Google Drive für Desktop</td><td>Drive als Laufwerk G:</td><td>google.com/drive/download</td></tr>
+    </table></div>
+  </section>
+
+  <section>
+    <h2><span class="tag">3</span>Der Projektordner</h2>
+    <div class="tbl"><table>
+      <tr><th>Datei / Ordner</th><th>Inhalt</th></tr>
+      <tr><td><code>CLAUDE.md</code></td><td>Das Gedächtnis des Projekts: Regeln, Kanäle, Stile, Ablauf. Jedes Claude-Konto liest es automatisch.</td></tr>
+      <tr><td><code>accounts.json</code></td><td>Pro Kanal: Name, Farben, Stimme, Upload-Post-Profil, Plattformen, Posting-Zeiten</td></tr>
+      <tr><td><code>config.json</code></td><td>Allgemeine Einstellungen, Drive-Ordner pro Kanal</td></tr>
+      <tr><td><code>.env</code></td><td>Die geheimen Schlüssel (Upload-Post, Gemini). Nie weitergeben.</td></tr>
+      <tr><td><code>queue/</code></td><td>Jedes Video als Ordner, wandert durch <code>entwurf → freigegeben → geplant → gepostet</code> (oder <code>abgelehnt</code>). Darin: video.mp4, cover.jpg, post.json (Caption, Hashtags), skript.md</td></tr>
+      <tr><td><code>videos/</code></td><td>Die Bau-Projekte jedes Videos (Animation, Stimme, Musik, Soundeffekte)</td></tr>
+      <tr><td><code>formate/</code></td><td>Ein Rezept pro Videoformat: Länge, Stil, Hook-Regeln</td></tr>
+      <tr><td><code>themen-pool*.md</code>, <code>ideen-log.md</code></td><td>Themenlisten je Kanal und alles, was schon gemacht wurde (gegen Wiederholungen)</td></tr>
+      <tr><td><code>stimmen/voiceover.py</code></td><td>Spricht ein Skript mit Gemini-TTS ein (Stimme, Stil, Tempo wählbar)</td></tr>
+      <tr><td><code>linienkampf/neu.py</code></td><td>Erzeugt automatisch ein „Ball-Battle“-Länder-Video</td></tr>
+      <tr><td><code>statistik.json</code></td><td>Gesammelte Zahlen aller Kanäle</td></tr>
+      <tr><td><code>automation/</code></td><td>Vorlagen für die geplanten Aufgaben, Umzugs-Paket (Skills, Gedächtnis), Dashboard-Quelle</td></tr>
+      <tr><td><code>branding/</code></td><td>Logos und Profiltexte der Kanäle</td></tr>
+    </table></div>
+  </section>
+
+  <section>
+    <h2><span class="tag">4</span>Die Werkzeuge</h2>
+    <p>Kleine Skripte, die Claude (oder du) im Projektordner aufruft:</p>
+    <div class="tbl"><table>
+      <tr><th>Befehl</th><th>Was er macht</th></tr>
+      <tr><td><code>node tools/review.mjs</code></td><td>Entwürfe auflisten, mit <code>ok &lt;ordner&gt;</code> freigeben, mit <code>nein &lt;ordner&gt; "Grund"</code> ablehnen</td></tr>
+      <tr><td><code>node tools/post.mjs</code></td><td>Plant alles Freigegebene bei Upload-Post ein (erst mit <code>--dry-run</code> testen). Hängt bei TikTok automatisch einen Chart-Song leise an.</td></tr>
+      <tr><td><code>node tools/unschedule.mjs</code></td><td>Nimmt ein eingeplantes Video wieder heraus (zum Austauschen)</td></tr>
+      <tr><td><code>node tools/status.mjs</code></td><td>Fragt bei Upload-Post nach, was wirklich online ist, holt die Links</td></tr>
+      <tr><td><code>node tools/export.mjs</code></td><td>Aufräumen nach dem Posten: Status, Dashboard, Drive-Export in einem</td></tr>
+      <tr><td><code>node tools/drive-export.mjs</code></td><td>Legt jedes Video plus Textdatei (Captions, Zeiten, Links, Skript) im Drive-Ordner des Kanals ab</td></tr>
+      <tr><td><code>node tools/statistik.mjs</code></td><td>Sammelt Views und Follower aller Kanäle</td></tr>
+      <tr><td><code>node tools/make-variant.mjs</code></td><td>Baut aus einem Video eine Variante für einen Zweitkanal (anderes Skript, Stimme, Farben)</td></tr>
+      <tr><td><code>node tools/zentrale.mjs</code></td><td>Bereitet die Daten für die Handy-Zentrale vor und prüft, ob alles hochgeladen ist</td></tr>
+      <tr><td><code>node tools/dashboard.mjs</code></td><td>Baut das lokale Tages-Dashboard (HTML)</td></tr>
+      <tr><td><code>node tools/check-uploadpost.mjs</code></td><td>Zeigt die verbundenen Upload-Post-Profile (ohne Schlüssel auszugeben)</td></tr>
+    </table></div>
+    <h3>So entsteht ein Video</h3>
+    <pre><code>Skript schreiben (Hook in den ersten 3 s, ca. 40 s)
+→ python stimmen/voiceover.py skript.txt vo.mp3 --stimme Puck
+→ Wort-Zeiten für Untertitel (faster-whisper)
+→ Animation als HTML/Three.js-Szene bauen
+→ npx -y hyperframes@0.8.186 check / snapshot (Probebilder prüfen)
+→ Musik + Soundeffekte (make_audio.py, sfx-cues.json)
+→ npx -y hyperframes@0.8.186 render --quality high
+→ queue/entwurf/&lt;datum&gt;-&lt;thema&gt;/  (video.mp4, cover.jpg, post.json, skript.md)</code></pre>
+  </section>
+
+  <section>
+    <h2><span class="tag">5</span>Skills</h2>
+    <p>Skills sind Anleitungen, die Claude bei passenden Aufgaben automatisch lädt. Es gibt zwei Ebenen:</p>
+    <h3>Im Projekt (<code>.claude/skills/</code>)</h3>
+    <div class="tbl"><table>
+      <tr><th>Skill</th><th>Aufgabe</th></tr>
+      <tr><td>faceless-video</td><td>Baut neue Videos von Thema bis Entwurf in der Queue (Hauptarbeit)</td></tr>
+      <tr><td>faceless-posten</td><td>Plant freigegebene Videos über Upload-Post ein</td></tr>
+      <tr><td>zentrale</td><td>Gleicht die Handy-Zentrale ab: Freigaben und Themenwahl abholen, Vorschläge und Vorschauen hochladen</td></tr>
+      <tr><td>ig-* (13 Stück)</td><td>Instagram-Werkzeugkasten (MIT-Lizenz, github.com/Jakeschincariol/instagram-agent-skill): Captions prüfen, virale Vorbilder finden, Profil-Check, Auswertung. Schreiben nur, posten nie.</td></tr>
+    </table></div>
+    <h3>Für das ganze Konto (<code>%USERPROFILE%\.claude\skills\</code>)</h3>
+    <div class="tbl"><table>
+      <tr><th>Skill</th><th>Aufgabe</th></tr>
+      <tr><td>hyperframes (+ core, cli, animation, audio, keyframes, creative, studio, registry)</td><td>Alles rund um den Video-Renderer: Aufbau, Animation, Ton, Rendern</td></tr>
+      <tr><td>faceless-explainer, general-video, motion-graphics</td><td>Vorlagen für Erklärvideos und Animationen ohne Filmmaterial</td></tr>
+      <tr><td>embedded-captions</td><td>Untertitel im Video</td></tr>
+      <tr><td>media-use</td><td>Musik, Soundeffekte, Bilder, Stimmen besorgen und verwalten</td></tr>
+      <tr><td>watch</td><td>Fremde Videos analysieren (Transkript statt Einzelbilder, spart Tokens)</td></tr>
+    </table></div>
+    <p>Alle Skills liegen als Kopie im Umzugs-Paket <code>automation/umzug/skills-global</code> und <code>skills-projekt</code>.</p>
+  </section>
+
+  <section>
+    <h2><span class="tag">6</span>Verbindungen</h2>
+    <div class="tbl"><table>
+      <tr><th>Verbindung</th><th>Wie</th></tr>
+      <tr><td>Upload-Post</td><td>Über den API-Schlüssel in <code>.env</code>, ein Profil pro Kanal; daran hängen TikTok, Instagram und YouTube</td></tr>
+      <tr><td>Gemini</td><td>Über den API-Schlüssel in <code>.env</code> (Stimmen, Video-Analyse)</td></tr>
+      <tr><td>Handy-Zentrale</td><td>Ein Claude-Artifact (private Webseite im Claude-Konto) mit eigener kleiner Datenbank. Dort siehst du Vorschauen, gibst frei und wählst Themen. Claude liest und schreibt diese Datenbank.</td></tr>
+      <tr><td>Google Drive</td><td>Über „Google Drive für Desktop“ als Laufwerk, die Tools kopieren direkt hinein</td></tr>
+      <tr><td>Claude-Connectoren (MCP)</td><td>Im Automations-Konto keine nötig. Optional: Higgsfield (KI-Bilder und Clips) und „Claude in Chrome“ (Browser steuern, z. B. für Google Flow)</td></tr>
+    </table></div>
+    <h3>Hooks (automatische Handgriffe)</h3>
+    <p>In <code>.claude/settings.json</code> des Projekts: Bei jeder Nachricht holt <code>zentrale-hinweis.mjs</code> neue Eingaben aus der Zentrale, und am Ende jeder Antwort prüft <code>zentrale.mjs pruefen</code>, dass alle Daten und Vorschauen hochgeladen sind.</p>
+  </section>
+
+  <section>
+    <h2><span class="tag">7</span>Die Automationen</h2>
+    <p>Geplante Aufgaben der Claude-Desktop-App (Code-Tab, „Geplante Aufgaben“). Jede ist eine kurze Anleitung, die zur festen Zeit startet:</p>
+    <div class="tbl"><table>
+      <tr><th>Zeit</th><th>Aufgabe</th><th>Was passiert</th></tr>
+      <tr><td class="uhr">09:00 täglich</td><td>Tagesvideos</td><td>Holt die Themenwahl aus der Zentrale, baut genau diese Videos, lädt die Vorschauen hoch, plant nur Freigegebenes ein</td></tr>
+      <tr><td class="uhr">stündlich :05 (8–23 Uhr)</td><td>Freigaben abholen</td><td>Prüft die Zentrale auf neue Freigaben oder Ablehnungen, plant ein, meldet sich nur, wenn etwas passiert ist</td></tr>
+      <tr><td class="uhr">19:30 täglich</td><td>Vorschläge + Statistik</td><td>Sammelt die Zahlen, schreibt pro Kanal 10 Themen für morgen in die Zentrale, schickt eine kurze Nachricht</td></tr>
+    </table></div>
+    <p>Die Texte der Aufgaben liegen als Vorlage in <code>automation/geplante-aufgabe.md</code>. Jede beginnt mit denselben festen Regeln (nie selbst freigeben, Schlüssel nie anfassen, nichts kopieren, Fakten prüfen, kein Thema doppelt).</p>
+  </section>
+
+  <section>
+    <h2><span class="tag">8</span>Kanäle und Formate (Beispiel)</h2>
+    <div class="tbl"><table>
+      <tr><th>Kanal-Typ</th><th>Format</th><th>Stimme</th></tr>
+      <tr><td>Auto-Technik</td><td>Neon-Infografik, Stempel, Zooms, starke Behauptung als Hook</td><td>Gemini „Puck“</td></tr>
+      <tr><td>Zweitkanal Auto</td><td>Automatische Variante jedes Auto-Videos mit eigenem Branding</td><td>andere Stimme</td></tr>
+      <tr><td>Baumaschinen</td><td>3D-Animation (Three.js), Neugier-Frage als Hook</td><td>tiefer Doku-Erzähler</td></tr>
+      <tr><td>Psychologie-Test</td><td>Mitmach-Format „Kurzer Test“</td><td>Gemini „Charon“</td></tr>
+      <tr><td>Länder-Battle</td><td>Physik-Simulation mit Länder-Bällen, 30–40 s, vollautomatisch</td><td>ohne Stimme</td></tr>
+      <tr><td>Karten-Fakten</td><td>Satelliten-Globus (NASA-Bilder, gemeinfrei), leuchtende Länder, Zooms</td><td>Gemini „Charon“</td></tr>
+    </table></div>
+    <p>Länge: Erklärvideos ca. 40 s. Hook: ab dem ersten Bild Action, eine steile Behauptung oder Verwirrung, die Frage erst danach. Alle Videos 9:16 für TikTok, Instagram und YouTube gleichzeitig.</p>
+  </section>
+
+  <section>
+    <h2><span class="tag">9</span>Nachbauen: Schritt für Schritt</h2>
+    <ol>
+      <li>Windows-Benutzer „Automations“ anlegen, darin die Software aus Kapitel 2 installieren.</li>
+      <li>Eigenes Claude-Konto anlegen und in der Desktop-App anmelden.</li>
+      <li>Den Projektordner als Vorlage übernehmen, aber <strong>ohne</strong> <code>.env</code>, <code>queue/</code>, <code>videos/</code>, Statistik und Kontodaten. Kanäle, Zeiten und Branding in <code>accounts.json</code>, <code>config.json</code> und <code>CLAUDE.md</code> auf die eigenen Kanäle umschreiben.</li>
+      <li>Eigene Konten anlegen: Upload-Post (Profile pro Kanal, TikTok/Instagram/YouTube verbinden), Google AI Studio (Gemini-Schlüssel).</li>
+      <li>Die eigenen Schlüssel selbst in <code>.env</code> eintragen: <code>UPLOADPOST_API_KEY</code>, <code>UPLOADPOST_USER</code>, <code>GEMINI_API_KEY</code>.</li>
+      <li>Skills kopieren: <code>automation/umzug/skills-global</code> nach <code>%USERPROFILE%\.claude\skills</code>; die Projekt-Skills liegen schon in <code>.claude/skills</code>.</li>
+      <li>Claude im Projektordner bitten: „Lies automation/UMZUG.md und richte den Teil ‚Einrichtung durch Claude‘ ein.“ Claude prüft dann die Installation, legt die Handy-Zentrale an und richtet die geplanten Aufgaben ein.</li>
+      <li>Probelauf ohne Posten: <code>node tools/post.mjs --dry-run</code>, ein Testvideo bauen lassen, freigeben, erst dann echt einplanen.</li>
+    </ol>
+    <div class="hinweis"><strong>Nicht weitergeben</strong><p>API-Schlüssel, Passwörter, die Links zur eigenen Zentrale und zum Dashboard sowie die Login-Daten der Social-Media-Konten gehören nur dem jeweiligen Besitzer. Jeder richtet seine eigenen ein.</p></div>
+  </section>
+
+  <section>
+    <h2><span class="tag">10</span>Was man aus der Praxis wissen sollte</h2>
+    <ul>
+      <li>Gemini-Stimmen sind gratis, aber auf ca. 10 pro Tag und Modell begrenzt. Danach greift das „lite“-Modell, das minimal anders klingt.</li>
+      <li>Instagram bekommt über die API keine Musik, TikTok schon (leise unter der eigenen Stimme).</li>
+      <li>Fremde Videos nur über Transkript analysieren lassen, nicht Bild für Bild: das spart sehr viele Tokens.</li>
+      <li>Dateien über 30 MB lassen sich nicht ans Handy schicken; vorher mit ffmpeg verkleinern.</li>
+      <li>Vor dem Rendern immer Probebilder ansehen. Fehler sind da in Sekunden sichtbar, nach dem Rendern kosten sie Minuten.</li>
+    </ul>
+  </section>
+
+  <footer>Erstellt aus dem laufenden System. Enthält keine Schlüssel, Passwörter oder privaten Links.</footer>
+</main>
+
+</body></html>

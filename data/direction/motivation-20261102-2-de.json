@@ -1,0 +1,496 @@
+{
+  "video_id": "motivation-20261102-2-de",
+  "brand_id": "motivation",
+  "language": "de",
+  "title": "21 Tage bis zur Gewohnheit? Was eine Studie wirklich fand",
+  "notes": "Gritwerk Vorlage 0.9 (30.10.2026), erstes Testvideo. Roter Faden: Gewohnheitskarte 'Nach dem Frühstück: ein Glas Wasser' mit Tageskästchen. Aussagen gegen das Abstract von Lally et al. 2010 (über Crossref, vom Verlag hinterlegt) und gegen Gardner, Lally, Wardle 2012 (PMC-Volltext) geprüft. Qualitätsrunde 31.10.2026 (Fassung Q1): Markenebene mit Tiefe (LAYER in scenes.py), Gewohnheitskarte in allen Szenen, neue Szenentypen gritwerk_study und gritwerk_plan statt data_flow und key_takeaway, alle Bildereignisse an Wörtern; Sprechtext unverändert.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Glas Wasser",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Tag 21: läuft es schon?",
+          "tone": "amber",
+          "offset": 2.6
+        },
+        {
+          "beat": "b2",
+          "text": "Studie: 12 Wochen täglich",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "im Schnitt: Tag 66",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Tag ausgelassen: weiter",
+          "tone": "muted"
+        },
+        {
+          "beat": "b5",
+          "text": "Plan: eher 10 Wochen",
+          "tone": "muted"
+        },
+        {
+          "beat": "b6",
+          "text": "heute: Tag 1",
+          "tone": "accent",
+          "offset": 1.0
+        }
+      ]
+    },
+    "description": "21 Tage bis zur neuen Gewohnheit? In der Studie von Lally et al. (2010) lag die Spanne bei 18 bis 254 Tagen, im Schnitt bei 66. Ein einzelner ausgelassener Tag hat den Verlauf nicht wesentlich beeinflusst. So setzt du es mit einem Glas Wasser nach dem Frühstück um.",
+    "companion_text": "Gritwerk: Methode statt Parole. Jede Methode mit Quelle. Studienbasiert, keine Therapie- oder Gesundheitsberatung.",
+    "hashtags": [
+      "gewohnheiten",
+      "selbstentwicklung",
+      "psychologie",
+      "studie",
+      "gritwerk"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://doi.org/10.1002/ejsp.674",
+      "title": "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology 40(6), 998-1009 (Abstract geprüft über https://api.crossref.org/works/10.1002/ejsp.674: 96 Freiwillige, 12 Wochen, gleiche Situation z. B. nach dem Frühstück, 82 auswertbar, Modell passte bei 62, 95 % des Plateaus nach 18 bis 254 Tagen, ein verpasster Tag ohne wesentlichen Einfluss)",
+      "checked_at": "2026-10-30",
+      "label": "Lally et al. 2010"
+    },
+    {
+      "id": "S2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3505409/",
+      "title": "Gardner, B., Lally, P., Wardle, J. (2012). Making health habitual: the psychology of 'habit-formation' and general practice. British Journal of General Practice 62(605), 664-666, doi:10.3399/bjgp12X659466 (Plateau nach durchschnittlich 66 Tagen; einfache Handlungen wie Wasser trinken schneller; Kasten 'Make a new healthy habit'; Erwartung 'around 10 weeks')",
+      "checked_at": "2026-10-30",
+      "label": "Gardner et al. 2012"
+    },
+    {
+      "id": "S3",
+      "url": "https://bps.org.uk/research-digest/how-form-habit",
+      "title": "British Psychological Society, Research Digest (06.10.2010): How to form a habit (Sekundärquelle: der obere Wert 254 Tage ist über die 84 Studientage hinaus hochgerechnet)",
+      "checked_at": "2026-10-30",
+      "label": "BPS Research Digest 2010"
+    }
+  ],
+  "unverified": [
+    "Herkunft der '21 Tage' (oft Maxwell Maltz zugeschrieben): nicht geprüft, nicht im Video.",
+    "Ob 66 Tage Median oder Mittelwert ist: Gardner et al. 2012 schreiben 'average'; im Video steht 'im Schnitt', nicht 'Median'.",
+    "Zugehörigkeit des Teams (University College London): nicht gegen die Primärquelle geprüft, nicht im Video.",
+    "Übertragbarkeit auf komplexe Gewohnheiten oder andere Personengruppen: nicht behauptet; kleine Stichprobe, Modell passte nur bei 62 von 82 Personen gut genug für eine Kurve."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "21 Tage, dann sitzt eine neue Gewohnheit? In einer Studie waren es im Schnitt 66.",
+      "on_screen": "21 Tage bis zur Gewohnheit?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Gewohnheitskarte, 21 von 66 Kästchen füllen sich, Stempel '21 Tage?', der leere Rest leuchtet auf",
+      "why": {
+        "truth": "66 im Schnitt laut S2 (dieselben Autorinnen), Spanne 18-254 laut S1; 4 statt 5, weil nur eine Studie",
+        "visual": "Kästchen machen den Abstand 21 zu 66 sofort sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie lange dauert es wirklich, bis eine neue Gewohnheit von allein läuft?",
+      "on_screen": "Wie lange, bis es von allein läuft?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "leere Gewohnheitskarte",
+      "why": {
+        "curiosity": "ohne Zahl schwächerer Reiz",
+        "visual": "noch keine Bewegung im Bild"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "In einer Studie dauerte es zwischen 18 und 254 Tagen, bis eine Gewohnheit saß.",
+      "on_screen": "18 bis 254 Tage bis zur Gewohnheit",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "visual": "Spannenbalken",
+      "why": {
+        "truth": "254 ist hochgerechnet (S3), 'saß' vereinfacht '95 % des Plateaus'"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Nach drei Wochen aufzuhören, weil es nicht von allein läuft, kann zu früh sein.",
+      "on_screen": "Nach 3 Wochen aufhören: zu früh?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Karte mit 21 Kästchen, Rest leer",
+      "why": {
+        "truth": "'kann' statt 'ist': einzelne erreichten das Plateau nach 18 Tagen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie viele Kästchen dieser Gewohnheitskalender wirklich braucht.",
+      "on_screen": "Wie viele Kästchen wirklich?",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Kästchen füllen sich",
+      "why": {
+        "clarity": "ohne Ton unklar, worum es geht"
+      }
+    }
+  ],
+  "hook": {
+    "id": "H1",
+    "note": "Denkfehler-Hook mit der höchsten Bewertung; die Kästchen der Gewohnheitskarte zeigen 21 gegen 66 ohne Ton."
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gritwerk_tracker",
+      "duration_hint": 6,
+      "spoken": "21 Tage, dann sitzt eine neue Gewohnheit? In einer Studie waren es im Schnitt 66.",
+      "data": {
+        "question": "21 Tage bis zur Gewohnheit?",
+        "cue": "Nach dem Frühstück",
+        "action": "ein Glas Wasser",
+        "counter_label": "Tag",
+        "boxes": 66,
+        "cols": 11,
+        "fill_to": 21,
+        "fill_at": "w:Tage",
+        "fill_dur": 1.9,
+        "stamp": "21 Tage?",
+        "stamp_at": "w:Gewohnheit",
+        "question_at": "w:21",
+        "rest_at": "w:Schnitt",
+        "goal": "66 im Schnitt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Studie"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "gritwerk_study",
+      "duration_hint": 13,
+      "spoken": "Ein Forschungsteam um Phillippa Lally ließ 96 Freiwillige zwölf Wochen lang täglich eine kleine Handlung machen, immer in derselben Situation, etwa nach dem Frühstück. Jeden Tag gaben sie an, wie automatisch sich das schon anfühlte.",
+      "data": {
+        "headline": "12 Wochen, jeden Tag",
+        "cue": "Immer dieselbe Situation",
+        "cue_to": "etwa nach dem Frühstück",
+        "action": "eine kleine Handlung",
+        "people": "96 Freiwillige",
+        "counter_label": "Woche",
+        "weeks": 12,
+        "days": 7,
+        "card_at": 0.1,
+        "people_at": "w:96",
+        "fill_at": "w:zwölf",
+        "fill_dur": 3.4,
+        "cue_hl_at": "w:derselben",
+        "cue_to_at": "w:Frühstück",
+        "scale_at": "w:Jeden",
+        "rate_at": "w:automatisch",
+        "scale_label": "Wie automatisch?",
+        "scale_lo": "kaum",
+        "scale_hi": "stark",
+        "plate": true
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · DIE STUDIE",
+        "marker": "fakt",
+        "marker_at": "w:Freiwillige",
+        "transition": {
+          "type": "iris",
+          "x": 876,
+          "y": 973,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "gritwerk_curve",
+      "duration_hint": 15,
+      "spoken": "Das Ergebnis: Erst wächst die Automatik schnell, dann flacht die Kurve langsam ab. Bis sie fast oben war, vergingen im Schnitt 66 Tage. Manche brauchten nur 18 Tage, bei anderen rechnete das Modell bis zu 254.",
+      "data": {
+        "headline": "Erst steil, dann flach",
+        "y_label": "Automatik (Schema)",
+        "x_label": "Tage",
+        "x_max": 120,
+        "plateau_day": 66,
+        "chart_at": 0.1,
+        "draw_at": "w:Erst",
+        "draw_dur": 3.4,
+        "markers": [
+          {
+            "day": 21,
+            "label": "Tag 21",
+            "tone": "muted",
+            "at": "w:Automatik",
+            "label_pos": "below"
+          },
+          {
+            "day": 66,
+            "label": "66 im Schnitt",
+            "tone": "accent",
+            "at": "w:66"
+          }
+        ],
+        "band": {
+          "from_day": 66,
+          "label": "fast oben",
+          "at": "w:oben"
+        },
+        "range": {
+          "from": 18,
+          "to": 254,
+          "measured_to": 84,
+          "scale_max": 260,
+          "tick": 66,
+          "label": "Spanne in der Studie: 18 bis 254 Tage",
+          "note": "über Tag 84 hinaus hochgerechnet",
+          "at": "w:18",
+          "extra_at": "w:Modell"
+        },
+        "plate": true
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "kicker": "3 · DAS ERGEBNIS",
+        "marker": "fakt",
+        "marker_at": "w:Ergebnis",
+        "transition": {
+          "type": "iris",
+          "x": 795,
+          "y": 1022,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gritwerk_streaks",
+      "duration_hint": 12,
+      "spoken": "Und wenn du einmal einen Tag auslässt? Ein einzelner verpasster Tag hat den Verlauf in der Studie nicht wesentlich beeinflusst. Also nicht von vorn anfangen, sondern morgen weitermachen.",
+      "data": {
+        "headline": "Ein Tag ausgelassen?",
+        "boxes": 10,
+        "rows": [
+          {
+            "title": "Jeden Tag",
+            "missed": [],
+            "at": "w:Und"
+          },
+          {
+            "title": "Ein Tag ausgelassen",
+            "missed": [
+              4
+            ],
+            "at": "w:Und"
+          }
+        ],
+        "phases": [
+          {
+            "from": 0,
+            "to": 5,
+            "at": "w:Und",
+            "dur": 1.6
+          },
+          {
+            "from": 5,
+            "to": 9,
+            "at": "w:Verlauf",
+            "dur": 1.2
+          }
+        ],
+        "miss_at": "w:auslässt",
+        "miss_pulse_at": "w:einzelner",
+        "note": "In der Studie: kein wesentlicher Einfluss",
+        "note_at": "w:nicht",
+        "chip": "Nicht von vorn anfangen",
+        "chip_at": "w:Also",
+        "chip_to": "Morgen weitermachen",
+        "chip_to_at": "w:morgen",
+        "next": {
+          "row": 1,
+          "box": 9,
+          "ring_at": "w:morgen",
+          "tick_at": "w:weitermachen"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · EIN TAG FEHLT",
+        "marker": "fakt",
+        "marker_at": "w:einzelner",
+        "vignette": true,
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gritwerk_plan",
+      "duration_hint": 13,
+      "spoken": "So setzt du es um: Wähl eine einfache Handlung, die du jeden Tag schaffst. Häng sie an eine Situation, die täglich vorkommt. Und rechne eher mit zehn Wochen als mit drei, bis es von allein läuft.",
+      "data": {
+        "headline": "So setzt du es um",
+        "cue_ph": "Situation?",
+        "cue": "Nach dem Frühstück",
+        "action_ph": "Handlung?",
+        "action": "ein Glas Wasser",
+        "weeks": 10,
+        "days": 7,
+        "short_weeks": 3,
+        "short_label": "3 Wochen",
+        "long_label": "10 Wochen",
+        "action_at": "w:Handlung",
+        "cue_at": "w:Situation",
+        "grow_at": "w:zehn",
+        "short_at": "w:drei",
+        "steps": [
+          {
+            "title": "Einfache Handlung",
+            "at": "w:Wähl"
+          },
+          {
+            "title": "Feste Situation",
+            "at": "w:Häng"
+          },
+          {
+            "title": "10 statt 3 Wochen",
+            "at": "w:rechne"
+          }
+        ],
+        "plate": true
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · DEIN PLAN",
+        "marker": "fakt",
+        "marker_at": "w:Wähl",
+        "transition": {
+          "type": "iris",
+          "x": 905,
+          "y": 765,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gritwerk_close",
+      "duration_hint": 8,
+      "spoken": "Heute ist Kästchen eins. Mehr Methoden mit Quelle: Folge Gritwerk.",
+      "data": {
+        "cue": "Nach dem Frühstück",
+        "action": "ein Glas Wasser",
+        "counter_label": "Tag",
+        "weeks": 10,
+        "days": 7,
+        "card_at": 0.1,
+        "tick_at": "w:Kästchen",
+        "chip": "Morgen: Kästchen 2",
+        "chip_at": "w:eins",
+        "name": "Gritwerk",
+        "name_at": "w:Methoden",
+        "mark_at": "w:Gritwerk",
+        "claim": "Methode statt Parole.",
+        "disclaimer": "Studienbasiert. Keine Therapie- oder Gesundheitsberatung."
+      },
+      "source_ids": [],
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

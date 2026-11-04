@@ -1,0 +1,470 @@
+{
+  "video_id": "claude_workflows-20261103-tv-en-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Clean up a customer list: does Claude Code find every duplicate?",
+  "notes": "Test video (approved by Stefan 03.11.2026), English version of claude_workflows-20261103-tv-de-echtlauf: same scenes, Higgsfield material and cues, text translated. Own English recording echtlauf/recordings/kunden-dubletten-en (03.11.2026, Claude Code 2.1.309, claude-haiku-5-5, 2 runs twice each, all 31 rows); prompts end with 'Reply in English.' because a first recording without it answered in German (moved to recordings/_verworfen). Images and clips marked as AI image in the frame.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "40 customers, some of them duplicates. Does Claude Code clean up the list correctly?",
+      "on_screen": "40 customers. How many duplicates?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "a question; the answer comes from the recording"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "A vague prompt is not enough? Here Claude still found all nine duplicates.",
+      "on_screen": "Vague prompt, all found",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 1, both repetitions: 31 rows, counted"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Without a rule, Claude picked one itself and said what to check.",
+      "on_screen": "It picked the rule itself",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "answer of run 1, verbatim in the recording"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Müller or Mueller: one duplicate or two customers? Claude flags the question.",
+      "on_screen": "Müller or Mueller?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "answer of run 1 calls it a judgment call"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Two real runs, 40 made-up customers, counted.",
+      "on_screen": "Two real runs",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "structure of the recording"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/kunden-dubletten-en",
+      "checked_at": "2026-11-03",
+      "label": "Own recording",
+      "title": "Own recording kunden-dubletten-en, 2026-11-03: Claude Code 2.1.309, test folder with sample data, every run twice"
+    }
+  ],
+  "unverified": [
+    "Whether another model or a longer list finds all nine duplicates as well: not tested.",
+    "Why Claude chose the e-mail as the key with the short prompt: not explained, only shown."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "kunden-dubletten-en"
+    },
+    "short_title": "Testvideo Dubletten EN",
+    "description": "Real run, recorded on Nov 3, 2026 with Claude Code 2.1.309 (model claude-haiku-5-5). A made-up customer list with 40 rows, 9 of them duplicates. Run 1 with a short prompt, run 2 with an exact rule, each twice. Both times 31 customers were left, counted. With the short prompt Claude named its rule itself and flagged one decision to check.",
+    "companion_text": "Base command per run: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Write. Tools Read and Write, --permission-mode acceptEdits; both prompts end with \"Reply in English.\". Run 2 states the rule in the prompt (same e-mail, ignoring case and spaces at the edges). Paths shortened in the frame (test folder = .). Behaviour can change with version and model. Not an official Anthropic channel.",
+    "hashtags": [
+      "claudecode",
+      "aiworkflow",
+      "excel",
+      "office",
+      "productivity"
+    ],
+    "sound": {
+      "palette": "tech",
+      "mood": "tech",
+      "levels": {
+        "music_db": -14
+      },
+      "event_min_gap": 1.4,
+      "klangfarbe": "trocken, digital, leise: Tastatur- und Oberflächenklicks, kurze Ticks, weicher Stempel, Whoosh nur bei Szenenwechseln, kein Kino-Wumms",
+      "bett": "ruhiges elektronisches Musikbett, 90–100 BPM, unter der Stimme abgesenkt, am Schluss ausblenden"
+    },
+    "sound_cues": [
+      {
+        "beat": "b1",
+        "at": "start",
+        "cue": "bett_ein"
+      },
+      {
+        "beat": "b1",
+        "at": "start",
+        "cue": "papier"
+      },
+      {
+        "beat": "b1",
+        "word": "Does",
+        "cue": "klick"
+      },
+      {
+        "beat": "b2",
+        "at": "start",
+        "cue": "whoosh"
+      },
+      {
+        "beat": "b2",
+        "event": "duplicate_marked",
+        "cue": "tick_leise"
+      },
+      {
+        "beat": "b2",
+        "word": "tricky",
+        "cue": "swipe"
+      },
+      {
+        "beat": "b2",
+        "event": "pair_mark",
+        "cue": "marker"
+      },
+      {
+        "beat": "b3",
+        "at": "start",
+        "cue": "whoosh"
+      },
+      {
+        "beat": "b3",
+        "event": "typing",
+        "cue": "tastatur"
+      },
+      {
+        "beat": "b4",
+        "at": "start",
+        "cue": "klack"
+      },
+      {
+        "beat": "b4",
+        "event": "line",
+        "cue": "tick_leise"
+      },
+      {
+        "beat": "b4",
+        "event": "verdict",
+        "cue": "stempel"
+      },
+      {
+        "beat": "b5",
+        "event": "row_removed",
+        "cue": "tick"
+      },
+      {
+        "beat": "b5",
+        "word": "correct",
+        "cue": "stempel"
+      },
+      {
+        "beat": "b6",
+        "at": "start",
+        "cue": "whoosh"
+      },
+      {
+        "beat": "b6",
+        "event": "highlight",
+        "cue": "marker"
+      },
+      {
+        "beat": "b7",
+        "word": "two",
+        "cue": "swipe"
+      },
+      {
+        "beat": "b7",
+        "word": "Result",
+        "cue": "stempel"
+      },
+      {
+        "beat": "b8",
+        "at": "start",
+        "cue": "whoosh"
+      },
+      {
+        "beat": "b8",
+        "at": "end",
+        "cue": "bett_aus_schlussakkord"
+      }
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_photo",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "40 customers, some of them duplicates. Does Claude Code clean up the list correctly? I let it run for real and counted.",
+      "data": {
+        "question": "40 customers. How many duplicates?",
+        "dim": 0.22,
+        "shots": [
+          {
+            "src": "tv_b1_schreibtisch.png",
+            "clip": "tv_k1_schreibtisch.mp4"
+          },
+          {
+            "src": "tv_b2_textmarker.png",
+            "clip": "tv_k2_textmarker.mp4",
+            "at_word": "Does"
+          }
+        ],
+        "rec": "kunden-dubletten-en"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_table",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "The test list is made up. Nine rows are duplicates, six of them exactly the same. Three are tricky: Müller with ü and with ue, Office once with a capital letter, and once a space after the e-mail.",
+      "data": {
+        "run": "L1",
+        "file": "kunden.csv",
+        "scroll_word": "Nine",
+        "pairs_word": "tricky",
+        "pair_gap": 1.6,
+        "pairs": [
+          "mueller-bau",
+          "gruber.at",
+          "anna.berger"
+        ],
+        "why": [
+          "ü or ue",
+          "upper or lower case",
+          "trailing space"
+        ],
+        "rec": "kunden-dubletten-en"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "problem",
+      "scene_type": "rec_photo",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run one only gets the short prompt. No rule for what a duplicate is.",
+      "data": {
+        "shots": [
+          {
+            "src": "tv_b3_schulter.png",
+            "zoom": [
+              1.04,
+              1.12
+            ],
+            "pan": [
+              0,
+              0,
+              -20,
+              -30
+            ]
+          }
+        ],
+        "dim": 0.3,
+        "cmd": "L1",
+        "label": "Run 1: Vague prompt",
+        "card_top": 400,
+        "card_word": "short",
+        "rec": "kunden-dubletten-en"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Claude reads the file, thinks briefly and writes the cleaned list. After 18 seconds the answer: 31 customers are left.",
+      "data": {
+        "run": "L1",
+        "stamp_true": "31 rows",
+        "stamp_false": "not 31",
+        "probe_good": true,
+        "text_rows": 4,
+        "rec": "kunden-dubletten-en"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_diff",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "I counted: 31 is correct. All nine duplicates are gone, including Mueller, the capital Office and the trailing space.",
+      "data": {
+        "run": "L1",
+        "expected": 31,
+        "remove_word": "counted",
+        "verdict_word": "correct",
+        "note_word": "Mueller",
+        "note": "Also caught: Mueller, Office, trailing space",
+        "rec": "kunden-dubletten-en"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "rec_answer",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "The interesting part is the answer. Claude picked the rule itself: same e-mail, upper or lower case. And it tells you what to check: Mueller and Müller could be two companies.",
+      "data": {
+        "run": "L1",
+        "zoom_word": "interesting",
+        "picks": [
+          "31 customers are left, down from 40.",
+          "I treated two rows as duplicates when they had the same email address, ignoring case and stray spaces.",
+          "The last one is a judgment call.",
+          "If you want matching by name as well as email, \"Mueller GmbH\" should stay, which would leave 32 customers."
+        ],
+        "highlights": [
+          "ignoring case and stray spaces",
+          "judgment call",
+          "\"Mueller GmbH\" should stay"
+        ],
+        "highlight_words": [
+          "rule",
+          "check",
+          "Mueller"
+        ],
+        "rec": "kunden-dubletten-en"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "insight",
+      "scene_type": "rec_split",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run two states the rule explicitly. Result: also 31, the same nine rows removed. Each run ran twice, the same every time.",
+      "data": {
+        "runs": [
+          "L1",
+          "L2"
+        ],
+        "expected": 31,
+        "swipe_word": "two",
+        "mark_word": "rule",
+        "result_word": "Result",
+        "same_word": "same",
+        "rec": "kunden-dubletten-en"
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "rec_photo",
+      "source_ids": [],
+      "spoken": "Here the short prompt was enough. But only the answer shows which rule was used. Read it before you use the list. Follow Promptwerk for real Claude Code runs.",
+      "data": {
+        "shots": [
+          {
+            "src": "tv_b4_morgen.png",
+            "zoom": [
+              1.1,
+              1.0
+            ],
+            "pan": [
+              0,
+              -20,
+              0,
+              0
+            ]
+          }
+        ],
+        "dim": 0.38,
+        "statement": "Read the answer, not just the number.",
+        "claim": "Promptwerk · real runs",
+        "proto": true,
+        "statement_word": "answer",
+        "claim_word": "Follow",
+        "proto_word": "Read",
+        "rec": "kunden-dubletten-en"
+      }
+    }
+  ]
+}

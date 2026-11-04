@@ -1,0 +1,439 @@
+{
+ "video_id": "beauty-20261115-2-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "Annex II: the list of banned substances",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Was in Anhang II steht, darf in Kosmetik nicht enthalten sein; die Liste wächst laufend durch Änderungsverordnungen. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Annex II",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Banned?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "Annex II",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "keeps growing",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "No. 1731: TPO",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "traces: exception",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "The list grows",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Read first, then apply",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "What's banned? Article 17 sets one exception. Small amounts of a banned substance are allowed if they're unintended, for example from impurities or packaging, technically unavoidable under good manufacturing practice, and the product stays safe.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://publications.europa.eu/resource/celex/32025R0877",
+   "title": "Verordnung (EU) 2025/877 der Kommission (CMR-Stoffe, u. a. Trimethylbenzoyl Diphenylphosphine Oxide), gilt ab 1. September 2025",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EU) 2025/877"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "The EU's list of substances banned in cosmetics now runs past entry 1700.",
+   "on_screen": "What's banned?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Do you know where the EU lists what's banned in cosmetics?",
+   "on_screen": "Do you know where the EU lists what's banned in cosmetics?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "What sounds dangerous is banned. What's in Annex II is banned.",
+   "on_screen": "What sounds dangerous is banned. What's in Annex II is banne",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Don't know the banned list, and every rumour starts to look like a rule.",
+   "on_screen": "Don't know the banned list, and every rumour starts to look ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch how a substance ends up on the EU's banned list.",
+   "on_screen": "Watch how a substance ends up on the EU's banned list.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "The EU's list of substances banned in cosmetics now runs past entry 1700.",
+   "data": {
+    "obj": "label",
+    "word": "ANNEX II",
+    "line": 0,
+    "question": "What's banned?",
+    "badge": "No. 1731"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "The list is Annex II of the EU cosmetics regulation. Under Article 14, cosmetics must not contain any substance listed there.",
+   "data": {
+    "headline": "The banned list",
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Article 14, Annex II",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "Annex II: prohibited substances"
+     },
+     {
+      "text": "must not be in cosmetics",
+      "mark": "gap"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_timeline",
+   "spoken": "And it keeps growing. When substances are classified as carcinogenic, mutagenic or toxic for reproduction, CMR for short, they generally go onto the banned list, unless an exception under Article 15 applies.",
+   "data": {
+    "headline": "How substances get added",
+    "nodes": [
+     {
+      "date": "1",
+      "text": "classified as CMR"
+     },
+     {
+      "date": "2",
+      "text": "Commission amending regulation"
+     },
+     {
+      "date": "3",
+      "text": "new entry in Annex II"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_facts",
+   "spoken": "One example is Regulation 2025/877. As entry number 1731, it adds trimethylbenzoyl diphenylphosphine oxide, TPO for short. It used to be allowed in professional artificial nail systems, and it's been banned since 1 September 2025.",
+   "data": {
+    "headline": "Example: TPO",
+    "doc": {
+     "act": "Regulation (EU) 2025/877",
+     "ref": "applies from 1 September 2025"
+    },
+    "rows": [
+     {
+      "text": "entry number 1731",
+      "value": "1731"
+     },
+     {
+      "text": "previously: professional nail systems"
+     },
+     {
+      "text": "classified as toxic for reproduction"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_versus",
+   "spoken": "Article 17 sets one exception. Small amounts of a banned substance are allowed if they're unintended, for example from impurities or packaging, technically unavoidable under good manufacturing practice, and the product stays safe.",
+   "data": {
+    "headline": "Traces",
+    "mode": "compare",
+    "left": {
+     "tag": "banned",
+     "title": "as an ingredient",
+     "rows": [
+      {
+       "text": "deliberately added",
+       "mark": "gap"
+      }
+     ]
+    },
+    "right": {
+     "tag": "allowed",
+     "title": "as a trace",
+     "rows": [
+      {
+       "text": "unintended, unavoidable"
+      },
+      {
+       "text": "product stays safe"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "For you, that means: whether something is banned is decided by Annex II, not by a rumour. And because the list grows, what counts is the current version.",
+   "data": {
+    "headline": "The takeaway",
+    "items": [
+     {
+      "title": "Annex II decides",
+      "sub": "not the rumour",
+      "icon": "doc"
+     },
+     {
+      "title": "The list grows",
+      "sub": "through amending regulations",
+      "icon": "book"
+     },
+     {
+      "title": "Check the current version",
+      "sub": "for example in CosIng",
+      "icon": "shield"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Read the list first, then judge. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Read first, then judge",
+    "block_text": "Read the list first",
+    "done_text": "List read"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

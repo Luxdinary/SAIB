@@ -1,0 +1,740 @@
+{
+ "topic": "brainrot-20261114-1",
+ "series": "C",
+ "short": {
+  "de": "Panda frisst lange",
+  "en": "Panda frisst lange"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://nationalzoo.si.edu/animals/giant-panda",
+   "checked_at": "2026-11-01",
+   "title": "Smithsonian's National Zoo, Giant panda: a panda must spend 10 to 16 hours a day foraging and eating; usually eats sitting upright, which leaves the front paws free to grasp bamboo stems with a pseudo thumb (elongated, enlarged wrist bone); digestive system more similar to that of a carnivore than an herbivore",
+   "label": {
+    "de": "Smithsonian's National Zoo",
+    "en": "Smithsonian's National Zoo"
+   }
+  },
+  {
+   "id": "S2",
+   "url": "https://sandiegozoowildlifealliance.org/story-hub/2024/11/06/wildlife-style-feasts",
+   "checked_at": "2026-11-01",
+   "title": "San Diego Zoo Wildlife Alliance, Wildlife-style feasts: giant pandas are all-day eaters, feasting on bamboo for 10 to 14 hours every day; about 99 percent of the diet is bamboo; they need to eat that much because of bamboo's relatively low nutritive value",
+   "label": {
+    "de": "San Diego Zoo Wildlife Alliance",
+    "en": "San Diego Zoo Wildlife Alliance"
+   }
+  },
+  {
+   "id": "S3",
+   "url": "https://animals.sandiegozoo.org/animals/giant-panda",
+   "checked_at": "2026-11-01",
+   "title": "San Diego Zoo, Giant panda: pandas spend at least 12 hours each day eating bamboo; they grasp bamboo stalks using their five digits and an enlarged wrist bone called a pseudo-thumb",
+   "label": {
+    "de": "San Diego Zoo, Tierlexikon",
+    "en": "San Diego Zoo Animals"
+   }
+  }
+ ],
+ "de": {
+  "title": "Der Panda frisst über 10 Stunden am Tag – Plümo und die Stoppuhr",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "Ein Panda isst nicht mal eben. Er frisst über zehn Stunden am Tag. Stoppuhr streikt.",
+    "on_screen": "Panda frisst *über 10 Stunden*.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Stoppuhr fliegt zur Tiertür, Stempel ZU KURZ",
+    "why": {
+     "truth": "National Zoo: 10 bis 16 Stunden, San Diego: 10 bis 14 Stunden am Tag",
+     "visual": "Stoppuhr mit Stempel ist sofort lesbar"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "Wie lange frühstückt eigentlich ein Panda?",
+    "on_screen": "Wie lange frisst ein *Panda*?",
+    "scores": {
+     "clarity": 4,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Stoppuhr tickt neben dem Panda"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "Ein Panda frisst bis zu sechzehn Stunden am Tag.",
+    "on_screen": "Bis zu *16 Stunden* fressen.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "Balken wächst bis 16 Stunden"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Wer beim Quiz sagt, Pandas fressen nur kurz, verliert den Punkt.",
+    "on_screen": "Nur kurz? *Punkt weg.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 2
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Quizkarte"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "Ich esse so lange wie ein Panda. Stoppuhr läuft.",
+    "on_screen": "Plümo gegen *Panda*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo mit Bambus und Stoppuhr"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Ein Panda isst nicht mal eben. Er frisst über zehn Stunden am Tag. Stoppuhr streikt.",
+    "data": {
+     "mode": "hook",
+     "head": "Panda frisst *über 10 Stunden*.",
+     "head_at": 0.2,
+     "sign": "NUR TIERE",
+     "items": [
+      {
+       "kind": "stopwatch"
+      }
+     ],
+     "stamp_reject": "ZU KURZ!",
+     "cue_scan": "Panda",
+     "cue_verdict": "nicht",
+     "cue_club": "zehn",
+     "cue_know": "Stoppuhr"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Moment. Ich dachte, ein Panda snackt kurz und fertig. Aber kein Snack. Pandas sind Ganztagsesser, sagt der Zoo San Diego. Ich war geschockt. Ich hab Bambus besorgt. Schmeckt nach Besen.",
+    "data": {
+     "word_a": "Mini",
+     "word_b": "snack",
+     "left": "Plümo: *Minisnack*",
+     "right": "Echt: *Ganztagsesser*",
+     "cue_left": "dachte",
+     "cue_strike": "kein",
+     "cue_right": "Ganztagsesser",
+     "cue_react": "Ich",
+     "item": "bamboo",
+     "cue_shock": "geschockt",
+     "cue_item": "Bambus",
+     "cue_never": "Besen"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Warum so lange? Etwa neunundneunzig Prozent seiner Nahrung ist Bambus. Und Bambus hat relativ wenig Nährwert, also braucht er viel davon. Seine Verdauung ähnelt eher der eines Fleischfressers. Ohne Hände zeig ich's mit dem Blatt.",
+    "data": {
+     "headline": "Warum so *lange*?",
+     "inner": "bamboo",
+     "disc": [
+      "#2E6B2A",
+      "#EAF7DC",
+      "#9FD07A"
+     ],
+     "cue_q": "lange",
+     "labels": [
+      {
+       "text": "*99 %* Bambus",
+       "pos": "tr",
+       "cue": "neunundneunzig"
+      },
+      {
+       "text": "wenig *Nährwert*",
+       "pos": "l",
+       "cue": "Nährwert"
+      },
+      {
+       "text": "Verdauung: *Fleischfresser*",
+       "pos": "b",
+       "cue": "Verdauung"
+      }
+     ],
+     "cue_hands": "Hände",
+     "cue_leaf": "Blatt"
+    },
+    "overlay": {
+     "marker_at": "w:neunundneunzig"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S1",
+     "S3"
+    ],
+    "spoken": "Ganz genau. Ein Panda frisst meist aufrecht sitzend, die Vorderpfoten sind frei. Gegriffen wird mit einem vergrößerten Handgelenkknochen. Fachleute sagen Pseudodaumen. Ich hab nicht mal Hände. Unfair.",
+    "data": {
+     "kind": "panda",
+     "lens": "bamboo",
+     "lens_bg": "#1E3A1A",
+     "cue_mag": "genau",
+     "callouts": [
+      {
+       "text": "frisst meist *im Sitzen*",
+       "cue": "aufrecht"
+      },
+      {
+       "text": "großer *Handgelenkknochen*",
+       "cue": "Handgelenkknochen"
+      }
+     ],
+     "cue_nut": "Vorderpfoten",
+     "stamp": {
+      "text": "Pseudodaumen!",
+      "cue": "Pseudodaumen"
+     },
+     "cue_react": "Hände",
+     "cue_fast": "Unfair"
+    },
+    "overlay": {
+     "dim_at": "w:aufrecht",
+     "marker_at": "w:aufrecht"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Zum Vergleich: Mein Frühstück dauert vier Minuten. Der National Zoo sagt zehn bis sechzehn Stunden, der Zoo San Diego zehn bis vierzehn. Also sicher: über zehn. Ich hab wohl geschlungen.",
+    "data": {
+     "headline": "Wer frisst *wie lange*?",
+     "bars": [
+      {
+       "label": "Plümo",
+       "value": "4 Min.",
+       "h": 0.2,
+       "color": "#FF43C0",
+       "cue": "Frühstück"
+      },
+      {
+       "label": "National Zoo",
+       "value": "10–16 Std.",
+       "h": 0.8,
+       "color": "#B7FF00",
+       "kind": "panda",
+       "cue": "National"
+      },
+      {
+       "label": "San Diego",
+       "value": "10–14 Std.",
+       "h": 0.7,
+       "color": "#8FD14F",
+       "kind": "panda",
+       "cue": "Diego"
+      }
+     ],
+     "stamp": {
+      "text": "über 10 Std.!",
+      "cue": "sicher"
+     },
+     "cue_react": "geschlungen"
+    },
+    "overlay": {
+     "marker_at": "w:National"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Merke: Ein Panda frisst über zehn Stunden am Tag. Gut, jetzt ich. Stoppuhr läuft. Ergebnis: Kauzeit nicht ermittelbar. Ich bin wohl eingeschlafen.",
+    "data": {
+     "mode": "unknown",
+     "sign": "NUR TIERE",
+     "merke": "Panda: *über 10 Stunden* Bambus am Tag.",
+     "display": "Kauzeit: nicht ermittelbar",
+     "plumps": "PLUMPS",
+     "cue_build": "zehn",
+     "cue_go": "Gut",
+     "cue_scan": "Stoppuhr",
+     "cue_result": "Ergebnis",
+     "cue_back": "wohl"
+    },
+    "overlay": {
+     "marker_at": "w:Merke"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+    "data": {
+     "sign": "NUR TIERE",
+     "cta": "Mehr Zonkfruit? *Folgen.*",
+     "cue_cta": "Mehr",
+     "cue_up": "steh",
+     "cue_lie": "liegen",
+     "cue_ch": "Kanal"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Panda: kurzer Snack?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Snack-Idee: abgelehnt",
+    "tone": "pop",
+    "word": "nicht"
+   },
+   {
+    "beat": "b3",
+    "text": "99 % Bambus, wenig Nährwert",
+    "tone": "lime",
+    "word": "Nährwert"
+   },
+   {
+    "beat": "b4",
+    "text": "Pseudodaumen am Handgelenk",
+    "tone": "lime",
+    "word": "Pseudodaumen"
+   },
+   {
+    "beat": "b5",
+    "text": "Panda: über 10 Std. Essen",
+    "tone": "lime",
+    "word": "sicher"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: Kauzeit offen",
+    "tone": "amber",
+    "word": "Ergebnis"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: liegt kurz",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "Ein Panda frisst über 10 Stunden am Tag. Plümo hat mitgestoppt.",
+   "description": "Plümo dachte, ein Panda snackt kurz. Falsch: Der National Zoo nennt 10 bis 16 Stunden Suchen und Fressen am Tag, der Zoo San Diego 10 bis 14 Stunden. Fast nur Bambus, und der hat wenig Nährwert.",
+   "hashtags": [
+    "panda",
+    "tiere",
+    "wusstestdu",
+    "funfact",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ },
+ "en": {
+  "title": "A panda eats for over 10 hours a day – Plümo and the stopwatch",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "A panda doesn't grab a quick bite. It eats for over ten hours a day. Stopwatch quit.",
+    "on_screen": "Panda: *10+ hours* of eating.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "stopwatch flies to the Animal File door, stamp TOO SHORT",
+    "why": {
+     "truth": "National Zoo: 10 to 16 hours, San Diego: 10 to 14 hours a day",
+     "visual": "stamped stopwatch reads at once"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "How long does a panda's breakfast actually last?",
+    "on_screen": "How long does a *panda* eat?",
+    "scores": {
+     "clarity": 4,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "stopwatch ticking next to the panda"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "A panda can spend up to sixteen hours a day eating.",
+    "on_screen": "Up to *16 hours* of eating.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "bar grows to 16 hours"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Say pandas eat quickly at a quiz night and you lose the point.",
+    "on_screen": "Quick eaters? *Point lost.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 2
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "quiz card"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "I'm eating for as long as a panda. Stopwatch on.",
+    "on_screen": "Plümo vs *panda*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo with bamboo and stopwatch"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "A panda doesn't grab a quick bite. It eats for over ten hours a day. Stopwatch quit.",
+    "data": {
+     "mode": "hook",
+     "head": "Panda: *10+ hours* of eating.",
+     "head_at": 0.2,
+     "sign": "ANIMALS ONLY",
+     "items": [
+      {
+       "kind": "stopwatch"
+      }
+     ],
+     "stamp_reject": "TOO SHORT",
+     "cue_scan": "panda",
+     "cue_verdict": "doesn't",
+     "cue_club": "ten",
+     "cue_know": "stopwatch"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Wait. I thought pandas grab a quick snack. No quick bite. San Diego's zoo team calls them all-day eaters. I was shocked. I got bamboo. Tastes like a broom.",
+    "data": {
+     "word_a": "Quick",
+     "word_b": "bite",
+     "left": "Plümo: *quick bite*",
+     "right": "Real: *all-day eater*",
+     "cue_left": "thought",
+     "cue_strike": "No",
+     "cue_right": "eaters",
+     "cue_react": "I",
+     "item": "bamboo",
+     "cue_shock": "shocked",
+     "cue_item": "bamboo",
+     "cue_never": "broom"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Why so long? About ninety-nine percent of a panda's diet is bamboo, which has low nutritive value, so they need lots. Their digestion is more like a carnivore's. No hands. I point with my leaf.",
+    "data": {
+     "headline": "Why so *long*?",
+     "inner": "bamboo",
+     "disc": [
+      "#2E6B2A",
+      "#EAF7DC",
+      "#9FD07A"
+     ],
+     "cue_q": "long",
+     "labels": [
+      {
+       "text": "*99 %* bamboo",
+       "pos": "tr",
+       "cue": "percent"
+      },
+      {
+       "text": "low *nutritive value*",
+       "pos": "l",
+       "cue": "nutritive"
+      },
+      {
+       "text": "digestion: *carnivore-like*",
+       "pos": "b",
+       "cue": "digestion"
+      }
+     ],
+     "cue_hands": "hands",
+     "cue_leaf": "leaf"
+    },
+    "overlay": {
+     "marker_at": "w:percent"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S1",
+     "S3"
+    ],
+    "spoken": "Closer. Pandas usually eat sitting upright, front paws free. They grip bamboo with an enlarged wrist bone. It's called a pseudo thumb. I have zero thumbs. Rude.",
+    "data": {
+     "kind": "panda",
+     "lens": "bamboo",
+     "lens_bg": "#1E3A1A",
+     "cue_mag": "Closer",
+     "callouts": [
+      {
+       "text": "eats *sitting upright*",
+       "cue": "sitting"
+      },
+      {
+       "text": "enlarged *wrist bone*",
+       "cue": "wrist"
+      }
+     ],
+     "cue_nut": "paws",
+     "stamp": {
+      "text": "Pseudo thumb!",
+      "cue": "pseudo"
+     },
+     "cue_react": "zero",
+     "cue_fast": "Rude"
+    },
+    "overlay": {
+     "dim_at": "w:sitting",
+     "marker_at": "w:sitting"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "My breakfast: four minutes. Pandas: the National Zoo says ten to sixteen hours, San Diego ten to fourteen. So, safely over ten. I chewed too fast.",
+    "data": {
+     "headline": "Who eats *how long*?",
+     "bars": [
+      {
+       "label": "Plümo",
+       "value": "4 min",
+       "h": 0.2,
+       "color": "#FF43C0",
+       "cue": "breakfast"
+      },
+      {
+       "label": "National Zoo",
+       "value": "10–16 h",
+       "h": 0.8,
+       "color": "#B7FF00",
+       "kind": "panda",
+       "cue": "National"
+      },
+      {
+       "label": "San Diego",
+       "value": "10–14 h",
+       "h": 0.7,
+       "color": "#8FD14F",
+       "kind": "panda",
+       "cue": "Diego"
+      }
+     ],
+     "stamp": {
+      "text": "Over 10 h!",
+      "cue": "safely"
+     },
+     "cue_react": "chewed"
+    },
+    "overlay": {
+     "marker_at": "w:National"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Remember: a panda eats for more than ten hours a day. Right, my turn. Bamboo, stopwatch on. Result: chewing time unknown. I guess I fell asleep.",
+    "data": {
+     "mode": "unknown",
+     "sign": "ANIMALS ONLY",
+     "merke": "Panda: *10+ hours* of bamboo a day.",
+     "display": "Chew time: unknown",
+     "plumps": "FLOP",
+     "cue_build": "ten",
+     "cue_go": "Right",
+     "cue_scan": "stopwatch",
+     "cue_result": "Result",
+     "cue_back": "guess"
+    },
+    "overlay": {
+     "marker_at": "w:Remember"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "I'll just lie here for a bit. More Zonkfruit? Follow the channel. I'll get up in a minute.",
+    "data": {
+     "sign": "ANIMALS ONLY",
+     "cta": "More Zonkfruit? *Follow.*",
+     "cue_cta": "More",
+     "cue_up": "get",
+     "cue_lie": "lie",
+     "cue_ch": "channel"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Panda: quick snack?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Quick bite: rejected",
+    "tone": "pop",
+    "word": "doesn't"
+   },
+   {
+    "beat": "b3",
+    "text": "99 % bamboo, low value",
+    "tone": "lime",
+    "word": "nutritive"
+   },
+   {
+    "beat": "b4",
+    "text": "Pseudo thumb on the wrist",
+    "tone": "lime",
+    "word": "pseudo"
+   },
+   {
+    "beat": "b5",
+    "text": "Panda: 10+ hours of eating",
+    "tone": "lime",
+    "word": "safely"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: chew time unknown",
+    "tone": "amber",
+    "word": "Result"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: lying down",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "A panda eats for over 10 hours a day. Plümo timed it.",
+   "description": "Plümo thought pandas grab a quick bite. Wrong: Smithsonian's National Zoo says 10 to 16 hours of foraging and eating a day, San Diego says 10 to 14 hours. Almost all bamboo, and bamboo has low nutritive value.",
+   "hashtags": [
+    "panda",
+    "animals",
+    "funfact",
+    "didyouknow",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ }
+}

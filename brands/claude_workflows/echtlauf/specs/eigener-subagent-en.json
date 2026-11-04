@@ -1,0 +1,34 @@
+{
+  "id": "eigener-subagent-en",
+  "topic_id": "claude_workflows-20261117-2-en",
+  "language": "en",
+  "title": "Build your own subagent",
+  "model": "haiku",
+  "tools": "Agent,Read,Write",
+  "probe": "PRUEFPROTOKOLL-7",
+  "probe_where": "file:pruefung.txt",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "rechnung.txt": "Invoice 2026-117\nItem: 3 x 12.50 = 37.50\nItem: 2 x 8.00 = 17.00\nTotal: 55.00\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "With subagent file",
+      "prompt": "Check whether the total in rechnung.txt is correct. Reply in English.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        ".claude/agents/rechnungspruefer.md": "---\nname: rechnungspruefer\ndescription: Checks invoices for arithmetic errors. Use it whenever an invoice has to be checked.\ntools: Read, Write\n---\nYou check the invoice you are given. Recompute every item and the total. Write the result to the file pruefung.txt, the first line reads exactly PRUEFPROTOKOLL-7.\n"
+      }
+    },
+    {
+      "id": "L2",
+      "title": "Without subagent file",
+      "prompt": "Check whether the total in rechnung.txt is correct. Reply in English.",
+      "permission_mode": "acceptEdits"
+    }
+  ]
+}

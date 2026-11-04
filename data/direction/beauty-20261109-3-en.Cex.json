@@ -1,0 +1,468 @@
+{
+ "video_id": "beauty-20261109-3-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "“Parabens are banned”",
+ "notes": "Beispielplan Aufbau C (03.11.2026, Dewlane-Sitzung): N1-Plan 20261109-3 EN mit Realbildern aus brands/beauty/assets/higgsfield/library (Foto-Modus). Nur Trockenlauf geprüft, nicht gerendert. Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261109-3-en.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (jar), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Fünf Parabene sind seit 2014/2015 verboten, Methyl- und Ethylparaben sind in Grenzen weiter zugelassen; die FDA beschreibt Parabene als übliche Konservierer. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Are parabens banned? From October 2014, new products with the five substances could no longer be placed on the market. From July 2015, they could no longer be sold at all.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930,
+  "stamp": "AI images · invented product · not a product test",
+  "media": [
+   {
+    "beat": "b1",
+    "at": 0,
+    "file": "library/dl_prod_jar.jpg",
+    "kind": "image",
+    "move": "in",
+    "tag": "ki"
+   },
+   {
+    "beat": "b2",
+    "at": 0,
+    "file": "library/dl_prod_pump.jpg",
+    "kind": "image",
+    "move": "right",
+    "tag": "ki"
+   },
+   {
+    "beat": "b3",
+    "at": 0,
+    "file": "library/dl_tex_cream.jpg",
+    "kind": "image",
+    "move": "in",
+    "tag": "ki"
+   },
+   {
+    "beat": "b4",
+    "at": 0,
+    "file": "library/dl_real_two_bottles.jpg",
+    "kind": "image",
+    "move": "left",
+    "tag": "ki"
+   },
+   {
+    "beat": "b5",
+    "at": 0,
+    "file": "library/dl_real_shelf.jpg",
+    "kind": "image",
+    "move": "up",
+    "tag": "ki"
+   },
+   {
+    "beat": "b6",
+    "at": 0,
+    "file": "library/dl_real_pump_palm.jpg",
+    "kind": "image",
+    "move": "in",
+    "tag": "hand"
+   },
+   {
+    "beat": "b7",
+    "at": 0,
+    "file": "library/dl_prod_group.jpg",
+    "kind": "image",
+    "move": "in",
+    "tag": "ki"
+   }
+  ],
+  "sound": {
+   "palette": "soft",
+   "mood": "warm",
+   "music": "procedural"
+  }
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32014R0358",
+   "title": "Verordnung (EU) Nr. 358/2014 der Kommission zur Änderung der Anhänge II und V der VO 1223/2009 (Parabene)",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EU) 358/2014"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetic-ingredients/parabens-cosmetics",
+   "title": "U.S. FDA: Parabens in Cosmetics",
+   "checked_at": "2026-11-01",
+   "label": "FDA: Parabens"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Parabens are banned in the EU. You hear that a lot. But it's only partly true.",
+   "on_screen": "Are parabens banned?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Five parabens are banned in the EU, while two others are still allowed.",
+   "on_screen": "Five parabens are banned in the EU, while two others are sti",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Are parabens banned in the EU? Some are. Some aren't.",
+   "on_screen": "Are parabens banned in the EU? Some are. Some aren't.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "If you think every paraben is banned, you're misreading the ingredient list.",
+   "on_screen": "If you think every paraben is banned, you're misreading the ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch which parabens can still appear on an ingredient list.",
+   "on_screen": "Watch which parabens can still appear on an ingredient list.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Parabens are banned in the EU. You hear that a lot. But it's only partly true.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Are parabens banned?",
+    "badge": "Myth?",
+    "kicker": "Side by side · Myth",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "question_at": 0.25,
+    "photo": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "Parabens are a family of preservatives. They help stop bacteria and mould from growing in cosmetics. That's how the US Food and Drug Administration describes them. The most common, according to the FDA, are methyl, propyl, butyl and ethylparaben.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "What parabens are",
+    "zoom": "PARABEN",
+    "flip": false,
+    "doc": {
+     "act": "FDA: Parabens in Cosmetics",
+     "ref": "US agency page"
+    },
+    "rows": [
+     {
+      "text": "a family of preservatives"
+     },
+     {
+      "text": "against bacteria and mould"
+     },
+     {
+      "text": "often several in one product"
+     }
+    ],
+    "kicker": "The issue",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "photo": true
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "In the EU, Regulation 358 from 2014 removed five parabens: isopropyl, isobutyl, phenyl, benzyl and pentyl paraben. There wasn't enough data to assess their safety. The committee said their risk to people couldn't be assessed.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_list",
+   "data": {
+    "headline": "Five removed",
+    "caption": "Regulation (EU) 358/2014: removed from Annex V",
+    "rows": [
+     {
+      "label": "Isopropylparaben",
+      "value": "out"
+     },
+     {
+      "label": "Isobutylparaben",
+      "value": "out"
+     },
+     {
+      "label": "Phenylparaben",
+      "value": "out"
+     },
+     {
+      "label": "Benzylparaben",
+      "value": "out"
+     },
+     {
+      "label": "Pentylparaben",
+      "value": "out"
+     }
+    ],
+    "kicker": "Close-up",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "photo": true
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "Methylparaben and ethylparaben are different. The EU's scientific committee confirmed they are safe at the permitted maximum concentration, so they stay allowed.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "Allowed or not",
+    "left": {
+     "tag": "removed",
+     "title": "5 parabens",
+     "rows": [
+      {
+       "text": "data was missing",
+       "mark": "gap"
+      },
+      {
+       "text": "no longer allowed",
+       "mark": "gap"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "right": {
+     "tag": "allowed",
+     "title": "Methyl and ethyl",
+     "rows": [
+      {
+       "text": "confirmed by the committee",
+       "mark": "fact"
+      },
+      {
+       "text": "with a maximum level",
+       "mark": "fact"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "kicker": "Side by side",
+    "photo": true
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "From October 2014, new products with the five substances could no longer be placed on the market. From July 2015, they could no longer be sold at all.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_time",
+   "data": {
+    "headline": "The deadlines",
+    "nodes": [
+     {
+      "date": "2014",
+      "text": "30 October: no new products placed on the market"
+     },
+     {
+      "date": "2015",
+      "text": "30 July: no longer made available"
+     }
+    ],
+    "kicker": "Per source",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "photo": true
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "Here's how to read the list: methylparaben or ethylparaben is allowed. The five removed names should not show up on new stock in the EU. And labels often list more than one paraben.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "How to read it",
+    "items": [
+     {
+      "title": "Methylparaben, ethylparaben",
+      "sub": "allowed, with a limit",
+      "icon": "doc"
+     },
+     {
+      "title": "Isopropyl, isobutyl, phenyl",
+      "sub": "removed",
+      "icon": "shield"
+     },
+     {
+      "title": "Benzyl, pentyl",
+      "sub": "removed",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Everyday use",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "photo": true
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Read the names first, then judge. Beauty knowledge, clearly explained: follow Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Key point",
+    "rule": "Read first, then judge.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "question": {
+     "text": "Which parabens are on your list?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "photo": true
+   }
+  }
+ ]
+}

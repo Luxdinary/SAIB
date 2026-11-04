@@ -1,0 +1,1418 @@
+{
+ "video_id": "yt08-emergency-first-hour-de",
+ "slug": "08-emergency-first-hour",
+ "lang": "de",
+ "title": "Die erste Stunde nach einem Cybervorfall, und die 72-Stunden-Uhr",
+ "short_title": "Die erste Stunde",
+ "version": "Fassung 3 (Langvideo, Planung), Entwurf 2026-11-02. Freigegebener Wortlaut aus SKRIPTE/08-emergency-first-hour.de.md Fassung 2 (Stefan, 29.10. und 01.11.2026) unverändert, einschließlich des letzten Satzes (verweist schon auf Video 09); neu und zur Freigabe: Kaltstart (c0s0), Überblick (c0s2) und Kapitel 4 (c4), im Feld new=true markiert. Zu klären: Der freigegebene Absatz 4.6 sagt „keine Statistik und kein Fall“; Kapitel 4 zeigt zwei erfundene Fälle.",
+ "sources": [
+  {
+   "id": "Q1",
+   "label": "Verordnung (EU) 2016/679, Art. 4 Nr. 12, Art. 33 Abs. 1 und 5, Art. 34 Abs. 1 · EUR-Lex · Abruf 2026-10-23",
+   "short": "DSGVO Art. 4 Nr. 12, Art. 33, 34 · Abruf 23.10.2026"
+  },
+  {
+   "id": "Q2",
+   "label": "DVO (EU) 2024/2690, Anh. Nr. 5.1.4 Buchst. d; RL (EU) 2022/2555, Art. 23 Abs. 1 und 4; NISG 2026, § 34 Abs. 1 und 2; BSI-Gesetz, § 32 Abs. 1; VO (EU) 2022/2554, Art. 30 Abs. 2 Buchst. f; Donau Versicherung, AVB Cyber 2025, Teil D 7.1.4 · abgerufen 23.10.2026",
+   "short": "DVO 2024/2690 Anh. 5.1.4 · NIS2 Art. 23 · NISG § 34 · BSIG § 32 · DORA · Donau AVB Cyber · Abruf 23.10.2026"
+  },
+  {
+   "id": "Q3",
+   "label": "onlinesicherheit.gv.at, Erpressungstrojaner: Was tun bei Infektion?, Stand 23.7.2022 · abgerufen 23.10.2026; BSI und Partner, TOP 12 Maßnahmen bei Cyber-Angriffen, September 2019; BSI und Allianz für Cyber-Sicherheit, IT-Notfallkarte · abgerufen 19.10.2026",
+   "short": "onlinesicherheit.gv.at · BSI, TOP 12 · BSI, IT-Notfallkarte · Abruf 19./23.10.2026"
+  },
+  {
+   "id": "Q4",
+   "label": "WKO, Cyber-Security-Hotline, 1. Juni 2026 · wko.at · Abruf 2026-10-23; CERT.at · Abruf 2026-10-19; polizei.gv.at, Notrufnummern · Abruf 2026-10-19; Datenschutzbehörde, Meldung Data Breach · Abruf 2026-10-19; onlinesicherheit.gv.at, Erpressungstrojaner, 23. Juli 2022 · Abruf 2026-10-23",
+   "short": "WKO-Hotline · CERT.at · polizei.gv.at · DSB · onlinesicherheit.gv.at · Abruf 19./23.10.2026"
+  },
+  {
+   "id": "Q5",
+   "label": "BSI und Allianz für Cyber-Sicherheit, IT-Notfallkarte; BSI und Partner, TOP 12 Maßnahmen bei Cyber-Angriffen, September 2019; polizei.de, ZAC; BfDI, Landesbehörden · Abruf 2026-10-19; Bundesnetzagentur, Notruf · Abruf 2026-10-23",
+   "short": "BSI, IT-Notfallkarte, TOP 12 · polizei.de, ZAC · BfDI · BNetzA · Abruf 19./23.10.2026"
+  },
+  {
+   "id": "Q6",
+   "label": "Verordnung (EU) 2016/679, Art. 33 Abs. 1 bis 3, Art. 34 Abs. 1 und Abs. 3 Buchst. a, deutsche und englische Fassung; Datenschutzbehörde, Meldung Data Breach; BfDI, Landesbehörden · abgerufen 23.10.2026",
+   "short": "DSGVO Art. 33, 34 · DSB · BfDI · Abruf 23.10.2026"
+  },
+  {
+   "id": "Q7",
+   "label": "Richtlinie (EU) 2022/2555, Art. 23 Abs. 4; Verordnung (EU) 2016/679, Art. 33 Abs. 1 · abgerufen 23.10.2026",
+   "short": "NIS2 Art. 23 Abs. 4 · DSGVO Art. 33 Abs. 1 · Abruf 23.10.2026"
+  },
+  {
+   "id": "Q8",
+   "label": "Donau Versicherung, AVB Cyber 2025, Teil D 7.1.4 · abgerufen 23.10.2026; Bundeskriminalamt, CEO Fraud, Stand 29.6.2026 · abgerufen 19.10.2026",
+   "short": "Donau, AVB Cyber 2025, D 7.1.4 · BKA, CEO Fraud · Abruf 19./23.10.2026"
+  },
+  {
+   "id": "Q9",
+   "label": "Verordnung (EU) 2016/679, Art. 33 Abs. 5; Durchführungsverordnung (EU) 2024/2690, Anhang Nr. 3.6; BSI, TOP 12 · abgerufen 19.10.2026",
+   "short": "DSGVO Art. 33 Abs. 5 · DVO Anh. 3.6 · BSI, TOP 12 · Abruf 19.10.2026"
+  },
+  {
+   "id": "Q10",
+   "label": "DVO 2024/2690 Anh. 5.1.4 lit. d; NIS2-RL Art. 23 Abs. 1, 4; NISG 2026 § 34 Abs. 1, 2; BSIG § 32 Abs. 1; DORA Art. 30 Abs. 2 lit. f; Donau AVB Cyber 2025 D 7.1.4; DSGVO Art. 33 Abs. 1–3, Art. 34 Abs. 1, 3 lit. a; DSB, Meldung Data Breach; BfDI, Landesbehörden · abgerufen 23.10.2026",
+   "short": "NIS2 Art. 23 · DVO Anh. 5.1.4 · DSGVO Art. 33, 34 · Donau AVB Cyber · Abruf 23.10.2026"
+  }
+ ],
+ "chapters": [
+  {
+   "id": "c0",
+   "num": "",
+   "title": "Die Nummern stehen im Rechner",
+   "kicker": "SCUTORIA · DIE ERSTE STUNDE",
+   "card": false,
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_network_cupboard.start.png",
+     "new": true,
+     "data": {
+      "kicker": "Beispielfall · nachgestellt",
+      "time": "MO 07:50",
+      "place": "Büro, Muster Elektrotechnik e.U. (erfunden)",
+      "obj": {
+       "label": "Bürorechner · Bildschirm",
+       "from": "Büro",
+       "subject": "Ihre Dateien sind verschlüsselt",
+       "lines": [
+        "Dateien lassen sich nicht öffnen",
+        "Nummer des IT-Dienstleisters: im Rechner",
+        "Notfallkarte: keine"
+       ]
+      },
+      "obj_at": "@Meldung",
+      "highlight": {
+       "line": 1,
+       "label": "im Rechner",
+       "at": "@Adressbuch"
+      }
+     },
+     "say": [
+      {
+       "text": "Montag, sieben Uhr fünfzig. Am Bürorechner steht eine Meldung: Die Dateien sind verschlüsselt. Die Nummer des IT-Dienstleisters steht im Adressbuch dieses Rechners.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Die Frage dieses Videos",
+      "text": "Was tun Sie, wenn die Nummern *im verschlüsselten Rechner* stehen?",
+      "sub": "Die erste Stunde, wen Sie anrufen, die Fristen, und warum das auf Papier steht.",
+      "sub_at": "@Hier"
+     },
+     "say": [
+      {
+       "text": "Was tun Sie, wenn ein Rechner verschlüsselt ist und die Nummern, die Sie jetzt brauchen, in genau diesem Rechner stehen?"
+      },
+      {
+       "text": "Hier sind die erste Stunde, wen Sie anrufen, die Fristen, und warum das alles auf Papier steht."
+      }
+     ]
+    },
+    {
+     "type": "chapters",
+     "new": true,
+     "data": {
+      "headline": "In diesem Video",
+      "items": [
+       {
+        "num": "1",
+        "title": "Warum die erste Stunde schwer ist",
+        "at": "@Stunde"
+       },
+       {
+        "num": "2",
+        "title": "Vier Handgriffe, wen anrufen, drei Uhren",
+        "at": "@Handgriffe"
+       },
+       {
+        "num": "3",
+        "title": "Was Fakt ist, was offen",
+        "at": "@Fakt"
+       },
+       {
+        "num": "4",
+        "title": "Was tun Sie? Zwei Fälle",
+        "at": "@Fälle"
+       },
+       {
+        "num": "5",
+        "title": "Die Karte des Beispielbetriebs",
+        "at": "@Karte"
+       },
+       {
+        "num": "6",
+        "title": "Was die Karte nicht ist",
+        "at": "@nicht"
+       },
+       {
+        "num": "7",
+        "title": "Musterkarte, Handbuch, Toolkit",
+        "at": "@Musterkarte"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Wir gehen so vor: warum die erste Stunde schwer ist, vier Handgriffe, wen Sie anrufen und drei Uhren, was Fakt ist und was offen, zwei Fälle, in denen Sie entscheiden, die Karte des Beispielbetriebs, was sie nicht ist, und am Ende Musterkarte, Handbuch und Toolkit."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "num": "1",
+   "title": "Warum die erste Stunde schwer ist",
+   "kicker": "1 · Die Lage",
+   "scenes": [
+    {
+     "type": "steps",
+     "bg": "yt/lib_phone_desk.start.png",
+     "data": {
+      "headline": "Drei Beispiele, *ein Beginn*",
+      "items": [
+       {
+        "title": "Erpressungssoftware",
+        "at": "@Erpressungssoftware"
+       },
+       {
+        "title": "Ein gekapertes Postfach",
+        "at": "@gekapertes"
+       },
+       {
+        "title": "Eine betrügerische Zahlung",
+        "at": "@betrügerische"
+       },
+       {
+        "title": "Niemand weiß, wie viel betroffen ist",
+        "at": "@niemand"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Die Frage des Toolkits nach früheren Vorfällen nennt drei Beispiele: Erpressungssoftware, ein gekapertes Postfach, eine betrügerische Zahlung. Jeder dieser Fälle beginnt gleich. Jemand bemerkt etwas, und eine Weile weiß niemand, wie viel betroffen ist."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "In der ersten Stunde: *drei Dinge*",
+      "items": [
+       {
+        "title": "Die Helfer sind nicht im Raum",
+        "sub": "ihre Nummern im verschlüsselten Rechner",
+        "at": "@Erstens"
+       },
+       {
+        "title": "Entscheidungen unter Druck",
+        "sub": "manche zerstören Spuren",
+        "at": "@Zweitens"
+       },
+       {
+        "title": "Die Uhren laufen schon",
+        "at": "@Drittens"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "In dieser ersten Stunde kommen drei Dinge zusammen. Erstens: Die Menschen, die helfen könnten, sind nicht im Raum. Der IT-Dienstleister, eine Hotline, die Polizei, der Versicherer: Ihre Nummern stehen im Adressbuch des Rechners, der verschlüsselt ist, oder im Postfach, das jetzt jemand anderer benutzt. Zweitens: Entscheidungen fallen unter Druck. Den Rechner ausschalten oder laufen lassen. Neu aufsetzen oder warten. Zahlen oder nicht zahlen. Manche dieser Entscheidungen zerstören die Spuren, nach denen Polizei und Versicherer später fragen. Drittens: Die Uhren laufen, bevor jemand an Uhren gedacht hat."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Die Uhren laufen *ab Kenntnis*",
+      "left": {
+       "title": "Datenschutz",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "Frist ab Kenntnis der Verletzung",
+         "at": "@Frist"
+        }
+       ]
+      },
+      "right": {
+       "title": "Versicherer und Kunde",
+       "tone": "amber",
+       "at": "@Bedingungen",
+       "rows": [
+        {
+         "text": "eigene Frist in der Police",
+         "at": "@eigene"
+        },
+        {
+         "text": "NIS2-Kunde: Ihr Anruf startet seine Uhr",
+         "at": "@Anruf"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die Frist des Datenschutzes läuft ab dem Moment, in dem dem Betrieb die Verletzung bekannt wird.",
+       "marker": "fakt",
+       "source": "Q1"
+      },
+      {
+       "text": "Die Bedingungen des Versicherers nennen eine eigene Frist, und ein Kunde unter NIS zwei hat eine eigene Uhr, die Ihr Anruf in Gang setzen kann.",
+       "source": "Q2"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_office_shelf.start.png",
+     "data": {
+      "headline": "Der Beispielbetrieb: *drei Lücken*",
+      "note": "Wen anrufen, was tun, welche Uhr läuft. Auf Papier.",
+      "note_at": "@Karte",
+      "doc": {
+       "label": "Muster Elektrotechnik e.U. · erfunden",
+       "title": "Ohne IT-Abteilung",
+       "lines": [
+        {
+         "text": "Kein Notfallplan",
+         "at": "@Notfallplan",
+         "mark": "open"
+        },
+        {
+         "text": "Niemand für den Datenschutz benannt",
+         "at": "@benannt",
+         "mark": "open"
+        },
+        {
+         "text": "Kein Vorfallsprotokoll",
+         "at": "@Vorfallsprotokoll",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Ein Betrieb ohne IT-Abteilung hat niemanden, dessen Aufgabe das ist. Der erfundene Beispielbetrieb des Toolkits, ein Elektrotechnikbetrieb in Österreich, zeigt das übliche Bild: kein Notfallplan, niemand für die Datenschutzfrage benannt, kein Vorfallsprotokoll. Die Karte in diesem Video beantwortet genau diese drei Dinge: wen anrufen, was tun, welche Uhr läuft. Auf Papier."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "num": "2",
+   "title": "Vier Handgriffe, wen anrufen, drei Uhren",
+   "kicker": "2 · Die Karte",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_printer_tray.start.png",
+     "data": {
+      "kicker": "Dokument D3: die Notfallkarte",
+      "text": "Eine Seite für *die Wand und die Lade*.",
+      "sub": "Trennen, nicht löschen, anrufen, aufschreiben.",
+      "sub_at": "@trennen"
+     },
+     "say": [
+      {
+       "text": "Die Notfallkarte ist das Dokument D3 des Sicherheitsnachweis-Toolkits: eine Seite für die Wand und die Lade. Ihr erster Teil ist die erste Stunde, in vier Handgriffen."
+      },
+      {
+       "text": "Unsere Auslegung, zusammengeführt aus drei öffentlichen Quellen, die wir gleich nennen: trennen; nicht löschen; anrufen; aufschreiben.",
+       "marker": "auslegung",
+       "source": "Q3"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Die erste Stunde: *vier Handgriffe*",
+      "items": [
+       {
+        "title": "Trennen",
+        "sub": "Netzkabel, WLAN, notfalls der Router",
+        "at": "@Erstens"
+       },
+       {
+        "title": "Nicht löschen, nicht neu aufsetzen",
+        "sub": "Sicherung stoppen, NAS trennen",
+        "at": "@Zweitens"
+       },
+       {
+        "title": "Anrufen",
+        "sub": "Nummern auf der Karte, nicht im Rechner",
+        "at": "@Drittens"
+       },
+       {
+        "title": "Aufschreiben",
+        "sub": "Uhrzeit, Gerät, Bildschirm, wer was getan hat",
+        "at": "@Viertens"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Erstens, trennen. Netzkabel ziehen, WLAN aus. Wenn unklar ist, welches Gerät betroffen ist, den Router vom Internet trennen."
+      },
+      {
+       "text": "Zweitens, nicht löschen und nicht neu aufsetzen. Die Sicherungsaufträge stoppen und das NAS oder die Sicherungsplatte vom Netz trennen. Nie eine Sicherung an ein infiziertes Gerät anschließen."
+      },
+      {
+       "text": "Drittens, anrufen. Die verantwortliche Person, den IT-Dienstleister, die Hotline. Die Nummern stehen auf der Karte, nicht im Rechner."
+      },
+      {
+       "text": "Viertens, aufschreiben. Uhrzeit, Gerät, was am Bildschirm zu sehen war, wer was getan hat. Ein Foto des Bildschirms mit dem Telefon genügt; Behörde und Versicherer fragen danach."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Eine Zeile noch",
+      "text": "*Kein Lösegeld* ohne Rücksprache mit Polizei und Versicherer.",
+      "sub": "Fachleute raten von der Zahlung ab. Eine Zahlung garantiert nichts.",
+      "sub_at": "@Fachleute"
+     },
+     "say": [
+      {
+       "text": "Eine Zeile noch auf der Karte: kein Lösegeld. Das Sicherheitsportal des Bundeskanzleramts sagt, dass Fachleute von der Zahlung abraten.",
+       "marker": "fakt",
+       "source": "Q3"
+      },
+      {
+       "text": "Unsere Auslegung: keine Zahlung ohne Rücksprache mit Polizei und Versicherer, weil eine Zahlung nichts garantiert.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_phone_desk.start.png",
+     "data": {
+      "headline": "Wen anrufen: *Österreich*",
+      "note": "Nummern ändern sich: vor dem Druck prüfen.",
+      "note_at": "@ändern",
+      "doc": {
+       "label": "Notfallkarte · Kontakte Österreich",
+       "title": "Am Original gelesen",
+       "lines": [
+        {
+         "text": "WKO Cyber-Security-Hotline: 0800 888 133",
+         "at": "@Cyber-Security-Hotline"
+        },
+        {
+         "text": "CERT.at: +43 1 505 64 16 78",
+         "at": "@CERT.at"
+        },
+        {
+         "text": "Polizei 133 · Euro-Notruf 112",
+         "at": "@Polizei-Notruf"
+        },
+        {
+         "text": "Datenschutzbehörde: Online-Formular, PDF, E-Mail",
+         "at": "@Datenschutzbehörde"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Nun: wen anrufen. Die Karte nimmt die Kontakte aus dem Land, das Sie nennen. Für Österreich wurden die Nummern am Original gelesen."
+      },
+      {
+       "text": "Die Cyber-Security-Hotline der Wirtschaftskammern nimmt unter 0800 888 133 rund um die Uhr Anrufe an, für Mitglieder kostenlos. CERT.at, das nationale Computer-Notfallteam, nimmt Meldungen unter plus 43 1 505 64 16 78 und per E-Mail entgegen. Der Polizei-Notruf ist 133, der Euro-Notruf 112. Die Datenschutzbehörde nimmt Meldungen per Online-Formular, PDF-Formular oder E-Mail entgegen. Nummern ändern sich. Die Karte trägt das Datum, an dem sie geprüft wurden, und sagt: vor dem Druck prüfen.",
+       "marker": "fakt",
+       "source": "Q4"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Deutschland und *andere Länder*",
+      "left": {
+       "title": "Deutschland",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "Polizei 110 · Euro-Notruf 112",
+         "at": "@110"
+        },
+        {
+         "text": "ZAC des Bundeslands, selbst eintragen",
+         "at": "@Zentrale"
+        },
+        {
+         "text": "Datenschutzbehörde des Bundeslands",
+         "at": "@Datenschutzbehörde"
+        }
+       ]
+      },
+      "right": {
+       "title": "Andere Mitgliedstaaten",
+       "tone": "red",
+       "at": "@Lücke",
+       "rows": [
+        {
+         "text": "Euro-Notruf, CSIRT laut ENISA-Liste, DSB",
+         "at": "@ENISA"
+        },
+        {
+         "text": "Hotline: offen, selbst ergänzen",
+         "at": "@offen"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Für Deutschland nennt die Karte den Polizei-Notruf 110 und den Euro-Notruf 112. Die Polizei jedes Bundeslands führt eine Zentrale Ansprechstelle Cybercrime für Unternehmen, Liste bei polizei.de, und die Datenschutzbehörde ist die Ihres Bundeslands. Die ZAC und die Landesbehörde tragen Sie selbst ein.",
+       "marker": "fakt",
+       "source": "Q5"
+      },
+      {
+       "text": "Für andere Mitgliedstaaten ist das eine Lücke: Das Toolkit hat deren Behörden, Hotlines und Gütesiegel nicht erhoben. Die Karte nennt dann den Euro-Notruf, das nationale Computer-Notfallteam, für das ENISA eine Liste führt, und die nationale Datenschutzbehörde, und lässt die Hotline offen; diese Felder füllen Sie aus Ihrer eigenen Kammer oder Behörde.",
+       "marker": "luecke"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Uhr eins: *72 Stunden*",
+      "doc": {
+       "label": "DSGVO · Art. 33 und 34",
+       "title": "Personenbezogene Daten",
+       "lines": [
+        {
+         "text": "Meldung an die Aufsicht: möglichst binnen 72 Stunden",
+         "at": "@72"
+        },
+        {
+         "text": "ab Kenntnis der Verletzung",
+         "at": "@bekannt"
+        },
+        {
+         "text": "außer: voraussichtlich kein Risiko",
+         "at": "@Risiko"
+        },
+        {
+         "text": "Hohes Risiko: auch die Betroffenen",
+         "at": "@hoch"
+        },
+        {
+         "text": "Jede Verletzung dokumentieren",
+         "at": "@dokumentiert",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Der zweite Teil der Karte sind die Fristen. Drei Uhren."
+      },
+      {
+       "text": "Uhr eins, personenbezogene Daten. Artikel dreiunddreißig der DSGVO: Der Verantwortliche meldet eine Verletzung des Schutzes personenbezogener Daten der Aufsichtsbehörde unverzüglich und möglichst binnen 72 Stunden, nachdem ihm die Verletzung bekannt wurde, es sei denn, die Verletzung führt voraussichtlich nicht zu einem Risiko für die Rechte und Freiheiten natürlicher Personen. Eine verspätete Meldung trägt eine Begründung. Ist das Risiko hoch, werden auch die Betroffenen benachrichtigt. Und jede Verletzung wird dokumentiert, ob gemeldet oder nicht.",
+       "marker": "fakt",
+       "source": "Q6"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Unsere Auslegung",
+      "text": "Die 72 Stunden laufen *über Wochenenden*.",
+      "sub": "Die Datenschutzfrage braucht eine benannte Person; sie steht auf der Karte.",
+      "sub_at": "@benannte"
+     },
+     "say": [
+      {
+       "text": "Unsere Auslegung: Die 72 Stunden sind die härteste Frist, die ein kleiner Betrieb kennt. Sie laufen ab Kenntnis, über Wochenenden, und die erste Entscheidung, ob überhaupt personenbezogene Daten betroffen sind, braucht eine benannte Person. Diese Person und die meldende Person stehen auf der Karte.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "data": {
+      "kicker": "Uhr zwei",
+      "tag": false,
+      "headline": "Kunden unter *NIS2*",
+      "items": [
+       {
+        "time": "24 Stunden",
+        "text": "Frühwarnung",
+        "tone": "amber",
+        "at": "@24"
+       },
+       {
+        "time": "72 Stunden",
+        "text": "Meldung",
+        "tone": "amber",
+        "at": "@72"
+       },
+       {
+        "time": "ein Monat",
+        "text": "Abschlussbericht",
+        "tone": "neutral",
+        "at": "@Monat"
+       },
+       {
+        "time": "Ihr Anruf",
+        "text": "kann seine 24 Stunden starten",
+        "tone": "red",
+        "at": "@Anruf"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Uhr zwei, Kunden unter NIS zwei. Eine erfasste Einrichtung übermittelt binnen 24 Stunden nach Kenntnis eines erheblichen Vorfalls eine Frühwarnung, binnen 72 Stunden eine Meldung und spätestens einen Monat nach dieser Meldung einen Abschlussbericht.",
+       "marker": "fakt",
+       "source": "Q2"
+      },
+      {
+       "text": "Unsere Auslegung: Ist Ihr Vorfall für Ihren Kunden erheblich, kann Ihr Anruf der Moment sein, in dem seine 24 Stunden beginnen. Deshalb zeigt die Karte die Frist, die Sie Kunden zugesagt haben. Ist Ihr Betrieb selbst von NIS zwei erfasst, gelten dieselben Uhren für Sie, gegenüber Ihrem CSIRT in Österreich oder dem BSI in Deutschland. Das freie NIS-zwei-Memo auf scutoria.com sagt, ob er es ist.",
+       "marker": "auslegung",
+       "source": "Q7"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "bg": "yt/lib_envelopes_desk.start.png",
+     "data": {
+      "headline": "Uhr drei: *Versicherer und Bank*",
+      "items": [
+       {
+        "title": "Die Police nennt ihre Frist",
+        "sub": "gelesen: unverzüglich, spätestens binnen einer Woche",
+        "at": "@Police"
+       },
+       {
+        "title": "Zuerst anrufen, dann schriftlich",
+        "at": "@zuerst"
+       },
+       {
+        "title": "Betrügerische Überweisung",
+        "sub": "Hausbank, Rückruf, Belege, Anzeige",
+        "at": "@Überweisung"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Uhr drei, Versicherer und Bank. Die Police nennt ihre eigene Frist. Die gelesenen österreichischen Bedingungen verlangen die Meldung unverzüglich, spätestens innerhalb einer Woche, und den unverzüglichen Anruf bei der Hotline des Versicherers, damit Experten eingeschaltet werden. Also: zuerst anrufen, dann schriftlich melden. Nach einer betrügerischen Überweisung sagt das Bundeskriminalamt: unverzüglich die Hausbank kontaktieren, den Rückruf der Zahlung beantragen, E-Mails und Bildschirmfotos aufbewahren, bei einer Polizeidienststelle Anzeige erstatten.",
+       "marker": "fakt",
+       "source": "Q8"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_folders_closed.start.png",
+     "data": {
+      "headline": "Danach: das *Vorfallsprotokoll*",
+      "doc": {
+       "label": "Notfallkarte · danach",
+       "title": "Eine Seite",
+       "lines": [
+        {
+         "text": "Von einem sauberen Gerät: Passwörter ändern",
+         "at": "@sauberen"
+        },
+        {
+         "text": "Zweiten Faktor prüfen",
+         "at": "@prüfen"
+        },
+        {
+         "text": "Was passiert ist, auf welchem Weg",
+         "at": "@passiert"
+        },
+        {
+         "text": "Was gefehlt hat, was geändert wurde",
+         "at": "@gefehlt",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Der letzte Teil der Karte gilt für danach."
+      },
+      {
+       "text": "Die DSGVO verlangt die Dokumentation der Verletzung mit Fakten, Auswirkungen und Abhilfemaßnahmen. Zu den TOP zwölf gehört die Prüfung der Zugangsberechtigungen: neue Passwörter, zweiter Faktor.",
+       "marker": "fakt",
+       "source": "Q9"
+      },
+      {
+       "text": "Unsere Auslegung, so wie sie auf der Karte steht: Von einem sauberen Gerät aus die Passwörter von E-Mail, Bank und Cloud ändern, den zweiten Faktor prüfen und eine Seite schreiben: was passiert ist, auf welchem Weg, was gefehlt hat, was geändert wurde. Diese Seite ist das Vorfallsprotokoll, und sie macht die nächste Selbstauskunft wahr.",
+       "marker": "auslegung"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "num": "3",
+   "title": "Was Fakt ist, was unsere Auslegung, was offen",
+   "kicker": "3 · Was gilt",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_law_books.start.png",
+     "data": {
+      "kicker": "Woher das kommt",
+      "text": "Hinter der ersten Stunde stehen *drei öffentliche Quellen*."
+     },
+     "say": [
+      {
+       "text": "Woher kommt das, und was ist offen. Hinter der ersten Stunde stehen drei öffentliche Quellen."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Drei *Quellen*",
+      "items": [
+       {
+        "title": "Sicherheitsportal des Bundeskanzleramts",
+        "sub": "stromlos machen, kein Lösegeld, Anzeige",
+        "at": "@Sicherheitsportal"
+       },
+       {
+        "title": "TOP 12 des BSI und seiner Partner",
+        "sub": "trennen, Backups schützen, Spuren sichern",
+        "at": "@TOP-zwölf-Maßnahmen"
+       },
+       {
+        "title": "IT-Notfallkarte des BSI",
+        "sub": "wie der Aushang für den Brandfall",
+        "at": "@IT-Notfallkarte"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Das Sicherheitsportal des Bundeskanzleramts rät, einen infizierten Rechner sofort stromlos zu machen, sagt, dass Fachleute von der Zahlung des Lösegelds abraten, und dass der Vorfall in der nächsten Polizeidienststelle gemeldet werden soll. Die TOP-zwölf-Maßnahmen des BSI und seiner Partner fragen, ob betroffene Systeme und die Internetverbindung getrennt wurden, ob Backups gestoppt und geschützt wurden, ob Protokolle, Notizen und Fotos von Bildschirminhalten aufbewahrt wurden, ob Polizei oder Behörden nach Abstimmung benachrichtigt wurden und ob Zugangsberechtigungen geprüft wurden. Die IT-Notfallkarte des BSI, nach dem Vorbild des Aushangs zum Verhalten im Brandfall, trägt drei Botschaften: Ansprechpartner und Erreichbarkeit kennen, entscheidende Informationen sofort weitergeben, Gegenmaßnahmen nur nach Absprache.",
+       "marker": "fakt",
+       "source": "Q3"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Unsere Auslegung",
+      "text": "Die vier Handgriffe sind *unsere Zusammenführung*.",
+      "sub": "Keine Quelle nennt sie in dieser Reihenfolge; die Fußnote der Karte sagt das.",
+      "sub_at": "@Keine"
+     },
+     "say": [
+      {
+       "text": "Die vier Handgriffe sind unsere Zusammenführung dieser drei Quellen. Keine Quelle nennt sie in dieser Reihenfolge, und die Fußnote der Karte sagt das.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "bg": "yt/lib_network_cupboard.start.png",
+     "data": {
+      "headline": "Offen: *ausschalten oder nicht*?",
+      "left": {
+       "title": "Österreichisches Portal",
+       "tone": "amber",
+       "rows": [
+        {
+         "text": "stromlos machen",
+         "at": "@stromlos"
+        }
+       ]
+      },
+      "right": {
+       "title": "TOP 12",
+       "tone": "amber",
+       "at": "@TOP",
+       "rows": [
+        {
+         "text": "Spuren sichern",
+         "at": "@Spuren"
+        },
+        {
+         "text": "Hilfe kommt bald: nicht ausschalten",
+         "at": "@Kürze"
+        },
+        {
+         "text": "niemand kommt, Verschlüsselung breitet sich aus",
+         "at": "@niemand"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Ein Punkt ist offen, und die Karte nennt ihn. Beim Ausschalten widersprechen sich die Quellen. Das österreichische Portal sagt: stromlos machen. Die TOP zwölf wollen Spuren gesichert, und ein hartes Abschalten zerstört einen Teil davon. Die Karte folgt unserer Abwägung: nicht ausschalten, wenn in Kürze Hilfe kommt, weil Spuren verloren gehen; ausschalten, wenn niemand kommt und sich die Verschlüsselung sichtbar ausbreitet. Das ist offen, und Sie dürfen es mit Ihrem IT-Dienstleister anders abwägen.",
+       "marker": "unsicher",
+       "source": "Q3"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Lücke, und was fehlt",
+      "text": "Kontakte anderer Mitgliedstaaten: *absichtlich offen*.",
+      "sub": "Keine Statistik und kein Fall: Das Handbuch nennt keine Zahlen dazu.",
+      "sub_at": "@Statistik"
+     },
+     "say": [
+      {
+       "text": "Und eine Lücke, eben schon genannt: die Kontakte anderer Mitgliedstaaten. Die Karte lässt diese Felder absichtlich offen.",
+       "marker": "luecke"
+      },
+      {
+       "text": "Was in diesem Video nicht vorkommt: keine Statistik und kein Fall. Das Handbuch nennt keine Zahlen dazu, wie oft das passiert, und wir auch nicht."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "num": "4",
+   "title": "Was tun Sie? Zwei Fälle",
+   "kicker": "4 · Was tun Sie?",
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_phone_desk.start.png",
+     "new": true,
+     "data": {
+      "kicker": "Fall 1 · nachgestellt",
+      "time": "FR 15:30",
+      "place": "Büro, Buchhaltung",
+      "obj": {
+       "label": "Anruf · Lieferant",
+       "from": "Lieferant (erfunden)",
+       "subject": "„Unser Konto hat sich nie geändert“",
+       "lines": [
+        "Mittwoch: Mail mit neuer Bankverbindung",
+        "Heute: Überweisung an das neue Konto",
+        "Die Mail kam von der bekannten Adresse"
+       ]
+      },
+      "obj_at": "@ruft",
+      "highlight": {
+       "line": 1,
+       "label": "betrügerisch?",
+       "at": "@nie"
+      }
+     },
+     "say": [
+      {
+       "text": "Zwei Fälle zum Mitentscheiden. Beide sind erfunden, die Quellen dahinter nicht. Fall eins. Freitag, halb vier. Am Mittwoch kam eine Mail mit einer neuen Bankverbindung eines Lieferanten, heute ging die Überweisung hinaus. Jetzt ruft der Lieferant an: Sein Konto hat sich nie geändert.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Bis Montag warten, dann den IT-Dienstleister fragen",
+        "at": "@Wochenende"
+       },
+       {
+        "key": "B",
+        "text": "Der Bank aus dem eigenen Postfach mailen",
+        "at": "@Postfach"
+       },
+       {
+        "key": "C",
+        "text": "Hausbank anrufen, Rückruf beantragen, sichern, anzeigen",
+        "at": "@Hausbank"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: Über das Wochenende abwarten und am Montag den IT-Dienstleister fragen. B: Der Bank aus dem eigenen Postfach eine E-Mail schreiben. C: Sofort die Hausbank anrufen, den Rückruf der Zahlung beantragen, die E-Mails und Bildschirmfotos aufbewahren, Anzeige erstatten und den Versicherer anrufen. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie A wählen",
+      "headline": "Das Wochenende liegt dazwischen",
+      "items": [
+       {
+        "time": "FR 15:30",
+        "text": "Betrug bemerkt",
+        "tone": "neutral",
+        "at": "@Freitag"
+       },
+       {
+        "time": "MO 08:00",
+        "text": "Die Hausbank erfährt davon",
+        "tone": "amber",
+        "at": "@Montag"
+       },
+       {
+        "time": "",
+        "text": "Empfohlen war: unverzüglich",
+        "tone": "red",
+        "at": "@unverzüglich"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "A klingt besonnen. Im Beispiel wird der Betrug am Freitag um halb vier bemerkt, und die Hausbank hört am Montag um acht davon.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "Das Bundeskriminalamt sagt nach einer betrügerischen Überweisung: unverzüglich die Hausbank kontaktieren und den Rückruf der Zahlung beantragen.",
+       "marker": "fakt",
+       "source": "Q8"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Bank anrufen, sichern, anzeigen",
+       "sub": "Hausbank, Rückruf der Zahlung, Mails und Fotos aufbewahren, Anzeige, Versicherer.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Bis Montag warten",
+        "note": "unverzüglich heißt nicht Montag",
+        "at": "@Wochenende"
+       },
+       {
+        "key": "B",
+        "text": "Mail aus dem Postfach",
+        "note": "das Postfach liest womöglich jemand mit",
+        "at": "@Postfach"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C, nach unserer Auslegung. Das Bundeskriminalamt nennt genau diese Schritte: Hausbank, Rückruf der Zahlung, Belege aufbewahren, Anzeige. Die gelesenen Bedingungen des Versicherers verlangen den unverzüglichen Anruf bei seiner Hotline. A verliert das Wochenende. Und B schreibt aus einem Postfach, das womöglich gerade jemand anderer mitliest; die Nummer der Bank gehört auf die Karte.",
+       "marker": "auslegung",
+       "source": "Q8"
+      }
+     ]
+    },
+    {
+     "type": "case",
+     "bg": "yt/lib_laptop_side.start.png",
+     "new": true,
+     "data": {
+      "kicker": "Fall 2 · nachgestellt",
+      "time": "FR 18:00",
+      "place": "Büro, kurz vor dem Wochenende",
+      "obj": {
+       "label": "E-Mail-Anbieter · Hinweis",
+       "from": "Sicherheitshinweis",
+       "subject": "Anmeldung von einem unbekannten Gerät",
+       "lines": [
+        "Betrifft: das Büropostfach",
+        "Im Postfach: Angebote mit Kundendaten",
+        "Weitergeleitet oder gelesen? Unklar"
+       ]
+      },
+      "obj_at": "@Anmeldung",
+      "highlight": {
+       "line": 1,
+       "label": "personenbezogen?",
+       "at": "@Namen"
+      }
+     },
+     "say": [
+      {
+       "text": "Fall zwei. Freitag, achtzehn Uhr. Der E-Mail-Anbieter meldet eine Anmeldung im Büropostfach von einem unbekannten Gerät. Im Postfach liegen Angebote mit Namen und Anschriften von Kunden. Das Wochenende beginnt.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Am Montag in Ruhe entscheiden, was das war",
+        "at": "@Montag"
+       },
+       {
+        "key": "B",
+        "text": "Passwort ändern, weiterarbeiten",
+        "at": "@Passwort"
+       },
+       {
+        "key": "C",
+        "text": "Heute sichern, Personenbezug prüfen lassen, aufschreiben",
+        "at": "@heute"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: Am Montag in Ruhe entscheiden, was das war. B: Das Passwort ändern und weiterarbeiten, es ist ja nichts verschlüsselt. C: Noch heute das Passwort von einem sauberen Gerät ändern, den zweiten Faktor prüfen, die benannte Person prüfen lassen, ob personenbezogene Daten betroffen sind, und alles aufschreiben. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie A wählen",
+      "headline": "Die Uhr kennt kein Wochenende",
+      "items": [
+       {
+        "time": "FR 18:00",
+        "text": "Hinweis des Anbieters",
+        "tone": "neutral",
+        "at": "@Freitag"
+       },
+       {
+        "time": "MO früh",
+        "text": "Erste Prüfung",
+        "tone": "amber",
+        "at": "@Montag"
+       },
+       {
+        "time": "72 Stunden",
+        "text": "ab Kenntnis, auch über das Wochenende",
+        "tone": "red",
+        "at": "@zweiundsiebzig"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "A klingt vernünftig. Im Beispiel liegt der Hinweis des Anbieters von Freitag, achtzehn Uhr, bis Montag früh unbearbeitet.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "Die DSGVO verlangt die Meldung möglichst binnen zweiundsiebzig Stunden, nachdem dem Betrieb die Verletzung bekannt wurde, es sei denn, sie führt voraussichtlich nicht zu einem Risiko.",
+       "marker": "fakt",
+       "source": "Q6"
+      },
+      {
+       "text": "Unsere Auslegung: Diese Uhr läuft auch über das Wochenende.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Heute prüfen, sichern, aufschreiben",
+       "sub": "Benannte Person prüft den Personenbezug; Passwort, zweiter Faktor, Protokoll.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Bis Montag warten",
+        "note": "die Frist läuft ab Kenntnis",
+        "at": "@Frist"
+       },
+       {
+        "key": "B",
+        "text": "Nur das Passwort",
+        "note": "nichts geprüft, nichts dokumentiert",
+        "at": "@dokumentiert"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C, nach unserer Auslegung. Ob personenbezogene Daten betroffen sind, entscheidet eine benannte Person, und zwar bald, denn die Frist läuft ab Kenntnis. Passwort von einem sauberen Gerät ändern und den zweiten Faktor prüfen stehen auf der Karte für danach. B ändert das Passwort, prüft aber nichts und schreibt nichts auf, dabei wird jede Verletzung dokumentiert, ob gemeldet oder nicht.",
+       "marker": "auslegung",
+       "source": "Q6"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "num": "5",
+   "title": "Die Karte des Beispielbetriebs",
+   "kicker": "5 · Der Beispielbetrieb",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_cables_toolbox.start.png",
+     "data": {
+      "kicker": "Erfunden",
+      "text": "Die *Notfallkarte* des Beispielbetriebs.",
+      "sub": "Keine Person auf dieser Karte ist echt.",
+      "sub_at": "@Keine"
+     },
+     "say": [
+      {
+       "text": "Das ist die Karte des Beispielbetriebs. Der Betrieb ist erfunden: ein Elektrotechnikbetrieb in Österreich mit zehn bis neunundvierzig Beschäftigten. Keine Person auf dieser Karte ist echt."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_phone_desk.start.png",
+     "data": {
+      "headline": "Oben: *wen anrufen*",
+      "note": "Ein Kontakt ohne Nummer bleibt gelb.",
+      "note_at": "@gelb",
+      "doc": {
+       "label": "Muster D3 · Notfallkarte",
+       "title": "Wen anrufen",
+       "lines": [
+        {
+         "text": "Verantwortliche Person · Vertretung",
+         "at": "@verantwortliche"
+        },
+        {
+         "text": "IT-Dienstleister",
+         "at": "@IT-Dienstleister"
+        },
+        {
+         "text": "Hotline · CERT.at · Polizei · Datenschutzbehörde",
+         "at": "@Hotline"
+        },
+        {
+         "text": "Versicherer · Bank · E-Mail- und Cloud-Anbieter",
+         "at": "@Versicherer"
+        },
+        {
+         "text": "Kontakt ohne Nummer",
+         "at": "@ohne",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Oben: wen anrufen. Die verantwortliche Person, die Vertretung, der IT-Dienstleister, dann die festen Kontakte für Österreich, die Hotline, CERT.at, die Polizei, die Datenschutzbehörde, dann der Versicherer, die Bank, der E-Mail- und Cloud-Anbieter. Die Nummern stehen in großer Schrift. Ein Kontakt ohne Nummer bleibt gelb, damit die Lücke an der Wand zu sehen ist und nicht in einer Datei verschwindet."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Drei Antworten *prägen die Karte*",
+      "items": [
+       {
+        "title": "F1: Meldung an Kunden binnen 24 Stunden",
+        "sub": "telefonisch, durch die Leitung",
+        "at": "@F1"
+       },
+       {
+        "title": "F2: Wer prüft, wer meldet binnen 72 Stunden?",
+        "sub": "teilweise: ein Name in der ersten Welle",
+        "at": "@F2"
+       },
+       {
+        "title": "F4: Werden Vorfälle aufgeschrieben?",
+        "sub": "noch nicht, zweite Welle",
+        "at": "@F4"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Drei Antworten aus dem Generator prägen diese Karte. Frage F1 fragt, innerhalb welcher Zeit der Betrieb einem Kunden einen Vorfall melden kann. Der Beispielbetrieb hat 24 Stunden gewählt, telefonisch, durch die Leitung, weil ein schriftlicher Bericht mit Ursache in dieser Zeit nichts ist, was ein kleiner Betrieb zusagen kann. Frage F2 fragt, wer prüft, ob personenbezogene Daten betroffen sind, und wer binnen 72 Stunden meldet. Der Beispielbetrieb kennt die Pflicht, hat aber niemanden benannt. Seine Antwort ist „teilweise“, und der Maßnahmenplan setzt einen Namen in die erste Welle. Frage F4 fragt, ob Vorfälle aufgeschrieben werden. Die Antwort ist „noch nicht“, zweite Welle.",
+       "source": "Q10"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/shot01_notice_board.start.png",
+     "data": {
+      "headline": "Fristen und *wo liegt was*",
+      "note": "Nichts auf der Karte liegt im Rechner.",
+      "note_at": "@Nichts",
+      "doc": {
+       "label": "Muster D3 · unten",
+       "title": "Die drei Uhren, mit Namen",
+       "lines": [
+        {
+         "text": "Sicherung, Wiederherstellungscodes, Kontenliste: außerhalb",
+         "at": "@Sicherung"
+        },
+        {
+         "text": "Wie lange der Betrieb ohne Systeme überbrückt",
+         "at": "@überbrücken"
+        },
+        {
+         "text": "Nummern zuletzt geprüft: Datum",
+         "at": "@Datum"
+        },
+        {
+         "text": "Neben dem Feuerlöscher, Kopie in der Lade",
+         "at": "@Feuerlöscher",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Der Kasten mit den Fristen wiederholt die drei Uhren mit den Namen dieses Betriebs. Darunter: wo liegt was. Die Sicherung, die Wiederherstellungscodes und die Kontenliste außerhalb der Rechner, der Nachweisordner, und wie lange der Betrieb ohne seine Systeme überbrücken kann. Ganz unten das Datum, an dem die Nummern zuletzt geprüft wurden, und die Zeile: vor dem Druck prüfen. Und der Ort, an dem die Karte hängt: neben dem Feuerlöscher, eine Kopie in der Lade, eine bei der Vertretung zu Hause. Nichts auf der Karte liegt in dem Rechner, der gerade verschlüsselt sein könnte."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "num": "6",
+   "title": "Was die Karte nicht ist",
+   "kicker": "6 · Was es nicht ist",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_archive_shelf.start.png",
+     "data": {
+      "kicker": "Kein Audit, kein Zertifikat",
+      "text": "Die Dokumente zeigen, was Sie an einem *Datum* vorweisen können.",
+      "sub": "Was Sie bis wann tun werden, und wer dafür einsteht."
+     },
+     "say": [
+      {
+       "text": "Was die Karte nicht ist. Sie ist keine Rechtsberatung, kein Audit und kein Zertifikat, und kein Dokument behauptet, dass Ihr Betrieb sicher ist oder ein Gesetz erfüllt. Die Dokumente zeigen, was Sie an einem Datum vorweisen können, was Sie bis wann tun werden und wer dafür einsteht."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Offene Punkte, *eine Abwägung*",
+      "items": [
+       {
+        "title": "„Unverzüglich“ bei kleinen Lieferanten",
+        "sub": "Gerichtsentscheidung nicht gesucht",
+        "at": "@unverzüglich"
+       },
+       {
+        "title": "Urteile zu Versicherungsanträgen",
+        "sub": "nur aus Sekundärquellen",
+        "at": "@Gerichtsentscheidungen"
+       },
+       {
+        "title": "Kontakte anderer Mitgliedstaaten",
+        "sub": "nicht erhoben",
+        "at": "@Kontakte"
+       },
+       {
+        "title": "Ausschalten",
+        "sub": "eine Abwägung, keine Regel",
+        "at": "@Ausschaltens"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Das Handbuch führt seine offenen Punkte auf, und drei davon berühren dieses Thema. Ob ein Gericht über „unverzüglich“ bei kleinen Lieferanten entschieden hat, wurde nicht gesucht. Die deutschen Gerichtsentscheidungen zu Cyberversicherungsanträgen sind nur aus Sekundärquellen bekannt. Die Kontakte anderer Mitgliedstaaten wurden nicht erhoben. Und die Frage des Ausschaltens ist eine Abwägung, keine Regel. Ihr Betrieb entscheidet, mit seinem IT-Dienstleister und, wenn er einen hat, seinem Versicherer."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "num": "7",
+   "title": "Musterkarte, Handbuch, Toolkit",
+   "kicker": "7 · Karte und Toolkit",
+   "end_seconds": 20.0,
+   "scenes": [
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Frei lesbar: *Karte und Handbuch*",
+      "note": "Lesen Sie beides, bevor Sie etwas kaufen.",
+      "note_at": "@Lesen",
+      "doc": {
+       "label": "scutoria.com · Vorher ansehen",
+       "title": "Muster D3 und Handbuch",
+       "lines": [
+        {
+         "text": "Karte des Beispielbetriebs als PDF",
+         "at": "@PDF"
+        },
+        {
+         "text": "Handbuch, Abschnitt 4: Notfall",
+         "at": "@Abschnitt"
+        },
+        {
+         "text": "Ländernotizen",
+         "at": "@Ländernotizen"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die Karte des Beispielbetriebs ist frei auf scutoria.com lesbar, als PDF, und ebenso das ganze Handbuch, mit Abschnitt vier zum Notfall und den Ländernotizen. Lesen Sie beides, bevor Sie etwas kaufen; die Links stehen in der Beschreibung."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Sicherheitsnachweis-Toolkit",
+      "text": "Diese Notfallkarte, *mit Ihren Kontakten*.",
+      "sub": "Sieben datierte Dokumente · 199 Euro im Jahr · die ersten zehn Käufer zahlen 99",
+      "sub_at": "@Notfallkarte"
+     },
+     "say": [
+      {
+       "text": "Das Sicherheitsnachweis-Toolkit macht aus Ihren Antworten die datierten Dokumente Ihres Betriebs: die Selbstauskunft, den Maßnahmenplan, diese Notfallkarte mit Ihren Kontakten, die Nachweisliste, das Antwortschreiben, die Klausel-Prüfliste und die Nachweisseite. Das Toolkit kostet 199 Euro im Jahr. Die ersten zehn Käufer zahlen 99."
+      }
+     ]
+    },
+    {
+     "type": "close",
+     "data": {
+      "rule": "Hier ist Scutoria. Synthetische Stimme, Quellen am Bildschirm.",
+      "memo": {
+       "label": "Musterkarte und Handbuch, frei lesbar",
+       "url": "scutoria.com",
+       "at": "@Skript"
+      },
+      "toolkit": {
+       "label": "Als Nächstes: Sieben Fragen vor der Freigabe",
+       "url": "Video 09",
+       "at": "@nächste"
+      },
+      "claim": "Belegt. Datiert. Vorzeigbar.",
+      "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+     },
+     "say": [
+      {
+       "text": "Hier ist Scutoria. Die Stimme, die Sie hören, ist synthetisch. Das Skript wurde mit einem KI-Tool entworfen und von uns Satz für Satz geprüft. Jede Zahl und jede Rechtsaussage trägt ihre Quelle am Bildschirm. Quellenbasiert, keine Rechtsberatung."
+      },
+      {
+       "text": "Das nächste Video: sieben Fragen, bevor Sie ein KI-Tool freigeben."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "reels": [
+  {
+   "id": "r1",
+   "chapter": "c1",
+   "title": "Warum die erste Stunde schwer ist",
+   "kicker": "Aus Video 08 · Die erste Stunde",
+   "scenes": [
+    "c1s0",
+    "c1s1",
+    "c1s2"
+   ]
+  },
+  {
+   "id": "r2",
+   "chapter": "c2",
+   "title": "Vier Handgriffe",
+   "kicker": "Aus Video 08 · Die erste Stunde",
+   "scenes": [
+    "c2s0",
+    "c2s1",
+    "c2s2"
+   ]
+  },
+  {
+   "id": "r3",
+   "chapter": "c2",
+   "title": "Wen anrufen",
+   "kicker": "Aus Video 08 · Die erste Stunde",
+   "scenes": [
+    "c2s3",
+    "c2s4"
+   ]
+  },
+  {
+   "id": "r4",
+   "chapter": "c2",
+   "title": "Der Kunde und der Versicherer",
+   "kicker": "Aus Video 08 · Die erste Stunde",
+   "scenes": [
+    "c2s7",
+    "c2s8"
+   ]
+  },
+  {
+   "id": "r5",
+   "chapter": "c4",
+   "title": "Was tun Sie? Die falsche Bankverbindung",
+   "kicker": "Aus Video 08 · Was tun Sie?",
+   "scenes": [
+    "c4s0",
+    "c4s1",
+    "c4s2",
+    "c4s3"
+   ]
+  },
+  {
+   "id": "r6",
+   "chapter": "c4",
+   "title": "Was tun Sie? Freitag, 18 Uhr",
+   "kicker": "Aus Video 08 · Was tun Sie?",
+   "scenes": [
+    "c4s4",
+    "c4s5",
+    "c4s6",
+    "c4s7"
+   ]
+  }
+ ]
+}

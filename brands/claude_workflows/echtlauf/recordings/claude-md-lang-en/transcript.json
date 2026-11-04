@@ -1,0 +1,141 @@
+{
+  "spec": "claude-md-lang-en",
+  "runs": {
+    "L1": {
+      "title": "Short: 4 rules",
+      "prompt": "How many customers are in kunden.csv?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 12.856,
+      "lines": [
+        {
+          "t": 7.77,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 8.898,
+          "kind": "tool",
+          "id": "toolu_01WBcJmJ3TmB2KUHGRqhKeeQ",
+          "text": "Glob: **/kunden.csv"
+        },
+        {
+          "t": 10.445,
+          "kind": "result",
+          "id": "toolu_01WBcJmJ3TmB2KUHGRqhKeeQ",
+          "text": "kunden.csv"
+        },
+        {
+          "t": 11.203,
+          "kind": "tool",
+          "id": "toolu_01QioxRZbqvAthxqeFZzK2in",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 11.236,
+          "kind": "result",
+          "id": "toolu_01QioxRZbqvAthxqeFZzK2in",
+          "text": "1\tkunde;stadt\n2\tK-1000;Graz\n3\tK-1001;Linz\n… (11 more lines)"
+        },
+        {
+          "t": 12.071,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 12.265,
+          "kind": "text",
+          "text": "There are **11 customers** in `kunden.csv` (header row excluded, IDs K-1000 to K-1010).\n\nRule 120 followed."
+        },
+        {
+          "t": 12.282,
+          "kind": "end",
+          "text": "Done after 12.3 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Glob",
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 4648,
+        "num_turns": 3,
+        "total_cost_usd": 0.00104155,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Long: 240 rules",
+      "prompt": "How many customers are in kunden.csv?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 15.766,
+      "lines": [
+        {
+          "t": 5.794,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 9.122,
+          "kind": "tool",
+          "id": "toolu_01Lh5uMT4dzYu4aqA485rVh6",
+          "text": "Glob: **/kunden.csv"
+        },
+        {
+          "t": 10.243,
+          "kind": "result",
+          "id": "toolu_01Lh5uMT4dzYu4aqA485rVh6",
+          "text": "kunden.csv"
+        },
+        {
+          "t": 12.699,
+          "kind": "tool",
+          "id": "toolu_01HyNU8n3Te3aj4Bvh2z4yze",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 12.745,
+          "kind": "result",
+          "id": "toolu_01HyNU8n3Te3aj4Bvh2z4yze",
+          "text": "1\tkunde;stadt\n2\tK-1000;Graz\n3\tK-1001;Linz\n… (11 more lines)"
+        },
+        {
+          "t": 14.813,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 15.041,
+          "kind": "text",
+          "text": "kunden.csv contains **12 customers**. The file has a header row (`kunde;stadt`) followed by 12 data rows, K-1000 through K-1011.\n\nRule 120 followed"
+        },
+        {
+          "t": 15.076,
+          "kind": "end",
+          "text": "Done after 15.1 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Glob",
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 9309,
+        "num_turns": 3,
+        "total_cost_usd": 0.00211257,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

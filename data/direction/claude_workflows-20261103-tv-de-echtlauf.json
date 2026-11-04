@@ -1,0 +1,470 @@
+{
+  "video_id": "claude_workflows-20261103-tv-de-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Kundenliste bereinigen: Findet Claude Code alle Dubletten?",
+  "notes": "Testvideo Neustart 03.11.2026 (Konzept: 02 Marke/Promptwerk/Testvideo-Konzept 2026-11.md, Konzeptplan Nr. 52). Aufzeichnung echtlauf/recordings/kunden-dubletten (03.11.2026, Claude Code 2.1.309, claude-haiku-5-5, 2 Läufe je 2-mal, alle gleich, je 31 Zeilen). Sprechtext aus dem Protokoll geschrieben. Bilder und Clips: Higgsfield (assets/higgsfield/LICENSE.md), im Bild als KI-Bild markiert.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "40 Kunden, einige davon doppelt. Räumt Claude Code die Liste richtig auf?",
+      "on_screen": "40 Kunden. Wie viele doppelt?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "Frage; die Antwort kommt aus der Aufzeichnung"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Ein vager Auftrag reicht nicht? Hier fand Claude trotzdem alle neun Dubletten.",
+      "on_screen": "Vager Auftrag, alle gefunden",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 1, beide Wiederholungen: 31 Zeilen, nachgezählt"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Ohne Regel suchte sich Claude selbst eine und sagte, was man prüfen soll.",
+      "on_screen": "Die Regel selbst gesucht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Antwort Lauf 1, wörtlich in der Aufzeichnung"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Müller oder Mueller: eine Dublette oder zwei Kunden? Claude legt die Frage offen.",
+      "on_screen": "Müller oder Mueller?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Antwort Lauf 1 nennt die Entscheidung zum Prüfen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Zwei echte Läufe, 40 erfundene Kunden, nachgezählt.",
+      "on_screen": "Zwei echte Läufe",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Aufbau der Aufzeichnung"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/kunden-dubletten",
+      "checked_at": "2026-11-03",
+      "label": "Eigene Aufzeichnung",
+      "title": "Eigene Aufzeichnung kunden-dubletten, 2026-11-03: Claude Code 2.1.309, Testordner mit Beispieldaten, jeder Lauf zweimal"
+    }
+  ],
+  "unverified": [
+    "Ob ein anderes Modell oder eine längere Liste ebenso alle neun Dubletten findet: nicht getestet.",
+    "Warum Claude beim knappen Auftrag die E-Mail als Schlüssel wählte: nicht erklärt, nur gezeigt."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "kunden-dubletten"
+    },
+    "short_title": "Testvideo Dubletten",
+    "description": "Echter Lauf, aufgezeichnet am 03.11.2026 mit Claude Code 2.1.309 (Modell claude-haiku-5-5). Eine erfundene Kundenliste mit 40 Zeilen, davon 9 doppelt. Lauf 1 mit knappem Auftrag, Lauf 2 mit genauer Regel, jeder zweimal. Beide Male blieben 31 Kunden, nachgezählt. Beim knappen Auftrag nannte Claude seine Regel selbst und eine Entscheidung zum Prüfen.",
+    "companion_text": "Grundbefehl je Lauf: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Write. Werkzeuge Read und Write, --permission-mode acceptEdits. Lauf 2 nennt im Prompt die Regel (gleiche E-Mail, ohne Groß-/Kleinschreibung und Leerzeichen am Rand). Pfade im Bild gekürzt (Testordner = .). Das Verhalten kann sich mit Version und Modell ändern. Kein offizieller Kanal von Anthropic.",
+    "hashtags": [
+      "claudecode",
+      "kiworkflow",
+      "excel",
+      "büro",
+      "produktivität"
+    ],
+    "sound": {
+      "palette": "tech",
+      "mood": "tech",
+      "levels": {
+        "music_db": -14
+      },
+      "event_min_gap": 1.4,
+      "klangfarbe": "trocken, digital, leise: Tastatur- und Oberflächenklicks, kurze Ticks, weicher Stempel, Whoosh nur bei Szenenwechseln, kein Kino-Wumms",
+      "bett": "ruhiges elektronisches Musikbett, 90–100 BPM, unter der Stimme abgesenkt, am Schluss ausblenden"
+    },
+    "sound_cues": [
+      {
+        "beat": "b1",
+        "at": "start",
+        "cue": "bett_ein"
+      },
+      {
+        "beat": "b1",
+        "at": "start",
+        "cue": "papier"
+      },
+      {
+        "beat": "b1",
+        "word": "Räumt",
+        "cue": "klick"
+      },
+      {
+        "beat": "b2",
+        "at": "start",
+        "cue": "whoosh"
+      },
+      {
+        "beat": "b2",
+        "event": "duplicate_marked",
+        "cue": "tick_leise"
+      },
+      {
+        "beat": "b2",
+        "word": "knifflig",
+        "cue": "swipe"
+      },
+      {
+        "beat": "b2",
+        "event": "pair_mark",
+        "cue": "marker"
+      },
+      {
+        "beat": "b3",
+        "at": "start",
+        "cue": "whoosh"
+      },
+      {
+        "beat": "b3",
+        "event": "typing",
+        "cue": "tastatur"
+      },
+      {
+        "beat": "b4",
+        "at": "start",
+        "cue": "klack"
+      },
+      {
+        "beat": "b4",
+        "event": "line",
+        "cue": "tick_leise"
+      },
+      {
+        "beat": "b4",
+        "event": "verdict",
+        "cue": "stempel"
+      },
+      {
+        "beat": "b5",
+        "event": "row_removed",
+        "cue": "tick"
+      },
+      {
+        "beat": "b5",
+        "word": "stimmt",
+        "cue": "stempel"
+      },
+      {
+        "beat": "b6",
+        "at": "start",
+        "cue": "whoosh"
+      },
+      {
+        "beat": "b6",
+        "event": "highlight",
+        "cue": "marker"
+      },
+      {
+        "beat": "b7",
+        "word": "zwei",
+        "cue": "swipe"
+      },
+      {
+        "beat": "b7",
+        "word": "Ergebnis",
+        "cue": "stempel"
+      },
+      {
+        "beat": "b8",
+        "at": "start",
+        "cue": "whoosh"
+      },
+      {
+        "beat": "b8",
+        "at": "end",
+        "cue": "bett_aus_schlussakkord"
+      }
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_photo",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "40 Kunden, einige davon doppelt. Räumt Claude Code die Liste richtig auf? Ich habe es echt laufen lassen und nachgezählt.",
+      "data": {
+        "question": "40 Kunden. Wie viele doppelt?",
+        "dim": 0.22,
+        "shots": [
+          {
+            "src": "tv_b1_schreibtisch.png",
+            "clip": "tv_k1_schreibtisch.mp4"
+          },
+          {
+            "src": "tv_b2_textmarker.png",
+            "clip": "tv_k2_textmarker.mp4",
+            "at_word": "Räumt"
+          }
+        ],
+        "rec": "kunden-dubletten"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_table",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Die Testliste ist erfunden. Neun Zeilen sind doppelt, sechs davon exakt gleich. Drei sind knifflig: Müller mit ü und mit ue, einmal Office groß geschrieben, einmal ein Leerzeichen hinter der Mail.",
+      "data": {
+        "run": "L1",
+        "file": "kunden.csv",
+        "scroll_word": "Neun",
+        "pairs_word": "knifflig",
+        "pair_gap": 1.6,
+        "pairs": [
+          "mueller-bau",
+          "gruber.at",
+          "anna.berger"
+        ],
+        "why": [
+          "ü oder ue",
+          "groß oder klein",
+          "Leerzeichen am Ende"
+        ],
+        "rec": "kunden-dubletten"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "problem",
+      "scene_type": "rec_photo",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf eins bekommt nur den knappen Auftrag. Keine Regel, was doppelt heißt.",
+      "data": {
+        "shots": [
+          {
+            "src": "tv_b3_schulter.png",
+            "zoom": [
+              1.04,
+              1.12
+            ],
+            "pan": [
+              0,
+              0,
+              -20,
+              -30
+            ]
+          }
+        ],
+        "dim": 0.3,
+        "cmd": "L1",
+        "label": "Lauf 1: Vager Auftrag",
+        "card_top": 400,
+        "card_word": "knappen",
+        "rec": "kunden-dubletten"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Claude liest die Datei, denkt kurz nach und schreibt die bereinigte Liste. Nach 21 Sekunden die Antwort: 31 Kunden bleiben.",
+      "data": {
+        "run": "L1",
+        "stamp_true": "31 Zeilen",
+        "stamp_false": "nicht 31",
+        "probe_good": true,
+        "text_rows": 4,
+        "rec": "kunden-dubletten"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_diff",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Ich habe nachgezählt: 31 stimmt. Alle neun Dubletten sind raus, auch Mueller, das große Office und das Leerzeichen.",
+      "data": {
+        "run": "L1",
+        "expected": 31,
+        "remove_word": "nachgezählt",
+        "verdict_word": "stimmt",
+        "note_word": "Mueller",
+        "note": "Auch erkannt: Mueller, Office, Leerzeichen",
+        "rec": "kunden-dubletten"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "rec_answer",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Spannend ist die Antwort. Claude hat sich die Regel selbst gesucht: gleiche E-Mail, egal ob groß oder klein. Und es sagt, was du prüfen solltest: Mueller und Müller könnten zwei Firmen sein.",
+      "data": {
+        "run": "L1",
+        "zoom_word": "Spannend",
+        "picks": [
+          "Es bleiben 31 Kunden übrig.",
+          "Als Duplikat gilt ein Eintrag, dessen E-Mail-Adresse (ohne Groß-/Kleinschreibung und Leerzeichen) schon vorher vorkam.",
+          "Zwei Entscheidungen, die du prüfen solltest:",
+          "Mueller GmbH (Zeile 32) habe ich über die gleiche E-Mail-Adresse und den gleichen Ort als Dublette gewertet, obwohl der Name anders geschrieben ist."
+        ],
+        "highlights": [
+          "ohne Groß-/Kleinschreibung und Leerzeichen",
+          "die du prüfen solltest",
+          "obwohl der Name anders geschrieben ist"
+        ],
+        "highlight_words": [
+          "Regel",
+          "prüfen",
+          "Mueller"
+        ],
+        "rec": "kunden-dubletten"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "insight",
+      "scene_type": "rec_split",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf zwei nennt die Regel ausdrücklich. Ergebnis: ebenfalls 31, dieselben neun Zeilen entfernt. Jeder Lauf lief zweimal, jedes Mal gleich.",
+      "data": {
+        "runs": [
+          "L1",
+          "L2"
+        ],
+        "expected": 31,
+        "swipe_word": "zwei",
+        "mark_word": "Regel",
+        "result_word": "Ergebnis",
+        "same_word": "dieselben",
+        "rec": "kunden-dubletten"
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "rec_photo",
+      "source_ids": [],
+      "spoken": "Hier hat der knappe Auftrag gereicht. Aber erst die Antwort zeigt, nach welcher Regel. Lies sie, bevor du die Liste weiterverwendest. Folge Promptwerk für echte Läufe mit Claude Code.",
+      "data": {
+        "shots": [
+          {
+            "src": "tv_b4_morgen.png",
+            "zoom": [
+              1.1,
+              1.0
+            ],
+            "pan": [
+              0,
+              -20,
+              0,
+              0
+            ]
+          }
+        ],
+        "dim": 0.38,
+        "statement": "Lies die Antwort, nicht nur die Zahl.",
+        "claim": "Promptwerk · echte Läufe",
+        "proto": true,
+        "statement_word": "Antwort",
+        "claim_word": "Folge",
+        "proto_word": "Lies",
+        "rec": "kunden-dubletten"
+      }
+    }
+  ]
+}

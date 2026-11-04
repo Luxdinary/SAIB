@@ -1,0 +1,699 @@
+{
+  "video_id": "megaconstruction-20261114-1-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Kölner Dom gegen Ulmer Münster: 4,31 m Unterschied im Turm",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Nachgerechnet. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261114-1-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.koelner-dom.de/erleben/der-dom-in-zahlen",
+      "title": "Hohe Domkirche Köln: Der Dom in Zahlen (Südturm 157,22 m, Nordturm 157,18 m)",
+      "label": "Kölner Dom, Dom in Zahlen",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.ulmer-muenster.de/en",
+      "title": "Ulmer Münster: Westturm 161,53 m, vollendet 1890 unter Baumeister August Beyer, 1890 höchster Kirchturm der Welt",
+      "label": "Ulmer Münster",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.domradio.de/artikel/was-groesse-mit-hoehe-zu-tun-hat-und-welcher-turm-dem-himmel-naeher-ist",
+      "title": "domradio.de: ältere Messwerte der Domtürme (157,38 / 157,31 m)",
+      "label": "domradio.de",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Ob Ulm heute noch der höchste Kirchturm der Welt ist: nicht selbst geprüft, nicht behauptet.",
+    "Turmformen im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H3"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Der Kölner Dom ist weltberühmt.",
+      "on_screen": "Ulm schlägt Köln um gut 4 Meter",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist der Kölner Dom wirklich?",
+      "on_screen": "Wie groß ist der Kölner Dom wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "der Kölner Dom in Zahlen: belegt und nachgerechnet.",
+      "on_screen": "der Kölner Dom in Zahlen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei der Kölner Dom schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "der Kölner Dom: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie der Kölner Dom im Modell entsteht.",
+      "on_screen": "der Kölner Dom im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Der Kölner Dom ist weltberühmt. Aber ist sein höchster Turm wirklich niedriger als der Turm des Ulmer Münsters? Wir rechnen nach.",
+      "data": {
+        "kicker": "Nachgerechnet · Köln gegen Ulm",
+        "question": "Ist Ulm höher als der Kölner Dom?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Zwei Türme gegen einen",
+          "at": "@Ulmer",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_build",
+      "spoken": "Die Daten aus Köln: Laut Domkapitel misst der Südturm 157,22 Meter, der Nordturm 157,18. Die beiden Türme sind also fast gleich hoch.",
+      "data": {
+        "headline": "Die Daten: Köln",
+        "table_title": "Datenblatt",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Kölner Dom, Südturm",
+            "qty": "157,22 m",
+            "at": "@157,22"
+          },
+          {
+            "pos": "2",
+            "part": "Kölner Dom, Nordturm",
+            "qty": "157,18 m",
+            "at": "@157,18"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "Und Ulm: Das Münster hat einen großen Westturm. Er ist 161,53 Meter hoch und wurde 1890 vollendet, unter Baumeister August Beyer. Er überragt damit beide Kölner Türme.",
+      "data": {
+        "headline": "Die Daten: Ulm",
+        "note": "Turmformen schematisch",
+        "pins": [
+          {
+            "anchor": "ulm",
+            "text": "161,53 m",
+            "kind": "dim",
+            "at": "@161,53"
+          }
+        ],
+        "rule": {
+          "text": "Ein Westturm, vollendet 1890",
+          "at": "@1890",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_calc",
+      "spoken": "Die Rechnung: 161,53 minus 157,22 ergibt 4,31 Meter. Das sind rund 2,7 Prozent mehr. Ältere Messungen in Köln kamen auf etwas höhere Werte, deshalb sagen wir: gut vier Meter.",
+      "data": {
+        "headline": "Die Rechnung",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "Ulm, Westturm − Köln, Südturm",
+            "a": {
+              "value": 161.53,
+              "unit": "m"
+            },
+            "op": "−",
+            "b": {
+              "value": 157.22,
+              "unit": "m"
+            },
+            "unit": "m",
+            "round": 0.01,
+            "decimals": 2,
+            "expect": 4.31,
+            "at": "@161,53",
+            "result_at": "@4,31"
+          },
+          {
+            "label": "Ulm ÷ Köln, in Prozent mehr",
+            "a": {
+              "value": 161.53,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 157.22,
+              "unit": "m"
+            },
+            "unit": "",
+            "round": 0.001,
+            "decimals": 3,
+            "prefix": "≈ ",
+            "expect": 1.027,
+            "at": "@2,7",
+            "result_at": "@Prozent"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_proof",
+      "spoken": "Bei seiner Vollendung 1890 war der Ulmer Turm laut Münstergemeinde der höchste Kirchturm der Welt. Dafür hat Köln zwei Türme, die fast genauso hoch sind.",
+      "data": {
+        "headline": "Das Ergebnis",
+        "stamp": {
+          "date": "1890",
+          "event": "höchster Kirchturm der Welt",
+          "at": "@1890",
+          "dy": 150
+        },
+        "pins": [
+          {
+            "anchor": "ksued",
+            "text": "2 × gut 157 m",
+            "at": "@zwei",
+            "side": "down"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Köln ist berühmter, Ulm ist höher, um gut vier Meter. Folge Gigastruct für die nächste Rechnung.",
+      "data": {
+        "statement": "Ergebnis: Ulm, um gut 4 m",
+        "sheet": "BLATT 15",
+        "rows": [
+          [
+            "Ulm",
+            "161,53 m (Westturm)"
+          ],
+          [
+            "Köln",
+            "157,22 m (Südturm)"
+          ],
+          [
+            "Differenz",
+            "4,31 m, rund 2,7 %"
+          ],
+          [
+            "Vorsicht",
+            "ältere Kölner Werte höher"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "BEHAUPTUNG",
+        "DATEN",
+        "RECHNUNG",
+        "VERGLEICH",
+        "ERGEBNIS"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 1,
+        "b4": 2,
+        "b5": 4,
+        "b6": 5
+      }
+    },
+    "description": "Der Kölner Dom ist berühmter, das Ulmer Münster höher: 161,53 m gegen 157,22 m, gut vier Meter Unterschied. Nachgerechnet mit den Zahlen beider Kirchen.",
+    "companion_text": "Gerechnet: 161,53 − 157,22 = 4,31 m; 161,53 ÷ 157,22 = 1,027. Quellen: Hohe Domkirche Köln, Ulmer Münster, domradio.de. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "kölnerdom",
+      "ulmermünster",
+      "kirchturm",
+      "gotik",
+      "nachgerechnet"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "161,53 m − 157,22 m = 4,31 m; mit 157,38 m: 4,15 m",
+        "result": "gut vier Meter",
+        "sources": [
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "161,53 ÷ 157,22 = 1,027",
+        "result": "rund 2,7 % höher",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "ksued",
+          "kind": "prism",
+          "height": 157.22,
+          "width": 30,
+          "levels": 30,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              0.55,
+              0.92
+            ],
+            [
+              0.6,
+              0.62
+            ],
+            [
+              0.97,
+              0.06
+            ],
+            [
+              1,
+              0.03
+            ]
+          ],
+          "pos": [
+            -120,
+            0,
+            18
+          ]
+        },
+        {
+          "id": "knord",
+          "kind": "prism",
+          "height": 157.18,
+          "width": 30,
+          "levels": 30,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              0.55,
+              0.92
+            ],
+            [
+              0.6,
+              0.62
+            ],
+            [
+              0.97,
+              0.06
+            ],
+            [
+              1,
+              0.03
+            ]
+          ],
+          "pos": [
+            -120,
+            0,
+            -24
+          ]
+        },
+        {
+          "id": "knave",
+          "kind": "box",
+          "size": [
+            140,
+            44,
+            46
+          ],
+          "color": "compare",
+          "pos": [
+            -205,
+            0,
+            -3
+          ]
+        },
+        {
+          "id": "ulm",
+          "kind": "prism",
+          "height": 161.53,
+          "width": 28,
+          "levels": 30,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              0.55,
+              0.92
+            ],
+            [
+              0.6,
+              0.62
+            ],
+            [
+              0.97,
+              0.06
+            ],
+            [
+              1,
+              0.03
+            ]
+          ],
+          "color": "accent",
+          "pos": [
+            80,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "unave",
+          "kind": "box",
+          "size": [
+            120,
+            40,
+            46
+          ],
+          "color": "compare",
+          "pos": [
+            160,
+            0,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "ulm": [
+          80,
+          161.5,
+          0
+        ],
+        "ksued": [
+          -120,
+          157.2,
+          18
+        ],
+        "knord": [
+          -120,
+          157.2,
+          -24
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "ksued",
+              "ulm"
+            ],
+            "az0": 80,
+            "az1": 70,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "ksued",
+              "knord"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.6,
+            "fit1": 0.7,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {
+            "ksued.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.5",
+                30
+              ]
+            ],
+            "knord.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.7",
+                30
+              ]
+            ]
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "ulm"
+            ],
+            "az0": 60,
+            "az1": 50,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "ulm.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.5",
+                30
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "ksued",
+              "ulm"
+            ],
+            "az0": 88,
+            "az1": 92,
+            "el0": 2,
+            "el1": 4,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "ksued",
+              "ulm"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 14,
+            "el1": 10,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 260,
+            "cy": 680
+          },
+          "props": {}
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "ksued",
+              "ulm"
+            ],
+            "az0": 50,
+            "az1": 40,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,397 @@
+{
+ "video_id": "beauty-20261111-1-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Sieben Angaben, die auf jeder Packung stehen müssen",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261111-1-de.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (jar), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Art. 19 Abs. 1 nennt die Pflichtangaben von der verantwortlichen Person bis zur Bestandteilliste; die USA regeln das eigenständig in 21 CFR 701. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Was muss auf die Packung? In den USA gelten eigene Regeln. Auch dort verlangt das Bundesrecht eine Zutatenliste, nach Menge absteigend, und Duftstoffe dürfen als fragrance zusammengefasst werden.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-G/part-701",
+   "title": "21 CFR Part 701 Cosmetic Labeling (eCFR)",
+   "checked_at": "2026-11-01",
+   "label": "21 CFR 701"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Auf jeder Kosmetikpackung in der EU müssen sieben Angaben stehen.",
+   "on_screen": "Was muss auf die Packung?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Weißt du, welche Angaben auf jeder Kosmetikpackung in der EU Pflicht sind?",
+   "on_screen": "Weißt du, welche Angaben auf jeder Kosmetikpackung in der EU",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Auf der Packung steht, was der Hersteller will. Nein, sieben Angaben sind Pflicht.",
+   "on_screen": "Auf der Packung steht, was der Hersteller will. Nein, sieben",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer die Pflichtangaben nicht kennt, übersieht Warnhinweise und Haltbarkeit.",
+   "on_screen": "Wer die Pflichtangaben nicht kennt, übersieht Warnhinweise u",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wie du die sieben Pflichtangaben auf einer Packung findest.",
+   "on_screen": "Schau, wie du die sieben Pflichtangaben auf einer Packung fi",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Auf jeder Kosmetikpackung in der EU müssen sieben Angaben stehen.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Was muss auf die Packung?",
+    "badge": "Pflicht?",
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "So steht es in Artikel 19 der Verordnung über kosmetische Mittel. Unverwischbar, leicht lesbar und deutlich sichtbar. Die ersten drei: Name und Anschrift der verantwortlichen Person, der Nenninhalt in Gramm oder Milliliter und die Haltbarkeit.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Die ersten drei",
+    "zoom": "7 Angaben",
+    "flip": false,
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 19 Absatz 1",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "Name und Anschrift",
+      "value": "a"
+     },
+     {
+      "text": "Nenninhalt in Gramm oder Milliliter",
+      "value": "b"
+     },
+     {
+      "text": "Haltbarkeit",
+      "value": "c"
+     }
+    ],
+    "kicker": "Worum es geht",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "Dann kommen besondere Vorsichtshinweise für den Gebrauch, die Chargennummer, mit der sich ein Produkt identifizieren lässt, und der Verwendungszweck, wenn er sich nicht schon aus der Aufmachung ergibt.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "Drei weitere",
+    "items": [
+     {
+      "title": "Vorsichtshinweise",
+      "sub": "Buchstabe d",
+      "icon": "shield"
+     },
+     {
+      "title": "Chargennummer",
+      "sub": "Buchstabe e",
+      "icon": "doc"
+     },
+     {
+      "title": "Verwendungszweck",
+      "sub": "Buchstabe f, wenn nicht erkennbar",
+      "icon": "doc"
+     }
+    ],
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "Die siebte Angabe ist die Liste der Bestandteile mit der Überschrift Ingredients. Sie darf auf der Verpackung stehen statt auf dem Behälter selbst. Bei Kleinpackungen unter fünf Gramm oder fünf Milliliter entfällt die Inhaltsangabe.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Nummer sieben",
+    "zoom": "7 Angaben",
+    "flip": true,
+    "doc": {},
+    "rows": [
+     {
+      "text": "Liste mit der Überschrift Ingredients",
+      "value": "g"
+     },
+     {
+      "text": "darf auf der äußeren Verpackung stehen"
+     },
+     {
+      "text": "unter 5 g oder 5 ml: keine Inhaltsangabe nötig",
+      "mark": "open"
+     }
+    ],
+    "kicker": "Im Vergleich",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "In den USA gelten eigene Regeln. Auch dort verlangt das Bundesrecht eine Zutatenliste, nach Menge absteigend, und Duftstoffe dürfen als fragrance zusammengefasst werden.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "EU und USA",
+    "left": {
+     "tag": "EU",
+     "title": "Artikel 19",
+     "rows": [
+      {
+       "text": "sieben Pflichtangaben"
+      },
+      {
+       "text": "Liste: Ingredients"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "right": {
+     "tag": "USA",
+     "title": "21 CFR 701",
+     "rows": [
+      {
+       "text": "Zutatenliste, absteigend"
+      },
+      {
+       "text": "Duftstoffe als fragrance"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "kicker": "Laut Quelle"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "Für dich heißt das: Dreh die Packung um und geh die sieben Angaben durch. Fehlt etwas Wichtiges, etwa die Charge oder die Anschrift, darfst du skeptisch sein.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "So prüfst du es",
+    "items": [
+     {
+      "title": "Packung umdrehen",
+      "sub": "Rückseite und Boden",
+      "icon": "doc"
+     },
+     {
+      "title": "sieben Angaben suchen",
+      "sub": "von Anschrift bis Ingredients",
+      "icon": "doc"
+     },
+     {
+      "title": "etwas fehlt?",
+      "sub": "skeptisch bleiben",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Im Alltag",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Erst die Packung lesen, dann auftragen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Merksatz",
+    "rule": "Erst lesen, dann auftragen.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    },
+    "question": {
+     "text": "Findest du alle sieben auf der Creme?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung."
+   }
+  }
+ ]
+}

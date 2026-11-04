@@ -1,0 +1,87 @@
+{
+  "spec": "kunden-dubletten",
+  "recorded_at": "2026-11-03T06:26:58+02:00",
+  "claude_code": "2.1.309",
+  "model_alias": "haiku",
+  "language": "de",
+  "isolation": [
+    "--setting-sources",
+    "project,local",
+    "--strict-mcp-config",
+    "--disable-slash-commands",
+    "--no-session-persistence"
+  ],
+  "sandbox": "C:\\Automation\\promptwerk-sandbox\\kunden-dubletten",
+  "runs": {
+    "L1": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Entferne doppelte Kunden aus kunden.csv und speichere das Ergebnis als bereinigt.csv. Wie viele Kunden bleiben übrig?",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Write",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 13624,
+      "num_turns": 3,
+      "total_cost_usd": 0.0029183699999999996,
+      "is_error": false,
+      "permission_denials": 0
+    },
+    "L2": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Entferne doppelte Kunden aus kunden.csv und speichere das Ergebnis als bereinigt.csv. Zwei Zeilen sind derselbe Kunde, wenn die E-Mail gleich ist, ohne Unterschied zwischen Groß- und Kleinschreibung und ohne Leerzeichen am Rand. Wie viele Kunden bleiben übrig?",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Write",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 10137,
+      "num_turns": 3,
+      "total_cost_usd": 0.00224108,
+      "is_error": false,
+      "permission_denials": 0
+    }
+  }
+}

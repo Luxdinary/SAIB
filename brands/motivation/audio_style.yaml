@@ -1,0 +1,21 @@
+tts:
+  provider: gemini
+  model: gemini-2.5-flash-preview-tts
+  voices:
+    de: Sulafat              # Gemini voice 'warm' (Vorlage Gritwerk 0.9)
+    en: Sulafat
+  speaking_rate: 1.0
+  style_instruction:
+    de: Sprich warm, ruhig und direkt auf Deutsch, wie im Gespraech am Kuechentisch; kein Pathos, kein Motivationsredner-Ton.
+    en: Speak warmly, calmly and directly in English, like to a friend at the kitchen table; no pathos, no hype.
+music:
+  mood: cinematic piano and low strings, 75 bpm, builds to the last line
+  file: null
+  license_proof: null
+  gain_db: -18
+  duck_db: -10
+loudness:
+  target_lufs: -16
+  true_peak_dbtp: -1.5
+sfx:
+  enabled: false

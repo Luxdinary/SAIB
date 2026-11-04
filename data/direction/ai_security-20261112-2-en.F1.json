@@ -1,0 +1,410 @@
+{
+ "video_id": "ai_security-20261112-2-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Quishing: the fake QR code",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Was tust du?\". Topic D04, EN localisation. Example case staged; mechanism and advice from S1 (German consumer centre) and S2 (FBI IC3).",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "There's a QR code on the parking meter: pay by phone. What do you do? A staged case and the one step the FBI recommends when paying.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "quishing",
+   "qrcode",
+   "scam",
+   "smallbusiness",
+   "whatwouldyoudo"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.verbraucherzentrale.de/wissen/digitale-welt/phishingradar/quishing-falsche-qrcodes-in-mails-briefen-oepnv-und-strassenverkehr-98612",
+   "title": "Verbraucherzentrale: Quishing – falsche QR-Codes",
+   "checked_at": "2026-11-01",
+   "label": "German consumer centre, quishing"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ic3.gov/PSA/2022/PSA220118",
+   "title": "FBI IC3 PSA I-011822-PSA: Cybercriminals tampering with QR codes",
+   "checked_at": "2026-11-01",
+   "label": "FBI IC3, QR code alert"
+  }
+ ],
+ "unverified": [
+  "Case numbers for quishing: not used.",
+  "Scanner app recommendations: deliberately not given (sources disagree).",
+  "The sequence of the example case (fake payment page, later charges) is invented and marked as an example; the aim of the scam (stealing data or money) comes from S1.",
+  "That reading the address alone is not enough is Scutoria's reading of S2, marked on screen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "A QR code on the parking meter. Do you scan it?",
+   "on_screen": "Do you scan it?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "A QR code on an official meter is genuine? Not necessarily.",
+   "on_screen": "On the meter = genuine?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Criminals stick fake QR codes over the real ones on parking meters and chargers.",
+   "on_screen": "Stickers over real codes",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One sticker on a parking meter, and your payment goes to scammers.",
+   "on_screen": "One sticker, wrong account",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Wednesday, 7:50 a.m. There's a QR code on the parking meter.",
+   "on_screen": "WED 07:50 · Pay by phone",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Wednesday, 7:50 a.m. You park outside the wholesale market. On the parking meter there's a QR code: Pay easily by phone.",
+   "data": {
+    "kicker": "Example case · staged",
+    "time": "WED 07:50",
+    "place": "Shopping run for the restaurant",
+    "mail_at": "@meter",
+    "mail": {
+     "from": "Parking meter (example)",
+     "addr": "Sticker with QR code",
+     "time": "07:50",
+     "subject": "Pay easily by phone",
+     "lines": [
+      "Scan the QR code,",
+      "enter your plate, done.",
+      "[ sticker over the original ]"
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "sticker",
+     "at": "@easily"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "You take a look. The meter: as usual. The code: looks neat. Where it leads: you can't tell by looking. German consumer advisers call this quishing: criminals stick their own QR codes over real ones, on parking meters and charging points.",
+   "data": {
+    "kicker": "What you check",
+    "headline": "Looks genuine?",
+    "rows": [
+     {
+      "label": "Meter",
+      "value": "as usual",
+      "verdict": "looks fine",
+      "at": "@meter"
+     },
+     {
+      "label": "Code",
+      "value": "neat",
+      "verdict": "looks fine",
+      "at": "@code"
+     },
+     {
+      "label": "Target",
+      "value": "can't tell",
+      "verdict": "open",
+      "at": "@leads"
+     }
+    ],
+    "fact": {
+     "kind": "fakt",
+     "text": "Criminals cover real QR codes on meters and chargers.",
+     "source": "German consumer centre · quishing",
+     "at": "@German"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "What do you do? A: Scan and pay, it's quick. B: Scan, but read the address first. C: Don't pay via the code at all, open the parking app or address you know. Remember your choice.",
+   "data": {
+    "question": "What do you do?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Scan and pay",
+      "at": "@Scan"
+     },
+     {
+      "key": "B",
+      "text": "Scan, read the address first",
+      "at": "@but"
+     },
+     {
+      "key": "C",
+      "text": "Use the app or address you know",
+      "at": "@Don't"
+     }
+    ],
+    "think": {
+     "seconds": 2.4,
+     "at": "@Remember"
+    },
+    "hint": "Remember your choice."
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "sc_timeline",
+   "spoken": "Let's play out A. The code opens a page that looks like the real one. You enter your card details, the page confirms. Later, strangers charge your card.",
+   "data": {
+    "kicker": "Choice A, played out",
+    "tag": "Example",
+    "headline": "You scan and pay",
+    "items": [
+     {
+      "time": "WED 07:51",
+      "text": "Code scanned",
+      "at": 0.6
+     },
+     {
+      "time": "WED 07:51",
+      "text": "Page looks genuine",
+      "tone": "amber",
+      "at": "@page"
+     },
+     {
+      "time": "WED 07:52",
+      "text": "Card details entered",
+      "at": "@card"
+     },
+     {
+      "time": "Later",
+      "text": "Strangers charge your card",
+      "tone": "red",
+      "at": "@Later"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "Consumer centre · data or money",
+     "at": 1.0
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "The right answer is C. The FBI advises: when paying, don't use a page from a QR code, type in an address you know instead. Reading the address helps, but fake ones often look very close to the real thing.",
+   "data": {
+    "mode": "rule",
+    "kicker": "The one step",
+    "card": {
+     "letter": "C",
+     "title": "Use the known route",
+     "sub": "type the address, don't scan",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Scan and pay",
+      "note": "no check at all",
+      "at": 3.0
+     },
+     {
+      "text": "B: Just read the address",
+      "note": "helps, not enough",
+      "at": "@helps"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "FBI IC3 · paying via QR codes"
+     },
+     {
+      "kind": "auslegung",
+      "label": "B: Scutoria's reading"
+     }
+    ],
+    "sources_at": "@FBI"
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "sc_step",
+   "spoken": "For the team: check meters for stickers. Letters with QR codes that ask for money, verify them on the phone number you know. And only download apps from the app store.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "For the team",
+    "card": {
+     "letter": "!",
+     "title": "Three habits",
+     "sub": "at meters, with letters, with apps",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "Meters: check for stickers",
+      "at": "@meters"
+     },
+     {
+      "text": "QR letters: use the known number",
+      "at": "@Letters"
+     },
+     {
+      "text": "Apps only from the app store",
+      "at": "@download"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Read first, then scan, then pay. What would you have picked? Tell me in the comments.",
+   "data": {
+    "kicker": "Series · What would you do?",
+    "rule": "Read first, then pay.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "What would you have picked?",
+     "at": "@What"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice."
+   },
+   "source_ids": []
+  }
+ ]
+}

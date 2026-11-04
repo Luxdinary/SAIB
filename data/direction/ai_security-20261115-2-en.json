@@ -1,0 +1,454 @@
+{
+ "video_id": "ai_security-20261115-2-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Myth: the padlock means the site is legit",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema C04, Reihe Mythos-Check. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Login page. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Login page",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Padlock: visible",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Meaning: misunderstood",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Certificate: scammers too",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Phishing: with padlock",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Address: checked?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Bookmarks: set today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Login via email link: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "The padlock shows an encrypted connection, not a genuine site. Nearly all phishing sites have it too. What the Chrome team and Germany's BSI say.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "phishing",
+   "https",
+   "myth",
+   "browser",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_hook_dataroom.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: dataroom, lanes, desk, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://blog.chromium.org/2023/05/an-update-on-lock-icon.html",
+   "title": "Chromium Blog: An Update on the Lock Icon (02.05.2023)",
+   "checked_at": "2026-11-01",
+   "label": "Chromium blog, lock icon"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Spam-Phishing-Co/Passwortdiebstahl-durch-Phishing/Wie-erkenne-ich-Phishing-in-E-Mails-und-auf-Webseiten/wie-erkenne-ich-phishing-in-e-mails-und-auf-webseiten_node.html",
+   "title": "BSI: Wie erkenne ich Phishing in E-Mails und auf Webseiten?",
+   "checked_at": "2026-11-01",
+   "label": "BSI (Germany), spotting phishing"
+  }
+ ],
+ "unverified": [
+  "How other browsers display it: not claimed."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "The padlock in your browser means the site is genuine? That's exactly what's wrong.",
+   "on_screen": "Padlock = genuine site?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "Chromium: Schloss zeigt keine Vertrauenswürdigkeit"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "What exactly does the little padlock in the address bar tell you?",
+   "on_screen": "What does the padlock say?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "In a Chrome study, only 11 percent understood what the padlock means.",
+   "on_screen": "Only 11% get the padlock",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Nearly every phishing site shows a padlock too.",
+   "on_screen": "Phishing with a padlock",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Look: two login pages, both with a padlock.",
+   "on_screen": "Two sites, two padlocks",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "The padlock in your browser means the site is genuine? That's exactly what's wrong.",
+   "data": {
+    "question": "Padlock = genuine site?",
+    "doc_label": "Login link",
+    "chat_title": "Login page",
+    "bot_line": "Please sign in",
+    "typed": "Enter password",
+    "badge": "Genuine?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "The Chrome team says it openly: the padlock does not indicate whether a website is trustworthy. In a 2021 study, only 11 percent of participants understood exactly what it means.",
+   "data": {
+    "headline": "What the padlock doesn't say",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Padlock icon",
+      "icon": "&#9635;"
+     },
+     {
+      "id": "n1",
+      "label": "Encrypted",
+      "icon": "&#8635;"
+     },
+     {
+      "id": "n2",
+      "label": "Genuine? No claim",
+      "icon": "&#9888;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "shows"
+     },
+     {
+      "label": "but not"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Only 11% knew"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Germany's BSI explains: https and the padlock mean the operator has a certificate for an encrypted connection. But more and more phishing scammers get exactly that kind of certificate too.",
+   "data": {
+    "headline": "What https really means",
+    "file_label": "Login page",
+    "card": {
+     "title": "According to the BSI",
+     "rows": [
+      {
+       "text": "connection encrypted",
+       "ok": null
+      },
+      {
+       "text": "certificate in place",
+       "ok": null
+      },
+      {
+       "text": "scammers have one too",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "According to the Chrome team, nearly all phishing sites use https and therefore display the padlock too. That's why Chrome replaced the padlock in the address bar with a neutral settings icon.",
+   "data": {
+    "headline": "Real site or phishing",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 5.5,
+    "left": {
+     "title": "Real site",
+     "rows": [
+      {
+       "text": "https",
+       "ok": null
+      },
+      {
+       "text": "padlock",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "Phishing site",
+     "rows": [
+      {
+       "text": "usually https too",
+       "ok": "open"
+      },
+      {
+       "text": "usually a padlock too",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "So what counts instead? Germany's BSI advises checking every link in an email before opening it. Be suspicious of an address that contains the bank's name, but with unusual numbers or characters added.",
+   "data": {
+    "headline": "What really counts",
+    "file_label": "Login page",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Address matches",
+      "sub": "just the real name",
+      "at": 0.6
+     },
+     {
+      "title": "Address with extras",
+      "sub": "e.g. 135x-bank",
+      "at": 1.0
+     }
+    ],
+    "approval": "Link checked first?",
+    "approval_at": 6.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "For your team: the padlock is not a seal of authenticity. Save important sites like your bank and business accounts as bookmarks. And always read the address on login pages you reach from emails.",
+   "data": {
+    "headline": "Three rules instead of the padlock",
+    "items": [
+     {
+      "title": "Padlock means encrypted",
+      "sub": "not genuine",
+      "at": 2.0
+     },
+     {
+      "title": "Use bookmarks",
+      "sub": "bank and business accounts",
+      "at": 4.8
+     },
+     {
+      "title": "Read the address",
+      "sub": "on every login from email",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Encrypted doesn't mean genuine. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Padlock isn't proof",
+    "file_label": "Login page",
+    "button": "Sign in",
+    "block_text": "Check the address first",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

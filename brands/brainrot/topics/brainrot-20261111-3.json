@@ -1,0 +1,728 @@
+{
+ "topic": "brainrot-20261111-3",
+ "series": "E",
+ "short": {
+  "de": "Jackfrucht Rekord",
+  "en": "Jackfrucht Rekord"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://hort.purdue.edu/newcrop/morton/jackfruit_ars.html",
+   "checked_at": "2026-11-01",
+   "title": "Morton, Fruits of Warm Climates (Purdue NewCROP), Jackfruit: largest of all tree-borne fruits, 8 in to 3 ft (20-90 cm) long, 10 to 60 or even as much as 110 lbs (4.5-20 or 50 kg); short, stout flowering twigs emerge from the trunk and large branches; rind of numerous hard, cone-like points; 100 or up to 500 seeds in a single fruit",
+   "label": {
+    "de": "Purdue Univ., NewCROP",
+    "en": "Purdue Univ., NewCROP"
+   }
+  },
+  {
+   "id": "S2",
+   "url": "https://blogs.ifas.ufl.edu/miamidadeco/2021/05/25/tropical-fruit-jackfruit/",
+   "checked_at": "2026-11-01",
+   "title": "UF/IFAS Extension Miami-Dade, Tropical Fruit Jackfruit: the largest tree borne fruit in the world, can weigh between 10 and 60 pounds; produces fruit along the trunk and main limbs",
+   "label": {
+    "de": "UF/IFAS Extension",
+    "en": "UF/IFAS Extension"
+   }
+  },
+  {
+   "id": "S3",
+   "url": "https://groups.plantbiology.northwestern.edu/artocarpus/jackfruit.html",
+   "checked_at": "2026-11-01",
+   "title": "Northwestern University, Artocarpus: jackfruit fruits (technically a multiple fruit) borne on the trunk and branches, may be as much as 50 cm x 100 cm and weigh over 50 kg, the largest tree-borne fruit in the world",
+   "label": {
+    "de": "Northwestern University",
+    "en": "Northwestern University"
+   }
+  }
+ ],
+ "de": {
+  "title": "Die Jackfrucht: Riesin unter den Baumfrüchten – Plümo auf der Waage",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "Die größte Baumfrucht bin nicht ich. Die Rekordhalle hat gewogen: die Jackfrucht.",
+    "on_screen": "Größte Baumfrucht? *Nicht* ich.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "visual": "Jackfrucht plumpst an die Rekordtür, Stempel IRRTUM",
+    "why": {
+     "truth": "Purdue, UF/IFAS und Northwestern: die Jackfrucht ist die größte Frucht, die an Bäumen wächst",
+     "visual": "Riesenfrucht an der Tür ist sofort lesbar"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "Welche Frucht ist die größte, die an Bäumen wächst?",
+    "on_screen": "Größte *Baumfrucht*?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Fragezeichen über der Rekordtür"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "Eine Jackfrucht kann bis zu 50 Kilo wiegen.",
+    "on_screen": "Bis zu *50 Kilo*.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 4
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "Balken schießt nach oben"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Wer beim Quiz die größte Baumfrucht nicht kennt, verliert den Rekordpunkt.",
+    "on_screen": "Größte Baumfrucht? *Punkt weg.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 2
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "Quizkarte"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "Ich stell mich neben eine Jackfrucht auf die Waage. Schau, was passiert.",
+    "on_screen": "Plümo gegen *Jackfrucht*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo neben der Jackfrucht auf der Waage"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "spoken": "Die größte Baumfrucht bin nicht ich. Die Rekordhalle hat gewogen: die Jackfrucht.",
+    "data": {
+     "mode": "hook",
+     "head": "Größte Baumfrucht? *Nicht* ich.",
+     "head_at": 0.2,
+     "sign": "REKORDHALLE",
+     "items": [
+      {
+       "kind": "jackfruit"
+      }
+     ],
+     "stamp_reject": "IRRTUM",
+     "cue_scan": "größte",
+     "cue_verdict": "nicht",
+     "cue_club": "Rekordhalle",
+     "cue_know": "Jackfrucht"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Moment. Ich dachte, ich bin die Riesenfrucht. Aber nein, der Rekord gehört der Jackfrucht. Ich war geschockt. Die Jackfrucht nicht. Die wiegt einfach weiter.",
+    "data": {
+     "word_a": "Plümo",
+     "word_b": "riese",
+     "left": "Plümo: *Riesenfrucht*",
+     "right": "Echt: *Jackfrucht*",
+     "cue_left": "dachte",
+     "cue_strike": "nein",
+     "cue_right": "Rekord",
+     "cue_react": "Ich",
+     "item": "jackfruit",
+     "cue_shock": "geschockt",
+     "cue_item": "Jackfrucht",
+     "cue_never": "wiegt"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "spoken": "Wo hängt so ein Riese? Direkt am Stamm und an den dicken Ästen. Da wachsen kurze, kräftige Blütenzweige heraus. Ohne Hände zeig ich es mit dem Blatt.",
+    "data": {
+     "headline": "Wo hängt der *Riese*?",
+     "inner": "jackfruit",
+     "disc": [
+      "#4A5A10",
+      "#F6F4C8",
+      "#C8D46A"
+     ],
+     "cue_q": "Riese",
+     "labels": [
+      {
+       "text": "direkt am *Stamm*",
+       "pos": "tr",
+       "cue": "Stamm"
+      },
+      {
+       "text": "an dicken *Ästen*",
+       "pos": "l",
+       "cue": "Ästen"
+      },
+      {
+       "text": "*kurze*, kräftige Zweige",
+       "pos": "b",
+       "cue": "kurze"
+      }
+     ],
+     "cue_hands": "Hände",
+     "cue_leaf": "Blatt"
+    },
+    "overlay": {
+     "marker_at": "w:Stamm"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S1",
+     "S3"
+    ],
+    "spoken": "Ganz nah ran. Die Schale besteht aus vielen harten, kegelförmigen Spitzen. Drinnen stecken bis zu 500 Samen. Fachlich ist das Ganze ein Fruchtverband. Klingt nach Teamarbeit. Ich hab mitgezählt. Bis drei.",
+    "data": {
+     "kind": "jackfruit",
+     "lens": "jackfruit",
+     "lens_bg": "#1E2408",
+     "cue_mag": "nah",
+     "callouts": [
+      {
+       "text": "Schale: *harte Spitzen*",
+       "cue": "Schale"
+      },
+      {
+       "text": "bis zu *500* Samen",
+       "cue": "Samen"
+      }
+     ],
+     "cue_nut": "kegelförmigen",
+     "stamp": {
+      "text": "Fruchtverband!",
+      "cue": "Fruchtverband"
+     },
+     "cue_react": "Teamarbeit",
+     "cue_fast": "drei"
+    },
+    "overlay": {
+     "dim_at": "w:Schale",
+     "marker_at": "w:Schale"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Ich gegen die Jackfrucht. Sie wird bis zu 90 Zentimeter lang und wiegt 4,5 bis 20 Kilo. Manche sogar bis zu 50. Das ist der Rekord unter den Baumfrüchten. Mein Gewicht? Hab mich nie getraut.",
+    "data": {
+     "headline": "Wie schwer *wird* sie?",
+     "bars": [
+      {
+       "label": "Jackfrucht",
+       "value": "4,5–20 kg",
+       "h": 0.52,
+       "color": "#B04A92",
+       "kind": "jackfruit",
+       "cue": "wiegt"
+      },
+      {
+       "label": "manche sogar",
+       "value": "bis 50 kg",
+       "h": 0.95,
+       "color": "#B7FF00",
+       "cue": "Manche"
+      }
+     ],
+     "stamp": {
+      "text": "Baumrekord!",
+      "cue": "Rekord"
+     },
+     "cue_react": "Gewicht"
+    },
+    "overlay": {
+     "marker_at": "w:wiegt"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Merke: Die Jackfrucht ist die größte Frucht, die an Bäumen wächst. Gut, jetzt ich. Ab auf die Waage. Ergebnis: Gewicht nicht ermittelbar. Ich bin wohl zu rund für Zahlen.",
+    "data": {
+     "mode": "unknown",
+     "sign": "REKORDHALLE",
+     "merke": "Die *Jackfrucht* ist die größte Baumfrucht.",
+     "display": "Gewicht: nicht ermittelbar",
+     "plumps": "PLUMPS",
+     "cue_build": "Jackfrucht",
+     "cue_go": "Gut",
+     "cue_scan": "Waage",
+     "cue_result": "Ergebnis",
+     "cue_back": "wohl"
+    },
+    "overlay": {
+     "marker_at": "w:Merke"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+    "data": {
+     "sign": "REKORDHALLE",
+     "cta": "Mehr Zonkfruit? *Folgen.*",
+     "cue_cta": "Mehr",
+     "cue_up": "steh",
+     "cue_lie": "liegen",
+     "cue_ch": "Kanal"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Größte Baumfrucht: Plümo?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Plümo: abgelehnt",
+    "tone": "pop",
+    "word": "nicht"
+   },
+   {
+    "beat": "b3",
+    "text": "Wächst direkt am Stamm",
+    "tone": "lime",
+    "word": "Stamm"
+   },
+   {
+    "beat": "b4",
+    "text": "Schale: harte Spitzen",
+    "tone": "lime",
+    "word": "Schale"
+   },
+   {
+    "beat": "b5",
+    "text": "Jackfrucht: bis 50 kg",
+    "tone": "lime",
+    "word": "Manche"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: Gewicht offen",
+    "tone": "amber",
+    "word": "Ergebnis"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: liegt kurz",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "Die größte Baumfrucht ist nicht Plümo. Es ist die Jackfrucht.",
+   "description": "Plümo hielt sich für die Riesenfrucht. Dabei hält die Jackfrucht den Rekord: Sie ist die größte Frucht, die an Bäumen wächst, wird bis zu 90 cm lang und wiegt 4,5 bis 20 kg, manche sogar bis zu 50 kg. Sie hängt direkt am Stamm und an den dicken Ästen.",
+   "hashtags": [
+    "jackfrucht",
+    "obst",
+    "rekord",
+    "wusstestdu",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ },
+ "en": {
+  "title": "Jackfruit: the heavyweight of the tree world – Plümo on the scale",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "The biggest tree fruit is not me. The Record Hall weighed it. It's the jackfruit.",
+    "on_screen": "Biggest tree fruit? *Not* me.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "visual": "jackfruit thuds against the Record Hall door, stamp NOPE",
+    "why": {
+     "truth": "Purdue, UF/IFAS and Northwestern: jackfruit is the largest tree-borne fruit",
+     "visual": "a giant fruit at the door reads at once"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "Which fruit is the biggest one that grows on trees?",
+    "on_screen": "Biggest *tree fruit*?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "question mark over the record door"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "A jackfruit can weigh as much as 110 pounds.",
+    "on_screen": "Up to *110 pounds*.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 4
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "bar shoots up"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Miss the biggest tree fruit at quiz night and the record point is gone.",
+    "on_screen": "Biggest tree fruit? *Point lost.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 2
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "quiz card"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "I step onto the scale next to a jackfruit. Watch.",
+    "on_screen": "Plümo vs *jackfruit*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo next to the jackfruit on a scale"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "spoken": "The biggest tree fruit is not me. The Record Hall weighed it. It's the jackfruit.",
+    "data": {
+     "mode": "hook",
+     "head": "Biggest tree fruit? *Not* me.",
+     "head_at": 0.2,
+     "sign": "RECORD HALL",
+     "items": [
+      {
+       "kind": "jackfruit"
+      }
+     ],
+     "stamp_reject": "NOPE",
+     "cue_scan": "biggest",
+     "cue_verdict": "not",
+     "cue_club": "Record",
+     "cue_know": "jackfruit"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Wait. I thought I was the giant fruit. But no, the record belongs to the jackfruit. I was shocked. The jackfruit was not. It just stayed heavy.",
+    "data": {
+     "word_a": "Mega",
+     "word_b": "Plümo",
+     "left": "Plümo: *giant fruit*",
+     "right": "Real: *jackfruit*",
+     "cue_left": "thought",
+     "cue_strike": "no",
+     "cue_right": "record",
+     "cue_react": "I",
+     "item": "jackfruit",
+     "cue_shock": "shocked",
+     "cue_item": "jackfruit",
+     "cue_never": "heavy"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "spoken": "Where does a giant like that hang? Right on the trunk and on the big branches. Short, stout flowering twigs sprout out of them. No hands, so I point with my leaf.",
+    "data": {
+     "headline": "Where does the *giant* hang?",
+     "inner": "jackfruit",
+     "disc": [
+      "#4A5A10",
+      "#F6F4C8",
+      "#C8D46A"
+     ],
+     "cue_q": "giant",
+     "labels": [
+      {
+       "text": "right on the *trunk*",
+       "pos": "tr",
+       "cue": "trunk"
+      },
+      {
+       "text": "on big *branches*",
+       "pos": "l",
+       "cue": "branches"
+      },
+      {
+       "text": "*short*, stout twigs",
+       "pos": "b",
+       "cue": "Short"
+      }
+     ],
+     "cue_hands": "hands",
+     "cue_leaf": "leaf"
+    },
+    "overlay": {
+     "marker_at": "w:trunk"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S1",
+     "S3"
+    ],
+    "spoken": "Closer. The rind is lots of hard, cone-like points. Inside: up to 500 seeds. Technically, it's a multiple fruit. Sounds like teamwork. I counted. I got to three.",
+    "data": {
+     "kind": "jackfruit",
+     "lens": "jackfruit",
+     "lens_bg": "#1E2408",
+     "cue_mag": "Closer",
+     "callouts": [
+      {
+       "text": "Rind: *hard points*",
+       "cue": "rind"
+      },
+      {
+       "text": "up to *500* seeds",
+       "cue": "seeds"
+      }
+     ],
+     "cue_nut": "cone",
+     "stamp": {
+      "text": "Multiple fruit!",
+      "cue": "multiple"
+     },
+     "cue_react": "teamwork",
+     "cue_fast": "three"
+    },
+    "overlay": {
+     "dim_at": "w:rind",
+     "marker_at": "w:rind"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "It grows up to three feet long and weighs 10 to 60 pounds. Some even reach 110. A tree fruit record. My weight? Never dared to check.",
+    "data": {
+     "headline": "How heavy does it *get*?",
+     "bars": [
+      {
+       "label": "Jackfruit",
+       "value": "10–60 lb",
+       "h": 0.52,
+       "color": "#B04A92",
+       "kind": "jackfruit",
+       "cue": "weighs"
+      },
+      {
+       "label": "some even",
+       "value": "up to 110 lb",
+       "h": 0.95,
+       "color": "#B7FF00",
+       "cue": "Some"
+      }
+     ],
+     "stamp": {
+      "text": "Tree record!",
+      "cue": "record"
+     },
+     "cue_react": "weight"
+    },
+    "overlay": {
+     "marker_at": "w:weighs"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Remember: the jackfruit is the biggest fruit that grows on trees. Right, my turn. Onto the scale. Result: weight unknown. I guess I'm too round for numbers.",
+    "data": {
+     "mode": "unknown",
+     "sign": "RECORD HALL",
+     "merke": "The *jackfruit* is the biggest tree fruit.",
+     "display": "Weight: unknown",
+     "plumps": "FLOP",
+     "cue_build": "jackfruit",
+     "cue_go": "Right",
+     "cue_scan": "scale",
+     "cue_result": "Result",
+     "cue_back": "guess"
+    },
+    "overlay": {
+     "marker_at": "w:Remember"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "I'll just lie here for a bit. More Zonkfruit? Follow the channel. I'll get up in a minute.",
+    "data": {
+     "sign": "RECORD HALL",
+     "cta": "More Zonkfruit? *Follow.*",
+     "cue_cta": "More",
+     "cue_up": "get",
+     "cue_lie": "lie",
+     "cue_ch": "channel"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Biggest tree fruit: Plümo?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Plümo: rejected",
+    "tone": "pop",
+    "word": "not"
+   },
+   {
+    "beat": "b3",
+    "text": "Grows right on the trunk",
+    "tone": "lime",
+    "word": "trunk"
+   },
+   {
+    "beat": "b4",
+    "text": "Rind: hard points",
+    "tone": "lime",
+    "word": "rind"
+   },
+   {
+    "beat": "b5",
+    "text": "Jackfruit: up to 110 lb",
+    "tone": "lime",
+    "word": "Some"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: weight unknown",
+    "tone": "amber",
+    "word": "Result"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: lying down",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "The biggest tree fruit is not Plümo. It's the jackfruit.",
+   "description": "Plümo thought he was the giant fruit. The record belongs to the jackfruit: the largest fruit that grows on trees, up to three feet long, weighing 10 to 60 pounds, some even 110. It hangs right on the trunk and the big branches.",
+   "hashtags": [
+    "jackfruit",
+    "fruit",
+    "record",
+    "didyouknow",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ }
+}

@@ -1,0 +1,544 @@
+{
+ "video_id": "menswear-20261111-3-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Super 100s: Was die Zahl auf dem Stoff bedeutet",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema C02 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Werte laut Woolmark-Anhang (Stand 1. Juli 2013). Keine Aussage, eine höhere Zahl sei besser oder empfindlicher.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Stoff, Super 100s",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Super 100s: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "misst die Faser",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "eine Obergrenze",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "dicker: falsch",
+     "tone": "red"
+    },
+    {
+     "beat": "b5",
+     "text": "nur reine Wolle",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "nur der Durchmesser",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "eine Zahl: klar",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Was bedeutet Super 100s auf dem Anzugstoff? Eine Obergrenze für den mittleren Faserdurchmesser: höchstens 18,75 Mikrometer, laut Woolmark-Spezifikation und US-Verordnung. Über Gewicht oder Bindung sagt die Zahl nichts.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "anzugstoff",
+   "wolle",
+   "super100s",
+   "anzug"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/product-specifications/f-6_fibre_quality_2016-1_22oct14_f.pdf",
+   "title": "Woolmark, Spezifikation F-6: Super-S-System der IWTO, von Woolmark verwaltet; Super 100s höchstens 18,75 µm, Super 150s 16,25 µm; gemessen am Endprodukt ohne Toleranz; nur reine Schurwolle (bis 5 % Ziergarn)",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Spezifikation F-6"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.law.cornell.edu/cfr/text/16/300.20a",
+   "title": "16 CFR 300.20a (US-Verordnung): 'Super 100's' falsch etikettiert, wenn der mittlere Faserdurchmesser nicht 18,75 µm oder feiner ist",
+   "checked_at": "2026-11-01",
+   "label": "US-Recht, 16 CFR 300.20a"
+  },
+  {
+   "id": "S3",
+   "url": "https://cashmere.org/definition-cashmere-wool.php",
+   "title": "CCMI, Definition of wool: 'Super' nur für reine Schurwolle, Wert durch maximalen mittleren Faserdurchmesser bestimmt (IWTO-Code)",
+   "checked_at": "2026-11-01",
+   "label": "CCMI, Definition Wolle"
+  }
+ ],
+ "unverified": [
+  "'Über Gewicht oder Bindung sagt die Zahl nichts': Folgerung aus der Definition (nur Faserdurchmesser), nicht wörtlich zitiert.",
+  "Ob höhere Super-Zahlen besser, weicher oder empfindlicher sind: keine Primärquelle geöffnet, nicht im Video.",
+  "Aussprache 'Super 100s' durch die Stimme beim Vertonen prüfen (gemeint: Super Hundert)."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was heißt Super 100s?",
+   "on_screen": "Was heißt Super 100s?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Stoffmuster, Lupe auf der Webstruktur",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Super 100s ist keine Qualitätsnote",
+   "on_screen": "Super 100s ist keine Qualitätsnote",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Stoffmuster, Lupe auf der Webstruktur",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Super 100s: höchstens 18,75 Mikrometer",
+   "on_screen": "Super 100s: höchstens 18,75 Mikrometer",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Stoffmuster, Lupe auf der Webstruktur",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Zu dicke Wolle? In den USA falsch etikettiert",
+   "on_screen": "Zu dicke Wolle? In den USA falsch etikettiert",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Stoffmuster, Lupe auf der Webstruktur",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Was diese Zahl auf dem Stoff wirklich misst",
+   "on_screen": "Was diese Zahl auf dem Stoff wirklich misst",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Stoffmuster, Lupe auf der Webstruktur",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die Zahl auf dem Stoff als Frage; Antwort: ein Durchmesser, eine Obergrenze."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 7,
+   "spoken": "Super 100s steht auf manchem Anzugstoff. Es klingt nach einer Note für Qualität. Doch die Zahl misst genau eine Sache. Welche?",
+   "data": {
+    "question": "Was heißt Super 100s?",
+    "object": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "layers": 2
+    },
+    "target": "weave",
+    "badge": "?",
+    "question_at": 0.3,
+    "hold_end": true,
+    "badge_at": "w:Note",
+    "loupe_at": "w:Zahl",
+    "nie_at": "w:Welche"
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 13,
+   "spoken": "Geh ganz nah an den Stoff heran, bis zur einzelnen Wollfaser. Super 100s beschreibt den mittleren Durchmesser dieser Fasern. Das System gehört der IWTO, dem internationalen Wollverband, verwaltet wird es von Woolmark.",
+   "data": {
+    "headline": "Was wird gemessen?",
+    "object": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "layers": 2
+    },
+    "from": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "layers": 2
+    },
+    "to": {
+     "kind": "fibres",
+     "microns": [
+      18.75
+     ]
+    },
+    "target": "center",
+    "zoom": 1.4,
+    "label": "mittlerer Faserdurchmesser",
+    "strain": false,
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Geh",
+    "zoom_at": "w:nah",
+    "flip_at": "w:Wollfaser",
+    "label_at": "w:mittleren"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:IWTO"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "Wichtig: Die Zahl ist eine Obergrenze, kein Messwert. Super 100s heißt: im Mittel höchstens 18,75 Mikrometer. Super 150s heißt: höchstens 16,25. Mit jeder Zehnerstufe wird die Grenze einen halben Mikrometer feiner.",
+   "data": {
+    "headline": "Eine Obergrenze",
+    "stages": [
+     {
+      "object": {
+       "kind": "fibres",
+       "microns": [
+        18.75,
+        16.25
+       ]
+      },
+      "at": 0.0,
+      "tags": [
+       {
+        "spot": "fibre:0",
+        "text": "Super 100s",
+        "sub": "höchstens 18,75 µm",
+        "tone": "always",
+        "at": "w:100"
+       },
+       {
+        "spot": "fibre:1",
+        "text": "Super 150s",
+        "sub": "höchstens 16,25 µm",
+        "tone": "always",
+        "at": "w:150"
+       },
+       {
+        "spot": "scale",
+        "text": "je Stufe 0,5 µm",
+        "sub": "feiner",
+        "tone": "always",
+        "at": "w:Zehnerstufe"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Obergrenze"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 14,
+   "spoken": "Ein Beispiel aus dem US-Recht, der Verordnung zur Wollkennzeichnung: Steht auf dem Etikett Super 100s, die Wolle ist im Mittel aber dicker als 18,75 Mikrometer, dann gilt das Produkt als falsch etikettiert. Feinere Wolle ist dagegen erlaubt, die Grenze gilt nur nach oben.",
+   "data": {
+    "headline": "Was das US-Recht sagt",
+    "left": {
+     "title": "über 18,75 µm",
+     "object": {
+      "kind": "fibres",
+      "microns": [
+       20.0
+      ]
+     },
+     "tag": "als Super 100s: falsch",
+     "pulses": [
+      {
+       "target": "fibre:0",
+       "at": "w:dicker",
+       "tone": "red"
+      }
+     ]
+    },
+    "right": {
+     "title": "bis 18,75 µm",
+     "object": {
+      "kind": "fibres",
+      "microns": [
+       17.0
+      ]
+     },
+     "tag": "als Super 100s: erlaubt",
+     "pulses": [
+      {
+       "target": "fibre:0",
+       "at": "w:Grenze"
+      }
+     ]
+    },
+    "left_at": "w:Etikett",
+    "left_tag_at": "w:falsch",
+    "right_at": "w:Feinere",
+    "right_tag_at": "w:erlaubt",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:US"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "Gemessen wird laut Woolmark am fertigen Produkt, ohne Messtoleranz. Und die Bezeichnung gilt nur für reine Schurwolle, mit höchstens fünf Prozent Ziergarn. Der Branchenverband CCMI sagt es genauso.",
+   "data": {
+    "headline": "Wo wird gemessen?",
+    "object": {
+     "kind": "yarn",
+     "spin": "worsted"
+    },
+    "from": {
+     "kind": "yarn",
+     "spin": "worsted"
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "layers": 2
+    },
+    "target": "center",
+    "zoom": 1.3,
+    "label": "am fertigen Produkt",
+    "strain": false,
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Woolmark",
+    "zoom_at": "w:fertigen",
+    "flip_at": "w:Produkt",
+    "label_at": "w:Messtoleranz"
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:fertigen"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "Kurz gesagt: Super 100s ist eine Obergrenze für den mittleren Faserdurchmesser. Gemessen am fertigen Produkt, nur bei reiner Schurwolle. Über Gewicht oder Bindung sagt die Zahl nichts.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Eine Obergrenze",
+      "sub": "für den mittleren Faserdurchmesser",
+      "object": {
+       "kind": "fibres",
+       "microns": [
+        18.75
+       ]
+      },
+      "at": "w:Obergrenze",
+      "ring": "fibre:0",
+      "ring_at": "w:Faserdurchmesser"
+     },
+     {
+      "title": "Nur reine Schurwolle",
+      "sub": "gemessen am fertigen Produkt",
+      "object": {
+       "kind": "yarn",
+       "spin": "worsted"
+      },
+      "at": "w:Gemessen",
+      "then": {
+       "kind": "swatch",
+       "weave": "worsted",
+       "layers": 2
+      },
+      "then_at": "w:Produkt"
+     },
+     {
+      "title": "Kein Maß für Gewicht",
+      "sub": "und keins für die Bindung",
+      "object": {
+       "kind": "swatch",
+       "weave": "twill"
+      },
+      "at": "w:Gewicht",
+      "then": {
+       "weave": "herringbone"
+      },
+      "then_at": "w:Bindung"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Eine Zahl, ein Durchmesser, sonst nichts. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "fibres",
+     "microns": [
+      20.0
+     ]
+    },
+    "to": {
+     "kind": "fibres",
+     "microns": [
+      18.75
+     ]
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "fibre:0",
+    "fix_at": "w:Zahl",
+    "ring_at": "w:Durchmesser",
+    "statement_at": "w:sonst",
+    "chip_at": "w:Blick",
+    "statement": "Nur ein Durchmesser.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

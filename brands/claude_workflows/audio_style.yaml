@@ -1,0 +1,24 @@
+tts:
+  provider: gemini
+  model: gemini-2.5-flash-preview-tts
+  voices:
+    de: Kore
+    en: Puck
+  speaking_rate: 1.05
+  style_instruction:
+    de: Sprich ruhig, klar und freundlich auf Deutsch, sachlich und ohne Übertreibung,
+      wie jemand, der am Bildschirm Schritt für Schritt etwas zeigt. Wichtig zur Aussprache. Claude ist
+      ein Name. Sprich ihn immer Klohd, mit langem, dunklem o wie in Lord oder Mond und hartem d am Ende,
+      wie das englische Wort clawed. Sag nie Klaud mit au wie im englischen Wort cloud.
+    en: Speak clearly in English, precise, friendly, zero hype.
+music:
+  mood: minimal electronic, soft keys, 90-100 bpm, no vocals
+  file: null
+  license_proof: null
+  gain_db: -18
+  duck_db: -10
+loudness:
+  target_lufs: -16
+  true_peak_dbtp: -1.5
+sfx:
+  enabled: false

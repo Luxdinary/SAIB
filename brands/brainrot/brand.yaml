@@ -1,0 +1,82 @@
+id: brainrot
+name: Zonkfruit
+niche: surreal comedy with an original recurring character
+style: surreal_3d
+phase: 5
+enabled: false
+brand_version: "0.9"          # draft template 30.10.2026; 1.0 only after Stefan approves character and template
+template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Tintora\Vorlage Zonkfruit.md'
+languages:
+- de
+- en
+primary_language: de
+risk_default: medium
+rules:
+- original character Plümo with character sheet and style lock (assets/character); no copied characters or memes
+- every episode has one real, sourced fact as the punchline; comedy never at the expense of people or groups
+- no music without licence; sound effects only from assets/sfx (own work)
+character:
+  name: Plümo
+  sheet: brands/brainrot/assets/character/plumo_sheet.png
+  generator: brands/brainrot/renderer/plumo.py
+  status: draft (not approved by Stefan)
+palette:
+  # 30.10.2026: text switched from #FF43C0 to warm white for readability on moving scenes; magenta stays as second accent
+  bg: '#101010'
+  accent: '#B7FF00'
+  text: '#FFF4FA'
+  surface: '#212121'
+  muted: '#C9A3BD'
+  pop: '#FF43C0'
+  plum: '#4B1640'
+  signal_amber: '#FFD84D'     # needed by the shared scene_css (otherwise a literal {amber} breaks the CSS lint)
+  on_signal: '#101010'
+  signal_red: '#FF4D4D'       # 30.10.2026: true red, only for risk (explainer rule); magenta stays a brand colour
+  scheme: dark
+fonts:
+  display:
+    family: Fredoka
+    weight: 700
+    file: brands/brainrot/assets/fonts/fredoka/Fredoka[wdth,wght].ttf
+    license: OFL-1.1
+    license_file: brands/brainrot/assets/fonts/fredoka/OFL.txt
+  body:
+    family: Fredoka
+    weight: 500
+    file: brands/brainrot/assets/fonts/fredoka/Fredoka[wdth,wght].ttf
+    license: OFL-1.1
+    license_file: brands/brainrot/assets/fonts/fredoka/OFL.txt
+  mono: null
+logo:
+  file: brands/brainrot/assets/logo/zonkfruit-mark.svg
+  wordmark_text: Zonkfruit
+  logo_height_px: 52
+motif: plumo-checker-stage
+tempo: chaotic
+bg_pattern: ''
+layout: shared 9:16 layout plus Zonkfruit scene types, see renderer/zonk_templates.py and the template doc
+audience: viewers who like absurd, fast, harmless comedy with a real aha at the end
+tone: deadpan absurd, fast, never mean
+production:
+  closing_sentence:
+    de: 'Mehr Zonkfruit? Folge dem Kanal.'
+    en: 'More Zonkfruit? Follow the channel.'
+  # no domain: no website registered for Zonkfruit
+explainer:                         # Schnitt- und Layout-Vorlage (Stefan, 30.10.2026), Hochformat; fn.render.explainer
+  enabled: true
+  voice_tag: {de: "SYNTHETISCHE STIMME", en: "SYNTHETIC VOICE"}
+  opening: {de: "Synthetische Stimme · Quellen am Bildschirm · Plümo ist erfunden, die Fakten nicht", en: "Synthetic voice · Sources on screen · Plümo is made up, the facts are not"}
+  opening_seconds: 3.5
+  head_on_hook: false              # the hook scene carries its own title
+  # Zonkfruit: Plümo and door stand on the floor up to y ~1100, captions sit lower (plan layout caption_bottom_px 500,
+  # one line 1349-1420), so marker 1170-1214 and source bar 1226-1288 fit between scene and captions; source right edge x 930
+  source_y: 1170
+  # fixed meaning: fakt = brand lime (active colour), unsicher = amber (open), luecke = red (risk only),
+  # auslegung = violet; erreicht = mint, used only by the EINLASS stamp in zonk_scan (not read by the renderer)
+  colors: {fakt: "#B7FF00", auslegung: "#A97BFF", unsicher: "#FFD84D", luecke: "#FF4D4D", beispiel: "#8a93a6", erreicht: "#3EE08F"}
+  kicker_labels:
+    de: {problem: "MOMENT MAL", explanation: "KURZ ERKLÄRT", demonstration: "GENAU HINGESCHAUT", insight: "DER KNACKPUNKT", benefit: "ZUM MERKEN", close: "UND TSCHÜSS"}
+    en: {problem: "WAIT, WHAT", explanation: "QUICKLY EXPLAINED", demonstration: "UP CLOSE", insight: "THE TWIST", benefit: "REMEMBER THIS", close: "AND BYE"}
+ai_label:
+  de: KI-generiert
+  en: AI-generated

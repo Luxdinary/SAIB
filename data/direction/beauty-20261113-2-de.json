@@ -1,0 +1,442 @@
+{
+ "video_id": "beauty-20261113-2-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Notifizierung im CPNP",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Vor dem Verkauf meldet die verantwortliche Person jedes Produkt elektronisch an die Kommission; das ist keine Zulassung. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Meldung",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Zugelassen?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "gemeldet, nicht zugelassen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "8 Angaben",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Etikett und Foto",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Nano: 6 Monate vorher",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Meldung ≠ Zulassung",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Erst lesen, dann auftragen",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Zugelassen oder gemeldet? Für bestimmte Nanomaterialien gilt eine Extraregel. Sie müssen sechs Monate vor dem Inverkehrbringen gemeldet werden. Hat die Kommission Sicherheitsbedenken, kann sie den wissenschaftlichen Ausschuss um eine Bewertung bitten.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-products-specific-topics/nanomaterials_en",
+   "title": "Europäische Kommission: Nanomaterials (Cosmetics)",
+   "checked_at": "2026-11-01",
+   "label": "EU-Kommission: Nanomaterialien"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Kosmetik wird in der EU von einer Behörde zugelassen. Das stimmt so nicht.",
+   "on_screen": "Zugelassen oder gemeldet?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Bevor eine Creme in der EU verkauft wird, landet sie in einem Portal der Kommission.",
+   "on_screen": "Bevor eine Creme in der EU verkauft wird, landet sie in eine",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Wusstest du, dass jede Kosmetik in der EU vor dem Verkauf elektronisch gemeldet wird?",
+   "on_screen": "Wusstest du, dass jede Kosmetik in der EU vor dem Verkauf el",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer Meldung und Zulassung verwechselt, liest mehr in ein Produkt hinein, als drinsteht.",
+   "on_screen": "Wer Meldung und Zulassung verwechselt, liest mehr in ein Pro",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, welche Angaben in die Meldung eines Produkts gehören.",
+   "on_screen": "Schau, welche Angaben in die Meldung eines Produkts gehören.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Kosmetik wird in der EU von einer Behörde zugelassen. Das stimmt so nicht.",
+   "data": {
+    "obj": "tube",
+    "title": "CPNP",
+    "sub": "Meldung",
+    "glyph": "doc",
+    "gtext": "Art. 13",
+    "focus": "title",
+    "question": "Zugelassen oder gemeldet?",
+    "badge": "Mythos?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "Kosmetik wird gemeldet, nicht zugelassen. Laut Artikel 13 der Verordnung über kosmetische Mittel übermittelt die verantwortliche Person vor dem Inverkehrbringen bestimmte Angaben elektronisch an die Kommission. Das Portal dafür heißt CPNP.",
+   "data": {
+    "headline": "Meldung vor dem Verkauf",
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 13",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "vor dem Inverkehrbringen"
+     },
+     {
+      "text": "elektronisch an die Kommission"
+     },
+     {
+      "text": "Portal: CPNP"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_steps",
+   "spoken": "Dazu gehören Kategorie und Name des Produkts, Name und Anschrift der verantwortlichen Person, bei Import das Herkunftsland, der Mitgliedstaat und eine Kontaktperson. Außerdem Nanomaterialien, bestimmte als CMR eingestufte Stoffe und die Rahmenrezeptur für rasche medizinische Hilfe.",
+   "data": {
+    "headline": "Was gemeldet wird",
+    "items": [
+     {
+      "title": "Produkt und Kategorie",
+      "sub": "Name, Herkunft, Mitgliedstaat",
+      "icon": "doc"
+     },
+     {
+      "title": "verantwortliche Person",
+      "sub": "Anschrift, Kontakt",
+      "icon": "book"
+     },
+     {
+      "title": "Nano, CMR, Rahmenrezeptur",
+      "sub": "für rasche medizinische Hilfe",
+      "icon": "shield"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "Ist das Produkt auf dem Markt, kommen das Originaletikett und, wenn lesbar, ein Foto der Verpackung dazu. Eine Prüfung mit Zulassungsbescheid gehört nicht zu diesem Ablauf.",
+   "data": {
+    "headline": "Meldung und Zulassung",
+    "mode": "myth",
+    "left": {
+     "tag": "Mythos",
+     "title": "behördlich zugelassen",
+     "rows": [
+      {
+       "text": "Zulassungsbescheid",
+       "mark": "gap"
+      }
+     ]
+    },
+    "right": {
+     "tag": "laut Quelle",
+     "title": "elektronisch gemeldet",
+     "rows": [
+      {
+       "text": "Angaben, Etikett, Foto",
+       "mark": "fact"
+      },
+      {
+       "text": "kein Bescheid",
+       "mark": "fact"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_timeline",
+   "spoken": "Für bestimmte Nanomaterialien gilt eine Extraregel. Sie müssen sechs Monate vor dem Inverkehrbringen gemeldet werden. Hat die Kommission Sicherheitsbedenken, kann sie den wissenschaftlichen Ausschuss um eine Bewertung bitten.",
+   "data": {
+    "headline": "Extraregel für Nano",
+    "nodes": [
+     {
+      "date": "−6 Monate",
+      "text": "Meldung im CPNP"
+     },
+     {
+      "date": "Bedenken?",
+      "text": "Kommission fragt den SCCS"
+     },
+     {
+      "date": "Start",
+      "text": "Inverkehrbringen"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_facts",
+   "spoken": "Für dich heißt das: Eine Meldung ist keine Zulassung. Werbung mit behördlicher Zulassung passt deshalb nicht zu Kosmetik in der EU.",
+   "data": {
+    "headline": "Was du daraus mitnimmst",
+    "rows": [
+     {
+      "text": "gemeldet heißt nicht zugelassen"
+     },
+     {
+      "text": "„behördlich zugelassen“ passt nicht",
+      "mark": "gap"
+     },
+     {
+      "text": "Sicherheit trägt die verantwortliche Person"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Erst lesen, dann glauben. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung.",
+    "brand_at": "w:Beauty",
+    "button": "Auftragen",
+    "headline": "Erst lesen, dann glauben",
+    "block_text": "Erst die Aussage lesen",
+    "done_text": "Aussage gelesen"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,675 @@
+{
+  "video_id": "megaconstruction-20261109-3-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Brenner Base Tunnel: 230 km of tubes for a 55 km railway",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261109-3-en. Thema: brenner. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "BBT · 55 km",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "tubes under construction",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "55 km route",
+          "tone": "muted",
+          "at": "@55"
+        },
+        {
+          "beat": "b2",
+          "text": "64 tunnel kilometres",
+          "tone": "accent",
+          "at": "@64"
+        },
+        {
+          "beat": "b3",
+          "text": "2 main tubes + gallery",
+          "tone": "accent",
+          "at": "@two"
+        },
+        {
+          "beat": "b3",
+          "text": "cross passage every 333 m",
+          "tone": "accent",
+          "at": "@333"
+        },
+        {
+          "beat": "b4",
+          "text": "230 km of tubes",
+          "tone": "accent",
+          "at": "@230"
+        },
+        {
+          "beat": "b5",
+          "text": "passenger train: 25 min (plan)",
+          "tone": "amber",
+          "at": "@25"
+        },
+        {
+          "beat": "b6",
+          "text": "221 of 230 km excavated",
+          "tone": "green",
+          "at": "@221"
+        }
+      ]
+    },
+    "description": "The Brenner Base Tunnel is 55 km long, but its tunnel system adds up to about 230 km. What it is made of and how far the excavation has come (status per BBT SE, October 2026).",
+    "companion_text": "Calculated: 230 km ÷ 55 km = 4.2. Sources: BBT SE (project overview, construction progress, home page). Stylised 3D model, length shortened. Follow Gigastruct.",
+    "hashtags": [
+      "brennerbasetunnel",
+      "tunnelling",
+      "alps",
+      "railway",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "230 km ÷ 55 km = 4,18",
+        "result": "gut viermal so viel Röhre wie Strecke",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "1 h 20 min = 80 min",
+        "result": "80 min Bestandsstrecke",
+        "sources": [
+          "S3"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 40000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "ridge",
+          "kind": "ridge",
+          "length": 3000,
+          "width": 1500,
+          "height": 520,
+          "bores": [
+            {
+              "z": 28,
+              "y": 60,
+              "r": 6,
+              "color": "accent"
+            },
+            {
+              "z": -28,
+              "y": 60,
+              "r": 6,
+              "color": "accent"
+            },
+            {
+              "z": 0,
+              "y": 44,
+              "r": 3.5,
+              "color": "model_inner"
+            }
+          ],
+          "color": "compare",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "fade": 0.5
+          }
+        }
+      ],
+      "anchors": {
+        "west": [
+          1500,
+          60,
+          28
+        ],
+        "east": [
+          1500,
+          60,
+          -28
+        ],
+        "expl": [
+          1500,
+          44,
+          0
+        ],
+        "gap": [
+          1500,
+          74,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 20,
+            "el1": 16,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "cy": 860
+          },
+          "props": {
+            "ridge.bore": [
+              [
+                0,
+                0.05
+              ],
+              [
+                "%0.85",
+                1
+              ]
+            ]
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 85,
+            "az1": 80,
+            "el0": 8,
+            "el1": 14,
+            "fit0": 1.0,
+            "fit1": 0.92,
+            "cy": 760
+          },
+          "props": {
+            "ridge.fade": 0.35
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                1490,
+                30,
+                -60
+              ],
+              [
+                1500,
+                85,
+                60
+              ]
+            ],
+            "az0": 12,
+            "az1": 4,
+            "el0": 10,
+            "el1": 6,
+            "fit0": 0.7,
+            "fit1": 0.85,
+            "cy": 760
+          },
+          "props": {
+            "ridge.fade": 0.25
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 25,
+            "az1": 35,
+            "el0": 35,
+            "el1": 28,
+            "fit0": 0.95,
+            "fit1": 0.9,
+            "cy": 880
+          },
+          "props": {
+            "ridge.fade": 0.35
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 12,
+            "el1": 18,
+            "fit0": 1.0,
+            "fit1": 0.95,
+            "cy": 820
+          },
+          "props": {
+            "ridge.fade": 0.35,
+            "ridge.pulse": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.9",
+                1
+              ]
+            ]
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 45,
+            "az1": 55,
+            "el0": 22,
+            "el1": 28,
+            "fit0": 0.95,
+            "fit1": 0.85,
+            "cy": 900
+          },
+          "props": {
+            "ridge.bore": [
+              [
+                0,
+                0.9
+              ],
+              [
+                "%0.3",
+                0.96
+              ]
+            ]
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.bbt-se.com/brenner-basistunnel/projektueberblick/",
+      "title": "BBT SE: Projektüberblick (55 km, 64 Tunnelkilometer, zwei eingleisige Röhren 40–70 m, Erkundungsstollen, Querschläge alle 333 m, Scheitel 790 m)",
+      "label": "BBT SE, Projektüberblick",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/",
+      "title": "BBT SE: Baufortschritt (221 von ca. 230 km ausgebrochen)",
+      "label": "BBT SE, Baufortschritt",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.bbt-se.com/",
+      "title": "BBT SE: Startseite (Fahrzeit Personenzug 25 min statt 1 h 20 min)",
+      "label": "BBT SE, Startseite",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Eröffnungstermin: BBT-Seiten nennen keinen; nicht verwendet.",
+    "Kosten: nicht auf den geöffneten BBT-Seiten.",
+    "Ausbruchsstand: Seite nennt 221 und 222 km; im Video 'rund 221 km'. Seite ohne Datum, Stand = Abruf Oktober 2026.",
+    "Länge im Modell verkürzt, Röhrenquerschnitt schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "A 55 kilometre railway. But around 230 kilometres of tunnel. Where does the rest go?",
+      "on_screen": "55 km of railway. 230 km of tunnel.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Why does a 55 km tunnel need 230 km of tubes?",
+      "on_screen": "Why 230 km of tubes?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate the Brenner Base Tunnel.",
+      "on_screen": "the Brenner Base Tunnel: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Brenner Base Tunnel depends on how it is built.",
+      "on_screen": "the Brenner Base Tunnel: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Brenner Base Tunnel take shape in the model.",
+      "on_screen": "the Brenner Base Tunnel as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "A 55 kilometre railway. But around 230 kilometres of tunnel. Where does the rest go?",
+      "data": {
+        "kicker": "Brenner Base Tunnel",
+        "question": "55 km of railway. 230 km of tunnel.",
+        "question_at": "@A",
+        "number": {
+          "value": "230",
+          "unit": "km",
+          "at_word": "tunnel",
+          "y": 640
+        },
+        "badge": {
+          "text": "Where is the rest?",
+          "at_word": "rest",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:But"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "The tunnel links Innsbruck in Austria with Franzensfeste in Italy over 55 kilometres. Add the Innsbruck bypass and you get 64 tunnel kilometres. According to the builder, it will be the longest underground rail link in the world.",
+      "data": {
+        "headline": "Innsbruck – Franzensfeste",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "55",
+            "unit": "km",
+            "label": "base tunnel",
+            "at_word": "55"
+          },
+          {
+            "value": "64",
+            "unit": "km",
+            "label": "with the bypass",
+            "at_word": "64"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · Innsbruck · Fortezza",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_section",
+      "spoken": "So where does the rest come from? There are two single track main tubes, 40 to 70 metres apart. An exploratory tunnel runs between and below them. And every 333 metres, a cross passage links the two tubes.",
+      "data": {
+        "headline": "Three tubes, not one",
+        "note": "Schematic cross-section",
+        "note_dy": 190,
+        "dims": [
+          {
+            "anchor": "gap",
+            "text": "40–70 m",
+            "at_word": "40"
+          }
+        ],
+        "callouts": [
+          {
+            "anchor": "west",
+            "text": "single track",
+            "side": "up",
+            "at_word": "single"
+          },
+          {
+            "anchor": "expl",
+            "text": "exploratory tunnel",
+            "side": "down",
+            "at_word": "exploratory"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "3 · Cross-section",
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "seconds": 0.7,
+          "x": 540,
+          "y": 960
+        },
+        "vignette": true
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gs_compare",
+      "spoken": "Then come access tunnels and three underground emergency stations. Together, that makes about 230 kilometres of tubes, more than four times the length of the railway itself.",
+      "data": {
+        "headline": "Tubes versus railway",
+        "a": {
+          "label": "Tunnel system",
+          "value": 230,
+          "unit": "km"
+        },
+        "b": {
+          "label": "Railway",
+          "value": 55,
+          "unit": "km"
+        },
+        "decimals": 1,
+        "bars_dy": 430,
+        "row_h": 108,
+        "a_at": "@230",
+        "b_at": "@railway",
+        "result_at": "@four",
+        "order": "ab"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · Calculated",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "For passenger trains, that means 25 minutes through the tunnel instead of an hour and twenty minutes today. And the highest point sits 580 metres lower than the Brenner Pass.",
+      "data": {
+        "headline": "Flatter and faster",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "25",
+            "unit": "min",
+            "label": "through the tunnel",
+            "at_word": "25"
+          },
+          {
+            "value": "80",
+            "unit": "min",
+            "label": "today",
+            "ref": true,
+            "at_word": "hour"
+          },
+          {
+            "value": "580",
+            "unit": "m",
+            "label": "below the pass",
+            "at_word": "580"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "kicker": "5 · What it brings",
+        "marker": "unsicher",
+        "source": "Sources: BBT SE, home page and project overview (planned values) · retrieved 30.10. and 01.11.2026"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "Status according to the builder in October 2026: about 221 of those 230 kilometres have been excavated. Follow Gigastruct for the next megastructure.",
+      "data": {
+        "mode": "closing",
+        "statement": "About 221 of 230 km excavated.",
+        "chip": {
+          "text": "Follow Gigastruct",
+          "at_word": "Follow",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "6 · Status October 2026",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

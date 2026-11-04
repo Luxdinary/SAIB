@@ -1,0 +1,439 @@
+{
+ "video_id": "engines-20261109-3-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Warum Verdichten die Luft heiß macht",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261109-3-de, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Ein Diesel zündet ohne Zündkerze. Die Hitze entsteht beim Verdichten der Luft, nachgerechnet mit den Formeln der NASA.",
+  "companion_text": "Rechnung ideal (ohne Wärmeverlust) mit Beispielwerten: Verdichtung 16 zu 1, Ansaugluft 20 °C. Zeitlupenfaktor und Millisekunden beziehen sich auf die Beispieldrehzahl 3000/min.",
+  "hashtags": [
+   "motorentechnik",
+   "diesel",
+   "verdichtung",
+   "physik",
+   "selbstzündung"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "NASA Glenn, Verdichtungstakt",
+   "title": "NASA Glenn, Verdichtungstakt (N3)",
+   "url": "https://www.grc.nasa.gov/WWW/k-12/airplane/engcomp.html",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "US-DOE AFDC, Dieselmotor",
+   "title": "US-DOE AFDC, Dieselmotor (A2)",
+   "url": "https://afdc.energy.gov/vehicles/how-do-diesel-cars-work",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [
+  "Reale Verdichtungsendtemperatur liegt wegen Wärmeverlust unter dem Idealwert; im Video als ideal gerechnet gekennzeichnet."
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Die Hitze zum Zünden entsteht allein beim Zusammendrücken der Luft.",
+   "on_screen": "Hitze nur durch Druck",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Wie zündet ein Diesel ohne Zündkerze?",
+   "on_screen": "Warum Verdichten die Luft heiß macht",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Warum Verdichten die Luft heiß macht",
+   "on_screen": "Warum Verdichten die Luft heiß macht",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Warum Verdichten die Luft heiß macht",
+   "on_screen": "Warum Verdichten die Luft heiß macht",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Warum Verdichten die Luft heiß macht",
+   "on_screen": "Warum Verdichten die Luft heiß macht",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Ein Diesel hat keine Zündkerze. Die Hitze zum Zünden entsteht allein beim Zusammendrücken der Luft.",
+   "data": {
+    "claim": "Hitze nur durch Druck",
+    "claim_lines": [
+     "Hitze nur",
+     "durch Druck"
+    ],
+    "claim_highlight": "Druck",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "fuel": "diesel",
+    "slow_at": 0.15,
+    "source": "US-DOE AFDC, Dieselmotor · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Im Verdichtungstakt fährt der Kolben nach oben. Beide Ventile sind zu, die Luft hat immer weniger Platz. Größtes durch kleinstes Volumen ergibt das Verdichtungsverhältnis. Die Arbeit des Kolbens steckt danach als Wärme in der Luft.",
+   "data": {
+    "title": "Verdichten",
+    "fuel": "diesel",
+    "labels": [
+     "chamber"
+    ],
+    "labels_at": [
+     "w:Platz"
+    ],
+    "notes": [
+     {
+      "text": "Ventile zu",
+      "at": "w:Ventile",
+      "side": "l",
+      "y": 760,
+      "to": [
+       452,
+       432
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      200
+     ],
+     [
+      1,
+      355
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Verdichtungstakt · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_readout",
+   "spoken": "Die NASA beschreibt das mit zwei Formeln. Der Druck steigt mit dem Verdichtungsverhältnis hoch Gamma, die Temperatur mit hoch Gamma minus eins. Für Luft ist Gamma etwa eins Komma vier.",
+   "data": {
+    "title": "Zwei Formeln",
+    "figure": "cylinder",
+    "lines_y": 1000,
+    "bore_label": "Luft",
+    "stroke_label": "Volumen",
+    "stroke_at": "w:Verdichtungsverhältnis",
+    "fill_at": 0.05,
+    "lines": [
+     {
+      "text": "p₂ / p₁ = ε ^ γ",
+      "hl": "γ",
+      "at": "w:Druck"
+     },
+     {
+      "text": "T₂ / T₁ = ε ^ (γ − 1)",
+      "hl": "γ − 1",
+      "at": "w:Temperatur"
+     },
+     {
+      "text": "γ ≈ 1,4 für Luft",
+      "hl": "1,4",
+      "at": "w:Luft"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      180
+     ],
+     [
+      1,
+      540
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Verdichtungstakt · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_readout",
+   "spoken": "Ein Beispiel, ideal gerechnet: Verdichtung sechzehn zu eins, Ansaugluft zwanzig Grad. Die Temperatur steigt etwa um den Faktor drei, auf rund sechshundert Grad Celsius. Das ist der Idealwert, ohne Wärmeverlust an die Wände.",
+   "data": {
+    "title": "Beispiel 16 : 1",
+    "figure": "bars",
+    "bar_max": 640,
+    "lines_y": 1000,
+    "bars": [
+     {
+      "label": "Ansaugluft",
+      "value": 20,
+      "text": "20 °C",
+      "at": "w:Ansaugluft"
+     },
+     {
+      "label": "nach dem Verdichten (ideal)",
+      "value": 615,
+      "text": "≈ 615 °C",
+      "at": "w:Celsius"
+     }
+    ],
+    "lines": [
+     {
+      "text": "16 ^ 0,4 ≈ 3,0",
+      "hl": "3,0",
+      "at": "w:Faktor"
+     },
+     {
+      "text": "293 K × 3,0 ≈ 890 K",
+      "hl": "890 K",
+      "at": "w:rund"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Verdichtungstakt · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Genau diese Wärme nutzt der Diesel. Er spritzt den Kraftstoff in die heiße Luft, und der Kraftstoff entzündet sich von selbst. Eine Zündkerze braucht er dafür nicht. Das US-Energieministerium nennt das Selbstzündung durch Verdichtungswärme.",
+   "data": {
+    "title": "Selbstzündung",
+    "fuel": "diesel",
+    "notes": [
+     {
+      "text": "Einspritzdüse",
+      "at": "w:spritzt",
+      "side": "r",
+      "y": 640,
+      "to": [
+       540,
+       420
+      ]
+     },
+     {
+      "text": "zündet selbst",
+      "at": "w:entzündet",
+      "side": "l",
+      "y": 760,
+      "color": "fire",
+      "to": [
+       500,
+       590
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      300
+     ],
+     [
+      1,
+      480
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "US-DOE AFDC, Dieselmotor · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Weniger Platz, mehr Druck, mehr Hitze. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "weniger Platz",
+      "at": "w:Weniger"
+     },
+     {
+      "text": "mehr Druck",
+      "at": "w:Druck"
+     },
+     {
+      "text": "mehr Hitze",
+      "at": "w:Hitze"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    },
+    "fuel": "diesel"
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

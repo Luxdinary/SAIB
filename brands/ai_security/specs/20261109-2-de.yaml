@@ -1,0 +1,87 @@
+id: ai_security-20261109-2-de
+version: F2
+title: "Was ein KI-Chat über deinen Betrieb speichert"
+reihe: "Vor dem Upload"
+short: "KI-Chat speichert"
+note: "Thema E01. Beispielfall nachgestellt; Aussagen am Beispiel Claude aus S1 und S2 (Anthropic Datenschutz-FAQ) sowie S3 (BSI), Faktenbasis aus dem Plan vom 01.11.2026. Andere Anbieter werden nicht bewertet."
+description: "Ein Angebot an einen Großkunden, schnell im privaten KI-Chat überarbeitet, danach Daumen hoch. Was passiert mit den Daten? Am Beispiel Claude, und der eine Schritt für Firmendaten."
+hashtags: [kiimbuero, datenschutz, kmu, kisicherheit, vordemupload]
+sources:
+  - {id: S1, url: "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training", title: "Anthropic Privacy Center: Is my data used for model training?", checked_at: "2026-11-01", label: "Anthropic, Training (privat)"}
+  - {id: S2, url: "https://privacy.claude.com/en/articles/7996875-can-you-delete-data-that-i-sent-via-api", title: "Anthropic Privacy Center: API and Claude for Work", checked_at: "2026-11-01", label: "Anthropic, API und Claude for Work"}
+  - {id: S3, url: "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.html", title: "BSI: Generative KI-Modelle – Chancen und Risiken", checked_at: "2026-11-01", label: "BSI, Generative KI"}
+unverified:
+  - "Regeln anderer Anbieter: in diesem Video nicht behauptet."
+  - "Aufbewahrungsfristen außer Feedback: nicht genannt."
+  - "Ablauf im Beispielfall (Angebot, Daumen hoch) ist erfunden und als Beispiel gekennzeichnet."
+  - "Dass ein privates Konto ohne Vertrag für Firmendaten nicht reicht (Option B), ist Scutorias Auslegung, im Bild markiert."
+pick: demonstration
+hooks:
+  - {type: question, spoken: "Du fragst einen KI-Chat nach deinem Angebot. Lernt die KI damit?", screen: "Lernt die KI mit?"}
+  - {type: misconception, spoken: "Ein Chat ist privat, also bleibt alles bei dir? Nicht unbedingt.", screen: "Chat = privat?", src: [S1]}
+  - {type: surprising_fact, spoken: "Ein Klick auf Daumen hoch, und Anthropic speichert das Gespräch bis zu fünf Jahre.", screen: "Daumen hoch = fünf Jahre", src: [S1]}
+  - {type: concrete_risk, spoken: "Preise, Rabatte, Kontakte: Was du in den Chat gibst, hat Regeln.", screen: "Firmendaten im Chat", src: [S3]}
+  - {type: demonstration, spoken: "Mittwoch, fünfzehn Uhr. Ein Angebot an einen Großkunden geht in den KI-Chat.", screen: "MI 15:00 · Angebot in den KI-Chat"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Mittwoch, fünfzehn Uhr. Du lässt einen KI-Chat dein Angebot für einen Großkunden kürzen. Privates Konto, schnell erledigt. Danach klickst du auf Daumen hoch."
+    d:
+      kicker: "Beispielfall · nachgestellt"
+      time: "MI 15:00"
+      place: "Vertrieb einer Druckerei"
+      mail_at: 0.6
+      mail: {from: "KI-Chat (Beispiel)", addr: "privates Konto", time: "15:00", subject: "Angebot kürzen", lines: ["Hier unser Angebot an die", "Kunde Beispiel AG, bitte kürzen:", "[Preise, Rabatte, Ansprechpartner]"]}
+      highlight: {line: 2, label: "Firmendaten", at: "@Großkunden"}
+  - f: problem
+    t: sc_inspect
+    s: "Was passiert mit dem Chat? Am Beispiel Claude: Bei privaten Konten wie Free, Pro und Max nutzt Anthropic Chats zum Verbessern der Modelle, wenn du das erlaubst. Und wer Daumen hoch oder runter klickt, gibt Feedback. Dann speichert Anthropic das ganze Gespräch bis zu fünf Jahre."
+    src: [S1]
+    d:
+      kicker: "Am Beispiel Claude"
+      headline: "Was mit dem Chat passiert"
+      rows:
+        - {label: "Konto", value: "privat: Free, Pro, Max", verdict: "prüfen", at: "@privaten"}
+        - {label: "Training", value: "wenn du es erlaubst", verdict: "Einstellung", at: "@erlaubst"}
+        - {label: "Feedback", value: "Gespräch bis 5 Jahre", verdict: "gespeichert", at: "@Daumen"}
+      fact: {kind: fakt, text: "Feedback speichert das ganze Gespräch bis zu fünf Jahre.", source: "Anthropic · Datenschutz-FAQ", at: "@speichert"}
+  - f: problem
+    t: sc_choice
+    s: "Was tust du? A: Passt schon, ist ja nur ein Angebot. B: Du schaltest im privaten Konto das Training aus und machst weiter. C: Für Firmendaten nutzt ihr ein Geschäftskonto mit Vertrag. Entscheide dich jetzt."
+    src: [S1, S2]
+    d:
+      question: "Was tust du?"
+      options:
+        - {key: A, text: "Passt schon, nur ein Angebot", at: "@Passt"}
+        - {key: B, text: "Privat weiter, Training aus", at: "@schaltest"}
+        - {key: C, text: "Geschäftskonto mit Vertrag", at: "@Firmendaten"}
+      think: {seconds: 2.4, at: "@Entscheide"}
+      hint: "Entscheide dich jetzt."
+  - f: insight
+    t: sc_step
+    s: "Richtig ist C. Bei Claude for Work und der Programmierschnittstelle nutzt Anthropic die Daten laut eigener Auskunft nicht zum Training, außer ein Vertrag regelt es anders. Hier entscheidet also der Vertrag, nicht ein Schalter. A übersieht das Feedback, B bleibt ohne Vertrag."
+    src: [S2, S1]
+    d:
+      mode: rule
+      kicker: "Der eine Schritt"
+      card: {letter: C, title: "Geschäftskonto mit Vertrag", sub: "für alles, was Firmendaten enthält", at: 0.2}
+      strikes:
+        - {text: "A: Passt schon", note: "Feedback gespeichert", at: "@übersieht"}
+        - {text: "B: Privat, Training aus", note: "kein Vertrag", at: "@bleibt"}
+      sources:
+        - {kind: fakt, label: "Anthropic · Claude for Work, API"}
+        - {kind: auslegung, label: "B: Auslegung Scutoria"}
+      sources_at: "@Vertrag"
+  - f: close
+    t: sc_close
+    s: "Erst der Vertrag, dann der Chat. Das BSI erinnert: Generative KI bringt auch neue Sicherheitsrisiken. Was hättest du gewählt? Schreib es in die Kommentare."
+    src: [S3]
+    d:
+      kicker: "Reihe · Vor dem Upload"
+      rule: "Erst der Vertrag, dann der Chat."
+      rule_at: 0.3
+      question: {text: "Was hättest du gewählt?", at: "@Was"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Belegt. Datiert. Vorzeigbar."
+      disclaimer: "Quellenbasiert. Keine Rechtsberatung."

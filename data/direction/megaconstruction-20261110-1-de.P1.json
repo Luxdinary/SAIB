@@ -1,0 +1,576 @@
+{
+  "video_id": "megaconstruction-20261110-1-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "164 km Brücke: mehr als dreimal so lang wie der Eurotunnel",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Nachgerechnet. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261110-1-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.guinnessworldrecords.com/world-records/longest-bridge",
+      "title": "Guinness World Records: Longest bridge (Danyang–Kunshan Grand Bridge, 164 km, Jinghu-Schnellfahrstrecke, seit Juni 2011)",
+      "label": "Guinness World Records",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.railway-technology.com/features/feature-the-longest-high-speed-rail-networks-in-china/",
+      "title": "Railway Technology (Fachpresse): Beijing–Shanghai 1.318 km, über 85 % aufgeständert",
+      "label": "Railway Technology",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.leshuttle.com/uk/build/the-channel-tunnel-interesting-facts/",
+      "title": "LeShuttle (Getlink): Channel Tunnel 50,5 km, davon 38 km unter dem Meer",
+      "label": "LeShuttle (Getlink)",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.eurostar.com/fr-fr/voyage/experience-eurostar/le-tunnel-sous-la-manche",
+      "title": "Eurostar: Tunnel sous la Manche 50,45 km, 37,9 km unter dem Ärmelkanal",
+      "label": "Eurostar",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Bauherr China Railway nicht erreichbar: Länge über Guinness und Fachpresse belegt, daher 'rund 164 km'.",
+    "Genaue Länge 164,8 bzw. 164,85 km nur in Suchergebnissen."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Diese Brücke ist rund 164 Kilometer lang. Mehr als dreimal so lang wie der Eurotunnel.",
+      "on_screen": "164 km Brücke. Mehr als 3 Eurotunnel.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Danyang-Kunshan-Brücke wirklich?",
+      "on_screen": "Wie groß ist die Danyang-Kunshan-Brücke wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen die Danyang-Kunshan-Brücke.",
+      "on_screen": "die Danyang-Kunshan-Brücke: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Danyang-Kunshan-Brücke schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Danyang-Kunshan-Brücke: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Danyang-Kunshan-Brücke im Modell entsteht.",
+      "on_screen": "die Danyang-Kunshan-Brücke im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Diese Brücke ist rund 164 Kilometer lang. Ist sie wirklich mehr als dreimal so lang wie der Eurotunnel?",
+      "data": {
+        "kicker": "Nachgerechnet · Danyang–Kunshan",
+        "question": "Mehr als dreimal der Eurotunnel?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Längste Brücke der Welt (Guinness)",
+          "at": "@Eurotunnel",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_build",
+      "spoken": "Die Daten: Die Danyang-Kunshan-Brücke, laut Guinness die längste Brücke der Welt, trägt seit Juni 2011 die Schnellfahrstrecke Peking–Shanghai. Die ganze Strecke misst 1.318 Kilometer, und laut Fachpresse liegen mehr als 85 Prozent davon auf Brücken und Viadukten.",
+      "data": {
+        "headline": "Die Daten",
+        "table_title": "Datenblatt",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Brücke Danyang–Kunshan",
+            "qty": "164 km",
+            "at": "@Danyang"
+          },
+          {
+            "pos": "2",
+            "part": "In Betrieb seit",
+            "qty": "6/2011",
+            "at": "@Juni"
+          },
+          {
+            "pos": "3",
+            "part": "Strecke Peking–Shanghai",
+            "qty": "1318 km",
+            "at": "@1.318"
+          },
+          {
+            "pos": "4",
+            "part": "Auf Brücken und Viadukten",
+            "qty": "> 85 %",
+            "at": "@85"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_calc",
+      "spoken": "Jetzt die Rechnung. Der Eurotunnel ist laut Betreiber 50,5 Kilometer lang, 38 davon unter dem Meer. 164 geteilt durch 50,5 ergibt 3,25. Die Brücke ist also mehr als dreimal so lang.",
+      "data": {
+        "headline": "Die Rechnung",
+        "sheet_dy": 470,
+        "calcs": [
+          {
+            "label": "Brücke ÷ Eurotunnel",
+            "a": {
+              "value": 164,
+              "unit": "km"
+            },
+            "op": "÷",
+            "b": {
+              "value": 50.5,
+              "unit": "km"
+            },
+            "unit": "×",
+            "round": 0.01,
+            "decimals": 2,
+            "expect": 3.25,
+            "at": "@164",
+            "result_at": "@3,25"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_principle",
+      "spoken": "Warum so lang? Der Zug fährt hier fast überall über Pfeilern. Die eine Brücke ist trotzdem nur rund ein Achtel der Strecke: 1.318 geteilt durch 164 ergibt etwa 8.",
+      "data": {
+        "headline": "Der Vergleich",
+        "note": "Pfeilerabstand schematisch",
+        "pins": [
+          {
+            "anchor": "deck",
+            "text": "Pfeiler statt Damm",
+            "at": "@Pfeilern",
+            "side": "up"
+          }
+        ],
+        "rule": {
+          "text": "1.318 km ÷ 164 km ≈ 8: ein Achtel der Strecke",
+          "at": "@Achtel",
+          "dy": 640
+        }
+      },
+      "source_ids": [
+        "S2",
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Ergebnis: Die Behauptung stimmt, mit 3,25. Eine einzige Brücke, auf Pfeilern statt unter dem Meer, und doch nur ein Teil der ganzen Strecke. Folge Gigastruct für die nächste Rechnung.",
+      "data": {
+        "statement": "Ergebnis: stimmt, 3,25-mal",
+        "sheet": "BLATT 05",
+        "rows": [
+          [
+            "Brücke",
+            "rund 164 km"
+          ],
+          [
+            "Eurotunnel",
+            "50,5 km"
+          ],
+          [
+            "Verhältnis",
+            "3,25"
+          ],
+          [
+            "Quellen",
+            "Guinness, Getlink"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "BEHAUPTUNG",
+        "DATEN",
+        "RECHNUNG",
+        "VERGLEICH",
+        "ERGEBNIS"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 5
+      }
+    },
+    "description": "Die Danyang–Kunshan-Brücke ist laut Guinness mit rund 164 km die längste Brücke der Welt – mehr als dreimal so lang wie der Eurotunnel. Nachgerechnet.",
+    "companion_text": "Gerechnet: 164 km ÷ 50,5 km = 3,25. Quellen: Guinness World Records, Railway Technology, LeShuttle (Getlink), Eurostar. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "danyangkunshan",
+      "brücke",
+      "china",
+      "hochgeschwindigkeit",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "164 km ÷ 50,5 km = 3,25 (mit 50,45 km ebenfalls 3,25)",
+        "result": "mehr als dreimal so lang",
+        "sources": [
+          "S1",
+          "S3",
+          "S4"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        3000,
+        60000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "via",
+          "kind": "viaduct",
+          "length": 164000,
+          "spacing": 32,
+          "deck_y": 28,
+          "deck_w": 13,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "chunnel",
+          "kind": "box",
+          "size": [
+            50500,
+            8,
+            18
+          ],
+          "color": "accent",
+          "pos": [
+            25250,
+            0,
+            160
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "deck": [
+          700,
+          33,
+          0
+        ],
+        "far": [
+          4000,
+          33,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [],
+            "az0": 60,
+            "az1": 45,
+            "el0": 12,
+            "el1": 10,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 560,
+            "cy": 830,
+            "box": [
+              [
+                0,
+                0,
+                -40
+              ],
+              [
+                1400,
+                40,
+                40
+              ]
+            ]
+          },
+          "props": {
+            "via.reveal": [
+              [
+                0,
+                0.002
+              ],
+              [
+                "%0.9",
+                0.01
+              ]
+            ]
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [],
+            "az0": 80,
+            "az1": 70,
+            "el0": 20,
+            "el1": 16,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 470,
+            "box": [
+              [
+                0,
+                0,
+                -40
+              ],
+              [
+                1400,
+                40,
+                40
+              ]
+            ]
+          },
+          "props": {}
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "az0": 30,
+            "az1": 20,
+            "el0": 18,
+            "el1": 22,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 560,
+            "box": [
+              [
+                0,
+                0,
+                -40
+              ],
+              [
+                1400,
+                40,
+                40
+              ]
+            ]
+          },
+          "props": {
+            "via.reveal": [
+              [
+                0,
+                0.01
+              ],
+              [
+                "%0.9",
+                0.05
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "az0": 85,
+            "az1": 95,
+            "el0": 6,
+            "el1": 8,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 330,
+            "cy": 560,
+            "box": [
+              [
+                0,
+                0,
+                -40
+              ],
+              [
+                300,
+                40,
+                40
+              ]
+            ]
+          },
+          "props": {}
+        },
+        "b5": {
+          "cam": {
+            "target": [],
+            "az0": 40,
+            "az1": 30,
+            "el0": 25,
+            "el1": 30,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 520,
+            "box": [
+              [
+                0,
+                0,
+                -40
+              ],
+              [
+                1400,
+                40,
+                40
+              ]
+            ]
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

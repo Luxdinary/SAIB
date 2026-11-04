@@ -1,0 +1,104 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16370,
+          "output_tokens": 508,
+          "num_turns": 3,
+          "duration_s": 5.5
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16370,
+          "output_tokens": 482,
+          "num_turns": 3,
+          "duration_s": 6.6
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16392,
+          "output_tokens": 255,
+          "num_turns": 3,
+          "duration_s": 5.5
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16392,
+          "output_tokens": 259,
+          "num_turns": 3,
+          "duration_s": 5.0
+        }
+      ],
+      "reproducible": true
+    },
+    "L3": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 22861,
+          "output_tokens": 846,
+          "num_turns": 4,
+          "duration_s": 8.7
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 22813,
+          "output_tokens": 836,
+          "num_turns": 4,
+          "duration_s": 9.2
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

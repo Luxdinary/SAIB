@@ -1,0 +1,220 @@
+id: ai_security-20261115-3-en
+version: P2
+title: New bank details by email? Call first
+reihe: Was tust du?
+note: 'Pilot P1 EN (localised from the approved DE pilot). Example case staged: firm, supplier, times and sequence are invented; mechanism and advice from S1 and S2 (read 02.11.2026).'
+description: Your supplier emails new bank details, from his real address. What do you do? A staged case with three answers and the one step the FBI and police recommend.
+hashtags:
+- invoicefraud
+- bec
+- bookkeeping
+- smallbusiness
+- whatwouldyoudo
+sources:
+- id: S1
+  url: https://www.ic3.gov/PSA/2024/PSA240911
+  title: 'FBI IC3 PSA I-091124-PSA: Business Email Compromise – The $55 Billion Scam (11.09.2024)'
+  checked_at: '2026-11-02'
+  label: FBI IC3, alert of 11 Sep 2024
+- id: S2
+  url: https://www.berlin.de/polizei/aufgaben/praevention/betrug/artikel.693958.php
+  title: 'Polizei Berlin: Geschäftsführer-Schwindel (CEO-Fraud)'
+  checked_at: '2026-11-02'
+  label: Berlin Police, CEO fraud
+unverified:
+- 'Frequency of the scam in the UK or US: not used.'
+- The sequence of the example case (times, the scammer's reply, the reminder weeks later) is invented and marked as an example, not a factual claim.
+- That a reply and the signature number are not a second channel is Scutoria's interpretation of S1 (secondary channels), marked as interpretation on screen.
+pick: demonstration
+hooks:
+- type: question
+  spoken: Your supplier suddenly has new bank details. What do you do?
+  screen: New bank details. What now?
+- type: misconception
+  spoken: Real sender address means a real email? Not necessarily.
+  screen: Real address = real email?
+  src:
+  - S1
+- type: surprising_fact
+  spoken: According to the FBI, this scam often runs through real, compromised mailboxes.
+  screen: Real mailboxes, wrong hands
+  src:
+  - S1
+- type: concrete_risk
+  spoken: One email with new bank details, and your next payment goes to strangers.
+  screen: New bank details by email?
+  src:
+  - S1
+- type: demonstration
+  spoken: Tuesday, 9:12 a.m. Your timber supplier sends new bank details.
+  screen: TUE 09:12 · New bank details
+  visual: clock, the email arrives as a paper card, the changed line is marked
+beats:
+- f: hook
+  t: sc_case
+  s: 'Tuesday, 9:12 a.m. Your timber supplier emails: We have new bank details, please pay into the new account from now on.'
+  d:
+    kicker: Example case · staged
+    time: TUE 09:12
+    place: Accounts desk, joinery firm
+    mail_at: '@supplier'
+    mail:
+      from: Timber Example Ltd
+      addr: invoices@timber.example
+      time: 09:12
+      subject: New bank details
+      lines:
+      - Good morning, from now on please
+      - 'pay only into our new account:'
+      - IBAN GB•• •••• •••• 4471
+    highlight:
+      line: 1
+      label: changed
+      at: '@bank'
+- f: problem
+  t: sc_inspect
+  s: 'You check it carefully. The sender: his real address. The tone: as always. The invoice attached: correct. Nothing stands out. That''s the point: according to the FBI, this scam often runs through
+    real, compromised mailboxes.'
+  src:
+  - S1
+  d:
+    kicker: What you check
+    headline: All as usual?
+    rows:
+    - label: Sender
+      value: known address
+      verdict: looks fine
+      at: '@sender'
+    - label: Tone
+      value: as always
+      verdict: looks fine
+      at: '@tone'
+    - label: Attachment
+      value: invoice correct
+      verdict: looks fine
+      at: '@invoice'
+    finding:
+      text: Nothing stands out.
+      at: '@Nothing'
+    fact:
+      kind: fakt
+      text: The scam often runs through real, compromised mailboxes.
+      source: FBI IC3 · alert of 11 Sep 2024
+      at: '@according'
+- f: problem
+  t: sc_choice
+  s: 'What do you do? A: You reply to the email and ask. B: You call the number in his signature. C: You call the number from your own records. Remember your choice.'
+  src:
+  - S1
+  d:
+    question: What do you do?
+    options:
+    - key: A
+      text: Reply to the email
+      at: '@reply'
+    - key: B
+      text: Call the number in the signature
+      at: '@call'
+    - key: C
+      text: Call the number in your records
+      at: '@own'
+    think:
+      seconds: 2.6
+      at: '@Remember'
+    hint: Remember your choice.
+- f: demonstration
+  t: sc_timeline
+  s: 'Let''s play out A. Your question lands in the same mailbox. If it''s compromised, the scammer replies: Yes, that''s right. You pay. Weeks later, your real supplier chases the unpaid invoice.'
+  src:
+  - S1
+  d:
+    kicker: Choice A, played out
+    tag: Example
+    headline: You ask by email
+    items:
+    - time: TUE 09:14
+      text: Your question goes out
+      at: '@question'
+    - time: TUE 09:31
+      text: 'Reply: Yes, that''s right.'
+      tone: amber
+      at: '@replies'
+    - time: FRI 10:05
+      text: You pay
+      at: '@pay'
+    - time: Weeks later
+      text: The real supplier chases
+      tone: red
+      at: '@Weeks'
+    source:
+      kind: fakt
+      label: FBI IC3 · compromised mailboxes
+      at: 1.0
+- f: insight
+  t: sc_step
+  s: 'The right answer is C. The FBI advises verifying changes to account details through a second channel. German police advise calling back. A and B are not a second channel: both are tied to the same
+    email.'
+  src:
+  - S1
+  - S2
+  d:
+    mode: rule
+    kicker: The one step
+    card:
+      letter: C
+      title: Call back, known number
+      sub: from your records, never the email
+      at: 0.2
+    strikes:
+    - text: 'A: Reply to the email'
+      note: not a second channel
+      at: '@not'
+    - text: 'B: Number in the signature'
+      note: not a second channel
+      at: '@both'
+    sources:
+    - kind: fakt
+      label: FBI IC3 · second channel
+    - kind: fakt
+      label: Berlin Police · call back
+    - kind: auslegung
+      label: 'A and B: Scutoria''s reading'
+    sources_at: '@FBI'
+- f: insight
+  t: sc_step
+  s: 'Already paid? Then time matters: call your bank right away, ask them to recall the transfer, then report it to the police.'
+  src:
+  - S1
+  - S2
+  d:
+    mode: fallback
+    kicker: Already paid?
+    card:
+      letter: '!'
+      title: Time matters
+      sub: act now, don't wait
+      at: 0.2
+    steps:
+    - text: 'Bank: recall the transfer'
+      at: '@bank'
+    - text: Report it to the police
+      at: '@report'
+    sources:
+    - kind: fakt
+      label: FBI IC3 · Berlin Police
+    sources_at: '@time'
+- f: close
+  t: sc_close
+  s: New bank details by email? Call first, using the number you already have. What would you have picked? Tell me in the comments.
+  d:
+    kicker: Series · What would you do?
+    rule: New bank details? Call first.
+    rule_at: 0.3
+    question:
+      text: What would you have picked?
+      at: '@What'
+    domain: scutoria.com
+    domain_at: 1.2
+    claim: Sourced. Dated. Ready to show.
+    disclaimer: Source-based. No legal advice.
+short: Pilot Neue Bankverbindung EN

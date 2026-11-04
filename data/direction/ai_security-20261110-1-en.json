@@ -1,0 +1,452 @@
+{
+ "video_id": "ai_security-20261110-1-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "The urgent payment request from 'the boss'",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema D01, Reihe So läuft die Masche. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Bank transfer. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Bank transfer",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Payment: requested",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Sender: the boss?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Details: public",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "FBI: $55 billion",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Call-back: open",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Rule: set it today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "No call-back: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "An email from the boss, a secret deal, a transfer abroad: how CEO fraud works according to police and the FBI, and the one rule that breaks it.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "ceofraud",
+   "bec",
+   "smallbusiness",
+   "finance",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.berlin.de/polizei/aufgaben/praevention/betrug/artikel.693958.php",
+   "title": "Polizei Berlin: Geschäftsführer-Schwindel (CEO-Fraud)",
+   "checked_at": "2026-11-01",
+   "label": "Berlin Police, CEO fraud"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ic3.gov/PSA/2024/PSA240911",
+   "title": "FBI IC3 PSA I-091124-PSA: Business Email Compromise – The $55 Billion Scam (11.09.2024)",
+   "checked_at": "2026-11-01",
+   "label": "FBI IC3, BEC alert 2024"
+  }
+ ],
+ "unverified": [
+  "Use of AI by the criminals: not claimed."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Your boss emails: transfer money now, and keep it quiet. Do you?",
+   "on_screen": "The boss says: pay now?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "You'd spot a scam? This one comes from your boss's name.",
+   "on_screen": "You'd spot a scam?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The FBI counts 55 billion dollars lost to business email scams over ten years.",
+   "on_screen": "$55 billion lost to business email scams",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "IC3: 55 Mrd. USD 10/2013-12/2023, weltweit gemeldet"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One email in your boss's name, and the money is gone abroad.",
+   "on_screen": "Email from the boss: money abroad?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "Polizei: Täter geben sich als Geschäftsführer aus, Geldtransfer ins Ausland"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Look at what this email from the boss wants.",
+   "on_screen": "What does this email want?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "One email in your boss's name, and the money is gone abroad.",
+   "data": {
+    "question": "Email from the boss: money abroad?",
+    "doc_label": "Payment order",
+    "chat_title": "Email from the CEO",
+    "bot_line": "Please do this today",
+    "typed": "Confidential: transfer",
+    "badge": "Real?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "This is how Berlin police describe CEO fraud: criminals pose as the boss by email. They mention, for example, a supposed company takeover and ask for a larger transfer abroad.",
+   "data": {
+    "headline": "How CEO fraud works",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Fake boss",
+      "icon": "&#9823;"
+     },
+     {
+      "id": "n1",
+      "label": "Accounts team",
+      "icon": "&#9783;"
+     },
+     {
+      "id": "n2",
+      "label": "Account abroad",
+      "icon": "&#9888;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "email order"
+     },
+     {
+      "label": "transfer"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Money gone?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "The criminals get their knowledge from public sources: business reports, the company register, your own website or brochures. Business partners and planned investments are of particular interest.",
+   "data": {
+    "headline": "Where they get the details",
+    "file_label": "Bank transfer",
+    "card": {
+     "title": "Public sources",
+     "rows": [
+      {
+       "text": "company register",
+       "ok": null
+      },
+      {
+       "text": "website and brochures",
+       "ok": null
+      },
+      {
+       "text": "partners and investments",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "The FBI calls these scams business email compromise. From October 2013 to December 2023, the reported cases worldwide added up to about 55 billion dollars in losses.",
+   "data": {
+    "headline": "How big the scam is",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.0,
+    "left": {
+     "title": "What it looks like",
+     "rows": [
+      {
+       "text": "a single email",
+       "ok": null
+      },
+      {
+       "text": "an order from the boss",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "What the FBI counts",
+     "rows": [
+      {
+       "text": "Oct 2013 to Dec 2023",
+       "ok": null
+      },
+      {
+       "text": "about $55 billion in losses",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "Police advise: with unusual payments, first check the sender address, then confirm the order by calling back or asking in writing. The FBI also recommends a second channel.",
+   "data": {
+    "headline": "Before any unusual payment",
+    "file_label": "Bank transfer",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Call the boss back",
+      "sub": "on a known number",
+      "at": 0.6
+     },
+     {
+      "title": "Reply to the email",
+      "sub": "only reaches them",
+      "at": 1.0
+     }
+    ],
+    "approval": "Order confirmed?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "For your business: decide today that every unusual payment is confirmed by a call-back. Tell everyone who can make transfers. And if money has already gone, call your bank and the police straight away.",
+   "data": {
+    "headline": "One rule for today",
+    "items": [
+     {
+      "title": "Call back before paying",
+      "sub": "for any unusual request",
+      "at": 2.0
+     },
+     {
+      "title": "Everyone who pays",
+      "sub": "knows the rule",
+      "at": 4.8
+     },
+     {
+      "title": "Money already sent?",
+      "sub": "call bank and police now",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Call back first, then pay. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Call back first, then pay",
+    "file_label": "Bank transfer",
+    "button": "Approve",
+    "block_text": "Approve only after call-back",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

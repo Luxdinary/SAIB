@@ -1,0 +1,25 @@
+# TTS voices. Gemini voice names from ai.google.dev/gemini-api/docs/speech-generation (read 2026-10-30, 30 prebuilt voices).
+# Model: gemini-2.5-flash-preview-tts (paid tier; price per Faktencheck 2026-10-29 ~0.02 USD per 75 s video).
+# The mock provider writes a silent WAV of the estimated length and is used until GEMINI_API_KEY is set.
+providers:
+  gemini:
+    model: gemini-2.5-flash-preview-tts
+    output: wav            # API returns PCM 24 kHz 16-bit mono
+    sample_rate: 24000
+    cost_usd_per_million_output_tokens: 10.0   # upper end of 9–10 USD range in the pricing table
+    # Fallback approved by Stefan 02.11.2026 when the Flash daily quota (100 requests per project) is used up. Own
+    # quota (its daily limit is not known). Whole videos only, never mixed within one video or episode.
+    # Use: set GEMINI_TTS_MODEL=gemini-2.5-pro-preview-tts for that run. 20 USD per million output tokens is the
+    # pricing-table value as remembered, not re-checked on 02.11.2026.
+    fallback_model: gemini-2.5-pro-preview-tts
+    fallback_cost_usd_per_million_output_tokens: 20.0
+    voices_known: [Zephyr, Puck, Charon, Kore, Fenrir, Leda, Orus, Aoede, Callirrhoe, Autonoe, Enceladus, Iapetus, Umbriel, Algieba, Despina, Erinome, Algenib, Rasalgethi, Laomedeia, Achernar, Alnilam, Schedar, Gacrux, Pulcherrima, Achird, Zubenelgenubi, Vindemiatrix, Sadachbia, Sadaltager, Sulafat]
+  mock:
+    model: mock
+    output: wav
+    sample_rate: 24000
+    words_per_second: {de: 2.4, en: 2.6}
+  edge:
+    model: edge-tts         # drafts only, not for publishing (licence unclear for commercial use)
+    voices: {de: de-AT-JonasNeural, en: en-US-AndrewNeural}
+default_provider: mock

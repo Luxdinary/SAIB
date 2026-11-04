@@ -1,0 +1,555 @@
+{
+  "video_id": "megaconstruction-20261114-2-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Forth Bridge: Stahl-Antwort auf das Tay-Bridge-Unglück",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261114-2-de. Thema: forth. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Forth Bridge",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Stahlbrücke im Bau",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "Neubau ab 1883",
+          "tone": "accent",
+          "at": "@1883"
+        },
+        {
+          "beat": "b3",
+          "text": "2 × 518 m",
+          "tone": "accent",
+          "at": "@518"
+        },
+        {
+          "beat": "b4",
+          "text": "fertig Nov. 1889",
+          "tone": "green",
+          "at": "@November"
+        }
+      ]
+    },
+    "description": "Die Forth Bridge (1883–1890): Nach dem Einsturz der Tay Bridge entstand in Schottland Großbritanniens erste große Stahlkonstruktion – 53.000 t Stahl, 6,5 Mio. Nieten.",
+    "companion_text": "Gerechnet: 1.700 ft = 518 m. Quellen: Network Rail, Forth Bridges Forum. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "forthbridge",
+      "schottland",
+      "baugeschichte",
+      "stahlbrücke",
+      "welterbe"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "1.700 ft × 0,3048 = 518,2 m",
+        "result": "518 m je Hauptöffnung",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "bed",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -30,
+            0
+          ]
+        },
+        {
+          "id": "water",
+          "kind": "water",
+          "size": 60000,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "bridge",
+          "kind": "bridge",
+          "type": "cantilever",
+          "x0": -1230,
+          "x1": 1230,
+          "deck_y": 46,
+          "deck_w": 24,
+          "deck_t": 5,
+          "towers": [
+            -600,
+            0,
+            600
+          ],
+          "tower_h": 64,
+          "arm": 170,
+          "below": 40,
+          "member_r": 2.6,
+          "ground_y": -30,
+          "piers": [
+            -1000,
+            -900,
+            -800,
+            800,
+            900,
+            1000
+          ],
+          "cable_color": "accent",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "arm": [
+          -430,
+          70,
+          12
+        ],
+        "susp": [
+          -300,
+          50,
+          12
+        ],
+        "tower": [
+          0,
+          110,
+          0
+        ],
+        "span": [
+          -300,
+          46,
+          12
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 75,
+            "az1": 65,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "cy": 840
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 100,
+            "az1": 92,
+            "el0": 4,
+            "el1": 8,
+            "fit0": 1.0,
+            "fit1": 0.95,
+            "cy": 860
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -800,
+                0,
+                -20
+              ],
+              [
+                200,
+                110,
+                20
+              ]
+            ],
+            "az0": 80,
+            "az1": 70,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "cy": 800
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -200,
+                0,
+                -20
+              ],
+              [
+                200,
+                110,
+                20
+              ]
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 12,
+            "el1": 18,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "cy": 820
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 120,
+            "az1": 110,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 1.0,
+            "fit1": 0.9,
+            "cy": 860
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.networkrail.co.uk/who-we-are/our-history/iconic-infrastructure/the-history-of-the-forth-bridge-fife",
+      "title": "Network Rail: The history of the Forth Bridge (Tay-Einsturz 12/1879; 1881 Hängebrücke aufgegeben; Arrol & Co; Bau ab 1883, fertig 11/1889; Eröffnung 04.03.1890; 53.000 t Stahl; 6,5 Mio. Nieten; 2 × 518 m; Türme 110 m; 4.600 Männer; 3 Mio. £)",
+      "label": "Network Rail, Forth Bridge",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.thethreebridges.com/about/world-heritage-site/",
+      "title": "Forth Bridges Forum: World Heritage Site (seit 2015; Spannweiten 521 m; über 4.500 Männer)",
+      "label": "Forth Bridges Forum",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "UNESCO-Seite und Historic Environment Scotland nicht erreichbar.",
+    "Spannweite 518 m (Network Rail) gegen 521 m (Forum): Network Rail verwendet.",
+    "Ob die Auslegerbauweise ursächlich auf den Tay-Einsturz zurückgeht: nur 'nach', nicht 'wegen'."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Zehn Jahre nach einem Einsturz baute Schottland Großbritanniens erste große Stahlbrücke.",
+      "on_screen": "Nach dem Einsturz: 53.000 t Stahl",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Forth Bridge wirklich?",
+      "on_screen": "Wie groß ist die Forth Bridge wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen die Forth Bridge.",
+      "on_screen": "die Forth Bridge: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Forth Bridge schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Forth Bridge: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Forth Bridge im Modell entsteht.",
+      "on_screen": "die Forth Bridge im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "Rund zehn Jahre nach einem Brückeneinsturz stand in Schottland Großbritanniens erste große Stahlbrücke. 53.000 Tonnen Stahl.",
+      "data": {
+        "kicker": "Baugeschichte · Forth Bridge",
+        "question": "Nach dem Einsturz: 53.000 t Stahl",
+        "question_at": "@Rund",
+        "number": {
+          "value": "53.000",
+          "unit": "t",
+          "at_word": "53.000",
+          "y": 640
+        },
+        "badge": {
+          "text": "Forth Bridge, 1890",
+          "at_word": "Stahl",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Tonnen"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_phases",
+      "spoken": "Im Dezember 1879 stürzte die Tay Bridge ein. Die Arbeit an der geplanten Hängebrücke über den Forth wurde gestoppt, 1881 gab man die Pläne auf. 1883 begann der Bau einer Auslegerbrücke aus Stahl.",
+      "data": {
+        "headline": "Vom Einsturz zum Neubau",
+        "rail_dy": 210,
+        "steps": [
+          {
+            "label": "Dez. 1879: Tay Bridge",
+            "sub": "stürzt ein",
+            "at_word": "1879"
+          },
+          {
+            "label": "1881: Hängebrücke",
+            "sub": "Pläne aufgegeben",
+            "at_word": "1881"
+          },
+          {
+            "label": "1883: Baubeginn",
+            "sub": "Auslegerbrücke aus Stahl",
+            "at_word": "1883"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · Nach dem Einsturz",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_section",
+      "spoken": "Drei Doppelausleger tragen zwei eingehängte Mittelstücke. Jede der beiden Hauptöffnungen ist 518 Meter weit, die Türme ragen 110 Meter über Hochwasser. Gebaut hat sie die Firma Arrol aus Glasgow.",
+      "data": {
+        "headline": "Drei Ausleger, zwei Öffnungen",
+        "note": "Modell schematisch",
+        "note_dy": 190,
+        "dims": [
+          {
+            "anchor": "span",
+            "text": "518 m",
+            "at_word": "518"
+          }
+        ],
+        "callouts": [
+          {
+            "anchor": "arm",
+            "text": "Doppelausleger",
+            "side": "up",
+            "at_word": "Doppelausleger"
+          },
+          {
+            "anchor": "tower",
+            "text": "110 m über Hochwasser",
+            "side": "up",
+            "at_word": "110"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "3 · Ausleger",
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "In der Spitze arbeiteten über 4.500 Männer auf der Baustelle. Verbaut wurden 6,5 Millionen Nieten, die Kosten lagen bei 3 Millionen Pfund. Fertig war der Bau im November 1889.",
+      "data": {
+        "headline": "Die Baustelle in Zahlen",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "4.500+",
+            "unit": "",
+            "label": "Männer",
+            "at_word": "4.500"
+          },
+          {
+            "value": "6,5",
+            "unit": "Mio.",
+            "label": "Nieten",
+            "at_word": "6,5"
+          },
+          {
+            "value": "3",
+            "unit": "Mio. £",
+            "label": "Kosten",
+            "at_word": "3"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · In Zahlen",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "Am 4. März 1890 wurde sie eröffnet. Seit 2015 ist sie UNESCO-Welterbe. Folge Gigastruct, dann siehst du das nächste Bauwerk.",
+      "data": {
+        "mode": "closing",
+        "statement": "Eröffnet 1890. Welterbe seit 2015.",
+        "chip": {
+          "text": "Folge Gigastruct",
+          "at_word": "Folge",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · Welterbe",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

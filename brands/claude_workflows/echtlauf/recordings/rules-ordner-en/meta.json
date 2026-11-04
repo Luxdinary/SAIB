@@ -1,0 +1,87 @@
+{
+  "spec": "rules-ordner-en",
+  "recorded_at": "2026-11-04T08:10:13+02:00",
+  "claude_code": "2.1.309",
+  "model_alias": "haiku",
+  "language": "en",
+  "isolation": [
+    "--setting-sources",
+    "project,local",
+    "--strict-mcp-config",
+    "--disable-slash-commands",
+    "--no-session-persistence"
+  ],
+  "sandbox": "C:\\Automation\\promptwerk-sandbox\\rules-ordner-en",
+  "runs": {
+    "L1": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Read tests/alt.test.js and create tests/neu.test.js next to it, which checks that 2 + 2 equals 4. Reply in English.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Write",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 5849,
+      "num_turns": 3,
+      "total_cost_usd": 0.0011301500000000001,
+      "is_error": false,
+      "permission_denials": 0
+    },
+    "L2": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Read src/alt.js and create src/neu.js next to it, which multiplies two numbers. Reply in English.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Write",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 5879,
+      "num_turns": 3,
+      "total_cost_usd": 0.0005227599999999999,
+      "is_error": false,
+      "permission_denials": 0
+    }
+  }
+}

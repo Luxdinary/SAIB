@@ -1,0 +1,599 @@
+{
+ "video_id": "menswear-20261105-1-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Der untere Sakkoknopf bleibt offen. Mit Absicht.",
+ "notes": "Vorlage Suitwerk 0.9 (30.10.2026), nur Claude Code: Sakko als Linienillustration ist der rote Faden, fuenf Suitwerk-Szenentypen aus brands/menswear/scenes.py. Aussagen gegen S1-S3 geprueft; Herkunftsgeschichten nicht verwendet. | V3 (30.10.2026): Sprechtext fuer Gemini Orus verlaengert (V2: 151 Woerter = 53,4 s Sprache), neue Aussagen aus S1 (Schnitt, Form) und S2 (fast alle Zweiknopf-Sakkos nur oben geschlossen; Zweireiher: unterster Knopf je nach Modell zum bequemen Sitzen offen), S3 (Merkhilfe sometimes, always, never). | Q1 (31.10.2026, Qualitaetsrunde): Sprechtext unveraendert (Stimme V3 wiederverwendet); Atelier-Hintergrund (LAYER), groessere Sakkos, Detail-Lupe im Hook, mehr Bildereignisse an Woertern, Statusleiste mit Zeiten aus der V3-Stimme und Ton green am Schluss.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Sakko, Einreiher",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "unterer Knopf: ?",
+     "tone": "amber",
+     "offset": 1.9
+    },
+    {
+     "beat": "b2",
+     "text": "beide zu: zieht",
+     "tone": "red",
+     "offset": 7.89
+    },
+    {
+     "beat": "b3",
+     "text": "Grund: der Schnitt",
+     "tone": "muted",
+     "offset": 1.33
+    },
+    {
+     "beat": "b4",
+     "text": "oben zu, unten offen",
+     "tone": "muted",
+     "offset": 0.43
+    },
+    {
+     "beat": "b5",
+     "text": "1 Knopf, Zweireiher",
+     "tone": "muted",
+     "offset": 0.59
+    },
+    {
+     "beat": "b6",
+     "text": "Sitzen: ganz offen",
+     "tone": "muted",
+     "offset": 3.43
+    },
+    {
+     "beat": "b7",
+     "text": "unterer Knopf: offen",
+     "tone": "green",
+     "offset": 0.45
+    }
+   ]
+  },
+  "description": "Warum bleibt der untere Knopf am Sakko offen? Weil das Sakko so geschnitten ist: schmal zur Taille, darunter leicht offen über den Hüften. Die Faustregel für zwei und drei Knöpfe, die Ausnahmen und was im Sitzen gilt.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "anzug",
+   "sakko",
+   "stilregeln",
+   "gentleman"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://kingandallen.co.uk/journal/2017/to-button-or-not-to-button/",
+   "title": "How Should You Button Your Suit Jacket and Waistcoat? (King & Allen, Massschneiderei London, 26.05.2018): unterer Knopf am Einreiher nie schliessen; zieht den unteren Teil (skirt) zu eng, Silhouette schmal an der Taille, leicht offen ueber den Hueften (ruins this hard-to-achieve effect; erneut geprueft 30.10.2026)",
+   "checked_at": "2026-10-30",
+   "label": "King & Allen, Journal"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.gentlemansgazette.com/how-to-button-your-suits/",
+   "title": "How To Button Your Suits, Jackets, Vests, Overcoats, & Tuxedo (Sven Raphael Schneider, Gentleman's Gazette, 15.01.2018): 2 Knoepfe oben zu, beide zu gilt als Fauxpas; 3 Knoepfe Mitte (oder obere zwei); 1 Knopf im Stehen zu; im Sitzen oeffnen; Zweireiher bleiben geschlossen (unterer Knopf je nach Modell im Sitzen offen); fast alle (99,99 %) Zweiknopf-Einreiher sind so geschnitten, dass nur der obere Knopf geschlossen wird; Zweireiher mit sechs Knoepfen: zum bequemen Sitzen unteren Knopf oeffnen (erneut geprueft 30.10.2026)",
+   "checked_at": "2026-10-30",
+   "label": "Gentleman's Gazette"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.artofmanliness.com/style/clothing/the-sometimes-always-never-3-button-rule/",
+   "title": "The Sometimes, Always, Never Three-Button Rule (Brett & Kate McKay, The Art of Manliness, aktualisiert 20.05.2024): oben manchmal, Mitte immer, unten nie",
+   "checked_at": "2026-10-30",
+   "label": "The Art of Manliness"
+  }
+ ],
+ "unverified": [
+  "Herkunft der Regel bei Koenig Edward VII.: Mental Floss stellt sie als gesichert dar, Gentleman's Gazette nur als eine von mehreren Theorien; nicht im Video.",
+  "Begruendung 'damit nichts knittert' fuer das Oeffnen im Sitzen: in S2 nicht als Grund genannt; nicht im Video.",
+  "Weste (unterster Westenknopf offen): eigenes Thema im Kalender, nicht in diesem Video.",
+  "Paddock-Schnitt (beide Knoepfe zu) als seltene Ausnahme: nicht im Video, um die Regel nicht zu verwischen.",
+  "Unterschiede zwischen 4er-, 6er- und 8er-Zweireiher: nur allgemein 'meist geschlossen' verwendet."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Warum hat ein Sakko einen Knopf, den man nie schließt? Er ist kein Versehen.",
+   "on_screen": "Ein Knopf, den man nie schließt?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 4,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Sakko zeichnet sich, Ring um den unteren Knopf, Fragezeichen",
+   "why": {
+    "truth": "'nie' gilt fuer den Einreiher mit zwei oder drei Knoepfen (S1, S2); die Ausnahmen kommen im Video",
+    "visual": "der Knopf ist das Objekt des ganzen Videos"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Alle Knöpfe zu sieht ordentlich aus? Beim Sakko ist es ein Fehler.",
+   "on_screen": "Alle Knöpfe zu? Beim Sakko ein Fehler.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Sakko mit beiden Knoepfen zu, Zugfalten",
+   "why": {
+    "truth": "S2: beide Knoepfe zu gilt als Fauxpas; 'Fehler' ist eine Stilkonvention, keine Pflicht"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Ein Sakko ist so geschnitten, dass der untere Knopf offen bleibt.",
+   "on_screen": "Geschnitten, damit er offen bleibt",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Schnittlinie unter dem Knopf oeffnet sich",
+   "why": {
+    "truth": "S1 Silhouette, S2 moderne Schnitte; gilt nicht fuer jeden Schnitt (Paddock)"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Schließt du den unteren Knopf, zieht dein Sakko über der Hüfte.",
+   "on_screen": "Unterer Knopf zu: Das Sakko zieht",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Zugfalten vom Knopf zur Huefte",
+   "why": {
+    "truth": "S1: zieht den unteren Teil zu eng"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, was passiert, wenn dieser Knopf zugeht.",
+   "on_screen": "Was passiert, wenn dieser Knopf zugeht?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "Knopf schliesst, Zugfalten erscheinen",
+   "why": {
+    "clarity": "ohne Ton unklar, worum es geht"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage mit der hoechsten Bewertung; der untere Knopf ist zugleich der rote Faden."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 4,
+   "spoken": "Warum hat ein Sakko einen Knopf, den man nie schließt? Er ist kein Versehen.",
+   "data": {
+    "question": "Ein Knopf, den man nie schließt?",
+    "variant": "sb2",
+    "fastened": [
+     0
+    ],
+    "target": "button:1",
+    "badge": "?",
+    "question_at": "w:Warum",
+    "badge_at": "w:Knopf",
+    "hold_end": true,
+    "loupe_at": "w:Knopf",
+    "nie_at": "w:nie",
+    "cut_at": "w:Versehen",
+    "jacket_x": 380
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "Alle Knöpfe zu, das wirkt ordentlich. Beim Einreiher mit zwei Knöpfen gilt es aber als Fehler. Schließ hier den unteren Knopf, und schau, was passiert: Der Stoff zieht sich über der Hüfte zusammen. Das Sakko spannt, wo es fallen sollte.",
+   "data": {
+    "headline": "Beide Knöpfe zu?",
+    "variant": "sb2",
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0,
+     1
+    ],
+    "target": "button:1",
+    "pointer_at": "w:Einreiher",
+    "zoom_at": "w:Schließ",
+    "flip_at": "w:Knopf",
+    "label_at": "w:Stoff",
+    "zoom": 1.55,
+    "label": "Der Stoff zieht über der Hüfte",
+    "backdrop": true,
+    "hold_end": true,
+    "all_at": "w:Knöpfe",
+    "error_at": "w:Fehler",
+    "pull_at": "w:zusammen",
+    "tense_at": "w:spannt",
+    "ghost_at": "w:fallen"
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 751,
+     "y": 879,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Einreiher"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 11,
+   "spoken": "Der Grund ist der Schnitt. Das Sakko wird zur Taille hin schmal und öffnet sich darunter leicht über den Hüften. Der untere Knopf würde genau diese Form zusammenziehen. Fast jedes Sakko mit zwei Knöpfen ist so geschnitten, dass nur der obere schließt.",
+   "data": {
+    "headline": "Der Grund: der Schnitt",
+    "left_at": "w:Sakko",
+    "right_at": "w:untere",
+    "left": {
+     "title": "Unten offen",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "tag": "fällt frei über die Hüfte",
+     "shapes": [
+      {
+       "kind": "waist",
+       "at": "w:Taille"
+      },
+      {
+       "kind": "cut",
+       "at": "w:öffnet"
+      },
+      {
+       "kind": "hips",
+       "at": "w:leicht"
+      }
+     ],
+     "pulses": [
+      {
+       "target": "button:0",
+       "at": "w:obere"
+      }
+     ]
+    },
+    "right": {
+     "title": "Unten zu",
+     "variant": "sb2",
+     "fastened": [
+      0,
+      1
+     ],
+     "target": "button:1",
+     "tag": "Form wird zusammengezogen",
+     "strain": true,
+     "shapes": [
+      {
+       "kind": "pull",
+       "at": "w:Form"
+      }
+     ],
+     "pulses": [
+      {
+       "target": "button:0",
+       "at": "w:obere"
+      }
+     ]
+    },
+    "left_tag_at": "w:Hüften",
+    "right_tag_at": "w:zusammenziehen",
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Schnitt"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 11,
+   "spoken": "Die Faustregel lautet: Bei zwei Knöpfen schließt du den oberen. Bei drei Knöpfen immer den mittleren, den oberen nach Geschmack, den unteren nie. Im Englischen merkt man sich: manchmal, immer, nie.",
+   "data": {
+    "headline": "Die Faustregel",
+    "stages": [
+     {
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "at": 0.0,
+      "title": "Zwei Knöpfe",
+      "tags": [
+       {
+        "button": 0,
+        "text": "zu",
+        "sub": "oben",
+        "tone": "always",
+        "at": "w:schließt"
+       },
+       {
+        "button": 1,
+        "text": "offen",
+        "sub": "unten",
+        "tone": "never",
+        "at": "w:oberen"
+       }
+      ]
+     },
+     {
+      "variant": "sb3",
+      "fastened": [
+       1
+      ],
+      "at": "w:drei",
+      "title": "Drei Knöpfe",
+      "focus_at": "w:Englischen",
+      "tags": [
+       {
+        "button": 1,
+        "text": "immer zu",
+        "sub": "Mitte",
+        "tone": "always",
+        "at": "w:immer",
+        "en": "always",
+        "en_at": "w:immer#2"
+       },
+       {
+        "button": 0,
+        "text": "nach Geschmack",
+        "sub": "oben",
+        "tone": "sometimes",
+        "at": "w:oberen#2",
+        "en": "sometimes",
+        "en_at": "w:manchmal"
+       },
+       {
+        "button": 2,
+        "text": "nie",
+        "sub": "unten",
+        "tone": "never",
+        "at": "w:nie",
+        "en": "never",
+        "en_at": "w:nie#2"
+       }
+      ]
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Faustregel"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 10,
+   "spoken": "Es gibt Ausnahmen. Ein Sakko mit nur einem Knopf schließt du im Stehen. Und der Zweireiher folgt eigenen Regeln: Er bleibt meist geschlossen. Nur zum bequemen Sitzen darf je nach Modell der unterste Knopf aufgehen.",
+   "data": {
+    "headline": "Die Ausnahmen",
+    "left_at": "w:Ein",
+    "right_at": "w:Zweireiher",
+    "left": {
+     "title": "Ein Knopf",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "target": "button:0",
+     "tag": "im Stehen geschlossen",
+     "pulses": [
+      {
+       "target": "button:0",
+       "at": "w:Knopf"
+      }
+     ]
+    },
+    "right": {
+     "title": "Zweireiher",
+     "variant": "db6",
+     "fastened": [
+      0,
+      1
+     ],
+     "target": "button:0",
+     "tag": "bleibt meist zu",
+     "tag2": "im Sitzen: je nach Modell offen",
+     "tag2_at": "w:Sitzen",
+     "pulses": [
+      {
+       "target": "button:1",
+       "at": "w:unterste",
+       "tone": "amber"
+      }
+     ]
+    },
+    "left_tag_at": "w:Stehen",
+    "right_tag_at": "w:bleibt",
+    "backdrop": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Ausnahmen"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "Kurz gesagt: Im Stehen ist der obere Knopf zu. Im Sitzen öffnest du das Sakko ganz, beim Aufstehen schließt du es wieder. Und der untere Knopf bleibt immer offen.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Im Stehen: oben zu",
+      "sub": "zwei Knöpfe, Einreiher",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "at": "w:Stehen",
+      "ring": "button:0",
+      "ring_at": "w:obere"
+     },
+     {
+      "title": "Im Sitzen: ganz offen",
+      "sub": "beim Aufstehen wieder zu",
+      "variant": "sb2",
+      "fastened": [],
+      "at": "w:Sitzen",
+      "then_fastened": [
+       0
+      ],
+      "then_at": "w:Aufstehen"
+     },
+     {
+      "title": "Unten: immer offen",
+      "sub": "so ist das Sakko geschnitten",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "at": "w:untere",
+      "ring": "button:1",
+      "ring_at": "w:offen"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 7,
+   "spoken": "Ein offener Knopf, mit Absicht. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "variant": "sb2",
+    "from_fastened": [
+     0,
+     1
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "button:1",
+    "fix_at": "w:offener",
+    "statement_at": "w:mit",
+    "chip_at": "w:Blick",
+    "statement": "Offen. Mit Absicht.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "ring_at": "w:Knopf"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

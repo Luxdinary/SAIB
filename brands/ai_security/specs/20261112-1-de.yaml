@@ -1,0 +1,191 @@
+id: ai_security-20261112-1-de
+version: F2
+title: 'KI-Kompetenz: die Pflicht, die schon gilt'
+reihe: Gilt das für uns?
+short: KI-Kompetenz
+note: Thema A02. Keine Rechtsberatung. Beispielfall nachgestellt; Aussagen aus S1 (EU-Kommission, FAQ KI-Kompetenz) und S2 (KI-VO Art. 4), Faktenbasis aus dem Plan vom 01.11.2026.
+description: 'Eure Steuerberaterin fragt: Ihr nutzt KI für Werbetexte? Dann gilt für euch Artikel 4 des AI Act. Was das heißt, was nicht nötig ist und was ihr heute aufschreibt.'
+hashtags:
+- aiact
+- kikompetenz
+- kmu
+- kiimbuero
+- giltdasfueruns
+sources:
+- id: S1
+  url: https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers
+  title: 'European Commission: AI Literacy – Questions & Answers'
+  checked_at: '2026-11-01'
+  label: EU-Kommission, FAQ KI-Kompetenz
+- id: S2
+  url: https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4
+  title: 'AI Act, Article 4: AI literacy'
+  checked_at: '2026-11-01'
+  label: KI-VO Art. 4
+unverified:
+- 'Bußgelder für Verstöße gegen Art. 4: nicht verwendet.'
+- 'Nationale Zuständigkeiten in Deutschland oder Österreich: nicht genannt.'
+- Die Mail der Steuerberaterin ist erfunden (Beispielfall).
+pick: demonstration
+hooks:
+- type: question
+  spoken: Ihr nutzt KI im Betrieb. Gilt dann schon eine EU-Pflicht für euch?
+  screen: Gilt das schon für uns?
+- type: misconception
+  spoken: Wir nutzen KI nur, also betrifft uns der AI Act nicht? Doch.
+  screen: Nur Nutzer = nicht betroffen?
+  src:
+  - S2
+  - S1
+- type: surprising_fact
+  spoken: Die Pflicht zur KI-Kompetenz gilt schon seit Februar 2025.
+  screen: Gilt seit 02.02.2025
+  src:
+  - S2
+- type: concrete_risk
+  spoken: Dein Team schreibt Werbetexte mit ChatGPT? Dann gilt für dich eine EU-Pflicht.
+  screen: Werbetexte mit KI?
+  src:
+  - S1
+- type: demonstration
+  spoken: Dienstag, neun Uhr dreißig. Eine Mail von eurer Steuerberaterin zum AI Act.
+  screen: DI 09:30 · Betrifft euch das?
+beats:
+- f: hook
+  t: sc_case
+  s: 'Dienstag, neun Uhr dreißig. Eine Mail von eurer Steuerberaterin: Ihr nutzt doch KI für eure Werbetexte? Dann gilt für euch Artikel 4 des AI Act.'
+  d:
+    kicker: Beispielfall · nachgestellt
+    time: DI 09:30
+    place: Inhaber einer Bäckerei mit Filialen
+    mail_at: '@Mail'
+    mail:
+      from: Kanzlei Beispiel
+      addr: beratung@kanzlei.example
+      time: 09:30
+      subject: 'AI Act: betrifft euch das?'
+      lines:
+      - Ihr nutzt KI für Werbetexte?
+      - Dann gilt für euch Artikel 4
+      - des AI Act. Habt ihr das im Blick?
+    highlight:
+      line: 1
+      label: Pflicht
+      at: '@Artikel'
+- f: problem
+  t: sc_inspect
+  s: Was wisst ihr über euren Betrieb? Ihr nutzt KI, entwickelt aber keine. Laut Artikel 4 müssen Anbieter und Betreiber für KI-Kompetenz ihrer Leute sorgen. Betreiber ist auch, wer KI nur nutzt. Die Pflicht
+    gilt seit dem zweiten Februar 2025.
+  src:
+  - S2
+  - S1
+  d:
+    kicker: Was ihr wisst
+    headline: Seid ihr gemeint?
+    rows:
+    - label: Nutzung
+      value: KI für Werbetexte
+      verdict: ja
+      at: '@nutzt'
+    - label: Entwicklung
+      value: keine eigene KI
+      verdict: nein
+      at: '@entwickelt'
+    - label: Rolle
+      value: Betreiber
+      verdict: laut Art. 4
+      at: '@Betreiber'
+    fact:
+      kind: fakt
+      text: Art. 4 gilt auch für Betreiber, die KI nur nutzen.
+      source: KI-VO Art. 4 · seit 02.02.2025
+      at: '@Pflicht'
+- f: problem
+  t: sc_choice
+  s: 'Was tust du? A: Nichts, ihr nutzt KI ja nur. B: Ihr bucht eine teure Zertifizierung. C: Ihr schreibt auf, welche Tools ihr nutzt, und schult das Team zu ihren Risiken. Entscheide dich jetzt.'
+  src:
+  - S1
+  d:
+    question: Was tust du?
+    options:
+    - key: A
+      text: Nichts, wir nutzen KI nur
+      at: '@Nichts'
+    - key: B
+      text: Teure Zertifizierung buchen
+      at: '@bucht'
+    - key: C
+      text: Tools auflisten, Team schulen
+      at: '@schreibt'
+    think:
+      seconds: 2.4
+      at: '@Entscheide'
+    hint: Entscheide dich jetzt.
+- f: insight
+  t: sc_step
+  s: 'Richtig ist C. Die EU-Kommission nennt genau dieses Beispiel: Ein Betrieb, dessen Leute ChatGPT für Werbetexte nutzen, fällt darunter. Ein Zertifikat braucht es nicht, eine interne Liste der Schulungen
+    reicht als Nachweis.'
+  src:
+  - S1
+  d:
+    mode: rule
+    kicker: Der eine Schritt
+    card:
+      letter: C
+      title: Liste und Schulung
+      sub: intern festgehalten, ohne Zertifikat
+      at: 0.2
+    strikes:
+    - text: 'A: Nichts tun'
+      note: gilt auch für Nutzer
+      at: '@fällt'
+    - text: 'B: Teures Zertifikat'
+      note: nicht nötig
+      at: '@Zertifikat'
+    sources:
+    - kind: fakt
+      label: EU-Kommission · FAQ KI-Kompetenz
+    - kind: auslegung
+      label: Einordnung für euren Betrieb
+    sources_at: '@EU'
+- f: benefit
+  t: sc_step
+  s: 'Die Kommission nennt vier Fragen als Mindestinhalt: Was ist KI und welche nutzen wir? Sind wir Anbieter oder nur Nutzer? Welche Risiken haben unsere Tools? Und was muss jede Person dafür wissen? Seit
+    August 2026 wird die Pflicht beaufsichtigt.'
+  src:
+  - S1
+  d:
+    mode: fallback
+    kicker: Vier Fragen fürs Team
+    card:
+      letter: '?'
+      title: 'Schulung: vier Fragen'
+      sub: laut EU-Kommission
+      at: 0.2
+    steps:
+    - text: Was ist KI, welche nutzen wir?
+      at: '@Was'
+      mark: q
+    - text: Anbieter oder nur Nutzer?
+      at: '@Sind'
+      mark: q
+    - text: Welche Risiken haben die Tools?
+      at: '@Welche'
+      mark: q
+    - text: Was muss jede Person wissen?
+      at: '@muss'
+      mark: q
+- f: close
+  t: sc_close
+  s: Erst verstehen, dann einsetzen. Habt ihr eure KI-Liste schon? Schreib es in die Kommentare.
+  d:
+    kicker: Reihe · Gilt das für uns?
+    rule: Erst verstehen, dann einsetzen.
+    rule_at: 0.3
+    question:
+      text: Habt ihr die Liste schon?
+      at: '@Habt'
+    domain: scutoria.com
+    domain_at: 1.2
+    claim: Belegt. Datiert. Vorzeigbar.
+    disclaimer: Quellenbasiert. Keine Rechtsberatung.

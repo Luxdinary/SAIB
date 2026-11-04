@@ -1,0 +1,397 @@
+{
+ "video_id": "beauty-20261111-1-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "Seven things every EU cosmetic label must show",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261111-1-en.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (jar), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Art. 19 Abs. 1 nennt die Pflichtangaben von der verantwortlichen Person bis zur Bestandteilliste; die USA regeln das eigenständig in 21 CFR 701. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "What must the pack show? The US has its own rules. Federal law there also requires an ingredient list in descending order of predominance, and fragrance ingredients can be grouped as fragrance.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-G/part-701",
+   "title": "21 CFR Part 701 Cosmetic Labeling (eCFR)",
+   "checked_at": "2026-11-01",
+   "label": "21 CFR 701"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Every cosmetic pack in the EU has to show seven things.",
+   "on_screen": "What must the pack show?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Do you know which details every cosmetic pack in the EU must show?",
+   "on_screen": "Do you know which details every cosmetic pack in the EU must",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "The pack shows whatever the maker wants. No: seven items are mandatory in the EU.",
+   "on_screen": "The pack shows whatever the maker wants. No: seven items are",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Don't know the mandatory details, and you'll miss warnings and shelf life.",
+   "on_screen": "Don't know the mandatory details, and you'll miss warnings a",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch how to find the seven mandatory details on a pack.",
+   "on_screen": "Watch how to find the seven mandatory details on a pack.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Every cosmetic pack in the EU has to show seven things.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "What must the pack show?",
+    "badge": "Mandatory?",
+    "kicker": "Close-up",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "That's Article 19 of the EU cosmetics regulation: indelible, easy to read and clearly visible. The first three are the name and address of the responsible person, the nominal content in grams or millilitres, and how long the product lasts.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "The first three",
+    "zoom": "7 items",
+    "flip": false,
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Article 19(1)",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "name and address",
+      "value": "a"
+     },
+     {
+      "text": "content in grams or millilitres",
+      "value": "b"
+     },
+     {
+      "text": "durability",
+      "value": "c"
+     }
+    ],
+    "kicker": "The issue",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "Next come particular precautions for use, the batch number that identifies the product, and the function of the product, unless that's already clear from how it's presented.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "Three more",
+    "items": [
+     {
+      "title": "Precautions",
+      "sub": "point d",
+      "icon": "shield"
+     },
+     {
+      "title": "Batch number",
+      "sub": "point e",
+      "icon": "doc"
+     },
+     {
+      "title": "Function",
+      "sub": "point f, if not obvious",
+      "icon": "doc"
+     }
+    ],
+    "kicker": "Close-up",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "The seventh is the list of ingredients, headed Ingredients. It can go on the outer packaging rather than the container itself. And packs under five grams or five millilitres don't need the content figure.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Number seven",
+    "zoom": "7 items",
+    "flip": true,
+    "doc": {},
+    "rows": [
+     {
+      "text": "list headed Ingredients",
+      "value": "g"
+     },
+     {
+      "text": "may sit on the outer packaging"
+     },
+     {
+      "text": "under 5 g or 5 ml: no content figure needed",
+      "mark": "open"
+     }
+    ],
+    "kicker": "Side by side",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "The US has its own rules. Federal law there also requires an ingredient list in descending order of predominance, and fragrance ingredients can be grouped as fragrance. Ingredients at one percent or less may follow in any order.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "EU and US",
+    "left": {
+     "tag": "EU",
+     "title": "Article 19",
+     "rows": [
+      {
+       "text": "seven mandatory items"
+      },
+      {
+       "text": "list: Ingredients"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "right": {
+     "tag": "US",
+     "title": "21 CFR 701",
+     "rows": [
+      {
+       "text": "ingredient list, descending"
+      },
+      {
+       "text": "fragrance as one word"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "kicker": "Per source"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "For you, that means: turn the pack over and go through all seven. If something important is missing, like the batch number or the address, it's fine to be sceptical.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "How to check",
+    "items": [
+     {
+      "title": "Turn the pack over",
+      "sub": "back and bottom",
+      "icon": "doc"
+     },
+     {
+      "title": "Find all seven",
+      "sub": "from address to Ingredients",
+      "icon": "doc"
+     },
+     {
+      "title": "Something missing?",
+      "sub": "stay sceptical",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Everyday use",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Read the pack first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Key point",
+    "rule": "Read first, then apply.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "question": {
+     "text": "Can you find all seven on yours?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice."
+   }
+  }
+ ]
+}

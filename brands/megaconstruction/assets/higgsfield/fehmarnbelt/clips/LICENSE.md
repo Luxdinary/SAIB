@@ -1,0 +1,18 @@
+# Kling-Clips fuer das Gigastruct-Testvideo Fehmarnbelt (Neustart 2026-11)
+
+Eine Zeile je Datei: `<datei>: <Lizenz>` (Format wie `../LICENSE.md`).
+Tarif: Higgsfield Ultra. Higgsfield Terms of Service section 4.4: 'Company does not claim ownership of any of your Inputs or Outputs, nor does it restrict your commercial use of Outputs.' Rights in exported Outputs survive cancellation.
+Modell: Kling 3.0 Omni Frames (`kling_o3_flf`), mode pro, 8 s, ohne Ton, 9:16, Startbild = Higgsfield-Bild aus `../` (Job-Nummer unten). Erzeugt 2026-11-03 04:25-04:26 UTC; Freigabe Hauptsitzung 03.11.2026 (Kling laeuft wieder, 5 Clips, Kappe 100 Credits). 5 Clips, 50 Credits. Im Video mit der Plakette "KI-Darstellung · kein Foto".
+
+gs_fb_clip_tow.mp4: Higgsfield Ultra, erzeugt 2026-11-03 (Video kling_o3_flf pro 8 s Job 051cf718-e79a-47bc-83a4-26139d834375, Startbild gs_fb_tow_aerial_b_v2.png Job b3230bb2-c58e-4baa-9366-65b05e19c976); Higgsfield Terms of Service 4.4: no restriction on commercial use of Outputs, rights survive cancellation; 10 credits
+gs_fb_clip_hall.mp4: Higgsfield Ultra, erzeugt 2026-11-03 (Video kling_o3_flf pro 8 s Job 71b6cb4b-3e1d-48e9-b733-9301da6adef3, Startbild gs_fb_hall_v2.png Job 6231ffd6-cb56-432b-a4c8-242dc5bf375c); Higgsfield Terms of Service 4.4: no restriction on commercial use of Outputs, rights survive cancellation; 10 credits
+gs_fb_clip_flood.mp4: Higgsfield Ultra, erzeugt 2026-11-03 (Video kling_o3_flf pro 8 s Job 75220ebe-d865-4da3-b639-a8858bcaf447, Startbild gs_fb_basin_flood_v2.png Job 08b0714e-9dd1-4e42-b988-9e7df9ec178f); Higgsfield Terms of Service 4.4: no restriction on commercial use of Outputs, rights survive cancellation; 10 credits
+gs_fb_clip_pontoon.mp4: Higgsfield Ultra, erzeugt 2026-11-03 (Video kling_o3_flf pro 8 s Job c686ad4d-adcc-4a80-987c-28b4aec66de4, Startbild gs_fb_pontoon_night.png Job a65b9534-f1ae-4009-8de1-ec3cc3ece73a; erster Auftrag wegen Preset-Empfehlung nicht eingereicht, ohne Kosten); Higgsfield Terms of Service 4.4: no restriction on commercial use of Outputs, rights survive cancellation; 10 credits
+gs_fb_clip_underwater.mp4: Higgsfield Ultra, erzeugt 2026-11-03 (Video kling_o3_flf pro 8 s Job 76374555-e43b-480b-ab68-f99c48397bf8, Startbild gs_fb_underwater_v2.png Job 099769eb-6b72-4a9c-a5d6-5cf86bf4fd6d); Higgsfield Terms of Service 4.4: no restriction on commercial use of Outputs, rights survive cancellation; 10 credits
+
+Prompts (Kern, jeweils mit "No cuts, no new objects, no text, realistic documentary footage"):
+- tow: Top-down drone shot slowly descending and pushing in over the huge flat concrete tunnel element; the five tugboats move slowly forward pulling it, white wakes trail behind, gentle ripples on the sea. Smooth steady camera.
+- hall: The overhead gantry crane slowly travels along the hall, its hook swaying slightly; small workers seen from behind walk along the formwork; slow steady camera dolly forward. No faces.
+- flood: Sea water keeps rushing into the dock basin through the open gate, foaming currents flow along the walls of the rectangular concrete element, the water level rises steadily; slow steady aerial drift. The element keeps its shape.
+- pontoon: The winch drums on both pontoons turn slowly, steel cables tighten, floodlights flicker slightly on the waves, the concrete element between the pontoons sinks a little lower into the dark water; slow steady camera push forward. No faces.
+- underwater: The massive concrete tunnel element is slowly lowered on its steel cables into the gravel trench, a soft cloud of silt rises as it settles, light shafts shimmer, particles drift; slow steady camera. The element keeps its shape and size. No divers.

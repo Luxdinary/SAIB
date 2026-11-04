@@ -1,0 +1,80 @@
+{
+  "id": "regel-oder-hook-en",
+  "topic_id": "claude_workflows-20261115-3-en",
+  "language": "en",
+  "title": "Permission rule versus hook",
+  "model": "haiku",
+  "tools": "Read,Edit,Write",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "config.json": "{\n  \"port\": 3000,\n  \"debug\": false\n}\n",
+    ".claude/hooks/waechter.js": "// PreToolUse hook with its own logic: only blocks switching debug on\nlet d = \"\";\nprocess.stdin.on(\"data\", c => d += c).on(\"end\", () => {\n  const i = JSON.parse(d).tool_input || {};\n  const neu = (i.new_string || \"\") + (i.content || \"\");\n  if (/\"debug\"\\s*:\\s*true/.test(neu)) {\n    console.error(\"Blocked by hook: debug must not be switched on.\");\n    process.exit(2);\n  }\n  process.exit(0);\n});\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Rule, change port",
+      "prompt": "In config.json, set port to 8080.",
+      "permission_mode": "acceptEdits",
+      "settings": {
+        "permissions": {
+          "deny": [
+            "Edit(./config.json)",
+            "Write(./config.json)"
+          ]
+        }
+      },
+      "probe": "8080",
+      "probe_where": "file:config.json"
+    },
+    {
+      "id": "L2",
+      "title": "Hook, change port",
+      "prompt": "In config.json, set port to 8080.",
+      "permission_mode": "acceptEdits",
+      "settings": {
+        "hooks": {
+          "PreToolUse": [
+            {
+              "matcher": "Edit|Write",
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/waechter.js\""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "probe": "8080",
+      "probe_where": "file:config.json"
+    },
+    {
+      "id": "L3",
+      "title": "Hook, debug on",
+      "prompt": "In config.json, set debug to true.",
+      "permission_mode": "acceptEdits",
+      "settings": {
+        "hooks": {
+          "PreToolUse": [
+            {
+              "matcher": "Edit|Write",
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/waechter.js\""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "probe": "\"debug\": true",
+      "probe_where": "file:config.json"
+    }
+  ]
+}

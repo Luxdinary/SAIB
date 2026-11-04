@@ -1,0 +1,399 @@
+{
+ "video_id": "beauty-20261112-3-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "UVA protection: at least one third",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261112-3-en.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (tube), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Die EU-Empfehlung verlangt einen UVA-Schutz von mindestens einem Drittel des Lichtschutzfaktors; gemessen wird nach ISO 24443. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "How much UVA protection? Today, UVA protection can be measured with the ISO 24443 standard. It describes a lab test that gives, among other things, the UVA protection factor and the critical wavelength.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32006H0647",
+   "title": "Empfehlung 2006/647/EG der Kommission über die Wirksamkeit von Sonnenschutzmitteln und diesbezügliche Herstellerangaben",
+   "checked_at": "2026-11-01",
+   "label": "Recommendation 2006/647/EC"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.iso.org/standard/75059.html",
+   "title": "ISO 24443:2021 Cosmetics – Determination of sunscreen UVA photoprotection in vitro",
+   "checked_at": "2026-11-01",
+   "label": "ISO 24443:2021"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "In the EU, your sunscreen's UVA protection should be at least a third of its SPF.",
+   "on_screen": "How much UVA protection?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Do you know how much UVA protection a sunscreen should have?",
+   "on_screen": "Do you know how much UVA protection a sunscreen should have?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "The SPF tells you everything. It mainly describes UVB protection.",
+   "on_screen": "The SPF tells you everything. It mainly describes UVB protec",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Look only at the SPF, and you know little about UVA protection.",
+   "on_screen": "Look only at the SPF, and you know little about UVA protecti",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch how the EU links UVA protection to the SPF.",
+   "on_screen": "Watch how the EU links UVA protection to the SPF.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "In the EU, your sunscreen's UVA protection should be at least a third of its SPF.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "How much UVA protection?",
+    "badge": "1/3?",
+    "kicker": "Close-up · Sunscreen",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "30"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "The European Commission has recommended this since 2006. Sunscreens should protect well enough against both UVB and UVA radiation, so that public health is properly protected. Claims about UVA and UVB protection should only be made if these minimum levels are met.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Two kinds of protection",
+    "zoom": "UVA",
+    "flip": false,
+    "doc": {
+     "act": "Recommendation 2006/647/EC",
+     "ref": "Point 10",
+     "tag": "EU"
+    },
+    "rows": [
+     {
+      "text": "protection against UVB"
+     },
+     {
+      "text": "protection against UVA"
+     },
+     {
+      "text": "both sufficient"
+     }
+    ],
+    "kicker": "The issue",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "30"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "The recommendation sets minimum values. UVB protection should reach at least SPF 6. The UVA protection factor should be at least one third of the SPF on the label. So for SPF 30, at least 10.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_list",
+   "data": {
+    "headline": "The minimum values",
+    "caption": "Recommendation 2006/647/EC, point 10",
+    "rows": [
+     {
+      "label": "SPF on the label",
+      "value": "30"
+     },
+     {
+      "label": "UVA at least",
+      "value": "10"
+     },
+     {
+      "label": "UVB at least",
+      "value": "SPF 6"
+     }
+    ],
+    "kicker": "Close-up",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "30"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "Then there's the critical wavelength. It should be at least 370 nanometres. It describes how far the protection reaches into the UVA range. The recommendation notes that dermatologists recommend this value.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "Two numbers",
+    "left": {
+     "tag": "UVA protection factor",
+     "title": "≥ 1/3 SPF",
+     "rows": [
+      {
+       "text": "relative to the SPF"
+      }
+     ],
+     "product": {
+      "kind": "tube"
+     }
+    },
+    "right": {
+     "tag": "critical wavelength",
+     "title": "≥ 370 nm",
+     "rows": [
+      {
+       "text": "how far protection reaches"
+      }
+     ],
+     "product": {
+      "kind": "tube"
+     }
+    },
+    "kicker": "Side by side"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "Today, UVA protection can be measured with the ISO 24443 standard. It describes a lab test that gives, among other things, the UVA protection factor and the critical wavelength.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "How it's measured",
+    "zoom": "UVA",
+    "flip": true,
+    "doc": {
+     "act": "ISO 24443:2021",
+     "ref": "UVA protection, in vitro"
+    },
+    "rows": [
+     {
+      "text": "lab test, in vitro"
+     },
+     {
+      "text": "gives the UVA protection factor"
+     },
+     {
+      "text": "and the critical wavelength"
+     }
+    ],
+    "kicker": "Per source",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "30"
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "For you, that means: the SPF is only half the story. Check that your sunscreen also states its UVA protection.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "How to read it",
+    "items": [
+     {
+      "title": "Read the SPF",
+      "sub": "mainly UVB",
+      "icon": "check"
+     },
+     {
+      "title": "Look for UVA",
+      "sub": "on the tube or pack",
+      "icon": "doc"
+     },
+     {
+      "title": "Both together",
+      "sub": "UVB and UVA",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Everyday use",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "30"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Read the UVA protection first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Key point",
+    "rule": "Read first, then apply.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "30"
+    },
+    "question": {
+     "text": "Does your tube mention UVA?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice."
+   }
+  }
+ ]
+}

@@ -1,0 +1,291 @@
+{
+  "video_id": "claude_workflows-20261115-2-en-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Which tools need approval? Three real runs without consent",
+  "notes": "Week 1, series Does it hold?. Own English recording werkzeuge-freigabe-en (second spec version): Read, Write and Bash without approval (default mode), twice each. The script check uses the file lief.txt, so the verdict does not depend on what Claude says about the script.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Which tools can Claude Code use without your approval?",
+      "on_screen": "What works without approval?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "PER",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "question"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude Code can do anything on your machine? Without approval it can only read.",
+      "on_screen": "Can it do anything?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "PER",
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "runs 2 and 3"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Without approval, Claude read the script instead of running it.",
+      "on_screen": "Read, not run",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 3"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Create a file? Without approval, it never appeared.",
+      "on_screen": "Never created",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 2"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Three real runs: read, write, start a script.",
+      "on_screen": "Read, write, run",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "structure"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "PER",
+      "title": "Configure permissions: permission rules are enforced by Claude Code, not by the model; approval table: read-only (file reads, Grep) no, Bash commands yes except a built-in set of read-only commands, file modification yes; to inspect the full command text with your own logic before it runs, use a PreToolUse hook; PreToolUse hook decisions don't bypass permission rules",
+      "url": "https://code.claude.com/docs/en/permissions",
+      "checked_at": "2026-11-02",
+      "label": "Claude Code docs, Permissions"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/werkzeuge-freigabe-en",
+      "checked_at": "2026-11-02",
+      "label": "Own recording",
+      "title": "Own recording werkzeuge-freigabe-en, 2026-11-02: Claude Code 2.1.309, test folder with sample data, every run twice"
+    }
+  ],
+  "unverified": [
+    "Shown is the default mode without any approval. Other modes (for example acceptEdits) and allowed commands change the result; they are not part of this test."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "werkzeuge-freigabe-en"
+    },
+    "short_title": "Werkzeuge und Freigabe EN",
+    "description": "Real run, recorded on Nov 2, 2026 with Claude Code 2.1.309 (model claude-haiku-5-5). Three runs without any approval, every run twice: reading with Read worked. Creating a file with Write did not. Starting a script with Bash did not, two attempts were blocked, and Claude read the source instead. That matches the table in the docs.",
+    "companion_text": "Base command per run: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Write,Bash. All runs with --tools Read,Write,Bash, without --allowedTools and without --permission-mode (default). The script zeige.js creates lief.txt when it runs; that is how the run checks whether it ran. Source: Claude Code docs, Permissions, retrieved Nov 2, 2026. Paths shortened in the frame (test folder = .). Behaviour can change with version and model. Not an official Anthropic channel.",
+    "hashtags": [
+      "claudecode",
+      "aiworkflow",
+      "coding",
+      "developer",
+      "security"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "PER",
+        "R1"
+      ],
+      "spoken": "Which tools can Claude Code use without your approval? Three real runs without any consent at all: read a file, write a file, start a script.",
+      "data": {
+        "run": "L1",
+        "question": "What works without approval?",
+        "type_word": "tools",
+        "chips_word": "Three",
+        "rec": "werkzeuge-freigabe-en"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "The test folder holds a note and a small script. When the script runs, it writes a file called lief.txt. That way you can see whether it really ran, and not just what Claude says about it.",
+      "data": {
+        "run": "L3",
+        "show": "zeige.js",
+        "highlight_text": "writeFileSync",
+        "label": "Sample data",
+        "view_word": "script",
+        "highlight_word": "lief.txt",
+        "tag_word": "really",
+        "rec": "werkzeuge-freigabe-en"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run one, read. Claude read notiz.txt with the Read tool and named the first line. No question, no block, done in under twenty seconds.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "stamp_true": "done",
+        "stamp_false": "needs approval",
+        "rec": "werkzeuge-freigabe-en"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run two, write. Claude tried to create gruss.txt with the Write tool. Writing had not been approved, the file never appeared, and Claude said it had not tried another way around the gate.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "text_rows": 5,
+        "stamp_true": "done",
+        "stamp_false": "needs approval",
+        "rec": "werkzeuge-freigabe-en"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run three, start a script. The first Bash command needed approval. Claude read the script, called it harmless and tried again as a single command. That was blocked too, and Claude stopped. lief.txt never appeared.",
+      "data": {
+        "run": "L3",
+        "probe_good": true,
+        "text_rows": 4,
+        "stamp_true": "done",
+        "stamp_false": "needs approval",
+        "rec": "werkzeuge-freigabe-en"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "PER"
+      ],
+      "spoken": "All three runs ran twice, with the same result. Reading worked without approval, writing and Bash did not. That is exactly what the table in the docs says.",
+      "data": {
+        "headline": "3 runs, twice each",
+        "probe_good": true,
+        "stamp_true": "done",
+        "stamp_false": "needs approval",
+        "titles": {
+          "L1": "Read: read a file",
+          "L2": "Write: create a file",
+          "L3": "Bash: start a script"
+        },
+        "note": "Reading: no approval. Bash, file edits: approval (per the docs).",
+        "note_source": "Claude Code docs, Permissions",
+        "rows_word": "All",
+        "row_gap": 0.7,
+        "note_word": "table",
+        "rec": "werkzeuge-freigabe-en"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "So Claude may read right away. For writing and commands, you need an approval or a rule. Follow Promptwerk for more Claude workflows, step by step.",
+      "data": {
+        "statement": "Read right away, write and run with approval.",
+        "claim": "Promptwerk · real runs",
+        "statement_word": "read",
+        "claim_word": "Follow",
+        "rec": "werkzeuge-freigabe-en"
+      }
+    }
+  ]
+}

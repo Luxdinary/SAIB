@@ -1,0 +1,457 @@
+{
+ "video_id": "ai_security-20261113-2-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Geteilter KI-Chat heißt öffentlicher Link",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema E10, Reihe KI im Büro. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Geteilter Chat. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Geteilter Chat",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Link: geteilt",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Zugriff: jeder mit Link",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Ablaufdatum: keins",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Konto: privat oder Firma?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Alte Links: noch offen?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Links: heute prüfen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Kundendaten im Link: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Wer einen KI-Chat per Link teilt, macht ihn für alle mit dem Link lesbar. Was ChatGPT und Claude dazu dokumentieren und wo du geteilte Links wieder schließt.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "chatgpt",
+   "claude",
+   "kiimbuero",
+   "datenschutz",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_hook_dataroom.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: dataroom, lanes, desk, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq",
+   "title": "OpenAI Help Center: Sharing conversations and scheduled tasks in ChatGPT",
+   "checked_at": "2026-11-01",
+   "label": "OpenAI, geteilte Links"
+  },
+  {
+   "id": "S2",
+   "url": "https://privacy.claude.com/en/articles/10593882-share-and-unshare-chats",
+   "title": "Anthropic Privacy Center: Share and unshare chats",
+   "checked_at": "2026-11-01",
+   "label": "Anthropic, Chats teilen"
+  }
+ ],
+ "unverified": [
+  "Ob Links bereits weitergeleitet wurden, lässt sich nicht prüfen: nicht behauptet."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Du hast einen KI-Chat per Link geteilt. Weißt du, wer ihn noch lesen kann?",
+   "on_screen": "Wer kann deinen Chat noch lesen?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Nicht in Suchmaschinen heißt privat? Laut OpenAI nicht.",
+   "on_screen": "Nicht auffindbar = privat?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Geteilte ChatGPT-Links haben kein Ablaufdatum.",
+   "on_screen": "Kein Ablaufdatum",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein geteilter Chat mit Kundendetails ist für jeden lesbar, der den Link hat.",
+   "on_screen": "Kundendetails im geteilten Chat?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wohin dieser Link überall wandert.",
+   "on_screen": "Wohin wandert der Link?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Du hast einen KI-Chat per Link geteilt. Weißt du, wer ihn noch lesen kann?",
+   "data": {
+    "question": "Wer kann deinen Chat noch lesen?",
+    "doc_label": "Chat-Link",
+    "chat_title": "KI-Chat",
+    "bot_line": "Link kopiert",
+    "typed": "Teilen",
+    "badge": "Wer noch?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Bei ChatGPT gilt für private Konten: Jeder, der den Link hat, kann den geteilten Chat ansehen. Bei Claude ist es ähnlich: Jeder mit dem Link sieht eine Momentaufnahme mit allen Nachrichten bis zum Teilen.",
+   "data": {
+    "headline": "Wer einen geteilten Chat sieht",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Dein Chat",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n1",
+      "label": "Link",
+      "icon": "&#9993;"
+     },
+     {
+      "id": "n2",
+      "label": "Jeder mit dem Link",
+      "icon": "&#9823;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "Teilen"
+     },
+     {
+      "label": "Weiterleiten"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Wer genau?"
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "OpenAI schreibt außerdem: Geteilte Seiten sind nicht für Suchmaschinen gedacht. Das macht einen Link aber nicht privat. Wer ihn hat, kann ihn weiterleiten. Und ein Ablaufdatum lässt sich nicht einstellen.",
+   "data": {
+    "headline": "Was OpenAI dazu schreibt",
+    "file_label": "Geteilter Chat",
+    "card": {
+     "title": "Geteilter Link",
+     "rows": [
+      {
+       "text": "nicht für Suchmaschinen",
+       "ok": null
+      },
+      {
+       "text": "trotzdem nicht privat",
+       "ok": "open"
+      },
+      {
+       "text": "kein Ablaufdatum",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "Mit Firmenkonten sieht es anders aus. Links aus Business- oder Enterprise-Arbeitsbereichen von ChatGPT bleiben auf diesen Arbeitsbereich beschränkt. Bei Claude Team und Enterprise geht Teilen nur innerhalb der eigenen Organisation.",
+   "data": {
+    "headline": "Privates Konto oder Firmenkonto",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.5,
+    "left": {
+     "title": "Privates Konto",
+     "rows": [
+      {
+       "text": "jeder mit dem Link",
+       "ok": "open"
+      },
+      {
+       "text": "Weiterleiten möglich",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Firmenkonto",
+     "rows": [
+      {
+       "text": "nur der eigene Arbeitsbereich",
+       "ok": null
+      },
+      {
+       "text": "nur die eigene Organisation",
+       "ok": null
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Geteilte Links lassen sich schließen. Bei ChatGPT findest du sie in den Einstellungen unter Datenkontrollen, Geteilte Links. Bei Claude stellst du einen geteilten Chat wieder auf privat.",
+   "data": {
+    "headline": "Links wieder schließen",
+    "file_label": "Geteilter Chat",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "ChatGPT",
+      "sub": "Datenkontrollen, Geteilte Links",
+      "at": 0.6
+     },
+     {
+      "title": "Claude",
+      "sub": "Chat wieder privat stellen",
+      "at": 1.0
+     }
+    ],
+    "approval": "Alte Links gelöscht?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Dein Schritt für heute: Schau nach, welche Chats du schon geteilt hast. Lösche Links, die niemand mehr braucht. Und teile Chats mit Kunden- oder Firmendetails nur im Firmenkonto, wenn überhaupt.",
+   "data": {
+    "headline": "Fünf Minuten für geteilte Chats",
+    "items": [
+     {
+      "title": "Geteilte Links ansehen",
+      "sub": "was ist noch offen?",
+      "at": 2.0
+     },
+     {
+      "title": "Alte Links löschen",
+      "sub": "kein Ablaufdatum",
+      "at": 4.8
+     },
+     {
+      "title": "Sensibles nur intern",
+      "sub": "Firmenkonto, wenn überhaupt",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Geteilt ist offen, bis du schließt. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Geteilt bleibt offen",
+    "file_label": "Geteilter Chat",
+    "button": "Link teilen",
+    "block_text": "Kein Link mit Kundendaten",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

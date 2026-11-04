@@ -1,0 +1,439 @@
+{
+ "video_id": "engines-20261110-3-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Vor Otto: Motoren ohne Verdichtung",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261110-3-de, Reihe Motorgeschichte. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Der Lenoir-Motor von 1860 verdichtete nicht und kam unter 5 Prozent Wirkungsgrad. Der Otto-Langen-Motor von 1867 schaffte etwa 11 Prozent.",
+  "companion_text": "",
+  "hashtags": [
+   "motorgeschichte",
+   "otto",
+   "lenoir",
+   "motorentechnik",
+   "erfindung"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "MIT 2.61, Vorlesung 1",
+   "title": "MIT 2.61, Vorlesung 1 (L1)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/68b07c151fd2842460241680498d0968_MIT2_61S17_lec1.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "Science Museum, Otto & Langen",
+   "title": "Science Museum, Otto & Langen (SMG_OL)",
+   "url": "https://collection.sciencemuseumgroup.org.uk/objects/co62007",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Und sie kamen auf weniger als fünf Prozent Wirkungsgrad.",
+   "on_screen": "Motoren ohne Verdichtung",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Wie gut waren die ersten Gasmotoren?",
+   "on_screen": "Vor Otto: Motoren ohne Verdichtung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Vor Otto: Motoren ohne Verdichtung",
+   "on_screen": "Vor Otto: Motoren ohne Verdichtung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Vor Otto: Motoren ohne Verdichtung",
+   "on_screen": "Vor Otto: Motoren ohne Verdichtung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Vor Otto: Motoren ohne Verdichtung",
+   "on_screen": "Vor Otto: Motoren ohne Verdichtung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Die ersten Verbrennungsmotoren haben gar nicht verdichtet. Und sie kamen auf weniger als fünf Prozent Wirkungsgrad.",
+   "data": {
+    "claim": "Motoren ohne Verdichtung",
+    "claim_lines": [
+     "Motoren ohne",
+     "Verdichtung"
+    ],
+    "claim_highlight": "ohne",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "MIT 2.61, Vorlesung 1 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_board",
+   "spoken": "Achtzehnhundertsechzig: Der Lenoir-Motor zündet sein Gasgemisch ohne vorher zu verdichten. Laut einer MIT-Vorlesung schafft er zehn Arbeitsspiele pro Minute und unter fünf Prozent Wirkungsgrad. Rund fünfhundert Stück werden verkauft. Das klingt wenig, war aber ein Anfang.",
+   "data": {
+    "title": "Lenoir",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1860",
+      "at": 0.0
+     }
+    ],
+    "rows": [
+     {
+      "text": "keine Verdichtung",
+      "at": "w:verdichten"
+     },
+     {
+      "text": "10 Arbeitsspiele pro Minute",
+      "at": "w:Arbeitsspiele"
+     },
+     {
+      "text": "Wirkungsgrad unter 5 %",
+      "at": "w:Wirkungsgrad"
+     },
+     {
+      "text": "rund 500 verkauft",
+      "at": "w:verkauft"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 1 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_board",
+   "spoken": "Achtzehnhundertsiebenundsechzig folgt der atmosphärische Motor von Otto und Langen. Er arbeitet mit einem freien Kolben und lässt das Gas weiter expandieren. Diese Überexpansion bringt laut Vorlesung etwa elf Prozent.",
+   "data": {
+    "title": "Otto und Langen",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1867",
+      "at": 0.0
+     }
+    ],
+    "doc": {
+     "head": "FREIKOLBENMOTOR",
+     "lines": [
+      "Atmosphärischer",
+      "Gasmotor"
+     ],
+     "stamp": "1867",
+     "at": "w:atmosphärische"
+    },
+    "rows": [
+     {
+      "text": "freier Kolben",
+      "at": "w:freien"
+     },
+     {
+      "text": "Überexpansion: rund 11 %",
+      "at": "w:Überexpansion"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 1 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_readout",
+   "spoken": "Im direkten Vergleich: Lenoir unter fünf Prozent, Otto und Langen etwa elf. Dazu achtundzwanzig statt zehn Arbeitsspiele pro Minute, und laut Vorlesung rund fünftausend verkaufte Motoren. Fast dreimal so viele Arbeitsspiele pro Minute.",
+   "data": {
+    "title": "Wirkungsgrad",
+    "figure": "bars",
+    "bar_max": 14,
+    "lines_y": 1010,
+    "bars": [
+     {
+      "label": "Lenoir 1860",
+      "value": 5,
+      "text": "< 5 %",
+      "at": "w:Lenoir"
+     },
+     {
+      "label": "Otto & Langen 1867",
+      "value": 11,
+      "text": "≈ 11 %",
+      "at": "w:Langen"
+     }
+    ],
+    "lines": [
+     {
+      "text": "10 → 28 Arbeitsspiele/min",
+      "hl": "28",
+      "at": "w:Arbeitsspiele"
+     },
+     {
+      "text": "500 → 5000 verkauft",
+      "hl": "5000",
+      "at": "w:verkaufte"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 1 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_board",
+   "spoken": "Ein Exemplar von achtzehnhundertneunundsechzig, gebaut von Crossley in Manchester, steht heute im Science Museum. Das Museum nennt den Otto-Langen-Motor den ersten kommerziell erfolgreichen Verbrennungsmotor der Welt. Den nächsten großen Schritt zeigen wir am Sonntag: verdichten, bevor gezündet wird.",
+   "data": {
+    "title": "Science Museum",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1869",
+      "at": 0.0
+     }
+    ],
+    "doc": {
+     "head": "OBJEKT 1897-71",
+     "lines": [
+      "Otto & Langen,",
+      "gebaut von Crossley"
+     ],
+     "stamp": "1869",
+     "at": "w:Crossley"
+    },
+    "rows": [
+     {
+      "text": "erster kommerzieller Erfolg",
+      "at": "w:kommerziell"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Science Museum, Otto & Langen · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Ohne Verdichtung unter fünf Prozent, mit Überexpansion etwa elf. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "1860: < 5 %",
+      "at": "w:Ohne"
+     },
+     {
+      "text": "1867: ≈ 11 %",
+      "at": "w:Überexpansion"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

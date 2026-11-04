@@ -1,0 +1,119 @@
+{
+  "spec": "werkzeuge-freigabe-en",
+  "recorded_at": "2026-11-02T18:05:39+02:00",
+  "claude_code": "2.1.309",
+  "model_alias": "haiku",
+  "language": "en",
+  "isolation": [
+    "--setting-sources",
+    "project,local",
+    "--strict-mcp-config",
+    "--disable-slash-commands",
+    "--no-session-persistence"
+  ],
+  "sandbox": "C:\\Automation\\promptwerk-sandbox\\werkzeuge-freigabe-en",
+  "runs": {
+    "L1": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Read notiz.txt and tell me the first line.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Write,Bash"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Bash",
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "default",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 5695,
+      "num_turns": 2,
+      "total_cost_usd": 0.0008345100000000001,
+      "is_error": false,
+      "permission_denials": 0
+    },
+    "L2": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Create the file gruss.txt with the content Hello.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Write,Bash"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Bash",
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "default",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 3815,
+      "num_turns": 2,
+      "total_cost_usd": 0.00054326,
+      "is_error": false,
+      "permission_denials": 1
+    },
+    "L3": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Run node zeige.js and tell me what it prints.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Read,Write,Bash"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Bash",
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "default",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 9582,
+      "num_turns": 4,
+      "total_cost_usd": 0.0012851400000000002,
+      "is_error": false,
+      "permission_denials": 2
+    }
+  }
+}

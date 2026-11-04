@@ -1,0 +1,443 @@
+{
+ "video_id": "beauty-20261113-1-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "The open-jar symbol",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Der geöffnete Tiegel mit Zahl und M sagt, wie viele Monate ein Produkt nach dem Öffnen sicher verwendet werden kann; Pflicht nur bei Produkten, die länger als 30 Monate halten. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Jar",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "12M?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "over 30 months",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "months after opening",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "US: not required",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "applicators, moisture",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Note the opening date",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Read first, then apply",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "What does “12M” mean? Why does time after opening matter? The FDA gives examples: applicators like mascara wands meet bacteria every time you use them, emulsions can separate, and moisture in a bathroom can help germs grow.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-labeling/shelf-life-and-expiration-dating-cosmetics",
+   "title": "U.S. FDA: Shelf Life and Expiration Dating of Cosmetics",
+   "checked_at": "2026-11-01",
+   "label": "FDA: Shelf life"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What does the little open jar with “12M” on your cream mean?",
+   "on_screen": "What does “12M” mean?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "The open-jar symbol with “12M” doesn't tell you how long a sealed cream lasts.",
+   "on_screen": "The open-jar symbol with “12M” doesn't tell you how long a s",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "The open-jar symbol is an expiry date. It only starts counting once you open it.",
+   "on_screen": "The open-jar symbol is an expiry date. It only starts counti",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Miss the symbol, and you might use an opened cream for longer than intended.",
+   "on_screen": "Miss the symbol, and you might use an opened cream for longe",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch when the open-jar symbol appears on a pack.",
+   "on_screen": "Watch when the open-jar symbol appears on a pack.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "What does the little open jar with “12M” on your cream mean?",
+   "data": {
+    "obj": "jar",
+    "title": "Cream",
+    "sub": "no brand",
+    "glyph": "openjar",
+    "gtext": "12M",
+    "focus": "glyph",
+    "question": "What does “12M” mean?",
+    "badge": "Months?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "The symbol is in Annex VII of the EU cosmetics regulation, where it's called the period after opening. The number shows how long the product can be used safely, without harm, once it's opened. The period is given in months or years. The symbol isn't needed where a period after opening isn't relevant.",
+   "data": {
+    "headline": "Period after opening",
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Annex VII, point 2",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "number plus M",
+      "value": "12M"
+     },
+     {
+      "text": "months after opening"
+     },
+     {
+      "text": "safe to use without harm"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_timeline",
+   "spoken": "When does it appear? If a product lasts 30 months or less, it needs a best-before date. If it lasts longer, no date is required, and the open-jar symbol takes its place.",
+   "data": {
+    "headline": "Date or symbol",
+    "nodes": [
+     {
+      "date": "≤ 30 M",
+      "text": "best-before date on the pack"
+     },
+     {
+      "date": "> 30 M",
+      "text": "no date required"
+     },
+     {
+      "date": "then",
+      "text": "open-jar symbol with months"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "The US has no such rule. According to the FDA, US law doesn't require shelf lives or expiration dates on cosmetics. Setting the shelf life is part of the manufacturer's responsibility.",
+   "data": {
+    "headline": "EU and US",
+    "mode": "compare",
+    "left": {
+     "tag": "EU",
+     "title": "Symbol or date",
+     "rows": [
+      {
+       "text": "required by Article 19"
+      },
+      {
+       "text": "months after opening"
+      }
+     ]
+    },
+    "right": {
+     "tag": "US",
+     "title": "not required",
+     "rows": [
+      {
+       "text": "no date required",
+       "mark": "gap"
+      },
+      {
+       "text": "manufacturer's responsibility"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "Why does time after opening matter? The FDA gives examples: applicators like mascara wands meet bacteria every time you use them, emulsions can separate, and moisture in a bathroom can help germs grow.",
+   "data": {
+    "headline": "What happens after opening",
+    "rows": [
+     {
+      "text": "applicators: exposed to germs"
+     },
+     {
+      "text": "emulsions can separate"
+     },
+     {
+      "text": "moisture in the bathroom"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "For you, that means: write the date you opened it on the pack. Then you'll know when those months are up.",
+   "data": {
+    "headline": "How to use it",
+    "items": [
+     {
+      "title": "Find the symbol",
+      "sub": "open jar with a number",
+      "icon": "openjar"
+     },
+     {
+      "title": "Note the opening date",
+      "sub": "right on the pack",
+      "icon": "doc"
+     },
+     {
+      "title": "Count the months",
+      "sub": "from that day",
+      "icon": "hourglass"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Read the symbol first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Read first, then apply",
+    "block_text": "Read the symbol first",
+    "done_text": "Symbol read"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

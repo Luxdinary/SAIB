@@ -1,0 +1,151 @@
+{
+  "spec": "claude-md-lang",
+  "runs": {
+    "L1": {
+      "title": "Kurz: 4 Regeln",
+      "prompt": "Wie viele Kunden stehen in kunden.csv?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 11.458,
+      "lines": [
+        {
+          "t": 6.187,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 7.622,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 7.626,
+          "kind": "tool",
+          "id": "toolu_01Gws7gbpHLPsjFGXKvCvfEW",
+          "text": "Glob: **/kunden.csv"
+        },
+        {
+          "t": 9.014,
+          "kind": "result",
+          "id": "toolu_01Gws7gbpHLPsjFGXKvCvfEW",
+          "text": "kunden.csv"
+        },
+        {
+          "t": 9.818,
+          "kind": "tool",
+          "id": "toolu_01C4DdpkCnct4idH6MV3Av88",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 9.846,
+          "kind": "result",
+          "id": "toolu_01C4DdpkCnct4idH6MV3Av88",
+          "text": "1\tkunde;stadt\n2\tK-1000;Graz\n3\tK-1001;Linz\n… (11 weitere Zeilen)"
+        },
+        {
+          "t": 10.663,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 10.881,
+          "kind": "text",
+          "text": "In kunden.csv stehen **12 Kunden** (Zeilen 2 bis 13; die erste Zeile ist die Kopfzeile).\n\nRegel 120 beachtet."
+        },
+        {
+          "t": 10.901,
+          "kind": "end",
+          "text": "Ende nach 10.9 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Glob",
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 4758,
+        "num_turns": 3,
+        "total_cost_usd": 0.0011071700000000002,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Lang: 240 Regeln",
+      "prompt": "Wie viele Kunden stehen in kunden.csv?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 15.364,
+      "lines": [
+        {
+          "t": 6.796,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 9.57,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 9.577,
+          "kind": "tool",
+          "id": "toolu_01BN5JSKdkBWmt1ZHrTnECru",
+          "text": "Glob: **/kunden.csv"
+        },
+        {
+          "t": 11.165,
+          "kind": "result",
+          "id": "toolu_01BN5JSKdkBWmt1ZHrTnECru",
+          "text": "kunden.csv"
+        },
+        {
+          "t": 12.829,
+          "kind": "tool",
+          "id": "toolu_016dQzrCRAhWYtUbFPiuEb6F",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 12.899,
+          "kind": "result",
+          "id": "toolu_016dQzrCRAhWYtUbFPiuEb6F",
+          "text": "1\tkunde;stadt\n2\tK-1000;Graz\n3\tK-1001;Linz\n… (11 weitere Zeilen)"
+        },
+        {
+          "t": 14.485,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 14.78,
+          "kind": "text",
+          "text": "In `kunden.csv` stehen **12 Kunden**. Die erste Zeile ist die Kopfzeile (`kunde;stadt`), danach folgen 12 Datensätze von K-1000 bis K-1011.\n\nRegel 120 beachtet."
+        },
+        {
+          "t": 14.801,
+          "kind": "end",
+          "text": "Ende nach 14.8 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Glob",
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 8095,
+        "num_turns": 3,
+        "total_cost_usd": 0.0032659600000000005,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

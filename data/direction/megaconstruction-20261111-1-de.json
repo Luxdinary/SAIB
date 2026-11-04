@@ -1,0 +1,812 @@
+{
+  "video_id": "megaconstruction-20261111-1-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Wie eine 660-Tonnen-Kugel Taipei 101 ruhig hält",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261111-1-de. Thema: taipei101. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Taipei 101",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Wind: Turm schwankt",
+          "tone": "amber",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "Tilger: 660 t",
+          "tone": "accent",
+          "at": "@660"
+        },
+        {
+          "beat": "b3",
+          "text": "41 Lagen, 92 Seile",
+          "tone": "accent",
+          "at": "@92"
+        },
+        {
+          "beat": "b4",
+          "text": "Kugel schwingt dagegen",
+          "tone": "accent",
+          "at": "@phasenverschoben"
+        },
+        {
+          "beat": "b4",
+          "text": "Dämpfer bauen Energie ab",
+          "tone": "green",
+          "at": "@Acht"
+        },
+        {
+          "beat": "b5",
+          "text": "Ausschlag max. 150 cm",
+          "tone": "green",
+          "at": "@150"
+        }
+      ]
+    },
+    "description": "In Taipei 101 hängt eine 660 Tonnen schwere Stahlkugel. So arbeitet der größte Schwingungstilger der Welt (Guinness) – mit Zahlen des Betreibers.",
+    "companion_text": "660 t metrisch (= 728 US-Tonnen). Quellen: Taipei 101 (Betreiber), STRUCTURE magazine, Guinness World Records, Thornton Tomasetti. Stilisiertes 3D-Modell, Ausschlag überhöht. Folge Gigastruct.",
+    "hashtags": [
+      "taipei101",
+      "wolkenkratzer",
+      "schwingungstilger",
+      "taiwan",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "660 t metrisch = 727,5 short tons",
+        "result": "deckt sich mit 728 (Guinness) und 730 (Thornton Tomasetti)",
+        "sources": [
+          "S1",
+          "S3",
+          "S4"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "prism",
+          "height": 470,
+          "width": 62,
+          "levels": 72,
+          "profile": [
+            [
+              0,
+              1.15
+            ],
+            [
+              0.17,
+              0.95
+            ],
+            [
+              0.18,
+              0.72
+            ],
+            [
+              0.255,
+              0.98
+            ],
+            [
+              0.26,
+              0.72
+            ],
+            [
+              0.33499999999999996,
+              0.98
+            ],
+            [
+              0.33999999999999997,
+              0.72
+            ],
+            [
+              0.415,
+              0.98
+            ],
+            [
+              0.42,
+              0.72
+            ],
+            [
+              0.495,
+              0.98
+            ],
+            [
+              0.5,
+              0.72
+            ],
+            [
+              0.5750000000000001,
+              0.98
+            ],
+            [
+              0.5800000000000001,
+              0.72
+            ],
+            [
+              0.6549999999999999,
+              0.98
+            ],
+            [
+              0.6599999999999999,
+              0.72
+            ],
+            [
+              0.735,
+              0.98
+            ],
+            [
+              0.74,
+              0.72
+            ],
+            [
+              0.8150000000000001,
+              0.98
+            ],
+            [
+              0.83,
+              0.55
+            ],
+            [
+              1.0,
+              0.35
+            ]
+          ],
+          "spire": [
+            38,
+            8
+          ],
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "ball",
+          "kind": "pendulum",
+          "r": 2.75,
+          "hang": 24,
+          "cables": 12,
+          "pos": [
+            0,
+            400,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "ball": [
+          0,
+          400,
+          0
+        ],
+        "ballside": [
+          2.8,
+          400,
+          0
+        ],
+        "cables": [
+          0,
+          418,
+          0
+        ],
+        "top": [
+          0,
+          470,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 35,
+            "az1": 25,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 820,
+            "cy": 760
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -40,
+                380,
+                -40
+              ],
+              [
+                40,
+                430,
+                40
+              ]
+            ],
+            "az0": 30,
+            "az1": 40,
+            "el0": 8,
+            "el1": 10,
+            "fit0": 0.08,
+            "fit1": 0.3,
+            "cy": 760
+          },
+          "props": {
+            "tower.fade": [
+              [
+                0,
+                1
+              ],
+              [
+                "%0.5",
+                0.18
+              ]
+            ],
+            "ball.swing": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.2",
+                3
+              ],
+              [
+                "%0.4",
+                -3
+              ],
+              [
+                "%0.6",
+                2.5
+              ],
+              [
+                "%0.8",
+                -2.5
+              ],
+              [
+                "%1",
+                0
+              ]
+            ]
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -6,
+                392,
+                -6
+              ],
+              [
+                6,
+                408,
+                6
+              ]
+            ],
+            "az0": 30,
+            "az1": 45,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.3,
+            "fit1": 0.34,
+            "zone": 600,
+            "cy": 740
+          },
+          "props": {
+            "tower.fade": 0.12
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -40,
+                380,
+                -40
+              ],
+              [
+                40,
+                430,
+                40
+              ]
+            ],
+            "az0": 80,
+            "az1": 90,
+            "el0": 6,
+            "el1": 8,
+            "fit0": 0.5,
+            "fit1": 0.45,
+            "cy": 820
+          },
+          "props": {
+            "tower.fade": 0.18,
+            "ball.swing": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.3",
+                0
+              ],
+              [
+                "%0.45",
+                -4
+              ],
+              [
+                "%0.6",
+                4
+              ],
+              [
+                "%0.75",
+                -3
+              ],
+              [
+                "%0.9",
+                2
+              ]
+            ],
+            "tower.lean": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.3",
+                0.25
+              ],
+              [
+                "%0.45",
+                0.1
+              ],
+              [
+                "%0.6",
+                -0.1
+              ],
+              [
+                "%0.9",
+                0
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 50,
+            "az1": 60,
+            "el0": 4,
+            "el1": 8,
+            "fit0": 0.55,
+            "fit1": 0.6,
+            "zone": 820,
+            "cy": 760
+          },
+          "props": {
+            "tower.fade": [
+              [
+                0,
+                0.2
+              ],
+              [
+                "%0.7",
+                1
+              ]
+            ]
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 20,
+            "az1": 10,
+            "el0": 12,
+            "el1": 6,
+            "fit0": 0.5,
+            "fit1": 0.45,
+            "zone": 820,
+            "cy": 760
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.taipei-101.com.tw/en/observatory/feature",
+      "title": "Taipei 101 (Betreiber): Observatory feature – Dämpferkugel 5,5 m, 41 Lagen à 12,5 cm, 660 t, 92 Seile à 8,9 cm/42 m, 8 Dämpfer, max. 150 cm",
+      "label": "Taipei 101, Observatory",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.structuremag.org/article/dynamic-loading-solutions-in-taipei-101/",
+      "title": "STRUCTURE magazine: Dynamic loading solutions in Taipei 101 (phasenverschobenes Pendel, Dämpfer, ca. 0,24 % der Gebäudemasse)",
+      "label": "STRUCTURE magazine",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.guinnessworldrecords.com/world-records/774616-largest-tuned-mass-damper",
+      "title": "Guinness World Records: Largest tuned mass damper (660 t, an der 92. Etage, Gebäude 508 m)",
+      "label": "Guinness World Records",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "http://www.thorntontomasetti.com/taipei-101s-tmd-explained/",
+      "title": "Thornton Tomasetti: Taipei 101's TMD explained",
+      "label": "Thornton Tomasetti",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Minderung der Schwingung in Prozent: in keiner geprüften Quelle belegt, nicht genannt.",
+    "Stockwerkslage 86./87.–92. uneinheitlich: nur 'an der 92. Etage aufgehängt'.",
+    "Turmform und Lage der Kugel im Modell schematisch; Pendelausschlag im Modell überhöht."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Ganz oben in Taipei 101 hängt eine 660 Tonnen schwere Stahlkugel.",
+      "on_screen": "660 Tonnen Stahl gegen den Wind",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist Taipei 101 wirklich?",
+      "on_screen": "Wie groß ist Taipei 101 wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen Taipei 101.",
+      "on_screen": "Taipei 101: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei Taipei 101 schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "Taipei 101: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie Taipei 101 im Modell entsteht.",
+      "on_screen": "Taipei 101 im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "Ganz oben in Taipei 101 hängt eine 660 Tonnen schwere Stahlkugel. Und sie schwingt gegen den Turm.",
+      "data": {
+        "kicker": "So wird's gebaut · Taipei 101",
+        "question": "660 Tonnen Stahl gegen den Wind",
+        "question_at": "@Ganz",
+        "number": {
+          "value": "660",
+          "unit": "t",
+          "at_word": "Tonnen",
+          "y": 640
+        },
+        "badge": {
+          "text": "Schwingungstilger",
+          "at_word": "schwingt",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Und"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "Taipei 101 ist 508 Meter hoch. Laut Guinness hängt dort der größte Schwingungstilger der Welt: 660 Tonnen, aufgehängt an der 92. Etage.",
+      "data": {
+        "headline": "Ein Pendel im Turm",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "508",
+            "unit": "m",
+            "label": "Turmhöhe",
+            "at_word": "508"
+          },
+          {
+            "value": "660",
+            "unit": "t",
+            "label": "Pendelmasse",
+            "at_word": "660"
+          }
+        ]
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "kicker": "2 · Ein Pendel im Turm",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_section",
+      "spoken": "Die Kugel hat rund 5,5 Meter Durchmesser und besteht aus 41 Lagen Stahlplatten, je 12,5 Zentimeter dick. Sie hängt an 92 Stahlseilen, jedes 42 Meter lang.",
+      "data": {
+        "headline": "So ist die Kugel gebaut",
+        "note": "Modell schematisch",
+        "note_dy": 120,
+        "dims": [
+          {
+            "anchor": "ballside",
+            "text": "5,5 m",
+            "at_word": "5,5"
+          }
+        ],
+        "callouts": [
+          {
+            "anchor": "ball",
+            "text": "41 Lagen Stahl",
+            "side": "down",
+            "at_word": "41"
+          },
+          {
+            "anchor": "cables",
+            "text": "92 Seile, je 42 m",
+            "side": "up",
+            "at_word": "92"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "3 · Aufbau",
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "seconds": 0.7,
+          "x": 540,
+          "y": 960
+        },
+        "vignette": true
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gs_phases",
+      "spoken": "Drückt starker Wind den Turm zur Seite, schwingt die Kugel phasenverschoben dagegen. Acht hydraulische Dämpfer darunter bauen die Bewegungsenergie ab.",
+      "data": {
+        "headline": "So arbeitet der Tilger",
+        "rail_dy": 210,
+        "steps": [
+          {
+            "label": "Wind drückt den Turm",
+            "sub": "der Turm schwankt",
+            "at_word": "Wind"
+          },
+          {
+            "label": "Kugel schwingt dagegen",
+            "sub": "phasenverschoben",
+            "at_word": "phasenverschoben"
+          },
+          {
+            "label": "8 Dämpfer",
+            "sub": "bauen die Energie ab",
+            "at_word": "Acht"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · Prinzip",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "Ein Pufferring begrenzt den Ausschlag bei seltenen Taifunen oder Erdbeben auf 150 Zentimeter. Dabei wiegt die Kugel nur rund 0,24 Prozent des Gebäudes. Der Zweck laut Betreiber: Wer im Turm arbeitet, soll vom Wind wenig merken.",
+      "data": {
+        "headline": "Klein im Vergleich, groß in der Wirkung",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "150",
+            "unit": "cm",
+            "label": "max. Ausschlag",
+            "at_word": "150"
+          },
+          {
+            "value": "0,24",
+            "unit": "%",
+            "label": "der Gebäudemasse",
+            "at_word": "0,24"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · Was er bringt",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "660 Tonnen Stahl, die gegen den Wind arbeiten. Folge Gigastruct, dann siehst du das nächste Bauwerk.",
+      "data": {
+        "mode": "closing",
+        "statement": "660 Tonnen gegen den Wind.",
+        "chip": {
+          "text": "Folge Gigastruct",
+          "at_word": "Folge",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "kicker": "6 · Ergebnis",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

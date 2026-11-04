@@ -1,0 +1,308 @@
+{
+ "video_id": "menswear-20261114-3-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Tweed: finished only after the loom",
+ "notes": "Woche 1 im Format Kreidestrich (K1), Reihe Unter dem Fadenzähler, Kalenderthema menswear-20261114-3 (Stoffkunde C04), Thema auf Tweed eingegrenzt. Quellen S1, S2 im Originaltext gelesen. Alter Plan bleibt unverändert.",
+ "layout": {
+  "format": "kreidestrich",
+  "series": "stoff",
+  "explainer": false,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 560,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "series_topic": "Tweed",
+  "description": "A tweed is not finished when it comes off the loom: it is scoured, milled, given some felting, dried and cropped. Why wool felts: its fibres carry scales. Illustration, sources: Harris Tweed Authority (The Process), Woolmark, Introduction to Wovenwear.",
+  "companion_text": "Suitwerk shows menswear in detail, drawn rather than claimed. No advertising, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "fabricknowledge",
+   "tweed",
+   "wool",
+   "tailoring"
+  ]
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Kreidestrich, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "checked_at": "2026-11-02",
+   "title": "The Woolmark Company: Introduction to Wovenwear (Training Manual), S. 5 (scale structure is the cause of felting; milling is the early stage of felting and an important step for the handle of many woven wool fabrics) and S. 6 (Harris Tweed listed as woollen)",
+   "label": "Woolmark, Introduction to Wovenwear"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.harristweed.org/the-process/",
+   "checked_at": "2026-11-02",
+   "label": "Harris Tweed Authority, The Process",
+   "title": "Harris Tweed Authority: The Process (after weaving: scoured in soapy water and soda, milled and given a certain amount of felting; after drying cropped to remove dead hairs; inspected and stamped with the Orb certification mark)"
+  }
+ ],
+ "unverified": [
+  "Thema geändert: Kalendertitel 'Flanell, Tweed, Fresko'. Flanell nur mit Weberei-Quellen belegt, Fresko ist ein geschützter Name einer Weberei; beides entfällt nach Format-Regel 6 und 7.",
+  "Schrumpfmaß beim Walken: nicht genannt; das Bild verkleinert schematisch.",
+  "Das Orb-Zeichen wird nicht gezeigt (Markenzeichen), nur 'geprüft'."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What is behind this label on the cloth?",
+   "on_screen": "What is behind it?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "question"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Most people read this number wrong.",
+   "on_screen": "Read it wrong?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 3,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "not measurable, below the gate"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The answer is in the thread, not the label.",
+   "on_screen": "The answer is in the thread",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "vague"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "If you only read the label, you miss the cloth.",
+   "on_screen": "Only the label?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "no real risk"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "The same tweed before and after milling.",
+   "on_screen": "The same cloth?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Glattes und gewalktes Stoffmuster, der Fadenzähler zeigt die Oberfläche",
+   "why": {
+    "truth": "shown, not claimed",
+    "visual": "core of the Kreidestrich format"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Vorführung im Format Kreidestrich."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "kw_hook",
+   "duration_hint": 9,
+   "spoken": "On the left, a tweed as it comes off the loom. On the right, the same cloth, finished. It looks different and feels different. In between lie water, soap and a lot of movement.",
+   "data": {
+    "question": "The same cloth?",
+    "question_at": 0.2,
+    "chalk_at": "w:loom",
+    "swatches": [
+     {
+      "kind": "twill",
+      "label": "off the loom"
+     },
+     {
+      "kind": "twill",
+      "label": "finished",
+      "fuzz": true
+     }
+    ],
+    "labels_at": "w:right",
+    "neq_at": "w:different",
+    "lens_at": "w:between",
+    "lens2_at": "w:movement",
+    "source": "Harris Tweed Authority, The Process · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "kw_finish",
+   "duration_hint": 15,
+   "spoken": "Take Harris Tweed. According to the Harris Tweed Authority, it is woven on treadle looms at home, not in a mill. After weaving, the cloth is scoured in soapy water and soda. Then it is milled and given a certain amount of felting. Why can wool do that? Its fibres carry fine scales. According to Woolmark, they are the cause of felting.",
+   "data": {
+    "title": {
+     "text": "After the loom",
+     "at": 0.1
+    },
+    "stages": [
+     {
+      "kind": "woven",
+      "label": "off the loom",
+      "at": 0.3
+     },
+     {
+      "kind": "milled",
+      "label": "scoured, milled",
+      "at": "w:milled"
+     },
+     {
+      "kind": "milled",
+      "label": "Scales: the cause of felting",
+      "at": "w:scales"
+     }
+    ],
+    "source": "Harris Tweed Authority; Woolmark p. 5 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "demonstration",
+   "scene_type": "kw_finish",
+   "duration_hint": 12,
+   "spoken": "After drying, the cloth is cropped. That removes dead hairs from the surface. Finally, an inspector checks the cloth, and only then does it get the certification mark.",
+   "data": {
+    "title": {
+     "text": "Cropped and checked",
+     "at": 0.1
+    },
+    "start_state": "milled",
+    "stages": [
+     {
+      "kind": "milled",
+      "label": "dried",
+      "at": 0.2
+     },
+     {
+      "kind": "cropped",
+      "label": "cropped",
+      "at": "w:cropped"
+     },
+     {
+      "kind": "checked",
+      "label": "checked",
+      "at": "w:inspector"
+     }
+    ],
+    "source": "Harris Tweed Authority, The Process · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "close",
+   "scene_type": "kw_close",
+   "duration_hint": 14,
+   "spoken": "Remember: tweed is only finished after the loom, scoured, milled and cropped. According to Woolmark, milling is an important step for the handle of many wool fabrics. Next time, run your hand over a tweed. Follow Suitwerk for menswear with an eye for detail.",
+   "data": {
+    "kinds": [
+     "twill",
+     "twill"
+    ],
+    "fuzz": [
+     1
+    ],
+    "chip": {
+     "text": "Milling: key to the handle",
+     "at": "w:milling"
+    },
+    "lines": [
+     {
+      "text": "off the loom: open",
+      "at": 0.6
+     },
+     {
+      "text": "finished: dense",
+      "at": 1.2
+     }
+    ],
+    "rule": {
+     "text": "Scoured, milled, cropped",
+     "at": "w:scoured"
+    },
+    "sign_at": "w:Follow",
+    "claim": "Menswear with an eye for detail.",
+    "sign_note": "Feel the surface",
+    "source": "Woolmark: Introduction to Wovenwear, p. 5 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  }
+ ]
+}

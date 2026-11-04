@@ -1,0 +1,550 @@
+{
+  "video_id": "military_history-20261109-1-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Polybios' Fackeltelegraf",
+  "notes": "Woche 1, Reihe Signal und Nachricht. Reine Nachrichtentechnik, kein Kampfbild. Das Beispiel Tafel 2, Stelle 5 ist ein Beispielwert.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/10*.html",
+      "title": "Polybius, The Histories, Book X 43–47, Loeb 1925 (W. R. Paton), LacusCurtius, University of Chicago",
+      "label": "Polybios X (Loeb)",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://histos.org/index.php/histos/article/view/366",
+      "title": "Daniel W. Moore: Proof Through the Night, Histos 11 (2017)",
+      "label": "Histos 11 (2017)",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Praktikabilität umstritten (Riepl 1913, Donaldson 1988 laut Moore); nicht im Video.",
+    "Das Visier vergrößerte laut Anmerkung der Edition nicht; im Video nur 'Visier mit zwei Röhren'."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie sendet man in der Antike einen ganzen Satz über viele Kilometer, nur mit Feuer?",
+      "on_screen": "Ein ganzer Satz, nur mit Feuer?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Feuersignale konnten nur Ja oder Nein? Polybios buchstabierte damit Wörter.",
+      "on_screen": "Feuer, das buchstabiert",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Jeder Buchstabe brauchte zwei Fackelsignale.",
+      "on_screen": "Zwei Signale pro Buchstabe",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Etwas Unerwartetes, und das Leuchtfeuer hat nichts zu sagen.",
+      "on_screen": "Das Feuer schweigt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie fünf Tafeln das Alphabet ordnen.",
+      "on_screen": "Fünf Tafeln, ein Alphabet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie sendet man in der Antike einen ganzen Satz über viele Kilometer, nur mit Feuer?",
+      "data": {
+        "question": "Ein ganzer Satz, nur mit Feuer?",
+        "question_em": "nur mit Feuer",
+        "card_title": "Fackeltelegraf",
+        "card_meta": "POLYBIOS · BUCH X",
+        "card_no": "AKTE 16",
+        "stamp": "X 43–47",
+        "drawing": "polybios_torches.svg",
+        "packet_label": "Tafel",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Antike",
+        "packet_at": "w:Satz",
+        "em_at": "w:Feuer"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Einfache Leuchtfeuer melden nur, was vorher vereinbart war. Auch die Wasseruhr des Aineias kennt nur vereinbarte Nachrichten. Unvorhergesehenes bleibt stumm.",
+      "data": {
+        "mode": "map",
+        "headline": "Nur Vereinbartes",
+        "places": [
+          {
+            "label": "Sender",
+            "code": "Leuchtfeuer",
+            "x": 600,
+            "y": 80,
+            "at": "w:Leuchtfeuer"
+          },
+          {
+            "label": "Empfänger",
+            "code": "Tage entfernt",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:vereinbart"
+          }
+        ],
+        "route_at": "w:melden",
+        "route_label": "nur vereinbarte Signale",
+        "route_label_at": "w:Wasseruhr",
+        "wait_at": "w:Aineias",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Wasseruhr des Aineias",
+        "chip_at": "w:Nachrichten",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Tafel",
+        "packet_at": "w:kennt",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Unvorhergesehenes?",
+        "line_label_at": "w:Unvorhergesehenes",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Fackeln",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Polybios verteilt das Alphabet auf fünf Tafeln zu je fünf Buchstaben. Fackeln links zeigen die Tafel, Fackeln rechts den Buchstaben. Ein Visier mit zwei Röhren hilft beim Ablesen.",
+      "data": {
+        "headline": "Fünf Tafeln, zwei Feuer",
+        "drawing": "polybios_torches.svg",
+        "sheet_title": "BLATT 2 · SIGNALSTATION",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "5 Tafeln à 5 Buchstaben",
+            "x": 145,
+            "y": 505,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Tafeln"
+          },
+          {
+            "label": "Links: die Tafel",
+            "x": 100,
+            "y": 168,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:links"
+          },
+          {
+            "label": "Rechts: der Buchstabe",
+            "x": 360,
+            "y": 168,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:rechts"
+          },
+          {
+            "label": "Visier mit zwei Röhren",
+            "x": 250,
+            "y": 125,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Visier"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 250,
+          "scale": 1.12,
+          "at": "w:Fackeln",
+          "back_at": "w:Visier",
+          "grow": "up"
+        },
+        "headline_lines": 2,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Jeder Buchstabe braucht damit zwei Signale. Zum Start hebt der Sender zwei Fackeln, und der Empfänger antwortet mit zwei. Erst dann beginnt die Nachricht.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Erst der Handschlag",
+        "left": {
+          "tag": "Sender",
+          "title": "Start",
+          "at": "w:Sender",
+          "rows": [
+            {
+              "text": "hebt zwei Fackeln",
+              "at": "w:hebt"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Empfänger",
+          "title": "Antwort",
+          "at": "w:Empfänger",
+          "rows": [
+            {
+              "text": "antwortet mit zwei",
+              "at": "w:antwortet"
+            }
+          ]
+        },
+        "verdict": "1 Buchstabe = 2 Signale",
+        "verdict_at": "w:Nachricht",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "example": true,
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Ein Beispiel: Tafel zwei, Stelle fünf. Links zwei Fackeln, rechts fünf. Der Empfänger schlägt nach und schreibt den Buchstaben auf.",
+      "data": {
+        "headline": "Ein Buchstabe",
+        "nodes": [
+          {
+            "label": "Links: 2 Fackeln",
+            "code": "Tafel 2",
+            "at": "w:Links"
+          },
+          {
+            "label": "Rechts: 5 Fackeln",
+            "code": "Stelle 5",
+            "at": "w:rechts"
+          },
+          {
+            "label": "Nachschlagen",
+            "code": "Tafel 2, Nr. 5",
+            "at": "w:schlägt"
+          },
+          {
+            "label": "Aufschreiben",
+            "code": "Buchstabe",
+            "at": "w:schreibt"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Tafel",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "Drei Stufen also: das Leuchtfeuer, die Wasseruhr des Aineias und das Fackelalphabet von Kleoxenos und Demokleitos, das Polybios verbessert.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Drei Stufen",
+        "items": [
+          {
+            "year": "1",
+            "title": "Leuchtfeuer",
+            "sub": "nur Vereinbartes",
+            "at": "w:Leuchtfeuer"
+          },
+          {
+            "year": "2",
+            "title": "Wasseruhr",
+            "sub": "Aineias Taktikos",
+            "at": "w:Wasseruhr"
+          },
+          {
+            "year": "3",
+            "title": "Fackelalphabet",
+            "sub": "Kleoxenos und Demokleitos",
+            "at": "w:Fackelalphabet",
+            "sub_at": "w:Polybios"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Erhalten ist kein Gerät, nur sein Text im zehnten Buch der Historien. Laut Polybios gelingt das System nur mit Übung. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Polybios, Buch X",
+        "card_meta": "HISTORIEN · 43–47",
+        "card_no": "AKTE 16",
+        "stamp": "Buch X",
+        "drawing": "polybios_torches.svg",
+        "statement": "Vom Gerät blieb nur der Text",
+        "statement_at": "w:Text",
+        "stamp_at": "w:zehnten",
+        "note": "Loeb-Übersetzung 1925, frei online",
+        "note_at": "w:Übung",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge",
+        "ghost_at": "w:Gerät"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Tafel",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Nachricht: offen",
+          "tone": "muted",
+          "offset": 4.2
+        },
+        {
+          "beat": "b2",
+          "text": "Feuer: nur Vereinbartes",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b3",
+          "text": "Alphabet: 5 Tafeln",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b4",
+          "text": "Start: 2 Fackeln",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b5",
+          "text": "Buchstabe: gelesen",
+          "tone": "muted",
+          "offset": 8.1
+        },
+        {
+          "beat": "b6",
+          "text": "Verfahren: verbessert",
+          "tone": "muted",
+          "offset": 9.1
+        },
+        {
+          "beat": "b7",
+          "text": "Text: erhalten",
+          "tone": "muted",
+          "offset": 3.2
+        }
+      ]
+    },
+    "description": "Polybios beschreibt ein Fackelalphabet: fünf Tafeln, Fackeln links für die Tafel, rechts für den Buchstaben. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "antike",
+      "nachrichtentechnik",
+      "geschichte",
+      "kryptografie",
+      "polybios"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

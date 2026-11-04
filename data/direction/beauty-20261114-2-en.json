@@ -1,0 +1,446 @@
+{
+ "video_id": "beauty-20261114-2-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "Reporting serious undesirable effects",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Ernste unerwünschte Wirkungen müssen den Behörden gemeldet werden; die USA haben das 2022 mit MoCRA eingeführt. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Report",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "What now?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "serious effect",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "report without delay",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "you can report too",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "US: 15 business days",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Name and batch",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Read first, then apply",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Who reports what? In the US, MoCRA brought a similar duty. The responsible person reports serious adverse events to the FDA within 15 business days. New information within a year also has to follow within 15 business days.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra",
+   "title": "U.S. FDA: Modernization of Cosmetics Regulation Act of 2022 (MoCRA)",
+   "checked_at": "2026-11-01",
+   "label": "FDA: MoCRA"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What happens when a cream causes a serious undesirable effect?",
+   "on_screen": "Who reports what?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "In the EU, serious undesirable effects from cosmetics must be reported without delay.",
+   "on_screen": "In the EU, serious undesirable effects from cosmetics must b",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Only manufacturers can report. Consumers can contact the authority too.",
+   "on_screen": "Only manufacturers can report. Consumers can contact the aut",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Don't report a serious reaction, and nobody can help prevent the next one.",
+   "on_screen": "Don't report a serious reaction, and nobody can help prevent",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch how a report travels from one authority to the next in the EU.",
+   "on_screen": "Watch how a report travels from one authority to the next in",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "What happens when a cream causes a serious undesirable effect?",
+   "data": {
+    "obj": "jar",
+    "title": "Cream",
+    "sub": "no brand",
+    "glyph": "doc",
+    "gtext": "report",
+    "focus": "glyph",
+    "question": "Who reports what?",
+    "badge": "Report?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "EU law defines what serious means: an effect that leads to temporary or permanent functional incapacity, disability, hospitalisation, congenital anomalies, an immediate risk to life, or death.",
+   "data": {
+    "headline": "What “serious” means",
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Article 2(1)(p)",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "functional incapacity or disability"
+     },
+     {
+      "text": "hospitalisation"
+     },
+     {
+      "text": "risk to life or death"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_timeline",
+   "spoken": "For these cases, Article 23 applies. The responsible person and distributors notify the competent authority without delay: the effect, the exact product name and any corrective action. The authority then informs the other member states.",
+   "data": {
+    "headline": "The reporting route",
+    "nodes": [
+     {
+      "date": "1",
+      "text": "the effect occurs"
+     },
+     {
+      "date": "2",
+      "text": "report to that country's authority"
+     },
+     {
+      "date": "3",
+      "text": "passed on to other member states"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "Consumers and health professionals can contact the authority too. The authority then passes the information on to the other member states and to the responsible person.",
+   "data": {
+    "headline": "Who can report",
+    "mode": "compare",
+    "left": {
+     "tag": "must",
+     "title": "Businesses",
+     "rows": [
+      {
+       "text": "responsible person"
+      },
+      {
+       "text": "distributors"
+      }
+     ]
+    },
+    "right": {
+     "tag": "can",
+     "title": "People",
+     "rows": [
+      {
+       "text": "consumers"
+      },
+      {
+       "text": "health professionals"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "In the US, MoCRA brought a similar duty. The responsible person reports serious adverse events to the FDA within 15 business days. New information within a year also has to follow within 15 business days.",
+   "data": {
+    "headline": "The US",
+    "doc": {
+     "act": "FDA: MoCRA",
+     "ref": "Serious adverse events"
+    },
+    "rows": [
+     {
+      "text": "report to the FDA"
+     },
+     {
+      "text": "within 15 business days",
+      "value": "15"
+     },
+     {
+      "text": "follow-ups also within 15 days"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "For you, that means: with a serious reaction, get medical help first. For a report, the exact product name and the batch number from the pack will help.",
+   "data": {
+    "headline": "If it happens",
+    "items": [
+     {
+      "title": "Medical help first",
+      "sub": "your health comes first",
+      "icon": "shield"
+     },
+     {
+      "title": "Note the product name",
+      "sub": "exactly as on the pack",
+      "icon": "doc"
+     },
+     {
+      "title": "Add the batch number",
+      "sub": "helps identify it",
+      "icon": "book"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Read the pack first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Read first, then apply",
+    "block_text": "Read the pack first",
+    "done_text": "Pack read"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

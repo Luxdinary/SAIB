@@ -1,0 +1,668 @@
+{
+  "video_id": "megaconstruction-20261112-3-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "625 m above the river: almost two Eiffel Towers stacked",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261112-3-en. Thema: huajiang. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Huajiang bridge",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "deck 625 m high",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "open since 28.09.2025",
+          "tone": "green",
+          "at": "@2025"
+        },
+        {
+          "beat": "b3",
+          "text": "deck to water",
+          "tone": "accent",
+          "at": "@water"
+        },
+        {
+          "beat": "b4",
+          "text": "1.9 × Eiffel Tower",
+          "tone": "accent",
+          "at": "@two"
+        }
+      ]
+    },
+    "description": "The deck of the Huajiang Grand Canyon Bridge sits 625 m above the river – almost twice the height of the Eiffel Tower. Calculated.",
+    "companion_text": "Calculated: 625 m ÷ 330 m = 1.89. Sources: CREC, Xinhua, China Daily, City of Paris. Stylised 3D model, canyon schematic. Follow Gigastruct.",
+    "hashtags": [
+      "huajiang",
+      "bridge",
+      "china",
+      "record",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "625 m ÷ 330 m = 1,89 (mit 324 m: 1,93)",
+        "result": "fast doppelt so hoch",
+        "sources": [
+          "S1",
+          "S4"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "river",
+          "kind": "box",
+          "size": [
+            200,
+            3,
+            6000
+          ],
+          "color": "water",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cliffW",
+          "kind": "box",
+          "size": [
+            1500,
+            600,
+            2400
+          ],
+          "color": "compare",
+          "pos": [
+            -1460,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cliffE",
+          "kind": "box",
+          "size": [
+            1500,
+            600,
+            2400
+          ],
+          "color": "compare",
+          "pos": [
+            1460,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "bridge",
+          "kind": "bridge",
+          "type": "suspension",
+          "x0": -1445,
+          "x1": 1445,
+          "deck_y": 625,
+          "deck_w": 28,
+          "deck_t": 12,
+          "towers": [
+            -710,
+            710
+          ],
+          "tower_h": 150,
+          "tower_w": 20,
+          "ground_y": 600,
+          "sag_min": 6,
+          "cable_r": 3,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "e1",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 1,
+          "pos": [
+            0,
+            0,
+            260
+          ],
+          "props": {
+            "visible": 0
+          }
+        },
+        {
+          "id": "e2",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 1,
+          "pos": [
+            0,
+            330,
+            260
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "mid": [
+          0,
+          312,
+          0
+        ],
+        "deck": [
+          0,
+          640,
+          14
+        ],
+        "span": [
+          -350,
+          640,
+          14
+        ],
+        "tower": [
+          710,
+          760,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "bridge",
+              "river"
+            ],
+            "box": [
+              [
+                -800,
+                0,
+                -100
+              ],
+              [
+                800,
+                780,
+                100
+              ]
+            ],
+            "az0": 80,
+            "az1": 70,
+            "el0": 2,
+            "el1": 6,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "zone": 860,
+            "cy": 780
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 60,
+            "az1": 50,
+            "el0": 14,
+            "el1": 10,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "cy": 860
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -800,
+                0,
+                -100
+              ],
+              [
+                800,
+                780,
+                100
+              ]
+            ],
+            "az0": 88,
+            "az1": 84,
+            "el0": 0,
+            "el1": 3,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "zone": 860,
+            "cy": 780
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -800,
+                0,
+                -100
+              ],
+              [
+                800,
+                780,
+                300
+              ]
+            ],
+            "az0": 95,
+            "az1": 90,
+            "el0": 2,
+            "el1": 4,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "zone": 900,
+            "cy": 760
+          },
+          "props": {
+            "e1.visible": 1,
+            "e2.visible": 1,
+            "e1.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.15",
+                0
+              ],
+              [
+                "%0.35",
+                1
+              ]
+            ],
+            "e2.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.6",
+                0
+              ],
+              [
+                "%0.8",
+                1
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 22,
+            "el1": 30,
+            "fit0": 0.9,
+            "fit1": 0.85,
+            "cy": 880
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.crec.cn/zgztywz/cs11/10210606/2025101115574085550/index.html",
+      "title": "China Railway Engineering Group (CREC): Huajiang Grand Canyon Bridge – 625 m Fahrbahn über Wasser, 1.420 m Spannweite, 2.890 m Länge",
+      "label": "CREC, Huajiang-Brücke",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://english.news.cn/20250117/36b7f3e726fb4ff48218285a5fa4818f/c.html",
+      "title": "Xinhua, 17.01.2025: 625 m über dem Beipan-Fluss, 1.420 m, 2.890 m",
+      "label": "Xinhua, 01/2025",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.chinadaily.com.cn/a/202509/29/WS68d9bfa2a310f735438b2ca6.html",
+      "title": "China Daily, 29.09.2025: für den Verkehr geöffnet am 28.09.2025",
+      "label": "China Daily, 09/2025",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.paris.fr/pages/la-tour-eiffel-fete-ses-130-ans-6554",
+      "title": "Ville de Paris: Eiffelturm 330 m seit 15.03.2022",
+      "label": "Ville de Paris, Eiffelturm",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Die 625 m sind Fahrbahnhöhe über dem Wasser, nicht Bauwerkshöhe.",
+    "Turmhöhen und Schluchtform im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "The deck of this bridge sits 625 metres above the river.",
+      "on_screen": "625 m above the river",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Huajiang bridge, really?",
+      "on_screen": "How big is the Huajiang bridge, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate the Huajiang bridge.",
+      "on_screen": "the Huajiang bridge: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Huajiang bridge depends on how it is built.",
+      "on_screen": "the Huajiang bridge: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Huajiang bridge take shape in the model.",
+      "on_screen": "the Huajiang bridge as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "The deck of this bridge sits 625 metres above the river. Almost twice as high as the Eiffel Tower is tall.",
+      "data": {
+        "kicker": "Calculated · Huajiang",
+        "question": "625 m above the river",
+        "question_at": "@The",
+        "number": {
+          "value": "625",
+          "unit": "m",
+          "at_word": "625",
+          "y": 640
+        },
+        "badge": {
+          "text": "almost 2 Eiffel Towers",
+          "at_word": "twice",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Almost"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "This is the Huajiang Grand Canyon Bridge in China. It has been open to traffic since 28 September 2025. The main span measures 1,420 metres, and the whole bridge 2,890. One single opening of almost one and a half kilometres.",
+      "data": {
+        "headline": "Huajiang Grand Canyon Bridge",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "1,420",
+            "unit": "m",
+            "label": "main span",
+            "at_word": "1,420"
+          },
+          {
+            "value": "2,890",
+            "unit": "m",
+            "label": "total length",
+            "at_word": "2,890"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "kicker": "2 · China",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_section",
+      "spoken": "It crosses the Beipan River as a suspension bridge with one single main span and a steel truss deck. One thing matters here: the 625 metres are the distance from the deck down to the water, not the height of the structure itself.",
+      "data": {
+        "headline": "One span across the canyon",
+        "note": "Schematic model",
+        "note_dy": 190,
+        "dims": [
+          {
+            "anchor": "mid",
+            "text": "625 m",
+            "at_word": "625"
+          }
+        ],
+        "callouts": [
+          {
+            "anchor": "span",
+            "text": "steel truss",
+            "side": "up",
+            "at_word": "truss"
+          },
+          {
+            "anchor": "tower",
+            "text": "one main span",
+            "side": "up",
+            "at_word": "main"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "3 · Suspension bridge",
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gs_compare",
+      "spoken": "The Eiffel Tower is 330 metres tall. 625 divided by 330 gives 1.89. Stack two Eiffel Towers on top of each other, and they would only just reach above the deck.",
+      "data": {
+        "headline": "Deck vs. Eiffel Tower",
+        "a": {
+          "label": "Deck above the river",
+          "value": 625,
+          "unit": "m"
+        },
+        "b": {
+          "label": "Eiffel Tower",
+          "value": 330,
+          "unit": "m"
+        },
+        "decimals": 1,
+        "bars_dy": 430,
+        "row_h": 108,
+        "order": "ba",
+        "b_at": "@Eiffel",
+        "a_at": "@625",
+        "result_at": "@two"
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "overlay": {
+        "kicker": "4 · Calculated",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "Measured from the deck down to the river: almost two Eiffel Towers of air under your tyres. Follow Gigastruct for the next megastructure.",
+      "data": {
+        "mode": "closing",
+        "statement": "Almost two Eiffel Towers of air.",
+        "chip": {
+          "text": "Follow Gigastruct",
+          "at_word": "Follow",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "overlay": {
+        "kicker": "5 · Verdict",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

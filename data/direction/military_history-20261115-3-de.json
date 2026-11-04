@@ -1,0 +1,559 @@
+{
+  "video_id": "military_history-20261115-3-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Schiffszwieback: Brot, das monatelang hielt",
+  "notes": "Woche 1, Reihe Nachschub. Keine Haltbarkeit in Monaten im Sprechtext (keine Quelle); Skorbut nicht gezeigt.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.rmg.co.uk/stories/maritime-history/ships-biscuit",
+      "title": "The ship's biscuit, Royal Museums Greenwich",
+      "label": "RMG: Ship's biscuit",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co154899/ships-biscuit-england-1875",
+      "title": "Ship's biscuit, England, 1875 (A33642), Science Museum Group",
+      "label": "Science Museum Group",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://rmg.co.uk/collections/objects/rmgc-object-6052",
+      "title": "Ship's biscuit, AAB0003, 1784, National Maritime Museum",
+      "label": "RMG: Zwieback 1784",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Haltbarkeit in Monaten nennt keine Quelle; im Sprechtext nur 'verdirbt auf langen Reisen nicht'.",
+    "Streckmittel wie Sägemehl nicht gegengeprüft; nicht im Video."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie ernährt man eine Schiffsbesatzung auf langen Reisen, mit Brot, das nicht verdirbt?",
+      "on_screen": "Brot, das nicht verdirbt?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Schiffszwieback schützte vor Skorbut? Er enthielt kein Vitamin C.",
+      "on_screen": "Kein Vitamin C",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Um 1800 bekam ein Seemann etwa 3,2 Kilogramm Zwieback pro Woche.",
+      "on_screen": "3,2 kg pro Woche",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Oft war er von Kornkäfern befallen.",
+      "on_screen": "Käfer im Brot",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, warum ein Zwieback Löcher hat.",
+      "on_screen": "Warum die Löcher?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie ernährt man eine Schiffsbesatzung auf langen Reisen, mit Brot, das nicht verdirbt?",
+      "data": {
+        "question": "Brot für lange Reisen, das nicht verdirbt?",
+        "question_em": "nicht verdirbt",
+        "card_title": "Schiffszwieback",
+        "card_meta": "ROYAL NAVY",
+        "card_no": "AKTE 30",
+        "stamp": "1 lb",
+        "drawing": "ships_biscuit.svg",
+        "packet_label": "Zwieback",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Brot",
+        "packet_at": "w:Schiffsbesatzung",
+        "em_at": "w:verdirbt"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Zwieback wird vor langen Reisen in großen Mengen gebacken und gelagert. Er ist eines der wenigen Lebensmittel, die auf See nicht verderben.",
+      "data": {
+        "mode": "map",
+        "headline": "Vorrat für die Reise",
+        "places": [
+          {
+            "label": "Bäckerei",
+            "code": "große Mengen",
+            "x": 600,
+            "y": 80,
+            "at": "w:gebacken"
+          },
+          {
+            "label": "Auf See",
+            "code": "lange Reisen",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:See"
+          }
+        ],
+        "route_at": "w:gelagert",
+        "route_label": "gebacken und gelagert",
+        "route_label_at": "w:gelagert",
+        "wait_at": "w:Mengen",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "verdirbt nicht",
+        "chip_at": "w:verderben",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Zwieback",
+        "packet_at": "w:Zwieback",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "einer der wenigen Vorräte",
+        "line_label_at": "w:Lebensmittel",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Ofen",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Die Zutaten: steingemahlenes Mehl, Wasser und Salz. Etwa 30 Minuten im heißen Ofen, dann hart und trocken gelagert. Löcher helfen beim Backen, ein Pfeil zeigt Staatseigentum.",
+      "data": {
+        "headline": "Mehl, Wasser, Salz",
+        "drawing": "ships_biscuit.svg",
+        "sheet_title": "BLATT 2 · ZWIEBACK",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Mehl, Wasser, Salz",
+            "x": 120,
+            "y": 330,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Mehl"
+          },
+          {
+            "label": "ca. 30 min im Ofen",
+            "x": 290,
+            "y": 200,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:30"
+          },
+          {
+            "label": "Löcher fürs Backen",
+            "x": 90,
+            "y": 190,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Löcher"
+          },
+          {
+            "label": "Pfeil: Staatseigentum",
+            "x": 170,
+            "y": 230,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Pfeil"
+          }
+        ],
+        "zoom": {
+          "x": 170,
+          "y": 250,
+          "scale": 1.12,
+          "at": "w:Ofen",
+          "back_at": "w:Staatseigentum",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Die Ration: Samuel Pepys sieht täglich ein Pfund Zwieback und eine Gallone Bier vor. Um 1800 bekommt ein Seemann pro Woche etwa 3,2 Kilogramm.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Die Ration",
+        "left": {
+          "tag": "Pepys",
+          "title": "1 Pfund am Tag",
+          "at": "w:Pepys",
+          "rows": [
+            {
+              "text": "dazu 1 Gallone Bier",
+              "at": "w:Bier"
+            }
+          ]
+        },
+        "right": {
+          "tag": "um 1800",
+          "title": "3,2 kg pro Woche",
+          "at": "w:1800",
+          "rows": [
+            {
+              "text": "pro Seemann",
+              "at": "w:Seemann"
+            }
+          ]
+        },
+        "verdict": "Grundlage der Verpflegung",
+        "verdict_at": "w:Kilogramm",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "An Bord heißt er wegen seiner Härte hard tack. Gegessen wird er meist eingeweicht, in Brühe von Pökelfleisch. Oft haben ihn Kornkäfer befallen.",
+      "data": {
+        "headline": "An Bord",
+        "nodes": [
+          {
+            "label": "Hard tack",
+            "code": "Spitzname",
+            "at": "w:hard"
+          },
+          {
+            "label": "Eingeweicht",
+            "code": "in Brühe",
+            "at": "w:eingeweicht"
+          },
+          {
+            "label": "Pökelfleisch",
+            "code": "die Brühe",
+            "at": "w:Pökelfleisch"
+          },
+          {
+            "label": "Kornkäfer",
+            "code": "oft befallen",
+            "at": "w:Kornkäfer"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Zwieback",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1588 plant die Armada ein Pfund pro Mann und Tag. 1847 kommt Dosenrindfleisch an Bord, ab Mitte der 1850er weiches Brot.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1588 bis 1850",
+        "items": [
+          {
+            "year": "1588",
+            "title": "Armada",
+            "sub": "1 Pfund pro Mann und Tag",
+            "at": "w:1588"
+          },
+          {
+            "year": "1847",
+            "title": "Dosenrindfleisch",
+            "sub": "offiziell in der Navy",
+            "at": "w:1847"
+          },
+          {
+            "year": "1850+",
+            "title": "Soft bread",
+            "sub": "weiches Brot an Bord",
+            "at": "w:1850er"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Erhaltene Zwiebacke liegen bis heute in Museen, etwa einer von 1784 in Greenwich und einer der Arktisexpedition von 1875 im Science Museum. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Schiffszwieback",
+        "card_meta": "1784 · GREENWICH",
+        "card_no": "AKTE 30",
+        "stamp": "1784",
+        "drawing": "ships_biscuit.svg",
+        "statement": "Brot, das Jahrhunderte überdauert",
+        "statement_at": "w:Zwiebacke",
+        "stamp_at": "w:1784",
+        "note": "Science Museum: Zwieback von 1875",
+        "note_at": "w:1875",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Zwieback",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Vorrat: geplant",
+          "tone": "muted",
+          "offset": 3.7
+        },
+        {
+          "beat": "b2",
+          "text": "Haltbar: ja",
+          "tone": "amber",
+          "offset": 10.5
+        },
+        {
+          "beat": "b3",
+          "text": "Ofen: 30 min",
+          "tone": "amber",
+          "offset": 4.2
+        },
+        {
+          "beat": "b4",
+          "text": "Ration: 1 Pfund/Tag",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b5",
+          "text": "Zustand: hart",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b6",
+          "text": "Ersatz: ab 1847",
+          "tone": "muted",
+          "offset": 5.2
+        },
+        {
+          "beat": "b7",
+          "text": "Ort: Museum",
+          "tone": "muted",
+          "offset": 3.2
+        }
+      ]
+    },
+    "description": "Schiffszwieback: Mehl, Wasser, Salz, etwa 30 Minuten gebacken, ein Pfund pro Mann und Tag, auf langen Reisen haltbar. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "seefahrt",
+      "verpflegung",
+      "geschichte",
+      "royalnavy",
+      "zwieback"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

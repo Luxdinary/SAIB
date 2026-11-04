@@ -1,0 +1,196 @@
+id: ai_security-20261111-2-de
+version: F2
+title: 'Mythos: Passwörter regelmäßig ändern'
+reihe: Was tust du?
+short: Passwortwechsel
+note: Thema C02 (Mythos als Ausgangslage). Beispielfall nachgestellt; Aussagen aus S1 (NCSC), S2 (NIST SP 800-63B) und S3 (BSI), Faktenbasis aus dem Plan vom 01.11.2026.
+description: Dein Rechner will schon wieder ein neues Passwort. Was tust du? Warum NIST und NCSC vom Wechsel nach Kalender abraten und wann Wechseln wirklich hilft.
+hashtags:
+- passwort
+- mythos
+- itsicherheit
+- kmu
+- wastustdu
+sources:
+- id: S1
+  url: https://www.ncsc.gov.uk/blog-post/problems-forcing-regular-password-expiry
+  title: 'NCSC: The problems with forcing regular password expiry'
+  checked_at: '2026-11-01'
+  label: NCSC, Passwortwechsel
+- id: S2
+  url: https://pages.nist.gov/800-63-4/sp800-63b.html
+  title: 'NIST SP 800-63B: Authentication and Lifecycle Management'
+  checked_at: '2026-11-01'
+  label: NIST SP 800-63B
+- id: S3
+  url: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html
+  title: 'BSI: Sichere Passwörter erstellen'
+  checked_at: '2026-11-01'
+  label: BSI, Sichere Passwörter
+unverified:
+- 'Konkrete Wechselfristen in Firmen (z. B. 90 Tage): nicht genannt; im Beispielfall nur „wie jedes Quartal“.'
+- Ablauf im Beispielfall (Datenleck, abgeleitetes Passwort) ist erfunden und als Beispiel gekennzeichnet; der Mechanismus (Ableitung aus dem alten Passwort) stammt aus S1.
+pick: demonstration
+hooks:
+- type: question
+  spoken: Schon wieder ein neues Passwort? Was tust du?
+  screen: Schon wieder ein neues Passwort?
+- type: misconception
+  spoken: Regelmäßig das Passwort wechseln? Genau davon raten NIST und NCSC ab.
+  screen: Wechsel nach Kalender = sicher?
+  src:
+  - S1
+  - S2
+- type: surprising_fact
+  spoken: Das britische NCSC rät schon seit 2015 vom erzwungenen Passwortwechsel ab.
+  screen: Abgeraten seit 2015
+  src:
+  - S1
+- type: concrete_risk
+  spoken: Wer wechseln muss, wählt oft ein Passwort, das sich aus dem alten ableiten lässt.
+  screen: Neu, aber ableitbar
+  src:
+  - S1
+- type: demonstration
+  spoken: Montag, acht Uhr. Dein Rechner verlangt ein neues Passwort. Wie jedes Quartal.
+  screen: MO 08:00 · Passwort läuft ab
+beats:
+- f: hook
+  t: sc_case
+  s: 'Montag, acht Uhr. Dein Rechner meldet: Dein Passwort läuft ab, bitte jetzt ein neues festlegen. Wie jedes Quartal.'
+  d:
+    kicker: Beispielfall · nachgestellt
+    time: MO 08:00
+    place: Büro einer Hausverwaltung
+    mail_at: '@Rechner'
+    mail:
+      from: IT-Hinweis (Beispiel)
+      addr: it@hausverwaltung.example
+      time: 08:00
+      subject: Passwort läuft ab
+      lines:
+      - Dein Passwort läuft bald ab.
+      - Bitte jetzt ein neues festlegen.
+      - Wie jedes Quartal.
+    highlight:
+      line: 2
+      label: Kalender
+      at: '@Quartal'
+- f: problem
+  t: sc_choice
+  s: 'Was tust du? A: Du hängst an das alte Passwort eine Zahl an. B: Du denkst dir ein neues aus und schreibst es auf einen Zettel. C: Du fragst, warum ihr überhaupt nach Kalender wechselt. Entscheide
+    dich jetzt.'
+  src:
+  - S1
+  d:
+    question: Was tust du?
+    options:
+    - key: A
+      text: Altes Passwort plus eine Zahl
+      at: '@hängst'
+    - key: B
+      text: Neues ausdenken, auf einen Zettel
+      at: '@denkst'
+    - key: C
+      text: Die Kalender-Regel hinterfragen
+      at: '@fragst'
+    think:
+      seconds: 2.6
+      at: '@Entscheide'
+    hint: Entscheide dich jetzt.
+- f: explanation
+  t: sc_inspect
+  s: 'Was das britische NCSC dazu sagt: Wer wechseln muss, wählt oft ein Passwort, das dem alten ähnelt. Angreifer können es dann ableiten. Neue Passwörter werden eher aufgeschrieben oder vergessen. Und
+    viele wählen ein schwächeres.'
+  src:
+  - S1
+  d:
+    kicker: Laut NCSC
+    headline: Was der Zwang bewirkt
+    rows:
+    - label: Ähnlich
+      value: aus dem alten ableitbar
+      verdict: Folge
+      at: '@ähnelt'
+    - label: Zettel
+      value: eher aufgeschrieben
+      verdict: Folge
+      at: '@aufgeschrieben'
+    - label: Schwächer
+      value: leichter zu merken
+      verdict: Folge
+      at: '@schwächeres'
+    fact:
+      kind: fakt
+      text: Erzwungener Wechsel macht Passwörter oft schwächer.
+      source: NCSC · Passwortwechsel
+      at: 1.2
+- f: demonstration
+  t: sc_timeline
+  s: Spielen wir A durch. Dein altes Passwort taucht in einem Datenleck auf. Weil das neue ihm ähnelt, leitet ein Angreifer es ab. Er probiert es aus und ist drin. Der Wechsel nach Kalender hat nichts geschützt.
+  src:
+  - S1
+  d:
+    kicker: Wahl A, durchgespielt
+    tag: Beispiel
+    headline: Neu, aber ableitbar
+    items:
+    - time: MO 08:01
+      text: Altes Passwort plus Zahl
+      at: 0.6
+    - time: Später
+      text: Altes Passwort im Datenleck
+      tone: amber
+      at: '@Datenleck'
+    - time: Danach
+      text: Neues wird abgeleitet
+      at: '@leitet'
+    - time: Dann
+      text: Der Angreifer ist drin
+      tone: red
+      at: '@drin'
+    source:
+      kind: fakt
+      label: NCSC · ableitbare Passwörter
+      at: 1.0
+- f: insight
+  t: sc_step
+  s: 'Richtig ist C. Das US-Normeninstitut NIST schreibt: Nutzer dürfen nicht zum regelmäßigen Wechsel gezwungen werden. Gewechselt wird, wenn es Hinweise gibt, dass das Passwort in fremde Hände geraten
+    ist, etwa nach einem Datenleck oder nach einer Eingabe auf einer gefälschten Seite.'
+  src:
+  - S2
+  d:
+    mode: rule
+    kicker: Der eine Schritt
+    card:
+      letter: C
+      title: Wechseln bei Verdacht
+      sub: nicht nach Kalender
+      at: 0.2
+    strikes:
+    - text: 'A: Altes plus Zahl'
+      note: ableitbar
+      at: 3.5
+    - text: 'B: Neues auf dem Zettel'
+      note: aufgeschrieben
+      at: 5.0
+    sources:
+    - kind: fakt
+      label: NIST SP 800-63B
+    - kind: fakt
+      label: NCSC · Passwortwechsel
+    sources_at: '@NIST'
+- f: close
+  t: sc_close
+  s: Wechseln bei Verdacht, nicht nach Kalender. Was hättest du gewählt? Schreib es in die Kommentare.
+  d:
+    kicker: Reihe · Was tust du?
+    rule: Wechseln bei Verdacht.
+    rule_at: 0.3
+    question:
+      text: Was hättest du gewählt?
+      at: '@Was'
+    domain: scutoria.com
+    domain_at: 1.2
+    claim: Belegt. Datiert. Vorzeigbar.
+    disclaimer: Quellenbasiert. Keine Rechtsberatung.

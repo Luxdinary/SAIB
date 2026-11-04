@@ -1,0 +1,382 @@
+{
+ "video_id": "ai_security-20261113-1-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Backup: eine Kopie gehört offline",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Fünf Minuten, die gefehlt haben\". F1 im Format \"Was tust du?\", rückwärts erzählt. Beispielfall nachgestellt: Betrieb, Person, Uhrzeiten und Ablauf sind erfunden; Mechanik (Erpressersoftware verschlüsselt angeschlossene Laufwerke und verbundene Cloud-Speicher) und Schritt (eine Kopie offline, Platte trennen) aus S1 und S2, am 02.11.2026 erneut gelesen. Der alte Plan ai_security-20261113-1-de.json bleibt unverändert.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Montagmorgen, nichts geht mehr auf, auch die Backup-Platte nicht. Wir spulen zurück bis zu dem Handgriff, der gefehlt hat. Ein nachgestellter Fall mit dem einen Schritt, den das britische NCSC rät.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "backup",
+   "ransomware",
+   "datensicherung",
+   "kmu",
+   "fuenfminuten"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ncsc.gov.uk/blog-post/offline-backups-in-an-online-world",
+   "title": "NCSC blog: Offline backups in an online world",
+   "checked_at": "2026-11-02",
+   "label": "NCSC, Offline-Backups"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/always-back-up-your-most-important-data",
+   "title": "NCSC: Top tips for staying secure online – Backing up your data",
+   "checked_at": "2026-11-02",
+   "label": "NCSC, Daten sichern"
+  }
+ ],
+ "unverified": [
+  "Konkrete Backup-Produkte: nicht genannt.",
+  "Ablauf im Beispielfall (Montag 07:40, Sonntagnacht, Freitag 18:05, Mail von Jana) ist erfunden und als Beispiel gekennzeichnet.",
+  "Dass Option A (zweite Platte am Rechner) und B (ständig synchronisierter Cloud-Ordner) nicht schützen, ist Scutorias Auslegung von S1 (angeschlossene Laufwerke und verbundene Cloud-Speicher wurden mitverschlüsselt); im Bild als Auslegung markiert.",
+  "3-2-1-Regel und regelmäßiges Testen (S1) in dieser Fassung nicht verwendet, damit es bei einem Schritt bleibt."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was bleibt dir, wenn auch dein Backup verschlüsselt ist?",
+   "on_screen": "Backup auch verschlüsselt. Was nun?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Du hast ein Backup, also bist du sicher? Nicht, wenn es angeschlossen ist.",
+   "on_screen": "Backup da = sicher?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Das NCSC sah Erpressersoftware, die auch Backup-Laufwerke verschlüsselte.",
+   "on_screen": "Auch das Backup verschlüsselt",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Dein Backup hängt am Rechner? Dann kann Erpressersoftware es mitverschlüsseln.",
+   "on_screen": "Backup-Platte am Rechner?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Montag, sieben Uhr vierzig. Keine Datei geht mehr auf, auch nicht das Backup.",
+   "on_screen": "MO 07:40 · Auch das Backup ist weg",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "Uhrzeit groß, die Mail der Kollegin kommt als Papierkarte herein, die Backup-Zeile wird markiert",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Montag, sieben Uhr vierzig. Jana aus dem Büro schreibt: Keine Datei geht mehr auf. Und die Backup-Platte am Rechner ist auch verschlüsselt.",
+   "data": {
+    "kicker": "Beispielfall · nachgestellt",
+    "time": "MO 07:40",
+    "place": "Büro einer Hausverwaltung",
+    "mail_at": "@Jana",
+    "mail": {
+     "from": "Jana (Büro)",
+     "addr": "jana@hausverwaltung.example",
+     "time": "07:40",
+     "subject": "Nichts geht mehr auf",
+     "lines": [
+      "Morgen, keine Datei öffnet sich.",
+      "Auch die Backup-Platte am PC:",
+      "alles verschlüsselt."
+     ]
+    },
+    "highlight": {
+     "line": 1,
+     "label": "auch Backup",
+     "at": "@Backup"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "Dabei war alles eingerichtet. Ein Backup, jeden Abend, automatisch. Ziel: eine USB-Platte. Die hängt immer am Rechner, das ist bequem. Nur: Laut NCSC kann Erpressersoftware automatisch auf angeschlossene Laufwerke übergreifen.",
+   "data": {
+    "kicker": "Was ihr hattet",
+    "headline": "Backup war doch da?",
+    "rows": [
+     {
+      "label": "Backup",
+      "value": "jeden Abend automatisch",
+      "verdict": "unauffällig",
+      "at": "@Backup"
+     },
+     {
+      "label": "Ziel",
+      "value": "USB-Platte",
+      "verdict": "unauffällig",
+      "at": "@Ziel"
+     },
+     {
+      "label": "Anschluss",
+      "value": "immer am Rechner",
+      "verdict": "bequem",
+      "at": "@hängt"
+     }
+    ],
+    "finding": {
+     "text": "Alles eingerichtet.",
+     "at": "@Nur"
+    },
+    "fact": {
+     "kind": "fakt",
+     "text": "Schadsoftware kann auf angeschlossene Laufwerke übergreifen.",
+     "source": "NCSC · Daten sichern",
+     "at": "@Laut"
+    }
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_timeline",
+   "spoken": "Spulen wir zurück. Sonntagnacht startet die Erpressersoftware und verschlüsselt alles, auch die Platte. Das NCSC hat viele solcher Fälle gesehen. Freitag, achtzehn Uhr fünf: Die Sicherung ist fertig, die Platte bleibt dran. Genau hier fehlte ein Handgriff.",
+   "data": {
+    "kicker": "Zurückgespult",
+    "tag": "Beispiel",
+    "headline": "Zurück bis zum Moment",
+    "items": [
+     {
+      "time": "MO 07:40",
+      "text": "Daten und Backup verschlüsselt",
+      "tone": "red",
+      "at": 0.3
+     },
+     {
+      "time": "SO 02:10",
+      "text": "Erpressersoftware startet",
+      "tone": "amber",
+      "at": "@Sonntagnacht"
+     },
+     {
+      "time": "FR 18:05",
+      "text": "Sicherung fertig. Platte bleibt.",
+      "tone": "amber",
+      "at": "@Freitag"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "NCSC · angeschlossene Laufwerke",
+     "at": "@NCSC"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "explanation",
+   "scene_type": "sc_choice",
+   "spoken": "Was änderst du? A: Eine zweite Platte dazu, auch am Rechner. B: Zusätzlich ein Cloud-Ordner, der ständig synchronisiert. C: Die Platte nach jeder Sicherung abziehen. Merk dir deine Wahl.",
+   "data": {
+    "question": "Was änderst du?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Zweite Platte, auch am Rechner",
+      "at": "@zweite"
+     },
+     {
+      "key": "B",
+      "text": "Cloud-Ordner, ständig synchron",
+      "at": "@Cloud"
+     },
+     {
+      "key": "C",
+      "text": "Platte nach der Sicherung abziehen",
+      "at": "@abziehen"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Merk"
+    },
+    "hint": "Merk dir deine Wahl."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Richtig ist C. Die Regel des NCSC: Zu jeder Zeit ist mindestens ein Backup offline. Ein Laufwerk, das gerade nicht gebraucht wird, wird getrennt. A und B hängen weiter dran. Das NCSC sah sogar verbundene Cloud-Speicher mitverschlüsselt.",
+   "data": {
+    "mode": "rule",
+    "kicker": "Der eine Schritt",
+    "card": {
+     "letter": "C",
+     "title": "Eine Kopie immer offline",
+     "sub": "Platte nach jeder Sicherung abziehen",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Zweite Platte am Rechner",
+      "note": "auch verbunden",
+      "at": "@A"
+     },
+     {
+      "text": "B: Cloud, ständig synchron",
+      "note": "auch verbunden",
+      "at": "@hängen"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "NCSC · eine Kopie offline"
+     },
+     {
+      "kind": "fakt",
+      "label": "NCSC · Laufwerk trennen"
+     },
+     {
+      "kind": "auslegung",
+      "label": "A und B: Auslegung Scutoria"
+     }
+    ],
+    "sources_at": "@NCSC"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Ein Backup schützt erst, wenn eine Kopie offline ist. Also: Platte ab nach jeder Sicherung. Was hättest du gewählt? Schreib es in die Kommentare.",
+   "data": {
+    "kicker": "Reihe · Fünf Minuten",
+    "rule": "Eine Kopie gehört offline.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Was hättest du gewählt?",
+     "at": "@hättest"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+   },
+   "source_ids": []
+  }
+ ]
+}

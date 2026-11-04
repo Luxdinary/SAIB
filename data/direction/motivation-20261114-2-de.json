@@ -1,0 +1,444 @@
+{
+  "video_id": "motivation-20261114-2-de",
+  "brand_id": "motivation",
+  "language": "de",
+  "title": "Markieren und Wiederlesen: was die Studien zeigen",
+  "notes": "Gritwerk Vorlage 1.0, Produktion Woche 1 (Stefan, 01.11.2026). Kalender motivation-20261114-2-de, Reihe Lernlabor (D04). Aussagen nur aus den Kalenderquellen (Abruf 2026-11-01).",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 3,
+    "source_y": 1130,
+    "status_bar": {
+      "file": "Randfrage",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Gelb = gelernt?",
+          "tone": "amber",
+          "offset": 2.6
+        },
+        {
+          "beat": "b2",
+          "text": "Übersicht: geringer Nutzen",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "4 Experimente: kaum Vorteil",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "nicht schädlich, nur schwach",
+          "tone": "muted"
+        },
+        {
+          "beat": "b5",
+          "text": "Plan: Randfrage",
+          "tone": "muted"
+        },
+        {
+          "beat": "b6",
+          "text": "heute: Tag 1",
+          "tone": "accent",
+          "offset": 1.0
+        }
+      ]
+    },
+    "description": "Markieren und nochmal lesen fühlt sich nach Lernen an. Eine große Übersicht bewertete beide Techniken als wenig nützlich, und in vier Experimenten brachte sofortiges Wiederlesen kaum einen Vorteil. Was das heißt und was nicht, und eine kleine Handlung.",
+    "companion_text": "Jede Methode mit Quelle.",
+    "hashtags": [
+      "lernen",
+      "studium",
+      "lerntipps",
+      "studie",
+      "gritwerk"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26173288/",
+      "title": "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T., 2013, Improving students' learning with effective learning techniques, Psychological Science in the Public Interest (14/1), 4–58",
+      "checked_at": "2026-11-01",
+      "label": "Dunlosky et al. 2013"
+    },
+    {
+      "id": "S2",
+      "url": "https://eric.ed.gov/?id=EJ819481",
+      "title": "Callender, A. A. & McDaniel, M. A., 2009, The limited benefits of rereading educational texts, Contemporary Educational Psychology (34/1), 30–41",
+      "checked_at": "2026-11-01",
+      "label": "Callender & McDaniel 2009"
+    }
+  ],
+  "unverified": [
+    "Nicht im Video: Nicht „Markieren ist nutzlos“ oder „schadet“ (die Studie sagt: nicht durchgängig hilfreich); keine Aussage über jede Person oder jeden Text; kein Versprechen besserer Noten.",
+    "Grenzen: Callender & McDaniel untersuchten sofortiges Wiederlesen bei Lehrtexten, nicht das Markieren; Markieren wird nur in der Übersichtsarbeit bewertet. Beide Abstracts nennen keine Zahlenwerte; Aussagen gelten für die geprüften Texte und Tests."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Markieren und nochmal lesen fühlt sich nach Lernen an.",
+      "on_screen": "Markiert heißt gelernt?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Gewohnheitskarte mit Stempel und Frage",
+      "why": {
+        "choice": "eigener Hook, an den Quellen geprüft"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Was zeigen Studien wirklich zu „Markieren und Wiederlesen“?",
+      "on_screen": "",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "demonstration",
+      "spoken": "Schau, wie die Gewohnheitskarte dazu aussieht.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wer sich nur auf ein Schlagwort verlässt, plant am Befund vorbei.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "surprising_fact",
+      "spoken": "Die Studienlage dazu ist anders, als man oft hört.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    }
+  ],
+  "hook": {
+    "id": "H1",
+    "note": "Eigener Hook mit der höchsten Bewertung."
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gritwerk_tracker",
+      "duration_hint": 7,
+      "spoken": "Markieren und nochmal lesen fühlt sich nach Lernen an. In einer großen Übersicht schnitten beide schwach ab.",
+      "data": {
+        "cue": "Wenn ich zum Textmarker greife",
+        "action": "eine Frage an den Rand",
+        "counter_label": "Tag",
+        "boxes": 28,
+        "cols": 7,
+        "question": "Markiert heißt gelernt?",
+        "stamp": "Gelb = gelernt?",
+        "goal": "schwach bewertet",
+        "fill_to": 6,
+        "fill_at": "w:Markieren",
+        "fill_dur": 1.2,
+        "stamp_at": "w:Lernen",
+        "question_at": "w:Markieren",
+        "rest_at": "w:schwach"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Übersicht"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "gritwerk_paper",
+      "duration_hint": 13,
+      "spoken": "Zweitausenddreizehn bewertete ein Team um John Dunlosky verbreitete Lerntechniken. Markieren und Wiederlesen bekamen eine niedrige Bewertung, weil sie die Leistung nicht durchgängig verbessern. Stattdessen nennt die Übersicht zum Beispiel das Abfragen.",
+      "data": {
+        "headline": "Die Übersicht",
+        "tag": "Übersicht",
+        "cite": "Dunlosky et al. 2013",
+        "claim": "Markieren und Wiederlesen: niedriger Nutzen.",
+        "claim_at": "w:Lerntechniken",
+        "rows": [
+          {
+            "k": "Markieren",
+            "v": "niedrige Bewertung",
+            "at": "w:Markieren"
+          },
+          {
+            "k": "Wiederlesen",
+            "v": "niedrige Bewertung",
+            "at": "w:Bewertung"
+          },
+          {
+            "k": "Besser",
+            "v": "zum Beispiel Abfragen",
+            "at": "w:Abfragen"
+          }
+        ],
+        "plate": true
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · DIE STUDIE",
+        "marker": "fakt",
+        "marker_at": "w:Dunlosky",
+        "transition": {
+          "type": "iris",
+          "x": 880,
+          "y": 730,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "gritwerk_versus",
+      "duration_hint": 11,
+      "spoken": "Eine Studie mit vier Experimenten prüfte das Wiederlesen von Lehrtexten direkt. Bis auf wenige Ausnahmen brachte das sofortige zweite Lesen keinen messbaren Vorteil bei Verständnis- und Behaltenstests.",
+      "data": {
+        "headline": "Direkt getestet",
+        "link": "4 Experimente",
+        "cards": [
+          {
+            "tag": "2013",
+            "cite": "Dunlosky et al.",
+            "line": "Übersicht: geringer Nutzen",
+            "tone": "muted",
+            "at": "w:Studie"
+          },
+          {
+            "tag": "2009",
+            "cite": "Callender & McDaniel",
+            "line": "Wiederlesen: kaum Vorteil",
+            "tone": "amber",
+            "at": "w:Experimenten"
+          }
+        ],
+        "verdict": "Kein durchgängiger Vorteil",
+        "verdict_at": "w:Ausnahmen"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "3 · DER VERGLEICH",
+        "marker": "fakt",
+        "marker_at": "w:Experimenten",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gritwerk_paper",
+      "duration_hint": 15,
+      "spoken": "Wichtig: Markieren schadet nicht, es hilft nur nicht durchgängig. Und die Experimente prüften das sofortige Wiederlesen. Das Markieren selbst wurde nur in der Übersicht bewertet. Wer gern markiert, verliert also nichts, gewinnt aber laut den Studien wenig.",
+      "data": {
+        "headline": "Was das heißt",
+        "tag": "Einordnung",
+        "cite": "Dunlosky 2013 · Callender 2009",
+        "claim": "Nicht schädlich, aber kein verlässlicher Vorteil.",
+        "claim_at": "w:Wichtig",
+        "rows": [
+          {
+            "k": "Markieren",
+            "v": "schadet nicht",
+            "at": "w:schadet"
+          },
+          {
+            "k": "Getestet",
+            "v": "sofortiges Wiederlesen",
+            "at": "w:sofortige"
+          },
+          {
+            "k": "Grenze",
+            "v": "Markieren nur bewertet",
+            "at": "w:bewertet"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · DIE EINORDNUNG",
+        "marker": "fakt",
+        "marker_at": "w:Wichtig",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gritwerk_plan",
+      "duration_hint": 10,
+      "spoken": "Wenn du zum Textmarker greifst, schreib stattdessen eine Frage an den Rand. Später beantwortest du sie, ohne ins Buch zu schauen. Und setz dein Kästchen.",
+      "data": {
+        "layout": "month",
+        "weeks": 4,
+        "days": 7,
+        "cue": "Wenn ich zum Textmarker greife",
+        "action": "eine Frage an den Rand",
+        "cue_ph": "Auslöser?",
+        "action_ph": "Handlung?",
+        "headline": "So setzt du es um",
+        "cue_at": "w:Textmarker",
+        "action_at": "w:Frage",
+        "tick_at": "w:Kästchen",
+        "steps": [
+          {
+            "title": "Zum Textmarker greifen",
+            "at": "w:Textmarker"
+          },
+          {
+            "title": "Frage an den Rand",
+            "at": "w:Frage"
+          },
+          {
+            "title": "Später ohne Buch",
+            "at": "w:Später"
+          }
+        ],
+        "plate": true
+      },
+      "source_ids": [],
+      "overlay": {
+        "kicker": "5 · DEIN PLAN",
+        "marker": "auslegung",
+        "marker_at": "w:Wenn",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 820,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gritwerk_close",
+      "duration_hint": 6,
+      "spoken": "Heute ist Kästchen eins. Mehr Methoden mit Quelle: Folge Gritwerk.",
+      "data": {
+        "layout": "month",
+        "weeks": 4,
+        "days": 7,
+        "cue": "Wenn ich zum Textmarker greife",
+        "action": "eine Frage an den Rand",
+        "counter_label": "Tag",
+        "card_at": 0.1,
+        "tick_at": "w:Kästchen",
+        "chip": "Morgen: Kästchen 2",
+        "chip_at": "w:eins",
+        "name": "Gritwerk",
+        "name_at": "w:Methoden",
+        "mark_at": "w:Gritwerk",
+        "claim": "Methode statt Parole.",
+        "disclaimer": "Studienbasiert. Keine Therapie- oder Gesundheitsberatung."
+      },
+      "source_ids": [],
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

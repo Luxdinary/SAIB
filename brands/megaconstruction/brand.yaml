@@ -1,0 +1,96 @@
+id: megaconstruction
+name: Gigastruct
+niche: megaconstructions and construction sites
+style: engineering_epic
+phase: 4
+enabled: false
+brand_version: '0.9'   # Vorlage nur Claude Code, 2026-10-30; 1.0 erst nach Stefans Freigabe
+template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Gigastruct\Vorlage Gigastruct.md'
+languages:
+- de
+- en
+primary_language: de
+risk_default: low
+rules:
+- dimensions and dates from primary sources; scale comparisons must be computed, not estimated
+- stylised 3D models only (architectural model look); no photoreal images or AI renderings of real structures
+- ongoing projects only with a dated status ("Stand <Monat Jahr>")
+palette:
+  bg: '#20384F'          # steel blue ground (contrast text 10.2:1, accent 5.1:1)
+  surface: '#30465B'
+  accent: '#FF8A2A'      # construction orange: the one accent (measured part, numbers, dimension chips, progress)
+  text: '#E9EDF0'
+  muted: '#8F9CA8'
+  signal_amber: '#FFD166'  # Bernstein = open or unclear only (explainer 'unsicher', status tone 'amber'); the active phase is the accent
+  signal_red: '#FF6B5B'    # red = risk only (explainer 'luecke', status tone 'red'), rarely used
+  signal_green: '#5CD08A'  # green = reached state only (status tone 'green', elements on the seabed)
+  on_signal: '#14212E'     # text on accent/signal fills (shared templates need it)
+  scheme: dark
+model_palette:           # 3D layer (gigastruct3d.js): architectural model, matte, no photo textures
+  model: '#D6DDE3'       # model white-grey
+  model_inner: '#9FB0C0' # inside faces of a cutaway
+  edge: '#3A5874'        # drawing lines on the model
+  water: '#2E5A80'
+  water_line: '#9CC3E6'
+  seabed: '#1A2E40'
+  ground: '#263F57'
+  grid: '#3A5874'
+  compare: '#8FA6BC'     # reference objects (scale comparisons) stay muted
+  compare_edge: '#C9D6E2'
+  boat: '#B9C4CE'
+  sky_top: '#10223A'     # sky dome: zenith, horizon haze, below the horizon (depth without glow)
+  haze: '#4B6F8F'
+  deep: '#132536'
+  land: '#2B4660'        # stylised coasts at both ends of the tunnel
+fonts:
+  display:
+    family: Oswald
+    weight: 700
+    file: assets/fonts/oswald/Oswald[wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/oswald/OFL.txt
+  body:
+    family: Inter
+    weight: 400
+    file: assets/fonts/inter/Inter[opsz,wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/inter/OFL.txt
+  mono:
+    family: JetBrains Mono
+    weight: 700
+    file: assets/fonts/jetbrainsmono/JetBrainsMono[wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/jetbrainsmono/OFL.txt
+logo:
+  file: brands/megaconstruction/assets/logo/gigastruct-mark.svg
+  wordmark_text: GIGASTRUCT      # text, Oswald 700, uppercase, letter-spacing 0.18em (director brandmark style)
+  logo_height_px: 40
+  rules: small top left from the first frame; never as intro or end card
+motif: scale-bars
+tempo: epic
+bg_pattern: isometric-blocks     # hidden behind the 3D canvas; kept as fallback
+flat: true                       # no glow, no light cone; depth comes from the 3D light only
+layout: shared 9:16 layout, see docs/direction-system.md; brand extension brands/megaconstruction/render/
+audience: viewers fascinated by huge structures and the engineering behind them
+tone: awe without exaggeration; scale comparisons are computed, never guessed
+address: du
+cta:
+  de: Folge Gigastruct
+  en: Follow Gigastruct
+ai_label:
+  de: KI-generiert
+  en: AI-generated
+production:
+  closing_sentence:
+    de: Folge Gigastruct für die nächste Bauaufgabe.
+    en: Follow Gigastruct for the next engineering task.
+  domain: ''               # no website confirmed
+explainer:                         # Schnitt- und Layout-Vorlage Kurzvideo (Stefan, 30.10.2026); fn.render.explainer
+  enabled: true
+  voice_tag: {de: "SYNTHETISCHE STIMME", en: "SYNTHETIC VOICE"}
+  opening: {de: "Synthetische Stimme · Quellen am Bildschirm · 3D-Modell vereinfacht", en: "Synthetic voice · Sources on screen · Simplified 3D model"}
+  opening_seconds: 3.5
+  source_y: 1112                   # zone 290-1100, captions from ~1250, status bar 1440, platform text from 1600; right edge stays left of x 930
+  # fixed meanings: fakt = the accent (active part), unsicher = Bernstein (open), luecke = red (risk), green only for a
+  # reached state (palette.signal_green), violet only for interpretation
+  colors: {fakt: "#FF8A2A", auslegung: "#9B6BFF", unsicher: "#FFD166", luecke: "#FF6B5B", beispiel: "#8A93A6"}

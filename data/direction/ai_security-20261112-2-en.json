@@ -1,0 +1,456 @@
+{
+ "video_id": "ai_security-20261112-2-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Quishing: the fake QR code",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema D04, Reihe So läuft die Masche. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: QR code. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "QR code",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Code: covered?",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Goal: fake website",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Address: hidden",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Address: typo?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Payment: via code?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Check: before opening",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Unknown site: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Fake QR codes on parking meters, at chargers, in letters: how quishing works according to the FBI and German consumer advisers, and how to check a code before you pay.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "quishing",
+   "qrcode",
+   "scam",
+   "phishing",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_hook_dataroom.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: dataroom, lanes, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.verbraucherzentrale.de/wissen/digitale-welt/phishingradar/quishing-falsche-qrcodes-in-mails-briefen-oepnv-und-strassenverkehr-98612",
+   "title": "Verbraucherzentrale: Quishing – falsche QR-Codes in Mails, Briefen, ÖPNV und Straßenverkehr (Stand 23.10.2025)",
+   "checked_at": "2026-11-01",
+   "label": "German consumer centre, quishing"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ic3.gov/PSA/2022/PSA220118",
+   "title": "FBI IC3 PSA I-011822-PSA: Cybercriminals Tampering with QR Codes to Steal Victim Funds (18.01.2022)",
+   "checked_at": "2026-11-01",
+   "label": "FBI IC3, QR code alert"
+  }
+ ],
+ "unverified": [
+  "Case numbers: not used.",
+  "Scanner apps: deliberately not recommended (sources disagree)."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "How do you know where a QR code is sending you?",
+   "on_screen": "Where does this QR code go?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "A QR code on a machine must be official? Not necessarily.",
+   "on_screen": "Code on a machine = official?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Criminals even hand out fake parking tickets with QR codes.",
+   "on_screen": "Fake ticket with a QR code",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One sticker on a parking meter, and your payment goes to scammers.",
+   "on_screen": "One sticker, payment gone?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "VZ: überklebte Codes an Parkautomaten; IC3: Aufkleber über Original"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Look closely: this QR code is stuck on top of another.",
+   "on_screen": "Code stuck on code",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "One sticker on a parking meter, and your payment goes to scammers.",
+   "data": {
+    "question": "One sticker, payment gone?",
+    "doc_label": "QR code",
+    "chat_title": "Pay for parking",
+    "bot_line": "Enter your card details",
+    "typed": "Code scanned",
+    "badge": "Genuine?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "German consumer advisers call it quishing. Criminals stick fake QR codes over the real ones on parking meters and chargers, send fake bank letters and hand out fake parking tickets. The goal is a fake site that steals data or money.",
+   "data": {
+    "headline": "How quishing works",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Fake QR code",
+      "icon": "&#9888;"
+     },
+     {
+      "id": "n1",
+      "label": "Fake website",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n2",
+      "label": "Data or money",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "scan"
+     },
+     {
+      "label": "you type"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 1,
+     "at": 8.0,
+     "label": "Real site?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "The problem: you can't tell where a QR code leads just by looking at it. And not every phone shows the address before opening a page. Some open it straight away.",
+   "data": {
+    "headline": "Why quishing works",
+    "file_label": "QR code",
+    "card": {
+     "title": "The QR code",
+     "rows": [
+      {
+       "text": "destination not visible",
+       "ok": "open"
+      },
+      {
+       "text": "some phones open it at once",
+       "ok": "open"
+      },
+      {
+       "text": "check the address first",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "The FBI advises: check the address after scanning. Fake addresses look like the real one, with typos or a misplaced letter. And on physical codes, check whether a sticker has been placed over the original.",
+   "data": {
+    "headline": "How to spot it",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.5,
+    "left": {
+     "title": "Suspicious",
+     "rows": [
+      {
+       "text": "sticker over the code",
+       "ok": "open"
+      },
+      {
+       "text": "address with a typo",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Check",
+     "rows": [
+      {
+       "text": "read the address after scanning",
+       "ok": null
+      },
+      {
+       "text": "pay on a site you know",
+       "ok": null
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "When it comes to paying, the FBI goes further: avoid paying through a site you reached via a QR code. Type a known address yourself instead. And never download an app from a QR code, only from the app store.",
+   "data": {
+    "headline": "Paying by QR code?",
+    "file_label": "QR code",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Type the address",
+      "sub": "a site you know",
+      "at": 0.6
+     },
+     {
+      "title": "Site from the code",
+      "sub": "better not pay",
+      "at": 1.0
+     }
+    ],
+    "approval": "Payment route checked?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "For you and your team: read the address before you open it. Check machines for stickers. And if a letter or email with a QR code asks for money, check it via a phone number you already know.",
+   "data": {
+    "headline": "Three checks",
+    "items": [
+     {
+      "title": "Read the address",
+      "sub": "before you open it",
+      "at": 2.0
+     },
+     {
+      "title": "Look for stickers",
+      "sub": "on meters and chargers",
+      "at": 4.8
+     },
+     {
+      "title": "Letter with a code?",
+      "sub": "check via a known number",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Read first, then scan, then pay. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Read first, then pay",
+    "file_label": "QR code",
+    "button": "Pay now",
+    "block_text": "Pay only on a site you know",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

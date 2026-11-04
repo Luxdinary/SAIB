@@ -1,0 +1,583 @@
+{
+ "video_id": "menswear-20261111-1-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Jacket fit: why the shoulders come first",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema D02 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Schulter 'schwer, teuer, nicht empfohlen', nie 'unmöglich'. Keine Zeichnung für überstehende oder zu enge Schulter: Fehler als rote Ringe an Schulter und Ärmel.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Jacket, fitting",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "shoulders: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "hard to alter",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "seam: shoulder line",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "too wide, too narrow",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "else: another size",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "shoulders first",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "shoulders: fit",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Why check the shoulders first when you try on a jacket? T.M. Lewin calls them the hardest part to alter. Where the seam sits (Suitsupply) and what to do if it doesn't fit (Proper Cloth).",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "jacket",
+   "suitfit",
+   "tailoring",
+   "suit"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://suitsupply.com/en-us/journal/how-it-should-fit-jacket.html",
+   "title": "Suitsupply, How it should fit: Schulternaht auf der natürlichen Schulterlinie ohne Überstand; zu weit rutscht die Naht ab, zu eng gibt Spannung, Falten, wenig Bewegung",
+   "checked_at": "2026-11-01",
+   "label": "Suitsupply, Jacket Fit"
+  },
+  {
+   "id": "S2",
+   "url": "https://tmlewin.co.uk/blogs/the-fitting-room/how-a-suit-should-fit",
+   "title": "T.M. Lewin, How a suit should fit: Schultern am schwersten und deshalb am teuersten zu ändern, zuerst nach den Schultern wählen",
+   "checked_at": "2026-11-01",
+   "label": "T.M. Lewin, Fitting Room"
+  },
+  {
+   "id": "S3",
+   "url": "https://propercloth.com/reference/how-much-can-alter-a-jacket-how-much-can-a-tailor-do/",
+   "title": "Proper Cloth, How much can a tailor alter a jacket: Schulterbreite ändern nicht empfohlen, besser andere Grundgröße oder Neuanfertigung",
+   "checked_at": "2026-11-01",
+   "label": "Proper Cloth, Reference"
+  }
+ ],
+ "unverified": [
+  "Welche anderen Stellen ein Schneider leicht ändern kann (Ärmel, Länge): in den Quellen nicht einzeln belegt, nicht im Video.",
+  "'Unmöglich zu ändern': nicht belegt, Quellen sagen schwer, teuer, nicht empfohlen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What do you check first?",
+   "on_screen": "What do you check first?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Length and sleeves first? Shoulders first.",
+   "on_screen": "Length and sleeves first? Shoulders first.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The most expensive alteration on a jacket",
+   "on_screen": "The most expensive alteration on a jacket",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Shoulders are the hardest part to alter",
+   "on_screen": "Shoulders are the hardest part to alter",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "This is where your size is decided",
+   "on_screen": "This is where your size is decided",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage nach der Reihenfolge der Anprobe, Antwort: die Schulter."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "You try on a jacket. What do you check first? Not the sleeves, not the length. First of all, the shoulders.",
+   "data": {
+    "question": "What do you check first?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ]
+    },
+    "target": "shoulder",
+    "badge": "?",
+    "question_at": 0.3,
+    "hold_end": true,
+    "badge_at": "w:What",
+    "loupe_at": "w:first",
+    "nie_at": "w:first#2",
+    "cut_at": "w:length"
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 10,
+   "spoken": "The reason comes from the British outfitter T.M. Lewin: of every part of a jacket, the shoulders are the hardest to alter. And that makes them the most expensive to alter, too.",
+   "data": {
+    "headline": "The hardest part",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": 0.0,
+      "tags": [
+       {
+        "spot": "shoulder",
+        "text": "hardest",
+        "sub": "to alter",
+        "tone": "never",
+        "at": "w:hardest"
+       },
+       {
+        "spot": "shoulder",
+        "text": "costliest",
+        "sub": "and so",
+        "tone": "never",
+        "at": "w:expensive"
+       }
+      ],
+      "focus_at": "w:And"
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:tm"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 13,
+   "spoken": "So where should the seam sit? Suitsupply puts it simply: the shoulder seam sits on your natural shoulder line, with nothing hanging over. Picture the jacket off: where your shoulder ends, that is where the seam belongs.",
+   "data": {
+    "headline": "Where does the seam sit?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ]
+    },
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ]
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "none",
+     "tie_tip": 520
+    },
+    "target": "shoulder",
+    "zoom": 1.5,
+    "label": "Seam on the shoulder line",
+    "strain": false,
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:seam",
+    "zoom_at": "w:Suitsupply",
+    "flip_at": "w:Picture",
+    "label_at": "w:ends"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Suitsupply"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Now look at two faults. On the left, the shoulders are too wide: the seam slips down past your shoulder. On the right, they are too narrow: the cloth pulls, creases appear, and you move less freely.",
+   "data": {
+    "headline": "Too wide or too narrow?",
+    "left": {
+     "title": "Too wide",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ]
+     },
+     "target": "shoulder",
+     "tag": "the seam slips down",
+     "pulses": [
+      {
+       "target": "shoulder",
+       "at": "w:seam",
+       "tone": "red"
+      }
+     ]
+    },
+    "right": {
+     "title": "Too narrow",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ]
+     },
+     "target": "shoulder",
+     "tag": "pulls and creases",
+     "pulses": [
+      {
+       "target": "shoulder",
+       "at": "w:cloth",
+       "tone": "red"
+      },
+      {
+       "target": "sleeve",
+       "at": "w:move",
+       "tone": "red"
+      }
+     ]
+    },
+    "left_at": "w:left",
+    "left_tag_at": "w:slips",
+    "right_at": "w:right",
+    "right_tag_at": "w:pulls",
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:left"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 11,
+   "spoken": "And if the shoulders don't fit? Proper Cloth, a made-to-measure clothier, advises against having a tailor change the shoulder width. Better to go for a different base size, or have one made from scratch.",
+   "data": {
+    "headline": "Have it altered?",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": 0.0,
+      "tags": [
+       {
+        "spot": "shoulder",
+        "text": "don't alter",
+        "sub": "says Proper Cloth",
+        "tone": "never",
+        "at": "w:advises"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": "w:Better",
+      "tags": [
+       {
+        "spot": "shoulder",
+        "text": "another size",
+        "sub": "new base size",
+        "tone": "always",
+        "at": "w:different"
+       },
+       {
+        "spot": "shoulder",
+        "text": "made new",
+        "sub": "made to measure",
+        "tone": "always",
+        "at": "w:have"
+       }
+      ]
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 12,
+   "spoken": "In short: when you try on a jacket, check the shoulders first. The seam sits on your shoulder line, with no overhang and no pull. If they don't fit, choose another size instead of an alteration.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "First: the shoulders",
+      "sub": "when you try a jacket on",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": "w:check",
+      "ring": "shoulder",
+      "ring_at": "w:first"
+     },
+     {
+      "title": "Seam on the shoulder line",
+      "sub": "no overhang, no pull",
+      "object": {
+       "kind": "torso",
+       "hold": "none",
+       "tie_tip": 520
+      },
+      "at": "w:seam",
+      "then": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "then_at": "w:sits",
+      "ring": "shoulder",
+      "ring_at": "w:overhang"
+     },
+     {
+      "title": "No fit: change size",
+      "sub": "another size, not an alteration",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": "w:If",
+      "ring": "shoulder",
+      "ring_at": "w:size"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2",
+    "S1",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Shoulders first, then everything else. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "torso",
+     "hold": "none",
+     "tie_tip": 520
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ]
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "shoulder",
+    "fix_at": "w:Shoulders",
+    "ring_at": "w:first",
+    "statement_at": "w:then",
+    "chip_at": "w:eye",
+    "statement": "Shoulders first.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

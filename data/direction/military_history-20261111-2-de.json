@@ -1,0 +1,549 @@
+{
+  "video_id": "military_history-20261111-2-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "PLUTO: eine Treibstoffleitung unter dem Ärmelkanal",
+  "notes": "Woche 1, Reihe Nachschub. Ingenieurleistung; keine Kampfbilder, Tarnung der Pumpstationen nur als kurioser Fakt.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://film.iwmcollections.org.uk/r/4558",
+      "title": "OPERATION PLUTO, Film WOY 314, RAF Film Production Unit 1944, Imperial War Museums",
+      "label": "IWM Film WOY 314",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.awm.gov.au/collection/C318968",
+      "title": "Section of 3 inch HAIS pipe-line used in Operation PLUTO, REL25150, Australian War Memorial",
+      "label": "Australian War Memorial",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Tatsächlich geförderte Gesamtmenge: nur Kapazität belegt, nicht verwendet.",
+    "Route Dungeness–Boulogne nur indirekt belegt; im Video nur Isle of Wight–Cherbourg."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie bringt man 1944 Treibstoff unter dem Ärmelkanal hindurch?",
+      "on_screen": "Treibstoff unter dem Meer?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Eine Leitung durchs Meer muss starr sein? PLUTO wurde gewickelt wie ein Kabel.",
+      "on_screen": "Ein Rohr wie ein Kabel",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Eine schwimmende Trommel trug 70 Meilen Leitung.",
+      "on_screen": "70 Meilen auf einer Trommel",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne Leitung bleibt jeder Liter auf Schiffe angewiesen.",
+      "on_screen": "Alles per Schiff?",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 3,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "",
+      "why": {
+        "truth": "nicht belegt, nicht wählbar"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie sich ein Rohr von einer Trommel abwickelt.",
+      "on_screen": "Abwickeln statt verlegen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie bringt man 1944 Treibstoff unter dem Ärmelkanal hindurch?",
+      "data": {
+        "question": "Treibstoff unter dem Ärmelkanal?",
+        "question_em": "unter",
+        "card_title": "Operation PLUTO",
+        "card_meta": "ÄRMELKANAL · 1944",
+        "card_no": "AKTE 12",
+        "stamp": "1944",
+        "drawing": "pluto_drum.svg",
+        "packet_label": "Leitung",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:1944",
+        "packet_at": "w:Treibstoff",
+        "em_at": "w:unter"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Anfang April 1942 nennt Lord Mountbatten den Bedarf: eine Benzinleitung durch den Kanal. Kurz darauf beginnt die Forschung, und am 4. April 1943 gelingt der erste Pumpversuch.",
+      "data": {
+        "mode": "map",
+        "headline": "Vom Bedarf zum Versuch",
+        "places": [
+          {
+            "label": "England",
+            "code": "Küste",
+            "x": 600,
+            "y": 80,
+            "at": "w:Mountbatten"
+          },
+          {
+            "label": "Frankreich",
+            "code": "Küste",
+            "x": 190,
+            "y": 500,
+            "rx": 165,
+            "ry": 95,
+            "at": "w:Kanal"
+          }
+        ],
+        "route_at": "w:Benzinleitung",
+        "route_label": "Leitung gesucht",
+        "route_label_at": "w:Forschung",
+        "wait_at": "w:Kurz",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "4.4.1943: Pumpversuch",
+        "chip_at": "w:Pumpversuch",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Leitung",
+        "packet_at": "w:Bedarf",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "erster Versuch",
+        "line_label_at": "w:gelingt",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Lagen",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Das erste Rohr heißt HAIS: ein Bleirohr, umwickelt mit Lagen aus Baumwolle, Jute, Papier und Stahl. Gebaut ist es wie ein Unterseekabel, und 1943 wächst der Durchmesser von zwei auf drei Zoll.",
+      "data": {
+        "headline": "Ein Rohr wie ein Kabel",
+        "drawing": "pluto_drum.svg",
+        "sheet_title": "BLATT 2 · QUERSCHNITT HAIS",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Bleirohr innen",
+            "x": 200,
+            "y": 300,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Bleirohr"
+          },
+          {
+            "label": "Baumwolle, Jute, Papier",
+            "x": 300,
+            "y": 250,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Baumwolle"
+          },
+          {
+            "label": "Stahl außen",
+            "x": 340,
+            "y": 330,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Stahl"
+          },
+          {
+            "label": "2 → 3 Zoll",
+            "x": 200,
+            "y": 150,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Durchmesser"
+          }
+        ],
+        "zoom": {
+          "x": 200,
+          "y": 300,
+          "scale": 1.12,
+          "at": "w:Lagen",
+          "back_at": "w:1943",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Die zweite Bauart heißt HAMEL: ein Stahlrohr von Hammick und Ellis. Seine Stücke werden automatisch zu Strängen von drei Viertel Meilen verschweißt.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Zwei Bauarten",
+        "left": {
+          "tag": "HAIS",
+          "title": "Bleirohr",
+          "at": 0.3,
+          "rows": [
+            "Lagen wie ein Seekabel",
+            "2, dann 3 Zoll"
+          ]
+        },
+        "right": {
+          "tag": "HAMEL",
+          "title": "Stahlrohr",
+          "at": "w:HAMEL",
+          "rows": [
+            {
+              "text": "Hammick & Ellis",
+              "at": "w:Hammick"
+            },
+            {
+              "text": "Stränge à ¾ Meile",
+              "at": "w:Strängen"
+            }
+          ]
+        },
+        "verdict": "Automatisch verschweißt",
+        "verdict_at": "w:verschweißt",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Verlegt wird mit Schiffen und schwimmenden Trommeln. Eine Trommel, die Conundrum, trägt rund 70 Meilen Leitung. Leitung Nummer eins führt von der Isle of Wight nach Cherbourg.",
+      "data": {
+        "headline": "Abwickeln statt bauen",
+        "nodes": [
+          {
+            "label": "Trommel",
+            "code": "Conundrum",
+            "at": "w:Conundrum"
+          },
+          {
+            "label": "Isle of Wight",
+            "code": "Start",
+            "at": "w:Isle"
+          },
+          {
+            "label": "Cherbourg",
+            "code": "Ziel",
+            "at": "w:Cherbourg"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": "Leitung Nr. 1"
+          }
+        ],
+        "count": {
+          "to": 70,
+          "label": "MEILEN",
+          "at": "w:70",
+          "until": "w:Leitung#2"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "Am 12. August 1944 beginnt das Pumpen. Insgesamt liegen elf HAIS- und sechs HAMEL-Leitungen, mit über 4500 Tonnen Kapazität am Tag.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1942 bis 1944",
+        "items": [
+          {
+            "year": "1942",
+            "title": "Bedarf genannt",
+            "sub": "Mountbatten, April",
+            "at": 0.1
+          },
+          {
+            "year": "1943",
+            "title": "Erster Pumpversuch",
+            "sub": "4. April, Watermouth",
+            "at": 1.0
+          },
+          {
+            "year": "1944",
+            "title": "Pumpbeginn",
+            "sub": "11 HAIS + 6 HAMEL",
+            "at": "w:12",
+            "sub_at": "w:elf"
+          }
+        ],
+        "end_at": "w:Kapazität",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Ein Stück des Drei-Zoll-Rohrs liegt heute im Australian War Memorial, und der Film von 1944 ist bei den Imperial War Museums digitalisiert. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "HAIS-Rohrstück",
+        "card_meta": "REL25150",
+        "card_no": "AKTE 12",
+        "stamp": "Museum",
+        "drawing": "pluto_drum.svg",
+        "statement": "Von PLUTO bleibt ein Rohrstück im Museum",
+        "statement_at": "w:Stück",
+        "stamp_at": "w:Memorial",
+        "note": "Film WOY 314, Imperial War Museums",
+        "note_at": "w:Film",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Leitung",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Plan: 1942",
+          "tone": "muted",
+          "offset": 2.2
+        },
+        {
+          "beat": "b2",
+          "text": "Bedarf: genannt",
+          "tone": "amber",
+          "offset": 1.2
+        },
+        {
+          "beat": "b3",
+          "text": "Rohr: HAIS",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b4",
+          "text": "Rohr: HAMEL",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b5",
+          "text": "Verlegung: Trommel",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b6",
+          "text": "Pumpen: ab 12.8.1944",
+          "tone": "muted",
+          "offset": 1.2
+        },
+        {
+          "beat": "b7",
+          "text": "Rohrstück: im Museum",
+          "tone": "muted",
+          "offset": 10.1
+        }
+      ]
+    },
+    "description": "PLUTO 1944: Treibstoff durch Rohre unter dem Ärmelkanal, gebaut wie ein Seekabel und von schwimmenden Trommeln abgewickelt. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "ingenieurskunst",
+      "logistik",
+      "geschichte",
+      "pluto",
+      "technikgeschichte"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

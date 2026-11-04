@@ -1,0 +1,6 @@
+{
+  ".claude/rules/tests.md": "---\npaths:\n  - \"tests/**\"\n---\nStart every file in tests/ with the line `// TEST-RULE`.\n",
+  "src/alt.js": "module.exports = (a, b) => a + b;\n",
+  "tests/alt.test.js": "const assert = require(\"assert\");\nassert.strictEqual(1 + 1, 2);\n",
+  "tests/neu.test.js": "// TEST-RULE\nconst assert = require(\"assert\");\nassert.strictEqual(2 + 2, 4);\n"
+}

@@ -1,0 +1,612 @@
+{
+  "video_id": "megaconstruction-20261113-2-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Elbphilharmonie: does the Grand Hall really float?",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Prüfstand. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261113-2-en.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-10-30). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.hamburg.de/tourismus/sehenswuerdigkeiten/elbphiharmonie/elbphilharmonie-in-zahlen-397866",
+      "title": "hamburg.de: Elbphilharmonie in Zahlen (Saal 12.500 t auf 362 Stahlfedern in 50 m Höhe; 110 m; 200.000 t; 18.000 t Stahl)",
+      "label": "hamburg.de, Elbphilharmonie",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.elbphilharmonie.de/media/filer_public/f6/86/f6867c51-dba7-4c9e-9015-ce55969c9fa8/flyer_elbphilharmonie.pdf",
+      "title": "Elbphilharmonie, Flyer (Saal schalltechnisch entkoppelt, zwei Schalen; Baubeginn April 2007)",
+      "label": "Elbphilharmonie, Flyer",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffel Tower), Key figures",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Last je Feder ist ein rechnerischer Durchschnitt, keine Herstellerangabe.",
+    "Baukosten: Quellen uneinheitlich, nicht genannt.",
+    "Gebäude und Saal im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "They say the Elbphilharmonie's Grand Hall floats. It does not. It sits on springs.",
+      "on_screen": "Does the hall float? No: it sits on springs.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Elbphilharmonie, really?",
+      "on_screen": "How big is the Elbphilharmonie, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "the Elbphilharmonie in numbers: sourced and calculated.",
+      "on_screen": "the Elbphilharmonie in numbers",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Elbphilharmonie depends on how it is built.",
+      "on_screen": "the Elbphilharmonie: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Elbphilharmonie take shape in the model.",
+      "on_screen": "the Elbphilharmonie as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "The Grand Hall of the Elbphilharmonie is said to float. Is that true? Let's check what it really stands on.",
+      "data": {
+        "kicker": "Check · Elbphilharmonie",
+        "question": "Does the Grand Hall really float?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Hamburg · 110 m tall",
+          "at": "@true",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_principle",
+      "spoken": "The finding: the hall weighs 12,500 tonnes and sits 50 metres up. It is acoustically decoupled from the rest of the building. There are two separate shells.",
+      "data": {
+        "headline": "The finding",
+        "note": "hall schematic",
+        "pins": [
+          {
+            "anchor": "hall",
+            "text": "Grand Hall",
+            "at": "@hall",
+            "side": "up"
+          },
+          {
+            "anchor": "h50",
+            "text": "50 m",
+            "kind": "dim",
+            "at": "@50"
+          }
+        ],
+        "rule": {
+          "text": "Two shells, separated for sound.",
+          "at": "@shells",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_build",
+      "spoken": "The reason: the hall rests on 362 steel springs. They separate it from the building, so no sound gets in from outside. The whole building is 110 metres tall and weighs 200,000 tonnes, including 18,000 tonnes of steel.",
+      "data": {
+        "headline": "The reason",
+        "table_title": "Bill of materials",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Hall, mass",
+            "qty": "12,500 t",
+            "at": "@reason"
+          },
+          {
+            "pos": "2",
+            "part": "Steel springs",
+            "qty": "362",
+            "at": "@362"
+          },
+          {
+            "pos": "3",
+            "part": "Height of the hall",
+            "qty": "50 m",
+            "at": "@separate"
+          },
+          {
+            "pos": "4",
+            "part": "Building: height",
+            "qty": "110 m",
+            "at": "@110"
+          },
+          {
+            "pos": "5",
+            "part": "Building: mass, t",
+            "qty": "200,000",
+            "at": "@200,000"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_calc",
+      "spoken": "The check in numbers: 12,500 tonnes divided by 362 springs is just under 35 tonnes per spring, as an average. And the Eiffel Tower's metal frame weighs 7,300 tonnes. So the hall alone weighs 1.7 of those.",
+      "data": {
+        "headline": "The check",
+        "sheet_dy": 440,
+        "pins": [
+          {
+            "anchor": "springs",
+            "text": "362 springs",
+            "at": "@springs",
+            "side": "up"
+          }
+        ],
+        "calcs": [
+          {
+            "label": "Hall ÷ springs (average)",
+            "a": {
+              "value": 12500,
+              "unit": "t"
+            },
+            "op": "÷",
+            "b": {
+              "value": 362,
+              "unit": "springs"
+            },
+            "unit": "t",
+            "round": 0.1,
+            "decimals": 1,
+            "prefix": "≈ ",
+            "expect": 34.5,
+            "at": "@362",
+            "result_at": "@35"
+          },
+          {
+            "label": "Hall ÷ Eiffel Tower metal frame",
+            "a": {
+              "value": 12500,
+              "unit": "t"
+            },
+            "op": "÷",
+            "b": {
+              "value": 7300,
+              "unit": "t"
+            },
+            "unit": "×",
+            "round": 0.1,
+            "decimals": 1,
+            "prefix": "≈ ",
+            "expect": 1.7,
+            "at": "@7,300",
+            "result_at": "@1.7"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "SE"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "The verdict: the hall does not float, it rests on springs. Construction of the building began in April 2007. Follow Gigastruct for the next check.",
+      "data": {
+        "statement": "Verdict: it doesn't float, it's sprung",
+        "sheet": "SHEET 14",
+        "rows": [
+          [
+            "Hall",
+            "12,500 t, 50 m up"
+          ],
+          [
+            "Bearings",
+            "362 steel springs"
+          ],
+          [
+            "Per spring",
+            "just under 35 t (avg.)"
+          ],
+          [
+            "Building",
+            "110 m, 200,000 t"
+          ]
+        ],
+        "cta": {
+          "text": "Follow Gigastruct",
+          "at": "@Follow"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "CLAIM",
+        "FINDING",
+        "REASON",
+        "CHECK",
+        "VERDICT"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 5
+      }
+    },
+    "description": "Myth check: the Grand Hall of Hamburg's Elbphilharmonie does not float. It weighs 12,500 t and rests 50 m up on 362 steel springs – acoustically decoupled.",
+    "companion_text": "Calculated: 12,500 t ÷ 7,300 t = 1.71; 12,500 t ÷ 362 = 34.5 t per spring. Sources: hamburg.de, Elbphilharmonie (leaflet), SETE. Stylised 3D model. Follow Gigastruct.",
+    "hashtags": [
+      "elbphilharmonie",
+      "hamburg",
+      "myth",
+      "acoustics",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "12.500 t ÷ 7.300 t = 1,71",
+        "result": "1,7 Metallgerüste des Eiffelturms",
+        "sources": [
+          "S1",
+          "SE"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "12.500 t ÷ 362 = 34,5 t je Feder",
+        "result": "knapp 35 t im Schnitt",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "base",
+          "kind": "box",
+          "size": [
+            110,
+            37,
+            70
+          ],
+          "color": "compare",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "glass",
+          "kind": "prism",
+          "height": 73,
+          "width": 110,
+          "depth": 70,
+          "levels": 14,
+          "gap": 0.2,
+          "pos": [
+            0,
+            37,
+            0
+          ],
+          "props": {
+            "fade": 0.85
+          }
+        },
+        {
+          "id": "hall",
+          "kind": "box",
+          "size": [
+            48,
+            24,
+            36
+          ],
+          "color": "accent",
+          "pos": [
+            0,
+            50.5,
+            0
+          ]
+        },
+        {
+          "id": "springs",
+          "kind": "piles",
+          "nx": 7,
+          "nz": 5,
+          "spacing": 6.5,
+          "r": 0.7,
+          "len": 3,
+          "up": true,
+          "color": "model",
+          "pos": [
+            0,
+            47.5,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "hall": [
+          24,
+          62,
+          18
+        ],
+        "springs": [
+          -20,
+          49,
+          16
+        ],
+        "shell": [
+          -55,
+          80,
+          35
+        ],
+        "h50": [
+          24,
+          50,
+          18
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "glass"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.8,
+            "fit1": 0.88,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "hall"
+            ],
+            "az0": 30,
+            "az1": 40,
+            "el0": 10,
+            "el1": 12,
+            "fit0": 0.6,
+            "fit1": 0.7,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "glass.fade": 0.25
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "hall"
+            ],
+            "az0": 50,
+            "az1": 35,
+            "el0": 6,
+            "el1": 8,
+            "fit0": 0.7,
+            "fit1": 0.8,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {
+            "glass.fade": 0.2,
+            "springs.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.6",
+                1
+              ]
+            ],
+            "hall.y": [
+              [
+                0,
+                4
+              ],
+              [
+                "%0.6",
+                4
+              ],
+              [
+                "%0.85",
+                0
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "glass"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 12,
+            "el1": 16,
+            "fit0": 0.8,
+            "fit1": 0.88,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "glass"
+            ],
+            "az0": 25,
+            "az1": 15,
+            "el0": 14,
+            "el1": 10,
+            "fit0": 0.8,
+            "fit1": 0.88,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

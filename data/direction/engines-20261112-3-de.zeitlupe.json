@@ -1,0 +1,426 @@
+{
+ "video_id": "engines-20261112-3-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "So wird die Oktanzahl gemessen",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261112-3-de, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Die Oktanzahl entsteht in einem Einzylinder-Prüfmotor mit verstellbarer Verdichtung, gemessen gegen Isooktan und n-Heptan.",
+  "companion_text": "Die Mischung 95 zu 5 ist ein Beispielwert. Zeitlupenfaktor und Millisekunden beziehen sich auf die Beispieldrehzahl 600/min.",
+  "hashtags": [
+   "motorentechnik",
+   "oktanzahl",
+   "benzin",
+   "klopfen",
+   "kraftstoff"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Chevron, Ottokraftstoffe",
+   "title": "Chevron, Ottokraftstoffe (C1)",
+   "url": "https://www.chevron.com/-/media/chevron/operations/documents/motor-gas-tech-review.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "MIT 2.61, Vorlesung 10",
+   "title": "MIT 2.61, Vorlesung 10 (L10)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/35c1c5bbf304c0f41e1de0cec0b0ee85_MIT2_61S17_lec10.pdf",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Gemessen wird, wann er zu klopfen beginnt.",
+   "on_screen": "Gemessen mit einem Zylinder",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Woher kommt die Oktanzahl an der Zapfsäule?",
+   "on_screen": "So wird die Oktanzahl gemessen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "So wird die Oktanzahl gemessen",
+   "on_screen": "So wird die Oktanzahl gemessen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "So wird die Oktanzahl gemessen",
+   "on_screen": "So wird die Oktanzahl gemessen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "So wird die Oktanzahl gemessen",
+   "on_screen": "So wird die Oktanzahl gemessen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Die Oktanzahl an der Zapfsäule stammt aus einem Prüfmotor mit nur einem einzigen Zylinder. Gemessen wird, wann er zu klopfen beginnt.",
+   "data": {
+    "claim": "Gemessen mit einem Zylinder",
+    "claim_lines": [
+     "Gemessen mit",
+     "einem Zylinder"
+    ],
+    "claim_highlight": "einem Zylinder",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "Chevron, Ottokraftstoffe · abgerufen 01.11.2026",
+    "ref_rpm": 600.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Gemessen wird in einem genormten Einzylinder-Prüfmotor, dem CFR-Motor. Seine Besonderheit: Das Verdichtungsverhältnis lässt sich im Betrieb verstellen. So kann man es erhöhen, bis der Kraftstoff zu klopfen beginnt. Genau dieser Punkt zählt.",
+   "data": {
+    "title": "Der CFR-Motor",
+    "stroke_dims": true,
+    "dims_at": "w:Verdichtungsverhältnis",
+    "notes": [
+     {
+      "text": "verstellbar",
+      "at": "w:verstellen",
+      "side": "l",
+      "y": 640,
+      "to": [
+       540,
+       470
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Chevron, Ottokraftstoffe · abgerufen 01.11.2026",
+    "ref_rpm": 600.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_board",
+   "spoken": "Dann vergleicht man mit zwei Bezugskraftstoffen. Isooktan widersteht dem Klopfen sehr gut und bekommt die Zahl hundert. Normalheptan klopft leicht und bekommt die Zahl null. Alle Benzine liegen auf derselben Skala.",
+   "data": {
+    "title": "Zwei Bezugsstoffe",
+    "mode": "compare",
+    "left": {
+     "title": "Isooktan",
+     "rows": [
+      "Oktanzahl 100",
+      "klopffest"
+     ],
+     "at": "w:Isooktan"
+    },
+    "right": {
+     "title": "n-Heptan",
+     "rows": [
+      "Oktanzahl 0",
+      "klopft leicht"
+     ],
+     "at": "w:Normalheptan"
+    },
+    "rows_at": [
+     "w:hundert",
+     "w:leicht"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Chevron, Ottokraftstoffe · abgerufen 01.11.2026",
+    "ref_rpm": 600.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_readout",
+   "spoken": "Klopft ein Benzin genauso wie eine Mischung aus fünfundneunzig Prozent Isooktan und fünf Prozent Heptan, dann hat es die Oktanzahl fünfundneunzig. Die Zahl ist also ein Volumenanteil.",
+   "data": {
+    "title": "Beispiel 95",
+    "figure": "bars",
+    "bar_max": 100,
+    "lines_y": 1000,
+    "bars": [
+     {
+      "label": "Isooktan",
+      "value": 95,
+      "text": "95 %",
+      "at": "w:Isooktan"
+     },
+     {
+      "label": "n-Heptan",
+      "value": 5,
+      "text": "5 %",
+      "at": "w:Heptan"
+     }
+    ],
+    "lines": [
+     {
+      "text": "klopft gleich → Oktanzahl 95",
+      "hl": "95",
+      "at": "w:Oktanzahl"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 10 · abgerufen 01.11.2026",
+    "ref_rpm": 600.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_board",
+   "spoken": "Es gibt zwei Prüfverfahren. Für die Research-Oktanzahl läuft der Motor mit sechshundert Umdrehungen und zweiundfünfzig Grad Ansaugluft, für die Motor-Oktanzahl mit neunhundert Umdrehungen und hundertneunundvierzig Grad. Die Research-Zahl liegt immer höher. An Zapfsäulen in den USA steht übrigens der Mittelwert aus beiden.",
+   "data": {
+    "title": "ROZ und MOZ",
+    "mode": "compare",
+    "left": {
+     "title": "ROZ",
+     "rows": [
+      "600 U/min",
+      "52 °C Ansaugluft",
+      "immer höher"
+     ],
+     "at": "w:Research"
+    },
+    "right": {
+     "title": "MOZ",
+     "rows": [
+      "900 U/min",
+      "149 °C Ansaugluft",
+      "niedriger"
+     ],
+     "at": "w:Motor#2"
+    },
+    "rows_at": [
+     "w:Umdrehungen",
+     "w:Ansaugluft",
+     "w:immer"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Chevron, Ottokraftstoffe · abgerufen 01.11.2026",
+    "ref_rpm": 600.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Ein Zylinder, verstellbare Verdichtung, zwei Bezugsstoffe. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "1 Zylinder",
+      "at": "w:Zylinder"
+     },
+     {
+      "text": "Isooktan 100",
+      "at": "w:Bezugsstoffe"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    },
+    "ref_rpm": 600.0
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

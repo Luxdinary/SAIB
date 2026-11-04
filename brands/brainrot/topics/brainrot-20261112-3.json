@@ -1,0 +1,722 @@
+{
+ "topic": "brainrot-20261112-3",
+ "series": "C",
+ "short": {
+  "de": "Bienen tanzen Weg",
+  "en": "Bienen tanzen Weg"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://content.ces.ncsu.edu/honey-bee-dance-language",
+   "checked_at": "2026-11-01",
+   "title": "NC State Extension, Honey Bee Dance Language: the waggle dance communicates distance and direction; round dance under 50 m (distance, no direction), sickle dance about 50-150 m, waggle dance over 150 m; the bee runs straight while the abdomen wags, returns in a semicircle; waggle duration increases with distance, a 2.5 s waggle run recruits to food about 2,625 m away; the bee transposes the solar angle into the gravitational angle (food 60 degrees left of the sun = waggle run 60 degrees left of vertical); recruits follow the dancer",
+   "label": {
+    "de": "NC State Extension",
+    "en": "NC State Extension"
+   }
+  },
+  {
+   "id": "S2",
+   "url": "https://repository.rothamsted.ac.uk/item/896y6/the-flight-paths-of-honeybees-recruited-by-the-waggle-dance",
+   "checked_at": "2026-11-01",
+   "title": "Riley et al., Nature 435 (2005), The flight paths of honeybees recruited by the waggle dance (Rothamsted Research repository): the dancer generates a specific, coded message that describes the direction and distance from the hive of a new food source",
+   "label": {
+    "de": "Rothamsted Research",
+    "en": "Rothamsted Research"
+   }
+  }
+ ],
+ "de": {
+  "title": "Bienen tanzen den Weg zum Futter – Plümo tanzt mit",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "Bienen tanzen nicht zum Spaß. Sie tanzen eine Wegbeschreibung. Ich hab mitgetanzt.",
+    "on_screen": "Bienentanz? *Keine* Party.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Biene fliegt zur Tiertür, Stempel IRRTUM",
+    "why": {
+     "truth": "NC State und Rothamsted: der Tanz beschreibt Richtung und Entfernung einer Futterquelle",
+     "visual": "Biene an der Tür ist sofort lesbar"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "Woher wissen Bienen, wo das Futter ist?",
+    "on_screen": "Wo ist das *Futter*?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "Fragezeichen über der Wabe"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "2,5 Sekunden Wackeln heißt bei Bienen: Futter rund 2625 Meter entfernt.",
+    "on_screen": "2,5 s Wackeln = *2625 m*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 4
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "Stoppuhr in der Lupe"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Wer den Bienentanz für eine Party hält, verpasst die Wegbeschreibung.",
+    "on_screen": "Party? *Weg verpasst.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Plümo mit Partyhut"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "Ich tanz mal mit den Bienen mit. Schau, wo ich lande.",
+    "on_screen": "Plümo *tanzt* mit.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo wackelt auf der Wabe"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Bienen tanzen nicht zum Spaß. Sie tanzen eine Wegbeschreibung. Ich hab mitgetanzt.",
+    "data": {
+     "mode": "hook",
+     "head": "Bienentanz? *Keine* Party.",
+     "head_at": 0.2,
+     "sign": "NUR TIERE",
+     "items": [
+      {
+       "kind": "bee"
+      }
+     ],
+     "stamp_reject": "IRRTUM",
+     "cue_scan": "Bienen",
+     "cue_verdict": "nicht",
+     "cue_club": "Wegbeschreibung",
+     "cue_know": "mitgetanzt"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Moment. Ich dachte, die Bienen feiern eine Party. Aber nein, der Tanz ist eine Nachricht: wie weit und wohin es zum Futter geht. Ich war geschockt. Die Biene blieb sachlich.",
+    "data": {
+     "word_a": "Tanz",
+     "word_b": "party",
+     "left": "Plümo: *Bienenparty*",
+     "right": "Echt: *Wegbeschreibung*",
+     "cue_left": "dachte",
+     "cue_strike": "nein",
+     "cue_right": "Nachricht",
+     "cue_react": "Ich",
+     "item": "bee",
+     "cue_shock": "geschockt",
+     "cue_item": "Biene",
+     "cue_never": "sachlich"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Welche Richtung? Die Sonne. Auf der Wabe zeigt der Winkel zur Senkrechten den Winkel zur Sonne. Futter 60 Grad links der Sonne heißt: 60 Grad links der Senkrechten. Ohne Hände zeig ich es mit dem Blatt.",
+    "data": {
+     "headline": "Welche *Richtung*?",
+     "inner": "sun",
+     "disc": [
+      "#B86E00",
+      "#FFF2C7",
+      "#FFD27A"
+     ],
+     "cue_q": "Richtung",
+     "labels": [
+      {
+       "text": "Kompass: *Sonne*",
+       "pos": "tr",
+       "cue": "Sonne"
+      },
+      {
+       "text": "*Winkel* = Richtung",
+       "pos": "l",
+       "cue": "Senkrechten"
+      },
+      {
+       "text": "60° links = *60° links*",
+       "pos": "b",
+       "cue": "Futter"
+      }
+     ],
+     "cue_hands": "Hände",
+     "cue_leaf": "Blatt"
+    },
+    "overlay": {
+     "marker_at": "w:Senkrechten"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Ganz genau. Die Biene läuft geradeaus und wackelt mit dem Hinterleib. Je länger das Wackeln, desto weiter das Futter. 2,5 Sekunden heißt: rund 2625 Meter. Das heißt Schwänzeltanz. Ich hab zehn Sekunden gewackelt. Keiner kam mit.",
+    "data": {
+     "kind": "bee",
+     "lens": "stopwatch",
+     "lens_bg": "#2C1638",
+     "cue_mag": "genau",
+     "callouts": [
+      {
+       "text": "länger wackeln: *weiter*",
+       "cue": "länger"
+      },
+      {
+       "text": "2,5 s: *ca. 2625 m*",
+       "cue": "2,5"
+      }
+     ],
+     "cue_nut": "weiter",
+     "stamp": {
+      "text": "Schwänzeltanz!",
+      "cue": "Schwänzeltanz"
+     },
+     "cue_react": "zehn",
+     "cue_fast": "Keiner"
+    },
+    "overlay": {
+     "dim_at": "w:länger",
+     "marker_at": "w:länger"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Und ganz nah? Unter 50 Metern gibt es den Rundtanz, ohne Richtung. Dazwischen den Sicheltanz. Ab 150 Metern wird geschwänzelt, mit Richtung. Ich kann nur Rundtanz.",
+    "data": {
+     "headline": "Und *ganz nah*?",
+     "bars": [
+      {
+       "label": "Rundtanz",
+       "value": "< 50 m",
+       "h": 0.2,
+       "color": "#B04A92",
+       "kind": "sunflower",
+       "cue": "Rundtanz"
+      },
+      {
+       "label": "Sicheltanz",
+       "value": "50–150",
+       "h": 0.5,
+       "color": "#B04A92",
+       "cue": "Sicheltanz"
+      },
+      {
+       "label": "Schwänzeltanz",
+       "value": "> 150 m",
+       "h": 0.9,
+       "color": "#B7FF00",
+       "cue": "geschwänzelt"
+      }
+     ],
+     "stamp": {
+      "text": "+ Richtung!",
+      "cue": "Richtung"
+     },
+     "cue_react": "kann"
+    },
+    "overlay": {
+     "marker_at": "w:Rundtanz"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Merke: Der Schwänzeltanz zeigt Richtung und Entfernung. Gut, jetzt ich. Scanner läuft. Ergebnis: Tanzstil nicht ermittelbar. Ich bin wohl Freestyle.",
+    "data": {
+     "mode": "unknown",
+     "sign": "NUR TIERE",
+     "merke": "Bienen tanzen *Wegbeschreibungen*.",
+     "display": "Tanz: nicht ermittelbar",
+     "plumps": "PLUMPS",
+     "cue_build": "Richtung",
+     "cue_go": "Gut",
+     "cue_scan": "Scanner",
+     "cue_result": "Ergebnis",
+     "cue_back": "wohl"
+    },
+    "overlay": {
+     "marker_at": "w:Merke"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+    "data": {
+     "sign": "NUR TIERE",
+     "cta": "Mehr Zonkfruit? *Folgen.*",
+     "cue_cta": "Mehr",
+     "cue_up": "steh",
+     "cue_lie": "liegen",
+     "cue_ch": "Kanal"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Bienentanz: Party?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Party: abgelehnt",
+    "tone": "pop",
+    "word": "nicht"
+   },
+   {
+    "beat": "b3",
+    "text": "Richtung: Winkel zur Sonne",
+    "tone": "lime",
+    "word": "Senkrechten"
+   },
+   {
+    "beat": "b4",
+    "text": "Länger wackeln = weiter",
+    "tone": "lime",
+    "word": "länger"
+   },
+   {
+    "beat": "b5",
+    "text": "Unter 50 m: Rundtanz",
+    "tone": "lime",
+    "word": "Rundtanz"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: Tanz offen",
+    "tone": "amber",
+    "word": "Ergebnis"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: liegt kurz",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "Bienen tanzen keine Party. Sie tanzen den Weg zum Futter.",
+   "description": "Plümo dachte, die Bienen feiern. Dabei ist der Schwänzeltanz eine Wegbeschreibung: Der Winkel zur Senkrechten zeigt die Richtung relativ zur Sonne, die Dauer des Wackelns die Entfernung. 2,5 Sekunden Wackeln stehen für Futter rund 2625 Meter entfernt.",
+   "hashtags": [
+    "bienen",
+    "tiere",
+    "natur",
+    "wusstestdu",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ },
+ "en": {
+  "title": "Bees give directions by dancing – Plümo dances along",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "Bees don't dance for fun. They dance directions. I danced along.",
+    "on_screen": "Bee dance? *Not* a party.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "bee flies to the animal door, stamp NOPE",
+    "why": {
+     "truth": "NC State and Rothamsted: the dance describes direction and distance of a food source",
+     "visual": "a bee at the door reads at once"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "How do bees know where the food is?",
+    "on_screen": "Where's the *food*?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "question mark over the comb"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "For a honey bee, 2.5 seconds of waggling means food about 2,625 meters away.",
+    "on_screen": "2.5 s waggle = *2,625 m*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 4
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "stopwatch in the lens"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Mistake the bee dance for a party and you miss the directions.",
+    "on_screen": "Party? *Directions missed.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Plümo in a party hat"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "I'll dance along with the bees. Let's see where I end up.",
+    "on_screen": "Plümo *dances* along.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo wiggling on the comb"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Bees don't dance for fun. They dance directions. I danced along.",
+    "data": {
+     "mode": "hook",
+     "head": "Bee dance? *Not* a party.",
+     "head_at": 0.2,
+     "sign": "ANIMALS ONLY",
+     "items": [
+      {
+       "kind": "bee"
+      }
+     ],
+     "stamp_reject": "NOPE",
+     "cue_scan": "Bees",
+     "cue_verdict": "don't",
+     "cue_club": "directions",
+     "cue_know": "danced"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Wait. I thought the bees were partying. But no, the dance is a message: how far the food is, and which way. I was shocked. The bee stayed professional.",
+    "data": {
+     "word_a": "Dance",
+     "word_b": "party",
+     "left": "Plümo: *bee party*",
+     "right": "Real: *directions*",
+     "cue_left": "thought",
+     "cue_strike": "no",
+     "cue_right": "message",
+     "cue_react": "I",
+     "item": "bee",
+     "cue_shock": "shocked",
+     "cue_item": "bee",
+     "cue_never": "professional"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Which direction? The sun decides. On the comb, the angle to vertical shows the angle to the sun. Food 60 degrees left of the sun: a run 60 degrees left of vertical. No hands, so I point with my leaf.",
+    "data": {
+     "headline": "Which *direction*?",
+     "inner": "sun",
+     "disc": [
+      "#B86E00",
+      "#FFF2C7",
+      "#FFD27A"
+     ],
+     "cue_q": "direction",
+     "labels": [
+      {
+       "text": "compass: *sun*",
+       "pos": "tr",
+       "cue": "sun"
+      },
+      {
+       "text": "*angle* = direction",
+       "pos": "l",
+       "cue": "vertical"
+      },
+      {
+       "text": "60° left = *60° left*",
+       "pos": "b",
+       "cue": "Food"
+      }
+     ],
+     "cue_hands": "hands",
+     "cue_leaf": "leaf"
+    },
+    "overlay": {
+     "marker_at": "w:vertical"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Closer. The bee runs straight, wagging her abdomen. The longer the waggle, the farther the food. A 2.5-second run means about 2,625 meters. That's the waggle dance. I waggled ten seconds. Nobody came.",
+    "data": {
+     "kind": "bee",
+     "lens": "stopwatch",
+     "lens_bg": "#2C1638",
+     "cue_mag": "Closer",
+     "callouts": [
+      {
+       "text": "longer waggle: *farther*",
+       "cue": "longer"
+      },
+      {
+       "text": "2.5 s: *about 2,625 m*",
+       "cue": "2.5"
+      }
+     ],
+     "cue_nut": "farther",
+     "stamp": {
+      "text": "Waggle dance!",
+      "cue": "waggle"
+     },
+     "cue_react": "ten",
+     "cue_fast": "Nobody"
+    },
+    "overlay": {
+     "dim_at": "w:longer",
+     "marker_at": "w:longer"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "And up close? Under 50 meters: the round dance, no direction. In between: the sickle dance. From 150 meters: waggling, with direction. I only do round.",
+    "data": {
+     "headline": "And *up close*?",
+     "bars": [
+      {
+       "label": "round dance",
+       "value": "< 50 m",
+       "h": 0.2,
+       "color": "#B04A92",
+       "kind": "sunflower",
+       "cue": "round"
+      },
+      {
+       "label": "sickle dance",
+       "value": "50–150",
+       "h": 0.5,
+       "color": "#B04A92",
+       "cue": "sickle"
+      },
+      {
+       "label": "waggle dance",
+       "value": "> 150 m",
+       "h": 0.9,
+       "color": "#B7FF00",
+       "cue": "waggling"
+      }
+     ],
+     "stamp": {
+      "text": "+ direction!",
+      "cue": "direction"
+     },
+     "cue_react": "only"
+    },
+    "overlay": {
+     "marker_at": "w:round"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Remember: the waggle dance shows direction and distance. Right, my turn. Scanner on. Result: dance unknown. I guess I'm freestyle.",
+    "data": {
+     "mode": "unknown",
+     "sign": "ANIMALS ONLY",
+     "merke": "Bees dance *directions*.",
+     "display": "Dance: unknown",
+     "plumps": "FLOP",
+     "cue_build": "direction",
+     "cue_go": "Right",
+     "cue_scan": "Scanner",
+     "cue_result": "Result",
+     "cue_back": "guess"
+    },
+    "overlay": {
+     "marker_at": "w:Remember"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "I'll just lie here for a bit. More Zonkfruit? Follow the channel. I'll get up in a minute.",
+    "data": {
+     "sign": "ANIMALS ONLY",
+     "cta": "More Zonkfruit? *Follow.*",
+     "cue_cta": "More",
+     "cue_up": "get",
+     "cue_lie": "lie",
+     "cue_ch": "channel"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Bee dance: party?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Party: rejected",
+    "tone": "pop",
+    "word": "don't"
+   },
+   {
+    "beat": "b3",
+    "text": "Direction: angle to sun",
+    "tone": "lime",
+    "word": "vertical"
+   },
+   {
+    "beat": "b4",
+    "text": "Longer waggle = farther",
+    "tone": "lime",
+    "word": "longer"
+   },
+   {
+    "beat": "b5",
+    "text": "Under 50 m: round dance",
+    "tone": "lime",
+    "word": "round"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: dance unknown",
+    "tone": "amber",
+    "word": "Result"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: lying down",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "Bees aren't partying. They're dancing directions.",
+   "description": "Plümo thought the bees were throwing a party. The waggle dance is directions: the angle to vertical shows the direction relative to the sun, the length of the waggle shows the distance. A 2.5-second waggle run means food about 2,625 meters away.",
+   "hashtags": [
+    "bees",
+    "animals",
+    "nature",
+    "didyouknow",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ }
+}

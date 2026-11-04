@@ -1,0 +1,55 @@
+# Compliance checks applied by src/fn/compliance.py. Every check has an id, a severity and a fix hint.
+# fail = video goes to FAILED/BLOCKED; review = HUMAN_REVIEW; warn = noted in the report.
+technical:
+  - id: duration_range
+    severity: fail
+    min_seconds: 65
+    max_seconds: 90
+    hard_min_seconds: 61
+  - id: aspect_ratio
+    severity: fail
+    width: 1080
+    height: 1920
+  - id: audio_present
+    severity: fail
+    min_mean_volume_db: -35
+  - id: loudness
+    severity: warn
+    target_lufs: -16
+    tolerance_lu: 3
+  - id: black_frames
+    severity: fail
+    max_black_seconds: 0.5
+    threshold: 0.98
+  - id: captions_present
+    severity: fail
+    min_caption_coverage: 0.6      # share of speech time covered by caption groups
+  - id: caption_safe_zone
+    severity: fail
+    title_safe_fraction: 0.8
+content:
+  - id: sources_required
+    severity: fail
+    rule: every scene fact has a source id; sources have url and checked_at
+  - id: unverified_blocks
+    severity: fail
+    rule: any UNVERIFIED marker in the script blocks production (NEEDS_RESEARCH)
+  - id: license_manifest
+    severity: fail
+    rule: every font, image, music and clip in the manifest has a licence entry
+  - id: ai_label
+    severity: fail
+    rule: post.json sets is_aigc, is_ai_generated and containsSyntheticMedia to true
+  - id: art50_disclosure
+    severity: fail
+    rule: brands with intro_config.art50_disclosure.enabled show the disclosure in the first 3 seconds
+  - id: risk_high_review
+    severity: review
+    rule: risk_level high never auto-approves
+  - id: forbidden_terms
+    severity: review
+    terms_de: ["heilt", "garantiert", "Wunder", "Anleitung zum Bau", "Taktik"]
+    terms_en: ["cures", "guaranteed", "miracle", "how to build a weapon", "tactics"]
+  - id: duplicate_angle
+    severity: fail
+    rule: no two topics per brand with the same angle hash

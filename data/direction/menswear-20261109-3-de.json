@@ -1,0 +1,566 @@
+{
+ "video_id": "menswear-20261109-3-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Wie lang muss ein Sakko sein?",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema D01 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Konvention mit Spielraum, keine Aussage über Körpergröße oder Figur.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Sakko, Länge",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Länge: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "zu kurz oder zu lang",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "hinten und vorn",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Knöchel: nur ein Bild",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Regel: locker",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Rahmen, kein Maß",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Gesäß bedeckt",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Wie lang muss ein Sakko sein? Der Saum bedeckt das Gesäß gerade so, sagen Suitsupply und T.M. Lewin; Proper Cloth nennt dazu Bezugspunkte hinten und vorn und die Regel ausdrücklich locker.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "sakko",
+   "anzug",
+   "passform",
+   "stilregeln"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://suitsupply.com/en-de/journal/how-it-should-fit.html",
+   "title": "Suitsupply, How it should fit: der Saum soll das Gesäß nur knapp bedecken; darüber zu kurz, deutlich darunter zu lang",
+   "checked_at": "2026-11-01",
+   "label": "Suitsupply, Journal"
+  },
+  {
+   "id": "S2",
+   "url": "https://propercloth.com/reference/advance-tips-for-tailored-jacket-fit/",
+   "title": "Proper Cloth, Advanced tips for tailored jacket fit: hinten bis zum Ansatz des Gesäßes, vorn bis zum Ende des Hosenschlitzes; Regel 'fairly loose', kürzer moderner, länger klassischer",
+   "checked_at": "2026-11-01",
+   "label": "Proper Cloth, Reference"
+  },
+  {
+   "id": "S3",
+   "url": "https://tmlewin.co.uk/blogs/the-fitting-room/how-a-suit-should-fit",
+   "title": "T.M. Lewin, How a suit should fit: Saum bedeckt das Gesäß; Fingerknöchel als gängiges Bild, 'depends on style'",
+   "checked_at": "2026-11-01",
+   "label": "T.M. Lewin, Fitting Room"
+  }
+ ],
+ "unverified": [
+  "Daumen-Regel: in keiner Primärquelle gefunden, nicht im Video.",
+  "Rückenlänge vom Schneider nicht änderbar (Proper Cloth, Änderungsseite): Seite nicht in den Recherche-URLs, nicht im Video."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Wie lang muss ein Sakko sein?",
+   "on_screen": "Wie lang muss ein Sakko sein?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Sakkolänge nach Gefühl? Es gibt einen Bezugspunkt.",
+   "on_screen": "Sakkolänge nach Gefühl? Es gibt einen Bezugspunkt.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Die Längenregel ist laut Proper Cloth locker",
+   "on_screen": "Die Längenregel ist laut Proper Cloth locker",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Saum über dem Gesäß: Das Sakko ist zu kurz",
+   "on_screen": "Saum über dem Gesäß: Das Sakko ist zu kurz",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Dreh das Sakko um, dann siehst du es",
+   "on_screen": "Dreh das Sakko um, dann siehst du es",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage aus dem Titel, die Lupe zeigt den Saum."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Ein Sakko, das zu kurz ist, fällt auf. Eins, das zu lang ist, auch. Wie lang muss ein Sakko also sein?",
+   "data": {
+    "question": "Wie lang muss ein Sakko sein?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "target": "quarters",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:kurz",
+    "loupe_at": "w:kurz",
+    "nie_at": "w:Wie",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Die Antwort liegt hinten. Dreh das Sakko um. Suitsupply schreibt: Der Saum soll das Gesäß nur knapp bedecken. Endet er darüber, ist das Sakko zu kurz. Liegt er deutlich darunter, ist es zu lang.",
+   "data": {
+    "headline": "Wo endet der Saum?",
+    "left": {
+     "title": "Vorn",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "strain": false
+     },
+     "tag": "der Saum vorn"
+    },
+    "right": {
+     "title": "Hinten",
+     "object": {
+      "kind": "jacket_back",
+      "vents": "centre"
+     },
+     "target": "hem",
+     "tag": "Gesäß knapp bedeckt",
+     "pulses": [
+      {
+       "target": "hem",
+       "at": "w:kurz",
+       "tone": "red"
+      },
+      {
+       "target": "hem",
+       "at": "w:lang",
+       "tone": "red"
+      }
+     ]
+    },
+    "left_at": 0.3,
+    "left_tag_at": "w:Antwort",
+    "right_at": "w:Dreh",
+    "right_tag_at": "w:knapp",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Suitsupply"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Proper Cloth gibt dir zwei Bezugspunkte. Hinten reicht der Saum bis zum Ansatz des Gesäßes. Vorn endet er etwa dort, wo der Hosenschlitz endet. So prüfst du die Länge von beiden Seiten.",
+   "data": {
+    "headline": "Zwei Bezugspunkte",
+    "backdrop": true,
+    "hold_end": true,
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket_back",
+       "vents": "centre"
+      },
+      "at": 0.0,
+      "title": "Hinten",
+      "tags": [
+       {
+        "spot": "hem",
+        "text": "bis Gesäßansatz",
+        "sub": "laut Proper Cloth",
+        "tone": "always",
+        "at": "w:Ansatz"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:Vorn",
+      "title": "Vorn",
+      "tags": [
+       {
+        "spot": "hem",
+        "text": "bis Schlitzende",
+        "sub": "Ende Hosenschlitz",
+        "tone": "always",
+        "at": "w:Hosenschlitz"
+       }
+      ],
+      "focus_at": "w:beiden"
+     }
+    ]
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "Dazu nennt T.M. Lewin ein gängiges Bild: Lass die Arme hängen, dann liegt der Saum etwa auf Höhe der Fingerknöchel. Aber auch dort heißt es: Das hängt vom Stil ab.",
+   "data": {
+    "headline": "Die Hand als Maß?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "cuff": 14,
+     "strain": false
+    },
+    "target": "cuff",
+    "zoom": 1.4,
+    "label": "Fingerknöchel: nur ein Bild",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Bild",
+    "zoom_at": "w:Arme",
+    "flip_at": "w:Saum",
+    "label_at": "w:Fingerknöchel"
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 330,
+     "y": 990,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Bild"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 11,
+   "spoken": "Wie streng ist das? Auch Proper Cloth nennt die Regel ausdrücklich locker. Ein kürzeres Sakko wirkt moderner, ein längeres klassischer. Die Faustregel ist also ein Rahmen, kein Millimetermaß.",
+   "data": {
+    "headline": "Wie streng ist das?",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Spielraum",
+      "tags": [
+       {
+        "spot": "waist",
+        "text": "Regel: locker",
+        "sub": "laut Proper Cloth",
+        "tone": "sometimes",
+        "at": "w:locker"
+       },
+       {
+        "spot": "pocket",
+        "text": "kürzer: modern",
+        "sub": "nach Stil",
+        "tone": "sometimes",
+        "at": "w:kürzeres"
+       },
+       {
+        "spot": "quarters",
+        "text": "länger: klassisch",
+        "sub": "nach Stil",
+        "tone": "sometimes",
+        "at": "w:längeres"
+       }
+      ],
+      "focus_at": "w:Rahmen"
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "Kurz gesagt: Hinten bedeckt der Saum das Gesäß gerade so, wie Suitsupply und T.M. Lewin schreiben. Vorn endet er etwa am Ende des Hosenschlitzes. Innerhalb dieses Rahmens entscheidet dein Stil.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Hinten: Gesäß bedeckt",
+      "sub": "knapp, laut Suitsupply",
+      "object": {
+       "kind": "jacket_back",
+       "vents": "centre"
+      },
+      "at": "w:Hinten",
+      "ring": "hem",
+      "ring_at": "w:Gesäß"
+     },
+     {
+      "title": "Vorn: Ende Hosenschlitz",
+      "sub": "laut Proper Cloth",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:Vorn",
+      "ring": "hem",
+      "ring_at": "w:Hosenschlitz"
+     },
+     {
+      "title": "Rahmen, kein Maß",
+      "sub": "kürzer modern, länger klassisch",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:Rahmens",
+      "ring": "cuff",
+      "ring_at": "w:Stil"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Dreh dich um: Der Saum bedeckt das Gesäß gerade so. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket_back",
+     "vents": "centre"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "hem",
+    "fix_at": "w:um",
+    "ring_at": "w:Gesäß",
+    "statement_at": "w:Gesäß",
+    "chip_at": "w:Blick",
+    "statement": "Gesäß knapp bedeckt.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

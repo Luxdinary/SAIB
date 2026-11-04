@@ -1,0 +1,356 @@
+{
+ "video_id": "menswear-20261202-3-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Köper oder Leinwand: woran man die Bindung erkennt",
+ "notes": "Pilot P1 des Suitwerk-Formats \"Kreidestrich\" (Format-Bibel: OneDrive\\Business\\02 Marke\\Suitwerk\\Format-Bibel.md), Reihe \"Unter dem Fadenzähler\", Kalenderthema menswear-20261202-3 (Stoffkunde C14). Kein Woche-1-Plan und keine bezahlte Stimme zu diesem Thema vorhanden, daher neue Gemini-Vertonung. Gewebe Faden für Faden aus der Bindung gerechnet (brands/menswear/kreidestrich/scenes.py, warp_up), Karopapier aus derselben Funktion. Farben im vergrößerten Gewebe nur zur Unterscheidung von Kette und Schuss. Quelle S1 am 02.11.2026 im Originaltext gelesen (PDF, S. 9 Weave Types, S. 10 Product Selection). Keine Marke, kein Händler, keine Kaufempfehlung; keine Bindung wird als besser bezeichnet. P2 (02.11.2026): Befunde der Prüfrunde umgesetzt (Kreide kräftiger, größere Kleinschrift, Karopapier füllt ab Satzbeginn, Kreidestrich und Testnotiz im Abspann); Sprechtext unverändert, Stimme aus P1 wiederverwendet.",
+ "layout": {
+  "format": "kreidestrich",
+  "series": "stoff",
+  "series_topic": "Bindung",
+  "explainer": false,
+  "zone_top": 290,
+  "zone_h": 950,
+  "caption_bottom_px": 560,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "description": "Zwei dunkle Anzugstoffe, gleiche Farbe, und doch anders gewebt: Leinwand oder Köper. Faden für Faden gezeichnet, wie Kette und Schuss sich kreuzen, warum der Köper eine schräge Linie hat und woran du die Bindung an deinem Sakko erkennst. Illustration, Quelle: Woolmark, Introduction to Wovenwear.",
+  "companion_text": "Suitwerk zeigt Herrenstil im Detail, gezeichnet statt behauptet. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "anzugstoff",
+   "stoffkunde",
+   "koeper",
+   "massanzug"
+  ],
+  "zone_lower_right_px": 940
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Kreidestrich (brands/menswear/kreidestrich/scenes.py), keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "title": "The Woolmark Company: Introduction to Wovenwear (Training Manual), S. 9 Weave Types und S. 10 Product Selection",
+   "checked_at": "2026-11-02",
+   "label": "Woolmark, Introduction to Wovenwear, S. 9"
+  }
+ ],
+ "unverified": [
+  "Fachbegriff Bindungspatrone und die Konvention 'dunkles Kästchen = Kettfaden oben': keine Primärquelle abrufbar (Museum-Digital Zittau 504, Universitätsbibliothek Heidelberg gesperrt). Im Video daher nur 'Karopapier' und 'hier' als eigene Legende, nicht als Normbehauptung.",
+  "Versatz um genau einen Faden je Schuss beim Grundköper: in S1 nicht wörtlich, folgt aus 2 über 2 unter mit Köperlinie; im Bild aus der Bindung gerechnet.",
+  "Aussagen zu Fall, Knitterverhalten, Dichte oder Haltbarkeit: nicht verwendet (S1 nennt sie nicht; die Patentquelle im Kalender stammt aus technischen Geweben).",
+  "Mehr Kettfäden als im Bild: Fadenzahl je Zentimeter wird nicht genannt, das Raster ist eine Vergrößerung ohne Maßstab."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Woran erkennst du, wie dein Anzugstoff gewebt ist?",
+   "on_screen": "Wie ist dein Anzug gewebt?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "Frage, keine Behauptung",
+    "curiosity": "abstrakt"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Dunkelblau ist dunkelblau? Nicht unter dem Fadenzähler.",
+   "on_screen": "Gleicher Stoff?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "zwei Grundbindungen in S1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Bei einem der beiden Stoffe sehen Vorder- und Rückseite gleich aus.",
+   "on_screen": "Vorne gleich hinten?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "S1: plain weave, no distinction between face and back"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer nur auf die Farbe schaut, übersieht, wie der Stoff gebaut ist.",
+   "on_screen": "Nur die Farbe?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "kein echtes Risiko, eher Belehrung"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Zwei Anzugstoffe, gleiche Farbe. Und doch sind sie anders gewebt.",
+   "on_screen": "Gleicher Stoff?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Zwei Stoffmuster auf dem Zuschneidetisch, Kreidestrich, Ungleich-Zeichen, der Fadenzähler fährt auf das erste Muster",
+   "why": {
+    "truth": "zwei Bindungen aus S1, die Stoffe sind gezeichnet",
+    "visual": "Kern des Formats: der Unterschied wird sichtbar"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Zwei gleich aussehende Stoffe, der Fadenzähler zeigt den Unterschied."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "kw_hook",
+   "duration_hint": 7,
+   "spoken": "Zwei Anzugstoffe, gleiche Farbe, gleiche Wolle. Und doch sind sie anders gewebt. Das zeigt dir erst der Fadenzähler.",
+   "data": {
+    "question": "Gleicher Stoff?",
+    "question_at": 0.2,
+    "chalk_at": "w:gleiche",
+    "swatches": [
+     {
+      "kind": "plain",
+      "label": "Stoff A"
+     },
+     {
+      "kind": "twill",
+      "label": "Stoff B"
+     }
+    ],
+    "labels_at": "w:Wolle",
+    "neq_at": "w:anders",
+    "lens_at": "w:zeigt",
+    "lens2_at": "w:Fadenzähler+0.6",
+    "source": "Woolmark: Introduction to Wovenwear, S. 9 · Abruf 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "kw_weave",
+   "duration_hint": 13,
+   "spoken": "Stoff A ist eine Leinwand. Die Längsfäden heißen Kette, der Querfaden heißt Schuss. Er läuft einmal über einen Kettfaden, einmal darunter, immer im Wechsel. Der nächste Schuss macht es genau umgekehrt. Das ist die einfachste Bindung.",
+   "data": {
+    "kind": "plain",
+    "title": "Leinwand",
+    "title_at": "w:Leinwand",
+    "warp_at": "w:Kette",
+    "weft_at": "w:Schuss",
+    "rows_at": "w:läuft",
+    "first_row": 2.4,
+    "row_step": 0.5,
+    "formula": {
+     "text": "1 über · 1 unter",
+     "at": "w:einmal"
+    },
+    "colors_note": "Farben nur zur Unterscheidung",
+    "note": {
+     "text": "die einfachste Bindung",
+     "at": "w:einfachste"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, S. 9 · Abruf 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "kw_weave",
+   "duration_hint": 12,
+   "spoken": "Stoff B ist ein Köper. Hier geht der Schuss über zwei Kettfäden und unter zwei hindurch. Jeder neue Schuss rückt um einen Faden weiter. So entsteht eine schräge Linie, der Köpergrat. Sie ist sein Kennzeichen.",
+   "data": {
+    "kind": "twill",
+    "title": "Köper",
+    "title_at": "w:Köper",
+    "warp_at": "w:Kettfäden",
+    "weft_at": "w:Schuss",
+    "rows_at": "w:über",
+    "first_row": 1.8,
+    "row_step": 0.45,
+    "formula": {
+     "text": "2 über · 2 unter",
+     "at": "w:zwei"
+    },
+    "shift_at": "w:rückt",
+    "diag_at": "w:schräge",
+    "colors_note": "Farben nur zur Unterscheidung",
+    "note": {
+     "text": "der Köpergrat",
+     "at": "w:Köpergrat"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, S. 9 · Abruf 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "kw_draft",
+   "duration_hint": 10,
+   "spoken": "Auf Karopapier sieht das so aus, Faden für Faden. Jedes dunkle Kästchen heißt hier: Kettfaden oben. Bei der Leinwand wird daraus ein Schachbrett, beim Köper eine Treppe.",
+   "data": {
+    "legend": {
+     "text": "dunkel = Kettfaden oben",
+     "at": "w:Kästchen"
+    },
+    "start_at": "w:Karopapier+0.5",
+    "row_step": 0.38,
+    "left": {
+     "kind": "plain",
+     "title": "Leinwand",
+     "word": "Schachbrett",
+     "word_at": "w:Schachbrett"
+    },
+    "right": {
+     "kind": "twill",
+     "title": "Köper",
+     "word": "Treppe",
+     "word_at": "w:Treppe"
+    },
+    "source": "Darstellung nach Woolmark: Introduction to Wovenwear, S. 9"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "kw_flip",
+   "duration_hint": 11,
+   "spoken": "Jetzt dreh beide Stoffe um und vergleiche. Die Leinwand sieht hinten genauso aus wie vorne. Der Köper hat eine Vorderseite: Dort läuft der Grat meist von rechts oben nach links unten.",
+   "data": {
+    "flip_at": "w:Stoffe",
+    "left": {
+     "kind": "plain",
+     "title": "Leinwand",
+     "front": "Vorderseite",
+     "back": "Rückseite",
+     "verdict": "vorne = hinten",
+     "at": "w:genauso"
+    },
+    "right": {
+     "kind": "twill",
+     "title": "Köper",
+     "front": "Vorderseite",
+     "back": "Rückseite",
+     "verdict": "vorne ≠ hinten",
+     "return_at": "w:Vorderseite",
+     "at": "w:Dort"
+    },
+    "arrow_at": "w:rechts",
+    "source": "Woolmark: Introduction to Wovenwear, S. 9 · Abruf 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "kw_close",
+   "duration_hint": 14,
+   "spoken": "Beides sind echte Anzugstoffe. Woolmark nennt für Anzüge aus Kammgarn Leinwand, Köper und Gabardine. Halte den Ärmel deines Sakkos schräg ins Licht: Siehst du feine Schrägen, ist es ein Köper. Folge Suitwerk für Herrenstil mit Blick fürs Detail.",
+   "data": {
+    "kinds": [
+     "plain",
+     "twill"
+    ],
+    "chip": {
+     "text": "Kammgarnanzug: Leinwand, Köper, Gabardine",
+     "at": "w:Woolmark"
+    },
+    "lines": [
+     {
+      "text": "Leinwand: Gitter",
+      "at": "w:Anzugstoffe"
+     },
+     {
+      "text": "Köper: Schräge",
+      "at": "w:Anzugstoffe+0.6"
+     }
+    ],
+    "tilt_at": "w:Halte",
+    "rule": {
+     "text": "Feine Schrägen: Köper",
+     "at": "w:Siehst"
+    },
+    "sign_at": "w:Folge",
+    "claim": "Herrenstil mit Blick fürs Detail.",
+    "source": "Woolmark: Introduction to Wovenwear, S. 10 · Abruf 02.11.2026",
+    "sign_note": "Test: Ärmel schräg ins Licht"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  }
+ ]
+}

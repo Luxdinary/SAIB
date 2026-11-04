@@ -1,0 +1,341 @@
+{
+ "video_id": "menswear-20261113-1-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Worsted or woollen: the way to the yarn",
+ "notes": "Woche 1 im Format Kreidestrich (K1), Reihe Unter dem Fadenzähler, Kalenderthema menswear-20261113-1 (Stoffkunde C03). Quelle S1 im Originaltext gelesen (S. 7, 9). Alter Plan bleibt unverändert.",
+ "layout": {
+  "format": "kreidestrich",
+  "series": "stoff",
+  "explainer": false,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 560,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "series_topic": "Yarn",
+  "description": "Both are wool, yet the fabrics feel different. Woollen yarn is only carded, the fibres lie every which way. Worsted yarn is combed as well: the shorter fibres drop out, the rest lies parallel. Illustration, source: Woolmark, Introduction to Wovenwear.",
+  "companion_text": "Suitwerk shows menswear in detail, drawn rather than claimed. No advertising, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "fabricknowledge",
+   "worsted",
+   "woollen",
+   "wool"
+  ]
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Kreidestrich, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "checked_at": "2026-11-02",
+   "title": "The Woolmark Company: Introduction to Wovenwear (Training Manual), S. 7 (processing pipeline: woollen route shorter, fibres randomly distributed and shorter; worsted fibres parallel; carding, condensing to slubbing, spinning; combing removes shorter fibres as noil, combed sliver is top, roving drawn out and twisted) and S. 9 (fabric qualities: woollen bulk, hairiness, jacketing and coats; worsted fine, smooth, clean surface, suiting and trousers)",
+   "label": "Woolmark, Introduction to Wovenwear"
+  }
+ ],
+ "unverified": [
+  "Drehung des Garns (locker oder eng): im alten Plan, hier nicht verwendet, im Handbuch nicht so beschrieben.",
+  "Wärme der Stoffe: nicht verwendet.",
+  "Faserlängen im Bild sind schematisch."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What is behind this label on the cloth?",
+   "on_screen": "What is behind it?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "question"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Most people read this number wrong.",
+   "on_screen": "Read it wrong?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 3,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "not measurable, below the gate"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The answer is in the thread, not the label.",
+   "on_screen": "The answer is in the thread",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "vague"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "If you only read the label, you miss the cloth.",
+   "on_screen": "Only the label?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "no real risk"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Two wool fabrics, the difference starts with the yarn.",
+   "on_screen": "Both wool?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Glattes und haariges Stoffmuster, der Fadenzähler zeigt die Oberfläche",
+   "why": {
+    "truth": "shown, not claimed",
+    "visual": "core of the Kreidestrich format"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Vorführung im Format Kreidestrich."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "kw_hook",
+   "duration_hint": 9,
+   "spoken": "Two wool fabrics. One smooth and clean, the other full and hairy. The difference starts long before the loom, with the yarn.",
+   "data": {
+    "question": "Both wool?",
+    "question_at": 0.2,
+    "chalk_at": "w:wool",
+    "swatches": [
+     {
+      "kind": "twill",
+      "label": "Worsted"
+     },
+     {
+      "kind": "twill",
+      "label": "Woollen",
+      "fuzz": true
+     }
+    ],
+    "labels_at": "w:smooth",
+    "neq_at": "w:difference",
+    "lens_at": "w:loom",
+    "lens2_at": "w:yarn",
+    "source": "Woolmark: Introduction to Wovenwear, p. 9 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "kw_yarn",
+   "duration_hint": 13,
+   "spoken": "Woollen yarn takes the shorter route, used for heavier yarns according to Woolmark. The wool is opened up on the card. Afterwards the fibres lie every which way, and they are shorter than in worsted yarn. Like that they are condensed into a strand and spun.",
+   "data": {
+    "title": {
+     "text": "Woollen",
+     "at": 0.1
+    },
+    "mode": "woollen",
+    "steps": [
+     {
+      "key": "card",
+      "label": "opened on the card",
+      "at": "w:card"
+     },
+     {
+      "key": "slub",
+      "label": "condensed into a strand",
+      "at": "w:condensed"
+     },
+     {
+      "key": "spin",
+      "label": "spun",
+      "at": "w:spun"
+     }
+    ],
+    "source": "Woolmark: Introduction to Wovenwear, p. 7 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "kw_yarn",
+   "duration_hint": 14,
+   "spoken": "Worsted yarn takes the longer route, for finer yarns. After the card, the wool is combed. The shorter fibres drop out. What remains is the top, with the fibres lying parallel. It is drawn out to around twenty times its length and spun.",
+   "data": {
+    "title": {
+     "text": "Worsted",
+     "at": 0.1
+    },
+    "mode": "worsted",
+    "steps": [
+     {
+      "key": "card",
+      "label": "opened on the card",
+      "at": "w:card"
+     },
+     {
+      "key": "comb",
+      "label": "combed",
+      "at": "w:combed"
+     },
+     {
+      "key": "top",
+      "label": "Top: parallel",
+      "at": "w:top"
+     },
+     {
+      "key": "draw",
+      "label": "drawn out",
+      "at": "w:drawn"
+     },
+     {
+      "key": "spin",
+      "label": "spun",
+      "at": "w:spun"
+     }
+    ],
+    "noil_label": "Noil",
+    "source": "Woolmark: Introduction to Wovenwear, p. 7 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "kw_flip",
+   "duration_hint": 11,
+   "spoken": "You can see it in the cloth. Woollen cloth is full and hairy, more for jackets and coats. Worsted is fine and smooth with a clean surface, typical for suits and trousers.",
+   "data": {
+    "flip": false,
+    "flip_at": 0.5,
+    "left": {
+     "kind": "twill",
+     "title": "Woollen",
+     "front": "full, hairy",
+     "verdict": "jackets, coats",
+     "at": "w:jackets",
+     "fuzz": true
+    },
+    "right": {
+     "kind": "twill",
+     "title": "Worsted",
+     "front": "fine, smooth",
+     "verdict": "suits, trousers",
+     "at": "w:suits"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, p. 9 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "close",
+   "scene_type": "kw_close",
+   "duration_hint": 11,
+   "spoken": "Remember: worsted is combed, the fibres lie parallel. Woollen is only carded, the fibres lie every which way. Follow Suitwerk for menswear with an eye for detail.",
+   "data": {
+    "kinds": [
+     "twill",
+     "twill"
+    ],
+    "fuzz": [
+     1
+    ],
+    "chip": {
+     "text": "Worsted: suits · woollen: jackets",
+     "at": 0.3
+    },
+    "lines": [
+     {
+      "text": "Worsted: parallel",
+      "at": "w:parallel"
+     },
+     {
+      "text": "Woollen: every which way",
+      "at": "w:every"
+     }
+    ],
+    "rule": {
+     "text": "Combed or carded",
+     "at": "w:every+0.8"
+    },
+    "sign_at": "w:Follow",
+    "claim": "Menswear with an eye for detail.",
+    "sign_note": "Smooth or hairy?",
+    "source": "Woolmark: Introduction to Wovenwear, p. 7 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  }
+ ]
+}

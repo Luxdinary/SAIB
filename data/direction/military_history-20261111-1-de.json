@@ -1,0 +1,582 @@
+{
+  "video_id": "military_history-20261111-1-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Neuf-Brisach: Vaubans Achteck vom Reißbrett",
+  "notes": "Woche 1, Reihe Gebaut für den Ernstfall. Bauwerk und Planung; Belagerungen 1870 und 1945 bewusst weggelassen, Bastionen nur als Bauform.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://whc.unesco.org/en/list/1283/",
+      "title": "Fortifications of Vauban, UNESCO World Heritage Centre",
+      "label": "UNESCO: Vauban",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://sites-vauban.org/en/node/7805",
+      "title": "Neuf-Brisach, Réseau des sites majeurs de Vauban",
+      "label": "Réseau Vauban",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://sites-vauban.org/sites/default/files/sites-vauban/Neuf-Brisach.pdf",
+      "title": "Inventaire des sites fortifiés par Vauban – Neuf-Brisach, Réseau Vauban 2015",
+      "label": "Inventaire Vauban 2015",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Bauzeit: Inventar 1698–1703, Website Steinbauten Ende 1700 fertig; im Video nur Baubeginn 1698 und Steinbau ab 1699.",
+    "Ein oder zwei Kanäle (Website: zwei, Inventar: Kanal von Rouffach); im Video nur der Kanal von Rouffach."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie plant man eine ganze Festungsstadt auf einer leeren Ebene, Block für Block?",
+      "on_screen": "Eine Stadt vom Reißbrett?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Festungen wuchsen über Jahrhunderte? Neuf-Brisach entstand nach einem einzigen Plan.",
+      "on_screen": "Gewachsen oder geplant?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Vauban legte drei Entwürfe vor, und der König nahm den teuersten.",
+      "on_screen": "Drei Entwürfe, der teuerste gewinnt",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne Breisach lag der Rheinübergang offen.",
+      "on_screen": "Ein Fluss ohne Schutz",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie aus einem Achteck ein Stadtgrundriss wird.",
+      "on_screen": "Vom Achteck zur Stadt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie plant man eine ganze Festungsstadt auf einer leeren Ebene, Block für Block?",
+      "data": {
+        "question": "Eine Festungsstadt vom Reißbrett?",
+        "question_em": "Reißbrett",
+        "card_title": "Neuf-Brisach",
+        "card_meta": "ELSASS · AB 1698",
+        "card_no": "AKTE 11",
+        "stamp": "1698",
+        "drawing": "neuf_brisach_plan.svg",
+        "packet_label": "Bauplan",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Ebene",
+        "packet_at": "w:Block",
+        "em_at": "w:Festungsstadt"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "1697 muss Frankreich Breisach am Rhein zurückgeben. Der Rheinübergang liegt damit ohne Schutz. Vauban legt drei Entwürfe vor, und der König wählt den größten und teuersten.",
+      "data": {
+        "mode": "map",
+        "headline": "Ein Übergang ohne Schutz",
+        "places": [
+          {
+            "label": "Breisach",
+            "code": "zurück 1697",
+            "x": 600,
+            "y": 80,
+            "at": "w:Breisach"
+          },
+          {
+            "label": "Neuf-Brisach",
+            "code": "neu geplant",
+            "x": 190,
+            "y": 500,
+            "rx": 175,
+            "ry": 95,
+            "at": "w:Vauban"
+          }
+        ],
+        "route_at": "w:Rheinübergang",
+        "route_label": "Rhein ohne Schutz",
+        "route_label_at": "w:Schutz",
+        "wait_at": "w:drei",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "3 Entwürfe · der teuerste",
+        "chip_at": "w:teuersten",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Bauplan",
+        "packet_at": "w:König",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "neue Festung",
+        "line_label_at": "w:größten",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:acht",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Der Plan ist ein Achteck mit doppeltem Mauerring. Davor liegen acht Halbmonde, und vier Tore führen hinein, benannt nach Belfort, Colmar, Straßburg und Basel.",
+      "data": {
+        "headline": "Achteck mit Doppelring",
+        "drawing": "neuf_brisach_plan.svg",
+        "sheet_title": "BLATT 2 · GRUNDRISS",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Doppelter Mauerring",
+            "x": 425,
+            "y": 230,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:doppeltem"
+          },
+          {
+            "label": "8 Halbmonde",
+            "x": 440,
+            "y": 310,
+            "lx": 500,
+            "ly": 200,
+            "at": "w:Halbmonde"
+          },
+          {
+            "label": "4 Tore",
+            "x": 380,
+            "y": 460,
+            "lx": 500,
+            "ly": 330,
+            "at": "w:Tore"
+          },
+          {
+            "label": "Tornamen: Belfort u. a.",
+            "x": 230,
+            "y": 95,
+            "lx": 500,
+            "ly": 430,
+            "at": "w:Belfort"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 310,
+          "scale": 1.12,
+          "at": "w:acht",
+          "back_at": "w:Belfort",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Innen herrscht das Raster: 48 Häuserblöcke zu je zehn Parzellen rund um einen leeren Paradeplatz, geplant für 340 Häuser und 3500 Einwohner, mit vier Brunnen an den Ecken.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Ring außen, Raster innen",
+        "left": {
+          "tag": "Außen",
+          "title": "Der Ring",
+          "at": "w:Innen",
+          "rows": [
+            "Achteck, doppelt",
+            "8 Halbmonde, 4 Tore"
+          ]
+        },
+        "right": {
+          "tag": "Innen",
+          "title": "Das Raster",
+          "at": "w:48",
+          "rows": [
+            {
+              "text": "48 Blöcke à 10 Parzellen",
+              "at": "w:Parzellen"
+            },
+            {
+              "text": "340 Häuser, 3.500 Einwohner",
+              "at": "w:340"
+            },
+            {
+              "text": "4 Brunnen am Paradeplatz",
+              "at": "w:Brunnen"
+            }
+          ]
+        },
+        "dim_left_at": "w:Parzellen",
+        "verdict": "Eine Stadt aus einem Guss",
+        "verdict_at": "w:Ecken",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "1698 beginnen die Erdarbeiten. Für den Sandstein aus den Vogesen, rund 30 Kilometer entfernt, lässt Vauban eigens den Kanal von Rouffach graben. Ab 1699 wachsen die Steinbauten.",
+      "data": {
+        "headline": "So kam der Stein",
+        "nodes": [
+          {
+            "label": "Erdarbeiten",
+            "code": "1698",
+            "at": "w:Erdarbeiten"
+          },
+          {
+            "label": "Vogesen",
+            "code": "Sandstein",
+            "at": "w:Vogesen"
+          },
+          {
+            "label": "Kanal Rouffach",
+            "code": "gegraben",
+            "at": "w:Rouffach"
+          },
+          {
+            "label": "Steinbauten",
+            "code": "ab 1699",
+            "at": "w:1699"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Stein",
+        "count": {
+          "to": 3,
+          "label": "ENTWÜRFE",
+          "at": 0.1,
+          "until": "w:Sandstein"
+        },
+        "total": {
+          "to": 30,
+          "pre": "ca.",
+          "label": "KM ENTFERNT",
+          "at": "w:Kilometer"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "Kurz gefasst: 1697 der Anlass, 1698 der Baubeginn, und seit 2008 Welterbe, gemeinsam mit elf weiteren Orten Vaubans.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1697 bis 2008",
+        "items": [
+          {
+            "year": "1697",
+            "title": "Breisach zurückgegeben",
+            "sub": "Rheinübergang ohne Schutz",
+            "at": "w:1697"
+          },
+          {
+            "year": "1698",
+            "title": "Baubeginn",
+            "sub": "Erdarbeiten, dann Stein",
+            "at": "w:1698"
+          },
+          {
+            "year": "2008",
+            "title": "UNESCO-Welterbe",
+            "sub": "mit 11 weiteren Standortgruppen",
+            "at": "w:2008",
+            "sub_at": "w:elf"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Der Mauerring steht bis heute vollständig und ist ein Spazierweg. Im Tor nach Belfort zeigt ein Museum ein Modell der Stadt im Maßstab 1 zu 600. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Neuf-Brisach",
+        "card_meta": "HEUTE",
+        "card_no": "AKTE 11",
+        "stamp": "1:600",
+        "drawing": "neuf_brisach_plan.svg",
+        "statement": "Der Ring steht noch: heute ein Spazierweg",
+        "statement_at": "w:Spazierweg",
+        "sign": "Porte de Belfort",
+        "sign_at": "w:Tor",
+        "stamp_at": "w:Maßstab",
+        "note": "Plan-Relief, Kopie im Musée Vauban",
+        "note_at": "w:Modell",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Bauplan",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Plan: leeres Blatt",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b2",
+          "text": "Entwurf: 3 Varianten",
+          "tone": "amber",
+          "offset": 7.6
+        },
+        {
+          "beat": "b3",
+          "text": "Ring: Achteck",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b4",
+          "text": "Raster: 48 Blöcke",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b5",
+          "text": "Bau: ab 1698",
+          "tone": "amber",
+          "offset": 0.2
+        },
+        {
+          "beat": "b6",
+          "text": "Welterbe: 2008",
+          "tone": "muted",
+          "offset": 5.2
+        },
+        {
+          "beat": "b7",
+          "text": "Ring: erhalten",
+          "tone": "muted",
+          "offset": 0.7
+        }
+      ]
+    },
+    "description": "Wie plant man eine ganze Festungsstadt? Vaubans Neuf-Brisach: Achteck, doppelter Mauerring, 48 Häuserblöcke im Raster. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "festungsbau",
+      "vauban",
+      "geschichte",
+      "stadtplanung",
+      "welterbe"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

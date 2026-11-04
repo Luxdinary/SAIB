@@ -1,0 +1,653 @@
+{
+  "video_id": "claude_workflows-20261115-2-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "The tools inside Claude Code",
+  "notes": "Week 1 (plan agent D, 2026-11-01). Series Toolbox, topic W12, English version of claude_workflows-20261115-2-de. Only tool names from the tools-reference table (Read, Grep, Glob, Edit, Write, Bash, WebFetch). Approval info applies, per the docs, to Manual mode inside the working directory; in auto mode a classifier decides. Guiding object settings.json. Sources opened as Markdown on 2026-11-01.",
+  "hook": {
+    "id": "H1",
+    "note": "Highest-scoring question; the session's tool lines lead straight into the list."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Claude reads, edits and runs commands. Which of its tools ask you before they act?",
+      "on_screen": "Which tools ask first?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "session with Read, Grep, Edit, Bash; marker on Edit",
+      "why": {
+        "truth": "a question; the tools table answers it",
+        "visual": "four tool lines"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude Code asks before every action? In Manual mode, reading doesn't.",
+      "on_screen": "Does it always ask?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "text",
+      "why": {
+        "truth": "only inside the working directory"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "On macOS and Linux, Claude Code searches through Bash by default, not Grep.",
+      "on_screen": "Grep is absent by default",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "tool list",
+      "why": {
+        "relevance": "a detail"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "If you don't know which tool asks, it's easy to allow too much.",
+      "on_screen": "Allowed too much?",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "abstract",
+      "why": {
+        "truth": "judgment, not a docs sentence"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch which tools Claude Code uses without asking.",
+      "on_screen": "No prompt: which ones?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "list",
+      "why": {
+        "curiosity": "weaker than the question"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Tools reference (Claude Code Docs): built-in tools table with Permission required (Manual mode, inside working directory); Read/Grep/Glob prompt outside the working directory; Bash read-only commands without prompting; Glob and Grep absent by default on macOS, Linux, WSL; tool names in permission rules; permissions.allow, Bash(npm run *)",
+      "url": "https://code.claude.com/docs/en/tools-reference",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, Tools"
+    },
+    {
+      "id": "S2",
+      "title": "How Claude Code works (Claude Code Docs): tools make Claude Code agentic; five categories; Manual mode asks before file edits and shell commands; allow specific commands in .claude/settings.json",
+      "url": "https://code.claude.com/docs/en/how-claude-code-works",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, How it works"
+    }
+  ],
+  "unverified": [
+    "What the Bash approval prompt looks like exactly: not taken from this topic's calendar sources; the terminal shows an animated, paraphrased view without original UI text.",
+    "In auto mode (per how-claude-code-works the starting mode in the terminal from v2.1.283) a classifier decides instead of a prompt; the video explicitly says Manual mode.",
+    "Per the permissions page, WebFetch doesn't ask for preapproved documentation domains; that page isn't a calendar source for this topic, so the video only says “needs approval per the tools table”.",
+    "The tool calls in the hook (Read(src/app.js) etc.) are examples."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "settings.json",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Approvals: unclear",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Tools: exact names",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "Read · Grep · Glob: free",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Bash: asks",
+          "tone": "amber"
+        },
+        {
+          "beat": "b5",
+          "text": "Edits, Bash: ask",
+          "tone": "amber"
+        },
+        {
+          "beat": "b6",
+          "text": "Outside: always asks",
+          "tone": "amber"
+        },
+        {
+          "beat": "b7",
+          "text": "allow: added",
+          "tone": "accent"
+        },
+        {
+          "beat": "b8",
+          "text": "npm run *: allowed",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Read, Grep, Glob, Edit, Write, Bash, WebFetch: Claude Code's built-in tools and which ones need approval in Manual mode, per the docs. Plus two limits and how to allow a command for good.",
+    "companion_text": "More Claude workflows, step by step: follow Promptwerk. Based on the Claude Code docs (Tools reference, How Claude Code works), checked 2026-11-01. The terminal and editor are an animation, not a screen recording. Limits per the docs: the “Permission required” column applies to Manual mode and paths inside the working directory; outside it, Read, Grep and Glob ask too. Bash runs a built-in set of read-only commands without asking. On macOS, Linux and WSL, Grep and Glob are absent by default and Claude searches through Bash. In auto mode a classifier decides most prompts.",
+    "hashtags": [
+      "claudecode",
+      "tools",
+      "aiworkflow",
+      "coding",
+      "developers"
+    ],
+    "short_title": "Werkzeuge von Claude Code"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Claude reads, edits and runs commands. Which of its tools ask you before they act?",
+      "data": {
+        "question": "Which tools ask first?",
+        "chip": "Approval?",
+        "tabs": [
+          {
+            "name": "Session",
+            "active": true
+          },
+          "settings.json"
+        ],
+        "file": "settings.json",
+        "lines": [
+          [
+            [
+              "com",
+              "# Tools in this session"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Read(src/app.js)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Grep(login)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Edit(src/app.js)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Bash(npm test)"
+            ]
+          ]
+        ],
+        "focus_line": 3,
+        "zoom": 1.1,
+        "mark_word": "edits",
+        "click_word": "commands",
+        "question_word": "Which",
+        "chip_word": "ask",
+        "env_word": "tools"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Which"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "The docs list the built-in tools by exact name. You use those same names in permission rules, hook matchers and subagent tool lists.",
+      "data": {
+        "kicker": "Claude Code Docs · Tools",
+        "page_title": "Tools reference",
+        "quotes": [
+          "built-in tools that help it understand and modify your codebase",
+          "The tool names are the exact strings you use in permission rules"
+        ],
+        "translation_label": "In short",
+        "translation": "These names work in rules and hooks.",
+        "page_word": "docs",
+        "quote1_word": "built-in",
+        "quote2_word": "names",
+        "translation_word": "permission"
+      },
+      "overlay": {
+        "title": "Exact names",
+        "marker_at": "w:built",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "In Manual mode, three don't ask inside your working directory: Read reads files, Grep searches contents, Glob finds files by pattern.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Read files",
+            "code": "Read",
+            "at_word": "Read"
+          },
+          {
+            "title": "Search contents",
+            "code": "Grep",
+            "at_word": "Grep"
+          },
+          {
+            "title": "Find files by pattern",
+            "code": "Glob",
+            "at_word": "Glob"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "No prompt",
+        "marker": "fakt",
+        "marker_at": "w:Manual",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Bash is different: if Claude wants to run npm test, it asks first. The command runs only after your yes. Built-in read-only commands are the exception.",
+      "data": {
+        "title": "claude · demo-project",
+        "focus_line": 2,
+        "stamp": "approval",
+        "annotation": "read-only commands run freely",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Run the tests"
+              ]
+            ],
+            "at_word": "Bash"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Bash(npm test)"
+              ]
+            ],
+            "at_word": "npm"
+          },
+          {
+            "kind": "err",
+            "text": "  approval needed",
+            "at_word": "asks"
+          },
+          {
+            "kind": "dim",
+            "text": "  waiting for your yes",
+            "at_word": "only"
+          }
+        ],
+        "height": 500,
+        "top": 20,
+        "mark_word": "asks",
+        "click_word": "yes",
+        "stamp_word": "command",
+        "annotation_word": "Built-in"
+      },
+      "overlay": {
+        "title": "Bash asks first",
+        "example": true,
+        "marker_at": "w:Bash",
+        "dim_at": "w:yes",
+        "vignette": true,
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Per the table, these need approval: Edit for targeted changes, Write for creating or overwriting files, Bash for shell commands and WebFetch for web pages.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Make targeted edits",
+            "code": "Edit",
+            "at_word": "Edit"
+          },
+          {
+            "title": "Create or overwrite",
+            "code": "Write",
+            "at_word": "Write"
+          },
+          {
+            "title": "Run shell commands",
+            "code": "Bash",
+            "at_word": "Bash"
+          },
+          {
+            "title": "Fetch a web page",
+            "code": "WebFetch",
+            "at_word": "WebFetch"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "With a prompt",
+        "marker": "fakt",
+        "marker_at": "w:approval",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Two limits from the docs: outside your working directory, Read, Grep and Glob ask too. And on macOS, Linux and WSL, Grep and Glob are absent by default.",
+      "data": {
+        "kicker": "Claude Code Docs · Tools",
+        "page_title": "Tools reference",
+        "quotes": [
+          "still prompt for paths outside the working directory",
+          "Absent by default on macOS, Linux, and WSL."
+        ],
+        "translation_label": "In short",
+        "translation": "Outside the folder, they ask too.",
+        "page_word": "docs",
+        "quote1_word": "outside",
+        "translation_word": "ask",
+        "quote2_word": "macOS"
+      },
+      "overlay": {
+        "title": "Two limits",
+        "marker_at": "w:outside",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "To skip the prompt for a command, add it to settings.json under permissions allow, like all npm run scripts. Then it runs without asking.",
+      "data": {
+        "tabs": [
+          {
+            "name": ".claude/settings.json",
+            "active": true
+          }
+        ],
+        "focus_line": 3,
+        "pre_line": 2,
+        "callout": "runs without asking",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "punc",
+              "{"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "key",
+              "\"permissions\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"allow\""
+            ],
+            [
+              "punc",
+              ": ["
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "str",
+              "\"Bash(npm run *)\""
+            ]
+          ],
+          [
+            [
+              "punc",
+              "    ]"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "  }"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "}"
+            ]
+          ]
+        ],
+        "line_h": 56,
+        "zoom": 1.1,
+        "typed_word": "prompt",
+        "pre_word": "allow",
+        "mark_word": "like",
+        "click_word": "npm",
+        "callout_word": "Then"
+      },
+      "overlay": {
+        "title": "Allow it for good",
+        "example": true,
+        "marker_at": "w:settings",
+        "dim_at": "w:npm",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Reading runs freely, edits and commands need your yes, at least in Manual mode. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "npm run *: allowed",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Bash(npm run build)"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  allowed: Bash(npm run *)"
+          }
+        ],
+        "statement": "Reads run freely. Edits and commands need approval.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_word": "Reading",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

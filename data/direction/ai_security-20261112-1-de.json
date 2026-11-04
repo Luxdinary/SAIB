@@ -1,0 +1,458 @@
+{
+ "video_id": "ai_security-20261112-1-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "KI-Kompetenz: die Pflicht, die schon gilt",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema A02, Reihe Was gilt wirklich. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: KI im Team. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "KI im Team",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "KI im Einsatz: ja",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Pflicht: seit Februar 2025",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Risiko: erfundene Antworten",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Nachweis: interne Liste",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Mindestinhalt: offen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Schulung: heute planen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Ohne Einweisung: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Seit Februar 2025 verlangt der AI Act KI-Kompetenz von Betrieben, die KI einsetzen. Seit dem AI Omnibus ohne festes Niveau, ohne Zertifikat. Was die EU-Kommission dazu sagt.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "aiact",
+   "kikompetenz",
+   "kmu",
+   "chatgpt",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+   "title": "European Commission: AI Literacy – Questions & Answers (Stand 20.10.2026, nach AI Omnibus)",
+   "checked_at": "2026-11-01",
+   "label": "EU-Kommission, FAQ KI-Kompetenz"
+  },
+  {
+   "id": "S2",
+   "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4",
+   "title": "AI Act, Article 4: AI literacy (AI Act Service Desk, European Commission)",
+   "checked_at": "2026-11-01",
+   "label": "KI-VO Art. 4"
+  }
+ ],
+ "unverified": [
+  "Bußgelder für Verstöße gegen Art. 4: nicht verwendet.",
+  "Nationale Zuständigkeiten in Deutschland oder Österreich: nicht genannt."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "concrete_risk",
+   "spoken": "Dein Team schreibt Werbetexte mit ChatGPT? Dann gilt für dich eine EU-Pflicht.",
+   "on_screen": "ChatGPT im Team? Dann gilt Artikel 4",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "FAQ: ChatGPT für Werbetexte fällt unter Art. 4"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Weiß dein Team, was die KI im Büro falsch machen kann?",
+   "on_screen": "Weiß dein Team, wo KI irrt?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Die KI-Kompetenz-Pflicht gilt seit Februar 2025, geprüft wird seit August 2026.",
+   "on_screen": "Pflicht seit 2025, Aufsicht seit 2026",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "misconception",
+   "spoken": "Für KI-Kompetenz brauchst du ein Zertifikat? Laut EU-Kommission nicht.",
+   "on_screen": "Zertifikat nötig?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, welche KI-Tools in diesem Büro laufen.",
+   "on_screen": "Welche KI läuft hier?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Dein Team schreibt Werbetexte mit ChatGPT? Dann gilt für dich eine EU-Pflicht.",
+   "data": {
+    "question": "ChatGPT im Team? Dann gilt Artikel 4",
+    "doc_label": "Werbetext",
+    "chat_title": "KI-Chat",
+    "bot_line": "Hier ist dein Entwurf",
+    "typed": "Schreib einen Werbetext",
+    "badge": "Pflicht?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Artikel 4 des AI Act verlangt von Anbietern und Betreibern von KI-Systemen, für KI-Kompetenz ihrer Leute zu sorgen. Betreiber ist auch, wer KI nur nutzt. Die Pflicht gilt seit dem zweiten Februar 2025.",
+   "data": {
+    "headline": "Wen Artikel 4 trifft",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "KI-Anbieter",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n1",
+      "label": "Dein Betrieb nutzt KI",
+      "icon": "&#9783;"
+     },
+     {
+      "id": "n2",
+      "label": "Dein Team",
+      "icon": "&#9823;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "liefert Tool"
+     },
+     {
+      "label": "arbeitet damit"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Kompetenz nötig"
+    }
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Die EU-Kommission nennt ein Beispiel: Ein Betrieb, dessen Leute ChatGPT für Werbetexte oder Übersetzungen nutzen, fällt darunter. Die Beschäftigten sollen die besonderen Risiken kennen, etwa erfundene Antworten.",
+   "data": {
+    "headline": "Das Beispiel der Kommission",
+    "file_label": "KI im Team",
+    "card": {
+     "title": "ChatGPT im Betrieb",
+     "rows": [
+      {
+       "text": "Werbetexte, Übersetzungen",
+       "ok": null
+      },
+      {
+       "text": "fällt unter Artikel 4",
+       "ok": null
+      },
+      {
+       "text": "Risiko: erfundene Antworten",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "Seit dem AI Omnibus, in Kraft seit Juli 2026, bleibt die Pflicht bestehen. Ein bestimmtes Niveau ist aber nicht mehr vorgeschrieben. Ein Zertifikat braucht es nicht. Eine interne Liste der Schulungen reicht als Nachweis.",
+   "data": {
+    "headline": "Was gilt nach dem AI Omnibus",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.5,
+    "left": {
+     "title": "Nicht nötig",
+     "rows": [
+      {
+       "text": "Zertifikat",
+       "ok": null
+      },
+      {
+       "text": "festes Kompetenz-Niveau",
+       "ok": null
+      },
+      {
+       "text": "KI-Beauftragter",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "Was zählt",
+     "rows": [
+      {
+       "text": "Pflicht bleibt bestehen",
+       "ok": null
+      },
+      {
+       "text": "Schulungen intern festhalten",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "Die Kommission nennt vier Fragen als Mindestinhalt: Was ist KI und welche nutzen wir? Sind wir Anbieter oder nur Nutzer? Welche Risiken haben unsere Tools? Und was muss jede Person dafür wissen?",
+   "data": {
+    "headline": "Vier Fragen als Grundlage",
+    "file_label": "KI im Team",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Welche KI nutzen wir?",
+      "sub": "und wofür?",
+      "at": 0.6
+     },
+     {
+      "title": "Welche Risiken?",
+      "sub": "was muss wer wissen?",
+      "at": 1.0
+     }
+    ],
+    "approval": "Schulung dokumentiert?",
+    "approval_at": 8.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Für deinen Betrieb heißt das: Schreib auf, welche KI-Tools ihr nutzt. Sprich mit dem Team über ihre Risiken. Und halte fest, wann wer geschult wurde. Seit August 2026 wird die Pflicht beaufsichtigt.",
+   "data": {
+    "headline": "Drei Schritte zur KI-Kompetenz",
+    "items": [
+     {
+      "title": "KI-Tools auflisten",
+      "sub": "was nutzt das Team?",
+      "at": 2.0
+     },
+     {
+      "title": "Risiken besprechen",
+      "sub": "z. B. erfundene Antworten",
+      "at": 4.8
+     },
+     {
+      "title": "Schulung festhalten",
+      "sub": "wer, wann, was",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Erst verstehen, dann einsetzen. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Erst verstehen, dann nutzen",
+    "file_label": "KI im Team",
+    "button": "KI-Tool starten",
+    "block_text": "Erst nach Einweisung",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

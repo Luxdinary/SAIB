@@ -1,0 +1,293 @@
+{
+  "video_id": "claude_workflows-20261113-3-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "4 Tastenkürzel, die Zeit sparen",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent C. Thema 13.11. Thema 3 (W2), Reihe Werkzeugkiste, Format listicle. Vorlage Promptwerk 0.9 mit Qualitätsrunde Q1. Leitobjekt: Kürzel (Hook-Tab, Statusleiste zählt 0 bis 4). Nur Kürzel aus der Tabelle der Seite Interactive mode, Windows-Varianten wörtlich von dort: Alt+M für Shift+Tab (wenn Node oder Bun keinen VT-Eingabemodus aktiviert), Alt+V für das Einfügen eines Bildes (Windows und WSL). Für Esc Esc und Ctrl+R nennt die Seite keine Windows-Variante, daher keine. Eigene Kürzel über /keybindings (Keybindings-Seite). Quellen am 01.11.2026 als Markdown-Fassung geöffnet. Terminal-Szene als Animation, #-Zeilen sind Erklärungen; roter Terminal-Marker mit mark_w 0 ausgeblendet. Gesprochen „Steuerung plus R“ für Ctrl+R (deutsche Tastatur: Strg), im Bild die Schreibweise der Doku.",
+  "hook": {
+    "id": "H1",
+    "note": "Frage mit höchster Bewertung; die Kürzel-Liste im Hook kündigt die vier Einträge an."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Vier Tastenkürzel sparen dir in Claude Code Zeit. Kennst du sie, auch unter Windows?",
+      "on_screen": "Kennst du alle vier?",
+      "scores": {"clarity": 5, "relevance": 5, "curiosity": 4, "truth": 5, "visual": 5},
+      "source_ids": ["S1"],
+      "visual": "Kürzel-Liste im Editor, Marker auf Shift+Tab, Klick, Zoom, Frage",
+      "why": {"truth": "alle vier Kürzel und die Windows-Varianten stehen in der Tabelle der Doku", "visual": "die Kürzel selbst sind sichtbar"}
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Zurückspulen geht nur mit slash rewind? Zweimal Escape bei leerer Eingabe reicht.",
+      "on_screen": "Nur mit /rewind? Esc Esc reicht.",
+      "scores": {"clarity": 4, "relevance": 4, "curiosity": 4, "truth": 5, "visual": 3},
+      "source_ids": ["S1"],
+      "visual": "Esc-Tasten werden zweimal gedrückt",
+      "why": {"truth": "Interactive mode: Esc + Esc öffnet bei leerer Eingabe das Rewind-Menü", "relevance": "nur eines der vier Kürzel"}
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Unter Windows fügst du in Claude Code ein Bild mit Alt plus V ein.",
+      "on_screen": "Windows: Bild mit Alt+V",
+      "scores": {"clarity": 4, "relevance": 4, "curiosity": 4, "truth": 5, "visual": 3},
+      "source_ids": ["S1"],
+      "visual": "Bild-Chip erscheint im Prompt",
+      "why": {"truth": "wörtlich in der Tabelle", "relevance": "nur Windows-Nutzer"}
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Shift plus Tab tut unter Windows nichts? Dann ist Alt plus M dein Kürzel.",
+      "on_screen": "Shift+Tab geht nicht? Alt+M",
+      "scores": {"clarity": 3, "relevance": 4, "curiosity": 4, "truth": 4, "visual": 3},
+      "source_ids": ["S1"],
+      "visual": "Taste wechselt",
+      "why": {"truth": "Alt+M gilt nur, wenn Node oder Bun keinen VT-Eingabemodus aktiviert; Verhalten von Shift+Tab dann nicht beschrieben", "clarity": "Bedingung fehlt"}
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie vier Tastenkürzel dir in Claude Code Tipparbeit sparen.",
+      "on_screen": "Vier Kürzel in Aktion",
+      "scores": {"clarity": 5, "relevance": 4, "curiosity": 4, "truth": 5, "visual": 5},
+      "source_ids": ["S1"],
+      "visual": "Terminal mit Kürzeln",
+      "why": {"truth": "Kürzel belegt", "relevance": "Windows-Hinweis fehlt"}
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Interactive mode (Claude Code Docs), keyboard shortcuts: may vary by platform and terminal; Shift+Tab, or Alt+M on Windows when the Node or Bun runtime doesn't enable VT input mode, cycles permission modes; Ctrl+R reverse search; Ctrl+V or Cmd+V (iTerm2) or Alt+V (Windows and WSL) paste image, inserts an [Image #N] chip; Esc interrupts; Esc + Esc clears draft or opens rewind menu",
+      "url": "https://code.claude.com/docs/en/interactive-mode",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Interactive mode"
+    },
+    {
+      "id": "S2",
+      "title": "Customize keyboard shortcuts (Claude Code Docs): /keybindings creates or opens ~/.claude/keybindings.json; chat:cycleMode Shift+Tab; chat:imagePaste Ctrl+V (Alt+V on Windows and WSL); historySearch",
+      "url": "https://code.claude.com/docs/en/keybindings",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Keybindings"
+    }
+  ],
+  "unverified": [
+    "Wie die Rückwärtssuche (Ctrl+R) und der Bild-Chip im Terminal genau aussehen: nicht belegt; animiert, die #-Zeilen sind Erklärungen. Belegt ist nur: Suchbegriff wird hervorgehoben, Chip [Image #N] an der Cursor-Position.",
+    "Ob Ctrl+R und Esc Esc auf allen Systemen gleich funktionieren: Die Doku nennt für beide keine Plattform-Variante, sagt aber allgemein, Kürzel können je nach System und Terminal abweichen; nicht als überall gültig behauptet.",
+    "Prompts im Terminal (Schreib Tests für login.ts, Was zeigt dieser Fehler?) sind Beispielwerte.",
+    "Dass die Kürzel messbar Zeit sparen: keine Zahl, nur der Titel aus dem Kalender."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Kürzel",
+      "states": [
+        {"beat": "b1", "text": "0 von 4", "tone": "amber", "offset": 1.4},
+        {"beat": "b2", "text": "je nach Terminal", "tone": "muted"},
+        {"beat": "b3", "text": "1 von 4: Shift+Tab", "tone": "accent"},
+        {"beat": "b4", "text": "3 von 4: Ctrl+R, Alt+V", "tone": "accent"},
+        {"beat": "b5", "text": "4 von 4: Esc Esc", "tone": "ok"},
+        {"beat": "b6", "text": "4 von 4", "tone": "ok"},
+        {"beat": "b7", "text": "4 von 4", "tone": "ok"}
+      ]
+    },
+    "description": "Vier Tastenkürzel für Claude Code laut Dokumentation: Shift+Tab wechselt den Berechtigungsmodus (unter Windows ohne VT-Eingabemodus Alt+M), Ctrl+R durchsucht frühere Eingaben, Ctrl+V fügt ein Bild ein (unter Windows und WSL Alt+V), zweimal Esc bei leerer Eingabe öffnet das Menü zum Zurückspulen.",
+    "companion_text": "Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt. Nach den Seiten Interactive mode und Keybindings der Claude-Code-Dokumentation; die Terminal-Szene ist eine animierte Darstellung, keine Bildschirmaufnahme. Laut Doku können Kürzel je nach System und Terminal abweichen. Shift+Tab wechselt reihum zwischen default (Anzeige Manual), acceptEdits und plan, wenn verfügbar auch bypassPermissions und auto. Hat die Eingabe schon Text, leert zweimal Esc sie stattdessen; mit der Pfeiltaste nach oben holst du den Entwurf zurück. Auf macOS in iTerm2 fügst du Bilder mit Cmd+V ein. Eigene Kürzel legst du mit /keybindings in ~/.claude/keybindings.json fest.",
+    "hashtags": ["claudecode", "tastenkürzel", "kiworkflow", "programmieren", "produktivität"],
+    "short_title": "4 Tastenkürzel"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": ["S1"],
+      "spoken": "Vier Tastenkürzel sparen dir in Claude Code Zeit. Kennst du sie, auch unter Windows?",
+      "data": {
+        "question": "Kennst du alle vier?",
+        "chip": "auch unter Windows?",
+        "file": "Kürzel",
+        "tabs": [{"name": "Kürzel", "active": true}],
+        "lines": [
+          [["com", "# Vier Tastenkürzel"]],
+          [["kw", "Shift+Tab"]],
+          [["kw", "Ctrl+R"]],
+          [["kw", "Ctrl+V"], ["dim", " · "], ["kw", "Alt+V"]],
+          [["kw", "Esc Esc"]]
+        ],
+        "focus_line": 1,
+        "zoom": 1.1,
+        "env_word": "Tastenkürzel",
+        "mark_word": "sparen",
+        "click_word": "Zeit",
+        "question_word": "Kennst",
+        "chip_word": "Windows"
+      },
+      "overlay": {"marker": "none"}
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": ["S1"],
+      "spoken": "Wichtig vorab, laut Dokumentation: Tastenkürzel können je nach System und Terminal abweichen. Unter Windows heißen manche anders, die Variante steht jeweils dabei.",
+      "data": {
+        "kicker": "Claude Code Docs · Interactive",
+        "page_title": "Interactive mode",
+        "quotes": [
+          "Keyboard shortcuts may vary by platform and terminal.",
+          "Alt+V (Windows and WSL)"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Kürzel hängen von System und Terminal ab",
+        "page_word": "Dokumentation",
+        "quote1_word": "Tastenkürzel",
+        "translation_word": "abweichen",
+        "quote2_word": "Windows"
+      },
+      "overlay": {
+        "title": "Je nach Terminal",
+        "marker_at": "w:Tastenkürzel",
+        "transition": {"type": "blende", "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "pw_flow",
+      "source_ids": ["S1"],
+      "spoken": "Eins: Shift plus Tab wechselt den Berechtigungsmodus, reihum von default über acceptEdits zu plan, und wenn verfügbar weiter. Unter Windows ohne VT-Eingabemodus ist es Alt plus M.",
+      "data": {
+        "headline": "",
+        "gate": 0,
+        "chip": "Shift+Tab · Alt+M",
+        "nodes": [
+          {"label": "default · Manual"},
+          {"label": "acceptEdits"},
+          {"label": "plan"},
+          {"label": "bypassPermissions", "tag": "ggf."},
+          {"label": "auto", "tag": "ggf."}
+        ],
+        "travel_word": "reihum",
+        "travel_end_word": "weiter",
+        "gate_word": "Alt"
+      },
+      "overlay": {
+        "title": "1 · Modus wechseln",
+        "marker_at": "w:Shift",
+        "transition": {"type": "iris", "x": 241, "y": 452, "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": ["S1"],
+      "spoken": "Zwei: Steuerung plus R durchsucht deine früheren Eingaben, erneut gedrückt geht es zu älteren Treffern. Drei: Ein Bild aus der Zwischenablage fügst du mit Steuerung plus V ein, unter Windows mit Alt plus V. Im Prompt erscheint ein Bild-Chip.",
+      "data": {
+        "title": "claude · demo-projekt",
+        "focus_line": 4,
+        "mark_w": 0,
+        "stamp": "Alt+V",
+        "annotation": "Bild-Chip an der Cursor-Position",
+        "height": 540,
+        "top": 20,
+        "lines": [
+          {"kind": "dim", "text": "  # Ctrl+R: Verlauf durchsuchen", "at_word": "durchsucht"},
+          {"kind": "prompt", "text": [["acc", "> "], ["", "Schreib Tests für "], ["acc", "login"], ["", ".ts"]], "at_word": "früheren"},
+          {"kind": "dim", "text": "  # Ctrl+R erneut: ältere Treffer", "at_word": "älteren"},
+          {"kind": "dim", "text": "  # Windows: Alt+V fügt Bild ein", "at_word": "Windows"},
+          {"kind": "prompt", "text": [["acc", "> "], ["", "Was zeigt dieser Fehler? "], ["acc", "[Image #1]"]], "at_word": "erscheint"}
+        ],
+        "stamp_word": "Alt",
+        "mark_word": "Im",
+        "click_word": "erscheint",
+        "annotation_word": "Bild-Chip"
+      },
+      "overlay": {
+        "title": "2 und 3 · Suchen, Bild",
+        "example": true,
+        "marker_at": "w:Steuerung",
+        "transition": {"type": "blende", "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": ["S1"],
+      "spoken": "Und vier: Escape allein unterbricht Claude, die Arbeit bis dahin bleibt. Zweimal Escape bei leerer Eingabe öffnet das Menü zum Zurückspulen.",
+      "data": {
+        "top": {"title": "Esc", "verdict": "Stopp", "rows": ["unterbricht Claude", "Arbeit bleibt erhalten"]},
+        "bottom": {"title": "Esc Esc", "verdict": "Zurück", "rows": ["leer: Rewind-Menü", "mit Text: Entwurf leeren"]},
+        "top_word": "Escape",
+        "bottom_word": "Zweimal"
+      },
+      "overlay": {
+        "title": "4 · Esc oder Esc Esc",
+        "marker": "fakt",
+        "marker_at": "w:Escape",
+        "transition": {"type": "blende", "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": ["S1"],
+      "spoken": "Zum Merken: Shift Tab für den Modus, Steuerung R für den Verlauf, Alt V für Bilder unter Windows, und zweimal Escape zum Zurückspulen.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {"title": "Modus wechseln", "code": "Shift+Tab (Windows: ggf. Alt+M)", "at_word": "Shift"},
+          {"title": "Verlauf durchsuchen", "code": "Ctrl+R", "at_word": "Steuerung"},
+          {"title": "Bild einfügen", "code": "Ctrl+V · Windows: Alt+V", "at_word": "Alt"},
+          {"title": "Zurückspulen", "code": "Esc Esc (leere Eingabe)", "at_word": "zweimal"}
+        ]
+      },
+      "overlay": {
+        "title": "Alle vier auf einen Blick",
+        "marker": "fakt",
+        "marker_at": "w:Shift",
+        "transition": {"type": "blende", "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": ["S2"],
+      "spoken": "Eigene Kürzel legst du mit slash keybindings fest. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "4 Kürzel griffbereit",
+        "lines": [
+          {"kind": "prompt", "text": [["acc", "> "], ["", "/keybindings"]]},
+          {"kind": "dim", "text": "  ~/.claude/keybindings.json"}
+        ],
+        "statement": "Vier Kürzel. Eigene über /keybindings.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Eigene",
+        "brand_word": "Mehr"
+      },
+      "overlay": {"head": false, "marker": "none", "transition": {"type": "blende", "seconds": 0.7}}
+    }
+  ]
+}

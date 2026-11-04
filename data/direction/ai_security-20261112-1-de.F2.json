@@ -1,0 +1,375 @@
+{
+ "video_id": "ai_security-20261112-1-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "KI-Kompetenz: die Pflicht, die schon gilt",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Gilt das für uns?\". Thema A02. Keine Rechtsberatung. Beispielfall nachgestellt; Aussagen aus S1 (EU-Kommission, FAQ KI-Kompetenz) und S2 (KI-VO Art. 4), Faktenbasis aus dem Plan vom 01.11.2026.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Eure Steuerberaterin fragt: Ihr nutzt KI für Werbetexte? Dann gilt für euch Artikel 4 des AI Act. Was das heißt, was nicht nötig ist und was ihr heute aufschreibt.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur IT- und KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "aiact",
+   "kikompetenz",
+   "kmu",
+   "kiimbuero",
+   "giltdasfueruns"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+   "title": "European Commission: AI Literacy – Questions & Answers",
+   "checked_at": "2026-11-01",
+   "label": "EU-Kommission, FAQ KI-Kompetenz"
+  },
+  {
+   "id": "S2",
+   "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4",
+   "title": "AI Act, Article 4: AI literacy",
+   "checked_at": "2026-11-01",
+   "label": "KI-VO Art. 4"
+  }
+ ],
+ "unverified": [
+  "Bußgelder für Verstöße gegen Art. 4: nicht verwendet.",
+  "Nationale Zuständigkeiten in Deutschland oder Österreich: nicht genannt.",
+  "Die Mail der Steuerberaterin ist erfunden (Beispielfall)."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Ihr nutzt KI im Betrieb. Gilt dann schon eine EU-Pflicht für euch?",
+   "on_screen": "Gilt das schon für uns?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Wir nutzen KI nur, also betrifft uns der AI Act nicht? Doch.",
+   "on_screen": "Nur Nutzer = nicht betroffen?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Die Pflicht zur KI-Kompetenz gilt schon seit Februar 2025.",
+   "on_screen": "Gilt seit 02.02.2025",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Dein Team schreibt Werbetexte mit ChatGPT? Dann gilt für dich eine EU-Pflicht.",
+   "on_screen": "Werbetexte mit KI?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Dienstag, neun Uhr dreißig. Eine Mail von eurer Steuerberaterin zum AI Act.",
+   "on_screen": "DI 09:30 · Betrifft euch das?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Dienstag, neun Uhr dreißig. Eine Mail von eurer Steuerberaterin: Ihr nutzt doch KI für eure Werbetexte? Dann gilt für euch Artikel 4 des AI Act.",
+   "data": {
+    "kicker": "Beispielfall · nachgestellt",
+    "time": "DI 09:30",
+    "place": "Inhaber einer Bäckerei mit Filialen",
+    "mail_at": "@Mail",
+    "mail": {
+     "from": "Kanzlei Beispiel",
+     "addr": "beratung@kanzlei.example",
+     "time": "09:30",
+     "subject": "AI Act: betrifft euch das?",
+     "lines": [
+      "Ihr nutzt KI für Werbetexte?",
+      "Dann gilt für euch Artikel 4",
+      "des AI Act. Habt ihr das im Blick?"
+     ]
+    },
+    "highlight": {
+     "line": 1,
+     "label": "Pflicht",
+     "at": "@Artikel"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "Was wisst ihr über euren Betrieb? Ihr nutzt KI, entwickelt aber keine. Laut Artikel 4 müssen Anbieter und Betreiber für KI-Kompetenz ihrer Leute sorgen. Betreiber ist auch, wer KI nur nutzt. Die Pflicht gilt seit dem zweiten Februar 2025.",
+   "data": {
+    "kicker": "Was ihr wisst",
+    "headline": "Seid ihr gemeint?",
+    "rows": [
+     {
+      "label": "Nutzung",
+      "value": "KI für Werbetexte",
+      "verdict": "ja",
+      "at": "@nutzt"
+     },
+     {
+      "label": "Entwicklung",
+      "value": "keine eigene KI",
+      "verdict": "nein",
+      "at": "@entwickelt"
+     },
+     {
+      "label": "Rolle",
+      "value": "Betreiber",
+      "verdict": "laut Art. 4",
+      "at": "@Betreiber"
+     }
+    ],
+    "fact": {
+     "kind": "fakt",
+     "text": "Art. 4 gilt auch für Betreiber, die KI nur nutzen.",
+     "source": "KI-VO Art. 4 · seit 02.02.2025",
+     "at": "@Pflicht"
+    }
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "Was tust du? A: Nichts, ihr nutzt KI ja nur. B: Ihr bucht eine teure Zertifizierung. C: Ihr schreibt auf, welche Tools ihr nutzt, und schult das Team zu ihren Risiken. Entscheide dich jetzt.",
+   "data": {
+    "question": "Was tust du?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Nichts, wir nutzen KI nur",
+      "at": "@Nichts"
+     },
+     {
+      "key": "B",
+      "text": "Teure Zertifizierung buchen",
+      "at": "@bucht"
+     },
+     {
+      "key": "C",
+      "text": "Tools auflisten, Team schulen",
+      "at": "@schreibt"
+     }
+    ],
+    "think": {
+     "seconds": 2.4,
+     "at": "@Entscheide"
+    },
+    "hint": "Entscheide dich jetzt."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Richtig ist C. Die EU-Kommission nennt genau dieses Beispiel: Ein Betrieb, dessen Leute ChatGPT für Werbetexte nutzen, fällt darunter. Ein Zertifikat braucht es nicht, eine interne Liste der Schulungen reicht als Nachweis.",
+   "data": {
+    "mode": "rule",
+    "kicker": "Der eine Schritt",
+    "card": {
+     "letter": "C",
+     "title": "Liste und Schulung",
+     "sub": "intern festgehalten, ohne Zertifikat",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Nichts tun",
+      "note": "gilt auch für Nutzer",
+      "at": "@fällt"
+     },
+     {
+      "text": "B: Teures Zertifikat",
+      "note": "nicht nötig",
+      "at": "@Zertifikat"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "EU-Kommission · FAQ KI-Kompetenz"
+     },
+     {
+      "kind": "auslegung",
+      "label": "Einordnung für euren Betrieb"
+     }
+    ],
+    "sources_at": "@EU"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "benefit",
+   "scene_type": "sc_step",
+   "spoken": "Die Kommission nennt vier Fragen als Mindestinhalt: Was ist KI und welche nutzen wir? Sind wir Anbieter oder nur Nutzer? Welche Risiken haben unsere Tools? Und was muss jede Person dafür wissen? Seit August 2026 wird die Pflicht beaufsichtigt.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "Vier Fragen fürs Team",
+    "card": {
+     "letter": "?",
+     "title": "Schulung: vier Fragen",
+     "sub": "laut EU-Kommission",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "Was ist KI, welche nutzen wir?",
+      "at": "@Was",
+      "mark": "q"
+     },
+     {
+      "text": "Anbieter oder nur Nutzer?",
+      "at": "@Sind",
+      "mark": "q"
+     },
+     {
+      "text": "Welche Risiken haben die Tools?",
+      "at": "@Welche",
+      "mark": "q"
+     },
+     {
+      "text": "Was muss jede Person wissen?",
+      "at": "@muss",
+      "mark": "q"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Erst verstehen, dann einsetzen. Habt ihr eure KI-Liste schon? Schreib es in die Kommentare.",
+   "data": {
+    "kicker": "Reihe · Gilt das für uns?",
+    "rule": "Erst verstehen, dann einsetzen.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Habt ihr die Liste schon?",
+     "at": "@Habt"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+   },
+   "source_ids": []
+  }
+ ]
+}

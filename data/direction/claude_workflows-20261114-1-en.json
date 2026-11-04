@@ -1,0 +1,583 @@
+{
+  "video_id": "claude_workflows-20261114-1-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Skill or subagent?",
+  "notes": "Production week 1 (2026-11-01), plan agent C. Topic 14.11. slot 1 (V2), series This or that, format comparison. English adaptation of claude_workflows-20261114-1-de (same facts, sources and scenes, own wording). Guiding object: the main context (status bar); no file tab in the hook because the guiding object isn't a file. Sources opened 2026-11-01 as markdown: Extend Claude Code (features overview) and Create custom subagents. Subagent file verbatim after the code-improver example on the subagents page (description shortened). No SKILL.md on screen because the file name isn't in either source.",
+  "hook": {
+    "id": "H1",
+    "note": "Highest-scoring question; it puts the this-or-that decision on a concrete task from the docs."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Claude needs to search lots of files. Do you reach for a skill or a subagent?",
+      "on_screen": "Skill or subagent?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "task list in the editor, marker on search lots of files, click, question",
+      "why": {
+        "truth": "docs example: research task that reads many files → subagent",
+        "curiosity": "viewer has to decide"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Skill and subagent, same thing with two names? The docs keep them apart.",
+      "on_screen": "Skill = subagent? No.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "equation gets crossed out",
+      "why": {
+        "truth": "Skill vs Subagent: solve different problems",
+        "visual": "little motion"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "A subagent reads dozens of files, and your conversation gets only the summary.",
+      "on_screen": "Dozens of files, one summary",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "many files flow into one card",
+      "why": {
+        "truth": "might read dozens of files … only receives a summary",
+        "clarity": "skill missing from the opener"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "A search across many files floods your chat with results you'll never need again.",
+      "on_screen": "Results flood your chat",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "context fills up",
+      "why": {
+        "truth": "docs: side task floods your conversation; sharpened as a risk",
+        "visual": "abstract"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch what a subagent hands back to your conversation.",
+      "on_screen": "What a subagent hands back",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "rail with the hand-back",
+      "why": {
+        "truth": "returns only the summary",
+        "relevance": "skill missing"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Extend Claude Code (Claude Code Docs, features overview): Skills are reusable content you can load into any context; Subagents are isolated workers that run separately from your main conversation; context window impact; when to use; they can combine (skills: field, context: fork)",
+      "url": "https://code.claude.com/docs/en/features-overview",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, Features"
+    },
+    {
+      "id": "S2",
+      "title": "Create custom subagents (Claude Code Docs): own context window, custom system prompt, specific tool access, independent permissions; returns only the summary; Claude uses each subagent's description to decide when to delegate; example file ~/.claude/agents/code-improver.md",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, Subagents"
+    }
+  ],
+  "unverified": [
+    "File name and folder of a skill (SKILL.md, .claude/skills): not in the two calendar sources, so not in the video.",
+    "How Claude Code shows a running subagent and its hand-back in the terminal: not documented; the close only hints at it with an explanation line (#).",
+    "The task list in the hook is an example value (tasks after the docs examples style guide and research across many files).",
+    "Cost comparison skill vs subagent: the docs only say subagents send their own requests that count toward the same usage limits; no number in the video."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "main context",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "full of results?",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "skill loads here",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "subagent: own window",
+          "tone": "accent"
+        },
+        {
+          "beat": "b4",
+          "text": "subagent: defined",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "skill takes room here",
+          "tone": "muted"
+        },
+        {
+          "beat": "b6",
+          "text": "depends on the task",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "only the result back",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Skill or subagent? Per the Claude Code docs, a skill brings reusable knowledge into your conversation and takes up room there. A subagent works in its own context window and returns only the summary. Rule of thumb from the docs: the same prompt over and over, a skill; a side task with lots of output, a subagent.",
+    "companion_text": "Follow Promptwerk for more Claude workflows, step by step. Based on the Extend Claude Code and Create custom subagents pages of the Claude Code docs; the scenes are animated views, not screen recordings. Per the docs: a subagent uses a separate window with its own input and output tokens and sends its own requests, which count toward the same usage limits as your main conversation. A subagent can preload skills with the skills: field, and a skill can run in an isolated context with context: fork. Your subagents' descriptions also take up context, so keep them short.",
+    "hashtags": [
+      "claudecode",
+      "subagents",
+      "skills",
+      "aiworkflow",
+      "coding"
+    ],
+    "short_title": "Skill oder Subagent"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Claude needs to search lots of files. Do you reach for a skill or a subagent?",
+      "data": {
+        "question": "Skill or subagent?",
+        "chip": "which one fits?",
+        "tabs": [
+          {
+            "name": "tasks.md",
+            "active": true
+          }
+        ],
+        "lines": [
+          [
+            [
+              "com",
+              "# Tasks"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "search lots of files"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "hand back the findings"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "follow the style guide"
+            ]
+          ]
+        ],
+        "focus_line": 1,
+        "zoom": 1.1,
+        "mark_word": "lots",
+        "click_word": "files",
+        "question_word": "reach",
+        "chip_word": "subagent"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "The docs draw a clear line, since they solve different problems. Skills are reusable content Claude can load into any context. Subagents are isolated workers, separate from your main conversation.",
+      "data": {
+        "kicker": "Claude Code Docs · Features",
+        "page_title": "Extend Claude Code",
+        "quotes": [
+          "Skills are reusable content you can load into any context",
+          "isolated workers that run separately from your main conversation"
+        ],
+        "translation_label": "In short",
+        "translation": "Content to load, or a separate worker",
+        "page_word": "docs",
+        "quote1_word": "skills",
+        "translation_word": "load",
+        "quote2_word": "Subagents"
+      },
+      "overlay": {
+        "title": "Content or worker",
+        "marker_at": "w:skills",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "A subagent starts with its own context window, system prompt and tool access. It might read dozens of files, but returns only the summary to your conversation.",
+      "data": {
+        "headline": "",
+        "gate": 3,
+        "chip": "result only",
+        "nodes": [
+          {
+            "label": "Your conversation"
+          },
+          {
+            "label": "Subagent starts",
+            "hook": true
+          },
+          {
+            "label": "own context"
+          },
+          {
+            "label": "Summary"
+          },
+          {
+            "label": "back to your chat"
+          }
+        ],
+        "travel_word": "starts",
+        "gate_word": "only",
+        "travel_end_word": "summary"
+      },
+      "overlay": {
+        "title": "How a subagent works",
+        "marker_at": "w:starts",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Here's a custom subagent: a markdown file in the .claude/agents folder. In your home folder, it's available in every project. Claude reads the description to decide when to delegate. And you can limit its tools.",
+      "data": {
+        "tabs": [
+          {
+            "name": "code-improver.md",
+            "active": true
+          }
+        ],
+        "focus_line": 3,
+        "callout": "only Read, Grep, Glob",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "punc",
+              "---"
+            ]
+          ],
+          [
+            [
+              "key",
+              "name"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "code-improver"
+            ]
+          ],
+          [
+            [
+              "key",
+              "description"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "Scans files and suggests …"
+            ]
+          ],
+          [
+            [
+              "key",
+              "tools"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "Read, Grep, Glob"
+            ]
+          ],
+          [
+            [
+              "key",
+              "model"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "sonnet"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "---"
+            ]
+          ],
+          [
+            [
+              "com",
+              "You are a code improvement specialist."
+            ]
+          ]
+        ],
+        "line_h": 50,
+        "zoom": 1.1,
+        "typed_word": "markdown",
+        "pre_line": 2,
+        "pre_word": "description",
+        "mark_word": "can",
+        "click_word": "limit",
+        "callout_word": "tools"
+      },
+      "overlay": {
+        "title": "A subagent as a file",
+        "marker_at": "w:markdown",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Rule of thumb: a skill brings knowledge into your conversation and takes up room there. A subagent does a task in its own window and reports only the result.",
+      "data": {
+        "top": {
+          "title": "Skill",
+          "verdict": "knowledge",
+          "rows": [
+            "loads into your chat",
+            "style guide, checklist"
+          ]
+        },
+        "bottom": {
+          "title": "Subagent",
+          "verdict": "task",
+          "rows": [
+            "own context window",
+            "only the result back"
+          ]
+        },
+        "top_word": "skill",
+        "bottom_word": "subagent"
+      },
+      "overlay": {
+        "title": "Knowledge or task",
+        "marker": "auslegung",
+        "marker_at": "w:Rule",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Typing the same prompt over and over? Make it a skill. A side task flooding your chat? Hand it to a subagent. And the two combine: a subagent can preload skills.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Same prompt, over again",
+            "code": "→ skill",
+            "at_word": "Typing"
+          },
+          {
+            "title": "Side task floods the chat",
+            "code": "→ subagent",
+            "at_word": "side"
+          },
+          {
+            "title": "Combine both",
+            "code": "skills: · context: fork",
+            "at_word": "combine"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "Which one when",
+        "marker": "fakt",
+        "marker_at": "w:Typing",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "A skill brings knowledge in, a subagent brings results back. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "summary only",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Search all the files"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  # back: only the summary"
+          }
+        ],
+        "statement": "Skills bring knowledge. Subagents bring results.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_word": "skill",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

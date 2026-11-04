@@ -1,0 +1,164 @@
+id: ai_security-20261110-3-en
+version: F2
+title: 'Two-step login: start with your email'
+reihe: Fünf Minuten, die gefehlt haben
+short: Zwei-Faktor fürs Postfach EN
+note: Topic B02, told backwards, EN localisation. Example case staged; consequences and advice from S1 (NCSC) and S2 (BSI).
+description: Monday morning, the business inbox is locked. We rewind to the setting that was missing. Five minutes you can do today.
+hashtags:
+- 2fa
+- emailsecurity
+- smallbusiness
+- cybersecurity
+- fiveminutes
+sources:
+- id: S1
+  url: https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email
+  title: 'NCSC: Use a strong and separate password for your email'
+  checked_at: '2026-11-01'
+  label: NCSC, email password
+- id: S2
+  url: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Zwei-Faktor-Authentisierung/zwei-faktor-authentisierung_node.html
+  title: 'BSI: Zwei-Faktor-Authentisierung'
+  checked_at: '2026-11-01'
+  label: BSI (German federal office), two-factor
+unverified:
+- 'Individual providers and their menus: not named.'
+- The sequence of the example case (times, password reused from another service) is invented and marked as an example.
+pick: demonstration
+hooks:
+- type: question
+  spoken: If someone has your business inbox, what can they do? More than you think.
+  screen: What can someone do with your inbox?
+- type: misconception
+  spoken: A good password is enough for your email? The NCSC says not quite.
+  screen: Good password = enough?
+  src:
+  - S1
+- type: surprising_fact
+  spoken: Your inbox can reset the passwords of all your other accounts.
+  screen: One inbox, every key
+  src:
+  - S1
+- type: concrete_risk
+  spoken: Whoever has your email account can write in your name.
+  screen: Inbox gone, name gone
+  src:
+  - S1
+- type: demonstration
+  spoken: Monday, 7:40 a.m. Your business inbox won't let you in.
+  screen: MON 07:40 · Locked out
+beats:
+- f: hook
+  t: sc_case
+  s: 'Monday, 7:40 a.m. Your business inbox won''t let you in. On your phone there''s a message: Your password was changed. It wasn''t you.'
+  d:
+    kicker: Example case · staged
+    time: MON 07:40
+    place: Owner of a painting firm
+    mail_at: '@phone'
+    mail:
+      from: Mail provider (example)
+      addr: no-reply@mail.example
+      time: SUN 23:14
+      subject: Password changed
+      lines:
+      - A new password was set
+      - for your account today.
+      - Wasn't you?
+    highlight:
+      line: 2
+      label: not you
+      at: '@wasn'
+- f: problem
+  t: sc_inspect
+  s: 'So what''s exposed now? The UK''s NCSC lists what criminals can do with someone else''s inbox: read private data, including bank details. Write in your name. And reset the passwords of your other
+    accounts. That makes your inbox the master key.'
+  src:
+  - S1
+  d:
+    kicker: What's exposed
+    headline: One inbox, many doors
+    rows:
+    - label: Read
+      value: data, bank details
+      verdict: possible
+      at: '@read'
+    - label: Write
+      value: in your name
+      verdict: possible
+      at: '@Write'
+    - label: Reset
+      value: other passwords
+      verdict: possible
+      at: '@reset'
+    fact:
+      kind: fakt
+      text: An inbox can be used to reset your other passwords.
+      source: NCSC · email password
+      at: '@passwords'
+- f: demonstration
+  t: sc_timeline
+  s: 'Let''s rewind. Late on Sunday, someone logs in with your password. You had used it for another service too. This is where something was missing: a second factor. Then the password alone wouldn''t
+    have been enough, even though he knew it.'
+  src:
+  - S1
+  - S2
+  d:
+    kicker: Rewound
+    tag: Example
+    headline: Where it could have stopped
+    items:
+    - time: MON 07:40
+      text: Locked out
+      tone: red
+      at: 0.4
+    - time: SUN 23:14
+      text: Login with your password
+      tone: amber
+      at: '@Sunday'
+    - time: Before
+      text: Same password elsewhere
+      at: '@another'
+    - time: Here
+      text: No second factor
+      at: '@second'
+    source:
+      kind: fakt
+      label: NCSC · two steps keep them out
+      at: '@Then'
+- f: insight
+  t: sc_step
+  s: 'The setting that was missing: two-step verification. Switch it on today in the security settings of your business inbox. The NCSC recommends it for your email account, plus a separate password used
+    nowhere else. Germany''s BSI says: switch it on wherever a service offers it, and don''t switch it off again.'
+  src:
+  - S1
+  - S2
+  d:
+    mode: rule
+    kicker: Your five minutes
+    card:
+      letter: '2'
+      title: Two-step for your inbox
+      sub: plus a password used only there
+      at: 0.2
+    sources:
+    - kind: fakt
+      label: NCSC · two-step verification
+    - kind: fakt
+      label: BSI · don't switch it off
+    sources_at: '@NCSC'
+- f: close
+  t: sc_close
+  s: Secure the inbox first, then the rest. That's your five minutes for today. Is your second factor already on? Tell me in the comments.
+  d:
+    kicker: Series · Five minutes
+    rule: Secure the inbox first.
+    rule_at: 0.3
+    question:
+      text: Already switched on?
+      at: '@Is'
+    domain: scutoria.com
+    domain_at: 1.2
+    claim: Sourced. Dated. Ready to show.
+    disclaimer: Source-based. No legal advice.

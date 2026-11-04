@@ -1,0 +1,467 @@
+{
+  "video_id": "brainrot-20261115-3-en",
+  "brand_id": "brainrot",
+  "language": "en",
+  "title": "Flash, then thunder: count the seconds – Plümo counts indoors",
+  "notes": "Zonkfruit Vorlage 1.0, Produktion Woche 1 (01.11.2026), Reihe A. Aufbau wie das freigegebene Testvideo Q1 (Erdbeere keine Beere). Nur Aussagen aus den Kalenderquellen.",
+  "hook": {
+    "id": "H1",
+    "note": "erster Kandidat der Themenspezifikation"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Lightning and thunder don't arrive together. I count from inside. At the window.",
+      "on_screen": "*First* the flash, then thunder.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "storm cloud flies to the Fact Door, stamp NOPE",
+      "why": {
+        "truth": "Met Office: light travels much faster than sound, thunder always comes after",
+        "visual": "cloud with bolt and stamp reads at once"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Why do you hear thunder only after the flash?",
+      "on_screen": "Why *after* the flash?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "flash, pause, thunder"
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Thunder takes about five seconds to travel a mile.",
+      "on_screen": "*5 seconds* per mile.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "stopwatch runs five seconds"
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "If you can hear thunder, you're probably within striking distance.",
+      "on_screen": "Hear thunder? *In range.*",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "house with window, cloud outside"
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "I count the seconds to the thunder, from inside. Watch.",
+      "on_screen": "Counting, but *indoors*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Plümo with stopwatch in the house"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.weather.gov/safety/lightning-science-thunder",
+      "title": "US National Weather Service, Understanding Lightning: Thunder: the lightning discharge heats the air rapidly and causes it to expand; the sound of thunder takes about 5 seconds to travel a mile; count the seconds between flash and thunder and divide by 5 for the distance in miles; you should be in a safe place while counting; if you can hear thunder, chances are that you're within striking distance of the storm",
+      "checked_at": "2026-11-01",
+      "label": "US National Weather Service"
+    },
+    {
+      "id": "S2",
+      "url": "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/thunder-and-lightning",
+      "title": "Met Office, Thunder and lightning: thunder is the sound produced by the rapid heating of air by a lightning strike; thunder is always heard after the lightning is seen because light travels significantly faster than sound; seconds between flash and thunder divided by five give the approximate distance in miles, divided by three in kilometres",
+      "checked_at": "2026-11-01",
+      "label": "Met Office (UK)"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.nssl.noaa.gov/education/svrwx101/lightning/",
+      "title": "NOAA National Severe Storms Laboratory, Severe Weather 101: Lightning: count the seconds from the flash until you hear thunder; divide by 5 for the miles to the flash, by 3 for kilometers",
+      "checked_at": "2026-11-01",
+      "label": "NOAA NSSL"
+    }
+  ],
+  "unverified": [
+    "Hörweite des Donners: NWS nennt etwa 10 Meilen, NSSL bis zu 25 Meilen; widersprüchlich, daher nicht im Video."
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 500,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.4,
+    "progress_y": 1550,
+    "ai_label_bottom_px": 318,
+    "status_y": 1440,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Plümo thought thunder just dawdles. Wrong: light travels much faster than sound. Seconds between flash and thunder divided by three give roughly the distance in kilometers. Count from a safe place: if you can hear thunder, you're probably within striking distance.",
+    "companion_text": "Zonkfruit: a made-up fruit, real facts. Follow Zonkfruit for more.",
+    "hashtags": [
+      "thunderstorm",
+      "weather",
+      "funfact",
+      "didyouknow",
+      "zonkfruit",
+      "comedy"
+    ],
+    "platform_texts": {
+      "tiktok": {
+        "title": "First the flash, then thunder: Plümo counts, but indoors.",
+        "description": "Plümo thought thunder just dawdles. Wrong: light travels much faster than sound. Seconds between flash and thunder divided by three give roughly the distance in kilometers. Count from a safe place: if you can hear thunder, you're probably within striking distance.",
+        "hashtags": [
+          "thunderstorm",
+          "weather",
+          "funfact",
+          "didyouknow",
+          "zonkfruit",
+          "comedy"
+        ]
+      },
+      "instagram": {
+        "title": "First the flash, then thunder: Plümo counts, but indoors.",
+        "description": "Plümo thought thunder just dawdles. Wrong: light travels much faster than sound. Seconds between flash and thunder divided by three give roughly the distance in kilometers. Count from a safe place: if you can hear thunder, you're probably within striking distance.",
+        "hashtags": [
+          "thunderstorm",
+          "weather",
+          "funfact",
+          "didyouknow",
+          "zonkfruit",
+          "comedy",
+          "reels"
+        ]
+      },
+      "youtube": {
+        "title": "First the flash, then thunder: Plümo counts, but indoors. #Shorts",
+        "description": "Plümo thought thunder just dawdles. Wrong: light travels much faster than sound. Seconds between flash and thunder divided by three give roughly the distance in kilometers. Count from a safe place: if you can hear thunder, you're probably within striking distance.",
+        "hashtags": [
+          "Shorts",
+          "thunderstorm",
+          "weather",
+          "funfact",
+          "didyouknow"
+        ]
+      }
+    },
+    "status_bar": {
+      "file": "Fact Door",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Flash + thunder together?",
+          "tone": "amber",
+          "offset": 0.5
+        },
+        {
+          "beat": "b1",
+          "text": "Together: rejected",
+          "tone": "pop",
+          "offset": 1.52
+        },
+        {
+          "beat": "b3",
+          "text": "Sound: 5 s per mile",
+          "tone": "lime",
+          "offset": 8.97
+        },
+        {
+          "beat": "b4",
+          "text": "Seconds ÷ 3 = km",
+          "tone": "lime",
+          "offset": 8.53
+        },
+        {
+          "beat": "b5",
+          "text": "Hear thunder: in range",
+          "tone": "lime",
+          "offset": 11.6
+        },
+        {
+          "beat": "b6",
+          "text": "Plümo: courage unknown",
+          "tone": "amber",
+          "offset": 7.66
+        },
+        {
+          "beat": "b7",
+          "text": "Plümo: lying down",
+          "tone": "muted",
+          "offset": 0.3
+        }
+      ]
+    }
+  },
+  "assets": {},
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "zonk_scan",
+      "spoken": "Lightning and thunder don't arrive together. I count from inside. At the window.",
+      "data": {
+        "mode": "hook",
+        "head": "*First* the flash, then thunder.",
+        "head_at": 0.2,
+        "sign": "FACTS ONLY",
+        "items": [
+          {
+            "kind": "cloud_bolt"
+          }
+        ],
+        "stamp_reject": "NOPE",
+        "cue_scan": "Lightning",
+        "cue_verdict": "don't",
+        "cue_club": "count",
+        "cue_know": "inside"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "zonk_word",
+      "spoken": "Wait. I thought thunder just dawdles and starts late. But no late start. Light travels much faster than sound. I was shocked. I fetched my stopwatch. Indoors.",
+      "data": {
+        "word_a": "Late",
+        "word_b": "start",
+        "left": "Plümo: *thunder dawdles*",
+        "right": "Real: *sound is slower*",
+        "cue_left": "thought",
+        "cue_strike": "no",
+        "cue_right": "sound",
+        "cue_react": "I",
+        "item": "stopwatch",
+        "cue_shock": "shocked",
+        "cue_item": "stopwatch",
+        "cue_never": "Indoors"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "zonk_diagram",
+      "spoken": "What is thunder? Lightning heats the air fast, and the air expands. Thunder is that sound. It takes about five seconds to travel a mile. No hands, so I point with my leaf.",
+      "data": {
+        "headline": "What is *thunder*?",
+        "inner": "cloud_bolt",
+        "disc": [
+          "#3A3560",
+          "#E8E6F4",
+          "#A9A3C8"
+        ],
+        "cue_q": "thunder",
+        "labels": [
+          {
+            "text": "lightning *heats* the air",
+            "pos": "tr",
+            "cue": "heats"
+          },
+          {
+            "text": "air *expands*",
+            "pos": "l",
+            "cue": "expands"
+          },
+          {
+            "text": "sound: *5 s per mile*",
+            "pos": "b",
+            "cue": "seconds"
+          }
+        ],
+        "cue_hands": "hands",
+        "cue_leaf": "leaf"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 730,
+          "seconds": 0.7
+        },
+        "marker_at": "w:heats"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "zonk_zoom",
+      "spoken": "Closer. Count the seconds between flash and thunder. Divide by five for roughly the miles, by three for the kilometers. It's a rule of thumb. I have no thumbs.",
+      "data": {
+        "kind": "cloud_bolt",
+        "lens": "stopwatch",
+        "lens_bg": "#2A2140",
+        "cue_mag": "Closer",
+        "callouts": [
+          {
+            "text": "seconds *÷ 5* = miles",
+            "cue": "miles"
+          },
+          {
+            "text": "seconds *÷ 3* = km",
+            "cue": "kilometers"
+          }
+        ],
+        "cue_nut": "three",
+        "stamp": {
+          "text": "Rule of thumb!",
+          "cue": "rule"
+        },
+        "cue_react": "have",
+        "cue_fast": "thumbs"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Count",
+        "marker_at": "w:Count"
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "zonk_scan",
+      "spoken": "And the most important part: be in a safe place while counting. I count inside, at the window. If you can hear thunder, you're probably within striking distance. With a cushion.",
+      "data": {
+        "mode": "accept",
+        "sign": "FACTS ONLY",
+        "counter": "Counted safely:",
+        "stamp_accept": "SAFE",
+        "items": [
+          {
+            "kind": "house",
+            "word": "safe"
+          },
+          {
+            "kind": "stopwatch",
+            "word": "window"
+          }
+        ],
+        "cue_all": "striking",
+        "cue_react": "cushion",
+        "react": "stolz"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 756,
+          "y": 575,
+          "seconds": 0.7
+        },
+        "marker_at": "w:safe"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "zonk_scan",
+      "spoken": "Remember: seconds divided by three, roughly the kilometers. And you count indoors. Right, my turn. Stopwatch on. Result: courage unknown. I guess I got startled.",
+      "data": {
+        "mode": "unknown",
+        "sign": "FACTS ONLY",
+        "merke": "Seconds *÷ 3* = km. Count indoors.",
+        "display": "Courage: unknown",
+        "plumps": "FLOP",
+        "cue_build": "three",
+        "cue_go": "Right",
+        "cue_scan": "Stopwatch",
+        "cue_result": "Result",
+        "cue_back": "guess"
+      },
+      "overlay": {
+        "marker": "auslegung",
+        "marker_at": "w:Remember"
+      },
+      "source_ids": []
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "zonk_loop",
+      "spoken": "I'll just lie here for a bit. More Zonkfruit? Follow the channel. I'll get up in a minute.",
+      "data": {
+        "sign": "FACTS ONLY",
+        "cta": "More Zonkfruit? *Follow.*",
+        "cue_cta": "More",
+        "cue_up": "get",
+        "cue_lie": "lie",
+        "cue_ch": "channel"
+      },
+      "overlay": {
+        "marker": "none",
+        "head_until": "w:get"
+      },
+      "source_ids": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+tts:
+  provider: gemini
+  model: gemini-2.5-flash-preview-tts
+  voices:
+    de: Charon
+    en: Fenrir
+  speaking_rate: 0.98
+  style_instruction:
+    de: Sprich auf Deutsch, ruhig, klar und mit leisem Staunen wie ein Dokumentarsprecher; Zahlen deutlich, keine Übertreibung.
+    en: Speak in English, calm and clear with quiet awe like a documentary narrator; numbers distinct, no exaggeration.
+music:
+  mood: epic orchestral hybrid, slow build, 70 bpm
+  file: null
+  license_proof: null
+  gain_db: -18
+  duck_db: -10
+loudness:
+  target_lufs: -16
+  true_peak_dbtp: -1.5
+sfx:
+  enabled: false

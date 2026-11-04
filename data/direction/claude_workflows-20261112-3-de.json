@@ -1,0 +1,570 @@
+{
+  "video_id": "claude_workflows-20261112-3-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Mythos: Checkpoints ersetzen Git",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent C. Thema 12.11. Thema 3 (M3), Reihe Mythos-Check, Format myth. Vorlage Promptwerk 0.9 mit Qualitätsrunde Q1; Aufbau wie claude_workflows-20261109-3-de. Leitobjekt: /rewind (Hook-Tab, Statusleiste). Quellen am 01.11.2026 als Markdown-Fassung geöffnet: Checkpointing und Best Practices der Claude-Code-Doku. Mythos-Widerlegung über das wörtliche Doku-Zitat in pw_doc. Terminal-Szene als Animation; Dateinamen, Prompt und sed-Befehl sind Beispielwerte, die #-Zeilen sind Erklärungen, keine Claude-Code-Meldungen.",
+  "hook": {
+    "id": "H1",
+    "note": "Frage mit höchster Bewertung; das Rewind-Menü im Hook ist zugleich das Leitobjekt /rewind."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Mit slash rewind holst du Claudes Änderungen zurück. Ersetzt das dann dein Git?",
+      "on_screen": "Ersetzt /rewind dein Git?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Rewind-Menü im Fenster, Marker auf Restore code, Klick, Zoom, Frage",
+      "why": {
+        "truth": "Frage, keine Behauptung; /rewind stellt Code laut Checkpointing-Seite wieder her",
+        "visual": "Menüzeilen aus der Doku sind sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Checkpoints ersetzen Git? Die Dokumentation sagt ausdrücklich: nein.",
+      "on_screen": "Checkpoints = Git? Nein.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Gleichung wird durchgestrichen",
+      "why": {
+        "truth": "Abschnitt Not a replacement for version control",
+        "visual": "wenig Handlung"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Eine Datei, die nur ein Bash-Befehl geändert hat, holt slash rewind nicht zurück.",
+      "on_screen": "Bash-Änderung? /rewind holt sie nicht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Datei bleibt nach dem Zurückspulen unverändert",
+      "why": {
+        "truth": "wörtlich belegt (Bash command changes not tracked)",
+        "clarity": "setzt Wissen über Checkpoints voraus"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Verlässt du dich nur auf Checkpoints, bleiben Änderungen aus Bash-Befehlen stehen.",
+      "on_screen": "Nur Checkpoints? Bash-Änderungen bleiben",
+      "scores": {
+        "clarity": 3,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Datei-Chip bleibt bernstein",
+      "why": {
+        "truth": "Kern belegt; gilt für Dateien, die nur Bash geändert hat",
+        "clarity": "verkürzt"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, was slash rewind zurückholt und was nicht.",
+      "on_screen": "Was /rewind zurückholt und was nicht",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Terminal mit Edit- und Bash-Änderung, danach /rewind",
+      "why": {
+        "truth": "Ablauf belegt, Darstellung animiert",
+        "relevance": "Mythos erst später erkennbar"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Checkpointing (Claude Code Docs): checkpoint before each prompt that starts a turn; tracks changes by its file editing tools; /rewind or Esc twice; Bash command changes not tracked; external changes not tracked; not a replacement for version control",
+      "url": "https://code.claude.com/docs/en/checkpointing",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Checkpointing"
+    },
+    {
+      "id": "S2",
+      "title": "Best practices for Claude Code (Claude Code Docs), Steer the session: /rewind or Esc twice on an empty prompt; checkpoints work alongside git rather than replacing it",
+      "url": "https://code.claude.com/docs/en/best-practices",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Best Practices"
+    }
+  ],
+  "unverified": [
+    "Wie Claude Code das Rewind-Menü und die Terminalausgabe genau anzeigt: nicht geprüft; die Szenen sind animiert, die #-Zeilen sind Erklärungen, keine Meldungen von Claude Code.",
+    "Der Befehl sed -i … config.yml, der Prompt und die Dateinamen CHANGELOG.md und config.yml sind Beispielwerte.",
+    "Ratschlag, vor jedem größeren Schritt zu committen: steht nicht in den Quellen, nicht verwendet.",
+    "Mit welchem Git-Befehl man eine Bash-Änderung zurückholt: nicht in den Quellen (nur: Versionsverwaltung wie Git nutzen), daher kein Befehl im Bild."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "/rewind",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Git: überflüssig?",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Bash-Änderung: offen",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "Checkpoint je Prompt",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "config.yml: unverändert",
+          "tone": "amber"
+        },
+        {
+          "beat": "b5",
+          "text": "Git: weiter nötig",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "/rewind + Git",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "/rewind + Git",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Mit /rewind holst du Claudes Änderungen zurück. Laut Claude-Code-Dokumentation sind Checkpoints aber für die schnelle Rettung innerhalb einer Sitzung gedacht: Eine Datei, die nur ein Bash-Befehl geändert hat, wird nicht erfasst. Für dauerhafte Versionsgeschichte bleibt Git zuständig.",
+    "companion_text": "Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt. Nach der Claude-Code-Dokumentation (Checkpointing, Best Practices); die Terminal-Szene ist eine animierte Darstellung, keine Bildschirmaufnahme, Prompt und Dateinamen sind Beispielwerte. Grenzen laut Doku: Hat Claude eine Datei schon mit seinen Datei-Werkzeugen bearbeitet, nimmt /rewind auch spätere Bash-Änderungen daran zurück. Änderungen von Subagenten, von Hand außerhalb von Claude Code und aus anderen Sitzungen werden meist nicht erfasst. Datei-Snapshots löscht Claude Code standardmäßig etwa 30 Tage nach der letzten Speicherung (cleanupPeriodDays).",
+    "hashtags": [
+      "claudecode",
+      "checkpoints",
+      "git",
+      "kiworkflow",
+      "programmieren"
+    ],
+    "short_title": "Checkpoints und Git"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Mit slash rewind holst du Claudes Änderungen zurück. Ersetzt das dann dein Git?",
+      "data": {
+        "question": "Ersetzt /rewind dein Git?",
+        "chip": "Git überflüssig?",
+        "file": "/rewind",
+        "tabs": [
+          {
+            "name": "/rewind",
+            "active": true
+          }
+        ],
+        "lines": [
+          [
+            [
+              "com",
+              "# Rewind-Menü"
+            ]
+          ],
+          [
+            [
+              "",
+              "Restore code and conversation"
+            ]
+          ],
+          [
+            [
+              "",
+              "Restore conversation"
+            ]
+          ],
+          [
+            [
+              "kw",
+              "Restore code"
+            ]
+          ],
+          [
+            [
+              "",
+              "Summarize from here"
+            ]
+          ]
+        ],
+        "focus_line": 3,
+        "zoom": 1.1,
+        "env_word": "rewind",
+        "mark_word": "Änderungen",
+        "click_word": "zurück",
+        "question_word": "Ersetzt",
+        "chip_word": "Git"
+      },
+      "overlay": {
+        "marker": "none"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Dokumentation sagt klar: Checkpoints sind für die schnelle Rettung in der Sitzung gedacht. Und eine Datei, die nur ein Bash-Befehl geändert hat, wird nicht erfasst.",
+      "data": {
+        "kicker": "Claude Code Docs · Checkpointing",
+        "page_title": "Checkpointing",
+        "quotes": [
+          "Checkpoints are designed for quick, session-level recovery.",
+          "A file that only Bash commands changed isn't tracked"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Schnelle Rettung in der Sitzung.",
+        "page_word": "Dokumentation",
+        "quote1_word": "Checkpoints",
+        "translation_word": "Rettung",
+        "quote2_word": "Bash"
+      },
+      "overlay": {
+        "title": "Nur für die Sitzung",
+        "marker_at": "w:Checkpoints",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Vor jedem Prompt, den du schickst, sichert Claude Code den Stand deines Codes. Erfasst wird, was seine Datei-Werkzeuge ändern. Ändert nur ein Bash-Befehl eine Datei, fehlt sie.",
+      "data": {
+        "headline": "",
+        "gate": 3,
+        "chip": "nicht erfasst",
+        "nodes": [
+          {
+            "label": "Dein Prompt"
+          },
+          {
+            "label": "Checkpoint",
+            "hook": true
+          },
+          {
+            "label": "Datei-Werkzeuge",
+            "tag": "erfasst"
+          },
+          {
+            "label": "Bash-Befehl"
+          },
+          {
+            "label": "/rewind"
+          }
+        ],
+        "travel_word": "sichert",
+        "gate_word": "Bash",
+        "travel_end_word": "fehlt"
+      },
+      "overlay": {
+        "title": "Was ein Checkpoint sichert",
+        "marker_at": "w:sichert",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Ein Beispiel: Claude ändert das Changelog mit seinem Datei-Werkzeug und die config.yml per Bash. Dann spulst du mit slash rewind zurück. Das Changelog ist wieder alt. Die config.yml bleibt, wie sie ist, denn nur Bash hat sie geändert.",
+      "data": {
+        "title": "claude · demo-projekt",
+        "focus_line": 6,
+        "annotation": "nur per Bash: nicht erfasst",
+        "height": 560,
+        "top": 20,
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Version und Changelog anpassen"
+              ]
+            ],
+            "at_word": "Beispiel"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Edit(CHANGELOG.md)"
+              ]
+            ],
+            "at_word": "Changelog"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Bash(sed -i … config.yml)"
+              ]
+            ],
+            "at_word": "config"
+          },
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/rewind"
+              ]
+            ],
+            "at_word": "spulst"
+          },
+          {
+            "kind": "dim",
+            "text": "  Restore code",
+            "at_word": "rewind"
+          },
+          {
+            "kind": "dim",
+            "text": "  # CHANGELOG.md: alter Stand",
+            "at_word": "wieder"
+          },
+          {
+            "kind": "err",
+            "text": "  # config.yml: bleibt, wie sie ist",
+            "at_word": "bleibt"
+          }
+        ],
+        "mark_word": "bleibt",
+        "click_word": "sie",
+        "annotation_word": "geändert"
+      },
+      "overlay": {
+        "title": "Was /rewind nicht holt",
+        "example": true,
+        "marker_at": "w:Beispiel",
+        "dim_at": "w:bleibt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Der Unterschied: Checkpoints bringen dich schnell zurück, innerhalb einer Sitzung. Git hält deine Geschichte dauerhaft fest, mit Commits und Branches.",
+      "data": {
+        "top": {
+          "title": "/rewind",
+          "verdict": "Sitzung",
+          "rows": [
+            "schnell zurück",
+            "nur Datei-Werkzeuge"
+          ]
+        },
+        "bottom": {
+          "title": "Git",
+          "verdict": "dauerhaft",
+          "rows": [
+            "Commits und Branches",
+            "Verlauf fürs Team"
+          ]
+        },
+        "top_word": "Checkpoints",
+        "bottom_word": "Git"
+      },
+      "overlay": {
+        "title": "Sitzung oder Verlauf",
+        "marker": "auslegung",
+        "marker_at": "w:Unterschied",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "So nutzt du beides: Spul mit slash rewind oder zweimal Escape bei leerer Eingabe zurück. Was nur Bash geändert hat, holst du mit Git zurück. Commits halten den Stand dauerhaft fest.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Zurückspulen",
+            "code": "/rewind · Esc Esc",
+            "at_word": "Spul"
+          },
+          {
+            "title": "Bash-Änderung zurückholen",
+            "code": "Git",
+            "at_word": "Bash"
+          },
+          {
+            "title": "Dauerhaft festhalten",
+            "code": "Commits · Branches",
+            "at_word": "Commits"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "Beides nutzen",
+        "marker": "fakt",
+        "marker_at": "w:Spul",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Checkpoints für den schnellen Rückweg, Git für die Geschichte. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "Git: Verlauf dauerhaft",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/rewind"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Restore code and conversation"
+          }
+        ],
+        "statement": "Checkpoints für den Rückweg. Git für die Geschichte.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Checkpoints",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

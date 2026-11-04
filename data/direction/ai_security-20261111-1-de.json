@@ -1,0 +1,454 @@
+{
+ "video_id": "ai_security-20261111-1-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Prompt Injection: versteckte Befehle für deine KI",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema E03, Reihe KI im Büro. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: KI-Assistent. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "KI-Assistent",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Postfach: KI liest mit",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Eingabe: manipulierbar",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Quelle: Website, Datei",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Anweisung: unsichtbar?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Rechte: zu weit?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Freigabe: heute regeln",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Ohne Freigabe: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Wenn deine KI Webseiten oder Dateien liest, können darin Anweisungen stecken, sogar unsichtbare. Was OWASP und das NCSC sagen und warum die KI nichts allein senden sollte.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "promptinjection",
+   "kisicherheit",
+   "owasp",
+   "kiimbuero",
+   "kmu"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+   "title": "OWASP Gen AI Security Project: LLM01:2025 Prompt Injection",
+   "checked_at": "2026-11-01",
+   "label": "OWASP, LLM01 Prompt Injection"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ncsc.gov.uk/blog-post/thinking-about-security-ai-systems",
+   "title": "NCSC blog: Thinking about the security of AI systems",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, Sicherheit von KI-Systemen"
+  }
+ ],
+ "unverified": [
+  "Konkrete Vorfälle mit einzelnen Produkten: nicht genannt.",
+  "Ob ein bestimmtes Tool anfällig ist: nicht behauptet."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Deine KI fasst Mails zusammen. Was, wenn eine Mail ihr Befehle gibt?",
+   "on_screen": "Was, wenn die Mail der KI Befehle gibt?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Nur wer tippt, steuert die KI? Auch eine Webseite kann das.",
+   "on_screen": "Nur du steuerst deine KI?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Auf der OWASP-Liste der KI-Risiken steht Prompt Injection ganz oben.",
+   "on_screen": "OWASP-Risiko Nummer eins",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "LLM01:2025 ist Eintrag Nummer eins der Liste"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Eine präparierte Webseite kann deiner KI Anweisungen unterschieben.",
+   "on_screen": "Webseite schiebt der KI Befehle unter",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, was in diesem Text für die KI versteckt ist.",
+   "on_screen": "Was steckt hier für die KI drin?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Deine KI fasst Mails zusammen. Was, wenn eine Mail ihr Befehle gibt?",
+   "data": {
+    "question": "Was, wenn die Mail der KI Befehle gibt?",
+    "doc_label": "Angebot.pdf",
+    "chat_title": "KI-Assistent",
+    "bot_line": "Ich fasse die Mail zusammen",
+    "typed": "Fasse diese Mail zusammen",
+    "badge": "Befehl?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Das britische NCSC nennt Prompt Injection eine der meistgemeldeten Schwachstellen heutiger Sprachmodelle. Gemeint sind Eingaben, die ein Modell dazu bringen, sich anders zu verhalten als vorgesehen.",
+   "data": {
+    "headline": "Was Prompt Injection ist",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Präparierte Eingabe",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n1",
+      "label": "Sprachmodell",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n2",
+      "label": "Ungewollte Aktion",
+      "icon": "&#9888;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "versteckte Anweisung"
+     },
+     {
+      "label": "führt aus"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 7.5,
+     "label": "Anders als geplant"
+    }
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Die OWASP-Liste unterscheidet zwei Wege. Direkt: Jemand tippt die Anweisung selbst ein. Indirekt: Die KI verarbeitet Inhalte von außen, etwa Webseiten oder Dateien, und darin steckt die Anweisung.",
+   "data": {
+    "headline": "Zwei Wege zur KI",
+    "file_label": "KI-Assistent",
+    "card": {
+     "title": "Laut OWASP",
+     "rows": [
+      {
+       "text": "direkt: im Eingabefeld",
+       "ok": null
+      },
+      {
+       "text": "indirekt: Webseite",
+       "ok": "open"
+      },
+      {
+       "text": "indirekt: Datei",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "Das Tückische: Laut OWASP müssen solche Anweisungen für Menschen nicht einmal sichtbar sein. Es reicht, dass das Modell den Inhalt verarbeitet. Du liest ein Angebot, die KI liest mehr.",
+   "data": {
+    "headline": "Was du siehst, was die KI liest",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 5.5,
+    "left": {
+     "title": "Was du siehst",
+     "rows": [
+      {
+       "text": "ein normales Angebot",
+       "ok": null
+      },
+      {
+       "text": "nichts Auffälliges",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "Was die KI verarbeitet",
+     "rows": [
+      {
+       "text": "auch unsichtbaren Text",
+       "ok": "open"
+      },
+      {
+       "text": "mögliche Anweisung",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Deshalb rät OWASP: Gib der KI nur die Rechte, die sie für ihre Aufgabe wirklich braucht. Und baue für Aktionen mit hohem Risiko eine Freigabe durch einen Menschen ein.",
+   "data": {
+    "headline": "Was OWASP rät",
+    "file_label": "KI-Assistent",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "KI liest und entwirft",
+      "sub": "du gibst frei",
+      "at": 0.6
+     },
+     {
+      "title": "KI handelt allein",
+      "sub": "senden, zahlen, löschen",
+      "at": 1.0
+     }
+    ],
+    "approval": "Freigabe durch Mensch?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 13,
+   "spoken": "Für deinen Betrieb heißt das: Lass einen KI-Assistenten Mails zusammenfassen, aber nicht allein senden oder zahlen. Prüf, welche Konten ein KI-Tool erreichen darf. Und lies Ergebnisse gegen, bevor sie rausgehen.",
+   "data": {
+    "headline": "Drei Regeln für KI-Assistenten",
+    "items": [
+     {
+      "title": "KI liest, du entscheidest",
+      "sub": "kein Senden ohne Freigabe",
+      "at": 2.0
+     },
+     {
+      "title": "Zugriffe prüfen",
+      "sub": "welche Konten erreicht das Tool?",
+      "at": 4.8
+     },
+     {
+      "title": "Gegenlesen",
+      "sub": "bevor etwas rausgeht",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Die KI liest, du entscheidest. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "KI liest, du entscheidest",
+    "file_label": "KI-Assistent",
+    "button": "Senden",
+    "block_text": "Senden nur mit Freigabe",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

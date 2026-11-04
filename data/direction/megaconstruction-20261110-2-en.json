@@ -1,0 +1,669 @@
+{
+  "video_id": "megaconstruction-20261110-2-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Gotthard Base Tunnel: 10 years, 445,000 trains through the mountain",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261110-2-en. Thema: gotthard. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "GBT · 57 km",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "in service since June 2016",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "57 km",
+          "tone": "accent",
+          "at": "@57"
+        },
+        {
+          "beat": "b3",
+          "text": "445,000 trains",
+          "tone": "green",
+          "at": "@445,000"
+        },
+        {
+          "beat": "b4",
+          "text": "173 Eiffel Towers long",
+          "tone": "accent",
+          "at": "@173"
+        },
+        {
+          "beat": "b5",
+          "text": "Zurich–Lugano < 2 h",
+          "tone": "green",
+          "at": "@Zurich"
+        }
+      ]
+    },
+    "description": "Ten years of the Gotthard Base Tunnel in numbers: 57 km, 445,000 trains, about 122 a day, Zurich to Lugano in under two hours. According to SBB, June 2026.",
+    "companion_text": "Calculated: 276,000 + 169,000 = 445,000; 445,000 ÷ 3,652 days = 121.9; 57,000 m ÷ 330 m = 172.7. Sources: SBB, Swiss Federal Office of Transport, SETE. Stylised 3D model. Follow Gigastruct.",
+    "hashtags": [
+      "gotthard",
+      "basetunnel",
+      "switzerland",
+      "railway",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "276.000 + 169.000 = 445.000 Züge",
+        "result": "445.000",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "01.06.2016–01.06.2026 = 3.652 Tage; 445.000 ÷ 3.652 = 121,9 Züge pro Tag",
+        "result": "rund 122 pro Tag",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C3",
+        "calculation": "57.000 m ÷ 330 m = 172,7",
+        "result": "173 liegende Eiffeltürme",
+        "sources": [
+          "S1",
+          "SE"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "ridge",
+          "kind": "ridge",
+          "length": 3000,
+          "width": 1800,
+          "height": 760,
+          "color": "compare",
+          "bores": [
+            {
+              "z": 20,
+              "y": 120,
+              "r": 6,
+              "color": "accent"
+            },
+            {
+              "z": -20,
+              "y": 120,
+              "r": 6,
+              "color": "accent"
+            }
+          ],
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "fade": 0.45
+          }
+        },
+        {
+          "id": "lying",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 1,
+          "pos": [
+            0,
+            0,
+            1100
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "tube": [
+          1500,
+          120,
+          20
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 18,
+            "el1": 14,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "cy": 860
+          },
+          "props": {
+            "ridge.pulse": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.95",
+                1
+              ]
+            ]
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 88,
+            "az1": 80,
+            "el0": 8,
+            "el1": 14,
+            "fit0": 1.0,
+            "fit1": 0.92,
+            "cy": 780
+          },
+          "props": {
+            "ridge.fade": 0.3
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                1490,
+                90,
+                -40
+              ],
+              [
+                1500,
+                150,
+                40
+              ]
+            ],
+            "az0": 14,
+            "az1": 6,
+            "el0": 10,
+            "el1": 6,
+            "fit0": 0.55,
+            "fit1": 0.7,
+            "cy": 780
+          },
+          "props": {
+            "ridge.fade": 0.25,
+            "ridge.pulse": [
+              [
+                0,
+                0.6
+              ],
+              [
+                "%0.9",
+                1
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 30,
+            "az1": 40,
+            "el0": 30,
+            "el1": 24,
+            "fit0": 0.95,
+            "fit1": 0.9,
+            "cy": 900
+          },
+          "props": {
+            "ridge.fade": 0.35
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 12,
+            "el1": 18,
+            "fit0": 1.0,
+            "fit1": 0.95,
+            "cy": 820
+          },
+          "props": {
+            "ridge.fade": 0.35,
+            "ridge.pulse": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.5",
+                1
+              ],
+              [
+                "%0.51",
+                0
+              ],
+              [
+                "%0.98",
+                1
+              ]
+            ]
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "ridge"
+            ],
+            "az0": 45,
+            "az1": 55,
+            "el0": 20,
+            "el1": 26,
+            "fit0": 0.95,
+            "fit1": 0.85,
+            "cy": 900
+          },
+          "props": {
+            "ridge.pulse": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.9",
+                1
+              ]
+            ]
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://news.sbb.ch/de/019e72ae-25de-7db5-9dcc-a87bb7d034bb/gotthard-basistunnel-zehn-jahre-schnellere-verbindungen-fuer-die-reisenden-und-effizienterer-gueterverkehr",
+      "title": "SBB News: Gotthard-Basistunnel – zehn Jahre (57 km; 276.000 Güter- und 169.000 Personenzüge; 35 Mio. CHF Unterhalt/Jahr; Zürich–Lugano unter 2 h)",
+      "label": "SBB News, 10 Jahre GBT",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.bav.admin.ch/de/10-jahre-gotthard-basistunnel",
+      "title": "Bundesamt für Verkehr: 10 Jahre Gotthard-Basistunnel",
+      "label": "BAV, 10 Jahre GBT",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffelturm), Key figures",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Maximale Felsüberdeckung: alptransit.ch nicht abrufbar, weggelassen.",
+    "Entgleisung 2023 bewusst nicht thematisiert."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "445,000 trains in ten years. All of them through one single tunnel.",
+      "on_screen": "445,000 trains in 10 years",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Gotthard Base Tunnel, really?",
+      "on_screen": "How big is the Gotthard Base Tunnel, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate the Gotthard Base Tunnel.",
+      "on_screen": "the Gotthard Base Tunnel: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Gotthard Base Tunnel depends on how it is built.",
+      "on_screen": "the Gotthard Base Tunnel: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Gotthard Base Tunnel take shape in the model.",
+      "on_screen": "the Gotthard Base Tunnel as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "445,000 trains in ten years. All of them through one single tunnel.",
+      "data": {
+        "kicker": "Record in numbers · Gotthard",
+        "question": "445,000 trains in 10 years",
+        "question_at": "@445,000",
+        "number": {
+          "value": "57",
+          "unit": "km",
+          "at_word": "tunnel",
+          "y": 640
+        },
+        "badge": {
+          "text": "one single tunnel",
+          "at_word": "single",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:All"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "The Gotthard Base Tunnel in Switzerland is 57 kilometres long. According to the Swiss railways, it is the longest railway tunnel in the world. It opened for service in June 2016. Ten years on, the railway has taken stock.",
+      "data": {
+        "headline": "World's longest rail tunnel",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "57",
+            "unit": "km",
+            "label": "length",
+            "at_word": "57"
+          },
+          {
+            "value": "2016",
+            "unit": "",
+            "label": "in service",
+            "at_word": "2016"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "2 · Longest rail tunnel",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_numbers",
+      "spoken": "Since then, 276,000 freight trains and 169,000 passenger trains have run through it. Together that makes 445,000, more than half of them freight trains.",
+      "data": {
+        "headline": "Who goes through the mountain",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "276,000",
+            "unit": "",
+            "label": "freight trains",
+            "at_word": "276,000"
+          },
+          {
+            "value": "169,000",
+            "unit": "",
+            "label": "passenger trains",
+            "at_word": "169,000"
+          },
+          {
+            "value": "445,000",
+            "unit": "",
+            "label": "together",
+            "at_word": "445,000"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "3 · The trains",
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "seconds": 0.7,
+          "x": 540,
+          "y": 960
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gs_compare",
+      "spoken": "So how long is 57 kilometres? The Eiffel Tower is 330 metres tall. Lay it on its side, and about 173 of them would fit end to end inside the tunnel.",
+      "data": {
+        "headline": "Tunnel vs. Eiffel Towers lying down",
+        "a": {
+          "label": "Gotthard Base Tunnel",
+          "value": 57000,
+          "unit": "m"
+        },
+        "b": {
+          "label": "Eiffel Tower",
+          "value": 330,
+          "unit": "m"
+        },
+        "decimals": 0,
+        "bars_dy": 430,
+        "row_h": 108,
+        "order": "ba",
+        "b_at": "@Eiffel",
+        "a_at": "@57",
+        "result_at": "@173"
+      },
+      "source_ids": [
+        "S1",
+        "SE"
+      ],
+      "overlay": {
+        "kicker": "4 · Calculated",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "Zurich to Lugano now takes under two hours, about 50 minutes less than in 2015. Maintenance costs around 35 million Swiss francs a year, according to the railway.",
+      "data": {
+        "headline": "Faster across the Alps",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "< 2",
+            "unit": "h",
+            "label": "Zurich–Lugano",
+            "at_word": "Zurich"
+          },
+          {
+            "value": "−50",
+            "unit": "min",
+            "label": "vs. 2015",
+            "at_word": "50"
+          },
+          {
+            "value": "35",
+            "unit": "m CHF",
+            "label": "upkeep per year",
+            "ref": true,
+            "at_word": "35"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "5 · What it brings",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "That is about 122 trains a day, for ten years. Follow Gigastruct for the next megastructure.",
+      "data": {
+        "mode": "closing",
+        "statement": "445,000 trains in ten years.",
+        "chip": {
+          "text": "Follow Gigastruct",
+          "at_word": "Follow",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "6 · Ten-year record",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

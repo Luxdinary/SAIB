@@ -1,0 +1,666 @@
+{
+  "video_id": "megaconstruction-20261109-3-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Brenner Basistunnel: 230 km Röhren für 55 km Bahnstrecke",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Bauaufgabe. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261109-3-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.bbt-se.com/brenner-basistunnel/projektueberblick/",
+      "title": "BBT SE: Projektüberblick (55 km, 64 Tunnelkilometer, zwei eingleisige Röhren 40–70 m, Erkundungsstollen, Querschläge alle 333 m, Scheitel 790 m)",
+      "label": "BBT SE, Projektüberblick",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.bbt-se.com/projektfortschritt/baufortschritt/",
+      "title": "BBT SE: Baufortschritt (221 von ca. 230 km ausgebrochen)",
+      "label": "BBT SE, Baufortschritt",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.bbt-se.com/",
+      "title": "BBT SE: Startseite (Fahrzeit Personenzug 25 min statt 1 h 20 min)",
+      "label": "BBT SE, Startseite",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Eröffnungstermin: BBT-Seiten nennen keinen; nicht verwendet.",
+    "Kosten: nicht auf den geöffneten BBT-Seiten.",
+    "Ausbruchsstand: Seite nennt 221 und 222 km; im Video 'rund 221 km'. Seite ohne Datum, Stand = Abruf Oktober 2026.",
+    "Länge im Modell verkürzt, Röhrenquerschnitt schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "55 Kilometer Bahnstrecke. Aber rund 230 Kilometer Tunnel. Wo ist der Rest?",
+      "on_screen": "55 km Strecke. 230 km Tunnel.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Warum braucht ein 55-Kilometer-Tunnel 230 Kilometer Röhren?",
+      "on_screen": "Warum 230 km Röhren?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen der Brenner Basistunnel.",
+      "on_screen": "der Brenner Basistunnel: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei der Brenner Basistunnel schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "der Brenner Basistunnel: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie der Brenner Basistunnel im Modell entsteht.",
+      "on_screen": "der Brenner Basistunnel im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "55 Kilometer Bahnstrecke, aber rund 230 Kilometer Tunnel. Wie baut man eine Bahn so durch die Alpen?",
+      "data": {
+        "kicker": "Bauaufgabe · Brenner Basistunnel",
+        "question": "Warum 230 km Tunnel für 55 km Bahn?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Innsbruck – Franzensfeste",
+          "at": "@Alpen",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "Der Tunnel verbindet Innsbruck und Franzensfeste auf 55 Kilometern. Mit der Umfahrung Innsbruck sind es 64 Tunnelkilometer, laut Bauherr künftig die längste unterirdische Bahnverbindung der Welt. Der höchste Punkt liegt 580 Meter tiefer als der Brennerpass.",
+      "data": {
+        "headline": "Die Aufgabe",
+        "load": {
+          "label": "Tunnelkilometer",
+          "value": "64",
+          "unit": "km",
+          "sub": "55 km plus Umfahrung Innsbruck",
+          "at": "@64",
+          "dy": 540
+        },
+        "goal": {
+          "text": "Bahn flach unter dem Pass",
+          "at": "@Innsbruck",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "Die Lösung: nicht eine Röhre, sondern mehrere. Zwei eingleisige Hauptröhren liegen 40 bis 70 Meter auseinander, mittig darunter ein Erkundungsstollen.",
+      "data": {
+        "headline": "Das Prinzip",
+        "note": "Querschnitt schematisch",
+        "note_dy": 760,
+        "pins": [
+          {
+            "anchor": "west",
+            "text": "Hauptröhre",
+            "at": "@Hauptröhren",
+            "side": "up"
+          },
+          {
+            "anchor": "expl",
+            "text": "Erkundungsstollen",
+            "at": "@Erkundungsstollen",
+            "side": "down"
+          }
+        ],
+        "rule": {
+          "text": "Zwei Röhren, ein Stollen darunter.",
+          "at": "@mittig",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "Alle 333 Meter verbindet ein Querschlag die Röhren. Dazu kommen Zufahrtstunnel und drei Nothaltestellen.",
+      "data": {
+        "headline": "So wird er gebaut",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Eingleisige Hauptröhren",
+            "qty": "2",
+            "at": "@Röhren"
+          },
+          {
+            "pos": "2",
+            "part": "Erkundungsstollen",
+            "qty": "1",
+            "at": "@333"
+          },
+          {
+            "pos": "3",
+            "part": "Querschlag alle … m",
+            "qty": "333",
+            "at": "@Querschlag"
+          },
+          {
+            "pos": "4",
+            "part": "Nothaltestellen",
+            "qty": "3",
+            "at": "@Nothaltestellen"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Nachgerechnet: rund 230 Kilometer Röhren geteilt durch 55 Kilometer Strecke ergibt etwa 4,2. Und für Personenzüge: 25 Minuten statt 80, also 55 Minuten weniger.",
+      "data": {
+        "headline": "Nachgerechnet",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "Röhren ÷ Bahnstrecke",
+            "a": {
+              "value": 230,
+              "unit": "km"
+            },
+            "op": "÷",
+            "b": {
+              "value": 55,
+              "unit": "km"
+            },
+            "unit": "×",
+            "round": 0.1,
+            "decimals": 1,
+            "prefix": "≈ ",
+            "expect": 4.2,
+            "at": "@230",
+            "result_at": "@4,2"
+          },
+          {
+            "label": "Personenzug: heute 1 h 20 min, dann 25 min",
+            "a": {
+              "value": 80,
+              "unit": "min"
+            },
+            "op": "−",
+            "b": {
+              "value": 25,
+              "unit": "min"
+            },
+            "unit": "min",
+            "expect": 55,
+            "at": "@Personenzüge",
+            "result_at": "@weniger"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Stand laut Bauherr im Oktober 2026: Rund 221 dieser 230 Kilometer sind ausgebrochen. Fertig fährt der Personenzug dann in 25 Minuten durch den Berg. Folge Gigastruct für die nächste Bauaufgabe.",
+      "data": {
+        "statement": "Gelöst: ein Netz aus Röhren",
+        "sheet": "BLATT 04",
+        "rows": [
+          [
+            "Aufgabe",
+            "Bahn durch die Alpen"
+          ],
+          [
+            "Lösung",
+            "2 Röhren, 1 Stollen"
+          ],
+          [
+            "Stand",
+            "rund 221 von 230 km"
+          ],
+          [
+            "Datum",
+            "Oktober 2026"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "AUFGABE",
+        "PRINZIP",
+        "BAU",
+        "RECHNUNG",
+        "PROBE"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 0,
+        "b3": 1,
+        "b4": 2,
+        "b5": 3,
+        "b6": 5
+      }
+    },
+    "description": "Der Brenner Basistunnel ist 55 km lang, das Tunnelsystem rund 230 km. Woraus es besteht und wie weit der Ausbruch ist (Stand laut BBT SE, Oktober 2026).",
+    "companion_text": "Gerechnet: 230 km ÷ 55 km = 4,2. Quellen: BBT SE (Projektüberblick, Baufortschritt, Startseite). Stilisiertes 3D-Modell, Länge verkürzt. Folge Gigastruct.",
+    "hashtags": [
+      "brennerbasistunnel",
+      "tunnelbau",
+      "tirol",
+      "südtirol",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "230 km ÷ 55 km = 4,18",
+        "result": "gut viermal so viel Röhre wie Strecke",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "1 h 20 min = 80 min",
+        "result": "80 min Bestandsstrecke",
+        "sources": [
+          "S3"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 40000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "ridge",
+          "kind": "ridge",
+          "length": 3000,
+          "width": 1500,
+          "height": 520,
+          "bores": [
+            {
+              "z": 28,
+              "y": 60,
+              "r": 6,
+              "color": "accent"
+            },
+            {
+              "z": -28,
+              "y": 60,
+              "r": 6,
+              "color": "accent"
+            },
+            {
+              "z": 0,
+              "y": 44,
+              "r": 3.5,
+              "color": "model_inner"
+            }
+          ],
+          "color": "compare",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "fade": 0.5
+          }
+        }
+      ],
+      "anchors": {
+        "west": [
+          1500,
+          60,
+          28
+        ],
+        "east": [
+          1500,
+          60,
+          -28
+        ],
+        "expl": [
+          1500,
+          44,
+          0
+        ],
+        "gap": [
+          1500,
+          74,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [],
+            "az0": 20,
+            "az1": 10,
+            "el0": 10,
+            "el1": 8,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 560,
+            "cy": 830,
+            "box": [
+              [
+                1300,
+                20,
+                -200
+              ],
+              [
+                1700,
+                120,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.5
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [],
+            "az0": 60,
+            "az1": 80,
+            "el0": 18,
+            "el1": 14,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 545,
+            "box": [
+              [
+                1300,
+                20,
+                -200
+              ],
+              [
+                1700,
+                120,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.5
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "az0": 88,
+            "az1": 92,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 330,
+            "cy": 560,
+            "box": [
+              [
+                1300,
+                20,
+                -200
+              ],
+              [
+                1700,
+                120,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.3
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "az0": 40,
+            "az1": 25,
+            "el0": 14,
+            "el1": 10,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 470,
+            "box": [
+              [
+                1300,
+                20,
+                -200
+              ],
+              [
+                1700,
+                120,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.35,
+            "ridge.bore": [
+              [
+                0,
+                0.1
+              ],
+              [
+                "%0.9",
+                1
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [],
+            "az0": 70,
+            "az1": 55,
+            "el0": 10,
+            "el1": 12,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 560,
+            "box": [
+              [
+                1300,
+                20,
+                -200
+              ],
+              [
+                1700,
+                120,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.4
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [],
+            "az0": 25,
+            "az1": 15,
+            "el0": 20,
+            "el1": 26,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "zone": 300,
+            "cy": 520,
+            "box": [
+              [
+                1300,
+                20,
+                -200
+              ],
+              [
+                1700,
+                120,
+                200
+              ]
+            ]
+          },
+          "props": {
+            "ridge.fade": 0.55
+          }
+        }
+      }
+    }
+  }
+}

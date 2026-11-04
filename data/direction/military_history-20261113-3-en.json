@@ -1,0 +1,553 @@
+{
+  "video_id": "military_history-20261113-3-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Transit: Satellite Navigation Before GPS",
+  "notes": "Woche 1, Reihe Karte, Zeit und Kurs. Nutzer der Anfangszeit (U-Boote mit Raketen) bewusst weggelassen; Fokus Dopplerprinzip.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://secwww.jhuapl.edu/techdigest/Content/techdigest/pdf/V02-N01/02-01-Guier.pdf",
+      "title": "Guier, Weiffenbach: The Early Days of Sputnik, JHU APL Technical Digest 2(1), 1981",
+      "label": "APL Tech. Digest: Guier",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://secwww.jhuapl.edu/techdigest/Content/techdigest/pdf/V02-N01/02-01-Wyatt.pdf",
+      "title": "Wyatt: The Gestation of Transit as Perceived by One Participant, JHU APL Technical Digest 2(1), 1981",
+      "label": "APL Tech. Digest: Wyatt",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.nasa.gov/general/global-positioning-system-history/",
+      "title": "Global Positioning System History, NASA",
+      "label": "NASA: GPS-Geschichte",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Inbetriebnahme: Navy-Nutzung ab 1963, voll einsatzbereit Oktober 1968; im Video Oktober 1968."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How does a ship find its position in 1968 with a satellite, but without GPS?",
+      "on_screen": "Satellite navigation before GPS?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Satellite navigation starts with GPS? Transit was fully operational in 1968.",
+      "on_screen": "Navigation before GPS",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "The idea came from Sputnik's radio signal.",
+      "on_screen": "From Sputnik's signal",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Without a known orbit, a satellite tells you nothing.",
+      "on_screen": "First, the orbit",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a tone shift as a satellite passes overhead.",
+      "on_screen": "A tone that shifts",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How does a ship find its position in 1968 with a satellite, but without GPS?",
+      "data": {
+        "question": "Satellite navigation, but no GPS?",
+        "question_em": "no GPS",
+        "card_title": "Transit",
+        "card_meta": "APL · 1958–1968",
+        "card_no": "FILE 24",
+        "stamp": "1968",
+        "drawing": "transit_doppler.svg",
+        "packet_label": "Signal",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:1968",
+        "packet_at": "w:satellite",
+        "em_at": "w:GPS"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "On 4 October 1957 Sputnik is launched. At the APL laboratory, two physicists listen to its signal at 20 megahertz, and the tone drifts in frequency.",
+      "data": {
+        "mode": "map",
+        "headline": "A tone from orbit",
+        "places": [
+          {
+            "label": "Sputnik",
+            "code": "20 MHz",
+            "x": 600,
+            "y": 80,
+            "at": "w:Sputnik"
+          },
+          {
+            "label": "APL",
+            "code": "receiver",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:APL"
+          }
+        ],
+        "route_at": "w:listen",
+        "route_label": "tone at 20 MHz",
+        "route_label_at": "w:megahertz",
+        "wait_at": "w:physicists",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Launch: 4 October 1957",
+        "chip_at": "w:October",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Signal",
+        "packet_at": "w:signal",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "The frequency drifts",
+        "line_label_at": "w:frequency",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:approaches",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "The cause is the Doppler effect of the moving satellite. As it approaches, the frequency rises; as it moves away, it falls. From this they estimate a 95-minute orbit.",
+      "data": {
+        "headline": "The Doppler effect",
+        "drawing": "transit_doppler.svg",
+        "sheet_title": "SHEET 2 · PASS OVERHEAD",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Satellite in motion",
+            "x": 475,
+            "y": 177,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:satellite"
+          },
+          {
+            "label": "Closer: higher",
+            "x": 440,
+            "y": 240,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:approaches"
+          },
+          {
+            "label": "Further: lower",
+            "x": 560,
+            "y": 250,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:away"
+          },
+          {
+            "label": "Orbit ≈ 95 min",
+            "x": 250,
+            "y": 470,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:95-minute"
+          }
+        ],
+        "zoom": {
+          "x": 480,
+          "y": 220,
+          "scale": 1.12,
+          "at": "w:approaches",
+          "back_at": "w:95-minute",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "Frank McClure turns the idea around: if you know the orbit, the Doppler curve reveals the receiver's position. On 18 March 1958 he recommends building a navigation system.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "The idea reversed",
+        "left": {
+          "tag": "1957",
+          "title": "Place known",
+          "at": 0.3,
+          "rows": [
+            "signal reveals the orbit"
+          ]
+        },
+        "right": {
+          "tag": "1958",
+          "title": "Orbit known",
+          "at": "w:orbit",
+          "rows": [
+            {
+              "text": "signal reveals the place",
+              "at": "w:position"
+            },
+            {
+              "text": "proposal 18 Mar 1958",
+              "at": "w:March"
+            }
+          ]
+        },
+        "verdict": "The idea behind Transit",
+        "verdict_at": "w:navigation",
+        "dim_left_at": "w:position",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "17 days later a proposal reaches the Navy. Transit transmits on 150 and 400 megahertz, and in October 1968 it is fully operational.",
+      "data": {
+        "headline": "From proposal to service",
+        "nodes": [
+          {
+            "label": "Proposal",
+            "code": "50 pages",
+            "at": "w:proposal"
+          },
+          {
+            "label": "Frequencies",
+            "code": "150 + 400 MHz",
+            "at": "w:150"
+          },
+          {
+            "label": "Operational",
+            "code": "October 1968",
+            "at": "w:1968"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "count": {
+          "to": 17,
+          "label": "DAYS",
+          "at": "w:17",
+          "until": "w:1968"
+        },
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "By 1968 the APL has built 36 satellites. In 1978 the first GPS satellite is launched, and in 1981 an estimated 16,000 merchant ships use Transit.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1968 to 1981",
+        "items": [
+          {
+            "year": "1968",
+            "title": "Transit operational",
+            "sub": "36 satellites built",
+            "at": "w:1968"
+          },
+          {
+            "year": "1978",
+            "title": "First GPS satellite",
+            "sub": "NAVSTAR",
+            "at": "w:1978"
+          },
+          {
+            "year": "1981",
+            "title": "16,000 merchant ships",
+            "sub": "use Transit",
+            "at": "w:1981"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "Transit was the forerunner. Today, says NASA, the civil GPS service is free for all users. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Transit",
+        "card_meta": "APL · 1958–1968",
+        "card_no": "FILE 24",
+        "stamp": "1968",
+        "drawing": "transit_doppler.svg",
+        "statement": "First Doppler, then GPS",
+        "statement_at": "w:forerunner",
+        "stamp_at": "w:Transit",
+        "note": "GPS standard service: free",
+        "note_at": "w:free",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Signal",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Position: wanted",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Signal: 20 MHz",
+          "tone": "amber",
+          "offset": 9.5
+        },
+        {
+          "beat": "b3",
+          "text": "Doppler: identified",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b4",
+          "text": "Idea: reversed",
+          "tone": "amber",
+          "offset": 1.2
+        },
+        {
+          "beat": "b5",
+          "text": "Transit: operational",
+          "tone": "muted",
+          "offset": 9.0
+        },
+        {
+          "beat": "b6",
+          "text": "Users: 16,000 ships",
+          "tone": "muted",
+          "offset": 9.0
+        },
+        {
+          "beat": "b7",
+          "text": "GPS: free",
+          "tone": "muted",
+          "offset": 6.1
+        }
+      ]
+    },
+    "description": "Transit: Sputnik's radio signal led in 1958 to the idea of satellite navigation using the Doppler effect, fully operational in 1968. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "satellite",
+      "navigation",
+      "historyoftechnology",
+      "doppler",
+      "history"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

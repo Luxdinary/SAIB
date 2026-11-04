@@ -1,0 +1,102 @@
+{
+  "brand_id": "menswear",
+  "brand_name": "Suitwerk",
+  "date": "2026-11-03",
+  "provider": "mock",
+  "model": "mock",
+  "dry_run": true,
+  "topics": [
+    {
+      "key": "nr:10",
+      "nr": "10",
+      "title": "Mohair im Anzug: Glanz und Sprungkraft",
+      "aufbau": "C",
+      "aufbau_note": "",
+      "langs": {
+        "de": {
+          "video_id": "menswear-20261103-d3-de",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\menswear-20261103-d3-de.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [
+            "story: b2 and b3 use the same scene type back to back",
+            "story: no benefit beat",
+            "erster Beat beginnt nicht mit dem Text des gewählten Hooks",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 5105,
+          "llm_tokens_out": 0,
+          "llm_tokens_cache": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "",
+          "dry_run_diag": "warning: hook beat text differs from candidate H5; using the beat text\nvoice: mock 66.0 s, 0.0000 USD\ntimings: 185 words via mock (none, 0 s)\n  b1  hook          kw_photo          0.00 + 7.04\n  b2  explanation   kw_weave          7.04 +13.45\n  b3  explanation   kw_weave         20.49 +11.90\n  b4  demonstration kw_draft         32.38 + 9.63\n  b5  insight       kw_flip          42.02 +10.28\n  b6  close         kw_close         52.30 +16.52\nsound: on, palette paper, 37 cues (close 1, event 22, hook_end 1, intro 1, plan 9, scene_change 3), music procedural/warm [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 0 errors, craft 3 warnings\n  [warn  ] NOT identical_consecutive_scenes: same layout back to back: [('b2', 'b3')]\n  [warn  ] NOT visual_cuts_rhythm: 57 visual events, median interval 1.0 s (target 1.2-8.0)\ndry run: ok (direction checks pass without video)",
+          "dry_run_repairs": 0,
+          "dry_run_done": true,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [],
+          "errors": []
+        },
+        "en": {
+          "video_id": "menswear-20261103-d3-en",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\menswear-20261103-d3-en.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [
+            "story: b2 and b3 use the same scene type back to back",
+            "story: no benefit beat",
+            "erster Beat beginnt nicht mit dem Text des gewählten Hooks",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 3140,
+          "llm_tokens_out": 0,
+          "llm_tokens_cache": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "",
+          "dry_run_diag": "warning: hook beat text differs from candidate H5; using the beat text\nvoice: mock 62.6 s, 0.0000 USD\ntimings: 191 words via mock (none, 0 s)\n  b1  hook          kw_photo          0.00 + 7.75\n  b2  explanation   kw_weave          7.75 +14.04\n  b3  explanation   kw_weave         21.80 + 9.64\n  b4  demonstration kw_draft         31.44 + 8.19\n  b5  insight       kw_flip          39.63 + 9.02\n  b6  close         kw_close         48.65 +16.73\nsound: on, palette paper, 39 cues (close 1, event 24, hook_end 1, intro 1, plan 9, scene_change 3), music procedural/warm [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 0 errors, craft 3 warnings\n  [warn  ] NOT identical_consecutive_scenes: same layout back to back: [('b2', 'b3')]\n  [warn  ] NOT visual_cuts_rhythm: 57 visual events, median interval 0.8 s (target 1.2-8.0)\ndry run: ok (direction checks pass without video)",
+          "dry_run_repairs": 0,
+          "dry_run_done": true,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [],
+          "errors": []
+        }
+      },
+      "marked": false,
+      "notes": [],
+      "errors": []
+    }
+  ],
+  "skipped": [
+    "Nr. 1 · Stoffgewicht: Was die Zahl wirklich misst · Reihe Unter dem Fadenzähler · Aufbau B · Tag 04.11.: reserviert für die Marken-Sitzung (Tag 04.11.)",
+    "Nr. 3 · Kammgarn oder Streichgarn: der Weg zum Garn · Reihe Unter dem Fadenzähler · Aufbau C · Tag 04.11.: reserviert für die Marken-Sitzung (Tag 04.11.)",
+    "ohne Nr. · Tweed nach dem Webstuhl · Aufbau D · Tag 05.11.: reserviert für die Marken-Sitzung (Tag 05.11.)",
+    "Nr. 6 · Fischgrat: ein Köper, der die Richtung wechselt · Reihe Unter dem Fadenzähler · Aufbau A · Tag 06.11.: nicht geeignet (Titel nennt 'fischgrat'; braucht neuen Code laut config/daily.yaml)",
+    "Nr. 7 · Hahnentritt: gewebt, nicht gedruckt · Reihe Unter dem Fadenzähler · Aufbau E · Tag 06.11.: nicht geeignet (Titel nennt 'hahnentritt'; braucht neuen Code laut config/daily.yaml)"
+  ],
+  "errors": [],
+  "started_at": "2026-11-03T17:04:02+00:00",
+  "finished_at": "2026-11-03T17:04:50+00:00"
+}

@@ -1,0 +1,552 @@
+{
+  "video_id": "military_history-20261113-1-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Vindolanda: Letters on Wood from a Roman Fort",
+  "notes": "Woche 1, Reihe Signal und Nachricht. Alltag und Schrifttechnik; Personen nur als Absenderin und Empfängerin des Dokuments.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://artsandculture.google.com/asset/writing-tablet-with-a-letter-inviting-sulpicia-lepidina-the-commander-s-wife-to-a-birthday-party/kAHBJkxO7nDWsw",
+      "title": "Writing-tablet with a letter inviting Sulpicia Lepidina to a birthday party, British Museum 1986,1001.64",
+      "label": "British Museum",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://romaninscriptionsofbritain.org/inscriptions/TabVindol291",
+      "title": "Tab.Vindol. 291, Birthday Invitation of Sulpicia Lepidina, Roman Inscriptions of Britain",
+      "label": "RIB: Tab.Vindol. 291",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Datierung 97/103 (British Museum) oder 97–105 (RIB); im Video 97 bis 105 laut RIB."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you write a letter on the edge of the Roman Empire around the year 100?",
+      "on_screen": "A letter from the edge of the empire?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Romans only wrote in stone? This letter is ink on thin wood.",
+      "on_screen": "Ink on wood",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "A birthday invitation from Hadrian's Wall, found in 1985.",
+      "on_screen": "An invitation to a birthday",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wood and ink, and it still survived.",
+      "on_screen": "It survived",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch how a wooden tablet was folded and addressed.",
+      "on_screen": "Folded and addressed",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you write a letter on the edge of the Roman Empire around the year 100?",
+      "data": {
+        "question": "A letter from the edge of the empire?",
+        "question_em": "edge of the empire",
+        "card_title": "Tab. Vindol. 291",
+        "card_meta": "VINDOLANDA · C. AD 100",
+        "card_no": "FILE 22",
+        "stamp": "1985",
+        "drawing": "vindolanda_tablet.svg",
+        "packet_label": "Letter",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:100",
+        "packet_at": "w:letter",
+        "em_at": "w:edge"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "Vindolanda is a fort south of Hadrian's Wall. In 1985 a letter is found there: an invitation to a birthday on 11 September.",
+      "data": {
+        "mode": "map",
+        "headline": "A find near the Wall",
+        "places": [
+          {
+            "label": "Vindolanda",
+            "code": "fort",
+            "x": 600,
+            "y": 80,
+            "at": "w:Vindolanda"
+          },
+          {
+            "label": "Hadrian's Wall",
+            "code": "to the north",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Hadrian's"
+          }
+        ],
+        "route_at": "w:south",
+        "route_label": "south of the Wall",
+        "route_label_at": "w:fort",
+        "wait_at": "w:1985",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Found in 1985",
+        "chip_at": "w:found",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Letter",
+        "packet_at": "w:letter",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Invitation for 11 September",
+        "line_label_at": "w:September",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:scribe",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "The letter is written in ink on thin wood, folded in two halves, 223 millimetres long. A scribe writes the main text; the last four lines are by the sender herself.",
+      "data": {
+        "headline": "Ink on wood",
+        "drawing": "vindolanda_tablet.svg",
+        "sheet_title": "SHEET 2 · DIPTYCH",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Ink on wood",
+            "x": 120,
+            "y": 190,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:ink"
+          },
+          {
+            "label": "Folded: 2 halves",
+            "x": 360,
+            "y": 215,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:folded"
+          },
+          {
+            "label": "223 mm long",
+            "x": 360,
+            "y": 140,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:223"
+          },
+          {
+            "label": "4 lines in her own hand",
+            "x": 520,
+            "y": 230,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:last"
+          }
+        ],
+        "zoom": {
+          "x": 360,
+          "y": 215,
+          "scale": 1.12,
+          "at": "w:scribe",
+          "back_at": "w:sender",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "The sender is Claudia Severa, wife of a commander. The recipient is Sulpicia Lepidina, wife of the prefect of the Ninth Cohort of Batavians. The address is on the back.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "From whom, to whom",
+        "left": {
+          "tag": "From",
+          "title": "Claudia Severa",
+          "at": "w:Claudia",
+          "rows": [
+            {
+              "text": "wife of a commander",
+              "at": "w:commander"
+            }
+          ]
+        },
+        "right": {
+          "tag": "To",
+          "title": "Sulpicia Lepidina",
+          "at": "w:Sulpicia",
+          "rows": [
+            {
+              "text": "9th Cohort of Batavians",
+              "at": "w:Batavians"
+            }
+          ]
+        },
+        "verdict": "Address on the back",
+        "verdict_at": "w:address",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "The letter's journey: written at a nearby fort, folded, addressed, taken to Vindolanda, and dug up again in 1985.",
+      "data": {
+        "headline": "The letter's journey",
+        "nodes": [
+          {
+            "label": "Nearby fort",
+            "code": "written",
+            "at": "w:written"
+          },
+          {
+            "label": "Folded",
+            "code": "2 halves",
+            "at": "w:folded"
+          },
+          {
+            "label": "Addressed",
+            "code": "on the back",
+            "at": "w:addressed"
+          },
+          {
+            "label": "Vindolanda",
+            "code": "found 1985",
+            "at": "w:1985"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Letter",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "The letter is dated to AD 97 to 105. It is found in 1985, and in 1986 it enters the British Museum.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 97 to 1986",
+        "items": [
+          {
+            "year": "97–105",
+            "title": "Letter written",
+            "sub": "dating by RIB",
+            "at": "w:97"
+          },
+          {
+            "year": "1985",
+            "title": "Found",
+            "sub": "Vindolanda",
+            "at": "w:1985"
+          },
+          {
+            "year": "1986",
+            "title": "British Museum",
+            "sub": "reg. no. 1986,1001.64",
+            "at": "w:1986"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "The sender's lines are thought to be among the earliest known Latin writing by a woman. The tablet is now in the British Museum. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Tab. Vindol. 291",
+        "card_meta": "VINDOLANDA · C. AD 100",
+        "card_no": "FILE 22",
+        "stamp": "1985",
+        "drawing": "vindolanda_tablet.svg",
+        "statement": "One of the earliest hands of a woman",
+        "statement_at": "w:earliest",
+        "stamp_at": "w:tablet",
+        "note": "British Museum 1986,1001.64",
+        "note_at": "w:British",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Letter",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Letter: in transit",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b2",
+          "text": "Found: 1985",
+          "tone": "amber",
+          "offset": 4.6
+        },
+        {
+          "beat": "b3",
+          "text": "Hand: scribe + own",
+          "tone": "amber",
+          "offset": 8.5
+        },
+        {
+          "beat": "b4",
+          "text": "Address: on the back",
+          "tone": "amber",
+          "offset": 12.4
+        },
+        {
+          "beat": "b5",
+          "text": "Destination: Vindolanda",
+          "tone": "muted",
+          "offset": 6.1
+        },
+        {
+          "beat": "b6",
+          "text": "Dated: 97–105",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b7",
+          "text": "Now: British Museum",
+          "tone": "muted",
+          "offset": 11.0
+        }
+      ]
+    },
+    "description": "A letter on wood from Hadrian's Wall: a birthday invitation from around AD 100, its last lines in a woman's hand. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "romans",
+      "vindolanda",
+      "history",
+      "writing",
+      "archaeology"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

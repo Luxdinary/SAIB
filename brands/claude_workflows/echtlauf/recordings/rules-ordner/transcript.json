@@ -1,0 +1,139 @@
+{
+  "spec": "rules-ordner",
+  "runs": {
+    "L1": {
+      "title": "Arbeit in tests/",
+      "prompt": "Lies tests/alt.test.js und lege daneben die Datei tests/neu.test.js an, die prüft, dass 2 + 2 gleich 4 ist.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 10.868,
+      "lines": [
+        {
+          "t": 5.656,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 6.701,
+          "kind": "tool",
+          "id": "toolu_01QeaFu56cRHLmwFWPT8KRE5",
+          "text": "Read: .\\tests\\alt.test.js"
+        },
+        {
+          "t": 6.778,
+          "kind": "result",
+          "id": "toolu_01QeaFu56cRHLmwFWPT8KRE5",
+          "text": "1\tconst assert = require(\"assert\");\n2\tassert.strictEqual(1 + 1, 2);\n3"
+        },
+        {
+          "t": 8.61,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 8.919,
+          "kind": "tool",
+          "id": "toolu_011vfiTEMpKDMPyqDvt2W1pj",
+          "text": "Write: .\\tests\\neu.test.js"
+        },
+        {
+          "t": 8.945,
+          "kind": "result",
+          "id": "toolu_011vfiTEMpKDMPyqDvt2W1pj",
+          "text": "File created successfully at: .\\tests\\neu.test.js (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 10.304,
+          "kind": "text",
+          "text": "Ich habe `tests/neu.test.js` neben `tests/alt.test.js` angelegt. Die Datei prüft mit `assert.strictEqual(2 + 2, 4)`, im selben Stil wie `alt.test.js`.\n\nDie Regel in `.claude/rules/tests.md` verlangt, dass jede Datei in `tests/` mit `// TEST-REGEL` beginnt, daher steht diese Zeile ganz oben in `neu.test.js`.\n\n`alt.test.js` hat diese Zeile noch nicht. Ich habe sie nicht hinzugefügt, weil du das nicht verlangt hast. Soll ich sie ergänzen?"
+        },
+        {
+          "t": 10.319,
+          "kind": "end",
+          "text": "Ende nach 10.3 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 4697,
+        "num_turns": 3,
+        "total_cost_usd": 0.00123069,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Arbeit in src/",
+      "prompt": "Lies src/alt.js und lege daneben die Datei src/neu.js an, die zwei Zahlen multipliziert.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 11.406,
+      "lines": [
+        {
+          "t": 4.701,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 5.855,
+          "kind": "tool",
+          "id": "toolu_017kCYXEe43qRaSmxkDiCJYP",
+          "text": "Read: .\\src\\alt.js"
+        },
+        {
+          "t": 6.039,
+          "kind": "result",
+          "id": "toolu_017kCYXEe43qRaSmxkDiCJYP",
+          "text": "1\tmodule.exports = (a, b) => a + b;\n2"
+        },
+        {
+          "t": 8.584,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 8.621,
+          "kind": "tool",
+          "id": "toolu_01QRi8yj9ND4qJa78PqaHs22",
+          "text": "Write: .\\src\\neu.js"
+        },
+        {
+          "t": 8.645,
+          "kind": "result",
+          "id": "toolu_01QRi8yj9ND4qJa78PqaHs22",
+          "text": "File created successfully at: .\\src\\neu.js (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 10.844,
+          "kind": "text",
+          "text": "Ich habe `src/neu.js` neben `src/alt.js` angelegt:\n\n```js\nmodule.exports = (a, b) => a * b;\n```\n\nEs folgt dem Export-Stil von `alt.js`, das die Summe `(a, b) => a + b` exportiert. `alt.js` habe ich nicht verändert."
+        },
+        {
+          "t": 10.867,
+          "kind": "end",
+          "text": "Ende nach 10.9 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 6199,
+        "num_turns": 3,
+        "total_cost_usd": 0.00053576,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

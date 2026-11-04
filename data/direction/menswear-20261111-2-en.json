@@ -1,0 +1,561 @@
+{
+ "video_id": "menswear-20261111-2-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Braces replace the belt, they don't join it",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema A02 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S4. 'Nicht beides' ist Logik (Hosenträger als Alternative), keine zitierte Regel; Clips nicht als falsch dargestellt.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Waistband",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "belt as well: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "double support",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "buttoned in",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "dinner suit: no belt",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "waistcoat: no belt",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "instead, not as well",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "braces on their own",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Braces and a belt at once? Drake's describes braces as an alternative to a belt. Plus: buttons or clips, why dinner suit trousers have no belt loops (Suitsupply, Proper Cloth), and what Debrett's says.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "braces",
+   "blacktie",
+   "styletips",
+   "suit"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.drakes.com/blogs/news/why-braces-matter",
+   "title": "Drake's, Why braces matter: Hosenträger als Alternative zu Gürtel oder Seitenverstellern; Einknöpfen traditioneller als Clips, Knöpfe mitgeliefert; Hose hängt ruhiger von den Schultern",
+   "checked_at": "2026-11-01",
+   "label": "Drake's, Why braces matter"
+  },
+  {
+   "id": "S2",
+   "url": "https://suitsupply.com/en-us/journal/blacktie-attire-decoded.html",
+   "title": "Suitsupply, Black tie attire decoded: Smokinghosen ohne Gürtelschlaufen, mit innen liegenden Hosenträgerknöpfen und Seitenverstellern",
+   "checked_at": "2026-11-01",
+   "label": "Suitsupply, Black Tie"
+  },
+  {
+   "id": "S3",
+   "url": "https://propercloth.com/reference/custom-trouser-design-business-casual-and-formal/",
+   "title": "Proper Cloth, Custom trouser design: zum Smoking nie ein Gürtel, traditionell Hosenträger und Seitenversteller",
+   "checked_at": "2026-11-01",
+   "label": "Proper Cloth, Trousers"
+  },
+  {
+   "id": "S4",
+   "url": "https://debretts.com/addressing-the-dress-code/",
+   "title": "Debrett's, Addressing the Dress Code: kein Gürtel zur Weste oder zum Zweireiher",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  }
+ ],
+ "unverified": [
+  "Keine Quelle sagt wörtlich 'nie Gürtel und Hosenträger zugleich'; im Video als Folgerung aus 'Alternative' formuliert.",
+  "Clip-Hosenträger: laut Drake's nur weniger traditionell, nicht falsch."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Braces and a belt?",
+   "on_screen": "Braces and a belt?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Belt plus braces? That's doubling up.",
+   "on_screen": "Belt plus braces? That's doubling up.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Dinner suit trousers have no belt loops",
+   "on_screen": "Dinner suit trousers have no belt loops",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Under braces, a belt has nothing to hold",
+   "on_screen": "Under braces, a belt has nothing to hold",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Belt out, braces in",
+   "on_screen": "Belt out, braces in",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Hosenträgern, Lupe auf dem Knopf am Bund",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die verbreitete Doppellösung als Frage; Antwort: statt, nicht zusätzlich."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 7,
+   "spoken": "Braces, and a belt on top, just to be safe? That would be doubling up. Braces come instead of a belt, not in addition to it.",
+   "data": {
+    "question": "Braces and a belt?",
+    "object": {
+     "kind": "torso",
+     "hold": "braces",
+     "tie_tip": 520
+    },
+    "target": "brace",
+    "badge": "?",
+    "question_at": 0.3,
+    "hold_end": true,
+    "badge_at": "w:belt",
+    "loupe_at": "w:belt",
+    "nie_at": "w:doubling"
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 14,
+   "spoken": "The London outfitter Drake's describes braces as an alternative: to a belt, or to side adjusters on the waistband. The trousers then hang from your shoulders and fall more cleanly. A belt underneath would have nothing left to hold.",
+   "data": {
+    "headline": "What holds the trousers?",
+    "object": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "braces",
+     "tie_tip": 520
+    },
+    "target": "belt",
+    "zoom": 1.4,
+    "label": "Braces instead of a belt",
+    "strain": false,
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Drake",
+    "zoom_at": "w:braces",
+    "flip_at": "w:alternative",
+    "label_at": "w:shoulders"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Drake"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "How do they attach? According to Drake's, button-in braces are the more traditional kind, and Drake's supplies the buttons for the waistband. Clips work too; they are simply considered less traditional.",
+   "data": {
+    "headline": "Buttons or clips?",
+    "stages": [
+     {
+      "object": {
+       "kind": "torso",
+       "hold": "braces",
+       "neck": "none"
+      },
+      "at": 0.0,
+      "tags": [
+       {
+        "spot": "brace",
+        "text": "button-in",
+        "sub": "more traditional",
+        "tone": "always",
+        "at": "w:button"
+       },
+       {
+        "spot": "waistband",
+        "text": "buttons",
+        "sub": "supplied by Drake's",
+        "tone": "always",
+        "at": "w:buttons"
+       },
+       {
+        "spot": "brace_r",
+        "text": "clips",
+        "sub": "less traditional",
+        "tone": "sometimes",
+        "at": "w:Clips"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Drake"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "The dinner suit makes it clearest. According to Suitsupply, dinner suit trousers never have belt loops; they have inside buttons for braces and side adjusters instead. Proper Cloth is just as clear: never a belt with a dinner suit.",
+   "data": {
+    "headline": "With a dinner suit",
+    "left": {
+     "title": "Dinner suit",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "dinner": true,
+      "lapel": "shawl",
+      "neck": "bow"
+     },
+     "tag": "no belt loops on trousers",
+     "pulses": [
+      {
+       "target": "waist",
+       "at": "w:never#2",
+       "tone": "red"
+      }
+     ]
+    },
+    "right": {
+     "title": "Underneath",
+     "object": {
+      "kind": "torso",
+      "hold": "braces",
+      "neck": "none"
+     },
+     "target": "brace",
+     "tag": "inside buttons, adjusters",
+     "pulses": [
+      {
+       "target": "brace",
+       "at": "w:braces"
+      },
+      {
+       "target": "waistband",
+       "at": "w:side"
+      }
+     ]
+    },
+    "left_at": "w:dinner",
+    "left_tag_at": "w:loops",
+    "right_at": "w:inside",
+    "right_tag_at": "w:adjusters",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Suitsupply"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "Debrett's, the British guide to etiquette, adds two more cases: no belt with a waistcoat, and none with a double-breasted jacket. Once braces are doing the holding, the trousers need no second support.",
+   "data": {
+    "headline": "And elsewhere?",
+    "object": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0,
+      1
+     ]
+    },
+    "target": "belt",
+    "zoom": 1.3,
+    "label": "No belt with double-breasted",
+    "strain": false,
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Debrett",
+    "zoom_at": "w:adds",
+    "error_at": "w:waistcoat",
+    "flip_at": "w:double",
+    "label_at": "w:Once"
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "In short: braces replace the belt, they don't join it. Buttoned in is the traditional way, clips work too. And with a dinner suit, you never wear a belt.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Instead, not as well",
+      "sub": "one or the other holds",
+      "object": {
+       "kind": "torso",
+       "hold": "belt",
+       "tie_tip": 520
+      },
+      "at": "w:braces",
+      "then": {
+       "hold": "braces"
+      },
+      "then_at": "w:replace"
+     },
+     {
+      "title": "Buttons: traditional",
+      "sub": "per Drake's; clips work too",
+      "object": {
+       "kind": "torso",
+       "hold": "braces",
+       "tie_tip": 520
+      },
+      "at": "w:Buttoned",
+      "ring": "brace",
+      "ring_at": "w:traditional"
+     },
+     {
+      "title": "Dinner suit: no belt",
+      "sub": "Suitsupply, Proper Cloth",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "dinner": true,
+       "lapel": "shawl",
+       "neck": "bow"
+      },
+      "at": "w:dinner",
+      "ring": "waist",
+      "ring_at": "w:belt#2",
+      "ring_tone": "red"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Held from above, with no belt on top. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 520
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "braces",
+     "tie_tip": 520
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "brace",
+    "fix_at": "w:Held",
+    "ring_at": "w:above",
+    "statement_at": "w:with",
+    "chip_at": "w:eye",
+    "statement": "Instead. Not as well.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

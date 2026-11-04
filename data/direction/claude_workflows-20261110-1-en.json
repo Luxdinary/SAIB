@@ -1,0 +1,579 @@
+{
+  "video_id": "claude_workflows-20261110-1-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "How Claude Code works through a task",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent A: englische Fassung von claude_workflows-20261110-1-de, sprachlich angepasst, gleiche Quellen und Szenen. Terminalzeilen beschreiben das Doku-Beispiel (fix the failing tests), keine echte Ausgabe.",
+  "hook": {
+    "id": "H5",
+    "note": "Highest-scoring demonstration: the docs' own example prompt, then the phases on screen."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "What does Claude Code actually do after you hit Enter?",
+      "on_screen": "What happens after Enter?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "prompt, then an empty window",
+      "why": {
+        "visual": "little action"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude Code just writes code? The docs say it gathers context first and checks at the end.",
+      "on_screen": "It just writes code?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "text gets crossed out",
+      "why": {
+        "truth": "phases blend together, 'first' is simplified"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Without tools, Claude could only answer with text. Tools are what make it an agent.",
+      "on_screen": "No tools, just text",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "tool bar appears",
+      "why": {
+        "truth": "how-it-works: Without tools, Claude can only respond with text"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "If you don't know how Claude Code works, you'll often step in too late.",
+      "on_screen": "Stepping in too late?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "stop hand",
+      "why": {
+        "truth": "inference, not stated in the docs"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "You type one line: fix the failing tests. What does Claude Code do with it?",
+      "on_screen": "What does Claude do with it?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "task in the window, marker, click, question",
+      "why": {
+        "truth": "example taken from the docs (fix the failing tests)",
+        "visual": "task and test run visible"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "How Claude Code works: the agentic loop (gather context, take action, verify results; phases blend together; tools throughout; you can interrupt at any point); models reason, tools act, Claude Code is the agentic harness; five tool categories; example: fix the failing tests",
+      "url": "https://code.claude.com/docs/en/how-claude-code-works",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, how it works"
+    },
+    {
+      "id": "S2",
+      "title": "Overview: Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools",
+      "url": "https://code.claude.com/docs/en/overview",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, overview"
+    }
+  ],
+  "unverified": [
+    "How Claude Code displays each step in the terminal: not checked; the terminal lines describe the steps of the docs example, not real output (animated view).",
+    "File name login.test.ts and '1 test failing': example values.",
+    "That Claude always picks exactly this order: not claimed; the docs say 'Claude might' and that the loop adapts to the task."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "npm test",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Tests: failing",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Plan: three phases",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "Loop: running",
+          "tone": "accent"
+        },
+        {
+          "beat": "b4",
+          "text": "Tools: ready",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Loop: verifying",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Tests: passing",
+          "tone": "ok"
+        },
+        {
+          "beat": "b7",
+          "text": "Tests: passing",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "According to the Claude Code docs, Claude works through three phases: gather context, take action, verify results. The phases blend together, tools are used throughout, and you can interrupt at any point. The model does the reasoning; Claude Code provides the tools and manages the context.",
+    "companion_text": "More Claude workflows, step by step: follow Promptwerk. Based on the Claude Code docs (How Claude Code works, Overview), retrieved 2026-11-01. The editor and terminal are an animation, not a screen recording; the steps follow the example in the docs. Limit: this isn't a fixed sequence, the docs say the loop adapts to what you ask.",
+    "hashtags": [
+      "claudecode",
+      "aiagent",
+      "aiworkflow",
+      "coding",
+      "developers"
+    ],
+    "short_title": "Aufgabe in drei Phasen"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "You type one line: fix the failing tests. What does Claude Code do with it?",
+      "data": {
+        "question": "What does Claude do with it?",
+        "chip": "just one line?",
+        "tabs": [
+          {
+            "name": "Task",
+            "active": true
+          },
+          "npm test"
+        ],
+        "file": "npm test",
+        "lines": [
+          [
+            [
+              "com",
+              "# Your task"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "> "
+            ],
+            [
+              "",
+              "Fix the failing"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "kw",
+              "tests"
+            ]
+          ]
+        ],
+        "focus_line": 1,
+        "zoom": 1.08,
+        "chip_word": "one",
+        "mark_word": "fix",
+        "click_word": "failing",
+        "env_word": "tests",
+        "question_word": "What"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:type"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "The docs describe three phases: gather context, take action, verify results. Claude uses tools throughout, and each result feeds into the next step.",
+      "data": {
+        "kicker": "Claude Code Docs · How it works",
+        "page_title": "How Claude Code works",
+        "quotes": [
+          "three phases: gather context, take action, and verify results",
+          "Claude uses tools throughout"
+        ],
+        "translation_label": "In short",
+        "translation": "Gather, act, verify. With tools.",
+        "page_word": "docs",
+        "quote1_word": "phases",
+        "translation_word": "verify",
+        "quote2_word": "tools"
+      },
+      "overlay": {
+        "title": "Three phases",
+        "marker_at": "w:phases",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "These phases blend together, and the loop adapts. A question might only need context; a bug fix cycles through all three. You can step in at any point and change direction.",
+      "data": {
+        "headline": "",
+        "gate": 3,
+        "chip": "until it's done",
+        "nodes": [
+          {
+            "label": "Your prompt"
+          },
+          {
+            "label": "Gather context"
+          },
+          {
+            "label": "Take action"
+          },
+          {
+            "label": "Verify",
+            "hook": true
+          },
+          {
+            "label": "done"
+          }
+        ],
+        "travel_word": "phases",
+        "gate_word": "cycles",
+        "travel_end_word": "three"
+      },
+      "overlay": {
+        "title": "One loop",
+        "marker_at": "w:blend",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "The built-in tools fall into five groups: reading and editing files, search, running commands, the web, and code intelligence for type errors and definitions. Claude picks the tools based on your prompt and what it learns along the way.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "File operations",
+            "code": "read, edit, create",
+            "at_word": "reading"
+          },
+          {
+            "title": "Search",
+            "code": "patterns, regex, codebase",
+            "at_word": "search"
+          },
+          {
+            "title": "Execution",
+            "code": "shell, tests, git",
+            "at_word": "running"
+          },
+          {
+            "title": "Web",
+            "code": "search, fetch docs",
+            "at_word": "web"
+          },
+          {
+            "title": "Code intelligence",
+            "code": "type errors, definitions",
+            "at_word": "intelligence"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "Five kinds of tools",
+        "marker": "fakt",
+        "marker_at": "w:tools",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "For your tests, it might look like this: Claude runs the test suite and reads the error output. Then it finds the relevant files, reads them, edits the code, and finally runs the tests again.",
+      "data": {
+        "title": "claude · demo-projekt",
+        "focus_line": 2,
+        "stamp": "verify",
+        "annotation": "each result steers the next",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Fix the failing tests"
+              ]
+            ],
+            "at_word": "For"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Run the test suite: npm test"
+              ]
+            ],
+            "at_word": "runs"
+          },
+          {
+            "kind": "err",
+            "text": "  1 test failing: login.test.ts",
+            "at_word": "error"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Find and read files"
+              ]
+            ],
+            "at_word": "finds"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Edit the code"
+              ]
+            ],
+            "at_word": "edits"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Run tests again: passing"
+              ]
+            ],
+            "at_word": "finally"
+          }
+        ],
+        "mark_word": "error",
+        "click_word": "relevant",
+        "stamp_word": "finally",
+        "annotation_word": "again",
+        "height": 560,
+        "file": "npm test",
+        "file_open_word": "suite",
+        "file_word": "again",
+        "top": 20
+      },
+      "overlay": {
+        "title": "The loop in action",
+        "example": true,
+        "marker_at": "w:might",
+        "dim_at": "w:relevant",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "There are two parts: the model does the reasoning. Claude Code is the layer around it that provides those tools and manages the context.",
+      "data": {
+        "top": {
+          "title": "Model",
+          "verdict": "reasons",
+          "rows": [
+            "plans the steps",
+            "picks the tools"
+          ]
+        },
+        "bottom": {
+          "title": "Claude Code",
+          "verdict": "acts",
+          "rows": [
+            "provides the tools",
+            "manages the context"
+          ]
+        },
+        "top_word": "model",
+        "bottom_word": "layer"
+      },
+      "overlay": {
+        "title": "Thinking and doing",
+        "marker": "auslegung",
+        "marker_at": "w:parts",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Gather, act, verify, as often as it takes. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "npm test: passing",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Run tests again: passing"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Loop finished"
+          }
+        ],
+        "statement": "Gather. Act. Verify. As often as it takes.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_word": "Gather",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

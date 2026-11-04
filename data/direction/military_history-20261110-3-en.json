@@ -1,0 +1,559 @@
+{
+  "video_id": "military_history-20261110-3-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Can You See the Great Wall from Space?",
+  "notes": "Woche 1, Reihe Mythos geprüft. Astronauten nur als Fotograf ohne Namen; keine Zitate.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/PDFs/great_wall_less_great_from_space.pdf",
+      "title": "China's Wall Less Great in View from Space, NASA, 09.05.2005",
+      "label": "NASA (2005)",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3972694",
+      "title": "López-Gil: Is it Really Possible to See the Great Wall of China from Space with a Naked Eye? Journal of Optometry 1(1), 2008",
+      "label": "Journal of Optometry",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.nasa.gov/image-article/great-wall/",
+      "title": "Great Wall (image article), NASA, 02.04.2009",
+      "label": "NASA (2009)",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Aussagen einzelner Astronauten nicht primär geprüft; nicht im Video."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Can you see the Great Wall of China from space with the naked eye?",
+      "on_screen": "Visible from space?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "You can see the wall from the Moon? People have said so since 1938; it is not true.",
+      "on_screen": "Visible from the Moon?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "From orbit, the wall is like a cable seen from half a kilometre.",
+      "on_screen": "A cable from 500 m",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "A wall the colour of the ground disappears.",
+      "on_screen": "Hidden by the ground",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch how narrow six metres look from 160 kilometres.",
+      "on_screen": "6 metres from 160 km",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Can you see the Great Wall of China from space with the naked eye?",
+      "data": {
+        "question": "The wall from space, with the naked eye?",
+        "question_em": "naked eye",
+        "card_title": "Great Wall",
+        "card_meta": "CHINA · FROM ORBIT",
+        "card_no": "FILE 20",
+        "stamp": "Myth?",
+        "drawing": "great_wall_orbit.svg",
+        "packet_label": "View",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:space",
+        "packet_at": "w:Wall",
+        "em_at": "w:eye"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "The wall is about 7300 kilometres long. But what matters is not its length, it is its width: mostly less than six metres.",
+      "data": {
+        "mode": "map",
+        "headline": "Long, but narrow",
+        "places": [
+          {
+            "label": "Length",
+            "code": "≈ 7,300 km",
+            "x": 600,
+            "y": 80,
+            "at": "w:kilometres"
+          },
+          {
+            "label": "Width",
+            "code": "mostly < 6 m",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:width"
+          }
+        ],
+        "route_at": "w:But",
+        "route_label": "length does not help",
+        "route_label_at": "w:length",
+        "wait_at": "w:matters",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "under 6 m wide",
+        "chip_at": "w:six",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "View",
+        "packet_at": "w:wall",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Width decides",
+        "line_label_at": "w:metres",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:cable",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "From 160 kilometres up, that is like spotting a two-centimetre cable from over half a kilometre away. You would need eyesight 7.7 times sharper than normal.",
+      "data": {
+        "headline": "A cable from 500 m",
+        "drawing": "great_wall_orbit.svg",
+        "sheet_title": "SHEET 2 · LINE OF SIGHT",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Orbit ≈ 160 km",
+            "x": 380,
+            "y": 172,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:160"
+          },
+          {
+            "label": "Like a 2 cm cable",
+            "x": 380,
+            "y": 505,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:cable"
+          },
+          {
+            "label": "from over 500 m",
+            "x": 380,
+            "y": 340,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:half"
+          },
+          {
+            "label": "Eyesight × 7.7",
+            "x": 600,
+            "y": 330,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:eyesight"
+          }
+        ],
+        "zoom": {
+          "x": 380,
+          "y": 340,
+          "scale": 1.12,
+          "at": "w:cable",
+          "back_at": "w:normal",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "Since 1938, people have claimed it is visible from the Moon. NASA says: from low orbit mostly not with the naked eye, from the Moon certainly not.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Myth and finding",
+        "left": {
+          "tag": "Myth",
+          "title": "Seen from the Moon",
+          "at": "w:1938",
+          "rows": [
+            {
+              "text": "told since 1938",
+              "at": "w:Moon"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Finding",
+          "title": "Naked eye: no",
+          "at": "w:NASA",
+          "rows": [
+            {
+              "text": "orbit: mostly not",
+              "at": "w:orbit"
+            },
+            {
+              "text": "Moon: certainly not",
+              "at": "w:certainly"
+            }
+          ]
+        },
+        "verdict": "A myth, says NASA",
+        "verdict_at": "w:certainly",
+        "dim_left_at": "w:NASA",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "A camera can do it: from the ISS, on 24 November 2004, the first confirmed photo is taken with a 180-millimetre lens, on a sunny day with fresh snow.",
+      "data": {
+        "headline": "With a telephoto lens",
+        "nodes": [
+          {
+            "label": "ISS",
+            "code": "in orbit",
+            "at": "w:ISS"
+          },
+          {
+            "label": "First photo",
+            "code": "24 Nov 2004",
+            "at": "w:photo"
+          },
+          {
+            "label": "180 mm lens",
+            "code": "telephoto",
+            "at": "w:180-millimetre"
+          },
+          {
+            "label": "Sun and snow",
+            "code": "contrast",
+            "at": "w:snow"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "View",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "The Moon myth is on record by 1938, the first photo comes in 2004, and in 2009 NASA publishes an image article about it.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1938 to 2009",
+        "items": [
+          {
+            "year": "1938",
+            "title": "Moon myth on record",
+            "sub": "earliest record, says NASA",
+            "at": "w:1938"
+          },
+          {
+            "year": "2004",
+            "title": "First photo",
+            "sub": "ISS, 180 mm lens",
+            "at": "w:2004"
+          },
+          {
+            "year": "2009",
+            "title": "NASA image article",
+            "sub": "wall with a telephoto lens",
+            "at": "w:2009"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "NASA says cities at night, airports and reservoirs are easier to see. The wall is too narrow and matches the colour of the ground. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Great Wall",
+        "card_meta": "FROM ORBIT",
+        "card_no": "FILE 20",
+        "stamp": "Myth",
+        "drawing": "great_wall_orbit.svg",
+        "statement": "Too narrow for the naked eye",
+        "statement_at": "w:narrow",
+        "stamp_at": "w:airports",
+        "note": "Same colour as the ground",
+        "note_at": "w:colour",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "View",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "View: from orbit",
+          "tone": "muted",
+          "offset": 4.6
+        },
+        {
+          "beat": "b2",
+          "text": "Width: under 6 m",
+          "tone": "amber",
+          "offset": 8.5
+        },
+        {
+          "beat": "b3",
+          "text": "Eyesight: not enough",
+          "tone": "amber",
+          "offset": 10.0
+        },
+        {
+          "beat": "b4",
+          "text": "Moon: myth",
+          "tone": "amber",
+          "offset": 5.6
+        },
+        {
+          "beat": "b5",
+          "text": "Photo: telephoto lens",
+          "tone": "muted",
+          "offset": 7.6
+        },
+        {
+          "beat": "b6",
+          "text": "Finding: explained 2009",
+          "tone": "muted",
+          "offset": 8.1
+        },
+        {
+          "beat": "b7",
+          "text": "Naked eye: no",
+          "tone": "muted",
+          "offset": 8.1
+        }
+      ]
+    },
+    "description": "Myth checked: the Great Wall is barely visible from orbit with the naked eye, and not at all from the Moon. Width is what matters. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "myth",
+      "greatwall",
+      "space",
+      "nasa",
+      "history"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

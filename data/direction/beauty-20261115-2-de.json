@@ -1,0 +1,439 @@
+{
+ "video_id": "beauty-20261115-2-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Anhang II: die Verbotsliste",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Was in Anhang II steht, darf in Kosmetik nicht enthalten sein; die Liste wächst laufend durch Änderungsverordnungen. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Anhang II",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Verboten?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "Anhang II",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "wächst laufend",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Nr. 1731: TPO",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Spuren: Ausnahme",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Liste wächst",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Erst lesen, dann auftragen",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Was ist verboten? Eine Ausnahme regelt Artikel 17. Kleine Mengen eines verbotenen Stoffes sind erlaubt, wenn sie unbeabsichtigt sind, etwa aus Verunreinigungen oder der Verpackung, bei guter Herstellungspraxis technisch nicht vermeidbar sind und das Produkt sicher bleibt.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://publications.europa.eu/resource/celex/32025R0877",
+   "title": "Verordnung (EU) 2025/877 der Kommission (CMR-Stoffe, u. a. Trimethylbenzoyl Diphenylphosphine Oxide), gilt ab 1. September 2025",
+   "checked_at": "2026-11-01",
+   "label": "VO (EU) 2025/877"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Die Verbotsliste für Kosmetik in der EU zählt inzwischen über 1700 laufende Nummern.",
+   "on_screen": "Was ist verboten?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Weißt du, wo steht, was in Kosmetik verboten ist?",
+   "on_screen": "Weißt du, wo steht, was in Kosmetik verboten ist?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Verboten ist, was gefährlich klingt. Verboten ist, was in Anhang II steht.",
+   "on_screen": "Verboten ist, was gefährlich klingt. Verboten ist, was in An",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer die Verbotsliste nicht kennt, hält jedes Gerücht für eine Regel.",
+   "on_screen": "Wer die Verbotsliste nicht kennt, hält jedes Gerücht für ein",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wie ein Stoff auf die Verbotsliste der EU kommt.",
+   "on_screen": "Schau, wie ein Stoff auf die Verbotsliste der EU kommt.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Die Verbotsliste für Kosmetik in der EU zählt inzwischen über 1700 laufende Nummern.",
+   "data": {
+    "obj": "label",
+    "word": "ANHANG II",
+    "line": 0,
+    "question": "Was ist verboten?",
+    "badge": "Nr. 1731"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "Diese Liste ist Anhang II der Verordnung über kosmetische Mittel. Laut Artikel 14 dürfen Stoffe, die dort stehen, in Kosmetik nicht enthalten sein.",
+   "data": {
+    "headline": "Die Verbotsliste",
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 14, Anhang II",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "Anhang II: verbotene Stoffe"
+     },
+     {
+      "text": "dürfen nicht enthalten sein",
+      "mark": "gap"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_timeline",
+   "spoken": "Die Liste wächst laufend. Werden Stoffe als krebserregend, erbgutverändernd oder fortpflanzungsgefährdend eingestuft, kurz CMR, kommen sie grundsätzlich auf die Verbotsliste, außer es gilt eine Ausnahme nach Artikel 15.",
+   "data": {
+    "headline": "Wie Stoffe dazukommen",
+    "nodes": [
+     {
+      "date": "1",
+      "text": "Einstufung als CMR-Stoff"
+     },
+     {
+      "date": "2",
+      "text": "Änderungsverordnung der Kommission"
+     },
+     {
+      "date": "3",
+      "text": "neuer Eintrag in Anhang II"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_facts",
+   "spoken": "Ein Beispiel ist die Verordnung 2025/877. Sie fügt unter der laufenden Nummer 1731 den Stoff Trimethylbenzoyl Diphenylphosphine Oxide hinzu, kurz TPO. Er war für künstliche Fingernägel im Profigebrauch zugelassen und ist seit 1. September 2025 verboten.",
+   "data": {
+    "headline": "Beispiel: TPO",
+    "doc": {
+     "act": "VO (EU) 2025/877",
+     "ref": "gilt ab 1. September 2025"
+    },
+    "rows": [
+     {
+      "text": "Eintrag Nummer 1731",
+      "value": "1731"
+     },
+     {
+      "text": "früher: Nagelsysteme im Profigebrauch"
+     },
+     {
+      "text": "eingestuft als reproduktionstoxisch"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_versus",
+   "spoken": "Eine Ausnahme regelt Artikel 17. Kleine Mengen eines verbotenen Stoffes sind erlaubt, wenn sie unbeabsichtigt sind, etwa aus Verunreinigungen oder der Verpackung, bei guter Herstellungspraxis technisch nicht vermeidbar sind und das Produkt sicher bleibt.",
+   "data": {
+    "headline": "Spuren",
+    "mode": "compare",
+    "left": {
+     "tag": "verboten",
+     "title": "als Zutat",
+     "rows": [
+      {
+       "text": "gezielt zugesetzt",
+       "mark": "gap"
+      }
+     ]
+    },
+    "right": {
+     "tag": "erlaubt",
+     "title": "als Spur",
+     "rows": [
+      {
+       "text": "unbeabsichtigt, nicht vermeidbar"
+      },
+      {
+       "text": "Produkt bleibt sicher"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "Für dich heißt das: Ob ein Stoff verboten ist, entscheidet Anhang II, nicht ein Gerücht. Und weil die Liste wächst, zählt immer der aktuelle Stand.",
+   "data": {
+    "headline": "Was du mitnimmst",
+    "items": [
+     {
+      "title": "Anhang II entscheidet",
+      "sub": "nicht das Gerücht",
+      "icon": "doc"
+     },
+     {
+      "title": "Liste wächst",
+      "sub": "durch Änderungsverordnungen",
+      "icon": "book"
+     },
+     {
+      "title": "aktuellen Stand prüfen",
+      "sub": "zum Beispiel über CosIng",
+      "icon": "shield"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Erst die Liste lesen, dann urteilen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung.",
+    "brand_at": "w:Beauty",
+    "button": "Auftragen",
+    "headline": "Erst lesen, dann urteilen",
+    "block_text": "Erst die Liste lesen",
+    "done_text": "Liste gelesen"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

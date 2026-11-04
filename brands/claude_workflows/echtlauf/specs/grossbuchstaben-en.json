@@ -1,0 +1,37 @@
+{
+  "id": "grossbuchstaben-en",
+  "topic_id": "claude_workflows-20261116-1-en",
+  "language": "en",
+  "title": "IMPORTANT in capital letters",
+  "model": "haiku",
+  "tools": "Read",
+  "probe": "End of report.",
+  "probe_where": "answer",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "notiz.txt": "The warehouse in Linz holds 120 pallets. The warehouse in Wels holds 80 pallets. On Friday 40 more pallets arrive.\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Plain rule",
+      "prompt": "Summarize notiz.txt in one sentence. Reply in English.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        "CLAUDE.md": "# Project rules\n\n- Answer in English.\n- Address the reader as you.\n- Use metric units.\n- Write numbers above ten as digits.\n- Avoid jargon where a plain word works.\n- Keep paragraphs under five lines.\n- Put file names in backticks.\n- Explain abbreviations the first time.\n- Do not use exclamation marks.\n- Write dates as DD.MM.YYYY.\n- Use lists only when there are more than three items.\n- Do not start with “Sure”.\n- End every answer with the sentence “End of report.”\n- Name sources when you have any.\n- Round amounts to two decimals.\n- Use tables only for number comparisons.\n- Write times in 24-hour format.\n- Do not use emojis.\n- Put a one-sentence summary on top of long answers.\n- Separate paragraphs with a blank line.\n- Prefer active sentences.\n- Write “and” instead of “&”.\n- Name currencies with their code (EUR).\n- Give a range for estimates.\n"
+      }
+    },
+    {
+      "id": "L2",
+      "title": "Rule with IMPORTANT",
+      "prompt": "Summarize notiz.txt in one sentence. Reply in English.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        "CLAUDE.md": "# Project rules\n\n- Answer in English.\n- Address the reader as you.\n- Use metric units.\n- Write numbers above ten as digits.\n- Avoid jargon where a plain word works.\n- Keep paragraphs under five lines.\n- Put file names in backticks.\n- Explain abbreviations the first time.\n- Do not use exclamation marks.\n- Write dates as DD.MM.YYYY.\n- Use lists only when there are more than three items.\n- Do not start with “Sure”.\n- IMPORTANT: End every answer with the sentence “End of report.”\n- Name sources when you have any.\n- Round amounts to two decimals.\n- Use tables only for number comparisons.\n- Write times in 24-hour format.\n- Do not use emojis.\n- Put a one-sentence summary on top of long answers.\n- Separate paragraphs with a blank line.\n- Prefer active sentences.\n- Write “and” instead of “&”.\n- Name currencies with their code (EUR).\n- Give a range for estimates.\n"
+      }
+    }
+  ]
+}

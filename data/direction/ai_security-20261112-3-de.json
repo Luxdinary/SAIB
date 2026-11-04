@@ -1,0 +1,457 @@
+{
+ "video_id": "ai_security-20261112-3-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Die Daten-Ampel für KI-Tools",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema E06, Reihe KI im Büro. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: KI-Chat im Büro. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "KI-Chat im Büro",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Eingabe: ungeprüft",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Personenbezug: geprüft?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Name gelöscht: reicht nicht",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Ampel: gelb oder rot?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Firmenkonto: vorhanden?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Ampel: heute einführen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Rote Daten: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Welche Daten dürfen in welches KI-Tool? Eine einfache Ampel nach der Orientierungshilfe der Datenschutzkonferenz: öffentlich, intern, personenbezogen.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "datenschutz",
+   "kiimbuero",
+   "dsgvo",
+   "kmu",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf",
+   "title": "Datenschutzkonferenz (DSK): Orientierungshilfe Künstliche Intelligenz und Datenschutz, Version 1.0, 06.05.2024",
+   "checked_at": "2026-11-01",
+   "label": "DSK, Orientierungshilfe KI"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.html",
+   "title": "BSI: Generative KI-Modelle – Chancen und Risiken für Industrie und Behörden (21.01.2025)",
+   "checked_at": "2026-11-01",
+   "label": "BSI, Generative KI"
+  }
+ ],
+ "unverified": [
+  "Die Ampel selbst ist eine Scutoria-Einordnung, keine Vorgabe der DSK.",
+  "Keine Rechtsberatung zu Rechtsgrundlagen im Einzelfall."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Darf das in den KI-Chat? Diese Ampel entscheidet in Sekunden.",
+   "on_screen": "Darf das in den KI-Chat?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Namen raus, dann ist es anonym? Laut Datenschutzkonferenz reicht das oft nicht.",
+   "on_screen": "Name gelöscht = anonym?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "DSK: Namen entfernen reicht regelmäßig nicht"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Schon eine Zeugnisanfrage an die KI kann Personenbezug haben.",
+   "on_screen": "Zeugnis per KI: Personenbezug?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Eine Kundenliste im falschen KI-Tool ist schnell eingefügt.",
+   "on_screen": "Kundenliste im falschen Tool?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, welche Farbe diese drei Texte bekommen.",
+   "on_screen": "Grün, gelb oder rot?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Darf das in den KI-Chat? Eine einfache Ampel entscheidet es in Sekunden.",
+   "data": {
+    "question": "Darf das in den KI-Chat?",
+    "doc_label": "Kundenliste.xlsx",
+    "chat_title": "KI-Chat im Büro",
+    "bot_line": "Wie kann ich helfen?",
+    "typed": "Fasse diese Liste zusammen",
+    "badge": "Darf das?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Die Datenschutzkonferenz der deutschen Aufsichtsbehörden sagt: Wer personenbezogene Daten in KI-Anwendungen verarbeitet und an Anbieter übermittelt, braucht dafür eine Rechtsgrundlage. Das gilt auch im kleinen Betrieb.",
+   "data": {
+    "headline": "Was die Datenschutzkonferenz sagt",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Deine Eingabe",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n1",
+      "label": "KI-Anbieter",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n2",
+      "label": "Personen in den Daten",
+      "icon": "&#9823;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "Übermittlung"
+     },
+     {
+      "label": "betrifft"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Rechtsgrundlage?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Und Namen löschen reicht oft nicht. Laut Orientierungshilfe kann sich der Personenbezug aus dem Zusammenhang ergeben. Ihr Beispiel: ein Arbeitszeugnis für einen Kundenberater in einem bestimmten Autohaus.",
+   "data": {
+    "headline": "Anonym ist schwerer als gedacht",
+    "file_label": "KI-Chat im Büro",
+    "card": {
+     "title": "Laut DSK",
+     "rows": [
+      {
+       "text": "Namen entfernen reicht oft nicht",
+       "ok": "open"
+      },
+      {
+       "text": "Bezug aus dem Zusammenhang",
+       "ok": "open"
+      },
+      {
+       "text": "Beispiel: Arbeitszeugnis",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 15,
+   "spoken": "Daraus lässt sich eine Ampel bauen. Grün: Öffentliches, etwa Texte von deiner Website. Gelb: Internes wie Angebote, nur in Tools mit Firmenkonto. Rot: Daten über Kunden oder Beschäftigte, nur mit geklärter Rechtsgrundlage.",
+   "data": {
+    "headline": "Die Daten-Ampel",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.5,
+    "left": {
+     "title": "Grün und Gelb",
+     "rows": [
+      {
+       "text": "grün: öffentliche Texte",
+       "ok": null
+      },
+      {
+       "text": "gelb: Angebote, Interna",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Rot",
+     "rows": [
+      {
+       "text": "Kunden, Beschäftigte",
+       "ok": "open"
+      },
+      {
+       "text": "nur mit Rechtsgrundlage",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Zwei Punkte aus der Orientierungshilfe helfen beim Gelb: Arbeitgeber sollen für die berufliche KI-Nutzung eigene Geräte und Konten stellen. Und vorzuziehen sind Tools, die Eingaben nicht zum Training nutzen.",
+   "data": {
+    "headline": "Was beim Gelb hilft",
+    "file_label": "KI-Chat im Büro",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Firmenkonto",
+      "sub": "vom Betrieb gestellt",
+      "at": 0.6
+     },
+     {
+      "title": "Privates Konto",
+      "sub": "keine Kontrolle",
+      "at": 1.0
+     }
+    ],
+    "approval": "Training ausgeschaltet?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Dein Schritt für heute: Häng die Ampel ans Team-Brett. Grün geht, Gelb nur im Firmenkonto, Rot erst nach Rücksprache. Das BSI weist zudem auf neue Sicherheitsrisiken generativer KI hin.",
+   "data": {
+    "headline": "Die Ampel fürs Team",
+    "items": [
+     {
+      "title": "Grün: geht",
+      "sub": "öffentliche Inhalte",
+      "at": 2.0
+     },
+     {
+      "title": "Gelb: nur Firmenkonto",
+      "sub": "Training aus",
+      "at": 4.8
+     },
+     {
+      "title": "Rot: erst Rücksprache",
+      "sub": "Kunden, Beschäftigte",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Erst die Farbe, dann der Chat. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Erst Farbe, dann Chat",
+    "file_label": "KI-Chat im Büro",
+    "button": "Einfügen",
+    "block_text": "Rot: nicht ohne Rücksprache",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

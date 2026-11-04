@@ -1,0 +1,664 @@
+{
+  "video_id": "megaconstruction-20261113-2-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Elbphilharmonie: Schwebt der Große Saal wirklich?",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261113-2-de. Thema: elphi. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Elbphilharmonie",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Mythos: Saal schwebt?",
+          "tone": "amber",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "Saal: 12.500 t",
+          "tone": "accent",
+          "at": "@12.500"
+        },
+        {
+          "beat": "b3",
+          "text": "auf Federn gelagert",
+          "tone": "green",
+          "at": "@362"
+        },
+        {
+          "beat": "b4",
+          "text": "1,7 × Eiffelturm-Gerüst",
+          "tone": "accent",
+          "at": "@1,7"
+        },
+        {
+          "beat": "b5",
+          "text": "Haus: 200.000 t",
+          "tone": "muted",
+          "at": "@200.000"
+        }
+      ]
+    },
+    "description": "Mythos-Check: Der Große Saal der Elbphilharmonie schwebt nicht. Er wiegt 12.500 t und ruht in 50 m Höhe auf 362 Stahlfedern – schalltechnisch entkoppelt.",
+    "companion_text": "Gerechnet: 12.500 t ÷ 7.300 t = 1,71; 12.500 t ÷ 362 = 34,5 t je Feder. Quellen: hamburg.de, Elbphilharmonie (Flyer), SETE. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "elbphilharmonie",
+      "hamburg",
+      "mythos",
+      "akustik",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "12.500 t ÷ 7.300 t = 1,71",
+        "result": "1,7 Metallgerüste des Eiffelturms",
+        "sources": [
+          "S1",
+          "SE"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "12.500 t ÷ 362 = 34,5 t je Feder",
+        "result": "knapp 35 t im Schnitt",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "base",
+          "kind": "box",
+          "size": [
+            110,
+            37,
+            70
+          ],
+          "color": "compare",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "glass",
+          "kind": "prism",
+          "height": 73,
+          "width": 110,
+          "depth": 70,
+          "levels": 14,
+          "gap": 0.2,
+          "pos": [
+            0,
+            37,
+            0
+          ],
+          "props": {
+            "fade": 0.85
+          }
+        },
+        {
+          "id": "hall",
+          "kind": "box",
+          "size": [
+            48,
+            24,
+            36
+          ],
+          "color": "accent",
+          "pos": [
+            0,
+            50.5,
+            0
+          ]
+        },
+        {
+          "id": "springs",
+          "kind": "piles",
+          "nx": 7,
+          "nz": 5,
+          "spacing": 6.5,
+          "r": 0.7,
+          "len": 3,
+          "up": true,
+          "color": "model",
+          "pos": [
+            0,
+            47.5,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "hall": [
+          24,
+          62,
+          18
+        ],
+        "springs": [
+          -20,
+          49,
+          16
+        ],
+        "shell": [
+          -55,
+          80,
+          35
+        ],
+        "h50": [
+          24,
+          50,
+          18
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "base",
+              "glass"
+            ],
+            "az0": 35,
+            "az1": 25,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "cy": 820
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "base",
+              "glass"
+            ],
+            "az0": 60,
+            "az1": 50,
+            "el0": 12,
+            "el1": 8,
+            "fit0": 0.85,
+            "fit1": 0.9,
+            "cy": 820
+          },
+          "props": {
+            "glass.fade": [
+              [
+                0,
+                0.85
+              ],
+              [
+                "%0.5",
+                0.25
+              ]
+            ]
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -30,
+                44,
+                -22
+              ],
+              [
+                30,
+                76,
+                22
+              ]
+            ],
+            "az0": 30,
+            "az1": 40,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "cy": 780
+          },
+          "props": {
+            "glass.fade": 0.12,
+            "base.opacity": 0.6
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "base",
+              "glass"
+            ],
+            "az0": 80,
+            "az1": 90,
+            "el0": 20,
+            "el1": 16,
+            "fit0": 0.85,
+            "fit1": 0.8,
+            "cy": 900
+          },
+          "props": {
+            "glass.fade": 0.25
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "base",
+              "glass"
+            ],
+            "az0": 120,
+            "az1": 110,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.85,
+            "fit1": 0.9,
+            "cy": 820
+          },
+          "props": {
+            "glass.fade": [
+              [
+                0,
+                0.25
+              ],
+              [
+                "%0.6",
+                0.85
+              ]
+            ]
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "base",
+              "glass"
+            ],
+            "az0": 20,
+            "az1": 40,
+            "el0": 14,
+            "el1": 10,
+            "fit0": 0.8,
+            "fit1": 0.85,
+            "cy": 840
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.hamburg.de/tourismus/sehenswuerdigkeiten/elbphiharmonie/elbphilharmonie-in-zahlen-397866",
+      "title": "hamburg.de: Elbphilharmonie in Zahlen (Saal 12.500 t auf 362 Stahlfedern in 50 m Höhe; 110 m; 200.000 t; 18.000 t Stahl)",
+      "label": "hamburg.de, Elbphilharmonie",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.elbphilharmonie.de/media/filer_public/f6/86/f6867c51-dba7-4c9e-9015-ce55969c9fa8/flyer_elbphilharmonie.pdf",
+      "title": "Elbphilharmonie, Flyer (Saal schalltechnisch entkoppelt, zwei Schalen; Baubeginn April 2007)",
+      "label": "Elbphilharmonie, Flyer",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffelturm), Key figures",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Last je Feder ist ein rechnerischer Durchschnitt, keine Herstellerangabe.",
+    "Baukosten: Quellen uneinheitlich, nicht genannt.",
+    "Gebäude und Saal im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Der Große Saal der Elbphilharmonie soll schweben. Tut er nicht. Er ruht auf Federn.",
+      "on_screen": "Schwebt der Saal? Nein: Er ruht auf Federn.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Elbphilharmonie wirklich?",
+      "on_screen": "Wie groß ist die Elbphilharmonie wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "die Elbphilharmonie in Zahlen: belegt und nachgerechnet.",
+      "on_screen": "die Elbphilharmonie in Zahlen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Elbphilharmonie schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Elbphilharmonie: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Elbphilharmonie im Modell entsteht.",
+      "on_screen": "die Elbphilharmonie im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "Der Große Saal der Elbphilharmonie soll schweben. Tut er nicht. Er ruht auf Federn.",
+      "data": {
+        "kicker": "Mythos-Check · Elbphilharmonie",
+        "question": "Schwebt der Saal? Nein: Er ruht auf Federn.",
+        "question_at": "@Der",
+        "number": {
+          "value": "362",
+          "unit": "Federn",
+          "at_word": "Federn",
+          "y": 640
+        },
+        "badge": {
+          "text": "Mythos-Check",
+          "at_word": "Tut",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Tut"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "Der Saal wiegt 12.500 Tonnen und liegt in 50 Metern Höhe, mitten im Gebäude.",
+      "data": {
+        "headline": "12.500 Tonnen in 50 Metern",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "12.500",
+            "unit": "t",
+            "label": "Großer Saal",
+            "at_word": "12.500"
+          },
+          {
+            "value": "50",
+            "unit": "m",
+            "label": "Höhe",
+            "at_word": "50"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · Der Saal",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_section",
+      "spoken": "Getragen wird er von 362 Stahlfedern. Sie entkoppeln ihn aus Gründen des Schallschutzes vom Rest des Hauses. Es sind zwei getrennte Schalen.",
+      "data": {
+        "headline": "362 Federn, zwei Schalen",
+        "note": "Modell schematisch",
+        "note_dy": 190,
+        "callouts": [
+          {
+            "anchor": "springs",
+            "text": "362 Stahlfedern",
+            "side": "down",
+            "at_word": "362"
+          },
+          {
+            "anchor": "hall",
+            "text": "Saal: eigene Schale",
+            "side": "up",
+            "at_word": "Schalen"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "3 · Federn",
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "seconds": 0.7,
+          "x": 540,
+          "y": 960
+        },
+        "vignette": true
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gs_compare",
+      "spoken": "Wie schwer sind 12.500 Tonnen? Das Metallgerüst des Eiffelturms wiegt 7.300 Tonnen. Der Saal allein wiegt also 1,7 Eiffelturm-Gerüste. Jede Feder trägt rechnerisch knapp 35 Tonnen.",
+      "data": {
+        "headline": "Saal gegen Eiffelturm-Gerüst",
+        "a": {
+          "label": "Großer Saal",
+          "value": 12500,
+          "unit": "t"
+        },
+        "b": {
+          "label": "Eiffelturm, Metallgerüst",
+          "value": 7300,
+          "unit": "t"
+        },
+        "decimals": 1,
+        "bars_dy": 430,
+        "row_h": 108,
+        "order": "ba",
+        "b_at": "@Metallgerüst",
+        "a_at": "@Saal",
+        "result_at": "@1,7"
+      },
+      "source_ids": [
+        "S1",
+        "SE"
+      ],
+      "overlay": {
+        "kicker": "4 · Nachgerechnet",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "Das ganze Gebäude ist 110 Meter hoch und wiegt 200.000 Tonnen, darin 18.000 Tonnen Stahl. Baubeginn war im April 2007. Die gläserne Hülle besteht aus 1.100 unterschiedlich geformten Elementen.",
+      "data": {
+        "headline": "Das ganze Haus",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "110",
+            "unit": "m",
+            "label": "Höhe",
+            "at_word": "110"
+          },
+          {
+            "value": "200.000",
+            "unit": "t",
+            "label": "Gewicht",
+            "at_word": "200.000"
+          },
+          {
+            "value": "2007",
+            "unit": "",
+            "label": "Baubeginn",
+            "at_word": "2007"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · Das Haus",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "Also: Der Saal schwebt nicht, er federt. Folge Gigastruct, dann siehst du den nächsten Mythos.",
+      "data": {
+        "mode": "closing",
+        "statement": "Er schwebt nicht. Er federt.",
+        "chip": {
+          "text": "Folge Gigastruct",
+          "at_word": "Folge",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "6 · Mythos aufgelöst",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

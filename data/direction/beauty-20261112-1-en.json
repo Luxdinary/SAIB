@@ -1,0 +1,441 @@
+{
+ "video_id": "beauty-20261112-1-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "“With ingredient X”: what it has to mean",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Wer einen Bestandteil hervorhebt, muss ihn gezielt enthalten; Eigenschaften eines Stoffes dürfen nicht ohne Beleg dem ganzen Produkt zugeschrieben werden. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Claim",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "With X?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "deliberately present",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "not carried over",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "proof needed",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Article 20",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Check the list",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Check first, then believe",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "What does “with X” mean? Behind it all is Article 20 of the EU cosmetics regulation. Text, names and pictures must not imply characteristics or functions a product doesn't have.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32013R0655",
+   "title": "Verordnung (EU) Nr. 655/2013 der Kommission: gemeinsame Kriterien zur Begründung von Werbeaussagen, Anhang",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EU) 655/2013"
+  },
+  {
+   "id": "S2",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What has to be true when a tube says “with ingredient X”?",
+   "on_screen": "What does “with X” mean?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "If a tube says “with ingredient X”, X has to be deliberately in it.",
+   "on_screen": "If a tube says “with ingredient X”, X has to be deliberately",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "A good word on the tube doesn't make a good product. EU law agrees.",
+   "on_screen": "A good word on the tube doesn't make a good product. EU law ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Read “with X”, and you may expect the effect of X. That can't simply be claimed.",
+   "on_screen": "Read “with X”, and you may expect the effect of X. That can'",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch the two rules behind “with ingredient X”.",
+   "on_screen": "Watch the two rules behind “with ingredient X”.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "What has to be true when a tube says “with ingredient X”?",
+   "data": {
+    "obj": "tube",
+    "title": "with X",
+    "sub": "claim",
+    "glyph": "drop",
+    "gtext": "X",
+    "focus": "title",
+    "question": "What does “with X” mean?",
+    "badge": "Supported?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "In the EU, Regulation 655 from 2013 covers this under truthfulness. If a product is said to contain a specific ingredient, that ingredient has to be deliberately present. A stray trace isn't enough.",
+   "data": {
+    "headline": "Deliberately present",
+    "doc": {
+     "act": "Regulation (EU) 655/2013",
+     "ref": "Annex, criterion 2",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "named ingredient deliberately present"
+     },
+     {
+      "text": "not a stray trace",
+      "mark": "gap"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_versus",
+   "spoken": "The second rule: the properties of one ingredient must not suggest the whole product has them, if that isn't the case. And opinions must not be presented as verified claims.",
+   "data": {
+    "headline": "Ingredient and product",
+    "mode": "compare",
+    "left": {
+     "tag": "Ingredient",
+     "title": "has a property",
+     "rows": [
+      {
+       "text": "from studies, for example"
+      }
+     ]
+    },
+    "right": {
+     "tag": "Product",
+     "title": "not automatically",
+     "rows": [
+      {
+       "text": "only with its own proof"
+      },
+      {
+       "text": "no carrying over",
+       "mark": "gap"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_steps",
+   "spoken": "If a maker wants to claim that property for the product anyway, they need adequate and verifiable evidence. The regulation gives an example: proof of an effective concentration of the ingredient in the product.",
+   "data": {
+    "headline": "What's needed then",
+    "items": [
+     {
+      "title": "Adequate evidence",
+      "sub": "evidential support",
+      "icon": "book"
+     },
+     {
+      "title": "Verifiable",
+      "sub": "checkable by authorities",
+      "icon": "doc"
+     },
+     {
+      "title": "For example",
+      "sub": "an effective concentration",
+      "icon": "scale"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "Behind it all is Article 20 of the EU cosmetics regulation. Text, names and pictures must not imply characteristics or functions a product doesn't have. That covers labelling, making products available on the market, and advertising.",
+   "data": {
+    "headline": "The basic principle",
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Article 20(1)"
+    },
+    "rows": [
+     {
+      "text": "no implied characteristics"
+     },
+     {
+      "text": "applies to text, names and pictures"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "For you, that means: look for the named ingredient in the ingredient list. And read “with X” as a hint about an ingredient, not as a promise about your skin.",
+   "data": {
+    "headline": "How to read it",
+    "items": [
+     {
+      "title": "Find it in the list",
+      "sub": "under Ingredients",
+      "icon": "doc"
+     },
+     {
+      "title": "“with X” means: contains",
+      "sub": "not: works on you",
+      "icon": "drop"
+     },
+     {
+      "title": "Effect claimed?",
+      "sub": "that needs evidence",
+      "icon": "book"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Check first, then believe. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Check first, then believe",
+    "block_text": "Check the list first",
+    "done_text": "List checked"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

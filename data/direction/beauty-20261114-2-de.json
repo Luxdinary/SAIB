@@ -1,0 +1,446 @@
+{
+ "video_id": "beauty-20261114-2-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Ernste unerwünschte Wirkungen melden",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Ernste unerwünschte Wirkungen müssen den Behörden gemeldet werden; die USA haben das 2022 mit MoCRA eingeführt. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Meldung",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Was tun?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "ernste Wirkung",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "unverzüglich melden",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "auch du kannst melden",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "USA: 15 Arbeitstage",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Name und Charge",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Erst lesen, dann auftragen",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Wer meldet was? In den USA gilt seit MoCRA eine ähnliche Pflicht. Die verantwortliche Person meldet ernste Ereignisse innerhalb von 15 Arbeitstagen an die FDA. Neue Informationen innerhalb eines Jahres kommen ebenfalls binnen 15 Arbeitstagen nach.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra",
+   "title": "U.S. FDA: Modernization of Cosmetics Regulation Act of 2022 (MoCRA)",
+   "checked_at": "2026-11-01",
+   "label": "FDA: MoCRA"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was passiert, wenn eine Creme eine ernste unerwünschte Wirkung auslöst?",
+   "on_screen": "Wer meldet was?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Ernste unerwünschte Wirkungen von Kosmetik müssen in der EU unverzüglich gemeldet werden.",
+   "on_screen": "Ernste unerwünschte Wirkungen von Kosmetik müssen in der EU ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Melden können nur Hersteller. Auch Verbraucher können sich an die Behörde wenden.",
+   "on_screen": "Melden können nur Hersteller. Auch Verbraucher können sich a",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer eine ernste Reaktion nicht meldet, hilft niemandem, den nächsten Fall zu verhindern.",
+   "on_screen": "Wer eine ernste Reaktion nicht meldet, hilft niemandem, den ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wie eine Meldung in der EU von Behörde zu Behörde läuft.",
+   "on_screen": "Schau, wie eine Meldung in der EU von Behörde zu Behörde läu",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Was passiert, wenn eine Creme eine ernste unerwünschte Wirkung auslöst?",
+   "data": {
+    "obj": "jar",
+    "title": "Creme",
+    "sub": "ohne Marke",
+    "glyph": "doc",
+    "gtext": "Meldung",
+    "focus": "glyph",
+    "question": "Wer meldet was?",
+    "badge": "Meldung?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "Das EU-Recht definiert, was ernst ist: eine Wirkung, die zu vorübergehender oder dauerhafter Funktionseinschränkung, Behinderung, Krankenhausaufenthalt, angeborenen Anomalien, unmittelbarer Lebensgefahr oder zum Tod führt.",
+   "data": {
+    "headline": "Was „ernst“ heißt",
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 2 Absatz 1 p",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "Funktionseinschränkung oder Behinderung"
+     },
+     {
+      "text": "Krankenhausaufenthalt"
+     },
+     {
+      "text": "Lebensgefahr oder Tod"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_timeline",
+   "spoken": "Für solche Fälle gilt Artikel 23. Die verantwortliche Person und die Händler melden der zuständigen Behörde unverzüglich die Wirkung, den genauen Produktnamen und ergriffene Abhilfemaßnahmen. Die Behörde informiert die anderen Mitgliedstaaten.",
+   "data": {
+    "headline": "Der Meldeweg",
+    "nodes": [
+     {
+      "date": "1",
+      "text": "Wirkung tritt auf"
+     },
+     {
+      "date": "2",
+      "text": "Meldung an die Behörde des Landes"
+     },
+     {
+      "date": "3",
+      "text": "Weitergabe an andere Mitgliedstaaten"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "Auch Verbraucher und Fachleute aus dem Gesundheitswesen können sich an die Behörde wenden. Diese gibt die Information dann an die anderen Mitgliedstaaten und an die verantwortliche Person weiter.",
+   "data": {
+    "headline": "Wer melden kann",
+    "mode": "compare",
+    "left": {
+     "tag": "Pflicht",
+     "title": "Unternehmen",
+     "rows": [
+      {
+       "text": "verantwortliche Person"
+      },
+      {
+       "text": "Händler"
+      }
+     ]
+    },
+    "right": {
+     "tag": "möglich",
+     "title": "Menschen",
+     "rows": [
+      {
+       "text": "Verbraucher"
+      },
+      {
+       "text": "Gesundheitsfachleute"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "In den USA gilt seit MoCRA eine ähnliche Pflicht. Die verantwortliche Person meldet ernste Ereignisse innerhalb von 15 Arbeitstagen an die FDA. Neue Informationen innerhalb eines Jahres kommen ebenfalls binnen 15 Arbeitstagen nach.",
+   "data": {
+    "headline": "Die USA",
+    "doc": {
+     "act": "FDA: MoCRA",
+     "ref": "Serious adverse events"
+    },
+    "rows": [
+     {
+      "text": "Meldung an die FDA"
+     },
+     {
+      "text": "innerhalb von 15 Arbeitstagen",
+      "value": "15"
+     },
+     {
+      "text": "Nachträge ebenfalls binnen 15 Tagen"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "Für dich heißt das: Bei einer ernsten Reaktion zuerst ärztliche Hilfe. Für eine Meldung helfen dann der genaue Produktname und die Chargennummer von der Packung.",
+   "data": {
+    "headline": "Wenn es passiert",
+    "items": [
+     {
+      "title": "zuerst ärztliche Hilfe",
+      "sub": "Gesundheit geht vor",
+      "icon": "shield"
+     },
+     {
+      "title": "Produktname notieren",
+      "sub": "genau wie auf der Packung",
+      "icon": "doc"
+     },
+     {
+      "title": "Chargennummer dazu",
+      "sub": "hilft bei der Zuordnung",
+      "icon": "book"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Erst die Packung lesen, dann auftragen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung.",
+    "brand_at": "w:Beauty",
+    "button": "Auftragen",
+    "headline": "Erst lesen, dann auftragen",
+    "block_text": "Erst die Packung lesen",
+    "done_text": "Packung gelesen"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

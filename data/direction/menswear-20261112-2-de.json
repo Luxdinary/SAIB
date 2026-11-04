@@ -1,0 +1,572 @@
+{
+ "video_id": "menswear-20261112-2-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "White Tie: Was zum Frack gehört",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema E02 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Wiener Ballregeln nicht verallgemeinert (meist genügt Smoking), keine Rangfolge der Dresscodes als Fakt.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "White Tie, Frack",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "White Tie: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "Smoking reicht nicht",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "Frack: offen getragen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Weiß: Weste, Fliege",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "meist genügt Smoking",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Frack, Weiß, Borten",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "White Tie komplett",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Was gehört zu White Tie? Debrett's beschreibt Frack mit Seidenrevers, Hose mit zwei Borten, weiße Marcella-Weste, Kläppchenkragen und weiße Fliege. Der Wiener Opernball schreibt genau das vor, bei den meisten Bällen genügt laut austria.info ein Smoking.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "whitetie",
+   "frack",
+   "opernball",
+   "dresscode"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://debretts.com/etiquette-category/events-and-dress-codes/",
+   "title": "Debrett's, Events and Dress Codes (White Tie): schwarzer einreihiger Frack mit seidenen steigenden Revers, offen getragen; Hose mit zwei Borten an der Außennaht; tief ausgeschnittene weiße Marcella-Weste; weißes Marcella-Hemd mit gestärktem, abnehmbarem Kläppchenkragen, Doppelmanschetten und Studs; schmale weiße handgebundene Fliege; schwarze Lack- oder hochglanzpolierte Schnürschuhe; Zylinder und Stock heute nur noch auf der Bühne",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.opernball.at/en/the-evening/",
+   "title": "Wiener Opernball, offizielle Seite: Herren tragen schwarzen Frack, weißes Frackhemd, weiße Fliege und schwarze Lackschuhe; Galauniform alternativ erlaubt",
+   "checked_at": "2026-11-01",
+   "label": "Wiener Opernball"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.austria.info/en-us/inspiration/ball-season/",
+   "title": "austria.info, Ballsaison: Frack mit weißer Fliege bei einigen Bällen Pflicht (Opernball, Philharmonikerball, Techniker Cercle), bei den meisten Bällen genügt ein Smoking",
+   "checked_at": "2026-11-01",
+   "label": "austria.info, Ballsaison"
+  }
+ ],
+ "unverified": [
+  "Galauniform als Alternative am Opernball (S2): belegt, aus Zeitgründen nicht im Video.",
+  "Schwarze Fliege tragen in Wien nur Kellner (austria.info): bewusst weggelassen.",
+  "Doppelmanschetten, Studs und Schuhe (S1): belegt, nur teils gesprochen; Schuhe ohne eigene Zeichnung."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "White Tie: Was gehört zum Frack?",
+   "on_screen": "White Tie: Was gehört zum Frack?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Smoking zum Opernball? Dort ist der Frack Pflicht.",
+   "on_screen": "Smoking zum Opernball? Dort ist der Frack Pflicht.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Zylinder und Stock? Laut Debrett's nur noch auf der Bühne.",
+   "on_screen": "Zylinder und Stock? Laut Debrett's nur noch auf der Bühne.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Schwarze Fliege am Opernball? Vorgeschrieben ist Weiß.",
+   "on_screen": "Schwarze Fliege am Opernball? Vorgeschrieben ist Weiß.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Vom Smoking zum Frack in einem Bild",
+   "on_screen": "Vom Smoking zum Frack in einem Bild",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die Einladung als Ausgangslage, die Lupe auf der weißen Fliege."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "White Tie auf der Einladung. Das heißt Frack. Aber was gehört wirklich dazu, und was nicht mehr?",
+   "data": {
+    "question": "White Tie: Was gehört zum Frack?",
+    "object": {
+     "kind": "tailcoat"
+    },
+    "target": "bow",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Frack",
+    "loupe_at": "w:Frack",
+    "nie_at": "w:nicht",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "Black Tie kennst du: Smoking und schwarze Fliege. Für den Wiener Opernball reicht das nicht. Die offizielle Seite schreibt Herren vor: schwarzer Frack, weißes Frackhemd, weiße Fliege und schwarze Lackschuhe.",
+   "data": {
+    "headline": "Reicht der Smoking?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "to": {
+     "kind": "tailcoat"
+    },
+    "target": "neck",
+    "zoom": 1.45,
+    "label": "Opernball: Frack, weiße Fliege",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Smoking",
+    "zoom_at": "w:Opernball",
+    "error_at": "w:reicht",
+    "flip_at": "w:Frack",
+    "label_at": "w:Lackschuhe"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:offizielle"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Debrett's, der britische Ratgeber für Etikette, beschreibt den Frack genau: schwarz und einreihig, mit seidenbelegten steigenden Revers, und er wird offen getragen. Die Hose hat zwei Borten an der Außennaht.",
+   "data": {
+    "headline": "Der Frack",
+    "stages": [
+     {
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": 0.0,
+      "title": "Laut Debrett's",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "Seidenrevers",
+        "sub": "steigend",
+        "tone": "always",
+        "at": "w:seidenbelegten"
+       },
+       {
+        "spot": "front",
+        "text": "offen getragen",
+        "sub": "einreihig",
+        "tone": "always",
+        "at": "w:offen"
+       },
+       {
+        "spot": "trousers",
+        "text": "zwei Borten",
+        "sub": "an der Außennaht",
+        "tone": "always",
+        "at": "w:Borten"
+       }
+      ]
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Darunter wird es weiß. Links Black Tie mit schwarzer Fliege. Rechts White Tie: eine tief ausgeschnittene weiße Weste aus Marcella, ein Hemd mit gestärktem, abnehmbarem Kläppchenkragen, dazu eine schmale weiße Fliege, von Hand gebunden.",
+   "data": {
+    "headline": "Schwarz oder weiß?",
+    "left": {
+     "title": "Black Tie",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak",
+      "dinner": true,
+      "neck": "bow",
+      "strain": false
+     },
+     "target": "neck",
+     "tag": "schwarze Fliege",
+     "pulses": [
+      {
+       "target": "neck",
+       "at": "w:Fliege"
+      }
+     ]
+    },
+    "right": {
+     "title": "White Tie",
+     "object": {
+      "kind": "tailcoat"
+     },
+     "tag": "Weste und Fliege weiß",
+     "pulses": [
+      {
+       "target": "waistcoat",
+       "at": "w:Weste"
+      },
+      {
+       "target": "collar",
+       "at": "w:Kläppchenkragen"
+      },
+      {
+       "target": "bow",
+       "at": "w:schmale"
+      }
+     ]
+    },
+    "left_at": "w:Links",
+    "left_tag_at": "w:schwarzer",
+    "right_at": "w:Rechts",
+    "right_tag_at": "w:Marcella",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Marcella"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "Gilt das auf jedem Ball? Laut austria.info ist der Frack nur bei einigen Pflicht, etwa beim Opernball. Meist genügt ein Smoking. Zylinder und Stock sieht man laut Debrett's nur noch auf der Bühne.",
+   "data": {
+    "headline": "Auf jedem Ball?",
+    "stages": [
+     {
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": 0.0,
+      "title": "Einige Bälle",
+      "tags": [
+       {
+        "spot": "tails",
+        "text": "Frack: Pflicht",
+        "sub": "etwa der Opernball",
+        "tone": "always",
+        "at": "w:Pflicht"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": "w:Meist",
+      "title": "Die meisten Bälle",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "Smoking genügt",
+        "sub": "laut austria.info",
+        "tone": "sometimes",
+        "at": "w:genügt"
+       },
+       {
+        "spot": "hem",
+        "text": "Zylinder, Stock",
+        "sub": "nur auf der Bühne",
+        "tone": "never",
+        "at": "w:Zylinder"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S3",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:austria"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "Kurz gesagt: Der Frack ist schwarz, einreihig und bleibt offen, die Hose hat zwei Borten. Weste und Fliege sind weiß, die Fliege von Hand gebunden. Und Pflicht ist er nur auf einigen Bällen.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Frack: offen getragen",
+      "sub": "einreihig, Hose mit zwei Borten",
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": "w:Frack",
+      "ring": "front",
+      "ring_at": "w:offen"
+     },
+     {
+      "title": "Weiß: Weste und Fliege",
+      "sub": "die Fliege schmal, von Hand",
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": "w:Weste",
+      "ring": "bow",
+      "ring_at": "w:Hand"
+     },
+     {
+      "title": "Pflicht: einige Bälle",
+      "sub": "sonst genügt meist der Smoking",
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": "w:Pflicht",
+      "then": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "then_at": "w:Bällen"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Vom Smoking zum Frack mit weißer Fliege: Das ist White Tie. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "to": {
+     "kind": "tailcoat"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "bow",
+    "fix_at": "w:Frack",
+    "ring_at": "w:White",
+    "statement_at": "w:White",
+    "chip_at": "w:Blick",
+    "statement": "White Tie, komplett.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

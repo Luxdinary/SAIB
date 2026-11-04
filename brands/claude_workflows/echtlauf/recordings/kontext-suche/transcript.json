@@ -1,0 +1,155 @@
+{
+  "spec": "kontext-suche",
+  "runs": {
+    "L1": {
+      "title": "Nur Read",
+      "prompt": "In welcher Stadt sitzt Kunde K-4711 laut kunden.csv?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 15.81,
+      "lines": [
+        {
+          "t": 6.12,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 8.289,
+          "kind": "tool",
+          "id": "toolu_01GyYjdFbx1cP4XEnpsfjsPe",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 8.839,
+          "kind": "result",
+          "id": "toolu_01GyYjdFbx1cP4XEnpsfjsPe",
+          "text": "1\tkunde;stadt;bestellungen\n2\tK-1000;Linz;52\n3\tK-1001;Graz;76\n… (1771 weitere Zeilen)"
+        },
+        {
+          "t": 10.878,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 11.102,
+          "kind": "tool",
+          "id": "toolu_015dCB3YaW2oAiSHmamXYmeq",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 11.127,
+          "kind": "result",
+          "id": "toolu_015dCB3YaW2oAiSHmamXYmeq",
+          "text": "4700\tK-5698;Krems;87\n4701\tK-5699;Leoben;68\n4702\tK-5700;Bregenz;51\n… (17 weitere Zeilen)"
+        },
+        {
+          "t": 13.255,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 13.6,
+          "kind": "tool",
+          "id": "toolu_014E4tNKXe4oT3S2yLGGM9hH",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 13.634,
+          "kind": "result",
+          "id": "toolu_014E4tNKXe4oT3S2yLGGM9hH",
+          "text": "3705\tK-4703;Linz;70\n3706\tK-4704;Wien;34\n3707\tK-4705;Leoben;10\n… (12 weitere Zeilen)"
+        },
+        {
+          "t": 15.241,
+          "kind": "text",
+          "text": "Laut `kunden.csv` sitzt Kunde K-4711 in **Zwettl** (Zeile 3713, mit 42 Bestellungen)."
+        },
+        {
+          "t": 15.257,
+          "kind": "end",
+          "text": "Ende nach 15.3 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 9197,
+        "num_turns": 4,
+        "total_cost_usd": 0.006978710000000001,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Read und Grep",
+      "prompt": "In welcher Stadt sitzt Kunde K-4711 laut kunden.csv?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 12.124,
+      "lines": [
+        {
+          "t": 6.108,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 7.381,
+          "kind": "tool",
+          "id": "toolu_017BXZTsTAnE7EjNTtTqKwTF",
+          "text": "Grep: K-4711"
+        },
+        {
+          "t": 8.942,
+          "kind": "tool",
+          "id": "toolu_01KFfXs2VMdULWy6fC77E3ES",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 9.122,
+          "kind": "result",
+          "id": "toolu_017BXZTsTAnE7EjNTtTqKwTF",
+          "text": "kunden.csv:3713:K-4711;Zwettl;42"
+        },
+        {
+          "t": 9.611,
+          "kind": "result",
+          "id": "toolu_01KFfXs2VMdULWy6fC77E3ES",
+          "text": "1\tkunde;stadt;bestellungen\n2\tK-1000;Linz;52\n3\tK-1001;Graz;76\n… (1771 weitere Zeilen)"
+        },
+        {
+          "t": 11.212,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 11.49,
+          "kind": "text",
+          "text": "Kunde K-4711 sitzt laut `kunden.csv` in **Zwettl** (Zeile 3713, 42 Bestellungen). Die Kennung K-4711 kommt in der Datei nur einmal vor."
+        },
+        {
+          "t": 11.535,
+          "kind": "end",
+          "text": "Ende nach 11.5 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 5492,
+        "num_turns": 3,
+        "total_cost_usd": 0.00616342,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

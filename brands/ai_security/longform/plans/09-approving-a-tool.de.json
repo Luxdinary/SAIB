@@ -1,0 +1,1443 @@
+{
+ "video_id": "yt09-approving-a-tool-de",
+ "slug": "09-approving-a-tool",
+ "lang": "de",
+ "title": "Sieben Fragen, bevor Sie ein KI-Tool freigeben.",
+ "short_title": "Tool-Freigabe",
+ "version": "Fassung 3 (Langvideo, Planung), Entwurf 2026-11-02. Freigegebener Wortlaut aus SKRIPTE/09-approving-a-tool.de.md Fassung 2 (Stefan, 29.10. und 01.11.2026) unverändert, einschließlich des letzten Satzes (verweist schon auf Video 10); neu und zur Freigabe: Kaltstart (c0s0), Überblick (c0s2) und Kapitel 4 (c4), im Feld new=true markiert.",
+ "sources": [
+  {
+   "id": "Q1",
+   "label": "KI-Richtlinien-Toolkit, Handbuch, Abschnitt 3, Fassung vom 23. Oktober 2026 · scutoria.com",
+   "short": "Scutoria, Handbuch KI-Richtlinien, Abschn. 3, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q2",
+   "label": "KI-Richtlinien-Toolkit, Handbuch, Abschnitt 0, Fassung vom 23. Oktober 2026 · scutoria.com",
+   "short": "Scutoria, Handbuch KI-Richtlinien, Abschn. 0, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q3",
+   "label": "BSI, Generative KI-Modelle, Chancen und Risiken für Industrie und Behörden, Version 2.0 vom 17. Januar 2025, Maßnahme M16, S. 49 · bsi.bund.de · Abruf 2026-10-18",
+   "short": "BSI, Generative KI-Modelle 2.0, M16, S. 49 · Abruf 18.10.2026"
+  },
+  {
+   "id": "Q4",
+   "label": "Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, Version 1.0 vom 6. Mai 2024, Abschnitte 2.2, 2.4 und 3.1 · datenschutzkonferenz-online.de · Abruf 2026-10-18",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 2.2, 2.4, 3.1 · Abruf 18.10.2026"
+  },
+  {
+   "id": "Q5",
+   "label": "KI-Richtlinien-Toolkit, Handbuch, Abschnitt 6, Fassung vom 23. Oktober 2026 · scutoria.com",
+   "short": "Scutoria, Handbuch KI-Richtlinien, Abschn. 6, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q6",
+   "label": "Verordnung (EU) 2016/679, Art. 28 Abs. 3 · EUR-Lex · Abruf 2026-10-19",
+   "short": "DSGVO Art. 28 Abs. 3 · Abruf 19.10.2026"
+  },
+  {
+   "id": "Q7",
+   "label": "Datenschutzkonferenz, Orientierungshilfe vom 6. Mai 2024, Abschnitt 2.5, S. 11; zur Eingabe-Historie auch Abschnitt 1.10, S. 7 · Abruf 2026-10-23",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 2.5, 1.10 · Abruf 23.10.2026"
+  },
+  {
+   "id": "Q8",
+   "label": "Datenschutzkonferenz, Orientierungshilfe vom 6. Mai 2024, Abschnitt 2.4, S. 10 bis 11 · Abruf 2026-10-18",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 2.4 · Abruf 18.10.2026"
+  },
+  {
+   "id": "Q9",
+   "label": "Verordnung (EU) 2024/1689, Art. 4; Verordnung (EU) 2016/679, Art. 24 Abs. 1; Richtlinie (EU) 2016/943, Art. 2 Abs. 1 Buchst. c · EUR-Lex · Abruf 2026-10-18 und 2026-10-19",
+   "short": "KI-VO Art. 4 · DSGVO Art. 24 · RL 2016/943 Art. 2 · Abruf 18./19.10.2026"
+  },
+  {
+   "id": "Q10",
+   "label": "Verordnung (EU) 2016/679, Art. 24 Abs. 1 · EUR-Lex · Abruf 2026-10-19",
+   "short": "DSGVO Art. 24 Abs. 1 · Abruf 19.10.2026"
+  },
+  {
+   "id": "Q11",
+   "label": "Verordnung (EU) 2016/679, Art. 88 Abs. 1 · Abruf 2026-10-23; Datenschutzkonferenz, Orientierungshilfe vom 6. Mai 2024, Abschnitt 1.12, S. 8 · Abruf 2026-10-18; Datenschutzkonferenz, Orientierungshilfe vom 6. Mai 2024, Abschnitt 2.2, S. 10 · Abruf 2026-10-23",
+   "short": "DSGVO Art. 88 · DSK OH 2024, Abschn. 1.12, 2.2 · Abruf 18./23.10.2026"
+  },
+  {
+   "id": "Q12",
+   "label": "KI-Richtlinien-Toolkit, Handbuch, Abschnitte 0 und 3, Fassung vom 23. Oktober 2026 · scutoria.com",
+   "short": "Scutoria, Handbuch KI-Richtlinien, Abschn. 0 und 3, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q13",
+   "label": "KI-Richtlinien-Toolkit, Handbuch, Abschnitt 8, Fassung vom 23. Oktober 2026 · scutoria.com",
+   "short": "Scutoria, Handbuch KI-Richtlinien, Abschn. 8, 23.10.2026",
+   "checked": true
+  },
+  {
+   "id": "Q14",
+   "label": "KI-Richtlinien-Toolkit, Produktseite und Handbuch, Abschnitt 0, Fassung vom 23. Oktober 2026 · scutoria.com",
+   "short": "Scutoria, Produktseite und Handbuch KI-Richtlinien, 23.10.2026",
+   "checked": true
+  }
+ ],
+ "chapters": [
+  {
+   "id": "c0",
+   "num": "",
+   "title": "Ein neues Tool, und wer Ja sagt",
+   "kicker": "SCUTORIA · TOOL-FREIGABE",
+   "card": false,
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_laptop_side.start.png",
+     "new": true,
+     "data": {
+      "kicker": "Beispielfall · nachgestellt",
+      "time": "MI 11:00",
+      "place": "Büro, Muster Elektrotechnik e.U. (erfunden)",
+      "obj": {
+       "label": "Nachricht · Büro",
+       "from": "Kollegin im Büro",
+       "subject": "Darf ich das neue Tool benutzen?",
+       "lines": [
+        "Zweck: Herstellerunterlagen zusammenfassen",
+        "Konto: noch keines",
+        "Tool-Register: gibt es nicht"
+       ]
+      },
+      "obj_at": "@KI-Tool",
+      "highlight": {
+       "line": 2,
+       "label": "kein Register",
+       "at": "@Register"
+      }
+     },
+     "say": [
+      {
+       "text": "Mittwoch, elf Uhr. Eine Kollegin aus dem Büro hat ein neues KI-Tool zum Zusammenfassen von Herstellerunterlagen gefunden und fragt: Darf ich das für die Arbeit benutzen? Ein Register der Tools gibt es nicht.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Die Frage dieses Videos",
+      "text": "Darf ein neues KI-Tool *für die Arbeit* benutzt werden?",
+      "sub": "Sieben Fragen, an der Seite des Anbieters geprüft, bevor Sie Ja sagen.",
+      "sub_at": "@Sieben"
+     },
+     "say": [
+      {
+       "text": "Darf ein neues KI-Tool für die Arbeit benutzt werden? Das fragt jemand im Büro. Sieben Fragen, die Sie an der Seite des Anbieters prüfen, bevor Sie Ja sagen.",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "chapters",
+     "new": true,
+     "data": {
+      "headline": "In diesem Video",
+      "items": [
+       {
+        "num": "1",
+        "title": "Die Lage im kleinen Betrieb",
+        "at": "@Lage"
+       },
+       {
+        "num": "2",
+        "title": "Das Register und die sieben Fragen",
+        "at": "@Register"
+       },
+       {
+        "num": "3",
+        "title": "Was hinter den Fragen steht",
+        "at": "@hinter"
+       },
+       {
+        "num": "4",
+        "title": "Was tun Sie? Zwei Fälle",
+        "at": "@Fälle"
+       },
+       {
+        "num": "5",
+        "title": "Drei Zeilen und ein Formular",
+        "at": "@Zeilen"
+       },
+       {
+        "num": "6",
+        "title": "Was das Toolkit nicht ist",
+        "at": "@Toolkit"
+       },
+       {
+        "num": "7",
+        "title": "Freies Tool, Handbuch, Toolkit",
+        "at": "@freies"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Wir gehen so vor: die Lage im kleinen Betrieb, das Register und die sieben Fragen, was hinter den Fragen steht, zwei Fälle, in denen Sie entscheiden, der Beispielbetrieb mit drei Zeilen und einem Formular, was das Toolkit nicht ist, und am Ende ein freies Tool und das Handbuch."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "num": "1",
+   "title": "Die Lage im kleinen Betrieb",
+   "kicker": "1 · Die Lage",
+   "scenes": [
+    {
+     "type": "steps",
+     "bg": "yt/lib_office_shelf.start.png",
+     "data": {
+      "headline": "Die Tools kommen *eines nach dem anderen*",
+      "items": [
+       {
+        "title": "Ein Textassistent fürs Angebot",
+        "sub": "jetzt benutzen ihn drei",
+        "at": "@Textassistenten"
+       },
+       {
+        "title": "Eine Übersetzungs-App",
+        "sub": "privat auf dem Telefon",
+        "at": "@Übersetzungs-App"
+       },
+       {
+        "title": "Niemand hat Ja oder Nein gesagt",
+        "at": "@Niemand"
+       },
+       {
+        "title": "Nichts aufgeschrieben",
+        "sub": "welches Tool, welches Konto, welche Daten",
+        "at": "@aufgeschrieben"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "So läuft es in den meisten kleinen Betrieben. Die Tools kommen eines nach dem anderen. Jemand hat einen Textassistenten für ein Angebot ausprobiert, es hat funktioniert, und jetzt benutzen ihn drei Leute. Jemand anderes hat sich eine Übersetzungs-App auf das private Telefon geladen. Niemand hat Ja gesagt, und niemand hat Nein gesagt. Niemand hat aufgeschrieben, welches Tool, über welches Konto, mit welchen Daten."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_cables_toolbox.start.png",
+     "data": {
+      "headline": "Der *Beispielbetrieb*",
+      "note": "Keine Person darin ist echt.",
+      "note_at": "@Keine",
+      "doc": {
+       "label": "Muster Elektrotechnik e.U. · erfunden",
+       "title": "Österreich, 10 bis 49 Beschäftigte",
+       "lines": [
+        {
+         "text": "3 im Büro nutzen einen Textassistenten",
+         "at": "@Drei"
+        },
+        {
+         "text": "2 Monteure: privat auf dem Telefon",
+         "at": "@Monteure",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das Beispiel in diesem Video ist ein erfundener Elektrotechnikbetrieb mit zehn bis neunundvierzig Beschäftigten in Österreich. Keine Person darin ist echt. Drei Personen im Büro benutzen einen Textassistenten für Angebote, Zusammenfassungen und Übersetzungen. Zwei Monteure haben ihn sich privat auf dem Telefon eingerichtet.",
+       "source": "Q2"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Zwei Empfehlungen aus *Deutschland*",
+      "left": {
+       "title": "BSI, Maßnahme M16",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "festlegen, welche Tools wofür",
+         "at": "@festlegen"
+        },
+        {
+         "text": "welche Eingaben zulässig sind",
+         "at": "@Eingaben"
+        }
+       ]
+      },
+      "right": {
+       "title": "Datenschutzaufsicht",
+       "tone": "blue",
+       "at": "@Datenschutzaufsichtsbehörden",
+       "rows": [
+        {
+         "text": "klare, dokumentierte interne Regeln",
+         "at": "@klare"
+        },
+        {
+         "text": "Empfehlungen, kein Gesetz",
+         "at": "@Empfehlungen"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das deutsche BSI sagt in seiner Maßnahme M sechzehn: Arbeitgeber sollen festlegen, welche KI-Modelle und Anwendungen wofür benutzt werden dürfen, welche Eingaben zulässig sind und wie Ausgaben weiterverwendet werden, verbindlich, etwa in Richtlinien.",
+       "marker": "fakt",
+       "source": "Q3"
+      },
+      {
+       "text": "Die deutschen Datenschutzaufsichtsbehörden empfehlen klare, dokumentierte interne Regeln, ob, unter welchen Bedingungen und wofür welche KI-Anwendungen benutzt werden dürfen.",
+       "marker": "fakt",
+       "source": "Q4"
+      },
+      {
+       "text": "Beides sind Empfehlungen aus Deutschland, kein Gesetz, und das Handbuch kennzeichnet sie überall als solche, wo es sie nutzt. Die Frage, die sie Ihnen lassen, ist praktisch. Auf welcher Grundlage sagen Sie Ja zu einem Tool, und wie zeigen Sie später, dass Sie geprüft haben?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "num": "2",
+   "title": "Das Register und die sieben Fragen",
+   "kicker": "2 · Register und Fragen",
+   "scenes": [
+    {
+     "type": "paper",
+     "bg": "yt/lib_folders_closed.start.png",
+     "data": {
+      "headline": "Erst eine *Liste*, kein Urteil",
+      "note": "Unklar ist ein Befund, kein Versäumnis.",
+      "note_at": "@Befund",
+      "doc": {
+       "label": "Tool-Register · Muster",
+       "title": "Eine Zeile je Tool",
+       "lines": [
+        {
+         "text": "Tool-Art, Bezeichnung, Anbieter, Zweck",
+         "at": "@Tool-Art"
+        },
+        {
+         "text": "Nutzerkreis, Kontoart, Datenarten",
+         "at": "@Nutzerkreis"
+        },
+        {
+         "text": "Freigabe, Prüfdatum, Wiedervorlage",
+         "at": "@Freigabe"
+        },
+        {
+         "text": "Nicht geprüft: „unklar“, mit Wiedervorlage",
+         "at": "@unklar",
+         "mark": "open"
+        },
+        {
+         "text": "Private Konten: „nein“, Paragraf 1",
+         "at": "@Private",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Fangen Sie mit einer Liste an, nicht mit einem Urteil. Das Toolkit nennt sie das Tool-Register: eine Zeile je Tool, das tatsächlich benutzt wird. Tool-Art, Bezeichnung und Anbieter, Zweck, Nutzerkreis, Kontoart, Datenarten, Freigabe, das Prüfdatum und die Wiedervorlage. Die erste Fassung dieser Liste darf unvollständig sein. Ein Tool, das benutzt wird, aber nicht geprüft ist, steht mit dem Eintrag „unklar“ im Register und bekommt eine Wiedervorlage. Unklar ist ein Befund, kein Versäumnis. Eine Zeile ohne Datum ist kein Nachweis. Private Konten bekommen „nein“, mit dem Grund: Paragraf eins der Richtlinie.",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Das Freigabeformular: *sieben Fragen*",
+      "items": [
+       {
+        "title": "Fragen 1 bis 4",
+        "sub": "vertragliche Kriterien",
+        "at": "@eins"
+       },
+       {
+        "title": "Fragen 5 und 6",
+        "sub": "aus der Orientierungshilfe",
+        "at": "@Fünf"
+       },
+       {
+        "title": "Frage 7",
+        "sub": "eine Einordnung, meist nicht selbst leistbar",
+        "at": "@Einordnung"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Dann die Prüfung, ein Tool nach dem anderen. Das Freigabeformular stellt sieben Fragen je Tool. Die Fragen eins bis vier sind die vertraglichen Kriterien. Fünf und sechs stammen aus der Orientierungshilfe zu Konten und Voreinstellungen. Sieben ist eine Einordnung, die ein Betrieb in der Regel nicht selbst leisten kann."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Fragen *eins bis vier*",
+      "items": [
+       {
+        "title": "Training mit Geschäftsdaten",
+        "sub": "ausschließen oder abwählen?",
+        "at": "@Training"
+       },
+       {
+        "title": "Auftragsverarbeitungsvertrag",
+        "sub": "angeboten, für welche Dienste?",
+        "at": "@Auftragsverarbeitungsvertrag"
+       },
+       {
+        "title": "Ort der Verarbeitung",
+        "sub": "Zusage für die Union, Ausnahmen?",
+        "at": "@Ort"
+       },
+       {
+        "title": "Rechte Dritter",
+        "sub": "Freistellung, und was ist ausgenommen?",
+        "at": "@Rechte"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Frage eins. Training mit Geschäftsdaten. Werden Ihre Eingaben zum Training der Modelle verwendet, und lässt sich das ausschließen oder abwählen?"
+      },
+      {
+       "text": "Frage zwei. Auftragsverarbeitungsvertrag. Wird einer angeboten, und für welche Dienste?"
+      },
+      {
+       "text": "Frage drei. Ort der Verarbeitung. Gibt es eine belastbare Zusage zur Verarbeitung in der Union, und mit welchen Ausnahmen?"
+      },
+      {
+       "text": "Frage vier. Rechte Dritter. Stellt der Anbieter Sie bei Ansprüchen Dritter frei, und was ist ausgenommen? Typischerweise die eigenen Eingaben."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "bg": "yt/lib_key_board.start.png",
+     "data": {
+      "headline": "Fragen *fünf bis sieben*",
+      "items": [
+       {
+        "title": "Löschung und Eingabe-Historie",
+        "sub": "keine Historie, kein Training",
+        "at": "@Löschung"
+       },
+       {
+        "title": "Zugang und Kontoart",
+        "sub": "betrieblich, mit Funktionsadresse",
+        "at": "@Zugang"
+       },
+       {
+        "title": "Rechtmäßigkeit der Modellentwicklung",
+        "sub": "meist: „nicht erhoben“",
+        "at": "@Rechtmäßigkeit"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Frage fünf. Löschung und Eingabe-Historie. Lässt sich einstellen, dass keine Eingabe-Historie über die Sitzung hinaus gespeichert wird und Eingaben nicht zum Training verwendet werden?"
+      },
+      {
+       "text": "Frage sechs. Zugang und Kontoart. Gibt es ein betriebliches Konto ohne Personennamen mit Funktionsadresse, und wer verwaltet es?"
+      },
+      {
+       "text": "Frage sieben. Rechtmäßigkeit der Modellentwicklung. Liegt eine behördliche oder gerichtliche Feststellung zum Anbieter vor? Ein Betrieb ohne Rechtsabteilung lässt diese Zeile in der Regel als „nicht erhoben“ stehen. Das ist ehrlicher als ein Häkchen.",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Jede Antwort mit *Fundstelle und Datum*",
+      "note": "Keine ausgefüllte Liste: Bedingungen ändern sich.",
+      "note_at": "@Dieses",
+      "doc": {
+       "label": "Freigabeformular · Regel",
+       "title": "An der Seite des Anbieters geprüft",
+       "lines": [
+        {
+         "text": "Der Vertrag geht der Produktseite vor",
+         "at": "@abgeschlossene"
+        },
+        {
+         "text": "Fundstelle und Tag neben jeder Antwort",
+         "at": "@Neben"
+        },
+        {
+         "text": "Leeres Feld: „auf der geprüften Seite keine Angabe“",
+         "at": "@leeres"
+        },
+        {
+         "text": "Ohne Fundstelle und Datum: kein Befund",
+         "at": "@ausgefülltes",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Unsere Auslegung, und die Regel, der das Formular folgt: Jede Frage wird an der Seite oder dem Vertrag des Anbieters geprüft, nicht an einem Artikel über den Anbieter. Der abgeschlossene Vertrag geht einer Produktseite vor. Neben jede Antwort schreiben Sie, wo Sie es gelesen haben und an welchem Tag. Ein leeres Feld ist ein Befund: „auf der geprüften Seite keine Angabe“. Ein ausgefülltes Feld ohne Fundstelle und Datum ist keiner. Dieses Video nennt keinen Anbieter, und das Toolkit liefert keine ausgefüllte Freigabeliste, weil eine Liste in dem Moment falsch wäre, in dem ein Anbieter seine Bedingungen ändert.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Ein *Maßstab* für alle Tools",
+      "left": {
+       "title": "Frage I4: drei Antworten",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "ohne AV-Vertrag keine Personendaten",
+         "at": "@Auftragsverarbeitungsvertrag"
+        },
+        {
+         "text": "ohne Trainingsausschluss keine Freigabe",
+         "at": "@Ausschluss"
+        },
+        {
+         "text": "Entscheidung je Tool",
+         "at": "@Entscheidung"
+        }
+       ]
+      },
+      "right": {
+       "title": "Beispielbetrieb",
+       "tone": "violet",
+       "at": "@Beispielbetrieb",
+       "rows": [
+        {
+         "text": "wählte die erste Antwort",
+         "at": "@ersten"
+        },
+        {
+         "text": "Vorbelegung, keine Empfehlung",
+         "at": "@Vorbelegung"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Bevor das erste Formular ausgefüllt wird, legt die Leitung einen Maßstab fest, und der gilt für alle Tools gleich. Der Generator fragt das in Frage I vier und bietet drei Antworten an. Ohne Auftragsverarbeitungsvertrag keine Freigabe für personenbezogene Daten. Ohne Ausschluss des Trainings mit Ihren Eingaben keine Freigabe. Oder: Entscheidung je Tool. Das Toolkit empfiehlt keinen der drei, weil der richtige davon abhängt, was der Betrieb mit dem Tool tut. Der Beispielbetrieb hat den ersten gewählt. Der Generator zeigt diese Wahl als Vorbelegung, nicht als Empfehlung.",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "bg": "yt/lib_documents_desk.start.png",
+     "data": {
+      "headline": "Drei Schritte im *Plan*",
+      "items": [
+       {
+        "title": "Schritt 2: Bestand und Register",
+        "sub": "auch mit „unklar“",
+        "at": "@zwei"
+       },
+       {
+        "title": "Schritt 6: betriebliche Konten",
+        "sub": "Training und Historie aus, Funktionsadresse",
+        "at": "@sechs"
+       },
+       {
+        "title": "Schritt 7: Freigabeprüfung je Tool",
+        "sub": "Formular ausfüllen, Register nachziehen",
+        "at": "@sieben"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Im Plan der Inkraftsetzung tragen drei der fünfzehn Schritte diese Arbeit. Schritt zwei: Bestand aufnehmen, welche Tools tatsächlich benutzt werden, und das Register anlegen, auch mit „unklar“. Schritt sechs: betriebliche Konten einrichten, die Voreinstellungen zu Training und Eingabe-Historie setzen, eine Funktionsadresse verwenden. Schritt sieben: die Freigabeprüfung je Tool, das Formular ausfüllen, das Register nachziehen.",
+       "source": "Q5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "num": "3",
+   "title": "Was hinter den Fragen steht",
+   "kicker": "3 · Was gilt",
+   "scenes": [
+    {
+     "type": "quote",
+     "bg": "yt/lib_law_books.start.png",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Ein Vertrag, der den Auftragsverarbeiter bindet: der *Auftragsverarbeitungsvertrag*.",
+      "origin": "Sinngemäß nach: Verordnung (EU) 2016/679, Art. 28 Abs. 3"
+     },
+     "say": [
+      {
+       "text": "Was hinter den Fragen steht."
+      },
+      {
+       "text": "Frage zwei ist die DSGVO. Verarbeitet ein Anbieter personenbezogene Daten im Auftrag Ihres Betriebs, verlangt Artikel achtundzwanzig, Absatz drei, der DSGVO einen Vertrag oder ein anderes Rechtsinstrument, das den Auftragsverarbeiter bindet. Dieser Vertrag ist der Auftragsverarbeitungsvertrag.",
+       "marker": "fakt",
+       "source": "Q6"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Fragen 5 und 6: *Voreinstellungen*",
+      "doc": {
+       "label": "DSK · Orientierungshilfe 2024, 2.5",
+       "title": "Datenschutzfreundlich voreingestellt",
+       "lines": [
+        {
+         "text": "Art. 25 DSGVO: Datenschutz durch Technikgestaltung",
+         "at": "@fünfundzwanzig"
+        },
+        {
+         "text": "Kein Training mit Eingaben",
+         "at": "@Trainingszwecken"
+        },
+        {
+         "text": "Keine Historie über die Sitzung hinaus",
+         "at": "@Sitzung"
+        },
+        {
+         "text": "Ausgaben nicht automatisch veröffentlichen",
+         "at": "@automatisch"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die Fragen fünf und sechs stammen von den deutschen Datenschutzaufsichtsbehörden. Als Beispiel für Datenschutz durch Technikgestaltung und datenschutzfreundliche Voreinstellungen nach Artikel fünfundzwanzig der DSGVO nennen sie Konten für Beschäftigte, bei denen die Funktionen zum Training und zur Eingabe-Historie schon bei der Inbetriebnahme so gewählt werden, dass keine Eingaben zu Trainingszwecken verarbeitet werden und keine Eingabe-Historie über die Sitzung hinaus gespeichert wird. Ausgaben, die zum Konto gehören, dürfen nicht automatisch veröffentlicht werden.",
+       "marker": "fakt",
+       "source": "Q7"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Konten: *betrieblich, ohne Namen*",
+      "left": {
+       "title": "Die Aufsicht rät",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "keine privaten Konten und Geräte",
+         "at": "@privaten"
+        },
+        {
+         "text": "keine Namen im Konto, Funktionsadresse",
+         "at": "@Namen"
+        }
+       ]
+      },
+      "right": {
+       "title": "Unsere Auslegung",
+       "tone": "violet",
+       "at": "@Auslegung",
+       "rows": [
+        {
+         "text": "Regel nennt Tool und Zugangsweg",
+         "at": "@Zugangsweg"
+        },
+        {
+         "text": "Register: eine Spalte Kontoart",
+         "at": "@Spalte"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Dieselbe Aufsicht rät, dass Beschäftigte nicht mit privaten Konten und Geräten mit KI-Anwendungen arbeiten müssen sollten, weil auf diese Weise Profile zu den einzelnen Beschäftigten entstehen können. Konten sollten nicht die Namen einzelner Beschäftigter enthalten, soweit die Anwendung nicht auf eigenen Servern läuft, und wo eine E-Mail-Adresse abgefragt wird, ist eine Funktionsadresse des Betriebs geboten.",
+       "marker": "fakt",
+       "source": "Q8"
+      },
+      {
+       "text": "Unsere Auslegung: Eine Regel, die nur das Tool nennt, erlaubt stillschweigend die Nutzung über ein privates Konto. Die Regel muss deshalb Tool und Zugangsweg nennen. Darum hat das Register eine Spalte für die Kontoart: betrieblich, geteilt, privat oder unbekannt.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Verlangt ein Gesetz ein Register?",
+      "text": "Unsere Auslegung: *nicht ausdrücklich*.",
+      "sub": "Das Register ist der Teil der Richtlinie, der die Tools nennt.",
+      "sub_at": "@Register"
+     },
+     "say": [
+      {
+       "text": "Die Fragen eins, drei und vier sind vertragliche Kriterien: Die Antworten stehen in den Bedingungen des Anbieters und ändern sich mit ihnen."
+      },
+      {
+       "text": "Verlangt ein Gesetz eine schriftliche Richtlinie oder ein Register? Unsere Auslegung: Weder die KI-Verordnung noch die DSGVO verlangen ausdrücklich eine schriftliche KI-Richtlinie. Artikel vier der KI-Verordnung, Artikel vierundzwanzig, Absatz eins, der DSGVO und die Geschäftsgeheimnis-Richtlinie kommen am nächsten. Das Register ist der Teil der Richtlinie, der die Tools nennt.",
+       "marker": "auslegung",
+       "source": "Q9"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "bg": "yt/lib_archive_shelf.start.png",
+     "data": {
+      "headline": "Wann *neu prüfen*?",
+      "left": {
+       "title": "DSGVO Art. 24",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "überprüfen und aktualisieren, wo nötig",
+         "at": "@überprüft"
+        }
+       ]
+      },
+      "right": {
+       "title": "Lücke",
+       "tone": "red",
+       "at": "@Keine",
+       "rows": [
+        {
+         "text": "keine Quelle nennt eine Frist",
+         "at": "@Frist"
+        },
+        {
+         "text": "sechs oder zwölf Monate, keine Empfehlung",
+         "at": "@sechs"
+        },
+        {
+         "text": "Wiedervorlage oder neue Bedingungen",
+         "at": "@Wiedervorlage"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Wo personenbezogene Daten im Spiel sind, steht die Überprüfung in der Verordnung selbst. Die technischen und organisatorischen Maßnahmen des Verantwortlichen „werden erforderlichenfalls überprüft und aktualisiert“.",
+       "marker": "fakt",
+       "source": "Q10"
+      },
+      {
+       "text": "Keine Quelle nennt eine Frist. Das Toolkit bietet sechs oder zwölf Monate an und empfiehlt keines von beiden. Ein Tool wird erneut geprüft zum Termin der Wiedervorlage und sobald der Anbieter seine Bedingungen ändert, je nachdem, was früher eintritt.",
+       "marker": "luecke"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Offen",
+      "text": "Löst ein neues Tool die *Mitbestimmung* aus?",
+      "sub": "Nationales Arbeitsrecht. Mit Betriebsrat: vor der Beschaffung mit einer Fachperson klären.",
+      "sub_at": "@Betriebsrat"
+     },
+     "say": [
+      {
+       "text": "Das ist offen: Ob ein neues KI-Tool die Beteiligung der Belegschaftsvertretung auslöst, ist nationales Arbeitsrecht und von Mitgliedstaat zu Mitgliedstaat verschieden. Artikel achtundachtzig, Absatz eins, der DSGVO erlaubt den Mitgliedstaaten spezifischere Vorschriften für Beschäftigtendaten. Die deutsche Datenschutzaufsicht schreibt, dass die Einführung einer KI-Anwendung in einigen Fällen einen Mitbestimmungstatbestand erfüllt. Ein Betrieb mit Betriebsrat klärt das mit einer Fachperson, bevor er ein Tool beschafft, nicht danach.",
+       "marker": "unsicher",
+       "source": "Q11"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "num": "4",
+   "title": "Was tun Sie? Zwei Fälle",
+   "kicker": "4 · Was tun Sie?",
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_envelopes_desk.start.png",
+     "new": true,
+     "data": {
+      "kicker": "Fall 1 · nachgestellt",
+      "time": "DI 08:15",
+      "place": "Büro, Posteingang der Büroleitung",
+      "obj": {
+       "label": "E-Mail · Anbieter",
+       "from": "noreply@anbieter.example",
+       "subject": "Unsere Nutzungsbedingungen ändern sich",
+       "lines": [
+        "Betrifft: den freigegebenen Textassistenten",
+        "Neue Bedingungen ab dem nächsten Monat",
+        "Register: Wiedervorlage erst in Monaten"
+       ]
+      },
+      "obj_at": "@Anbieter",
+      "highlight": {
+       "line": 1,
+       "label": "neue Bedingungen",
+       "at": "@Nutzungsbedingungen"
+      }
+     },
+     "say": [
+      {
+       "text": "Zwei Fälle zum Mitentscheiden. Beide sind erfunden, die Quellen dahinter nicht. Fall eins. Dienstag, Viertel nach acht. Der Anbieter des freigegebenen Textassistenten schreibt, dass sich seine Nutzungsbedingungen ab dem nächsten Monat ändern. Die Wiedervorlage im Register liegt noch Monate entfernt.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Nichts, das Tool ist ja freigegeben",
+        "at": "@Nichts"
+       },
+       {
+        "key": "B",
+        "text": "Das Tool sofort für alle sperren",
+        "at": "@sperren"
+       },
+       {
+        "key": "C",
+        "text": "Prüfung vorziehen, mit Fundstelle und Datum",
+        "at": "@vorziehen"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: Nichts, das Tool ist ja freigegeben. B: Das Tool sofort für alle sperren. C: Die Prüfung vorziehen: die sieben Fragen an den neuen Bedingungen nachsehen, mit Fundstelle und Datum, und das Register nachziehen. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie A wählen",
+      "headline": "Freigegeben, aber für die alten Bedingungen",
+      "items": [
+       {
+        "time": "nächster Monat",
+        "text": "Die neuen Bedingungen gelten",
+        "tone": "amber",
+        "at": "@gelten"
+       },
+       {
+        "time": "",
+        "text": "Das Formular zeigt die alten Antworten",
+        "tone": "amber",
+        "at": "@Formular"
+       },
+       {
+        "time": "",
+        "text": "Training, Historie: Niemand weiß es",
+        "tone": "red",
+        "at": "@niemand"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "A klingt praktisch. Im Beispiel gelten ab dem nächsten Monat die neuen Bedingungen, das Formular zeigt die Antworten zu den alten, und ob sich beim Training oder bei der Eingabe-Historie etwas geändert hat, weiß im Betrieb niemand.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "Das Toolkit sieht vor: Ein Tool wird erneut geprüft, sobald der Anbieter seine Bedingungen ändert, nicht erst zur Wiedervorlage.",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Prüfung vorziehen",
+       "sub": "Sieben Fragen an den neuen Bedingungen, mit Fundstelle und Datum; Register nachziehen.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "„Ist ja freigegeben“",
+        "note": "geprüft waren die alten Bedingungen",
+        "at": "@verlässt"
+       },
+       {
+        "key": "B",
+        "text": "Sofort sperren",
+        "note": "entschieden, bevor geprüft wurde",
+        "at": "@entscheidet"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C, nach unserer Auslegung. Die Antworten im Formular stehen in den Bedingungen des Anbieters und ändern sich mit ihnen. Also prüfen Sie die sieben Fragen an der neuen Fassung, mit Fundstelle und Datum, und ziehen das Register nach. A verlässt sich auf eine Prüfung der alten Bedingungen. B entscheidet, bevor jemand nachgesehen hat.",
+       "marker": "auslegung",
+       "source": "Q1"
+      }
+     ]
+    },
+    {
+     "type": "case",
+     "bg": "yt/shot01_two_phones.start.png",
+     "new": true,
+     "data": {
+      "kicker": "Fall 2 · nachgestellt",
+      "time": "MI 07:10",
+      "place": "Werkstatt, vor der Abfahrt",
+      "obj": {
+       "label": "Frage · Monteur",
+       "from": "Monteur (erfunden)",
+       "subject": "Darf ich die Übersetzungs-App weiter nutzen?",
+       "lines": [
+        "Privat auf dem Telefon installiert",
+        "Für Gespräche mit Kunden auf der Baustelle",
+        "Richtlinie: private Konten nicht zulässig"
+       ]
+      },
+      "obj_at": "@Übersetzungs-App",
+      "highlight": {
+       "line": 2,
+       "label": "nicht zulässig",
+       "at": "@zulässig"
+      }
+     },
+     "say": [
+      {
+       "text": "Fall zwei. Mittwoch, zehn nach sieben. Ein Monteur fragt, ob er die Übersetzungs-App auf seinem privaten Telefon weiter für Gespräche mit Kunden benutzen darf. Die Richtlinie sagt seit Kurzem: Dienstliche Nutzung über private Konten ist nicht zulässig.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Ausnahmsweise erlauben, es geht nur ums Übersetzen",
+        "at": "@Ausnahmsweise"
+       },
+       {
+        "key": "B",
+        "text": "Nichts sagen und es laufen lassen",
+        "at": "@Nichts"
+       },
+       {
+        "key": "C",
+        "text": "Betriebliches Konto mit Prüfung, oder privat beenden",
+        "at": "@Entweder"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: Ausnahmsweise erlauben, es geht ja nur ums Übersetzen. B: Nichts sagen und es laufen lassen, solange nichts passiert. C: Entweder Zugang über ein betriebliches Konto einrichten und das Tool prüfen, oder die dienstliche Nutzung auf dem privaten Telefon beenden. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie B wählen",
+      "headline": "Die Regel gilt, aber nicht für die App",
+      "items": [
+       {
+        "time": "07:15",
+        "text": "Die App läuft weiter, privat",
+        "tone": "neutral",
+        "at": "@läuft"
+       },
+       {
+        "time": "",
+        "text": "Register: nichts, oder „privat“",
+        "tone": "amber",
+        "at": "@Register"
+       },
+       {
+        "time": "",
+        "text": "Stillschweigend erlaubt",
+        "tone": "amber",
+        "at": "@stillschweigend"
+       },
+       {
+        "time": "",
+        "text": "Profile einzelner Beschäftigter möglich",
+        "tone": "red",
+        "at": "@Profile"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "B ist bequem. Im Beispiel läuft die App weiter, und im Register steht für sie nichts oder „privat“.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "Unsere Auslegung: Eine Regel, die so gelebt wird, nennt nur das Tool und erlaubt stillschweigend die Nutzung über ein privates Konto.",
+       "marker": "auslegung"
+      },
+      {
+       "text": "Und die Datenschutzaufsicht rät, dass Beschäftigte nicht mit privaten Konten und Geräten arbeiten müssen sollten, weil so Profile einzelner Beschäftigter entstehen können.",
+       "marker": "fakt",
+       "source": "Q8"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Betriebliches Konto, oder beenden",
+       "sub": "Zugang über ein betriebliches Konto mit Prüfung, sonst endet die private Nutzung.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Ausnahme erlauben",
+        "note": "eine Ausnahme ohne Prüfung",
+        "at": "@Ausnahme"
+       },
+       {
+        "key": "B",
+        "text": "Laufen lassen",
+        "note": "die Regel stillschweigend aufgehoben",
+        "at": "@stillschweigend"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C. Das Handbuch nennt genau diese zwei Wege: Zugang über ein betriebliches Konto, oder die dienstliche Nutzung auf dem privaten Telefon endet. A macht aus der Regel eine Ausnahme ohne Prüfung, B hebt sie stillschweigend auf. Wird es das betriebliche Konto, bekommt das Tool eine Zeile und ein Formular wie jedes andere.",
+       "marker": "auslegung",
+       "source": "Q12"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "num": "5",
+   "title": "Der Beispielbetrieb: drei Zeilen und ein Formular",
+   "kicker": "5 · Der Beispielbetrieb",
+   "scenes": [
+    {
+     "type": "paper",
+     "bg": "yt/lib_folders_closed.start.png",
+     "data": {
+      "headline": "Block B: *drei Zeilen*",
+      "note": "Das Register führt die Büroleitung.",
+      "note_at": "@führt",
+      "doc": {
+       "label": "Muster D3 · Tool-Register",
+       "title": "Muster Elektrotechnik e.U.",
+       "lines": [
+        {
+         "text": "Textassistent · Büro · betrieblich · unklar",
+         "at": "@Textassistent",
+         "mark": "open"
+        },
+        {
+         "text": "Übersetzungsdienst · Kontoart unbekannt",
+         "at": "@Übersetzungsdienst",
+         "mark": "open"
+        },
+        {
+         "text": "Assistent der Bürosoftware · geteilt, Funktionsadresse",
+         "at": "@Bürosoftware"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Zurück zum erfundenen Elektrotechnikbetrieb. Seine Antworten in Block B des Generators werden drei Zeilen im Register. Zeile eins: ein Textassistent, im Büro benutzt für Entwürfe von Angeboten, Zusammenfassungen und Übersetzungen, über ein betriebliches Konto. Freigabe: unklar, mit Wiedervorlage. Zeile zwei: ein Übersetzungsdienst. Kontoart: unbekannt, mit dem Vermerk, die Kontoart erst zu klären und dann zu prüfen. Zeile drei: der Assistent in der Bürosoftware, über ein geteiltes Konto, mit dem Vermerk, dass ein geteiltes Konto keine Personennamen trägt und eine Funktionsadresse nutzt. Das Register führt die Büroleitung; das war Frage A fünf.",
+       "source": "Q12"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Die zwei Monteure: *nicht wie bisher*",
+      "left": {
+       "title": "Fragen B3 und B4",
+       "tone": "amber",
+       "rows": [
+        {
+         "text": "B3: private Konten dienstlich? Ja",
+         "at": "@drei"
+        },
+        {
+         "text": "B4: ab jetzt nicht zulässig",
+         "at": "@vier"
+        }
+       ]
+      },
+      "right": {
+       "title": "Für die beiden",
+       "tone": "blue",
+       "at": "@Entweder",
+       "rows": [
+        {
+         "text": "Zugang über ein betriebliches Konto",
+         "at": "@Zugang"
+        },
+        {
+         "text": "oder Ende der privaten Nutzung",
+         "at": "@endet"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die zwei Monteure mit den privaten Telefonen sind der Grund, warum die Richtlinie nicht „wie bisher“ sagen kann. Frage B drei wurde mit Ja beantwortet: Tools werden über private Konten dienstlich benutzt. Frage B vier legt fest, was ab jetzt gilt: nicht zulässig. Das Handbuch sagt, was das für die beiden heißt. Entweder bekommen sie Zugang über ein betriebliches Konto, oder die dienstliche Nutzung auf dem privaten Telefon endet mit dem Geltungsbeginn."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_printer_tray.start.png",
+     "data": {
+      "headline": "Das *Freigabeformular*",
+      "note": "Leer, weil der Generator den Anbieter nicht kennt.",
+      "note_at": "@leer",
+      "doc": {
+       "label": "Muster D3 · Freigabeformular",
+       "title": "Textassistent · eine Seite",
+       "lines": [
+        {
+         "text": "Kopf vorbefüllt: Tool, Art, Zweck, Kontoart, Prüfer",
+         "at": "@Kopf"
+        },
+        {
+         "text": "Sieben Fragen: Antwort, Fundstelle mit Datum, Wortlaut",
+         "at": "@sieben"
+        },
+        {
+         "text": "Maßstab: ohne AV-Vertrag keine Personendaten",
+         "at": "@Maßstab",
+         "mark": "hl"
+        },
+        {
+         "text": "Wiedervorlage, zwei Unterschriften",
+         "at": "@Wiedervorlage"
+        },
+        {
+         "text": "Danach: Register nachziehen, Formular ablegen",
+         "at": "@danach"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das ist das Freigabeformular, das der Generator für den Textassistenten erzeugt. Eine Seite je Tool. Der Kopf ist vorbefüllt: das Tool, seine Art, der Zweck, die Kontoart, die prüfende Person, die Büroleitung. Dann folgen die sieben Fragen, jede mit einem Feld für die Antwort, einem Feld für die Fundstelle beim Anbieter mit Datum und einem Feld für den Wortlaut. Diese Felder sind leer. Der Generator lässt sie absichtlich leer, weil er den Anbieter nicht kennt und nicht raten soll. Darunter: die Entscheidung, die Begründung und der Maßstab des Betriebs, vorbefüllt aus Frage I vier: ohne Auftragsverarbeitungsvertrag keine Freigabe für personenbezogene Daten. Dann die Wiedervorlage und die zwei Unterschriftszeilen. Die letzte Zeile sagt, was danach passiert: die Zeile im Tool-Register nachziehen und dieses Formular dazu ablegen."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "D7: die Nachweisseite",
+      "text": "Jeder Nachweis eine Zeile: *geregelt, geplant oder offen*.",
+      "sub": "Offene Punkte werden aufgeführt, nicht versteckt.",
+      "sub_at": "@Offene"
+     },
+     "say": [
+      {
+       "text": "Auf der Nachweisseite, D sieben, ist jeder Nachweis eine Zeile mit einem Stand: geregelt, geplant oder offen. Offene Punkte werden aufgeführt, nicht versteckt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "num": "6",
+   "title": "Was das Toolkit nicht ist",
+   "kicker": "6 · Was es nicht ist",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_archive_shelf.start.png",
+     "data": {
+      "kicker": "Keine Rechtsberatung",
+      "text": "Die Dokumente zeigen, was Sie *entschieden* haben.",
+      "sub": "Seit wann, für welche Tools und wer davon weiß."
+     },
+     "say": [
+      {
+       "text": "Was dieses Toolkit nicht ist, mit den Worten der Produktseite: Es ist keine Rechtsberatung, und kein Dokument behauptet, dass Ihr Betrieb eine Vorschrift erfüllt. Die Dokumente zeigen, was Sie entschieden haben, seit wann, für welche Tools und wer davon weiß."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Das Formular zeigt die *Prüfung*",
+      "left": {
+       "title": "Zeigt",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "dass Sie geprüft haben, wo und wann",
+         "at": "@geprüft"
+        }
+       ]
+      },
+      "right": {
+       "title": "Zeigt nicht",
+       "tone": "amber",
+       "at": "@nicht",
+       "rows": [
+        {
+         "text": "dass es für jede Aufgabe genügt",
+         "at": "@genügen"
+        },
+        {
+         "text": "was überhaupt hinein darf",
+         "at": "@hinein"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das Freigabeformular setzt keinen Maßstab; die Leitung entscheidet. Ein unterschriebenes Formular zeigt, dass Sie geprüft haben, wo und wann. Es zeigt nicht, dass die Bedingungen des Anbieters für jede Aufgabe genügen, die Sie vorhaben, und es ersetzt nicht die Frage, was überhaupt in das Tool hinein darf."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "17 Punkte, *8 offen*. Hier zwei:",
+      "items": [
+       {
+        "title": "Freie Mitarbeit und Auftragnehmer",
+        "sub": "Vertragsrecht, nicht erhoben",
+        "at": "@freie"
+       },
+       {
+        "title": "Mitbestimmung",
+        "sub": "nationales Recht, Fachperson fragen",
+        "at": "@Mitbestimmung"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Das Handbuch führt siebzehn Punkte zum Stand 23. Oktober 2026; acht davon sind offen. Zwei berühren dieses Thema. Ob eine Richtlinie freie Mitarbeit und Auftragnehmer bindet, ist Vertragsrecht und wurde nicht erhoben. Ob ein KI-Tool die Mitbestimmung auslöst, ist nationales Recht, und der Plan verweist an eine Fachperson. Ihr Betrieb entscheidet, und die Dokumente halten die Entscheidung mit Datum fest.",
+       "source": "Q13"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "num": "7",
+   "title": "Freies Tool, Handbuch, Toolkit",
+   "kicker": "7 · Tool und Toolkit",
+   "end_seconds": 20.0,
+   "scenes": [
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Frei: *„Darf das hinein?“*",
+      "note": "Nehmen Sie Grün als nichts Offensichtliches.",
+      "note_at": "@Nehmen",
+      "doc": {
+       "label": "scutoria.com · Tool",
+       "title": "Vier Fragen, eine Ampel",
+       "lines": [
+        {
+         "text": "Was steht im Text?",
+         "at": "@Text"
+        },
+        {
+         "text": "Welches Konto?",
+         "at": "@Konto"
+        },
+        {
+         "text": "Trainiert der Anbieter mit Eingaben?",
+         "at": "@trainiert"
+        },
+        {
+         "text": "Was ist die Aufgabe?",
+         "at": "@Aufgabe"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Bevor Sie etwas kaufen: Zwei Dinge sind frei auf scutoria.com. Das erste ist das Tool „Darf das hinein?“. Es läuft im Browser und sendet nichts. Vier Fragen: Was steht im Text, welches Konto, trainiert der Anbieter mit Eingaben, und was ist die Aufgabe. Dann eine Ampel mit Gründen und nächsten Schritten. Zwei seiner vier Fragen sind Frage eins und Frage sechs des Freigabeformulars. Nehmen Sie Grün als nichts Offensichtliches. Der Link steht in der Beschreibung."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Handbuch und Toolkit",
+      "text": "D3: das *Tool-Register* und das Freigabeformular.",
+      "sub": "Handbuch vor dem Kauf lesen · 199 Euro im Jahr · die ersten zehn Käufer zahlen 99",
+      "sub_at": "@Handbuch"
+     },
+     "say": [
+      {
+       "text": "Das zweite ist das Handbuch des KI-Richtlinien-Toolkits. Abschnitt drei enthält alles, was Sie heute gehört haben, mit jeder Quelle und ihrem Abrufdatum. Lesen Sie es, bevor Sie kaufen."
+      },
+      {
+       "text": "Wenn Sie die Dokumente aus Ihren eigenen Antworten erzeugt haben wollen: das KI-Richtlinien-Toolkit. Vierunddreißig Fragen, sieben datierte Dokumente, darunter D drei, das Tool-Register und das Freigabeformular. Eine Zeile je Tool, sieben Fragen je Tool. Das Toolkit kostet 199 Euro im Jahr. Die ersten zehn Käufer zahlen 99.",
+       "source": "Q14"
+      }
+     ]
+    },
+    {
+     "type": "close",
+     "data": {
+      "rule": "Hier ist Scutoria. Synthetische Stimme, Quellen am Bildschirm.",
+      "memo": {
+       "label": "Frei: Darf das hinein?",
+       "url": "scutoria.com",
+       "at": "@Skript"
+      },
+      "toolkit": {
+       "label": "Als Nächstes: Sind wir von NIS2 betroffen?",
+       "url": "Video 10",
+       "at": "@Nächstes"
+      },
+      "claim": "Belegt. Datiert. Vorzeigbar.",
+      "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+     },
+     "say": [
+      {
+       "text": "Hier ist Scutoria. Die Stimme, die Sie hören, ist synthetisch. Das Skript wurde mit einem KI-Tool entworfen und von uns Satz für Satz geprüft. Jede Zahl und jede Rechtsaussage trägt ihre Quelle am Bildschirm. Quellenbasiert, keine Rechtsberatung."
+      },
+      {
+       "text": "Als Nächstes: Sind wir von NIS zwei betroffen, und warum Ihre Kunden trotzdem fragen. Und wenn Sie lieber beide Toolkits auf einmal sehen wollen: der Rundgang durch beide Toolkits."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "reels": [
+  {
+   "id": "r1",
+   "chapter": "c1",
+   "title": "Niemand hat Ja gesagt",
+   "kicker": "Aus Video 09 · Tool-Freigabe",
+   "scenes": [
+    "c1s0",
+    "c1s1",
+    "c1s2"
+   ]
+  },
+  {
+   "id": "r2",
+   "chapter": "c2",
+   "title": "Sieben Fragen je Tool",
+   "kicker": "Aus Video 09 · Tool-Freigabe",
+   "scenes": [
+    "c2s1",
+    "c2s2",
+    "c2s3"
+   ]
+  },
+  {
+   "id": "r3",
+   "chapter": "c2",
+   "title": "Fundstelle, Datum, Maßstab",
+   "kicker": "Aus Video 09 · Tool-Freigabe",
+   "scenes": [
+    "c2s4",
+    "c2s5"
+   ]
+  },
+  {
+   "id": "r4",
+   "chapter": "c3",
+   "title": "Konten und Voreinstellungen",
+   "kicker": "Aus Video 09 · Tool-Freigabe",
+   "scenes": [
+    "c3s1",
+    "c3s2"
+   ]
+  },
+  {
+   "id": "r5",
+   "chapter": "c4",
+   "title": "Was tun Sie? Neue Bedingungen",
+   "kicker": "Aus Video 09 · Was tun Sie?",
+   "scenes": [
+    "c4s0",
+    "c4s1",
+    "c4s2",
+    "c4s3"
+   ]
+  },
+  {
+   "id": "r6",
+   "chapter": "c4",
+   "title": "Was tun Sie? Die private App",
+   "kicker": "Aus Video 09 · Was tun Sie?",
+   "scenes": [
+    "c4s4",
+    "c4s5",
+    "c4s6",
+    "c4s7"
+   ]
+  }
+ ]
+}

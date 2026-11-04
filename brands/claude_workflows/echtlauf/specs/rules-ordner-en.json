@@ -1,0 +1,34 @@
+{
+  "id": "rules-ordner-en",
+  "topic_id": "claude_workflows-20261118-3-en",
+  "language": "en",
+  "title": "Rules for specific folders only",
+  "model": "haiku",
+  "tools": "Read,Write",
+  "probe": "TEST-RULE",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    ".claude/rules/tests.md": "---\npaths:\n  - \"tests/**\"\n---\nStart every file in tests/ with the line `// TEST-RULE`.\n",
+    "tests/alt.test.js": "const assert = require(\"assert\");\nassert.strictEqual(1 + 1, 2);\n",
+    "src/alt.js": "module.exports = (a, b) => a + b;\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Working in tests/",
+      "probe_where": "file:tests/neu.test.js",
+      "prompt": "Read tests/alt.test.js and create tests/neu.test.js next to it, which checks that 2 + 2 equals 4. Reply in English.",
+      "permission_mode": "acceptEdits"
+    },
+    {
+      "id": "L2",
+      "title": "Working in src/",
+      "probe_where": "file:src/neu.js",
+      "prompt": "Read src/alt.js and create src/neu.js next to it, which multiplies two numbers. Reply in English.",
+      "permission_mode": "acceptEdits"
+    }
+  ]
+}

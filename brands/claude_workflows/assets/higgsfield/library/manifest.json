@@ -1,0 +1,805 @@
+{
+  "brand_id": "claude_workflows",
+  "brand": "Promptwerk",
+  "plan": "Higgsfield Ultra",
+  "license": "Higgsfield Terms of Service section 4.4: 'Company does not claim ownership of any of your Inputs or Outputs, nor does it restrict your commercial use of Outputs.' Rights in exported Outputs survive cancellation. (Wortlaut wie im Scutoria-Paket vom 2026-10-30.)",
+  "date": "2026-11-03",
+  "prompt_sheet": "kein eigenes Prompt-Blatt; Motive nach Haeufigkeit in OneDrive/Business/04 Redaktionsplan/Konzeptplan Promptwerk (ab November 2026).md, Freigabe der Hauptsitzung vom 2026-11-03 (Neustart, Abschnitt 10)",
+  "palette": "kuehle blaue Daemmerung mit einer warmen Schreibtischlampe; Grund des Formats #0B0C10 bleibt Code",
+  "textzone_y": [
+    290,
+    1100
+  ],
+  "credits_total": 68,
+  "credits_items": 68,
+  "credits_rejected": 0,
+  "items": [
+    {
+      "file": "pw_clip_toggle_switch.mp4",
+      "type": "video",
+      "purpose": "Clip: Hand legt Kippschalter um, Leuchte wechselt; Startbild ist pw_real_toggle_panel.jpg",
+      "use": "Reihe Gleicher Auftrag, anderer Schalter",
+      "loop": false,
+      "credits": 10,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Video",
+          "model": "kling_o3_flf",
+          "model_reported": "",
+          "job_id": "81472ca0-1c6f-4baf-b24a-bdf6ec7461fa",
+          "credits": 10,
+          "params": {
+            "aspect_ratio": "9:16",
+            "duration": 8,
+            "mode": "pro",
+            "sound": "off",
+            "start_image": "a14edc76-d3b6-41c4-9fe1-bc393d9cfe57"
+          },
+          "prompt": "A hand enters from the side and flips the second toggle switch, the small indicator lamp above it changes from red to green, the hand withdraws, static camera, no face, no text."
+        }
+      ],
+      "size": "1080x1920",
+      "duration_s": 8.03,
+      "source": "1076x1928, 8.04 s",
+      "seam_diff": 2.82,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Nahtfehler erstes/letztes Bild 2.8/255 · Helligkeit t0 47.7/25.4/22.2 %, Mitte 47.7/23.3/18.2 % · Textzone 35.9 %"
+    },
+    {
+      "file": "pw_real_desk_night.jpg",
+      "type": "image",
+      "purpose": "Realbild: Schreibtisch frontal bei Nacht, Laptop zu",
+      "use": "Aufbau A Anfang und Ende",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "50201007-d7b8-43d5-b79b-8dff4e181993",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A tidy desk seen from the front at night: a closed silver laptop without any logo, a blank notepad and a pen, a warm desk lamp switched on, dark office behind, photorealistic, cool blue dusk light through a window with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, apple logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 16.7/21.8/23.1 %, Textzone y 290-1100: 18.2 % (Streuung 17.8)"
+    },
+    {
+      "file": "pw_real_toggle_panel.jpg",
+      "type": "image",
+      "purpose": "Realbild: Kippschalterleiste ohne Beschriftung (Startbild des Clips)",
+      "use": "Reihe Gleicher Auftrag, anderer Schalter",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "a14edc76-d3b6-41c4-9fe1-bc393d9cfe57",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "Close-up of a row of four old metal toggle switches on a dark grey control panel, one small round indicator lamp above each switch, no labels, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, labels, scale markings, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 48.4/26.1/22.9 %, Textzone y 290-1100: 36.6 % (Streuung 21.6)"
+    },
+    {
+      "file": "pw_real_two_notes.jpg",
+      "type": "image",
+      "purpose": "Realbild: Zwei leere Haftzettel, gelb und blau",
+      "use": "Vergleich zweier Laeufe",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "727218ac-a59a-49f2-a66a-2f5c8b16b172",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "Two blank sticky notes side by side on a desk, one yellow and one blue, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 36.3/53.8/27.9 %, Textzone y 290-1100: 47.2 % (Streuung 22.6)"
+    },
+    {
+      "file": "pw_real_binders.jpg",
+      "type": "image",
+      "purpose": "Realbild: Aktenregal mit Ordnern ohne Rueckenschrift",
+      "use": "Ablage, Dokumente",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "f528065d-aea4-4d65-bd27-935d6a814826",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "An office shelf with a row of grey and blue ring binders, the spines completely blank without labels, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, spine labels, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 51.2/39.7/12.2 %, Textzone y 290-1100: 48.8 % (Streuung 27.9)"
+    },
+    {
+      "file": "pw_real_note_monitor.jpg",
+      "type": "image",
+      "purpose": "Realbild: Haftzettel am ausgeschalteten Monitor",
+      "use": "Erinnerung, Regel",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "77da10e8-b325-4aae-825b-3ec172b6108d",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A blank yellow sticky note stuck to the edge of a switched-off monitor, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 50.6/37.5/28.3 %, Textzone y 290-1100: 45.3 % (Streuung 25.7)"
+    },
+    {
+      "file": "pw_real_cabinet_lock.jpg",
+      "type": "image",
+      "purpose": "Realbild: Schloss an Aktenschrankschublade",
+      "use": "Rechte, Sperren, Deny-Regel",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "34044857-a036-4e49-9661-a876b03ef546",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "Close-up of a small lock on the drawer of a grey metal filing cabinet, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 35.1/46.2/24.1 %, Textzone y 290-1100: 45.2 % (Streuung 20.9)"
+    },
+    {
+      "file": "pw_real_stamp_pads.jpg",
+      "type": "image",
+      "purpose": "Realbild: Rotes und gruenes Stempelkissen mit Stempel",
+      "use": "Freigabe, Ablehnung",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "4b492e3a-e2fd-4bc4-8839-6f9cf40e7ad9",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A red and a green ink stamp pad with a plain wooden rubber stamp on a desk, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 37.4/29.1/20.2 %, Textzone y 290-1100: 31.7 % (Streuung 20.9)"
+    },
+    {
+      "file": "pw_real_inbox_full.jpg",
+      "type": "image",
+      "purpose": "Realbild: Uebervoller Ablagekorb (vorher)",
+      "use": "Vorher-nachher Ordnung",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "3f6d814f-af5c-4fa8-a39d-40f77387a638",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "An overflowing office in-tray piled high with messy papers, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 41.2/36.8/33.0 %, Textzone y 290-1100: 38.8 % (Streuung 20.9)"
+    },
+    {
+      "file": "pw_real_inbox_sorted.jpg",
+      "type": "image",
+      "purpose": "Realbild: Sortierter Ablagekorb (nachher)",
+      "use": "Vorher-nachher Ordnung",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "6b1e2d25-096a-4a85-a995-4c6c4ba86f48",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "The same kind of office in-tray with neatly sorted paper stacks, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 59.4/53.3/34.1 %, Textzone y 290-1100: 63.5 % (Streuung 18.9)"
+    },
+    {
+      "file": "pw_real_clipboard_checked.jpg",
+      "type": "image",
+      "purpose": "Realbild: Klemmbrett mit abgehakter Liste",
+      "use": "Pruefung, erledigt",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "e4c6b47a-adb3-453c-946c-8a5392125b84",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A clipboard with a printed checklist where every box is ticked, the lines unreadable, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 28.9/18.2/19.3 %, Textzone y 290-1100: 19.8 % (Streuung 21.4)"
+    },
+    {
+      "file": "pw_real_stopwatch_keyboard.jpg",
+      "type": "image",
+      "purpose": "Realbild: Stoppuhr ohne Ziffern neben Tastatur",
+      "use": "Laufzeit, Dauer",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "6227661a-9ac7-41ac-b5a0-be1a386c3ea3",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A plain analog stopwatch with a blank dial without numerals lying next to a keyboard without key legends, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 36.8/40.7/29.6 %, Textzone y 290-1100: 38.6 % (Streuung 21.2)"
+    },
+    {
+      "file": "pw_real_cashbox_key.jpg",
+      "type": "image",
+      "purpose": "Realbild: Metallkassette mit Schluessel neben Laptop",
+      "use": "Geheimnisse, Zugangsdaten",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "84924718-e8d4-429a-98ab-66b91592cb7c",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A small grey metal cash box with a key in the lock next to a closed laptop without logo, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 42.1/39.6/26.4 %, Textzone y 290-1100: 40.7 % (Streuung 15.2)"
+    },
+    {
+      "file": "pw_real_tool_wall.jpg",
+      "type": "image",
+      "purpose": "Realbild: Werkzeugwand mit leeren Halterungen",
+      "use": "Werkzeuge, Rechte, fehlende Tools",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "cf4792ba-4ae5-4c96-9271-f8f6896e2407",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A pegboard tool wall with holders, some of them empty, in a tidy workshop corner, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 31.3/37.0/27.0 %, Textzone y 290-1100: 31.9 % (Streuung 14.7)"
+    },
+    {
+      "file": "pw_real_handover.jpg",
+      "type": "image",
+      "purpose": "Realbild: Zweiter Arbeitsplatz, Mappe wird uebergeben",
+      "use": "Uebergabe, Agenten",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "0e68b667-bba2-4caa-9ac4-8f7e642bbe08",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A person seen from behind at a second desk receiving a grey folder handed over by another hand, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 28.0/24.0/13.0 %, Textzone y 290-1100: 28.6 % (Streuung 20.3)"
+    },
+    {
+      "file": "pw_real_hanging_files.jpg",
+      "type": "image",
+      "purpose": "Realbild: Haengeregister mit leeren Reitern",
+      "use": "Ablage, Suche",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "e4422bc5-51ca-4de2-8242-c872aa9478b4",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A drawer of hanging file folders with blank tabs, a hand reaching in, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 30.6/29.3/5.5 %, Textzone y 290-1100: 26.3 % (Streuung 17.4)"
+    },
+    {
+      "file": "pw_real_magnifier_stack.jpg",
+      "type": "image",
+      "purpose": "Realbild: Lupe ueber Papierstapel",
+      "use": "Pruefen, Doku gegen Wirklichkeit",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "6162e50f-a8e4-4b9a-a660-f09e7a8dde1e",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A magnifying glass lying on a stack of printed papers with unreadable lines, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 45.9/46.8/15.2 %, Textzone y 290-1100: 50.5 % (Streuung 22.4)"
+    },
+    {
+      "file": "pw_real_manual_leaflet.jpg",
+      "type": "image",
+      "purpose": "Realbild: Dickes Handbuch neben duennem Merkblatt",
+      "use": "Doku gegen Wirklichkeit",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "da3b194e-7fb7-40ae-aaab-a63218727ed6",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A thick blank hardcover manual next to a thin single-page leaflet on a desk, no text on either, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 39.5/33.3/12.0 %, Textzone y 290-1100: 32.6 % (Streuung 17.7)"
+    },
+    {
+      "file": "pw_real_patch_cable.jpg",
+      "type": "image",
+      "purpose": "Realbild: Netzwerkkabel ins Patchfeld",
+      "use": "Verbindungen, Integrationen",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "06788301-d34b-486c-8c81-9031e513c4d2",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "Close-up of a hand plugging a network cable into a patch panel without any labels or logos, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 35.5/36.1/31.4 %, Textzone y 290-1100: 41.5 % (Streuung 29.3)"
+    },
+    {
+      "file": "pw_real_invoice_stack.jpg",
+      "type": "image",
+      "purpose": "Realbild: Stapel Rechnungen mit Bueroklammern",
+      "use": "Rechnungen, Buchhaltung",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "37988abb-30d1-49f8-b369-9dde910624df",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A stack of invoices held with paper clips, all text blurred and unreadable, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 49.1/40.4/26.2 %, Textzone y 290-1100: 46.6 % (Streuung 23.0)"
+    },
+    {
+      "file": "pw_real_printer_output.jpg",
+      "type": "image",
+      "purpose": "Realbild: Drucker gibt Stapel aus",
+      "use": "Ergebnis, Bericht",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "e83b9e9e-c4fb-462a-b547-15cc5a18a340",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "An office printer pushing out a stack of printed pages with unreadable content, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 27.3/29.6/28.2 %, Textzone y 290-1100: 34.5 % (Streuung 21.7)"
+    },
+    {
+      "file": "pw_real_printed_chart.jpg",
+      "type": "image",
+      "purpose": "Realbild: Ausgedrucktes Diagramm ohne Schrift",
+      "use": "Auswertung",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "50d4ef81-3d97-49e5-a1a5-03420721e3ef",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A printed bar chart on paper lying on a desk, without any text, axis labels or numbers, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 23.5/50.7/24.2 %, Textzone y 290-1100: 42.7 % (Streuung 25.5)"
+    },
+    {
+      "file": "pw_real_card_box.jpg",
+      "type": "image",
+      "purpose": "Realbild: Karteikasten mit Kundenkarten",
+      "use": "Kundenliste, Dubletten",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "1a5c3fe7-2d9b-4fdb-b53a-55de9bd5e184",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A wooden card index box full of blank customer index cards with dividers, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 29.4/40.3/29.0 %, Textzone y 290-1100: 37.4 % (Streuung 27.2)"
+    },
+    {
+      "file": "pw_real_hourglass.jpg",
+      "type": "image",
+      "purpose": "Realbild: Sanduhr auf dem Schreibtisch",
+      "use": "Zeit, Wartezeit",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "79047f8a-96d7-45b0-b416-975a5f6faa2c",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "An hourglass with running sand on a desk next to a closed laptop without logo, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 31.6/42.5/31.6 %, Textzone y 290-1100: 35.8 % (Streuung 22.9)"
+    },
+    {
+      "file": "pw_real_indicator_lamps.jpg",
+      "type": "image",
+      "purpose": "Realbild: Kontrollleuchten rot und gruen",
+      "use": "Bestanden, nicht bestanden",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "0c190f98-5432-4e36-9979-f6a34b3f1a66",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A red and a green indicator lamp glowing on a plain grey test device without labels, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 41.7/42.6/17.9 %, Textzone y 290-1100: 46.9 % (Streuung 14.2)"
+    },
+    {
+      "file": "pw_real_two_desks.jpg",
+      "type": "image",
+      "purpose": "Realbild: Zwei gleiche Schreibtische nebeneinander",
+      "use": "Gleicher Auftrag, zwei Laeufe",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "934a26d3-aac3-4283-936b-57d237b1ecc5",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "Two identical tidy desks side by side, each with a closed laptop without logo and a lamp, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 41.7/52.8/36.0 %, Textzone y 290-1100: 48.4 % (Streuung 9.5)"
+    },
+    {
+      "file": "pw_real_archive_box.jpg",
+      "type": "image",
+      "purpose": "Realbild: Archivkarton, Hand hebt Deckel",
+      "use": "Archiv, Altbestand",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "df083794-8e5a-43d8-9836-1734472d68ab",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A hand lifting the lid of a plain cardboard archive box filled with folders without labels, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 37.3/35.7/40.6 %, Textzone y 290-1100: 36.6 % (Streuung 18.8)"
+    },
+    {
+      "file": "pw_real_contract_folder.jpg",
+      "type": "image",
+      "purpose": "Realbild: Vertragsmappe mit Schleife",
+      "use": "Vertraege, Pruefung",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "98e4a6ff-41be-4398-8bfc-9d42109b8408",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A dark contract folder tied with a ribbon lying on a desk, no text, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 35.6/30.7/11.9 %, Textzone y 290-1100: 32.4 % (Streuung 25.6)"
+    },
+    {
+      "file": "pw_real_printed_email.jpg",
+      "type": "image",
+      "purpose": "Realbild: Ausgedruckte lange Mail mit Markierungen",
+      "use": "E-Mail-Aufgaben",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "5e06fd5f-a0f0-45a2-9504-bbedaf156af5",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A long printed page with highlighter marks and unreadable lines next to an envelope, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 34.8/41.4/38.1 %, Textzone y 290-1100: 36.7 % (Streuung 20.5)"
+    },
+    {
+      "file": "pw_real_counter_bell.jpg",
+      "type": "image",
+      "purpose": "Realbild: Tischklingel an der Theke",
+      "use": "Kundenkontakt, Anfrage",
+      "loop": false,
+      "credits": 2,
+      "date": "2026-11-03",
+      "generations": [
+        {
+          "step": "Bild",
+          "model": "nano_banana_pro",
+          "model_reported": "nano_banana_2",
+          "job_id": "ea3a68e4-1f66-418b-bebb-b35279031c14",
+          "credits": 2,
+          "params": {
+            "aspect_ratio": "9:16",
+            "resolution": "2k"
+          },
+          "prompt": "A brass service bell on a wooden counter, photorealistic, cool blue dusk light with one warm desk lamp, calm, minimal, vertical 9:16. Negative: faces, readable text, letters, numbers, screen content, keyboard legends, logo, brand, watermark."
+        }
+      ],
+      "size": "1536x2752",
+      "duration_s": null,
+      "check": "Sichtpruefung 03.11.: keine Schrift, kein Bildschirminhalt, kein Logo, kein Gesicht; nur Zwischen- und Kontextbild, die Aufzeichnung bleibt der Kern · Helligkeit oben/Mitte/unten 32.2/33.5/21.7 %, Textzone y 290-1100: 30.4 % (Streuung 25.9)"
+    }
+  ],
+  "rejected": [],
+  "notes": "Nur Zwischen- und Kontextbilder; die echte Aufzeichnung bleibt der Kern des Formats. Keine Bildschirminhalte, keine Tastenbeschriftung, keine Logos. Bilder JPEG Qualitaet 92 in 1536x2752."
+}

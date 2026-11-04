@@ -1,0 +1,599 @@
+{
+  "video_id": "megaconstruction-20261113-3-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "MOSE: 78 gates that rise from the seabed on compressed air",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Bauaufgabe. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261113-3-en.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://mosevenezia.eu/progetto/",
+      "title": "MOSE Venezia: Il progetto (78 Tore, 4 Barrieren, 3 Zugänge; Schließung 4–5 h inkl. Heben und Senken)",
+      "label": "MOSE Venezia, Progetto",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://mosevenezia.eu/paratoie/",
+      "title": "MOSE Venezia: Le paratoie (21/20/19/18 Tore + 8 Reserve; 20 m breit, 18,55–29,50 m lang, 168–330 t; wassergefüllt am Grund, Druckluft hebt das Tor, 2 Scharniere)",
+      "label": "MOSE Venezia, Paratoie",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.autoritalaguna.it/operativita-m-o-s-e/",
+      "title": "Autorità per la Laguna: Operatività MOSE (Aktivierung bei Prognose > 110 cm; 49 Schließungen 2025/26; Eintrag 21.10.2026)",
+      "label": "Autorità per la Laguna",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Zeit bis die Tore stehen: nur Gesamtzeit 4–5 h belegt; Pressezahlen nicht verwendet.",
+    "Wirksamkeit und Schwelle für Chioggia: umstritten, nicht genannt.",
+    "Im Modell eine Barriere mit 20 Toren schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Venice's flood defence lies hidden on the seabed. 78 gates that rise on air.",
+      "on_screen": "78 gates that rise on air",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is MOSE, really?",
+      "on_screen": "How big is MOSE, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate MOSE.",
+      "on_screen": "MOSE: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with MOSE depends on how it is built.",
+      "on_screen": "MOSE: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch MOSE take shape in the model.",
+      "on_screen": "MOSE as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "How do you protect Venice from flooding without sealing off the lagoon for good? The answer lies out of sight on the seabed.",
+      "data": {
+        "kicker": "Task · MOSE Venice",
+        "question": "Flood protection that stays hidden?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Lido · Malamocco · Chioggia",
+          "at": "@lagoon",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "According to the lagoon authority, the system is activated when a flood forecast exceeds 110 centimetres. Then the three inlets to the lagoon have to be closed.",
+      "data": {
+        "headline": "The load case",
+        "load": {
+          "label": "Closure from forecast",
+          "value": "110",
+          "unit": "cm",
+          "sub": "per the lagoon authority",
+          "at": "@110",
+          "dy": 540
+        },
+        "goal": {
+          "text": "Close three inlets",
+          "at": "@inlets",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "The solution: gates that lie on the seabed. Normally they are filled with water. When a flood comes, compressed air pushes the water out. The gate rises, turns on its hinges and closes the inlet.",
+      "data": {
+        "headline": "The principle",
+        "note": "schematic",
+        "pins": [
+          {
+            "anchor": "hinge",
+            "text": "Hinge",
+            "at": "@hinges",
+            "side": "up"
+          }
+        ],
+        "rule": {
+          "text": "Air in, water out: the gate rises.",
+          "at": "@compressed",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "There are four barriers with 78 gates in total. Each gate is 20 metres wide, up to 29.5 metres long, and weighs between 168 and 330 tonnes.",
+      "data": {
+        "headline": "How it was built",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Barriers",
+            "qty": "4",
+            "at": "@four"
+          },
+          {
+            "pos": "2",
+            "part": "Gates in total",
+            "qty": "78",
+            "at": "@78"
+          },
+          {
+            "pos": "3",
+            "part": "Gate: width, length up to",
+            "qty": "20×29.5",
+            "at": "@20"
+          },
+          {
+            "pos": "4",
+            "part": "Weight per gate, t",
+            "qty": "168–330",
+            "at": "@168"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Let's check: the barriers have 21, 20, 19 and 18 gates. 21 plus 20 plus 19 plus 18 makes 78.",
+      "data": {
+        "headline": "Checked",
+        "sheet_dy": 470,
+        "calcs": [
+          {
+            "label": "Gates of the first two barriers",
+            "a": {
+              "value": 21,
+              "unit": ""
+            },
+            "op": "+",
+            "b": {
+              "value": 20,
+              "unit": ""
+            },
+            "unit": "gates",
+            "expect": 41,
+            "at": "@21",
+            "result_at": "@19"
+          },
+          {
+            "label": "41 + gates of the other two (19 + 18)",
+            "a": {
+              "value": 41,
+              "unit": ""
+            },
+            "op": "+",
+            "b": {
+              "value": 37,
+              "unit": "",
+              "show": "37"
+            },
+            "unit": "gates",
+            "expect": 78,
+            "at": "@18",
+            "result_at": "@78"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_proof",
+      "spoken": "The test: in the 2025/26 season, the gates closed 49 times, says the lagoon authority. One closure, including raising and lowering, takes four to five hours. As of 21 October 2026. Follow Gigastruct for the next engineering task.",
+      "data": {
+        "headline": "The test",
+        "stamp": {
+          "date": "49 ×",
+          "event": "closed, 2025/26 season",
+          "at": "@49",
+          "dy": 150
+        },
+        "limit": {
+          "label": "Duration of one closure, up to",
+          "value": 5,
+          "unit": "hours",
+          "ticks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "at": "@hours",
+          "dy": 525
+        }
+      },
+      "source_ids": [
+        "S3",
+        "S1"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "TASK",
+        "IDEA",
+        "BUILD",
+        "MATHS",
+        "TEST"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 0,
+        "b3": 1,
+        "b4": 2,
+        "b5": 3,
+        "b6": 4
+      }
+    },
+    "description": "MOSE protects Venice with 78 gates that lie on the seabed and rise on compressed air. How it works, according to the operator and the lagoon authority (status 21.10.2026).",
+    "companion_text": "Calculated: 21 + 20 + 19 + 18 = 78 gates. Sources: MOSE Venezia (project, gates), Autorità per la Laguna. Stylised 3D model, one barrier shown schematically. Follow Gigastruct.",
+    "hashtags": [
+      "mose",
+      "venice",
+      "floodbarrier",
+      "lagoon",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "21 + 20 + 19 + 18 = 78 Tore",
+        "result": "78",
+        "sources": [
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "bed",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -14,
+            0
+          ]
+        },
+        {
+          "id": "water",
+          "kind": "water",
+          "size": 60000,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "gates",
+          "kind": "gates",
+          "count": 20,
+          "w": 20,
+          "l": 26,
+          "t": 4.5,
+          "angle": 48,
+          "gap": 0.8,
+          "pos": [
+            0,
+            -14,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "gate": [
+          0,
+          -8,
+          4
+        ],
+        "gatew": [
+          10,
+          -9,
+          13
+        ],
+        "len": [
+          -160,
+          -8,
+          13
+        ],
+        "hinge": [
+          100,
+          -12,
+          -13
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "gates"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 14,
+            "el1": 18,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {
+            "water.opacity": 0.55,
+            "gates.raise": [
+              [
+                0,
+                0
+              ],
+              [
+                "%1",
+                0.3
+              ]
+            ]
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "gates"
+            ],
+            "az0": 85,
+            "az1": 95,
+            "el0": 8,
+            "el1": 10,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {
+            "water.opacity": 0.55
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "gates"
+            ],
+            "az0": 60,
+            "az1": 70,
+            "el0": 6,
+            "el1": 8,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "water.opacity": 0.55,
+            "gates.raise": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.4",
+                0
+              ],
+              [
+                "%0.9",
+                1
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "gates"
+            ],
+            "az0": 30,
+            "az1": 20,
+            "el0": 18,
+            "el1": 14,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {
+            "water.opacity": 0.55,
+            "gates.raise": 0.6
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "gates"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 12,
+            "el1": 16,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {
+            "water.opacity": 0.55,
+            "gates.raise": 1
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "gates"
+            ],
+            "az0": 50,
+            "az1": 40,
+            "el0": 20,
+            "el1": 24,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 260,
+            "cy": 680
+          },
+          "props": {
+            "water.opacity": 0.55,
+            "gates.raise": [
+              [
+                0,
+                1
+              ],
+              [
+                "%1",
+                0.2
+              ]
+            ]
+          }
+        }
+      }
+    }
+  }
+}

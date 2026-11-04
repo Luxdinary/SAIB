@@ -1,0 +1,593 @@
+{
+  "video_id": "claude_workflows-20261112-1-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Was beim Kompaktieren verloren geht",
+  "notes": "Produktion Woche 1 (Plan-Agent B, 01.11.2026): Thema 12.11. Thema 1 (G3), Reihe Grundlagen. Leitobjekt /compact. Kern: Zusammenfassung behält Anfragen und wichtige Code-Stellen, frühe detaillierte Anweisungen können verloren gehen; CLAUDE.md im Projektordner und Auto Memory werden neu von der Festplatte eingelesen. Abschnitt „Compact Instructions“ laut how-claude-code-works.",
+  "hook": {
+    "id": "H1",
+    "note": "Konkrete frühe Anweisung im Gespräch, danach Kompaktierung; der /compact-Tab leuchtet beim Wort."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Am Anfang sagst du Claude: Ändere nichts in legacy. Gilt das noch, wenn kompaktiert wird?",
+      "on_screen": "Gilt deine Anweisung noch?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Gesprächsverlauf mit früher Anweisung, Marker, Frage",
+      "why": {
+        "truth": "Doku: frühe Anweisungen können verloren gehen",
+        "visual": "Anweisung ganz oben, Tab /compact"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Nach dem Kompaktieren weiß Claude noch alles? Nicht ganz.",
+      "on_screen": "Alles bleibt? Nicht ganz.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Liste schrumpft",
+      "why": {
+        "visual": "wenig Handlung"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Deine CLAUDE.md überlebt jedes Kompaktieren, eine Anweisung im Chat vielleicht nicht.",
+      "on_screen": "CLAUDE.md bleibt, der Chat nicht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "zwei Karten",
+      "why": {
+        "curiosity": "verrät die Auflösung"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Eine frühe Regel geht beim Zusammenfassen verloren, und Claude ändert die Datei doch.",
+      "on_screen": "Frühe Regel weg",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Datei wird geändert",
+      "why": {
+        "truth": "Folge ist zugespitzt, nicht belegt"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, was nach slash compact von deinem Gespräch übrig bleibt.",
+      "on_screen": "Was nach /compact übrig bleibt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Ablaufschiene",
+      "why": {
+        "relevance": "weniger konkret"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Explore the context window (Claude Code Docs): What survives compaction (project-root CLAUDE.md and auto memory re-injected from disk; path-scoped rules and nested CLAUDE.md reload on demand); When your context fills up; /compact with a focus",
+      "url": "https://code.claude.com/docs/en/context-window",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Kontextfenster"
+    },
+    {
+      "id": "S2",
+      "title": "How Claude Code works (Claude Code Docs): When context fills up: summary keeps requests and key code snippets, detailed instructions from early in the conversation may be lost; Compact Instructions section in CLAUDE.md; /compact with a focus",
+      "url": "https://code.claude.com/docs/en/how-claude-code-works",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Funktionsweise"
+    }
+  ],
+  "unverified": [
+    "Ob eine bestimmte frühe Anweisung (wie im Beispiel „legacy/“) nach dem Kompaktieren fehlt: nicht vorhersagbar; die Doku sagt nur „may be lost“. Das Video stellt es als Frage, nicht als Tatsache.",
+    "Wie ein Abschnitt „Compact Instructions“ genau formuliert sein soll: in den Quellen nur der Name; der Inhalt im Video ist ein Beispielwert.",
+    "Wie die Kompaktierung im Terminal angezeigt wird: nicht geprüft; das Abschlussfenster ist eine animierte Darstellung."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "/compact",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Anweisung: nur im Chat",
+          "tone": "amber"
+        },
+        {
+          "beat": "b2",
+          "text": "Frühes: kann fehlen",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "CLAUDE.md: neu geladen",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Compact Instructions: da",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Regel: in CLAUDE.md",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "3 Hebel",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "Regeln: bleiben",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Wenn das Kontextfenster voll wird, fasst Claude Code das Gespräch zusammen. Laut Dokumentation bleiben deine Anfragen und wichtige Code-Stellen, frühe detaillierte Anweisungen können verloren gehen. Die CLAUDE.md im Projektordner wird danach neu eingelesen.",
+    "companion_text": "Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt. Grundlage: Claude-Code-Doku „Explore the context window“ und „How Claude Code works“. Hinweis: Regeln mit paths im Frontmatter und CLAUDE.md-Dateien in Unterordnern werden mitzusammengefasst und erst bei Bedarf neu geladen; was immer gelten soll, gehört in die CLAUDE.md im Projektordner. Die Fenster sind eine animierte Darstellung, keine Bildschirmaufnahme.",
+    "hashtags": [
+      "claudecode",
+      "kontextfenster",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "Kompaktieren"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Am Anfang sagst du Claude: Ändere nichts in legacy. Gilt das noch, wenn kompaktiert wird?",
+      "data": {
+        "question": "Gilt deine Anweisung noch?",
+        "chip": "nach /compact?",
+        "tabs": [
+          {
+            "name": "Gespräch",
+            "active": true
+          },
+          "/compact"
+        ],
+        "file": "/compact",
+        "lines": [
+          [
+            [
+              "acc",
+              "> "
+            ],
+            [
+              "",
+              "Ändere nichts in "
+            ],
+            [
+              "kw",
+              "legacy/"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Read(src/app.ts)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Edit(src/app.ts)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Read(src/api.ts)"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "… Stunden später"
+            ]
+          ]
+        ],
+        "focus_line": 0,
+        "zoom": 1.1,
+        "mark_word": "Ändere",
+        "click_word": "legacy",
+        "env_word": "kompaktiert",
+        "question_word": "Gilt",
+        "chip_word": "wenn"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:kompaktiert"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Laut Doku behält die Zusammenfassung deine Anfragen und wichtige Code-Stellen. Detaillierte Anweisungen vom Anfang des Gesprächs können dabei aber verloren gehen.",
+      "data": {
+        "kicker": "Claude Code Docs · How it works",
+        "page_title": "How Claude Code works",
+        "quotes": [
+          "The summary keeps your requests and key code snippets",
+          "detailed instructions from early in the conversation may be lost"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Frühe Anweisungen können verloren gehen",
+        "page_word": "Doku",
+        "quote1_word": "Zusammenfassung",
+        "quote2_word": "Detaillierte",
+        "translation_word": "verloren"
+      },
+      "overlay": {
+        "title": "Frühes kann verloren gehen",
+        "marker_at": "w:Zusammenfassung",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "So läuft es ab: Wird der Kontext knapp, fasst Claude Code das bisherige Gespräch zusammen. Danach liest es die CLAUDE.md im Projektordner und Auto Memory frisch von der Festplatte und arbeitet weiter.",
+      "data": {
+        "headline": "",
+        "gate": 2,
+        "chip": "neu von der Festplatte",
+        "nodes": [
+          {
+            "label": "Gespräch wächst"
+          },
+          {
+            "label": "Zusammenfassung"
+          },
+          {
+            "label": "CLAUDE.md",
+            "hook": true
+          },
+          {
+            "label": "Auto Memory"
+          },
+          {
+            "label": "weiterarbeiten"
+          }
+        ],
+        "travel_word": "knapp",
+        "travel_end_word": "Danach",
+        "gate_word": "Festplatte"
+      },
+      "overlay": {
+        "title": "Was danach neu lädt",
+        "marker_at": "w:fasst",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Deshalb gehören Regeln, die immer gelten sollen, direkt in die CLAUDE.md. Und was die Zusammenfassung behalten soll, schreibst du in einen eigenen Abschnitt Compact Instructions.",
+      "data": {
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          },
+          "/compact"
+        ],
+        "focus_line": 4,
+        "callout": "steuert die Zusammenfassung",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "com",
+              "# Projektregeln"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Ändere nichts in "
+            ],
+            [
+              "str",
+              "legacy/"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Tests vor jedem Commit"
+            ]
+          ],
+          [
+            [
+              "",
+              ""
+            ]
+          ],
+          [
+            [
+              "key",
+              "## Compact Instructions"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "offene Aufgaben behalten"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "geänderte Dateien nennen"
+            ]
+          ]
+        ],
+        "line_h": 50,
+        "zoom": 1.08,
+        "pre_line": 1,
+        "pre_word": "Regeln",
+        "typed_word": "CLAUDE",
+        "mark_word": "Abschnitt",
+        "click_word": "Compact",
+        "callout_word": "Instructions"
+      },
+      "overlay": {
+        "title": "Regeln dauerhaft ablegen",
+        "example": true,
+        "marker_at": "w:Regeln",
+        "dim_at": "w:Compact",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Merke dir: Was nur im Gespräch steht, wird zusammengefasst. Was in der CLAUDE.md im Projektordner steht, wird nach jedem Kompaktieren neu eingelesen.",
+      "data": {
+        "top": {
+          "title": "Nur im Gespräch",
+          "verdict": "gekürzt",
+          "rows": [
+            "wird zusammengefasst",
+            "Details können fehlen"
+          ]
+        },
+        "bottom": {
+          "title": "CLAUDE.md (Projekt)",
+          "verdict": "bleibt",
+          "rows": [
+            "neu von der Festplatte",
+            "nach jedem Kompaktieren"
+          ]
+        },
+        "top_word": "Gespräch",
+        "bottom_word": "CLAUDE"
+      },
+      "overlay": {
+        "title": "Gespräch oder Datei",
+        "marker": "auslegung",
+        "marker_at": "w:Merke",
+        "dim_at": "w:eingelesen",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Drei Hebel helfen dir: feste Regeln in die CLAUDE.md, ein Abschnitt Compact Instructions, und vor einer langen neuen Aufgabe slash compact mit einem Fokus, etwa auf den Bugfix.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Regeln in die CLAUDE.md",
+            "code": "CLAUDE.md im Projektordner",
+            "at_word": "Regeln"
+          },
+          {
+            "title": "Zusammenfassung steuern",
+            "code": "## Compact Instructions",
+            "at_word": "Abschnitt"
+          },
+          {
+            "title": "Mit Fokus kompaktieren",
+            "code": "/compact focus on …",
+            "at_word": "slash"
+          }
+        ]
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Regeln",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "title": "Drei Hebel"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Was bleiben soll, gehört in die Datei und nicht nur ins Gespräch. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "CLAUDE.md: neu geladen",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "/compact"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Gespräch zusammengefasst"
+          },
+          {
+            "kind": "dim",
+            "text": "  CLAUDE.md neu eingelesen"
+          }
+        ],
+        "statement": "Was bleiben soll, gehört in die CLAUDE.md.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Was",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+ "video_id": "beauty-20261117-3-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "How much sunscreen? The test amount behind SPF",
+ "notes": "Pilot P1 EN of the Dewlane format \"Nahaufnahme\" (localised from the DE pilot, same scenes). Topic beauty-20261117-3 (sunscreen: the test amount). Neutral invented product (tube without brand, SPF 30 as example value). Code graphics only. Sources read on 2026-11-02 in the English original: S1 recital 14 and point 7, S2 section Use enough sunscreen.",
+ "layout": {
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "description": "Six teaspoons of sunscreen for one body: that is what the EU recommendation puts behind the SPF number. What the test amount of 2 mg per cm² means and what can happen with half the amount. Animation with a neutral product, not a product test.",
+  "companion_text": "Dewlane explains products, ingredients and how to use them, with sources. No product recommendation, not medical advice.",
+  "hashtags": [
+   "sunscreen",
+   "spf",
+   "skincare",
+   "beautyfacts",
+   "skincaretips"
+  ],
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme (brands/beauty/nahaufnahme/scenes.py), keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32006H0647",
+   "title": "Commission Recommendation 2006/647/EC of 22 September 2006 on the efficacy of sunscreen products and the claims made relating thereto, recital 14 and point 7",
+   "checked_at": "2026-11-02",
+   "label": "EU Recommendation 2006/647/EC"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen",
+   "title": "American Academy of Dermatology: How to apply sunscreen (Use enough sunscreen)",
+   "checked_at": "2026-11-02",
+   "label": "AAD (USA), How to apply sunscreen"
+  }
+ ],
+ "unverified": [
+  "Grams per teaspoon: not stated, only the total from the source (6 teaspoons, approx. 36 grams).",
+  "Effect of any specific product: not claimed. The bar chart is a diagram after the example in S1 (half the amount, protection may fall by as much as two-thirds), not a measurement.",
+  "Times for absorbing and reapplying (AAD 15 minutes, FDA two hours): not used.",
+  "SPF 30 on the tube is an example value of an invented product."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "How much sunscreen do you actually need for the SPF to hold?",
+   "on_screen": "How much sunscreen is enough?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "question"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "SPF thirty always protects like thirty? Only with enough of it.",
+   "on_screen": "SPF 30 = always SPF 30?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "S1 recital 14"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Six teaspoons of sunscreen for one body. That is the EU figure.",
+   "on_screen": "6 teaspoons for one body",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "S1 recital 14"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Half the sunscreen can mean up to two thirds less protection.",
+   "on_screen": "Half the amount, far less protection",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "S1 example with may; too pointed as an opener"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Six teaspoons of sunscreen for one single body.",
+   "on_screen": "6 teaspoons",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Neutral tube on the stage, six spoons fill one after another, counter runs to 6",
+   "why": {
+    "truth": "amount from S1 recital 14, source on screen",
+    "visual": "product and amount visible"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Sichtbare Menge statt Erklärung; Quelle im Bild."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "nh_stage",
+   "duration_hint": 9,
+   "spoken": "Six teaspoons of sunscreen for one single body. According to the EU, that is what sits behind the number on your tube. Sounds like a lot? Let's take a closer look.",
+   "data": {
+    "kicker": "Close-up · Sunscreen",
+    "product": {
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "30"
+    },
+    "count": {
+     "to": 6,
+     "unit": "teaspoons",
+     "at": "@Six",
+     "step": 0.4
+    },
+    "sub": {
+     "text": "for one whole body",
+     "at": "@single"
+    },
+    "chip": {
+     "kind": "fakt",
+     "label": "EU Recommendation 2006/647/EC",
+     "at": "@EU"
+    },
+    "ring_at": "@number",
+    "lens_at": "@closer"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "nh_lens",
+   "duration_hint": 13,
+   "spoken": "Your tube says SPF thirty. That number is measured in a test, with two milligrams of sunscreen per square centimetre of skin. Only with that amount do you reach the protection level the number states.",
+   "data": {
+    "kicker": "Close-up",
+    "headline": "What does SPF 30 mean?",
+    "product": {
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "30"
+    },
+    "zoom": {
+     "text": "SPF 30",
+     "at": "@SPF"
+    },
+    "section": {
+     "at": "@test",
+     "label": "Skin · schematic",
+     "film_label": "2 mg on 1 cm²"
+    },
+    "value": {
+     "text": "2 mg/cm²",
+     "sub": "the test amount",
+     "at": "@square"
+    },
+    "check": {
+     "text": "only then: stated protection",
+     "at": "@protection"
+    },
+    "chip": {
+     "kind": "fakt",
+     "label": "2006/647/EC, recital 14",
+     "at": "@measured"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "demonstration",
+   "scene_type": "nh_amount",
+   "duration_hint": 20,
+   "spoken": "For an average adult, the EU says that is about thirty-six grams, roughly six teaspoons. The American Academy of Dermatology says most adults need at least about one ounce, roughly a shot glass full, for skin not covered by clothing. And the EU adds: this is more than consumers usually apply.",
+   "data": {
+    "kicker": "The amount",
+    "headline": "One whole body",
+    "illu": "Illustration",
+    "fill_at": "@average",
+    "fill_end": "@teaspoons",
+    "total": {
+     "text": "≈ 36 g",
+     "at": "@thirty"
+    },
+    "spoons": {
+     "text": "about 6 teaspoons",
+     "n": 6,
+     "at": "@teaspoons"
+    },
+    "card": {
+     "title": "AAD (USA): uncovered skin",
+     "text": "at least about 1 ounce, a shot glass full",
+     "at": "@Dermatology"
+    },
+    "finding": {
+     "text": "More than consumers usually apply.",
+     "at": "@more"
+    },
+    "chip": {
+     "kind": "fakt",
+     "label": "EU Rec. 2006/647/EC · AAD",
+     "at": "@ounce"
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "nh_effect",
+   "duration_hint": 13,
+   "spoken": "And if you use less? Then protection does not drop in proportion, it drops more. The EU recommendation gives an example: if you apply half the amount, protection may fall by as much as two thirds.",
+   "data": {
+    "kicker": "The effect · per source",
+    "headline": "And with half the amount?",
+    "rows": [
+     {
+      "title": "Test amount",
+      "amount": 1.0,
+      "protect": 1.0,
+      "label": "protection as stated"
+     },
+     {
+      "title": "Half the amount",
+      "amount": 0.5,
+      "protect": 0.333,
+      "label": "may fall by up to two thirds"
+     }
+    ],
+    "cut_at": "@less",
+    "same_at": "@proportion",
+    "same_label": "in proportion",
+    "drop_at": "@two",
+    "schema": "Diagram after EU example · not a measurement",
+    "chip": {
+     "kind": "fakt",
+     "label": "EU Rec. 2006/647/EC, recital 14",
+     "at": "@example"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "benefit",
+   "scene_type": "nh_apply",
+   "duration_hint": 12,
+   "spoken": "For everyday use, the EU recommendation gives two instructions: apply before sun exposure. And reapply frequently to maintain protection, especially after sweating, swimming or towelling.",
+   "data": {
+    "kicker": "Everyday use",
+    "headline": "When to apply?",
+    "arm_label": "Illustration",
+    "draw_at": "@everyday",
+    "spread_at": "@instructions",
+    "steps": [
+     {
+      "icon": "sun",
+      "title": "Apply before the sun",
+      "sub": "not once you are outside",
+      "at": "@before"
+     },
+     {
+      "icon": "repeat",
+      "title": "Reapply frequently",
+      "sub": "to maintain protection",
+      "at": "@reapply"
+     },
+     {
+      "icon": "wave",
+      "title": "After swimming, towelling",
+      "sub": "and after sweating",
+      "at": "@sweating"
+     }
+    ],
+    "chip": {
+     "kind": "fakt",
+     "label": "EU Rec. 2006/647/EC, point 7",
+     "at": "@EU"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "nh_close",
+   "duration_hint": 9,
+   "spoken": "Remember: the number on the tube only holds for the test amount. Does your pack say how much to use? Check next time you put it on.",
+   "data": {
+    "kicker": "Key point",
+    "rule": "SPF applies at the test amount.",
+    "rule_at": 0.2,
+    "product": {
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "30"
+    },
+    "question": {
+     "text": "Does your pack say how much to use?",
+     "at": "@pack"
+    },
+    "sign_at": "@Check",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  }
+ ]
+}

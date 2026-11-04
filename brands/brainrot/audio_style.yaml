@@ -1,0 +1,24 @@
+tts:
+  provider: gemini
+  model: gemini-2.5-flash-preview-tts
+  voices:
+    de: Puck      # Gemini prebuilt voice, listed as "Upbeat" in the Gemini speech docs; Plümo speaks himself (first person)
+    en: Puck
+  speaking_rate: 1.12
+  style_instruction:
+    de: Sprich auf Deutsch als kleine, trockene Comicfigur namens Pluemo. Deadpan, leicht verwundert, zuegiges Timing, kurze Pause vor jeder Pointe, nie gemein.
+    en: Speak English as a small, dry cartoon character named Plumo. Deadpan, slightly puzzled, brisk timing, a short pause before each punchline, never mean.
+music:
+  mood: 'none for now; no licence source chosen (rule - no music without licence proof)'
+  file: null
+  license_proof: null
+  gain_db: -18
+  duck_db: -10
+loudness:
+  target_lufs: -16
+  true_peak_dbtp: -1.5
+sfx:
+  enabled: true
+  folder: brands/brainrot/assets/sfx
+  source: own work, synthesised by brands/brainrot/renderer/sfx.py (LICENSE.md in the folder)
+  volume: 0.2-0.4 under the voice

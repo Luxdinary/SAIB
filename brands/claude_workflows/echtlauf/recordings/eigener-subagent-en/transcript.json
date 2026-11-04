@@ -1,0 +1,117 @@
+{
+  "spec": "eigener-subagent-en",
+  "runs": {
+    "L1": {
+      "title": "With subagent file",
+      "prompt": "Check whether the total in rechnung.txt is correct. Reply in English.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 9.196,
+      "lines": [
+        {
+          "t": 4.145,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 5.896,
+          "kind": "tool",
+          "id": "toolu_01VkkCM1Ve1MFUS1QnBxwuym",
+          "text": "Read: .\\rechnung.txt"
+        },
+        {
+          "t": 5.931,
+          "kind": "result",
+          "id": "toolu_01VkkCM1Ve1MFUS1QnBxwuym",
+          "text": "1\tInvoice 2026-117\n2\tItem: 3 x 12.50 = 37.50\n3\tItem: 2 x 8.00 = 17.00\n… (2 more lines)"
+        },
+        {
+          "t": 7.729,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 8.633,
+          "kind": "text",
+          "text": "The total in `rechnung.txt` is **incorrect**.\n\n- Line 2: 3 × 12.50 = 37.50. Correct.\n- Line 3: 2 × 8.00 = **16.00**, but the invoice says 17.00. Wrong.\n- Line 4: The total should be 37.50 + 16.00 = **53.50**. The invoice says 55.00.\n\nThe stated total is off by 1.50 from the correct sum. Line 3 is also wrong, by 1.00. Fixing line 3 to 16.00 would make the total 53.50, so the total needs correcting as well."
+        },
+        {
+          "t": 8.643,
+          "kind": "end",
+          "text": "Done after 8.6 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Task",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 4537,
+        "num_turns": 2,
+        "total_cost_usd": 0.0010743,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Without subagent file",
+      "prompt": "Check whether the total in rechnung.txt is correct. Reply in English.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 7.621,
+      "lines": [
+        {
+          "t": 3.932,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 4.965,
+          "kind": "tool",
+          "id": "toolu_017GMruUSrk2RrHWhziv33zC",
+          "text": "Read: .\\rechnung.txt"
+        },
+        {
+          "t": 5.019,
+          "kind": "result",
+          "id": "toolu_017GMruUSrk2RrHWhziv33zC",
+          "text": "1\tInvoice 2026-117\n2\tItem: 3 x 12.50 = 37.50\n3\tItem: 2 x 8.00 = 17.00\n… (2 more lines)"
+        },
+        {
+          "t": 6.086,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 6.838,
+          "kind": "text",
+          "text": "The total in `rechnung.txt` is **incorrect**. The correct total is **53.50**, not 55.00.\n\n- Line 2: 3 × 12.50 = 37.50 (correct)\n- Line 3: 2 × 8.00 = **16.00**, but the file says 17.00 (wrong)\n- Correct total: 37.50 + 16.00 = **53.50**\n\nThe stated total of 55.00 doesn't match the correct sum, and it doesn't match the sum of the printed line items either (37.50 + 17.00 = 54.50). Line 3 and the total both need correcting."
+        },
+        {
+          "t": 6.867,
+          "kind": "end",
+          "text": "Done after 6.9 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Task",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 2968,
+        "num_turns": 2,
+        "total_cost_usd": 0.00055261,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

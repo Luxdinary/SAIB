@@ -1,0 +1,1813 @@
+{
+ "video_id": "yt01-ai-rules-start-en",
+ "slug": "01-ai-rules-start",
+ "lang": "en",
+ "title": "Your staff already use AI. Where the rules start.",
+ "short_title": "AI rules",
+ "version": "Version 3 (long video), draft 2026-11-02. Approved wording from SKRIPTE/01-ai-rules-start.en.md version 2 (Stefan, 29 Oct and 1 Nov 2026) unchanged; new and for approval: cold open (c0s0), overview (c0s2), chapter 4 (c4) and the transitions, marked new=true.",
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Directive (EU) 2016/943, Art. 2(1)(a) to (c) · EUR-Lex · retrieved 2026-10-18; § 26b(1)(3) UWG (Austria) · ris.bka.gv.at; § 2 no. 1(b) GeschGehG (Germany) · gesetze-im-internet.de · retrieved 2026-10-23",
+   "short": "Dir. (EU) 2016/943 Art. 2 · § 26b UWG · § 2 GeschGehG · retrieved 18/23 Oct 2026"
+  },
+  {
+   "id": "S2",
+   "label": "Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, version 1.0 of 6 May 2024, sections 2.2, 2.4 and 3.1 · datenschutzkonferenz-online.de · retrieved 2026-10-18",
+   "short": "DSK, guidance on AI and data protection 2024, sec. 2.2, 2.4, 3.1 · retrieved 18 Oct 2026"
+  },
+  {
+   "id": "S3",
+   "label": "German data protection conference (DSK), Orientierungshilfe \"Künstliche Intelligenz und Datenschutz\", version 1.0 of 6 May 2024, sections 2.2, 2.4, 2.5 and 3.1 · retrieved 2026-10-18",
+   "short": "DSK, guidance on AI and data protection 2024, sec. 2.2–3.1 · retrieved 18 Oct 2026"
+  },
+  {
+   "id": "S4",
+   "label": "Regulation (EU) 2024/1689, Art. 4 and Art. 113, point (a), consolidated version of 27 July 2026; Regulation (EU) 2026/1744, Art. 1, point (5) · EUR-Lex · retrieved 2026-10-23",
+   "short": "Reg. (EU) 2024/1689 Art. 4, 113 · Reg. (EU) 2026/1744 · retrieved 23 Oct 2026"
+  },
+  {
+   "id": "S5",
+   "label": "European Commission, AI literacy, questions and answers, page last updated 20 October 2026 · digital-strategy.ec.europa.eu · retrieved 2026-10-23",
+   "short": "European Commission, AI literacy Q&A, 20 Oct 2026 · retrieved 23 Oct 2026"
+  },
+  {
+   "id": "S6",
+   "label": "Regulation (EU) 2024/1689, Art. 3(3), (4) and (60), Art. 50, Art. 113, consolidated version of 27 July 2026 · EUR-Lex · retrieved 2026-10-23",
+   "short": "Reg. (EU) 2024/1689 Art. 3, 50, 113 · retrieved 23 Oct 2026"
+  },
+  {
+   "id": "S7",
+   "label": "Regulation (EU) 2016/679, Art. 24(1) · EUR-Lex · retrieved 2026-10-19",
+   "short": "GDPR Art. 24(1) · retrieved 19 Oct 2026"
+  },
+  {
+   "id": "S8",
+   "label": "Regulation (EU) 2024/1689, Art. 4; Regulation (EU) 2016/679, Art. 24(1); Directive (EU) 2016/943, Art. 2(1)(c) · EUR-Lex · retrieved 2026-10-18 and 2026-10-19",
+   "short": "AI Act Art. 4 · GDPR Art. 24 · Dir. 2016/943 Art. 2 · retrieved 18/19 Oct 2026"
+  },
+  {
+   "id": "S9",
+   "label": "Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, version 1.0 of 6 May 2024, section 2.2, p. 10 · datenschutzkonferenz-online.de · retrieved 2026-10-18",
+   "short": "DSK, guidance on AI and data protection 2024, sec. 2.2, p. 10 · retrieved 18 Oct 2026"
+  },
+  {
+   "id": "S10",
+   "label": "BSI, Generative KI-Modelle, Chancen und Risiken für Industrie und Behörden, version 2.0 of 17 January 2025, measure M16, p. 49 · bsi.bund.de · retrieved 2026-10-18",
+   "short": "BSI, Generative KI-Modelle 2.0, M16, p. 49 · retrieved 18 Oct 2026"
+  },
+  {
+   "id": "S11",
+   "label": "Wirtschaftskammer Österreich, KI-Guidelines für KMU, 3rd edition, April 2026, pp. 14 to 27 · wko.at · retrieved 2026-10-23",
+   "short": "WKO, KI-Guidelines für KMU, 3rd ed. 2026 · retrieved 23 Oct 2026"
+  },
+  {
+   "id": "S12",
+   "label": "Datenschutzbehörde (Austria), Künstliche Intelligenz und Datenschutz · dsb.gv.at · retrieved 2026-10-23; RIS, Federal Law Gazette, full-text search · retrieved 2026-10-23; KI-MIG of 22 July 2026 (BGBl. 2026 I No. 223), §§ 2, 6, 8, 15 · gesetze-im-internet.de · retrieved 2026-10-23",
+   "short": "DSB · RIS · KI-MIG (BGBl. 2026 I No. 223) · retrieved 23 Oct 2026"
+  },
+  {
+   "id": "S13",
+   "label": "Regulation (EU) 2016/679, Art. 88(1) · retrieved 2026-10-23; Datenschutzkonferenz, Orientierungshilfe of 6 May 2024, section 1.12, p. 8 · retrieved 2026-10-18; Datenschutzkonferenz, Orientierungshilfe of 6 May 2024, section 2.2, p. 10 · retrieved 2026-10-23",
+   "short": "GDPR Art. 88 · DSK guidance 2024, sec. 1.12, 2.2 · retrieved 18/23 Oct 2026"
+  }
+ ],
+ "chapters": [
+  {
+   "id": "c0",
+   "num": "",
+   "title": "Are your staff already using AI?",
+   "kicker": "SCUTORIA · AI RULES",
+   "card": false,
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_office_night.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Example case · re-enacted",
+      "time": "TUE 09:12",
+      "place": "Office, Example Electrical Ltd (fictional)",
+      "obj": {
+       "label": "Text assistant · New chat",
+       "from": "Input",
+       "subject": "Quote for Residential Complex North",
+       "lines": [
+        "Write me a quote for the electrical",
+        "installation, 24 flats. Customer:",
+        "Example Property Management Ltd, contact",
+        "person and prices from the email below."
+       ]
+      },
+      "obj_at": "@text",
+      "highlight": {
+       "line": 2,
+       "label": "Customer data",
+       "at": "@decided"
+      }
+     },
+     "say": [
+      {
+       "text": "Tuesday, twelve minutes past nine, in a small electrical business. Somebody in the office opens a text assistant to draft a quote and pastes in the customer's email as well. It works. Nobody decided it.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "The question of this video",
+      "text": "Are your staff already using *AI tools* without the business having decided anything?",
+      "sub": "Which step comes first, and what a policy does and does not do.",
+      "sub_at": "@This"
+     },
+     "say": [
+      {
+       "text": "Are your staff already using AI tools without the business having decided anything?"
+      },
+      {
+       "text": "This video shows which step comes first, and what a policy does and does not do."
+      }
+     ]
+    },
+    {
+     "type": "chapters",
+     "new": true,
+     "data": {
+      "headline": "In this video",
+      "items": [
+       {
+        "num": "1",
+        "title": "The situation in a small business",
+        "at": "@situation"
+       },
+       {
+        "num": "2",
+        "title": "Six steps in order",
+        "at": "@six"
+       },
+       {
+        "num": "3",
+        "title": "Does any law require a policy?",
+        "at": "@law"
+       },
+       {
+        "num": "4",
+        "title": "What do you do? Two cases",
+        "at": "@cases"
+       },
+       {
+        "num": "5",
+        "title": "The example business",
+        "at": "@example"
+       },
+       {
+        "num": "6",
+        "title": "What the documents are not",
+        "at": "@not"
+       },
+       {
+        "num": "7",
+        "title": "Free memo and toolkit",
+        "at": "@memo"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "We go in this order: the situation, the six steps, the question of whether any law requires a policy, two cases in which you decide yourself, the example business, what the documents are not, and at the end the free memo."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "kaltstart.js",
+    "teil-1.js",
+    "ueberblick.js"
+   ],
+   "inserts": [
+    {
+     "at": "",
+     "dur": 3.0,
+     "file": "yt/t01_hands_typing.mp4",
+     "start": 0.0
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "num": "1",
+   "title": "The situation in a small business",
+   "kicker": "1 · The situation",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_workshop_bench.mp4",
+     "data": {
+      "kicker": "A typical situation",
+      "text": "It works, so the next person does the same. Nobody *decided* it.",
+      "sub": "A business without an IT department, somewhere in the EU.",
+      "sub_at": "@business"
+     },
+     "say": [
+      {
+       "text": "Take a typical situation. A business without an IT department, somewhere in the EU. Somebody in the office opens a text assistant to draft a quote. It works, so the next person does the same. Nobody decided it."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Three answers to one question",
+      "note": "This video is about the *middle* one.",
+      "note_at": "@middle",
+      "doc": {
+       "label": "Start memo · scutoria.com",
+       "title": "Do your staff use AI tools at work today?",
+       "lines": [
+        {
+         "text": "Yes, with business accounts the business set up",
+         "at": "@business"
+        },
+        {
+         "text": "Yes, with private accounts, or we do not know",
+         "at": "@private",
+         "mark": "open",
+         "mark_at": "@middle"
+        },
+        {
+         "text": "No, as far as we know",
+         "at": "@far"
+        },
+        {
+         "text": "Written rules: a few sentences or an email",
+         "at": "@Written",
+         "mark": "open"
+        },
+        {
+         "text": "A briefing: informally, without a record",
+         "at": "@briefing",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "The free start memo asks whether your staff use AI tools at work today, and offers three answers. Yes, with business accounts the business set up. Yes, with private accounts, or we do not know. No, as far as we know. The middle answer is the one this video is about. Written rules: a few sentences or an email. A briefing: informally, without a record."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Three things follow",
+      "items": [
+       {
+        "title": "Decided at the keyboard",
+        "sub": "not by the business",
+        "at": "@goes"
+       },
+       {
+        "title": "Nobody can say what the rule was",
+        "sub": "if something goes wrong",
+        "at": "@wrong"
+       },
+       {
+        "title": "There is nothing to show",
+        "sub": "when a customer, an insurer or your own staff ask",
+        "at": "@customer"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Three things follow. What goes into the tools is decided at the keyboard, not by the business. If something goes wrong, nobody can say what the rule was. And when a customer, an insurer or your own staff ask what is regulated, there is nothing to show."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "When is something a *trade secret*?",
+      "doc": {
+       "label": "Directive (EU) 2016/943 · Art. 2",
+       "title": "Three conditions",
+       "lines": [
+        {
+         "text": "a  secret, not generally known",
+         "at": "@three"
+        },
+        {
+         "text": "b  commercial value because it is secret",
+         "at": "@conditions"
+        },
+        {
+         "text": "c  subject to reasonable steps to keep it secret",
+         "at": "@third",
+         "mark": "hl",
+         "mark_at": "@reasonable"
+        },
+        {
+         "text": "Austria: § 26b UWG · Germany: § 2 GeschGehG",
+         "at": "@Austria"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "One reason this matters is the trade secret. Under the Trade Secrets Directive, information is a trade secret only if it meets three conditions, and the third is that reasonable steps were taken to keep it secret. Austria and Germany have the same condition in their national law.",
+       "marker": "fakt",
+       "source": "S1"
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Removing names and addresses is regularly not enough; the link to a person can be restored from the *context*.",
+      "origin": "Paraphrased from: Datenschutzkonferenz, guidance on AI and data protection, 6 May 2024"
+     },
+     "say": [
+      {
+       "text": "And the German data protection authorities say that removing names and addresses from an input is regularly not enough, because the connection to a person can be restored from the context.",
+       "marker": "fakt",
+       "source": "S2"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "bg": "yt/lib_office_shelf.mp4",
+     "data": {
+      "kicker": "Our interpretation",
+      "text": "A paper in a drawer is *documented*, but it was never issued.",
+      "sub": "So where do you start? Not with the longest document.",
+      "sub_at": "@where"
+     },
+     "say": [
+      {
+       "text": "Some businesses do have a document. Our interpretation: a paper in a drawer is documented, but it was never issued. We come back to that.",
+       "marker": "auslegung"
+      },
+      {
+       "text": "So where do you start? Not with the longest document."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-2.js"
+   ],
+   "inserts": [
+    {
+     "at": "It works, so",
+     "dur": 4.0,
+     "file": "yt/t01_electrician_back.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "num": "2",
+   "title": "Six steps in order",
+   "kicker": "2 · Where to start",
+   "scenes": [
+    {
+     "type": "steps",
+     "data": {
+      "headline": "The order of the memo",
+      "items": [
+       {
+        "title": "Take stock",
+        "at": "@order"
+       },
+       {
+        "title": "Business accounts and the one page",
+        "at": "@order+0.6"
+       },
+       {
+        "title": "The policy",
+        "at": "@order+1.2"
+       },
+       {
+        "title": "Briefing and record",
+        "at": "@order+1.8"
+       },
+       {
+        "title": "Labelling check and dated page",
+        "at": "@order+2.4"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "The free memo asks seven questions and then names the one step that comes first. We walk through its order, because the order is the point."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Step one: take *stock*",
+      "note": "“Unclear” is a permitted entry: a finding, not a failure.",
+      "note_at": "@Unclear",
+      "doc": {
+       "label": "Inventory · example",
+       "title": "One row per tool",
+       "lines": [
+        {
+         "text": "Text assistant · office · business account",
+         "at": "@Which"
+        },
+        {
+         "text": "Translation app · field staff · private account",
+         "at": "@accounts",
+         "mark": "open"
+        },
+        {
+         "text": "Image generator · marketing · unclear",
+         "at": "@Unclear",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Step one: take stock. Which tools are actually in use, with which accounts? One row per tool. \"Unclear\" is a permitted entry: a finding, not a failure."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "bg": "yt/lib_screen_blur.mp4",
+     "data": {
+      "headline": "Step two: *access*",
+      "left": {
+       "title": "Private account",
+       "tone": "amber",
+       "rows": [
+        {
+         "text": "Profile of the individual person",
+         "at": "@profiles"
+        },
+        {
+         "text": "Training on inputs unclear",
+         "at": "@used"
+        }
+       ]
+      },
+      "right": {
+       "title": "Business account",
+       "tone": "blue",
+       "at": "@business",
+       "rows": [
+        {
+         "text": "Training on inputs switched off",
+         "at": "@switched"
+        },
+        {
+         "text": "Functional address, no personal name",
+         "at": "@functional"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Step two, and when accounts are private or unknown the memo puts it first: business accounts for the approved tools, with training on inputs switched off, under a functional address of the business, without personal names. No private accounts for work."
+      },
+      {
+       "text": "The German data protection authorities advise that employees should not have to work with private accounts, because profiles of individual employees can arise, and that accounts should be set so that no inputs are used for training.",
+       "marker": "fakt",
+       "source": "S3"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Our interpretation",
+      "text": "The rule must name the *tool and the access path*.",
+      "sub": "Otherwise it silently permits private access."
+     },
+     "say": [
+      {
+       "text": "Our interpretation: a rule that only names the tool silently permits its use through a private account. The rule must name the tool and the access path.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "The *one page* to post",
+      "doc": {
+       "label": "Poster · What never goes into an AI tool",
+       "title": "Whatever the access",
+       "lines": [
+        {
+         "text": "Data by which customers, staff or applicants can be identified",
+         "at": "@data"
+        },
+        {
+         "text": "Access data and passwords",
+         "at": "@passwords-0.6"
+        },
+        {
+         "text": "Calculations, prices, contracts, customer lists",
+         "at": "@calculations"
+        },
+        {
+         "text": "Health data",
+         "at": "@health"
+        },
+        {
+         "text": "Third-party documents handed over in confidence",
+         "at": "@documents"
+        },
+        {
+         "text": "In case of doubt, enter nothing and ask a named person",
+         "at": "@rule",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "And post the one page. It says what never goes into a tool, whatever the access: data by which a customer, an employee or an applicant can be identified; access data and passwords; calculations, prices, contracts, customer lists and other confidential information; health data; documents of third parties handed over in confidence. The list closes with the rule of doubt: in case of doubt, nothing is entered, and a named person is asked."
+      },
+      {
+       "text": "Our interpretation: a list without a rule of doubt is incomplete, because no catalogue meets every case.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_documents_desk.mp4",
+     "data": {
+      "headline": "Step three: the *policy*",
+      "note": "Nine areas, signed by the management.",
+      "note_at": "@Signed",
+      "doc": {
+       "label": "AI usage policy · sample",
+       "title": "Nine areas",
+       "lines": [
+        {
+         "text": "1 Permitted tools and access",
+         "at": "@permitted"
+        },
+        {
+         "text": "2 Permitted and prohibited uses",
+         "at": "@prohibited-0.5"
+        },
+        {
+         "text": "3 What never goes in · 4 Unavoidable personal data",
+         "at": "@personal"
+        },
+        {
+         "text": "5 Review before use · 6 Release outside the business",
+         "at": "@review"
+        },
+        {
+         "text": "7 Labelling · 8 Reporting incidents",
+         "at": "@labelling"
+        },
+        {
+         "text": "9 Responsibility in case of doubt",
+         "at": "@responsibility"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Step three: the policy itself. Nine areas: permitted tools and access; permitted and prohibited uses; what never goes in; handling unavoidable personal data; review before use; release of documents leaving the business; labelling; reporting incidents; responsibility in case of doubt. Signed by the management."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Four things make a *rule*",
+      "items": [
+       {
+        "title": "A date from which it applies",
+        "at": "@date"
+       },
+       {
+        "title": "A named responsible person",
+        "at": "@named"
+       },
+       {
+        "title": "A traceable way it was announced",
+        "at": "@traceable"
+       },
+       {
+        "title": "A confirmation from each person",
+        "sub": "Effective date after the briefing",
+        "at": "@confirmation"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Our interpretation: four things make a text a rule in force. A date from which it applies. A named responsible person. A traceable way in which it was announced. And a confirmation that each person received it. No source lists these four. They follow from the supervisory wording that instructions should be issued and documented. And the effective date lies after the briefing: a rule nobody knows is worse than none.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Step four: *briefing* and record",
+      "doc": {
+       "label": "Briefing record · example",
+       "title": "Date · contents · attendees",
+       "lines": [
+        {
+         "text": "Date of the briefing",
+         "at": "@date"
+        },
+        {
+         "text": "Contents: policy, one page, cases of doubt",
+         "at": "@contents"
+        },
+        {
+         "text": "Who attended, with confirmation",
+         "at": "@who"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Step four: the briefing, and the record of it: date, contents, who attended."
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Measures to support the development of *AI literacy* of staff. Nobody has to guarantee a specific level.",
+      "origin": "Paraphrased from: Reg. (EU) 2024/1689, Art. 4, applies since 2 Feb 2025, current wording since 27 July 2026"
+     },
+     "say": [
+      {
+       "text": "Article four of the AI Act asks providers and deployers to take measures to support the development of AI literacy of their staff. It does not require guaranteeing any specific level for any individual. The article has applied since 2 February 2025; its current wording since 27 July 2026.",
+       "marker": "fakt",
+       "source": "S4"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "What is *sourced* about the briefing",
+      "left": {
+       "title": "Fact",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "No certificate needed",
+         "at": "@certificate"
+        },
+        {
+         "text": "Internal record of trainings",
+         "at": "@internal"
+        }
+       ]
+      },
+      "right": {
+       "title": "Gap",
+       "tone": "red",
+       "at": "@How",
+       "rows": [
+        {
+         "text": "How often to repeat?",
+         "at": "@repeated"
+        },
+        {
+         "text": "How long to keep the record?",
+         "at": "@kept"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "The European Commission writes that there is no need for a certificate, and that organisations can keep an internal record of trainings. That is guidance, not law.",
+       "marker": "fakt",
+       "source": "S5"
+      },
+      {
+       "text": "How often the briefing is repeated and how long the record is kept: we found no source for this. The business sets the rhythm.",
+       "marker": "luecke"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Step five",
+      "text": "The *labelling check* under Article 50.",
+      "sub": "No case? Then a dated note: no case at present."
+     },
+     "say": [
+      {
+       "text": "Step five: the labelling check under Article fifty of the AI Act, which has applied since 2 August 2026. If nothing you publish or run for customers comes from an AI system, the record is a dated note: no case at present. The three deployer cases get their own video.",
+       "marker": "fakt",
+       "source": "S6"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_documents_desk.mp4",
+     "data": {
+      "headline": "Step six: *date* it",
+      "doc": {
+       "label": "Status · one page",
+       "title": "What is regulated, what is open",
+       "lines": [
+        {
+         "text": "Regulated: accounts, one page, policy",
+         "at": "@regulated",
+         "mark": "ok"
+        },
+        {
+         "text": "Open: with a deadline",
+         "at": "@open",
+         "mark": "open"
+        },
+        {
+         "text": "Responsible: a named person",
+         "at": "@responsible"
+        },
+        {
+         "text": "Next review: date",
+         "at": "@reviewed"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Step six: date it. One page: what is regulated, what is open, who is responsible, when it is reviewed next."
+      },
+      {
+       "text": "Where personal data are involved, the review is in the GDPR itself: the controller's technical and organisational measures shall be reviewed and updated where necessary.",
+       "marker": "fakt",
+       "source": "S7"
+      },
+      {
+       "text": "An interval for that review: we found no source for this. The toolkit offers six or twelve months and recommends neither.",
+       "marker": "luecke"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "The order",
+      "items": [
+       {
+        "title": "Stock",
+        "at": "@stock"
+       },
+       {
+        "title": "Accounts and the one page",
+        "at": "@accounts"
+       },
+       {
+        "title": "Policy",
+        "at": "@policy"
+       },
+       {
+        "title": "Briefing",
+        "at": "@briefing"
+       },
+       {
+        "title": "Labelling check, dated page",
+        "at": "@labelling"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "That is the order: stock, accounts and the one page, the policy, the briefing, the labelling check, the dated page."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-3a.js",
+    "teil-3b.js",
+    "teil-3c.js"
+   ],
+   "inserts": [
+    {
+     "at": "post the one page",
+     "dur": 4.0,
+     "file": "yt/t01_pin_notice.mp4"
+    },
+    {
+     "at": "Signed by management",
+     "dur": 3.5,
+     "file": "yt/t01_hand_signing.mp4"
+    },
+    {
+     "at": "Step four",
+     "dur": 4.0,
+     "file": "yt/t01_briefing_back.start.png"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "num": "3",
+   "title": "Does any law require a policy?",
+   "kicker": "3 · What applies",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "kicker": "The question behind all of this",
+      "text": "Does any law require a *written policy*?"
+     },
+     "say": [
+      {
+       "text": "Now the question behind all of this: does any law require a written policy?"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Our interpretation: *no*. Three articles come closest.",
+      "left": {
+       "title": "What they require",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "AI Act Art. 4: measures for AI literacy",
+         "at": "@four"
+        },
+        {
+         "text": "GDPR Art. 24: technical and organisational measures",
+         "at": "@twenty"
+        },
+        {
+         "text": "Dir. 2016/943: reasonable steps to keep secrets",
+         "at": "@Trade"
+        }
+       ]
+      },
+      "right": {
+       "title": "What none of them says",
+       "tone": "violet",
+       "at": "@None",
+       "rows": [
+        {
+         "text": "“Policy”",
+         "at": "@None"
+        },
+        {
+         "text": "The usual way to meet all three",
+         "at": "@usual"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Our interpretation: no. Neither the AI Act nor the GDPR contains a provision that explicitly requires a business to keep a written AI usage policy. Three articles come closest. Article four of the AI Act asks for measures that support AI literacy. Article twenty-four, paragraph one of the GDPR asks the controller for technical and organisational measures. The Trade Secrets Directive protects information only if reasonable steps were taken to keep it secret. None of them says \"policy\". A policy is the usual way to meet all three at once, not a duty of its own.",
+       "marker": "auslegung",
+       "source": "S8"
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Issue and document clear internal instructions: whether, under which conditions and for which purposes which AI applications may be used.",
+      "origin": "Paraphrased from: Datenschutzkonferenz, guidance on AI and data protection, 6 May 2024, section 2.2"
+     },
+     "say": [
+      {
+       "text": "So why write one? Because three bodies recommend it."
+      },
+      {
+       "text": "The German data protection authorities, in their guidance of 6 May 2024, say that clear internal instructions should be issued and documented on whether, under which conditions and for which concrete purposes which AI applications may be used.",
+       "marker": "fakt",
+       "source": "S9"
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Lay down which AI models may be used for what, which *inputs* are permitted and how outputs are reused, bindingly.",
+      "origin": "Paraphrased from: BSI, Generative KI-Modelle, version 2.0, measure M16"
+     },
+     "say": [
+      {
+       "text": "The German Federal Office for Information Security says the same from the technical side. Its measure M sixteen asks employers to lay down which AI models and applications may be used for which purposes, which inputs are permitted and how outputs may be reused, bindingly, for example in policies.",
+       "marker": "fakt",
+       "source": "S10"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Austrian Economic Chamber",
+      "text": "A free *model* policy with ten paragraphs.",
+      "sub": "Several passages are out of date since the amending regulation of 8 July 2026.",
+      "sub_at": "@Several"
+     },
+     "say": [
+      {
+       "text": "The Austrian Economic Chamber publishes a free model policy with ten numbered paragraphs in its AI guidelines for small and medium businesses, third edition, April 2026. Several passages are out of date since the amending regulation of 8 July 2026.",
+       "marker": "fakt",
+       "source": "S11"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Our interpretation",
+      "text": "Professional practice, *not law*.",
+      "sub": "The best published reasoning we found."
+     },
+     "say": [
+      {
+       "text": "Our interpretation: these three bodies are German and Austrian. Their recommendations are professional practice, not law, and they bind nobody outside their countries. They are still the best published reasoning we found, and the nine areas of the policy follow them.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "headline": "What is *open*",
+      "left": {
+       "title": "Secrecy",
+       "tone": "amber",
+       "rows": [
+        {
+         "text": "Does a policy count as a reasonable step?",
+         "at": "@reasonable"
+        },
+        {
+         "text": "Decided case by case",
+         "at": "@case"
+        }
+       ]
+      },
+      "right": {
+       "title": "Supervision of Art. 4",
+       "tone": "amber",
+       "at": "@which",
+       "rows": [
+        {
+         "text": "Germany: Federal Network Agency, since 29 Jul 2026",
+         "at": "@Federal"
+        },
+        {
+         "text": "Austria: no official source (as of 23 Oct)",
+         "at": "@Austria"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "This is open: whether a policy counts as a reasonable step to keep a trade secret. No court decision was searched. Without a rule there is no evidence of any step; with a rule the business can show it took one. Whether it is reasonable is decided case by case.",
+       "marker": "unsicher",
+       "source": "S1"
+      },
+      {
+       "text": "This is open too: which authority supervises Article four in your country. Germany has named the Federal Network Agency, by an act in force since 29 July 2026. For Austria, as of 23 October 2026, no official source names the market surveillance authority. The duties apply regardless.",
+       "marker": "unsicher",
+       "source": "S12"
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-4.js"
+   ],
+   "inserts": [
+    {
+     "at": "So why write one",
+     "dur": 4.0,
+     "file": "yt/t01_owner_reading.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "num": "4",
+   "title": "What do you do? Two cases",
+   "kicker": "4 · What do you do?",
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_office_night.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Case 1 · re-enacted",
+      "time": "WED 14:05",
+      "place": "Office, a customer complaint",
+      "obj": {
+       "label": "Email · Complaint",
+       "from": "customer@sample.example",
+       "subject": "Kitchen socket not working",
+       "lines": [
+        "Name and address of the customer",
+        "Three photos from her flat",
+        "Description: kitchen, second floor,",
+        "tenant since 2019, child in the home"
+       ]
+      },
+      "obj_at": "@complaint",
+      "highlight": {
+       "line": 1,
+       "label": "Context",
+       "at": "@privately"
+      }
+     },
+     "say": [
+      {
+       "text": "Two cases for you to decide. Both are invented, the rules behind them are not. Case one. Wednesday, five past two in the afternoon. A customer sends a complaint, with her name, her address, three photos from her flat and a detailed description. The office manager wants a polite reply fast and has the text assistant privately on the phone.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "What do you do?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Delete name and address, then paste the email",
+        "at": "@delete"
+       },
+       {
+        "key": "B",
+        "text": "Paste the email, it is only about a reply",
+        "at": "@B"
+       },
+       {
+        "key": "C",
+        "text": "Paste nothing: draft the reply without her data, ask if unsure",
+        "at": "@nothing"
+       }
+      ],
+      "think": {
+       "at": "@Think",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "What do you do? A: delete the name and address, then paste the email. B: paste the email, it is only about a reply. C: paste nothing from the customer, have the reply drafted in general terms, and in case of doubt ask the named person. Think about it for a moment."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "If you choose A",
+      "headline": "The name is gone, the context is not",
+      "items": [
+       {
+        "time": "14:06",
+        "text": "Name and address deleted",
+        "tone": "neutral",
+        "at": "@deleted"
+       },
+       {
+        "time": "14:06",
+        "text": "Photos and description stay in",
+        "tone": "amber",
+        "at": "@photos"
+       },
+       {
+        "time": "14:07",
+        "text": "Input through a private account",
+        "tone": "amber",
+        "at": "@private"
+       },
+       {
+        "time": "",
+        "text": "The customer remains identifiable",
+        "tone": "red",
+        "at": "@identifiable"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Many choose A, and it sounds reasonable. In the example, the name and address are deleted, but the photos and the description of the flat stay in, and the input goes through a private account.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "That is exactly what the German data protection authorities mean: removing names and addresses is regularly not enough, because the connection to a person can be restored from the context. The customer remains identifiable.",
+       "marker": "fakt",
+       "source": "S2"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "The one step",
+      "card": {
+       "letter": "C",
+       "title": "Paste nothing, ask if in doubt",
+       "sub": "Have the reply drafted in general terms and add the customer's details yourself.",
+       "at": "@C"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Delete the name",
+        "note": "regularly not enough",
+        "at": "@regularly"
+       },
+       {
+        "key": "B",
+        "text": "Simply paste it",
+        "note": "private account, no rule",
+        "at": "@private"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "C is right. The reply can be drafted without the customer's details; the office manager adds the name and the particulars afterwards. A is regularly not enough, and B passes everything on through a private account for which there is no rule.",
+       "marker": "auslegung",
+       "source": "S3"
+      },
+      {
+       "text": "That is why the rule of doubt is on the one page: in case of doubt, nothing is entered, and a named person is asked.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "case",
+     "bg": "yt/lib_documents_desk.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Case 2 · re-enacted",
+      "time": "MON 08:30",
+      "place": "The owner's office",
+      "obj": {
+       "label": "Folder · Found while tidying",
+       "from": "AI policy, 2 pages",
+       "subject": "Last year's version, taken from a template",
+       "lines": [
+        "No date from which it applies",
+        "No responsible person",
+        "Never announced",
+        "Nobody has signed it"
+       ]
+      },
+      "obj_at": "@policy",
+      "highlight": {
+       "line": 2,
+       "label": "Never issued",
+       "at": "@knows"
+      }
+     },
+     "say": [
+      {
+       "text": "Case two. Monday, half past eight. While tidying up, the owner finds an AI policy, two pages, taken from a template a year ago. No date, no responsible person, and nobody in the business knows it.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "What do you do?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Print it and pin it on the noticeboard",
+        "at": "@print"
+       },
+       {
+        "key": "B",
+        "text": "Email it to everyone, done",
+        "at": "@send"
+       },
+       {
+        "key": "C",
+        "text": "Date, responsible person, briefing, confirmation",
+        "at": "@set"
+       }
+      ],
+      "think": {
+       "at": "@Think",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "What do you do? A: print it and pin it on the noticeboard. B: send it to everyone by email. C: set a date, name a responsible person, announce the rule in a briefing, and have receipt confirmed. Think about it for a moment."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "If you choose B",
+      "headline": "Sent is not issued",
+      "items": [
+       {
+        "time": "09:00",
+        "text": "Email to all, no date, nobody responsible",
+        "tone": "neutral",
+        "at": "@nine"
+       },
+       {
+        "time": "09:40",
+        "text": "Two field staff on a building site do not read it",
+        "tone": "amber",
+        "at": "@building"
+       },
+       {
+        "time": "Weeks later",
+        "text": "A customer asks what is regulated",
+        "tone": "amber",
+        "at": "@Weeks"
+       },
+       {
+        "time": "",
+        "text": "No record of who knows it",
+        "tone": "red",
+        "at": "@record"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "B is quick. In the example, the email goes to everyone at nine o'clock, without a date and without anyone responsible. Two field staff are on a building site and do not read it. Weeks later a customer asks what is regulated, and the business has no record of who knows the rule.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "The one step",
+      "card": {
+       "letter": "C",
+       "title": "Four things, then it applies",
+       "sub": "Date, responsible person, way of announcement, confirmation from each person.",
+       "at": "@C"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Poster alone",
+        "note": "no date, no record",
+        "at": "@poster"
+       },
+       {
+        "key": "B",
+        "text": "Email to everyone",
+        "note": "sent, not issued",
+        "at": "@email"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "C is right, by our interpretation from earlier. The supervisory authorities say instructions should be issued and documented. A poster alone has no date and no record; an email to everyone is sent, but not issued. Only with the four things does the document from the drawer become a rule.",
+       "marker": "auslegung",
+       "source": "S9"
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "faelle.js"
+   ],
+   "inserts": [
+    {
+     "at": "three photos",
+     "dur": 3.5,
+     "file": "yt/t01_socket_photos.start.png"
+    },
+    {
+     "at": "While tidying up",
+     "dur": 4.0,
+     "file": "yt/t01_drawer_hand.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "num": "5",
+   "title": "The example business",
+   "kicker": "5 · The example business",
+   "scenes": [
+    {
+     "type": "paper",
+     "bg": "yt/lib_workshop_bench.mp4",
+     "data": {
+      "headline": "Example Electrical Ltd",
+      "note": "Fictional, so that no real person appears.",
+      "doc": {
+       "label": "Example business · fictional",
+       "title": "Austria, 10 to 49 staff",
+       "lines": [
+        {
+         "text": "Owner, also the management",
+         "at": "@owner"
+        },
+        {
+         "text": "Office, field staff, one apprentice",
+         "at": "@field"
+        },
+        {
+         "text": "3 in the office use a text assistant",
+         "at": "@Three"
+        },
+        {
+         "text": "2 field staff: privately on their phones",
+         "at": "@Two",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "The generator is prefilled with a fictional business, so that no real person appears. Example Electrical Ltd: an electrical contractor in Austria with ten to forty-nine staff. An owner who is also the management, office staff, field staff and one apprentice. Three people in the office use a text assistant for quotes, summaries and translations. Two field staff set it up privately on their phones. Nobody here is real.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Result in the memo",
+      "text": "The lamp is red because the accounts are private.",
+      "sub": "First step: business accounts, training off, and post the one page.",
+      "sub_at": "@first"
+     },
+     "say": [
+      {
+       "text": "Put that situation into the memo and the lamp is red, because the accounts are private. The first step reads: set up business accounts with training on inputs switched off, and post the one page: what never goes into a tool."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Section one: *tools and access*",
+      "note": "“As before” is not an option here.",
+      "note_at": "@before",
+      "doc": {
+       "label": "Sample D1 · AI usage policy",
+       "title": "§ 1 Permitted tools and access",
+       "lines": [
+        {
+         "text": "Text assistant through a business account",
+         "at": "@section"
+        },
+        {
+         "text": "Field staff: access through a business account, or",
+         "at": "@either"
+        },
+        {
+         "text": "work use on private phones ends on the effective date",
+         "at": "@ends",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "In the policy, section one names the tools and the access. For the two field staff that means: either they get access through a business account, or their work use on the private phone ends on the effective date. \"As before\" is not an option here."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Sections two and three",
+      "left": {
+       "title": "§ 2 Uses",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "Quote drafts",
+         "at": "@quote"
+        },
+        {
+         "text": "Summaries of manufacturer texts",
+         "at": "@manufacturer"
+        },
+        {
+         "text": "Translations, wording help",
+         "at": "@translations"
+        },
+        {
+         "text": "Excluded: applications, assessment",
+         "at": "@applications"
+        }
+       ]
+      },
+      "right": {
+       "title": "§ 3 Never goes in, in addition",
+       "tone": "red",
+       "at": "@three",
+       "rows": [
+        {
+         "text": "Calculation sheets per job",
+         "at": "@calculation"
+        },
+        {
+         "text": "Access codes to customer sites",
+         "at": "@access"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Section two lists the uses that actually occur: quote drafts, summaries of manufacturer texts, translations for the two field staff, wording help for complaints. Everything that concerns applications or the assessment of individual employees is excluded. Section three adds two things to the list of what never goes in: the calculation sheets per job and the access codes to customer sites."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_documents_desk.mp4",
+     "data": {
+      "headline": "The one page and the *evidence summary*",
+      "doc": {
+       "label": "Sample D7 · Evidence summary",
+       "title": "Dated, with a document number",
+       "lines": [
+        {
+         "text": "Poster D2: takes its content from the policy",
+         "at": "@poster"
+        },
+        {
+         "text": "Usage policy · Regulated",
+         "at": "@evidence",
+         "mark": "ok"
+        },
+        {
+         "text": "Briefing · Planned",
+         "at": "@regulated",
+         "mark": "open"
+        },
+        {
+         "text": "Review: after 12 months and on every occasion",
+         "at": "@review"
+        },
+        {
+         "text": "Open items: listed, not hidden",
+         "at": "@hidden",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "The one page takes its content from the policy, so that poster and policy cannot contradict each other: what never goes in, with boxes to tick during the briefing; what is checked before use; who is asked and where incidents are reported."
+      },
+      {
+       "text": "And the evidence summary: one page, dated, with a document number, and one line per piece of evidence with the status regulated, planned or open. The example business chose a review after twelve months and on every occasion. Open items are listed, not hidden."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-5.js"
+   ],
+   "inserts": [
+    {
+     "at": "Two field",
+     "dur": 4.0,
+     "file": "yt/t01_electrician_back.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "num": "6",
+   "title": "What the documents are not",
+   "kicker": "6 · What it is not",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "kicker": "No legal advice",
+      "text": "The documents show what you *decided*.",
+      "sub": "Since when, for which tools, and who knows about it."
+     },
+     "say": [
+      {
+       "text": "It is not legal advice, and no document claims that your business complies with a rule. The documents show what you decided, since when, for which tools, and who knows about it."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "17 points, *8 open*. These concern this video:",
+      "items": [
+       {
+        "title": "Which authority supervises in Austria",
+        "at": "@authority"
+       },
+       {
+        "title": "How often to brief, how long to keep the record",
+        "at": "@often"
+       },
+       {
+        "title": "Is a policy a reasonable step for secrecy?",
+        "at": "@reasonable"
+       },
+       {
+        "title": "Does it bind freelancers and contractors?",
+        "at": "@freelancers"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "The handbook of the toolkit lists seventeen points as of 23 October 2026. Eight remain open, and we name the ones that touch this video. Which authority supervises in Austria. How often the briefing is repeated and how long the record is kept. Whether a policy is a reasonable step to keep trade secrets. Whether the policy binds freelancers and contractors."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Two points in more detail",
+      "left": {
+       "title": "Contractors",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "Art. 4 also covers contractors",
+         "at": "@contractors"
+        },
+        {
+         "text": "How the policy binds them: contract law",
+         "at": "@law"
+        }
+       ]
+      },
+      "right": {
+       "title": "Works council",
+       "tone": "amber",
+       "at": "@works",
+       "rows": [
+        {
+         "text": "Participation under national labour law",
+         "at": "@labour"
+        },
+        {
+         "text": "Clarify before procurement",
+         "at": "@procurement"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "On that last one: the Commission writes that Article four also covers contractors and service providers under the organisational remit; how a policy binds them is contract law, which we did not survey.",
+       "marker": "fakt",
+       "source": "S5"
+      },
+      {
+       "text": "This is open: whether an AI tool triggers the participation of a works council. That is national labour law, and a business with a works council clarifies it with a specialist before procurement, not after.",
+       "marker": "unsicher",
+       "source": "S13"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "No official catalogue",
+      "text": "Your business *decides*. The documents show what it decided."
+     },
+     "say": [
+      {
+       "text": "And the nine areas are not an official catalogue. A business may merge or add areas without missing anything a source requires. Your business decides. The documents show what it decided."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-6.js"
+   ],
+   "inserts": []
+  },
+  {
+   "id": "c7",
+   "num": "7",
+   "title": "Free memo and the toolkit",
+   "kicker": "7 · Memo and toolkit",
+   "end_seconds": 20.0,
+   "scenes": [
+    {
+     "type": "paper",
+     "data": {
+      "headline": "For the first step: the *free memo*",
+      "note": "For a memo you only read, nothing is stored.",
+      "note_at": "@stored",
+      "doc": {
+       "label": "scutoria.com/memos/where-to-start",
+       "title": "Where do we start with AI rules?",
+       "lines": [
+        {
+         "text": "Seven questions",
+         "at": "@Seven"
+        },
+        {
+         "text": "Your situation and the one step that comes first",
+         "at": "@situation"
+        },
+        {
+         "text": "The plan in order, every statement with its source",
+         "at": "@plan"
+        },
+        {
+         "text": "PDF by email",
+         "at": "@PDF"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "For the first step in your own business, the memo is free on scutoria.com; the link is in the description. Seven questions, then a dated memo: your situation, the one step that comes first, the plan in order, every statement with its source. You read it here; the PDF comes by email. For a memo you only read, nothing is stored; the answers are only in the address of the result page."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "AI Policy Toolkit",
+      "text": "34 questions, *seven dated documents*.",
+      "sub": "Handbook readable before you buy · 199 euros per year · the first ten buyers pay 99",
+      "sub_at": "@handbook"
+     },
+     "say": [
+      {
+       "text": "If you want the documents, the AI Policy Toolkit turns thirty-four questions, with the example business prefilled, into seven dated documents, from the usage policy and the one page to post to the enactment plan with fifteen steps and the evidence summary, as PDF, DOCX and XLSX. The handbook with every source is readable before you buy. The toolkit costs 199 euros per year. The first ten buyers pay 99."
+      }
+     ]
+    },
+    {
+     "type": "close",
+     "data": {
+      "rule": "This is Scutoria. Synthetic voice, sources on screen.",
+      "memo": {
+       "label": "Free memo: Where do we start with AI rules?",
+       "url": "scutoria.com/memos/where-to-start",
+       "at": "@script"
+      },
+      "toolkit": {
+       "label": "Next: The security questionnaire",
+       "url": "Video 02",
+       "at": "@Next"
+      },
+      "claim": "Sourced. Dated. Ready to show.",
+      "disclaimer": "Source-based. No legal advice."
+     },
+     "say": [
+      {
+       "text": "This is Scutoria. The voice you hear is synthetic. The script was drafted with an AI tool, then checked by us, sentence by sentence. Every number and every legal statement carries its source on screen. Source-based, no legal advice."
+      },
+      {
+       "text": "Next: your customer sends a security questionnaire, and how to answer it honestly."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-7.js"
+   ],
+   "inserts": [
+    {
+     "at": "Seven questions, then",
+     "dur": 3.5,
+     "file": "yt/t01_hands_typing.mp4"
+    }
+   ]
+  }
+ ],
+ "reels": [
+  {
+   "id": "r1",
+   "chapter": "c1",
+   "title": "Three answers to one question",
+   "kicker": "From video 01 · AI rules",
+   "scenes": [
+    "c1s0",
+    "c1s1",
+    "c1s2",
+    "c1s3"
+   ]
+  },
+  {
+   "id": "r2",
+   "chapter": "c2",
+   "title": "The one page to post",
+   "kicker": "From video 01 · AI rules",
+   "scenes": [
+    "c2s2",
+    "c2s3",
+    "c2s4"
+   ]
+  },
+  {
+   "id": "r3",
+   "chapter": "c2",
+   "title": "Four things make a rule",
+   "kicker": "From video 01 · AI rules",
+   "scenes": [
+    "c2s6",
+    "c2s7",
+    "c2s8",
+    "c2s9"
+   ]
+  },
+  {
+   "id": "r4",
+   "chapter": "c3",
+   "title": "Does any law require a policy?",
+   "kicker": "From video 01 · AI rules",
+   "scenes": [
+    "c3s1",
+    "c3s2",
+    "c3s3"
+   ]
+  },
+  {
+   "id": "r5",
+   "chapter": "c4",
+   "title": "What do you do? The customer email",
+   "kicker": "From video 01 · What do you do?",
+   "scenes": [
+    "c4s0",
+    "c4s1",
+    "c4s2",
+    "c4s3"
+   ]
+  },
+  {
+   "id": "r6",
+   "chapter": "c6",
+   "title": "What the documents are not",
+   "kicker": "From video 01 · AI rules",
+   "scenes": [
+    "c6s0",
+    "c6s1",
+    "c6s2"
+   ]
+  }
+ ],
+ "mode": "welt",
+ "welt_libs": [
+  "fall-lib.js"
+ ]
+}

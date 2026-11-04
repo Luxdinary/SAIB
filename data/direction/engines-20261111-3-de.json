@@ -1,0 +1,474 @@
+{
+  "video_id": "engines-20261111-3-de",
+  "brand_id": "engines",
+  "language": "de",
+  "title": "So liest du ein Steuerzeitendiagramm",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261111-3-de, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Vier Zahlen beschreiben, wann die Ventile öffnen und schließen. So liest du ein Steuerzeitendiagramm, mit typischen Werten aus der MIT-Vorlesung.",
+    "companion_text": "Folge Revlore: Motorentechnik verstehen, ein Bauteil nach dem anderen.\nTypische Spannen aus MIT 2.61, Vorlesung 8; das Modell nutzt Werte innerhalb dieser Spannen, kein bestimmter Motor.",
+    "hashtags": [
+      "motorentechnik",
+      "steuerzeiten",
+      "nockenwelle",
+      "ventile",
+      "anleitung"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, Vorlesung 8",
+      "title": "MIT 2.61, Vorlesung 8 (L8)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "NASA Glenn, Viertaktmotor",
+      "title": "NASA Glenn, Viertaktmotor (N1)",
+      "url": "https://www.grc.nasa.gov/www/k-12/airplane/engopt.html",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "demonstration",
+      "spoken": "So liest du sie.",
+      "on_screen": "Vier Zahlen, zwei Ventile",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "surprising_fact",
+      "spoken": "So liest du ein Steuerzeitendiagramm",
+      "on_screen": "So liest du ein Steuerzeitendiagramm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "question",
+      "spoken": "Was bedeuten die Zahlen im Steuerzeitendiagramm?",
+      "on_screen": "So liest du ein Steuerzeitendiagramm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "misconception",
+      "spoken": "So liest du ein Steuerzeitendiagramm",
+      "on_screen": "So liest du ein Steuerzeitendiagramm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "concrete_risk",
+      "spoken": "So liest du ein Steuerzeitendiagramm",
+      "on_screen": "So liest du ein Steuerzeitendiagramm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Vier Zahlen beschreiben, wann die Ventile eines Motors öffnen und schließen. So liest du sie.",
+      "data": {
+        "claim": "Vier Zahlen, zwei Ventile",
+        "claim_lines": [
+          "Vier Zahlen,",
+          "zwei Ventile"
+        ],
+        "claim_highlight": "Vier Zahlen,",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Ventile",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_chart",
+      "spoken": "Das Steuerzeitendiagramm zeigt den Ventilhub über dem Kurbelwinkel. Es reicht über zwei Umdrehungen, siebenhundertzwanzig Grad, weil die Nockenwelle nur halb so schnell dreht wie die Kurbelwelle. Die Kurven zeigen, wie weit jedes Ventil gerade offen ist.",
+      "data": {
+        "title": "Hub über Winkel",
+        "kind": "valve_lift",
+        "series_at": [
+          "w:Ventilhub",
+          1.2
+        ],
+        "dot": true,
+        "theta": [
+          [
+            0,
+            -180
+          ],
+          [
+            1,
+            540
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Nockenwelle",
+        "kicker": "2 · DAS DIAGRAMM",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "Zahl eins: Einlass öffnet, laut Fachvorlesung typisch bis fünfzehn Grad vor dem oberen Totpunkt. Zahl zwei: Einlass schließt, typisch dreißig bis fünfzig Grad nach dem unteren Totpunkt.",
+      "data": {
+        "title": "Einlass: auf und zu",
+        "kind": "valve_lift",
+        "series_at": [
+          0.0,
+          0.02
+        ],
+        "marks": [
+          {
+            "x": -10,
+            "label": "1 Einlass auf",
+            "at": "w:öffnet",
+            "side": "l",
+            "row": 0
+          },
+          {
+            "x": 220,
+            "label": "2 Einlass zu",
+            "at": "w:schließt",
+            "row": 1
+          }
+        ],
+        "theta": [
+          [
+            0,
+            -40
+          ],
+          [
+            1,
+            260
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Fachvorlesung",
+        "kicker": "3 · DER EINLASS"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "Zahl drei: Auslass öffnet, dreißig bis fünfzig Grad vor dem unteren Totpunkt. Zahl vier: Auslass schließt, bis fünfzehn Grad nach dem oberen Totpunkt.",
+      "data": {
+        "title": "Auslass: auf und zu",
+        "kind": "valve_lift",
+        "series_at": [
+          0.0,
+          0.02
+        ],
+        "marks": [
+          {
+            "x": 500,
+            "label": "3 Auslass auf",
+            "at": "w:öffnet",
+            "side": "l",
+            "row": 0,
+            "color": "steel"
+          },
+          {
+            "x": 10,
+            "label": "4 Auslass zu",
+            "at": "w:schließt",
+            "row": 1,
+            "color": "steel"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            460
+          ],
+          [
+            1,
+            760
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:öffnet",
+        "kicker": "4 · DER AUSLASS"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rv_cutaway",
+      "spoken": "Jede Zahl hat einen Grund. Früh öffnen lässt den Druck im Zylinder schon vor dem Ausschieben entweichen. Spät schließen nutzt bei hoher Drehzahl den Schwung der einströmenden Luft.",
+      "data": {
+        "title": "Warum so?",
+        "notes": [
+          {
+            "text": "Vorauslass",
+            "at": "w:Früh",
+            "side": "r",
+            "y": 780,
+            "color": "exhaust",
+            "to": [
+              850,
+              425
+            ]
+          },
+          {
+            "text": "Staueffekt",
+            "at": "w:Spät",
+            "side": "l",
+            "y": 640,
+            "to": [
+              280,
+              425
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            460
+          ],
+          [
+            1,
+            960
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Grund",
+        "kicker": "5 · DIE GRÜNDE",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "rv_chart",
+      "spoken": "Und wo der Auslass noch nicht zu und der Einlass schon offen ist, liegt die Überschneidung. Mit diesen vier Zahlen kannst du jedes Steuerzeitendiagramm lesen.",
+      "data": {
+        "title": "Vier Zahlen",
+        "kind": "valve_lift",
+        "series_at": [
+          0.0,
+          0.02
+        ],
+        "dot": true,
+        "bands": [
+          {
+            "x0": -10,
+            "x1": 10,
+            "label": "Überschneidung",
+            "at": "w:Überschneidung"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            -180
+          ],
+          [
+            1,
+            540
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Überschneidung",
+        "kicker": "6 · DER KERN",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Einlass auf, Einlass zu, Auslass auf, Auslass zu. Motorentechnik verstehen: Folge Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "Einlass",
+            "at": "w:Einlass"
+          },
+          {
+            "text": "Auslass",
+            "at": "w:Auslass"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Motorentechnik verstehen",
+          "at": "w:Motorentechnik"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

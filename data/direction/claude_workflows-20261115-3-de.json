@@ -1,0 +1,731 @@
+{
+  "video_id": "claude_workflows-20261115-3-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Berechtigungsregel oder Hook?",
+  "notes": "Woche 1 (Plan-Agent D, 01.11.2026). Reihe Entweder-oder, Thema V3, Risiko mittel (Sicherheitsthema). Bewusst anders als das Hooks-Video 20261109-3: kein CLAUDE.md, keine .env, kein Exit-2-Terminal; Kern ist die Grenze von Bash-Mustern (Doku: What a Bash rule doesn't match) und der Vorrang (Precedence among rules, hooks, and mods). Leitobjekt .claude/settings.json. Quellen am 01.11.2026 als Markdown geöffnet. Alle Oberflächen animiert.",
+  "hook": {
+    "id": "H1",
+    "note": "Frage mit höchster Bewertung; die deny-Zeile in der settings.json ist der Einstieg."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Bestimmte Befehle verhindern: Reicht eine Berechtigungsregel, oder brauchst du einen Hook?",
+      "on_screen": "Berechtigungsregel oder Hook?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "settings.json mit deny-Regel, Marker, Frage",
+      "why": {
+        "truth": "Frage; Antwort in der permissions-Seite",
+        "visual": "deny-Zeile sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Eine deny-Regel für rm sperrt jedes rm? Laut Doku nicht.",
+      "on_screen": "Sperrt deny jedes rm?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Text",
+      "why": {
+        "visual": "wenig Handlung im Hook"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Bash(rm *) stoppt rm -rf build, aber nicht /bin/rm -rf build.",
+      "on_screen": "rm ja, /bin/rm nein",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "zwei Befehle",
+      "why": {
+        "clarity": "Befehlstext gesprochen schwer verständlich"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Deine Sperrregel prüft nur den Befehlstext, nicht das Programm dahinter.",
+      "on_screen": "Nur der Text zählt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Terminal",
+      "why": {
+        "curiosity": "als Einstieg zu technisch"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wann eine Regel reicht und wann du einen Hook brauchst.",
+      "on_screen": "Regel oder Hook: wann was?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Vergleich",
+      "why": {
+        "curiosity": "schwach"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Configure permissions (Claude Code Docs): enforced by Claude Code, not by the model; deny, then ask, then allow; What a Bash rule doesn't match (Bash(rm *) vs /bin/rm), isn't a security boundary; inspect full command text with a PreToolUse hook; Precedence among rules, hooks, and mods; blocking hook takes precedence over allow rules",
+      "url": "https://code.claude.com/docs/en/permissions",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Berechtigungen"
+    },
+    {
+      "id": "S2",
+      "title": "Automate actions with hooks (Claude Code Docs): structured JSON output; permissionDecision deny/ask/allow; permissionDecisionReason fed back to Claude; hooks and permission modes",
+      "url": "https://code.claude.com/docs/en/hooks-guide",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Hooks"
+    }
+  ],
+  "unverified": [
+    "Wie Claude Code eine durch eine Regel abgelehnte Bash-Anfrage im Terminal genau anzeigt: nicht geprüft; die Zeilen im Terminal sind deutsch beschriftete Animation, kein Originaltext.",
+    "Ob /bin/rm -rf build/ danach ausgeführt würde, hängt laut Doku von den übrigen Regeln und vom Modus ab; im Video nur „passt das Muster nicht mehr“.",
+    "Ein Hook, der /bin/rm erkennt (Abschluss-Terminal), ist ein Beispiel, kein Skript aus der Doku.",
+    "Sonderfälle des Vorrangs (Mods mit tool.check, Plan-Modus, managed settings) sind nicht Teil des Videos."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "settings.json",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "deny: Bash(rm *)",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Muster: Lücke",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "Regel: nur Befehlstext",
+          "tone": "amber"
+        },
+        {
+          "beat": "b4",
+          "text": "Hook: vor den Regeln",
+          "tone": "muted"
+        },
+        {
+          "beat": "b5",
+          "text": "Hook: deny mit Grund",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Regel + Hook",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "Regel + Hook: geplant",
+          "tone": "accent"
+        },
+        {
+          "beat": "b8",
+          "text": "Regel + Hook: aktiv",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Berechtigungsregeln erlauben oder sperren Werkzeuge nach Muster; ein PreToolUse-Hook prüft mit eigener Logik und antwortet mit deny, ask oder allow plus Begründung. Was laut Claude-Code-Dokumentation Vorrang hat und wie du beides kombinierst.",
+    "companion_text": "Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk. Grundlage: Claude-Code-Doku (Configure permissions, Automate actions with hooks), abgerufen am 01.11.2026. Terminal und Editor sind eine animierte Darstellung, keine Bildschirmaufnahme; Befehle und Hook-Ausgabe sind Beispiele. Grenzen laut Doku: Eine Bash-Regel prüft nur den Befehlstext, den Claude schreibt; dieselbe Aktion in anderer Form (zum Beispiel /bin/rm oder bash -c) passt nicht. Für Schutz auf Datei- und Netzwerkebene, unabhängig vom Befehlstext, nennt die Doku die Sandbox. Ein allow aus einem Hook hebt keine deny- oder ask-Regel auf.",
+    "hashtags": [
+      "claudecode",
+      "berechtigungen",
+      "hooks",
+      "kisicherheit",
+      "entwickler"
+    ],
+    "short_title": "Regel oder Hook",
+    "risk_level": "medium"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Bestimmte Befehle verhindern: Reicht eine Berechtigungsregel, oder brauchst du einen Hook?",
+      "data": {
+        "question": "Berechtigungsregel oder Hook?",
+        "chip": "Regel oder Hook?",
+        "tabs": [
+          {
+            "name": "settings.json",
+            "active": true
+          }
+        ],
+        "file": "settings.json",
+        "lines": [
+          [
+            [
+              "punc",
+              "{"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "key",
+              "\"permissions\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"deny\""
+            ],
+            [
+              "punc",
+              ": ["
+            ],
+            [
+              "str",
+              "\"Bash(rm *)\""
+            ],
+            [
+              "punc",
+              "]"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "  },"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "key",
+              "\"hooks\""
+            ],
+            [
+              "punc",
+              ": { … }"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "}"
+            ]
+          ]
+        ],
+        "focus_line": 2,
+        "zoom": 1.1,
+        "line_h": 62,
+        "env_word": "verhindern",
+        "mark_word": "bestimmte",
+        "click_word": "Befehle",
+        "question_word": "Reicht",
+        "chip_word": "Hook"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Reicht"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Eine deny-Regel für rm stoppt den Befehl rm -rf build. Schreibt Claude aber /bin/rm, passt das Muster laut Doku nicht mehr.",
+      "data": {
+        "title": "claude · demo-projekt",
+        "focus_line": 4,
+        "annotation": "Muster prüft nur den Befehlstext",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Lösch den Ordner build/"
+              ]
+            ],
+            "at_word": "Eine"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Bash(rm -rf build/)"
+              ]
+            ],
+            "at_word": "stoppt"
+          },
+          {
+            "kind": "err",
+            "text": "  abgelehnt: deny Bash(rm *)",
+            "at_word": "build"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Bash(/bin/rm -rf build/)"
+              ]
+            ],
+            "at_word": "Schreibt"
+          },
+          {
+            "kind": "err",
+            "text": "  Muster passt nicht",
+            "at_word": "passt"
+          }
+        ],
+        "mark_word": "passt",
+        "click_word": "Muster",
+        "annotation_word": "laut",
+        "height": 540,
+        "top": 20
+      },
+      "overlay": {
+        "title": "Wo das Muster endet",
+        "example": true,
+        "marker_at": "w:stoppt",
+        "dim_at": "w:Muster",
+        "vignette": true,
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Doku sagt dazu klar: Eine solche Regel ist keine Schutzgrenze um das Programm. Den ganzen Befehlstext mit eigener Logik prüft ein PreToolUse-Hook.",
+      "data": {
+        "kicker": "Claude Code Docs · Permissions",
+        "page_title": "Configure permissions",
+        "quotes": [
+          "isn't a security boundary around the program",
+          "inspect the full command text with your own logic"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Kein Schutzwall um das Programm.",
+        "page_word": "Doku",
+        "quote1_word": "Schutzgrenze",
+        "translation_word": "Programm",
+        "quote2_word": "ganzen"
+      },
+      "overlay": {
+        "title": "Regel prüft nur Text",
+        "marker_at": "w:Schutzgrenze",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Bei jedem Werkzeugaufruf läuft dein PreToolUse-Hook vor der Rückfrage. Blockiert er, ist Schluss, auch wenn eine allow-Regel passt. Sein allow hebt aber keine deny-Regel auf.",
+      "data": {
+        "headline": "",
+        "gate": 1,
+        "chip": "blockt vor allow",
+        "nodes": [
+          {
+            "label": "Werkzeugaufruf"
+          },
+          {
+            "label": "PreToolUse",
+            "hook": true
+          },
+          {
+            "label": "deny / ask"
+          },
+          {
+            "label": "allow"
+          },
+          {
+            "label": "Ausführung"
+          }
+        ],
+        "travel_word": "Werkzeugaufruf",
+        "gate_word": "Blockiert",
+        "travel_end_word": "Sein"
+      },
+      "overlay": {
+        "title": "Wer hat Vorrang?",
+        "marker_at": "w:Blockiert",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Und ein Hook kann mehr als Ja oder Nein: Er antwortet mit deny, ask oder allow. Bei deny bekommt Claude die Begründung zurück.",
+      "data": {
+        "tabs": [
+          {
+            "name": "Hook-Ausgabe (stdout)",
+            "active": true
+          }
+        ],
+        "focus_line": 3,
+        "pre_line": 1,
+        "callout": "Claude liest den Grund mit",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "punc",
+              "{"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "key",
+              "\"hookSpecificOutput\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"hookEventName\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"PreToolUse\""
+            ],
+            [
+              "punc",
+              ","
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"permissionDecision\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"deny\""
+            ],
+            [
+              "punc",
+              ","
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"permissionDecisionReason\""
+            ],
+            [
+              "punc",
+              ":"
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "str",
+              "\"Use rg instead of grep …\""
+            ]
+          ],
+          [
+            [
+              "punc",
+              "  }"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "}"
+            ]
+          ]
+        ],
+        "line_h": 52,
+        "zoom": 1.08,
+        "typed_word": "Nein",
+        "pre_word": "antwortet",
+        "mark_word": "deny",
+        "click_word": "allow",
+        "callout_word": "Begründung"
+      },
+      "overlay": {
+        "title": "Mehr als Ja oder Nein",
+        "marker_at": "w:antwortet",
+        "dim_at": "w:allow",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Die Faustregel: Ein festes Muster erlaubst oder sperrst du per Regel. Was eigene Logik braucht, prüft ein Hook. Beide wirken zusammen.",
+      "data": {
+        "top": {
+          "title": "Berechtigungsregel",
+          "verdict": "Muster",
+          "rows": [
+            "Tool(Muster)",
+            "deny vor ask vor allow"
+          ]
+        },
+        "bottom": {
+          "title": "PreToolUse-Hook",
+          "verdict": "Logik",
+          "rows": [
+            "eigenes Skript prüft",
+            "deny, ask, allow + Grund"
+          ]
+        },
+        "top_word": "festes",
+        "bottom_word": "Was"
+      },
+      "overlay": {
+        "title": "Muster oder Logik",
+        "marker": "auslegung",
+        "marker_at": "w:Faustregel",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "So kombinierst du es: deny für das, was nie laufen soll, allow für Routine wie npm run, und ein PreToolUse-Hook für alles, was Logik braucht.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Nie erlaubt: deny",
+            "code": "Bash(rm *)",
+            "at_word": "deny"
+          },
+          {
+            "title": "Routine: allow",
+            "code": "Bash(npm run *)",
+            "at_word": "allow"
+          },
+          {
+            "title": "Logik: Hook",
+            "code": "PreToolUse · Matcher Bash",
+            "at_word": "PreToolUse"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "In drei Schritten",
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:deny",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Muster gehören in eine Regel, Logik in einen Hook. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "Regel + Hook: aktiv",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Bash(/bin/rm -rf build/)"
+              ]
+            ]
+          },
+          {
+            "kind": "err",
+            "text": "  PreToolUse-Hook: deny"
+          }
+        ],
+        "statement": "Muster in die Regel. Logik in den Hook.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Muster",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

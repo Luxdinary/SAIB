@@ -1,0 +1,453 @@
+{
+ "video_id": "ai_security-20261110-1-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Die Mail vom Chef, der dringend überweisen lässt",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema D01, Reihe So läuft die Masche. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Überweisung. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Überweisung",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Zahlung: angefordert",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Absender: Chef?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Infos: öffentlich",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "FBI: 55 Mrd. Dollar",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Rückruf: offen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Regel: heute festlegen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Ohne Rückruf: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Eine Mail vom Chef, eine angebliche Übernahme, eine Überweisung ins Ausland: So läuft CEO-Betrug laut Polizei, und so bricht eine Rückruf-Regel das Muster.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "ceofraud",
+   "betrug",
+   "kmu",
+   "buchhaltung",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.berlin.de/polizei/aufgaben/praevention/betrug/artikel.693958.php",
+   "title": "Polizei Berlin: Geschäftsführer-Schwindel (CEO-Fraud)",
+   "checked_at": "2026-11-01",
+   "label": "Polizei Berlin, CEO-Fraud"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ic3.gov/PSA/2024/PSA240911",
+   "title": "FBI IC3 PSA I-091124-PSA: Business Email Compromise – The $55 Billion Scam (11.09.2024)",
+   "checked_at": "2026-11-01",
+   "label": "FBI IC3, BEC-Warnung 2024"
+  }
+ ],
+ "unverified": [
+  "Schadenssummen für Deutschland oder Österreich: nicht verwendet.",
+  "Einsatz von KI durch die Täter: nicht behauptet."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Dein Chef will per Mail eine Überweisung, sofort und geheim. Machst du es?",
+   "on_screen": "Sofort überweisen, sagt der Chef?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Betrug merkt man an schlechtem Deutsch? Diese Masche kommt vom Chef.",
+   "on_screen": "Betrug sieht anders aus?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Das FBI zählt in zehn Jahren 55 Milliarden Dollar Schaden durch falsche Geschäftsmails.",
+   "on_screen": "55 Mrd. Dollar durch falsche Firmen-Mails",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "IC3: 55 Mrd. USD 10/2013-12/2023, weltweit gemeldet"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Eine Mail im Namen deines Chefs, und das Geld ist im Ausland.",
+   "on_screen": "Mail vom Chef: Geld ins Ausland?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "Polizei: Täter geben sich als Geschäftsführer aus, Geldtransfer ins Ausland"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, was diese Chef-Mail von dir will.",
+   "on_screen": "Was will diese Mail?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Eine Mail im Namen deines Chefs, und das Geld ist im Ausland.",
+   "data": {
+    "question": "Mail vom Chef: Geld ins Ausland?",
+    "doc_label": "Zahlungsauftrag",
+    "chat_title": "Mail vom Chef",
+    "bot_line": "Bitte heute erledigen",
+    "typed": "Vertraulich: Überweisung",
+    "badge": "Echt?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "So beschreibt die Polizei Berlin den Geschäftsführer-Schwindel: Täter geben sich per Mail als Chef aus. Sie verweisen etwa auf eine angebliche Firmenübernahme und verlangen eine größere Überweisung ins Ausland.",
+   "data": {
+    "headline": "So läuft der Chef-Schwindel",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Falscher Chef",
+      "icon": "&#9823;"
+     },
+     {
+      "id": "n1",
+      "label": "Buchhaltung",
+      "icon": "&#9783;"
+     },
+     {
+      "id": "n2",
+      "label": "Konto im Ausland",
+      "icon": "&#9888;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "Mail mit Auftrag"
+     },
+     {
+      "label": "Überweisung"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Geld weg?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "Ihr Wissen holen die Täter aus öffentlichen Quellen: Wirtschaftsberichte, Handelsregister, die eigene Website oder Werbebroschüren. Besonders interessant sind Geschäftspartner und geplante Investitionen.",
+   "data": {
+    "headline": "Woher die Täter alles wissen",
+    "file_label": "Überweisung",
+    "card": {
+     "title": "Öffentliche Quellen",
+     "rows": [
+      {
+       "text": "Handelsregister",
+       "ok": null
+      },
+      {
+       "text": "Website, Broschüren",
+       "ok": null
+      },
+      {
+       "text": "Partner und Investitionen",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "Das FBI nennt diese Maschen Business Email Compromise. Von Oktober 2013 bis Dezember 2023 kamen in den gemeldeten Fällen weltweit rund 55 Milliarden Dollar Schaden zusammen.",
+   "data": {
+    "headline": "Wie groß die Masche ist",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.0,
+    "left": {
+     "title": "Was du siehst",
+     "rows": [
+      {
+       "text": "eine einzelne Mail",
+       "ok": null
+      },
+      {
+       "text": "ein Auftrag vom Chef",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "Was das FBI zählt",
+     "rows": [
+      {
+       "text": "10/2013 bis 12/2023",
+       "ok": null
+      },
+      {
+       "text": "rund 55 Mrd. Dollar Schaden",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "Die Polizei rät: Bei ungewöhnlichen Zahlungen erst die Absenderadresse prüfen, dann den Auftrag per Rückruf oder schriftlicher Rückfrage bestätigen lassen. Das FBI empfiehlt ebenfalls einen zweiten Kanal.",
+   "data": {
+    "headline": "Vor jeder ungewöhnlichen Zahlung",
+    "file_label": "Überweisung",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Rückruf beim Chef",
+      "sub": "bekannte Nummer",
+      "at": 0.6
+     },
+     {
+      "title": "Antwort auf die Mail",
+      "sub": "erreicht nur die Täter",
+      "at": 1.0
+     }
+    ],
+    "approval": "Auftrag bestätigt?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Für deinen Betrieb heißt das: Leg heute fest, dass jede ungewöhnliche Zahlung per Rückruf bestätigt wird. Sag es allen, die überweisen dürfen. Und ist Geld schon weg, sofort Bank und Polizei anrufen.",
+   "data": {
+    "headline": "Eine Regel für heute",
+    "items": [
+     {
+      "title": "Rückruf vor Zahlung",
+      "sub": "bei jeder ungewöhnlichen Bitte",
+      "at": 2.0
+     },
+     {
+      "title": "Alle Zahlberechtigten",
+      "sub": "kennen die Regel",
+      "at": 4.8
+     },
+     {
+      "title": "Geld schon weg?",
+      "sub": "sofort Bank und Polizei",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Erst zurückrufen, dann überweisen. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Erst Rückruf, dann Zahlung",
+    "file_label": "Überweisung",
+    "button": "Freigeben",
+    "block_text": "Freigabe erst nach Rückruf",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

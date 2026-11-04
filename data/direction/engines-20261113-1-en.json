@@ -1,0 +1,460 @@
+{
+  "video_id": "engines-20261113-1-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "Port injection versus direct injection",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261113-1-en, Reihe Gegenübergestellt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "In front of the intake valve at 3 to 7 bar, or straight into the chamber at up to 350 bar: port and direct injection compared.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.",
+    "hashtags": [
+      "enginetech",
+      "fuelinjection",
+      "directinjection",
+      "petrol",
+      "comparison"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, lecture 7",
+      "title": "MIT 2.61, Vorlesung 7 (L7)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/ea6fff400434e4163a91c1579ccf7236_MIT2_61S17_lec7.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "Bosch, direct injection",
+      "title": "Bosch, Direkteinspritzung (B3)",
+      "url": "https://www.bosch-mobility.com/en/solutions/powertrain/gasoline/gasoline-direct-injection/",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "In front of the valve, or right inside the cylinder?",
+      "on_screen": "Before the valve or in the cylinder?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "surprising_fact",
+      "spoken": "Direct injectors work at up to 350 bar.",
+      "on_screen": "Port injection versus direct injection",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Port injection versus direct injection",
+      "on_screen": "Port injection versus direct injection",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Port injection versus direct injection",
+      "on_screen": "Port injection versus direct injection",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Port injection versus direct injection",
+      "on_screen": "Port injection versus direct injection",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Where the fuel meets the air changes a lot in a petrol engine. In front of the valve, or right inside the cylinder?",
+      "data": {
+        "claim": "Before the valve or in the cylinder?",
+        "claim_lines": [
+          "Before the valve",
+          "or in the cylinder?"
+        ],
+        "claim_highlight": "in the cylinder?",
+        "claim_at": 0.05,
+        "counters": false,
+        "injector": "direct",
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:valve",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_board",
+      "spoken": "On the left, port injection: the injector sprays into the intake port, in front of the intake valve. On the right, direct injection: the injector sits in the cylinder head and sprays straight into the chamber. Watch where the spray goes in each engine.",
+      "data": {
+        "title": "Where the fuel goes",
+        "mode": "compare",
+        "left": {
+          "title": "Port",
+          "engine": {
+            "fuel": "petrol",
+            "injector": "port"
+          },
+          "rows": [
+            "before the valve"
+          ],
+          "at": "w:left"
+        },
+        "right": {
+          "title": "Direct",
+          "engine": {
+            "fuel": "petrol",
+            "injector": "direct"
+          },
+          "rows": [
+            "in the chamber"
+          ],
+          "at": "w:right"
+        },
+        "rows_at": [
+          "w:intake#2"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:port#2",
+        "kicker": "2 · TWO PLACES",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_readout",
+      "spoken": "The biggest difference is pressure. According to the engineering lecture, port injection works at three to seven bar, direct injection at fifty to two hundred and fifty. Bosch quotes up to three hundred and fifty bar for current systems.",
+      "data": {
+        "title": "Injection pressure",
+        "figure": "bars",
+        "bar_max": 360,
+        "lines_y": 1010,
+        "bars": [
+          {
+            "label": "port (MIT)",
+            "value": 7,
+            "text": "3–7 bar",
+            "at": "w:port"
+          },
+          {
+            "label": "direct (MIT)",
+            "value": 250,
+            "text": "50–250 bar",
+            "at": "w:direct"
+          },
+          {
+            "label": "direct (Bosch today)",
+            "value": 350,
+            "text": "up to 350 bar",
+            "at": "w:Bosch"
+          }
+        ],
+        "lines": [],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:lecture",
+        "kicker": "3 · THE PRESSURE",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "spoken": "More pressure means finer droplets. According to the lecture they are ten to fifty micrometres across with direct injection, and eighty to two hundred with port injection. Inside the cylinder they have very little time to evaporate. The finer the droplets, the faster they evaporate.",
+      "data": {
+        "title": "Fine droplets",
+        "injector": "direct",
+        "notes": [
+          {
+            "text": "direct: 10–50 µm",
+            "at": "w:direct",
+            "side": "r",
+            "y": 900,
+            "to": [
+              540,
+              590
+            ]
+          },
+          {
+            "text": "port: 80–200 µm",
+            "at": "w:port",
+            "side": "l",
+            "y": 760,
+            "to": [
+              300,
+              425
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:droplets",
+        "kicker": "4 · THE DROPLETS",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_board",
+      "spoken": "The lecture lists both sides for direct injection. The upside: the evaporating fuel cools the charge, which allows more compression. The downside: higher cost and more particulates, for example at full load and during a cold start. So it is a trade-off, not a free win.",
+      "data": {
+        "title": "Direct injection",
+        "mode": "compare",
+        "left": {
+          "title": "Upside",
+          "rows": [
+            "cooler charge",
+            "more compression"
+          ],
+          "at": "w:upside"
+        },
+        "right": {
+          "title": "Downside",
+          "rows": [
+            "higher cost",
+            "more particulates"
+          ],
+          "at": "w:downside"
+        },
+        "rows_at": [
+          "w:cools",
+          "w:particulates"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:lecture",
+        "kicker": "5 · PROS AND CONS",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Before the valve at low pressure, in the cylinder at high pressure. Understand engines: follow Revlore.",
+      "data": {
+        "injector": "direct",
+        "chips": [
+          {
+            "text": "3–7 bar",
+            "at": "w:valve"
+          },
+          {
+            "text": "up to 350 bar",
+            "at": "w:cylinder"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

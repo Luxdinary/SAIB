@@ -1,0 +1,442 @@
+{
+  "video_id": "motivation-20261115-2-de",
+  "brand_id": "motivation",
+  "language": "de",
+  "title": "E-Mails gebündelt: Was zwei Studien zeigen",
+  "notes": "Gritwerk Vorlage 1.0, Produktion Woche 1 (Stefan, 01.11.2026). Kalender motivation-20261115-2-de, Reihe Fokus im Alltag (E04). Aussagen nur aus den Kalenderquellen (Abruf 2026-11-01).",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 3,
+    "source_y": 1130,
+    "status_bar": {
+      "file": "Mail-Zeiten",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Ständig checken?",
+          "tone": "amber",
+          "offset": 2.6
+        },
+        {
+          "beat": "b2",
+          "text": "124 Erwachsene, 2 Wochen",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "4,7 statt 12,5 Checks",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Feldstudie: kein Stressvorteil",
+          "tone": "muted"
+        },
+        {
+          "beat": "b5",
+          "text": "Plan: feste Zeiten",
+          "tone": "muted"
+        },
+        {
+          "beat": "b6",
+          "text": "heute: Tag 1",
+          "tone": "accent",
+          "offset": 1.0
+        }
+      ]
+    },
+    "description": "Weniger Stress, wenn du Mails nur dreimal am Tag checkst? In einem Experiment mit 124 Erwachsenen berichteten Teilnehmende in der begrenzten Woche weniger Stress, eine Feldstudie mit 40 Beschäftigten fand beim Bündeln aber keinen Stressvorteil. Was das heißt und ein kleiner Selbstversuch.",
+    "companion_text": "Jede Methode mit Quelle.",
+    "hashtags": [
+      "fokus",
+      "email",
+      "arbeit",
+      "studie",
+      "gritwerk"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.interruptions.net/literature/Kushlev-ComputHumBehav15.pdf",
+      "title": "Kushlev, Dunn, 2015, Checking email less frequently reduces stress, Computers in Human Behavior 43, 220–228, DOI 10.1016/j.chb.2014.11.005",
+      "checked_at": "2026-11-01",
+      "label": "Kushlev & Dunn 2015"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/Email20Duration20Camera20Ready20submission3-1.pdf",
+      "title": "Mark, Iqbal, Czerwinski, Johns, Sano, 2016, Email Duration, Batching and Self-interruption: Patterns of Email Use on Productivity and Stress, CHI 2016, 1717–1728, DOI 10.1145/2858036.2858262",
+      "checked_at": "2026-11-01",
+      "label": "Mark et al. 2016"
+    }
+  ],
+  "unverified": [
+    "Nicht im Video: Nicht sagen, gebündelte Mails senkten Stress oder steigerten die Produktivität; keine Aussage zu psychischer Gesundheit oder Wohlbefinden; nicht empfehlen, Mails seltener zu prüfen, weil es Stress mindere.",
+    "Grenzen: Kushlev & Dunn: Stress per Selbstauskunft, keine Kontrollbedingung ohne Anweisung, Autoren sprechen von explorativer Studie und möglichem Artefakt vieler Tests, Gruppe hielt sich nicht exakt an die Vorgabe. Mark et al.: nur 40 Personen einer Forschungsabteilung, korrelativ, Bündler nur 11 Personen. Beide Studien liefern gegensätzliche Befunde zum Stress."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Weniger Stress, wenn du Mails nur dreimal am Tag checkst?",
+      "on_screen": "Mails seltener, Stress weniger?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Gewohnheitskarte mit Stempel und Frage",
+      "why": {
+        "choice": "eigener Hook, an den Quellen geprüft"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "demonstration",
+      "spoken": "Schau, wie die Gewohnheitskarte dazu aussieht.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "concrete_risk",
+      "spoken": "Wer sich nur auf ein Schlagwort verlässt, plant am Befund vorbei.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "surprising_fact",
+      "spoken": "Die Studienlage dazu ist anders, als man oft hört.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "misconception",
+      "spoken": "Ein verbreiteter Satz dazu hält der Prüfung nur zum Teil stand.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    }
+  ],
+  "hook": {
+    "id": "H1",
+    "note": "Eigener Hook mit der höchsten Bewertung."
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gritwerk_tracker",
+      "duration_hint": 7,
+      "spoken": "Weniger Stress, wenn du Mails nur dreimal am Tag checkst? Zwei Studien kommen zu unterschiedlichen Antworten.",
+      "data": {
+        "cue": "Wenn eine Mail aufploppt",
+        "action": "zur festen Zeit öffnen",
+        "counter_label": "Tag",
+        "boxes": 28,
+        "cols": 7,
+        "question": "Mails seltener, Stress weniger?",
+        "stamp": "Ständig checken?",
+        "goal": "zwei Antworten",
+        "fill_to": 3,
+        "fill_at": "w:Mails",
+        "fill_dur": 1.2,
+        "stamp_at": "w:checkst",
+        "question_at": "w:Weniger",
+        "rest_at": "w:unterschiedlichen"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Studien"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "gritwerk_paper",
+      "duration_hint": 14,
+      "spoken": "In einem Experiment über zwei Wochen prüften hundertvierundzwanzig Erwachsene eine Woche lang höchstens dreimal täglich ihre Mails, die andere Woche so oft sie wollten. In der begrenzten Woche berichteten sie weniger Stress im Alltag.",
+      "data": {
+        "headline": "Das Experiment",
+        "tag": "Experiment",
+        "cite": "Kushlev & Dunn 2015",
+        "claim": "Eine Woche begrenzt, eine Woche frei: Was ändert sich?",
+        "claim_at": "w:Woche",
+        "rows": [
+          {
+            "k": "Wer",
+            "v": "124 Erwachsene, 2 Wochen",
+            "at": "w:hundertvierundzwanzig"
+          },
+          {
+            "k": "Woche A",
+            "v": "höchstens 3 Checks am Tag",
+            "at": "w:dreimal"
+          },
+          {
+            "k": "Ergebnis",
+            "v": "weniger Stress berichtet",
+            "at": "w:Stress"
+          }
+        ],
+        "plate": true
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · DIE STUDIE",
+        "marker": "fakt",
+        "marker_at": "w:Experiment",
+        "transition": {
+          "type": "iris",
+          "x": 880,
+          "y": 730,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "gritwerk_bars",
+      "duration_hint": 13,
+      "spoken": "Tatsächlich prüften sie in der begrenzten Woche im Mittel knapp fünfmal am Tag statt gut zwölfmal. Ganz an die Vorgabe hielten sie sich also nicht. Die Forschenden nennen ihre Studie selbst explorativ.",
+      "data": {
+        "headline": "Checks pro Tag",
+        "caption": "E-Mail-Checks pro Tag, Mittelwert",
+        "bars": [
+          {
+            "label": "Begrenzte Woche",
+            "value": 4.7,
+            "text": "4,7",
+            "at": "w:fünfmal"
+          },
+          {
+            "label": "Freie Woche",
+            "value": 12.54,
+            "text": "12,5",
+            "tone": "muted",
+            "at": "w:zwölfmal"
+          }
+        ],
+        "scale_max": 14,
+        "note": "Vorgabe nicht ganz eingehalten",
+        "note_at": "w:Vorgabe"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "3 · DER VERGLEICH",
+        "marker": "fakt",
+        "marker_at": "w:Tatsächlich",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gritwerk_versus",
+      "duration_hint": 11,
+      "spoken": "Eine Feldstudie mit vierzig Beschäftigten maß den Stress zusätzlich mit einem Herzfrequenzsensor. Wer Mails bündelte, bewertete sich als produktiver. Einen Hinweis auf weniger Stress fand sie aber nicht.",
+      "data": {
+        "headline": "Zwei Antworten",
+        "link": "Feldstudie 2016",
+        "cards": [
+          {
+            "tag": "2015",
+            "cite": "Kushlev & Dunn",
+            "line": "Experiment: weniger Stress berichtet",
+            "tone": "muted",
+            "at": "w:Feldstudie"
+          },
+          {
+            "tag": "2016",
+            "cite": "Mark et al.",
+            "line": "40 Beschäftigte: kein Stressvorteil",
+            "tone": "amber",
+            "at": "w:vierzig"
+          }
+        ],
+        "verdict": "Die Befunde widersprechen sich",
+        "verdict_at": "w:Hinweis"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · DIE EINORDNUNG",
+        "marker": "fakt",
+        "marker_at": "w:Feldstudie",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gritwerk_plan",
+      "duration_hint": 13,
+      "spoken": "Probier es aus, ohne ein bestimmtes Ergebnis zu erwarten. Wenn eine Mail aufploppt, öffnest du sie erst zur nächsten festen Zeit. Für jeden Tag mit festen Zeiten setzt du ein Kästchen.",
+      "data": {
+        "layout": "month",
+        "weeks": 4,
+        "days": 7,
+        "cue": "Wenn eine Mail aufploppt",
+        "action": "zur festen Zeit öffnen",
+        "cue_ph": "Auslöser?",
+        "action_ph": "Handlung?",
+        "headline": "So setzt du es um",
+        "cue_at": "w:aufploppt",
+        "action_at": "w:festen",
+        "tick_at": "w:Kästchen",
+        "steps": [
+          {
+            "title": "Mail ploppt auf",
+            "at": "w:aufploppt"
+          },
+          {
+            "title": "Erst zur festen Zeit",
+            "at": "w:festen"
+          },
+          {
+            "title": "Kästchen je Tag",
+            "at": "w:Tag"
+          }
+        ],
+        "plate": true
+      },
+      "source_ids": [],
+      "overlay": {
+        "kicker": "5 · DEIN PLAN",
+        "marker": "auslegung",
+        "marker_at": "w:Probier",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 820,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gritwerk_close",
+      "duration_hint": 6,
+      "spoken": "Heute ist Kästchen eins. Mehr Methoden mit Quelle: Folge Gritwerk.",
+      "data": {
+        "layout": "month",
+        "weeks": 4,
+        "days": 7,
+        "cue": "Wenn eine Mail aufploppt",
+        "action": "zur festen Zeit öffnen",
+        "counter_label": "Tag",
+        "card_at": 0.1,
+        "tick_at": "w:Kästchen",
+        "chip": "Morgen: Kästchen 2",
+        "chip_at": "w:eins",
+        "name": "Gritwerk",
+        "name_at": "w:Methoden",
+        "mark_at": "w:Gritwerk",
+        "claim": "Methode statt Parole.",
+        "disclaimer": "Studienbasiert. Keine Therapie- oder Gesundheitsberatung."
+      },
+      "source_ids": [],
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

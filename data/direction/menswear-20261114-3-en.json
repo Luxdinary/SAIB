@@ -1,0 +1,565 @@
+{
+ "video_id": "menswear-20261114-3-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Flannel, tweed, fresco: three cloths, three builds",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema C04 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S5; Fresco als Markenname nur mit Herkunft (HFW) genannt, keine Empfehlung; Fox-Werbesatz nicht übernommen.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Wool cloth",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "difference: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "yarn: two kinds",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "flannel: raised",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "tweed: milled",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "fresco: porous",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "three builds",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "build understood",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Flannel, tweed and fresco differ mostly in how they are made: flannel is milled and raised (Fox Brothers), tweed is milled after weaving (Harris Tweed Authority), fresco is high-twist worsted in a porous plain weave (Huddersfield Fine Worsteds).",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "suitfabric",
+   "flannel",
+   "tweed",
+   "fresco"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://foxflannel.com/pages/heritage",
+   "title": "Fox Brothers, Heritage: Flanell als gewalktes Tuch (milled cloth); Fox webt auch Kammgarnflanell aus langen, gekämmten Fasern",
+   "checked_at": "2026-11-01",
+   "label": "Fox, Heritage"
+  },
+  {
+   "id": "S2",
+   "url": "https://foxflannel.com/products/fd188-old-english-blue-chalk-stripe",
+   "title": "Fox Brothers, FD188 Chalk Stripe: Muster werden durch das sanfte Rauen der Flanellausrüstung sichtbar",
+   "checked_at": "2026-11-01",
+   "label": "Fox, FD188"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.harristweed.org/the-process/",
+   "title": "Harris Tweed Authority, The Process: nach dem Weben gewaschen, gewalkt und leicht verfilzt, getrocknet und geschoren",
+   "checked_at": "2026-11-01",
+   "label": "Harris Tweed Authority"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.hfwltd.com/heritage",
+   "title": "Huddersfield Fine Worsteds, Heritage: 1907 erfand und registrierte Martin Sons & Co Fresco, hochgedrehtes Kammgarn in poröser Leinwandbindung",
+   "checked_at": "2026-11-01",
+   "label": "HFW, Heritage"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "title": "Woolmark, Introduction to Wovenwear (Schulungshandbuch): Harris Tweed, Donegal und Cheviot zählen zum Streichgarn",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark-Handbuch"
+  }
+ ],
+ "unverified": [
+  "Gewichte und Jahreszeiten der Tuche: nicht belegt, nicht im Video.",
+  "'If it's not Fox, it's not flannel' ist Werbung; nicht übernommen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Flannel, tweed, fresco: what sets them apart?",
+   "on_screen": "Flannel, tweed, fresco: what sets them apart?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "visual": "Fresco swatch, loupe on the porous weave",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Flannel is a pattern? No, it is a way of making cloth.",
+   "on_screen": "Flannel is a pattern? No, it is a way of making cloth.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "visual": "Fresco swatch, loupe on the porous weave",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Tweed is milled after it is woven",
+   "on_screen": "Tweed is milled after it is woven",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "visual": "Fresco swatch, loupe on the porous weave",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Alike on the rail, built differently",
+   "on_screen": "Alike on the rail, built differently",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "visual": "Fresco swatch, loupe on the porous weave",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Three swatches under the loupe",
+   "on_screen": "Three swatches under the loupe",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "visual": "Fresco swatch, loupe on the porous weave",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage nach dem Unterschied; die Antwort ist die Bauweise, nicht der Name."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Flannel, tweed and fresco. Three wool cloths that often get mentioned in one breath. So what actually makes them so different?",
+   "data": {
+    "question": "Flannel, tweed, fresco: what sets them apart?",
+    "object": {
+     "kind": "swatch",
+     "weave": "fresco",
+     "colour": "#2A3550",
+     "layers": 1
+    },
+    "target": "weave",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:wool",
+    "loupe_at": "w:wool",
+    "nie_at": "w:different",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 14,
+   "spoken": "The paths split at the yarn. The Woolmark training manual counts tweed as a woollen-spun cloth. Fresco is made from high-twist worsted yarn. And flannel comes both ways: Fox Brothers also weaves it from long, combed fibres.",
+   "data": {
+    "headline": "It starts with the yarn",
+    "left": {
+     "title": "Woollen",
+     "object": {
+      "kind": "swatch",
+      "weave": "tweed",
+      "colour": "#5A4A38",
+      "layers": 3
+     },
+     "target": "weave",
+     "tag": "tweed, says Woolmark",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:woollen"
+      }
+     ]
+    },
+    "right": {
+     "title": "Worsted",
+     "object": {
+      "kind": "swatch",
+      "weave": "fresco",
+      "colour": "#2A3550",
+      "layers": 1
+     },
+     "target": "weave",
+     "tag": "fresco, high-twist",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:worsted"
+      }
+     ],
+     "tag2": "flannel: either one",
+     "tag2_at": "w:flannel"
+    },
+    "left_at": "w:Woolmark",
+    "left_tag_at": "w:tweed",
+    "right_at": "w:Fresco",
+    "right_tag_at": "w:high",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S5",
+    "S4",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Woolmark"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "Flannel only really takes shape after weaving. Fox Brothers calls it a milled cloth. Then it is gently raised, which gives it that soft surface. According to Fox, even chalk stripes only show up through this raising.",
+   "data": {
+    "headline": "Flannel: milled, raised",
+    "from": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#4E5562",
+     "layers": 2
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "flannel",
+     "colour": "#4E5562",
+     "layers": 2
+    },
+    "target": "weave",
+    "zoom": 1.45,
+    "label": "milled and gently raised",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:weaving",
+    "zoom_at": "w:milled",
+    "flip_at": "w:raised",
+    "label_at": "w:soft"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Fox"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Tweed takes a similar route, only more robust. The Harris Tweed Authority describes it like this: after weaving, the cloth is washed, milled and lightly felted. Then it is dried and cropped.",
+   "data": {
+    "headline": "Tweed: after weaving",
+    "stages": [
+     {
+      "object": {
+       "kind": "swatch",
+       "weave": "tweed",
+       "colour": "#5A4A38",
+       "layers": 3
+      },
+      "at": 0.0,
+      "title": "Harris Tweed",
+      "tags": [
+       {
+        "spot": "weave",
+        "text": "washed",
+        "sub": "after weaving",
+        "tone": "always",
+        "at": "w:washed"
+       },
+       {
+        "spot": "center",
+        "text": "milled",
+        "sub": "lightly felted",
+        "tone": "always",
+        "at": "w:milled"
+       },
+       {
+        "spot": "corner",
+        "text": "cropped",
+        "sub": "after drying",
+        "tone": "always",
+        "at": "w:cropped"
+       }
+      ],
+      "focus_at": "w:dried"
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Harris"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "Fresco is built differently. According to Huddersfield Fine Worsteds, Martin Sons and Co invented and registered it in 1907. The yarn is high-twist worsted. And it is woven in an open, porous plain weave.",
+   "data": {
+    "headline": "Fresco: high twist",
+    "from": {
+     "kind": "yarn",
+     "spin": "worsted"
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "fresco",
+     "colour": "#2A3550",
+     "layers": 1
+    },
+    "target": "center",
+    "zoom": 1.35,
+    "label": "porous, from worsted",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Huddersfield",
+    "zoom_at": "w:1907",
+    "flip_at": "w:woven",
+    "label_at": "w:porous"
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Huddersfield"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "In short: flannel is milled and gently raised. Tweed is a woollen-spun cloth that gets milled after weaving. Fresco is high-twist worsted, woven porous and open.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Flannel: raised",
+      "sub": "milled, then gently raised",
+      "object": {
+       "kind": "swatch",
+       "weave": "worsted",
+       "colour": "#4E5562",
+       "layers": 2
+      },
+      "at": "w:flannel",
+      "then": {
+       "weave": "flannel"
+      },
+      "then_at": "w:raised"
+     },
+     {
+      "title": "Tweed: woollen-spun",
+      "sub": "milled after weaving",
+      "object": {
+       "kind": "swatch",
+       "weave": "tweed",
+       "colour": "#5A4A38",
+       "layers": 3
+      },
+      "at": "w:Tweed",
+      "ring": "weave",
+      "ring_at": "w:milled#2"
+     },
+     {
+      "title": "Fresco: porous",
+      "sub": "high-twist worsted",
+      "object": {
+       "kind": "yarn",
+       "spin": "worsted"
+      },
+      "at": "w:Fresco",
+      "then": {
+       "kind": "swatch",
+       "weave": "fresco",
+       "colour": "#2A3550",
+       "layers": 1
+      },
+      "then_at": "w:porous"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Three cloths, three ways of building them. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#4E5562",
+     "layers": 2
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "flannel",
+     "colour": "#4E5562",
+     "layers": 2
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "center",
+    "fix_at": "w:three",
+    "ring_at": "w:building",
+    "statement_at": "w:building",
+    "chip_at": "w:eye",
+    "statement": "Three ways to build.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

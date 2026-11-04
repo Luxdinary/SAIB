@@ -1,0 +1,560 @@
+{
+  "video_id": "megaconstruction-20261115-3-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Pisa: Fällt der Schiefe Turm bald um? Mythos-Check",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Prüfstand. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261115-3-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.opapisa.it/attivita-per-850-anniversario-del-campanile-di-pisa/",
+      "title": "Opera della Primaziale Pisana: 850 Jahre Campanile (ca. 1.900 Bogensekunden; Überhang am 7. Gesims −460 mm; Zustand Anfang 19. Jh.; stabil, überwacht)",
+      "label": "Opera della Primaziale Pisana",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.jstage.jst.go.jp/article/sandf1995/43/5/43_5_63/_article",
+      "title": "Burland et al., Soils and Foundations 43(5), 2003: Bodenentnahme unter der Nordseite 1999–2001; Komitee ab 1990",
+      "label": "Soils and Foundations 2003",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.geocasehistoriesjournal.org/pub/article/download/IJGCH_1_3_2/86",
+      "title": "Int. Journal of Geoengineering Case Histories: Sperrung Anfang 1990 bis 12/2001; Neigung ca. −10 %",
+      "label": "IJGCH, Fallstudie",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.pbs.org/wgbh/nova/pisa/interventions2.html",
+      "title": "PBS NOVA: Bleigewichte 1993–94; Bodenentnahme ab Februar 1999",
+      "label": "PBS NOVA",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Aktuelle Neigung in Grad und '44 cm' (Ministerium): Seiten nicht erreichbar, nicht verwendet.",
+    "Keine Prognose zur Standzeit.",
+    "Turmhöhe, Geschosse und Neigung im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Pisas Turm wurde nicht gerettet, indem man ihn stützte. Sondern indem man Erde wegnahm.",
+      "on_screen": "Gerettet durch weniger Erde",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist der Schiefe Turm von Pisa wirklich?",
+      "on_screen": "Wie groß ist der Schiefe Turm von Pisa wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "der Schiefe Turm von Pisa in Zahlen: belegt und nachgerechnet.",
+      "on_screen": "der Schiefe Turm von Pisa in Zahlen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei der Schiefe Turm von Pisa schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "der Schiefe Turm von Pisa: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie der Schiefe Turm von Pisa im Modell entsteht.",
+      "on_screen": "der Schiefe Turm von Pisa im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Fällt der Schiefe Turm von Pisa bald um? Das hört man oft. Wir prüfen, was die Domverwaltung und die Ingenieure sagen.",
+      "data": {
+        "kicker": "Prüfstand · Pisa",
+        "question": "Fällt der Schiefe Turm bald um?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Campanile von Pisa",
+          "at": "@prüfen",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "Der Befund von 1990: Anfang 1990 wurde der Turm für Besucher gesperrt, und ein internationales Komitee übernahm. Die Aufgabe: die Neigung verringern, ohne den Turm zu gefährden.",
+      "data": {
+        "headline": "Der Befund",
+        "load": {
+          "label": "Turm für Besucher gesperrt",
+          "value": "1990",
+          "unit": "",
+          "sub": "internationales Komitee übernimmt",
+          "at": "@1990",
+          "dy": 540
+        },
+        "goal": {
+          "key": "AUFGABE",
+          "text": "Neigung verringern",
+          "at": "@Komitee",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "Die Lösung überrascht: Man stützte den Turm nicht, man nahm unter ihm Erde weg. 1993 und 1994 lagen zuerst Bleigewichte auf der Nordseite. Ab Februar 1999 zog man unter der Nordseite kontrolliert Boden heraus.",
+      "data": {
+        "headline": "Der Grund",
+        "note": "Neigung überhöht",
+        "pins": [
+          {
+            "anchor": "north",
+            "text": "Nordseite: Boden raus",
+            "at": "@Februar",
+            "side": "down"
+          }
+        ],
+        "rule": {
+          "text": "Nicht stützen: Erde wegnehmen.",
+          "at": "@Erde",
+          "dy": 640
+        }
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_calc",
+      "spoken": "Die Gegenprobe in Zahlen: laut Domverwaltung rund 1.900 Bogensekunden weniger Neigung. Geteilt durch 3.600 sind das gut ein halbes Grad. Am siebten Gesims ging der Überhang um 460 Millimeter zurück.",
+      "data": {
+        "headline": "Die Gegenprobe",
+        "sheet_dy": 470,
+        "calcs": [
+          {
+            "label": "Bogensekunden ÷ 3.600 = Grad",
+            "a": {
+              "value": 1900,
+              "unit": "″",
+              "show": "1.900″"
+            },
+            "op": "÷",
+            "b": {
+              "value": 3600,
+              "unit": ""
+            },
+            "unit": "°",
+            "round": 0.01,
+            "decimals": 2,
+            "prefix": "≈ ",
+            "expect": 0.53,
+            "at": "@1.900",
+            "result_at": "@halbes"
+          }
+        ],
+        "pins": [
+          {
+            "anchor": "cornice",
+            "text": "−460 mm",
+            "kind": "dim",
+            "at": "@460"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_proof",
+      "spoken": "Seit Dezember 2001 ist der Turm wieder offen. Seine Neigung entspricht heute wieder dem Zustand vom Anfang des 19. Jahrhunderts.",
+      "data": {
+        "headline": "Das Urteil",
+        "stamp": {
+          "date": "12/2001",
+          "event": "wieder geöffnet",
+          "at": "@Dezember",
+          "dy": 150
+        }
+      },
+      "source_ids": [
+        "S3",
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Das Urteil: Laut Domverwaltung ist der Turm stabil und wird überwacht. Folge Gigastruct für den nächsten Prüfstand.",
+      "data": {
+        "statement": "Urteil: stabil und überwacht",
+        "sheet": "BLATT 20",
+        "rows": [
+          [
+            "Eingriff",
+            "1999 bis 2001"
+          ],
+          [
+            "Methode",
+            "Boden unter der Nordseite"
+          ],
+          [
+            "Ergebnis",
+            "rund 1.900″ weniger"
+          ],
+          [
+            "Heute",
+            "stabil, überwacht"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "BEHAUPTUNG",
+        "BEFUND",
+        "GRUND",
+        "GEGENPROBE",
+        "URTEIL"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 4,
+        "b6": 5
+      }
+    },
+    "description": "Fällt der Schiefe Turm von Pisa bald um? Von 1999 bis 2001 wurde unter seiner Nordseite Boden entnommen; die Neigung ging um rund 1.900 Bogensekunden zurück. Heute gilt er als stabil.",
+    "companion_text": "Gerechnet: 1.900″ ÷ 3.600 = 0,53°. Quellen: Opera della Primaziale Pisana, Soils and Foundations (2003), IJGCH, PBS NOVA. Stilisiertes 3D-Modell, Neigung schematisch. Folge Gigastruct.",
+    "hashtags": [
+      "pisa",
+      "schieferturm",
+      "mythos",
+      "geotechnik",
+      "italien"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "1.900 Bogensekunden ÷ 3.600 = 0,53°",
+        "result": "rund ein halbes Grad aufgerichtet",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "prism",
+          "height": 56,
+          "width": 16,
+          "shape": "cyl",
+          "levels": 8,
+          "gap": 0.08,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "lean": 5
+          }
+        },
+        {
+          "id": "soil",
+          "kind": "box",
+          "size": [
+            30,
+            3,
+            10
+          ],
+          "color": "accent",
+          "pos": [
+            0,
+            -4,
+            10
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "north": [
+          0,
+          -2,
+          14
+        ],
+        "cornice": [
+          6,
+          49,
+          0
+        ],
+        "top": [
+          5,
+          56,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 80,
+            "az1": 90,
+            "el0": 6,
+            "el1": 8,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 88,
+            "az1": 92,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {}
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 80,
+            "az1": 95,
+            "el0": 10,
+            "el1": 6,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "soil.visible": 1,
+            "tower.lean": [
+              [
+                0,
+                5
+              ],
+              [
+                "%0.6",
+                5
+              ],
+              [
+                "%1",
+                4.4
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 60,
+            "az1": 50,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {
+            "tower.lean": 4.4
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 260,
+            "cy": 680
+          },
+          "props": {}
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 70,
+            "az1": 80,
+            "el0": 6,
+            "el1": 8,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

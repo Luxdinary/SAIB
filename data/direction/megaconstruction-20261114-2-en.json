@@ -1,0 +1,555 @@
+{
+  "video_id": "megaconstruction-20261114-2-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Forth Bridge: Britain's steel answer to the Tay disaster",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261114-2-en. Thema: forth. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Forth Bridge",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "steel bridge under way",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "new bridge from 1883",
+          "tone": "accent",
+          "at": "@1883"
+        },
+        {
+          "beat": "b3",
+          "text": "2 × 518 m",
+          "tone": "accent",
+          "at": "@518"
+        },
+        {
+          "beat": "b4",
+          "text": "finished Nov 1889",
+          "tone": "green",
+          "at": "@November"
+        }
+      ]
+    },
+    "description": "The Forth Bridge (1883–1890): after the Tay Bridge collapsed, Scotland got Britain's first major steel structure – 53,000 t of steel and 6.5 million rivets.",
+    "companion_text": "Calculated: 1,700 ft = 518 m. Sources: Network Rail, Forth Bridges Forum. Stylised 3D model. Follow Gigastruct.",
+    "hashtags": [
+      "forthbridge",
+      "scotland",
+      "engineeringhistory",
+      "steelbridge",
+      "worldheritage"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "1.700 ft × 0,3048 = 518,2 m",
+        "result": "518 m je Hauptöffnung",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "bed",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -30,
+            0
+          ]
+        },
+        {
+          "id": "water",
+          "kind": "water",
+          "size": 60000,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "bridge",
+          "kind": "bridge",
+          "type": "cantilever",
+          "x0": -1230,
+          "x1": 1230,
+          "deck_y": 46,
+          "deck_w": 24,
+          "deck_t": 5,
+          "towers": [
+            -600,
+            0,
+            600
+          ],
+          "tower_h": 64,
+          "arm": 170,
+          "below": 40,
+          "member_r": 2.6,
+          "ground_y": -30,
+          "piers": [
+            -1000,
+            -900,
+            -800,
+            800,
+            900,
+            1000
+          ],
+          "cable_color": "accent",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "arm": [
+          -430,
+          70,
+          12
+        ],
+        "susp": [
+          -300,
+          50,
+          12
+        ],
+        "tower": [
+          0,
+          110,
+          0
+        ],
+        "span": [
+          -300,
+          46,
+          12
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 75,
+            "az1": 65,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "cy": 840
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 100,
+            "az1": 92,
+            "el0": 4,
+            "el1": 8,
+            "fit0": 1.0,
+            "fit1": 0.95,
+            "cy": 860
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -800,
+                0,
+                -20
+              ],
+              [
+                200,
+                110,
+                20
+              ]
+            ],
+            "az0": 80,
+            "az1": 70,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "cy": 800
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -200,
+                0,
+                -20
+              ],
+              [
+                200,
+                110,
+                20
+              ]
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 12,
+            "el1": 18,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "cy": 820
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 120,
+            "az1": 110,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 1.0,
+            "fit1": 0.9,
+            "cy": 860
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.networkrail.co.uk/who-we-are/our-history/iconic-infrastructure/the-history-of-the-forth-bridge-fife",
+      "title": "Network Rail: The history of the Forth Bridge (Tay-Einsturz 12/1879; 1881 Hängebrücke aufgegeben; Arrol & Co; Bau ab 1883, fertig 11/1889; Eröffnung 04.03.1890; 53.000 t Stahl; 6,5 Mio. Nieten; 2 × 518 m; Türme 110 m; 4.600 Männer; 3 Mio. £)",
+      "label": "Network Rail, Forth Bridge",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.thethreebridges.com/about/world-heritage-site/",
+      "title": "Forth Bridges Forum: World Heritage Site (seit 2015; Spannweiten 521 m; über 4.500 Männer)",
+      "label": "Forth Bridges Forum",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "UNESCO-Seite und Historic Environment Scotland nicht erreichbar.",
+    "Spannweite 518 m (Network Rail) gegen 521 m (Forum): Network Rail verwendet.",
+    "Ob die Auslegerbauweise ursächlich auf den Tay-Einsturz zurückgeht: nur 'nach', nicht 'wegen'."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "About ten years after a bridge collapse, Scotland got Britain's first major steel bridge.",
+      "on_screen": "After the collapse: 53,000 t of steel",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Forth Bridge, really?",
+      "on_screen": "How big is the Forth Bridge, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate the Forth Bridge.",
+      "on_screen": "the Forth Bridge: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Forth Bridge depends on how it is built.",
+      "on_screen": "the Forth Bridge: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Forth Bridge take shape in the model.",
+      "on_screen": "the Forth Bridge as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "About ten years after a bridge collapse, Scotland got Britain's first major steel bridge. 53,000 tonnes of steel.",
+      "data": {
+        "kicker": "History · Forth Bridge",
+        "question": "After the collapse: 53,000 t of steel",
+        "question_at": "@About",
+        "number": {
+          "value": "53,000",
+          "unit": "t",
+          "at_word": "53,000",
+          "y": 640
+        },
+        "badge": {
+          "text": "Forth Bridge, 1890",
+          "at_word": "steel",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Tonnen"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_phases",
+      "spoken": "In December 1879, the Tay Bridge collapsed. Work on the planned suspension bridge across the Forth was stopped, and in 1881 the plans were dropped. In 1883, construction of a steel cantilever bridge began.",
+      "data": {
+        "headline": "From collapse to a new design",
+        "rail_dy": 210,
+        "steps": [
+          {
+            "label": "Dec 1879: Tay Bridge",
+            "sub": "collapses",
+            "at_word": "1879"
+          },
+          {
+            "label": "1881: suspension bridge",
+            "sub": "plans dropped",
+            "at_word": "1881"
+          },
+          {
+            "label": "1883: work begins",
+            "sub": "a steel cantilever bridge",
+            "at_word": "1883"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · After the collapse",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_section",
+      "spoken": "Three double cantilevers carry two suspended spans between them. Each of the two main spans is 518 metres, and the towers rise 110 metres above high water. It was built by the Glasgow firm of Arrol.",
+      "data": {
+        "headline": "Three cantilevers, two spans",
+        "note": "Schematic model",
+        "note_dy": 190,
+        "dims": [
+          {
+            "anchor": "span",
+            "text": "518 m",
+            "at_word": "518"
+          }
+        ],
+        "callouts": [
+          {
+            "anchor": "arm",
+            "text": "double cantilever",
+            "side": "up",
+            "at_word": "cantilevers"
+          },
+          {
+            "anchor": "tower",
+            "text": "110 m above high water",
+            "side": "up",
+            "at_word": "110"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "3 · Cantilevers",
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "At its peak, more than 4,500 men worked on the site. The bridge used 6.5 million rivets, and it cost 3 million pounds. Construction was finished in November 1889.",
+      "data": {
+        "headline": "The site in numbers",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "4,500+",
+            "unit": "",
+            "label": "men",
+            "at_word": "4,500"
+          },
+          {
+            "value": "6.5",
+            "unit": "m",
+            "label": "rivets",
+            "at_word": "6.5"
+          },
+          {
+            "value": "3",
+            "unit": "m £",
+            "label": "cost",
+            "at_word": "3"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · In numbers",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "It opened on 4 March 1890, and it has been a UNESCO World Heritage Site since 2015. Follow Gigastruct for the next megastructure.",
+      "data": {
+        "mode": "closing",
+        "statement": "Opened 1890. World Heritage since 2015.",
+        "chip": {
+          "text": "Follow Gigastruct",
+          "at_word": "Follow",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · World Heritage",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

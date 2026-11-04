@@ -1,0 +1,565 @@
+{
+ "video_id": "menswear-20261114-3-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Flanell, Tweed, Fresko: drei Tuche, drei Bauweisen",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema C04 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S5; Fresco als Markenname nur mit Herkunft (HFW) genannt, keine Empfehlung; Fox-Werbesatz nicht übernommen.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Wolltuch, Probe",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Unterschied: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "Garn: zwei Arten",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Flanell: geraut",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Tweed: gewalkt",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Fresko: porös",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "drei Bauweisen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Bauweise erkannt",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Flanell, Tweed und Fresko unterscheiden sich vor allem in der Bauweise: Flanell wird gewalkt und geraut (Fox Brothers), Tweed nach dem Weben gewalkt (Harris Tweed Authority), Fresko ist hochgedrehtes Kammgarn in poröser Leinwandbindung (Huddersfield Fine Worsteds).",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "anzugstoff",
+   "flanell",
+   "tweed",
+   "fresko"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://foxflannel.com/pages/heritage",
+   "title": "Fox Brothers, Heritage: Flanell als gewalktes Tuch (milled cloth); Fox webt auch Kammgarnflanell aus langen, gekämmten Fasern",
+   "checked_at": "2026-11-01",
+   "label": "Fox, Heritage"
+  },
+  {
+   "id": "S2",
+   "url": "https://foxflannel.com/products/fd188-old-english-blue-chalk-stripe",
+   "title": "Fox Brothers, FD188 Chalk Stripe: Muster werden durch das sanfte Rauen der Flanellausrüstung sichtbar",
+   "checked_at": "2026-11-01",
+   "label": "Fox, FD188"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.harristweed.org/the-process/",
+   "title": "Harris Tweed Authority, The Process: nach dem Weben gewaschen, gewalkt und leicht verfilzt, getrocknet und geschoren",
+   "checked_at": "2026-11-01",
+   "label": "Harris Tweed Authority"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.hfwltd.com/heritage",
+   "title": "Huddersfield Fine Worsteds, Heritage: 1907 erfand und registrierte Martin Sons & Co Fresco, hochgedrehtes Kammgarn in poröser Leinwandbindung",
+   "checked_at": "2026-11-01",
+   "label": "HFW, Heritage"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "title": "Woolmark, Introduction to Wovenwear (Schulungshandbuch): Harris Tweed, Donegal und Cheviot zählen zum Streichgarn",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark-Handbuch"
+  }
+ ],
+ "unverified": [
+  "Gewichte und Jahreszeiten der Tuche: nicht belegt, nicht im Video.",
+  "'If it's not Fox, it's not flannel' ist Werbung; nicht übernommen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Flanell, Tweed, Fresko: Was trennt sie?",
+   "on_screen": "Flanell, Tweed, Fresko: Was trennt sie?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "visual": "Tuchprobe Fresko, Lupe auf der porösen Bindung",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Flanell ist nur ein Muster? Nein, eine Bauweise.",
+   "on_screen": "Flanell ist nur ein Muster? Nein, eine Bauweise.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "visual": "Tuchprobe Fresko, Lupe auf der porösen Bindung",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Tweed wird erst nach dem Weben gewalkt",
+   "on_screen": "Tweed wird erst nach dem Weben gewalkt",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "visual": "Tuchprobe Fresko, Lupe auf der porösen Bindung",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Gleich im Regal, verschieden gebaut",
+   "on_screen": "Gleich im Regal, verschieden gebaut",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "visual": "Tuchprobe Fresko, Lupe auf der porösen Bindung",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Drei Tuchproben unter der Lupe",
+   "on_screen": "Drei Tuchproben unter der Lupe",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "visual": "Tuchprobe Fresko, Lupe auf der porösen Bindung",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage nach dem Unterschied; die Antwort ist die Bauweise, nicht der Name."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Flanell, Tweed und Fresko. Drei Wolltuche für Anzug und Sakko, die oft in einem Atemzug fallen. Was macht sie eigentlich so verschieden?",
+   "data": {
+    "question": "Flanell, Tweed, Fresko: Was trennt sie?",
+    "object": {
+     "kind": "swatch",
+     "weave": "fresco",
+     "colour": "#2A3550",
+     "layers": 1
+    },
+    "target": "weave",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Wolltuche",
+    "loupe_at": "w:Wolltuche",
+    "nie_at": "w:verschieden",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 14,
+   "spoken": "Schon beim Garn trennen sich die Wege. Das Woolmark-Handbuch zählt Tweed zum Streichgarn. Fresko entsteht aus hochgedrehtem Kammgarn. Und Flanell gibt es in beiden Varianten: Fox Brothers webt ihn auch aus langen, gekämmten Fasern.",
+   "data": {
+    "headline": "Erst das Garn",
+    "left": {
+     "title": "Streichgarn",
+     "object": {
+      "kind": "swatch",
+      "weave": "tweed",
+      "colour": "#5A4A38",
+      "layers": 3
+     },
+     "target": "weave",
+     "tag": "Tweed, laut Woolmark",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:Streichgarn"
+      }
+     ]
+    },
+    "right": {
+     "title": "Kammgarn",
+     "object": {
+      "kind": "swatch",
+      "weave": "fresco",
+      "colour": "#2A3550",
+      "layers": 1
+     },
+     "target": "weave",
+     "tag": "Fresko, hochgedreht",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:Kammgarn"
+      }
+     ],
+     "tag2": "Flanell: beides möglich",
+     "tag2_at": "w:Flanell"
+    },
+    "left_at": "w:Woolmark",
+    "left_tag_at": "w:Tweed",
+    "right_at": "w:Fresko",
+    "right_tag_at": "w:hochgedrehtem",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S5",
+    "S4",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Woolmark"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "Flanell entsteht erst richtig nach dem Weben. Fox Brothers nennt ihn ein gewalktes Tuch. Danach wird er sanft geraut, daher die weiche Oberfläche. Selbst Kreidestreifen zeigen sich laut Fox erst durch dieses Rauen.",
+   "data": {
+    "headline": "Flanell: gewalkt, geraut",
+    "from": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#4E5562",
+     "layers": 2
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "flannel",
+     "colour": "#4E5562",
+     "layers": 2
+    },
+    "target": "weave",
+    "zoom": 1.45,
+    "label": "gewalkt und sanft geraut",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Weben",
+    "zoom_at": "w:gewalktes",
+    "flip_at": "w:geraut",
+    "label_at": "w:weiche"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Fox"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Tweed geht einen ähnlichen Weg, nur kräftiger. Die Harris Tweed Authority beschreibt ihn so: Nach dem Weben wird das Tuch gewaschen, gewalkt und leicht verfilzt. Dann wird es getrocknet und geschoren.",
+   "data": {
+    "headline": "Tweed: nach dem Weben",
+    "stages": [
+     {
+      "object": {
+       "kind": "swatch",
+       "weave": "tweed",
+       "colour": "#5A4A38",
+       "layers": 3
+      },
+      "at": 0.0,
+      "title": "Harris Tweed",
+      "tags": [
+       {
+        "spot": "weave",
+        "text": "gewaschen",
+        "sub": "nach dem Weben",
+        "tone": "always",
+        "at": "w:gewaschen"
+       },
+       {
+        "spot": "center",
+        "text": "gewalkt",
+        "sub": "leicht verfilzt",
+        "tone": "always",
+        "at": "w:gewalkt"
+       },
+       {
+        "spot": "corner",
+        "text": "geschoren",
+        "sub": "nach dem Trocknen",
+        "tone": "always",
+        "at": "w:geschoren"
+       }
+      ],
+      "focus_at": "w:getrocknet"
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Harris"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "Fresko ist anders gebaut. Laut Huddersfield Fine Worsteds hat Martin Sons and Co es 1907 erfunden und registriert. Das Garn ist hochgedrehtes Kammgarn. Gewebt wird es in einer porösen Leinwandbindung.",
+   "data": {
+    "headline": "Fresko: hochgedreht",
+    "from": {
+     "kind": "yarn",
+     "spin": "worsted"
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "fresco",
+     "colour": "#2A3550",
+     "layers": 1
+    },
+    "target": "center",
+    "zoom": 1.35,
+    "label": "porös, aus Kammgarn",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Huddersfield",
+    "zoom_at": "w:1907",
+    "flip_at": "w:Gewebt",
+    "label_at": "w:porösen"
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Huddersfield"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "Kurz gesagt: Flanell wird nach dem Weben gewalkt und sanft geraut. Tweed ist ein Streichgarntuch und wird nach dem Weben gewalkt. Fresko ist hochgedrehtes Kammgarn, porös in Leinwandbindung gewebt.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Flanell: geraut",
+      "sub": "gewalkt, dann sanft geraut",
+      "object": {
+       "kind": "swatch",
+       "weave": "worsted",
+       "colour": "#4E5562",
+       "layers": 2
+      },
+      "at": "w:Flanell",
+      "then": {
+       "weave": "flannel"
+      },
+      "then_at": "w:geraut"
+     },
+     {
+      "title": "Tweed: Streichgarn",
+      "sub": "nach dem Weben gewalkt",
+      "object": {
+       "kind": "swatch",
+       "weave": "tweed",
+       "colour": "#5A4A38",
+       "layers": 3
+      },
+      "at": "w:Tweed",
+      "ring": "weave",
+      "ring_at": "w:gewalkt#2"
+     },
+     {
+      "title": "Fresko: porös",
+      "sub": "hochgedrehtes Kammgarn",
+      "object": {
+       "kind": "yarn",
+       "spin": "worsted"
+      },
+      "at": "w:Fresko",
+      "then": {
+       "kind": "swatch",
+       "weave": "fresco",
+       "colour": "#2A3550",
+       "layers": 1
+      },
+      "then_at": "w:porös"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Drei Tuche, drei Bauweisen. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "swatch",
+     "weave": "worsted",
+     "colour": "#4E5562",
+     "layers": 2
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "flannel",
+     "colour": "#4E5562",
+     "layers": 2
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "center",
+    "fix_at": "w:drei",
+    "ring_at": "w:Bauweisen",
+    "statement_at": "w:Bauweisen",
+    "chip_at": "w:Blick",
+    "statement": "Drei Tuche, drei Wege.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

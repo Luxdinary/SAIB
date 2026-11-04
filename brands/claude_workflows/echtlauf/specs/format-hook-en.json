@@ -1,0 +1,47 @@
+{
+  "id": "format-hook-en",
+  "topic_id": "claude_workflows-20261114-3-en",
+  "language": "en",
+  "title": "Format after every edit",
+  "model": "haiku",
+  "tools": "Read,Edit,Write",
+  "probe": "// formatted",
+  "probe_where": "file:app.js",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "app.js": "function greet(name) {\n  return \"Hello \" + name;\n}\n\nmodule.exports = { greet };\n",
+    ".claude/hooks/format.js": "// Small sample formatter for the video (not Prettier):\n// turns double quotes into single quotes and adds a header line.\nconst fs = require(\"fs\");\nlet d = \"\";\nprocess.stdin.on(\"data\", c => d += c).on(\"end\", () => {\n  const p = (JSON.parse(d).tool_input || {}).file_path || \"\";\n  if (!p.endsWith(\".js\")) process.exit(0);\n  let s = fs.readFileSync(p, \"utf8\").replace(/\"/g, \"'\");\n  if (!s.startsWith(\"// formatted\")) s = \"// formatted with format.js\\n\" + s;\n  fs.writeFileSync(p, s);\n});\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "No hook",
+      "prompt": "Add a function double(x) to app.js that returns x * 2, and export it.",
+      "permission_mode": "acceptEdits"
+    },
+    {
+      "id": "L2",
+      "title": "With PostToolUse hook",
+      "prompt": "Add a function double(x) to app.js that returns x * 2, and export it.",
+      "permission_mode": "acceptEdits",
+      "settings": {
+        "hooks": {
+          "PostToolUse": [
+            {
+              "matcher": "Edit|Write",
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/format.js\""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

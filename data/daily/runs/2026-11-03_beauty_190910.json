@@ -1,0 +1,102 @@
+{
+  "brand_id": "beauty",
+  "brand_name": "Dewlane",
+  "date": "2026-11-03",
+  "provider": "mock",
+  "model": "mock",
+  "dry_run": true,
+  "topics": [
+    {
+      "key": "nr:6",
+      "nr": "6",
+      "title": "„Aluminium im Deo ist gefährlich“",
+      "aufbau": "C",
+      "aufbau_note": "",
+      "langs": {
+        "de": {
+          "video_id": "beauty-20261103-d5-de",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\beauty-20261103-d5-de.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [
+            "story: b3: 20 s without an internal visual event",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)",
+            "Bildaufbau C: nur 1 Beat(s) mit den Szenentypen des Aufbaus (nh_hook, nh_facts, nh_list, nh_versus, nh_time, nh_steps, nh_close); mindestens zwei erwartet"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 4802,
+          "llm_tokens_out": 0,
+          "llm_tokens_cache": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "",
+          "dry_run_diag": "warning: hook beat text differs from candidate H5; using the beat text\nvoice: mock 88.3 s, 0.0000 USD\ntimings: 191 words via mock (none, 0 s)\nexcerpt: first 91 s, 6 beats, 56 caption groups\n  b1  hook          nh_stage          0.00 +10.78\n  b2  explanation   nh_lens          10.78 +13.93\n  b3  demonstration nh_amount        24.71 +25.80\n  b4  insight       nh_effect        50.52 +13.54\n  b5  benefit       nh_apply         64.05 +14.33\n  b6  close         nh_close         78.38 +12.42\nsound: on, palette soft, 38 cues (close 1, event 22, hook_end 1, plan 11, scene_change 3), music procedural/warm [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 0 errors, craft 2 warnings\n  [warn  ] NOT visual_cuts_rhythm: 52 visual events, median interval 1.2 s (target 1.2-8.0)\ndry run: ok (direction checks pass without video)",
+          "dry_run_repairs": 0,
+          "dry_run_done": true,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [
+            "Trockenlauf: Mock-Länge 91.1 s (keine echte Stimme); Prüfung als Auszug 91 s"
+          ],
+          "errors": []
+        },
+        "en": {
+          "video_id": "beauty-20261103-d5-en",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\beauty-20261103-d5-en.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [
+            "story: b3: 20 s without an internal visual event",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 3247,
+          "llm_tokens_out": 0,
+          "llm_tokens_cache": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "",
+          "dry_run_diag": "warning: hook beat text differs from candidate H5; using the beat text\nvoice: mock 87.6 s, 0.0000 USD\ntimings: 205 words via mock (none, 0 s)\nexcerpt: first 90 s, 6 beats, 59 caption groups\n  b1  hook          nh_stage          0.00 +12.51\n  b2  explanation   nh_lens          12.51 +14.96\n  b3  demonstration nh_amount        27.47 +21.66\n  b4  insight       nh_effect        49.13 +14.52\n  b5  benefit       nh_apply         63.65 +14.52\n  b6  close         nh_close         78.18 +11.92\nsound: on, palette soft, 41 cues (close 1, event 25, hook_end 1, plan 11, scene_change 3), music procedural/warm [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 0 errors, craft 2 warnings\ndry run: ok (direction checks pass without video)",
+          "dry_run_repairs": 0,
+          "dry_run_done": true,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [
+            "Trockenlauf: Mock-Länge 90.4 s (keine echte Stimme); Prüfung als Auszug 90 s"
+          ],
+          "errors": []
+        }
+      },
+      "marked": false,
+      "notes": [],
+      "errors": []
+    }
+  ],
+  "skipped": [
+    "Nr. 1 · INCI-Liste lesen: Was ganz vorne steht · Reihe Unter der Lupe · Aufbau B · Tag 04.11.: reserviert für die Marken-Sitzung (Tag 04.11.)",
+    "Nr. 62 · Nachcremen verlängert den Schutz nicht · Reihe Im Alltag angewendet · Aufbau A · Tag 04.11.: reserviert für die Marken-Sitzung (Tag 04.11.)",
+    "Nr. 3 · „Parabene sind verboten“ · Reihe Direkter Vergleich · Aufbau C · Tag 05.11.: reserviert für die Marken-Sitzung (Tag 05.11.)",
+    "Nr. 46 · „Wasserfest“: 40 oder 80 Minuten · Reihe Im Alltag angewendet · Aufbau D · Tag 05.11.: reserviert für die Marken-Sitzung (Tag 05.11.)"
+  ],
+  "errors": [],
+  "started_at": "2026-11-03T17:08:29+00:00",
+  "finished_at": "2026-11-03T17:09:10+00:00"
+}

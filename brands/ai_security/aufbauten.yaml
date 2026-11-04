@@ -1,0 +1,48 @@
+# Bildaufbauten Scutoria (ai_security) für den Tagesläufer. Entwurf der Tagesläufer-Sitzung vom 03.11.2026, von der Scutoria-
+# Sitzung am 03.11.2026 abends geprüft und korrigiert (Aufgabe der Hauptsitzung). Vorlage: config/aufbauten.vorlage.yaml.
+# Gebaut ist nur A: Szenencode in brands/ai_security/buero.py (sb_screen, sb_lens, sb_freeze, sb_montage, sb_action) plus sc_close aus
+# scenes.py. B bis D sind im Konzeptplan beschrieben, aber nicht gebaut; die Scutoria-Sitzung baut sie nicht (Wochenkontingent),
+# bis dahin ersetzt der Tagesläufer sie durch A und vermerkt es. Material: assets/higgsfield/test2611 (neun Bilder, fünf Clips);
+# neues Material nur mit Credits aus dem Budget (2 je Thema), das bucht die Scutoria-Sitzung, nicht der Tagesläufer.
+aufbauten:
+  - kuerzel: A
+    name: Am Platz
+    gebaut: true
+    szenentypen: [sb_screen, sb_lens, sb_freeze, sb_montage, sb_action, sc_close]
+    beispielplan: data/direction/ai_security-20261110-1-de.T1.json
+    beispielplan_en: data/direction/ai_security-20261110-1-en.T1.json
+    hinweis: >-
+      Ich-Perspektive am Schreibtisch, Hände ohne Gesicht. Beatfolge fest: b1 sb_screen (Mail auf dem Monitor: from, addr, time, subject,
+      höchstens 3 Zeilen je höchstens 36 Zeichen, highlight auf einer Zeile), b2 sb_lens (drei rows mit field from, subject oder line:N,
+      dazu finding und fact mit Quelle), b3 sb_freeze (Frage und drei Optionen A/B/C, think, hint), b4 sb_montage (vier items mit
+      Uhrzeit, letzter tone red, source), b5 sb_action mode rule (card C, stamp, zwei strikes, sources), b6 sb_action mode fallback
+      (höchstens zwei steps), b7 sc_close. Alle Texte in den Grenzen von buero.LIMITS. Medien je Beat aus test2611 wie im Beispielplan
+      (screen-Rechtecke und clock stehen in brands/ai_security/build_test2611.py); Clip C2 zoomt, darauf keine Einblendung.
+      Ton: layout.sound {palette tech, mood dark, levels sfx_peak_db -19}, Cues mindestens 0,18 s auseinander, Geräusch-Stem
+      höchstens -16 dBFS prüfen. Zeiten als Wortanker "@Wort" in der Sprache des Plans. Gilt für Themen mit Mail, Chat oder
+      Zahlung auf dem Bildschirm; Anruf, Handy oder Regelfragen gehen nicht ohne neuen Code.
+    themen:
+      - 33    # Neue Bankverbindung per Mail (freigegebener Pilot, Mail)
+      - 41    # Die Rechnung, die amtlich aussieht (Mail)
+      - 42    # Mythos: Der Absender stimmt, also ist die Mail echt (Mail)
+      - 43    # Mythos: Phishing erkennt man an Fehlern (Mail)
+      - 44    # Die Erpressermail mit deinem alten Passwort (Mail)
+      - 47    # Was ein KI-Chat über deinen Betrieb speichert (Chat statt Mail: from = KI-Chat, lines = Eingabe)
+      - 51    # Prompt Injection: versteckte Befehle (Mail wird zusammengefasst)
+      - 71    # Die Rechnung kommt als gepackte Datei (Mail mit Anhang; Quelle zu prüfen)
+      - 73    # Die Bewerbung als Link mit Anmeldung (Mail; Quelle zu prüfen)
+  - kuerzel: B
+    name: In der Hand
+    gebaut: false
+    szenentypen: []
+    hinweis: "Smartphone in der Hand (Anruf, SMS, Push, QR). Nicht gebaut, kein Termin; bis dahin Ersatz durch A, soweit das Thema eine Mail oder einen Chat hergibt, sonst Thema zurückstellen."
+  - kuerzel: C
+    name: Rückwärts
+    gebaut: false
+    szenentypen: []
+    hinweis: "Beginnt beim Schaden, die Uhr läuft zurück zur fehlenden Einstellung. Nicht gebaut, kein Termin; Reihe 'Fünf Minuten, die gefehlt haben' wartet darauf."
+  - kuerzel: D
+    name: Prüftisch
+    gebaut: false
+    szenentypen: []
+    hinweis: "Blick von oben auf Brief, Regel-Ausdruck, Stift, Prüffragen als Kästchen. Nicht gebaut, kein Termin; Reihe 'Gilt das für uns?' wartet darauf."

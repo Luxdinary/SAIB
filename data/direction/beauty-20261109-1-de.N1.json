@@ -1,0 +1,431 @@
+{
+ "video_id": "beauty-20261109-1-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "INCI-Liste lesen: Was ganz vorne auf deiner Creme steht",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261105-1-de.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (jar), nur Code-Grafik. Alte Notiz: Dewlane Vorlage 0.9 (30.10.2026): Luxury Editorial hell, eigene lokal gerenderte Hintergrundclips je Szenentyp (brands/beauty/assets/clips, kein Higgsfield); Dewlane-Hook aus brands/beauty/scenes.py (Etikett mit Tropfen statt Chatfenster), roter Faden: die INCI-Liste einer neutralen Creme ohne Marke, Statusleiste liest die Liste mit. Aussagen gegen VO (EG) 1223/2009 Art. 19, Glossar-Beschluss (EU) 2019/701 und CosIng geprüft. V2 (30.10.2026 abends): Erklärschicht nach 'Schnitt und Layout Kurzvideo (alle Marken)', Wortanker in allen Szenenzeiten, eigene Unsicher-Chips in b4 abgeschaltet (unterer Marker Fakt), Sprechtext unverändert. Q1 (31.10.2026, Qualitätsrunde): alle Szenen als Dewlane-Szenen um das Leitobjekt INCI-Liste (groß, 740-800 px breit), 4-7 Bildereignisse je Szene an gesprochenen Wörtern, Titel mittig max. zwei Zeilen, Hintergrund mit Tiefe aus Code (LAYER), Kreisübergänge aus dem Objekt. Beispielpositionen von AQUA und PARFUM auf dem Etikett mit Chip 'Beispielwert'. Sprechtext unverändert (Gemini V2 wiederverwendet).",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Was steht ganz vorne auf deiner Creme? Die Inhaltsliste ist nach Gewicht sortiert, unter einem Prozent ist die Reihenfolge frei, und Prozente stehen nicht drauf. So liest du die Liste, ohne dass dir jemand etwas verkauft.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "inci",
+   "inhaltsstoffe",
+   "hautpflege",
+   "kosmetik",
+   "beautywissen"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009, Art. 19 Abs. 1 lit. g (Liste der Bestandteile, Überschrift Ingredients, Reihenfolge nach Gewicht zum Zeitpunkt der Hinzufügung, unter 1 % ungeordnet, Parfum) und Abs. 6 (gemeinsame Bezeichnungen)",
+   "checked_at": "2026-10-30",
+   "label": "VO (EG) 1223/2009, Art. 19"
+  },
+  {
+   "id": "S2",
+   "url": "https://publications.europa.eu/resource/celex/32019D0701",
+   "title": "Beschluss (EU) 2019/701 der Kommission: Glossar der gemeinsamen Bezeichnungen von Bestandteilen (INCI), Eintrag AQUA",
+   "checked_at": "2026-10-30",
+   "label": "Glossar 2019/701"
+  },
+  {
+   "id": "S3",
+   "url": "https://ec.europa.eu/growth/tools-databases/cosing/details/31959",
+   "title": "CosIng, Europäische Kommission: Eintrag AQUA (Description: Water, Function: Solvent)",
+   "checked_at": "2026-10-30",
+   "label": "CosIng: AQUA"
+  },
+  {
+   "id": "S4",
+   "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-ingredient-database_en",
+   "title": "European Commission: CosIng, the Commission database for information on cosmetic substances and ingredients (informative purpose, no legal value)",
+   "checked_at": "2026-10-30",
+   "label": "CosIng (EU-Kommission)"
+  }
+ ],
+ "unverified": [
+  "Dass Wasser in den meisten Cremes an erster Stelle steht: nicht belegt, nicht verwendet.",
+  "Genaue Prozentanteile einzelner Inhaltsstoffe: stehen nicht auf der Packung und werden nicht geschätzt.",
+  "Wirkungen einzelner Inhaltsstoffe (z. B. Glycerin): nicht Thema, nicht verwendet.",
+  "Spätere Änderungen von Art. 19 nach der Amtsblattfassung 2009: konsolidierte Fassung auf EUR-Lex konnte automatisiert nicht abgerufen werden (Abrufschutz); vor Veröffentlichung von Stefan oder einer Sitzung im Browser gegenprüfen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Das erste Wort auf deiner Creme verrät, wovon am meisten drin ist.",
+   "on_screen": "Was steht auf deiner Creme ganz vorne?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 4,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen fällt auf ein neutrales Etikett ohne Marke, Zeile 1 wird eingekreist, Marke 'Zeile 1?'",
+   "why": {
+    "truth": "Art. 19 Abs. 1 lit. g: abnehmende Reihenfolge des Gewichts zum Zeitpunkt der Hinzufügung; die Einschränkung 'beim Hinzufügen' folgt in b3, daher 4",
+    "visual": "die Liste ist das Objekt des ganzen Videos"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Weißt du, warum auf deiner Creme Aqua steht und nicht Wasser?",
+   "on_screen": "Warum steht da Aqua statt Wasser?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "visual": "Wort Aqua auf dem Etikett",
+   "why": {
+    "relevance": "nur ein Teil des Themas"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Die Inhaltsliste sagt dir nicht, wie viel von etwas drin ist.",
+   "on_screen": "Die Liste nennt keine Prozente",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Liste ohne Zahlen",
+   "why": {
+    "truth": "Art. 19 verlangt keine Prozentangaben; Aussage über eine Abwesenheit, daher 4"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer auf Duftstoffe reagiert, findet viele davon nur unter dem Wort Parfum.",
+   "on_screen": "Duftstoffe: alle unter Parfum?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Wort Parfum mit Fragezeichen",
+   "why": {
+    "truth": "Art. 19: Riechstoffe als Parfum, bestimmte Allergene zusätzlich einzeln; eigenes Thema am 06.11.",
+    "clarity": "braucht Erklärung der Ausnahmen"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wie man eine Inhaltsliste von oben nach unten liest.",
+   "on_screen": "Eine INCI-Liste lesen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Liste wird Zeile für Zeile markiert",
+   "why": {
+    "curiosity": "erklärt, aber weckt wenig Neugier"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Höchste Bewertung; die INCI-Liste ist zugleich der rote Faden. Die Feinheit 'gemessen beim Hinzufügen' wird in b3 gesagt."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "duration_hint": 5,
+   "spoken": "Das erste Wort auf deiner Creme verrät, wovon am meisten drin ist.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Was steht auf deiner Creme ganz vorne?",
+    "badge": "Zeile 1?",
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "duration_hint": 10,
+   "spoken": "Zu jeder Kosmetik in der EU gehört eine Liste mit der Überschrift Ingredients. Die Namen stammen aus einem EU-Glossar. Deshalb steht dort Aqua, wenn Wasser gemeint ist.",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Ein Name für die ganze EU",
+    "zoom": "AQUA",
+    "doc": {
+     "act": "Glossar (EU) 2019/701",
+     "ref": "gemeinsame Bezeichnungen"
+    },
+    "rows": [
+     {
+      "text": "Liste mit der Überschrift Ingredients"
+     },
+     {
+      "text": "Namen aus einem EU-Glossar"
+     },
+     {
+      "text": "AQUA = Wasser",
+      "at": "@Aqua"
+     }
+    ],
+    "kicker": "Worum es geht",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "duration_hint": 11,
+   "spoken": "Die Reihenfolge folgt dem Gewicht, gemessen in dem Moment, in dem ein Stoff hinzugefügt wird. Was vorne steht, kam beim Mischen in der größten Menge hinein.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_list",
+   "data": {
+    "headline": "Sortiert nach Gewicht",
+    "caption": "Art. 19 VO 1223/2009: Gewicht beim Hinzufügen",
+    "rows": [
+     {
+      "label": "Zeile 1",
+      "value": "am meisten",
+      "at": "@vorne"
+     },
+     {
+      "label": "Zeile 2",
+      "value": "weniger"
+     },
+     {
+      "label": "Zeile 3",
+      "value": "weniger"
+     },
+     {
+      "label": "Zeile 4",
+      "value": "…"
+     }
+    ],
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "duration_hint": 11,
+   "spoken": "Doch das gilt nicht bis zum Ende. Stoffe unter einem Prozent dürfen in beliebiger Reihenfolge folgen. Wo diese Grenze liegt, muss nicht auf der Packung stehen.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "Die unsichtbare Grenze",
+    "left": {
+     "tag": "über 1 %",
+     "title": "nach Gewicht",
+     "rows": [
+      {
+       "text": "Reihenfolge = Menge"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "right": {
+     "tag": "unter 1 %",
+     "title": "Reihenfolge frei",
+     "rows": [
+      {
+       "text": "beliebige Reihenfolge",
+       "at": "@beliebiger"
+      },
+      {
+       "text": "Grenze steht nicht drauf",
+       "mark": "open",
+       "at": "@Grenze"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "kicker": "Im Vergleich"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "duration_hint": 13,
+   "spoken": "Die Liste sagt dir also, welche Stoffe enthalten sind und welche mengenmäßig vorne liegen. Wie viel Prozent genau, sagt sie nicht. Und ob ein Produkt zu deiner Haut passt, auch nicht.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Was die Liste verrät",
+    "zoom": "INCI",
+    "flip": true,
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Art. 19"
+    },
+    "rows": [
+     {
+      "text": "welche Stoffe enthalten sind",
+      "mark": "fact"
+     },
+     {
+      "text": "was mengenmäßig vorne liegt",
+      "mark": "fact"
+     },
+     {
+      "text": "keine genauen Prozentwerte",
+      "mark": "gap",
+      "at": "@Prozent"
+     },
+     {
+      "text": "nicht, ob es zu deiner Haut passt",
+      "mark": "gap",
+      "at": "@Und"
+     }
+    ],
+    "kicker": "Laut Quelle",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "duration_hint": 13,
+   "spoken": "So liest du sie: Die ersten Zeilen zeigen die Hauptbestandteile. Parfum steht für Riech- und Aromastoffe. Und einen unbekannten Namen schlägst du in CosIng nach, der Datenbank der EU-Kommission.",
+   "source_ids": [
+    "S1",
+    "S4"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "So liest du die Liste",
+    "items": [
+     {
+      "title": "Erste Zeilen",
+      "sub": "die Hauptbestandteile",
+      "icon": "lens",
+      "at": "@ersten"
+     },
+     {
+      "title": "Parfum",
+      "sub": "Riech- und Aromastoffe",
+      "icon": "drop",
+      "at": "@Parfum"
+     },
+     {
+      "title": "Unbekannter Name?",
+      "sub": "in CosIng nachschlagen",
+      "icon": "doc",
+      "at": "@unbekannten"
+     }
+    ],
+    "kicker": "Im Alltag",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "duration_hint": 8,
+   "spoken": "Erst die Liste lesen, dann auftragen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Merksatz",
+    "rule": "Erst lesen, dann auftragen.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    },
+    "question": {
+     "text": "Was steht bei dir in Zeile 1?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung."
+   }
+  }
+ ]
+}

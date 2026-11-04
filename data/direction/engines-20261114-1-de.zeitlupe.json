@@ -1,0 +1,410 @@
+{
+ "video_id": "engines-20261114-1-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Mehr Oktan bringt nicht mehr Leistung",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261114-1-de, Reihe Mythos-Check. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Die Oktanzahl misst die Klopffestigkeit, nicht den Energiegehalt. Warum mehr Oktan nur einem Motor an der Klopfgrenze hilft.",
+  "companion_text": "Keine Tankempfehlung: Welcher Kraftstoff passt, legt der Fahrzeughersteller fest. Zeitlupenfaktor und Millisekunden beziehen sich auf die Beispieldrehzahl 3000/min.",
+  "hashtags": [
+   "motorentechnik",
+   "oktan",
+   "benzin",
+   "mythos",
+   "klopfen"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Chevron, Ottokraftstoffe",
+   "title": "Chevron, Ottokraftstoffe (C1)",
+   "url": "https://www.chevron.com/-/media/chevron/operations/documents/motor-gas-tech-review.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "MIT 2.61, Vorlesung 10",
+   "title": "MIT 2.61, Vorlesung 10 (L10)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/35c1c5bbf304c0f41e1de0cec0b0ee85_MIT2_61S17_lec10.pdf",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Schauen wir uns an, was die Zahl wirklich misst.",
+   "on_screen": "Mehr Oktan = mehr Leistung?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Mehr Oktan bringt nicht mehr Leistung",
+   "on_screen": "Mehr Oktan bringt nicht mehr Leistung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Bringt Super Plus mehr Leistung?",
+   "on_screen": "Mehr Oktan bringt nicht mehr Leistung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Mehr Oktan bringt nicht mehr Leistung",
+   "on_screen": "Mehr Oktan bringt nicht mehr Leistung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Mehr Oktan bringt nicht mehr Leistung",
+   "on_screen": "Mehr Oktan bringt nicht mehr Leistung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Mehr Oktan, mehr Leistung? Für die meisten Motoren stimmt das so nicht. Schauen wir uns an, was die Zahl wirklich misst.",
+   "data": {
+    "claim": "Mehr Oktan = mehr Leistung?",
+    "claim_lines": [
+     "Mehr Oktan =",
+     "mehr Leistung?"
+    ],
+    "claim_highlight": "Leistung?",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "Chevron, Ottokraftstoffe · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_board",
+   "spoken": "Der Gedanke klingt logisch: höhere Zahl, also steckt mehr drin. Aber die Oktanzahl misst gar nicht, wie viel Energie im Benzin steckt. Was die Zahl beschreibt, steht in der Fachliteratur.",
+   "data": {
+    "title": "Der Mythos",
+    "mode": "verdict",
+    "claim_lines": [
+     "„Mehr Oktan bringt",
+     "mehr Leistung“"
+    ],
+    "verdict_at": "w:Aber",
+    "verdict": "Stimmt so nicht",
+    "rows": [
+     {
+      "text": "Oktan misst nicht die Energie",
+      "at": "w:Energie"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Chevron, Ottokraftstoffe · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Die Oktanzahl beschreibt die Klopffestigkeit, so steht es im Kraftstoff-Leitfaden von Chevron. Also wie gut das Benzin der Selbstzündung widersteht, bevor die Flamme vom Funken ankommt. Gemessen wird sie in einem Prüfmotor gegen Isooktan mit der Zahl hundert und Normalheptan mit null.",
+   "data": {
+    "title": "Klopffestigkeit",
+    "knock": true,
+    "notes": [
+     {
+      "text": "Selbstzündung",
+      "at": "w:Selbstzündung",
+      "side": "r",
+      "y": 640,
+      "color": "fire",
+      "to": [
+       628,
+       536
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      300
+     ],
+     [
+      "w:Selbstzündung",
+      368
+     ],
+     [
+      1,
+      480
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Chevron, Ottokraftstoffe · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Mehr Oktan hilft also dort, wo Klopfen den Motor begrenzt. Laut Fachvorlesung nimmt ein Klopfsensor dann den Zündzeitpunkt zurück, und der Motor zündet nicht mehr im besten Moment. Die Vorlesung nennt viele Mittel gegen Klopfen: Kühlung, Ladeluftkühlung, schnelle Verbrennung und eben eine höhere Oktanzahl.",
+   "data": {
+    "title": "An der Klopfgrenze",
+    "knock": true,
+    "notes": [
+     {
+      "text": "Klopfsensor",
+      "at": "w:Klopfsensor",
+      "side": "r",
+      "y": 1000,
+      "to": [
+       728,
+       960
+      ]
+     },
+     {
+      "text": "Zündung später",
+      "at": "w:zurück",
+      "side": "l",
+      "y": 760,
+      "to": [
+       540,
+       400
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 10 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_board",
+   "spoken": "Läuft ein Motor gar nicht an der Klopfgrenze, bringt mehr Oktan also keine zusätzliche Energie. Welcher Kraftstoff passt, legt der Hersteller des Motors fest. Mehr Energie pro Liter bringt eine höhere Oktanzahl nicht mit.",
+   "data": {
+    "title": "Wann es etwas bringt",
+    "mode": "compare",
+    "left": {
+     "title": "ohne Klopfgrenze",
+     "rows": [
+      "kein Energiegewinn"
+     ],
+     "at": "w:Läuft"
+    },
+    "right": {
+     "title": "an der Klopfgrenze",
+     "rows": [
+      "Zündung früher"
+     ],
+     "at": "w:Klopfgrenze"
+    },
+    "rows_at": [
+     "w:Energie"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Chevron, Ottokraftstoffe · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Oktan misst Klopffestigkeit, nicht Energie. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "Klopffestigkeit",
+      "at": "w:Klopffestigkeit"
+     },
+     {
+      "text": "nicht Energie",
+      "at": "w:Energie"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

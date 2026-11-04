@@ -1,0 +1,139 @@
+{
+  "spec": "rules-ordner-en",
+  "runs": {
+    "L1": {
+      "title": "Working in tests/",
+      "prompt": "Read tests/alt.test.js and create tests/neu.test.js next to it, which checks that 2 + 2 equals 4. Reply in English.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 10.483,
+      "lines": [
+        {
+          "t": 4.128,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 5.834,
+          "kind": "tool",
+          "id": "toolu_01EsLNiEcv2U1ZME93x5QeGn",
+          "text": "Read: .\\tests\\alt.test.js"
+        },
+        {
+          "t": 5.869,
+          "kind": "result",
+          "id": "toolu_01EsLNiEcv2U1ZME93x5QeGn",
+          "text": "1\tconst assert = require(\"assert\");\n2\tassert.strictEqual(1 + 1, 2);\n3"
+        },
+        {
+          "t": 7.851,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 8.167,
+          "kind": "tool",
+          "id": "toolu_01TZSecsTpioxDLrBBT39D6k",
+          "text": "Write: .\\tests\\neu.test.js"
+        },
+        {
+          "t": 8.187,
+          "kind": "result",
+          "id": "toolu_01TZSecsTpioxDLrBBT39D6k",
+          "text": "File created successfully at: .\\tests\\neu.test.js (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 9.924,
+          "kind": "text",
+          "text": "I created `tests/neu.test.js`. It follows the same pattern as `alt.test.js` and checks that `2 + 2` equals `4`:\n\n```js\n// TEST-RULE\nconst assert = require(\"assert\");\nassert.strictEqual(2 + 2, 4);\n```\n\nThe first line is `// TEST-RULE`, as required by the rule in `.claude/rules/tests.md`. I did not run the file."
+        },
+        {
+          "t": 9.943,
+          "kind": "end",
+          "text": "Done after 9.9 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 5849,
+        "num_turns": 3,
+        "total_cost_usd": 0.0011301500000000001,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Working in src/",
+      "prompt": "Read src/alt.js and create src/neu.js next to it, which multiplies two numbers. Reply in English.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 11.398,
+      "lines": [
+        {
+          "t": 5.018,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 6.778,
+          "kind": "tool",
+          "id": "toolu_01T9a8KkUuskkD8zBRswy6WZ",
+          "text": "Read: .\\src\\alt.js"
+        },
+        {
+          "t": 6.812,
+          "kind": "result",
+          "id": "toolu_01T9a8KkUuskkD8zBRswy6WZ",
+          "text": "1\tmodule.exports = (a, b) => a + b;\n2"
+        },
+        {
+          "t": 8.483,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 8.532,
+          "kind": "tool",
+          "id": "toolu_01LDvcxx6EioWEZNHDZsrAGJ",
+          "text": "Write: .\\src\\neu.js"
+        },
+        {
+          "t": 8.551,
+          "kind": "result",
+          "id": "toolu_01LDvcxx6EioWEZNHDZsrAGJ",
+          "text": "File created successfully at: .\\src\\neu.js (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 10.841,
+          "kind": "text",
+          "text": "I created `src/neu.js` next to `alt.js`. It follows the same CommonJS style, with the operator changed from addition to multiplication:\n\n```js\nmodule.exports = (a, b) => a * b;\n```"
+        },
+        {
+          "t": 10.86,
+          "kind": "end",
+          "text": "Done after 10.9 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 5879,
+        "num_turns": 3,
+        "total_cost_usd": 0.0005227599999999999,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

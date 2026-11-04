@@ -1,0 +1,396 @@
+{
+ "video_id": "beauty-20261109-2-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Was rechtlich eine Kosmetik ist",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261109-2-de.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (bottle), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Die EU definiert Kosmetik über Ort und Zweck der Anwendung; in den USA entscheidet der beabsichtigte Gebrauch. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Wann ist etwas Kosmetik? Das heißt: Heilen steht nicht auf der Liste der kosmetischen Zwecke. Eine Creme darf pflegen und schützen. Ein Heilversprechen gehört nicht dazu.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+   "title": "U.S. FDA: Is It a Cosmetic, a Drug, or Both? (Or Is It Soap?)",
+   "checked_at": "2026-11-01",
+   "label": "FDA: Cosmetic or drug"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was eine Creme rechtlich zur Kosmetik macht, steht im EU-Recht in einem einzigen Satz.",
+   "on_screen": "Wann ist etwas Kosmetik?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Ob etwas Kosmetik ist, entscheidet nicht die Verpackung, sondern der Zweck.",
+   "on_screen": "Ob etwas Kosmetik ist, entscheidet nicht die Verpackung, son",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Viele glauben, alles aus der Drogerie sei Kosmetik. Das Gesetz sieht das enger.",
+   "on_screen": "Viele glauben, alles aus der Drogerie sei Kosmetik. Das Gese",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer Kosmetik und Arzneimittel verwechselt, erwartet von der Creme etwas, das sie nicht leisten darf.",
+   "on_screen": "Wer Kosmetik und Arzneimittel verwechselt, erwartet von der ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wie die EU in einem Satz festlegt, was Kosmetik ist.",
+   "on_screen": "Schau, wie die EU in einem Satz festlegt, was Kosmetik ist.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Was eine Creme rechtlich zur Kosmetik macht, steht im EU-Recht in einem einzigen Satz.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Wann ist etwas Kosmetik?",
+    "badge": "Kosmetik?",
+    "kicker": "Beauty verständlich",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "Die Verordnung über kosmetische Mittel nennt zuerst den Ort. Kosmetik kommt äußerlich mit Haut, Haaren, Nägeln, Lippen und äußeren Intimregionen in Berührung, oder mit Zähnen und Mundschleimhaut.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Wo Kosmetik wirkt",
+    "zoom": "Kosmetik?",
+    "flip": false,
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 2 Absatz 1 a",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "äußerlich: Haut, Haare, Nägel, Lippen"
+     },
+     {
+      "text": "äußere Intimregionen"
+     },
+     {
+      "text": "Zähne und Mundschleimhaut"
+     }
+    ],
+    "kicker": "Worum es geht",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "Dann den Zweck. Kosmetik soll reinigen, parfümieren, das Aussehen verändern, schützen, in gutem Zustand halten oder den Körpergeruch beeinflussen. Und das ausschließlich oder überwiegend.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "Sechs Zwecke",
+    "items": [
+     {
+      "title": "reinigen und parfümieren",
+      "sub": "Seife, Duft",
+      "icon": "drop"
+     },
+     {
+      "title": "Aussehen verändern",
+      "sub": "zum Beispiel Make-up",
+      "icon": "check"
+     },
+     {
+      "title": "schützen, pflegen, Geruch",
+      "sub": "in gutem Zustand halten",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "In den USA ist es ähnlich, aber anders gebaut. Dort entscheidet der beabsichtigte Gebrauch. Wer behauptet, ein Produkt behandle eine Krankheit oder verändere Körperfunktionen, macht es zum Arzneimittel.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "EU und USA",
+    "left": {
+     "tag": "EU",
+     "title": "Ort und Zweck",
+     "rows": [
+      {
+       "text": "äußerlich angewendet"
+      },
+      {
+       "text": "sechs kosmetische Zwecke"
+      }
+     ],
+     "product": {
+      "kind": "bottle"
+     }
+    },
+    "right": {
+     "tag": "USA",
+     "title": "Gebrauch",
+     "rows": [
+      {
+       "text": "beabsichtigter Gebrauch zählt"
+      },
+      {
+       "text": "Krankheit behandeln: Arzneimittel",
+       "mark": "gap"
+      }
+     ],
+     "product": {
+      "kind": "bottle"
+     }
+    },
+    "kicker": "Im Vergleich"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "Das heißt: Heilen steht nicht auf der Liste der kosmetischen Zwecke. Eine Creme darf pflegen und schützen. Ein Heilversprechen gehört nicht dazu.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Was nicht dazugehört",
+    "zoom": "Kosmetik?",
+    "flip": true,
+    "doc": {},
+    "rows": [
+     {
+      "text": "pflegen und schützen: ja",
+      "mark": "fact"
+     },
+     {
+      "text": "heilen: kein kosmetischer Zweck",
+      "mark": "gap"
+     },
+     {
+      "text": "Heilversprechen: nicht dazu",
+      "mark": "gap"
+     }
+    ],
+    "kicker": "Laut Quelle",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "Für dich bedeutet das: Lies, wofür ein Produkt gedacht ist. Steht dort pflegen oder reinigen, ist es Kosmetik. Klingt es nach Behandlung, frag nach, was wirklich gemeint ist.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "So prüfst du es",
+    "items": [
+     {
+      "title": "Zweck lesen",
+      "sub": "steht auf Packung oder Etikett",
+      "icon": "doc"
+     },
+     {
+      "title": "pflegen, reinigen, schützen",
+      "sub": "das ist Kosmetik",
+      "icon": "drop"
+     },
+     {
+      "title": "klingt nach Behandlung?",
+      "sub": "nachfragen, was gemeint ist",
+      "icon": "doc"
+     }
+    ],
+    "kicker": "Im Alltag",
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Erst den Zweck lesen, dann auftragen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Merksatz",
+    "rule": "Erst lesen, dann auftragen.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "bottle",
+     "line1": "LOTION"
+    },
+    "question": {
+     "text": "Pflege oder Heilung auf der Packung?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung."
+   }
+  }
+ ]
+}

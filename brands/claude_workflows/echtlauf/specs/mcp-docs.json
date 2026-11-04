@@ -1,0 +1,36 @@
+{
+  "id": "mcp-docs",
+  "topic_id": "claude_workflows-20261113-1-de",
+  "language": "de",
+  "title": "Ein MCP-Server, echt verbunden",
+  "model": "haiku",
+  "tools": "Read",
+  "probe": "mcp__claude-code-docs",
+  "probe_where": "tool",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "mcp.json": "{\n  \"mcpServers\": {\n    \"claude-code-docs\": {\n      \"type\": \"http\",\n      \"url\": \"https://code.claude.com/docs/mcp\"\n    }\n  }\n}\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Ohne Server",
+      "prompt": "Schlag mit dem Server claude-code-docs nach, was MCP_TIMEOUT bewirkt. Antworte in zwei Sätzen."
+    },
+    {
+      "id": "L2",
+      "title": "Mit Server",
+      "prompt": "Schlag mit dem Server claude-code-docs nach, was MCP_TIMEOUT bewirkt. Antworte in zwei Sätzen.",
+      "extra_args": [
+        "--mcp-config",
+        "mcp.json"
+      ],
+      "allowed_tools": [
+        "mcp__claude-code-docs"
+      ]
+    }
+  ]
+}

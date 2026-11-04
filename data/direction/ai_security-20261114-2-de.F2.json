@@ -1,0 +1,352 @@
+{
+ "video_id": "ai_security-20261114-2-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "NIS2: Ist mein Betrieb betroffen?",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Gilt das für uns?\". F2 im Format \"Was tust du?\", Reihe Gilt das für uns? Beispielfall nachgestellt: Betrieb, Kunde, Mail und Uhrzeit sind erfunden. Regeln aus S1 bis S3, am 02.11.2026 erneut gelesen. Kein Rechtsurteil, keine Rechtsberatung: Die Antwort endet bei Prüfung, Auslegung und Verweis auf BSI und rechtlichen Rat. Der alte Plan ai_security-20261114-2-de.json bleibt unverändert.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Euer größter Kunde schreibt: Wir setzen NIS2 um, bitte bestätigen. Gilt das jetzt auch für euch? Ein nachgestellter Fall mit drei Antworten und dem, was EU-Kommission und BSI sagen. Keine Rechtsberatung.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur IT- und KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "nis2",
+   "itsicherheit",
+   "kmu",
+   "lieferkette",
+   "giltdasfueruns"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+   "title": "European Commission: NIS2 Directive – securing network and information systems",
+   "checked_at": "2026-11-02",
+   "label": "EU-Kommission, NIS2"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/BSI-Portal/NIS-2-Betroffenheitspruefung/nis-2-betroffenheitspruefung_node.html",
+   "title": "BSI: NIS-2-Betroffenheitsprüfung",
+   "checked_at": "2026-11-02",
+   "label": "BSI, NIS-2-Betroffenheitsprüfung"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/NIS-2-Infopakete/NIS-2-Lieferkette/NIS-2-Lieferkette_node.html",
+   "title": "BSI: Sichere Lieferkette (#nis2know)",
+   "checked_at": "2026-11-02",
+   "label": "BSI, Sichere Lieferkette"
+  }
+ ],
+ "unverified": [
+  "Genaue Schwellenwerte (Beschäftigte, Umsatz): nicht genannt, Prüfung über das BSI-Werkzeug.",
+  "Österreichische Umsetzung: nicht behandelt.",
+  "Keine Rechtsberatung im Einzelfall; ob der Beispielbetrieb betroffen ist, wird bewusst nicht beantwortet.",
+  "Beispielfall (Elektrobetrieb, Stadtwerke Beispiel, Frist bis Monatsende) ist erfunden und als Beispiel gekennzeichnet.",
+  "Neu am 02.11.2026 geprüft (S3): Das BSIG verpflichtet nicht alle Zulieferer indirekt; besonders wichtige und wichtige Einrichtungen müssen ihre Zulieferer zur Einhaltung entsprechender Sicherheitsanforderungen verpflichten. Die Übertragung auf den Beispielbetrieb ist Auslegung.",
+  "Vorschlag der EU-Kommission vom 20.01.2026 für gezielte NIS2-Änderungen (S1): nicht verwendet."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "NIS2 betrifft nur Konzerne? Und warum fragt dein Kunde dann danach?",
+   "on_screen": "Nur Konzerne? Warum fragt der Kunde?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "NIS2 gilt für alle Betriebe? In der Regel nicht.",
+   "on_screen": "NIS2 für alle?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "NIS2 deckt achtzehn kritische Sektoren in der EU ab.",
+   "on_screen": "18 Sektoren, nicht alle Betriebe",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein einziger unsicherer Zulieferer kann laut BSI IT-Systeme lahmlegen.",
+   "on_screen": "Ein Zulieferer, ganze Systeme",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Donnerstag, elf Uhr zwanzig. Euer größter Kunde schreibt: Wir setzen NIS2 um.",
+   "on_screen": "DO 11:20 · Der Kunde fragt nach NIS2",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "Uhrzeit groß, die Kundenmail kommt als Papierkarte herein, die Zeile mit den Dienstleistern wird markiert",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Donnerstag, elf Uhr zwanzig. Mail von den Stadtwerken, eurem größten Kunden: Wir setzen NIS2 um. Bitte bestätigen Sie bis Monatsende unsere Regeln für Dienstleister. Gilt das jetzt auch für euch?",
+   "data": {
+    "kicker": "Beispielfall · nachgestellt",
+    "time": "DO 11:20",
+    "place": "Büro eines Elektrobetriebs",
+    "mail_at": "@Stadtwerken",
+    "mail": {
+     "from": "Einkauf Stadtwerke Beispiel",
+     "addr": "einkauf@stadtwerke-beispiel.example",
+     "time": "11:20",
+     "subject": "NIS2: Ihre Bestätigung",
+     "lines": [
+      "Wir setzen NIS2 um. Bitte",
+      "bestätigen Sie bis Monatsende",
+      "unsere Regeln für Dienstleister."
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "Dienstleister",
+     "at": "@Dienstleister"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "Ihr seid ein kleiner Betrieb. Eure Branche: Elektrohandwerk. Euer Kunde: ein Energieversorger. Klingt nach: betrifft uns nicht. Laut EU-Kommission gilt NIS2 in der Regel für mittlere und große Einrichtungen in achtzehn kritischen Sektoren.",
+   "data": {
+    "kicker": "Was ihr wisst",
+    "headline": "Was wisst ihr über euch?",
+    "rows": [
+     {
+      "label": "Größe",
+      "value": "kleiner Betrieb",
+      "verdict": "bekannt",
+      "at": "@kleiner"
+     },
+     {
+      "label": "Branche",
+      "value": "Elektrohandwerk",
+      "verdict": "bekannt",
+      "at": "@Branche"
+     },
+     {
+      "label": "Kunde",
+      "value": "Energieversorger",
+      "verdict": "prüfen",
+      "at": "@Kunde"
+     }
+    ],
+    "finding": {
+     "text": "Klingt nach: nein.",
+     "at": "@Klingt"
+    },
+    "fact": {
+     "kind": "fakt",
+     "text": "NIS2: meist mittlere und große Einrichtungen, 18 Sektoren.",
+     "source": "EU-Kommission · NIS2",
+     "at": "@Laut"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "sc_choice",
+   "spoken": "Was antwortest du? A: Wir sind zu klein, das betrifft uns nicht. B: Dann sind wir jetzt wohl selbst NIS2-pflichtig. C: Erst prüfen, dann mit dem Kunden klären. Entscheide dich jetzt.",
+   "data": {
+    "question": "Was antwortest du?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Zu klein, betrifft uns nicht",
+      "at": "@klein"
+     },
+     {
+      "key": "B",
+      "text": "Jetzt selbst NIS2-pflichtig",
+      "at": "@selbst"
+     },
+     {
+      "key": "C",
+      "text": "Erst prüfen, dann mit Kunde klären",
+      "at": "@prüfen"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Entscheide"
+    },
+    "hint": "Entscheide dich jetzt."
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "C ist der sichere Weg. Das BSI bietet eine Betroffenheitsprüfung mit Fragenkatalog, als erste Einschätzung, rechtlich nicht bindend. Zu A: Euer Kunde muss laut BSI seine Zulieferer auf Sicherheitsanforderungen verpflichten. Zu B: Das Gesetz verpflichtet nicht automatisch alle Zulieferer. Für euren Einzelfall hilft nur rechtlicher Rat.",
+   "data": {
+    "mode": "rule",
+    "kicker": "Der eine Schritt",
+    "card": {
+     "letter": "C",
+     "title": "Erst prüfen, dann antworten",
+     "sub": "BSI-Betroffenheitsprüfung machen",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Betrifft uns nicht",
+      "note": "Lieferkette zählt",
+      "at": "@Kunde"
+     },
+     {
+      "text": "B: Jetzt selbst NIS2-pflichtig",
+      "note": "nicht automatisch",
+      "at": "@Gesetz"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "BSI · Betroffenheitsprüfung, Lieferkette"
+     },
+     {
+      "kind": "auslegung",
+      "label": "Auf euren Betrieb: Auslegung Scutoria"
+     },
+     {
+      "kind": "unsicher",
+      "label": "Einzelfall: rechtlich offen"
+     }
+    ],
+    "sources_at": "@BSI"
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Nicht jeder ist direkt betroffen, aber viele über ihre Kunden. Erst prüfen, dann antworten. Was hättest du gewählt? Schreib es in die Kommentare.",
+   "data": {
+    "kicker": "Reihe · Gilt das für uns?",
+    "rule": "Erst prüfen, dann antworten.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Was hättest du gewählt?",
+     "at": "@hättest"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+   },
+   "source_ids": []
+  }
+ ]
+}

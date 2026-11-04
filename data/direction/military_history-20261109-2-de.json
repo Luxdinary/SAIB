@@ -1,0 +1,558 @@
+{
+  "video_id": "military_history-20261109-2-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Hadrianswall in Zahlen",
+  "notes": "Woche 1, Reihe Gebaut für den Ernstfall. Bauwerk und Bauorganisation. Zählweise der Kastelle nach English Heritage (16).",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.english-heritage.org.uk/faqs-hadrians-wall/",
+      "title": "Hadrian's Wall FAQs, English Heritage",
+      "label": "English Heritage",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.vindolanda.com/blog/fact-file-hadrians-wall",
+      "title": "Fact File: Hadrian's Wall, The Vindolanda Trust, 2022",
+      "label": "Vindolanda Trust",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Länge 73 Meilen (English Heritage) oder 74 Meilen/118 km (Vindolanda Trust); im Video 73 Meilen.",
+    "16 Kastelle (English Heritage) oder 15 nachträglich angebaute (Vindolanda Trust); im Video 16."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie baut man eine Mauer quer durch ein ganzes Land, nach festem Raster?",
+      "on_screen": "Eine Mauer nach Raster?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Eine Mauer ist nur eine Mauer? Diese folgt einem festen Modul aus Kastellen und Türmen.",
+      "on_screen": "Mehr als eine Mauer",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Alle römische Meile stand ein Kastell, 80 Stück, durchnummeriert.",
+      "on_screen": "80 nummerierte Kastelle",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Geplant drei Meter breit, gebaut oft deutlich schmaler.",
+      "on_screen": "Plan und Wirklichkeit",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie sich ein Mauermodul 80-mal wiederholt.",
+      "on_screen": "Ein Modul, 80-mal",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie baut man eine Mauer quer durch ein ganzes Land, nach festem Raster?",
+      "data": {
+        "question": "Eine Mauer quer durchs Land, nach Raster?",
+        "question_em": "nach Raster",
+        "card_title": "Hadrianswall",
+        "card_meta": "BRITANNIEN · AB 122",
+        "card_no": "AKTE 17",
+        "stamp": "122",
+        "drawing": "hadrian_module.svg",
+        "packet_label": "Meile",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Land",
+        "packet_at": "w:Mauer",
+        "em_at": "w:Raster"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Ab 122 nach Christus lässt Kaiser Hadrian eine Grenze bauen: von Wallsend am Tyne bis Bowness am Solway, quer durch Nordengland. Gebaut wird mindestens sechs Jahre.",
+      "data": {
+        "mode": "map",
+        "headline": "Von Küste zu Küste",
+        "places": [
+          {
+            "label": "Wallsend",
+            "code": "Tyne, Osten",
+            "x": 600,
+            "y": 80,
+            "at": "w:Wallsend"
+          },
+          {
+            "label": "Bowness",
+            "code": "Solway, Westen",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Bowness"
+          }
+        ],
+        "route_at": "w:quer",
+        "route_label": "quer durch Nordengland",
+        "route_label_at": "w:Nordengland",
+        "wait_at": "w:Gebaut",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "ab 122 n. Chr.",
+        "chip_at": "w:122",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Meile",
+        "packet_at": "w:Grenze",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "mindestens 6 Jahre Bau",
+        "line_label_at": "w:sechs",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Meile",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Das Bauprinzip ist ein Modul: alle römische Meile ein Meilenkastell, dazwischen zwei Türme. Davor liegt ein Graben, über acht Meter breit.",
+      "data": {
+        "headline": "Ein Modul pro Meile",
+        "drawing": "hadrian_module.svg",
+        "sheet_title": "BLATT 2 · EINE MEILE",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Meilenkastell",
+            "x": 85,
+            "y": 230,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Meilenkastell"
+          },
+          {
+            "label": "2 Türme dazwischen",
+            "x": 265,
+            "y": 225,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Türme"
+          },
+          {
+            "label": "Mauer bis 4,6 m hoch",
+            "x": 380,
+            "y": 265,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Modul"
+          },
+          {
+            "label": "Graben: 8,2 m breit",
+            "x": 380,
+            "y": 345,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Graben"
+          }
+        ],
+        "zoom": {
+          "x": 250,
+          "y": 260,
+          "scale": 1.12,
+          "at": "w:Meile",
+          "back_at": "w:Graben",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Geplant war die Mauer drei Meter breit. Gebaut wurde sie mit 2,4 Metern oder weniger. Die Arbeit machten fast nur Soldaten aus drei Legionen.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Plan und Bau",
+        "left": {
+          "tag": "Plan",
+          "title": "3 m breit",
+          "at": "w:Geplant",
+          "rows": [
+            "10 römische Fuß"
+          ]
+        },
+        "right": {
+          "tag": "Gebaut",
+          "title": "2,4 m oder weniger",
+          "at": "w:Gebaut",
+          "rows": [
+            {
+              "text": "8 römische Fuß",
+              "at": "w:2,4"
+            }
+          ]
+        },
+        "verdict": "Gebaut von 3 Legionen",
+        "verdict_at": "w:Legionen",
+        "dim_left_at": "w:2,4",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "In Zahlen: 80 Meilenkastelle, nummeriert von null in Wallsend bis 80 in Bowness, dazu 156 Türme und 16 Kastelle. Insgesamt 73 Meilen.",
+      "data": {
+        "headline": "In Zahlen",
+        "nodes": [
+          {
+            "label": "Meilenkastell 0",
+            "code": "Wallsend",
+            "at": "w:null"
+          },
+          {
+            "label": "Meilenkastell 80",
+            "code": "Bowness",
+            "at": "w:Bowness"
+          },
+          {
+            "label": "156 Türme",
+            "code": "je 2 pro Meile",
+            "at": "w:156"
+          },
+          {
+            "label": "16 Kastelle",
+            "code": "entlang",
+            "at": "w:16"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "count": {
+          "to": 80,
+          "label": "KASTELLE",
+          "at": "w:80",
+          "until": "w:Insgesamt"
+        },
+        "total": {
+          "to": 73,
+          "pre": "",
+          "label": "MEILEN",
+          "at": "w:73"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "122 beginnt der Bau. Um 143 entsteht weiter nördlich der Antoninuswall, und 1987 wird der Hadrianswall Welterbe.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 122 bis 1987",
+        "items": [
+          {
+            "year": "122",
+            "title": "Baubeginn",
+            "sub": "unter Kaiser Hadrian",
+            "at": "w:122"
+          },
+          {
+            "year": "143",
+            "title": "Antoninuswall",
+            "sub": "weiter nördlich",
+            "at": "w:143"
+          },
+          {
+            "year": "1987",
+            "title": "UNESCO-Welterbe",
+            "sub": "Hadrianswall",
+            "at": "w:1987"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Fast 300 Jahre bestand die Grenze. Heute gehört die Mauer meist privaten Eigentümern, English Heritage betreut rund zwanzig Abschnitte. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Hadrianswall",
+        "card_meta": "HEUTE",
+        "card_no": "AKTE 17",
+        "stamp": "Welterbe",
+        "drawing": "hadrian_module.svg",
+        "statement": "Eine Grenze für fast 300 Jahre",
+        "statement_at": "w:300",
+        "stamp_at": "w:Heute",
+        "note": "English Heritage: rund 20 Abschnitte",
+        "note_at": "w:Abschnitte",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Meile",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Baustelle: offen",
+          "tone": "muted",
+          "offset": 2.2
+        },
+        {
+          "beat": "b2",
+          "text": "Bau: ab 122",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b3",
+          "text": "Modul: 1 Meile",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b4",
+          "text": "Breite: 2,4 m",
+          "tone": "amber",
+          "offset": 5.6
+        },
+        {
+          "beat": "b5",
+          "text": "Meilenkastelle: 80",
+          "tone": "muted",
+          "offset": 1.2
+        },
+        {
+          "beat": "b6",
+          "text": "Welterbe: 1987",
+          "tone": "muted",
+          "offset": 6.1
+        },
+        {
+          "beat": "b7",
+          "text": "Abschnitte: rund 20",
+          "tone": "muted",
+          "offset": 9.1
+        }
+      ]
+    },
+    "description": "Hadrianswall in Zahlen: 73 Meilen, 80 Meilenkastelle, 156 Türme, 16 Kastelle, gebaut von drei Legionen ab 122. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "hadrianswall",
+      "römer",
+      "geschichte",
+      "bauwerk",
+      "welterbe"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

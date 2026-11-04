@@ -1,0 +1,37 @@
+{
+  "id": "subagent-werkzeuge-en",
+  "topic_id": "claude_workflows-20261115-1-en",
+  "language": "en",
+  "title": "A subagent with its own tools",
+  "model": "haiku",
+  "tools": "Agent,Read,Edit",
+  "probe": "a test",
+  "probe_where": "file:text.md",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "text.md": "This is a tset with two mistaeks.\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Subagent: Read only",
+      "prompt": "Have the subagent pruefer fix the typos in text.md.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        ".claude/agents/pruefer.md": "---\nname: pruefer\ndescription: Fixes typos in text files.\ntools: Read\n---\nYou fix typos in the given file directly in the file and briefly report what you changed.\n"
+      }
+    },
+    {
+      "id": "L2",
+      "title": "Subagent: Read, Edit",
+      "prompt": "Have the subagent pruefer fix the typos in text.md.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        ".claude/agents/pruefer.md": "---\nname: pruefer\ndescription: Fixes typos in text files.\ntools: Read, Edit\n---\nYou fix typos in the given file directly in the file and briefly report what you changed.\n"
+      }
+    }
+  ]
+}

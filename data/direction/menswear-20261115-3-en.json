@@ -1,0 +1,545 @@
+{
+ "video_id": "menswear-20261115-3-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Three tie knots, side by side",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema E04 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; keine Herkunftsgeschichten (Herzog von Windsor, Kutscherclub, Churchill), keine Kragenempfehlung.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Tie knots",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "knot: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "three sizes",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "four-in-hand: slanted",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "half-Windsor: medium",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Windsor: mostly avoid",
+     "tone": "red"
+    },
+    {
+     "beat": "b6",
+     "text": "small to medium",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "knot: small to medium",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Four-in-hand, half-Windsor or Windsor? Eton describes the four-in-hand as quick and deliberately slightly slanted, the half-Windsor as a medium-sized compromise. Debrett's calls both the most versatile and mostly advises against the large Windsor.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "tie",
+   "tieknots",
+   "suit",
+   "styletips"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://debretts.com/etiquette-category/events-and-dress-codes/",
+   "title": "Debrett's, Events and Dress Codes (Lounge Suits): Four-in-Hand und Half-Windsor sind die vielseitigsten Knoten, große Windsorknoten sollte man im Allgemeinen meiden",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.etonshirts.com/ch/en/journal/guides/how-to-tie-a-half-windsor-knot",
+   "title": "Eton (Hemdenmacher), How to tie a Half Windsor knot: klassischer, nicht zu komplizierter, mittelgroßer Knoten, Kompromiss zwischen Four-in-Hand und Full Windsor, vereinfachte Version des Windsor",
+   "checked_at": "2026-11-01",
+   "label": "Eton, Half-Windsor"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.etonshirts.com/ch/en/journal/guides/how-to-tie-a-four-in-hand-knot",
+   "title": "Eton (Hemdenmacher), How to tie a Four-in-Hand knot: schnell gebunden, passt zu breiten wie schmalen Krawatten, mit Grübchen und leichter Schräglage bewusst nicht perfekt symmetrisch",
+   "checked_at": "2026-11-01",
+   "label": "Eton, Four-in-Hand"
+  }
+ ],
+ "unverified": [
+  "Herkunft der Knotennamen: nicht belegt, nicht im Video.",
+  "Kragenform passend zum Knoten: nicht belegt; die Zeichnung spreizt den Kragen mit dem Knoten, im Text nicht erwähnt.",
+  "'Der kleinste' für den Four-in-Hand: abgeleitet aus Eton (Half-Windsor mittelgroß, Kompromiss zum Full Windsor)."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Which knot for a suit?",
+   "on_screen": "Which knot for a suit?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Four-in-Hand-Knoten, Lupe auf dem Grübchen",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "The biggest knot? Debrett's mostly says no.",
+   "on_screen": "The biggest knot? Debrett's mostly says no.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Four-in-Hand-Knoten, Lupe auf dem Grübchen",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The four-in-hand is meant to be asymmetric",
+   "on_screen": "The four-in-hand is meant to be asymmetric",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "Four-in-Hand-Knoten, Lupe auf dem Grübchen",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A large Windsor with a suit? Debrett's: best avoided.",
+   "on_screen": "A large Windsor with a suit? Debrett's: best avoided.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Four-in-Hand-Knoten, Lupe auf dem Grübchen",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Three knots, three sizes, one comparison",
+   "on_screen": "Three knots, three sizes, one comparison",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Four-in-Hand-Knoten, Lupe auf dem Grübchen",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die drei Knotennamen als Frage, die Lupe auf dem Grübchen."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Four-in-hand, half-Windsor or full Windsor. Three tie knots, three sizes. Which one do you tie, and why?",
+   "data": {
+    "question": "Which knot for a suit?",
+    "object": {
+     "kind": "knot",
+     "knot": "four_in_hand"
+    },
+    "target": "dimple",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Four",
+    "loupe_at": "w:Three",
+    "nie_at": "w:Which",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 12,
+   "spoken": "Same tie, three knots. On the left, the four-in-hand, the smallest of the three. On the right, the full Windsor, the largest. In between, says the shirtmaker Eton, sits the half-Windsor. So which one belongs with a suit?",
+   "data": {
+    "headline": "Three knots, three sizes",
+    "left": {
+     "title": "Four-in-hand",
+     "object": {
+      "kind": "knot",
+      "knot": "four_in_hand"
+     },
+     "target": "knot",
+     "tag": "the smallest",
+     "pulses": [
+      {
+       "target": "knot",
+       "at": "w:between"
+      }
+     ]
+    },
+    "right": {
+     "title": "Windsor",
+     "object": {
+      "kind": "knot",
+      "knot": "windsor"
+     },
+     "target": "knot",
+     "tag": "the largest",
+     "pulses": [
+      {
+       "target": "knot",
+       "at": "w:half"
+      }
+     ]
+    },
+    "left_at": "w:Same",
+    "left_tag_at": "w:smallest",
+    "right_at": "w:right",
+    "right_tag_at": "w:largest",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Eton"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "According to Eton, the four-in-hand is quick to tie and works with wide and slim ties alike. Typical are a small dimple and a slight slant. So it looks deliberately less than perfectly symmetrical.",
+   "data": {
+    "headline": "The four-in-hand",
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 585,
+     "neck": "tie"
+    },
+    "to": {
+     "kind": "knot",
+     "knot": "four_in_hand"
+    },
+    "target": "knot",
+    "zoom": 1.35,
+    "label": "Deliberately not symmetrical",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:four",
+    "zoom_at": "w:quick",
+    "flip_at": "w:dimple",
+    "label_at": "w:deliberately"
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Eton"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "One step up: the half-Windsor. Eton calls it classic, not too complicated and medium-sized, a compromise between the four-in-hand and the full Windsor. It is a simplified version of the Windsor, which comes out larger still.",
+   "data": {
+    "headline": "One step up",
+    "stages": [
+     {
+      "object": {
+       "kind": "knot",
+       "knot": "half_windsor"
+      },
+      "at": 0.0,
+      "title": "Half-Windsor",
+      "tags": [
+       {
+        "spot": "blade",
+        "text": "not complicated",
+        "sub": "a classic",
+        "tone": "always",
+        "at": "w:complicated"
+       },
+       {
+        "spot": "knot",
+        "text": "medium-sized",
+        "sub": "says Eton",
+        "tone": "always",
+        "at": "w:medium"
+       },
+       {
+        "spot": "dimple",
+        "text": "the compromise",
+        "sub": "between the two",
+        "tone": "always",
+        "at": "w:compromise"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "knot",
+       "knot": "windsor"
+      },
+      "at": "w:simplified",
+      "title": "Full Windsor",
+      "tags": [
+       {
+        "spot": "knot",
+        "text": "larger still",
+        "sub": "the original",
+        "tone": "always",
+        "at": "w:larger"
+       }
+      ]
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Eton"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "And with a suit? Debrett's, the British etiquette guide, calls the four-in-hand and the half-Windsor the most versatile knots. Large Windsor knots, Debrett's says, are generally best avoided. For everyday suits, that means small to medium.",
+   "data": {
+    "headline": "What Debrett's says",
+    "left": {
+     "title": "Half-Windsor",
+     "object": {
+      "kind": "knot",
+      "knot": "half_windsor"
+     },
+     "target": "knot",
+     "tag": "most versatile",
+     "pulses": [
+      {
+       "target": "knot",
+       "at": "w:half"
+      }
+     ]
+    },
+    "right": {
+     "title": "Windsor",
+     "object": {
+      "kind": "knot",
+      "knot": "windsor"
+     },
+     "tag": "best avoided",
+     "pulses": [
+      {
+       "target": "knot",
+       "at": "w:avoided",
+       "tone": "red"
+      }
+     ]
+    },
+    "left_at": "w:Debrett",
+    "left_tag_at": "w:versatile",
+    "right_at": "w:Large",
+    "right_tag_at": "w:avoided",
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "In short: the four-in-hand is quick to tie, with a dimple and a slight slant. The half-Windsor is medium-sized, the compromise. Debrett's calls both versatile. The large Windsor, you mostly avoid.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Four-in-hand: quick",
+      "sub": "a dimple and a slight slant",
+      "object": {
+       "kind": "knot",
+       "knot": "four_in_hand"
+      },
+      "at": "w:four",
+      "ring": "dimple",
+      "ring_at": "w:slant"
+     },
+     {
+      "title": "Half-Windsor: medium",
+      "sub": "the compromise, says Eton",
+      "object": {
+       "kind": "knot",
+       "knot": "half_windsor"
+      },
+      "at": "w:half",
+      "ring": "knot",
+      "ring_at": "w:compromise"
+     },
+     {
+      "title": "Windsor: mostly avoid",
+      "sub": "says Debrett's",
+      "object": {
+       "kind": "knot",
+       "knot": "windsor"
+      },
+      "at": "w:large",
+      "ring": "knot",
+      "ring_at": "w:avoid",
+      "ring_tone": "red"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S3",
+    "S2",
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Instead of the large Windsor: a four-in-hand or a half-Windsor. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "knot",
+     "knot": "windsor"
+    },
+    "to": {
+     "kind": "knot",
+     "knot": "four_in_hand"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "knot",
+    "fix_at": "w:four",
+    "ring_at": "w:half",
+    "statement_at": "w:half",
+    "chip_at": "w:eye",
+    "statement": "Small to medium.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

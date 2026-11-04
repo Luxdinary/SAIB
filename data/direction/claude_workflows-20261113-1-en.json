@@ -1,0 +1,683 @@
+{
+  "video_id": "claude_workflows-20261113-1-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Connect an MCP server in three steps",
+  "notes": "Production week 1 (2026-11-01), plan agent C. Topic 13.11. slot 1 (H7), series In three steps, format howto. English adaptation of claude_workflows-20261113-1-de (same facts, sources and scenes, own wording). Guiding object: the MCP server claude-code-docs (status bar MCP-Server, file chip in the terminal, close). Example from the MCP quickstart (docs server, no sign-in needed); sign-in via /mcp explained as in the quickstart. Sources opened 2026-11-01 as markdown. Terminal scenes are animations; the red terminal marker is hidden with mark_w 0 because no error is shown (wish for scenes.py in the report).",
+  "hook": {
+    "id": "H2",
+    "note": "Highest-scoring misconception; the .mcp.json in the hook is the by-hand route, the following scenes show the one command."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you give Claude Code new tools without writing JSON by hand?",
+      "on_screen": "New tools without JSON?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": ".mcp.json in the editor, marker on the server name, question",
+      "why": {
+        "truth": "quickstart: no need to edit these files directly",
+        "clarity": "MCP is named only later"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Think adding an MCP server means hand-writing JSON? One terminal command does it.",
+      "on_screen": "Hand-written JSON? One command.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": ".mcp.json in the editor, tab lights amber, click, zoom, question",
+      "why": {
+        "truth": "quickstart: claude mcp add writes the configuration; You don't need to edit these files directly",
+        "visual": "file by hand vs one command"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Claude Code has its own docs server, and one command connects it.",
+      "on_screen": "One command, one docs server",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "command types itself",
+      "why": {
+        "truth": "quickstart example",
+        "curiosity": "reads like an announcement"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Put your MCP file in the wrong place, and Claude Code won't find your server.",
+      "on_screen": "Wrong place, no server",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "path turns red",
+      "why": {
+        "truth": "troubleshooting lists wrong paths; the topic is the command",
+        "relevance": "side issue"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Here's how to connect an MCP server in three steps.",
+      "on_screen": "MCP server in three steps",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "terminal with the command",
+      "why": {
+        "truth": "flow documented",
+        "curiosity": "no tension"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Connect to MCP servers (Claude Code Docs, MCP quickstart): tools beyond its built-in set; claude mcp add --transport http claude-code-docs https://code.claude.com/docs/mcp; local config; claude mcp list status; /mcp Authenticate; tool call labeled with the server name; scopes local, project, user",
+      "url": "https://code.claude.com/docs/en/mcp-quickstart",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, MCP quickstart"
+    },
+    {
+      "id": "S2",
+      "title": "Connect Claude Code to tools via MCP (Claude Code Docs): MCP servers give Claude Code access to your tools; verify you trust each server; authenticate with remote MCP servers via /mcp",
+      "url": "https://code.claude.com/docs/en/mcp",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, MCP"
+    }
+  ],
+  "unverified": [
+    "How Claude Code labels an MCP tool call exactly: the docs only say it is labeled with the server name; the line ● claude-code-docs … is animated and shortened.",
+    "Exact output format of claude mcp list (columns, spacing): not documented; only the server name and the status ✔ Connected from the docs table are shown.",
+    "The .mcp.json in the hook is the docs example, shortened (URL abbreviated, one server only).",
+    "Whether Claude Code asks for permission on the first call depends on settings (docs: If Claude Code asks for permission …); mentioned in the description only."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "MCP-Server",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "claude-code-docs: missing",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "claude-code-docs: missing",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "step 1: added",
+          "tone": "accent"
+        },
+        {
+          "beat": "b4",
+          "text": "step 2: check status",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "step 3: in use",
+          "tone": "ok",
+          "offset": 3.0
+        },
+        {
+          "beat": "b6",
+          "text": "scope: local",
+          "tone": "muted"
+        },
+        {
+          "beat": "b8",
+          "text": "claude-code-docs ✔",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Connect an MCP server with one terminal command: claude mcp add --transport http, a name you pick and the URL. claude mcp list shows the status, and /mcp signs you in when a server needs it. Example from the Claude Code docs: the Claude Code docs server.",
+    "companion_text": "Follow Promptwerk for more Claude workflows, step by step. Based on the MCP quickstart and the MCP page of the Claude Code docs; the terminal scenes are an animated view, not a screen recording. Notes from the docs: run the command in your terminal, not inside a Claude session. If Claude Code asks for permission the first time Claude calls the server, approve it. Without --scope the server is active only for you in this project; with --scope user in all your projects. Verify you trust a server before connecting it; servers that fetch external content can expose you to prompt injection. Each connected server takes some space in the context window.",
+    "hashtags": [
+      "claudecode",
+      "mcp",
+      "aiworkflow",
+      "coding",
+      "developer"
+    ],
+    "short_title": "MCP-Server verbinden"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Think adding an MCP server means hand-writing JSON? One terminal command does it.",
+      "data": {
+        "question": "Hand-written JSON? One command.",
+        "chip": "by hand?",
+        "file": ".mcp.json",
+        "tabs": [
+          {
+            "name": ".mcp.json",
+            "active": true
+          }
+        ],
+        "lines": [
+          [
+            [
+              "punc",
+              "{"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "key",
+              "\"mcpServers\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"claude-code-docs\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "key",
+              "\"type\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"http\""
+            ],
+            [
+              "punc",
+              ","
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "key",
+              "\"url\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"…/docs/mcp\""
+            ]
+          ],
+          [
+            [
+              "punc",
+              "    }"
+            ]
+          ]
+        ],
+        "focus_line": 2,
+        "line_h": 60,
+        "zoom": 1.08,
+        "mark_word": "MCP",
+        "click_word": "hand",
+        "env_word": "JSON",
+        "question_word": "One",
+        "chip_word": "command"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Per the docs, MCP lets Claude Code use tools beyond its built-in set. They come from MCP servers, local or hosted.",
+      "data": {
+        "kicker": "Claude Code Docs · MCP",
+        "page_title": "Connect to MCP servers",
+        "quotes": [
+          "lets Claude Code use tools beyond its built-in set",
+          "These tools come from MCP servers"
+        ],
+        "translation_label": "In short",
+        "translation": "More tools than the built-in set",
+        "page_word": "docs",
+        "quote1_word": "lets",
+        "translation_word": "beyond",
+        "quote2_word": "come"
+      },
+      "overlay": {
+        "title": "Tools via MCP",
+        "marker_at": "w:lets",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Step one, in your terminal: claude mcp add, transport http, a name you pick, and the URL, here the Claude Code docs server. It's then active just for you, in this project.",
+      "data": {
+        "title": "Terminal · demo-project",
+        "focus_line": 4,
+        "mark_w": 0,
+        "stamp": "local",
+        "annotation": "just you, just this project",
+        "height": 540,
+        "top": 20,
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "$ "
+              ],
+              [
+                "",
+                "claude mcp add --transport http"
+              ]
+            ],
+            "at_word": "claude"
+          },
+          {
+            "kind": "out",
+            "text": [
+              [
+                "",
+                "    "
+              ],
+              [
+                "acc",
+                "claude-code-docs"
+              ]
+            ],
+            "at_word": "name"
+          },
+          {
+            "kind": "out",
+            "text": "    https://code.claude.com/docs/mcp",
+            "at_word": "URL"
+          },
+          {
+            "kind": "dim",
+            "text": "Added HTTP MCP server claude-code-docs",
+            "at_word": "docs"
+          },
+          {
+            "kind": "dim",
+            "text": "  … to local config",
+            "at_word": "active"
+          }
+        ],
+        "mark_word": "active",
+        "stamp_word": "just",
+        "click_word": "this",
+        "annotation_word": "project"
+      },
+      "overlay": {
+        "title": "Step 1: add it",
+        "marker_at": "w:claude",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Step two: claude mcp list shows the status. If a server needs a browser sign-in, open slash mcp inside Claude Code and choose Authenticate.",
+      "data": {
+        "headline": "",
+        "gate": 3,
+        "chip": "only if needed",
+        "nodes": [
+          {
+            "label": "claude mcp add"
+          },
+          {
+            "label": "claude mcp list",
+            "hook": true
+          },
+          {
+            "label": "! Needs authentication"
+          },
+          {
+            "label": "/mcp · Authenticate"
+          },
+          {
+            "label": "✔ Connected"
+          }
+        ],
+        "travel_word": "shows",
+        "gate_word": "slash",
+        "travel_end_word": "Authenticate"
+      },
+      "overlay": {
+        "title": "Step 2: check it",
+        "marker_at": "w:shows",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Step three: start claude and ask it to use the server by name. The server name on the tool call shows the answer came from there.",
+      "data": {
+        "title": "claude · demo-project",
+        "focus_line": 3,
+        "mark_w": 0,
+        "annotation": "answer came from the server",
+        "height": 480,
+        "top": 20,
+        "file": "claude-code-docs",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "$ "
+              ],
+              [
+                "",
+                "claude"
+              ]
+            ],
+            "at_word": "start"
+          },
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Use the claude-code-docs server"
+              ]
+            ],
+            "at_word": "ask"
+          },
+          {
+            "kind": "out",
+            "text": "  to look up what MCP_TIMEOUT does",
+            "at_word": "server"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "claude-code-docs …"
+              ]
+            ],
+            "at_word": "tool"
+          }
+        ],
+        "file_open_word": "name",
+        "mark_word": "tool",
+        "click_word": "shows",
+        "file_word": "answer",
+        "annotation_word": "came"
+      },
+      "overlay": {
+        "title": "Step 3: use it",
+        "example": true,
+        "marker_at": "w:start",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "The difference: by default it's local, just for you. With scope project, it goes into .mcp.json for everyone who clones the project, after they approve it.",
+      "data": {
+        "top": {
+          "title": "local (default)",
+          "verdict": "just you",
+          "rows": [
+            "this project only",
+            "in ~/.claude.json"
+          ]
+        },
+        "bottom": {
+          "title": "--scope project",
+          "verdict": "team",
+          "rows": [
+            "in .mcp.json in the repo",
+            "approve after cloning"
+          ]
+        },
+        "top_word": "default",
+        "bottom_word": "scope"
+      },
+      "overlay": {
+        "title": "Just you or your team",
+        "marker": "auslegung",
+        "marker_at": "w:difference",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "To recap: add with claude mcp add, check with claude mcp list, and sign in with slash mcp if you need to. Then just ask Claude to use it.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Add the server",
+            "code": "claude mcp add --transport http",
+            "at_word": "add"
+          },
+          {
+            "title": "Check the status",
+            "code": "claude mcp list",
+            "at_word": "check"
+          },
+          {
+            "title": "Sign in if needed",
+            "code": "/mcp",
+            "at_word": "sign"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "In three steps",
+        "marker": "fakt",
+        "marker_at": "w:add",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "One command, and Claude has new tools. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "Terminal",
+        "badge": "claude-code-docs: on",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "$ "
+              ],
+              [
+                "",
+                "claude mcp list"
+              ]
+            ]
+          },
+          {
+            "kind": "out",
+            "text": [
+              [
+                "",
+                "claude-code-docs  "
+              ],
+              [
+                "ok",
+                "✔ Connected"
+              ]
+            ]
+          }
+        ],
+        "statement": "One command, one server, new tools.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_word": "command",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

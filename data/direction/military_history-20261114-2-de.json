@@ -1,0 +1,558 @@
+{
+  "video_id": "military_history-20261114-2-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Trugen Wikinger Hörnerhelme?",
+  "notes": "Woche 1, Reihe Mythos geprüft. Keine NS-Wikinger-Ikonografie, keine Runen-Symbole; Altersabstand nur als 'fast zwei Jahrtausende'.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://cas.au.dk/en/archaeology-and-heritage-studies/news-and-events/news/show/artikel/new-study-about-the-viksoe-helmets",
+      "title": "New study about the Viksø helmets, Aarhus University, 10.01.2022",
+      "label": "Aarhus University",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://lex.dk/MYTE_Havde_vikingernes_hjelme_horn%3F",
+      "title": "MYTE: Havde vikingernes hjelme horn? Lex – Danmarks Nationalleksikon",
+      "label": "lex.dk",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://videnskab.dk/kultur-samfund/viksoehjelmene-inspirerede-maaske-myten-om-vikinger-med-horn-men-de-er-meget-aeldre",
+      "title": "Viksøhjelmene inspirerede måske myten om vikinger med horn, Videnskab.dk, 13.01.2022",
+      "label": "Videnskab.dk",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Altersabstand 'etwa 2000 Jahre' (Quellen) gegenüber rund 1700 Jahren (Rechnung); im Video 'viel älter' und 'fast zwei Jahrtausende'.",
+    "Ob die Viksø-Helme den Mythos anregten, vermutet nur Videnskab; nicht behauptet."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Trugen Wikinger wirklich Helme mit Hörnern?",
+      "on_screen": "Wikinger mit Hörnerhelm?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Wikinger mit Hörnerhelm? Gefunden wurde kein einziger.",
+      "on_screen": "Kein einziger Fund",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Die berühmtesten Hörnerhelme Dänemarks stammen aus der Bronzezeit.",
+      "on_screen": "Hörner aus der Bronzezeit",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ein Opernkostüm prägt bis heute ein Geschichtsbild.",
+      "on_screen": "Ein Kostüm macht Geschichte",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie ein echter Wikingerhelm aussah.",
+      "on_screen": "Ein echter Wikingerhelm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Trugen Wikinger wirklich Helme mit Hörnern?",
+      "data": {
+        "question": "Wikinger mit Hörnerhelm?",
+        "question_em": "Hörnerhelm",
+        "card_title": "Hörnerhelm",
+        "card_meta": "DÄNEMARK · MYTHOS",
+        "card_no": "AKTE 26",
+        "stamp": "Mythos?",
+        "drawing": "helmets_compare.svg",
+        "packet_label": "Helm",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Hörnern",
+        "packet_at": "w:Helme",
+        "em_at": "w:wirklich"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Archäologen haben keinen einzigen Wikingerhelm mit Hörnern gefunden. Auch die Schriftquellen der Wikingerzeit erwähnen keine.",
+      "data": {
+        "mode": "map",
+        "headline": "Funde und Schriften",
+        "places": [
+          {
+            "label": "Funde",
+            "code": "0 mit Hörnern",
+            "x": 600,
+            "y": 80,
+            "at": "w:Archäologen"
+          },
+          {
+            "label": "Schriften",
+            "code": "keine Hörner",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Schriftquellen"
+          }
+        ],
+        "route_at": "w:Wikingerhelm",
+        "route_label": "kein Hörnerhelm",
+        "route_label_at": "w:Hörnern",
+        "wait_at": "w:einzigen",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "0 Funde mit Hörnern",
+        "chip_at": "w:gefunden",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Helm",
+        "packet_at": "w:Wikingerhelm",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Belege: keine",
+        "line_label_at": "w:keine#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Wikingerhelme",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Die bekannten Wikingerhelme haben oft Nasen- und Nackenschutz, etwa der rekonstruierte Helm aus einem Grab bei Gjermundbu, nördlich von Oslo.",
+      "data": {
+        "headline": "Ein echter Wikingerhelm",
+        "drawing": "helmets_compare.svg",
+        "sheet_title": "BLATT 2 · HELME",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Nasenschutz",
+            "x": 340,
+            "y": 390,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Nasen-"
+          },
+          {
+            "label": "Nackenschutz",
+            "x": 425,
+            "y": 385,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Nackenschutz"
+          },
+          {
+            "label": "Rekonstruiert",
+            "x": 340,
+            "y": 300,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:rekonstruierte"
+          },
+          {
+            "label": "Gjermundbu, Norwegen",
+            "x": 300,
+            "y": 440,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Gjermundbu"
+          }
+        ],
+        "zoom": {
+          "x": 340,
+          "y": 340,
+          "scale": 1.12,
+          "at": "w:Nasen-",
+          "back_at": "w:Oslo",
+          "grow": "up"
+        },
+        "headline_lines": 2,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Die berühmten gehörnten Helme von Viksø sind viel älter. Gefunden 1942 in einem Moor, datiert auf 1006 bis 857 vor Christus: Bronzezeit.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Hörner, aber viel älter",
+        "left": {
+          "tag": "Viksø",
+          "title": "Gehörnt",
+          "at": "w:Viksø",
+          "rows": [
+            {
+              "text": "Fund 1942, Moor",
+              "at": "w:1942"
+            },
+            {
+              "text": "1006–857 v. Chr.",
+              "at": "w:1006"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Wikinger",
+          "title": "Ohne Hörner",
+          "at": "w:Bronzezeit",
+          "rows": [
+            "Nasen- und Nackenschutz"
+          ]
+        },
+        "verdict": "Fast zwei Jahrtausende älter",
+        "verdict_at": "w:Bronzezeit",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Woher kommt das Bild? Gelehrte der Renaissance zeichnen Germanen mit Hornhelmen. 1876 entwirft Carl Emil Doepler Kostüme für Wagners Ring des Nibelungen, mit Hörnern.",
+      "data": {
+        "headline": "Wie das Bild entstand",
+        "nodes": [
+          {
+            "label": "Renaissance",
+            "code": "Gelehrte",
+            "at": "w:Renaissance"
+          },
+          {
+            "label": "Wagners Ring",
+            "code": "1876",
+            "at": "w:1876"
+          },
+          {
+            "label": "Doepler",
+            "code": "Kostüme",
+            "at": "w:Doepler"
+          },
+          {
+            "label": "Hörner",
+            "code": "auf der Bühne",
+            "at": "w:Hörnern"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Helm",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1876 die Hörner auf der Opernbühne, 1942 der Fund von Viksø, 2022 die neue Datierung durch die Universität Aarhus.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1876 bis 2022",
+        "items": [
+          {
+            "year": "1876",
+            "title": "Wagners Ring",
+            "sub": "Kostüme mit Hörnern",
+            "at": "w:1876"
+          },
+          {
+            "year": "1942",
+            "title": "Fund Viksø",
+            "sub": "Moor Brøns Mose",
+            "at": "w:1942"
+          },
+          {
+            "year": "2022",
+            "title": "Neue Datierung",
+            "sub": "Universität Aarhus",
+            "at": "w:2022"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Die Viksø-Helme sind im Dänischen Nationalmuseum zu sehen. Fachleute weisen seit über 100 Jahren darauf hin: Der Hörnerhelm der Wikinger ist ein Mythos. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Viksø-Helme",
+        "card_meta": "NATIONALMUSEET",
+        "card_no": "AKTE 26",
+        "stamp": "Mythos",
+        "drawing": "helmets_compare.svg",
+        "statement": "Hörner ja, aber nicht bei Wikingern",
+        "statement_at": "w:Nationalmuseum",
+        "stamp_at": "w:Mythos",
+        "note": "Bronzezeit-Ausstellung",
+        "note_at": "w:100",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Helm",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Hörner: behauptet",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b2",
+          "text": "Funde: 0 mit Hörnern",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b3",
+          "text": "Gjermundbu: ohne Hörner",
+          "tone": "amber",
+          "offset": 8.1
+        },
+        {
+          "beat": "b4",
+          "text": "Viksø: Bronzezeit",
+          "tone": "amber",
+          "offset": 10.5
+        },
+        {
+          "beat": "b5",
+          "text": "Bild: Oper 1876",
+          "tone": "muted",
+          "offset": 5.6
+        },
+        {
+          "beat": "b6",
+          "text": "Datierung: 2022",
+          "tone": "muted",
+          "offset": 5.6
+        },
+        {
+          "beat": "b7",
+          "text": "Urteil: Mythos",
+          "tone": "muted",
+          "offset": 11.0
+        }
+      ]
+    },
+    "description": "Mythos geprüft: Kein Wikingerhelm mit Hörnern wurde je gefunden. Die gehörnten Viksø-Helme sind bronzezeitlich, das Bild prägte 1876 eine Opernbühne. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "wikinger",
+      "mythos",
+      "archäologie",
+      "geschichte",
+      "helm"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

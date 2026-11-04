@@ -1,0 +1,719 @@
+{
+  "video_id": "megaconstruction-20261111-2-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Burj Khalifa: 828 Meter auf einer 3,7 Meter dicken Betonplatte",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261111-2-de. Thema: burj. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Burj Khalifa",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "828 m hoch",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "fertig 2010",
+          "tone": "green",
+          "at": "@2010"
+        },
+        {
+          "beat": "b3",
+          "text": "Platte 3,7 m",
+          "tone": "accent",
+          "at": "@3,7"
+        },
+        {
+          "beat": "b3",
+          "text": "Pfähle 43 m",
+          "tone": "accent",
+          "at": "@Pfähle"
+        },
+        {
+          "beat": "b4",
+          "text": "2,5 × Eiffelturm",
+          "tone": "accent",
+          "at": "@zweieinhalb"
+        },
+        {
+          "beat": "b5",
+          "text": "6 × Stephansdom",
+          "tone": "accent",
+          "at": "@sechs"
+        }
+      ]
+    },
+    "description": "Der Burj Khalifa ist 828 m hoch – und steht auf einer 3,7 m dicken Betonplatte mit 43 m langen Pfählen. Nachgerechnet gegen Eiffelturm und Stephansdom.",
+    "companion_text": "Gerechnet: 828 m ÷ 330 m = 2,51; 828 m ÷ 136,4 m = 6,07. Quellen: SOM, Burj Khalifa (Emaar), CTBUH, SETE, Dompfarre St. Stephan. Stilisiertes 3D-Modell, Pfahlgruppe schematisch. Folge Gigastruct.",
+    "hashtags": [
+      "burjkhalifa",
+      "wolkenkratzer",
+      "fundament",
+      "dubai",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "828 m ÷ 330 m = 2,51",
+        "result": "zweieinhalb Eiffeltürme",
+        "sources": [
+          "S1",
+          "SE"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "828 m ÷ 136,4 m = 6,07",
+        "result": "gut sechs Südtürme des Stephansdoms",
+        "sources": [
+          "S1",
+          "S4"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "prism",
+          "height": 640,
+          "width": 95,
+          "shape": "oct",
+          "levels": 80,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              0.3,
+              0.75
+            ],
+            [
+              0.6,
+              0.45
+            ],
+            [
+              0.85,
+              0.25
+            ],
+            [
+              1,
+              0.15
+            ]
+          ],
+          "spire": [
+            188,
+            8
+          ],
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "raft",
+          "kind": "box",
+          "size": [
+            130,
+            3.7,
+            130
+          ],
+          "color": "accent",
+          "pos": [
+            0,
+            -3.7,
+            0
+          ]
+        },
+        {
+          "id": "piles",
+          "kind": "piles",
+          "nx": 9,
+          "nz": 9,
+          "spacing": 14,
+          "r": 0.75,
+          "len": 43,
+          "color": "model_inner",
+          "pos": [
+            0,
+            -3.7,
+            0
+          ]
+        },
+        {
+          "id": "eiffel",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 1,
+          "pos": [
+            260,
+            0,
+            0
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "raft": [
+          65,
+          -1.8,
+          65
+        ],
+        "rafttop": [
+          -30,
+          0,
+          65
+        ],
+        "pile": [
+          14,
+          -30,
+          63
+        ],
+        "top": [
+          0,
+          828,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 30,
+            "az1": 22,
+            "el0": 4,
+            "el1": 8,
+            "fit0": 0.4,
+            "fit1": 0.45,
+            "zone": 860,
+            "cy": 760
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 60,
+            "az1": 50,
+            "el0": 10,
+            "el1": 6,
+            "fit0": 0.45,
+            "fit1": 0.4,
+            "zone": 820,
+            "cy": 780
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -75,
+                -50,
+                -75
+              ],
+              [
+                75,
+                10,
+                75
+              ]
+            ],
+            "az0": 35,
+            "az1": 45,
+            "el0": 14,
+            "el1": 8,
+            "fit0": 0.75,
+            "fit1": 0.9,
+            "cy": 800
+          },
+          "props": {
+            "ground.opacity": 0.15,
+            "tower.fade": 0.5,
+            "piles.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.6",
+                0
+              ],
+              [
+                "%0.9",
+                1
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "tower",
+              "eiffel"
+            ],
+            "az0": 80,
+            "az1": 88,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.85,
+            "fit1": 0.9,
+            "zone": 600,
+            "cy": 880
+          },
+          "props": {
+            "eiffel.visible": 1
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 120,
+            "az1": 110,
+            "el0": 8,
+            "el1": 4,
+            "fit0": 0.4,
+            "fit1": 0.45,
+            "zone": 820,
+            "cy": 760
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -75,
+                -50,
+                -75
+              ],
+              [
+                75,
+                60,
+                75
+              ]
+            ],
+            "az0": 20,
+            "az1": 30,
+            "el0": 10,
+            "el1": 6,
+            "fit0": 0.6,
+            "fit1": 0.7,
+            "cy": 840
+          },
+          "props": {
+            "ground.opacity": 0.2,
+            "tower.fade": 0.6
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.som.com/projects/burj-khalifa/",
+      "title": "SOM (Architekt): Burj Khalifa – 828 m, fertig 2010",
+      "label": "SOM, Burj Khalifa",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.burjkhalifa.ae/the-tower/structures/",
+      "title": "Burj Khalifa (Emaar): Structures – Fundamentplatte 3,7 m, 12.500 m³ in vier Betonagen, Pfähle 1,5 m Ø, 43 m",
+      "label": "Burj Khalifa, Structures",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.skyscrapercenter.com/building/burj-khalifa/3",
+      "title": "CTBUH Skyscraper Center: Burj Khalifa (Baubeginn 2004)",
+      "label": "CTBUH, Skyscraper Center",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffelturm), Key figures",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.stephanskirche.at/faq.php",
+      "title": "Dompfarre St. Stephan: FAQ (Südturm 136,4 m)",
+      "label": "Dompfarre St. Stephan, FAQ",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Geschosszahl (SOM 160/162, CTBUH 163) widersprüchlich, weggelassen.",
+    "Zahl der Pfähle nicht ermittelt: Pfahlgruppe im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "828 Meter hoch. Und alles ruht auf einer 3,7 Meter dicken Platte aus Beton.",
+      "on_screen": "828 m auf einer 3,7-m-Platte",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist der Burj Khalifa wirklich?",
+      "on_screen": "Wie groß ist der Burj Khalifa wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen der Burj Khalifa.",
+      "on_screen": "der Burj Khalifa: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei der Burj Khalifa schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "der Burj Khalifa: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie der Burj Khalifa im Modell entsteht.",
+      "on_screen": "der Burj Khalifa im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "828 Meter hoch. Und alles ruht auf einer 3,7 Meter dicken Platte aus Beton.",
+      "data": {
+        "kicker": "Nachgerechnet · Burj Khalifa",
+        "question": "828 m auf einer 3,7-m-Platte",
+        "question_at": "@828",
+        "number": {
+          "value": "3,7",
+          "unit": "m",
+          "at_word": "Platte",
+          "y": 640
+        },
+        "badge": {
+          "text": "Burj Khalifa, Dubai",
+          "at_word": "Beton",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Und"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "Der Burj Khalifa in Dubai ist laut Architekturbüro SOM 828 Meter hoch. Baubeginn war 2004, fertig wurde er 2010.",
+      "data": {
+        "headline": "Burj Khalifa, Dubai",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "828",
+            "unit": "m",
+            "label": "Höhe",
+            "at_word": "828"
+          },
+          {
+            "value": "2004",
+            "unit": "",
+            "label": "Baubeginn",
+            "at_word": "2004"
+          },
+          {
+            "value": "2010",
+            "unit": "",
+            "label": "fertig",
+            "at_word": "2010"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "kicker": "2 · Dubai",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_section",
+      "spoken": "Darunter liegt eine Fundamentplatte, 3,7 Meter dick, aus 12.500 Kubikmetern Beton, gegossen in vier Abschnitten. Unter der Platte stecken Pfähle mit 1,5 Metern Durchmesser, jeder 43 Meter lang.",
+      "data": {
+        "headline": "Was unter dem Turm liegt",
+        "note": "Pfahlgruppe schematisch",
+        "note_dy": 190,
+        "dims": [
+          {
+            "anchor": "raft",
+            "text": "3,7 m",
+            "at_word": "3,7"
+          }
+        ],
+        "callouts": [
+          {
+            "anchor": "rafttop",
+            "text": "12.500 m³ Beton",
+            "side": "up",
+            "at_word": "12.500"
+          },
+          {
+            "anchor": "pile",
+            "text": "Pfähle: 43 m, Ø 1,5 m",
+            "side": "down",
+            "at_word": "Pfähle"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "3 · Fundament",
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "seconds": 0.7,
+          "x": 540,
+          "y": 960
+        },
+        "vignette": true
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gs_compare",
+      "spoken": "Zum Vergleich: Der Eiffelturm ist 330 Meter hoch. 828 durch 330 ergibt 2,51. Der Burj Khalifa ist also so hoch wie zweieinhalb Eiffeltürme übereinander.",
+      "data": {
+        "headline": "Turm gegen Eiffelturm",
+        "a": {
+          "label": "Burj Khalifa",
+          "value": 828,
+          "unit": "m"
+        },
+        "b": {
+          "label": "Eiffelturm",
+          "value": 330,
+          "unit": "m"
+        },
+        "decimals": 1,
+        "bars_dy": 430,
+        "row_h": 108,
+        "order": "ba",
+        "b_at": "@Eiffelturm",
+        "a_at": "@828",
+        "result_at": "@zweieinhalb"
+      },
+      "source_ids": [
+        "S1",
+        "SE"
+      ],
+      "overlay": {
+        "kicker": "4 · Nachgerechnet",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "Und der Stephansdom? Sein Südturm misst laut Dompfarre 136,4 Meter. In den Burj Khalifa passen gut sechs Südtürme übereinander.",
+      "data": {
+        "headline": "Burj Khalifa gegen Stephansdom",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "136,4",
+            "unit": "m",
+            "label": "Südturm Stephansdom",
+            "ref": true,
+            "at_word": "136,4"
+          },
+          {
+            "value": "6,07",
+            "unit": "×",
+            "label": "übereinander",
+            "at_word": "sechs"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "overlay": {
+        "kicker": "5 · Und in Wien?",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "828 Meter Turm, getragen von 3,7 Metern Beton und 43 Meter langen Pfählen. Folge Gigastruct, dann siehst du das nächste Bauwerk.",
+      "data": {
+        "mode": "closing",
+        "statement": "828 m auf 3,7 m Beton.",
+        "chip": {
+          "text": "Folge Gigastruct",
+          "at_word": "Folge",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "6 · Ergebnis",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

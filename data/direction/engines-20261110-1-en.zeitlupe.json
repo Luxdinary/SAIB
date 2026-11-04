@@ -1,0 +1,882 @@
+{
+ "video_id": "engines-20261110-1-en",
+ "brand_id": "engines",
+ "language": "en",
+ "title": "One engine cycle takes 100 milliseconds",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261110-1-en, Reihe Nachgerechnet. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "How long does one engine cycle take? At 1,200 rpm exactly 100 milliseconds, worked out with the MIT lecture.",
+  "companion_text": "6,000 rpm is a chosen example value. Slow-motion factor and milliseconds refer to the example speed of 1200 rpm.",
+  "hashtags": [
+   "enginetech",
+   "fourstroke",
+   "maths",
+   "rpm",
+   "physics"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "MIT 2.61, lecture 9",
+   "title": "MIT 2.61, Vorlesung 9 (L9)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "NASA Glenn, four-stroke engine",
+   "title": "NASA Glenn, Viertaktmotor (N1)",
+   "url": "https://www.grc.nasa.gov/www/k-12/airplane/engopt.html",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Intake, compression, ignition, exhaust.",
+   "on_screen": "All four strokes in 100 ms",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "How long does one engine cycle take?",
+   "on_screen": "One engine cycle takes 100 milliseconds",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "One engine cycle takes 100 milliseconds",
+   "on_screen": "One engine cycle takes 100 milliseconds",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One engine cycle takes 100 milliseconds",
+   "on_screen": "One engine cycle takes 100 milliseconds",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "One engine cycle takes 100 milliseconds",
+   "on_screen": "One engine cycle takes 100 milliseconds",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Intake, compression, ignition, exhaust. At twelve hundred revolutions per minute, all of that together takes just one hundred milliseconds.",
+   "data": {
+    "claim": "All four strokes in 100 ms",
+    "claim_lines": [
+     "All four strokes",
+     "in 100 ms"
+    ],
+    "claim_highlight": "100 ms",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1440
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "MIT 2.61, lecture 9 · retrieved 2026-11-01",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_cutaway",
+   "spoken": "One working cycle is four strokes. For that, the crankshaft turns twice, a full seven hundred and twenty degrees. Only then does the next cycle begin. The bar at the bottom shows where we are right now. That is four strokes for every two turns of the crank.",
+   "data": {
+    "title": "Two turns",
+    "labels": [
+     "crank"
+    ],
+    "labels_at": [
+     "w:crankshaft"
+    ],
+    "notes": [
+     {
+      "text": "4 strokes",
+      "at": "w:strokes",
+      "side": "l",
+      "y": 760,
+      "to": [
+       540,
+       600
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "zl_strip": true,
+    "source": "NASA Glenn, four-stroke engine · retrieved 2026-11-01",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_readout",
+   "spoken": "The engineering lecture does the maths. At one thousand revolutions per minute, the crank turns six degrees per millisecond. At twelve hundred it is seven point two degrees, so seven hundred and twenty degrees take exactly one hundred milliseconds. It is simple arithmetic, but it shows how little time there is.",
+   "data": {
+    "title": "Degrees per millisecond",
+    "gauge_max": 7,
+    "gauge_value": 1.2,
+    "gauge_unit": "× 1000 rpm",
+    "gauge_at": "w:revolutions",
+    "lines": [
+     {
+      "text": "1000 rpm → 6° per ms",
+      "hl": "6°",
+      "at": "w:crank"
+     },
+     {
+      "text": "1200 rpm → 7.2° per ms",
+      "hl": "7.2°",
+      "at": "w:is"
+     },
+     {
+      "text": "720° ÷ 7.2 °/ms = 100 ms",
+      "hl": "100 ms",
+      "at": "w:take"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, lecture 9 · retrieved 2026-11-01",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_chart",
+   "spoken": "Laid out on a timeline, each stroke gets twenty-five milliseconds. In that time air has to flow in, be compressed, burn and leave the cylinder again. Valves, spark, flame: everything has to fit into this grid. So each job gets a quarter of a tenth of a second.",
+   "data": {
+    "title": "100 ms on a timeline",
+    "kind": "custom",
+    "xlim": [
+     0,
+     100
+    ],
+    "ylim": [
+     0,
+     1.15
+    ],
+    "scheme": false,
+    "xlabel": "Time in ms",
+    "ylabel": "Piston height",
+    "xticks": [
+     [
+      0,
+      "0"
+     ],
+     [
+      25,
+      "25"
+     ],
+     [
+      50,
+      "50"
+     ],
+     [
+      75,
+      "75"
+     ],
+     [
+      100,
+      "100"
+     ]
+    ],
+    "series": [
+     {
+      "label": "Piston",
+      "pts": [
+       [
+        0,
+        1.0
+       ],
+       [
+        1,
+        0.9948
+       ],
+       [
+        2,
+        0.9795
+       ],
+       [
+        3,
+        0.9543
+       ],
+       [
+        4,
+        0.9199
+       ],
+       [
+        5,
+        0.8773
+       ],
+       [
+        6,
+        0.8274
+       ],
+       [
+        7,
+        0.7716
+       ],
+       [
+        8,
+        0.7112
+       ],
+       [
+        9,
+        0.6476
+       ],
+       [
+        10,
+        0.5822
+       ],
+       [
+        11,
+        0.5164
+       ],
+       [
+        12,
+        0.4516
+       ],
+       [
+        13,
+        0.3888
+       ],
+       [
+        14,
+        0.3291
+       ],
+       [
+        15,
+        0.2732
+       ],
+       [
+        16,
+        0.2218
+       ],
+       [
+        17,
+        0.1754
+       ],
+       [
+        18,
+        0.1342
+       ],
+       [
+        19,
+        0.0985
+       ],
+       [
+        20,
+        0.0683
+       ],
+       [
+        21,
+        0.0436
+       ],
+       [
+        22,
+        0.0245
+       ],
+       [
+        23,
+        0.0109
+       ],
+       [
+        24,
+        0.0027
+       ],
+       [
+        25,
+        0.0
+       ],
+       [
+        26,
+        0.0027
+       ],
+       [
+        27,
+        0.0109
+       ],
+       [
+        28,
+        0.0245
+       ],
+       [
+        29,
+        0.0436
+       ],
+       [
+        30,
+        0.0683
+       ],
+       [
+        31,
+        0.0985
+       ],
+       [
+        32,
+        0.1342
+       ],
+       [
+        33,
+        0.1754
+       ],
+       [
+        34,
+        0.2218
+       ],
+       [
+        35,
+        0.2732
+       ],
+       [
+        36,
+        0.3291
+       ],
+       [
+        37,
+        0.3888
+       ],
+       [
+        38,
+        0.4516
+       ],
+       [
+        39,
+        0.5164
+       ],
+       [
+        40,
+        0.5822
+       ],
+       [
+        41,
+        0.6476
+       ],
+       [
+        42,
+        0.7112
+       ],
+       [
+        43,
+        0.7716
+       ],
+       [
+        44,
+        0.8274
+       ],
+       [
+        45,
+        0.8773
+       ],
+       [
+        46,
+        0.9199
+       ],
+       [
+        47,
+        0.9543
+       ],
+       [
+        48,
+        0.9795
+       ],
+       [
+        49,
+        0.9948
+       ],
+       [
+        50,
+        1.0
+       ],
+       [
+        51,
+        0.9948
+       ],
+       [
+        52,
+        0.9795
+       ],
+       [
+        53,
+        0.9543
+       ],
+       [
+        54,
+        0.9199
+       ],
+       [
+        55,
+        0.8773
+       ],
+       [
+        56,
+        0.8274
+       ],
+       [
+        57,
+        0.7716
+       ],
+       [
+        58,
+        0.7112
+       ],
+       [
+        59,
+        0.6476
+       ],
+       [
+        60,
+        0.5822
+       ],
+       [
+        61,
+        0.5164
+       ],
+       [
+        62,
+        0.4516
+       ],
+       [
+        63,
+        0.3888
+       ],
+       [
+        64,
+        0.3291
+       ],
+       [
+        65,
+        0.2732
+       ],
+       [
+        66,
+        0.2218
+       ],
+       [
+        67,
+        0.1754
+       ],
+       [
+        68,
+        0.1342
+       ],
+       [
+        69,
+        0.0985
+       ],
+       [
+        70,
+        0.0683
+       ],
+       [
+        71,
+        0.0436
+       ],
+       [
+        72,
+        0.0245
+       ],
+       [
+        73,
+        0.0109
+       ],
+       [
+        74,
+        0.0027
+       ],
+       [
+        75,
+        0.0
+       ],
+       [
+        76,
+        0.0027
+       ],
+       [
+        77,
+        0.0109
+       ],
+       [
+        78,
+        0.0245
+       ],
+       [
+        79,
+        0.0436
+       ],
+       [
+        80,
+        0.0683
+       ],
+       [
+        81,
+        0.0985
+       ],
+       [
+        82,
+        0.1342
+       ],
+       [
+        83,
+        0.1754
+       ],
+       [
+        84,
+        0.2218
+       ],
+       [
+        85,
+        0.2732
+       ],
+       [
+        86,
+        0.3291
+       ],
+       [
+        87,
+        0.3888
+       ],
+       [
+        88,
+        0.4516
+       ],
+       [
+        89,
+        0.5164
+       ],
+       [
+        90,
+        0.5822
+       ],
+       [
+        91,
+        0.6476
+       ],
+       [
+        92,
+        0.7112
+       ],
+       [
+        93,
+        0.7716
+       ],
+       [
+        94,
+        0.8274
+       ],
+       [
+        95,
+        0.8773
+       ],
+       [
+        96,
+        0.9199
+       ],
+       [
+        97,
+        0.9543
+       ],
+       [
+        98,
+        0.9795
+       ],
+       [
+        99,
+        0.9948
+       ],
+       [
+        100,
+        1.0
+       ]
+      ],
+      "color": "accent"
+     }
+    ],
+    "series_at": [
+     "w:timeline"
+    ],
+    "legend": false,
+    "draw_seconds": 1.6,
+    "bands": [
+     {
+      "x0": 0,
+      "x1": 25,
+      "label": "Intake",
+      "at": "w:air",
+      "row": 0
+     },
+     {
+      "x0": 25,
+      "x1": 50,
+      "label": "Compress",
+      "at": "w:compressed",
+      "row": 1
+     },
+     {
+      "x0": 50,
+      "x1": 75,
+      "label": "Power",
+      "at": "w:burn",
+      "color": "fire",
+      "row": 0
+     },
+     {
+      "x0": 75,
+      "x1": 100,
+      "label": "Exhaust",
+      "at": "w:leave",
+      "color": "exhaust",
+      "row": 1
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, lecture 9 · retrieved 2026-11-01",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_cutaway",
+   "spoken": "And at higher revs it gets even tighter. With the same numbers, at six thousand revolutions per minute a whole working cycle has only twenty milliseconds. That is five times faster than at twelve hundred. At that speed, each valve opens fifty times every second.",
+   "data": {
+    "title": "Five times faster",
+    "notes": [
+     {
+      "text": "only 20 ms",
+      "at": "w:milliseconds",
+      "side": "l",
+      "y": 880,
+      "to": [
+       540,
+       700
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      2160
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, lecture 9 · retrieved 2026-11-01",
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Two turns, four strokes, one hundred milliseconds. Understand engines: follow Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Understand",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Understand",
+    "rows": [
+     {
+      "text": "2 turns",
+      "at": "w:turns"
+     },
+     {
+      "text": "4 strokes",
+      "at": "w:strokes"
+     },
+     {
+      "text": "100 ms",
+      "at": "w:milliseconds"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Understand engines",
+     "hl": "REVLORE",
+     "at": "w:Understand"
+    },
+    "ref_rpm": 1200.0
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de" data-resolution="portrait"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>bg_flacon</title><script src="assets/vendor/gsap.min.js"></script>
+<style>*{margin:0;padding:0;box-sizing:border-box;}html,body{width:1080px;height:1920px;overflow:hidden;background:#F8F3EF;}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;}#ground{position:absolute;inset:0;background:#F8F3EF;background-image:radial-gradient(ellipse at 15% 10%,rgba(201,143,147,0.20) 0,transparent 42%),radial-gradient(ellipse at 90% 85%,rgba(201,143,147,0.22) 0,transparent 45%);}
+#art{position:absolute;inset:0;}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="16.0" data-width="1080" data-height="1920" data-fps="30">
+<div id="ground"></div><div id="art" class="clip" data-start="0" data-duration="16.0" data-track-index="1">
+<svg viewBox="0 0 1080 1920" width="1080" height="1920" style="position:absolute;inset:0">
+<defs>
+  <radialGradient id="dropfill" cx="40%" cy="55%" r="65%">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+    <stop offset="0.55" stop-color="#C98F93" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#9B5560" stop-opacity="0.45"/>
+  </radialGradient>
+  <linearGradient id="cream" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="0.6" stop-color="#F3E3DF"/>
+    <stop offset="1" stop-color="#E6C9C4"/>
+  </linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+    <stop offset="0.5" stop-color="#F1E2DE" stop-opacity="0.75"/>
+    <stop offset="1" stop-color="#E2C3BF" stop-opacity="0.8"/>
+  </linearGradient>
+  <linearGradient id="cap" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D9B8B3"/><stop offset="0.5" stop-color="#C98F93"/><stop offset="1" stop-color="#A86C73"/>
+  </linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#9B5560" flood-opacity="0.18"/></filter>
+</defs>
+  <clipPath id="fl"><rect x="0" y="260" width="380" height="640" rx="70"/><rect x="130" y="170" width="120" height="110" rx="14"/></clipPath>
+  <g id="flacon" transform="translate(800 1040)" filter="url(#shadow)">
+    <rect x="95" y="0" width="190" height="180" rx="22" fill="url(#cap)"/>
+    <rect x="130" y="170" width="120" height="110" rx="14" fill="url(#glass)"/>
+    <rect x="0" y="260" width="380" height="640" rx="70" fill="url(#glass)"/>
+    <rect x="34" y="300" width="22" height="560" rx="11" fill="#FFFFFF" opacity="0.7"/>
+    <g clip-path="url(#fl)"><rect id="sweep" x="-300" y="150" width="160" height="800" fill="#FFFFFF" opacity="0.55" transform="rotate(14)"/></g>
+  </g>
+  <g id="flacon2" transform="translate(-150 260) scale(0.55)" opacity="0.55">
+    <rect x="95" y="0" width="190" height="180" rx="22" fill="url(#cap)"/>
+    <rect x="130" y="170" width="120" height="110" rx="14" fill="url(#glass)"/>
+    <rect x="0" y="260" width="380" height="640" rx="70" fill="url(#glass)"/></g>
+</svg></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#ground",{scale:1.0,transformOrigin:"50% 50%"},{scale:1.06,duration:16.0,ease:"none"},0);
+
+tl.fromTo("#flacon",{attr:{transform:"translate(800 1040)"}},{attr:{transform:"translate(800 940)"},duration:16,ease:"sine.inOut"},0);
+tl.fromTo("#flacon2",{attr:{transform:"translate(-150 260) scale(0.55)"}},{attr:{transform:"translate(-150 310) scale(0.55)"},duration:16,ease:"sine.inOut"},0);
+for(let k=0;k<3;k++){ tl.fromTo("#sweep",{attr:{x:-300}},{attr:{x:760},duration:2.6,ease:"power1.inOut"},1.0+k*5.0); }
+
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script></body></html>

@@ -1,0 +1,32 @@
+{
+  "id": "kunden-dubletten",
+  "topic_id": "claude_workflows-testvideo-2026-11-de",
+  "language": "de",
+  "title": "Kundenliste mit Dubletten bereinigen",
+  "model": "haiku",
+  "tools": "Read,Write",
+  "probe": "31",
+  "probe_where": "rows:bereinigt.csv",
+  "same_keys": [
+    "rows",
+    "tool_errors",
+    "exit"
+  ],
+  "files": {
+    "kunden.csv": "Name;E-Mail;Ort\nGasthaus Brunner;tisch@gasthaus-brunner.at;Bad Ischl\nGruber & Söhne;Office@Gruber.at;Steyr\nEder Fahrräder;shop@eder-rad.at;Gmunden\nSophie Koller;sophie.koller@mail.at;Perg\nGruber & Söhne;office@gruber.at;Steyr\nFuchs Fotografie;studio@fuchs-foto.at;Linz\nJulia Winkler;julia.winkler@mail.at;Linz\nCafé Lindner;hallo@cafe-lindner.at;Wien\nMüller GmbH;info@mueller-bau.at;Wels\nMoser Reisen;buchung@moser-reisen.at;Salzburg\nPichler Elektro;service@pichler-elektro.at;Linz\nKern Bürobedarf;bestellung@kern-buero.at;Steyr\nBauer IT;kontakt@bauer-it.at;Linz\nBäckerei Huber;bestellung@baeckerei-huber.at;Linz\nLehner Installationen;notdienst@lehner-install.at;Enns\nGasthaus Brunner;tisch@gasthaus-brunner.at;Bad Ischl\nReiter Druck;auftrag@reiter-druck.at;Steyr\nPfeiffer Autohaus;verkauf@pfeiffer-auto.at;Ansfelden\nPichler Elektro;service@pichler-elektro.at;Linz\nHaas Kosmetik;termin@haas-kosmetik.at;Wels\nSchwarz Steuerberatung;kanzlei@schwarz-stb.at;Linz\nAnna Berger;anna.berger@mail.at;Graz\nWimmer Fliesen;wimmer@fliesen-wimmer.at;Wels\nHofer Malerei;hofer.malerei@mail.at;Traun\nCafé Lindner;hallo@cafe-lindner.at;Wien\nBauer IT;kontakt@bauer-it.at;Linz\nMayr Immobilien;office@mayr-immo.at;Linz\nWeber Gartenbau;garten@weber.at;Freistadt\nThomas Leitner;t.leitner@mail.at;Vöcklabruck\nBäckerei Huber;bestellung@baeckerei-huber.at;Linz\nMueller GmbH;info@mueller-bau.at;Wels\nAnna Berger;anna.berger@mail.at ;Graz\nPfeiffer Autohaus;verkauf@pfeiffer-auto.at;Ansfelden\nAuer Transporte;dispo@auer-transporte.at;Wels\nTischlerei Wagner;wagner@tischlerei-wagner.at;Enns\nFischer Optik;laden@fischer-optik.at;Ried\nLisa Steiner;lisa.steiner@mail.at;Leonding\nEbner Hausverwaltung;verwaltung@ebner.at;Linz\nLang Catering;events@lang-catering.at;Wels\nSchmid Schlosserei;schmid@schlosserei.at;Kirchdorf\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Vager Auftrag",
+      "permission_mode": "acceptEdits",
+      "prompt": "Entferne doppelte Kunden aus kunden.csv und speichere das Ergebnis als bereinigt.csv. Wie viele Kunden bleiben übrig?"
+    },
+    {
+      "id": "L2",
+      "title": "Genauer Auftrag",
+      "permission_mode": "acceptEdits",
+      "prompt": "Entferne doppelte Kunden aus kunden.csv und speichere das Ergebnis als bereinigt.csv. Zwei Zeilen sind derselbe Kunde, wenn die E-Mail gleich ist, ohne Unterschied zwischen Groß- und Kleinschreibung und ohne Leerzeichen am Rand. Wie viele Kunden bleiben übrig?"
+    }
+  ]
+}

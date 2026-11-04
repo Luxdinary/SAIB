@@ -1,0 +1,582 @@
+{
+  "video_id": "claude_workflows-20261109-2-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "CLAUDE.md – die Datei, die Claude Code zuerst liest",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent A: Thema 09.11. Thema 2 (G1), Reihe Grundlagen. Q1-Aufbau nach claude_workflows-20261109-3-de. Quellen am 01.11.2026 als Markdown abgerufen (memory.md, commands.md). Leitobjekt CLAUDE.md. Grundlage für die Reihe: wo die Datei liegt, wann sie lädt, /init, /memory, /context. Bewusst ohne „Kontext, keine erzwungene Konfiguration“ (Thema 09.11.-3) und ohne Längenregel (Thema 09.11.-1). Keine Terminal-Szene (Terminal-Marker ist immer rot, hier gibt es keinen Fehler).",
+  "hook": {
+    "id": "H1",
+    "note": "Frage mit höchster Bewertung; Antwort steht wörtlich auf der Memory-Seite."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Jede Sitzung startet ohne Erinnerung. Welche Datei liest Claude Code trotzdem jedes Mal?",
+      "on_screen": "Was liest Claude jedes Mal?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor mit CLAUDE.md, Tab leuchtet, Frage",
+      "why": {
+        "truth": "memory: fresh context window; reads them at the start of every session",
+        "visual": "Datei als Tab sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude Code merkt sich dein Projekt von selbst? Ohne CLAUDE.md startet jede Sitzung neu.",
+      "on_screen": "Merkt sich Claude alles?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "leeres Fenster",
+      "why": {
+        "truth": "zugespitzt: Auto Memory gibt es auch, daher nur 4"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Claude Code lädt nicht nur eine CLAUDE.md, sondern alle vom Ordner bis zur Wurzel.",
+      "on_screen": "Nicht eine, sondern alle",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Ordnerkette leuchtet",
+      "why": {
+        "clarity": "für Einsteiger zu früh"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne CLAUDE.md erklärst du Claude in jeder Sitzung dieselben Befehle neu.",
+      "on_screen": "Jedes Mal dieselben Erklärungen",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "wiederholte Chatzeilen",
+      "why": {
+        "truth": "memory: what you'd otherwise re-explain"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie slash init dir in Sekunden eine erste CLAUDE.md schreibt.",
+      "on_screen": "Erste CLAUDE.md mit /init",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Editor tippt den Entwurf",
+      "why": {
+        "truth": "Dauer „in Sekunden“ nicht belegt"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "How Claude remembers your project: each session begins with a fresh context window; Claude reads CLAUDE.md at the start of every session; locations (~/.claude/CLAUDE.md, ./CLAUDE.md or ./.claude/CLAUDE.md, ./CLAUDE.local.md); files above the working directory load at launch and are concatenated; subdirectories on demand; /init generates a starting CLAUDE.md, suggests improvements if one exists; /context lists Memory files",
+      "url": "https://code.claude.com/docs/en/memory",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Memory"
+    },
+    {
+      "id": "S2",
+      "title": "Commands: /init (Initialize project with a CLAUDE.md guide); /memory (Edit CLAUDE.md files); /context; First session in a repo: /init, then /memory to refine it",
+      "url": "https://code.claude.com/docs/en/commands",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Commands"
+    }
+  ],
+  "unverified": [
+    "Wie lange /init braucht und wie der Entwurf im Einzelnen aussieht: nicht geprüft; die Editor-Zeilen sind Beispielwerte nach den Beispielen der Memory-Seite.",
+    "Wie /context die Liste Memory files genau darstellt: nicht geprüft, im Abschluss nur als animierte Zeile angedeutet.",
+    "Auto Memory (MEMORY.md) und AGENTS.md: bewusst nicht behandelt."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "CLAUDE.md",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "CLAUDE.md: noch leer",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Sitzung: frischer Kontext",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "Ort: wählen",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "/init: Entwurf",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Team oder nur du",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "/memory: verfeinert",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "Memory files: geladen",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Jede Sitzung von Claude Code startet mit frischem Kontext. Die CLAUDE.md liest Claude zu Beginn jeder Sitzung: persönlich im Home-Ordner, fürs Team im Projekt, nur für dich als CLAUDE.local.md. Slash init schreibt einen ersten Entwurf aus deiner Codebasis, slash memory öffnet die Dateien, slash context zeigt, was geladen ist.",
+    "companion_text": "Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk. Grundlage: Claude-Code-Dokumentation (Memory, Commands), abgerufen am 01.11.2026. Editor und Terminal sind eine animierte Darstellung, keine Bildschirmaufnahme. Grenzen laut Doku: CLAUDE.md-Dateien in Unterordnern laden erst, wenn Claude dort Dateien liest oder bearbeitet; eine CLAUDE.md ist Kontext für Claude, keine erzwungene Regel.",
+    "hashtags": [
+      "claudecode",
+      "claudemd",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "CLAUDE.md Grundlagen"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Jede Sitzung startet ohne Erinnerung. Welche Datei liest Claude Code trotzdem jedes Mal?",
+      "data": {
+        "question": "Was liest Claude jedes Mal?",
+        "chip": "neue Sitzung",
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          }
+        ],
+        "file": "CLAUDE.md",
+        "lines": [
+          [
+            [
+              "com",
+              "# Befehle"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Tests: "
+            ],
+            [
+              "str",
+              "npm test"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# Konventionen"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "2 Leerzeichen einrücken"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Handler: src/api/handlers/"
+            ]
+          ]
+        ],
+        "focus_line": 1,
+        "zoom": 1.08,
+        "chip_word": "startet",
+        "mark_word": "Erinnerung",
+        "question_word": "Welche",
+        "env_word": "Datei",
+        "click_word": "jedes"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Sitzung"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Laut Dokumentation beginnt jede Sitzung mit einem frischen Kontextfenster. Was bleiben soll, schreibst du in die CLAUDE.md. Die liest Claude zu Beginn jeder Sitzung.",
+      "data": {
+        "kicker": "Claude Code Docs · Memory",
+        "page_title": "How Claude remembers your project",
+        "quotes": [
+          "Each Claude Code session begins with a fresh context window.",
+          "Claude reads them at the start of every session."
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Frischer Kontext, CLAUDE.md wird gelesen",
+        "page_word": "Dokumentation",
+        "quote1_word": "frischen",
+        "translation_word": "bleiben",
+        "quote2_word": "liest"
+      },
+      "overlay": {
+        "title": "Jede Sitzung neu",
+        "marker_at": "w:frischen",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Sie kann an mehreren Orten liegen: deine persönliche im Home-Ordner, die Projektdatei im Repo, CLAUDE.local.md nur für dich. Claude Code lädt alle beim Start und hängt sie aneinander.",
+      "data": {
+        "headline": "",
+        "gate": 1,
+        "chip": "fürs ganze Team",
+        "nodes": [
+          {
+            "label": "~/.claude/CLAUDE.md",
+            "tag": "du"
+          },
+          {
+            "label": "./CLAUDE.md",
+            "hook": true
+          },
+          {
+            "label": "./CLAUDE.local.md",
+            "tag": "nur lokal"
+          },
+          {
+            "label": "Unterordner",
+            "tag": "bei Bedarf"
+          }
+        ],
+        "travel_word": "persönliche",
+        "gate_word": "Projektdatei",
+        "travel_end_word": "aneinander"
+      },
+      "overlay": {
+        "title": "Wo sie liegt",
+        "marker_at": "w:Orten",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Für den Anfang tippst du slash init. Claude analysiert deine Codebasis und schreibt einen Entwurf mit Build-Befehlen, Testanweisungen und Konventionen. Gibt es schon eine Datei, schlägt es Verbesserungen vor.",
+      "data": {
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          }
+        ],
+        "lines": [
+          [
+            [
+              "com",
+              "# Build"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "str",
+              "npm run build"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# Tests"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Vor jedem Commit: "
+            ],
+            [
+              "str",
+              "npm test"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# Konventionen"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "2 Leerzeichen einrücken"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Handler in src/api/handlers/"
+            ]
+          ]
+        ],
+        "focus_line": 3,
+        "pre_line": 1,
+        "line_h": 56,
+        "zoom": 1.08,
+        "callout": "Entwurf von /init",
+        "callout_num": "1",
+        "typed_word": "Codebasis",
+        "pre_word": "Build",
+        "mark_word": "Testanweisungen",
+        "click_word": "Konventionen",
+        "callout_word": "Verbesserungen"
+      },
+      "overlay": {
+        "title": "Erster Entwurf",
+        "example": true,
+        "marker_at": "w:init",
+        "dim_at": "w:Konventionen",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Der Unterschied: Die CLAUDE.md im Projekt teilst du über die Versionsverwaltung mit deinem Team. Persönliches gehört in die CLAUDE.local.md, und die trägst du in die .gitignore ein.",
+      "data": {
+        "top": {
+          "title": "CLAUDE.md",
+          "verdict": "Team",
+          "rows": [
+            "geteilt übers Repo",
+            "Befehle, Konventionen"
+          ]
+        },
+        "bottom": {
+          "title": "CLAUDE.local.md",
+          "verdict": "nur du",
+          "rows": [
+            "steht in .gitignore",
+            "eigene Vorlieben"
+          ]
+        },
+        "top_word": "Projekt",
+        "bottom_word": "Persönliches"
+      },
+      "overlay": {
+        "title": "Team oder nur du",
+        "marker": "auslegung",
+        "marker_at": "w:Unterschied",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "spoken": "So startest du: slash init für den Entwurf, slash memory zum Bearbeiten, und mit slash context prüfst du, ob die Datei unter Memory files geladen ist.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Entwurf erzeugen",
+            "code": "/init",
+            "at_word": "init"
+          },
+          {
+            "title": "Datei bearbeiten",
+            "code": "/memory",
+            "at_word": "memory"
+          },
+          {
+            "title": "Geladen? Prüfen",
+            "code": "/context · Memory files",
+            "at_word": "context"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "In drei Schritten",
+        "marker": "fakt",
+        "marker_at": "w:startest",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Was Claude jedes Mal wissen soll, steht in der CLAUDE.md. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "CLAUDE.md: geladen",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/context"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Memory files · CLAUDE.md"
+          }
+        ],
+        "statement": "Was Claude jedes Mal wissen soll: CLAUDE.md.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Was",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

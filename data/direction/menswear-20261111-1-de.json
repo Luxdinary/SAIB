@@ -1,0 +1,583 @@
+{
+ "video_id": "menswear-20261111-1-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Sakko: Warum die Schulter zuerst passen muss",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema D02 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Schulter 'schwer, teuer, nicht empfohlen', nie 'unmöglich'. Keine Zeichnung für überstehende oder zu enge Schulter: Fehler als rote Ringe an Schulter und Ärmel.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Sakko, Anprobe",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Schulter: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "schwer zu ändern",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "Naht: Schulterlinie",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "zu weit, zu eng",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "sonst: andere Größe",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Schulter zuerst",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Schulter: passt",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Warum prüfst du beim Sakko zuerst die Schulter? Sie ist laut T.M. Lewin am schwersten zu ändern. Wo die Naht sitzt (Suitsupply) und was tun, wenn sie nicht passt (Proper Cloth).",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "sakko",
+   "passform",
+   "anprobe",
+   "anzug"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://suitsupply.com/en-us/journal/how-it-should-fit-jacket.html",
+   "title": "Suitsupply, How it should fit: Schulternaht auf der natürlichen Schulterlinie ohne Überstand; zu weit rutscht die Naht ab, zu eng gibt Spannung, Falten, wenig Bewegung",
+   "checked_at": "2026-11-01",
+   "label": "Suitsupply, Jacket Fit"
+  },
+  {
+   "id": "S2",
+   "url": "https://tmlewin.co.uk/blogs/the-fitting-room/how-a-suit-should-fit",
+   "title": "T.M. Lewin, How a suit should fit: Schultern am schwersten und deshalb am teuersten zu ändern, zuerst nach den Schultern wählen",
+   "checked_at": "2026-11-01",
+   "label": "T.M. Lewin, Fitting Room"
+  },
+  {
+   "id": "S3",
+   "url": "https://propercloth.com/reference/how-much-can-alter-a-jacket-how-much-can-a-tailor-do/",
+   "title": "Proper Cloth, How much can a tailor alter a jacket: Schulterbreite ändern nicht empfohlen, besser andere Grundgröße oder Neuanfertigung",
+   "checked_at": "2026-11-01",
+   "label": "Proper Cloth, Reference"
+  }
+ ],
+ "unverified": [
+  "Welche anderen Stellen ein Schneider leicht ändern kann (Ärmel, Länge): in den Quellen nicht einzeln belegt, nicht im Video.",
+  "'Unmöglich zu ändern': nicht belegt, Quellen sagen schwer, teuer, nicht empfohlen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was prüfst du zuerst?",
+   "on_screen": "Was prüfst du zuerst?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Erst Länge und Ärmel? Erst die Schulter.",
+   "on_screen": "Erst Länge und Ärmel? Erst die Schulter.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Die teuerste Änderung am Sakko",
+   "on_screen": "Die teuerste Änderung am Sakko",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Die Schulter ist am schwersten zu ändern",
+   "on_screen": "Die Schulter ist am schwersten zu ändern",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Hier entscheidet sich die Größe",
+   "on_screen": "Hier entscheidet sich die Größe",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "visual": "Sakko, Lupe auf der Schulter",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage nach der Reihenfolge der Anprobe, Antwort: die Schulter."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Du probierst ein Sakko an. Worauf achtest du zuerst? Nicht auf die Ärmel, nicht auf die Länge. Zuerst auf die Schulter.",
+   "data": {
+    "question": "Was prüfst du zuerst?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ]
+    },
+    "target": "shoulder",
+    "badge": "?",
+    "question_at": 0.3,
+    "hold_end": true,
+    "badge_at": "w:Worauf",
+    "loupe_at": "w:zuerst",
+    "nie_at": "w:zuerst#2",
+    "cut_at": "w:Länge"
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 10,
+   "spoken": "Der Grund steht beim britischen Herrenausstatter T.M. Lewin: Von allen Stellen am Sakko ist die Schulter am schwersten zu ändern. Und deshalb ist sie auch am teuersten.",
+   "data": {
+    "headline": "Die schwierigste Stelle",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": 0.0,
+      "tags": [
+       {
+        "spot": "shoulder",
+        "text": "am schwersten",
+        "sub": "zu ändern",
+        "tone": "never",
+        "at": "w:schwersten"
+       },
+       {
+        "spot": "shoulder",
+        "text": "am teuersten",
+        "sub": "deshalb",
+        "tone": "never",
+        "at": "w:teuersten"
+       }
+      ],
+      "focus_at": "w:deshalb"
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:tm"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 13,
+   "spoken": "Wo genau gehört die Naht hin? Suitsupply beschreibt es so: Die Schulternaht sitzt auf deiner natürlichen Schulterlinie, ohne Überstand. Zieh das Sakko in Gedanken aus: Wo deine Schulter endet, gehört die Naht hin.",
+   "data": {
+    "headline": "Wo sitzt die Naht?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ]
+    },
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ]
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "none",
+     "tie_tip": 520
+    },
+    "target": "shoulder",
+    "zoom": 1.5,
+    "label": "Naht auf der Schulterlinie",
+    "strain": false,
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Naht",
+    "zoom_at": "w:Suitsupply",
+    "flip_at": "w:Zieh",
+    "label_at": "w:endet"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Suitsupply"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Sieh dir zwei Fehler an. Links ist die Schulter zu weit: Die Naht rutscht über die Schulter hinaus nach unten. Rechts ist sie zu eng: Der Stoff spannt, es entstehen Falten, und du bewegst dich schwerer.",
+   "data": {
+    "headline": "Zu weit oder zu eng?",
+    "left": {
+     "title": "Zu weit",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ]
+     },
+     "target": "shoulder",
+     "tag": "Naht rutscht nach unten",
+     "pulses": [
+      {
+       "target": "shoulder",
+       "at": "w:Naht",
+       "tone": "red"
+      }
+     ]
+    },
+    "right": {
+     "title": "Zu eng",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ]
+     },
+     "target": "shoulder",
+     "tag": "spannt, wirft Falten",
+     "pulses": [
+      {
+       "target": "shoulder",
+       "at": "w:Stoff",
+       "tone": "red"
+      },
+      {
+       "target": "sleeve",
+       "at": "w:bewegst",
+       "tone": "red"
+      }
+     ]
+    },
+    "left_at": "w:Links",
+    "left_tag_at": "w:rutscht",
+    "right_at": "w:Rechts",
+    "right_tag_at": "w:spannt",
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Links"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 11,
+   "spoken": "Und wenn die Schulter nicht passt? Proper Cloth, ein Hersteller von Maßkleidung, rät davon ab, die Schulterbreite ändern zu lassen. Besser ist eine andere Grundgröße oder eine Neuanfertigung.",
+   "data": {
+    "headline": "Ändern lassen?",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": 0.0,
+      "tags": [
+       {
+        "spot": "shoulder",
+        "text": "nicht ändern",
+        "sub": "rät Proper Cloth",
+        "tone": "never",
+        "at": "w:rät"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": "w:Besser",
+      "tags": [
+       {
+        "spot": "shoulder",
+        "text": "andere Größe",
+        "sub": "neue Grundgröße",
+        "tone": "always",
+        "at": "w:andere"
+       },
+       {
+        "spot": "shoulder",
+        "text": "Neuanfertigung",
+        "sub": "nach Maß",
+        "tone": "always",
+        "at": "w:oder"
+       }
+      ]
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 12,
+   "spoken": "Kurz gesagt: Prüf beim Anprobieren zuerst die Schulter. Die Naht liegt auf deiner Schulterlinie, ohne Überstand und ohne Spannung. Passt sie nicht, nimm eine andere Größe statt einer Änderung.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Zuerst: die Schulter",
+      "sub": "beim Anprobieren",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": "w:Prüf",
+      "ring": "shoulder",
+      "ring_at": "w:Schulter"
+     },
+     {
+      "title": "Naht auf der Schulterlinie",
+      "sub": "ohne Überstand, ohne Spannung",
+      "object": {
+       "kind": "torso",
+       "hold": "none",
+       "tie_tip": 520
+      },
+      "at": "w:Naht",
+      "then": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "then_at": "w:liegt",
+      "ring": "shoulder",
+      "ring_at": "w:Überstand"
+     },
+     {
+      "title": "Passt nicht: tauschen",
+      "sub": "andere Größe statt Änderung",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ]
+      },
+      "at": "w:Passt",
+      "ring": "shoulder",
+      "ring_at": "w:Größe"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2",
+    "S1",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Erst die Schulter, dann der Rest. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "torso",
+     "hold": "none",
+     "tie_tip": 520
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ]
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "shoulder",
+    "fix_at": "w:Erst",
+    "ring_at": "w:Schulter",
+    "statement_at": "w:dann",
+    "chip_at": "w:Blick",
+    "statement": "Erst die Schulter.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

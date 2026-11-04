@@ -1,0 +1,560 @@
+{
+  "video_id": "military_history-20261110-2-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "H4: Die Uhr, die den Längengrad fand",
+  "notes": "Woche 1, Reihe Karte, Zeit und Kurs. Navigationstechnik ohne Kampfbezug; Harrison nur als Name.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.rmg.co.uk/stories/topics/harrisons-clocks-longitude-problem",
+      "title": "Longitude found: the story of Harrison's timekeepers, Royal Museums Greenwich",
+      "label": "Royal Museums Greenwich",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.lindahall.org/john-harrison/",
+      "title": "Scientist of the Day – John Harrison, Linda Hall Library",
+      "label": "Linda Hall Library",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.rmg.co.uk/sites/default/files/import/media/pdf/H4.pdf",
+      "title": "Board of Longitude Explorers: H4 (ZAA0037), Royal Museums Greenwich",
+      "label": "RMG: Objektblatt H4",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Ob H4 den Preis verdient hätte, bewerten die Quellen unterschiedlich; im Video nur: offizieller Preis nie vergeben."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie findet ein Schiff 1761 seinen Längengrad, mitten auf dem Ozean?",
+      "on_screen": "Wo genau ist das Schiff?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Für den Längengrad braucht man Sterne? Harrison brauchte eine genaue Uhr.",
+      "on_screen": "Eine Uhr statt der Sterne",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Nach zwei Monaten auf See ging H4 nur fünf Sekunden nach.",
+      "on_screen": "5 Sekunden in 2 Monaten",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne genaue Zeit kennt ein Schiff seine Position nicht.",
+      "on_screen": "Ohne Zeit kein Ort",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie eine Taschenuhr fünfmal pro Sekunde tickt.",
+      "on_screen": "Fünf Schläge pro Sekunde",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie findet ein Schiff 1761 seinen Längengrad, mitten auf dem Ozean?",
+      "data": {
+        "question": "Wo genau ist das Schiff, mitten auf dem Ozean?",
+        "question_em": "Wo genau",
+        "card_title": "H4",
+        "card_meta": "GREENWICH · 1759",
+        "card_no": "AKTE 19",
+        "stamp": "1761",
+        "drawing": "h4_watch.svg",
+        "packet_label": "Uhr",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:1761",
+        "packet_at": "w:Schiff",
+        "em_at": "w:Ozean"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Das Längengrad-Gesetz von 1714 setzt einen Preis aus: 20.000 Pfund für eine Genauigkeit von 30 Seemeilen. Wer die genaue Zeit kennt, kennt die Länge.",
+      "data": {
+        "mode": "map",
+        "headline": "Ein Preis für die Länge",
+        "places": [
+          {
+            "label": "London",
+            "code": "Gesetz 1714",
+            "x": 600,
+            "y": 80,
+            "at": "w:1714"
+          },
+          {
+            "label": "Ozean",
+            "code": "Position?",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Genauigkeit"
+          }
+        ],
+        "route_at": "w:Preis",
+        "route_label": "20.000 Pfund",
+        "route_label_at": "w:20.000",
+        "wait_at": "w:Zeit",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Ziel: 30 Seemeilen",
+        "chip_at": "w:Seemeilen",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Uhr",
+        "packet_at": "w:Längengrad-Gesetz",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Zeit = Länge",
+        "line_label_at": "w:Länge#2",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Taschenuhr",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "John Harrison, gelernter Zimmermann, baut nach drei großen Uhren die H4: eine Taschenuhr, die fünfmal pro Sekunde tickt. Fertig ist sie 1759.",
+      "data": {
+        "headline": "Eine Uhr für die Tasche",
+        "drawing": "h4_watch.svg",
+        "sheet_title": "BLATT 2 · H4",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Nach H1, H2, H3",
+            "x": 100,
+            "y": 420,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:drei"
+          },
+          {
+            "label": "Taschenuhr H4",
+            "x": 230,
+            "y": 330,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Taschenuhr"
+          },
+          {
+            "label": "5 Schläge pro Sekunde",
+            "x": 320,
+            "y": 380,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:fünfmal"
+          },
+          {
+            "label": "Fertig 1759",
+            "x": 230,
+            "y": 100,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:1759"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 330,
+          "scale": 1.12,
+          "at": "w:Taschenuhr",
+          "back_at": "w:1759",
+          "grow": "up"
+        },
+        "headline_lines": 2,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Die Probe: Auf der Fahrt nach Jamaika 1761 geht H4 nach zwei Monaten nur fünf Sekunden nach, etwa zwei Meilen Fehler. 1764, nach Barbados, sind es zehn Meilen.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Zwei Proben auf See",
+        "left": {
+          "tag": "1761",
+          "title": "Jamaika",
+          "at": "w:Jamaika",
+          "rows": [
+            {
+              "text": "5 s in 2 Monaten",
+              "at": "w:Sekunden"
+            },
+            {
+              "text": "≈ 2 Meilen Fehler",
+              "at": "w:Fehler"
+            }
+          ]
+        },
+        "right": {
+          "tag": "1764",
+          "title": "Barbados",
+          "at": "w:Barbados",
+          "rows": [
+            {
+              "text": "10 Meilen Fehler",
+              "at": "w:zehn"
+            }
+          ]
+        },
+        "verdict": "Innerhalb der Grenzen von 1714",
+        "verdict_at": "w:Meilen#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Das Geld kommt in Raten: 10.000 Pfund, dazu Vorschüsse, und 1773 weitere 8.750 Pfund vom Parlament. Den offiziellen Preis bekommt Harrison nie.",
+      "data": {
+        "headline": "Geld in Raten",
+        "nodes": [
+          {
+            "label": "10.000 £",
+            "code": "Zahlung",
+            "at": "w:10.000"
+          },
+          {
+            "label": "Vorschüsse",
+            "code": "£4,315",
+            "at": "w:Vorschüsse"
+          },
+          {
+            "label": "Parlament 1773",
+            "code": "£8,750",
+            "at": "w:8.750"
+          },
+          {
+            "label": "Offizieller Preis",
+            "code": "nie vergeben",
+            "at": "w:nie"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Uhr",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1714 das Gesetz, 1759 die fertige H4, 1761 der Beweis auf See.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1714 bis 1761",
+        "items": [
+          {
+            "year": "1714",
+            "title": "Längengrad-Gesetz",
+            "sub": "Preis 20.000 Pfund",
+            "at": "w:1714"
+          },
+          {
+            "year": "1759",
+            "title": "H4 fertig",
+            "sub": "5 Schläge pro Sekunde",
+            "at": "w:1759"
+          },
+          {
+            "year": "1761",
+            "title": "Fahrt nach Jamaika",
+            "sub": "5 Sekunden in 2 Monaten",
+            "at": "w:1761"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Die Originale von H2, H3 und H4 stehen heute im Royal Observatory in Greenwich. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "H4",
+        "card_meta": "GREENWICH",
+        "card_no": "AKTE 19",
+        "stamp": "1761",
+        "drawing": "h4_watch.svg",
+        "statement": "Die Uhr, die den Längengrad fand",
+        "statement_at": "w:H4",
+        "stamp_at": "w:Observatory",
+        "note": "Royal Observatory, Greenwich",
+        "note_at": "w:Greenwich",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Uhr",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Position: unbekannt",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Preis: ausgeschrieben",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b3",
+          "text": "H4: fertig 1759",
+          "tone": "amber",
+          "offset": 10.5
+        },
+        {
+          "beat": "b4",
+          "text": "Test: Jamaika",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b5",
+          "text": "Preis: nie vergeben",
+          "tone": "muted",
+          "offset": 10.5
+        },
+        {
+          "beat": "b6",
+          "text": "Beweis: 1761",
+          "tone": "muted",
+          "offset": 3.7
+        },
+        {
+          "beat": "b7",
+          "text": "H4: in Greenwich",
+          "tone": "muted",
+          "offset": 6.6
+        }
+      ]
+    },
+    "description": "Das Längengradproblem: Auf der Fahrt nach Jamaika 1761 ging Harrisons H4 nach zwei Monaten nur fünf Sekunden nach. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "navigation",
+      "längengrad",
+      "uhr",
+      "geschichte",
+      "seefahrt"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

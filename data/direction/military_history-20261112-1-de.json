@@ -1,0 +1,566 @@
+{
+  "video_id": "military_history-20261112-1-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Die Cassini-Karte: Frankreich in Dreiecken vermessen",
+  "notes": "Woche 1, Reihe Karte, Zeit und Kurs. Quellen nennen keine militärische Nutzung; keine solche Behauptung im Skript.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.ign.fr/files/default/2024-11/CP-BnF-Gallica-IGN-Carte-Cassini.pdf",
+      "title": "Une nouvelle version interactive de la carte de Cassini, Pressemitteilung BnF und IGN, 28.11.2024",
+      "label": "BnF/IGN 2024",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://rmg.co.uk/collections/objects/rmgc-object-1116604",
+      "title": "Tableau d'Assemblage: Carte des grands triangles, PBH8042(178), Royal Museums Greenwich",
+      "label": "RMG: Dreiecksnetz",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.paris.fr/evenements/la-carte-de-france-de-cassini-une-encyclopedie-du-territoire-118002",
+      "title": "La carte de France de Cassini, une encyclopédie du territoire, Ville de Paris 2026",
+      "label": "Ville de Paris",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Blattzahl 180 (BnF/IGN) oder 181 (Ville de Paris); im Video keine Blattzahl.",
+    "Zahl der Dreiecke in keiner Quelle; nicht genannt."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie vermisst man ein ganzes Königreich, ohne Satelliten und ohne Flugzeug?",
+      "on_screen": "Ein Königreich vermessen?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Alte Karten waren Schätzungen? Diese beruhte auf einem Netz aus Dreiecken.",
+      "on_screen": "Geschätzt oder gemessen?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Zusammengesetzt ist diese Karte elf Meter breit.",
+      "on_screen": "Eine Karte, 11 Meter breit",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne genaue Karte keine Planung.",
+      "on_screen": "Planen ohne Karte?",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 3,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "",
+      "why": {
+        "truth": "nicht belegt, nicht wählbar"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie aus Kirchtürmen ein Dreiecksnetz wird.",
+      "on_screen": "Kirchtürme als Messpunkte",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie vermisst man ein ganzes Königreich, ohne Satelliten und ohne Flugzeug?",
+      "data": {
+        "question": "Ein Königreich vermessen, ganz ohne Flugzeug?",
+        "question_em": "ohne Flugzeug",
+        "card_title": "Carte de Cassini",
+        "card_meta": "FRANKREICH · 1756–1815",
+        "card_no": "AKTE 14",
+        "stamp": "1:86400",
+        "drawing": "cassini_triangles.svg",
+        "packet_label": "Kartenblatt",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Königreich",
+        "packet_at": "w:Satelliten",
+        "em_at": "w:Flugzeug"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Die Pariser Akademie der Wissenschaften entsteht 1666, die Sternwarte 1667. Ein Jahr später, 1668, beginnen die ersten Messungen, und daraus wird ein Projekt für über hundert Jahre.",
+      "data": {
+        "mode": "map",
+        "headline": "Ein Projekt aus Paris",
+        "places": [
+          {
+            "label": "Paris",
+            "code": "seit 1667",
+            "x": 600,
+            "y": 80,
+            "at": "w:Sternwarte"
+          },
+          {
+            "label": "Königreich",
+            "code": "zu vermessen",
+            "x": 190,
+            "y": 500,
+            "rx": 175,
+            "ry": 100,
+            "at": "w:Messungen"
+          }
+        ],
+        "route_at": "w:1667",
+        "route_label": "erste Messungen",
+        "route_label_at": "w:1668",
+        "wait_at": "w:Projekt",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Akademie seit 1666",
+        "chip_at": "w:1666",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Kartenblatt",
+        "packet_at": "w:Akademie",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "über 100 Jahre",
+        "line_label_at": "w:hundert",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S3",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Netz",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Das Prinzip heißt Triangulation. Feste Punkte wie Türme, Kirchtürme und Hügel werden zu Dreiecken verbunden. Aus gemessenen Winkeln ergibt sich ein Netz über das ganze Land.",
+      "data": {
+        "headline": "Triangulation",
+        "drawing": "cassini_triangles.svg",
+        "sheet_title": "BLATT 2 · DREIECKSNETZ",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Kirchturm",
+            "x": 230,
+            "y": 40,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Kirchtürme"
+          },
+          {
+            "label": "Hügel",
+            "x": 320,
+            "y": 290,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Hügel"
+          },
+          {
+            "label": "Dreieck",
+            "x": 250,
+            "y": 400,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Dreiecken"
+          },
+          {
+            "label": "Netz über das Land",
+            "x": 420,
+            "y": 440,
+            "lx": 500,
+            "ly": 400,
+            "at": "w:Netz"
+          }
+        ],
+        "zoom": {
+          "x": 250,
+          "y": 300,
+          "scale": 1.12,
+          "at": "w:Winkeln",
+          "back_at": "w:Land",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Das Übersichtsblatt zeigt das Netz der großen Dreiecke. Die Karte selbst hat den Maßstab 1 zu 86.400 und ist in viele Blätter geteilt, jedes zum Falten in 21 Felder.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Netz und Karte",
+        "left": {
+          "tag": "Übersicht",
+          "title": "Große Dreiecke",
+          "at": "w:Übersichtsblatt",
+          "rows": [
+            {
+              "text": "Netz als Grundlage",
+              "at": "w:Netz"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Karte",
+          "title": "1:86.400",
+          "at": "w:Maßstab",
+          "rows": [
+            {
+              "text": "viele Blätter",
+              "at": "w:Blätter"
+            },
+            {
+              "text": "je 21 Faltfelder",
+              "at": "w:21"
+            }
+          ]
+        },
+        "verdict": "Gemessen, nicht geschätzt",
+        "verdict_at": "w:Falten",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Vier Generationen der Familie Cassini arbeiten daran. Zusammengesetzt misst die Karte rund elf Meter in der Breite und zwölf Meter in der Höhe.",
+      "data": {
+        "headline": "Vier Generationen",
+        "nodes": [
+          {
+            "label": "Cassini I",
+            "code": "Generation 1",
+            "at": "w:Vier"
+          },
+          {
+            "label": "Cassini II",
+            "code": "Generation 2",
+            "at": "w:Generationen"
+          },
+          {
+            "label": "Cassini III",
+            "code": "Generation 3",
+            "at": "w:Familie"
+          },
+          {
+            "label": "Cassini IV",
+            "code": "Generation 4",
+            "at": "w:arbeiten"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Kartenblatt",
+        "total": {
+          "to": 11,
+          "pre": "rund",
+          "label": "METER BREIT",
+          "at": "w:elf"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1668 die ersten Messungen, 1790 dient die Karte als Grundlage für die neuen Départements, und 1815 ist sie fertig.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1668 bis 1815",
+        "items": [
+          {
+            "year": "1668",
+            "title": "Erste Messungen",
+            "sub": "Abbé Picard",
+            "at": "w:1668"
+          },
+          {
+            "year": "1790",
+            "title": "Départements",
+            "sub": "Karte als Grundlage",
+            "at": "w:1790"
+          },
+          {
+            "year": "1815",
+            "title": "Karte fertig",
+            "sub": "erste Karte des ganzen Reichs",
+            "at": "w:1815",
+            "sub_at": "w:fertig"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Heute ist die Karte digitalisiert. Auf dem Géoportail lässt sie sich über heutige Karten legen, und die Archives nationales in Paris zeigen sie in einer Ausstellung. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Carte de Cassini",
+        "card_meta": "HEUTE",
+        "card_no": "AKTE 14",
+        "stamp": "Online",
+        "drawing": "cassini_triangles.svg",
+        "statement": "Die Dreiecke von damals liegen heute über dem Luftbild",
+        "statement_at": "w:Géoportail",
+        "stamp_at": "w:digitalisiert",
+        "note": "Ausstellung Archives nationales, Paris",
+        "note_at": "w:Ausstellung",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Kartenblatt",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Blatt: leer",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b2",
+          "text": "Messung: ab 1668",
+          "tone": "amber",
+          "offset": 6.6
+        },
+        {
+          "beat": "b3",
+          "text": "Netz: Dreiecke",
+          "tone": "amber",
+          "offset": 6.6
+        },
+        {
+          "beat": "b4",
+          "text": "Maßstab: 1:86.400",
+          "tone": "amber",
+          "offset": 8.1
+        },
+        {
+          "beat": "b5",
+          "text": "Generationen: 4",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b6",
+          "text": "Karte: bis 1815",
+          "tone": "muted",
+          "offset": 7.6
+        },
+        {
+          "beat": "b7",
+          "text": "Karte: online",
+          "tone": "muted",
+          "offset": 3.7
+        }
+      ]
+    },
+    "description": "Die Cassini-Karte: Frankreich, vermessen über ein Netz aus Dreiecken zwischen Kirchtürmen und Hügeln, im Maßstab 1:86.400. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "kartografie",
+      "vermessung",
+      "geschichte",
+      "frankreich",
+      "cassini"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

@@ -1,0 +1,98 @@
+id: military_history
+name: Frontlore
+niche: military technology and history (historical, publicly documented only)
+style: documentary_tech
+brand_version: "0.9"             # Frontlore Vorlage, Claude Code only, 2026-10-30; 1.0 only after Stefan's approval
+template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Frontlore\Vorlage Frontlore.md'
+phase: 5
+enabled: false
+languages:
+- de
+- en
+primary_language: de
+risk_default: high
+rules:
+- historical and technical only; no tactics, no weapon handling or construction, no
+  current conflicts
+- nothing from Stefan's service, no uniform, no unit references
+- realistic AI scenes of real events require Art. 50 disclosure at the start; prefer
+  stylized visuals
+- no graphic violence (not ad-eligible on YouTube; FYF-ineligible on TikTok)
+palette:
+  bg: '#29352D'          # config/brands.yaml, olive ground
+  surface: '#38433C'     # drafting sheet, cards
+  accent: '#A9B29F'      # lines, markers, progress, caption highlight (5.8:1 on bg)
+  text: '#E6E9E5'        # 10.5:1 on bg
+  muted: '#B0B7AC'       # was #919892 (3.5:1 on surface); now 5.0:1 on surface, 6.2:1 on bg for 26-30 px mono labels
+  hairline: 'rgba(230,233,229,0.10)'
+  paper: '#E9E4D4'       # archive card, the only light surface (ink 12.2:1)
+  paper_ink: '#1F2620'
+  stamp: '#2B4257'       # archive stamp, ink blue on paper only (8.2:1); was rust red #A8452F, but red now means risk only (explainer)
+  signal_amber: '#D9B45A'   # status bar: underway / open
+  signal_red: '#C46A50'     # status bar: stopped (rare)
+  signal_green: '#7DBE8A'   # reached state only (5.9:1 on bg); the shared status bar has no green tone yet
+  on_signal: '#1F2620'
+  scheme: dark
+fonts:
+  display:
+    family: Oswald
+    weight: 500
+    file: assets/fonts/oswald/Oswald[wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/oswald/OFL.txt
+  body:
+    family: Inter
+    weight: 400
+    file: assets/fonts/inter/Inter[opsz,wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/inter/OFL.txt
+  mono:
+    family: JetBrains Mono
+    weight: 500
+    file: assets/fonts/jetbrainsmono/JetBrainsMono[wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/jetbrainsmono/OFL.txt
+logo:
+  file: brands/military_history/assets/logo/frontlore-mark.svg     # own work, draft for Stefan
+  wordmark_text: FRONTLORE
+  logo_height_px: 36
+motif: archive-card
+tempo: measured
+bg_pattern: map-contours
+flat: true                        # no glow, no light cone, camera at most 2 %; the paper card is the only light surface
+scenes: brands/military_history/frontlore_scenes.py   # Frontlore variants of the scene types (fn.render.brand_scenes)
+explainer:                         # Schnitt- und Layout-Vorlage (Stefan, 30.10.2026), Hochformat; fn.render.explainer
+  enabled: true
+  voice_tag: {de: "SYNTHETISCHE STIMME", en: "SYNTHETIC VOICE"}
+  opening: {de: "Synthetische Stimme · Quellen am Bildschirm · Stilisierte Darstellung, keine Originalaufnahmen", en: "Synthetic voice · Sources on screen · Stylized drawings, no original footage"}
+  opening_seconds: 3.5
+  source_y: 1112                   # same layout as Scutoria: zone ends 1100, captions from ~1250, status bar 1440, platform text below 1600
+  colors:                          # fixed meaning; shapes and words always beside the colour
+    fakt: "#A9B29F"                # = accent, the active process (5.8:1 on bg)
+    auslegung: "#B49CE6"           # violet, interpretation only (5.4:1)
+    unsicher: "#D9B45A"            # = signal_amber, open / uncertain (6.5:1)
+    luecke: "#D9775C"              # red, risk / gap only (4.1:1 on bg, 3.3:1 on surface; signal_red was 2.7:1 on surface)
+    beispiel: "#98A196"            # invented example values (4.8:1)
+production:
+  closing_sentence:
+    de: "Historische Technik, sachlich erklärt: Folge Frontlore."
+    en: "Historical technology, plainly explained: follow Frontlore."
+  domain: null            # no website for Frontlore yet
+  ai_note:                # Prüfrunde R3: the graphics are code, not generated images
+    de: "Stimme KI-generiert (Gemini), Bilder und Clips KI-generiert (Higgsfield) als Rekonstruktion, Grafik aus Code animiert, keine Originalaufnahmen."
+    en: "AI-generated voice (Gemini), AI-generated reconstruction images and clips (Higgsfield), graphics animated in code, no original footage."
+layout: shared 9:16 layout, see docs/design-system.md and docs/direction-system.md
+audience: history and technology viewers; strictly historical and publicly documented
+tone: measured, factual, respectful; no glorification
+address: du
+claim:
+  de: Historische Technik, sachlich erklärt.
+  en: Historical technology, plainly explained.
+ai_label:
+  de: KI-generiert
+  en: AI-generated
+sound:                             # Tonebene (docs/direction-system.md 6i); Testvideo Fackeltelegraf, freigegeben 03.11.2026
+  palette: paper
+  mood: dark
+  events: false                    # plan cues (layout.sound_cues) carry the accents; no automatic ticks
+  levels: {sfx_peak_db: -19, event_peak_db: -22}   # Stefan 03.11.: sweeps too loud; -16 summed to -15.4 where cues overlap

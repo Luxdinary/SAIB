@@ -1,0 +1,290 @@
+{
+  "video_id": "claude_workflows-20261109-2-de-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Was weiß Claude Code, bevor es eine Datei öffnet? Zwei echte Läufe",
+  "notes": "Woche 1, Reihe Gleicher Auftrag, anderer Schalter. Aufzeichnung claude-md-laden: gleiche Frage ohne und mit CLAUDE.md, je zweimal. Ohne: Grep und Glob, kein Treffer. Mit: Antwort ohne Werkzeugaufruf.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Was weiß Claude Code über dein Projekt, bevor es eine einzige Datei öffnet?",
+      "on_screen": "Was weiß Claude vorher?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "MEM",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "Frage; Antwort aus der Aufzeichnung"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude muss deine Projektnotizen erst suchen? Mit CLAUDE.md nicht.",
+      "on_screen": "Erst suchen?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "MEM",
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 2 ohne Werkzeug"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Mit CLAUDE.md antwortete Claude, ohne ein einziges Werkzeug aufzurufen.",
+      "on_screen": "Null Werkzeuge",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 2, beide Wiederholungen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne CLAUDE.md durchsuchte Claude den Ordner und fand nichts.",
+      "on_screen": "Gesucht, nichts gefunden",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Zwei echte Läufe: einmal ohne, einmal mit CLAUDE.md.",
+      "on_screen": "Ohne und mit",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Aufbau"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "MEM",
+      "title": "How Claude remembers your project: Claude reads CLAUDE.md files at the start of every session; Claude treats them as context, not enforced configuration; to block an action regardless of what Claude decides, use a PreToolUse hook; target under 200 lines per CLAUDE.md file; files over 200 lines consume more context and may reduce adherence; run /init to generate a starting CLAUDE.md",
+      "url": "https://code.claude.com/docs/en/memory",
+      "checked_at": "2026-11-02",
+      "label": "Claude-Code-Doku, Memory"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/claude-md-laden",
+      "checked_at": "2026-11-02",
+      "label": "Eigene Aufzeichnung",
+      "title": "Eigene Aufzeichnung claude-md-laden, 2026-11-02: Claude Code 2.1.309, Testordner mit Beispieldaten, jeder Lauf zweimal"
+    }
+  ],
+  "unverified": [
+    "Der Befehl /init (erster Entwurf einer CLAUDE.md) wurde nicht aufgezeichnet: Slash-Befehle laufen im Modus claude -p nicht. Im Video nur als Hinweis mit Quelle.",
+    "Lauf 1 erwähnt ein „Memory-Verzeichnis“; Auto Memory wurde nicht untersucht."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "claude-md-laden"
+    },
+    "short_title": "CLAUDE.md wird zuerst gelesen",
+    "description": "Echter Ablauf, aufgezeichnet am 02.11.2026 mit Claude Code 2.1.309 (Modell claude-haiku-5-5). Gleiche Frage nach dem Namen des Testservers, jeder Lauf zweimal: Ohne CLAUDE.md suchte Claude mit Grep und Glob und fand nichts. Mit CLAUDE.md kam die Antwort sofort, ohne Werkzeugaufruf. Der Servername ist erfunden.",
+    "companion_text": "Grundbefehl je Lauf: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Grep,Glob. Lauf 2 mit CLAUDE.md: „Der Testserver heißt kranich-07 (Beispielwert).“ Quelle: Claude-Code-Doku, Memory, abgerufen am 02.11.2026. Pfade im Bild gekürzt (Testordner = .). Das Verhalten kann sich mit Version und Modell ändern. Kein offizieller Kanal von Anthropic.",
+    "hashtags": [
+      "claudecode",
+      "kiworkflow",
+      "programmieren",
+      "entwickler",
+      "claudemd"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "MEM",
+        "R1"
+      ],
+      "spoken": "Was weiß Claude Code über dein Projekt, bevor es eine einzige Datei öffnet? Zwei echte Läufe, eine Frage.",
+      "data": {
+        "run": "L1",
+        "question": "Was weiß Claude vorher?",
+        "type_word": "Datei",
+        "chips_word": "Zwei",
+        "rec": "claude-md-laden"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Im Testordner liegt nur eine README. Für den zweiten Lauf kommt eine CLAUDE.md dazu, mit genau einer erfundenen Angabe: dem Namen des Testservers.",
+      "data": {
+        "run": "L2",
+        "show": "CLAUDE.md",
+        "highlight_text": "kranich-07",
+        "label": "Beispieldaten, Name erfunden",
+        "view_word": "zweiten",
+        "highlight_word": "erfundenen",
+        "tag_word": "Namen",
+        "rec": "claude-md-laden"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "MEM"
+      ],
+      "spoken": "Laut Doku liest Claude diese Datei zu Beginn jeder Sitzung. Ob das stimmt, zeigt die Frage nach dem Server, denn die Antwort steht nur in dieser einen Datei.",
+      "data": {
+        "run": "L2",
+        "file": "CLAUDE.md",
+        "highlight_text": "kranich-07",
+        "kicker": "Claude-Code-Doku, Memory",
+        "quote": "Claude reads them at the start of every session.",
+        "translation": "Claude liest sie zu Beginn jeder Sitzung.",
+        "highlight_word": "Datei",
+        "doc_word": "Beginn",
+        "translation_word": "Frage",
+        "rec": "claude-md-laden"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf eins, ohne CLAUDE.md. Claude suchte viermal mit Grep und Glob, nach Testserver, nach Server und nach allen Dateien. Es fand nichts und konnte den Namen nicht nennen.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "stamp_true": "Name genannt",
+        "stamp_false": "nicht gefunden",
+        "rec": "claude-md-laden"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf zwei, mit CLAUDE.md. Claude antwortete sofort, ohne ein einziges Werkzeug, und nannte kranich-07.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "stamp_true": "Name genannt",
+        "stamp_false": "nicht gefunden",
+        "rec": "claude-md-laden"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "MEM"
+      ],
+      "spoken": "Beide Läufe liefen zweimal, mit gleichem Ergebnis. Was in der CLAUDE.md steht, war von Anfang an da. Ohne die Datei fand Claude die Angabe in keiner Wiederholung. Einen ersten Entwurf der Datei schreibt laut Doku der Befehl init.",
+      "data": {
+        "headline": "2 Läufe, je 2-mal",
+        "probe_good": true,
+        "stamp_true": "genannt",
+        "stamp_false": "nicht gefunden",
+        "note": "Erster Entwurf: /init (laut Doku, hier nicht aufgezeichnet).",
+        "note_source": "Claude-Code-Doku, Memory",
+        "rows_word": "Beide",
+        "row_gap": 0.8,
+        "note_word": "Entwurf",
+        "rec": "claude-md-laden"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "Was Claude jedes Mal wissen soll, gehört also in die CLAUDE.md. Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt.",
+      "data": {
+        "statement": "Was Claude immer wissen soll: in die CLAUDE.md.",
+        "claim": "Promptwerk · echte Läufe",
+        "statement_word": "jedes",
+        "claim_word": "Folge",
+        "rec": "claude-md-laden"
+      }
+    }
+  ]
+}

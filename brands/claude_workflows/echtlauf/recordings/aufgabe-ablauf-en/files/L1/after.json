@@ -1,0 +1,4 @@
+{
+  "summe.js": "function summe(a, b) {\n  return a + b;\n}\nmodule.exports = summe;\n",
+  "test.js": "const summe = require(\"./summe\");\nconst r = summe(2, 3);\nif (r === 5) {\n  console.log(\"TEST OK\");\n} else {\n  console.log(\"TEST FAILED: summe(2, 3) returned \" + r);\n  process.exit(1);\n}\n"
+}

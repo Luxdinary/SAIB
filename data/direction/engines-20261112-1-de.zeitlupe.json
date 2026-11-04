@@ -1,0 +1,421 @@
+{
+ "video_id": "engines-20261112-1-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Hubraum selbst ausrechnen",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261112-1-de, Reihe Nachgerechnet. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Hubraum aus Bohrung und Hub: die Formel der NASA, gerechnet am Wright-Motor von 1903 und an Toyotas 2,0-Liter-Benziner.",
+  "companion_text": "",
+  "hashtags": [
+   "motorentechnik",
+   "hubraum",
+   "nachgerechnet",
+   "bohrung",
+   "hub"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "NASA Glenn, Bohrung und Hub",
+   "title": "NASA Glenn, Bohrung und Hub (N4)",
+   "url": "https://www.grc.nasa.gov/www/k-12/airplane/stroke.html",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "Toyota, Dynamic Force Engine",
+   "title": "Toyota, Dynamic Force Engine (T1)",
+   "url": "https://global.toyota/en/mobility/tnga/powertrain2018/engine/",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Du brauchst nur zwei Maße: Bohrung und Hub.",
+   "on_screen": "Hubraum selbst rechnen",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Wie rechnet man den Hubraum aus?",
+   "on_screen": "Hubraum selbst ausrechnen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Hubraum selbst ausrechnen",
+   "on_screen": "Hubraum selbst ausrechnen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Hubraum selbst ausrechnen",
+   "on_screen": "Hubraum selbst ausrechnen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Hubraum selbst ausrechnen",
+   "on_screen": "Hubraum selbst ausrechnen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Den Hubraum eines Motors kannst du mit einer einzigen Formel selbst ausrechnen. Du brauchst nur zwei Maße: Bohrung und Hub.",
+   "data": {
+    "claim": "Hubraum selbst rechnen",
+    "claim_lines": [
+     "Hubraum",
+     "selbst rechnen"
+    ],
+    "claim_highlight": "selbst rechnen",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "NASA Glenn, Bohrung und Hub · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Die Bohrung ist der Durchmesser des Zylinders. Der Hub ist der Weg, den der Kolben vom oberen zum unteren Totpunkt zurücklegt. Das Volumen dazwischen ist der Hubraum eines Zylinders.",
+   "data": {
+    "title": "Bohrung und Hub",
+    "stroke_dims": true,
+    "dims_at": "w:Hub",
+    "labels": [
+     "piston"
+    ],
+    "labels_at": [
+     "w:Kolben"
+    ],
+    "notes": [
+     {
+      "text": "Bohrung",
+      "at": "w:Bohrung",
+      "side": "l",
+      "y": 640,
+      "to": [
+       540,
+       700
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      540
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Bohrung und Hub · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_readout",
+   "spoken": "Die NASA schreibt die Formel so: Pi mal Hub mal Bohrung zum Quadrat, geteilt durch vier. Anders gesagt: die Kreisfläche der Bohrung mal dem Weg des Kolbens.",
+   "data": {
+    "title": "Die Formel",
+    "figure": "cylinder",
+    "lines_y": 1010,
+    "bore_at": "w:Bohrung",
+    "stroke_at": "w:Hub",
+    "fill_at": "w:Kreisfläche",
+    "lines": [
+     {
+      "text": "V = π × S × B² ÷ 4",
+      "hl": "B²",
+      "at": "w:geteilt"
+     },
+     {
+      "text": "Kreisfläche × Hubweg",
+      "hl": "Kreisfläche",
+      "at": "w:Kreisfläche"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Bohrung und Hub · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_board",
+   "spoken": "Erstes Beispiel, ebenfalls von der NASA: Der Motor der Gebrüder Wright von neunzehnhundertdrei hatte vier Zoll Bohrung und vier Zoll Hub. Das ergibt gut fünfzig Kubikzoll pro Zylinder und bei vier Zylindern rund zweihundert. Bohrung und Hub sind hier gleich groß.",
+   "data": {
+    "title": "Der Wright-Motor",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1903",
+      "at": 0.0
+     }
+    ],
+    "rows": [
+     {
+      "text": "Bohrung 4 Zoll, Hub 4 Zoll",
+      "at": "w:Bohrung"
+     },
+     {
+      "text": "50,26 in³ je Zylinder",
+      "at": "w:Kubikzoll"
+     },
+     {
+      "text": "× 4 Zylinder ≈ 201 in³",
+      "at": "w:Zylindern"
+     },
+     {
+      "text": "≈ 3,3 Liter",
+      "at": "w:rund"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Bohrung und Hub · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_readout",
+   "spoken": "Und ein moderner Motor: Toyotas Zwei-Liter-Benziner hat achtzig Komma fünf Millimeter Bohrung und siebenundneunzig Komma sechs Millimeter Hub. Vier Zylinder ergeben fast genau die angegebenen eintausendneunhundertsechsundachtzig Kubikzentimeter. Der Hub ist länger als die Bohrung: ein Langhuber.",
+   "data": {
+    "title": "Toyota 2,0 Liter",
+    "figure": "cylinder",
+    "lines_y": 1010,
+    "bore_label": "B = 80,5 mm",
+    "stroke_label": "S = 97,6 mm",
+    "bore_at": "w:Bohrung",
+    "stroke_at": "w:Hub",
+    "fill_at": "w:Zylinder",
+    "lines": [
+     {
+      "text": "π × 9,76 × 8,05² ÷ 4 ≈ 496,7 cm³",
+      "hl": "496,7",
+      "at": "w:Hub"
+     },
+     {
+      "text": "× 4 ≈ 1987 cm³ (Toyota: 1986)",
+      "hl": "1987",
+      "at": "w:ergeben"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Toyota, Dynamic Force Engine · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Bohrung, Hub, Pi durch vier, mal Zylinderzahl. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "Bohrung",
+      "at": "w:Bohrung"
+     },
+     {
+      "text": "Hub",
+      "at": "w:Hub"
+     },
+     {
+      "text": "× π ÷ 4",
+      "at": "w:Pi"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

@@ -1,0 +1,694 @@
+{
+ "topic": "brainrot-20261112-2",
+ "series": "B",
+ "short": {
+  "de": "Feige blueht innen",
+  "en": "Feige blueht innen"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://hort.purdue.edu/newcrop/morton/fig.html",
+   "checked_at": "2026-11-01",
+   "title": "Morton, Fruits of Warm Climates (Purdue NewCROP), Fig: the fruit is technically a synconium (syconium), a fleshy, hollow receptacle with a small opening at the apex; tiny flowers are massed on the inside wall; in the common fig the flowers are all female and need no pollination",
+   "label": {
+    "de": "Purdue Univ., NewCROP",
+    "en": "Purdue Univ., NewCROP"
+   }
+  },
+  {
+   "id": "S2",
+   "url": "https://agriculture-food-sustainability.uq.edu.au/files/20461/whats-inside-a-fig.pdf",
+   "checked_at": "2026-11-01",
+   "title": "University of Queensland, What's inside a fig?: figs create flowers inside an enclosure called a syconium, an inside-out inflorescence that we call fig fruits when ripe; the ostiole lets fig wasps enter; tens to thousands of flowers depending on the species, never seen from the outside",
+   "label": {
+    "de": "University of Queensland",
+    "en": "University of Queensland"
+   }
+  }
+ ],
+ "de": {
+  "title": "Die Feige blüht nach innen – Plümo und die Gießkanne",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "Die Feige blüht nicht außen. Sie blüht nach innen. Ich hab wochenlang gewartet.",
+    "on_screen": "Feige blüht *nicht* außen.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Feige fliegt zur Obsttür, Stempel IRRTUM",
+    "why": {
+     "truth": "Purdue und University of Queensland: die winzigen Blüten sitzen innen in der hohlen Feige",
+     "visual": "Feige an der Tür ist sofort lesbar"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "Hast du je eine Blüte am Feigenbaum gesehen?",
+    "on_screen": "Schon mal eine *Feigenblüte* gesehen?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "Fragezeichen über der Feige"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "In einer Feige stecken je nach Art Dutzende bis Tausende Blüten.",
+    "on_screen": "Bis zu *Tausende* Blüten drin.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 4
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "aufgeschnittene Feige zeigt Blüten"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Wer am Feigenbaum auf Blüten wartet, wartet ewig.",
+    "on_screen": "Auf Blüten warten? *Ewig.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 3
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "Plümo mit Gießkanne vor dem Baum"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "Ich schneid eine Feige auf. Schau, was da drin blüht.",
+    "on_screen": "Feige *aufgeschnitten*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "halbierte Feige"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Die Feige blüht nicht außen. Sie blüht nach innen. Ich hab wochenlang gewartet.",
+    "data": {
+     "mode": "hook",
+     "head": "Feige blüht *nicht* außen.",
+     "head_at": 0.2,
+     "sign": "NUR OBST",
+     "items": [
+      {
+       "kind": "fig"
+      }
+     ],
+     "stamp_reject": "IRRTUM",
+     "cue_scan": "Feige",
+     "cue_verdict": "nicht",
+     "cue_club": "innen",
+     "cue_know": "gewartet"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Moment. Ich hab nie eine Blüte am Feigenbaum gesehen. Also dachte ich: Der blüht nie. Aber nein, die Blüten sind versteckt. Ich war geschockt. Ich hatte extra die Gießkanne geholt.",
+    "data": {
+     "word_a": "Blüten",
+     "word_b": "los",
+     "left": "Plümo: *blüht nie*",
+     "right": "Echt: *blüht innen*",
+     "cue_left": "dachte",
+     "cue_strike": "nein",
+     "cue_right": "versteckt",
+     "cue_react": "Ich",
+     "item": "fig",
+     "cue_shock": "geschockt",
+     "cue_item": "Gießkanne",
+     "cue_never": "geholt"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Wo sind die Blüten? Innen. Die Feige ist ein hohler, fleischiger Blütenboden. Die winzigen Blüten sitzen an der Innenwand. Oben ist eine kleine Öffnung. Ohne Hände zeig ich es mit dem Blatt.",
+    "data": {
+     "headline": "Wo sind die *Blüten*?",
+     "inner": "fig_cut",
+     "disc": [
+      "#4A1A66",
+      "#F7EEDC",
+      "#E8C8A8"
+     ],
+     "cue_q": "Blüten",
+     "labels": [
+      {
+       "text": "*hohl* und fleischig",
+       "pos": "tr",
+       "cue": "hohler"
+      },
+      {
+       "text": "Blüten an der *Innenwand*",
+       "pos": "l",
+       "cue": "Innenwand"
+      },
+      {
+       "text": "*Öffnung* an der Spitze",
+       "pos": "b",
+       "cue": "Öffnung"
+      }
+     ],
+     "cue_hands": "Hände",
+     "cue_leaf": "Blatt"
+    },
+    "overlay": {
+     "marker_at": "w:Innenwand"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Ganz nah ran. Je nach Art sind da Dutzende bis Tausende Blüten drin. Von außen sieht man keine. Fachleute sagen: Syconium. Ein Blütenstand, nach innen gestülpt. Klingt wie ein Zauberspruch. Syconium!",
+    "data": {
+     "kind": "fig",
+     "lens": "fig_cut",
+     "lens_bg": "#2E0F40",
+     "cue_mag": "nah",
+     "callouts": [
+      {
+       "text": "*Dutzende* bis Tausende",
+       "cue": "Dutzende"
+      },
+      {
+       "text": "von außen: *keine*",
+       "cue": "außen"
+      }
+     ],
+     "cue_nut": "Tausende",
+     "stamp": {
+      "text": "Syconium!",
+      "cue": "Syconium"
+     },
+     "cue_react": "Zauberspruch",
+     "cue_fast": "Syconium"
+    },
+    "overlay": {
+     "dim_at": "w:Dutzende",
+     "marker_at": "w:Dutzende"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Darf die Feige trotzdem durch die Obsttür? Ja. Den reifen Blütenstand nennen wir Feigenfrucht. Bei der Echten Feige sind alle Blüten weiblich und brauchen keine Bestäubung. Ich auch nicht. Glaub ich.",
+    "data": {
+     "mode": "accept",
+     "sign": "NUR OBST",
+     "counter": "Geprüft:",
+     "stamp_accept": "EINLASS",
+     "items": [
+      {
+       "kind": "fig",
+       "word": "Feige"
+      },
+      {
+       "kind": "fig_cut",
+       "word": "Blütenstand"
+      }
+     ],
+     "cue_all": "Echten",
+     "cue_react": "Ich",
+     "react": "stolz"
+    },
+    "overlay": {
+     "marker_at": "w:Blütenstand"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Merke: Die Feige blüht innen, von außen sieht man keine Blüte. Gut, jetzt ich. Scanner läuft. Ergebnis: Blüte nicht ermittelbar. Ich blüh wohl innerlich.",
+    "data": {
+     "mode": "unknown",
+     "sign": "NUR OBST",
+     "merke": "Die Feige blüht *innen*.",
+     "display": "Blüte: nicht ermittelbar",
+     "plumps": "PLUMPS",
+     "cue_build": "innen",
+     "cue_go": "Gut",
+     "cue_scan": "Scanner",
+     "cue_result": "Ergebnis",
+     "cue_back": "wohl"
+    },
+    "overlay": {
+     "marker_at": "w:Merke"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+    "data": {
+     "sign": "NUR OBST",
+     "cta": "Mehr Zonkfruit? *Folgen.*",
+     "cue_cta": "Mehr",
+     "cue_up": "steh",
+     "cue_lie": "liegen",
+     "cue_ch": "Kanal"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Feige: blüht nie?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Außenblüte: abgelehnt",
+    "tone": "pop",
+    "word": "nicht"
+   },
+   {
+    "beat": "b3",
+    "text": "Blüten an der Innenwand",
+    "tone": "lime",
+    "word": "Innenwand"
+   },
+   {
+    "beat": "b4",
+    "text": "Syconium: Blüten innen",
+    "tone": "lime",
+    "word": "Syconium"
+   },
+   {
+    "beat": "b5",
+    "text": "Feige: Einlass",
+    "tone": "mint",
+    "word": "Ja"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: Blüte offen",
+    "tone": "amber",
+    "word": "Ergebnis"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: liegt kurz",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "Die Feige blüht nach innen. Plümo hat umsonst gegossen.",
+   "description": "Plümo hat wochenlang auf die Feigenblüte gewartet. Dabei blüht die Feige innen: Sie ist ein hohler Blütenboden, die winzigen Blüten sitzen an der Innenwand, je nach Art Dutzende bis Tausende, und von außen sieht man keine einzige.",
+   "hashtags": [
+    "feige",
+    "obst",
+    "botanik",
+    "wusstestdu",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ },
+ "en": {
+  "title": "Figs bloom on the inside – Plümo and the watering can",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "Figs don't bloom outside. They bloom inside. I waited for weeks.",
+    "on_screen": "Figs *don't* bloom outside.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "fig flies to the fruit door, stamp NOPE",
+    "why": {
+     "truth": "Purdue and University of Queensland: the tiny flowers sit inside the hollow fig",
+     "visual": "a fig at the door reads at once"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "Have you ever seen a flower on a fig tree?",
+    "on_screen": "Ever seen a *fig flower*?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "question mark over the fig"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "One fig can hold tens to thousands of flowers, depending on the species.",
+    "on_screen": "Up to *thousands* of flowers.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 4
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "cut fig shows the flowers"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Wait for flowers on a fig tree and you'll wait forever.",
+    "on_screen": "Waiting for flowers? *Forever.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 3
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "Plümo with a watering can"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "I cut a fig in half. Look what's blooming in there.",
+    "on_screen": "Fig, *cut open*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "halved fig"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Figs don't bloom outside. They bloom inside. I waited for weeks.",
+    "data": {
+     "mode": "hook",
+     "head": "Figs *don't* bloom outside.",
+     "head_at": 0.2,
+     "sign": "FRUIT ONLY",
+     "items": [
+      {
+       "kind": "fig"
+      }
+     ],
+     "stamp_reject": "NOPE",
+     "cue_scan": "Figs",
+     "cue_verdict": "don't",
+     "cue_club": "inside",
+     "cue_know": "waited"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Wait. I never saw a flower on a fig tree. So I thought: it never blooms. But no, the flowers are hidden. I was shocked. I'd brought a watering can.",
+    "data": {
+     "word_a": "Bloom",
+     "word_b": "less",
+     "left": "Plümo: *never blooms*",
+     "right": "Real: *blooms inside*",
+     "cue_left": "thought",
+     "cue_strike": "no",
+     "cue_right": "hidden",
+     "cue_react": "I",
+     "item": "fig",
+     "cue_shock": "shocked",
+     "cue_item": "watering",
+     "cue_never": "can"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Where are the flowers? Inside. A fig is a hollow, fleshy receptacle. Tiny flowers line the inside wall. There's a small opening at the tip. No hands, so I point with my leaf.",
+    "data": {
+     "headline": "Where are the *flowers*?",
+     "inner": "fig_cut",
+     "disc": [
+      "#4A1A66",
+      "#F7EEDC",
+      "#E8C8A8"
+     ],
+     "cue_q": "flowers",
+     "labels": [
+      {
+       "text": "*hollow* and fleshy",
+       "pos": "tr",
+       "cue": "hollow"
+      },
+      {
+       "text": "flowers on the *inside wall*",
+       "pos": "l",
+       "cue": "wall"
+      },
+      {
+       "text": "*opening* at the tip",
+       "pos": "b",
+       "cue": "opening"
+      }
+     ],
+     "cue_hands": "hands",
+     "cue_leaf": "leaf"
+    },
+    "overlay": {
+     "marker_at": "w:wall"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Closer. Depending on the species: tens to thousands of flowers in there. From outside, you see none. The term is syconium. An inside-out flower cluster. Sounds like a spell. Syconium!",
+    "data": {
+     "kind": "fig",
+     "lens": "fig_cut",
+     "lens_bg": "#2E0F40",
+     "cue_mag": "Closer",
+     "callouts": [
+      {
+       "text": "*tens* to thousands",
+       "cue": "tens"
+      },
+      {
+       "text": "outside: *none* visible",
+       "cue": "outside"
+      }
+     ],
+     "cue_nut": "thousands",
+     "stamp": {
+      "text": "Syconium!",
+      "cue": "syconium"
+     },
+     "cue_react": "spell",
+     "cue_fast": "Syconium"
+    },
+    "overlay": {
+     "dim_at": "w:tens",
+     "marker_at": "w:tens"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Does the fig still get in? Yes. When ripe, this flower cluster is what we call a fig. In the common fig, all flowers are female and need no pollinating. Neither do I.",
+    "data": {
+     "mode": "accept",
+     "sign": "FRUIT ONLY",
+     "counter": "Checked:",
+     "stamp_accept": "WELCOME",
+     "items": [
+      {
+       "kind": "fig",
+       "word": "fig"
+      },
+      {
+       "kind": "fig_cut",
+       "word": "cluster"
+      }
+     ],
+     "cue_all": "common",
+     "cue_react": "Neither",
+     "react": "stolz"
+    },
+    "overlay": {
+     "marker_at": "w:cluster"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Remember: figs bloom on the inside, hidden from view. Right, my turn. Scanner on. Result: bloom unknown. I guess I bloom inside too.",
+    "data": {
+     "mode": "unknown",
+     "sign": "FRUIT ONLY",
+     "merke": "Figs bloom on the *inside*.",
+     "display": "Bloom: unknown",
+     "plumps": "FLOP",
+     "cue_build": "inside",
+     "cue_go": "Right",
+     "cue_scan": "Scanner",
+     "cue_result": "Result",
+     "cue_back": "guess"
+    },
+    "overlay": {
+     "marker_at": "w:Remember"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "I'll just lie here for a bit. More Zonkfruit? Follow the channel. I'll get up in a minute.",
+    "data": {
+     "sign": "FRUIT ONLY",
+     "cta": "More Zonkfruit? *Follow.*",
+     "cue_cta": "More",
+     "cue_up": "get",
+     "cue_lie": "lie",
+     "cue_ch": "channel"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Fig: never blooms?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Outside bloom: rejected",
+    "tone": "pop",
+    "word": "don't"
+   },
+   {
+    "beat": "b3",
+    "text": "Flowers on the inside wall",
+    "tone": "lime",
+    "word": "wall"
+   },
+   {
+    "beat": "b4",
+    "text": "Syconium: flowers inside",
+    "tone": "lime",
+    "word": "syconium"
+   },
+   {
+    "beat": "b5",
+    "text": "Fig: welcome",
+    "tone": "mint",
+    "word": "Yes"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: bloom unknown",
+    "tone": "amber",
+    "word": "Result"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: lying down",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "Figs bloom on the inside. Plümo watered for nothing.",
+   "description": "Plümo waited weeks for a fig flower. But figs bloom on the inside: a fig is a hollow receptacle with tiny flowers on its inside wall, tens to thousands depending on the species, and you never see one from outside.",
+   "hashtags": [
+    "fig",
+    "fruit",
+    "botany",
+    "didyouknow",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ }
+}

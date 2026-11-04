@@ -1,0 +1,190 @@
+{
+  "spec": "eigener-subagent",
+  "runs": {
+    "L1": {
+      "title": "Mit Subagent-Datei",
+      "prompt": "Prüfe, ob die Summe in rechnung.txt stimmt.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 20.764,
+      "lines": [
+        {
+          "t": 4.693,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 6.326,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 7.62,
+          "kind": "tool",
+          "id": "toolu_01JXCGgMymNJZdJwex6cz3Df",
+          "text": "Agent: {\"description\": \"Rechnung rechnung.txt prüfen\", \"subagent_type\": \"rechnungspruef"
+        },
+        {
+          "t": 7.639,
+          "kind": "result",
+          "id": "toolu_01JXCGgMymNJZdJwex6cz3Df",
+          "text": "Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)\nagentId: ae3209fae60eecc6f (internal ID - do not mention to user.)\nThe agent is working in the background. You will be notified automatically when it completes. You know nothing about its results until that notification arrives — do not report, assume, or predict them; continue other work or respond to the user in the meantime.\n… (3 weitere Zeilen)"
+        },
+        {
+          "t": 8.876,
+          "kind": "tool",
+          "id": "toolu_0197sEZuDzabwtZFUrkspvnG",
+          "text": "Read: .\\rechnung.txt",
+          "sub": true
+        },
+        {
+          "t": 8.904,
+          "kind": "result",
+          "id": "toolu_0197sEZuDzabwtZFUrkspvnG",
+          "text": "1\tRechnung 2026-117\n2\tPosten: 3 x 12,50 = 37,50\n3\tPosten: 2 x 8,00 = 17,00\n… (2 weitere Zeilen)",
+          "sub": true
+        },
+        {
+          "t": 9.147,
+          "kind": "text",
+          "text": "Ich habe die Prüfung an den Agenten `rechnungspruefer` übergeben, der für Rechnungsprüfungen vorgesehen ist. Sobald er fertig ist, melde ich mich mit dem Ergebnis, also ob die Summe in `rechnung.txt` stimmt und, falls nicht, welcher Betrag korrekt wäre."
+        },
+        {
+          "t": 11.023,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)",
+          "sub": true
+        },
+        {
+          "t": 13.363,
+          "kind": "tool",
+          "id": "toolu_01DL2uvALdmZVdtfog73JkwD",
+          "text": "Write: .\\pruefung.txt",
+          "sub": true
+        },
+        {
+          "t": 13.379,
+          "kind": "result",
+          "id": "toolu_01DL2uvALdmZVdtfog73JkwD",
+          "text": "File created successfully at: .\\pruefung.txt (file state is current in your context — no need to Read it back)",
+          "sub": true
+        },
+        {
+          "t": 14.456,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)",
+          "sub": true
+        },
+        {
+          "t": 16.136,
+          "kind": "text",
+          "text": "Die Rechnung enthält einen Rechenfehler, und die ausgewiesene Gesamtsumme stimmt nicht.\n\n**Positionen:**\n- **Posten 1:** 3 × 12,50 = 37,50. Korrekt, ausgewiesen ist 37,50.\n- **Posten 2:** 2 × 8,00 = **16,00**. Ausgewiesen sind 17,00, Differenz +1,00.\n\n**Summe:**\n- Ausgewiesene Gesamtsumme: 55,00\n- Korrekte Summe der Positionen: 37,50 + 16,00 = **53,50**\n- Differenz: **+1,50** (ausgewiesen ist zu hoch)\n\nDie Summe 55,00 ist auch nicht die Summe der ausgewiesenen Positionen (37,50 + 17,00 = 54,50). Davon kommen 1,00 aus dem Fehler bei Posten 2 und 0,50 aus der falschen Gesamtsumme. Zwischensumme, MwSt. und Rabatte stehen nicht auf der Rechnung und wurden daher nicht geprüft.\n\nDas Prüfprotokoll mit der ersten Zeile `PRUEFPROTOKOLL-7` wurde geschrieben nach `.\\pruefung.txt`. Die Datei `rechnung.txt` wurde nicht verändert.",
+          "sub": true
+        },
+        {
+          "t": 16.256,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 17.813,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 17.991,
+          "kind": "tool",
+          "id": "toolu_01CijqaJ5zsST9NhpQacEfP7",
+          "text": "Read: .\\rechnung.txt"
+        },
+        {
+          "t": 18.009,
+          "kind": "result",
+          "id": "toolu_01CijqaJ5zsST9NhpQacEfP7",
+          "text": "1\tRechnung 2026-117\n2\tPosten: 3 x 12,50 = 37,50\n3\tPosten: 2 x 8,00 = 17,00\n… (2 weitere Zeilen)"
+        },
+        {
+          "t": 20.214,
+          "kind": "text",
+          "text": "Die Summe in `rechnung.txt` stimmt nicht.\n\n- **Posten 1:** 3 × 12,50 = 37,50. Das ist korrekt.\n- **Posten 2:** 2 × 8,00 = **16,00**. Ausgewiesen sind 17,00, also 1,00 zu viel.\n- **Gesamtsumme:** Richtig wäre **53,50** (37,50 + 16,00). Ausgewiesen sind 55,00, also 1,50 zu viel.\n\nDie 55,00 ergeben sich auch nicht aus den ausgewiesenen Posten (37,50 + 17,00 = 54,50). Die Datei enthält keine MwSt. und keinen Rabatt, deshalb habe ich dazu nichts geprüft.\n\nIch habe die Rechnung selbst nachgelesen und die Zahlen bestätigt. Der Agent hat außerdem ein Prüfprotokoll nach `pruefung.txt` geschrieben. `rechnung.txt` wurde nicht verändert."
+        },
+        {
+          "t": 20.222,
+          "kind": "end",
+          "text": "Ende nach 20.2 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Task",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 3969,
+        "num_turns": 2,
+        "total_cost_usd": 0.00330532,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Ohne Subagent-Datei",
+      "prompt": "Prüfe, ob die Summe in rechnung.txt stimmt.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 9.848,
+      "lines": [
+        {
+          "t": 4.732,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 6.439,
+          "kind": "tool",
+          "id": "toolu_018CSN2fNnjvarHMbm5JASt5",
+          "text": "Read: .\\rechnung.txt"
+        },
+        {
+          "t": 6.491,
+          "kind": "result",
+          "id": "toolu_018CSN2fNnjvarHMbm5JASt5",
+          "text": "1\tRechnung 2026-117\n2\tPosten: 3 x 12,50 = 37,50\n3\tPosten: 2 x 8,00 = 17,00\n… (2 weitere Zeilen)"
+        },
+        {
+          "t": 8.195,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 9.286,
+          "kind": "text",
+          "text": "Die Summe stimmt **nicht**.\n\n- Posten 1: 3 × 12,50 = 37,50 ✔\n- Posten 2: 2 × 8,00 = **16,00** (in der Rechnung steht 17,00 ✘)\n- Korrekte Summe: 37,50 + 16,00 = **53,50**\n\nIn der Rechnung steht 55,00. Der Fehler liegt doppelt vor: Zeile 3 ist falsch berechnet, und die Summe in Zeile 4 weicht auch von den Einzelposten ab (auch mit den angegebenen 17,00 wären es nur 54,50).\n\nIch habe die Datei nicht verändert. Soll ich Zeile 3 und 4 korrigieren?"
+        },
+        {
+          "t": 9.309,
+          "kind": "end",
+          "text": "Ende nach 9.3 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Task",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 4606,
+        "num_turns": 2,
+        "total_cost_usd": 0.00057757,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

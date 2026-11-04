@@ -1,0 +1,467 @@
+{
+  "video_id": "brainrot-20261110-3-de",
+  "brand_id": "brainrot",
+  "language": "de",
+  "title": "Die Venusfliegenfalle kann zählen – Plümo tippt zweimal",
+  "notes": "Zonkfruit Vorlage 1.0, Produktion Woche 1 (01.11.2026), Reihe B. Aufbau wie das freigegebene Testvideo Q1 (Erdbeere keine Beere). Nur Aussagen aus den Kalenderquellen.",
+  "hook": {
+    "id": "H1",
+    "note": "erster Kandidat der Themenspezifikation"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Einmal antippen? Nichts passiert. Die Venusfliegenfalle kann zählen. Besser als ich.",
+      "on_screen": "Die Falle kann *zählen*.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Fliegenfalle fliegt zum Obst-Ausweis, Stempel NOCH NICHT",
+      "why": {
+        "truth": "Würzburg und Böhm et al.: ein Signal bewirkt nichts, erst das zweite schließt die Falle",
+        "visual": "Falle an der Tür mit Stempel ist sofort lesbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie oft muss man eine Venusfliegenfalle antippen, bis sie zuschnappt?",
+      "on_screen": "Wie oft *antippen*?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Blatt tippt, Zähler"
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Eine gefangene Fliege löst rund sechzig Signale pro Stunde aus.",
+      "on_screen": "60 Signale *pro Stunde*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Zähler läuft hoch"
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wer die Falle nach einem Antippen für kaputt hält, irrt sich.",
+      "on_screen": "Kaputt? *Sie zählt.*",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Plümo mit Schild KAPUTT"
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Ich tippe die Falle mit dem Blatt an. Einmal. Dann nochmal.",
+      "on_screen": "Einmal. *Zweimal.*",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Blatt tippt, Falle schnappt"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.uni-wuerzburg.de/en/news-and-events/news/detail/news/plants-can-do-maths-1/",
+      "title": "University of Würzburg, Plants can do maths (21.01.2016): the Venus flytrap counts touches; one signal causes no reaction, a second makes the trap snap shut; visitors looking for nectar touch the three sensor hairs on each lobe; a trapped insect triggers some 60 signals per hour; with more signals the genes for digestive enzymes are activated in all 37,000 glands; a still prey: the trap opens again after half a day; it remembers prey contacts for at least four hours",
+      "checked_at": "2026-11-01",
+      "label": "Uni Würzburg"
+    },
+    {
+      "id": "S2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4751343",
+      "title": "Böhm et al. 2016, Current Biology: The Venus flytrap counts prey-induced action potentials; after two action potentials the trap snaps shut; more than three are required for the expression of genes for prey-degrading hydrolases",
+      "checked_at": "2026-11-01",
+      "label": "Current Biology (2016)"
+    }
+  ],
+  "unverified": [
+    "Schwelle für die Verdauungsgene: Würzburg nennt fünf und mehr Signale, die Studie mehr als drei; im Video daher ohne Zahl (\"noch mehr Signale\")."
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 500,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.4,
+    "progress_y": 1550,
+    "ai_label_bottom_px": 318,
+    "status_y": 1440,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Plümo hielt die Venusfliegenfalle für kaputt, weil nach einmal Antippen nichts passiert ist. Dabei zählt sie: Ein Signal bewirkt nichts, beim zweiten schnappt die Falle zu, und erst bei noch mehr Signalen startet die Verdauung.",
+    "companion_text": "Zonkfruit: eine erfundene Frucht, echte Fakten. Folge Zonkfruit für mehr.",
+    "hashtags": [
+      "venusfliegenfalle",
+      "pflanzen",
+      "wusstestdu",
+      "funfact",
+      "zonkfruit",
+      "comedy"
+    ],
+    "platform_texts": {
+      "tiktok": {
+        "title": "Die Venusfliegenfalle kann zählen. Plümo hat zweimal getippt.",
+        "description": "Plümo hielt die Venusfliegenfalle für kaputt, weil nach einmal Antippen nichts passiert ist. Dabei zählt sie: Ein Signal bewirkt nichts, beim zweiten schnappt die Falle zu, und erst bei noch mehr Signalen startet die Verdauung.",
+        "hashtags": [
+          "venusfliegenfalle",
+          "pflanzen",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy"
+        ]
+      },
+      "instagram": {
+        "title": "Die Venusfliegenfalle kann zählen. Plümo hat zweimal getippt.",
+        "description": "Plümo hielt die Venusfliegenfalle für kaputt, weil nach einmal Antippen nichts passiert ist. Dabei zählt sie: Ein Signal bewirkt nichts, beim zweiten schnappt die Falle zu, und erst bei noch mehr Signalen startet die Verdauung.",
+        "hashtags": [
+          "venusfliegenfalle",
+          "pflanzen",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy",
+          "reels"
+        ]
+      },
+      "youtube": {
+        "title": "Die Venusfliegenfalle kann zählen. Plümo hat zweimal getippt. #Shorts",
+        "description": "Plümo hielt die Venusfliegenfalle für kaputt, weil nach einmal Antippen nichts passiert ist. Dabei zählt sie: Ein Signal bewirkt nichts, beim zweiten schnappt die Falle zu, und erst bei noch mehr Signalen startet die Verdauung.",
+        "hashtags": [
+          "Shorts",
+          "venusfliegenfalle",
+          "pflanzen",
+          "wusstestdu",
+          "funfact"
+        ]
+      }
+    },
+    "status_bar": {
+      "file": "Obst-Ausweis",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Falle: kaputt?",
+          "tone": "amber",
+          "offset": 0.5
+        },
+        {
+          "beat": "b1",
+          "text": "Einmal: nichts",
+          "tone": "pop",
+          "offset": 1.09
+        },
+        {
+          "beat": "b3",
+          "text": "3 Sinneshaare je Hälfte",
+          "tone": "lime",
+          "offset": 3.76
+        },
+        {
+          "beat": "b4",
+          "text": "Rund 60 Signale pro Stunde",
+          "tone": "lime",
+          "offset": 3.76
+        },
+        {
+          "beat": "b5",
+          "text": "Merkt sich: 4 Stunden",
+          "tone": "lime",
+          "offset": 13.53
+        },
+        {
+          "beat": "b6",
+          "text": "Plümo: Blätter offen",
+          "tone": "amber",
+          "offset": 7.31
+        },
+        {
+          "beat": "b7",
+          "text": "Plümo: liegt kurz",
+          "tone": "muted",
+          "offset": 0.3
+        }
+      ]
+    }
+  },
+  "assets": {},
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "zonk_scan",
+      "spoken": "Einmal antippen? Nichts passiert. Die Venusfliegenfalle kann zählen. Besser als ich.",
+      "data": {
+        "mode": "hook",
+        "head": "Die Falle kann *zählen*.",
+        "head_at": 0.2,
+        "sign": "NUR OBST",
+        "items": [
+          {
+            "kind": "flytrap"
+          }
+        ],
+        "stamp_reject": "NOCH NICHT",
+        "cue_scan": "antippen",
+        "cue_verdict": "Nichts",
+        "cue_club": "Venusfliegenfalle",
+        "cue_know": "zählen"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "zonk_word",
+      "spoken": "Moment. Ich hab sie angetippt. Nichts. Ich dachte, die ist kaputt. Also nochmal getippt. Aber dann: Schnapp! Ich war geschockt. Die Fliege auch.",
+      "data": {
+        "word_a": "Falle",
+        "word_b": "kaputt",
+        "left": "Plümo: *kaputt*",
+        "right": "Echt: *zählt mit*",
+        "cue_left": "dachte",
+        "cue_strike": "Aber",
+        "cue_right": "Schnapp",
+        "cue_react": "Ich",
+        "item": "fly",
+        "cue_shock": "geschockt",
+        "cue_item": "Fliege",
+        "cue_never": "auch"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "zonk_diagram",
+      "spoken": "Wie zählt sie? Auf jeder Fallenhälfte sitzen drei Sinneshaare. Ein Insekt auf Nektarsuche stößt dagegen. Ein Signal bewirkt noch nichts. Das zweite lässt die Falle zuschnappen. Ohne Hände zeig ich es mit dem Blatt.",
+      "data": {
+        "headline": "Wie *zählt* sie?",
+        "inner": "flytrap",
+        "disc": [
+          "#1F5A1A",
+          "#D8F5C0",
+          "#8ED06A"
+        ],
+        "cue_q": "zählt",
+        "labels": [
+          {
+            "text": "je Hälfte: *3 Sinneshaare*",
+            "pos": "tr",
+            "cue": "Sinneshaare"
+          },
+          {
+            "text": "1 Signal: *nichts*",
+            "pos": "l",
+            "cue": "Signal"
+          },
+          {
+            "text": "2 Signale: *zu!*",
+            "pos": "b",
+            "cue": "zweite"
+          }
+        ],
+        "cue_hands": "Hände",
+        "cue_leaf": "Blatt"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 730,
+          "seconds": 0.7
+        },
+        "marker_at": "w:Sinneshaare"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "zonk_zoom",
+      "spoken": "Ganz genau. Zappelt die Beute, löst sie rund sechzig Signale pro Stunde aus. Erst bei noch mehr Signalen schaltet die Falle in allen 37.000 Drüsen die Verdauungsgene an. Klingt nach Großküche.",
+      "data": {
+        "kind": "flytrap",
+        "lens": "fly",
+        "lens_bg": "#1A2A10",
+        "cue_mag": "genau",
+        "callouts": [
+          {
+            "text": "*60 Signale* pro Stunde",
+            "cue": "sechzig"
+          },
+          {
+            "text": "*37.000* Drüsen",
+            "cue": "Drüsen"
+          }
+        ],
+        "cue_nut": "Stunde",
+        "stamp": {
+          "text": "Verdauung an!",
+          "cue": "Verdauungsgene"
+        },
+        "cue_react": "Großküche"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:sechzig",
+        "marker_at": "w:sechzig"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "zonk_compare",
+      "spoken": "Sie zählt also: Ein Signal, nichts. Zwei, zu. Noch mehr, Verdauung. Bleibt die Beute still, geht die Falle nach einem halben Tag wieder auf. Und sie merkt sich Berührungen mindestens vier Stunden. Ich vergesse nach vier Sekunden.",
+      "data": {
+        "headline": "Was zählt die *Falle*?",
+        "bars": [
+          {
+            "label": "1 Signal",
+            "value": "nichts",
+            "h": 0.2,
+            "color": "#B04A92",
+            "cue": "Ein"
+          },
+          {
+            "label": "2 Signale",
+            "value": "zu!",
+            "h": 0.5,
+            "color": "#FF4D8A",
+            "cue": "Zwei"
+          },
+          {
+            "label": "noch mehr",
+            "value": "verdaut",
+            "h": 0.9,
+            "color": "#B7FF00",
+            "cue": "Noch"
+          }
+        ],
+        "stamp": {
+          "text": "4 Stunden!",
+          "cue": "vier"
+        },
+        "cue_react": "vergesse"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Zwei"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "zonk_scan",
+      "spoken": "Merke: Eins heißt nichts, zwei heißt zu. Gut, jetzt ich. Ich zähl meine Blätter. Scanner läuft. Ergebnis: Blätter nicht ermittelbar. Ich kipp vor Schreck um.",
+      "data": {
+        "mode": "unknown",
+        "sign": "NUR OBST",
+        "merke": "Eins: nichts. Zwei: *zu*.",
+        "display": "Blätter: nicht ermittelbar",
+        "plumps": "PLUMPS",
+        "cue_build": "zu",
+        "cue_go": "Gut",
+        "cue_scan": "Scanner",
+        "cue_result": "Ergebnis",
+        "cue_back": "kipp"
+      },
+      "overlay": {
+        "marker": "auslegung",
+        "marker_at": "w:Merke"
+      },
+      "source_ids": []
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "zonk_loop",
+      "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+      "data": {
+        "sign": "NUR OBST",
+        "cta": "Mehr Zonkfruit? *Folgen.*",
+        "cue_cta": "Mehr",
+        "cue_up": "steh",
+        "cue_lie": "liegen",
+        "cue_ch": "Kanal"
+      },
+      "overlay": {
+        "marker": "none",
+        "head_until": "w:steh"
+      },
+      "source_ids": []
+    }
+  ]
+}

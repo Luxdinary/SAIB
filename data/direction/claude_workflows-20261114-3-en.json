@@ -1,0 +1,690 @@
+{
+  "video_id": "claude_workflows-20261114-3-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Auto-format code after every edit",
+  "notes": "Week 1 (plan agent D, 2026-11-01). Series In three steps, topic H3, English version of claude_workflows-20261114-3-de. Docs example “Auto-format code after edits” (PostToolUse, Edit|Write, Prettier). Guiding object app.js (example file). No terminal demo because per the docs a successful hook shows nothing in the conversation; before/after as a comparison. Sources opened as Markdown on 2026-11-01.",
+  "hook": {
+    "id": "H1",
+    "note": "Highest-scoring question; the unformatted line in app.js is the way in."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Claude edits a file, the formatting breaks. Do you run the formatter yourself every time?",
+      "on_screen": "Format by hand every time?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "app.js with mixed quotes, marker, question",
+      "why": {
+        "truth": "a question; the hooks guide has the answer",
+        "visual": "unformatted line visible"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude has to decide to format every single time? Not with a hook.",
+      "on_screen": "Formatting only on request?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "text, little action",
+      "why": {
+        "visual": "abstract"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "One entry in settings.json formats every file Claude edits.",
+      "on_screen": "One entry, every edit",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "settings.json",
+      "why": {
+        "truth": "Edit and Write only"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Every change Claude makes can mess up your formatting.",
+      "on_screen": "Formatting all over the place",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "messy app.js",
+      "why": {
+        "truth": "pointed"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch single quotes turn into double quotes on their own.",
+      "on_screen": "'x' becomes \"x\"",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "before/after",
+      "why": {
+        "relevance": "a detail, not the benefit"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Automate actions with hooks (Claude Code Docs): Auto-format code after edits (PostToolUse, matcher Edit|Write, jq | xargs npx prettier --write); test with single-quoted strings; shows nothing on success; matcher not for Bash; jq required; /hooks",
+      "url": "https://code.claude.com/docs/en/hooks-guide",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, Hooks"
+    },
+    {
+      "id": "S2",
+      "title": "Hooks reference (Claude Code Docs): PostToolUse runs immediately after a tool completes successfully; not for Bash rewrites (FileChanged); exit 2 cannot block, tool already ran",
+      "url": "https://code.claude.com/docs/en/hooks",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, Hooks reference"
+    }
+  ],
+  "unverified": [
+    "Whether the hook runs on this Windows machine: not checked; the docs example needs jq (installed separately, per the docs) and npx/Prettier.",
+    "How Claude Code shows the edit in the terminal: not checked; the closing terminal is animated. Per the docs, a successful hook shows nothing in the conversation.",
+    "app.js and the test line const a = 'x' are examples."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "app.js",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Format: by hand",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Example: Prettier hook",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "PostToolUse: planned",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Hook: registered",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "app.js: formatted",
+          "tone": "ok",
+          "offset": 2.0
+        },
+        {
+          "beat": "b6",
+          "text": "Edit and Write only",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "Hook: registered",
+          "tone": "accent"
+        },
+        {
+          "beat": "b8",
+          "text": "app.js: formatted",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "A PostToolUse hook with the matcher Edit|Write runs Prettier every time Claude has changed a file with Edit or Write. An example from the Claude Code docs, in three steps.",
+    "companion_text": "More Claude workflows, step by step: follow Promptwerk. Example based on the Claude Code docs (Auto-format code after edits), checked 2026-11-01. The editor and terminal are an animation, not a screen recording; app.js is an example file. Limits per the docs: the command needs jq; the matcher Edit|Write doesn't catch changes made by Bash commands (the docs point to the FileChanged hook for that); on success the hook shows nothing in the conversation.",
+    "hashtags": [
+      "claudecode",
+      "hooks",
+      "prettier",
+      "coding",
+      "developers"
+    ],
+    "short_title": "Auto-Formatieren"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Claude edits a file, the formatting breaks. Do you run the formatter yourself every time?",
+      "data": {
+        "question": "Format by hand every time?",
+        "chip": "unformatted",
+        "tabs": [
+          {
+            "name": "app.js",
+            "active": true
+          }
+        ],
+        "file": "app.js",
+        "lines": [
+          [
+            [
+              "com",
+              "// app.js"
+            ]
+          ],
+          [
+            [
+              "key",
+              "const "
+            ],
+            [
+              "",
+              "name = "
+            ],
+            [
+              "str",
+              "\"Promptwerk\""
+            ]
+          ],
+          [
+            [
+              "key",
+              "const "
+            ],
+            [
+              "",
+              "a  =  "
+            ],
+            [
+              "str",
+              "'x'"
+            ],
+            [
+              "punc",
+              " ;"
+            ]
+          ],
+          [
+            [
+              "key",
+              "function "
+            ],
+            [
+              "",
+              "f( ){return a}"
+            ]
+          ]
+        ],
+        "focus_line": 2,
+        "zoom": 1.1,
+        "env_word": "file",
+        "mark_word": "formatting",
+        "click_word": "breaks",
+        "question_word": "Do",
+        "chip_word": "every"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Do"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "No need. The docs have a ready-made example: run Prettier on every file Claude edits, so formatting stays consistent without you stepping in.",
+      "data": {
+        "kicker": "Claude Code Docs · Hooks",
+        "page_title": "Automate actions with hooks",
+        "quotes": [
+          "Automatically run Prettier on every file Claude edits",
+          "so formatting stays consistent without manual intervention"
+        ],
+        "translation_label": "In short",
+        "translation": "Consistent, no manual work.",
+        "page_word": "docs",
+        "quote1_word": "Prettier",
+        "quote2_word": "consistent",
+        "translation_word": "stepping"
+      },
+      "overlay": {
+        "title": "The docs example",
+        "marker_at": "w:Prettier",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Your shell command hangs off the PostToolUse event. It fires right after a tool finishes successfully, so only after the change.",
+      "data": {
+        "headline": "",
+        "gate": 2,
+        "chip": "then: Prettier",
+        "nodes": [
+          {
+            "label": "PreToolUse"
+          },
+          {
+            "label": "Edit / Write",
+            "tag": "tool"
+          },
+          {
+            "label": "PostToolUse",
+            "hook": true
+          },
+          {
+            "label": "Stop"
+          }
+        ],
+        "shell_chip": "prettier --write",
+        "shell_word": "shell",
+        "travel_word": "event",
+        "gate_word": "after",
+        "travel_end_word": "change"
+      },
+      "overlay": {
+        "title": "After the tool",
+        "marker_at": "w:PostToolUse",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "In your project's settings.json, add PostToolUse with the matcher Edit or Write. The command pulls the file path out with jq and hands it to Prettier.",
+      "data": {
+        "tabs": [
+          {
+            "name": ".claude/settings.json",
+            "active": true
+          },
+          "app.js"
+        ],
+        "focus_line": 2,
+        "pre_line": 1,
+        "callout": "after every Edit and Write",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "punc",
+              "{ "
+            ],
+            [
+              "key",
+              "\"hooks\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"PostToolUse\""
+            ],
+            [
+              "punc",
+              ": [{"
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "key",
+              "\"matcher\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"Edit|Write\""
+            ],
+            [
+              "punc",
+              ","
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "key",
+              "\"hooks\""
+            ],
+            [
+              "punc",
+              ": [{"
+            ]
+          ],
+          [
+            [
+              "",
+              "        "
+            ],
+            [
+              "key",
+              "\"type\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"command\""
+            ],
+            [
+              "punc",
+              ","
+            ]
+          ],
+          [
+            [
+              "",
+              "        "
+            ],
+            [
+              "key",
+              "\"command\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"jq -r"
+            ]
+          ],
+          [
+            [
+              "str",
+              "         '.tool_input.file_path' |"
+            ]
+          ],
+          [
+            [
+              "str",
+              "         xargs npx prettier --write\""
+            ]
+          ],
+          [
+            [
+              "punc",
+              "      }]"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "    }]"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "} }"
+            ]
+          ]
+        ],
+        "line_h": 44,
+        "zoom": 1.08,
+        "typed_word": "project",
+        "pre_word": "PostToolUse",
+        "mark_word": "matcher",
+        "click_word": "Write",
+        "callout_word": "command"
+      },
+      "overlay": {
+        "title": "Register the hook",
+        "marker_at": "w:PostToolUse",
+        "dim_at": "w:Write",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "To test it, Claude adds a line with single quotes to a JavaScript file. Right after, Prettier rewrites them to double quotes with its default settings.",
+      "data": {
+        "top": {
+          "title": "Claude's line",
+          "verdict": "before",
+          "rows": [
+            "const a = 'x'",
+            "single quotes"
+          ]
+        },
+        "bottom": {
+          "title": "after the hook",
+          "verdict": "after",
+          "rows": [
+            "const a = \"x\"",
+            "Prettier default"
+          ]
+        },
+        "top_word": "test",
+        "bottom_word": "Right"
+      },
+      "overlay": {
+        "title": "Before and after",
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:test",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Two things to know: when the hook succeeds, Claude Code shows nothing in the conversation. And it only fires for Edit and Write, not when a Bash command rewrites the file.",
+      "data": {
+        "kicker": "Claude Code Docs · Hooks",
+        "page_title": "Automate actions with hooks",
+        "quotes": [
+          "When the hook succeeds, Claude Code shows nothing in the conversation.",
+          "fires only when Claude uses the Edit or Write tool"
+        ],
+        "translation_label": "In short",
+        "translation": "Silent on success; Edit and Write only.",
+        "page_word": "things",
+        "quote1_word": "succeeds",
+        "quote2_word": "fires",
+        "translation_word": "Bash"
+      },
+      "overlay": {
+        "title": "Two limits",
+        "marker_at": "w:succeeds",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "To set it up: get Prettier and jq ready, paste the block into settings.json in your project root, then check it with a test line.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Prettier and jq ready",
+            "code": "npx prettier · jq",
+            "at_word": "Prettier"
+          },
+          {
+            "title": "Add to settings.json",
+            "code": "PostToolUse · Edit|Write",
+            "at_word": "settings"
+          },
+          {
+            "title": "Check with a test line",
+            "code": "'x' becomes \"x\"",
+            "at_word": "test"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "In three steps",
+        "marker": "fakt",
+        "marker_at": "w:Prettier",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Whether to format isn't Claude's call anymore, the hook handles it. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "app.js: formatted",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Edit(app.js)"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  PostToolUse: prettier --write"
+          }
+        ],
+        "statement": "Format via hook, after every Edit and Write.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_word": "Whether",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

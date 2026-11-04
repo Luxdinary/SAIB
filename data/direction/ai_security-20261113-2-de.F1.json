@@ -1,0 +1,420 @@
+{
+ "video_id": "ai_security-20261113-2-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Geteilter KI-Chat heißt öffentlicher Link",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Vor dem Upload\". F1 im Format \"Was tust du?\", Reihe Vor dem Upload. Beispielfall nachgestellt: Betrieb, Chat-Inhalt, Uhrzeiten und Weiterleitung sind erfunden; Regeln zu Links, Ablaufdatum, Kopien und Verwaltung aus S1 und S2, am 02.11.2026 neu gelesen (OpenAI-Hilfeseite inzwischen überarbeitet). Der alte Plan ai_security-20261113-2-de.json bleibt unverändert.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Du willst einen KI-Chat mit Kundendaten per Link teilen, nur mit der Chefin. Was tust du? Ein nachgestellter Fall mit drei Antworten und dem, was OpenAI und Anthropic selbst zu geteilten Links schreiben.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "chatgpt",
+   "claude",
+   "kiimbuero",
+   "datenschutz",
+   "vordemupload"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq",
+   "title": "OpenAI Help Center: Sharing conversations and scheduled tasks in ChatGPT",
+   "checked_at": "2026-11-02",
+   "label": "OpenAI, geteilte Links"
+  },
+  {
+   "id": "S2",
+   "url": "https://privacy.claude.com/en/articles/10593882-share-and-unshare-chats",
+   "title": "Anthropic Privacy Center: Share and unshare chats",
+   "checked_at": "2026-11-02",
+   "label": "Anthropic, Chats teilen"
+  }
+ ],
+ "unverified": [
+  "Ob ein Link weitergeleitet wurde, lässt sich nicht prüfen: nicht behauptet.",
+  "Ablauf im Beispielfall (Mahnungen, Chefin, Weiterleitung ans Steuerbüro, Uhrzeiten) ist erfunden und als Beispiel gekennzeichnet.",
+  "Die Aussage des alten Plans, geteilte Seiten seien nicht für Suchmaschinen gedacht, steht am 02.11.2026 nicht mehr auf der OpenAI-Seite: nicht verwendet.",
+  "Neu am 02.11.2026 geprüft: OpenAI rät, keine Finanzdaten und andere sensible persönliche Daten in geteilte Inhalte zu geben; Löschen eines Links entfernt keine Kopien, die andere schon gespeichert haben; Claude: Einstellungen > Datenschutz > Geteilte Chats (Free, Pro, Max, Ultra).",
+  "Menübezeichnungen sind aus den englischen Hilfeseiten übersetzt (Data controls > Shared links; Privacy > Shared chats); die deutsche Oberfläche kann abweichen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Du teilst einen KI-Chat per Link. Weißt du, wer ihn noch lesen kann?",
+   "on_screen": "Chat geteilt. Wer liest mit?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Der Link geht nur an eine Person, also bleibt er privat? Laut OpenAI nicht.",
+   "on_screen": "Nur ein Empfänger = privat?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Geteilte ChatGPT-Links haben kein einstellbares Ablaufdatum.",
+   "on_screen": "Kein Ablaufdatum für den Link",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein geteilter Chat mit Kundendaten ist für jeden lesbar, der den Link hat.",
+   "on_screen": "Kundendaten im Chat-Link?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Mittwoch, vierzehn Uhr fünf. Du willst einen Chat mit Kundendaten teilen.",
+   "on_screen": "MI 14:05 · Chat mit Kundendaten teilen?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "Uhrzeit groß, das Chatfenster kommt als Papierkarte herein, die Zeile mit den Kundendaten wird markiert",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Mittwoch, vierzehn Uhr fünf. Du hast mit ChatGPT Mahnungen vorbereitet, mit Namen, Adressen und Beträgen. Die Chefin soll drüberschauen. Du klickst auf Teilen.",
+   "data": {
+    "kicker": "Beispielfall · nachgestellt",
+    "time": "MI 14:05",
+    "place": "Büro eines Malerbetriebs",
+    "mail_at": "@ChatGPT",
+    "mail": {
+     "from": "ChatGPT · privates Konto",
+     "addr": "Chat: Mahnungen",
+     "time": "14:05",
+     "subject": "Link teilen",
+     "lines": [
+      "Mahnungen an eure Kunden,",
+      "mit Namen, Adressen, Beträgen.",
+      "Link erstellen und kopieren?"
+     ]
+    },
+    "highlight": {
+     "line": 1,
+     "label": "Kundendaten",
+     "at": "@Namen"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "Du prüfst kurz. Empfänger: nur die Chefin. Der Link: eine lange Zeichenfolge. Das Konto: dein privates, wie immer. Wirkt privat. Doch laut OpenAI gilt bei privaten Konten: Jeder, der den Link hat, kann den Chat ansehen.",
+   "data": {
+    "kicker": "Was du prüfst",
+    "headline": "Nur für die Chefin?",
+    "rows": [
+     {
+      "label": "Empfänger",
+      "value": "nur die Chefin",
+      "verdict": "vertraut",
+      "at": "@Empfänger"
+     },
+     {
+      "label": "Link",
+      "value": "lange Zeichenfolge",
+      "verdict": "wirkt privat",
+      "at": "@Link"
+     },
+     {
+      "label": "Konto",
+      "value": "dein privates",
+      "verdict": "wie immer",
+      "at": "@Konto"
+     }
+    ],
+    "finding": {
+     "text": "Wirkt privat.",
+     "at": "@Wirkt"
+    },
+    "fact": {
+     "kind": "fakt",
+     "text": "Jeder mit dem Link kann den geteilten Chat ansehen.",
+     "source": "OpenAI · Hilfeseite geteilte Links",
+     "at": "@laut"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "Was tust du? A: Link schicken, er geht ja nur an sie. B: Link schicken und später löschen. C: Erst die Kundendaten raus, dann teilen. Merk dir deine Wahl.",
+   "data": {
+    "question": "Was tust du?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Link schicken, geht nur an sie",
+      "at": "@geht"
+     },
+     {
+      "key": "B",
+      "text": "Link schicken, später löschen",
+      "at": "@später"
+     },
+     {
+      "key": "C",
+      "text": "Erst Kundendaten raus, dann teilen",
+      "at": "@Kundendaten"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Merk"
+    },
+    "hint": "Merk dir deine Wahl."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "sc_timeline",
+   "spoken": "Spielen wir B durch. Die Chefin leitet den Link ans Steuerbüro weiter. Ein Ablaufdatum lässt sich nicht einstellen. Und löschst du ihn später: Wer den Chat schon fortgesetzt hat, behält seine eigene Kopie.",
+   "data": {
+    "kicker": "Wahl B, durchgespielt",
+    "tag": "Beispiel",
+    "headline": "Teilen, später löschen",
+    "items": [
+     {
+      "time": "MI 14:06",
+      "text": "Link geht an die Chefin",
+      "at": 0.6
+     },
+     {
+      "time": "MI 14:20",
+      "text": "Weiter ans Steuerbüro",
+      "tone": "amber",
+      "at": "@leitet"
+     },
+     {
+      "time": "Wochen später",
+      "text": "Kein Ablaufdatum",
+      "tone": "amber",
+      "at": "@Ablaufdatum"
+     },
+     {
+      "time": "Nach dem Löschen",
+      "text": "Fortgesetzte Kopie bleibt",
+      "tone": "red",
+      "at": "@behält"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "OpenAI · Ablaufdatum und Kopien",
+     "at": 1.0
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Richtig ist C. OpenAI rät selbst: keine Finanzdaten oder andere sensiblen persönlichen Daten in geteilte Inhalte. A und B ändern nichts am Inhalt: Der Link zeigt alles, und eine Kopie kann bleiben.",
+   "data": {
+    "mode": "rule",
+    "kicker": "Der eine Schritt",
+    "card": {
+     "letter": "C",
+     "title": "Kundendaten nie per Link",
+     "sub": "erst rausnehmen, dann teilen",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Geht ja nur an sie",
+      "note": "jeder mit Link liest",
+      "at": "@ändern"
+     },
+     {
+      "text": "B: Später löschen",
+      "note": "Kopien bleiben",
+      "at": "@Kopie"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "OpenAI · keine sensiblen Daten teilen"
+     },
+     {
+      "kind": "fakt",
+      "label": "OpenAI · Links und Kopien"
+     }
+    ],
+    "sources_at": "@OpenAI"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Schon geteilt? Dann jetzt aufräumen. Bei ChatGPT unter Einstellungen, Datenkontrollen, Geteilte Links. Bei Claude unter Einstellungen, Datenschutz, Geteilte Chats. Was keiner mehr braucht: löschen.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "Schon geteilt?",
+    "card": {
+     "letter": "!",
+     "title": "Links jetzt aufräumen",
+     "sub": "löschen, was keiner mehr braucht",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "ChatGPT: Datenkontrollen, Links",
+      "at": "@ChatGPT"
+     },
+     {
+      "text": "Claude: Datenschutz, Chats",
+      "at": "@Claude"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "OpenAI · Anthropic, Hilfeseiten"
+     }
+    ],
+    "sources_at": "@aufräumen"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Kundendaten gehören nicht in einen geteilten Link. Was hättest du gewählt? Schreib es in die Kommentare.",
+   "data": {
+    "kicker": "Reihe · Vor dem Upload",
+    "rule": "Kundendaten nie per Chat-Link.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Was hättest du gewählt?",
+     "at": "@hättest"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+   },
+   "source_ids": []
+  }
+ ]
+}

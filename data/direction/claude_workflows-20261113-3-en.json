@@ -1,0 +1,568 @@
+{
+  "video_id": "claude_workflows-20261113-3-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "4 shortcuts that save time",
+  "notes": "Production week 1 (2026-11-01), plan agent C. Topic 13.11. slot 3 (W2), series Toolbox, format listicle. English adaptation of claude_workflows-20261113-3-de (same facts, sources and scenes, own wording). Guiding object: Shortcuts (hook tab, status bar counts 0 to 4). Only shortcuts from the table on the Interactive mode page, Windows variants verbatim from there: Alt+M for Shift+Tab (when the Node or Bun runtime doesn't enable VT input mode), Alt+V for pasting an image (Windows and WSL). The page lists no Windows variant for Esc Esc and Ctrl+R, so none is given. Custom shortcuts via /keybindings (Keybindings page). Sources opened 2026-11-01 as markdown. Terminal scene is an animation, # lines are explanations; red terminal marker hidden with mark_w 0.",
+  "hook": {
+    "id": "H1",
+    "note": "Highest-scoring question; the shortcut list in the hook announces the four entries."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Four Claude Code shortcuts that save time. Do you know them, including on Windows?",
+      "on_screen": "Know all four?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "shortcut list in the editor, marker on Shift+Tab, click, zoom, question",
+      "why": {
+        "truth": "all four shortcuts and the Windows variants are in the docs table",
+        "visual": "the shortcuts themselves are visible"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Need slash rewind to go back? Escape twice on an empty prompt does it too.",
+      "on_screen": "Only /rewind? Esc Esc works too.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Esc key pressed twice",
+      "why": {
+        "truth": "Interactive mode: Esc + Esc opens the rewind menu on an empty input",
+        "relevance": "only one of the four"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "On Windows, you paste an image into Claude Code with Alt plus V.",
+      "on_screen": "Windows: images with Alt+V",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "image chip appears in the prompt",
+      "why": {
+        "truth": "verbatim in the table",
+        "relevance": "Windows users only"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Shift plus Tab does nothing on Windows? Then Alt plus M is your shortcut.",
+      "on_screen": "Shift+Tab not working? Alt+M",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "key swaps",
+      "why": {
+        "truth": "Alt+M applies only when Node or Bun doesn't enable VT input mode; Shift+Tab behavior then not described",
+        "clarity": "condition missing"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch four shortcuts save you typing in Claude Code.",
+      "on_screen": "Four shortcuts in action",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "terminal with shortcuts",
+      "why": {
+        "truth": "shortcuts documented",
+        "relevance": "Windows hint missing"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Interactive mode (Claude Code Docs), keyboard shortcuts: may vary by platform and terminal; Shift+Tab, or Alt+M on Windows when the Node or Bun runtime doesn't enable VT input mode, cycles permission modes; Ctrl+R reverse search; Ctrl+V or Cmd+V (iTerm2) or Alt+V (Windows and WSL) paste image, inserts an [Image #N] chip; Esc interrupts; Esc + Esc clears draft or opens rewind menu",
+      "url": "https://code.claude.com/docs/en/interactive-mode",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, Interactive mode"
+    },
+    {
+      "id": "S2",
+      "title": "Customize keyboard shortcuts (Claude Code Docs): /keybindings creates or opens ~/.claude/keybindings.json; chat:cycleMode Shift+Tab; chat:imagePaste Ctrl+V (Alt+V on Windows and WSL); historySearch",
+      "url": "https://code.claude.com/docs/en/keybindings",
+      "checked_at": "2026-11-01",
+      "label": "Claude Code docs, Keybindings"
+    }
+  ],
+  "unverified": [
+    "What reverse search (Ctrl+R) and the image chip look like in the terminal: not documented in detail; animated, the # lines are explanations. Documented: the search term is highlighted, an [Image #N] chip is inserted at the cursor.",
+    "Whether Ctrl+R and Esc Esc work the same on every system: the docs give no platform variant for either, but say shortcuts may vary by platform and terminal; not claimed as universal.",
+    "Terminal prompts (Write tests for login.ts, What's this error?) are example values.",
+    "That the shortcuts save a measurable amount of time: no number, only the calendar title."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Shortcuts",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "0 of 4",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "varies by terminal",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "1 of 4: Shift+Tab",
+          "tone": "accent"
+        },
+        {
+          "beat": "b4",
+          "text": "3 of 4: Ctrl+R, Alt+V",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "4 of 4: Esc Esc",
+          "tone": "ok"
+        },
+        {
+          "beat": "b6",
+          "text": "4 of 4",
+          "tone": "ok"
+        },
+        {
+          "beat": "b7",
+          "text": "4 of 4",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Four Claude Code shortcuts from the docs: Shift+Tab cycles permission modes (Alt+M on Windows without VT input mode), Ctrl+R searches your history, Ctrl+V pastes an image (Alt+V on Windows and WSL), and Esc twice on an empty prompt opens the rewind menu.",
+    "companion_text": "Follow Promptwerk for more Claude workflows, step by step. Based on the Interactive mode and Keybindings pages of the Claude Code docs; the terminal scene is an animated view, not a screen recording. Per the docs, shortcuts may vary by platform and terminal. Shift+Tab cycles through default (shown as Manual), acceptEdits and plan, and when available bypassPermissions and auto. If the prompt already has text, Esc twice clears it instead; press Up to get the draft back. In iTerm2 on macOS, paste images with Cmd+V. Set your own shortcuts with /keybindings in ~/.claude/keybindings.json.",
+    "hashtags": [
+      "claudecode",
+      "shortcuts",
+      "aiworkflow",
+      "coding",
+      "productivity"
+    ],
+    "short_title": "4 Tastenkürzel"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Four Claude Code shortcuts that save time. Do you know them, including on Windows?",
+      "data": {
+        "question": "Know all four?",
+        "chip": "on Windows too?",
+        "file": "Shortcuts",
+        "tabs": [
+          {
+            "name": "Shortcuts",
+            "active": true
+          }
+        ],
+        "lines": [
+          [
+            [
+              "com",
+              "# Four shortcuts"
+            ]
+          ],
+          [
+            [
+              "kw",
+              "Shift+Tab"
+            ]
+          ],
+          [
+            [
+              "kw",
+              "Ctrl+R"
+            ]
+          ],
+          [
+            [
+              "kw",
+              "Ctrl+V"
+            ],
+            [
+              "dim",
+              " · "
+            ],
+            [
+              "kw",
+              "Alt+V"
+            ]
+          ],
+          [
+            [
+              "kw",
+              "Esc Esc"
+            ]
+          ]
+        ],
+        "focus_line": 1,
+        "zoom": 1.1,
+        "env_word": "shortcuts",
+        "mark_word": "save",
+        "click_word": "time",
+        "question_word": "know",
+        "chip_word": "Windows"
+      },
+      "overlay": {
+        "marker": "none"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Quick note from the docs: shortcuts may vary by platform and terminal. Some have a different Windows version, and you'll see it each time.",
+      "data": {
+        "kicker": "Claude Code Docs · Interactive",
+        "page_title": "Interactive mode",
+        "quotes": [
+          "Keyboard shortcuts may vary by platform and terminal.",
+          "Alt+V (Windows and WSL)"
+        ],
+        "translation_label": "In short",
+        "translation": "Keys depend on system and terminal",
+        "page_word": "docs",
+        "quote1_word": "shortcuts",
+        "translation_word": "terminal",
+        "quote2_word": "Windows"
+      },
+      "overlay": {
+        "title": "Depends on your terminal",
+        "marker_at": "w:shortcuts",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "One: Shift plus Tab cycles permission modes, from default to acceptEdits to plan, and further when available. From auto, the next press brings you back to default. On Windows without VT input mode, it's Alt plus M.",
+      "data": {
+        "headline": "",
+        "gate": 0,
+        "chip": "Shift+Tab · Alt+M",
+        "nodes": [
+          {
+            "label": "default · Manual"
+          },
+          {
+            "label": "acceptEdits"
+          },
+          {
+            "label": "plan"
+          },
+          {
+            "label": "bypassPermissions",
+            "tag": "if available"
+          },
+          {
+            "label": "auto",
+            "tag": "if available"
+          }
+        ],
+        "travel_word": "cycles",
+        "travel_end_word": "further",
+        "gate_word": "Alt"
+      },
+      "overlay": {
+        "title": "1 · Switch modes",
+        "marker_at": "w:Shift",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Two: Control plus R searches your history, and pressing it again jumps to older matches. Three: paste an image from the clipboard with Control plus V, or Alt plus V on Windows. An image chip appears in your prompt.",
+      "data": {
+        "title": "claude · demo-project",
+        "focus_line": 4,
+        "mark_w": 0,
+        "stamp": "Alt+V",
+        "annotation": "image chip at the cursor",
+        "height": 540,
+        "top": 20,
+        "lines": [
+          {
+            "kind": "dim",
+            "text": "  # Ctrl+R: search history",
+            "at_word": "searches"
+          },
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Write tests for "
+              ],
+              [
+                "acc",
+                "login"
+              ],
+              [
+                "",
+                ".ts"
+              ]
+            ],
+            "at_word": "history"
+          },
+          {
+            "kind": "dim",
+            "text": "  # Ctrl+R again: older matches",
+            "at_word": "older"
+          },
+          {
+            "kind": "dim",
+            "text": "  # Windows: Alt+V pastes image",
+            "at_word": "Windows"
+          },
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "What's this error? "
+              ],
+              [
+                "acc",
+                "[Image #1]"
+              ]
+            ],
+            "at_word": "appears"
+          }
+        ],
+        "stamp_word": "Alt",
+        "mark_word": "chip",
+        "click_word": "appears",
+        "annotation_word": "prompt"
+      },
+      "overlay": {
+        "title": "2 and 3 · Search, image",
+        "example": true,
+        "marker_at": "w:Control",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "And four: Escape alone interrupts Claude and keeps the work so far. Escape twice on an empty prompt opens the rewind menu, where you can go back. With text in the prompt, it clears your draft instead.",
+      "data": {
+        "top": {
+          "title": "Esc",
+          "verdict": "stop",
+          "rows": [
+            "interrupts Claude",
+            "keeps the work so far"
+          ]
+        },
+        "bottom": {
+          "title": "Esc Esc",
+          "verdict": "rewind",
+          "rows": [
+            "empty: rewind menu",
+            "with text: clears draft"
+          ]
+        },
+        "top_word": "Escape",
+        "bottom_word": "twice"
+      },
+      "overlay": {
+        "title": "4 · Esc or Esc Esc",
+        "marker": "fakt",
+        "marker_at": "w:Escape",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "To remember: Shift Tab for modes, Control R for history, Alt V for images on Windows, and Escape twice to rewind.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Switch modes",
+            "code": "Shift+Tab · some Windows: Alt+M",
+            "at_word": "Shift"
+          },
+          {
+            "title": "Search history",
+            "code": "Ctrl+R",
+            "at_word": "Control"
+          },
+          {
+            "title": "Paste an image",
+            "code": "Ctrl+V · Windows: Alt+V",
+            "at_word": "Alt"
+          },
+          {
+            "title": "Rewind",
+            "code": "Esc Esc (empty prompt)",
+            "at_word": "Escape"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "All four at a glance",
+        "marker": "fakt",
+        "marker_at": "w:Shift",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Set your own shortcuts with slash keybindings. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "4 shortcuts ready",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/keybindings"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  ~/.claude/keybindings.json"
+          }
+        ],
+        "statement": "Four shortcuts. Your own via /keybindings.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_word": "Set",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

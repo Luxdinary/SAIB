@@ -1,0 +1,34 @@
+{
+  "id": "rules-ordner",
+  "topic_id": "claude_workflows-20261118-3-de",
+  "language": "de",
+  "title": "Regeln nur für bestimmte Ordner",
+  "model": "haiku",
+  "tools": "Read,Write",
+  "probe": "TEST-REGEL",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    ".claude/rules/tests.md": "---\npaths:\n  - \"tests/**\"\n---\nBeginne jede Datei in tests/ mit der Zeile `// TEST-REGEL`.\n",
+    "tests/alt.test.js": "const assert = require(\"assert\");\nassert.strictEqual(1 + 1, 2);\n",
+    "src/alt.js": "module.exports = (a, b) => a + b;\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Arbeit in tests/",
+      "probe_where": "file:tests/neu.test.js",
+      "prompt": "Lies tests/alt.test.js und lege daneben die Datei tests/neu.test.js an, die prüft, dass 2 + 2 gleich 4 ist.",
+      "permission_mode": "acceptEdits"
+    },
+    {
+      "id": "L2",
+      "title": "Arbeit in src/",
+      "probe_where": "file:src/neu.js",
+      "prompt": "Lies src/alt.js und lege daneben die Datei src/neu.js an, die zwei Zahlen multipliziert.",
+      "permission_mode": "acceptEdits"
+    }
+  ]
+}

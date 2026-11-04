@@ -1,0 +1,454 @@
+{
+ "video_id": "ai_security-20261115-3-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "New bank details by email? Call first",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema D02, Reihe So läuft die Masche. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Supplier invoice. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Supplier invoice",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Bank details: changed",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Sender: real, content?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Targets: small firms too",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Second channel: missing",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Transfer: recall it?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Rule: set it today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "No call-back: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "A supplier emails new bank details, perhaps even from their real address. Why the FBI and police advise a call-back through a second channel.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "invoicefraud",
+   "bec",
+   "finance",
+   "smallbusiness",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, lanes, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ic3.gov/PSA/2024/PSA240911",
+   "title": "FBI IC3 PSA I-091124-PSA: Business Email Compromise – The $55 Billion Scam (11.09.2024)",
+   "checked_at": "2026-11-01",
+   "label": "FBI IC3, BEC alert 2024"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.berlin.de/polizei/aufgaben/praevention/betrug/artikel.693958.php",
+   "title": "Polizei Berlin: Geschäftsführer-Schwindel (CEO-Fraud)",
+   "checked_at": "2026-11-01",
+   "label": "Berlin Police, email fraud"
+  }
+ ],
+ "unverified": [
+  "Frequency of this scam: not used."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Your supplier has new bank details. How do you know the email is from them?",
+   "on_screen": "Is it really from them?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "The email comes from the real address, so it's genuine? Not necessarily.",
+   "on_screen": "Real address = real email?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The FBI has received reports of this scam from 186 countries.",
+   "on_screen": "Reported in 186 countries",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One email with new bank details, and your next payment goes to scammers.",
+   "on_screen": "New bank details by email?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "IC3: Änderungen von Kontodaten über zweiten Kanal prüfen"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Look at what changed on this invoice.",
+   "on_screen": "What's different here?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "One email with new bank details, and your next payment goes to scammers.",
+   "data": {
+    "question": "New bank details by email?",
+    "doc_label": "Invoice.pdf",
+    "chat_title": "Supplier invoice",
+    "bot_line": "Please use our new account",
+    "typed": "New account from today",
+    "badge": "Genuine?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "The FBI describes business email compromise like this: criminals take over legitimate business or personal email accounts, through social engineering or computer intrusion. So the email really can come from the genuine address.",
+   "data": {
+    "headline": "When the real inbox lies",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Compromised inbox",
+      "icon": "&#9993;"
+     },
+     {
+      "id": "n1",
+      "label": "New bank details",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n2",
+      "label": "Your payment",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "emails you"
+     },
+     {
+      "label": "you pay"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 0,
+     "at": 7.5,
+     "label": "Inbox taken over?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "According to the FBI, the scam targets small local businesses as well as large corporations. It has been reported in all 50 US states and 186 countries. The money often moves through banks in several countries.",
+   "data": {
+    "headline": "Who gets hit",
+    "file_label": "Supplier invoice",
+    "card": {
+     "title": "According to the FBI",
+     "rows": [
+      {
+       "text": "small local businesses",
+       "ok": null
+      },
+      {
+       "text": "large corporations",
+       "ok": null
+      },
+      {
+       "text": "reported in 186 countries",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "That's why the FBI explicitly advises verifying requests to change account information through a secondary channel. Replying to the same email is not a second channel. Calling a number you already know is.",
+   "data": {
+    "headline": "What counts as a check",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.0,
+    "left": {
+     "title": "Not a check",
+     "rows": [
+      {
+       "text": "replying to the email",
+       "ok": "open"
+      },
+      {
+       "text": "number from the email",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Second channel",
+     "rows": [
+      {
+       "text": "a number you already know",
+       "ok": null
+      },
+      {
+       "text": "your usual contact",
+       "ok": null
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "And if the money has already gone? Police advise asking your bank to recall the transfer straight away and reporting it. According to the FBI, reporting quickly can help freeze the funds.",
+   "data": {
+    "headline": "Money already sent?",
+    "file_label": "Supplier invoice",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Call the bank now",
+      "sub": "request a recall",
+      "at": 0.6
+     },
+     {
+      "title": "Wait and see",
+      "sub": "money moves on",
+      "at": 1.0
+     }
+    ],
+    "approval": "Reported to police?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "For your accounts team: every new set of bank details gets confirmed by calling the number you already have. The number comes from your own records, never from the email. And if something has gone wrong: bank and police straight away.",
+   "data": {
+    "headline": "One rule for accounts",
+    "items": [
+     {
+      "title": "New bank details = call",
+      "sub": "before the first payment",
+      "at": 2.0
+     },
+     {
+      "title": "Number from your records",
+      "sub": "never from the email",
+      "at": 4.8
+     },
+     {
+      "title": "Something went wrong?",
+      "sub": "bank and police at once",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "New bank details? Call first. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "New bank details? Call first",
+    "file_label": "Supplier invoice",
+    "button": "Pay",
+    "block_text": "Call back first, then pay",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

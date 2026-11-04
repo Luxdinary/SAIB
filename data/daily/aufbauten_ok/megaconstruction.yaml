@@ -1,0 +1,63 @@
+# Bildaufbauten Gigastruct (megaconstruction) für den Tagesläufer. Erster Entwurf der Tagesläufer-Sitzung, 03.11.2026;
+# korrigiert von der Gigastruct-Sitzung am 03.11.2026 (3D-Objekte, Wortanker, Material, Stolpersteine aus dem Testvideo).
+# Vorlage: config/aufbauten.vorlage.yaml. Szenencode: brands/megaconstruction/scenes_bauaufgabe.py (gb_*); Render:
+# brands/megaconstruction/render/render_gigastruct.py (3D-Ebene layout.model3d, Bild-/Clip-Ebene layout.media, Ton layout.sound*).
+# Konzeptplan 03.11.: A ist gebaut und freigegeben (Testvideo Fehmarnbelt); B-D sind noch nicht gebaut und nicht mit einem Render geprüft.
+aufbauten:
+  - kuerzel: A
+    name: Aufmaß
+    gebaut: true
+    szenentypen: [gb_task, gb_load, gb_principle, gb_build, gb_calc, gb_proof, gb_close]
+    beispielplan: data/direction/megaconstruction-20261109-2-de.T1.json
+    beispielplan_en: data/direction/megaconstruction-20261109-2-en.T1.json
+    hinweis: |
+      Reihenfolge der Beats: gb_task, gb_load, gb_principle, gb_build, gb_calc, gb_proof, gb_close (7 Beats, gesprochen 65-90 s,
+      Ziel 70-84 s; Schätzung mit tools/bauaufgabe_len.py). Nachgerechnet: gb_calc zweimal erlaubt, gb_principle darf wegfallen.
+      Realbild/Clip im Vollbild als layout.media, orange Maßlinie nur auf Bildern, deren Pixelgeometrie bekannt ist, dann
+      Plan-Wipe ins 3D-Modell, Rechnung mit Waage (beats[].data.scale), Probe mit Stempel und Zeitraffer-Uhr (data.clock).
+      3D-Objekte (layout.model3d.objects, Einheiten Meter, x entlang, y oben, z quer): nur diese kind-Werte existieren:
+      element, chain, water, seabed, ground, land, boat, pontoon, tower, box, prism, bridge, viaduct, dam, ridge, pendulum,
+      gates, path, piles, tmd, wind. Je Objekt id, kind, Maße, pos, props. Zeitverläufe in layout.model3d.shots.<beat>.props
+      als "objekt.prop": Zahl oder [[Sekunden|"%Anteil"|"@Wort", Wert], ...]; Kamera shots.<beat>.cam: target, az0/az1, el0/el1,
+      fit0/fit1, zone (Höhe px), cy (Mitte px). Anker (layout.model3d.anchors, Name -> [x,y,z]) nur für pins; ein Thema ohne
+      passendes kind bekommt eine Szene aus box/prism, nie ein erfundenes kind.
+      Wortanker: "@Wort" = erstes gesprochenes Wort des Beats, das so beginnt (Groß-/Kleinschrift und Satzzeichen egal), Zahlen
+      so wie gesprochen und je Sprache verschieden ("73.500" DE, "73,500" EN). "@Wort+0.3" und "@Wort-0.9" verschieben um Sekunden,
+      "%0.4" ist ein Anteil des Beats, eine Zahl sind Sekunden ab Beat-Anfang. Der Anker muss im selben Beat gesprochen werden,
+      sonst meldet der Renderer "word anchor ... not found" (nichts wird geraten). DE und EN bekommen je eigene Wörter an derselben
+      Stelle (siehe beide Beispielpläne).
+      Ton (layout.sound = {palette: tech, mood: dark, levels: {sfx_peak_db: -18}}, layout.sound_cues = Liste): Cue-Zeit mit
+      "word": "Wort" (ohne @) oder "at": Sekunden ab Beat-Anfang; Versatz vor einem Wort gibt es dort NICHT. Für Wipe-Geräusche
+      (0,9 s vor dem Bildende) deshalb zweistufig: Trockenlauf, dann Sekunden aus storage/direction/<id>-<ver>dry/sound.json
+      übernehmen (so macht es tools/testvideo_fehmarn.py, Klasse Timing). Cue-Namen: whoosh, whoosh2, swipe, swipe2, paper, click,
+      tick, stamp, thud, mit Suffix _leise für -6 dB.
+      Material: zuerst assets/higgsfield/library/ (gs_real_*.jpg, gs_clip_concrete_pour.mp4, Papier/Himmel; Tabelle in 02 Marke/
+      Gigastruct/Vorlage Bibliothek.md), dann assets/higgsfield/fehmarnbelt/ (layout.media_folder setzen); jede Datei braucht eine
+      Zeile in der LICENSE.md daneben, sonst bricht der Render mit "media without licence line" ab. Clips sind 8 s lang; "to"
+      darf nicht später liegen. Kein neues Material in library/. Realbilder tragen die Plakette "KI-Darstellung · kein Foto"
+      automatisch; keine Gesichter. Auf Beats mit Vollbild-Medien keine pins (data.pins entfernen), sonst schweben sie über dem Bild.
+      Grenzen: Zeichenlimits je Feld in _GB_LIMITS (scenes_bauaufgabe.py); Ergebnisse in gb_calc rechnet der Renderer, "expect"
+      muss dem gesprochenen Wert entsprechen; Waage braucht left_t, unit_t (beide aus Quellen) und count (7 Türme im Beispiel).
+  - kuerzel: B
+    name: Schnitt
+    gebaut: false
+    szenentypen: []
+    hinweis: >-
+      Noch nicht gebaut und nicht gerendert. Teile gibt es: 3D-Props cut und reveal am element (Schnitt, Aufbau), Medien als
+      Fenster am Rand über layout.media.box. Es fehlen: Explosionsbewegung und ein Fenster-Rahmen mit Beschriftung; bis dahin
+      ersetzt der Tagesläufer B durch A und vermerkt das.
+  - kuerzel: C
+    name: Baustellenbuch
+    gebaut: false
+    szenentypen: []
+    hinweis: >-
+      Noch nicht gebaut. Split-Screen geht grundsätzlich über layout.media.box (obere Hälfte Realbild, untere Plan); es fehlen
+      die Zeitleiste mit Jahreszahlen und der Fortschrittsbalken. Bis dahin ersetzt der Tagesläufer C durch A und vermerkt das.
+  - kuerzel: D
+    name: Prüfstand
+    gebaut: false
+    szenentypen: []
+    hinweis: >-
+      Noch nicht gebaut. Es fehlen die Zitatkarte über dem Realbild und der Urteilsstempel BELEGT / TEILWEISE / NICHT BELEGT in
+      gb_proof (der vorhandene Stempel zeigt nur Datum und Ereignis). Bis dahin ersetzt der Tagesläufer D durch A und vermerkt das;
+      kein Urteil "Lüge".

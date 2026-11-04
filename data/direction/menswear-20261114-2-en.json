@@ -1,0 +1,533 @@
+{
+ "video_id": "menswear-20261114-2-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Tie length: the tip meets the waistband",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema A04 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S2; keine Zentimeter- oder Zollangaben, 'etwa am Bund' laut Recherche-Hinweis.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Tie, knotted",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "tie tip: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "too short, too long",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "rule: at the band",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "blade to the belt",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "measure: your body",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "roughly at the band",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "tip: at the band",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "How long should a tie be? The Tie Bar says the tip meets the top of the belt buckle or waistband. Drake's: the wide blade reaches at least to the belt. There is no fixed number of inches.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "tie",
+   "suit",
+   "styletips",
+   "tielength"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.thetiebar.com/blogs/faqs/where-should-tie-length-be",
+   "title": "The Tie Bar (Krawattenhersteller), Where should tie length be: Spitze trifft die Oberkante von Gürtelschnalle oder Hosenbund, nie unter dem Bund, nie über dem Gürtel; Länge relativ zum Körper, dickere Knoten brauchen mehr Stoff",
+   "checked_at": "2026-11-01",
+   "label": "The Tie Bar, FAQ"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.drakes.com/blogs/news/the-drakes-guide-to-ties",
+   "title": "Drake's, The Drake's Guide to Ties: breites Blatt mindestens bis zum Gürtel, schmales Ende in die Schlaufe",
+   "checked_at": "2026-11-01",
+   "label": "Drake's, Guide to Ties"
+  }
+ ],
+ "unverified": [
+  "Oberkante oder Mitte der Schnalle: Ratgeber uneinheitlich; im Video 'etwa am Bund'.",
+  "Zollangaben der Tie Bar sind Hausmaße; nicht im Video."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Where should the tie tip end?",
+   "on_screen": "Where should the tie tip end?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Shirt with tie and belt, loupe on the tie tip",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "A set tie length in inches? There is none.",
+   "on_screen": "A set tie length in inches? There is none.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Shirt with tie and belt, loupe on the tie tip",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The right tie length is measured at the waistband",
+   "on_screen": "The right tie length is measured at the waistband",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Shirt with tie and belt, loupe on the tie tip",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Above the belt? Then it is too short.",
+   "on_screen": "Above the belt? Then it is too short.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Shirt with tie and belt, loupe on the tie tip",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Too short, too long, just right: side by side",
+   "on_screen": "Too short, too long, just right: side by side",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Shirt with tie and belt, loupe on the tie tip",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage nach dem Punkt, an dem die Spitze endet; das Video beantwortet sie Schritt für Schritt."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "The tie is knotted. But where exactly should the tip end? Above the belt, below it, or right in between?",
+   "data": {
+    "question": "Where should the tie tip end?",
+    "object": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 585
+    },
+    "target": "tie_tip",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:tip",
+    "loupe_at": "w:tip",
+    "nie_at": "w:between",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 14,
+   "spoken": "On the left, it's too short and hangs above the belt. On the right, it's too long and disappears below the waistband. The Tie Bar, a tie maker, rules out both: never above the belt, never below the waistband.",
+   "data": {
+    "headline": "Too short, too long",
+    "left": {
+     "title": "Too short",
+     "object": {
+      "kind": "torso",
+      "hold": "belt",
+      "tie_tip": 500
+     },
+     "target": "tie_tip",
+     "tag": "hangs above the belt",
+     "pulses": [
+      {
+       "target": "belt",
+       "at": "w:never",
+       "tone": "red"
+      }
+     ]
+    },
+    "right": {
+     "title": "Too long",
+     "object": {
+      "kind": "torso",
+      "hold": "belt",
+      "tie_tip": 665
+     },
+     "target": "tie_tip",
+     "tag": "disappears below the band",
+     "pulses": [
+      {
+       "target": "waistband",
+       "at": "w:never#2",
+       "tone": "red"
+      }
+     ]
+    },
+    "left_at": "w:left",
+    "left_tag_at": "w:hangs",
+    "right_at": "w:right",
+    "right_tag_at": "w:disappears",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:maker"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 10,
+   "spoken": "The rule from The Tie Bar: the tip meets the top edge of the belt buckle or the waistband. No higher and no lower. So it ends roughly at the waistband.",
+   "data": {
+    "headline": "Where exactly?",
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 500
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 585
+    },
+    "target": "tie_tip",
+    "zoom": 1.4,
+    "label": "The tip meets the waistband",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:rule",
+    "error_at": "w:Tie",
+    "zoom_at": "w:tip",
+    "flip_at": "w:meets",
+    "label_at": "w:edge"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:edge"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 10,
+   "spoken": "The tie maker Drake's puts it as a minimum: the wide blade should reach at least to the belt. And the narrow end? That can go into the keeper loop at the back.",
+   "data": {
+    "headline": "The minimum",
+    "stages": [
+     {
+      "object": {
+       "kind": "torso",
+       "hold": "belt",
+       "tie_tip": 585
+      },
+      "at": 0.0,
+      "title": "Drake's says",
+      "tags": [
+       {
+        "spot": "tie_tip",
+        "text": "wide blade",
+        "sub": "at least to the belt",
+        "tone": "always",
+        "at": "w:wide"
+       },
+       {
+        "spot": "placket",
+        "text": "narrow end",
+        "sub": "into the keeper loop",
+        "tone": "sometimes",
+        "at": "w:narrow"
+       }
+      ],
+      "focus_at": "w:keeper"
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Drake"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 14,
+   "spoken": "There is no fixed number of inches. According to The Tie Bar, the length depends on your body: your torso, the rise of your trousers and your knot. A thicker knot needs more fabric. And taller men need longer ties.",
+   "data": {
+    "headline": "No fixed number",
+    "left": {
+     "title": "Your body",
+     "object": {
+      "kind": "torso",
+      "hold": "belt",
+      "tie_tip": 585
+     },
+     "tag": "torso and rise",
+     "pulses": [
+      {
+       "target": "placket",
+       "at": "w:torso"
+      },
+      {
+       "target": "waistband",
+       "at": "w:rise"
+      }
+     ]
+    },
+    "right": {
+     "title": "Your knot",
+     "object": {
+      "kind": "knot",
+      "knot": "windsor"
+     },
+     "target": "knot",
+     "tag": "thicker means more fabric",
+     "pulses": [
+      {
+       "target": "knot",
+       "at": "w:thicker"
+      }
+     ]
+    },
+    "left_at": "w:body",
+    "left_tag_at": "w:rise",
+    "right_at": "w:knot",
+    "right_tag_at": "w:needs",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:According"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 13,
+   "spoken": "In short: the tip ends roughly at the waistband, never above and never below it. The wide blade reaches at least to the belt. And you measure the right length against your own body, not in inches.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Roughly at the waistband",
+      "sub": "top edge of buckle or waistband",
+      "object": {
+       "kind": "torso",
+       "hold": "belt",
+       "tie_tip": 665
+      },
+      "at": "w:tip",
+      "then": {
+       "tie_tip": 585
+      },
+      "then_at": "w:roughly",
+      "ring": "tie_tip",
+      "ring_at": "w:waistband"
+     },
+     {
+      "title": "At least to the belt",
+      "sub": "Drake's, tie makers",
+      "object": {
+       "kind": "torso",
+       "hold": "belt",
+       "tie_tip": 585
+      },
+      "at": "w:wide",
+      "ring": "belt",
+      "ring_at": "w:belt"
+     },
+     {
+      "title": "Your body is the measure",
+      "sub": "torso, rise and knot",
+      "object": {
+       "kind": "knot",
+       "knot": "four_in_hand"
+      },
+      "at": "w:measure",
+      "then": {
+       "knot": "windsor"
+      },
+      "then_at": "w:body"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "The tip meets the waistband. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 665
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 585
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "tie_tip",
+    "fix_at": "w:meets",
+    "ring_at": "w:waistband",
+    "statement_at": "w:waistband",
+    "chip_at": "w:eye",
+    "statement": "Tip at the waistband.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

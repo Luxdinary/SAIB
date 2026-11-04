@@ -1,0 +1,460 @@
+{
+  "video_id": "engines-20261109-1-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "The piston is not fastest at mid-stroke",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261109-1-en, Reihe Mythos-Check. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Where is the piston fastest? Not at mid-stroke. The angled con rod shifts the peak forward, to about 70 degrees after TDC in typical car engines.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.\nSchematic model: crank radius and rod length are model values (ratio 0.31), not a specific engine.",
+    "hashtags": [
+      "enginetech",
+      "piston",
+      "crankshaft",
+      "conrod",
+      "myth"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, lecture 8",
+      "title": "MIT 2.61, Vorlesung 8 (L8)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "NASA Glenn, bore and stroke",
+      "title": "NASA Glenn, Bohrung und Hub (N4)",
+      "url": "https://www.grc.nasa.gov/www/k-12/airplane/stroke.html",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "But that is exactly where the piston is not at its fastest.",
+      "on_screen": "Fastest at mid-stroke?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "surprising_fact",
+      "spoken": "The piston peaks before mid-stroke.",
+      "on_screen": "The piston is not fastest at mid-stroke",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "question",
+      "spoken": "Where is the piston fastest?",
+      "on_screen": "The piston is not fastest at mid-stroke",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "The piston is not fastest at mid-stroke",
+      "on_screen": "The piston is not fastest at mid-stroke",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "The piston is not fastest at mid-stroke",
+      "on_screen": "The piston is not fastest at mid-stroke",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Most people guess mid-stroke, where the crank points sideways. But that is exactly where the piston is not at its fastest.",
+      "data": {
+        "claim": "Fastest at mid-stroke?",
+        "claim_lines": [
+          "Fastest at",
+          "mid-stroke?"
+        ],
+        "claim_highlight": "mid-stroke",
+        "claim_at": 0.05,
+        "counters": false,
+        "speed": true,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:not",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_cutaway",
+      "spoken": "Watch the blue arrow next to the cylinder. It shows how fast the piston is moving right now. At the top and at the bottom it stops for a moment, and in between it speeds up. The longer the arrow, the higher the speed.",
+      "data": {
+        "title": "Piston speed",
+        "speed": true,
+        "labels": [
+          "piston"
+        ],
+        "labels_at": [
+          "w:piston"
+        ],
+        "notes": [
+          {
+            "text": "Stop at TDC",
+            "at": "w:top",
+            "side": "r",
+            "y": 900,
+            "to": [
+              540,
+              560
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:top",
+        "kicker": "2 · THE SPEED",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "If the piston followed a pure sine wave, its peak would sit exactly at ninety degrees of crank angle, right at mid-stroke. That is the dashed line.",
+      "data": {
+        "title": "Pure sine",
+        "kind": "piston_speed",
+        "engine": true,
+        "dot": false,
+        "legend": true,
+        "series_at": [
+          "w:sine",
+          1.5
+        ],
+        "marks": [
+          {
+            "x": 90,
+            "label": "Mid-stroke",
+            "at": "w:crank",
+            "color": "steel"
+          }
+        ],
+        "view": {
+          "s": 0.46,
+          "top": 352,
+          "x": 300
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:crank",
+        "kicker": "3 · THE EXPECTATION",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "spoken": "The reason is the con rod. It runs at an angle and links the piston to the crank pin. In the upper half of the stroke, that angle pulls the piston down even faster. In the lower half, the same angle slows it down earlier.",
+      "data": {
+        "title": "The angled con rod",
+        "speed": true,
+        "labels": [
+          "rod",
+          "crank"
+        ],
+        "labels_at": [
+          "w:con",
+          "w:crank"
+        ],
+        "notes": [
+          {
+            "text": "pulls harder",
+            "at": "w:pulls",
+            "side": "l",
+            "y": 760,
+            "to": [
+              540,
+              700
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            540
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:angle",
+        "kicker": "4 · THE REASON",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_chart",
+      "spoken": "According to the engineering lecture, the peak in typical car engines sits at about seventy degrees after top dead centre. In our model it is seventy-four degrees, clearly before mid-stroke. So the curve is not symmetrical: a quick start at the top, a gentler finish at the bottom.",
+      "data": {
+        "title": "Peak before the middle",
+        "kind": "piston_speed",
+        "engine": true,
+        "dot": true,
+        "series_at": [
+          0.0,
+          0.05
+        ],
+        "marks": [
+          {
+            "x": 90,
+            "label": "Mid-stroke",
+            "at": 0.1,
+            "color": "steel",
+            "row": 1
+          },
+          {
+            "x": 74,
+            "label": "74° model",
+            "at": "w:model",
+            "side": "l"
+          }
+        ],
+        "view": {
+          "s": 0.46,
+          "top": 352,
+          "x": 300
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:centre",
+        "kicker": "5 · THE FINDING",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Stop at the top, stop at the bottom, top speed before mid-stroke. Understand engines: follow Revlore.",
+      "data": {
+        "speed": true,
+        "chips": [
+          {
+            "text": "Stop at TDC",
+            "at": "w:Stop"
+          },
+          {
+            "text": "Stop at BDC",
+            "at": "w:bottom"
+          },
+          {
+            "text": "Peak ~70°",
+            "at": "w:speed"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+ "video_id": "menswear-20261112-1-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Jacket vents: none, one or two?",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema B03 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3. Keine Länderzuordnung (britisch/italienisch), keine Herkunft vom Reiten. Rückenansicht nur in Marineblau gezeichnet, auch für den Smoking.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Jacket, back",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "vent: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "day: your choice",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "dinner: no vent",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "single: too casual",
+     "tone": "red"
+    },
+    {
+     "beat": "b5",
+     "text": "centre: by occasion",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "day free, evening none",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "evening: no vent",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Jacket vents: none, one or two? On a day suit it is the client's choice (Henry Poole); on a dinner jacket no vent is preferred, two are acceptable and a centre vent counts as too casual (Debrett's, Woolmark).",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "jacket",
+   "blacktie",
+   "tailoring",
+   "suit"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/hk/z.archive/archive-industry/suiting/on-the-row-henry-poole/",
+   "title": "Woolmark, On the Row: Henry Poole: Anzug mit oder ohne Seitenschlitze, auf Wunsch Mittelschlitz; die Grundform bleibt gleich",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Henry Poole"
+  },
+  {
+   "id": "S2",
+   "url": "https://debretts.com/etiquette-category/events-and-dress-codes/",
+   "title": "Debrett's, Events and dress codes: Black-Tie-Dinnerjacket ein- oder zweireihig, ohne Schlitze",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.woolmark.com/ko/z.archive/archive-industry/suiting/black-tie-dress-code-explained/",
+   "title": "Woolmark, Black tie dress code explained: ohne Schlitz bevorzugt, Doppelschlitz akzeptabel, Einzelschlitz meiden, weil zu lässig",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Black Tie"
+  }
+ ],
+ "unverified": [
+  "'Seitenschlitze britisch, ohne Schlitz italienisch': nicht belegt, nicht im Video.",
+  "Herkunft des Schlitzes vom Reiten: nicht belegt, nicht im Video."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "None, one or two?",
+   "on_screen": "None, one or two?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "visual": "Sakko von hinten, Lupe auf dem Seitenschlitz",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "A centre vent is wrong? Only on a dinner jacket.",
+   "on_screen": "A centre vent is wrong? Only on a dinner jacket.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "visual": "Sakko von hinten, Lupe auf dem Seitenschlitz",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "On a day suit, the client decides",
+   "on_screen": "On a day suit, the client decides",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "visual": "Sakko von hinten, Lupe auf dem Seitenschlitz",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A centre vent makes a dinner jacket too casual",
+   "on_screen": "A centre vent makes a dinner jacket too casual",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "visual": "Sakko von hinten, Lupe auf dem Seitenschlitz",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Turn the jacket around: what do you see?",
+   "on_screen": "Turn the jacket around: what do you see?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "visual": "Sakko von hinten, Lupe auf dem Seitenschlitz",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die drei Varianten als Frage; Antwort hängt vom Anlass ab."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 8,
+   "spoken": "Turn the jacket around. Down at the back there are three options: no vent, one in the centre, or two at the sides. Which one is right?",
+   "data": {
+    "question": "None, one or two?",
+    "object": {
+     "kind": "jacket_back",
+     "vents": "side"
+    },
+    "target": "vent_l",
+    "badge": "?",
+    "question_at": 0.3,
+    "hold_end": true,
+    "badge_at": "w:back",
+    "loupe_at": "w:two",
+    "nie_at": "w:Which"
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 15,
+   "spoken": "On a day suit there is no fixed answer. Henry Poole, a Savile Row tailor, makes suits with or without side vents. On request, a single centre vent replaces the two. The basic shape stays the same.",
+   "data": {
+    "headline": "On a day suit",
+    "object": {
+     "kind": "jacket_back",
+     "vents": "side"
+    },
+    "from": {
+     "kind": "jacket_back",
+     "vents": "side"
+    },
+    "to": {
+     "kind": "jacket_back",
+     "vents": "centre"
+    },
+    "target": "vent",
+    "zoom": 1.3,
+    "label": "Vent to the client's wish",
+    "strain": false,
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Henry",
+    "zoom_at": "w:side",
+    "flip_at": "w:centre",
+    "label_at": "w:basic"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Henry"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 11,
+   "spoken": "In the evening it changes. For the dinner jacket, Debrett's, the British etiquette guide, says: single or double-breasted, but without vents. So the back stays closed.",
+   "data": {
+    "headline": "On a dinner jacket",
+    "left": {
+     "title": "Front",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "dinner": true,
+      "lapel": "shawl",
+      "neck": "bow"
+     },
+     "tag": "single or double-breasted"
+    },
+    "right": {
+     "title": "Back",
+     "object": {
+      "kind": "jacket_back",
+      "vents": "none"
+     },
+     "target": "hem",
+     "tag": "no vent",
+     "pulses": [
+      {
+       "target": "hem",
+       "at": "w:closed"
+      }
+     ]
+    },
+    "left_at": "w:dinner",
+    "left_tag_at": "w:single",
+    "right_at": "w:without",
+    "right_tag_at": "w:So",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "For the dinner jacket, Woolmark ranks it more precisely: no vent is preferred. Two side vents are acceptable. A single centre vent is best avoided; it counts as too casual.",
+   "data": {
+    "headline": "Dinner jacket, per Woolmark",
+    "items": [
+     {
+      "title": "No vent: preferred",
+      "sub": "the first choice",
+      "object": {
+       "kind": "jacket_back",
+       "vents": "none"
+      },
+      "at": "w:no",
+      "ring": "hem",
+      "ring_at": "w:preferred"
+     },
+     {
+      "title": "Two vents: acceptable",
+      "sub": "at the sides",
+      "object": {
+       "kind": "jacket_back",
+       "vents": "side"
+      },
+      "at": "w:Two",
+      "ring": "vent_l",
+      "ring_at": "w:acceptable",
+      "ring_tone": "amber"
+     },
+     {
+      "title": "Centre vent: avoid",
+      "sub": "counts as too casual",
+      "object": {
+       "kind": "jacket_back",
+       "vents": "centre"
+      },
+      "at": "w:single",
+      "ring": "vent",
+      "ring_at": "w:casual",
+      "ring_tone": "red"
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Woolmark"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 11,
+   "spoken": "So the centre vent is not a fault in itself. On a day suit it is a matter of taste, and Henry Poole makes it on request. Only on a dinner jacket does it count as too casual.",
+   "data": {
+    "headline": "The same vent",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket_back",
+       "vents": "centre"
+      },
+      "at": 0.0,
+      "title": "Day suit",
+      "tags": [
+       {
+        "spot": "vent",
+        "text": "a matter of taste",
+        "sub": "Henry Poole: on request",
+        "tone": "sometimes",
+        "at": "w:day"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket_back",
+       "vents": "centre"
+      },
+      "at": "w:Only",
+      "title": "Dinner jacket",
+      "tags": [
+       {
+        "spot": "vent",
+        "text": "too casual",
+        "sub": "per Woolmark",
+        "tone": "never",
+        "at": "w:count"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Henry"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 11,
+   "spoken": "In short: on a day suit you choose freely, none, one or two vents. On a dinner jacket, no vent is the first choice, two will do, one rather not.",
+   "data": {
+    "headline": "In short",
+    "left": {
+     "title": "Day suit",
+     "object": {
+      "kind": "jacket_back",
+      "vents": "side"
+     },
+     "tag": "none, one or two",
+     "tag2": "your choice",
+     "tag2_at": "w:freely"
+    },
+    "right": {
+     "title": "Dinner jacket",
+     "object": {
+      "kind": "jacket_back",
+      "vents": "none"
+     },
+     "target": "hem",
+     "tag": "best without",
+     "tag2": "two will do",
+     "tag2_at": "w:two#2",
+     "pulses": [
+      {
+       "target": "hem",
+       "at": "w:vent#2"
+      }
+     ]
+    },
+    "left_at": "w:day",
+    "left_tag_at": "w:none",
+    "right_at": "w:dinner",
+    "right_tag_at": "w:first",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "By day as you wish, in the evening best without. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket_back",
+     "vents": "centre"
+    },
+    "to": {
+     "kind": "jacket_back",
+     "vents": "none"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "hem",
+    "fix_at": "w:evening",
+    "ring_at": "w:best",
+    "statement_at": "w:without",
+    "chip_at": "w:eye",
+    "statement": "Evenings: no vent.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,447 @@
+{
+ "video_id": "beauty-20261110-1-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "Six rules every beauty claim must follow",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Die Verordnung 655/2013 verlangt Rechtskonformität, Wahrheitstreue, Belegbarkeit, Redlichkeit, Lauterkeit und fundierte Entscheidung; die FDA verlangt wahre und nicht irreführende Angaben. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Claim",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Rules?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "Legal, true, supported",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "Honest, fair, clear",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "EU: 6 criteria",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Examples in the annex",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Ask questions",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Check first, then believe",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "What can a tube say? The annex gives concrete examples. Saying a product has been approved by an authority is not allowed. And if a claim highlights an ingredient, that ingredient has to be deliberately there.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32013R0655",
+   "title": "Verordnung (EU) Nr. 655/2013 der Kommission: gemeinsame Kriterien zur Begründung von Werbeaussagen, Anhang",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EU) 655/2013"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-labeling/cosmetics-labeling-claims",
+   "title": "U.S. FDA: Cosmetics Labeling Claims",
+   "checked_at": "2026-11-01",
+   "label": "FDA: Labeling claims"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "In the EU, every claim on a cosmetic has to meet six criteria.",
+   "on_screen": "What can a tube say?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Can a cream say anything that sounds good on its label?",
+   "on_screen": "Can a cream say anything that sounds good on its label?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Cosmetic advertising is a free-for-all. Not in the EU: there are fixed criteria.",
+   "on_screen": "Cosmetic advertising is a free-for-all. Not in the EU: there",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Believe every claim, and you end up buying promises instead of knowledge.",
+   "on_screen": "Believe every claim, and you end up buying promises instead ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch the six criteria the EU uses to judge every cosmetic claim.",
+   "on_screen": "Watch the six criteria the EU uses to judge every cosmetic c",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "In the EU, every claim on a cosmetic has to meet six criteria.",
+   "data": {
+    "obj": "tube",
+    "title": "Wow!",
+    "sub": "claim",
+    "glyph": "doc",
+    "gtext": "6",
+    "focus": "title",
+    "question": "What can a tube say?",
+    "badge": "Supported?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "They're set out in Regulation 655 from 2013. The first three are legal compliance, truthfulness and evidential support. So a claim must be allowed, true, and backed by evidence.",
+   "data": {
+    "headline": "The first three",
+    "doc": {
+     "act": "Regulation (EU) 655/2013",
+     "ref": "Annex: common criteria",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "Legal compliance"
+     },
+     {
+      "text": "Truthfulness"
+     },
+     {
+      "text": "Evidential support"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_steps",
+   "spoken": "Then come honesty, fairness and informed decision-making. A claim can't go beyond the evidence, it can't put down other products, and it has to be clear and understandable. Each claim is judged by how an average, reasonably well-informed consumer would understand it.",
+   "data": {
+    "headline": "Three more",
+    "items": [
+     {
+      "title": "Honesty",
+      "sub": "no more than the evidence shows",
+      "icon": "scale"
+     },
+     {
+      "title": "Fairness",
+      "sub": "don't put others down",
+      "icon": "shield"
+     },
+     {
+      "title": "Informed decisions",
+      "sub": "clear and understandable",
+      "icon": "book"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "The US has no such list. The Food and Drug Administration doesn't approve cosmetic claims before products go on sale. But it does require labels to be truthful and not misleading.",
+   "data": {
+    "headline": "EU and US",
+    "mode": "compare",
+    "left": {
+     "tag": "EU",
+     "title": "Six criteria",
+     "rows": [
+      {
+       "text": "set in Regulation 655/2013"
+      },
+      {
+       "text": "apply to every claim"
+      }
+     ]
+    },
+    "right": {
+     "tag": "US",
+     "title": "True, not misleading",
+     "rows": [
+      {
+       "text": "no approval before sale",
+       "mark": "gap"
+      },
+      {
+       "text": "truthful and not misleading"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "The annex gives concrete examples. Saying a product has been approved by an authority is not allowed. And if a claim highlights an ingredient, that ingredient has to be deliberately there. And any studies used as evidence have to be relevant to the product and the claimed benefit.",
+   "data": {
+    "headline": "Two examples",
+    "rows": [
+     {
+      "text": "“approved by an authority”: not allowed",
+      "mark": "gap"
+     },
+     {
+      "text": "named ingredient: deliberately present"
+     },
+     {
+      "text": "obvious exaggeration: needs no proof",
+      "mark": "open"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "For you, that means three questions for every claim: does it sound true, is there evidence, and do you understand exactly what's being promised?",
+   "data": {
+    "headline": "Three questions",
+    "items": [
+     {
+      "title": "Is it true?",
+      "sub": "truthfulness",
+      "icon": "doc"
+     },
+     {
+      "title": "Is there evidence?",
+      "sub": "evidential support",
+      "icon": "book"
+     },
+     {
+      "title": "Do I understand it?",
+      "sub": "informed decision",
+      "icon": "drop"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Check first, then believe. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Check first, then believe",
+    "block_text": "Check the claim first",
+    "done_text": "Claim checked"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,395 @@
+{
+ "video_id": "engines-20261114-2-en",
+ "brand_id": "engines",
+ "language": "en",
+ "title": "Hot or cold: the spark plug heat range",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261114-2-en, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "The spark plug is the hottest part in the combustion chamber. Why it has to run hot enough to clean itself, and what the heat range describes.",
+  "companion_text": "Not a buying or replacement guide: the engine maker specifies the right plug. Slow-motion factor and milliseconds refer to the example speed of 3000 rpm.",
+  "hashtags": [
+   "enginetech",
+   "sparkplug",
+   "heatrange",
+   "ignition",
+   "howitworks"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "NGK, spark plug answers",
+   "title": "NGK, Zündkerzen-Fragen (K1)",
+   "url": "https://www.ngkntk.com/newsroom/blog/emea/you-asked-google-ngk-spark-plug-answers-part-2-spark-plugs/",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "MIT 2.61, lecture 18",
+   "title": "MIT 2.61, Vorlesung 18 (L18)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/df96f507776900c0dde50a4b50f422ce_MIT2_61S17_lec18.pdf",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Hotter than the exhaust valve and the piston crown.",
+   "on_screen": "The hottest part",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "What does a spark plug's heat range mean?",
+   "on_screen": "Hot or cold: the spark plug heat range",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Hot or cold: the spark plug heat range",
+   "on_screen": "Hot or cold: the spark plug heat range",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Hot or cold: the spark plug heat range",
+   "on_screen": "Hot or cold: the spark plug heat range",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Hot or cold: the spark plug heat range",
+   "on_screen": "Hot or cold: the spark plug heat range",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "According to the engineering lecture, the spark plug is the hottest part in the combustion chamber. Hotter than the exhaust valve and the piston crown.",
+   "data": {
+    "claim": "The hottest part",
+    "claim_lines": [
+     "The hottest part",
+     "in the engine"
+    ],
+    "claim_highlight": "hottest",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "MIT 2.61, lecture 18 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_plug",
+   "spoken": "The insulator nose sits right in the fire. It has to get hot enough to burn off deposits by itself. According to NGK, a plug needs about four hundred and fifty degrees for that. If it runs too cold, deposits stay put.",
+   "data": {
+    "title": "Self-cleaning",
+    "labels": [
+     "nose",
+     "center"
+    ],
+    "labels_at": [
+     "w:insulator",
+     "w:deposits"
+    ],
+    "sparks_at": [
+     0.1
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, spark plug answers · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_plug",
+   "spoken": "But it must not get too hot either. The heat flows through the insulator and the shell into the cylinder head. How quickly a plug sheds its heat is what the heat range describes. According to the lecture, the plug runs hotter than the exhaust valve, the piston crown and the cylinder head.",
+   "data": {
+    "title": "Shedding heat",
+    "labels": [
+     "insulator",
+     "hex",
+     "thread"
+    ],
+    "labels_at": [
+     "w:insulator",
+     "w:shell",
+     "w:head"
+    ],
+    "heat_at": [
+     "w:flows"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, spark plug answers · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_plug",
+   "spoken": "At NGK, a low heat range number means a hot plug and a high number means a cold one. Typical values run from five to ten. A hot plug holds on to its heat longer, a cold plug sheds it faster. So the number tells you which way the plug leans.",
+   "data": {
+    "title": "Heat range",
+    "mode": "compare",
+    "labels_at": [
+     "w:hot",
+     "w:cold"
+    ],
+    "heat_at": [
+     "w:holds"
+    ],
+    "sparks_at": [
+     0.05
+    ],
+    "left_label": "hot",
+    "right_label": "cold",
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, spark plug answers · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_cutaway",
+   "spoken": "According to NGK, high-performance engines tend to need cold plugs and small engines hot ones. Which plug belongs in an engine is set by the manufacturer. This is a design choice, not a tuning tip.",
+   "data": {
+    "title": "Cold or hot",
+    "labels": [
+     {
+      "key": "plug",
+      "side": "l",
+      "y": 640
+     }
+    ],
+    "labels_at": [
+     "w:plugs"
+    ],
+    "notes": [
+     {
+      "text": "maker's spec",
+      "at": "w:manufacturer",
+      "side": "r",
+      "y": 900,
+      "to": [
+       540,
+       400
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, spark plug answers · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Hot enough to clean itself, cool enough for the chamber. Understand engines: follow Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Understand",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Understand",
+    "rows": [
+     {
+      "text": "≈ 450 °C",
+      "at": "w:clean"
+     },
+     {
+      "text": "heat range",
+      "at": "w:cool"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Understand engines",
+     "hl": "REVLORE",
+     "at": "w:Understand"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

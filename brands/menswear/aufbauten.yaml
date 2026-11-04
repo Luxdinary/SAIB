@@ -1,0 +1,44 @@
+# Bildaufbauten Suitwerk (menswear) für den Tagesläufer. Entwurf der Tagesläufer-Sitzung (03.11.2026), von der Suitwerk-Sitzung
+# korrigiert am 03.11.2026 abends (Stand der Szenentypen: brands/menswear/kreidestrich/scenes.py).
+# Vorlage: config/aufbauten.vorlage.yaml.
+# Gebaute Szenentypen: kw_photo, kw_hook, kw_weave, kw_draft, kw_flip, kw_close, kw_weigh, kw_range, kw_fibre, kw_yarn, kw_finish.
+# Fotos: `backdrop` {src, clip, dim, zoom} an kw_weave, kw_draft, kw_weigh, kw_range, kw_fibre, kw_yarn, kw_finish; `shots` an kw_photo
+# und kw_close; `swatch_photos` an kw_close; `photo` {front, back} an den Seiten von kw_flip; Pfade relativ zu
+# brands/menswear/assets/higgsfield (library/ und testvideo/); Clips nur mit gleichem Anfangsbild wie das Standbild (K1-K4 im Testvideo-Ordner).
+# Grenzen der Gewebezeichnung: warp_up() kennt nur Leinwand (plain) und Köper (twill). Fischgrat, Atlas, Panama, Hahnentritt und
+# Glencheck brauchen neuen Code (Format-Bibel, Prüfregel 1) und sind keine Themen für den Tagesläufer, bis er gebaut ist.
+# Pflicht in jedem Video (Konzeptplan, Neuausrichtung 03.11.2026): realer Anzug oder Stoff am Anzug im Hook und im Schluss.
+aufbauten:
+  - kuerzel: A
+    name: Bügel und Fadenzähler
+    gebaut: true
+    szenentypen: [kw_photo, kw_weave, kw_draft, kw_flip, kw_close]
+    beispielplan: data/direction/menswear-20261202-3-de.T1.json
+    beispielplan_en: data/direction/menswear-20261202-3-en.T1.json
+    hinweis: "Hook kw_photo mit zwei Sakkos am Bügel (Clip K1), Fadenzähler landet auf dem Tuch; kw_weave je Bindung mit echtem Tuch als backdrop; kw_draft; kw_flip mit Foto-Mustern; Schluss kw_close mit Ärmel (K2) und Revers (K4). Nur Leinwand und Köper (warp_up)."
+  - kuerzel: B
+    name: Waage und Maßband
+    gebaut: true
+    szenentypen: [kw_photo, kw_hook, kw_weigh, kw_range, kw_flip, kw_close]
+    beispielplan: data/direction/menswear-20261103-2-de.D1.json
+    beispielplan_en: data/direction/menswear-20261103-2-en.D1.json
+    hinweis: "Zahlen auf dem Etikett (Gewicht, Super-Zahl). Vorbild: der gerenderte Plan Super 100s (kw_photo, kw_hook, kw_flip, kw_close). Für Gewicht zusätzlich kw_weigh (Hook oder Erklärung, Streifen auf der Waage) und kw_range (Maßband-Skala mit Marken, Band, Drift); Vorbild dafür: data/direction/menswear-20261110-1-de.K2.json und -en.K2.json (nur Trockenlauf geprüft, nicht gerendert). Realer Anzug über backdrop (kw_weigh, kw_range) und shots (kw_close)."
+  - kuerzel: C
+    name: Faser und Garn
+    gebaut: true
+    szenentypen: [kw_hook, kw_fibre, kw_yarn, kw_flip, kw_close, kw_photo]
+    beispielplan: data/direction/menswear-20261113-1-de.K1.json
+    beispielplan_en: data/direction/menswear-20261113-1-en.K1.json
+    hinweis: "Beispielplan (Kammgarn oder Streichgarn) nur im Trockenlauf geprüft und noch ohne realen Anzug: Pflicht ist, wie im Stoffgewicht-K2-Plan backdrop (library oder testvideo) an kw_yarn und kw_fibre sowie shots/swatch_photos an kw_close zu ergänzen. kw_hook und kw_flip nehmen `fuzz: true` für haarige Muster (Streichgarn, gewalktes Tuch); sonst nur Material aus Bibliothek (library/sw_fabric_*)."
+  - kuerzel: D
+    name: Werkstatt
+    gebaut: true
+    szenentypen: [kw_hook, kw_finish, kw_close, kw_photo]
+    beispielplan: data/direction/menswear-20261114-3-de.K1.json
+    beispielplan_en: data/direction/menswear-20261114-3-en.K1.json
+    hinweis: "Beispielplan (Tweed nach dem Webstuhl) nur im Trockenlauf geprüft, noch ohne realen Anzug: Pflicht ist, am Ende kw_close mit shots (fertiges Sakko, Ärmel K2) und swatch_photos zu ergänzen. kw_finish zeigt gewebt, gewalkt (milled), geschoren (cropped), geprüft (checked); `start_state: milled` für die zweite Szene. Nur Themen mit Weberei- oder Verbandsquelle (Harris Tweed Authority, Woolmark); Flanell und Fresko nicht (Herstellerquellen, geschützter Name)."
+  - kuerzel: E
+    name: Muster am Körper
+    gebaut: false
+    szenentypen: []
+    hinweis: "Nicht gebaut, Tagesläufer ersetzt E durch A bis D und vermerkt das. Gründe: Hahnentritt, Glencheck, Seersucker und Fischgrat lassen sich mit warp_up() nicht zeichnen (nur Leinwand und Köper); Bilder 'Sakko von hinten' und 'Hand am Revers' fehlen in der Bibliothek, ein neues Bild je Thema wäre ein Buchen von 2 Credits. Wird erst gebaut, wenn Stefan Muster-Themen freigibt."

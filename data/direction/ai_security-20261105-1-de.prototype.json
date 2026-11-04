@@ -1,0 +1,23 @@
+{
+  "video_id": "ai_security-20261105-1-de-prototype",
+  "brand_id": "ai_security",
+  "language": "de",
+  "title": "Scutoria Regie-Prototyp (15 s)",
+  "notes": "15-second prototype: hook plus first problem scene in the new design, voiced with the existing Gemini recording of the reference video (no new TTS cost). Spoken text = the first two sentences of the reference script; timings are absolute and match the trimmed voice track (voice starts at 0.4 s).",
+  "prototype_of": "ai_security-20261105-1-de",
+  "layout": {"zone_top": 320, "zone_h": 880, "caption_bottom_px": 560},
+  "sources": [
+    {"id": "S1", "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training", "title": "Is my data used for model training? (consumer, updated 2026-03-16)", "checked_at": "2026-10-30"}
+  ],
+  "hook": {"id": "H5"},
+  "beats": [
+    {"id": "b1", "function": "hook", "scene_type": "cinematic_hook", "start": 0.0, "duration": 5.75,
+     "spoken": "Dein Mitarbeiter tippt die Kundenliste in einen KI-Chat. Wo landet sie?",
+     "data": {"question": "Wo landet die Kundenliste?", "doc_label": "Kundenliste.xlsx", "chat_title": "KI-Chat", "badge": "Wo landet das?", "typed": "Kundenliste.xlsx", "bot_line": "Wie kann ich helfen?", "fly_at": 0.9, "question_at": 3.5},
+     "source_ids": []},
+    {"id": "b2", "function": "problem", "scene_type": "data_flow", "start": 5.75, "duration": 9.25,
+     "spoken": "Bei Anthropic gilt für private Konten: Chats werden zum Verbessern der Modelle genutzt, wenn du das in den Privatsphäre-Einstellungen erlaubst,",
+     "data": {"headline": "Private Konten: eine Einstellung entscheidet", "nodes": [{"id": "n0", "label": "Mitarbeiter", "icon": "&#9823;"}, {"id": "n1", "label": "KI-Chat, privates Konto", "icon": "&#9881;"}, {"id": "n2", "label": "Modelltraining?", "icon": "&#9783;"}], "edges": [{"label": "tippt ein"}, {"label": "wenn erlaubt"}], "packet_at": 2.8, "highlight": {"node": 1, "at": 6.1, "label": "Privatsphäre-Einstellung"}},
+     "source_ids": ["S1"]}
+  ]
+}

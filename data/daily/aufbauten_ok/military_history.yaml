@@ -1,0 +1,101 @@
+# Bildaufbauten Frontlore (military_history) für den Tagesläufer. Entwurf der Tagesläufer-Sitzung (03.11.2026),
+# geprüft und korrigiert von der Frontlore-Sitzung (03.11.2026). Vorlage: config/aufbauten.vorlage.yaml.
+# Szenencode: brands/military_history/rekonstruktion.py (fr_*, Bildebene `data.media` je Beat) und frontlore_scenes.py.
+# Risiko hoch: jedes Video endet in HUMAN_REVIEW, Freigabe einzeln durch Stefan.
+#
+# Allgemein verwendbare Szenentypen (alle Aufbauten): fr_task (Hook; mit `items` ein Linienmodell, sonst die Polybios-Landschaft),
+#   fr_model (Linienmodell aus `items`: path, rect, text, dim, count, repeat, stamp, hl), fr_protocol (Sequenz zwischen zwei
+#   Stationen; `torches: 0` setzen, sonst werden Fackeln gezeichnet), fr_stages (nummerierte Stufen), fr_finding (Befundblatt).
+# NICHT für andere Themen verwenden (fest auf Polybios' Fackeltelegraf gezeichnet: griechische Tafeln, Kappa, Beacon und Wasseruhr):
+#   fr_means, fr_solution, fr_example.
+# Bildebene: je Beat `data.media` {shots[{still|clip, at, move push|pull|pan_l|pan_r|drift, frame, split, enter fade|flash|wipe}], dim 0.1-0.6,
+#   foil{at,opacity}, blur_at, stamp}; Stempel KI-REKONSTRUKTION kommt automatisch. Nur Dateien aus assets/higgsfield/library
+#   oder assets/higgsfield/testvideo (beide mit LICENSE.md); neue Bilder höchstens eines je Thema (2 Credits), keine Clips.
+# Je Beat ein anderer Szenentyp oder eine andere Bildbewegung; nie zwei Videos eines Tages im selben Aufbau.
+aufbauten:
+  - &aufbauA
+    kuerzel: A
+    name: Nachtrekonstruktion
+    gebaut: true
+    szenentypen: [fr_task, fr_model, fr_protocol, fr_stages, fr_finding]
+    beispielplan: data/direction/military_history-20261109-1-de.testvideo.json      # von Stefan freigegeben (03.11.2026)
+    beispielplan_en: data/direction/military_history-20261109-1-en.testvideo.json
+    hinweis: "Realistische Szene des Geräts am Ort (Nachtlicht), Pausfolie (`media.foil`) mit Linienmodell darüber, Splitscreen Sender/Empfänger (`split`). Nur mit vorhandenem Testvideo-Material (Station bei Nacht, Gegenstation, Leuchtfeuer, Werkbank mit Tafeln, Wasseruhr, Fackeln, Hand an der Wachstafel, 4 Clips) oder mit Bibliotheksbildern; die Tafeln, Fackeln und Wasseruhr gehören nur zum Fackeltelegrafen. Themen, die ein Gerät in einer Landschaft zeigen (optischer Telegraf, Heliograf, Schallspiegel, Ballon)."
+  - &aufbauB
+    kuerzel: B
+    name: Kartentisch
+    gebaut: true
+    szenentypen: [fr_task, fr_model, fr_stages, fr_finding]
+    beispielplan: data/direction/military_history-20261109-2-de.rekonstruktion.json     # Hadrianswall; noch nicht von Stefan gesehen, kein Render mit Stimme
+    beispielplan_en: data/direction/military_history-20261109-2-en.rekonstruktion.json
+    hinweis: "Kartenblatt der Bibliothek (fl_map_aegean, atlantic, britain, channel, danube, finland, france, upperrhine) mit langsamem Schwenk (`pan_l`/`pan_r`), wechselnd mit Geländebildern (fl_real_wall_ridge, fl_real_earthwork, fl_real_star_fort, fl_real_survey_chain, fl_real_theodolite). Linien, Maße, Zähler (`count`), Raster (`repeat`) aus Code; Zeitlineal im Plan unter `layout.ruler`. Karten sind KI-Zeichnungen und nur schematisch; Orte setzt der Code, nie das Bild. Beispielplan ohne Gemini-Stimme: nur Mock-Trockenlauf geprüft."
+  - &aufbauC
+    kuerzel: C
+    name: Werkbank-Schnitt
+    gebaut: true
+    szenentypen: [fr_task, fr_model, fr_protocol, fr_stages, fr_finding]
+    beispielplan: data/direction/military_history-20261109-3-de.rekonstruktion.json     # Dose ohne Öffner; noch nicht von Stefan gesehen, kein Render mit Stimme
+    beispielplan_en: data/direction/military_history-20261109-3-en.rekonstruktion.json
+    hinweis: "Nahaufnahme von Werkbank, Lager oder Schiffsdeck (fl_real_workbench, fl_real_storeroom, fl_real_ship_deck, fl_real_chart_table, fl_real_field_kitchen, fl_real_workshop_hall) mit Schnitt- oder Umrisszeichnung, Maßlinien, Stempel (`fr_model` items) darüber; Befund vor unscharfer Vitrine (fl_museum_case, `blur_at`, `stamp: false`). Im Beispiel `fr_protocol` mit `torches: 0` als Lieferkette Fabrik zu Marine."
+  - kuerzel: D
+    name: Archivtisch
+    gebaut: false
+    szenentypen: []
+    hinweis: "Noch nicht gebaut und ohne Beispielplan: Der Tagesläufer ersetzt D durch B oder C und vermerkt das. Machbar ohne neuen Code mit `fr_model` (rect kind paper, text cls ink, stamp QUELLE SAGT / QUELLE SAGT NICHT / SPÄTERE ZUTAT) auf Archivgrund (fl_museum_archive, fl_museum_reading), sobald ein Beispielplan mit geprüften Quellen vorliegt (Frontlore-Sitzung, später)."
+
+  # --- Quellen für Konzeptplan-Nr. 62-70 (Frontlore-Sitzung, 2026-11-04; Rechercheprotokoll: side-session-notes "2026-11-04 Frontlore Quellen Nr 62-70.md")
+  # Technik: Ein Eintrag mit `themen` trägt im Tagesläufer nur diese Nummern (pipeline._aufbau_options). Die allgemeinen Einträge A, B, C
+  # oben bleiben deshalb ohne `themen`; die drei folgenden Einträge haben dasselbe Kürzel (Merge-Schlüssel `<<`) und nur die Themen mit
+  # geprüften Quellen. Für diese Nummern überschreiben sie den allgemeinen Eintrag desselben Buchstabens (`by_letter`), alle anderen Nummern
+  # laufen wie bisher über die allgemeinen Einträge. Sie müssen NACH den allgemeinen Einträgen stehen.
+  # Mindestens zwei geöffnete Quellen je Kernaussage; je Thema steht in `hinweis`, was nicht gesagt werden darf.
+  # Nicht eingetragen (nur teilweise belegt): Nr. 68 Erbswurst (keine Museums-/Archivquelle, Preis 35.000/37.000 Taler, Knorr-Übernahme nur eine
+  # Quelle), Nr. 70 Feldpostnummern (Zweck „Geheimhaltung“ nur eine Quelle, keine Archivquelle, Briefmengen widersprüchlich, NS-Symbole auf
+  # Originalbelegen). Sie bleiben „ohne Quelle“, bis weitere Quellen vorliegen.
+  - <<: *aufbauA
+    themen: &quellenthemen
+      - nr: 62
+        hinweis: "Aineias' Wassertelegraf: Gefäßmaße und Fingerbreiten stehen nur bei Polybios (nicht sagen); Aineias' eigener Text zum Gerät ist nicht erhalten; Datierung Mitte 4. Jh. v. Chr.; Gleichsetzung mit Aineias von Stymphalos offen. Sagbar: zwei gleiche Gefäße mit Schwimmer und Stab, Fackel als Start- und Stoppzeichen, nur vorab vereinbarte Meldungen, Grenze: Unvorhergesehenes nicht sendbar. Gerät nur als Rekonstruktion (Kotsanas) zeigen, schematisch."
+        quellen:
+          - {url: "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/10*.html", titel: "Polybios, Historien X 43-47, Loeb 1925 (Paton), LacusCurtius/University of Chicago", checked_at: "2026-11-04"}
+          - {url: "https://kotsanas.com/exhibits/telecommunications/the-hydraulic-telegraph-of-aeneas/", titel: "Kotsanas-Museum: The hydraulic telegraph of Aeneas (Rekonstruktion)", checked_at: "2026-11-04"}
+          - {url: "https://antigonejournal.com/2022/02/greek-fire-signalling/", titel: "Diepenbroek: Ancient Cybersecurity III, Antigone 2022", checked_at: "2026-11-04"}
+          - {url: "https://ancienthistorybulletin.org/wp-content/uploads/2018/08/AHBOnlineReviews", titel: "Sullivan, Rezension zu Brill's Companion to Aineias Tacticus, AHB Online Reviews 8 (2018), S. 62-65", checked_at: "2026-11-04"}
+      - nr: 63
+        hinweis: "Quellenprobe, keine Tatsachenbericht-Darstellung: Aischylos, Agamemnon, Fackelrede (Verse ca. 281-316) beschreibt die Feuerkette Troja-Argos; ob sie machbar ist, ist umstritten (Taplin hält sie für topografisch plausibel; Verrall und Ciaramella nicht, besonders der Sprung Athos-Euböa gilt als zu weit). Nur als literarische Quelle und Streit der Forschung zeigen; Urteil des Befundblatts: QUELLE SAGT (Text), Machbarkeit UMSTRITTEN. Keine Stationszahl nennen, die nicht im Text steht."
+        quellen:
+          - {url: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0003:card=281", titel: "Aischylos, Agamemnon, Perseus (Tufts), Übers. Smyth, Loeb 1926", checked_at: "2026-11-04"}
+          - {url: "https://dionysusexmachina.it/wp-content/uploads/2018/12/52.pdf", titel: "Taplin: Klytaimestra's Beacons, Dionysus ex machina II (2011), S. 339-344", checked_at: "2026-11-04"}
+          - {url: "https://chs.harvard.edu/wp-content/uploads/2020/07/Message-of-Fire.pdf", titel: "Ciaramella: Message of Fire, Harvard Center for Hellenic Studies (2015)", checked_at: "2026-11-04"}
+          - {url: "https://cambridge.org/core/services/aop-cambridge-core/content/view/224691BC16901904C383D0AC4E5917E", titel: "Verrall: The Fire-Signals in the Agamemnon, The Classical Review (DOI 10.1017/S0009840X00167332)", checked_at: "2026-11-04"}
+      - nr: 64
+        hinweis: "Groma: Aufbau (Stange, Kreuz mit vier Loten) und Zweck (rechte Winkel und gerade Linien für Straßen, Lager, Stadtraster, Landteilung) sind belegt. Nicht sagen: Pompeji-Gerät sei 'heute in Neapel' (nicht belegt); Museo Galileo schreibt 'intakt', Osanna u. a. nur 'Metallteile': nur 'Metallteile einer Groma in der Werkstatt des Verus in Pompeji'. Ägyptisches Fayum-Gerät (1./2. Jh. v. Chr., Science Museum) als Vorläufer nennen."
+        quellen:
+          - {url: "https://arxiv.org/pdf/1910.13145", titel: "Osanna, Magli, Ferro: Gromatics' illustrations from newly discovered pavements in Pompeii (Parco archeologico di Pompei)", checked_at: "2026-11-04"}
+          - {url: "https://collection.sciencemuseumgroup.org.uk/objects/co53187/groma-roughly-made", titel: "Science Museum Group: Groma, roughly made, Objekt 1926-369", checked_at: "2026-11-04"}
+          - {url: "https://www.ancientworldmagazine.com/articles/tools-trade-grave-relief-popidius-nicostratus/", titel: "Brouwers: Tools of the trade, Ancient World Magazine (2018)", checked_at: "2026-11-04"}
+          - {url: "https://www.archaeology.org/news/8276-191209-pompeii-groma-mosaic", titel: "Archaeology (Archaeological Institute of America): Pompeii groma mosaic (2019)", checked_at: "2026-11-04"}
+          - {url: "https://mostre.museogalileo.it/homofaber/en/science/2-area-measurement.html", titel: "Museo Galileo, Homo Faber: Area measurement", checked_at: "2026-11-04"}
+      - nr: 65
+        hinweis: "Tabula Peutingeriana: 11 Pergamentsegmente, 340 x 6745 mm (ÖNB-Katalog, also knapp 6,75 m, nicht 6,8 m); erhaltene Kopie um 1200-1220, Original verloren; UNESCO Memory of the World 2007; zeigt Straßen, Stationen, Entfernungen in römischen Zahlen. Datierung der verlorenen Vorlage schwankt (Talbert: um 300 n. Chr.; Euratlas: mehrere Schichten bis ins 5. Jh.): nur als Spanne nennen. Nur die Karte zeigen (keine Hoheitszeichen)."
+        quellen:
+          - {url: "https://onb.digital/result/10002029", titel: "Österreichische Nationalbibliothek: Katalogeintrag Tabula Peutingeriana (cod. 324)", checked_at: "2026-11-04"}
+          - {url: "https://www.unesco.at/en/communication/documentary-heritage/memory-of-the-world-in-austria/tabula-peutingeriana", titel: "Österreichische UNESCO-Kommission: Tabula Peutingeriana", checked_at: "2026-11-04"}
+          - {url: "https://bmcr.brynmawr.edu/?p=38467", titel: "Burri: Rezension zu Talbert, Rome's World (CUP 2010), Bryn Mawr Classical Review 2012.04.14", checked_at: "2026-11-04"}
+          - {url: "https://www.euratlas.net/cartogra/peutinger/index.html", titel: "Euratlas: The complete Tabula Peutingeriana (2007)", checked_at: "2026-11-04"}
+      - nr: 67
+        hinweis: "Dufourkarte: Maßstab 1:100 000, 25 Blätter, veröffentlicht 1845-1865, Grundlage Triangulation und Kantonsvermessungen, Reliefdarstellung durch Schraffen mit Beleuchtung aus Nordwest (Kupferstich, anfangs einfarbig). Auszeichnung Paris 1855 uneinig (Medaille der Ehre bzw. Goldmedaille): nicht nennen oder nur 'Auszeichnung'. Historisches Lexikon der Schweiz war nicht abrufbar."
+        quellen:
+          - {url: "https://www.swisstopo.admin.ch/de/dufourkarte", titel: "swisstopo: Dufourkarte", checked_at: "2026-11-04"}
+          - {url: "https://www.gr.ch/DE/kanton/175-Jahre/Seiten/die-dufourkarte.aspx", titel: "Kanton Graubünden: Die Dufourkarte", checked_at: "2026-11-04"}
+          - {url: "https://kartengeschichte.ch/ch/texts/themen54/th54zus_en.html", titel: "Cartographica Helvetica, Themenheft 54 (2017) zu Dufour", checked_at: "2026-11-04"}
+          - {url: "https://www.rsi.ch/info/scienza-e-tecnologia/La-carta-Dufour-compie-175-anni--1234364.html", titel: "RSI: La carta Dufour compie 175 anni", checked_at: "2026-11-04"}
+      - nr: 69
+        hinweis: "Fahrbare Feldküche (Gulaschkanone): nur sagen, was das Museum belegt: Heeresfeldküche Modell 1911 (Hf. 11), zweiteilig aus Vorderwagen und Kochaggregat, ausgelegt für Kompanien mit 125 bis 250 Soldaten (DHM); in der deutschen Infanterie seit 1908 eingeführt, 200-Liter-Kessel, Eintopf (Westfalen-Museumskatalog). Nicht sagen: Einführung 1892 (nur Firmen-/TV-Text), Kochen während der Fahrt (nur sekundär), britische oder österreichische Entsprechungen (nicht belegt). Nur Technik, keine Truppendarstellung."
+        quellen:
+          - {url: "https://www.dhm.de/ausstellungen/2014/der-erste-weltkrieg/aktuelles/die-ersten-objekte-treffen-ein/", titel: "Deutsches Historisches Museum: Die ersten Objekte treffen ein (Heeresfeldküche Modell 1911), 2014", checked_at: "2026-11-04"}
+          - {url: "https://westfalen.museum-digital.de/documents/28231447795.pdf", titel: "museum-digital Westfalen: Katalogtext Kochgeschirr, Inv.-Nr. 317-1976 (Feldküchen seit 1908)", checked_at: "2026-11-04"}
+  - <<: *aufbauB
+    themen: *quellenthemen
+  - <<: *aufbauC
+    themen: *quellenthemen

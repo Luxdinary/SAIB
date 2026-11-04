@@ -1,0 +1,91 @@
+id: engines
+name: Revlore
+niche: engine technology
+style: precision_engineering
+phase: 4
+enabled: false
+brand_version: '0.9'          # Vorlage Revlore (nur Claude Code), 2026-10-30; 1.0 erst nach Stefans Freigabe
+template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Revlore\Vorlage Revlore.md'
+languages:
+- de
+- en
+primary_language: de
+risk_default: medium
+rules:
+- technical claims from manufacturer, standard or engineering sources; no maintenance advice
+  that can cause damage
+- every motion in a model must be physically right (strokes, direction of rotation, valve timing)
+# Palette revised 2026-10-30 (see Vorlage Revlore.md): the brands.yaml draft had blue body text and a silver
+# accent; blue text on graphite tires the eye and competes with blue as the motion colour. Now: silver-white
+# text, one technical blue for motion and the active part, steel tones for metal, orange only for combustion.
+palette:
+  bg: '#171C22'              # graphite ground (unchanged)
+  surface: '#222932'         # cut surfaces, cards, strip boxes
+  text: '#E7ECF1'            # headlines, captions
+  muted: '#8D99A6'           # secondary labels
+  accent: '#2F9BFF'          # the one accent: moving part in focus, fresh charge, cycle marker
+  steel: '#AEB9C5'           # metal parts, labels
+  steel_dark: '#5E6A76'      # crank web, cams
+  hatch: '#4A5562'           # section hatching (45 deg) = cut surface
+  hairline: 'rgba(174,185,197,0.10)'
+  hairline_solid: '#3A4450'
+  combustion: '#FF7A2F'      # only for spark and burning charge
+  exhaust: '#7D8794'         # exhaust gas, exhaust valve
+  signal_amber: '#F5B342'    # explainer "unsicher" (open, unclear); also needed by the shared scene CSS
+  signal_red: '#FF5A5A'      # explainer "luecke", only for a risk
+  on_signal: '#171C22'
+  scheme: dark
+fonts:
+  display:
+    family: Oswald
+    weight: 600
+    file: assets/fonts/oswald/Oswald[wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/oswald/OFL.txt
+  body:
+    family: Inter
+    weight: 400
+    file: assets/fonts/inter/Inter[opsz,wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/inter/OFL.txt
+  mono:
+    family: JetBrains Mono
+    weight: 500
+    file: assets/fonts/jetbrainsmono/JetBrainsMono[wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/jetbrainsmono/OFL.txt
+logo:
+  file: brands/engines/assets/logo/revlore-mark.svg
+  wordmark_text: REVLORE       # text in the display face, uppercase, letter-spacing 0.18em
+  logo_height_px: 40
+  rules: crank mark (journal, pin, rod) in steel and accent; never fill, recolour or rotate; no handle next to it
+motif: cutaway
+tempo: precise
+bg_pattern: hairline-grid
+flat: true                   # no glow, no light cone, no pulsing; motion comes from the mechanism
+layout: shared 9:16 layout, see docs/design-system.md; Revlore scenes in brands/engines/scenes.py
+audience: car and motorcycle enthusiasts who want to understand how engines work, not buy parts
+tone: exact, sober, engineering language explained; every number has a source or is computed on screen
+ai_label:
+  de: KI-generiert
+  en: AI-generated
+production:
+  closing_sentence:
+    de: 'Folge Revlore: Motorentechnik verstehen, ein Bauteil nach dem anderen.'
+    en: 'Follow Revlore: understand engines, one part at a time.'
+  domain: ''                 # no website registered; no handle in the video (exact handles taken)
+explainer:                   # Schnitt- und Layout-Vorlage (Stefan, 30.10.2026), Hochformat; fn.render.explainer
+  enabled: true
+  voice_tag: {de: "SYNTHETISCHE STIMME", en: "SYNTHETIC VOICE"}
+  opening: {de: "Synthetische Stimme · Quellen am Bildschirm · Schema, keine Wartungsanleitung",
+            en: "Synthetic voice · Sources on screen · Schematic, not a repair guide"}
+  opening_seconds: 3.5
+  head_on_hook: false
+  # Revlore stack: scene 290-1175, marker 1190-1234, source 1246-1308 (two lines), captions 1316-1452
+  # (layout.caption_bottom_px 468), cycle strip 1468-1534, progress 1556, AI label to 1602; right edge x 930.
+  source_y: 1190
+  # fixed meaning: fakt = the active part (accent blue), unsicher = amber, luecke = red (risk only),
+  # erreicht = green (reached state), auslegung = violet. Combustion orange is a physical state in the
+  # drawing, never a meaning colour.
+  colors: {fakt: "#2F9BFF", auslegung: "#9B6BFF", unsicher: "#F5B342", luecke: "#FF5A5A", erreicht: "#3FCF8E",
+           beispiel: "#8D99A6"}

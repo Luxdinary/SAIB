@@ -1,0 +1,584 @@
+{
+  "video_id": "megaconstruction-20261115-2-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Eiffelturm: 18.038 Teile in 2 Jahren, 2 Monaten, 5 Tagen",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Damals gelöst. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261115-2-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://artsandculture.google.com/story/the-construction-of-the-eiffel-tower-tour-eiffel/UgWBgIpO0RsA8A?hl=en",
+      "title": "SETE (Betreiber) bei Google Arts & Culture: The construction of the Eiffel Tower (26.01.1887–31.03.1889; 2 Jahre, 2 Monate, 5 Tage; 18.038 Teile; 2,5 Mio. Nieten; 150–300 Arbeiter, 150 im Werk Levallois-Perret)",
+      "label": "SETE, Google Arts & Culture",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/eiffel-tower",
+      "title": "ASCE: Eiffel Tower (18.038 Teile, 2,5 Mio. Nieten; im Werk verschraubt, zerlegt, vor Ort vernietet; ursprünglich 300 m; höchstes Bauwerk bis 1930)",
+      "label": "ASCE, Eiffel Tower",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffelturm), Key figures",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Zweites Startdatum (1. Juli 1887, Montage) nicht verwendet; die 2 Jahre, 2 Monate, 5 Tage passen zum 26.01.1887.",
+    "Bauablauf im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "18.038 Metallteile und zweieinhalb Millionen Nieten.",
+      "on_screen": "18.038 Teile in 26 Monaten",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist der Eiffelturm wirklich?",
+      "on_screen": "Wie groß ist der Eiffelturm wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen der Eiffelturm.",
+      "on_screen": "der Eiffelturm: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei der Eiffelturm schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "der Eiffelturm: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie der Eiffelturm im Modell entsteht.",
+      "on_screen": "der Eiffelturm im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "18.038 Metallteile, zweieinhalb Millionen Nieten. Wie baut man daraus einen Turm in gut 26 Monaten? Das war die Bauaufgabe in Paris.",
+      "data": {
+        "kicker": "Damals gelöst · Eiffelturm",
+        "question": "18.038 Teile in gut 26 Monaten?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Paris · 1887 bis 1889",
+          "at": "@Paris",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "Damals: Mit den Fundamenten begann der Bau am 26. Januar 1887. Am 31. März 1889 war der Turm fertig, nach zwei Jahren, zwei Monaten und fünf Tagen.",
+      "data": {
+        "headline": "Damals",
+        "load": {
+          "label": "Metallteile",
+          "value": "18.038",
+          "unit": "",
+          "sub": "dazu 2,5 Millionen Nieten",
+          "at": "@26.",
+          "dy": 540
+        },
+        "goal": {
+          "key": "FERTIG",
+          "text": "31. März 1889",
+          "at": "@31.",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "Die Lösung war Vorfertigung. Im Werk in Levallois-Perret wurden die Teile probeweise verschraubt, dann zerlegt und zur Baustelle gebracht. Erst dort wurden sie endgültig vernietet.",
+      "data": {
+        "headline": "Die Lösung",
+        "note": "Bauablauf schematisch",
+        "pins": [
+          {
+            "anchor": "low",
+            "text": "Vernieten vor Ort",
+            "at": "@vernietet",
+            "side": "up"
+          }
+        ],
+        "rule": {
+          "text": "Im Werk verschrauben, auf der Baustelle nieten.",
+          "at": "@zerlegt",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "Auf der Baustelle arbeiteten 150 bis 300 Mann, im Werk weitere 150. Das Metallgerüst wiegt laut Betreiber 7.300 Tonnen. Wenige hundert Mann also, für einen Turm aus 18.038 Teilen.",
+      "data": {
+        "headline": "So wurde er gebaut",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Arbeiter Baustelle",
+            "qty": "150–300",
+            "at": "@Baustelle"
+          },
+          {
+            "pos": "2",
+            "part": "Arbeiter im Werk",
+            "qty": "150",
+            "at": "@Werk"
+          },
+          {
+            "pos": "3",
+            "part": "Metallgerüst, Tonnen",
+            "qty": "7.300",
+            "at": "@7.300"
+          },
+          {
+            "pos": "4",
+            "part": "Metallteile",
+            "qty": "18.038",
+            "at": "@18.038"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "SE"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Nachgerechnet: zwei Jahre, zwei Monate und fünf Tage sind gut 26 Monate. Und 2,5 Millionen Nieten durch 18.038 Teile ergibt im Schnitt rund 139 Nieten je Teil.",
+      "data": {
+        "headline": "Nachgerechnet",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "2 Jahre × 12 + 2 Monate (+ 5 Tage)",
+            "a": {
+              "value": 24,
+              "unit": "",
+              "show": "2 × 12"
+            },
+            "op": "+",
+            "b": {
+              "value": 2,
+              "unit": ""
+            },
+            "unit": "Monate",
+            "expect": 26,
+            "at": "@zwei",
+            "result_at": "@26"
+          },
+          {
+            "label": "Nieten ÷ Teile (Durchschnitt)",
+            "a": {
+              "value": 2500000,
+              "unit": "",
+              "show": "2.500.000"
+            },
+            "op": "÷",
+            "b": {
+              "value": 18038,
+              "unit": ""
+            },
+            "unit": "",
+            "round": 1,
+            "decimals": 0,
+            "prefix": "≈ ",
+            "expect": 139,
+            "at": "@Nieten",
+            "result_at": "@139"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Ursprünglich 300 Meter hoch, war er bis 1930 das höchste Bauwerk der Welt. Folge Gigastruct für die nächste Bauaufgabe.",
+      "data": {
+        "statement": "Gelöst: Vorfertigung",
+        "sheet": "BLATT 19",
+        "rows": [
+          [
+            "Aufgabe",
+            "18.038 Teile in 26 Monaten"
+          ],
+          [
+            "Lösung",
+            "Werk verschraubt, vor Ort genietet"
+          ],
+          [
+            "Bauzeit",
+            "1887 bis 1889"
+          ],
+          [
+            "Rekord",
+            "höchstes Bauwerk bis 1930"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "AUFGABE",
+        "DAMALS",
+        "LÖSUNG",
+        "BAU",
+        "HEUTE"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 4,
+        "b6": 5
+      }
+    },
+    "description": "Der Eiffelturm war in 2 Jahren, 2 Monaten und 5 Tagen fertig: 18.038 vorgefertigte Teile, 2,5 Millionen Nieten. Wie die Serienfertigung das möglich machte.",
+    "companion_text": "Gerechnet: 26.01.1887 bis 31.03.1889 = 26 Monate; 2.500.000 ÷ 18.038 = 138,6 Nieten je Teil. Quellen: SETE (Google Arts & Culture, Key figures), ASCE. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "eiffelturm",
+      "paris",
+      "baugeschichte",
+      "nieten",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "26.01.1887 + 2 J + 2 M + 5 T = 31.03.1889; 2 × 12 + 2 = 26 Monate",
+        "result": "gut 26 Monate",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "2.500.000 ÷ 18.038 = 138,6",
+        "result": "rund 139 Nieten je Teil",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "tower",
+          "height": 300,
+          "base": 125,
+          "count": 1,
+          "color": "model",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "top": [
+          0,
+          300,
+          0
+        ],
+        "mid": [
+          20,
+          120,
+          20
+        ],
+        "low": [
+          55,
+          30,
+          55
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 45,
+            "az1": 35,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {
+            "tower.build": [
+              [
+                0,
+                0.3
+              ],
+              [
+                "%1",
+                0.6
+              ]
+            ]
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 88,
+            "az1": 92,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {
+            "tower.build": 0.1
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 30,
+            "az1": 40,
+            "el0": 10,
+            "el1": 12,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "tower.build": [
+              [
+                0,
+                0.2
+              ],
+              [
+                "%1",
+                0.5
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 50,
+            "az1": 35,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {
+            "tower.build": [
+              [
+                0,
+                0.5
+              ],
+              [
+                "%0.9",
+                1
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 12,
+            "el1": 16,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 25,
+            "az1": 15,
+            "el0": 6,
+            "el1": 4,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,557 @@
+{
+ "video_id": "menswear-20261110-1-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Stoffgewicht: Was die Zahl wirklich misst",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema C01 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; keine Unzen je Quadratyard, keine feste Sommer-Grenze, Lochcarron-Wert gerundet (490/500 g).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Stoff, Gewicht",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Gewicht: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "Gramm oder Unzen?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Gramm je lfd. Meter",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "230 bis 560 g",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "schwerer, nicht wärmer",
+     "tone": "red"
+    },
+    {
+     "beat": "b6",
+     "text": "Zahl plus Bindung",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "erste Richtung",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Was misst das Stoffgewicht? Bei Fox Brothers Gramm je laufendem Meter bei fester Breite, nach dem Ausrüsten. Dazu Lochcarron mit Gramm und Unzen und Woolmark mit typischen Werten.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "anzugstoff",
+   "stoffkunde",
+   "anzug",
+   "wolle"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://foxflannel.com/pages/cloth-weight-explained",
+   "title": "Fox Brothers, Cloth weight explained: Gramm je laufendem Meter bei fester Webbreite nach dem Ausrüsten, teils mit Unzen; 230-260 g (Golden Fox) bis 530-560 g (Authentic Flannel); schwerer nicht automatisch wärmer, Bindung und Ausrüstung zählen mit",
+   "checked_at": "2026-11-01",
+   "label": "Fox Brothers, Cloth Weight"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.lochcarron.co.uk/edinburgh-heavy-weight-tartan-fabric",
+   "title": "Lochcarron, Edinburgh Heavy Weight Tartan: 490/500 g je laufendem Meter und 16 oz je laufendem Yard bei 140 cm Breite",
+   "checked_at": "2026-11-01",
+   "label": "Lochcarron, Tartan"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "title": "Woolmark, Intro to Wovenwear (Schulungshandbuch): Stoffgewichte etwa 100 bis 700 g je laufendem Meter, typisch für Herren-Kammgarn 350 g",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Wovenwear"
+  }
+ ],
+ "unverified": [
+  "Umrechnung Gramm/Unzen: hängt von der Breite ab, keine Formel im Video.",
+  "Bindung der Golden-Fox-Stoffe: nicht belegt; das Muster im Bild ist neutral gewählt."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "350 Gramm, aber wovon?",
+   "on_screen": "350 Gramm, aber wovon?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Schwerer Stoff, wärmerer Anzug? Nicht automatisch.",
+   "on_screen": "Schwerer Stoff, wärmerer Anzug? Nicht automatisch.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Das Stoffgewicht meint meist einen laufenden Meter",
+   "on_screen": "Das Stoffgewicht meint meist einen laufenden Meter",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Gramm oder Unzen? Ohne Einheit sagt die Zahl wenig.",
+   "on_screen": "Gramm oder Unzen? Ohne Einheit sagt die Zahl wenig.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Was ein Meter Stoff auf der Waage verrät",
+   "on_screen": "Was ein Meter Stoff auf der Waage verrät",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Eine konkrete Zahl als Frage, die Lupe auf dem Stoff."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Auf dem Stoffmuster steht 350 Gramm. Aber 350 Gramm wovon? Und sagt dir die Zahl, wie warm der Anzug wird?",
+   "data": {
+    "question": "350 Gramm, aber wovon?",
+    "object": {
+     "kind": "swatch",
+     "weave": "twill",
+     "colour": "#2A3550",
+     "layers": 2
+    },
+    "target": "corner",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:350",
+    "loupe_at": "w:350",
+    "nie_at": "w:wovon",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Zu vielen Anzugstoffen gibt es eine Gewichtszahl. Aber in welcher Einheit? Die Weberei Lochcarron nennt für einen Tartan beides nebeneinander: rund 500 Gramm je laufendem Meter und 16 Unzen je laufendem Yard, bei 140 Zentimetern Breite.",
+   "data": {
+    "headline": "Gramm oder Unzen?",
+    "left": {
+     "title": "Gramm",
+     "object": {
+      "kind": "swatch",
+      "weave": "twill",
+      "colour": "#2E4A3A",
+      "layers": 2
+     },
+     "target": "measure",
+     "tag": "rund 500 g je Meter",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:Meter"
+      }
+     ]
+    },
+    "right": {
+     "title": "Unzen",
+     "object": {
+      "kind": "swatch",
+      "weave": "twill",
+      "colour": "#2E4A3A",
+      "layers": 2
+     },
+     "tag": "16 oz je Yard",
+     "tag2": "Umrechnung je nach Breite",
+     "tag2_at": "w:Breite",
+     "pulses": [
+      {
+       "target": "measure",
+       "at": "w:Zentimetern",
+       "tone": "amber"
+      }
+     ]
+    },
+    "left_at": 0.4,
+    "left_tag_at": "w:Gramm",
+    "right_at": "w:16",
+    "right_tag_at": "w:Yard",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Lochcarron"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Fox Brothers erklärt, was gemeint ist: das Gewicht eines laufenden Meters Stoff, bei fester Webbreite, gewogen nach dem Ausrüsten. Teils steht der Wert in Unzen daneben. Gemeint ist bei Fox also nicht der Quadratmeter.",
+   "data": {
+    "headline": "Was gewogen wird",
+    "stages": [
+     {
+      "object": {
+       "kind": "swatch",
+       "weave": "twill",
+       "colour": "#2A3550",
+       "layers": 2
+      },
+      "at": 0.0,
+      "title": "Fox Brothers",
+      "tags": [
+       {
+        "spot": "weave",
+        "text": "1 laufender Meter",
+        "sub": "Gramm je Meter",
+        "tone": "always",
+        "at": "w:laufenden"
+       },
+       {
+        "spot": "center",
+        "text": "feste Webbreite",
+        "sub": "laut Fox Brothers",
+        "tone": "always",
+        "at": "w:Webbreite"
+       },
+       {
+        "spot": "corner",
+        "text": "nach Ausrüstung",
+        "sub": "der fertige Stoff",
+        "tone": "always",
+        "at": "w:Ausrüsten"
+       }
+      ],
+      "focus_at": "w:Quadratmeter"
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Fox"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Wie weit das reicht, zeigt Fox Brothers selbst: von 230 bis 260 Gramm beim leichten Golden Fox bis zu 530 bis 560 Gramm beim Authentic Flannel. Woolmark nennt 350 Gramm als typisch für Kammgarn im Herrenanzug.",
+   "data": {
+    "headline": "Leicht bis schwer",
+    "left": {
+     "title": "Golden Fox",
+     "object": {
+      "kind": "swatch",
+      "weave": "worsted",
+      "colour": "#2A3550",
+      "layers": 1
+     },
+     "target": "measure",
+     "tag": "230–260 g je Meter",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:Woolmark"
+      }
+     ]
+    },
+    "right": {
+     "title": "Authentic Flannel",
+     "object": {
+      "kind": "swatch",
+      "weave": "flannel",
+      "colour": "#555B66",
+      "layers": 4
+     },
+     "tag": "530–560 g je Meter",
+     "pulses": [
+      {
+       "target": "measure",
+       "at": "w:Kammgarn"
+      }
+     ]
+    },
+    "left_at": "w:von",
+    "left_tag_at": "w:Golden",
+    "right_at": "w:530",
+    "right_tag_at": "w:Authentic",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Golden"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 10,
+   "spoken": "Und schwerer heißt nicht automatisch wärmer. Laut Fox Brothers zählen Bindung und Ausrüstung mit. Die Zahl gibt dir also eine erste Richtung für die Saison, mehr nicht.",
+   "data": {
+    "headline": "Schwerer gleich wärmer?",
+    "from": {
+     "kind": "swatch",
+     "weave": "flannel",
+     "colour": "#555B66",
+     "layers": 3,
+     "strain": false
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "herringbone",
+     "colour": "#555B66",
+     "layers": 3,
+     "strain": false
+    },
+    "target": "weave",
+    "zoom": 1.4,
+    "label": "Bindung und Ausrüstung zählen",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:schwerer",
+    "error_at": "w:automatisch",
+    "zoom_at": "w:wärmer",
+    "flip_at": "w:Bindung",
+    "label_at": "w:Ausrüstung"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 738,
+     "y": 860,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Bindung"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "Kurz gesagt: Die Zahl meint bei Webereien meist Gramm je laufendem Meter, bei fester Breite. Unzen stehen teils daneben. Und für die Wärme zählen auch Bindung und Ausrüstung.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Gramm je Meter",
+      "sub": "laufend, feste Breite (Fox)",
+      "object": {
+       "kind": "swatch",
+       "weave": "twill",
+       "colour": "#2A3550",
+       "layers": 2
+      },
+      "at": "w:Gramm",
+      "ring": "measure",
+      "ring_at": "w:Breite"
+     },
+     {
+      "title": "Unzen teils daneben",
+      "sub": "je Yard, etwa bei Lochcarron",
+      "object": {
+       "kind": "swatch",
+       "weave": "twill",
+       "colour": "#2E4A3A",
+       "layers": 2
+      },
+      "at": "w:Unzen",
+      "ring": "corner",
+      "ring_at": "w:daneben"
+     },
+     {
+      "title": "Bindung zählt mit",
+      "sub": "und die Ausrüstung",
+      "object": {
+       "kind": "swatch",
+       "weave": "flannel",
+       "colour": "#555B66",
+       "layers": 3,
+       "strain": false
+      },
+      "at": "w:Wärme",
+      "then": {
+       "weave": "herringbone"
+      },
+      "then_at": "w:Bindung"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Die Zahl zeigt die Richtung, den Rest machen Bindung und Ausrüstung. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "swatch",
+     "weave": "flannel",
+     "colour": "#555B66",
+     "layers": 1,
+     "strain": false
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "herringbone",
+     "colour": "#555B66",
+     "layers": 3,
+     "strain": false
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "weave",
+    "fix_at": "w:Richtung",
+    "ring_at": "w:Bindung",
+    "statement_at": "w:Ausrüstung",
+    "chip_at": "w:Blick",
+    "statement": "Eine erste Richtung.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

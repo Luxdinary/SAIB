@@ -1,0 +1,494 @@
+{
+  "video_id": "beauty-20261103-4-en",
+  "brand_id": "beauty",
+  "language": "en",
+  "title": "\"Aluminum in deodorant is dangerous\"",
+  "layout": {
+    "zone_top": 330,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.4,
+    "description": "Is aluminum in deodorant dangerous? The BfR considers health effects through the skin unlikely. We show what the sources say and what remains open. Featuring a fictional, neutral product.",
+    "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendation, no medical advice.",
+    "hashtags": [
+      "beauty",
+      "deodorant",
+      "aluminum",
+      "skincare",
+      "beautyfacts"
+    ],
+    "progress_y": 1548,
+    "ai_label_bottom_px": 430,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "format": "nahaufnahme",
+    "explainer": false,
+    "zone_lower_right_px": 930,
+    "stamp": "AI images · fictional product · not a product test",
+    "short_title": "Aluminum in deodorant",
+    "media": [
+      {
+        "beat": "b1",
+        "at": 0,
+        "file": "library/dl_prod_spray.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      },
+      {
+        "beat": "b2",
+        "at": 0,
+        "file": "library/dl_real_deo_pair.jpg",
+        "kind": "image",
+        "move": "right",
+        "tag": "ki"
+      },
+      {
+        "beat": "b3",
+        "at": 0,
+        "file": "library/dl_real_two_bottles.jpg",
+        "kind": "image",
+        "move": "left",
+        "tag": "ki"
+      },
+      {
+        "beat": "b4",
+        "at": 0,
+        "file": "library/dl_real_shelf.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      },
+      {
+        "beat": "b5",
+        "at": 0,
+        "file": "library/dl_real_tube_back.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      },
+      {
+        "beat": "b6",
+        "at": 0,
+        "file": "library/dl_real_magnifier.jpg",
+        "kind": "image",
+        "move": "right",
+        "tag": "ki"
+      },
+      {
+        "beat": "b7",
+        "at": 0,
+        "file": "library/dl_real_shelf.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      },
+      {
+        "beat": "b8",
+        "at": 0,
+        "file": "library/dl_prod_spray.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      }
+    ],
+    "sound": {
+      "palette": "soft",
+      "mood": "warm",
+      "music": "procedural"
+    }
+  },
+  "assets": {
+    "folder": "assets/clips",
+    "background": {},
+    "hero": {},
+    "scrim": 0.0,
+    "note": "Background from the LAYER of the Nahaufnahme format, no clips, no AI images."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/fragen-und-antworten-zur-bfr-neubewertung-vom-20-juli-2020-von-aluminium-in-antitranspirantien/",
+      "title": "BfR: Questions and answers on the reassessment of aluminium in antiperspirants (assessment section)",
+      "checked_at": "2026-11-03",
+      "label": "BfR Aluminium in Antiperspirants"
+    },
+    {
+      "id": "S2",
+      "url": "https://health.ec.europa.eu/publications/safety-aluminium-cosmetic-products-submission-ii_en",
+      "title": "SCCS: Safety of aluminium in cosmetic products, Submission II (publication page)",
+      "checked_at": "2026-11-03",
+      "label": "SCCS Aluminium Submission II"
+    }
+  ],
+  "unverified": [
+    "Specific maximum concentrations per product type and the current SCCS version SCCS/1662/23 are not supported by the available source information and are not mentioned.",
+    "The 2023 BfR update is not supported by the available source information and is not mentioned."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Is aluminum in deodorant a problem? The BfR considers that unlikely through the skin.",
+      "on_screen": "Aluminum in deodorant: a problem?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Neutral spray on stage, question on screen",
+      "why": {
+        "truth": "Statement taken directly from S1"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Aluminum in deodorant is dangerous? You hear that a lot. The sources are more nuanced.",
+      "on_screen": "Aluminum in deodorant dangerous?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Neutral spray with question mark badge",
+      "why": {
+        "truth": "S1 and S2 examine the question"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "The EU Commission also has aluminum in cosmetics scientifically reviewed.",
+      "on_screen": "Aluminum: who reviews it?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Document card with the title of the review",
+      "why": {
+        "curiosity": "less pointed"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "You spray deodorant on your skin every day. What does the BfR say about the aluminum in it?",
+      "on_screen": "Daily deodorant: what does the BfR say?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Spray against a background, question on screen",
+      "why": {
+        "truth": "Everyday life, statement from S1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Look at the packaging. It tells you which substances are in the deodorant.",
+      "on_screen": "What does the packaging say?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Back of the packaging under a magnifier",
+      "why": {
+        "visual": "visible, but little tension"
+      }
+    }
+  ],
+  "hook": {
+    "id": "H2",
+    "note": "clear fallacy, verifiable with S1 and S2, spray on screen"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "spoken": "Aluminum in deodorant is dangerous? You hear that a lot. The sources are more nuanced.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "scene_type": "nh_hook",
+      "data": {
+        "question": "Aluminum in deodorant dangerous?",
+        "badge": "Myth?",
+        "kicker": "Head to head · Myth",
+        "product": {
+          "kind": "spray",
+          "line1": "DEO"
+        },
+        "question_at": 0.25,
+        "photo": true
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "spoken": "The Federal Institute for Risk Assessment, BfR for short, has reassessed aluminum in antiperspirants. The question is whether aluminum is absorbed through the skin and can harm health. The reassessment dates from July 20, 2020.",
+      "source_ids": [
+        "S1"
+      ],
+      "scene_type": "nh_facts",
+      "data": {
+        "headline": "The question for the BfR",
+        "zoom": "ALUMINUM",
+        "flip": false,
+        "doc": {
+          "act": "BfR: Aluminum in deodorant",
+          "ref": "Questions and answers"
+        },
+        "rows": [
+          {
+            "text": "Reassessment of July 20, 2020"
+          },
+          {
+            "text": "Topic: antiperspirants"
+          },
+          {
+            "text": "Question: absorption through the skin"
+          }
+        ],
+        "kicker": "What it's about",
+        "product": {
+          "kind": "spray",
+          "line1": "DEO"
+        },
+        "photo": true
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "spoken": "The BfR considers health effects from aluminum in deodorants through the skin unlikely. That's what the institute's questions and answers say. On the left you see the claim on the packaging, on the right the evidence.",
+      "source_ids": [
+        "S1"
+      ],
+      "scene_type": "nh_versus",
+      "data": {
+        "headline": "Two cards, no winner",
+        "kicker": "Packaging claim · Evidence",
+        "cards": [
+          {
+            "tag": "Packaging claim",
+            "title": "Aluminum salt",
+            "text": "listed in the ingredients"
+          },
+          {
+            "tag": "Evidence",
+            "title": "BfR assessment",
+            "text": "unlikely through the skin"
+          }
+        ],
+        "photo": true
+      }
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "spoken": "The EU Commission has also had aluminum in cosmetics scientifically reviewed. The SCCS committee has published an opinion on it. Two bodies examine the question independently of each other.",
+      "source_ids": [
+        "S2"
+      ],
+      "scene_type": "nh_list",
+      "data": {
+        "headline": "Two bodies review it",
+        "kicker": "Who assesses",
+        "caption": "Both bodies publish their texts",
+        "rows": [
+          {
+            "label": "BfR",
+            "value": "DE"
+          },
+          {
+            "label": "SCCS",
+            "value": "EU"
+          }
+        ],
+        "photo": true
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "spoken": "So look at the ingredient list. There you can tell whether an aluminum salt is included. You read the claim and put it in context with the sources.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "scene_type": "nh_lens",
+      "data": {
+        "kicker": "Under the magnifier",
+        "headline": "The ingredient list",
+        "product": {
+          "kind": "spray",
+          "line1": "DEO"
+        },
+        "zoom": {
+          "text": "INCI",
+          "at": 0.5
+        },
+        "section": {
+          "at": 1.5,
+          "label": "Ingredient list",
+          "film_label": "Packaging claim"
+        },
+        "value": {
+          "text": "Aluminum?",
+          "sub": "just read, don't guess",
+          "at": 3.0
+        },
+        "check": {
+          "text": "Check the source",
+          "at": 4.5
+        },
+        "photo": true
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "spoken": "Whether a substance is on the packaging says nothing yet about a risk. The expert bodies judge that based on data. The BfR considers a health effect through the skin unlikely here.",
+      "source_ids": [
+        "S1"
+      ],
+      "scene_type": "nh_steps",
+      "data": {
+        "headline": "Read, then assess",
+        "kicker": "Steps to remember",
+        "steps": [
+          {
+            "title": "Read the ingredient list",
+            "sub": "Claim on the packaging"
+          },
+          {
+            "title": "Open the source",
+            "sub": "BfR and SCCS"
+          },
+          {
+            "title": "Then judge",
+            "sub": "not the other way round"
+          }
+        ],
+        "photo": true
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "spoken": "So you don't need a headline to settle the question. You have the packaging and two open sources. That lets you put claims in context yourself.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "scene_type": "nh_versus",
+      "data": {
+        "headline": "Your advantage",
+        "kicker": "Packaging claim · Evidence",
+        "cards": [
+          {
+            "tag": "Packaging claim",
+            "title": "Ingredient list",
+            "text": "check it yourself"
+          },
+          {
+            "tag": "Evidence",
+            "title": "BfR and SCCS",
+            "text": "openly available"
+          }
+        ],
+        "photo": true
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "spoken": "Read first, then judge. Beauty facts explained clearly: follow Dewlane.",
+      "source_ids": [],
+      "scene_type": "nh_close",
+      "data": {
+        "kicker": "Rule of thumb",
+        "rule": "Read first, then judge.",
+        "rule_at": 0.2,
+        "product": {
+          "kind": "spray",
+          "line1": "DEO"
+        },
+        "question": {
+          "text": "What's in your deodorant?",
+          "at": 1.6
+        },
+        "sign_at": "@Beauty",
+        "claim": "Facts instead of promises.",
+        "disclaimer": "No medical advice.",
+        "photo": true
+      }
+    }
+  ],
+  "notes": "English version from the same scenes as beauty-20261103-4-de; text localised, not rewritten",
+  "sound_cues": [
+    {
+      "beat": "b1",
+      "at": "start",
+      "cue": "bett_ein"
+    },
+    {
+      "beat": "b1",
+      "at": "w:Aluminum",
+      "cue": "pop"
+    },
+    {
+      "beat": "b3",
+      "at": "w:The",
+      "cue": "swipe"
+    },
+    {
+      "beat": "b5",
+      "at": "w:So",
+      "cue": "click"
+    },
+    {
+      "beat": "b7",
+      "at": "w:So",
+      "cue": "chime"
+    },
+    {
+      "beat": "b8",
+      "at": "end",
+      "cue": "bett_aus_schlussakkord"
+    }
+  ]
+}

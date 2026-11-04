@@ -1,0 +1,484 @@
+{
+ "video_id": "ai_security-20261109-3-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Passkeys: the login that gives nothing away on a fake site",
+ "notes": "EN-Fassung von ai_security-20261109-3-de (Woche 1, 01.11.2026), sprachlich angepasst, gleiche Quellen und Bildfolge.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Business email",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Sign-in: password only",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Phishing: password exposed",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Passkey: available?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Passkey: nothing to steal",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Backup: open",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Switch: check today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Fake site: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "A strong password doesn't help once it lands on a fake site. Passkeys replace the password, and according to Germany's BSI they withstand the vast majority of known phishing attacks.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "passkeys",
+   "phishing",
+   "smallbusiness",
+   "cybersecurity",
+   "login"
+  ],
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, desk, split, lanes, calm, negate (roter Rahmen nur unter der Sperre)."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://fidoalliance.org/passkeys/",
+   "title": "Passkeys (FIDO Alliance): 'A passkey is an authentication credential based on FIDO standards', phishing-resistant, no shared secrets, unlocked like the device, password replacement",
+   "checked_at": "2026-10-30",
+   "label": "FIDO Alliance, passkeys"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/dok/1107470",
+   "title": "BSI: Passkeys - anmelden ohne Passwort (immun gegen die breite Masse bekannter Phishing-Angriffe; jeder Passkey schützt genau einen Account; Wiederherstellung über Backup oder Cloud-Synchronisation)",
+   "checked_at": "2026-10-30",
+   "label": "BSI (Germany), passkeys"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/dok/1032220",
+   "title": "BSI: Vergleich gängiger Verfahren der 2FA (Passkey-Verfahren resistent gegen übliches Phishing; E-Mail-, SMS-TAN und TOTP schützen nicht vor Phishing in Echtzeit)",
+   "checked_at": "2026-10-30",
+   "label": "BSI, comparing 2FA methods"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260130_Aendere-dein-Passwort-Tag.html",
+   "title": "BSI-Pressemitteilung 30.01.2026: prüfen, wo der Umstieg auf Passkeys möglich ist, sonst Zwei-Faktor-Authentisierung",
+   "checked_at": "2026-10-30",
+   "label": "BSI press release 30.01.2026"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.bsi.bund.de/dok/1108092",
+   "title": "BSI: Die Kryptografie hinter Passkey (privater Schlüssel verbleibt beim Nutzer; Client prüft bei jeder Anmeldung die Website)",
+   "checked_at": "2026-10-30",
+   "label": "BSI, passkey cryptography"
+  }
+ ],
+ "unverified": [
+  "Share of services supporting passkeys: not used.",
+  "Statements about specific providers: not used, only a check.",
+  "Absolute claim 'passkeys cannot be phished': avoided; the BSI says they withstand the vast majority of known phishing attacks."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "concrete_risk",
+   "spoken": "Your best password is no help if you type it into a fake site.",
+   "on_screen": "And what if the site is fake?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "Passwort fliegt in ein Login-Fenster, Warnmarke 'Falsche Seite?'",
+   "why": {
+    "truth": "BSI: Passwort und auch SMS/TOTP schützen nicht vor Echtzeit-Phishing",
+    "visual": "Login-Fenster ist der rote Faden"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "What if your business login didn't need a password at all?",
+   "on_screen": "Login without a password?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "leeres Passwortfeld",
+   "why": {
+    "curiosity": "wirkt wie Werbung"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Strong password, all safe? Against phishing it does little.",
+   "on_screen": "Strong password = safe?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "Passwortfeld mit Fragezeichen",
+   "why": {
+    "truth": "Stärke schützt vor Erraten, nicht vor Eintippen auf falscher Seite; 'wenig' ist Auslegung"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "surprising_fact",
+   "spoken": "According to Germany's BSI, a passkey withstands most known phishing attacks.",
+   "on_screen": "BSI: passkeys resist phishing",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Zitatkarte",
+   "why": {
+    "visual": "abstrakt"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch what happens when your password lands on the wrong site.",
+   "on_screen": "Password on the wrong site",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Login-Fenster",
+   "why": {
+    "clarity": "kündigt an, statt zu zeigen"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Konkretes Risiko mit höchster Bewertung; das Login-Fenster ist zugleich der rote Faden."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Your best password is no help if you type it into a fake site.",
+   "data": {
+    "question": "And what if the site is fake?",
+    "doc_label": "Password",
+    "chat_title": "Sign in",
+    "bot_line": "Please enter password",
+    "typed": "••••••••••",
+    "badge": "Fake site?",
+    "fly_at": 0.3,
+    "question_at": 2.4
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 11,
+   "spoken": "That's exactly how phishing works: the site looks real, and the password goes to the attackers. And according to Germany's BSI, codes by text, email or app don't protect against real-time phishing either.",
+   "data": {
+    "headline": "How phishing works",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Fake site",
+      "icon": "&#9888;"
+     },
+     {
+      "id": "n1",
+      "label": "Attacker",
+      "icon": "&#9823;"
+     },
+     {
+      "id": "n2",
+      "label": "Your real account",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "password + code"
+     },
+     {
+      "label": "signs in"
+     }
+    ],
+    "packet_at": 1.4,
+    "highlight": {
+     "node": 0,
+     "at": 7.5,
+     "label": "Real or fake?"
+    }
+   },
+   "source_ids": [
+    "S3"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "The alternative is called a passkey. It replaces the password. According to the FIDO Alliance, you unlock it just like your device: with your fingerprint, face or PIN.",
+   "data": {
+    "headline": "What a passkey is",
+    "file_label": "Business email",
+    "card": {
+     "title": "The passkey",
+     "rows": [
+      {
+       "text": "replaces the password",
+       "ok": null
+      },
+      {
+       "text": "stays on your device",
+       "ok": null
+      },
+      {
+       "text": "unlocked by finger, face, PIN",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.6,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 15,
+   "spoken": "The difference: with a passkey, there's nothing to type. The secret key stays on your device, and the device checks at every sign-in whether the site is genuine. A fake site gets nothing.",
+   "data": {
+    "headline": "Password or passkey",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 4.2,
+    "left": {
+     "title": "Password",
+     "rows": [
+      {
+       "text": "gets typed in",
+       "ok": null
+      },
+      {
+       "text": "lands on fake sites too",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Passkey",
+     "rows": [
+      {
+       "text": "nothing to type",
+       "ok": null
+      },
+      {
+       "text": "key stays on the device",
+       "ok": null
+      },
+      {
+       "text": "device checks the real site",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S5"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "If a service doesn't offer passkeys yet, the BSI recommends two-factor login. And in case you lose your device, you need a backup or sync through the cloud.",
+   "data": {
+    "headline": "And if it's not available yet?",
+    "file_label": "Business email",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Passkey available",
+      "sub": "switch now",
+      "at": 0.6
+     },
+     {
+      "title": "No passkey yet",
+      "sub": "turn on two-factor",
+      "at": 1.0
+     }
+    ],
+    "approval": "Backup if device is lost?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S4",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "So today: check your business email, bank and cloud storage to see whether they offer passkeys. Turn them on there first. And secure a way back in for every account.",
+   "data": {
+    "headline": "Three steps for today",
+    "items": [
+     {
+      "title": "Check email, bank, cloud",
+      "sub": "Where are passkeys offered?",
+      "at": 2.0
+     },
+     {
+      "title": "Turn on passkeys",
+      "sub": "there first",
+      "at": 5.2
+     },
+     {
+      "title": "Secure your way back",
+      "sub": "backup or sync",
+      "at": 7.6
+     }
+    ]
+   },
+   "source_ids": [
+    "S4",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Check today where passkeys work. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Where do passkeys work?",
+    "file_label": "Business email",
+    "button": "Sign in",
+    "block_text": "Fake site: no passkey",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 5.1,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

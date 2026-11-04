@@ -1,0 +1,558 @@
+{
+  "video_id": "military_history-20261114-2-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Did Vikings Really Wear Horned Helmets?",
+  "notes": "Woche 1, Reihe Mythos geprüft. Keine NS-Wikinger-Ikonografie, keine Runen-Symbole; Altersabstand nur als 'fast zwei Jahrtausende'.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://cas.au.dk/en/archaeology-and-heritage-studies/news-and-events/news/show/artikel/new-study-about-the-viksoe-helmets",
+      "title": "New study about the Viksø helmets, Aarhus University, 10.01.2022",
+      "label": "Aarhus University",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://lex.dk/MYTE_Havde_vikingernes_hjelme_horn%3F",
+      "title": "MYTE: Havde vikingernes hjelme horn? Lex – Danmarks Nationalleksikon",
+      "label": "lex.dk",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://videnskab.dk/kultur-samfund/viksoehjelmene-inspirerede-maaske-myten-om-vikinger-med-horn-men-de-er-meget-aeldre",
+      "title": "Viksøhjelmene inspirerede måske myten om vikinger med horn, Videnskab.dk, 13.01.2022",
+      "label": "Videnskab.dk",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Altersabstand 'etwa 2000 Jahre' (Quellen) gegenüber rund 1700 Jahren (Rechnung); im Video 'viel älter' und 'fast zwei Jahrtausende'.",
+    "Ob die Viksø-Helme den Mythos anregten, vermutet nur Videnskab; nicht behauptet."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Did Vikings really wear helmets with horns?",
+      "on_screen": "Vikings with horned helmets?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Vikings in horned helmets? Not a single one has been found.",
+      "on_screen": "Not a single find",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Denmark's most famous horned helmets are from the Bronze Age.",
+      "on_screen": "Horns from the Bronze Age",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "An opera costume still shapes how we see history.",
+      "on_screen": "A costume made history",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch what a real Viking helmet looked like.",
+      "on_screen": "A real Viking helmet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Did Vikings really wear helmets with horns?",
+      "data": {
+        "question": "Vikings with horned helmets?",
+        "question_em": "horned helmets",
+        "card_title": "Horned helmet",
+        "card_meta": "DENMARK · MYTH",
+        "card_no": "FILE 26",
+        "stamp": "Myth?",
+        "drawing": "helmets_compare.svg",
+        "packet_label": "Helmet",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:horns",
+        "packet_at": "w:helmets",
+        "em_at": "w:really"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "Archaeologists have not found a single Viking helmet with horns. Written sources from the Viking Age mention none either.",
+      "data": {
+        "mode": "map",
+        "headline": "Finds and texts",
+        "places": [
+          {
+            "label": "Finds",
+            "code": "0 with horns",
+            "x": 600,
+            "y": 80,
+            "at": "w:Archaeologists"
+          },
+          {
+            "label": "Texts",
+            "code": "no horns",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Written"
+          }
+        ],
+        "route_at": "w:helmet",
+        "route_label": "no horned helmet",
+        "route_label_at": "w:horns",
+        "wait_at": "w:single",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "0 finds with horns",
+        "chip_at": "w:found",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Helmet",
+        "packet_at": "w:helmet",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Evidence: none",
+        "line_label_at": "w:none",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:nose",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "Known Viking helmets often have nose and neck guards, like the reconstructed helmet from a grave at Gjermundbu, north of Oslo.",
+      "data": {
+        "headline": "A real Viking helmet",
+        "drawing": "helmets_compare.svg",
+        "sheet_title": "SHEET 2 · HELMETS",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Nose guard",
+            "x": 340,
+            "y": 390,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:nose"
+          },
+          {
+            "label": "Neck guard",
+            "x": 425,
+            "y": 385,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:neck"
+          },
+          {
+            "label": "Reconstructed",
+            "x": 340,
+            "y": 300,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:reconstructed"
+          },
+          {
+            "label": "Gjermundbu, Norway",
+            "x": 300,
+            "y": 440,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Gjermundbu"
+          }
+        ],
+        "zoom": {
+          "x": 340,
+          "y": 340,
+          "scale": 1.12,
+          "at": "w:nose",
+          "back_at": "w:Oslo",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "The famous horned helmets from Viksø are far older. Found in a bog in 1942, they date to 1006 to 857 BC: the Bronze Age.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Horns, but far older",
+        "left": {
+          "tag": "Viksø",
+          "title": "Horned",
+          "at": "w:Viksø",
+          "rows": [
+            {
+              "text": "found 1942, bog",
+              "at": "w:1942"
+            },
+            {
+              "text": "1006–857 BC",
+              "at": "w:1006"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Vikings",
+          "title": "No horns",
+          "at": "w:Bronze",
+          "rows": [
+            "nose and neck guards"
+          ]
+        },
+        "verdict": "Almost two millennia older",
+        "verdict_at": "w:Bronze",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "Where does the image come from? Renaissance scholars draw Germanic warriors with horned helmets. In 1876 Carl Emil Doepler designs costumes for Wagner's Ring, with horns.",
+      "data": {
+        "headline": "How the image was made",
+        "nodes": [
+          {
+            "label": "Renaissance",
+            "code": "scholars",
+            "at": "w:Renaissance"
+          },
+          {
+            "label": "Wagner's Ring",
+            "code": "1876",
+            "at": "w:1876"
+          },
+          {
+            "label": "Doepler",
+            "code": "costumes",
+            "at": "w:Doepler"
+          },
+          {
+            "label": "Horns",
+            "code": "on stage",
+            "at": "w:horns"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Helmet",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "1876 the horns on the opera stage, 1942 the find at Viksø, and 2022 the new dating by Aarhus University.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1876 to 2022",
+        "items": [
+          {
+            "year": "1876",
+            "title": "Wagner's Ring",
+            "sub": "costumes with horns",
+            "at": "w:1876"
+          },
+          {
+            "year": "1942",
+            "title": "Viksø find",
+            "sub": "Brøns Mose bog",
+            "at": "w:1942"
+          },
+          {
+            "year": "2022",
+            "title": "New dating",
+            "sub": "Aarhus University",
+            "at": "w:2022"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "The Viksø helmets are on display at the National Museum of Denmark. Experts have pointed out for over 100 years: the horned Viking helmet is a myth. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Viksø helmets",
+        "card_meta": "NATIONALMUSEET",
+        "card_no": "FILE 26",
+        "stamp": "Myth",
+        "drawing": "helmets_compare.svg",
+        "statement": "Horns yes, but not on Vikings",
+        "statement_at": "w:National",
+        "stamp_at": "w:myth",
+        "note": "Bronze Age exhibition",
+        "note_at": "w:100",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Helmet",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Horns: claimed",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Finds: 0 with horns",
+          "tone": "amber",
+          "offset": 1.7
+        },
+        {
+          "beat": "b3",
+          "text": "Gjermundbu: no horns",
+          "tone": "amber",
+          "offset": 8.5
+        },
+        {
+          "beat": "b4",
+          "text": "Viksø: Bronze Age",
+          "tone": "amber",
+          "offset": 11.5
+        },
+        {
+          "beat": "b5",
+          "text": "Image: opera 1876",
+          "tone": "muted",
+          "offset": 7.6
+        },
+        {
+          "beat": "b6",
+          "text": "Dating: 2022",
+          "tone": "muted",
+          "offset": 6.6
+        },
+        {
+          "beat": "b7",
+          "text": "Verdict: myth",
+          "tone": "muted",
+          "offset": 12.9
+        }
+      ]
+    },
+    "description": "Myth checked: no Viking helmet with horns has ever been found. The horned Viksø helmets are Bronze Age; an 1876 opera stage made the image. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "vikings",
+      "myth",
+      "archaeology",
+      "history",
+      "helmet"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

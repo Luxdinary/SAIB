@@ -1,0 +1,98 @@
+{
+  "brand_id": "engines",
+  "brand_name": "Revlore",
+  "date": "2026-11-03",
+  "provider": "mock",
+  "model": "mock",
+  "dry_run": true,
+  "topics": [
+    {
+      "key": "nr:77",
+      "nr": "77",
+      "title": "Wechselstrom: 100 Richtungswechsel pro Sekunde",
+      "aufbau": "F",
+      "aufbau_note": "Aufbau F nach Wechselregel gewählt",
+      "langs": {
+        "de": {
+          "video_id": "engines-20261103-d3-de",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\engines-20261103-d3-de.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [
+            "story: no demonstration beat",
+            "story: no benefit beat",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 4252,
+          "llm_tokens_out": 0,
+          "llm_tokens_cache": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "",
+          "dry_run_diag": "warning: hook beat text differs from candidate H1; using the beat text\nvoice: mock 72.9 s, 0.0000 USD\ntimings: 164 words via mock (none, 0 s)\n  b1  hook          zt_photo          0.00 + 7.99\n  b2  problem       zlx_cutaway       7.99 +20.96\n  b3  explanation   zt_chart         28.95 +33.31\n  b4  close         zt_photo         62.26 +13.62\nsound: on, palette tech, 14 cues (close 1, event 11, hook_end 1, scene_change 1), music procedural/tech [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 0 errors, craft 1 warnings\ndry run: ok (direction checks pass without video)",
+          "dry_run_review": [],
+          "dry_run_repairs": 0,
+          "dry_run_done": true,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [],
+          "errors": []
+        },
+        "en": {
+          "video_id": "engines-20261103-d3-en",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\engines-20261103-d3-en.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [
+            "story: no demonstration beat",
+            "story: no benefit beat",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 2118,
+          "llm_tokens_out": 0,
+          "llm_tokens_cache": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "",
+          "dry_run_diag": "warning: hook beat text differs from candidate H1; using the beat text\nvoice: mock 67.6 s, 0.0000 USD\ntimings: 164 words via mock (none, 0 s)\n  b1  hook          zt_photo          0.00 + 7.43\n  b2  problem       zlx_cutaway       7.43 +19.45\n  b3  explanation   zt_chart         26.88 +30.91\n  b4  close         zt_photo         57.79 +12.84\nsound: on, palette tech, 14 cues (close 1, event 11, hook_end 1, scene_change 1), music procedural/tech [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 0 errors, craft 1 warnings\ndry run: ok (direction checks pass without video)",
+          "dry_run_review": [],
+          "dry_run_repairs": 0,
+          "dry_run_done": true,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [],
+          "errors": []
+        }
+      },
+      "marked": false,
+      "notes": [],
+      "errors": []
+    }
+  ],
+  "skipped": [
+    "Nr. 76 · Der FI-Schalter vergleicht hin und zurück · Reihe Zeitlupe: braucht Modell oder Aufbau (kein gebauter Aufbau in brands/engines/aufbauten.yaml trägt Nr. 76)"
+  ],
+  "errors": [],
+  "started_at": "2026-11-03T17:14:09+00:00",
+  "finished_at": "2026-11-03T17:14:44+00:00"
+}

@@ -1,0 +1,446 @@
+{
+ "video_id": "beauty-20261111-3-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "“Aluminium in deodorant is dangerous”",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Das BfR hält gesundheitliche Beeinträchtigungen über die Haut für unwahrscheinlich, der SCCS nennt sichere Höchstkonzentrationen je Produktart. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Deodorant",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Aluminium risky?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "BfR: unlikely",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "SCCS: limits",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Spray differs from roll-on",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "small contribution",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Read the source",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Read first, then apply",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Is aluminium in deo risky? The committee also writes that daily use of cosmetics doesn't add significantly to the body's aluminium load from other sources. And the BfR updated its own assessment again in 2023.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/fragen-und-antworten-zur-bfr-neubewertung-vom-20-juli-2020-von-aluminium-in-antitranspirantien/",
+   "title": "BfR: Antitranspirantien – gesundheitliche Beeinträchtigungen nach derzeitigem Wissen unwahrscheinlich (Fragen und Antworten, Stand 25.11.2025)",
+   "checked_at": "2026-11-01",
+   "label": "BfR (Germany): aluminium in antiperspirants"
+  },
+  {
+   "id": "S2",
+   "url": "https://health.ec.europa.eu/publications/safety-aluminium-cosmetic-products-submission-ii_en",
+   "title": "SCCS/1613/19: Opinion on the safety of aluminium in cosmetic products (Submission II), adopted 3-4 March 2020",
+   "checked_at": "2026-11-01",
+   "label": "SCCS/1613/19"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Aluminium in deodorant is dangerous. What do the expert bodies say?",
+   "on_screen": "Is aluminium in deo risky?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Germany's risk agency says health effects from aluminium in antiperspirants are unlikely.",
+   "on_screen": "Germany's risk agency says health effects from aluminium in ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Is aluminium in deodorant really dangerous?",
+   "on_screen": "Is aluminium in deodorant really dangerous?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Read only the headlines, and you'll miss what the expert bodies actually concluded.",
+   "on_screen": "Read only the headlines, and you'll miss what the expert bod",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch which limits the EU committee gives for aluminium in deodorants.",
+   "on_screen": "Watch which limits the EU committee gives for aluminium in d",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Aluminium in deodorant is dangerous. What do the expert bodies say?",
+   "data": {
+    "obj": "tube",
+    "title": "Deo",
+    "sub": "antiperspirant",
+    "glyph": "drop",
+    "gtext": "Al",
+    "focus": "glyph",
+    "question": "Is aluminium in deo risky?",
+    "badge": "Myth?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "Germany's Federal Institute for Risk Assessment has looked at aluminium in antiperspirants. Its conclusion: based on current knowledge, health effects are unlikely. It draws on studies of skin absorption that were also available to the EU's scientific committee.",
+   "data": {
+    "headline": "What the BfR says",
+    "doc": {
+     "act": "BfR (Germany): Q&A",
+     "ref": "as of 25 Nov 2025",
+     "tag": "Agency"
+    },
+    "rows": [
+     {
+      "text": "antiperspirants assessed"
+     },
+     {
+      "text": "health effects unlikely, based on current knowledge"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_bars",
+   "spoken": "That committee is the SCCS. In its 2020 opinion, it considers aluminium compounds safe up to certain levels: 6.25 percent in non-spray deodorants, and 10.6 percent in sprays.",
+   "data": {
+    "headline": "What the SCCS says",
+    "caption": "SCCS/1613/19, aluminium equivalent, up to",
+    "icon": false,
+    "rows": [
+     {
+      "label": "non-spray deo",
+      "value": "6.25 %",
+      "w": 6.25
+     },
+     {
+      "label": "spray deo",
+      "value": "10.60 %",
+      "w": 10.6
+     },
+     {
+      "label": "toothpaste",
+      "value": "2.65 %",
+      "w": 2.65
+     },
+     {
+      "label": "lipstick",
+      "value": "0.77 %",
+      "w": 0.77
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "The difference comes from how they're used. A spray and a roll-on put different amounts on the skin, so the committee gives separate values.",
+   "data": {
+    "headline": "Spray and roll-on",
+    "mode": "compare",
+    "left": {
+     "tag": "non-spray",
+     "title": "6.25 %",
+     "rows": [
+      {
+       "text": "roll-on, stick, cream"
+      }
+     ]
+    },
+    "right": {
+     "tag": "spray",
+     "title": "10.60 %",
+     "rows": [
+      {
+       "text": "aerosol deodorant"
+      },
+      {
+       "text": "its own value"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "The committee also writes that daily use of cosmetics doesn't add significantly to the body's aluminium load from other sources. And the BfR updated its own assessment again in 2023.",
+   "data": {
+    "headline": "The cosmetics share",
+    "rows": [
+     {
+      "text": "doesn't add significantly to the total load"
+     },
+     {
+      "text": "other sources: food, for example"
+     },
+     {
+      "text": "BfR assessment updated in 2023",
+      "mark": "open"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "For you, that means: go by the assessments, not the headlines. The BfR and the SCCS publish them openly, and both explain what data they're based on.",
+   "data": {
+    "headline": "How to weigh it",
+    "items": [
+     {
+      "title": "Read the headline",
+      "sub": "then find the source",
+      "icon": "doc"
+     },
+     {
+      "title": "BfR and SCCS",
+      "sub": "openly published",
+      "icon": "book"
+     },
+     {
+      "title": "Check the date",
+      "sub": "assessments get updated",
+      "icon": "shield"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Read the source first, then judge. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Read first, then judge",
+    "block_text": "Read the source first",
+    "done_text": "Source read"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

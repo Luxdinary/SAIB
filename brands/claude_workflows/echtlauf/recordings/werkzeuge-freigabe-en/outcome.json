@@ -1,0 +1,100 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 13324,
+          "output_tokens": 114,
+          "num_turns": 2,
+          "duration_s": 5.7
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 13324,
+          "output_tokens": 114,
+          "num_turns": 2,
+          "duration_s": 5.4
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Write"
+          ],
+          "exit": 0,
+          "input_tokens": 13400,
+          "output_tokens": 415,
+          "num_turns": 2,
+          "duration_s": 3.8
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Write"
+          ],
+          "exit": 0,
+          "input_tokens": 13400,
+          "output_tokens": 447,
+          "num_turns": 2,
+          "duration_s": 5.6
+        }
+      ],
+      "reproducible": true
+    },
+    "L3": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 28375,
+          "output_tokens": 1263,
+          "num_turns": 4,
+          "duration_s": 9.6
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 28265,
+          "output_tokens": 1049,
+          "num_turns": 4,
+          "duration_s": 7.7
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

@@ -1,0 +1,89 @@
+{
+  "spec": "eigener-subagent",
+  "recorded_at": "2026-11-04T08:06:41+02:00",
+  "claude_code": "2.1.309",
+  "model_alias": "haiku",
+  "language": "de",
+  "isolation": [
+    "--setting-sources",
+    "project,local",
+    "--strict-mcp-config",
+    "--disable-slash-commands",
+    "--no-session-persistence"
+  ],
+  "sandbox": "C:\\Automation\\promptwerk-sandbox\\eigener-subagent",
+  "runs": {
+    "L1": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Prüfe, ob die Summe in rechnung.txt stimmt.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Agent,Read,Write",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Task",
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 3969,
+      "num_turns": 2,
+      "total_cost_usd": 0.00330532,
+      "is_error": false,
+      "permission_denials": 0
+    },
+    "L2": {
+      "cmd": [
+        "~\\AppData\\Roaming\\Claude\\claude-code\\2.1.309\\9078b9c1d466\\claude.exe",
+        "-p",
+        "Prüfe, ob die Summe in rechnung.txt stimmt.",
+        "--model",
+        "haiku",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--setting-sources",
+        "project,local",
+        "--strict-mcp-config",
+        "--disable-slash-commands",
+        "--no-session-persistence",
+        "--tools",
+        "Agent,Read,Write",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "model": "claude-haiku-5-5",
+      "tools": [
+        "Task",
+        "Read",
+        "Write"
+      ],
+      "permission_mode": "acceptEdits",
+      "claude_code_version": "2.1.309",
+      "duration_ms": 4606,
+      "num_turns": 2,
+      "total_cost_usd": 0.00057757,
+      "is_error": false,
+      "permission_denials": 0
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "spec": "hook-ereignisse-en",
+  "runs": {
+    "L1": {
+      "title": "Reading a file",
+      "prompt": "Read notiz.txt and name the first line. Reply in English.",
+      "settings": {
+        "hooks": {
+          "SessionStart": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" SessionStart"
+                }
+              ]
+            }
+          ],
+          "UserPromptSubmit": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" UserPromptSubmit"
+                }
+              ]
+            }
+          ],
+          "PreToolUse": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" PreToolUse"
+                }
+              ]
+            }
+          ],
+          "PostToolUse": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" PostToolUse"
+                }
+              ]
+            }
+          ],
+          "Stop": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" Stop"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "allowed_tools": [],
+      "wall": 7.574,
+      "lines": [
+        {
+          "t": 4.176,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 5.534,
+          "kind": "tool",
+          "id": "toolu_01G9nFSSgLYvtUuTcxQtmBMp",
+          "text": "Read: .\\notiz.txt"
+        },
+        {
+          "t": 5.899,
+          "kind": "result",
+          "id": "toolu_01G9nFSSgLYvtUuTcxQtmBMp",
+          "text": "1\tShopping list: bread, milk\n2"
+        },
+        {
+          "t": 6.747,
+          "kind": "text",
+          "text": "The first line of notiz.txt is: \"Shopping list: bread, milk\""
+        },
+        {
+          "t": 6.897,
+          "kind": "end",
+          "text": "Done after 6.9 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 2913,
+        "num_turns": 2,
+        "total_cost_usd": 0.0007537800000000001,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Just a question",
+      "prompt": "What is 2 plus 3? Reply in English.",
+      "settings": {
+        "hooks": {
+          "SessionStart": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" SessionStart"
+                }
+              ]
+            }
+          ],
+          "UserPromptSubmit": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" UserPromptSubmit"
+                }
+              ]
+            }
+          ],
+          "PreToolUse": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" PreToolUse"
+                }
+              ]
+            }
+          ],
+          "PostToolUse": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" PostToolUse"
+                }
+              ]
+            }
+          ],
+          "Stop": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" Stop"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "allowed_tools": [],
+      "wall": 6.456,
+      "lines": [
+        {
+          "t": 4.296,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 5.504,
+          "kind": "text",
+          "text": "2 plus 3 is **5**."
+        },
+        {
+          "t": 5.623,
+          "kind": "end",
+          "text": "Done after 5.6 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 1480,
+        "num_turns": 1,
+        "total_cost_usd": 0.00017651,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

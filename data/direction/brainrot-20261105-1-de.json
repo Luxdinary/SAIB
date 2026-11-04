@@ -1,0 +1,499 @@
+{
+  "video_id": "brainrot-20261105-1-de",
+  "brand_id": "brainrot",
+  "language": "de",
+  "title": "Die Erdbeere ist keine Beere – Plümo testet den Beerenclub",
+  "notes": "Zonkfruit Vorlage 0.9 (Entwurf 30.10.2026). Fassung Q1 (Qualitätsrunde 31.10.2026): Hintergrund mit Tiefe (Landschaft, Lichtkegel, Staub, Parallaxe, periodisch über das ganze Video, damit der Loop nahtlos bleibt), Kamerafahrt je Szene, Statusleiste „Beerenclub“ als Leitobjekt, mehr Bildereignisse an Wörtern, alles links von x 930. Fassung V2: Erklärschicht nach Schnitt- und Layout-Vorlage (Kicker, Marker, Quellenleiste, Übergänge), Untertitel tiefer (caption_bottom_px 500), Ton unverändert. Figur Plümo (Entwurf). Format: Plümo versteht etwas falsch, probiert es aus, kippt um; die Pointe ist ein echter, belegter Sachverhalt. Aussagen gegen Botanischer Garten Uni Potsdam und wissen.de-Lexikon geprüft. Britannica (403) nicht abrufbar, daher nicht verwendet.",
+  "hook": {
+    "id": "H1",
+    "note": "Denkfehler-Hook mit sofortiger Bildpointe (Erdbeere prallt am Beerenclub ab); höchster Score, Wahrheit 5."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Die Erdbeere ist keine Beere. Und der Beerenclub weiß das auch.",
+      "on_screen": "Die Erdbeere ist *keine* Beere.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Erdbeere hüpft zur Tür NUR BEEREN, Scanner, Stempel ABGELEHNT, sie fliegt raus",
+      "why": {
+        "clarity": "ein Satz, eine Behauptung",
+        "relevance": "jeder kennt Erdbeeren",
+        "curiosity": "widerspricht dem Namen",
+        "truth": "Uni Potsdam: Nein, sagt die Botanik",
+        "visual": "Abweisung an der Tür ist sofort lesbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Warum darf die Banane in den Beerenclub, die Erdbeere aber nicht?",
+      "on_screen": "Warum darf die *Banane* rein?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Banane geht durch, Erdbeere prallt ab",
+      "why": {
+        "truth": "Uni Potsdam: Banane ist Beere, Erdbeere nicht",
+        "clarity": "zwei Früchte, braucht einen Moment"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Die Körnchen auf der Erdbeere sind die eigentlichen Früchte.",
+      "on_screen": "Die Körnchen sind die *Früchte*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Lupe auf ein Körnchen",
+      "why": {
+        "truth": "Uni Potsdam: eigentliche Früchte sind die außen aufsitzenden Körnchen",
+        "visual": "Lupe gut, aber ohne Tür-Gag schwächerer Einstieg"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wer beim Quiz die Erdbeere eine Beere nennt, liegt botanisch daneben.",
+      "on_screen": "Erdbeere = Beere? *Daneben.*",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Quizkarte mit falscher Antwort",
+      "why": {
+        "relevance": "Quiz ist ein schwacher Alltagsbezug",
+        "truth": "Lexikon: Erdbeere botanisch falsch zugeordnet"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Ich halte eine Erdbeere an den Beeren-Scanner. Schau, was passiert.",
+      "on_screen": "Erdbeere an den *Beeren-Scanner*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Scanner-Strahl über der Erdbeere",
+      "why": {
+        "truth": "Scanner ist Fiktion, das Ergebnis ist belegt",
+        "curiosity": "Spannung, aber die Pointe kommt später"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.uni-potsdam.de/en/botanischer-garten/aktuelles/pflanze-des-monats/archiv/corallocarpus-grevei",
+      "title": "Botanischer Garten der Universität Potsdam, Pflanzenportrait Grevés Korallenfrucht: 'Ist die Erdbeere eine Beere? Nein, sagt die Botanik'; eigentliche Früchte = außen aufsitzende Körnchen (Nüsschen); saftiger Teil entsteht aus dem Blütenboden; Sammelnussfrucht; Banane, Kiwi, Avocado und Tomate sind Beeren",
+      "checked_at": "2026-10-30",
+      "label": "Uni Potsdam, Botanischer Garten"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.wissen.de/lexikon/beere",
+      "title": "wissen.de Lexikon, Beere: 'Schließfrucht mit fleischiger Fruchtwand, die meist zahlreiche hartschalige Samen einschließt'; Beispiele Weintraube, Banane, Gurke, Tomate; Erdbeere umgangssprachlich Beere, botanisch Sammelnussfrucht",
+      "checked_at": "2026-10-30",
+      "label": "wissen.de, Lexikon Beere"
+    }
+  ],
+  "unverified": [
+    "Beere entsteht aus einem einzigen Fruchtknoten (Britannica und Spektrum blockieren den Abruf mit 403; nicht im Video)",
+    "Anzahl der Nüsschen je Erdbeere (nur Sekundärquelle Live Science gefunden; nicht im Video)"
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 500,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.4,
+    "progress_y": 1550,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Die Erdbeere heißt Beere, ist aber keine. Plümo testet den Beerenclub und lernt, was eine Beere botanisch ausmacht. Am Ende scannt er sich selbst.",
+    "companion_text": "Zonkfruit: eine erfundene Frucht, echte Fakten. Folge Zonkfruit für mehr.",
+    "hashtags": [
+      "erdbeere",
+      "botanik",
+      "funfact",
+      "wusstestdu",
+      "zonkfruit",
+      "comedy"
+    ],
+    "platform_texts": {
+      "tiktok": {
+        "title": "Die Erdbeere ist keine Beere. Der Beerenclub weiß es.",
+        "description": "Plümo wollte nur in den Beerenclub. Die Erdbeere fliegt raus, die Banane darf rein. Botanisch ist die Erdbeere eine Sammelnussfrucht: Die Körnchen außen sind die eigentlichen Früchte.",
+        "hashtags": [
+          "erdbeere",
+          "botanik",
+          "wusstestdu",
+          "funfact",
+          "comedy",
+          "zonkfruit"
+        ]
+      },
+      "instagram": {
+        "title": "Die Erdbeere ist keine Beere",
+        "description": "Plümo testet den Beerenclub. Ergebnis: Die Erdbeere ist botanisch eine Sammelnussfrucht, Banane, Tomate und Weintraube sind echte Beeren. Und Plümo selbst? Sorte nicht ermittelbar.",
+        "hashtags": [
+          "erdbeere",
+          "botanik",
+          "wissen",
+          "funfacts",
+          "obst",
+          "reels",
+          "zonkfruit"
+        ]
+      },
+      "youtube": {
+        "title": "Die Erdbeere ist keine Beere – Plümo testet den Beerenclub #Shorts",
+        "description": "Warum die Erdbeere botanisch keine Beere ist, die Banane aber schon. Plümo, eine erfundene Frucht, findet es heraus und kippt dabei um.",
+        "hashtags": [
+          "Shorts",
+          "erdbeere",
+          "botanik",
+          "wusstestdu",
+          "zonkfruit"
+        ]
+      }
+    },
+    "status_y": 1440,
+    "status_bar": {
+      "file": "Beerenclub",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Erdbeere: Beere?",
+          "tone": "amber",
+          "offset": 0.5
+        },
+        {
+          "beat": "b1",
+          "text": "Erdbeere: abgelehnt",
+          "tone": "pop",
+          "offset": 2.1
+        },
+        {
+          "beat": "b2",
+          "text": "Name: Beere · Botanik: nein",
+          "tone": "amber",
+          "offset": 6.85
+        },
+        {
+          "beat": "b3",
+          "text": "Regel: Bau der Frucht",
+          "tone": "lime",
+          "offset": 2.7
+        },
+        {
+          "beat": "b4",
+          "text": "Früchte: die Körnchen",
+          "tone": "lime",
+          "offset": 3.0
+        },
+        {
+          "beat": "b4",
+          "text": "Erdbeere: Sammelnussfrucht",
+          "tone": "lime",
+          "offset": 11.7
+        },
+        {
+          "beat": "b5",
+          "text": "Banane, Tomate, Traube: rein",
+          "tone": "mint",
+          "offset": 1.9
+        },
+        {
+          "beat": "b6",
+          "text": "Plümo: nicht ermittelbar",
+          "tone": "amber",
+          "offset": 6.4
+        },
+        {
+          "beat": "b7",
+          "text": "Plümo: liegt kurz",
+          "tone": "muted",
+          "offset": 0.3
+        }
+      ]
+    }
+  },
+  "assets": {},
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "zonk_scan",
+      "duration_hint": 5,
+      "spoken": "Die Erdbeere ist keine Beere. Und der Beerenclub weiß das auch.",
+      "data": {
+        "mode": "hook",
+        "head": "Die Erdbeere ist *keine* Beere.",
+        "head_at": 0.2,
+        "sign": "NUR BEEREN",
+        "items": [
+          {
+            "kind": "strawberry"
+          }
+        ],
+        "stamp_reject": "ABGELEHNT",
+        "cue_scan": "Erdbeere",
+        "cue_verdict": "keine",
+        "cue_club": "Beerenclub",
+        "cue_know": "weiß"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "zonk_word",
+      "duration_hint": 9,
+      "spoken": "Moment, sie heißt doch Erd-Beere! Die Umgangssprache sagt Beere. Die Botanik sagt klar: nein. Ich war genauso geschockt wie die Erdbeere. Und die ist sonst nie geschockt.",
+      "data": {
+        "word_a": "Erd",
+        "word_b": "beere",
+        "left": "Umgangssprache: *Beere*",
+        "right": "Botanik: *keine* Beere",
+        "cue_left": "Umgangssprache",
+        "cue_strike": "Botanik",
+        "cue_right": "nein",
+        "cue_react": "Ich",
+        "item": "strawberry",
+        "cue_shock": "geschockt",
+        "cue_item": "Erdbeere",
+        "cue_never": "nie"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "zonk_diagram",
+      "duration_hint": 12,
+      "spoken": "Also, was ist eine Beere? Eine geschlossene Frucht mit fleischiger Fruchtwand. Die Samen stecken innen, meistens ganz viele. Ich hab keine Hände, also zeige ich mit meinem Blatt.",
+      "data": {
+        "headline": "Was ist eine *Beere*?",
+        "labels": [
+          {
+            "text": "geschlossene Frucht",
+            "pos": "tr",
+            "cue": "geschlossene"
+          },
+          {
+            "text": "Fruchtwand: *fleischig*",
+            "pos": "l",
+            "cue": "fleischiger"
+          },
+          {
+            "text": "Samen: innen, meist viele",
+            "pos": "b",
+            "cue": "Samen"
+          }
+        ],
+        "cue_q": "Beere",
+        "cue_hands": "Hände",
+        "cue_leaf": "Blatt"
+      },
+      "overlay": {
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 730,
+          "seconds": 0.7
+        },
+        "marker": "fakt",
+        "marker_at": "w:geschlossene"
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "zonk_zoom",
+      "duration_hint": 14,
+      "spoken": "Jetzt die Erdbeere unter der Lupe. Diese Körnchen außen sind die eigentlichen Früchte: kleine Nüsschen. Das Rote, Saftige entsteht aus dem Blütenboden. Botanisch heißt das Ganze Sammelnussfrucht. Bitte dreimal schnell sagen.",
+      "data": {
+        "kind": "strawberry",
+        "cue_mag": "Lupe",
+        "callouts": [
+          {
+            "text": "Körnchen: die *Früchte*",
+            "cue": "Körnchen"
+          },
+          {
+            "text": "Rot: aus dem *Blütenboden*",
+            "cue": "Rote"
+          }
+        ],
+        "stamp": {
+          "text": "Sammelnussfrucht",
+          "cue": "Sammelnussfrucht"
+        },
+        "cue_react": "dreimal",
+        "cue_nut": "Nüsschen",
+        "cue_fast": "schnell"
+      },
+      "overlay": {
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Körnchen",
+        "marker": "fakt",
+        "marker_at": "w:Körnchen"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "zonk_scan",
+      "duration_hint": 10,
+      "spoken": "Und wer darf rein? Die Banane. Die Tomate. Die Weintraube. Alles echte Beeren. Ich hab die Banane gefragt, warum. Sie wusste es auch nicht.",
+      "data": {
+        "mode": "accept",
+        "sign": "NUR BEEREN",
+        "counter": "Echte Beeren:",
+        "stamp_accept": "EINLASS",
+        "items": [
+          {
+            "kind": "banana",
+            "word": "Banane"
+          },
+          {
+            "kind": "tomato",
+            "word": "Tomate"
+          },
+          {
+            "kind": "grape",
+            "word": "Weintraube"
+          }
+        ],
+        "cue_react": "Ich",
+        "cue_all": "Beeren",
+        "cue_why": "warum",
+        "cue_shrug": "nicht"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Banane",
+        "transition": {
+          "type": "iris",
+          "x": 756,
+          "y": 575,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "zonk_scan",
+      "duration_hint": 11,
+      "spoken": "Merke: Botanisch zählt nicht der Name, sondern wie die Frucht gebaut ist. Gut, jetzt ich. Scanner läuft. Ergebnis: Sorte nicht ermittelbar. Mein Etikett hinten sagt dasselbe.",
+      "data": {
+        "mode": "unknown",
+        "sign": "NUR BEEREN",
+        "merke": "Botanisch zählt der *Bau*, nicht der Name.",
+        "display": "Sorte: nicht ermittelbar",
+        "plumps": "PLUMPS",
+        "cue_go": "Gut",
+        "cue_scan": "Scanner",
+        "cue_result": "Ergebnis",
+        "cue_back": "Etikett",
+        "cue_build": "gebaut"
+      },
+      "overlay": {
+        "marker": "auslegung",
+        "marker_at": "w:Merke"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "zonk_loop",
+      "duration_hint": 7,
+      "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+      "data": {
+        "sign": "NUR BEEREN",
+        "cta": "Mehr Zonkfruit? *Folgen.*",
+        "cue_cta": "Mehr",
+        "cue_up": "steh",
+        "cue_lie": "liegen",
+        "cue_ch": "Kanal"
+      },
+      "overlay": {
+        "marker": "none",
+        "head_until": "w:steh"
+      },
+      "source_ids": []
+    }
+  ]
+}

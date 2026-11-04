@@ -1,0 +1,69 @@
+{
+  "brand_id": "engines",
+  "brand_name": "Revlore",
+  "date": "2026-11-03",
+  "provider": "mock",
+  "model": "mock",
+  "dry_run": true,
+  "topics": [
+    {
+      "key": "nr:77",
+      "nr": "77",
+      "title": "Wechselstrom: 100 Richtungswechsel pro Sekunde",
+      "aufbau": "F",
+      "aufbau_note": "Aufbau F nach Wechselregel gewählt",
+      "langs": {
+        "de": {
+          "video_id": "engines-20261103-d2-de",
+          "version": "D1",
+          "plan_path": "",
+          "plan_ok": false,
+          "validation_errors": [
+            "beat b2: Szenentyp 'zt_mcb' nicht erlaubt (erlaubt: ['zlx_cutaway', 'zt_chart', 'zt_curve', 'zt_photo'])",
+            "beat b3: Szenentyp 'zt_mcb' nicht erlaubt (erlaubt: ['zlx_cutaway', 'zt_chart', 'zt_curve', 'zt_photo'])",
+            "beat b4: Szenentyp 'zt_mcb' nicht erlaubt (erlaubt: ['zlx_cutaway', 'zt_chart', 'zt_curve', 'zt_photo'])"
+          ],
+          "validation_warnings": [
+            "story: no demonstration beat",
+            "story: no benefit beat",
+            "Sprechtext 1218 Zeichen (etwa 84 s Stimme), Ziel 1024–1179",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 4460,
+          "llm_tokens_out": 0,
+          "llm_tokens_cache": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": null,
+          "dry_run_note": "",
+          "dry_run_diag": "",
+          "dry_run_repairs": 0,
+          "dry_run_done": false,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [],
+          "errors": []
+        }
+      },
+      "marked": false,
+      "notes": [],
+      "errors": [
+        "kein gültiger deutscher Plan"
+      ]
+    }
+  ],
+  "skipped": [
+    "Nr. 76 · Der FI-Schalter vergleicht hin und zurück · Reihe Zeitlupe: braucht Modell oder Aufbau (kein gebauter Aufbau in brands/engines/aufbauten.yaml trägt Nr. 76)"
+  ],
+  "errors": [],
+  "started_at": "2026-11-03T17:04:02+00:00",
+  "finished_at": "2026-11-03T17:04:02+00:00"
+}

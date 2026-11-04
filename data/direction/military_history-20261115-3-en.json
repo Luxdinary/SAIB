@@ -1,0 +1,559 @@
+{
+  "video_id": "military_history-20261115-3-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Ship's Biscuit: Bread That Lasted for Months",
+  "notes": "Woche 1, Reihe Nachschub. Keine Haltbarkeit in Monaten im Sprechtext (keine Quelle); Skorbut nicht gezeigt.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.rmg.co.uk/stories/maritime-history/ships-biscuit",
+      "title": "The ship's biscuit, Royal Museums Greenwich",
+      "label": "RMG: Ship's biscuit",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co154899/ships-biscuit-england-1875",
+      "title": "Ship's biscuit, England, 1875 (A33642), Science Museum Group",
+      "label": "Science Museum Group",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://rmg.co.uk/collections/objects/rmgc-object-6052",
+      "title": "Ship's biscuit, AAB0003, 1784, National Maritime Museum",
+      "label": "RMG: Zwieback 1784",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Haltbarkeit in Monaten nennt keine Quelle; im Sprechtext nur 'verdirbt auf langen Reisen nicht'.",
+    "Streckmittel wie Sägemehl nicht gegengeprüft; nicht im Video."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you feed a ship's crew on long voyages, with bread that does not spoil?",
+      "on_screen": "Bread that does not spoil?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Ship's biscuit prevented scurvy? It contained no vitamin C.",
+      "on_screen": "No vitamin C",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Around 1800 a sailor got about 3.2 kilograms of biscuit a week.",
+      "on_screen": "3.2 kg a week",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "It was often infested with weevils.",
+      "on_screen": "Weevils in the bread",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch why a ship's biscuit has holes.",
+      "on_screen": "Why the holes?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you feed a ship's crew on long voyages, with bread that does not spoil?",
+      "data": {
+        "question": "Bread for long voyages that does not spoil?",
+        "question_em": "does not spoil",
+        "card_title": "Ship's biscuit",
+        "card_meta": "ROYAL NAVY",
+        "card_no": "FILE 30",
+        "stamp": "1 lb",
+        "drawing": "ships_biscuit.svg",
+        "packet_label": "Biscuit",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:bread",
+        "packet_at": "w:crew",
+        "em_at": "w:spoil"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "Ship's biscuit is baked in bulk before long voyages and stored. It is one of the few foods that do not spoil at sea.",
+      "data": {
+        "mode": "map",
+        "headline": "Stores for the voyage",
+        "places": [
+          {
+            "label": "Bakery",
+            "code": "in bulk",
+            "x": 600,
+            "y": 80,
+            "at": "w:baked"
+          },
+          {
+            "label": "At sea",
+            "code": "long voyages",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:sea"
+          }
+        ],
+        "route_at": "w:stored",
+        "route_label": "baked and stored",
+        "route_label_at": "w:stored",
+        "wait_at": "w:bulk",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "does not spoil",
+        "chip_at": "w:spoil",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Biscuit",
+        "packet_at": "w:biscuit",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "one of the few lasting foods",
+        "line_label_at": "w:foods",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:oven",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "The ingredients: stone-ground flour, water and salt. About 30 minutes in a hot oven, then stored hard and dry. Holes help baking; an arrow marks government property.",
+      "data": {
+        "headline": "Flour, water, salt",
+        "drawing": "ships_biscuit.svg",
+        "sheet_title": "SHEET 2 · BISCUIT",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Flour, water, salt",
+            "x": 120,
+            "y": 330,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:flour"
+          },
+          {
+            "label": "c. 30 min in the oven",
+            "x": 290,
+            "y": 200,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:30"
+          },
+          {
+            "label": "Holes for baking",
+            "x": 90,
+            "y": 190,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Holes"
+          },
+          {
+            "label": "Arrow: government property",
+            "x": 170,
+            "y": 230,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:arrow"
+          }
+        ],
+        "zoom": {
+          "x": 170,
+          "y": 250,
+          "scale": 1.12,
+          "at": "w:oven",
+          "back_at": "w:property",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "The ration: Samuel Pepys sets one pound of biscuit and a gallon of beer a day. Around 1800 a sailor gets about 3.2 kilograms a week.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "The ration",
+        "left": {
+          "tag": "Pepys",
+          "title": "1 pound a day",
+          "at": "w:Pepys",
+          "rows": [
+            {
+              "text": "plus a gallon of beer",
+              "at": "w:beer"
+            }
+          ]
+        },
+        "right": {
+          "tag": "c. 1800",
+          "title": "3.2 kg a week",
+          "at": "w:1800",
+          "rows": [
+            {
+              "text": "per sailor",
+              "at": "w:sailor"
+            }
+          ]
+        },
+        "verdict": "The basis of the rations",
+        "verdict_at": "w:kilograms",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "On board it is called hard tack. It is usually eaten soaked in salted-meat broth, and often infested with weevils.",
+      "data": {
+        "headline": "On board",
+        "nodes": [
+          {
+            "label": "Hard tack",
+            "code": "nickname",
+            "at": "w:tack"
+          },
+          {
+            "label": "Soaked",
+            "code": "in broth",
+            "at": "w:soaked"
+          },
+          {
+            "label": "Salted meat",
+            "code": "the broth",
+            "at": "w:salted"
+          },
+          {
+            "label": "Weevils",
+            "code": "often infested",
+            "at": "w:weevils"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Biscuit",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "In 1588 the Armada plans one pound per man per day. In 1847 tinned beef comes aboard, and from the mid 1850s soft bread.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1588 to the 1850s",
+        "items": [
+          {
+            "year": "1588",
+            "title": "Armada",
+            "sub": "1 pound per man per day",
+            "at": "w:1588"
+          },
+          {
+            "year": "1847",
+            "title": "Tinned beef",
+            "sub": "official in the Navy",
+            "at": "w:1847"
+          },
+          {
+            "year": "1850+",
+            "title": "Soft bread",
+            "sub": "soft bread on board",
+            "at": "w:1850s"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "Surviving biscuits are still kept in museums, such as one from 1784 in Greenwich and one from the 1875 Arctic expedition at the Science Museum. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Ship's biscuit",
+        "card_meta": "1784 · GREENWICH",
+        "card_no": "FILE 30",
+        "stamp": "1784",
+        "drawing": "ships_biscuit.svg",
+        "statement": "Bread that has lasted centuries",
+        "statement_at": "w:biscuits",
+        "stamp_at": "w:1784",
+        "note": "Science Museum: biscuit from 1875",
+        "note_at": "w:1875",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Biscuit",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Stores: planned",
+          "tone": "muted",
+          "offset": 4.6
+        },
+        {
+          "beat": "b2",
+          "text": "Keeps: yes",
+          "tone": "amber",
+          "offset": 10.5
+        },
+        {
+          "beat": "b3",
+          "text": "Oven: 30 min",
+          "tone": "amber",
+          "offset": 4.2
+        },
+        {
+          "beat": "b4",
+          "text": "Ration: 1 lb/day",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b5",
+          "text": "State: hard",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b6",
+          "text": "Replaced: from 1847",
+          "tone": "muted",
+          "offset": 6.1
+        },
+        {
+          "beat": "b7",
+          "text": "Now: museums",
+          "tone": "muted",
+          "offset": 3.2
+        }
+      ]
+    },
+    "description": "Ship's biscuit: flour, water and salt, baked for about 30 minutes, a pound per man per day, and it kept on long voyages. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "seafaring",
+      "rations",
+      "history",
+      "royalnavy",
+      "hardtack"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

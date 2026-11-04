@@ -1,0 +1,547 @@
+{
+  "video_id": "military_history-20261115-2-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "The Josephine Survey of the Habsburg Lands",
+  "notes": "Woche 1, Reihe Karte, Zeit und Kurs. Historische Kartografie; kein Bezug zum heutigen Bundesheer. Geheimhaltung nur für Galizien-Blätter belegt.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://iaepan.edu.pl/galicja/index-en.html",
+      "title": "Galicia on the Josephine topographic map 1779–1783, Institute of Archaeology and Ethnology PAN",
+      "label": "IAE PAN: Galizien",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://austria-forum.org/af/AEIOU/Landesaufnahme",
+      "title": "Landesaufnahme, AEIOU Österreich-Lexikon, Austria-Forum",
+      "label": "AEIOU Österreich-Lexikon",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Beginn 1763 (IAE PAN) oder 1764 (AEIOU); im Video 1764.",
+    "Blattzahl 3.589 (AEIOU) oder über 3.500 (IAE PAN); im Video 3589."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you map a whole empire by hand, sheet by sheet?",
+      "on_screen": "An empire mapped by hand?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Old maps were printed? These stayed hand-drawn, partly secret.",
+      "on_screen": "Drawn, not printed",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "3589 map sheets, all drawn by hand.",
+      "on_screen": "3589 sheets by hand",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "In the Seven Years' War, reliable maps were missing.",
+      "on_screen": "Without maps",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch one inch on paper become 1000 paces.",
+      "on_screen": "1 inch = 1000 paces",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you map a whole empire by hand, sheet by sheet?",
+      "data": {
+        "question": "A whole empire, drawn by hand?",
+        "question_em": "by hand",
+        "card_title": "Josephine survey",
+        "card_meta": "1764–1787",
+        "card_no": "FILE 29",
+        "stamp": "1:28800",
+        "drawing": "josephine_sheet.svg",
+        "packet_label": "Map sheet",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:hand",
+        "packet_at": "w:sheet",
+        "em_at": "w:empire"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "In the Seven Years' War, Austria's troops lack reliable maps. In 1764 Field Marshal Daun proposes a survey by general staff officers.",
+      "data": {
+        "mode": "map",
+        "headline": "Maps are missing",
+        "places": [
+          {
+            "label": "Wien",
+            "code": "proposal 1764",
+            "x": 600,
+            "y": 80,
+            "at": "w:Daun"
+          },
+          {
+            "label": "Habsburg lands",
+            "code": "no maps",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:maps"
+          }
+        ],
+        "route_at": "w:survey",
+        "route_label": "no reliable maps",
+        "route_label_at": "w:reliable",
+        "wait_at": "w:1764",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Proposal 1764: Daun",
+        "chip_at": "w:Marshal",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Map sheet",
+        "packet_at": "w:officers",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "the survey begins",
+        "line_label_at": "w:proposes",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:paces",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "The scale is 1 to 28,800: one inch on the sheet equals 1000 paces. Each sheet is about 63 by 42 centimetres, drawn by hand and coloured.",
+      "data": {
+        "headline": "One sheet, 1 : 28,800",
+        "drawing": "josephine_sheet.svg",
+        "sheet_title": "SHEET 2 · MAP SHEET",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "1 : 28.800",
+            "x": 180,
+            "y": 380,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:scale"
+          },
+          {
+            "label": "1 inch = 1000 paces",
+            "x": 130,
+            "y": 380,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:paces"
+          },
+          {
+            "label": "c. 63 × 42 cm",
+            "x": 400,
+            "y": 100,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:63"
+          },
+          {
+            "label": "By hand, coloured",
+            "x": 230,
+            "y": 220,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:hand"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 230,
+          "scale": 1.12,
+          "at": "w:paces",
+          "back_at": "w:coloured",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "There is no uniform triangulation yet. Tyrol, Vorarlberg and the Italian territories are not surveyed at all.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "A map with gaps",
+        "left": {
+          "tag": "Missing",
+          "title": "Triangle network",
+          "at": "w:triangulation",
+          "rows": [
+            "not yet uniform"
+          ]
+        },
+        "right": {
+          "tag": "Left out",
+          "title": "Tyrol, Vorarlberg, Italy",
+          "at": "w:Tyrol",
+          "rows": [
+            {
+              "text": "not surveyed",
+              "at": "w:surveyed"
+            }
+          ]
+        },
+        "verdict": "Drawn, but not complete",
+        "verdict_at": "w:surveyed",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "By 1787 there are 3589 sheets covering about 570,000 square kilometres. Galicia alone fills 413 sheets, about 115 square metres together.",
+      "data": {
+        "headline": "The work in numbers",
+        "nodes": [
+          {
+            "label": "3,589 sheets",
+            "code": "by 1787",
+            "at": "w:3589"
+          },
+          {
+            "label": "570.000 km²",
+            "code": "area",
+            "at": "w:570,000"
+          },
+          {
+            "label": "Galicia",
+            "code": "413 sheets",
+            "at": "w:Galicia"
+          },
+          {
+            "label": "115 m²",
+            "code": "paper area",
+            "at": "w:115"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "1764 the start, 1787 the end of the survey, and only in 1873 is the Galicia map shown in public at the World Exhibition in Vienna.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1764 to 1873",
+        "items": [
+          {
+            "year": "1764",
+            "title": "Start",
+            "sub": "proposal by Daun",
+            "at": "w:1764"
+          },
+          {
+            "year": "1787",
+            "title": "End",
+            "sub": "3,589 sheets",
+            "at": "w:1787"
+          },
+          {
+            "year": "1873",
+            "title": "World Exhibition Vienna",
+            "sub": "Galicia map shown",
+            "at": "w:1873"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "The Galicia sheets stay secret and are never printed. All the sheets are now in the War Archive in Vienna, part of the Austrian State Archives. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Josephine survey",
+        "card_meta": "1764–1787",
+        "card_no": "FILE 29",
+        "stamp": "Secret",
+        "drawing": "josephine_sheet.svg",
+        "statement": "Drawn by hand, never printed",
+        "statement_at": "w:printed",
+        "stamp_at": "w:secret",
+        "note": "War Archive, Austrian State Archives",
+        "note_at": "w:State",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Map sheet",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Sheet: blank",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Proposal: 1764",
+          "tone": "amber",
+          "offset": 5.6
+        },
+        {
+          "beat": "b3",
+          "text": "Scale: 1:28,800",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b4",
+          "text": "Gaps: Tyrol, Italy",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b5",
+          "text": "Sheets: 3,589",
+          "tone": "muted",
+          "offset": 2.2
+        },
+        {
+          "beat": "b6",
+          "text": "Shown: 1873",
+          "tone": "muted",
+          "offset": 6.1
+        },
+        {
+          "beat": "b7",
+          "text": "Now: War Archive",
+          "tone": "muted",
+          "offset": 8.1
+        }
+      ]
+    },
+    "description": "The Josephine survey of 1764–1787: 3589 hand-drawn sheets at a scale of 1:28,800, one inch for 1000 paces. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "cartography",
+      "habsburg",
+      "history",
+      "survey",
+      "maps"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

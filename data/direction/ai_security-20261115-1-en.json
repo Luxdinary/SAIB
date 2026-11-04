@@ -1,0 +1,454 @@
+{
+ "video_id": "ai_security-20261115-1-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Copilot on a business plan: what happens to your prompts",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema E02, Reihe KI im Büro. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Copilot at work. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Copilot at work",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Prompt: where to?",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Contract: like email",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Training: excluded",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Sharing: too wide?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Rules: applied",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Sharing: check today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Open folders: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "What happens to what you type into Microsoft Copilot? According to Microsoft, business customers get the same contractual commitments as for email, and Copilot only shows what you're allowed to see.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "copilot",
+   "microsoft365",
+   "aiatwork",
+   "privacy",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+   "title": "Microsoft Learn: Enterprise data protection in Microsoft Copilot and Microsoft Copilot Chat",
+   "checked_at": "2026-11-01",
+   "label": "Microsoft, enterprise data protection"
+  },
+  {
+   "id": "S2",
+   "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+   "title": "Microsoft Learn: Data, Privacy, and Security for Microsoft Copilot",
+   "checked_at": "2026-11-01",
+   "label": "Microsoft, Copilot privacy"
+  }
+ ],
+ "unverified": [
+  "Rules for personal Microsoft accounts: not claimed.",
+  "Licences and prices: not named."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "You type a customer quote into Copilot. Where does it actually end up?",
+   "on_screen": "Where does your prompt go?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Everything you tell Copilot trains the AI? Not on business plans, says Microsoft.",
+   "on_screen": "Does Copilot train on you?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Copilot only shows you company data you're already allowed to see.",
+   "on_screen": "Only what you may see",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A file shared too widely is one Copilot question away for anyone with access.",
+   "on_screen": "Shared too widely, found fast",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Follow the path a Copilot prompt takes.",
+   "on_screen": "The path of a prompt",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "You type a customer quote into Copilot. Where does it actually end up?",
+   "data": {
+    "question": "Where does your prompt go?",
+    "doc_label": "Quote.docx",
+    "chat_title": "Copilot at work",
+    "bot_line": "Summarising the quote",
+    "typed": "Summarise this quote",
+    "badge": "Where?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Microsoft calls it enterprise data protection. For Copilot on business plans, your prompts and responses get the same contractual commitments as your emails in Exchange and your files in SharePoint, under the data protection addendum and product terms.",
+   "data": {
+    "headline": "Enterprise data protection",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Your prompt",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n1",
+      "label": "Copilot",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n2",
+      "label": "Same commitments",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "business account"
+     },
+     {
+      "label": "like email, files"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 9.0,
+     "label": "A contract, not hope"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Specifically, Microsoft says prompts, responses and the data Copilot accesses aren't used to train foundation models. The data is encrypted and kept separate between customers.",
+   "data": {
+    "headline": "What Microsoft commits to",
+    "file_label": "Copilot at work",
+    "card": {
+     "title": "On business plans",
+     "rows": [
+      {
+       "text": "no foundation model training",
+       "ok": null
+      },
+      {
+       "text": "encrypted storage",
+       "ok": null
+      },
+      {
+       "text": "customers kept separate",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "The key point for small businesses: Copilot only surfaces company data the person has at least view permission for. That's why Microsoft advises setting permissions properly, for example in SharePoint. Anything shared too widely, Copilot finds faster.",
+   "data": {
+    "headline": "What Copilot can see",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.5,
+    "left": {
+     "title": "Copilot shows",
+     "rows": [
+      {
+       "text": "what you may see",
+       "ok": null
+      },
+      {
+       "text": "your permissions",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "So check",
+     "rows": [
+      {
+       "text": "folders shared too widely",
+       "ok": "open"
+      },
+      {
+       "text": "SharePoint permissions",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Copilot also follows your settings: sensitivity labels, retention policies and audit logs. And Microsoft lists protection against harmful content and against prompt injection.",
+   "data": {
+    "headline": "Your rules still apply",
+    "file_label": "Copilot at work",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Labels in place",
+      "sub": "Copilot respects them",
+      "at": 0.6
+     },
+     {
+      "title": "No rules set",
+      "sub": "nothing to respect",
+      "at": 1.0
+     }
+    ],
+    "approval": "Marked confidential?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Your step for today: only use Copilot for company data inside your business account. Check first which folders are shared too widely. And label confidential material as confidential.",
+   "data": {
+    "headline": "Before you start with Copilot",
+    "items": [
+     {
+      "title": "Business account only",
+      "sub": "for company data",
+      "at": 2.0
+     },
+     {
+      "title": "Tidy up sharing",
+      "sub": "who sees which folder?",
+      "at": 4.8
+     },
+     {
+      "title": "Label what's confidential",
+      "sub": "use sensitivity labels",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Tidy up sharing first, then ask Copilot. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Tidy up, then ask",
+    "file_label": "Copilot at work",
+    "button": "Ask Copilot",
+    "block_text": "Check sharing first",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

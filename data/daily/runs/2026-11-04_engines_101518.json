@@ -1,0 +1,96 @@
+{
+  "brand_id": "engines",
+  "brand_name": "Revlore",
+  "date": "2026-11-04",
+  "provider": "claude_cli",
+  "model": "claude-sonnet-5-5",
+  "dry_run": false,
+  "topics": [
+    {
+      "key": "nr:77",
+      "nr": "77",
+      "title": "Wechselstrom: 100 Richtungswechsel pro Sekunde",
+      "aufbau": "F",
+      "aufbau_note": "Aufbau F nach Wechselregel gewählt",
+      "langs": {
+        "de": {
+          "video_id": "engines-20261104-d2-de",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\engines-20261104-d2-de.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [],
+          "llm_calls": 3,
+          "llm_tokens_in": 12,
+          "llm_tokens_out": 24144,
+          "llm_tokens_cache": 30741,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "layout: 25.528 content_overlap #b2-ba0 > text:nth-of-type(1) Two text blocks overlap and may render unreadable.; layout: 35.739 content_overlap #b3 > div:nth-of-type(1) > svg:nth-of-type(1) > text:nth-of-type(3) Two text blocks overlap and may render unreadable.",
+          "dry_run_diag": "warning: hook beat text differs from candidate H3; using the beat text\nvoice: mock 89.2 s, 0.0000 USD\ntimings: 194 words via mock (none, 0 s)\nexcerpt: first 92 s, 7 beats, 61 caption groups\n  b1  hook          zt_photo          0.00 +10.17\n  b2  problem       zt_chart         10.17 +16.98\n  b3  explanation   zt_curve         27.15 +21.07\n  b4  demonstration zt_chart         48.22 +18.37\n  b5  insight       zt_photo         66.58 + 9.84\n  b6  benefit       zt_chart         76.42 + 9.75\n  b7  close         zt_photo         86.17 + 5.73\nsound: on, palette tech, 25 cues (close 1, event 19, hook_end 1, scene_change 4), music procedural/tech [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 2 errors, craft 1 warnings\n   layout: 25.528 content_overlap #b2-ba0 > text:nth-of-type(1) Two text blocks overlap and may render unreadable.\n   layout: 35.739 content_overlap #b3 > div:nth-of-type(1) > svg:nth-of-type(1) > text:nth-of-type(3) Two text blocks overlap and may render unreadable.\ndry run: ok (direction checks pass without video)",
+          "dry_run_review": [],
+          "dry_run_repairs": 1,
+          "dry_run_done": true,
+          "voice": "flash",
+          "render_exit": 0,
+          "status": "VALIDATED",
+          "duration_s": 80.171,
+          "sfx_stem_peak": -18.0,
+          "overlaps": 0,
+          "small_text": 0,
+          "export_folder": "C:\\Users\\Stefa\\OneDrive\\Business\\05 Produktion\\Revlore\\2026-11\\2026-11-04 Wechselstrom 100 Wechsel",
+          "csv_written": true,
+          "cost_usd_variable": 0.0193,
+          "notes": [
+            "Trockenlauf: Mock-Länge 92.2 s (keine echte Stimme); Prüfung als Auszug 92 s"
+          ],
+          "errors": []
+        },
+        "en": {
+          "video_id": "engines-20261104-d2-en",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\engines-20261104-d2-en.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [],
+          "llm_calls": 1,
+          "llm_tokens_in": 4,
+          "llm_tokens_out": 4260,
+          "llm_tokens_cache": 6121,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "layout: 14.913 content_overlap #b2 > div:nth-of-type(1) > svg:nth-of-type(1) > text:nth-of-type(10) Two text blocks overlap and may render unreadable.; layout: 24.856 content_overlap #b2-ba0 > text:nth-of-type(1) Two text blocks overlap and may render unreadable.; layout: 34.798 content_overlap #b3 > div:nth-of-type(1) > svg:nth-of-type(1) > text:nth-of-type(3) Two text blocks overlap and may render unreadable.; layout: 75.831 content_overlap #b6 > div:nth-of-type(1) > svg:nth-of-type(1) > text:nth-of-type(10) Two text blocks overlap and may render unreadable.",
+          "dry_run_diag": "warning: hook beat text differs from candidate H3; using the beat text\nvoice: mock 86.5 s, 0.0000 USD\ntimings: 203 words via mock (none, 0 s)\n  b1  hook          zt_photo          0.00 + 9.97\n  b2  problem       zt_chart          9.97 +16.35\n  b3  explanation   zt_curve         26.32 +19.45\n  b4  demonstration zt_chart         45.77 +17.64\n  b5  insight       zt_photo         63.41 +10.07\n  b6  benefit       zt_chart         73.48 +10.33\n  b7  close         zt_photo         83.80 + 5.68\nsound: on, palette tech, 23 cues (close 1, event 17, hook_end 1, scene_change 4), music procedural/tech [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 4 errors, craft 1 warnings\n   layout: 14.913 content_overlap #b2 > div:nth-of-type(1) > svg:nth-of-type(1) > text:nth-of-type(10) Two text blocks overlap and may render unreadable.\n   layout: 24.856 content_overlap #b2-ba0 > text:nth-of-type(1) Two text blocks overlap and may render unreadable.\n   layout: 34.798 content_overlap #b3 > div:nth-of-type(1) > svg:nth-of-type(1) > text:nth-of-type(3) Two text blocks overlap and may render unreadable.\n   layout: 75.831 content_overlap #b6 > div:nth-of-type(1) > svg:nth-of-type(1) > text:nth-of-type(10) Two text blocks overlap and may render unreadable.\ndry run: ok (direction checks pass without video)",
+          "dry_run_review": [],
+          "dry_run_repairs": 0,
+          "dry_run_done": true,
+          "voice": "flash",
+          "render_exit": 0,
+          "status": "VALIDATED",
+          "duration_s": 75.051,
+          "sfx_stem_peak": -18.0,
+          "overlaps": 0,
+          "small_text": 0,
+          "export_folder": "C:\\Users\\Stefa\\OneDrive\\Business\\05 Produktion\\Revlore\\2026-11\\2026-11-04 Wechselstrom 100 Wechsel EN",
+          "csv_written": true,
+          "cost_usd_variable": 0.018,
+          "notes": [],
+          "errors": []
+        }
+      },
+      "marked": true,
+      "notes": [
+        "assets.hero.b1: rl_real_plug_socket.jpg -> rl_real_plug_socket_d30.mp4 (Kamerafahrt, 30 s, 0 Credits)",
+        "assets.hero.b5: rl_real_pcb_relays.jpg -> rl_real_pcb_relays_d30.mp4 (Kamerafahrt, 30 s, 0 Credits)",
+        "Konzeptplan markiert: Vorschlag Zeile 26"
+      ],
+      "errors": []
+    }
+  ],
+  "skipped": [
+    "Nr. 76 · Der FI-Schalter vergleicht hin und zurück · Reihe Zeitlupe: braucht Modell oder Aufbau (kein gebauter Aufbau in brands/engines/aufbauten.yaml trägt Nr. 76)"
+  ],
+  "errors": [],
+  "started_at": "2026-11-04T08:05:21+00:00",
+  "finished_at": "2026-11-04T08:15:18+00:00"
+}

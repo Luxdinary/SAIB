@@ -1,0 +1,158 @@
+# Brand registry. brand_id is stable. Display names decided by Stefan on 2026-10-30
+# after the name research (OneDrive\Business\02 Marke\Namensrecherche 2026-10-29.md).
+# enabled: false = configured and designed, not producing or publishing.
+# Decisions by Stefan, 2026-10-29: one account per brand, DE and EN on the same account,
+# slots 12:00 / 14:00 / 18:00 Europe/Vienna, automatic approval unless risk_level is high.
+
+defaults:
+  languages: [de, en]
+  primary_language: de
+  platforms: [tiktok, instagram, youtube]
+  timezone: Europe/Vienna
+  slots: ["12:00", "18:00"]
+  # Stefan, 03.11.2026, 20:45: 2 topics per brand and day, each in German and English (4 videos), 7 days a week. One topic = DE/EN twin.
+  # Slots (Europe/Vienna) confirmed by Stefan on 03.11.2026 ("Passen"): topic 1 DE 12:00, EN 15:00; topic 2 DE 18:00, EN 21:00.
+  # Until 03.11.2026 the grid was 6 posts per day (DE 12:00/14:00/18:00, EN 15:00/20:00/23:00, topics_per_day 3); the calendars
+  # data/calendars/<id>_2026-11.json (09.11. to 06.12.) still follow that grid. The month plan (<id>_2026-11.plan.json) follows this one.
+  slots_by_language:
+    de: ["12:00", "18:00"]
+    en: ["15:00", "21:00"]
+  topics_per_day: 2
+  video:
+    width: 1080
+    height: 1920
+    min_seconds: 65
+    max_seconds: 90
+    hard_min_seconds: 61
+  approval:
+    mode: automatic            # automatic | manual
+    manual_first_n: 20         # Claude's recommendation: calibrate the first 20 per brand by hand
+    human_review_risk: [high]
+  ai_disclosure: always        # label every video on every platform
+  buffer_days: 7
+
+brands:
+  - id: claude_workflows
+    name: Promptwerk             # decided 2026-10-30 (name research in OneDrive\Business\02 Marke)
+    niche: Claude workflows and prompts
+    phase: 2
+    enabled: true
+    style: clean_saas
+    palette: {bg: "#171923", accent: "#A78BFA", text: "#F8FAFC"}
+    rules:
+      - no screen recordings; UI scenes are labelled animations (Stefan, 2026-10-30); no private data
+      - every workflow must match the Anthropic docs; say "tested" only if it actually ran (note the Claude Code version)
+    risk_default: low
+    brand_version: "1.0"         # Vorlage freigegeben von Stefan am 01.11.2026 (Testvideo der Qualitaetsrunde)
+    template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Promptwerk\Vorlage Promptwerk.md'
+
+  - id: ai_security
+    name: Scutoria               # Stefan's existing brand; align with OneDrive\scutoria\CLAUDE.md
+    niche: AI and security for small businesses
+    phase: 2
+    enabled: true
+    style: scutoria_brand
+    brand_version: "1.0"         # Vorlage Fassung B, decided by Stefan 2026-10-30
+    template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Scutoria\Vorlage Scutoria (Fassung B).md'
+    palette: {bg: "#0b1120", accent: "#4f8cff", text: "#e9eef8"}   # Scutoria tokens.json (ground, accent, ink); full set in brands/ai_security/brand.yaml
+    rules:
+      - no fear-mongering, no exploit instructions, no invented incidents or statistics
+      - link to Scutoria products only with paid-partnership flags where required
+    risk_default: medium
+
+  - id: engines
+    name: Revlore                # decided 2026-10-30; exact handles taken by inactive accounts, use variants
+    niche: engine technology
+    phase: 4
+    enabled: false
+    style: precision_engineering
+    brand_version: "1.0"         # Vorlage freigegeben von Stefan am 01.11.2026 (Testvideo der Qualitaetsrunde)
+    template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Revlore\Vorlage Revlore.md'
+    palette: {bg: "#171C22", accent: "#2F9BFF", text: "#E7ECF1"}   # revised 2026-10-30 (was accent silver, text blue); full set in brands/engines/brand.yaml
+    rules:
+      - technical claims from manufacturer or engineering sources; no maintenance advice that can cause damage
+    risk_default: medium
+
+  - id: megaconstruction
+    name: Gigastruct             # decided 2026-10-30
+    niche: megaconstructions and construction sites
+    phase: 4
+    enabled: false
+    style: engineering_epic
+    brand_version: "1.0"         # Vorlage freigegeben von Stefan am 01.11.2026 (Testvideo der Qualitaetsrunde)
+    template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Gigastruct\Vorlage Gigastruct.md'
+    palette: {bg: "#20384F", accent: "#FF8A2A", text: "#E9EDF0"}   # unchanged; model colours in brands/megaconstruction/brand.yaml
+    rules:
+      - dimensions and dates from primary sources; scale comparisons must be computed, not estimated
+      - stylised 3D models only, no photoreal images of real structures; ongoing projects with a dated status
+    risk_default: low
+
+  - id: menswear
+    name: Suitwerk               # decided 2026-10-30 (reserve: Lapelore)
+    niche: suits and menswear
+    phase: 4
+    enabled: false
+    style: quiet_luxury
+    brand_version: "1.0"         # Vorlage freigegeben von Stefan am 01.11.2026 (Testvideo der Qualitaetsrunde)
+    template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Suitwerk\Vorlage Suitwerk.md'
+    palette: {bg: "#172337", accent: "#D4B483", text: "#F2EEE6"}
+    rules:
+      - affiliate links only with product knowledge and disclosure
+    risk_default: low
+
+  - id: motivation
+    name: Gritwerk               # decided 2026-10-30
+    niche: motivation and self-development
+    phase: 5
+    enabled: false
+    style: cinematic_human
+    brand_version: "1.0"         # Vorlage freigegeben von Stefan am 01.11.2026 (Testvideo der Qualitaetsrunde)
+    template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Gritwerk\Vorlage Gritwerk.md'
+    palette: {bg: "#121110", accent: "#E5B45A", text: "#F4F0E8"}   # warm-shifted bg; full set in brands/motivation/brand.yaml
+    rules:
+      - no psychological or medical claims; methods with named sources
+    risk_default: medium
+
+  - id: military_history
+    name: Frontlore              # decided 2026-10-30 (reserve: Armorlore)
+    niche: military technology and history (historical, publicly documented only)
+    phase: 5
+    enabled: false
+    style: documentary_tech
+    brand_version: "1.0"         # Vorlage freigegeben von Stefan am 01.11.2026 (Testvideo der Qualitaetsrunde)
+    template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Frontlore\Vorlage Frontlore.md'
+    palette: {bg: "#29352D", accent: "#A9B29F", text: "#E6E9E5"}   # unchanged; paper/stamp/muted extension in brands/military_history/brand.yaml
+    rules:
+      - historical and technical only; no tactics, no weapon handling or construction, no current conflicts
+      - nothing from Stefan's service, no uniform, no unit references
+      - realistic AI scenes of real events require Art. 50 disclosure at the start; prefer stylized visuals
+      - no graphic violence (not ad-eligible on YouTube; FYF-ineligible on TikTok)
+    risk_default: high
+
+  - id: beauty
+    name: Dewlane                # decided 2026-10-30; handle variants such as dewlane.beauty
+    niche: beauty and skincare knowledge
+    phase: 5
+    enabled: false
+    style: luxury_editorial
+    brand_version: "1.0"         # Vorlage freigegeben von Stefan am 01.11.2026 (Testvideo der Qualitaetsrunde)
+    template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Dewlane\Vorlage Dewlane.md'
+    palette: {bg: "#F8F3EF", accent: "#9B5560", text: "#4A2F34"}   # darkened for WCAG 4.5:1 on ivory; full set in brands/beauty/brand.yaml
+    rules:
+      - ingredient and routine knowledge only; no efficacy claims, no before/after, no fake tests
+      - goal is ad partners for beauty products; media kit required before any paid content
+    risk_default: high
+
+  - id: brainrot
+    name: Zonkfruit              # decided 2026-10-30
+    niche: surreal comedy with an original recurring character
+    phase: 5
+    enabled: false
+    style: surreal_3d
+    brand_version: "1.0"         # Vorlage freigegeben von Stefan am 01.11.2026 (Testvideo der Qualitaetsrunde)
+    template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Tintora\Vorlage Zonkfruit.md'
+    palette: {bg: "#101010", accent: "#B7FF00", text: "#FFF4FA"}   # text warm white for readability, magenta #FF43C0 as second accent; full set in brands/brainrot/brand.yaml
+    rules:
+      - original character Plümo with character sheet and style lock; no copied characters or memes
+      - every episode ends on one real, sourced fact; no music without licence (own sound effects only)
+    risk_default: medium

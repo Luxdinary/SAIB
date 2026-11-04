@@ -1,0 +1,424 @@
+{
+ "video_id": "menswear-20261110-1-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Stoffgewicht: Was die Zahl wirklich misst",
+ "notes": "Woche 1 im Format Kreidestrich (K1), Reihe Unter dem Fadenzähler, Kalenderthema menswear-20261110-1 (Stoffkunde C01). Neuer Sprechtext ohne Firmennamen; Quelle S1 im Originaltext gelesen (S. 10). Alter Plan menswear-20261110-1-de.json bleibt unverändert. K2 (03.11.2026): realer Anzug in jedem Beat (Hook mit Kling-Clip K3, Schluss mit K2 und K4 aus dem Testvideo-Material, Hintergründe aus library und testvideo), 0 neue Credits.",
+ "layout": {
+  "format": "kreidestrich",
+  "series": "stoff",
+  "explainer": false,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 560,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "series_topic": "Gewicht",
+  "description": "350 Gramm wovon? Das Stoffgewicht meint Gramm je laufendem Meter, über die ganze Webbreite. Von 100 Gramm Hemdenstoff bis 700 Gramm Mantelstoff, typisch für den Kammgarnanzug: 350 Gramm. Illustration, Quelle: Woolmark, Introduction to Wovenwear.",
+  "companion_text": "Suitwerk zeigt Herrenstil im Detail, gezeichnet statt behauptet. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "anzugstoff",
+   "stoffkunde",
+   "stoffgewicht",
+   "kammgarn"
+  ],
+  "sound": {
+   "palette": "paper",
+   "mood": "warm"
+  },
+  "sound_cues": [
+   {
+    "beat": "b1",
+    "at": "w:Waage",
+    "cue": "click"
+   },
+   {
+    "beat": "b3",
+    "at": "w:Hemdenstoff",
+    "cue": "swipe_leise"
+   },
+   {
+    "beat": "b4",
+    "at": "w:gesunken",
+    "cue": "swipe2_leise"
+   },
+   {
+    "beat": "b5",
+    "at": "w:Folge",
+    "cue": "thud"
+   }
+  ]
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Kreidestrich, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "checked_at": "2026-11-02",
+   "title": "The Woolmark Company: Introduction to Wovenwear (Training Manual), S. 10 (fabric weight: 700 g/linear metre heavy coat fabrics down to 100 g/linear metre ladies shirting; typical average for worsted menswear 350 g/linear metre; Merino Cool < 250 g/linear metre; weights decreased with central heating and air conditioning)",
+   "label": "Woolmark, Introduction to Wovenwear"
+  }
+ ],
+ "unverified": [
+  "Gewicht je Quadratmeter: nicht genannt; Woolmark nennt nur Gramm je laufendem Meter, die Webbreite ist nicht angegeben.",
+  "Wärme eines Stoffs nach Gewicht: nicht verwendet (keine Quelle im Handbuch).",
+  "Unzen je Yard: nicht verwendet.",
+  "Die Waage im Bild ist eine Darstellung, keine Messung."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was steckt hinter dieser Angabe am Stoff?",
+   "on_screen": "Was steckt dahinter?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "question"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Die meisten lesen diese Zahl falsch.",
+   "on_screen": "Falsch gelesen?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 3,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "not measurable, below the gate"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Die Antwort liegt im Faden, nicht im Etikett.",
+   "on_screen": "Die Antwort im Faden",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "vague"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer nur das Etikett liest, versteht den Stoff nicht.",
+   "on_screen": "Nur das Etikett?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "no real risk"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Leg den Stoff auf die Waage: 350 Gramm, aber wovon?",
+   "on_screen": "350 Gramm wovon?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Stoffstreifen auf der Waage, die Anzeige zählt bis 350",
+   "why": {
+    "truth": "shown, not claimed",
+    "visual": "core of the Kreidestrich format"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Vorführung im Format Kreidestrich."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "kw_weigh",
+   "duration_hint": 7,
+   "spoken": "Auf vielen Anzugstoffen steht eine Gewichtszahl, zum Beispiel 350 Gramm. Aber 350 Gramm wovon? Und ist das viel oder wenig? Leg den Stoff auf die Waage.",
+   "data": {
+    "question": {
+     "text": "350 Gramm wovon?",
+     "at": "w:Aber"
+    },
+    "value": 350,
+    "unit": "g",
+    "weigh_at": "w:Waage",
+    "kind": "twill",
+    "source": "Woolmark: Introduction to Wovenwear, S. 10 · Abruf 02.11.2026",
+    "backdrop": {
+     "src": "testvideo/sw_tv_jacket_front.jpg",
+     "clip": "testvideo/sw_tv_k3_jacket.mp4",
+     "dim": 0.5,
+     "zoom": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "kw_weigh",
+   "duration_hint": 13,
+   "spoken": "Woolmark gibt das Stoffgewicht in Gramm je laufendem Meter an. Gemeint ist ein Meter Länge, so wie der Stoff vom Ballen kommt, über die ganze Webbreite. Also kein Quadratmeter. Wie schwer der Streifen ist, hängt damit auch von der Breite ab.",
+   "data": {
+    "title": {
+     "text": "Gramm je laufendem Meter",
+     "at": 0.1
+    },
+    "value": 350,
+    "unit": "g",
+    "weigh_at": 0.4,
+    "readout_label": "je laufendem Meter",
+    "readout_at": "w:laufendem",
+    "len_at": "w:Länge",
+    "len_label": "1 Meter",
+    "width_at": "w:Webbreite",
+    "width_label": "ganze Webbreite",
+    "kind": "twill",
+    "source": "Woolmark: Introduction to Wovenwear, S. 10 · Abruf 02.11.2026",
+    "backdrop": {
+     "src": "testvideo/sw_tv_jacket_threequarter.jpg",
+     "dim": 0.6,
+     "zoom": [
+      1.0,
+      1.08
+     ]
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "demonstration",
+   "scene_type": "kw_range",
+   "duration_hint": 13,
+   "spoken": "Wie weit das reicht, zeigt dasselbe Handbuch: von 100 Gramm bei leichtem Hemdenstoff für Damen bis 700 Gramm bei schwerem Mantelstoff. Typisch für den Herrenanzug aus Kammgarn sind 350 Gramm. Ein schwerer Mantelstoff wiegt also doppelt so viel.",
+   "data": {
+    "title": {
+     "text": "Von leicht bis schwer",
+     "at": 0.1
+    },
+    "unit": "g",
+    "min": 0,
+    "max": 800,
+    "step": 50,
+    "label_every": 2,
+    "marks": [
+     {
+      "value": 100,
+      "label": "Hemdenstoff",
+      "sub": "Damen",
+      "at": "w:Hemdenstoff",
+      "up": true
+     },
+     {
+      "value": 700,
+      "label": "Mantelstoff",
+      "sub": "schwer",
+      "at": "w:Mantelstoff",
+      "up": true
+     },
+     {
+      "value": 350,
+      "label": "Anzug",
+      "sub": "Kammgarn, typisch",
+      "at": "w:Herrenanzug",
+      "up": false,
+      "tone": "green"
+     }
+    ],
+    "note": {
+     "text": "700 = 2 × 350",
+     "at": "w:doppelt"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, S. 10 · Abruf 02.11.2026",
+    "backdrop": {
+     "src": "library/sw_mood_cuttingtable.jpg",
+     "dim": 0.55,
+     "zoom": [
+      1.0,
+      1.06
+     ]
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "kw_range",
+   "duration_hint": 12,
+   "spoken": "Laut Woolmark sind die Stoffgewichte über die Jahre gesunken, weil Zentralheizung und Klimaanlage die Räume angenehmer machen. Für kühle, leichte Merinostoffe nennt Woolmark weniger als 250 Gramm. Die Wollzüchter haben darauf reagiert, mit feinerer Wolle für leichtere Stoffe.",
+   "data": {
+    "title": {
+     "text": "Leichter geworden",
+     "at": 0.1
+    },
+    "unit": "g",
+    "min": 0,
+    "max": 800,
+    "step": 50,
+    "label_every": 2,
+    "marks": [
+     {
+      "value": 350,
+      "label": "Anzug",
+      "sub": "typisch",
+      "at": 0.3,
+      "up": true
+     }
+    ],
+    "drift": {
+     "from": 500,
+     "to": 300,
+     "label": "über die Jahre leichter",
+     "at": "w:gesunken"
+    },
+    "band": {
+     "from": 0,
+     "to": 250,
+     "label": "kühler Merino: unter 250 g",
+     "at": "w:weniger"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, S. 10 · Abruf 02.11.2026",
+    "backdrop": {
+     "src": "library/sw_fabric_worsted_plain.jpg",
+     "dim": 0.6,
+     "zoom": [
+      1.04,
+      1.14
+     ]
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "close",
+   "scene_type": "kw_close",
+   "duration_hint": 13,
+   "spoken": "Merk dir: Die Zahl auf dem Stoffmuster meint Gramm je laufendem Meter. Für den Kammgarnanzug sind 350 Gramm typisch. Schau beim nächsten Stoffmuster, ob die Zahl dabei steht. Folge Suitwerk für Herrenstil mit Blick fürs Detail.",
+   "data": {
+    "kinds": [
+     "plain",
+     "twill"
+    ],
+    "chip": {
+     "text": "Kammgarnanzug: typisch 350 g je lfd. Meter",
+     "at": "w:Kammgarnanzug"
+    },
+    "lines": [
+     {
+      "text": "leicht: unter 250 g",
+      "at": 0.6
+     },
+     {
+      "text": "Anzug: 350 g",
+      "at": 1.2
+     }
+    ],
+    "rule": {
+     "text": "Gramm je laufendem Meter",
+     "at": "w:meint"
+    },
+    "sign_at": "w:Folge",
+    "claim": "Herrenstil mit Blick fürs Detail.",
+    "sign_note": "Zahl auf dem Muster suchen",
+    "source": "Woolmark: Introduction to Wovenwear, S. 10 · Abruf 02.11.2026",
+    "shots": [
+     {
+      "src": "testvideo/sw_tv_sleeve_light.jpg",
+      "clip": "testvideo/sw_tv_k2_sleeve.mp4",
+      "mirror": true,
+      "at": 0.4,
+      "zoom": [
+       1.0,
+       1.0
+      ],
+      "dim": 0.3
+     },
+     {
+      "src": "testvideo/sw_tv_lapel_dark.jpg",
+      "clip": "testvideo/sw_tv_k4_lapel.mp4",
+      "at": "w:Folge",
+      "zoom": [
+       1.0,
+       1.0
+      ],
+      "dim": 0.6
+     }
+    ],
+    "swatch_photos": [
+     "library/sw_fabric_worsted_plain.jpg",
+     "testvideo/sw_tv_fabric_twill_face.jpg"
+    ]
+   },
+   "source_ids": [
+    "S1"
+   ]
+  }
+ ]
+}

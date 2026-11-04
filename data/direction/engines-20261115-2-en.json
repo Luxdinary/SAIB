@@ -1,0 +1,461 @@
+{
+  "video_id": "engines-20261115-2-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "Diesel: ignition in four phases",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261115-2-en, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Ignition delay, premixed burning, mixing-controlled phase, late burning: how a diesel burns, and what the cetane number has to do with it.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.\nHeat release curve is schematic, not a measurement.",
+    "hashtags": [
+      "enginetech",
+      "diesel",
+      "combustion",
+      "cetane",
+      "ignition"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, lecture 15",
+      "title": "MIT 2.61, Vorlesung 15 (L15)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/583ccfe7bc14d0c18bb75efcf0ab2f05_MIT2_61S17_lec15.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "Chevron, diesel fuels",
+      "title": "Chevron, Dieselkraftstoffe (C2)",
+      "url": "https://www.chevron.com/-/media/chevron/operations/documents/diesel-fuel-tech-review.pdf",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Here is what happens.",
+      "on_screen": "Inject first, then wait",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How does a diesel burn?",
+      "on_screen": "Diesel: ignition in four phases",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Diesel: ignition in four phases",
+      "on_screen": "Diesel: ignition in four phases",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Diesel: ignition in four phases",
+      "on_screen": "Diesel: ignition in four phases",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Diesel: ignition in four phases",
+      "on_screen": "Diesel: ignition in four phases",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "A diesel does not ignite the moment it injects. There is a short pause in between, and it shapes the whole combustion. Here is what happens.",
+      "data": {
+        "claim": "Inject first, then wait",
+        "claim_lines": [
+          "Inject first,",
+          "then wait"
+        ],
+        "claim_highlight": "wait",
+        "claim_at": 0.05,
+        "counters": false,
+        "fuel": "diesel",
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:pause",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_cutaway",
+      "spoken": "The fuel is injected into the hot, compressed air. Before it ignites, there is the ignition delay. During that time it evaporates and mixes with the air. Depending on load, the lecture gives nineteen to eighty parts of air for every part of fuel.",
+      "data": {
+        "title": "Ignition delay",
+        "fuel": "diesel",
+        "notes": [
+          {
+            "text": "injection",
+            "at": "w:injected",
+            "side": "r",
+            "y": 640,
+            "to": [
+              540,
+              420
+            ]
+          },
+          {
+            "text": "ignition delay",
+            "at": "w:delay",
+            "side": "l",
+            "y": 880,
+            "color": "amber",
+            "to": [
+              500,
+              590
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            300
+          ],
+          [
+            "w:delay",
+            350
+          ],
+          [
+            1,
+            420
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:delay",
+        "kicker": "2 · THE PAUSE",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "The engineering lecture splits diesel combustion into four phases. First the ignition delay. Then everything that has already mixed burns at once: the premixed phase. According to the lecture, this steep pressure rise is also what makes a diesel sound the way it does. Watch the steep spike in the curve. First the delay, then the burst.",
+      "data": {
+        "title": "Heat release",
+        "kind": "hrr",
+        "series_at": [
+          "w:premixed"
+        ],
+        "legend": false,
+        "bands": [
+          {
+            "x0": -5,
+            "x1": 0,
+            "label": "delay",
+            "at": "w:delay",
+            "color": "amber",
+            "row": 0
+          },
+          {
+            "x0": 0,
+            "x1": 7,
+            "label": "premixed",
+            "at": "w:premixed",
+            "color": "fire",
+            "row": 2
+          }
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:phases",
+        "kicker": "3 · PHASES 1 AND 2",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "After that, the fuel burns only as fast as it mixes with air: the mixing-controlled phase. Finally comes a phase of late burning. The flame now depends on how fast fuel and air meet.",
+      "data": {
+        "title": "Four phases",
+        "kind": "hrr",
+        "series_at": [
+          0.0
+        ],
+        "legend": false,
+        "draw_seconds": 0.6,
+        "bands": [
+          {
+            "x0": -5,
+            "x1": 0,
+            "label": "delay",
+            "at": 0.0,
+            "color": "amber",
+            "row": 0
+          },
+          {
+            "x0": 0,
+            "x1": 7,
+            "label": "premixed",
+            "at": 0.02,
+            "color": "fire",
+            "row": 2
+          },
+          {
+            "x0": 7,
+            "x1": 28,
+            "label": "mixing",
+            "at": "w:mixing",
+            "row": 4
+          },
+          {
+            "x0": 28,
+            "x1": 50,
+            "label": "late",
+            "at": "w:late",
+            "color": "steel",
+            "row": 6
+          }
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:mixing",
+        "kicker": "4 · PHASES 3 AND 4"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_readout",
+      "spoken": "This is where the fuel comes in. According to Chevron, a high cetane number means a short ignition delay. The minimum cetane number is fifty-one in Europe and forty in the US. Cetane itself is rated one hundred, methylnaphthalene zero.",
+      "data": {
+        "title": "Minimum cetane number",
+        "figure": "bars",
+        "bar_max": 60,
+        "lines_y": 1000,
+        "bars": [
+          {
+            "label": "Europe",
+            "value": 51,
+            "text": "51",
+            "at": "w:Europe"
+          },
+          {
+            "label": "USA (ASTM D975)",
+            "value": 40,
+            "text": "40",
+            "at": "w:US"
+          }
+        ],
+        "lines": [
+          {
+            "text": "high cetane → short delay",
+            "hl": "short delay",
+            "at": "w:short"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Chevron",
+        "kicker": "5 · THE CETANE NUMBER",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Delay, premixed, mixing-controlled, late burning. Understand engines: follow Revlore.",
+      "data": {
+        "fuel": "diesel",
+        "chips": [
+          {
+            "text": "delay",
+            "at": "w:Delay"
+          },
+          {
+            "text": "premixed",
+            "at": "w:premixed"
+          },
+          {
+            "text": "mixing",
+            "at": "w:mixing"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

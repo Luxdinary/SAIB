@@ -1,0 +1,192 @@
+id: ai_security-20261112-2-de
+version: F2
+title: 'Quishing: der falsche QR-Code'
+reihe: Was tust du?
+short: Quishing
+note: Thema D04. Beispielfall nachgestellt; Mechanik und Empfehlungen aus S1 (Verbraucherzentrale) und S2 (FBI IC3), Faktenbasis aus dem Plan vom 01.11.2026.
+description: 'Am Parkautomaten klebt ein QR-Code: bequem per Handy zahlen. Was tust du? Ein nachgestellter Fall und der eine Schritt, den das FBI beim Bezahlen rät.'
+hashtags:
+- quishing
+- qrcode
+- betrug
+- kmu
+- wastustdu
+sources:
+- id: S1
+  url: https://www.verbraucherzentrale.de/wissen/digitale-welt/phishingradar/quishing-falsche-qrcodes-in-mails-briefen-oepnv-und-strassenverkehr-98612
+  title: 'Verbraucherzentrale: Quishing – falsche QR-Codes'
+  checked_at: '2026-11-01'
+  label: Verbraucherzentrale, Quishing
+- id: S2
+  url: https://www.ic3.gov/PSA/2022/PSA220118
+  title: 'FBI IC3 PSA I-011822-PSA: Cybercriminals tampering with QR codes'
+  checked_at: '2026-11-01'
+  label: FBI IC3, QR-Warnung
+unverified:
+- 'Fallzahlen zu Quishing: nicht verwendet.'
+- 'Empfehlung für Scanner-Apps: bewusst nicht gegeben (Quellen widersprechen sich).'
+- Ablauf im Beispielfall (gefälschte Zahlseite, spätere Abbuchungen) ist erfunden und als Beispiel gekennzeichnet; das Ziel der Masche (Daten oder Geld abgreifen) stammt aus S1.
+- Dass Adresse lesen allein nicht reicht, ist Scutorias Auslegung von S2, im Bild markiert.
+pick: demonstration
+hooks:
+- type: question
+  spoken: Ein QR-Code am Parkautomaten. Scannst du ihn?
+  screen: Scannst du ihn?
+- type: misconception
+  spoken: Ein QR-Code am offiziellen Automaten ist echt? Nicht unbedingt.
+  screen: Am Automaten = echt?
+  src:
+  - S1
+- type: surprising_fact
+  spoken: Kriminelle überkleben QR-Codes an Parkautomaten und Ladesäulen.
+  screen: Überklebte QR-Codes
+  src:
+  - S1
+- type: concrete_risk
+  spoken: Ein Aufkleber auf dem Parkautomaten, und deine Zahlung landet bei Betrügern.
+  screen: Ein Aufkleber, falsches Konto
+  src:
+  - S1
+- type: demonstration
+  spoken: Mittwoch, sieben Uhr fünfzig. Am Parkautomaten klebt ein QR-Code.
+  screen: MI 07:50 · Bequem per Handy zahlen
+beats:
+- f: hook
+  t: sc_case
+  s: 'Mittwoch, sieben Uhr fünfzig. Du parkst vor dem Großmarkt. Am Parkautomaten klebt ein QR-Code: Bequem per Handy zahlen.'
+  d:
+    kicker: Beispielfall · nachgestellt
+    time: MI 07:50
+    place: Einkauf für die Gastwirtschaft
+    mail_at: '@Parkautomaten'
+    mail:
+      from: Parkautomat (Beispiel)
+      addr: Aufkleber mit QR-Code
+      time: 07:50
+      subject: Bequem per Handy zahlen
+      lines:
+      - QR-Code scannen,
+      - Kennzeichen eingeben, fertig.
+      - '[ Aufkleber über dem Original ]'
+    highlight:
+      line: 2
+      label: überklebt
+      at: '@Bequem'
+- f: problem
+  t: sc_inspect
+  s: 'Du schaust hin. Der Automat: wie immer. Der Code: sieht ordentlich aus. Wohin er führt: sieht man ihm nicht an. Die Verbraucherzentrale nennt die Masche Quishing: Kriminelle überkleben QR-Codes, etwa
+    an Parkautomaten und Ladesäulen.'
+  src:
+  - S1
+  d:
+    kicker: Was du prüfst
+    headline: Sieht echt aus?
+    rows:
+    - label: Automat
+      value: wie immer
+      verdict: unauffällig
+      at: '@Automat'
+    - label: Code
+      value: ordentlich
+      verdict: unauffällig
+      at: '@Code'
+    - label: Ziel
+      value: nicht erkennbar
+      verdict: offen
+      at: '@führt'
+    fact:
+      kind: fakt
+      text: Kriminelle überkleben QR-Codes an Automaten und Ladesäulen.
+      source: Verbraucherzentrale · Quishing
+      at: '@Verbraucherzentrale'
+- f: problem
+  t: sc_choice
+  s: 'Was tust du? A: Scannen und zahlen, geht ja schnell. B: Scannen, aber vorher die Adresse lesen. C: Nicht über den Code zahlen, sondern die bekannte Park-App oder Adresse selbst öffnen. Entscheide
+    dich jetzt.'
+  src:
+  - S2
+  d:
+    question: Was tust du?
+    options:
+    - key: A
+      text: Scannen und zahlen
+      at: '@Scannen'
+    - key: B
+      text: Scannen, Adresse vorher lesen
+      at: '@aber'
+    - key: C
+      text: Bekannte App oder Adresse nutzen
+      at: '@Nicht'
+    think:
+      seconds: 2.4
+      at: '@Entscheide'
+    hint: Entscheide dich jetzt.
+- f: demonstration
+  t: sc_timeline
+  s: Spielen wir A durch. Der Code öffnet eine Seite, die aussieht wie die echte. Du gibst deine Kartendaten ein, die Seite bestätigt, alles wirkt normal. Später buchen Fremde von deiner Karte ab.
+  src:
+  - S1
+  d:
+    kicker: Wahl A, durchgespielt
+    tag: Beispiel
+    headline: Du scannst und zahlst
+    items:
+    - time: MI 07:51
+      text: Code gescannt
+      at: 0.6
+    - time: MI 07:51
+      text: Seite sieht echt aus
+      tone: amber
+      at: '@Seite'
+    - time: MI 07:52
+      text: Kartendaten eingegeben
+      at: '@Kartendaten'
+    - time: Später
+      text: Fremde buchen ab
+      tone: red
+      at: '@Später'
+    source:
+      kind: fakt
+      label: Verbraucherzentrale · Daten oder Geld
+      at: 1.0
+- f: insight
+  t: sc_step
+  s: 'Richtig ist C. Das FBI rät: beim Bezahlen keine Seite aus einem QR-Code nutzen, sondern eine bekannte Adresse selbst eintippen. Die Adresse lesen hilft, doch gefälschte ähneln der echten oft sehr.
+    Und an Automaten lohnt der Blick, ob ein Aufkleber über dem Original klebt.'
+  src:
+  - S2
+  d:
+    mode: rule
+    kicker: Der eine Schritt
+    card:
+      letter: C
+      title: Bekannten Weg nutzen
+      sub: Adresse selbst eintippen, nicht scannen
+      at: 0.2
+    strikes:
+    - text: 'A: Scannen und zahlen'
+      note: keine Prüfung
+      at: 3.0
+    - text: 'B: Nur Adresse lesen'
+      note: hilft, reicht nicht
+      at: '@hilft'
+    sources:
+    - kind: fakt
+      label: FBI IC3 · QR-Codes beim Bezahlen
+    - kind: auslegung
+      label: 'B: Auslegung Scutoria'
+    sources_at: '@FBI'
+- f: close
+  t: sc_close
+  s: Erst lesen, dann scannen, dann zahlen. Was hättest du gewählt? Schreib es in die Kommentare.
+  d:
+    kicker: Reihe · Was tust du?
+    rule: Erst lesen, dann zahlen.
+    rule_at: 0.3
+    question:
+      text: Was hättest du gewählt?
+      at: '@Was'
+    domain: scutoria.com
+    domain_at: 1.2
+    claim: Belegt. Datiert. Vorzeigbar.
+    disclaimer: Quellenbasiert. Keine Rechtsberatung.

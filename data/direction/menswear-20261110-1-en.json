@@ -1,0 +1,557 @@
+{
+ "video_id": "menswear-20261110-1-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Cloth weight: what the number actually measures",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema C01 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; keine Unzen je Quadratyard, keine feste Sommer-Grenze, Lochcarron-Wert gerundet (490/500 g).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Cloth, weight",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "weight: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "grams or ounces?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "grams per metre",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "230 to 560 g",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "heavier, not warmer",
+     "tone": "red"
+    },
+    {
+     "beat": "b6",
+     "text": "number plus weave",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "a first direction",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "What does cloth weight measure? At Fox Brothers, grams per running metre at a fixed width, after finishing. Plus Lochcarron with grams and ounces, and Woolmark with typical values.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "suitcloth",
+   "fabric",
+   "suit",
+   "wool"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://foxflannel.com/pages/cloth-weight-explained",
+   "title": "Fox Brothers, Cloth weight explained: Gramm je laufendem Meter bei fester Webbreite nach dem Ausrüsten, teils mit Unzen; 230-260 g (Golden Fox) bis 530-560 g (Authentic Flannel); schwerer nicht automatisch wärmer, Bindung und Ausrüstung zählen mit",
+   "checked_at": "2026-11-01",
+   "label": "Fox Brothers, Cloth Weight"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.lochcarron.co.uk/edinburgh-heavy-weight-tartan-fabric",
+   "title": "Lochcarron, Edinburgh Heavy Weight Tartan: 490/500 g je laufendem Meter und 16 oz je laufendem Yard bei 140 cm Breite",
+   "checked_at": "2026-11-01",
+   "label": "Lochcarron, Tartan"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "title": "Woolmark, Intro to Wovenwear (Schulungshandbuch): Stoffgewichte etwa 100 bis 700 g je laufendem Meter, typisch für Herren-Kammgarn 350 g",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Wovenwear"
+  }
+ ],
+ "unverified": [
+  "Umrechnung Gramm/Unzen: hängt von der Breite ab, keine Formel im Video.",
+  "Bindung der Golden-Fox-Stoffe: nicht belegt; das Muster im Bild ist neutral gewählt."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "350 grams, but of what?",
+   "on_screen": "350 grams, but of what?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Heavier cloth, warmer suit? Not automatically.",
+   "on_screen": "Heavier cloth, warmer suit? Not automatically.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Cloth weight usually means one running metre",
+   "on_screen": "Cloth weight usually means one running metre",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Grams or ounces? Without the unit, the number says little.",
+   "on_screen": "Grams or ounces? Without the unit, the number says little.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "What one metre of cloth on the scales tells you",
+   "on_screen": "What one metre of cloth on the scales tells you",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Stoffmuster, Lupe auf der umgeschlagenen Ecke",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Eine konkrete Zahl als Frage, die Lupe auf dem Stoff."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "The swatch says 350 grams. But 350 grams of what? And does that number tell you how warm the suit will be?",
+   "data": {
+    "question": "350 grams, but of what?",
+    "object": {
+     "kind": "swatch",
+     "weave": "twill",
+     "colour": "#2A3550",
+     "layers": 2
+    },
+    "target": "corner",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:350",
+    "loupe_at": "w:350",
+    "nie_at": "w:what",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Many cloths come with a weight figure, but in which unit? The mill Lochcarron lists both side by side for one tartan: around 500 grams per running metre and 16 ounces per running yard, at a width of 140 centimetres.",
+   "data": {
+    "headline": "Grams or ounces?",
+    "left": {
+     "title": "Grams",
+     "object": {
+      "kind": "swatch",
+      "weave": "twill",
+      "colour": "#2E4A3A",
+      "layers": 2
+     },
+     "target": "measure",
+     "tag": "about 500 g per metre",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:metre"
+      }
+     ]
+    },
+    "right": {
+     "title": "Ounces",
+     "object": {
+      "kind": "swatch",
+      "weave": "twill",
+      "colour": "#2E4A3A",
+      "layers": 2
+     },
+     "tag": "16 oz per yard",
+     "tag2": "conversion depends on width",
+     "tag2_at": "w:width",
+     "pulses": [
+      {
+       "target": "measure",
+       "at": "w:centimetres",
+       "tone": "amber"
+      }
+     ]
+    },
+    "left_at": 0.4,
+    "left_tag_at": "w:grams",
+    "right_at": "w:16",
+    "right_tag_at": "w:yard",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Lochcarron"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Fox Brothers explains what is meant: the weight of one running metre of cloth, at a fixed loom width, weighed after finishing. Some listings add ounces alongside. So at Fox, the figure is not per square metre.",
+   "data": {
+    "headline": "What gets weighed",
+    "stages": [
+     {
+      "object": {
+       "kind": "swatch",
+       "weave": "twill",
+       "colour": "#2A3550",
+       "layers": 2
+      },
+      "at": 0.0,
+      "title": "Fox Brothers",
+      "tags": [
+       {
+        "spot": "weave",
+        "text": "1 running metre",
+        "sub": "grams per metre",
+        "tone": "always",
+        "at": "w:running"
+       },
+       {
+        "spot": "center",
+        "text": "fixed loom width",
+        "sub": "says Fox Brothers",
+        "tone": "always",
+        "at": "w:width"
+       },
+       {
+        "spot": "corner",
+        "text": "after finishing",
+        "sub": "the finished cloth",
+        "tone": "always",
+        "at": "w:finishing"
+       }
+      ],
+      "focus_at": "w:square"
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Fox"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Fox Brothers shows the range: from 230 to 260 grams for the light Golden Fox, up to 530 to 560 grams for Authentic Flannel. Woolmark gives 350 grams as typical for a men's worsted suit cloth.",
+   "data": {
+    "headline": "Light to heavy",
+    "left": {
+     "title": "Golden Fox",
+     "object": {
+      "kind": "swatch",
+      "weave": "worsted",
+      "colour": "#2A3550",
+      "layers": 1
+     },
+     "target": "measure",
+     "tag": "230–260 g per metre",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:Woolmark"
+      }
+     ]
+    },
+    "right": {
+     "title": "Authentic Flannel",
+     "object": {
+      "kind": "swatch",
+      "weave": "flannel",
+      "colour": "#555B66",
+      "layers": 4
+     },
+     "tag": "530–560 g per metre",
+     "pulses": [
+      {
+       "target": "measure",
+       "at": "w:worsted"
+      }
+     ]
+    },
+    "left_at": "w:from",
+    "left_tag_at": "w:Golden",
+    "right_at": "w:530",
+    "right_tag_at": "w:Authentic",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Golden"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 10,
+   "spoken": "And heavier does not automatically mean warmer. According to Fox Brothers, weave and finishing count too. So the number gives you a first direction for the season, nothing more.",
+   "data": {
+    "headline": "Heavier means warmer?",
+    "from": {
+     "kind": "swatch",
+     "weave": "flannel",
+     "colour": "#555B66",
+     "layers": 3,
+     "strain": false
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "herringbone",
+     "colour": "#555B66",
+     "layers": 3,
+     "strain": false
+    },
+    "target": "weave",
+    "zoom": 1.4,
+    "label": "Weave and finishing count",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:heavier",
+    "error_at": "w:automatically",
+    "zoom_at": "w:warmer",
+    "flip_at": "w:weave",
+    "label_at": "w:finishing"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 738,
+     "y": 860,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:weave"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "In short: mills usually mean grams per running metre, at a fixed width. Ounces sometimes sit alongside. And for warmth, weave and finishing count too.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Grams per metre",
+      "sub": "running metre, fixed width (Fox)",
+      "object": {
+       "kind": "swatch",
+       "weave": "twill",
+       "colour": "#2A3550",
+       "layers": 2
+      },
+      "at": "w:grams",
+      "ring": "measure",
+      "ring_at": "w:width"
+     },
+     {
+      "title": "Ounces alongside",
+      "sub": "per yard, e.g. at Lochcarron",
+      "object": {
+       "kind": "swatch",
+       "weave": "twill",
+       "colour": "#2E4A3A",
+       "layers": 2
+      },
+      "at": "w:Ounces",
+      "ring": "corner",
+      "ring_at": "w:alongside"
+     },
+     {
+      "title": "Weave counts too",
+      "sub": "and so does finishing",
+      "object": {
+       "kind": "swatch",
+       "weave": "flannel",
+       "colour": "#555B66",
+       "layers": 3,
+       "strain": false
+      },
+      "at": "w:warmth",
+      "then": {
+       "weave": "herringbone"
+      },
+      "then_at": "w:weave"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "The number shows the direction, weave and finishing do the rest. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "swatch",
+     "weave": "flannel",
+     "colour": "#555B66",
+     "layers": 1,
+     "strain": false
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "herringbone",
+     "colour": "#555B66",
+     "layers": 3,
+     "strain": false
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "weave",
+    "fix_at": "w:direction",
+    "ring_at": "w:weave",
+    "statement_at": "w:finishing",
+    "chip_at": "w:eye",
+    "statement": "A first direction.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

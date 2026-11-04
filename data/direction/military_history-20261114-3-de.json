@@ -1,0 +1,559 @@
+{
+  "video_id": "military_history-20261114-3-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Par Ballon Monté: Post aus dem belagerten Paris",
+  "notes": "Woche 1, Reihe Signal und Nachricht. Belagerung nur als Kontext, keine Kampfbilder, Unglücksflüge nicht gezeigt; Ballontyp neutral 'Ballone'.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://blog.qm.qld.gov.au/2015/07/03/from-paris-with-love",
+      "title": "From Paris with love, Queensland Museum Blog (Mark Clayton), 2015",
+      "label": "Queensland Museum",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co481472/siege-of-paris-1870-71",
+      "title": "Siege of Paris 1870-71, Ballonbriefe (1952-393), Science Museum Group",
+      "label": "Science Museum Group",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.srlf.ucla.edu/exhibit/text/hist_page4.htm",
+      "title": "The History of Microfilm: The Pigeon Post into Paris 1870–1871, UCLA Southern Regional Library Facility",
+      "label": "UCLA SRLF",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Zahl der Ballone: andere Zählungen 64–67; im Video 66 laut Queensland Museum.",
+    "Ballontyp (Heißluft/Wasserstoff) nicht gegengeprüft; im Video nur 'Ballone'."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie verschickt eine eingeschlossene Stadt 1870 ihre Post, wenn kein Weg hinausführt?",
+      "on_screen": "Post ohne Weg hinaus?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Luftpost begann mit Flugzeugen? Paris verschickte 1870 Briefe per Ballon.",
+      "on_screen": "Luftpost per Ballon",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Ein Postballon landete nach 1408 Kilometern in Norwegen.",
+      "on_screen": "1408 km bis Norwegen",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ein Brief für 20 Centimes, ohne Garantie anzukommen.",
+      "on_screen": "Keine Garantie",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie eine Taube 20 Filme trägt.",
+      "on_screen": "20 Filme pro Taube",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie verschickt eine eingeschlossene Stadt 1870 ihre Post, wenn kein Weg hinausführt?",
+      "data": {
+        "question": "Post aus einer Stadt ohne Ausweg?",
+        "question_em": "ohne Ausweg",
+        "card_title": "Par Ballon Monté",
+        "card_meta": "PARIS · 1870–71",
+        "card_no": "AKTE 27",
+        "stamp": "1870",
+        "drawing": "balloon_post.svg",
+        "packet_label": "Brief",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:1870",
+        "packet_at": "w:Post",
+        "em_at": "w:hinausführt"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Ab Mitte September 1870 ist Paris vier Monate lang eingeschlossen. Am 23. September startet der erste Postballon mit 125 Kilogramm Post.",
+      "data": {
+        "mode": "map",
+        "headline": "Eine Stadt ohne Ausweg",
+        "places": [
+          {
+            "label": "Paris",
+            "code": "eingeschlossen",
+            "x": 600,
+            "y": 80,
+            "at": "w:Paris"
+          },
+          {
+            "label": "Außenwelt",
+            "code": "abgeschnitten",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:eingeschlossen"
+          }
+        ],
+        "route_at": "w:vier",
+        "route_label": "kein Weg hinaus",
+        "route_label_at": "w:Monate",
+        "wait_at": "w:startet",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "23.9.1870: 125 kg Post",
+        "chip_at": "w:Kilogramm",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Brief",
+        "packet_at": "w:Postballon",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Ausweg: über die Luft",
+        "line_label_at": "w:Post#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Briefe",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "In den folgenden Monaten steigen 66 Ballone auf, meist nachts. Die Briefe tragen den Vermerk Par Ballon Monté. Ein Brief kostet 20 Centimes, ohne Garantie.",
+      "data": {
+        "headline": "Briefe per Ballon",
+        "drawing": "balloon_post.svg",
+        "sheet_title": "BLATT 2 · BALLONPOST",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "66 Ballone",
+            "x": 200,
+            "y": 170,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:66"
+          },
+          {
+            "label": "Meist nachts",
+            "x": 200,
+            "y": 330,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:nachts"
+          },
+          {
+            "label": "Vermerk: Par Ballon Monté",
+            "x": 125,
+            "y": 490,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Vermerk"
+          },
+          {
+            "label": "20 Centimes, ohne Garantie",
+            "x": 172,
+            "y": 470,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Centimes"
+          }
+        ],
+        "zoom": {
+          "x": 150,
+          "y": 430,
+          "scale": 1.12,
+          "at": "w:Briefe",
+          "back_at": "w:Garantie",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Hinaus geht es per Ballon, zurück per Brieftaube. Die Tauben reisen im Ballon aus der Stadt und fliegen mit Nachrichten zurück.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Hinaus und zurück",
+        "left": {
+          "tag": "Hinaus",
+          "title": "Ballon",
+          "at": "w:Ballon",
+          "rows": [
+            "Briefe, Passagiere, Tauben"
+          ]
+        },
+        "right": {
+          "tag": "Zurück",
+          "title": "Brieftaube",
+          "at": "w:Brieftaube",
+          "rows": [
+            {
+              "text": "Nachrichten in die Stadt",
+              "at": "w:Nachrichten"
+            }
+          ]
+        },
+        "verdict": "Ein Kreislauf durch die Luft",
+        "verdict_at": "w:zurück#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Ab 15. Dezember werden die Depeschen auf Mikrofilm verkleinert, mehr als 40-fach. Eine Taube trägt bis zu 20 Filme, und in Paris wirft eine Laterna magica sie auf einen Schirm.",
+      "data": {
+        "headline": "Briefe auf Film",
+        "nodes": [
+          {
+            "label": "Mikrofilm",
+            "code": "ab 15.12.1870",
+            "at": "w:Mikrofilm"
+          },
+          {
+            "label": "Über 40-fach",
+            "code": "verkleinert",
+            "at": "w:40-fach"
+          },
+          {
+            "label": "Taube",
+            "code": "bis 20 Filme",
+            "at": "w:Taube"
+          },
+          {
+            "label": "Laterna magica",
+            "code": "Paris",
+            "at": "w:Laterna"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "count": {
+          "to": 20,
+          "label": "FILME",
+          "at": "w:20",
+          "until": "w:Schirm"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "Insgesamt bringen die Ballone 102 Passagiere, 400 Brieftauben und geschätzt 2,5 Millionen Briefe aus der Stadt.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Die Bilanz",
+        "items": [
+          {
+            "year": "102",
+            "title": "Passagiere",
+            "sub": "per Ballon hinaus",
+            "at": "w:102"
+          },
+          {
+            "year": "400",
+            "title": "Brieftauben",
+            "sub": "für die Rückpost",
+            "at": "w:400"
+          },
+          {
+            "year": "2,5 M",
+            "title": "Briefe",
+            "sub": "geschätzt",
+            "at": "w:2,5"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Originale Ballonbriefe liegen heute in Museen, etwa im Science Museum in London: gefaltet auf sechs mal zwölf Zentimeter. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Par Ballon Monté",
+        "card_meta": "PARIS · 1870–71",
+        "card_no": "AKTE 27",
+        "stamp": "Ballon",
+        "drawing": "balloon_post.svg",
+        "statement": "Post durch die Luft, erhalten bis heute",
+        "statement_at": "w:Ballonbriefe",
+        "stamp_at": "w:Museen",
+        "note": "Science Museum, Objekt 1952-393",
+        "note_at": "w:London",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Brief",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Weg: versperrt",
+          "tone": "muted",
+          "offset": 2.2
+        },
+        {
+          "beat": "b2",
+          "text": "Start: 23.9.1870",
+          "tone": "amber",
+          "offset": 6.1
+        },
+        {
+          "beat": "b3",
+          "text": "Vermerk: Ballon Monté",
+          "tone": "amber",
+          "offset": 7.1
+        },
+        {
+          "beat": "b4",
+          "text": "Rückweg: Taube",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b5",
+          "text": "Format: Mikrofilm",
+          "tone": "muted",
+          "offset": 3.7
+        },
+        {
+          "beat": "b6",
+          "text": "Briefe: ≈ 2,5 Mio.",
+          "tone": "muted",
+          "offset": 5.6
+        },
+        {
+          "beat": "b7",
+          "text": "Ort: Science Museum",
+          "tone": "muted",
+          "offset": 4.2
+        }
+      ]
+    },
+    "description": "Paris 1870: Briefe per Ballon hinaus, Antworten per Brieftaube zurück, ab Dezember auf Mikrofilm. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "luftpost",
+      "paris",
+      "brieftaube",
+      "geschichte",
+      "mikrofilm"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

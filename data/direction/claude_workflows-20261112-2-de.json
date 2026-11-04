@@ -1,0 +1,511 @@
+{
+  "video_id": "claude_workflows-20261112-2-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "/compact oder /clear?",
+  "notes": "Produktion Woche 1 (Plan-Agent B, 01.11.2026): Thema 12.11. Thema 2 (V5), Reihe Entweder-oder. Leitobjekt: der Kontext (Statusleiste „Kontext“). /compact fasst zusammen und arbeitet am selben Gespräch weiter, /clear beginnt ein neues Gespräch mit leerem Kontext, Projekt-Erinnerung bleibt. /resume holt das alte Gespräch zurück (Befehlsreferenz).",
+  "hook": {
+    "id": "H1",
+    "note": "Entscheidungsfrage im Moment, in dem man sie trifft: Befehlsliste nach „/c“."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Dein Gespräch ist lang geworden. Tippst du jetzt slash compact oder slash clear?",
+      "on_screen": "/compact oder /clear?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Befehlsliste, Marker auf beiden Befehlen, Frage",
+      "why": {
+        "truth": "beide Befehle laut Referenz",
+        "visual": "Entscheidung im Bild"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Slash clear und slash compact machen beide Platz, also egal welcher? Nein.",
+      "on_screen": "Egal welcher? Nein.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "zwei Karten",
+      "why": {
+        "visual": "wenig Handlung"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Nach slash clear ist dein Gespräch leer, deine Projekt-Erinnerung aber nicht.",
+      "on_screen": "Leer, aber nicht vergessen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Karte /clear",
+      "why": {
+        "relevance": "nur eine Seite"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Alter Verlauf verdrängt Dateien, die du brauchst, und kostet bei jeder Nachricht Tokens.",
+      "on_screen": "Alter Verlauf kostet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Verlauf wächst",
+      "why": {
+        "curiosity": "keine Entscheidungsfrage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, was slash compact mit deinem Gespräch macht und was slash clear.",
+      "on_screen": "Was passiert jeweils?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Ablaufschiene",
+      "why": {
+        "curiosity": "schwächerer Einstieg"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Commands (Claude Code Docs): /compact frees up context by summarizing; /clear starts a new conversation with empty context, use /compact to continue the same conversation; /resume; Between sessions: /clear keeps project memory",
+      "url": "https://code.claude.com/docs/en/commands",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Befehle"
+    },
+    {
+      "id": "S2",
+      "title": "Explore the context window (Claude Code Docs): /compact replaces the conversation with a structured summary, most startup content reloads; Clear between tasks: old conversation crowds out files and costs tokens; Compact with a focus",
+      "url": "https://code.claude.com/docs/en/context-window",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Kontextfenster"
+    }
+  ],
+  "unverified": [
+    "Ab welcher Gesprächslänge sich /compact lohnt: in den Quellen nicht beziffert; keine Zahl im Video.",
+    "Wie /compact und /clear im Terminal angezeigt werden: nicht geprüft; das Abschlussfenster ist eine animierte Darstellung.",
+    "Die Grenze zwischen „lange neue Aufgabe“ (/compact mit Fokus) und „ganz andere Arbeit“ (/clear) zieht die Doku nicht genauer; das Video gibt beide Empfehlungen wörtlich sinngemäß wieder."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Kontext",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Kontext: fast voll",
+          "tone": "amber"
+        },
+        {
+          "beat": "b2",
+          "text": "Wahl: offen",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "/compact: zusammenfassen",
+          "tone": "accent"
+        },
+        {
+          "beat": "b4",
+          "text": "/clear: neue Aufgabe",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "weiter oder neu",
+          "tone": "muted"
+        },
+        {
+          "beat": "b6",
+          "text": "Faustregel: bereit",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "Kontext: frei",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "/compact oder /clear? /compact fasst das bisherige Gespräch zusammen und du arbeitest an derselben Aufgabe weiter. /clear beginnt ein neues Gespräch mit leerem Kontext, die Projekt-Erinnerung bleibt. Mit /resume holst du ein früheres Gespräch zurück.",
+    "companion_text": "Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt. Grundlage: Befehlsreferenz und „Explore the context window“ der Claude-Code-Dokumentation. Hinweis: Nach /compact bleiben nicht alle Details eines langen Gesprächs erhalten; mit /compact und einem Fokus bestimmst du, was die Zusammenfassung behält. Die Fenster sind eine animierte Darstellung, keine Bildschirmaufnahme.",
+    "hashtags": [
+      "claudecode",
+      "kontextfenster",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "compact oder clear"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Dein Gespräch ist lang geworden. Tippst du jetzt slash compact oder slash clear?",
+      "data": {
+        "question": "/compact oder /clear?",
+        "chip": "was bleibt?",
+        "tabs": [
+          {
+            "name": "claude",
+            "active": true
+          },
+          "Kontext"
+        ],
+        "file": "Kontext",
+        "lines": [
+          [
+            [
+              "acc",
+              "> "
+            ],
+            [
+              "",
+              "/c"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "kw",
+              "/compact"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "kw",
+              "/clear"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "",
+              "/context"
+            ]
+          ]
+        ],
+        "focus_line": 1,
+        "zoom": 1.1,
+        "env_word": "Gespräch",
+        "question_word": "Tippst",
+        "mark_word": "compact",
+        "click_word": "clear",
+        "chip_word": "jetzt"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:clear"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Befehlsreferenz trennt das klar: Slash compact schafft Platz, indem es das bisherige Gespräch zusammenfasst. Slash clear beginnt ein neues Gespräch mit leerem Kontext.",
+      "data": {
+        "kicker": "Claude Code Docs · Commands",
+        "page_title": "Commands",
+        "quotes": [
+          "Free up context by summarizing the conversation so far.",
+          "Start a new conversation with empty context."
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Zusammenfassen oder leer neu beginnen",
+        "page_word": "Befehlsreferenz",
+        "quote1_word": "Platz",
+        "quote2_word": "beginnt",
+        "translation_word": "leerem"
+      },
+      "overlay": {
+        "title": "Zwei Befehle, zwei Wege",
+        "marker_at": "w:Platz",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "spoken": "Bei slash compact ersetzt eine strukturierte Zusammenfassung den Verlauf. Das meiste vom Sitzungsstart, etwa die CLAUDE.md, lädt automatisch neu. Du bleibst im selben Gespräch und machst einfach weiter.",
+      "data": {
+        "headline": "",
+        "gate": 1,
+        "chip": "ersetzt den Verlauf",
+        "nodes": [
+          {
+            "label": "langes Gespräch"
+          },
+          {
+            "label": "/compact",
+            "hook": true
+          },
+          {
+            "label": "Zusammenfassung"
+          },
+          {
+            "label": "CLAUDE.md lädt neu"
+          },
+          {
+            "label": "gleiches Gespräch"
+          }
+        ],
+        "gate_word": "ersetzt",
+        "travel_word": "strukturierte",
+        "travel_end_word": "bleibst"
+      },
+      "overlay": {
+        "title": "So wirkt /compact",
+        "marker_at": "w:ersetzt",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Und slash clear? Die Doku rät dazu, wenn du zu ganz anderer Arbeit wechselst. Denn alter Verlauf verdrängt die Dateien, die du als Nächstes brauchst, und kostet bei jeder Nachricht Tokens.",
+      "data": {
+        "kicker": "Claude Code Docs · Context",
+        "page_title": "Explore the context window",
+        "quotes": [
+          "run /clear when switching to unrelated work",
+          "Old conversation crowds out the files you need next"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Alter Verlauf verdrängt, was du brauchst",
+        "page_word": "Doku",
+        "quote1_word": "wechselst",
+        "quote2_word": "alter",
+        "translation_word": "Tokens"
+      },
+      "overlay": {
+        "title": "/clear: neu anfangen",
+        "marker_at": "w:wechselst",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Kurz gesagt: Compact fasst zusammen und macht weiter. Clear fängt ganz neu an, deine Projekt-Erinnerung bleibt aber erhalten.",
+      "data": {
+        "top": {
+          "title": "/compact",
+          "verdict": "weiter",
+          "rows": [
+            "fasst Verlauf zusammen",
+            "gleiches Gespräch"
+          ]
+        },
+        "bottom": {
+          "title": "/clear",
+          "verdict": "neu",
+          "rows": [
+            "leerer Kontext",
+            "Projekt-Erinnerung bleibt"
+          ]
+        },
+        "top_word": "Compact",
+        "bottom_word": "Clear"
+      },
+      "overlay": {
+        "title": "Weiter oder neu",
+        "marker": "auslegung",
+        "marker_at": "w:Kurz",
+        "dim_at": "w:Projekt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Faustregel: Gleiche Aufgabe, aber zu lang: slash compact. Vor einer langen neuen Aufgabe: slash compact mit Fokus. Ganz andere Arbeit: slash clear. Und das alte Gespräch holst du bei Bedarf mit slash resume zurück.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Gleiche Aufgabe, zu lang",
+            "code": "/compact",
+            "at_word": "Gleiche"
+          },
+          {
+            "title": "Lange neue Aufgabe",
+            "code": "/compact focus on …",
+            "at_word": "Vor"
+          },
+          {
+            "title": "Ganz andere Arbeit",
+            "code": "/clear",
+            "at_word": "andere"
+          },
+          {
+            "title": "Altes Gespräch zurück",
+            "code": "/resume",
+            "at_word": "resume"
+          }
+        ]
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Faustregel",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "title": "Die Faustregel"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Weitermachen heißt compact, ganz neu anfangen heißt clear. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "Kontext: frei",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "/compact"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Verlauf zusammengefasst"
+          }
+        ],
+        "statement": "Weiter: /compact. Neu anfangen: /clear.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Weitermachen",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,575 @@
+{
+ "video_id": "menswear-20261115-2-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Trouser break: none, half or full",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema D04 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S4; keine Stufe als allgemein richtig, die Häuser nennen verschiedene Ideale (Marker 'unsicher' in b2).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Trousers, hem",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "break: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "houses disagree",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "steps: none, half",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "full or none",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "loafer: different",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "a matter of style",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "break fits the leg",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Trouser break: none, half or full? Proper Cloth describes the steps, Moss ties them to the cut, Hackett calls the half break ideal, Suitsupply calls one break classic and no break modern. A matter of style.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "suittrousers",
+   "trouserbreak",
+   "styletips",
+   "suit"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://propercloth.com/reference/what-is-pant-break/",
+   "title": "Proper Cloth, What is pant break: kein Bruch = Saum berührt den Schuh; halber Bruch = etwas Stoff staut sich, keine Socke sichtbar; voller Bruch = deutliche Falte, weitere Fußweite, am traditionellsten; gilt für Schnürschuhe, beim Loafer anders",
+   "checked_at": "2026-11-01",
+   "label": "Proper Cloth"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.moss.co.uk/inside-pocket/post/the-suit-fit-guide",
+   "title": "Moss, The Suit Fit Guide: Slim ohne Bruch, Tailored weicher Bruch (höchstens eine Falte), Regular und Relaxed ausgeprägter Bruch",
+   "checked_at": "2026-11-01",
+   "label": "Moss, Fit Guide"
+  },
+  {
+   "id": "S3",
+   "url": "https://suitsupply.com/en-de/journal/how-it-should-fit.html",
+   "title": "Suitsupply, How it should fit: klassisch ein Bruch, modern ohne Bruch bis zur Schuhoberkante",
+   "checked_at": "2026-11-01",
+   "label": "Suitsupply"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.hackett.com/intl/en/men/b/trousers/suit-trousers/",
+   "title": "Hackett, Suit Trousers: halber Bruch als idealer Saumabschluss, Saum liegt leicht auf dem Schuh, eine saubere Falte",
+   "checked_at": "2026-11-01",
+   "label": "Hackett"
+  }
+ ],
+ "unverified": [
+  "Ideale der Häuser widersprechen sich (Hackett halber Bruch, Suitsupply klassisch ein Bruch / modern ohne); im Video als offen markiert.",
+  "Loafer: Zeichnung zeigt nur Schnürschuhe."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "None, half or full: which break?",
+   "on_screen": "None, half or full: which break?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Trouser leg with shoe, loupe on the fold at the hem",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "There is no single right trouser break",
+   "on_screen": "There is no single right trouser break",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "visual": "Trouser leg with shoe, loupe on the fold at the hem",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "On a loafer the same break looks different",
+   "on_screen": "On a loafer the same break looks different",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "visual": "Trouser leg with shoe, loupe on the fold at the hem",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Does a half break show your socks? No.",
+   "on_screen": "Does a half break show your socks? No.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "visual": "Trouser leg with shoe, loupe on the fold at the hem",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Three trouser breaks side by side",
+   "on_screen": "Three trouser breaks side by side",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Trouser leg with shoe, loupe on the fold at the hem",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage nach der richtigen Stufe; die Antwort ist: Stilfrage, an den Schnitt gekoppelt."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Down at the shoe, the trouser makes a small fold. Or none at all. Or a deep one. Which of them is right?",
+   "data": {
+    "question": "None, half or full: which break?",
+    "object": {
+     "kind": "legs",
+     "break": "slight",
+     "shoe": "oxford"
+    },
+    "target": "break",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:fold",
+    "loupe_at": "w:fold",
+    "nie_at": "w:right",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "The houses do not agree. Hackett calls the half break the ideal finish, with one clean fold. Suitsupply says a single break is classic, while the modern look ends with no break at the top of the shoe.",
+   "data": {
+    "headline": "Who is right?",
+    "left": {
+     "title": "Hackett says",
+     "object": {
+      "kind": "legs",
+      "break": "slight",
+      "shoe": "oxford"
+     },
+     "target": "break",
+     "tag": "half break: ideal",
+     "pulses": [
+      {
+       "target": "break",
+       "at": "w:fold",
+       "tone": "amber"
+      }
+     ]
+    },
+    "right": {
+     "title": "Suitsupply says",
+     "object": {
+      "kind": "legs",
+      "break": "none",
+      "shoe": "oxford"
+     },
+     "target": "hem",
+     "tag": "modern: no break",
+     "tag2": "classic: one break",
+     "tag2_at": "w:classic",
+     "pulses": [
+      {
+       "target": "hem",
+       "at": "w:top",
+       "tone": "amber"
+      }
+     ]
+    },
+    "left_at": "w:Hackett",
+    "left_tag_at": "w:ideal",
+    "right_at": "w:Suitsupply",
+    "right_tag_at": "w:modern",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S4",
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "unsicher",
+    "marker_at": "w:agree"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 11,
+   "spoken": "Proper Cloth describes the steps more precisely. With no break, the hem just touches the top of the shoe. With a half break, no sock shows, and a little fabric gathers on the shoe.",
+   "data": {
+    "headline": "The steps",
+    "stages": [
+     {
+      "object": {
+       "kind": "legs",
+       "break": "none",
+       "shoe": "oxford"
+      },
+      "at": 0.0,
+      "title": "No break",
+      "tags": [
+       {
+        "spot": "hem",
+        "text": "touches the shoe",
+        "sub": "the hem",
+        "tone": "always",
+        "at": "w:touches"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "legs",
+       "break": "slight",
+       "shoe": "oxford"
+      },
+      "at": "w:half",
+      "title": "Half break",
+      "tags": [
+       {
+        "spot": "break",
+        "text": "fabric gathers",
+        "sub": "a little, one fold",
+        "tone": "always",
+        "at": "w:gathers"
+       },
+       {
+        "spot": "sock",
+        "text": "no sock shows",
+        "sub": "stays covered",
+        "tone": "always",
+        "at": "w:sock"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "A full break makes a distinct fold and comes with a wider leg. Proper Cloth calls it the most traditional. Moss gives it to its Regular and Relaxed fits. The narrow Slim trouser ends with no break.",
+   "data": {
+    "headline": "Full or none",
+    "left": {
+     "title": "Full break",
+     "object": {
+      "kind": "legs",
+      "break": "full",
+      "shoe": "oxford"
+     },
+     "target": "break",
+     "tag": "distinct fold, wide leg",
+     "pulses": [
+      {
+       "target": "break",
+       "at": "w:distinct"
+      }
+     ]
+    },
+    "right": {
+     "title": "Slim",
+     "object": {
+      "kind": "legs",
+      "break": "none",
+      "shoe": "oxford"
+     },
+     "target": "hem",
+     "tag": "no break, says Moss",
+     "pulses": [
+      {
+       "target": "hem",
+       "at": "w:no"
+      }
+     ]
+    },
+    "left_at": "w:full",
+    "left_tag_at": "w:wider",
+    "right_at": "w:Slim",
+    "right_tag_at": "w:ends",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "Moss gives the Tailored fit a soft break, one fold at most. Proper Cloth notes that these steps apply to lace-up shoes. On a loafer the back sits lower, so the same break looks different.",
+   "data": {
+    "headline": "Two more notes",
+    "stages": [
+     {
+      "object": {
+       "kind": "legs",
+       "break": "slight",
+       "shoe": "oxford"
+      },
+      "at": 0.0,
+      "title": "At the shoe",
+      "tags": [
+       {
+        "spot": "break",
+        "text": "soft break",
+        "sub": "Tailored, per Moss",
+        "tone": "always",
+        "at": "w:soft"
+       },
+       {
+        "spot": "lacing",
+        "text": "lace-ups only",
+        "sub": "loafers look different",
+        "tone": "sometimes",
+        "at": "w:lace"
+       }
+      ]
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Moss"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "In short: no break suits a narrow trouser, a full break a wide one, and the half break sits in between. The choice is a matter of style, and the houses name different ideals.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "No break",
+      "sub": "the hem touches the shoe",
+      "object": {
+       "kind": "legs",
+       "break": "none",
+       "shoe": "oxford"
+      },
+      "at": "w:no",
+      "ring": "hem",
+      "ring_at": "w:narrow"
+     },
+     {
+      "title": "Full break",
+      "sub": "distinct fold, wide trouser",
+      "object": {
+       "kind": "legs",
+       "break": "full",
+       "shoe": "oxford"
+      },
+      "at": "w:full",
+      "ring": "break",
+      "ring_at": "w:wide"
+     },
+     {
+      "title": "Half break",
+      "sub": "one fold, no sock showing",
+      "object": {
+       "kind": "legs",
+       "break": "slight",
+       "shoe": "oxford"
+      },
+      "at": "w:half",
+      "ring": "break",
+      "ring_at": "w:between"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "None, half or full: the break follows the leg. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "legs",
+     "break": "full",
+     "shoe": "oxford"
+    },
+    "to": {
+     "kind": "legs",
+     "break": "slight",
+     "shoe": "oxford"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "break",
+    "fix_at": "w:break",
+    "ring_at": "w:leg",
+    "statement_at": "w:leg",
+    "chip_at": "w:eye",
+    "statement": "Break follows the leg.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

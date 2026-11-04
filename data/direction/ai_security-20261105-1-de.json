@@ -1,0 +1,72 @@
+{
+  "video_id": "ai_security-20261105-1-de",
+  "brand_id": "ai_security",
+  "language": "de",
+  "title": "Darfst du Firmendaten in Claude eingeben?",
+  "notes": "Neuer Szenenplan nach der Reel-Analyse vom 30.10.2026. Volle Fassung (70-80 s) braucht eine neue Vertonung (Gemini Flash TTS, ca. 0,02 USD) - erst nach Stefans Freigabe. Alle Aussagen am 30.10.2026 gegen die Quellen unten geprüft.",
+  "layout": {"zone_top": 290, "zone_h": 910, "caption_bottom_px": 500},
+  "assets": {
+    "background": {"cinematic_hook": "bg_hook_dataroom.mp4", "data_flow": "bg_flow_lanes.mp4", "ui_demo": "bg_ui_desk.mp4", "comparison": "bg_compare_split.mp4", "key_takeaway": "bg_takeaway_calm.mp4"},
+    "hero": {"b1": "hero_document_to_chat.mp4"},
+    "transition": "transition_cyan_sweep.mp4",
+    "scrim": 0.55,
+    "note": "Fassung B only (render_direction.py --assets). File names from '2026-10-30 Higgsfield Asset-Paket (Prompt-Blatt).md'; until the files exist in brands/ai_security/assets/higgsfield/ the director draws placeholders and the report sets asset_placeholders (review)."
+  },
+  "sources": [
+    {"id": "S1", "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training", "title": "Is my data used for model training? (consumer, Anthropic Privacy Center, updated 2026-03-16)", "checked_at": "2026-10-30"},
+    {"id": "S2", "url": "https://privacy.claude.com/en/articles/7996875-can-you-delete-data-that-i-sent-via-api", "title": "Can you delete data that I sent via API? (updated 2026-03-16)", "checked_at": "2026-10-30"},
+    {"id": "S3", "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.html", "title": "Generative KI-Modelle - Chancen und Risiken (BSI, 21.01.2025)", "checked_at": "2026-10-30"},
+    {"id": "S4", "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings", "title": "How do I change my model improvement privacy settings? (updated 2026-08-03)", "checked_at": "2026-10-30"},
+    {"id": "S5", "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data", "title": "How long do you store my data? (consumer, updated 2026-07-01)", "checked_at": "2026-10-30"},
+    {"id": "S6", "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training", "title": "Is my data used for model training? (commercial customers, updated 2026-08-18)", "checked_at": "2026-10-30"},
+    {"id": "S7", "url": "https://www.anthropic.com/legal/commercial-terms", "title": "Anthropic Commercial Terms of Service (effective 2025-06-17)", "checked_at": "2026-10-30"},
+    {"id": "S8", "url": "https://privacy.claude.com/en/articles/9265372-who-owns-and-manages-the-data-of-my-team", "title": "Who owns and manages the data of my team? (updated 2026-03-16)", "checked_at": "2026-10-30"},
+    {"id": "S9", "url": "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data", "title": "How long do you store my organization's data? (updated 2026-07-01)", "checked_at": "2026-10-30"}
+  ],
+  "unverified": [
+    "Standardzustand des Schalters 'Help Improve our AI models' bei neuen Konten (offiziell nicht angegeben; Drittquellen widersprechen sich) - wird im Video nicht behauptet.",
+    "Team/Enterprise: angebliches Opt-in über ein 'Development Partner Program' (nur inoffizielle Quelle) - nicht verwendet; verwendet wird nur die offizielle Aussage 'by default, we will not use your inputs or outputs from our commercial products' [S6] und die Commercial Terms [S7].",
+    "Serverstandort / EU-Hosting - nicht geprüft, nicht verwendet.",
+    "Wortlaut der Consumer Terms zur Verantwortung für Eingaben - nicht geprüft; die Verantwortung wird nur für Firmenzugänge aus den Commercial Terms [S7] abgeleitet."
+  ],
+  "hook_candidates": [
+    {"id": "H1", "type": "question", "spoken": "Darfst du vertrauliche Firmendaten einfach in Claude eingeben?", "on_screen": "Firmendaten in Claude eingeben: erlaubt?", "scores": {"clarity": 5, "relevance": 5, "curiosity": 4, "truth": 5, "visual": 5}, "source_ids": ["S1", "S6"], "visual": "Dokument 'Kundenliste.xlsx' fliegt in ein Chatfenster, Warnmarke beim Fragezeichen", "why": {"truth": "Frage; die Antwort 'kommt auf Konto und Vertrag an' ist belegt", "curiosity": "öffnet die Wissenslücke, aber viele erwarten ein Nein"}},
+    {"id": "H2", "type": "misconception", "spoken": "Training aus, Datenschutz erledigt? Das ist der Denkfehler.", "on_screen": "Training aus = Datenschutz erledigt?", "scores": {"clarity": 4, "relevance": 5, "curiosity": 5, "truth": 4, "visual": 4}, "source_ids": ["S4", "S7"], "visual": "Schalter kippt auf aus, dann großer NEIN-Stempel", "why": {"truth": "belegt: bereits trainierte Daten bleiben [S4], Rechte an Eingaben sind Vertragssache [S7]", "clarity": "braucht einen Halbsatz Kontext"}},
+    {"id": "H3", "type": "surprising_fact", "spoken": "Mit Training an bleiben deine Chats bis zu fünf Jahre in Anthropics Trainings-Pipeline.", "on_screen": "Bis zu 5 Jahre im Training", "scores": {"clarity": 3, "relevance": 4, "curiosity": 5, "truth": 4, "visual": 4}, "source_ids": ["S5"], "visual": "Kalender blättert fünf Jahre, Chatblase bleibt liegen", "why": {"truth": "belegt mit Einschränkung 'de-identifiziert' [S5]; ohne die Einschränkung wäre es irreführend", "clarity": "die Einschränkung macht den Satz lang"}},
+    {"id": "H4", "type": "demonstration", "spoken": "Dieser eine Schalter entscheidet, ob Claude aus deinem Chat lernt.", "on_screen": "Dieser Schalter entscheidet", "scores": {"clarity": 5, "relevance": 5, "curiosity": 3, "truth": 4, "visual": 5}, "source_ids": ["S1", "S4"], "visual": "Zoom auf den Schalter 'Help Improve our AI models'", "why": {"truth": "gilt für private Konten; Ausnahme Sicherheitsprüfung [S1] muss im Video folgen", "curiosity": "zeigt die Antwort sofort, wenig Spannung"}},
+    {"id": "H5", "type": "concrete_risk", "spoken": "Dein Mitarbeiter tippt die Kundenliste in einen KI-Chat. Wo landet sie?", "on_screen": "Wo landet die Kundenliste?", "scores": {"clarity": 5, "relevance": 5, "curiosity": 4, "truth": 5, "visual": 5}, "source_ids": ["S1", "S6"], "visual": "Dokument fliegt in den Chat, Frage erscheint, Warnmarke", "why": {"truth": "Szene aus dem Alltag, keine Behauptung", "note": "Hook des Bezugsvideos; Gemini-Stimme liegt bereits vor (Prototyp ohne neue TTS-Kosten)"}}
+  ],
+  "hook": {"id": "H1", "note": "H1 und H5 liegen gleichauf. Prototyp nutzt H5, weil die Stimme vorliegt; für die Vollfassung entscheidet Stefan zwischen H1 (Frage aus der Analyse) und H5 (Alltagsszene)."},
+  "beats": [
+    {"id": "b1", "function": "hook", "scene_type": "cinematic_hook", "duration_hint": 5,
+     "spoken": "Darfst du vertrauliche Firmendaten einfach in Claude eingeben?",
+     "data": {"question": "Firmendaten in Claude eingeben: erlaubt?", "doc_label": "Kundenliste.xlsx", "chat_title": "Claude", "badge": "Wo landet das?", "typed": "Kundenliste.xlsx", "fly_at": 0.6, "question_at": 3.2},
+     "source_ids": []},
+    {"id": "b2", "function": "problem", "scene_type": "data_flow", "duration_hint": 9,
+     "spoken": "Die Antwort hängt nicht nur von einer Einstellung ab. Sie hängt davon ab, welches Konto du nutzt und was im Vertrag steht.",
+     "data": {"headline": "Nicht eine Einstellung entscheidet", "nodes": [{"id": "n0", "label": "Mitarbeiter", "icon": "&#9823;"}, {"id": "n1", "label": "KI-Dienst", "icon": "&#9881;"}, {"id": "n2", "label": "Verarbeitung der Daten", "icon": "&#9783;"}], "edges": [{"label": "Eingabe"}, {"label": "Konto + Vertrag"}], "packet_at": 1.2, "highlight": {"node": 1, "at": 5.2, "label": "Kontotyp? Vertrag?"}},
+     "source_ids": ["S1", "S6"]},
+    {"id": "b3", "function": "explanation", "scene_type": "comparison", "duration_hint": 16,
+     "spoken": "Bei privaten Konten, also Free, Pro und Max, dürfen Chats zum Verbessern der Modelle genutzt werden, wenn du das erlaubst, oder wenn ein Chat zur Sicherheitsprüfung markiert wird. Bei Firmenzugängen wie Claude for Work oder der API werden Eingaben standardmäßig nicht zum Training genutzt.",
+     "data": {"headline": "Zwei Kontotypen, zwei Regeln", "mode": "versus", "left_at": 0.4, "right_at": 6.5,
+              "left": {"title": "Privatkonto (Free, Pro, Max)", "rows": [{"text": "Training, wenn du es erlaubst", "ok": null}, {"text": "Sicherheitsprüfung: Nutzung möglich", "ok": false}, {"text": "Training an: bis zu 5 Jahre de-identifiziert", "ok": false}]},
+              "right": {"title": "Firmenzugang (Work, API)", "rows": [{"text": "Standard: kein Training", "ok": true}, {"text": "Eingaben bleiben dein Eigentum", "ok": true}, {"text": "API: kein Löschen auf Zuruf", "ok": false}]}},
+     "source_ids": ["S1", "S5", "S6", "S7", "S2"]},
+    {"id": "b4", "function": "demonstration", "scene_type": "ui_demo", "duration_hint": 12,
+     "spoken": "Für dein privates Konto prüfst du das hier: Einstellungen, Datenschutz, und der Schalter Help Improve our AI models. Aus heißt: neue Chats werden nicht mehr fürs Training verwendet.",
+     "data": {"headline": "So prüfst du es in 10 Sekunden", "url": "claude.ai/settings/data-privacy-controls", "title": "Settings > Privacy", "rows": [{"label": "Help Improve our AI models", "state": "on"}, {"label": "Weitere Optionen", "state": "off"}], "focus_row": 0, "cursor_at": 1.5, "zoom_at": 3.0, "flip_at": 6.5, "zoom": 1.5, "image": null, "note": "Schematische Darstellung"},
+     "source_ids": ["S4"]},
+    {"id": "b5", "function": "insight", "scene_type": "comparison", "duration_hint": 13,
+     "spoken": "Aber Vorsicht vor dem Denkfehler: Training aus heißt nicht Datenschutz erledigt. Was schon in einem Trainingslauf steckt, bleibt drin. Und ob du die Daten überhaupt eingeben darfst, regelt kein Schalter, sondern dein Vertrag und das Datenschutzrecht.",
+     "data": {"headline": "Der Denkfehler", "mode": "negate", "negate": {"statement": "Training aus = Datenschutz erledigt", "stamp": "NEIN", "stamp_at": 2.2, "subline": "Was im Training ist, bleibt. Der Vertrag regelt den Rest.", "subline_at": 5.5}},
+     "source_ids": ["S4", "S7", "S3"]},
+    {"id": "b6", "function": "benefit", "scene_type": "key_takeaway", "duration_hint": 12,
+     "spoken": "Prüfe drei Punkte, bevor du sensible Inhalte hochlädst: erstens den Vertrag und Kontotyp, zweitens die Einstellung im Konto, drittens ob diese Daten überhaupt hinein dürfen.",
+     "data": {"headline": "Drei-Punkte-Check", "items": [{"title": "Vertrag und Kontotyp", "sub": "Privatkonto oder Firmenzugang? Vertrag lesen.", "at": 2.4}, {"title": "Einstellung im Konto", "sub": "Settings > Privacy > Help Improve our AI models", "at": 5.4}, {"title": "Freigabe der Daten", "sub": "Dürfen diese Daten überhaupt hinein?", "at": 8.4}]},
+     "source_ids": []},
+    {"id": "b7", "function": "close", "scene_type": "key_takeaway", "duration_hint": 7,
+     "spoken": "Speichere dir die Checkliste für den nächsten KI-Einsatz im Betrieb. Mehr Schutz für kleine Betriebe: folgen.",
+     "data": {"mode": "closing", "statement": "Checkliste speichern. Beim nächsten KI-Einsatz: erst prüfen.", "chip": "Mehr Schutz für kleine Betriebe"},
+     "source_ids": []}
+  ]
+}

@@ -1,0 +1,560 @@
+{
+  "video_id": "megaconstruction-20261115-3-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Leaning Tower of Pisa: will it fall? A myth check",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Prüfstand. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261115-3-en.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.opapisa.it/attivita-per-850-anniversario-del-campanile-di-pisa/",
+      "title": "Opera della Primaziale Pisana: 850 Jahre Campanile (ca. 1.900 Bogensekunden; Überhang am 7. Gesims −460 mm; Zustand Anfang 19. Jh.; stabil, überwacht)",
+      "label": "Opera della Primaziale Pisana",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.jstage.jst.go.jp/article/sandf1995/43/5/43_5_63/_article",
+      "title": "Burland et al., Soils and Foundations 43(5), 2003: Bodenentnahme unter der Nordseite 1999–2001; Komitee ab 1990",
+      "label": "Soils and Foundations 2003",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.geocasehistoriesjournal.org/pub/article/download/IJGCH_1_3_2/86",
+      "title": "Int. Journal of Geoengineering Case Histories: Sperrung Anfang 1990 bis 12/2001; Neigung ca. −10 %",
+      "label": "IJGCH, Fallstudie",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.pbs.org/wgbh/nova/pisa/interventions2.html",
+      "title": "PBS NOVA: Bleigewichte 1993–94; Bodenentnahme ab Februar 1999",
+      "label": "PBS NOVA",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Aktuelle Neigung in Grad und '44 cm' (Ministerium): Seiten nicht erreichbar, nicht verwendet.",
+    "Keine Prognose zur Standzeit.",
+    "Turmhöhe, Geschosse und Neigung im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "The Leaning Tower of Pisa was not saved by propping it up. It was saved by removing soil.",
+      "on_screen": "Saved by taking soil away",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Leaning Tower of Pisa, really?",
+      "on_screen": "How big is the Leaning Tower of Pisa, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "the Leaning Tower of Pisa in numbers: sourced and calculated.",
+      "on_screen": "the Leaning Tower of Pisa in numbers",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Leaning Tower of Pisa depends on how it is built.",
+      "on_screen": "the Leaning Tower of Pisa: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Leaning Tower of Pisa take shape in the model.",
+      "on_screen": "the Leaning Tower of Pisa as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Is the Leaning Tower of Pisa about to fall over? You hear that a lot. Let's check what the cathedral works and the engineers say.",
+      "data": {
+        "kicker": "Check · Pisa",
+        "question": "Is the Leaning Tower about to fall?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Campanile of Pisa",
+          "at": "@check",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "The finding in 1990: at the start of 1990 the tower was closed to visitors, and an international committee took over. The task: reduce the lean without putting the tower at risk.",
+      "data": {
+        "headline": "The finding",
+        "load": {
+          "label": "Tower closed to visitors",
+          "value": "1990",
+          "unit": "",
+          "sub": "international committee takes over",
+          "at": "@1990",
+          "dy": 540
+        },
+        "goal": {
+          "key": "TASK",
+          "text": "Reduce the lean",
+          "at": "@committee",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "The solution is a surprise: they did not prop the tower up, they took soil away from under it. In 1993 and 1994, lead weights were first placed on the north side. From February 1999, soil was carefully extracted beneath the north side.",
+      "data": {
+        "headline": "The reason",
+        "note": "lean exaggerated",
+        "pins": [
+          {
+            "anchor": "north",
+            "text": "North side: soil out",
+            "at": "@February",
+            "side": "down"
+          }
+        ],
+        "rule": {
+          "text": "Don't prop it: take soil away.",
+          "at": "@soil",
+          "dy": 640
+        }
+      },
+      "source_ids": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_calc",
+      "spoken": "The check in numbers: according to the cathedral works, the lean fell by about 1,900 arc seconds. Divided by 3,600, that is a little over half a degree. At the seventh cornice, the overhang went back by 460 millimetres.",
+      "data": {
+        "headline": "The check",
+        "sheet_dy": 470,
+        "calcs": [
+          {
+            "label": "Arc seconds ÷ 3,600 = degrees",
+            "a": {
+              "value": 1900,
+              "unit": "″",
+              "show": "1,900″"
+            },
+            "op": "÷",
+            "b": {
+              "value": 3600,
+              "unit": ""
+            },
+            "unit": "°",
+            "round": 0.01,
+            "decimals": 2,
+            "prefix": "≈ ",
+            "expect": 0.53,
+            "at": "@1,900",
+            "result_at": "@half"
+          }
+        ],
+        "pins": [
+          {
+            "anchor": "cornice",
+            "text": "−460 mm",
+            "kind": "dim",
+            "at": "@460"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_proof",
+      "spoken": "Since December 2001 the tower has been open again. Its lean is now back to where it was at the start of the nineteenth century.",
+      "data": {
+        "headline": "The verdict",
+        "stamp": {
+          "date": "12/2001",
+          "event": "reopened",
+          "at": "@December",
+          "dy": 150
+        }
+      },
+      "source_ids": [
+        "S3",
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "The verdict: according to the cathedral works, the tower is stable and monitored. Follow Gigastruct for the next check.",
+      "data": {
+        "statement": "Verdict: stable and monitored",
+        "sheet": "SHEET 20",
+        "rows": [
+          [
+            "Work",
+            "1999 to 2001"
+          ],
+          [
+            "Method",
+            "soil out on the north side"
+          ],
+          [
+            "Result",
+            "about 1,900″ less lean"
+          ],
+          [
+            "Today",
+            "stable, monitored"
+          ]
+        ],
+        "cta": {
+          "text": "Follow Gigastruct",
+          "at": "@Follow"
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "CLAIM",
+        "FINDING",
+        "REASON",
+        "CHECK",
+        "VERDICT"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 4,
+        "b6": 5
+      }
+    },
+    "description": "Will the Leaning Tower of Pisa fall soon? From 1999 to 2001, soil was removed from beneath its north side, and the lean dropped by about 1,900 arc seconds. Today it is considered stable.",
+    "companion_text": "Calculated: 1,900″ ÷ 3,600 = 0.53°. Sources: Opera della Primaziale Pisana, Soils and Foundations (2003), IJGCH, PBS NOVA. Stylised 3D model, lean schematic. Follow Gigastruct.",
+    "hashtags": [
+      "pisa",
+      "leaningtower",
+      "myth",
+      "geotechnics",
+      "italy"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "1.900 Bogensekunden ÷ 3.600 = 0,53°",
+        "result": "rund ein halbes Grad aufgerichtet",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "prism",
+          "height": 56,
+          "width": 16,
+          "shape": "cyl",
+          "levels": 8,
+          "gap": 0.08,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "lean": 5
+          }
+        },
+        {
+          "id": "soil",
+          "kind": "box",
+          "size": [
+            30,
+            3,
+            10
+          ],
+          "color": "accent",
+          "pos": [
+            0,
+            -4,
+            10
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "north": [
+          0,
+          -2,
+          14
+        ],
+        "cornice": [
+          6,
+          49,
+          0
+        ],
+        "top": [
+          5,
+          56,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 80,
+            "az1": 90,
+            "el0": 6,
+            "el1": 8,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 88,
+            "az1": 92,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {}
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 80,
+            "az1": 95,
+            "el0": 10,
+            "el1": 6,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "soil.visible": 1,
+            "tower.lean": [
+              [
+                0,
+                5
+              ],
+              [
+                "%0.6",
+                5
+              ],
+              [
+                "%1",
+                4.4
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 60,
+            "az1": 50,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {
+            "tower.lean": 4.4
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 260,
+            "cy": 680
+          },
+          "props": {}
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 70,
+            "az1": 80,
+            "el0": 6,
+            "el1": 8,
+            "fit0": 0.6,
+            "fit1": 0.65,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,389 @@
+{
+ "video_id": "ai_security-20261115-1-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Copilot on a business plan: what happens to your prompts",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Vor dem Upload\". F1 EN (localised from the DE spec), series Before the upload. Example case staged: firm, person, file, times and sequence are invented; Microsoft 365 Copilot is named because the topic names it. Commitments (contract terms, encryption, no training of foundation models) and the permission model from S1 and S2, re-read 02.11.2026. The old plan ai_security-20261115-1-en.json stays unchanged.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "You want to put a customer quote into Copilot, on your business account. Will the AI learn from it? A staged case with three answers and what Microsoft itself documents, including about your sharing settings.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "copilot",
+   "microsoft365",
+   "aiatwork",
+   "privacy",
+   "beforetheupload"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+   "title": "Microsoft Learn: Enterprise data protection in Microsoft Copilot and Microsoft Copilot Chat",
+   "checked_at": "2026-11-02",
+   "label": "Microsoft, enterprise data protection"
+  },
+  {
+   "id": "S2",
+   "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+   "title": "Microsoft Learn: Data, Privacy, and Security for Microsoft Copilot",
+   "checked_at": "2026-11-02",
+   "label": "Microsoft, Copilot privacy"
+  }
+ ],
+ "unverified": [
+  "Rules for personal Microsoft accounts: not claimed.",
+  "Licences and prices: not named; according to S1 the specific controls depend on the subscription.",
+  "The sequence of the example case (Mia, the quote for Example Ltd, a costing in the owner's folder, a folder shared with everyone for years) is invented and marked as an example.",
+  "That removing names (option B) doesn't fix the sharing problem is Scutoria's interpretation of S2 (Copilot uses content the person has access to); marked as interpretation on screen.",
+  "Web search queries via Bing fall under different terms according to S1: not covered in this version."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "You type a customer quote into Copilot. Where does it actually end up?",
+   "on_screen": "A quote in Copilot. Where does it go?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Everything you tell Copilot trains the AI? Not on business plans, says Microsoft.",
+   "on_screen": "Copilot learns from you?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Copilot only shows you company data you're already allowed to see.",
+   "on_screen": "Only what you're allowed to see",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One folder shared too widely, and Copilot quotes from it.",
+   "on_screen": "Shared too widely?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Friday, 10:20 a.m. Mia wants to put a customer quote into Copilot.",
+   "on_screen": "FRI 10:20 · A customer quote into Copilot?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "clock, the Copilot window arrives as a paper card, the line 'compare it with similar ones' is marked",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Friday, 10:20 a.m. Mia from the office wants to use Copilot: Summarise the quote for Example Ltd and compare it with similar quotes. She hesitates: is that safe?",
+   "data": {
+    "kicker": "Example case · staged",
+    "time": "FRI 10:20",
+    "place": "Office of a design practice",
+    "mail_at": "@Copilot",
+    "mail": {
+     "from": "Copilot Chat · work account",
+     "addr": "Prompt from Mia (office)",
+     "time": "10:20",
+     "subject": "Compare quote",
+     "lines": [
+      "Summarise this quote:",
+      "Quote_Example_Ltd.docx",
+      "and compare it with similar ones."
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "your files",
+     "at": "@similar"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "You check. Account: your work account. Training: Microsoft says prompts aren't used to train foundation models. Storage: encrypted and kept separate from other customers. All sorted. Just one thing is missing: Copilot also uses documents the person has access to.",
+   "data": {
+    "kicker": "What you check",
+    "headline": "Where does the prompt go?",
+    "rows": [
+     {
+      "label": "Account",
+      "value": "work account",
+      "verdict": "looks fine",
+      "at": "@Account"
+     },
+     {
+      "label": "Training",
+      "value": "not per Microsoft",
+      "verdict": "looks fine",
+      "at": "@Training"
+     },
+     {
+      "label": "Storage",
+      "value": "encrypted, separated",
+      "verdict": "looks fine",
+      "at": "@Storage"
+     }
+    ],
+    "finding": {
+     "text": "All sorted.",
+     "at": "@sorted"
+    },
+    "fact": {
+     "kind": "fakt",
+     "text": "Copilot uses documents the person has access to.",
+     "source": "Microsoft Learn · Copilot privacy",
+     "at": "@missing"
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "What comes first? A: Better not, the AI will learn from it. B: Take out the customer names, then go. C: First check who can see which folders. Remember your choice.",
+   "data": {
+    "question": "What comes first?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Better not, the AI learns from it",
+      "at": "@Better"
+     },
+     {
+      "key": "B",
+      "text": "Remove customer names, then go",
+      "at": "@names"
+     },
+     {
+      "key": "C",
+      "text": "First check who sees which folders",
+      "at": "@check"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Remember"
+    },
+    "hint": "Remember your choice."
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "sc_timeline",
+   "spoken": "Let's play out B. Mia asks without names. Copilot searches your files for similar quotes. The answer also quotes a costing from the owner's folder. That folder has been shared with everyone for years.",
+   "data": {
+    "kicker": "Choice B, played out",
+    "tag": "Example",
+    "headline": "Names out, question in",
+    "items": [
+     {
+      "time": "FRI 10:21",
+      "text": "Question without names",
+      "at": "@without"
+     },
+     {
+      "time": "FRI 10:21",
+      "text": "Copilot searches your files",
+      "tone": "amber",
+      "at": "@searches"
+     },
+     {
+      "time": "FRI 10:22",
+      "text": "Answer quotes owner's costing",
+      "tone": "amber",
+      "at": "@costing"
+     },
+     {
+      "time": "For years",
+      "text": "Folder shared with everyone",
+      "tone": "red",
+      "at": "@everyone"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "Microsoft · access by permission",
+     "at": 1.0
+    }
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "The right answer is C. Microsoft advises setting permissions, for example in SharePoint, so only the right people have access. On A: Microsoft says prompts don't train foundation models. On B: Copilot still sees everything the person can see.",
+   "data": {
+    "mode": "rule",
+    "kicker": "The one step",
+    "card": {
+     "letter": "C",
+     "title": "Check sharing first",
+     "sub": "who can see which folders?",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Better not",
+      "note": "no training, per MS",
+      "at": "@says"
+     },
+     {
+      "text": "B: Just remove names",
+      "note": "sharing stays open",
+      "at": "@still"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "Microsoft · set permissions"
+     },
+     {
+      "kind": "fakt",
+      "label": "Microsoft · no training"
+     },
+     {
+      "kind": "auslegung",
+      "label": "B: Scutoria's reading"
+     }
+    ],
+    "sources_at": "@Microsoft"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Tidy up sharing first, then ask Copilot. What would you have picked? Tell me in the comments.",
+   "data": {
+    "kicker": "Series · Before the upload",
+    "rule": "Sharing first, then Copilot.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "What would you have picked?",
+     "at": "@What"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice."
+   },
+   "source_ids": []
+  }
+ ]
+}

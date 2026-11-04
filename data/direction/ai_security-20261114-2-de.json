@@ -1,0 +1,465 @@
+{
+ "video_id": "ai_security-20261114-2-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "NIS2: Ist mein Betrieb betroffen?",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema A04, Reihe Was gilt wirklich. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: NIS-2-Check. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "NIS-2-Check",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Betroffen: unklar",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Regel: mittel und groß",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Kriterien: Sektor, Größe",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Lieferkette: im Blick",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Prüfung: noch offen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Check: heute machen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Fragebogen ungeprüft: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "NIS2 gilt meist für mittlere und große Unternehmen in 18 Sektoren. Kleine Betriebe spüren es trotzdem, als Zulieferer. Was EU-Kommission und BSI sagen. Keine Rechtsberatung.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "nis2",
+   "itsicherheit",
+   "kmu",
+   "lieferkette",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_hook_dataroom.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: dataroom, lanes, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+   "title": "European Commission: NIS2 Directive – securing network and information systems",
+   "checked_at": "2026-11-01",
+   "label": "EU-Kommission, NIS2"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/BSI-Portal/NIS-2-Betroffenheitspruefung/nis-2-betroffenheitspruefung_node.html",
+   "title": "BSI: NIS-2-Betroffenheitsprüfung",
+   "checked_at": "2026-11-01",
+   "label": "BSI, NIS-2-Betroffenheitsprüfung"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/NIS-2-Infopakete/NIS-2-Lieferkette/NIS-2-Lieferkette_node.html",
+   "title": "BSI: Sichere Lieferkette (#nis2know)",
+   "checked_at": "2026-11-01",
+   "label": "BSI, Sichere Lieferkette"
+  }
+ ],
+ "unverified": [
+  "Genaue Schwellenwerte (Beschäftigte, Umsatz): nicht genannt, Prüfung über das BSI-Werkzeug.",
+  "Österreichische Umsetzung: nicht behandelt.",
+  "Keine Rechtsberatung im Einzelfall."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "NIS2 betrifft nur Konzerne? Und warum fragt dein Kunde dann danach?",
+   "on_screen": "Warum fragt dein Kunde nach NIS2?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "NIS2 gilt für alle Betriebe? In der Regel nicht.",
+   "on_screen": "NIS2 für alle?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "NIS2 deckt 18 kritische Sektoren in der EU ab.",
+   "on_screen": "18 Sektoren",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein einziger unsicherer Zulieferer kann laut BSI ganze IT-Systeme lahmlegen.",
+   "on_screen": "Ein Zulieferer legt alles lahm?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wie die Betroffenheitsprüfung des BSI abläuft.",
+   "on_screen": "So läuft der NIS-2-Check",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "NIS2 betrifft nur Konzerne? Und warum fragt dein Kunde dann danach?",
+   "data": {
+    "question": "Warum fragt dein Kunde nach NIS2?",
+    "doc_label": "Fragebogen",
+    "chat_title": "Mail vom Kunden",
+    "bot_line": "Bitte bis Freitag ausfüllen",
+    "typed": "Fragebogen Lieferkette",
+    "badge": "NIS2?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Die NIS-2-Richtlinie schafft einen einheitlichen Rahmen für Cybersicherheit in 18 kritischen Sektoren der EU. Laut EU-Kommission müssen in der Regel mittlere und große Einrichtungen dieser Sektoren Risiken managen und erhebliche Vorfälle melden.",
+   "data": {
+    "headline": "Wen NIS2 in der Regel trifft",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "18 kritische Sektoren",
+      "icon": "&#9776;"
+     },
+     {
+      "id": "n1",
+      "label": "Mittlere und große",
+      "icon": "&#9783;"
+     },
+     {
+      "id": "n2",
+      "label": "Risiken managen, melden",
+      "icon": "&#9998;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "darin"
+     },
+     {
+      "label": "Pflichten"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 1,
+     "at": 9.0,
+     "label": "Und kleine Betriebe?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "In Deutschland setzt das BSI-Gesetz NIS2 um. Ob ein Betrieb betroffen ist, hängt vom Sektor, von der Zahl der Beschäftigten, vom Umsatz und von der Bilanzsumme ab. Manche Dienste sind sogar unabhängig von der Größe erfasst.",
+   "data": {
+    "headline": "Wovon es abhängt",
+    "file_label": "NIS-2-Check",
+    "card": {
+     "title": "Laut BSI",
+     "rows": [
+      {
+       "text": "Sektor",
+       "ok": null
+      },
+      {
+       "text": "Beschäftigte, Umsatz, Bilanz",
+       "ok": null
+      },
+      {
+       "text": "manche Dienste: jede Größe",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "Und hier kommen kleine Betriebe ins Spiel. Betroffene Unternehmen müssen auch die Sicherheit ihrer Lieferkette berücksichtigen, auch gegenüber direkten Dienstleistern. Laut BSI kann ein einziger kompromittierter Zulieferer IT-Systeme lahmlegen.",
+   "data": {
+    "headline": "Direkt oder über die Lieferkette",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 8.0,
+    "left": {
+     "title": "Direkt betroffen",
+     "rows": [
+      {
+       "text": "meist mittel und groß",
+       "ok": null
+      },
+      {
+       "text": "eigene Pflichten",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "Als Zulieferer",
+     "rows": [
+      {
+       "text": "Kunde muss Lieferkette prüfen",
+       "ok": "open"
+      },
+      {
+       "text": "Fragen landen bei dir",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Für eine erste Einschätzung bietet das BSI eine Betroffenheitsprüfung mit Fragenkatalog an. Wichtig: Das Ergebnis ist keine verbindliche Auskunft, und das BSI prüft keine Einzelfälle rechtlich.",
+   "data": {
+    "headline": "Erste Einschätzung",
+    "file_label": "NIS-2-Check",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Wahrscheinlich betroffen",
+      "sub": "Pflichten klären",
+      "at": 0.6
+     },
+     {
+      "title": "Wahrscheinlich nicht",
+      "sub": "Lieferkette im Blick",
+      "at": 1.0
+     }
+    ],
+    "approval": "Ergebnis verbindlich? Nein",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Dein Schritt für heute: Mach die Betroffenheitsprüfung des BSI. Frag deine großen Kunden, was sie von Zulieferern erwarten. Und hol dir im Zweifel rechtlichen Rat, denn dieses Video ist keine Rechtsberatung.",
+   "data": {
+    "headline": "Drei Schritte zu NIS2",
+    "items": [
+     {
+      "title": "BSI-Prüfung machen",
+      "sub": "erste Einschätzung",
+      "at": 2.0
+     },
+     {
+      "title": "Große Kunden fragen",
+      "sub": "was erwarten sie?",
+      "at": 4.8
+     },
+     {
+      "title": "Im Zweifel beraten lassen",
+      "sub": "keine Rechtsberatung hier",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Klein heißt nicht unbeteiligt. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Klein, aber beteiligt",
+    "file_label": "NIS-2-Check",
+    "button": "Antworten senden",
+    "block_text": "Erst Betroffenheit prüfen",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

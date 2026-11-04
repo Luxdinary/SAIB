@@ -1,0 +1,548 @@
+{
+  "video_id": "military_history-20261109-3-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Die Dose ohne Öffner",
+  "notes": "Woche 1, Reihe Nachschub. Lebensmitteltechnik und Versorgung; kein Erfindungsjahr des Dosenöffners genannt (keine Quelle).",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://lindahall.org/bryan-donkin",
+      "title": "Scientist of the Day – Bryan Donkin, Linda Hall Library",
+      "label": "Linda Hall Library",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8021379/worlds-oldest-tin-empty-roast-veal-tin-1823",
+      "title": "'World's oldest tin', empty roast veal tin, 1823 (1965-239/5), Science Museum Group",
+      "label": "Science Museum Group",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Erfindungsjahr des Dosenöffners in keiner Quelle; im Video nur 'noch lange nicht'.",
+    "Gewicht 7 Pfund (voll?) gegenüber 0,62 kg leer; im Video nur das Leergewicht nicht genannt."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie konserviert man 1813 Essen für Armee und Marine, ohne Dosenöffner?",
+      "on_screen": "Konserven ohne Öffner?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Erst kam der Dosenöffner, dann die Dose? Es war umgekehrt.",
+      "on_screen": "Die Dose kam zuerst",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Schon 1813 gingen Dosen an Armee und Marine.",
+      "on_screen": "Konserven seit 1813",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne Hammer und Meißel blieb die Dose zu.",
+      "on_screen": "Hammer statt Öffner",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie eine Dose von 1823 aufgebaut ist.",
+      "on_screen": "Eine Dose von 1823",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie konserviert man 1813 Essen für Armee und Marine, ohne Dosenöffner?",
+      "data": {
+        "question": "Konserven für Armee und Marine, ohne Öffner?",
+        "question_em": "ohne Öffner",
+        "card_title": "Konservendose",
+        "card_meta": "ENGLAND · 1813",
+        "card_no": "AKTE 18",
+        "stamp": "1813",
+        "drawing": "tin_1823.svg",
+        "packet_label": "Dose",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:1813",
+        "packet_at": "w:Essen",
+        "em_at": "w:Dosenöffner"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Der Franzose Nicolas Appert verkauft als Erster Konserven, in Glasflaschen mit Korken. 1810 erhält der Engländer Peter Durand ein Patent auf verzinnte Eisendosen.",
+      "data": {
+        "mode": "map",
+        "headline": "Vom Glas zur Dose",
+        "places": [
+          {
+            "label": "Durand",
+            "code": "Patent 1810",
+            "x": 600,
+            "y": 80,
+            "at": "w:Durand"
+          },
+          {
+            "label": "Appert",
+            "code": "Glasflaschen",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Appert"
+          }
+        ],
+        "route_at": "w:Konserven",
+        "route_label": "Glas mit Korken",
+        "route_label_at": "w:Korken",
+        "wait_at": "w:1810",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Patent 1810",
+        "chip_at": "w:Patent",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Dose",
+        "packet_at": "w:Engländer",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "verzinnte Eisendose",
+        "line_label_at": "w:Eisendosen",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:misst",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Bryan Donkin und John Hall kaufen das Patent und gründen 1812 eine Fabrik. Eine erhaltene Dose misst 14 mal 18 mal 18 Zentimeter und ist aus verzinntem Stahl.",
+      "data": {
+        "headline": "Eine Dose von 1823",
+        "drawing": "tin_1823.svg",
+        "sheet_title": "BLATT 2 · DOSE 1823",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Fabrik seit 1812",
+            "x": 200,
+            "y": 170,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:1812"
+          },
+          {
+            "label": "14 × 18 × 18 cm",
+            "x": 380,
+            "y": 300,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:misst"
+          },
+          {
+            "label": "Verzinnter Stahl",
+            "x": 200,
+            "y": 330,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Stahl"
+          },
+          {
+            "label": "Öffnen: Hammer, Meißel",
+            "x": 500,
+            "y": 230,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Dose"
+          }
+        ],
+        "zoom": {
+          "x": 200,
+          "y": 300,
+          "scale": 1.12,
+          "at": "w:misst",
+          "back_at": "w:Stahl",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Ab 1813 liefern sie Dosen an die britische Armee und Marine. Geöffnet wird mit Hammer und Meißel, denn einen Dosenöffner gibt es noch lange nicht.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Erst die Dose, dann der Öffner",
+        "left": {
+          "tag": "1813",
+          "title": "Geliefert",
+          "at": "w:1813",
+          "rows": [
+            {
+              "text": "an Armee und Marine",
+              "at": "w:Marine"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Öffnen",
+          "title": "Hammer und Meißel",
+          "at": "w:Hammer",
+          "rows": [
+            {
+              "text": "noch kein Dosenöffner",
+              "at": "w:Dosenöffner"
+            }
+          ]
+        },
+        "verdict": "Die Dose kam vor dem Öffner",
+        "verdict_at": "w:lange",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Auch in die Arktis: William Parry nimmt auf allen vier Fahrten der 1820er Jahre Dosen mit. Eine Kalbfleischdose von 1823 ist für die Expedition von 1824 bestimmt.",
+      "data": {
+        "headline": "Bis ins Eis",
+        "nodes": [
+          {
+            "label": "Arktis",
+            "code": "Parry",
+            "at": "w:Arktis"
+          },
+          {
+            "label": "4 Fahrten",
+            "code": "1820er Jahre",
+            "at": "w:Fahrten"
+          },
+          {
+            "label": "Dose von 1823",
+            "code": "Kalbfleisch",
+            "at": "w:Kalbfleischdose"
+          },
+          {
+            "label": "Expedition",
+            "code": "1824",
+            "at": "w:Expedition"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Dose",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1810 das Patent, 1812 die Fabrik, 1813 die erste Lieferung an Armee und Marine.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1810 bis 1813",
+        "items": [
+          {
+            "year": "1810",
+            "title": "Patent Durand",
+            "sub": "verzinnte Eisendose",
+            "at": "w:1810"
+          },
+          {
+            "year": "1812",
+            "title": "Fabrik",
+            "sub": "Donkin und Hall",
+            "at": "w:1812"
+          },
+          {
+            "year": "1813",
+            "title": "Lieferung",
+            "sub": "Armee und Marine",
+            "at": "w:1813",
+            "sub_at": "w:Armee"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Die leere Kalbfleischdose von 1823 liegt heute in der Sammlung des Science Museum, mit eigener Kartonschachtel. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Kalbfleischdose",
+        "card_meta": "1823 · LEER",
+        "card_no": "AKTE 18",
+        "stamp": "1823",
+        "drawing": "tin_1823.svg",
+        "statement": "Die Dose von 1823 blieb erhalten",
+        "statement_at": "w:Kalbfleischdose",
+        "stamp_at": "w:1823",
+        "note": "Science Museum, Objekt 1965-239/5",
+        "note_at": "w:Sammlung",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Dose",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Inhalt: haltbar?",
+          "tone": "muted",
+          "offset": 2.2
+        },
+        {
+          "beat": "b2",
+          "text": "Patent: 1810",
+          "tone": "amber",
+          "offset": 6.1
+        },
+        {
+          "beat": "b3",
+          "text": "Fabrik: 1812",
+          "tone": "amber",
+          "offset": 5.2
+        },
+        {
+          "beat": "b4",
+          "text": "Öffner: Hammer",
+          "tone": "amber",
+          "offset": 7.1
+        },
+        {
+          "beat": "b5",
+          "text": "Ziel: Arktis",
+          "tone": "muted",
+          "offset": 1.7
+        },
+        {
+          "beat": "b6",
+          "text": "Lieferung: 1813",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b7",
+          "text": "Dose: im Museum",
+          "tone": "muted",
+          "offset": 5.6
+        }
+      ]
+    },
+    "description": "Ab 1813 bekamen Armee und Marine Konserven in Blechdosen. Geöffnet wurde mit Hammer und Meißel. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "konserven",
+      "technikgeschichte",
+      "geschichte",
+      "versorgung",
+      "erfindung"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

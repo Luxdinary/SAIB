@@ -1,0 +1,463 @@
+{
+ "video_id": "motivation-20261111-1-de",
+ "brand_id": "motivation",
+ "language": "de",
+ "title": "Nochmal lesen oder abfragen? Ein Versuch mit 120 Studierenden",
+ "notes": "Pilot P1 des Gritwerk-Formats \"Laborbuch\" (Format-Bibel: OneDrive\\Business\\02 Marke\\Gritwerk\\Format-Bibel.md), Reihe \"Laborbuch\", Kalenderthema motivation-20261111-1-de (Reihe Lernlabor D02). Nacherzählt wird Experiment 1 aus Roediger & Karpicke 2006; alle Zahlen am 02.11.2026 im Volltext gelesen (S. 250 Aufbau, S. 251 Ergebnisse). Replikationsstand aus Adesope et al. 2017 (Abstract, Crossref) und Dunlosky et al. 2013 (Abstract, Crossref). Der alte Woche-1-Plan motivation-20261111-1-de.json bleibt unverändert; neuer Sprechtext, neue Gemini-Stimme. Fassung P2 (02.11.2026): Befunde der Prüfrunde umgesetzt (Kleinschrift größer, Punkte und Texte sofort im Bild, Seite rechts bis x 952).",
+ "layout": {
+  "format": "laborbuch",
+  "explainer": false,
+  "laborbuch": {
+   "no": "001",
+   "study": "Roediger & Karpicke 2006",
+   "status": "hält"
+  },
+  "zone_top": 300,
+  "zone_h": 800,
+  "caption_bottom_px": 600,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "risk_level": "low",
+  "description": "Einen Text nochmal lesen oder sich selbst abfragen? In einem veröffentlichten Versuch mit 120 Studierenden lag nach fünf Minuten das Wiederlesen vorn, nach zwei Tagen und nach einer Woche das Abfragen. Aufbau, Messung, Ergebnis, Grenzen und Stand der Forschung, nacherzählt aus der Originalstudie. Dazu ein kleiner Versuch für dich, mit Messregel.",
+  "companion_text": "Gritwerk erzählt veröffentlichte Versuche nach: Aufbau, Messung, Ergebnis, Grenzen, Replikationsstand. Nicht selbst durchgeführt.",
+  "hashtags": [
+   "lernen",
+   "lernmethoden",
+   "psychologie",
+   "studie",
+   "gritwerk"
+  ]
+ },
+ "assets": {
+  "note": "Hintergrund und Laborbuchseite aus dem LAYER des Formats Laborbuch (brands/motivation/laborbuch/scenes.py), keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://doi.org/10.1111/j.1467-9280.2006.01693.x",
+   "title": "Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+   "checked_at": "2026-11-02",
+   "label": "Roediger & Karpicke 2006"
+  },
+  {
+   "id": "S2",
+   "url": "https://doi.org/10.3102/0034654316689306",
+   "title": "Adesope, O. O., Trevisan, D. A., & Sundararajan, N. (2017). Rethinking the use of tests: A meta-analysis of practice testing. Review of Educational Research, 87(3), 659–701.",
+   "checked_at": "2026-11-02",
+   "label": "Adesope et al. 2017"
+  },
+  {
+   "id": "S3",
+   "url": "https://doi.org/10.1177/1529100612453266",
+   "title": "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving students' learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+   "checked_at": "2026-11-02",
+   "label": "Dunlosky et al. 2013"
+  }
+ ],
+ "unverified": [
+  "Nicht im Video: \"Lesen bringt nichts\", \"bessere Noten\", Verallgemeinerung auf alle Fächer, Altersgruppen oder Prüfungsformen.",
+  "Effektstärken der Meta-Analysen (Hedges' g) nicht genannt: nur Abstracts gelesen, die keine Zahl nennen.",
+  "Experiment 2 (SSSS gegen STTT, Zuversicht 4,8 gegen 4,0 von 7) im Volltext gelesen, im Video nicht verwendet.",
+  "Der Zuschauer-Versuch (n = 1) ist eine Messidee von Gritwerk, in keiner Studie so getestet; im Bild als n = 1 gekennzeichnet."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Einen Text nochmal lesen oder sich selbst abfragen?",
+   "on_screen": "Nochmal lesen oder selbst abfragen?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Frage groß auf der Laborbuchseite, 120 Punkte für 120 Teilnehmende, Stempel \"Ergebnis kippt\"",
+   "why": {
+    "choice": "Frage plus angedeutete Wendung; alles im Volltext belegt"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "demonstration",
+   "spoken": "Hundertzwanzig Punkte, hundertzwanzig Studierende, zwei Lernwege.",
+   "on_screen": "",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "note": "Alternative, schwächer"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "concrete_risk",
+   "spoken": "Wer vor der Prüfung nur nochmal liest, fühlt sich sicherer, als er ist.",
+   "on_screen": "",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "note": "stützt sich auf Experiment 2, im Pilot nicht verwendet"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "surprising_fact",
+   "spoken": "Nach fünf Minuten gewinnt das Wiederlesen. Nach einer Woche verliert es.",
+   "on_screen": "",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "note": "als Schluss des Hooks verwendet"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "misconception",
+   "spoken": "Nochmal lesen fühlt sich nach Lernen an. Ein Versuch hat das gemessen.",
+   "on_screen": "",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "note": "Alternative"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage, dann die Wendung aus H4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "lb_hook",
+   "duration_hint": 9,
+   "spoken": "Einen Text nochmal lesen oder sich selbst abfragen? Ein Versuch mit hundertzwanzig Studierenden hat genau das verglichen. Nach fünf Minuten lag das Lesen vorn. Nach einer Woche nicht mehr.",
+   "data": {
+    "question": "Nochmal lesen oder selbst abfragen?",
+    "dots": {
+     "n": 120,
+     "label": "Studierende, 18–24 Jahre",
+     "at": 0.5
+    },
+    "meta": {
+     "text": "Washington University · Experiment 1",
+     "at": "@verglichen"
+    },
+    "tease": {
+     "text": "nach 5 Min: Lesen vorn",
+     "at": "@fünf"
+    },
+    "stamp": {
+     "text": "Ergebnis kippt",
+     "at": "@Woche"
+    },
+    "cite": "Roediger & Karpicke 2006 · Psychol. Sci. 17(3) · Exp. 1, S. 250"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "lb_setup",
+   "duration_hint": 17,
+   "spoken": "So lief der Versuch. Alle lasen zwei kurze Sachtexte, je sieben Minuten. Einen Text lasen sie danach noch einmal. Beim anderen schrieben sie auf, was sie noch wussten, ohne Rückmeldung. Den Abschlusstest bekam ein Drittel nach fünf Minuten, eines nach zwei Tagen, eines nach einer Woche.",
+   "data": {
+    "headline": "So lief der Versuch",
+    "sheets": [
+     {
+      "title": "Text: Die Sonne",
+      "sub": "Sachtext, 256 Wörter"
+     },
+     {
+      "title": "Text: Seeotter",
+      "sub": "Sachtext, 275 Wörter"
+     }
+    ],
+    "sheets_at": 0.5,
+    "read": {
+     "text": "je 7 Minuten lesen",
+     "at": "@sieben"
+    },
+    "arms": [
+     {
+      "icon": "read",
+      "title": "Nochmal lesen",
+      "sub": "ein Text, 7 Minuten",
+      "at": "@Einen"
+     },
+     {
+      "icon": "write",
+      "title": "Selbst abfragen",
+      "sub": "aufschreiben, ohne Rückmeldung",
+      "at": "@anderen"
+     }
+    ],
+    "groups": {
+     "n": 120,
+     "label": "Abschlusstest: 3 Gruppen zu je 40",
+     "at": "@Abschlusstest",
+     "split": [
+      {
+       "label": "5 Min",
+       "sub": "n = 40",
+       "at": "@fünf"
+      },
+      {
+       "label": "2 Tage",
+       "sub": "n = 40",
+       "at": "@zwei#2"
+      },
+      {
+       "label": "1 Woche",
+       "sub": "n = 40",
+       "at": "@Woche"
+      }
+     ]
+    },
+    "cite": "Roediger & Karpicke 2006 · Psychol. Sci. 17(3) · Exp. 1, S. 250"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "lb_measure",
+   "duration_hint": 8,
+   "spoken": "Gemessen wurde, was zurückkam. Jeder Text war in dreißig Ideeneinheiten zerlegt. Jede richtig aufgeschriebene Einheit gab einen Punkt.",
+   "data": {
+    "headline": "Gemessen: was zurückkam",
+    "sheet_label": "Die Sonne",
+    "units": {
+     "n": 30,
+     "label": "30 Ideeneinheiten je Text",
+     "at": "@dreißig"
+    },
+    "rule": {
+     "text": "1 Einheit = 1 Punkt",
+     "at": "@richtig"
+    },
+    "sample": {
+     "fill": 21,
+     "text": "Erster Abruf im Versuch: Ø 20,9 von 30",
+     "at": "@Einheit+0.3"
+    },
+    "cite": "Roediger & Karpicke 2006 · Psychol. Sci. 17(3) · Exp. 1, S. 250"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "lb_result",
+   "duration_hint": 12,
+   "spoken": "Nach fünf Minuten: Wiederlesen einundachtzig Prozent, Abfragen fünfundsiebzig. Nach zwei Tagen dreht es sich, vierundfünfzig gegen achtundsechzig. Nach einer Woche zweiundvierzig gegen sechsundfünfzig.",
+   "data": {
+    "headline": "Ergebnis",
+    "unit": "Anteil wiedergegeben, in %",
+    "series": [
+     {
+      "label": "nochmal gelesen",
+      "kind": "a"
+     },
+     {
+      "label": "selbst abgefragt",
+      "kind": "b"
+     }
+    ],
+    "groups": [
+     {
+      "label": "5 Min",
+      "values": [
+       81,
+       75
+      ],
+      "fmt": "{} %",
+      "at": "@fünf",
+      "value_at": [
+       "@einundachtzig",
+       "@fünfundsiebzig"
+      ]
+     },
+     {
+      "label": "2 Tage",
+      "values": [
+       54,
+       68
+      ],
+      "fmt": "{} %",
+      "at": "@zwei",
+      "value_at": [
+       "@vierundfünfzig",
+       "@achtundsechzig"
+      ]
+     },
+     {
+      "label": "1 Woche",
+      "values": [
+       42,
+       56
+      ],
+      "fmt": "{} %",
+      "at": "@Woche",
+      "value_at": [
+       "@zweiundvierzig",
+       "@sechsundfünfzig"
+      ]
+     }
+    ],
+    "turn_mark": {
+     "text": "kippt",
+     "at": "@dreht",
+     "between": 0
+    },
+    "gap": {
+     "text": "+14 %-Punkte",
+     "group": 2,
+     "at": "@sechsundfünfzig+0.6"
+    },
+    "cite": "Roediger & Karpicke 2006 · Psychol. Sci. 17(3) · Exp. 1, S. 251"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "lb_verdict",
+   "duration_hint": 13,
+   "spoken": "Die Grenzen: Studierende einer Universität, zwei Texte, ein Labor. Doch der Befund steht nicht allein. Eine Meta-Analyse von zweitausendsiebzehn fand Abfragen über viele Studien hinweg wirksamer als Wiederlesen.",
+   "data": {
+    "limits_title": "Grenzen",
+    "limits": [
+     {
+      "text": "Studierende, 18–24 Jahre, eine Uni",
+      "at": "@Studierende"
+     },
+     {
+      "text": "zwei kurze Sachtexte, freies Erinnern",
+      "at": "@Texte"
+     },
+     {
+      "text": "im Labor, ohne Rückmeldung",
+      "at": "@Labor"
+     }
+    ],
+    "status": {
+     "level": "haelt",
+     "at": "@Befund",
+     "stamp_at": "@wirksamer"
+    },
+    "evidence": [
+     {
+      "text": "Meta-Analyse 2017: Abfragen vor Wiederlesen",
+      "cite": "Adesope, Trevisan & Sundararajan, Rev. Educ. Res.",
+      "at": "@Meta"
+     },
+     {
+      "text": "Übersicht 2013: Abfragen hoher Nutzen",
+      "cite": "Dunlosky et al., Psychol. Sci. Public Interest",
+      "at": "@Studien"
+     }
+    ],
+    "cite": "Adesope et al. 2017 · Dunlosky et al. 2013"
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "lb_try",
+   "duration_hint": 15,
+   "spoken": "Dein Versuch: zwei Abschnitte. Einen liest du nochmal, beim anderen klappst du zu und schreibst auf, was du weißt. Nach einer Woche schreibst du beide auf und zählst. Das beweist nichts, aber du siehst es selbst. Mehr echte Versuche: Folge Gritwerk.",
+   "data": {
+    "title": "Dein Versuch · n = 1",
+    "steps": [
+     {
+      "text": "Zwei gleich lange Abschnitte wählen",
+      "at": "@Abschnitte"
+     },
+     {
+      "text": "A nochmal lesen, B zuklappen, aufschreiben",
+      "at": "@klappst"
+     },
+     {
+      "text": "Nach 1 Woche: beide aufschreiben",
+      "at": "@Woche"
+     }
+    ],
+    "rule": {
+     "text": "Messregel: jeder richtige Gedanke = 1 Punkt",
+     "at": "@zählst"
+    },
+    "caveat": {
+     "text": "n = 1 zeigt dir etwas, beweist aber nichts",
+     "at": "@beweist"
+    },
+    "sign_at": "@Mehr",
+    "claim": "Methode statt Parole.",
+    "disclaimer": "Studienbasiert. Keine Therapie- oder Gesundheitsberatung."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  }
+ ]
+}

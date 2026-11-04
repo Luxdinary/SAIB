@@ -1,0 +1,416 @@
+{
+ "video_id": "ai_security-20261110-1-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "The urgent payment request from 'the boss'",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Was tust du?\". Topic D01, EN localisation. Example case staged; mechanism and advice from S1 (Berlin Police) and S2 (FBI IC3).",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "An email in your boss's name: an acquisition, a transfer abroad, today. What do you do? A staged case and the one step the police recommend.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on IT and AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "ceofraud",
+   "bossscam",
+   "bookkeeping",
+   "smallbusiness",
+   "whatwouldyoudo"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.berlin.de/polizei/aufgaben/praevention/betrug/artikel.693958.php",
+   "title": "Polizei Berlin: Geschäftsführer-Schwindel (CEO-Fraud)",
+   "checked_at": "2026-11-02",
+   "label": "Berlin Police, CEO fraud"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ic3.gov/PSA/2024/PSA240911",
+   "title": "FBI IC3 PSA I-091124-PSA: Business Email Compromise (11.09.2024)",
+   "checked_at": "2026-11-02",
+   "label": "FBI IC3, alert of 11 Sep 2024"
+  }
+ ],
+ "unverified": [
+  "Loss figures for the UK or US: not used.",
+  "The sequence of the example case (times, the scammer's reply, Monday's conversation) is invented and marked as an example."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Your boss emails asking for an urgent transfer abroad. What do you do?",
+   "on_screen": "Urgent transfer. What now?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "The name is right, so it's your boss? Not necessarily.",
+   "on_screen": "Right name = your boss?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Police say scammers get their details from company registers and websites.",
+   "on_screen": "Details from public records",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One email in your boss's name, and the money is abroad.",
+   "on_screen": "Email from the boss?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Thursday, 4:48 p.m. An email from your boss.",
+   "on_screen": "THU 16:48 · Email from the boss",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Thursday, 4:48 p.m. An email from your boss: We're acquiring a company. Please transfer a large sum to an account abroad, today.",
+   "data": {
+    "kicker": "Example case · staged",
+    "time": "THU 16:48",
+    "place": "Accounts desk, electrical firm",
+    "mail_at": "@email",
+    "mail": {
+     "from": "Tom Example, MD",
+     "addr": "t.example@electrical.example",
+     "time": "16:48",
+     "subject": "Confidential: acquisition",
+     "lines": [
+      "We're acquiring a company.",
+      "Please make the transfer today,",
+      "account attached, bank abroad."
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "abroad",
+     "at": "@abroad"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "You take a look. The name: your boss. The topic: an acquisition, sounds plausible. The account: abroad, maybe normal for a deal like this. German police say scammers get such details from company registers, websites and reports.",
+   "data": {
+    "kicker": "What you check",
+    "headline": "Does it sound real?",
+    "rows": [
+     {
+      "label": "Sender",
+      "value": "your boss's name",
+      "verdict": "looks real",
+      "at": "@name"
+     },
+     {
+      "label": "Topic",
+      "value": "acquisition",
+      "verdict": "plausible",
+      "at": "@topic"
+     },
+     {
+      "label": "Account",
+      "value": "bank abroad",
+      "verdict": "explainable",
+      "at": "@account"
+     }
+    ],
+    "finding": {
+     "text": "It all sounds plausible.",
+     "at": "@maybe"
+    },
+    "fact": {
+     "kind": "fakt",
+     "text": "Scammers use company registers, websites and reports.",
+     "source": "Berlin Police · CEO fraud",
+     "at": "@German"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "What do you do? A: You pay, your boss is in a hurry. B: You reply to the email and ask. C: You call your boss on the number you know. Remember your choice.",
+   "data": {
+    "question": "What do you do?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Pay right away",
+      "at": "@pay"
+     },
+     {
+      "key": "B",
+      "text": "Reply to the email",
+      "at": "@reply"
+     },
+     {
+      "key": "C",
+      "text": "Call your boss on the known number",
+      "at": "@call"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Remember"
+    },
+    "hint": "Remember your choice."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "sc_timeline",
+   "spoken": "Let's play out B. Your question goes to the address in the email. So the scammer can answer: Fine, please go ahead. You pay. On Monday your boss asks what you're talking about.",
+   "data": {
+    "kicker": "Choice B, played out",
+    "tag": "Example",
+    "headline": "You ask by email",
+    "items": [
+     {
+      "time": "THU 16:52",
+      "text": "Your question goes out",
+      "at": "@question"
+     },
+     {
+      "time": "THU 17:03",
+      "text": "Reply: Fine, please go ahead.",
+      "tone": "amber",
+      "at": "@answer"
+     },
+     {
+      "time": "THU 17:10",
+      "text": "You pay",
+      "at": "@pay"
+     },
+     {
+      "time": "MON 08:30",
+      "text": "Your boss knows nothing",
+      "tone": "red",
+      "at": "@Monday"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "Berlin Police · check the sender",
+     "at": 1.0
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "The right answer is C. Police advise: for unusual payments, check the sender's address and confirm the order by calling back. Replying to the same email is no confirmation, it goes straight back to the sender.",
+   "data": {
+    "mode": "rule",
+    "kicker": "The one step",
+    "card": {
+     "letter": "C",
+     "title": "Call your boss back",
+     "sub": "on the number you already know",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Pay right away",
+      "note": "no check at all",
+      "at": 3.0
+     },
+     {
+      "text": "B: Reply to the email",
+      "note": "same sender",
+      "at": "@Replying"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "Berlin Police · call back"
+     },
+     {
+      "kind": "auslegung",
+      "label": "B: Scutoria's reading"
+     }
+    ],
+    "sources_at": "@Police"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "And if the money is already gone? Then time matters. Call your bank immediately and ask them to recall the transfer. Then report it to the police.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "Already paid?",
+    "card": {
+     "letter": "!",
+     "title": "Time matters",
+     "sub": "act now, don't wait",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "Bank: recall the transfer",
+      "at": "@bank"
+     },
+     {
+      "text": "Report it to the police",
+      "at": "@report"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "Berlin Police · FBI IC3"
+     }
+    ],
+    "sources_at": "@time"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Call back first, then pay. What would you have picked? Tell me in the comments.",
+   "data": {
+    "kicker": "Series · What would you do?",
+    "rule": "Call back first, then pay.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "What would you have picked?",
+     "at": "@What"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice."
+   },
+   "source_ids": []
+  }
+ ]
+}

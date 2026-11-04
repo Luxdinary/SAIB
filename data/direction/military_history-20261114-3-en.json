@@ -1,0 +1,559 @@
+{
+  "video_id": "military_history-20261114-3-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Par Ballon Monté: Mail Out of Besieged Paris",
+  "notes": "Woche 1, Reihe Signal und Nachricht. Belagerung nur als Kontext, keine Kampfbilder, Unglücksflüge nicht gezeigt; Ballontyp neutral 'Ballone'.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://blog.qm.qld.gov.au/2015/07/03/from-paris-with-love",
+      "title": "From Paris with love, Queensland Museum Blog (Mark Clayton), 2015",
+      "label": "Queensland Museum",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co481472/siege-of-paris-1870-71",
+      "title": "Siege of Paris 1870-71, Ballonbriefe (1952-393), Science Museum Group",
+      "label": "Science Museum Group",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.srlf.ucla.edu/exhibit/text/hist_page4.htm",
+      "title": "The History of Microfilm: The Pigeon Post into Paris 1870–1871, UCLA Southern Regional Library Facility",
+      "label": "UCLA SRLF",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Zahl der Ballone: andere Zählungen 64–67; im Video 66 laut Queensland Museum.",
+    "Ballontyp (Heißluft/Wasserstoff) nicht gegengeprüft; im Video nur 'Ballone'."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How does an encircled city send its mail in 1870, when there is no way out?",
+      "on_screen": "Mail with no way out?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Airmail began with aircraft? Paris sent letters by balloon in 1870.",
+      "on_screen": "Airmail by balloon",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "One mail balloon landed in Norway after 1408 kilometres.",
+      "on_screen": "1408 km to Norway",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "A letter for 20 centimes, with no guarantee it arrives.",
+      "on_screen": "No guarantee",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a pigeon carry 20 films.",
+      "on_screen": "20 films per pigeon",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How does an encircled city send its mail in 1870, when there is no way out?",
+      "data": {
+        "question": "Mail from a city with no way out?",
+        "question_em": "no way out",
+        "card_title": "Par Ballon Monté",
+        "card_meta": "PARIS · 1870–71",
+        "card_no": "FILE 27",
+        "stamp": "1870",
+        "drawing": "balloon_post.svg",
+        "packet_label": "Letter",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:1870",
+        "packet_at": "w:mail",
+        "em_at": "w:way"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "From mid September 1870, Paris is encircled for four months. On 23 September the first mail balloon lifts off with 125 kilograms of mail.",
+      "data": {
+        "mode": "map",
+        "headline": "A city with no way out",
+        "places": [
+          {
+            "label": "Paris",
+            "code": "encircled",
+            "x": 600,
+            "y": 80,
+            "at": "w:Paris"
+          },
+          {
+            "label": "Outside world",
+            "code": "cut off",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:encircled"
+          }
+        ],
+        "route_at": "w:four",
+        "route_label": "no way out",
+        "route_label_at": "w:months",
+        "wait_at": "w:lifts",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "23 Sep 1870: 125 kg of mail",
+        "chip_at": "w:kilograms",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Letter",
+        "packet_at": "w:balloon",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Way out: by air",
+        "line_label_at": "w:mail#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:letters",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "In the following months 66 balloons go up, mostly at night. The letters are marked Par Ballon Monté. A letter costs 20 centimes, with no guarantee.",
+      "data": {
+        "headline": "Letters by balloon",
+        "drawing": "balloon_post.svg",
+        "sheet_title": "SHEET 2 · BALLOON POST",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "66 balloons",
+            "x": 200,
+            "y": 170,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:66"
+          },
+          {
+            "label": "Mostly at night",
+            "x": 200,
+            "y": 330,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:night"
+          },
+          {
+            "label": "Marked: Par Ballon Monté",
+            "x": 125,
+            "y": 490,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:marked"
+          },
+          {
+            "label": "20 centimes, no guarantee",
+            "x": 172,
+            "y": 470,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:centimes"
+          }
+        ],
+        "zoom": {
+          "x": 150,
+          "y": 430,
+          "scale": 1.12,
+          "at": "w:letters",
+          "back_at": "w:guarantee",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "Out by balloon, back by carrier pigeon. The pigeons leave the city in a balloon and fly back with messages.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Out and back",
+        "left": {
+          "tag": "Out",
+          "title": "Ballon",
+          "at": "w:balloon",
+          "rows": [
+            "letters, passengers, pigeons"
+          ]
+        },
+        "right": {
+          "tag": "Back",
+          "title": "Carrier pigeon",
+          "at": "w:pigeon",
+          "rows": [
+            {
+              "text": "messages into the city",
+              "at": "w:messages"
+            }
+          ]
+        },
+        "verdict": "A loop through the air",
+        "verdict_at": "w:back#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "From 15 December the dispatches are shrunk onto microfilm, more than 40 times. A pigeon carries up to 20 films, and in Paris a magic lantern projects them onto a screen.",
+      "data": {
+        "headline": "Letters on film",
+        "nodes": [
+          {
+            "label": "Microfilm",
+            "code": "15 Dec 1870",
+            "at": "w:microfilm"
+          },
+          {
+            "label": "Over 40 times",
+            "code": "reduced",
+            "at": "w:40"
+          },
+          {
+            "label": "Pigeon",
+            "code": "up to 20 films",
+            "at": "w:pigeon"
+          },
+          {
+            "label": "Magic lantern",
+            "code": "Paris",
+            "at": "w:lantern"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "count": {
+          "to": 20,
+          "label": "FILMS",
+          "at": "w:20",
+          "until": "w:screen"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "In total, the balloons carry 102 passengers, 400 carrier pigeons and an estimated 2.5 million letters out of the city.",
+      "data": {
+        "mode": "timeline",
+        "headline": "The tally",
+        "items": [
+          {
+            "year": "102",
+            "title": "Passengers",
+            "sub": "out by balloon",
+            "at": "w:102"
+          },
+          {
+            "year": "400",
+            "title": "Carrier pigeons",
+            "sub": "for the return post",
+            "at": "w:400"
+          },
+          {
+            "year": "2,5 M",
+            "title": "Letters",
+            "sub": "estimated",
+            "at": "w:2.5"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "Original balloon letters survive in museums, such as the Science Museum in London: folded to six by twelve centimetres. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Par Ballon Monté",
+        "card_meta": "PARIS · 1870–71",
+        "card_no": "FILE 27",
+        "stamp": "Ballon",
+        "drawing": "balloon_post.svg",
+        "statement": "Mail by air, still here today",
+        "statement_at": "w:balloon",
+        "stamp_at": "w:museums",
+        "note": "Science Museum, object 1952-393",
+        "note_at": "w:London",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Letter",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Route: blocked",
+          "tone": "muted",
+          "offset": 2.2
+        },
+        {
+          "beat": "b2",
+          "text": "Launch: 23 Sep 1870",
+          "tone": "amber",
+          "offset": 6.1
+        },
+        {
+          "beat": "b3",
+          "text": "Marked: Ballon Monté",
+          "tone": "amber",
+          "offset": 7.1
+        },
+        {
+          "beat": "b4",
+          "text": "Return: pigeon",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b5",
+          "text": "Format: microfilm",
+          "tone": "muted",
+          "offset": 4.2
+        },
+        {
+          "beat": "b6",
+          "text": "Letters: ≈ 2.5 m",
+          "tone": "muted",
+          "offset": 7.1
+        },
+        {
+          "beat": "b7",
+          "text": "Now: Science Museum",
+          "tone": "muted",
+          "offset": 4.6
+        }
+      ]
+    },
+    "description": "Paris 1870: letters out by balloon, replies back by carrier pigeon, on microfilm from December. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "airmail",
+      "paris",
+      "carrierpigeon",
+      "history",
+      "microfilm"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

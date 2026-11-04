@@ -1,0 +1,100 @@
+id: ai_security-20261113-1-en
+version: F2
+title: "Backups: keep one copy offline"
+short: "Backup offline EN"
+reihe: "Fünf Minuten, die gefehlt haben"
+note: "F2 EN (localised from the DE spec), told backwards. Example case staged: firm, person, times and sequence are invented; mechanism (ransomware encrypting connected drives and connected cloud storage) and step (one copy offline, disconnect the drive) from S1 and S2, re-read 02.11.2026. The old plan ai_security-20261113-1-en.json stays unchanged."
+description: "Monday morning, nothing opens, not even the backup drive. We rewind to the one move that was missing. A staged case with the one step the UK's NCSC recommends."
+hashtags: [backup, ransomware, databackup, smallbusiness, fiveminutefix]
+sources:
+  - {id: S1, url: "https://www.ncsc.gov.uk/blog-post/offline-backups-in-an-online-world", title: "NCSC blog: Offline backups in an online world", checked_at: "2026-11-02", label: "NCSC, offline backups"}
+  - {id: S2, url: "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/always-back-up-your-most-important-data", title: "NCSC: Top tips for staying secure online – Backing up your data", checked_at: "2026-11-02", label: "NCSC, backing up your data"}
+unverified:
+  - "Specific backup products: not named."
+  - "The sequence of the example case (Monday 7:40, Sunday night, Friday 6:05 p.m., Jess's email) is invented and marked as an example."
+  - "That option A (second drive plugged in) and B (always-syncing cloud folder) don't protect you is Scutoria's interpretation of S1 (connected drives and connected cloud storage were encrypted too); marked as interpretation on screen."
+  - "The 3-2-1 rule and regular testing (S1) are not used in this version, to keep it to one step."
+pick: demonstration
+hooks:
+  - {type: question, spoken: "What's left if your backup gets encrypted too?", screen: "Backup encrypted too. Now what?"}
+  - {type: misconception, spoken: "You have a backup, so you're safe? Not if it's plugged in.", screen: "Have a backup = safe?", src: [S1]}
+  - {type: surprising_fact, spoken: "The NCSC has seen ransomware encrypt backup drives as well.", screen: "The backup got encrypted too", src: [S1]}
+  - {type: concrete_risk, spoken: "Your backup drive stays plugged in? Then ransomware can encrypt it too.", screen: "Backup drive always plugged in?", src: [S1, S2]}
+  - {type: demonstration, spoken: "Monday, 7:40 a.m. No file will open, and neither will the backup.", screen: "MON 07:40 · The backup is gone too", visual: "clock, the colleague's email arrives as a paper card, the backup line is marked"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Monday, 7:40 a.m. Jess from the office writes: No file will open. And the backup drive plugged into the computer is encrypted too."
+    d:
+      kicker: "Example case · staged"
+      time: "MON 07:40"
+      place: "Office of a letting agency"
+      mail_at: "@Jess"
+      mail: {from: "Jess (office)", addr: "jess@lettings.example", time: "07:40", subject: "Nothing will open", lines: ["Morning, no file will open.", "The backup drive on the PC too:", "everything's encrypted."]}
+      highlight: {line: 1, label: "backup too", at: "@backup"}
+  - f: problem
+    t: sc_inspect
+    s: "And everything was set up. A backup every evening, automatically. Target: a USB drive. It's always plugged in, which is handy. But according to the NCSC, ransomware can spread to attached drives automatically."
+    src: [S2]
+    d:
+      kicker: "What you had"
+      headline: "There was a backup?"
+      rows:
+        - {label: "Backup", value: "every evening, auto", verdict: "looks fine", at: "@backup"}
+        - {label: "Target", value: "USB drive", verdict: "looks fine", at: "@Target"}
+        - {label: "Connection", value: "always plugged in", verdict: "handy", at: "@always"}
+      finding: {text: "All set up.", at: "@But"}
+      fact: {kind: fakt, text: "Malware can spread to attached drives automatically.", source: "NCSC · backing up your data", at: "@according"}
+  - f: problem
+    t: sc_timeline
+    s: "Let's rewind. Sunday night, ransomware starts and encrypts everything, the drive included. Friday, 6:05 p.m.: the backup finishes, and the drive stays plugged in. That's the moment one small move was missing."
+    src: [S1]
+    d:
+      kicker: "Rewound"
+      tag: "Example"
+      headline: "Back to the moment"
+      items:
+        - {time: "MON 07:40", text: "Data and backup encrypted", tone: red, at: 0.3}
+        - {time: "SUN 02:10", text: "Ransomware starts", tone: amber, at: "@Sunday"}
+        - {time: "FRI 18:05", text: "Backup done. Drive stays in.", tone: amber, at: "@Friday"}
+      source: {kind: fakt, label: "NCSC · connected drives", at: 1.0}
+  - f: explanation
+    t: sc_choice
+    s: "What do you change? A: Add a second drive, also plugged in. B: Add a cloud folder that syncs all the time. C: Unplug the drive after every backup. Remember your choice."
+    src: [S1]
+    d:
+      question: "What do you change?"
+      options:
+        - {key: A, text: "Second drive, also plugged in", at: "@second"}
+        - {key: B, text: "Cloud folder, always syncing", at: "@cloud"}
+        - {key: C, text: "Unplug the drive after each backup", at: "@Unplug"}
+      think: {seconds: 2.6, at: "@Remember"}
+      hint: "Remember your choice."
+  - f: insight
+    t: sc_step
+    s: "The right answer is C. The NCSC's rule: at any given time, at least one backup is offline. When a drive isn't in use, disconnect it. A and B stay connected. The NCSC has even seen connected cloud storage encrypted."
+    src: [S1, S2]
+    d:
+      mode: rule
+      kicker: "The one step"
+      card: {letter: C, title: "One copy always offline", sub: "unplug the drive after every backup", at: 0.2}
+      strikes:
+        - {text: "A: Second drive plugged in", note: "still connected", at: "@stay-0.6"}
+        - {text: "B: Cloud, always syncing", note: "still connected", at: "@connected"}
+      sources:
+        - {kind: fakt, label: "NCSC · one copy offline"}
+        - {kind: fakt, label: "NCSC · disconnect the drive"}
+        - {kind: auslegung, label: "A and B: Scutoria's reading"}
+      sources_at: "@NCSC"
+  - f: close
+    t: sc_close
+    s: "A backup only protects you if one copy is offline. So: unplug the drive after every backup. What would you have picked? Tell me in the comments."
+    d:
+      kicker: "Series · Five minutes"
+      rule: "One copy belongs offline."
+      rule_at: 0.3
+      question: {text: "What would you have picked?", at: "@What"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Sourced. Dated. Ready to show."
+      disclaimer: "Source-based. No legal advice."

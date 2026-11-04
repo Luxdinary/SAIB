@@ -1,0 +1,195 @@
+id: ai_security-20261111-2-en
+version: F2
+title: 'Myth: change your passwords every 90 days'
+reihe: Was tust du?
+short: Passwortwechsel EN
+note: Topic C02 (myth as the starting point), EN localisation. Example case staged; statements from S1 (NCSC), S2 (NIST SP 800-63B) and S3 (BSI).
+description: Your computer wants a new password again. What do you do? Why NIST and the NCSC advise against calendar-based changes, and when changing really helps.
+hashtags:
+- passwords
+- myth
+- cybersecurity
+- smallbusiness
+- whatwouldyoudo
+sources:
+- id: S1
+  url: https://www.ncsc.gov.uk/blog-post/problems-forcing-regular-password-expiry
+  title: 'NCSC: The problems with forcing regular password expiry'
+  checked_at: '2026-11-01'
+  label: NCSC, password expiry
+- id: S2
+  url: https://pages.nist.gov/800-63-4/sp800-63b.html
+  title: 'NIST SP 800-63B: Authentication and Lifecycle Management'
+  checked_at: '2026-11-01'
+  label: NIST SP 800-63B
+- id: S3
+  url: https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html
+  title: 'BSI: Sichere Passwörter erstellen'
+  checked_at: '2026-11-01'
+  label: BSI (German federal office), passwords
+unverified:
+- 'Specific expiry periods in companies (e.g. 90 days): only in the calendar title, not stated as a fact in the video; the example case says ''like every quarter''.'
+- The sequence of the example case (data breach, derived password) is invented and marked as an example; the mechanism (deriving from the old password) comes from S1.
+pick: demonstration
+hooks:
+- type: question
+  spoken: A new password, again? What do you do?
+  screen: A new password, again?
+- type: misconception
+  spoken: Change your password regularly? That's exactly what NIST and the NCSC advise against.
+  screen: Calendar changes = safer?
+  src:
+  - S1
+  - S2
+- type: surprising_fact
+  spoken: The UK's NCSC has advised against forced password changes since 2015.
+  screen: Advised against since 2015
+  src:
+  - S1
+- type: concrete_risk
+  spoken: Forced to change, people often pick a password that can be derived from the old one.
+  screen: New, but guessable
+  src:
+  - S1
+- type: demonstration
+  spoken: Monday, 8 a.m. Your computer demands a new password. Like every quarter.
+  screen: MON 08:00 · Password expiring
+beats:
+- f: hook
+  t: sc_case
+  s: 'Monday, 8 a.m. Your computer says: Your password is expiring, please set a new one now. Like every quarter.'
+  d:
+    kicker: Example case · staged
+    time: MON 08:00
+    place: Office of a letting agency
+    mail_at: '@computer'
+    mail:
+      from: IT notice (example)
+      addr: it@lettings.example
+      time: 08:00
+      subject: Password expiring
+      lines:
+      - Your password expires soon.
+      - Please set a new one now.
+      - Like every quarter.
+    highlight:
+      line: 2
+      label: calendar
+      at: '@quarter'
+- f: problem
+  t: sc_choice
+  s: 'What do you do? A: You add a number to your old password. B: You make up a new one and write it on a sticky note. C: You ask why you change by the calendar at all. Remember your choice.'
+  src:
+  - S1
+  d:
+    question: What do you do?
+    options:
+    - key: A
+      text: Old password plus a number
+      at: '@add'
+    - key: B
+      text: New one, on a sticky note
+      at: '@make'
+    - key: C
+      text: Question the calendar rule
+      at: '@ask'
+    think:
+      seconds: 2.6
+      at: '@Remember'
+    hint: Remember your choice.
+- f: explanation
+  t: sc_inspect
+  s: 'Here''s what the UK''s NCSC says: people forced to change often pick a password similar to the old one. Attackers can then derive it. New passwords are more likely to be written down or forgotten.
+    And many pick a weaker one.'
+  src:
+  - S1
+  d:
+    kicker: According to the NCSC
+    headline: What forcing it does
+    rows:
+    - label: Similar
+      value: derived from the old
+      verdict: effect
+      at: '@similar'
+    - label: Notes
+      value: more often written down
+      verdict: effect
+      at: '@written'
+    - label: Weaker
+      value: easier to remember
+      verdict: effect
+      at: '@weaker'
+    fact:
+      kind: fakt
+      text: Forced changes often make passwords weaker.
+      source: NCSC · password expiry
+      at: 1.2
+- f: demonstration
+  t: sc_timeline
+  s: Let's play out A. Your old password turns up in a data breach. Because the new one is similar, an attacker derives it. He tries it and he's in. The calendar change protected nothing.
+  src:
+  - S1
+  d:
+    kicker: Choice A, played out
+    tag: Example
+    headline: New, but guessable
+    items:
+    - time: MON 08:01
+      text: Old password plus a number
+      at: 0.6
+    - time: Later
+      text: Old password in a breach
+      tone: amber
+      at: '@breach'
+    - time: Then
+      text: The new one is derived
+      at: '@derives'
+    - time: After that
+      text: The attacker is in
+      tone: red
+      at: '@he''s'
+    source:
+      kind: fakt
+      label: NCSC · derivable passwords
+      at: 1.0
+- f: insight
+  t: sc_step
+  s: The right answer is C. The US standards institute NIST says users must not be forced to change passwords periodically. Change them when there's evidence they've fallen into the wrong hands, for example
+    after a breach, or after you typed it into a fake site.
+  src:
+  - S2
+  d:
+    mode: rule
+    kicker: The one step
+    card:
+      letter: C
+      title: Change on suspicion
+      sub: not by the calendar
+      at: 0.2
+    strikes:
+    - text: 'A: Old plus a number'
+      note: derivable
+      at: 3.5
+    - text: 'B: New one on a note'
+      note: written down
+      at: 5.0
+    sources:
+    - kind: fakt
+      label: NIST SP 800-63B
+    - kind: fakt
+      label: NCSC · password expiry
+    sources_at: '@NIST'
+- f: close
+  t: sc_close
+  s: Change on suspicion, not by the calendar. What would you have picked? Tell me in the comments.
+  d:
+    kicker: Series · What would you do?
+    rule: Change on suspicion.
+    rule_at: 0.3
+    question:
+      text: What would you have picked?
+      at: '@What'
+    domain: scutoria.com
+    domain_at: 1.2
+    claim: Sourced. Dated. Ready to show.
+    disclaimer: Source-based. No legal advice.

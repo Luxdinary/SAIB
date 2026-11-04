@@ -1,0 +1,462 @@
+{
+  "video_id": "engines-20261110-3-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "Before Otto: engines without compression",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261110-3-en, Reihe Motorgeschichte. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Lenoir's 1860 engine had no compression and stayed below 5 percent efficiency. The Otto and Langen engine of 1867 reached about 11 percent.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.",
+    "hashtags": [
+      "enginehistory",
+      "otto",
+      "lenoir",
+      "enginetech",
+      "invention"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, lecture 1",
+      "title": "MIT 2.61, Vorlesung 1 (L1)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/68b07c151fd2842460241680498d0968_MIT2_61S17_lec1.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "Science Museum, Otto & Langen",
+      "title": "Science Museum, Otto & Langen (SMG_OL)",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co62007",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "And they managed less than five percent efficiency.",
+      "on_screen": "Engines without compression",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How good were the first gas engines?",
+      "on_screen": "Before Otto: engines without compression",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Before Otto: engines without compression",
+      "on_screen": "Before Otto: engines without compression",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Before Otto: engines without compression",
+      "on_screen": "Before Otto: engines without compression",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Before Otto: engines without compression",
+      "on_screen": "Before Otto: engines without compression",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "The first internal combustion engines did not compress at all. And they managed less than five percent efficiency.",
+      "data": {
+        "claim": "Engines without compression",
+        "claim_lines": [
+          "Engines without",
+          "compression"
+        ],
+        "claim_highlight": "without",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:efficiency",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_board",
+      "spoken": "Eighteen sixty: Lenoir's engine ignites its gas mixture without compressing it first. According to an MIT lecture it manages ten cycles a minute and less than five percent efficiency. About five hundred are sold. That sounds poor, but it was a start. There is no compression stroke at all.",
+      "data": {
+        "title": "Lenoir",
+        "mode": "history",
+        "years": [
+          {
+            "year": "1860",
+            "at": 0.0
+          }
+        ],
+        "rows": [
+          {
+            "text": "no compression",
+            "at": "w:compressing"
+          },
+          {
+            "text": "10 cycles per minute",
+            "at": "w:cycles"
+          },
+          {
+            "text": "efficiency below 5 %",
+            "at": "w:efficiency"
+          },
+          {
+            "text": "about 500 sold",
+            "at": "w:sold"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:MIT",
+        "kicker": "2 · THE START",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_board",
+      "spoken": "In eighteen sixty-seven comes the atmospheric engine of Otto and Langen. It uses a free piston and lets the gas expand further. According to the lecture, this over-expansion brings about eleven percent. It is a very different machine from a modern engine.",
+      "data": {
+        "title": "Otto and Langen",
+        "mode": "history",
+        "years": [
+          {
+            "year": "1867",
+            "at": 0.0
+          }
+        ],
+        "doc": {
+          "head": "FREE-PISTON ENGINE",
+          "lines": [
+            "Atmospheric",
+            "gas engine"
+          ],
+          "stamp": "1867",
+          "at": "w:atmospheric"
+        },
+        "rows": [
+          {
+            "text": "free piston",
+            "at": "w:free"
+          },
+          {
+            "text": "over-expansion: about 11 %",
+            "at": "w:over"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:over",
+        "kicker": "3 · THE LEAP"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rv_readout",
+      "spoken": "Side by side: Lenoir below five percent, Otto and Langen about eleven. Plus twenty-eight instead of ten cycles a minute, and, according to the lecture, about five thousand engines sold. Almost three times as many cycles a minute.",
+      "data": {
+        "title": "Efficiency",
+        "figure": "bars",
+        "bar_max": 14,
+        "lines_y": 1010,
+        "bars": [
+          {
+            "label": "Lenoir 1860",
+            "value": 5,
+            "text": "< 5 %",
+            "at": "w:Lenoir"
+          },
+          {
+            "label": "Otto & Langen 1867",
+            "value": 11,
+            "text": "≈ 11 %",
+            "at": "w:Langen"
+          }
+        ],
+        "lines": [
+          {
+            "text": "10 → 28 cycles/min",
+            "hl": "28",
+            "at": "w:cycles"
+          },
+          {
+            "text": "500 → 5000 sold",
+            "hl": "5000",
+            "at": "w:sold"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Side",
+        "kicker": "4 · THE COMPARISON",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_board",
+      "spoken": "An example built in eighteen sixty-nine by Crossley in Manchester is in the Science Museum today. The museum calls the Otto and Langen engine the world's first commercially successful internal combustion engine. We cover the next big step on Sunday: compressing before igniting. Seven years made a big difference.",
+      "data": {
+        "title": "Science Museum",
+        "mode": "history",
+        "years": [
+          {
+            "year": "1869",
+            "at": 0.0
+          }
+        ],
+        "doc": {
+          "head": "OBJECT 1897-71",
+          "lines": [
+            "Otto & Langen,",
+            "built by Crossley"
+          ],
+          "stamp": "1869",
+          "at": "w:Crossley"
+        },
+        "rows": [
+          {
+            "text": "first commercial success",
+            "at": "w:commercially"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:museum",
+        "kicker": "5 · IN THE MUSEUM",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "No compression, under five percent. Over-expansion, about eleven. Understand engines: follow Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "1860: < 5 %",
+            "at": "w:No"
+          },
+          {
+            "text": "1867: ≈ 11 %",
+            "at": "w:Over"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

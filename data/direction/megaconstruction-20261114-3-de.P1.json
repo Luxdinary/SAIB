@@ -1,0 +1,583 @@
+{
+  "video_id": "megaconstruction-20261114-3-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Grand Coulee Dam: fast 12 Mio. yd³ Beton, 6.809 MW",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Nachgerechnet. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261114-3-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.usbr.gov/pn/grandcoulee/pubs/factsheet.pdf",
+      "title": "U.S. Bureau of Reclamation: Grand Coulee Dam Statistics and Facts (Rev. 12/2021): 11.975.521 yd³, 167 m, 1.592 m, Überlauf 503 m, 6.809 MW; Hoover 726 ft, 3.250.000 yd³, 2.080 MW",
+      "label": "Reclamation, Factsheet",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.usbr.gov/pn/grandcoulee/about/index.html",
+      "title": "Reclamation: About Grand Coulee (bis 21 Mrd. kWh/Jahr; Bau 1933–1941)",
+      "label": "Reclamation, About",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.nps.gov/articles/washington-grand-coulee-dam.htm",
+      "title": "National Park Service: Grand Coulee Dam, Washington",
+      "label": "National Park Service",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.usbr.gov/pn/grandcoulee/about/faq.html",
+      "title": "Reclamation: FAQ (11 Trommelschütze 135 × 30 ft; 40 Auslassrohre)",
+      "label": "Reclamation, FAQ",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Neuere Faktenblatt-Fassung 2024 war nicht erreichbar; Werte Stand 12/2021.",
+    "Mauerform im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H3"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Der Hoover-Damm ist höher. Aber der Grand Coulee Dam enthält fast viermal so viel Beton.",
+      "on_screen": "Fast 4 × so viel Beton wie Hoover",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist der Grand Coulee Dam wirklich?",
+      "on_screen": "Wie groß ist der Grand Coulee Dam wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen der Grand Coulee Dam.",
+      "on_screen": "der Grand Coulee Dam: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei der Grand Coulee Dam schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "der Grand Coulee Dam: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie der Grand Coulee Dam im Modell entsteht.",
+      "on_screen": "der Grand Coulee Dam im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Der Hoover-Damm ist höher. Aber steckt im Grand Coulee Dam wirklich fast viermal so viel Beton? Wir rechnen nach.",
+      "data": {
+        "kicker": "Nachgerechnet · Grand Coulee",
+        "question": "Fast viermal so viel Beton wie Hoover?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Washington, USA · 1933 bis 1941",
+          "at": "@Grand",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_build",
+      "spoken": "Die Daten: Der Damm im US-Bundesstaat Washington ist 167 Meter hoch und mit allen Mauerteilen 1.592 Meter lang. Gebaut wurde er von 1933 bis 1941.",
+      "data": {
+        "headline": "Die Daten",
+        "table_title": "Datenblatt",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Höhe",
+            "qty": "167 m",
+            "at": "@167"
+          },
+          {
+            "pos": "2",
+            "part": "Länge mit allen Mauerteilen",
+            "qty": "1.592 m",
+            "at": "@1.592"
+          },
+          {
+            "pos": "3",
+            "part": "Bauzeit",
+            "qty": "1933–41",
+            "at": "@1933"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "Über den 503 Meter breiten Überlauf laufen elf Trommelschütze, jedes rund 41 Meter lang und rund 9 Meter hoch. Durch die Mauer führen außerdem 40 Auslassrohre.",
+      "data": {
+        "headline": "Der Überlauf",
+        "note": "Mauerform schematisch",
+        "pins": [
+          {
+            "anchor": "spill",
+            "text": "Überlauf 503 m",
+            "kind": "dim",
+            "at": "@503"
+          }
+        ],
+        "rule": {
+          "text": "11 Trommelschütze, 40 Auslassrohre",
+          "at": "@elf",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_calc",
+      "spoken": "Die Rechnung: knapp 12 Millionen Kubikyard Beton gegen 3,25 Millionen beim Hoover-Damm. Das ist das 3,7-Fache. Die Einheit kürzt sich dabei weg.",
+      "data": {
+        "headline": "Die Rechnung",
+        "sheet_dy": 470,
+        "calcs": [
+          {
+            "label": "Beton Grand Coulee ÷ Hoover (yd³)",
+            "a": {
+              "value": 11975521,
+              "unit": "",
+              "show": "11.975.521"
+            },
+            "op": "÷",
+            "b": {
+              "value": 3250000,
+              "unit": "",
+              "show": "3.250.000"
+            },
+            "unit": "×",
+            "round": 0.1,
+            "decimals": 1,
+            "prefix": "≈ ",
+            "expect": 3.7,
+            "at": "@12",
+            "result_at": "@3,7"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Und beim Strom? 6.809 Megawatt Leistung gegen 2.080 beim Hoover-Damm, gut dreimal so viel. Im Jahr erzeugt er bis zu 21 Milliarden Kilowattstunden.",
+      "data": {
+        "headline": "Der Vergleich",
+        "sheet_dy": 470,
+        "sheet_title": "Leistung",
+        "calcs": [
+          {
+            "label": "Leistung Grand Coulee ÷ Hoover",
+            "a": {
+              "value": 6809,
+              "unit": "MW"
+            },
+            "op": "÷",
+            "b": {
+              "value": 2080,
+              "unit": "MW"
+            },
+            "unit": "×",
+            "round": 0.01,
+            "decimals": 2,
+            "prefix": "≈ ",
+            "expect": 3.27,
+            "at": "@6.809",
+            "result_at": "@dreimal"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Ergebnis: stimmt. Niedriger als Hoover, aber in Beton und Strom ein Vielfaches. Folge Gigastruct für die nächste Rechnung.",
+      "data": {
+        "statement": "Ergebnis: stimmt, 3,7-mal",
+        "sheet": "BLATT 17",
+        "rows": [
+          [
+            "Beton",
+            "3,7-mal Hoover"
+          ],
+          [
+            "Leistung",
+            "6.809 MW, 3,27-mal"
+          ],
+          [
+            "Höhe",
+            "167 m (Hoover höher)"
+          ],
+          [
+            "Stand",
+            "Faktenblatt 12/2021"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "BEHAUPTUNG",
+        "DATEN",
+        "RECHNUNG",
+        "VERGLEICH",
+        "ERGEBNIS"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 1,
+        "b4": 2,
+        "b5": 3,
+        "b6": 5
+      }
+    },
+    "description": "Der Grand Coulee Dam ist niedriger als der Hoover-Damm, enthält aber das 3,7-Fache an Beton und leistet gut dreimal so viel. In Zahlen des Bureau of Reclamation.",
+    "companion_text": "Gerechnet: 11.975.521 ÷ 3.250.000 = 3,68; 6.809 ÷ 2.080 = 3,27. Quellen: U.S. Bureau of Reclamation (Factsheet, About, FAQ), National Park Service. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "grandcouleedam",
+      "staumauer",
+      "wasserkraft",
+      "usa",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "11.975.521 yd³ ÷ 3.250.000 yd³ = 3,68",
+        "result": "3,7-fache Betonmenge",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "6.809 MW ÷ 2.080 MW = 3,27",
+        "result": "gut dreimal so viel Leistung",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C3",
+        "calculation": "135 ft × 0,3048 = 41,1 m",
+        "result": "Trommelschütz rund 41 m lang",
+        "sources": [
+          "S4"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "dam",
+          "kind": "dam",
+          "type": "straight",
+          "length": 1178,
+          "height": 167,
+          "tb": 150,
+          "t": 12,
+          "water_l": 900,
+          "water_w": 1500,
+          "water_x": -480,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "level": 0.85
+          }
+        },
+        {
+          "id": "spill",
+          "kind": "box",
+          "size": [
+            16,
+            6,
+            503
+          ],
+          "color": "accent",
+          "pos": [
+            -70,
+            167,
+            0
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "spill": [
+          -70,
+          172,
+          0
+        ],
+        "gates": [
+          -70,
+          172,
+          -200
+        ],
+        "tubes": [
+          40,
+          60,
+          300
+        ],
+        "crest": [
+          -70,
+          172,
+          560
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 14,
+            "el1": 18,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 16,
+            "el1": 12,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {}
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "spill"
+            ],
+            "az0": 30,
+            "az1": 40,
+            "el0": 20,
+            "el1": 24,
+            "fit0": 0.6,
+            "fit1": 0.7,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "spill.visible": 1
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 88,
+            "az1": 92,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 50,
+            "az1": 40,
+            "el0": 24,
+            "el1": 20,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 25,
+            "az1": 15,
+            "el0": 18,
+            "el1": 14,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

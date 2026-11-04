@@ -1,0 +1,746 @@
+{
+  "video_id": "megaconstruction-20261110-3-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Großglockner Hochalpenstraße: 36 Kehren in fünf Jahren gebaut",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Damals gelöst. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261110-3-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-10-30). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.grossglockner.at/en/the-high-alpine-road/history-high-alpine-road",
+      "title": "GROHAG: History of the High Alpine Road (48 km, 36 Kehren, Hochtor 2.504 m, 30.08.1930–03.08.1935, bis 4.000 Arbeiter)",
+      "label": "GROHAG, Geschichte",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.grossglockner.at/en/for-your-visit/FAQ",
+      "title": "GROHAG: FAQ (Edelweißspitze 2.571 m; Anfang Mai bis Anfang November)",
+      "label": "GROHAG, FAQ",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffelturm), Key figures",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Baukosten und Erdmassen: nicht auf den geöffneten GROHAG-Seiten.",
+    "Im Modell 12 statt 36 Kehren (schematisch)."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "48 Kilometer, 36 Kehren, 2.504 Meter hoch. Gebaut in nur fünf Jahren.",
+      "on_screen": "48 km, 36 Kehren, in 5 Jahren gebaut",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Großglockner Hochalpenstraße wirklich?",
+      "on_screen": "Wie groß ist die Großglockner Hochalpenstraße wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen die Großglockner Hochalpenstraße.",
+      "on_screen": "die Großglockner Hochalpenstraße: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Großglockner Hochalpenstraße schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Großglockner Hochalpenstraße: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Großglockner Hochalpenstraße im Modell entsteht.",
+      "on_screen": "die Großglockner Hochalpenstraße im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Wie baut man eine Straße auf 2.504 Meter Höhe, in nur fünf Jahren? Das war die Bauaufgabe am Großglockner.",
+      "data": {
+        "kicker": "Damals gelöst · Großglockner",
+        "question": "Eine Straße auf 2.504 m in fünf Jahren?",
+        "question_at": 0.05,
+        "pins": [
+          {
+            "anchor": "top",
+            "text": "Hochtor 2.504 m",
+            "kind": "dim",
+            "at": "@2.504"
+          }
+        ],
+        "tag": {
+          "text": "Hohe Tauern · eröffnet 1935",
+          "at": "@Großglockner",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "Damals, ab 1930: Die Straße sollte über den Alpenhauptkamm führen, mit dem höchsten Punkt am Hochtor auf 2.504 Metern.",
+      "data": {
+        "headline": "Damals",
+        "load": {
+          "label": "Höchster Punkt (Hochtor)",
+          "value": "2.504",
+          "unit": "m",
+          "sub": "über den Alpenhauptkamm",
+          "at": "@2.504",
+          "dy": 540
+        },
+        "goal": {
+          "text": "Straße über die Hohen Tauern",
+          "at": "@Alpenhauptkamm",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "Die Lösung: Kehren. 36 davon verteilen sich auf 48 Kilometer. So gewinnt die Straße Höhe, ohne zu steil zu werden.",
+      "data": {
+        "headline": "Die Lösung",
+        "note": "im Modell 12 statt 36 Kehren",
+        "pins": [
+          {
+            "anchor": "low",
+            "text": "Kehre",
+            "at": "@Kehren",
+            "side": "up"
+          }
+        ],
+        "rule": {
+          "text": "36 Kehren auf 48 km: Höhe Schritt für Schritt.",
+          "at": "@36",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "Am 30. August 1930 fiel die erste Sprengung. Auf der Baustelle arbeiteten bis zu 4.000 Mann. Am 3. August 1935 wurde die Straße eröffnet.",
+      "data": {
+        "headline": "So wurde sie gebaut",
+        "table_title": "Bautagebuch",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Erste Sprengung",
+            "qty": "1930",
+            "at": "@Sprengung"
+          },
+          {
+            "pos": "2",
+            "part": "Arbeiter, bis zu",
+            "qty": "4.000",
+            "at": "@4.000"
+          },
+          {
+            "pos": "3",
+            "part": "Länge der Straße, km",
+            "qty": "48",
+            "at": "@Mann"
+          },
+          {
+            "pos": "4",
+            "part": "Eröffnung",
+            "qty": "1935",
+            "at": "@eröffnet"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Nachgerechnet: Im Schnitt kommt alle 1,3 Kilometer eine Kehre. Und das Hochtor liegt so hoch wie 7,6 Eiffeltürme mit je 330 Metern übereinander.",
+      "data": {
+        "headline": "Nachgerechnet",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "Länge ÷ Kehren",
+            "a": {
+              "value": 48,
+              "unit": "km"
+            },
+            "op": "÷",
+            "b": {
+              "value": 36,
+              "unit": "Kehren"
+            },
+            "unit": "km",
+            "round": 0.1,
+            "decimals": 1,
+            "prefix": "≈ ",
+            "expect": 1.3,
+            "at": "@Schnitt",
+            "result_at": "@1,3"
+          },
+          {
+            "label": "Hochtor ÷ Eiffelturm",
+            "a": {
+              "value": 2504,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 330,
+              "unit": "m"
+            },
+            "unit": "×",
+            "round": 0.1,
+            "decimals": 1,
+            "prefix": "≈ ",
+            "expect": 7.6,
+            "at": "@Hochtor",
+            "result_at": "@7,6"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "SE"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Heute ist die Straße laut Betreiber von Anfang Mai bis Anfang November geöffnet. Der höchste befahrbare Punkt ist die Edelweißspitze auf 2.571 Metern. Folge Gigastruct für die nächste Bauaufgabe.",
+      "data": {
+        "statement": "Gelöst: Höhe in 36 Kehren",
+        "sheet": "BLATT 07",
+        "rows": [
+          [
+            "Aufgabe",
+            "Straße auf 2.504 m"
+          ],
+          [
+            "Lösung",
+            "36 Kehren, 48 km"
+          ],
+          [
+            "Bauzeit",
+            "1930 bis 1935"
+          ],
+          [
+            "Heute",
+            "Mai bis November offen"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "AUFGABE",
+        "DAMALS",
+        "LÖSUNG",
+        "BAU",
+        "HEUTE"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 4,
+        "b6": 5
+      }
+    },
+    "description": "Die Großglockner Hochalpenstraße: 48 km, 36 Kehren, Hochtor auf 2.504 m – gebaut von 1930 bis 1935 mit bis zu 4.000 Arbeitern. Zur Wintersperre Anfang November.",
+    "companion_text": "Gerechnet: 2.504 m ÷ 330 m = 7,59; 48 km ÷ 36 = 1,33 km je Kehre. Quellen: GROHAG (Geschichte, FAQ), SETE. Stilisiertes 3D-Modell, Kehren schematisch. Folge Gigastruct.",
+    "hashtags": [
+      "großglockner",
+      "hochalpenstraße",
+      "österreich",
+      "alpen",
+      "baugeschichte"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "2.504 m ÷ 330 m = 7,59",
+        "result": "7,6 Eiffeltürme übereinander",
+        "sources": [
+          "S1",
+          "SE"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "48 km ÷ 36 Kehren = 1,33 km",
+        "result": "im Schnitt alle 1,3 km eine Kehre",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C3",
+        "calculation": "30.08.1930 bis 03.08.1935 = knapp 5 Jahre",
+        "result": "fünf Jahre Bauzeit",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "mount",
+          "kind": "ridge",
+          "length": 1600,
+          "width": 3000,
+          "height": 900,
+          "color": "compare",
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "fade": 1
+          }
+        },
+        {
+          "id": "road",
+          "kind": "path",
+          "points": [
+            [
+              -380,
+              85.8,
+              1380.0
+            ],
+            [
+              380,
+              116.5,
+              1335.0
+            ],
+            [
+              380,
+              147.2,
+              1290.0
+            ],
+            [
+              -380,
+              177.9,
+              1245.0
+            ],
+            [
+              -380,
+              208.5,
+              1200.0
+            ],
+            [
+              380,
+              239.2,
+              1155.0
+            ],
+            [
+              380,
+              269.9,
+              1110.0
+            ],
+            [
+              -380,
+              300.6,
+              1065.0
+            ],
+            [
+              -380,
+              331.3,
+              1020.0
+            ],
+            [
+              380,
+              362.0,
+              975.0
+            ],
+            [
+              380,
+              392.6,
+              930.0
+            ],
+            [
+              -380,
+              423.3,
+              885.0
+            ],
+            [
+              -380,
+              454.0,
+              840.0
+            ],
+            [
+              380,
+              484.7,
+              795.0
+            ],
+            [
+              380,
+              515.4,
+              750.0
+            ],
+            [
+              -380,
+              546.0,
+              705.0
+            ],
+            [
+              -380,
+              576.7,
+              660.0
+            ],
+            [
+              380,
+              607.4,
+              615.0
+            ],
+            [
+              380,
+              638.1,
+              570.0
+            ],
+            [
+              -380,
+              668.8,
+              525.0
+            ],
+            [
+              -380,
+              699.5,
+              480.0
+            ],
+            [
+              380,
+              730.1,
+              435.0
+            ],
+            [
+              380,
+              760.8,
+              390.0
+            ],
+            [
+              -380,
+              791.5,
+              345.0
+            ],
+            [
+              -380,
+              822.2,
+              300.0
+            ]
+          ],
+          "width": 22,
+          "height": 5,
+          "color": "model"
+        },
+        {
+          "id": "eiffel",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 1,
+          "pos": [
+            -1150,
+            0,
+            900
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "top": [
+          -380,
+          832.2,
+          300.0
+        ],
+        "low": [
+          380,
+          153.2,
+          1290.0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "road"
+            ],
+            "az0": 70,
+            "az1": 80,
+            "el0": 22,
+            "el1": 28,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {
+            "road.reveal": [
+              [
+                0,
+                0.2
+              ],
+              [
+                "%1",
+                1
+              ]
+            ]
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "road"
+            ],
+            "az0": 20,
+            "az1": 35,
+            "el0": 14,
+            "el1": 18,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {}
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "road"
+            ],
+            "az0": 85,
+            "az1": 90,
+            "el0": 30,
+            "el1": 34,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "road.reveal": [
+              [
+                0,
+                0.3
+              ],
+              [
+                "%0.9",
+                1
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "road"
+            ],
+            "az0": 60,
+            "az1": 45,
+            "el0": 25,
+            "el1": 20,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {
+            "road.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.85",
+                1
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "mount"
+            ],
+            "az0": 30,
+            "az1": 20,
+            "el0": 8,
+            "el1": 10,
+            "fit0": 0.7,
+            "fit1": 0.75,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {
+            "eiffel.visible": 1
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "road"
+            ],
+            "az0": 75,
+            "az1": 85,
+            "el0": 30,
+            "el1": 24,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

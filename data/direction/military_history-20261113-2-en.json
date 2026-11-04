@@ -1,0 +1,541 @@
+{
+  "video_id": "military_history-20261113-2-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Nightingale's Rose Diagram",
+  "notes": "Woche 1, Reihe Nachschub. Nur Diagramm und Organisation; keine Kranken, keine Lazarettszenen. 'Rosendiagramm' nur im Titel (Quellen: polar area diagram, coxcomb).",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.sciencemuseum.org.uk/objects-and-stories/florence-nightingale-pioneer-statistician",
+      "title": "Florence Nightingale: pioneer statistician, Science Museum, 2018",
+      "label": "Science Museum",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.florence-nightingale.co.uk/about-florence-nightingale/",
+      "title": "About Florence Nightingale, Florence Nightingale Museum London",
+      "label": "Nightingale Museum",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Genaue Todeszahlen nennt keine Quelle; im Video keine Zahlen dazu."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you fit two years of numbers into a single diagram?",
+      "on_screen": "Two years, one diagram?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Nightingale was only a nurse? She was also a pioneer of statistics.",
+      "on_screen": "Nurse and statistician",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "In 1858 she became the first woman elected to the Statistical Society.",
+      "on_screen": "The first woman, 1858",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Preventable disease, shown in blue.",
+      "on_screen": "Preventable, in blue",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a diagram grow wedge by wedge.",
+      "on_screen": "Wedge by wedge",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you fit two years of numbers into a single diagram?",
+      "data": {
+        "question": "Two years of numbers in one diagram?",
+        "question_em": "one diagram",
+        "card_title": "Polar area diagram",
+        "card_meta": "LONDON · 1859",
+        "card_no": "FILE 23",
+        "stamp": "1859",
+        "drawing": "nightingale_polar.svg",
+        "packet_label": "Diagram",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:years",
+        "packet_at": "w:numbers",
+        "em_at": "w:diagram"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "In November 1854 Florence Nightingale arrives in Scutari with 38 nurses. Her later diagram compares two years, month by month.",
+      "data": {
+        "mode": "map",
+        "headline": "Arrival in Scutari",
+        "places": [
+          {
+            "label": "London",
+            "code": "statistics",
+            "x": 600,
+            "y": 80,
+            "at": "w:Nightingale"
+          },
+          {
+            "label": "Scutari",
+            "code": "Nov 1854",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Scutari"
+          }
+        ],
+        "route_at": "w:arrives",
+        "route_label": "38 nurses",
+        "route_label_at": "w:38",
+        "wait_at": "w:diagram",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Arrival: November 1854",
+        "chip_at": "w:November",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Diagram",
+        "packet_at": "w:later",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "2 years, month by month",
+        "line_label_at": "w:month#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:area",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "Each wedge stands for one month. Its area shows the number of deaths. Three colours separate the causes: preventable disease, wounds and other causes.",
+      "data": {
+        "headline": "One wedge per month",
+        "drawing": "nightingale_polar.svg",
+        "sheet_title": "SHEET 2 · POLAR AREA DIAGRAM",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "1 wedge = 1 month",
+            "x": 300,
+            "y": 250,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:wedge"
+          },
+          {
+            "label": "Area = number",
+            "x": 220,
+            "y": 200,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:area"
+          },
+          {
+            "label": "3 colours = 3 causes",
+            "x": 140,
+            "y": 330,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:colours"
+          },
+          {
+            "label": "Blue: preventable disease",
+            "x": 230,
+            "y": 370,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:preventable"
+          }
+        ],
+        "zoom": {
+          "x": 200,
+          "y": 290,
+          "scale": 1.12,
+          "at": "w:area",
+          "back_at": "w:other",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "The right half shows the year after her arrival, 1854 to 1855. The left half shows the year after her reforms, 1855 to 1856.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Two years compared",
+        "left": {
+          "tag": "1854–55",
+          "title": "After her arrival",
+          "at": "w:right",
+          "rows": [
+            "right half"
+          ]
+        },
+        "right": {
+          "tag": "1855–56",
+          "title": "After her reforms",
+          "at": "w:left",
+          "rows": [
+            "left half"
+          ]
+        },
+        "verdict": "One picture, two years",
+        "verdict_at": "w:1856",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "The diagram's path: back in London in 1856, work with Harriet Martineau, and in 1859 a fold-out page in her book England and Her Soldiers.",
+      "data": {
+        "headline": "From figures to a book",
+        "nodes": [
+          {
+            "label": "London",
+            "code": "1856",
+            "at": "w:London"
+          },
+          {
+            "label": "Martineau",
+            "code": "author",
+            "at": "w:Martineau"
+          },
+          {
+            "label": "Fold-out page",
+            "code": "1859",
+            "at": "w:fold-out"
+          },
+          {
+            "label": "The book",
+            "code": "Martineau 1859",
+            "at": "w:book"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Diagram",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "1854 the arrival in Scutari, 1858 she becomes the first woman elected to the Statistical Society, and 1859 the diagram is published.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1854 to 1859",
+        "items": [
+          {
+            "year": "1854",
+            "title": "Arrival in Scutari",
+            "sub": "with 38 nurses",
+            "at": "w:1854"
+          },
+          {
+            "year": "1858",
+            "title": "Statistical Society",
+            "sub": "first woman elected",
+            "at": "w:1858"
+          },
+          {
+            "year": "1859",
+            "title": "Diagram printed",
+            "sub": "England and Her Soldiers",
+            "at": "w:1859"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "The society is now the Royal Statistical Society. And the Florence Nightingale Museum stands at St Thomas' Hospital in London. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Polar area diagram",
+        "card_meta": "1859 · FOLD-OUT",
+        "card_no": "FILE 23",
+        "stamp": "1858",
+        "drawing": "nightingale_polar.svg",
+        "statement": "Data as a tool",
+        "statement_at": "w:Royal",
+        "stamp_at": "w:Statistical",
+        "note": "Florence Nightingale Museum, London",
+        "note_at": "w:Museum",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Diagram",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Data: pending",
+          "tone": "muted",
+          "offset": 3.7
+        },
+        {
+          "beat": "b2",
+          "text": "Arrival: Scutari",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b3",
+          "text": "Wedges: 12 months",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b4",
+          "text": "Compare: 2 years",
+          "tone": "amber",
+          "offset": 2.7
+        },
+        {
+          "beat": "b5",
+          "text": "Printed: 1859",
+          "tone": "muted",
+          "offset": 7.1
+        },
+        {
+          "beat": "b6",
+          "text": "Society: 1858",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b7",
+          "text": "Museum: London",
+          "tone": "muted",
+          "offset": 6.1
+        }
+      ]
+    },
+    "description": "Florence Nightingale the statistician: a polar area diagram, one wedge per month, two years compared. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "statistics",
+      "nightingale",
+      "dataviz",
+      "history",
+      "diagram"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

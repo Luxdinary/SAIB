@@ -1,0 +1,453 @@
+{
+ "video_id": "ai_security-20261110-3-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Two-step login: start with your email",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema B02, Reihe Fünf-Minuten-Schutz. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Business email. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Business email",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Login: password only",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Inbox: master key",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Password: used elsewhere?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Second factor: missing",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Two-factor: available?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Today: turn it on",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "No second step: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Whoever has your email can reset almost every other password. Why two-step verification belongs there first, according to the NCSC and the BSI.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "2sv",
+   "email",
+   "passwords",
+   "smallbusiness",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email",
+   "title": "NCSC: Top tips for staying secure online – Use a strong and separate password for your email",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, email password"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Zwei-Faktor-Authentisierung/zwei-faktor-authentisierung_node.html",
+   "title": "BSI: Zwei-Faktor-Authentisierung – mehr Sicherheit für Geräte und Daten",
+   "checked_at": "2026-11-01",
+   "label": "BSI (Germany), two-factor"
+  }
+ ],
+ "unverified": [
+  "Specific providers and menus: not named."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Which account should you protect first? The answer is almost always the same.",
+   "on_screen": "Which account comes first?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Your bank login matters most? Often it's your email.",
+   "on_screen": "Most important login: the bank?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "With your email account, someone can reset nearly all your other passwords.",
+   "on_screen": "One inbox resets every password",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "NCSC: Zugriff aufs Postfach erlaubt Reset aller Passwörter"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Whoever gets into your email can reset all your other passwords.",
+   "on_screen": "Lose the inbox, lose everything?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "NCSC: reset all your other account passwords"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch what happens after one click on forgot password.",
+   "on_screen": "What does forgot password do?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Whoever gets into your email can reset all your other passwords.",
+   "data": {
+    "question": "Lose the inbox, lose everything?",
+    "doc_label": "Password reset",
+    "chat_title": "Business email",
+    "bot_line": "Reset link sent",
+    "typed": "Forgot password?",
+    "badge": "Who clicks?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 14,
+   "spoken": "The UK's NCSC lists what criminals can do with someone else's inbox: read private information, including banking details. Send messages pretending to be you. And reset the passwords of all your other accounts.",
+   "data": {
+    "headline": "Your inbox is the master key",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Intruder in your inbox",
+      "icon": "&#9823;"
+     },
+     {
+      "id": "n1",
+      "label": "Reset links",
+      "icon": "&#9993;"
+     },
+     {
+      "id": "n2",
+      "label": "Bank, shop, cloud",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "forgot password"
+     },
+     {
+      "label": "new password"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 9.0,
+     "label": "Everything reset?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "That's why the NCSC advises a strong password used only for your email, nowhere else. Add 2-step verification. It keeps criminals out of your email even if they know your password.",
+   "data": {
+    "headline": "What the NCSC advises",
+    "file_label": "Business email",
+    "card": {
+     "title": "Your email account",
+     "rows": [
+      {
+       "text": "strong, separate password",
+       "ok": null
+      },
+      {
+       "text": "not used anywhere else",
+       "ok": null
+      },
+      {
+       "text": "plus a second step",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "The difference is big. With a password alone, one leaked password is enough. With a second factor, the attacker still needs something you have, such as your phone.",
+   "data": {
+    "headline": "Password alone or two steps",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.0,
+    "left": {
+     "title": "Password only",
+     "rows": [
+      {
+       "text": "one leak is enough",
+       "ok": "open"
+      },
+      {
+       "text": "resets every account",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "With a second step",
+     "rows": [
+      {
+       "text": "password is not enough",
+       "ok": null
+      },
+      {
+       "text": "second factor, e.g. phone",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Germany's BSI agrees: turn on two-factor login as soon as a service offers it. It's especially worth it for accounts with far-reaching rights, such as email. And don't switch it off again.",
+   "data": {
+    "headline": "The BSI says the same",
+    "file_label": "Business email",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Service offers it",
+      "sub": "turn it on now",
+      "at": 0.6
+     },
+     {
+      "title": "Already on",
+      "sub": "don't switch it off",
+      "at": 1.0
+     }
+    ],
+    "approval": "Email first?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Your five-minute fix for today: open the security settings of your business email. Turn on 2-step verification. And give the account a password that exists only there.",
+   "data": {
+    "headline": "Five minutes, one inbox",
+    "items": [
+     {
+      "title": "Security settings",
+      "sub": "of your business email",
+      "at": 2.0
+     },
+     {
+      "title": "Turn on the second step",
+      "sub": "app or security key",
+      "at": 4.8
+     },
+     {
+      "title": "Separate password",
+      "sub": "for this account only",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Your inbox first, then the rest. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Your inbox first",
+    "file_label": "Business email",
+    "button": "Sign in",
+    "block_text": "Only with a second step",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

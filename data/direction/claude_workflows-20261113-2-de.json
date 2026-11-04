@@ -1,0 +1,296 @@
+{
+  "video_id": "claude_workflows-20261113-2-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Auto Memory – Claude schreibt sich selbst Notizen",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent C. Thema 13.11. Thema 2 (G2), Reihe Grundlagen, Format explainer. Vorlage Promptwerk 0.9 mit Qualitätsrunde Q1. Leitobjekt: MEMORY.md (Hook-Tab, Ordnerbaum, Statusleiste). Quellen am 01.11.2026 als Markdown-Fassung geöffnet: Memory-Seite und Commands-Seite der Claude-Code-Doku. Ordnerbaum wörtlich aus der Memory-Seite; Einträge der MEMORY.md im Hook und der Prompt im Terminal sind Beispielwerte (pnpm-Beispiel aus der Doku). Terminal-Szene als Animation, #-Zeilen sind Erklärungen; roter Terminal-Marker mit mark_w 0 ausgeblendet.",
+  "hook": {
+    "id": "H2",
+    "note": "Denkfehler mit höchster Bewertung; der MEMORY.md-Tab neben CLAUDE.md macht das zweite Gedächtnis sichtbar."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wusstest du, dass Claude Code sich selbst Notizen über dein Projekt schreibt?",
+      "on_screen": "Claude schreibt sich Notizen?",
+      "scores": {"clarity": 5, "relevance": 5, "curiosity": 4, "truth": 5, "visual": 4},
+      "source_ids": ["S1"],
+      "visual": "MEMORY.md im Editor, Marker auf einer Notiz",
+      "why": {"truth": "Auto memory: notes Claude writes itself", "curiosity": "Wusstest-du-Formel"}
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude merkt sich nur, was in deiner CLAUDE.md steht? Nicht ganz. Es schreibt selbst mit.",
+      "on_screen": "Nur, was in CLAUDE.md steht?",
+      "scores": {"clarity": 4, "relevance": 5, "curiosity": 5, "truth": 5, "visual": 4},
+      "source_ids": ["S1"],
+      "visual": "Tabs CLAUDE.md und MEMORY.md, MEMORY.md leuchtet auf, Marker, Klick",
+      "why": {"truth": "Memory-Seite: zwei Mechanismen, CLAUDE.md und Auto Memory", "curiosity": "widerspricht einer verbreiteten Annahme"}
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Neben deiner CLAUDE.md führt Claude ein eigenes Notizbuch: Auto Memory.",
+      "on_screen": "Claudes eigenes Notizbuch",
+      "scores": {"clarity": 4, "relevance": 4, "curiosity": 4, "truth": 5, "visual": 3},
+      "source_ids": ["S1"],
+      "visual": "zweiter Tab erscheint",
+      "why": {"truth": "Notizbuch ist ein Bild für die Notizdateien", "visual": "wenig Handlung"}
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Claude speichert Notizen über deine Arbeit. Weißt du, was drinsteht?",
+      "on_screen": "Weißt du, was Claude notiert?",
+      "scores": {"clarity": 4, "relevance": 4, "curiosity": 4, "truth": 4, "visual": 3},
+      "source_ids": ["S1"],
+      "visual": "Ordner öffnet sich",
+      "why": {"truth": "Doku-Fehlerbild I don't know what auto memory saved; Risiko nur angedeutet", "relevance": "klingt nach Warnung"}
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wo Claude seine eigenen Notizen ablegt und wie du sie liest.",
+      "on_screen": "Wo Claudes Notizen liegen",
+      "scores": {"clarity": 5, "relevance": 4, "curiosity": 3, "truth": 5, "visual": 4},
+      "source_ids": ["S1"],
+      "visual": "Ordnerbaum memory/",
+      "why": {"truth": "Speicherort belegt", "curiosity": "wenig Spannung"}
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "How Claude remembers your project (Claude Code Docs): auto memory, notes Claude writes itself based on your corrections and preferences; doesn't save something every session; ~/.claude/projects/<project>/memory/ with MEMORY.md index; first 200 lines or 25KB loaded; machine-local; /memory; autoMemoryEnabled; context, not enforced configuration",
+      "url": "https://code.claude.com/docs/en/memory",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Memory"
+    },
+    {
+      "id": "S2",
+      "title": "Commands (Claude Code Docs): /memory edits CLAUDE.md files, enables or disables auto memory, and views auto memory entries",
+      "url": "https://code.claude.com/docs/en/commands",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Commands"
+    }
+  ],
+  "unverified": [
+    "Wie das /memory-Menü genau aussieht (Beschriftungen, Reihenfolge): nicht belegt; die Terminal-Szene ist animiert, die #-Zeilen geben nur die Funktionen laut Doku wieder.",
+    "Ob Claude zu „Merk dir: immer pnpm statt npm“ eine Meldung wie „Saved 1 memory“ zeigt: Die Doku nennt nur Beispiele wie „Saved 2 memories“; keine Meldung im Bild.",
+    "Die Einträge der MEMORY.md im Hook sind Beispielwerte (pnpm und Redis nach den Doku-Beispielen, die dritte Zeile erfunden).",
+    "Wie oft oder wann genau Claude etwas speichert: Doku sagt nur, Claude entscheidet nach Nutzen für spätere Gespräche; keine Aussage über Häufigkeit."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "MEMORY.md",
+      "states": [
+        {"beat": "b1", "text": "Inhalt: unbekannt", "tone": "amber", "offset": 1.4},
+        {"beat": "b2", "text": "Auto Memory: Standard an", "tone": "muted"},
+        {"beat": "b3", "text": "Index: bis 200 Zeilen", "tone": "muted"},
+        {"beat": "b4", "text": "pnpm-Notiz: gespeichert", "tone": "accent"},
+        {"beat": "b5", "text": "Kontext, keine Pflicht", "tone": "muted"},
+        {"beat": "b6", "text": "/memory: einsehbar", "tone": "accent"},
+        {"beat": "b7", "text": "einsehbar und änderbar", "tone": "ok"}
+      ]
+    },
+    "description": "Neben deiner CLAUDE.md schreibt Claude Code mit Auto Memory eigene Notizen, aus deinen Korrekturen und Vorlieben. Sie liegen pro Projekt in einem Ordner mit einer MEMORY.md als Inhaltsverzeichnis; jede Sitzung lädt bis zu 200 Zeilen davon. Mit /memory siehst und bearbeitest du alles.",
+    "companion_text": "Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt. Nach der Memory- und der Commands-Seite der Claude-Code-Dokumentation; die Terminal-Szene ist eine animierte Darstellung, keine Bildschirmaufnahme. Laut Doku: Auto Memory ist in lokalen Sitzungen standardmäßig an und bleibt auf deinem Rechner, es wird nicht zwischen Geräten geteilt. Geladen werden die ersten 200 Zeilen der MEMORY.md oder 25 KB, je nachdem, was zuerst erreicht ist. Wie die CLAUDE.md ist Auto Memory Kontext, keine erzwungene Konfiguration. Abschalten: Schalter in /memory, autoMemoryEnabled: false in den Projekteinstellungen oder CLAUDE_CODE_DISABLE_AUTO_MEMORY=1.",
+    "hashtags": ["claudecode", "automemory", "kiworkflow", "programmieren", "entwickler"],
+    "short_title": "Auto Memory"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": ["S1"],
+      "spoken": "Claude merkt sich nur, was in deiner CLAUDE.md steht? Nicht ganz. Es schreibt selbst mit.",
+      "data": {
+        "question": "Nur, was in CLAUDE.md steht?",
+        "chip": "nicht ganz",
+        "file": "MEMORY.md",
+        "tabs": [{"name": "CLAUDE.md"}, {"name": "MEMORY.md", "active": true}],
+        "lines": [
+          [["com", "# MEMORY.md"]],
+          [["dim", "- "], ["", "Immer pnpm, nicht npm"]],
+          [["dim", "- "], ["", "API-Tests brauchen Redis"]],
+          [["dim", "- "], ["", "Antworten auf Deutsch"]]
+        ],
+        "focus_line": 1,
+        "zoom": 1.1,
+        "question_word": "merkt",
+        "chip_word": "ganz",
+        "env_word": "schreibt",
+        "mark_word": "selbst",
+        "click_word": "mit"
+      },
+      "overlay": {"marker": "none", "example": true}
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "pw_doc",
+      "source_ids": ["S1"],
+      "spoken": "Die Dokumentation nennt das Auto Memory: Notizen, die Claude selbst schreibt, aus deinen Korrekturen und Vorlieben. Nicht in jeder Sitzung, sondern nur, wenn es später nützt.",
+      "data": {
+        "kicker": "Claude Code Docs · Memory",
+        "page_title": "How Claude remembers your project",
+        "quotes": [
+          "notes Claude writes itself based on your corrections and preferences",
+          "Claude doesn't save something every session."
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Notizen, die Claude selbst schreibt",
+        "page_word": "Dokumentation",
+        "quote1_word": "Notizen",
+        "translation_word": "Korrekturen",
+        "quote2_word": "Nicht"
+      },
+      "overlay": {
+        "title": "Claudes eigene Notizen",
+        "marker_at": "w:Notizen",
+        "transition": {"type": "blende", "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": ["S1"],
+      "spoken": "Jedes Projekt hat dafür einen eigenen Ordner unter .claude in deinem Home-Verzeichnis. Die MEMORY.md ist das Inhaltsverzeichnis, bis zu 200 Zeilen davon lädt jede Sitzung. Jede Notiz ist eine eigene Datei.",
+      "data": {
+        "tabs": [{"name": "memory/", "active": true}, "MEMORY.md"],
+        "focus_line": 1,
+        "callout": "Index · lädt bis 200 Zeilen",
+        "callout_num": "1",
+        "lines": [
+          [["com", "# ~/.claude/projects/<project>/memory/"]],
+          [["punc", "├── "], ["key", "MEMORY.md"], ["com", "   # Index"]],
+          [["punc", "├── "], ["", "user_role.md"]],
+          [["punc", "├── "], ["", "feedback_testing.md"]],
+          [["punc", "└── "], ["com", "..."]]
+        ],
+        "line_h": 58,
+        "zoom": 1.1,
+        "typed_word": "Ordner",
+        "pre_line": 0,
+        "pre_word": ".claude",
+        "mark_word": "MEMORY",
+        "click_word": "Inhaltsverzeichnis",
+        "callout_word": "lädt"
+      },
+      "overlay": {
+        "title": "Wo die Notizen liegen",
+        "marker_at": "w:Ordner",
+        "transition": {"type": "blende", "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": ["S1", "S2"],
+      "spoken": "Sagst du Claude: Merk dir, immer pnpm statt npm, landet das im Auto Memory. Mit slash memory siehst du deine Dateien, schaltest Auto Memory an oder aus und öffnest den Ordner.",
+      "data": {
+        "title": "claude · demo-projekt",
+        "focus_line": 5,
+        "mark_w": 0,
+        "height": 520,
+        "top": 20,
+        "lines": [
+          {"kind": "prompt", "text": [["acc", "> "], ["", "Merk dir: immer pnpm statt npm"]], "at_word": "Merk"},
+          {"kind": "dim", "text": "  # landet im Auto Memory", "at_word": "landet"},
+          {"kind": "prompt", "text": [["acc", "> "], ["", "/memory"]], "at_word": "slash"},
+          {"kind": "dim", "text": "  # CLAUDE.md, CLAUDE.local.md …", "at_word": "Dateien"},
+          {"kind": "dim", "text": "  # Schalter: Auto Memory an/aus", "at_word": "schaltest"},
+          {"kind": "tool", "text": [["acc", "▸ "], ["", "Auto-Memory-Ordner öffnen"]], "at_word": "öffnest"}
+        ],
+        "mark_word": "öffnest",
+        "click_word": "Ordner",
+        "annotation": "alles einfaches Markdown",
+        "annotation_word": "Ordner"
+      },
+      "overlay": {
+        "title": "Merken und nachsehen",
+        "example": true,
+        "marker_at": "w:Merk",
+        "transition": {"type": "blende", "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": ["S1"],
+      "spoken": "Der Unterschied: Die CLAUDE.md schreibst du, mit Regeln und Anweisungen. Auto Memory schreibt Claude, mit dem, was es gelernt hat. Beides ist Kontext, keine Pflicht.",
+      "data": {
+        "top": {"title": "CLAUDE.md", "verdict": "du", "rows": ["Regeln, Anweisungen", "für jede Sitzung"]},
+        "bottom": {"title": "Auto Memory", "verdict": "Claude", "rows": ["Gelerntes, Vorlieben", "pro Projekt, lokal"]},
+        "top_word": "CLAUDE.md",
+        "bottom_word": "Auto"
+      },
+      "overlay": {
+        "title": "Wer schreibt was",
+        "marker": "auslegung",
+        "marker_at": "w:Unterschied",
+        "transition": {"type": "blende", "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": ["S1"],
+      "spoken": "So behältst du die Kontrolle: Mit slash memory reinschauen, die Markdown-Dateien bearbeiten oder löschen, und für ein Projekt abschalten mit autoMemoryEnabled auf false.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {"title": "Notizen ansehen", "code": "/memory", "at_word": "slash"},
+          {"title": "Bearbeiten oder löschen", "code": "MEMORY.md + Notizdateien", "at_word": "Markdown"},
+          {"title": "Für ein Projekt abschalten", "code": "\"autoMemoryEnabled\": false", "at_word": "abschalten"}
+        ]
+      },
+      "overlay": {
+        "title": "Du behältst die Kontrolle",
+        "marker": "fakt",
+        "marker_at": "w:slash",
+        "transition": {"type": "blende", "seconds": 0.7}
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Du schreibst die Regeln, Claude die Notizen. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "MEMORY.md: einsehbar",
+        "lines": [
+          {"kind": "prompt", "text": [["acc", "> "], ["", "/memory"]]},
+          {"kind": "tool", "text": [["acc", "▸ "], ["", "Auto-Memory-Ordner öffnen"]]}
+        ],
+        "statement": "Du schreibst die Regeln. Claude die Notizen.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "schreibst",
+        "brand_word": "Mehr"
+      },
+      "overlay": {"head": false, "marker": "none", "transition": {"type": "blende", "seconds": 0.7}}
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+ "video_id": "ai_security-20261113-1-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Backups: keep one copy offline",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema B04, Reihe Fünf-Minuten-Schutz. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Backup. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Backup",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Backup: plugged in",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Encryption: spreads",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Offline copy: missing",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "3-2-1: in place?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Test: open",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Drive: unplug today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Always connected: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Ransomware can encrypt connected backups too. What the UK's NCSC advises: one copy offline, the 3-2-1 rule, and regular tests.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "backup",
+   "ransomware",
+   "databackup",
+   "smallbusiness",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ncsc.gov.uk/blog-post/offline-backups-in-an-online-world",
+   "title": "NCSC blog: Offline backups in an online world",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, offline backups"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/always-back-up-your-most-important-data",
+   "title": "NCSC: Top tips for staying secure online – Backing up your data",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, backing up data"
+  }
+ ],
+ "unverified": [
+  "Specific backup products: not named."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What's left if your backup gets encrypted too?",
+   "on_screen": "What if the backup is gone too?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "You have a backup, so you're safe? Not if it's plugged in.",
+   "on_screen": "Backup = safe?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The NCSC has seen ransomware encrypt backup drives as well.",
+   "on_screen": "Backups encrypted too",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Your backup is plugged into the computer? Then ransomware can encrypt it too.",
+   "on_screen": "Plugged in, backup gone?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "NCSC: angeschlossene USB- und Netzlaufwerke mitverschlüsselt"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch what happens to the drive attached to this computer.",
+   "on_screen": "What happens to the drive?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Your backup is plugged into the computer? Then ransomware can encrypt it too.",
+   "data": {
+    "question": "Plugged in, backup gone?",
+    "doc_label": "Backup copy",
+    "chat_title": "Backup",
+    "bot_line": "Drive connected",
+    "typed": "Backup running",
+    "badge": "Gone too?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "The UK's NCSC has seen many incidents where ransomware encrypted not only the original data, but also the connected USB and network drives holding the backups, and connected cloud storage too.",
+   "data": {
+    "headline": "What the NCSC has seen",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Ransomware",
+      "icon": "&#9888;"
+     },
+     {
+      "id": "n1",
+      "label": "Original data",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n2",
+      "label": "Connected backup",
+      "icon": "&#9635;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "encrypts"
+     },
+     {
+      "label": "spreads to"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "The backup too?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Hence the NCSC's first rule: at any time, at least one backup is offline. Only connect it when absolutely necessary. And unplug a USB drive as soon as the backup is done.",
+   "data": {
+    "headline": "The offline rule",
+    "file_label": "Backup",
+    "card": {
+     "title": "According to the NCSC",
+     "rows": [
+      {
+       "text": "at least one backup offline",
+       "ok": null
+      },
+      {
+       "text": "connect only when needed",
+       "ok": null
+      },
+      {
+       "text": "unplug the drive afterwards",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "The second pillar is the 3-2-1 rule: at least three copies, on two devices, one of them offsite. The NCSC points out that this rule on its own does not require an offline copy. That's why you need both.",
+   "data": {
+    "headline": "3-2-1 plus offline",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.5,
+    "left": {
+     "title": "The 3-2-1 rule",
+     "rows": [
+      {
+       "text": "3 copies",
+       "ok": null
+      },
+      {
+       "text": "2 devices",
+       "ok": null
+      },
+      {
+       "text": "1 offsite",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "You also need",
+     "rows": [
+      {
+       "text": "one copy offline",
+       "ok": "open"
+      },
+      {
+       "text": "or everything is reachable",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "And backups should be made regularly. The more often, the less data you lose when you have to recover. The NCSC also advises testing backups regularly to check they work as expected.",
+   "data": {
+    "headline": "Back up and test regularly",
+    "file_label": "Backup",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Backup tested",
+      "sub": "you can get back",
+      "at": 0.6
+     },
+     {
+      "title": "Never tested",
+      "sub": "the real thing is the test",
+      "at": 1.0
+     }
+    ],
+    "approval": "Restore rehearsed?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Your five-minute fix: check whether your backup drive stays plugged into the computer all the time. If so, disconnect it after each backup. And set a reminder to restore one file from the backup as a test.",
+   "data": {
+    "headline": "Five minutes for backups",
+    "items": [
+     {
+      "title": "Drive always plugged in?",
+      "sub": "unplug after each backup",
+      "at": 2.0
+     },
+     {
+      "title": "Check 3-2-1",
+      "sub": "one copy offsite",
+      "at": 4.8
+     },
+     {
+      "title": "Test a restore",
+      "sub": "one file, regularly",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "One copy belongs offline. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "One copy belongs offline",
+    "file_label": "Backup",
+    "button": "Keep connected",
+    "block_text": "Disconnect after backing up",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

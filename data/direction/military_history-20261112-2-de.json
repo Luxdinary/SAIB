@@ -1,0 +1,551 @@
+{
+  "video_id": "military_history-20261112-2-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Martello-Türme: Festung aus dem Baukasten",
+  "notes": "Woche 1, Reihe Gebaut für den Ernstfall. Bauwerk und Serienbau; keine Geschütze, keine Gefechtsszenen.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.english-heritage.org.uk/visit/places/dymchurch-martello-tower/history/",
+      "title": "History of Dymchurch Martello Tower, English Heritage",
+      "label": "English Heritage",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://heritage.kent.gov.uk/Designation/DKE19151",
+      "title": "Martello Tower No 6, Sandgate, List Entry 1320483, Kent Heritage Explorer",
+      "label": "Kent HER: Turm Nr. 6",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Bauphasen Südküste 1805–1808 (English Heritage) oder 1805–1810 (Kent HER); im Video Baubeginn 1805 und 'die meisten bis 1808'.",
+    "Vorbild Mortella: 1794 (English Heritage) oder 1793; im Video 1794 laut English Heritage."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie baut man 74 Festungstürme, die alle gleich aussehen?",
+      "on_screen": "74 Türme nach einem Plan?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Martello war ein Erfinder? Der Name ist eine falsche Schreibung von Mortella.",
+      "on_screen": "Wer war Martello?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Jeder Turm brauchte rund 250.000 Ziegel.",
+      "on_screen": "250.000 Ziegel pro Turm",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ein Turm, eine Tür, und die liegt im ersten Stock.",
+      "on_screen": "Die Tür im ersten Stock",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie ein Turm in drei Ebenen aufgebaut ist.",
+      "on_screen": "Drei Ebenen, ein Pfeiler",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie baut man 74 Festungstürme, die alle gleich aussehen?",
+      "data": {
+        "question": "74 Türme nach einem einzigen Plan?",
+        "question_em": "einem einzigen Plan",
+        "card_title": "Martello-Turm",
+        "card_meta": "KENT · AB 1805",
+        "card_no": "AKTE 15",
+        "stamp": "Nr. 24",
+        "drawing": "martello_section.svg",
+        "packet_label": "Turm",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:74",
+        "packet_at": "w:Festungstürme",
+        "em_at": "w:gleich"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "Vorbild ist ein runder Turm am Kap Mortella auf Korsika, 1794. Aus Mortella wird durch einen Schreibfehler Martello. Im Oktober 1804 beschließt man in Rochester 74 Türme für die Südküste.",
+      "data": {
+        "mode": "map",
+        "headline": "Von Korsika nach Kent",
+        "places": [
+          {
+            "label": "Rochester",
+            "code": "Beschluss 1804",
+            "x": 600,
+            "y": 80,
+            "at": "w:Rochester"
+          },
+          {
+            "label": "Mortella",
+            "code": "Korsika, 1794",
+            "x": 190,
+            "y": 500,
+            "rx": 165,
+            "ry": 95,
+            "at": "w:Mortella"
+          }
+        ],
+        "route_at": "w:Schreibfehler",
+        "route_label": "Mortella → Martello",
+        "route_label_at": "w:Martello",
+        "wait_at": "w:Oktober",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "74 Türme beschlossen",
+        "chip_at": "w:74",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Turm",
+        "packet_at": "w:Südküste",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Vorbild übernommen",
+        "line_label_at": "w:beschließt",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Ziegelpfeiler",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Jeder Turm hat drei Ebenen: unten Vorräte, im ersten Stock das Quartier, oben eine flache Plattform. Ein Ziegelpfeiler in der Mitte trägt das Dach, und die einzige Tür liegt im ersten Stock.",
+      "data": {
+        "headline": "Drei Ebenen, ein Pfeiler",
+        "drawing": "martello_section.svg",
+        "sheet_title": "BLATT 2 · SCHNITT",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Plattform oben",
+            "x": 230,
+            "y": 90,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:Plattform"
+          },
+          {
+            "label": "Quartier, 1. Stock",
+            "x": 300,
+            "y": 320,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:Quartier"
+          },
+          {
+            "label": "Vorräte unten",
+            "x": 300,
+            "y": 480,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Vorräte"
+          },
+          {
+            "label": "Einzige Tür",
+            "x": 363,
+            "y": 320,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Tür"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 300,
+          "scale": 1.12,
+          "at": "w:Ziegelpfeiler",
+          "back_at": "w:Tür",
+          "grow": "up"
+        },
+        "headline_lines": 2,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Jeder Turm braucht rund 250.000 Ziegel. Turm 24 in Dymchurch ist zehn Meter hoch, und die Mauern von Turm 6 in Sandgate sind bis zu vier Meter dick, zur See hin am dicksten.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Zwei Türme im Maß",
+        "left": {
+          "tag": "Turm 24",
+          "title": "Dymchurch",
+          "at": "w:Dymchurch",
+          "rows": [
+            {
+              "text": "10 m hoch",
+              "at": "w:zehn"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Turm 6",
+          "title": "Sandgate",
+          "at": "w:Sandgate",
+          "rows": [
+            {
+              "text": "Mauern bis 4 m",
+              "at": "w:vier"
+            },
+            {
+              "text": "dickste Seite: zur See",
+              "at": "w:See"
+            }
+          ]
+        },
+        "verdict": "Je Turm rund 250.000 Ziegel",
+        "verdict_at": "w:250.000",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "Die Türme tragen Nummern von 1 bis 74, gezählt von Ost nach West. Der Bau beginnt Anfang 1805, und die meisten stehen 1808.",
+      "data": {
+        "headline": "Nummer für Nummer",
+        "nodes": [
+          {
+            "label": "Turm 1",
+            "code": "Osten",
+            "at": "w:Ost"
+          },
+          {
+            "label": "Turm 24",
+            "code": "Dymchurch",
+            "at": "w:West"
+          },
+          {
+            "label": "Turm 74",
+            "code": "Westen",
+            "at": "w:1805"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": "Serienbau"
+          }
+        ],
+        "packet_label": "Turm",
+        "count": {
+          "to": 74,
+          "label": "TÜRME",
+          "at": "w:Nummern",
+          "until": "w:Ost"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1794 das Vorbild, 1805 der Baubeginn, und von 1809 bis 1812 folgen an der Ostküste 29 weitere Türme.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1794 bis 1812",
+        "items": [
+          {
+            "year": "1794",
+            "title": "Vorbild Mortella",
+            "sub": "Korsika",
+            "at": "w:1794"
+          },
+          {
+            "year": "1805",
+            "title": "Baubeginn",
+            "sub": "Südküste, Türme 1–74",
+            "at": "w:1805"
+          },
+          {
+            "year": "1812",
+            "title": "Ostküste fertig",
+            "sub": "29 weitere Türme",
+            "at": "w:1809",
+            "sub_at": "w:29"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "26 der 74 Türme an der Südküste sind erhalten. Turm 24 in Dymchurch ist seit 1969 ein Museum. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Turm 24",
+        "card_meta": "DYMCHURCH",
+        "card_no": "AKTE 15",
+        "stamp": "Museum",
+        "drawing": "martello_section.svg",
+        "statement": "26 von 74 Türmen stehen noch",
+        "statement_at": "w:26",
+        "stamp_at": "w:Museum",
+        "note": "English Heritage, seit 1969",
+        "note_at": "w:1969",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Turm",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Plan: 74 Türme",
+          "tone": "muted",
+          "offset": 1.7
+        },
+        {
+          "beat": "b2",
+          "text": "Beschluss: 1804",
+          "tone": "amber",
+          "offset": 10.1
+        },
+        {
+          "beat": "b3",
+          "text": "Bauweise: 3 Ebenen",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b4",
+          "text": "Ziegel: 250.000",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b5",
+          "text": "Küste: 1 bis 74",
+          "tone": "amber",
+          "offset": 1.7
+        },
+        {
+          "beat": "b6",
+          "text": "Ostküste: +29",
+          "tone": "muted",
+          "offset": 7.6
+        },
+        {
+          "beat": "b7",
+          "text": "Erhalten: 26",
+          "tone": "muted",
+          "offset": 0.2
+        }
+      ]
+    },
+    "description": "74 gleiche Türme aus je rund 250.000 Ziegeln: die Martello-Türme an der Südküste Englands als Serienbau. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "festungsbau",
+      "martello",
+      "geschichte",
+      "architektur",
+      "england"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

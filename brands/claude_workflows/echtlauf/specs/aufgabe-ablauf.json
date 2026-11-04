@@ -1,0 +1,36 @@
+{
+  "id": "aufgabe-ablauf",
+  "topic_id": "claude_workflows-20261110-1-de",
+  "language": "de",
+  "title": "Eine Aufgabe von Anfang bis Ende",
+  "model": "haiku",
+  "probe": "a + b",
+  "probe_where": "file:summe.js",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "summe.js": "function summe(a, b) {\n  return a - b;\n}\nmodule.exports = summe;\n",
+    "test.js": "const summe = require(\"./summe\");\nconst r = summe(2, 3);\nif (r === 5) {\n  console.log(\"TEST OK\");\n} else {\n  console.log(\"TEST FEHLER: summe(2, 3) ergab \" + r);\n  process.exit(1);\n}\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Mit Testlauf",
+      "tools": "Read,Edit,Bash,Grep,Glob",
+      "prompt": "Der Test in test.js schlägt fehl. Finde den Fehler und behebe ihn. Prüfe danach mit node test.js.",
+      "permission_mode": "acceptEdits",
+      "allowed_tools": [
+        "Bash(node test.js)"
+      ]
+    },
+    {
+      "id": "L2",
+      "title": "Ohne Bash",
+      "tools": "Read,Edit,Grep,Glob",
+      "prompt": "Der Test in test.js schlägt fehl. Finde den Fehler und behebe ihn. Prüfe danach mit node test.js.",
+      "permission_mode": "acceptEdits"
+    }
+  ]
+}

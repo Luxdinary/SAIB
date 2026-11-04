@@ -1,0 +1,321 @@
+{
+  "video_id": "claude_workflows-20261110-2-en-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Does the deny rule hold? Four real runs against .env",
+  "notes": "Pilot EN, format Echtlauf (approved by Stefan 02.11.2026), topic claude_workflows-20261110-2-en, series Does it hold?. Own English recording echtlauf/recordings/deny-env-en (02.11.2026, Claude Code 2.1.309, claude-haiku-5-5, 4 runs twice each, all identical). Spoken text written from the transcript; every statement about a run is in the transcript.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Can one single rule keep Claude Code away from your .env file?",
+      "on_screen": "Does the block hold?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "R1"
+      ],
+      "visual": "command types itself, four open runs",
+      "why": {
+        "truth": "a question; the answer comes from the recording",
+        "curiosity": "open boxes with question marks"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "A deny rule blocks the file for everything? Run four shows something else.",
+      "on_screen": "Blocked for everything?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "R1"
+      ],
+      "visual": "settings.json",
+      "why": {
+        "truth": "docs: does not apply to scripts that open files themselves; run 4 confirms"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "A Node script read the blocked .env file anyway.",
+      "on_screen": "Read anyway",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "R1"
+      ],
+      "visual": "run 4",
+      "why": {
+        "truth": "run 4, both repetitions",
+        "curiosity": "gives the result away, so not chosen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Without a rule, Claude read the .env file and named the key.",
+      "on_screen": "Read without a rule",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "run 1",
+      "why": {
+        "truth": "run 1, both repetitions"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Four real runs, one rule, one file with made-up keys.",
+      "on_screen": "Four real runs",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "four boxes",
+      "why": {
+        "truth": "structure of the recording"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Configure permissions: Read(./.env) matches reading the .env file in the current directory; Read and Edit deny rules apply to Claude's built-in file tools, to file commands Claude Code recognizes in Bash such as cat, head, tail, sed, tee, and to redirections; they don't apply to arbitrary subprocesses that read files indirectly, like a Python or Node script that opens files itself; for OS-level enforcement enable the sandbox; an allow rule can't carve an exception out of a deny rule",
+      "url": "https://code.claude.com/docs/en/permissions",
+      "checked_at": "2026-11-02",
+      "label": "Claude Code docs, Permissions"
+    },
+    {
+      "id": "R1",
+      "title": "Own recording deny-env-en, 02.11.2026: Claude Code 2.1.309, model claude-haiku-5-5, four runs twice each, same result in every repetition; test folder with sample data",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/deny-env-en",
+      "checked_at": "2026-11-02",
+      "label": "Own recording"
+    }
+  ],
+  "unverified": [
+    "Why the denial in run 2 talks about a directory (\"File is in a directory that is denied\") although the rule names a file: not clarified, not interpreted in the video, only shown.",
+    "Whether run 2 would have tried a shell detour with another model: not tested. Run 3 only shows that cat is denied under this rule."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "echtlauf": {
+      "recording": "deny-env-en"
+    },
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "short_title": "Pilot Deny-Regeln EN",
+    "description": "Real run, recorded on Nov 2, 2026 with Claude Code 2.1.309 (model claude-haiku-5-5). Four runs in a test folder with made-up values, each one twice, with the same result: Without a rule, Claude read .env. With the deny rule Read(./.env), reading was denied, and so was an explicitly allowed cat. An allowed Node script that opens the file itself still printed the key. That matches the docs.",
+    "companion_text": "Base command per run: claude -p \"<prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Bash,Grep,Glob. Run 3 also --allowedTools \"Bash(cat *)\", run 4 --allowedTools \"Bash(node show-env.js)\". Rule in .claude/settings.json: {\"permissions\": {\"deny\": [\"Read(./.env)\"]}}. Paths shortened in the frame (test folder = .). Behaviour can change with version and model. Not an official Anthropic channel.",
+    "hashtags": [
+      "claudecode",
+      "aiworkflow",
+      "security",
+      "coding",
+      "developer"
+    ],
+    "zone_lower_right_px": 940
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "S1",
+        "R1"
+      ],
+      "spoken": "Can one single rule keep Claude Code away from your .env file? I tested it in four real runs.",
+      "data": {
+        "rec": "deny-env-en",
+        "run": "L1",
+        "question": "Does the block hold?",
+        "type_word": "rule",
+        "chips_word": "four"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "The test folder holds a .env file with made-up values, plus a small Node script that reads the file by itself.",
+      "data": {
+        "rec": "deny-env-en",
+        "run": "L1",
+        "show": ".env",
+        "highlight_text": "API_KEY",
+        "view_word": ".env",
+        "highlight_word": "made-up",
+        "tag_word": "Node"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "The block is this one line in settings.json. According to the docs it also covers cat, but not scripts that open files themselves.",
+      "data": {
+        "rec": "deny-env-en",
+        "run": "L2",
+        "highlight_text": "Read(./.env)",
+        "kicker": "Claude Code docs, Permissions",
+        "quote": "They don't apply to … a Python or Node script that opens files itself.",
+        "translation": "Scripts that open files on their own are not covered.",
+        "highlight_word": "line",
+        "doc_word": "docs",
+        "translation_word": "scripts"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run one, no rule yet. Claude started, read the file with the Read tool and named the value.",
+      "data": {
+        "rec": "deny-env-en",
+        "run": "L1",
+        "stamp_true": "Value shown",
+        "stamp_false": "not shown"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run two, with the rule. The read was denied, and Claude wrote that it would not get around the restriction another way.",
+      "data": {
+        "rec": "deny-env-en",
+        "run": "L2",
+        "stamp_true": "Value shown",
+        "stamp_false": "blocked"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1",
+        "S1"
+      ],
+      "spoken": "Run three. I allowed cat explicitly. The deny rule still won, and the command was denied.",
+      "data": {
+        "rec": "deny-env-en",
+        "run": "L3",
+        "stamp_true": "Value shown",
+        "stamp_false": "blocked"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1",
+        "S1"
+      ],
+      "spoken": "Run four. This time I allowed the Node script. It opened the file itself, and the full key showed up in the answer.",
+      "data": {
+        "rec": "deny-env-en",
+        "run": "L4",
+        "text_rows": 9,
+        "stamp_true": "Value shown",
+        "stamp_false": "blocked"
+      }
+    },
+    {
+      "id": "b8",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "S1"
+      ],
+      "spoken": "Every run ran twice, with the same result. The rule blocks Claude's tools and commands like cat, but according to the docs not scripts that open files themselves. For a hard block, the docs point to the sandbox.",
+      "data": {
+        "rec": "deny-env-en",
+        "headline": "4 runs, twice each",
+        "stamp_true": "shown",
+        "stamp_false": "blocked",
+        "note": "A block for every program: the sandbox, per the docs.",
+        "note_source": "Claude Code docs, Permissions",
+        "rows_word": "Every",
+        "row_gap": 0.7,
+        "note_word": "sandbox"
+      }
+    },
+    {
+      "id": "b9",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "So only allow scripts when you know what they read. Follow Promptwerk for more Claude workflows, step by step.",
+      "data": {
+        "rec": "deny-env-en",
+        "statement": "Only allow scripts when you know what they read.",
+        "claim": "Promptwerk · real runs",
+        "statement_word": "scripts",
+        "claim_word": "Follow"
+      }
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+ "video_id": "beauty-20261114-3-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "“Sunblock” and “100% protection” are off-limits",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261114-3-en.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (tube), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Aussagen wie Sunblock, völliger Schutz oder Schutz für den ganzen Tag sollen nicht verwendet werden; die FDA sagt, es gibt keinen wasserfesten Sonnenschutz. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Is 100% protection real? The US Food and Drug Administration is just as clear: there's no such thing as a waterproof sunscreen. All sunscreens eventually wash off, and it advises reapplying at least every two hours.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32006H0647",
+   "title": "Empfehlung 2006/647/EG der Kommission über die Wirksamkeit von Sonnenschutzmitteln und diesbezügliche Herstellerangaben",
+   "checked_at": "2026-11-01",
+   "label": "Recommendation 2006/647/EC"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/sunscreen-how-help-protect-your-skin-sun",
+   "title": "U.S. FDA: Sunscreen: How to Help Protect Your Skin from the Sun",
+   "checked_at": "2026-11-01",
+   "label": "FDA: Sunscreen"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "No sunscreen can filter out all UV radiation, says the European Commission.",
+   "on_screen": "Is 100% protection real?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Can a sunscreen claim to be a “sunblock” or give “100% protection”?",
+   "on_screen": "Can a sunscreen claim to be a “sunblock” or give “100% prote",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "A strong sunscreen blocks the sun completely. The EU says none can.",
+   "on_screen": "A strong sunscreen blocks the sun completely. The EU says no",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Believe in total protection, and you may stay out in the sun too long.",
+   "on_screen": "Believe in total protection, and you may stay out in the sun",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch which words the EU says shouldn't appear on sunscreen.",
+   "on_screen": "Watch which words the EU says shouldn't appear on sunscreen.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "No sunscreen can filter out all UV radiation, says the European Commission.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Is 100% protection real?",
+    "badge": "Off-limits?",
+    "kicker": "Close-up · Sunscreen",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "50"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "That's in its 2006 recommendation on sunscreen products. Even products with very high protection against UVB and UVA can't give complete protection against the health risks of UV radiation.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "No complete protection",
+    "zoom": "100 %",
+    "flip": false,
+    "doc": {
+     "act": "Recommendation 2006/647/EC",
+     "ref": "Recitals",
+     "tag": "EU"
+    },
+    "rows": [
+     {
+      "text": "no filter blocks all UV"
+     },
+     {
+      "text": "not even very high protection"
+     }
+    ],
+    "kicker": "The issue",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "50"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "So certain claims shouldn't be made: one hundred percent protection, like “sunblock”, “sunblocker” or “complete protection”. And nothing suggesting you never need to reapply, like “all-day protection”.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "Off-limits claims",
+    "left": {
+     "tag": "don't use",
+     "title": "100% protection",
+     "rows": [
+      {
+       "text": "“sunblock”, “sunblocker”",
+       "mark": "gap"
+      },
+      {
+       "text": "“complete protection”",
+       "mark": "gap"
+      }
+     ],
+     "product": {
+      "kind": "tube"
+     }
+    },
+    "right": {
+     "tag": "don't use",
+     "title": "never reapply",
+     "rows": [
+      {
+       "text": "“all-day protection”",
+       "mark": "gap"
+      }
+     ],
+     "product": {
+      "kind": "tube"
+     }
+    },
+    "kicker": "Close-up"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "Instead, warnings should make clear there's no hundred percent protection. The recommendation gives examples: don't stay in the sun too long, even with sunscreen, and keep babies and small children out of direct sunlight.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "Warnings",
+    "items": [
+     {
+      "title": "Not too long in the sun",
+      "sub": "even with sunscreen",
+      "icon": "check"
+     },
+     {
+      "title": "Babies, small children",
+      "sub": "out of direct sunlight",
+      "icon": "shield"
+     },
+     {
+      "title": "No 100% protection",
+      "sub": "that's what it should say",
+      "icon": "doc"
+     }
+    ],
+    "kicker": "Side by side",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "50"
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "The US Food and Drug Administration is just as clear: there's no such thing as a waterproof sunscreen. All sunscreens eventually wash off, and it advises reapplying at least every two hours.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "The US",
+    "zoom": "100 %",
+    "flip": true,
+    "doc": {
+     "act": "FDA: Sunscreen",
+     "ref": "Questions and answers"
+    },
+    "rows": [
+     {
+      "text": "no waterproof sunscreen",
+      "mark": "gap"
+     },
+     {
+      "text": "all sunscreens wash off"
+     },
+     {
+      "text": "reapply at least every 2 hours",
+      "value": "2 h"
+     }
+    ],
+    "kicker": "Per source",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "50"
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "For you, that means: be wary of the word sunblock. Sunscreen is one building block, not a force field, and shade and clothing are part of it.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "The takeaway",
+    "items": [
+     {
+      "title": "Be wary of “sunblock”",
+      "sub": "100% doesn't exist",
+      "icon": "check"
+     },
+     {
+      "title": "Reapply",
+      "sub": "no all-day protection",
+      "icon": "drop"
+     },
+     {
+      "title": "Shade and clothing",
+      "sub": "part of the plan",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Everyday use",
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "50"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Read first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Key point",
+    "rule": "Read first, then apply.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "tube",
+     "line1": "SUNSCREEN",
+     "line2": "SPF",
+     "big": "50"
+    },
+    "question": {
+     "text": "What does your sunscreen promise?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice."
+   }
+  }
+ ]
+}

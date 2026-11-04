@@ -1,0 +1,317 @@
+{
+  "video_id": "claude_workflows-20261115-3-de-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Berechtigungsregel oder Hook? Drei echte Läufe an einer Konfigurationsdatei",
+  "notes": "Woche 1, Reihe Hält das?. Risiko laut Kalender medium. Aufzeichnung regel-oder-hook: Deny-Regel auf config.json gegen PreToolUse-Hook mit eigener Logik (sperrt nur debug: true), je zweimal.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Berechtigungsregel oder Hook: Was sperrt Claude Code genauer?",
+      "on_screen": "Regel oder Hook?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "PER",
+        "HOO",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "Frage"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Eine Deny-Regel sperrt nur das Gefährliche? Sie sperrte auch den harmlosen Port.",
+      "on_screen": "Nur das Gefährliche?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Der Hook ließ den Port durch und blockierte nur debug.",
+      "on_screen": "Port ja, debug nein",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Läufe 2 und 3"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Mit Deny-Regel wurde selbst ein harmloser Port-Wechsel abgelehnt.",
+      "on_screen": "Alles gesperrt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Drei echte Läufe: eine Regel, ein Hook, zwei Änderungen.",
+      "on_screen": "Drei Läufe",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Aufbau"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "PER",
+      "title": "Configure permissions: permission rules are enforced by Claude Code, not by the model; approval table: read-only (file reads, Grep) no, Bash commands yes except a built-in set of read-only commands, file modification yes; to inspect the full command text with your own logic before it runs, use a PreToolUse hook; PreToolUse hook decisions don't bypass permission rules",
+      "url": "https://code.claude.com/docs/en/permissions",
+      "checked_at": "2026-11-02",
+      "label": "Claude-Code-Doku, Permissions"
+    },
+    {
+      "id": "HOO",
+      "title": "Automate actions with hooks: hooks give deterministic control, certain actions always happen rather than relying on the LLM to choose to run them; a PreToolUse hook that exits with code 2 blocks the edit; hooks can format files after edits",
+      "url": "https://code.claude.com/docs/en/hooks-guide",
+      "checked_at": "2026-11-02",
+      "label": "Claude-Code-Doku, Hooks"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/regel-oder-hook",
+      "checked_at": "2026-11-02",
+      "label": "Eigene Aufzeichnung",
+      "title": "Eigene Aufzeichnung regel-oder-hook, 2026-11-02: Claude Code 2.1.309, Testordner mit Beispieldaten, jeder Lauf zweimal"
+    }
+  ],
+  "unverified": [
+    "Der Hook ist ein kleines Beispielskript (waechter.js); er prüft nur den Text der Änderung auf \"debug\": true.",
+    "Die Ablehnung in Lauf 1 spricht von einem Verzeichnis, obwohl die Regel eine Datei nennt; nicht gedeutet, nur gezeigt."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "regel-oder-hook"
+    },
+    "short_title": "Regel oder Hook",
+    "description": "Echter Ablauf, aufgezeichnet am 02.11.2026 mit Claude Code 2.1.309 (Modell claude-haiku-5-5). Drei Läufe, jeder zweimal: Die Deny-Regel auf config.json sperrte schon einen harmlosen Port-Wechsel. Ein PreToolUse-Hook mit eigener Logik ließ den Port-Wechsel durch und blockierte nur das Einschalten von debug.",
+    "companion_text": "Grundbefehl je Lauf: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Edit,Write. Lauf 1: {\"permissions\": {\"deny\": [\"Edit(./config.json)\", \"Write(./config.json)\"]}}. Läufe 2 und 3: PreToolUse-Hook, Matcher Edit|Write, node .claude/hooks/waechter.js (Exit-Code 2, wenn die Änderung \"debug\": true enthält). Alle Läufe mit --permission-mode acceptEdits. Quelle: Claude-Code-Doku, Permissions und Hooks, abgerufen am 02.11.2026. Pfade im Bild gekürzt (Testordner = .). Das Verhalten kann sich mit Version und Modell ändern. Kein offizieller Kanal von Anthropic.",
+    "hashtags": [
+      "claudecode",
+      "kiworkflow",
+      "programmieren",
+      "entwickler",
+      "sicherheit"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "PER",
+        "HOO",
+        "R1"
+      ],
+      "spoken": "Berechtigungsregel oder Hook: Was sperrt Claude Code genauer? Drei echte Läufe an einer Konfigurationsdatei.",
+      "data": {
+        "run": "L1",
+        "question": "Regel oder Hook?",
+        "type_word": "Hook",
+        "chips_word": "Drei",
+        "rec": "regel-oder-hook"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "PER"
+      ],
+      "spoken": "Variante eins ist eine Deny-Regel: config.json bearbeiten verboten. Laut Doku setzt Claude Code solche Regeln durch, nicht das Modell.",
+      "data": {
+        "run": "L1",
+        "highlight_text": "Edit(./config.json)",
+        "kicker": "Claude-Code-Doku, Permissions",
+        "quote": "Permission rules are enforced by Claude Code, not by the model.",
+        "translation": "Regeln setzt Claude Code durch, nicht das Modell.",
+        "highlight_word": "Deny-Regel",
+        "doc_word": "Doku",
+        "translation_word": "durch",
+        "rec": "regel-oder-hook"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "PER",
+        "HOO"
+      ],
+      "spoken": "Variante zwei ist ein Hook mit eigener Logik. Er schaut in die Änderung und sperrt nur, wenn sie debug einschaltet.",
+      "data": {
+        "run": "L2",
+        "file": ".claude/hooks/waechter.js",
+        "highlight_text": "debug",
+        "max_rows": 7,
+        "kicker": "Claude-Code-Doku, Permissions",
+        "quote": "… with your own logic before it runs, use a PreToolUse hook.",
+        "translation": "Eigene Logik vor dem Ausführen: ein PreToolUse-Hook.",
+        "highlight_word": "Logik",
+        "doc_word": "Änderung",
+        "translation_word": "debug",
+        "rec": "regel-oder-hook"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf eins, Regel. Ich bat um einen harmlosen Port-Wechsel. Lesen ging, das Bearbeiten wurde abgelehnt, und Claude versuchte keinen Umweg. Die Meldung sprach von einem gesperrten Verzeichnis.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "stamp_true": "geändert",
+        "stamp_false": "gesperrt",
+        "rec": "regel-oder-hook"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf zwei, Hook, gleicher Port-Wechsel. Der Hook ließ die Änderung durch, der Port steht jetzt auf 8080. Die übrigen Werte blieben unverändert.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "stamp_true": "geändert",
+        "stamp_false": "gesperrt",
+        "rec": "regel-oder-hook"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf drei, Hook, diesmal soll debug an. Der Hook blockierte mit seiner Meldung, und die Datei blieb unverändert. Einen Umweg über die Shell versuchte Claude auch hier nicht.",
+      "data": {
+        "run": "L3",
+        "probe_good": true,
+        "stamp_true": "geändert",
+        "stamp_false": "gesperrt",
+        "rec": "regel-oder-hook"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "PER"
+      ],
+      "spoken": "Alle Läufe liefen zweimal, mit gleichem Ergebnis. Die Regel sperrt die ganze Datei, auch harmlose Änderungen. Der Hook entscheidet nach Inhalt. Laut Doku heben Hook-Entscheidungen Regeln aber nicht auf.",
+      "data": {
+        "headline": "3 Läufe, je 2-mal",
+        "probe_good": true,
+        "stamp_true": "geändert",
+        "stamp_false": "gesperrt",
+        "note": "Hook-Entscheidungen heben Regeln nicht auf (laut Doku).",
+        "note_source": "Claude-Code-Doku, Permissions",
+        "rows_word": "Alle",
+        "row_gap": 0.7,
+        "note_word": "Inhalt",
+        "rec": "regel-oder-hook"
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "Regeln für klare Grenzen, Hooks für Entscheidungen nach Inhalt. Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt.",
+      "data": {
+        "statement": "Regel für Grenzen, Hook für Inhalt.",
+        "claim": "Promptwerk · echte Läufe",
+        "statement_word": "Regeln",
+        "claim_word": "Folge",
+        "rec": "regel-oder-hook"
+      }
+    }
+  ]
+}

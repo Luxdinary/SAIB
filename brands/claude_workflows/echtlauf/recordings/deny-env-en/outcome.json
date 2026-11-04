@@ -1,0 +1,98 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Read"
+          ],
+          "exit": 0
+        }
+      ],
+      "reproducible": true
+    },
+    "L3": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash"
+          ],
+          "exit": 0
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash"
+          ],
+          "exit": 0
+        }
+      ],
+      "reproducible": true
+    },
+    "L4": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Bash",
+            "Read"
+          ],
+          "exit": 0
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Bash"
+          ],
+          "exit": 0
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

@@ -1,0 +1,344 @@
+{
+ "video_id": "ai_security-20261109-2-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "What an AI chat keeps from your business",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Vor dem Upload\". Topic E01, EN localisation. Example case staged; statements using Claude as the example from S1 and S2 (Anthropic privacy FAQ) and S3 (BSI). Other providers are not assessed.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "A quote for a big client, quickly polished in a personal AI chat, then a thumbs up. What happens to the data? Using Claude as the example, and the one step for business data.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on IT and AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "aiatwork",
+   "dataprotection",
+   "smallbusiness",
+   "aisecurity",
+   "beforeyouupload"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+   "title": "Anthropic Privacy Center: Is my data used for model training?",
+   "checked_at": "2026-11-01",
+   "label": "Anthropic, training (consumer)"
+  },
+  {
+   "id": "S2",
+   "url": "https://privacy.claude.com/en/articles/7996875-can-you-delete-data-that-i-sent-via-api",
+   "title": "Anthropic Privacy Center: API and Claude for Work",
+   "checked_at": "2026-11-01",
+   "label": "Anthropic, API and Claude for Work"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.html",
+   "title": "BSI: Generative KI-Modelle – Chancen und Risiken",
+   "checked_at": "2026-11-01",
+   "label": "BSI (German federal office), generative AI"
+  }
+ ],
+ "unverified": [
+  "Rules of other providers: not claimed in this video.",
+  "Retention periods other than feedback: not named.",
+  "The sequence of the example case (quote, thumbs up) is invented and marked as an example.",
+  "That a personal account without a contract is not enough for business data (option B) is Scutoria's reading, marked on screen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "You ask an AI chat about your quote. Does the AI learn from it?",
+   "on_screen": "Does the AI learn from it?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "A chat is private, so everything stays with you? Not necessarily.",
+   "on_screen": "Chat = private?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "One thumbs up, and Anthropic keeps the whole conversation for up to five years.",
+   "on_screen": "Thumbs up = five years",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Prices, discounts, contacts: what you put into a chat comes with rules you should know.",
+   "on_screen": "Business data in the chat",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Wednesday, 3 p.m. A quote for a big client goes into an AI chat.",
+   "on_screen": "WED 15:00 · A quote for the AI",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Wednesday, 3 p.m. You have an AI chat shorten your quote for a big client. Personal account, done in a minute. Then you click thumbs up, because it did a good job.",
+   "data": {
+    "kicker": "Example case · staged",
+    "time": "WED 15:00",
+    "place": "Sales desk, print shop",
+    "mail_at": 0.6,
+    "mail": {
+     "from": "AI chat (example)",
+     "addr": "personal account",
+     "time": "15:00",
+     "subject": "Shorten this quote",
+     "lines": [
+      "Here's our quote for",
+      "Client Example Ltd, please shorten:",
+      "[prices, discounts, contacts]"
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "business data",
+     "at": "@client"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "So what happens to the chat? Using Claude as the example: for personal accounts like Free, Pro and Max, Anthropic uses chats to improve its models if you allow it. And clicking thumbs up or down counts as feedback. Then Anthropic keeps the whole conversation for up to five years.",
+   "data": {
+    "kicker": "Using Claude as the example",
+    "headline": "What happens to the chat",
+    "rows": [
+     {
+      "label": "Account",
+      "value": "personal: Free, Pro, Max",
+      "verdict": "check",
+      "at": "@personal"
+     },
+     {
+      "label": "Training",
+      "value": "if you allow it",
+      "verdict": "setting",
+      "at": "@allow"
+     },
+     {
+      "label": "Feedback",
+      "value": "kept up to 5 years",
+      "verdict": "stored",
+      "at": "@thumbs"
+     }
+    ],
+    "fact": {
+     "kind": "fakt",
+     "text": "Feedback keeps the whole conversation for up to five years.",
+     "source": "Anthropic · privacy FAQ",
+     "at": "@keeps"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "What do you do? A: It's fine, it's just a quote. B: You switch off training in your personal account and carry on. C: For business data, you use a business account with a contract. Remember your choice.",
+   "data": {
+    "question": "What do you do?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Fine, it's just a quote",
+      "at": "@fine"
+     },
+     {
+      "key": "B",
+      "text": "Personal, training off",
+      "at": "@switch"
+     },
+     {
+      "key": "C",
+      "text": "Business account, contract",
+      "at": "@business"
+     }
+    ],
+    "think": {
+     "seconds": 2.4,
+     "at": "@Remember"
+    },
+    "hint": "Remember your choice."
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "The right answer is C. For Claude for Work and the API, Anthropic says it doesn't use the data for training, unless a contract says otherwise. So the contract decides, not a switch in the settings. A misses the feedback, B still has no contract.",
+   "data": {
+    "mode": "rule",
+    "kicker": "The one step",
+    "card": {
+     "letter": "C",
+     "title": "Business account, contract",
+     "sub": "for anything with business data",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: It's fine",
+      "note": "feedback is stored",
+      "at": "@misses"
+     },
+     {
+      "text": "B: Personal, training off",
+      "note": "no contract",
+      "at": "@still"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "Anthropic · Claude for Work, API"
+     },
+     {
+      "kind": "auslegung",
+      "label": "B: Scutoria's reading"
+     }
+    ],
+    "sources_at": "@contract"
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Contract first, then the chat. Germany's BSI reminds us that generative AI also brings new security risks. What would you have picked? Tell me in the comments.",
+   "data": {
+    "kicker": "Series · Before the upload",
+    "rule": "Contract first, then the chat.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "What would you have picked?",
+     "at": "@What"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice."
+   },
+   "source_ids": [
+    "S3"
+   ]
+  }
+ ]
+}

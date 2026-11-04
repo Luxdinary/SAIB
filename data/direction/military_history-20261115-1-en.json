@@ -1,0 +1,534 @@
+{
+  "video_id": "military_history-20261115-1-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "The Bailey Bridge: Steel for Six Men",
+  "notes": "Woche 1, Reihe Gebaut für den Ernstfall. Pioniertechnik nur als Bau und Reparatur; keine Kampfszenen. Gewicht eines Paneels in keiner Quelle.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://collection.sciencemuseumgroup.org.uk/people/cp89848/bailey-sir-donald-coleman",
+      "title": "Bailey, Sir Donald Coleman, Science Museum Group Collection",
+      "label": "Science Museum Group",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.gracesguide.co.uk/Bailey_Bridge",
+      "title": "Bailey Bridge, Grace's Guide to British Industrial History",
+      "label": "Grace's Guide",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Gewicht eines Paneels: keine Quelle, nicht genannt.",
+    "650 Firmen und 2.000 Brücken stammen aus Grace's Guide, nicht gegengeprüft."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you build a bridge from parts that six men can lift?",
+      "on_screen": "A bridge for six men?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Bridges are built on site from girders? This one came as a kit.",
+      "on_screen": "A bridge from a kit",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Each panel fitted on a three-ton lorry.",
+      "on_screen": "One panel, one lorry",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "At first the ministry did not want the design.",
+      "on_screen": "Rejected at first",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch panels become a bridge.",
+      "on_screen": "Panel by panel",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you build a bridge from parts that six men can lift?",
+      "data": {
+        "question": "A bridge from parts six men can lift?",
+        "question_em": "six men",
+        "card_title": "Bailey bridge",
+        "card_meta": "ENGLAND · FROM 1941",
+        "card_no": "FILE 28",
+        "stamp": "10 × 5",
+        "drawing": "bailey_panel.svg",
+        "packet_label": "Panel",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:bridge",
+        "packet_at": "w:parts",
+        "em_at": "w:six"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "In 1936 civil engineer Donald Bailey sketches a bridge made of standard welded truss panels. At first, the War Office shows no interest.",
+      "data": {
+        "mode": "map",
+        "headline": "A sketch from 1936",
+        "places": [
+          {
+            "label": "Christchurch",
+            "code": "design 1936",
+            "x": 600,
+            "y": 80,
+            "at": "w:1936"
+          },
+          {
+            "label": "War Office",
+            "code": "no interest",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:War"
+          }
+        ],
+        "route_at": "w:sketches",
+        "route_label": "standard panels",
+        "route_label_at": "w:standard",
+        "wait_at": "w:first",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Idea: Donald Bailey",
+        "chip_at": "w:engineer",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Panel",
+        "packet_at": "w:truss",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "no order yet",
+        "line_label_at": "w:interest",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Six",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "One panel measures ten by five feet, about three by one and a half metres. Six men can lift it, and each one fits on an ordinary three-ton lorry.",
+      "data": {
+        "headline": "One panel, 10 × 5 feet",
+        "drawing": "bailey_panel.svg",
+        "sheet_title": "SHEET 2 · PANEL",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "10 ft ≈ 3.05 m",
+            "x": 230,
+            "y": 90,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:ten"
+          },
+          {
+            "label": "5 ft ≈ 1.52 m",
+            "x": 15,
+            "y": 215,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:five"
+          },
+          {
+            "label": "6 men lift it",
+            "x": 230,
+            "y": 215,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Six"
+          },
+          {
+            "label": "Fits on a 3-ton lorry",
+            "x": 240,
+            "y": 455,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:three-ton"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 215,
+          "scale": 1.12,
+          "at": "w:Six",
+          "back_at": "w:three-ton",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "The advantage: small parts that many small engineering firms can make. In the end, 650 companies take part.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Small parts, big bridges",
+        "left": {
+          "tag": "Part",
+          "title": "Small and standard",
+          "at": "w:parts",
+          "rows": [
+            "10 × 5 feet"
+          ]
+        },
+        "right": {
+          "tag": "Production",
+          "title": "650 firms",
+          "at": "w:650",
+          "rows": [
+            "many small workshops"
+          ]
+        },
+        "verdict": "A bridge from a kit",
+        "verdict_at": "w:companies",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "In 1941 the order comes, and in December 1941 the first deliveries reach the army. By 1947 around 2000 Bailey bridges are built.",
+      "data": {
+        "headline": "From order to series",
+        "nodes": [
+          {
+            "label": "Order",
+            "code": "1941",
+            "at": "w:order"
+          },
+          {
+            "label": "Delivery",
+            "code": "Dec 1941",
+            "at": "w:December"
+          },
+          {
+            "label": "≈ 2,000 bridges",
+            "code": "by 1947",
+            "at": "w:2000"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Panel",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "1936 the design, 1941 the series, 1947 around 2000 bridges, more than 1500 of them in north-west Europe.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1936 to 1947",
+        "items": [
+          {
+            "year": "1936",
+            "title": "Design",
+            "sub": "welded panels",
+            "at": "w:1936"
+          },
+          {
+            "year": "1941",
+            "title": "Series delivery",
+            "sub": "from December",
+            "at": "w:1941"
+          },
+          {
+            "year": "1947",
+            "title": "≈ 2,000 bridges",
+            "sub": "1,500+ in NW Europe",
+            "at": "w:1947",
+            "sub_at": "w:1500"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "After the war, panels are used for civilian purposes, and many bridges stay in service. The Science Museum holds a model of a 1944 repair in Italy. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Bailey bridge",
+        "card_meta": "SCIENCE MUSEUM",
+        "card_no": "FILE 28",
+        "stamp": "Model",
+        "drawing": "bailey_panel.svg",
+        "statement": "A kit that stayed",
+        "statement_at": "w:civilian",
+        "stamp_at": "w:model",
+        "note": "Model: Castel del Rio, Italy, 1944",
+        "note_at": "w:Italy",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Panel",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Part: needed",
+          "tone": "muted",
+          "offset": 3.7
+        },
+        {
+          "beat": "b2",
+          "text": "Design: 1936",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b3",
+          "text": "Size: 10 × 5 ft",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b4",
+          "text": "Makers: 650 firms",
+          "tone": "amber",
+          "offset": 7.1
+        },
+        {
+          "beat": "b5",
+          "text": "Delivered: Dec 1941",
+          "tone": "muted",
+          "offset": 3.7
+        },
+        {
+          "beat": "b6",
+          "text": "Bridges: ≈ 2,000",
+          "tone": "muted",
+          "offset": 4.2
+        },
+        {
+          "beat": "b7",
+          "text": "Model: Science Museum",
+          "tone": "muted",
+          "offset": 8.1
+        }
+      ]
+    },
+    "description": "The Bailey bridge: standard 10 × 5 ft steel panels, lifted by six men, carried on a 3-ton lorry. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "bridges",
+      "engineering",
+      "history",
+      "bailey",
+      "historyoftechnology"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

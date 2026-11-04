@@ -1,0 +1,38 @@
+{
+  "id": "werkzeuge-freigabe",
+  "topic_id": "claude_workflows-20261115-2-de",
+  "language": "de",
+  "title": "Welche Werkzeuge eine Freigabe brauchen",
+  "model": "haiku",
+  "tools": "Read,Write,Bash",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "notiz.txt": "Einkaufsliste: Brot, Milch\n",
+    "zeige.js": "// schreibt lief.txt, damit sichtbar ist, ob das Skript wirklich lief\nrequire(\"fs\").writeFileSync(\"lief.txt\", \"gelaufen\\n\");\nconsole.log(\"fertig\");\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Read",
+      "prompt": "Lies notiz.txt und nenne die erste Zeile.",
+      "probe": "Einkaufsliste"
+    },
+    {
+      "id": "L2",
+      "title": "Write",
+      "prompt": "Lege die Datei gruss.txt mit dem Inhalt Hallo an.",
+      "probe": "Hallo",
+      "probe_where": "file:gruss.txt"
+    },
+    {
+      "id": "L3",
+      "title": "Bash",
+      "prompt": "Führe node zeige.js aus und sag mir, was es ausgibt.",
+      "probe": "gelaufen",
+      "probe_where": "file:lief.txt"
+    }
+  ]
+}

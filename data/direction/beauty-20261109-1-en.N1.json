@@ -1,0 +1,428 @@
+{
+ "video_id": "beauty-20261109-1-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "Reading an INCI list: what comes first",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261109-1-en.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (jar), nur Code-Grafik. Alte Notiz: Dewlane week 1 (01.11.2026): English adaptation of the approved test video Q1 (beauty-20261105-1-de), same scenes, same sources (re-opened 01.11.2026). Not a literal translation.",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "What's at the top of your cream's ingredient list? In the EU, the list is sorted by weight, below one percent the order is free, and percentages aren't shown. Here's how to read it, without anyone selling you anything.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "inci",
+   "ingredients",
+   "skincare",
+   "cosmetics",
+   "beautyknowledge"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009, Art. 19 Abs. 1 lit. g (Liste der Bestandteile, Überschrift Ingredients, Reihenfolge nach Gewicht zum Zeitpunkt der Hinzufügung, unter 1 % ungeordnet, Parfum) und Abs. 6 (gemeinsame Bezeichnungen)",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009, Art. 19"
+  },
+  {
+   "id": "S2",
+   "url": "https://publications.europa.eu/resource/celex/32019D0701",
+   "title": "Beschluss (EU) 2019/701 der Kommission: Glossar der gemeinsamen Bezeichnungen von Bestandteilen (INCI), Eintrag AQUA",
+   "checked_at": "2026-11-01",
+   "label": "Glossary 2019/701"
+  },
+  {
+   "id": "S3",
+   "url": "https://ec.europa.eu/growth/tools-databases/cosing/details/31959",
+   "title": "CosIng, Europäische Kommission: Eintrag AQUA (Description: Water, Function: Solvent)",
+   "checked_at": "2026-11-01",
+   "label": "CosIng: AQUA"
+  },
+  {
+   "id": "S4",
+   "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-ingredient-database_en",
+   "title": "European Commission: CosIng, the Commission database for information on cosmetic substances and ingredients (informative purpose, no legal value)",
+   "checked_at": "2026-11-01",
+   "label": "CosIng (EU Commission)"
+  }
+ ],
+ "unverified": [
+  "That water is first in most creams: not supported, not used.",
+  "Exact percentages of individual ingredients: not on the pack, not estimated.",
+  "Effects of individual ingredients: not the topic, not used."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "The first word on your cream's ingredient list shows what there's most of.",
+   "on_screen": "What's at the top of your cream's list?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 4,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "A drop lands on line 1 of an unbranded label",
+   "why": {
+    "truth": "Art. 19: descending weight at the time of addition, nuance in b3"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Ever wondered why your cream says Aqua instead of water?",
+   "on_screen": "Why Aqua, not water?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "visual": "Aqua on the label",
+   "why": {
+    "relevance": "only part of the topic"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "The ingredient list doesn't tell you how much of anything is in there.",
+   "on_screen": "No percentages on the list",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "list without numbers",
+   "why": {
+    "truth": "absence of a requirement"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "If you react to fragrances, many of them hide behind one word: parfum.",
+   "on_screen": "All fragrances under parfum?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Parfum with a question mark",
+   "why": {
+    "clarity": "needs the allergen exceptions"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch how to read an ingredient list from top to bottom.",
+   "on_screen": "Reading an INCI list",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "list marked line by line",
+   "why": {
+    "curiosity": "explains, little pull"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Höchste Bewertung; die INCI-Liste ist zugleich der rote Faden. Die Feinheit 'gemessen beim Hinzufügen' wird in b3 gesagt."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "duration_hint": 5,
+   "spoken": "The first word on your cream's ingredient list shows what there's most of.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "What's at the top of your cream's list?",
+    "badge": "Line 1?",
+    "kicker": "Close-up",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "duration_hint": 10,
+   "spoken": "Every cosmetic sold in the EU comes with a list headed Ingredients. The names come from an EU glossary. That's why it says Aqua when water is meant.",
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "One name across the EU",
+    "zoom": "AQUA",
+    "doc": {
+     "act": "Glossary (EU) 2019/701",
+     "ref": "common ingredient names"
+    },
+    "rows": [
+     {
+      "text": "a list headed Ingredients"
+     },
+     {
+      "text": "names from an EU glossary"
+     },
+     {
+      "text": "AQUA = water",
+      "at": "@Aqua"
+     }
+    ],
+    "kicker": "The issue",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "duration_hint": 11,
+   "spoken": "The order follows weight, measured at the moment each substance is added. Whatever is at the top went into the mix in the largest amount.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_list",
+   "data": {
+    "headline": "Sorted by weight",
+    "caption": "Reg. (EC) 1223/2009, Art. 19: weight when added",
+    "rows": [
+     {
+      "label": "Line 1",
+      "value": "most",
+      "at": "@top"
+     },
+     {
+      "label": "Line 2",
+      "value": "less"
+     },
+     {
+      "label": "Line 3",
+      "value": "less"
+     },
+     {
+      "label": "Line 4",
+      "value": "…"
+     }
+    ],
+    "kicker": "Close-up",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "duration_hint": 11,
+   "spoken": "But that doesn't hold all the way down. Ingredients below one percent can follow in any order. And where that line falls doesn't have to be shown on the pack.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "The invisible line",
+    "left": {
+     "tag": "over 1 %",
+     "title": "by weight",
+     "rows": [
+      {
+       "text": "order = amount"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "right": {
+     "tag": "under 1 %",
+     "title": "any order",
+     "rows": [
+      {
+       "text": "can follow in any order",
+       "at": "@any"
+      },
+      {
+       "text": "line not shown on pack",
+       "mark": "open",
+       "at": "@line"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "kicker": "Side by side"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "duration_hint": 13,
+   "spoken": "So the list tells you which substances are in it, and which are there in the largest amounts. It doesn't tell you exact percentages. And it doesn't tell you whether a product suits your skin.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "What the list reveals",
+    "zoom": "INCI",
+    "flip": true,
+    "doc": {
+     "act": "Reg. (EC) 1223/2009",
+     "ref": "Art. 19"
+    },
+    "rows": [
+     {
+      "text": "which substances are in it",
+      "mark": "fact"
+     },
+     {
+      "text": "what's there in the largest amounts",
+      "mark": "fact"
+     },
+     {
+      "text": "no exact percentages",
+      "mark": "gap",
+      "at": "@percentages"
+     },
+     {
+      "text": "not whether it suits your skin",
+      "mark": "gap",
+      "at": "@whether"
+     }
+    ],
+    "kicker": "Per source",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "duration_hint": 13,
+   "spoken": "Here's how to read it. The first lines show the main ingredients. Parfum stands for fragrance and aroma substances. And you can look up an unfamiliar name in CosIng, the European Commission's database.",
+   "source_ids": [
+    "S1",
+    "S4"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "How to read the list",
+    "items": [
+     {
+      "title": "First lines",
+      "sub": "the main ingredients",
+      "icon": "lens",
+      "at": "@first"
+     },
+     {
+      "title": "Parfum",
+      "sub": "fragrance and aroma",
+      "icon": "drop",
+      "at": "@Parfum"
+     },
+     {
+      "title": "Unfamiliar name?",
+      "sub": "look it up in CosIng",
+      "icon": "doc",
+      "at": "@unfamiliar"
+     }
+    ],
+    "kicker": "Everyday use",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "duration_hint": 8,
+   "spoken": "Read the list first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Key point",
+    "rule": "Read first, then apply.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "question": {
+     "text": "What's in line 1 on yours?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice."
+   }
+  }
+ ]
+}

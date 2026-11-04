@@ -1,0 +1,447 @@
+{
+ "video_id": "beauty-20261110-1-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Sechs Regeln für jede Werbeaussage",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Die Verordnung 655/2013 verlangt Rechtskonformität, Wahrheitstreue, Belegbarkeit, Redlichkeit, Lauterkeit und fundierte Entscheidung; die FDA verlangt wahre und nicht irreführende Angaben. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Werbeaussage",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Regeln?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "Rechtskonform, wahr, belegt",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "Redlich, lauter, klar",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "EU: 6 Kriterien",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Beispiele im Anhang",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Fragen stellen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Erst prüfen, dann glauben",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Was darf auf der Tube stehen? Der Anhang nennt konkrete Beispiele. Eine Aussage, ein Produkt sei behördlich zugelassen, ist unzulässig. Und wer einen Bestandteil hervorhebt, muss ihn auch gezielt enthalten.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32013R0655",
+   "title": "Verordnung (EU) Nr. 655/2013 der Kommission: gemeinsame Kriterien zur Begründung von Werbeaussagen, Anhang",
+   "checked_at": "2026-11-01",
+   "label": "VO (EU) 655/2013"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-labeling/cosmetics-labeling-claims",
+   "title": "U.S. FDA: Cosmetics Labeling Claims",
+   "checked_at": "2026-11-01",
+   "label": "FDA: Labeling claims"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Jede Werbeaussage auf Kosmetik muss in der EU sechs Kriterien erfüllen.",
+   "on_screen": "Was darf auf der Tube stehen?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Darf auf einer Creme einfach alles stehen, was gut klingt?",
+   "on_screen": "Darf auf einer Creme einfach alles stehen, was gut klingt?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Werbung auf Kosmetik ist frei. Nein, die EU hat dafür feste Kriterien.",
+   "on_screen": "Werbung auf Kosmetik ist frei. Nein, die EU hat dafür feste ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer jede Werbeaussage glaubt, kauft Versprechen statt Wissen.",
+   "on_screen": "Wer jede Werbeaussage glaubt, kauft Versprechen statt Wissen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, an welchen sechs Kriterien die EU jede Werbeaussage misst.",
+   "on_screen": "Schau, an welchen sechs Kriterien die EU jede Werbeaussage m",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Jede Werbeaussage auf Kosmetik muss in der EU sechs Kriterien erfüllen.",
+   "data": {
+    "obj": "tube",
+    "title": "Wow!",
+    "sub": "Werbeaussage",
+    "glyph": "doc",
+    "gtext": "6",
+    "focus": "title",
+    "question": "Was darf auf der Tube stehen?",
+    "badge": "Belegt?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "Festgelegt sind sie in der Verordnung 655 aus 2013. Die ersten drei: Rechtskonformität, Wahrheitstreue und Belegbarkeit. Eine Aussage muss also erlaubt, wahr und mit Nachweisen gestützt sein.",
+   "data": {
+    "headline": "Die ersten drei",
+    "doc": {
+     "act": "VO (EU) 655/2013",
+     "ref": "Anhang: gemeinsame Kriterien",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "Rechtskonformität"
+     },
+     {
+      "text": "Wahrheitstreue"
+     },
+     {
+      "text": "Belegbarkeit"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_steps",
+   "spoken": "Dazu kommen Redlichkeit, Lauterkeit und fundierte Entscheidungsfindung. Die Wirkung darf nicht über die Nachweise hinausgehen, andere Produkte dürfen nicht herabgesetzt werden, und die Aussage muss klar verständlich sein.",
+   "data": {
+    "headline": "Drei weitere",
+    "items": [
+     {
+      "title": "Redlichkeit",
+      "sub": "nicht mehr als die Nachweise zeigen",
+      "icon": "scale"
+     },
+     {
+      "title": "Lauterkeit",
+      "sub": "andere nicht herabsetzen",
+      "icon": "shield"
+     },
+     {
+      "title": "fundierte Entscheidung",
+      "sub": "klar und verständlich",
+      "icon": "book"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "In den USA gibt es keine solche Liste. Die Arzneimittelbehörde FDA prüft Werbeaussagen nicht vor dem Verkauf. Sie verlangt aber, dass Angaben wahr sind und nicht in die Irre führen.",
+   "data": {
+    "headline": "EU und USA",
+    "mode": "compare",
+    "left": {
+     "tag": "EU",
+     "title": "Sechs Kriterien",
+     "rows": [
+      {
+       "text": "festgelegt in VO 655/2013"
+      },
+      {
+       "text": "gilt für jede Werbeaussage"
+      }
+     ]
+    },
+    "right": {
+     "tag": "USA",
+     "title": "Wahr, nicht irreführend",
+     "rows": [
+      {
+       "text": "keine Prüfung vor dem Verkauf",
+       "mark": "gap"
+      },
+      {
+       "text": "wahr und nicht irreführend"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "Der Anhang nennt konkrete Beispiele. Eine Aussage, ein Produkt sei behördlich zugelassen, ist unzulässig. Und wer einen Bestandteil hervorhebt, muss ihn auch gezielt enthalten. Auch Studien als Beleg müssen zum Produkt und zum behaupteten Nutzen passen.",
+   "data": {
+    "headline": "Zwei Beispiele",
+    "rows": [
+     {
+      "text": "„behördlich zugelassen“: unzulässig",
+      "mark": "gap"
+     },
+     {
+      "text": "genannter Bestandteil: gezielt enthalten"
+     },
+     {
+      "text": "Übertreibung, die niemand wörtlich nimmt: kein Beleg nötig",
+      "mark": "open"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "Für dich heißt das: Frag bei einer Werbeaussage, ob sie wahr klingt, ob es Belege gibt und ob du verstehst, was genau versprochen wird.",
+   "data": {
+    "headline": "Drei Fragen",
+    "items": [
+     {
+      "title": "Ist das wahr?",
+      "sub": "Wahrheitstreue",
+      "icon": "doc"
+     },
+     {
+      "title": "Gibt es Belege?",
+      "sub": "Belegbarkeit",
+      "icon": "book"
+     },
+     {
+      "title": "Verstehe ich es?",
+      "sub": "fundierte Entscheidung",
+      "icon": "drop"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Erst prüfen, dann glauben. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung.",
+    "brand_at": "w:Beauty",
+    "button": "Auftragen",
+    "headline": "Erst prüfen, dann glauben",
+    "block_text": "Erst die Aussage prüfen",
+    "done_text": "Aussage geprüft"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

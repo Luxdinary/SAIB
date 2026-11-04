@@ -1,0 +1,636 @@
+{
+ "video_id": "menswear-20261110-2-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Black Tie: Was zum Smoking gehört",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema E01 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S2; keine Gürtelschlaufen-Regel, keine Herkunftsgeschichte, kein weißes Dinnerjackett.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Black Tie",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Black Tie: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "mehr als ein Anzug",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Jackett: Seidenrevers",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Fliege, nicht Krawatte",
+     "tone": "red"
+    },
+    {
+     "beat": "b5",
+     "text": "Weste oder Kummerbund",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Seide, Fliege, Weste",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Ensemble komplett",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Was gehört zu Black Tie? Debrett's beschreibt ein festes Ensemble: Dinnerjackett mit Seidenrevers, Hose mit Borte, weißes Abendhemd, handgebundene Fliege, Weste oder Kummerbund, Schnürschuhe. Dazu Moss.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "blacktie",
+   "smoking",
+   "dresscode",
+   "stilregeln"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://debretts.com/etiquette-category/events-and-dress-codes/",
+   "title": "Debrett's, Events and Dress Codes (Black Tie): schwarzes Dinnerjackett aus Barathea oder feinem Fischgrat, ein- oder zweireihig, ohne Schlitze, seidene steigende Revers oder Schalkragen, bezogene Knöpfe; Hose mit einer Borte je Außennaht; weißes Abendhemd mit Umlegekragen; handgebundene schwarze Fliege; Weste oder Kummerbund, nie beides; schwarze polierte oder Lack-Schnürschuhe, schwarze Seidensocken; lange Krawatte bei formellen Privatanlässen meist unpassend",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.moss.co.uk/inside-pocket/post/black-tie-dressing",
+   "title": "Moss, Black tie dressing: traditioneller Look mit Satinrevers, weißem Abendhemd, schwarzer Seidenfliege, schwarzer Weste oder Kummerbund und schwarzen Lackschuhen",
+   "checked_at": "2026-11-01",
+   "label": "Moss, Inside Pocket"
+  }
+ ],
+ "unverified": [
+  "Gürtelschlaufen und Hosenträger: in den Quellen nicht belegt, nicht im Video.",
+  "Herkunft des Smokings (Edward VII., Henry Poole): nicht als Fakt, nicht im Video.",
+  "Weißes Dinnerjackett und weißes Einstecktuch (Debrett's): aus Zeitgründen nicht im Video."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Black Tie: Was gehört dazu?",
+   "on_screen": "Black Tie: Was gehört dazu?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Black Tie heißt nicht einfach dunkler Anzug",
+   "on_screen": "Black Tie heißt nicht einfach dunkler Anzug",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Weste oder Kummerbund, aber nie beides",
+   "on_screen": "Weste oder Kummerbund, aber nie beides",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Lange Krawatte zum Smoking? Laut Debrett's meist unpassend.",
+   "on_screen": "Lange Krawatte zum Smoking? Laut Debrett's meist unpassend.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Vom Anzug zum Dinnerjackett in einem Bild",
+   "on_screen": "Vom Anzug zum Dinnerjackett in einem Bild",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Dinnerjackett, Lupe auf dem seidenbelegten Revers",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die Einladung als Ausgangslage, die Lupe auf dem Seidenrevers."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 5,
+   "spoken": "Auf der Einladung steht Black Tie. Was gehört dann wirklich dazu, und was eher nicht?",
+   "data": {
+    "question": "Black Tie: Was gehört dazu?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "target": "lapel",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Black",
+    "loupe_at": "w:Black",
+    "nie_at": "w:Was",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 11,
+   "spoken": "Black Tie ist mehr als ein dunkler Anzug. Debrett's beschreibt ein klar umrissenes Ensemble, Stück für Stück. Moss zeigt den traditionellen Look genauso: Satinrevers, weißes Hemd, schwarze Fliege.",
+   "data": {
+    "headline": "Anzug oder Smoking?",
+    "left": {
+     "title": "Dunkler Anzug",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "lapel": "notch",
+      "strain": false
+     },
+     "target": "neck",
+     "tag": "Tagesanzug, Krawatte"
+    },
+    "right": {
+     "title": "Dinnerjackett",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak",
+      "dinner": true,
+      "neck": "bow",
+      "strain": false
+     },
+     "tag": "ein festes Ensemble",
+     "pulses": [
+      {
+       "target": "lapel",
+       "at": "w:Satinrevers"
+      },
+      {
+       "target": "neck",
+       "at": "w:Fliege"
+      }
+     ]
+    },
+    "left_at": "w:dunkler",
+    "left_tag_at": "w:Anzug",
+    "right_at": "w:Debrett",
+    "right_tag_at": "w:Ensemble",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Das Jackett ist laut Debrett's schwarz, aus Barathea oder feinem Fischgrat. Es hat seidenbelegte steigende Revers oder einen Schalkragen und bezogene Knöpfe. Es darf ein- oder zweireihig sein, aber ohne Schlitze.",
+   "data": {
+    "headline": "Das Jackett",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Einreihig",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "Seidenrevers",
+        "sub": "steigend oder Schal",
+        "tone": "always",
+        "at": "w:seidenbelegte"
+       },
+       {
+        "spot": "button:0",
+        "text": "bezogene Knöpfe",
+        "sub": "laut Debrett's",
+        "tone": "always",
+        "at": "w:Knöpfe"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": "w:zweireihig",
+      "title": "Zweireihig",
+      "tags": [
+       {
+        "spot": "hem",
+        "text": "ohne Schlitze",
+        "sub": "ein- oder zweireihig",
+        "tone": "always",
+        "at": "w:Schlitze"
+       }
+      ]
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 13,
+   "spoken": "Dann zum Hals. Die Hollywood-Variante mit langer Krawatte gilt laut Debrett's bei formellen privaten Anlässen meist als unpassend. Gemeint ist eine schwarze Fliege, von Hand gebunden. Dazu ein weißes Abendhemd mit Umlegekragen statt Kläppchenkragen.",
+   "data": {
+    "headline": "Fliege oder Krawatte?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "tie",
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "target": "neck",
+    "zoom": 1.5,
+    "label": "Fliege, von Hand gebunden",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Hals",
+    "zoom_at": "w:Hollywood",
+    "error_at": "w:Krawatte",
+    "flip_at": "w:Fliege",
+    "label_at": "w:Hand"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 330,
+     "y": 470,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Hollywood"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 14,
+   "spoken": "Unter dem Jackett gilt laut Debrett's: Die Weste ist die elegante Wahl, der Kummerbund optional, aber nie beides zusammen. Die Hose trägt eine Borte an jeder Außennaht. Dazu schwarze polierte oder Lackschuhe zum Schnüren und schwarze Seidensocken.",
+   "data": {
+    "headline": "Darunter und dazu",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Darunter",
+      "tags": [
+       {
+        "spot": "waist",
+        "text": "Weste: elegant",
+        "sub": "laut Debrett's",
+        "tone": "always",
+        "at": "w:Weste"
+       },
+       {
+        "spot": "pocket",
+        "text": "oder Kummerbund",
+        "sub": "optional",
+        "tone": "sometimes",
+        "at": "w:Kummerbund"
+       },
+       {
+        "spot": "quarters",
+        "text": "nie beides",
+        "sub": "nie zusammen",
+        "tone": "never",
+        "at": "w:beides"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "legs",
+       "break": "none",
+       "shoe": "oxford"
+      },
+      "at": "w:Hose",
+      "title": "Hose, Schuh",
+      "tags": [
+       {
+        "spot": "crease",
+        "text": "Borte je Bein",
+        "sub": "an der Außennaht",
+        "tone": "always",
+        "at": "w:Borte"
+       },
+       {
+        "spot": "lacing",
+        "text": "Schnürschuh",
+        "sub": "Lack oder poliert",
+        "tone": "always",
+        "at": "w:Lackschuhe"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "Kurz gesagt: Schwarzes Jackett mit Seidenrevers, die Hose mit Borte. Eine schwarze Fliege, von Hand gebunden. Und darunter Weste oder Kummerbund, aber nie beides zusammen.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Seidenrevers",
+      "sub": "steigend oder Schal",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": "w:Jackett",
+      "ring": "lapel",
+      "ring_at": "w:Seidenrevers"
+     },
+     {
+      "title": "Fliege, von Hand",
+      "sub": "keine lange Krawatte",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "tie",
+       "strain": false
+      },
+      "at": "w:Fliege",
+      "then": {
+       "neck": "bow"
+      },
+      "then_at": "w:Hand"
+     },
+     {
+      "title": "Weste oder Kummerbund",
+      "sub": "nie beides zusammen",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": "w:Weste",
+      "ring": "waist",
+      "ring_at": "w:beides"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Vom dunklen Anzug zum Ensemble: So sieht Black Tie aus. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "notch",
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "lapel",
+    "fix_at": "w:Ensemble",
+    "ring_at": "w:Black",
+    "statement_at": "w:Black",
+    "chip_at": "w:Blick",
+    "statement": "Black Tie, komplett.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,449 @@
+{
+ "video_id": "beauty-20261115-3-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "“Mineral sunscreen never contains nano”",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Titandioxid und Zinkoxid sind auch als Nanomaterial zugelassen; dann steht (nano) in der Liste. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Sunscreen",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Nano-free?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "1 to 100 nm",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "4 UV filters as nano",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "(nano) in the list",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "only after assessment",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Look for (nano)",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Read first, then apply",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Always nano-free? And that authorisation isn't automatic. Before colourants, preservatives and UV filters are authorised, including nano forms, the scientific committee SCCS reviews the data submitted.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-products-specific-topics/nanomaterials_en",
+   "title": "Europäische Kommission: Nanomaterials (Cosmetics)",
+   "checked_at": "2026-11-01",
+   "label": "EU Commission: nanomaterials"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Mineral sunscreen never contains nano. That's not quite right.",
+   "on_screen": "Always nano-free?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "In the EU, titanium dioxide and zinc oxide are also approved as nano UV filters.",
+   "on_screen": "In the EU, titanium dioxide and zinc oxide are also approved",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Can mineral sunscreen sometimes contain nano?",
+   "on_screen": "Can mineral sunscreen sometimes contain nano?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Take “mineral” to mean “nano-free”, and you haven't read the ingredient list to the end.",
+   "on_screen": "Take “mineral” to mean “nano-free”, and you haven't read the",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch how to spot nano in the ingredient list.",
+   "on_screen": "Watch how to spot nano in the ingredient list.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Mineral sunscreen never contains nano. That's not quite right.",
+   "data": {
+    "obj": "tube",
+    "title": "mineral",
+    "sub": "sunscreen",
+    "glyph": "sun",
+    "gtext": "(nano)",
+    "focus": "glyph",
+    "question": "Always nano-free?",
+    "badge": "Myth?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "What counts as nano? Under the EU regulation, it's an insoluble or biopersistent, intentionally manufactured material with one or more external dimensions, or an internal structure, between 1 and 100 nanometres.",
+   "data": {
+    "headline": "What nano means",
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Article 2(1)(k)",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "insoluble or biopersistent"
+     },
+     {
+      "text": "intentionally manufactured"
+     },
+     {
+      "text": "1 to 100 nanometres",
+      "value": "nm"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_bars",
+   "spoken": "In the EU, UV filters can only be used if they're authorised, including as nanomaterials. According to the European Commission, four UV filters have been authorised as nano so far, including titanium dioxide and zinc oxide. Carbon black is also authorised as a nano colourant.",
+   "data": {
+    "headline": "Four UV filters as nano",
+    "caption": "authorised, per the European Commission",
+    "icon": false,
+    "rows": [
+     {
+      "label": "Titanium dioxide",
+      "value": "nano",
+      "w": 1
+     },
+     {
+      "label": "Zinc oxide",
+      "value": "nano",
+      "w": 1
+     },
+     {
+      "label": "MBBT",
+      "value": "nano",
+      "w": 1
+     },
+     {
+      "label": "Tris-biphenyl triazine",
+      "value": "nano",
+      "w": 1
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "Whether your product contains nano is shown in the ingredient list. Nanomaterials are listed with the word nano in brackets after the name.",
+   "data": {
+    "headline": "The labelling",
+    "mode": "compare",
+    "left": {
+     "tag": "no addition",
+     "title": "TITANIUM DIOXIDE",
+     "rows": [
+      {
+       "text": "not as nano"
+      }
+     ]
+    },
+    "right": {
+     "tag": "with addition",
+     "title": "… (nano)",
+     "rows": [
+      {
+       "text": "nanomaterial"
+      },
+      {
+       "text": "required by Article 19"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "And that authorisation isn't automatic. Before colourants, preservatives and UV filters are authorised, including nano forms, the scientific committee SCCS reviews the data submitted.",
+   "data": {
+    "headline": "Assessed, then authorised",
+    "rows": [
+     {
+      "text": "SCCS reviews the data"
+     },
+     {
+      "text": "then the Commission authorises"
+     },
+     {
+      "text": "nano forms included"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "For you, that means: mineral tells you nothing about particle size. If that matters to you, look for nano in brackets in the ingredient list.",
+   "data": {
+    "headline": "How to check",
+    "items": [
+     {
+      "title": "Ingredient list",
+      "sub": "under Ingredients",
+      "icon": "doc"
+     },
+     {
+      "title": "Look for (nano)",
+      "sub": "after the name",
+      "icon": "sun"
+     },
+     {
+      "title": "mineral ≠ nano-free",
+      "sub": "the label decides",
+      "icon": "shield"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Read the list first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Read first, then apply",
+    "block_text": "Read the list first",
+    "done_text": "List read"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,459 @@
+{
+  "video_id": "engines-20261115-1-de",
+  "brand_id": "engines",
+  "language": "de",
+  "title": "Ottos Viertakt-Patent",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261115-1-de, Reihe Motorgeschichte. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "1876 baute Nikolaus August Otto den ersten Viertaktmotor. Was in seinem US-Patent von 1877 und im deutschen Reichspatent 532 steht.",
+    "companion_text": "Folge Revlore: Motorentechnik verstehen, ein Bauteil nach dem anderen.\nPatente laut Google Patents und DEPATISnet (abgerufen 01.11.2026).",
+    "hashtags": [
+      "motorgeschichte",
+      "otto",
+      "viertakter",
+      "patent",
+      "deutz"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "Science Museum, Otto-Viertakter",
+      "title": "Science Museum, Otto-Viertakter (SMG_OTTO)",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8405692",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "US-Patent 194,047",
+      "title": "US-Patent 194,047 (P_OTTO_US)",
+      "url": "https://patents.google.com/patent/US194047A/en",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "label": "DPMA, Patent DE 532",
+      "title": "DPMA, Patent DE 532 (P_OTTO_DE)",
+      "url": "https://depatisnet.dpma.de/DepatisNet/depatisnet?action=bibdat&docid=DE000000000532A",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Dieser Ablauf steht schon in einem Patent von achtzehnhundertsiebenundsiebzig.",
+      "on_screen": "Viertakt, patentiert",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Seit wann gibt es den Viertaktmotor?",
+      "on_screen": "Ottos Viertakt-Patent",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Ottos Viertakt-Patent",
+      "on_screen": "Ottos Viertakt-Patent",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ottos Viertakt-Patent",
+      "on_screen": "Ottos Viertakt-Patent",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Ottos Viertakt-Patent",
+      "on_screen": "Ottos Viertakt-Patent",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Ansaugen, verdichten, zünden, ausstoßen. Dieser Ablauf steht schon in einem Patent von achtzehnhundertsiebenundsiebzig.",
+      "data": {
+        "claim": "Viertakt, patentiert",
+        "claim_lines": [
+          "Viertakt,",
+          "patentiert 1877"
+        ],
+        "claim_highlight": "1877",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1440
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Patent",
+        "source": false
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_board",
+      "spoken": "Achtzehnhundertsechsundsiebzig baut Nikolaus August Otto den ersten Viertaktmotor, so beschreibt es das Science Museum in London. Die Nachbildung dort leistet drei PS bei hundertachtzig Umdrehungen pro Minute. Laut Museum war Ottos Motor die erste praktische Alternative zur Dampfmaschine. Die Nachbildung stammt von neunzehnhundertzweiundachtzig.",
+      "data": {
+        "title": "Der erste Viertakter",
+        "mode": "history",
+        "years": [
+          {
+            "year": "1876",
+            "at": 0.0
+          }
+        ],
+        "rows": [
+          {
+            "text": "Nikolaus August Otto",
+            "at": "w:Otto"
+          },
+          {
+            "text": "Viertaktmotor",
+            "at": "w:Viertaktmotor"
+          },
+          {
+            "text": "3 PS bei 180 U/min (Nachbildung)",
+            "at": "w:Nachbildung"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Science",
+        "kicker": "2 · DER MOTOR",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_board",
+      "spoken": "Das amerikanische Patent wird am vierzehnten August achtzehnhundertsiebenundsiebzig erteilt. Sein Titel heißt übersetzt Verbesserung an Gasmotoren, als Erfinder steht Nicolaus A. Otto aus Deutz. Als Stand der Technik nennt es zwei ältere englische Patente.",
+      "data": {
+        "title": "US-Patent 194,047",
+        "mode": "history",
+        "years": [
+          {
+            "year": "1877",
+            "at": 0.0
+          }
+        ],
+        "doc": {
+          "head": "US PATENT 194,047",
+          "lines": [
+            "Improvement in",
+            "gas-motor engines"
+          ],
+          "stamp": "1877",
+          "at": "w:Titel"
+        },
+        "rows": [
+          {
+            "text": "erteilt am 14. August 1877",
+            "at": "w:erteilt"
+          },
+          {
+            "text": "Erfinder: Nicolaus A. Otto",
+            "at": "w:Erfinder"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Patent",
+        "kicker": "3 · DAS US-PATENT"
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rv_cutaway",
+      "spoken": "Im dritten Anspruch steht der Ablauf: Gas und Luft werden in einem Hub angesaugt, im Rückhub verdichtet und dann gezündet. Genau das zeigt unser Schnittmodell. Ansaugen, verdichten, zünden: der Kern des Viertakts.",
+      "data": {
+        "title": "Anspruch 3",
+        "labels": [
+          "vin",
+          "chamber"
+        ],
+        "labels_at": [
+          "w:angesaugt",
+          "w:verdichtet"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            "w:angesaugt",
+            20
+          ],
+          [
+            "w:verdichtet",
+            200
+          ],
+          [
+            "w:gezündet",
+            330
+          ],
+          [
+            1,
+            450
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Anspruch",
+        "kicker": "4 · DER ANSPRUCH",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_board",
+      "spoken": "Das deutsche Reichspatent Nummer fünfhundertzweiunddreißig heißt schlicht Gasmotor. Anmelderin ist laut Patentamt die Gasmotorenfabrik Deutz, ein Erfinder ist dort nicht eingetragen. Der Anspruch beschreibt die vier Takte über zwei Kurbelwellenumdrehungen. Angemeldet wurde es am dritten August achtzehnhundertsiebenundsiebzig.",
+      "data": {
+        "title": "Reichspatent 532",
+        "mode": "history",
+        "years": [
+          {
+            "year": "1877",
+            "at": 0.0
+          }
+        ],
+        "doc": {
+          "head": "REICHSPATENT NR. 532",
+          "lines": [
+            "Gasmotor",
+            "Gasmotorenfabrik Deutz"
+          ],
+          "stamp": "532",
+          "at": "w:Gasmotor"
+        },
+        "rows": [
+          {
+            "text": "kein Erfinder eingetragen",
+            "at": "w:Erfinder"
+          },
+          {
+            "text": "4 Takte, 2 Umdrehungen",
+            "at": "w:Takte"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Patentamt",
+        "kicker": "5 · DAS REICHSPATENT",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Ansaugen, verdichten, zünden, ausstoßen, patentiert seit achtzehnhundertsiebenundsiebzig. Motorentechnik verstehen: Folge Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "1876",
+            "at": "w:Ansaugen"
+          },
+          {
+            "text": "Patent 1877",
+            "at": "w:patentiert"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Motorentechnik verstehen",
+          "at": "w:Motorentechnik"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1440
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

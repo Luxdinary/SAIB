@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de" data-resolution="portrait"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>bg_cream_swirl</title><script src="assets/vendor/gsap.min.js"></script>
+<style>*{margin:0;padding:0;box-sizing:border-box;}html,body{width:1080px;height:1920px;overflow:hidden;background:#F8F3EF;}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;}#ground{position:absolute;inset:0;background:#F8F3EF;background-image:radial-gradient(ellipse at 15% 10%,rgba(201,143,147,0.20) 0,transparent 42%),radial-gradient(ellipse at 90% 85%,rgba(201,143,147,0.22) 0,transparent 45%);}
+#art{position:absolute;inset:0;}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="16.0" data-width="1080" data-height="1920" data-fps="30">
+<div id="ground"></div><div id="art" class="clip" data-start="0" data-duration="16.0" data-track-index="1">
+<svg viewBox="0 0 1080 1920" width="1080" height="1920" style="position:absolute;inset:0">
+<defs>
+  <radialGradient id="dropfill" cx="40%" cy="55%" r="65%">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+    <stop offset="0.55" stop-color="#C98F93" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#9B5560" stop-opacity="0.45"/>
+  </radialGradient>
+  <linearGradient id="cream" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="0.6" stop-color="#F3E3DF"/>
+    <stop offset="1" stop-color="#E6C9C4"/>
+  </linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+    <stop offset="0.5" stop-color="#F1E2DE" stop-opacity="0.75"/>
+    <stop offset="1" stop-color="#E2C3BF" stop-opacity="0.8"/>
+  </linearGradient>
+  <linearGradient id="cap" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D9B8B3"/><stop offset="0.5" stop-color="#C98F93"/><stop offset="1" stop-color="#A86C73"/>
+  </linearGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#9B5560" flood-opacity="0.18"/></filter>
+</defs>
+  <g id="sw1" transform="translate(860 1530) scale(1.7) rotate(-6)" filter="url(#shadow)">
+    <path d="M0 0 C 120 -40 220 60 170 170 C 120 280 -60 270 -120 160 C -190 30 -80 -150 90 -170 C 280 -190 400 -10 360 160" fill="none" stroke="url(#cream)" stroke-width="58" stroke-linecap="round"/>
+    <path d="M0 0 C 120 -40 220 60 170 170 C 120 280 -60 270 -120 160 C -190 30 -80 -150 90 -170 C 280 -190 400 -10 360 160" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.8" transform="translate(-8 -10)"/></g>
+  <g id="sw2" transform="translate(150 300) scale(0.8) rotate(8)" opacity="0.85">
+    <path d="M0 0 C 120 -40 220 60 170 170 C 120 280 -60 270 -120 160 C -190 30 -80 -150 90 -170 C 280 -190 400 -10 360 160" fill="none" stroke="url(#cream)" stroke-width="48" stroke-linecap="round"/></g>
+</svg></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#ground",{scale:1.0,transformOrigin:"50% 50%"},{scale:1.06,duration:16.0,ease:"none"},0);
+
+tl.fromTo("#sw1",{attr:{transform:"translate(860 1530) scale(1.7) rotate(-6)"}},{attr:{transform:"translate(860 1470) scale(1.7) rotate(14)"},duration:16,ease:"sine.inOut"},0);
+tl.fromTo("#sw2",{attr:{transform:"translate(150 300) scale(0.8) rotate(8)"}},{attr:{transform:"translate(150 330) scale(0.8) rotate(-10)"},duration:16,ease:"sine.inOut"},0);
+
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+tl.seek(0);
+</script></body></html>

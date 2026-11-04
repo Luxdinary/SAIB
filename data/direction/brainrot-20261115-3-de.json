@@ -1,0 +1,467 @@
+{
+  "video_id": "brainrot-20261115-3-de",
+  "brand_id": "brainrot",
+  "language": "de",
+  "title": "Blitz, dann Donner: Sekunden zählen – Plümo zählt von drinnen",
+  "notes": "Zonkfruit Vorlage 1.0, Produktion Woche 1 (01.11.2026), Reihe A. Aufbau wie das freigegebene Testvideo Q1 (Erdbeere keine Beere). Nur Aussagen aus den Kalenderquellen.",
+  "hook": {
+    "id": "H1",
+    "note": "erster Kandidat der Themenspezifikation"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Blitz und Donner kommen nicht gleichzeitig an. Ich zähl von drinnen. Am Fenster.",
+      "on_screen": "*Erst* Blitz, dann Donner.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Gewitterwolke fliegt zur Faktentür, Stempel IRRTUM",
+      "why": {
+        "truth": "Met Office: Licht ist viel schneller als Schall, Donner kommt immer danach",
+        "visual": "Wolke mit Blitz und Stempel ist sofort lesbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Warum hört man den Donner erst nach dem Blitz?",
+      "on_screen": "Warum *erst* danach?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Blitz, Pause, Donner"
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Der Donner braucht etwa fünf Sekunden für eine Meile.",
+      "on_screen": "*5 Sekunden* pro Meile.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Stoppuhr läuft fünf Sekunden"
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wer Donner hört, ist wahrscheinlich schon in Schlagdistanz.",
+      "on_screen": "Donner hörbar? *Schlagdistanz.*",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Haus mit Fenster, Wolke draußen"
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Ich zähl von drinnen die Sekunden bis zum Donner. Schau.",
+      "on_screen": "Zählen, aber *drinnen*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Plümo mit Stoppuhr im Haus"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.weather.gov/safety/lightning-science-thunder",
+      "title": "US National Weather Service, Understanding Lightning: Thunder: the lightning discharge heats the air rapidly and causes it to expand; the sound of thunder takes about 5 seconds to travel a mile; count the seconds between flash and thunder and divide by 5 for the distance in miles; you should be in a safe place while counting; if you can hear thunder, chances are that you're within striking distance of the storm",
+      "checked_at": "2026-11-01",
+      "label": "US-Wetterdienst NWS"
+    },
+    {
+      "id": "S2",
+      "url": "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/thunder-and-lightning",
+      "title": "Met Office, Thunder and lightning: thunder is the sound produced by the rapid heating of air by a lightning strike; thunder is always heard after the lightning is seen because light travels significantly faster than sound; seconds between flash and thunder divided by five give the approximate distance in miles, divided by three in kilometres",
+      "checked_at": "2026-11-01",
+      "label": "Met Office (UK-Wetterdienst)"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.nssl.noaa.gov/education/svrwx101/lightning/",
+      "title": "NOAA National Severe Storms Laboratory, Severe Weather 101: Lightning: count the seconds from the flash until you hear thunder; divide by 5 for the miles to the flash, by 3 for kilometers",
+      "checked_at": "2026-11-01",
+      "label": "NOAA NSSL"
+    }
+  ],
+  "unverified": [
+    "Hörweite des Donners: NWS nennt etwa 10 Meilen, NSSL bis zu 25 Meilen; widersprüchlich, daher nicht im Video."
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 500,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.4,
+    "progress_y": 1550,
+    "ai_label_bottom_px": 318,
+    "status_y": 1440,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Plümo dachte, der Donner trödelt. Falsch: Licht ist viel schneller als Schall. Sekunden zwischen Blitz und Donner durch drei ergeben grob die Entfernung in Kilometern. Gezählt wird an einem sicheren Ort: Wer Donner hört, ist wahrscheinlich schon in Schlagdistanz.",
+    "companion_text": "Zonkfruit: eine erfundene Frucht, echte Fakten. Folge Zonkfruit für mehr.",
+    "hashtags": [
+      "gewitter",
+      "wetter",
+      "wusstestdu",
+      "funfact",
+      "zonkfruit",
+      "comedy"
+    ],
+    "platform_texts": {
+      "tiktok": {
+        "title": "Erst Blitz, dann Donner: Plümo zählt, aber drinnen.",
+        "description": "Plümo dachte, der Donner trödelt. Falsch: Licht ist viel schneller als Schall. Sekunden zwischen Blitz und Donner durch drei ergeben grob die Entfernung in Kilometern. Gezählt wird an einem sicheren Ort: Wer Donner hört, ist wahrscheinlich schon in Schlagdistanz.",
+        "hashtags": [
+          "gewitter",
+          "wetter",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy"
+        ]
+      },
+      "instagram": {
+        "title": "Erst Blitz, dann Donner: Plümo zählt, aber drinnen.",
+        "description": "Plümo dachte, der Donner trödelt. Falsch: Licht ist viel schneller als Schall. Sekunden zwischen Blitz und Donner durch drei ergeben grob die Entfernung in Kilometern. Gezählt wird an einem sicheren Ort: Wer Donner hört, ist wahrscheinlich schon in Schlagdistanz.",
+        "hashtags": [
+          "gewitter",
+          "wetter",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy",
+          "reels"
+        ]
+      },
+      "youtube": {
+        "title": "Erst Blitz, dann Donner: Plümo zählt, aber drinnen. #Shorts",
+        "description": "Plümo dachte, der Donner trödelt. Falsch: Licht ist viel schneller als Schall. Sekunden zwischen Blitz und Donner durch drei ergeben grob die Entfernung in Kilometern. Gezählt wird an einem sicheren Ort: Wer Donner hört, ist wahrscheinlich schon in Schlagdistanz.",
+        "hashtags": [
+          "Shorts",
+          "gewitter",
+          "wetter",
+          "wusstestdu",
+          "funfact"
+        ]
+      }
+    },
+    "status_bar": {
+      "file": "Faktentür",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Blitz + Donner gleichzeitig?",
+          "tone": "amber",
+          "offset": 0.5
+        },
+        {
+          "beat": "b1",
+          "text": "Gleichzeitig: abgelehnt",
+          "tone": "pop",
+          "offset": 1.98
+        },
+        {
+          "beat": "b3",
+          "text": "Schall: 5 s pro Meile",
+          "tone": "lime",
+          "offset": 10.42
+        },
+        {
+          "beat": "b4",
+          "text": "Sekunden ÷ 3 = km",
+          "tone": "lime",
+          "offset": 9.53
+        },
+        {
+          "beat": "b5",
+          "text": "Donner hörbar: Schlagdistanz",
+          "tone": "lime",
+          "offset": 11.31
+        },
+        {
+          "beat": "b6",
+          "text": "Plümo: Mut offen",
+          "tone": "amber",
+          "offset": 9.09
+        },
+        {
+          "beat": "b7",
+          "text": "Plümo: liegt kurz",
+          "tone": "muted",
+          "offset": 0.3
+        }
+      ]
+    }
+  },
+  "assets": {},
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "zonk_scan",
+      "spoken": "Blitz und Donner kommen nicht gleichzeitig an. Ich zähl von drinnen. Am Fenster.",
+      "data": {
+        "mode": "hook",
+        "head": "*Erst* Blitz, dann Donner.",
+        "head_at": 0.2,
+        "sign": "NUR FAKTEN",
+        "items": [
+          {
+            "kind": "cloud_bolt"
+          }
+        ],
+        "stamp_reject": "IRRTUM",
+        "cue_scan": "Blitz",
+        "cue_verdict": "nicht",
+        "cue_club": "zähl",
+        "cue_know": "drinnen"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "zonk_word",
+      "spoken": "Moment. Ich dachte, der Donner trödelt und startet später. Aber kein Spätzünder. Licht ist viel schneller als Schall. Ich war geschockt. Ich hab die Stoppuhr geholt. Drinnen.",
+      "data": {
+        "word_a": "Spät",
+        "word_b": "zünder",
+        "left": "Plümo: *Donner trödelt*",
+        "right": "Echt: *Schall langsamer*",
+        "cue_left": "dachte",
+        "cue_strike": "kein",
+        "cue_right": "Schall",
+        "cue_react": "Ich",
+        "item": "stopwatch",
+        "cue_shock": "geschockt",
+        "cue_item": "Stoppuhr",
+        "cue_never": "Drinnen"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "zonk_diagram",
+      "spoken": "Was ist Donner? Der Blitz erhitzt die Luft schnell, sie dehnt sich aus. Donner ist das Geräusch davon. Der Schall braucht etwa 5 Sekunden pro Meile. Ohne Hände zeig ich's mit dem Blatt.",
+      "data": {
+        "headline": "Was ist *Donner*?",
+        "inner": "cloud_bolt",
+        "disc": [
+          "#3A3560",
+          "#E8E6F4",
+          "#A9A3C8"
+        ],
+        "cue_q": "Donner",
+        "labels": [
+          {
+            "text": "Blitz *erhitzt* die Luft",
+            "pos": "tr",
+            "cue": "erhitzt"
+          },
+          {
+            "text": "Luft dehnt sich *aus*",
+            "pos": "l",
+            "cue": "dehnt"
+          },
+          {
+            "text": "Schall: *5 s pro Meile*",
+            "pos": "b",
+            "cue": "Sekunden"
+          }
+        ],
+        "cue_hands": "Hände",
+        "cue_leaf": "Blatt"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 730,
+          "seconds": 0.7
+        },
+        "marker_at": "w:erhitzt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "zonk_zoom",
+      "spoken": "Ganz genau. Zähl die Sekunden zwischen Blitz und Donner. Durch fünf geteilt ergibt das ungefähr die Meilen, durch drei ungefähr die Kilometer. Fachleute sagen: Faustregel. Ich hab keine Faust.",
+      "data": {
+        "kind": "cloud_bolt",
+        "lens": "stopwatch",
+        "lens_bg": "#2A2140",
+        "cue_mag": "genau",
+        "callouts": [
+          {
+            "text": "Sekunden *÷ 5* = Meilen",
+            "cue": "Meilen"
+          },
+          {
+            "text": "Sekunden *÷ 3* = km",
+            "cue": "Kilometer"
+          }
+        ],
+        "cue_nut": "durch",
+        "stamp": {
+          "text": "Faustregel!",
+          "cue": "Faustregel"
+        },
+        "cue_react": "Ich",
+        "cue_fast": "Faust"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Zähl",
+        "marker_at": "w:Zähl"
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "zonk_scan",
+      "spoken": "Und das Wichtigste: Beim Zählen sollte man an einem sicheren Ort sein. Ich zähle drinnen, am Fenster. Denn wer Donner hört, ist wahrscheinlich schon in Schlagdistanz. Mit Kissen.",
+      "data": {
+        "mode": "accept",
+        "sign": "NUR FAKTEN",
+        "counter": "Sicher gezählt:",
+        "stamp_accept": "SICHER",
+        "items": [
+          {
+            "kind": "house",
+            "word": "sicheren"
+          },
+          {
+            "kind": "stopwatch",
+            "word": "Fenster"
+          }
+        ],
+        "cue_all": "Schlagdistanz",
+        "cue_react": "Kissen",
+        "react": "stolz"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 756,
+          "y": 575,
+          "seconds": 0.7
+        },
+        "marker_at": "w:sicheren"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "zonk_scan",
+      "spoken": "Merke: Sekunden zwischen Blitz und Donner durch drei ergibt grob Kilometer. Und gezählt wird drinnen. Gut, jetzt ich. Stoppuhr läuft. Ergebnis: Mut nicht ermittelbar. Ich hab mich wohl erschreckt.",
+      "data": {
+        "mode": "unknown",
+        "sign": "NUR FAKTEN",
+        "merke": "Sekunden *÷ 3* = km. Gezählt wird drinnen.",
+        "display": "Mut: nicht ermittelbar",
+        "plumps": "PLUMPS",
+        "cue_build": "drei",
+        "cue_go": "Gut",
+        "cue_scan": "Stoppuhr",
+        "cue_result": "Ergebnis",
+        "cue_back": "wohl"
+      },
+      "overlay": {
+        "marker": "auslegung",
+        "marker_at": "w:Merke"
+      },
+      "source_ids": []
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "zonk_loop",
+      "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+      "data": {
+        "sign": "NUR FAKTEN",
+        "cta": "Mehr Zonkfruit? *Folgen.*",
+        "cue_cta": "Mehr",
+        "cue_up": "steh",
+        "cue_lie": "liegen",
+        "cue_ch": "Kanal"
+      },
+      "overlay": {
+        "marker": "none",
+        "head_until": "w:steh"
+      },
+      "source_ids": []
+    }
+  ]
+}

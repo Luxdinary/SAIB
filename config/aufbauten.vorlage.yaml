@@ -1,0 +1,22 @@
+# Vorlage für brands/<id>/aufbauten.yaml (Tagesläufer liest sie zur Laufzeit; sie hat Vorrang vor config/daily.yaml › aufbau).
+# Je Marke pflegt die Marken-Sitzung diese Datei: welche Bildaufbauten gebaut sind, welche Szenentypen sie nutzen,
+# ein freigegebener Beispielplan je Aufbau (Few-Shot) und, wo nötig, welche Konzeptplan-Nummern mit dem Aufbau ohne neuen
+# Code gehen (Pflicht bei Revlore: dort gilt nur, was ein gebauter Aufbau nennt; Themen mit Quellen, weil die
+# Technik-Themen im Konzeptplan keine geprüfte Quelle haben).
+aufbauten:
+  - kuerzel: A                         # Buchstabe wie im Konzeptplan (A–E)
+    name: Röntgen                      # Name wie im Konzeptplan
+    gebaut: true                       # false = der Tagesläufer ersetzt den Aufbau durch einen gebauten und vermerkt das
+    szenentypen: [zt_photo, zt_xray, zt_curve]     # Szenentypen dieses Aufbaus (zusätzlich zu scene_types in config/daily.yaml)
+    beispielplan: data/direction/engines-20261104-1-de.T1.json      # optional: freigegebener Plan in diesem Aufbau (DE)
+    beispielplan_en: data/direction/engines-20261104-1-en.T1.json   # optional
+    hinweis: "Scanlinie öffnet das Modell an derselben Stelle wie das Foto; Teile beschriftet"   # optional, geht in den Prompt
+    themen:                            # optional (Revlore: Pflicht): Konzeptplan-Nummern, die mit diesem Aufbau gehen
+      - nr: 103
+        quellen:                       # geprüfte Quellen für dieses Thema (nur diese URLs darf das Modell nennen)
+          - {url: "https://…", titel: "Was die Quelle belegt (Seite/Abschnitt)", checked_at: "2026-11-04"}
+      - 93                             # Kurzform ohne Quellen: dann zählen die Kalenderquellen des Themas
+  - kuerzel: B
+    name: Messplatz
+    gebaut: true
+    szenentypen: [zt_photo, zt_trace]

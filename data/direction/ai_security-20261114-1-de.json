@@ -1,0 +1,459 @@
+{
+ "video_id": "ai_security-20261114-1-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Der falsche Microsoft-Anruf",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema D06, Reihe So läuft die Masche. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Fernzugriff. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Fernzugriff",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Anruf: Microsoft?",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Fernzugriff: angefragt",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Rechner: fremd gesteuert",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Echter Support: ruft nie an",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Passwort am Telefon: nie",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Regel: heute teilen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Fremder Fernzugriff: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Ein Anruf vom angeblichen Microsoft-Support, ein Pop-up mit Telefonnummer, dann der Fernzugriff: So läuft die Masche laut Microsoft und BSI, und so beendest du sie.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "supportbetrug",
+   "microsoft",
+   "socialengineering",
+   "kmu",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams-2ebf91bd-f94c-2a8a-e541-f5c800d18435",
+   "title": "Microsoft Support: Protect yourself from tech support scams",
+   "checked_at": "2026-11-01",
+   "label": "Microsoft, Support-Betrug"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Social-Engineering/social-engineering_node.html",
+   "title": "BSI: Social Engineering – der Mensch als Schwachstelle",
+   "checked_at": "2026-11-01",
+   "label": "BSI, Social Engineering"
+  }
+ ],
+ "unverified": [
+  "Schadenszahlen: nicht verwendet.",
+  "Bestimmte Fernwartungsprogramme: nicht genannt."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Microsoft ruft an, dein Rechner sei infiziert. Was tust du?",
+   "on_screen": "Microsoft ruft an?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Eine Fehlermeldung mit Hotline ist echt? Bei Microsoft nie.",
+   "on_screen": "Fehlermeldung mit Hotline?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Echte Fehlermeldungen von Microsoft enthalten nie eine Telefonnummer.",
+   "on_screen": "Nie eine Telefonnummer",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein Anruf vom angeblichen Microsoft-Support, und jemand Fremdes steuert deinen Rechner.",
+   "on_screen": "Falscher Support am Telefon?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "Microsoft: ruft nicht unaufgefordert an; Betrüger wollen Fernzugriff"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, was dieses Pop-up von dir will.",
+   "on_screen": "Was will dieses Pop-up?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Ein Anruf vom angeblichen Microsoft-Support, und jemand Fremdes steuert deinen Rechner.",
+   "data": {
+    "question": "Falscher Support am Telefon?",
+    "doc_label": "Warnmeldung",
+    "chat_title": "Microsoft-Support?",
+    "bot_line": "Ihr PC ist infiziert",
+    "typed": "Hotline anrufen",
+    "badge": "Echt?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 14,
+   "spoken": "So beschreibt Microsoft die Masche: Betrüger rufen an und geben sich als Support aus, manchmal mit gefälschter Rufnummer. Oder eine Webseite zeigt eine falsche Fehlermeldung mit Telefonnummer. Dann bitten sie, ein Programm für den Fernzugriff zu installieren.",
+   "data": {
+    "headline": "So läuft der Support-Betrug",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Anruf oder Pop-up",
+      "icon": "&#9742;"
+     },
+     {
+      "id": "n1",
+      "label": "Falscher Support",
+      "icon": "&#9823;"
+     },
+     {
+      "id": "n2",
+      "label": "Fernzugriff",
+      "icon": "&#9888;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "Hotline"
+     },
+     {
+      "label": "bitte installieren"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 9.0,
+     "label": "Wer steuert?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Mit dem Fernzugriff deuten die Täter normale Systemmeldungen als Probleme. Im besten Fall verlangen sie Geld für eine Reparatur, die keiner braucht. Im schlimmsten Fall installieren sie Schadsoftware oder Erpressersoftware.",
+   "data": {
+    "headline": "Was mit dem Fernzugriff passiert",
+    "file_label": "Fernzugriff",
+    "card": {
+     "title": "Laut Microsoft",
+     "rows": [
+      {
+       "text": "normale Meldungen als Fehler",
+       "ok": "open"
+      },
+      {
+       "text": "Geld für falsche Reparatur",
+       "ok": "open"
+      },
+      {
+       "text": "Schadsoftware installiert",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "Microsoft stellt klar: Wir rufen nicht unaufgefordert an, um deinen Rechner zu reparieren. Echte Fehlermeldungen enthalten nie eine Telefonnummer. Und Microsoft verlangt nie Bezahlung in Kryptowährung oder mit Geschenkkarten.",
+   "data": {
+    "headline": "Echt oder Betrug",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.5,
+    "left": {
+     "title": "Betrug",
+     "rows": [
+      {
+       "text": "unerwarteter Anruf",
+       "ok": "open"
+      },
+      {
+       "text": "Pop-up mit Hotline",
+       "ok": "open"
+      },
+      {
+       "text": "Geschenkkarten, Bitcoin",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Microsoft sagt",
+     "rows": [
+      {
+       "text": "ruft nicht unaufgefordert an",
+       "ok": null
+      },
+      {
+       "text": "Fehlermeldung ohne Nummer",
+       "ok": null
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Das BSI nennt ein ähnliches Muster: den angeblichen Administrator, der anruft und für eine Reparatur dein Passwort braucht. Sein Rat: Passwörter und Zugangsdaten nie am Telefon oder per Mail weitergeben.",
+   "data": {
+    "headline": "Am Telefon gilt",
+    "file_label": "Fernzugriff",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Auflegen",
+      "sub": "selbst zurückrufen",
+      "at": 0.6
+     },
+     {
+      "title": "Zugang geben",
+      "sub": "Täter am Rechner",
+      "at": 1.0
+     }
+    ],
+    "approval": "Anrufer überprüft?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Für dein Team heißt das: Bei unerwarteten Support-Anrufen auflegen. Keine Nummer aus einem Pop-up anrufen. Und Fernzugriff nur für den eigenen IT-Dienstleister, den du selbst kontaktiert hast.",
+   "data": {
+    "headline": "Drei Regeln fürs Team",
+    "items": [
+     {
+      "title": "Unerwarteter Anruf",
+      "sub": "auflegen",
+      "at": 2.0
+     },
+     {
+      "title": "Pop-up mit Nummer",
+      "sub": "nicht anrufen",
+      "at": 4.8
+     },
+     {
+      "title": "Fernzugriff",
+      "sub": "nur für den eigenen Dienstleister",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Auflegen ist erlaubt. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Auflegen ist erlaubt",
+    "file_label": "Fernzugriff",
+    "button": "Zugriff erlauben",
+    "block_text": "Kein Zugriff für Anrufer",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

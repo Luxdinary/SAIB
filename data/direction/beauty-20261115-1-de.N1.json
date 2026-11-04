@@ -1,0 +1,390 @@
+{
+ "video_id": "beauty-20261115-1-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "„Mindestens haltbar bis“ und die Sanduhr",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261115-1-de.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (jar), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Hält ein Produkt höchstens 30 Monate, steht ein Datum mit Sanduhr oder den Worten „Mindestens haltbar bis“, als Monat und Jahr oder Tag, Monat, Jahr. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Was zeigt die Sanduhr? In den USA ist das anders. Kosmetik braucht dort kein Verfallsdatum. Arzneimittel aber schon, und dazu zählen dort Sonnenschutzmittel. Make-up mit Lichtschutzfaktor gilt sogar als beides.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-labeling/shelf-life-and-expiration-dating-cosmetics",
+   "title": "U.S. FDA: Shelf Life and Expiration Dating of Cosmetics",
+   "checked_at": "2026-11-01",
+   "label": "FDA: Shelf life"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was bedeutet die kleine Sanduhr auf manchen Kosmetikpackungen?",
+   "on_screen": "Was zeigt die Sanduhr?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Ein Mindesthaltbarkeitsdatum ist bei Kosmetik nur Pflicht, wenn sie höchstens 30 Monate hält.",
+   "on_screen": "Ein Mindesthaltbarkeitsdatum ist bei Kosmetik nur Pflicht, w",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Jede Creme hat ein Ablaufdatum. Nur Produkte bis 30 Monate Haltbarkeit brauchen eines.",
+   "on_screen": "Jede Creme hat ein Ablaufdatum. Nur Produkte bis 30 Monate H",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer die kleine Sanduhr übersieht, übersieht auch das Datum dahinter.",
+   "on_screen": "Wer die kleine Sanduhr übersieht, übersieht auch das Datum d",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wie ein Mindesthaltbarkeitsdatum auf Kosmetik geschrieben wird.",
+   "on_screen": "Schau, wie ein Mindesthaltbarkeitsdatum auf Kosmetik geschri",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Was bedeutet die kleine Sanduhr auf manchen Kosmetikpackungen?",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Was zeigt die Sanduhr?",
+    "badge": "Datum?",
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "Sie gehört zum Mindesthaltbarkeitsdatum. Das ist laut Artikel 19 das Datum, bis zu dem ein Produkt bei richtiger Aufbewahrung seine ursprüngliche Funktion erfüllt und sicher bleibt. Die Pflicht gilt für Behälter und Verpackung.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Das Mindesthaltbarkeitsdatum",
+    "zoom": "30 Monate",
+    "flip": false,
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 19 Absatz 1 c",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "bis zu diesem Datum: ursprüngliche Funktion"
+     },
+     {
+      "text": "bei sachgemäßer Aufbewahrung"
+     }
+    ],
+    "kicker": "Worum es geht",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "Vor dem Datum steht entweder die Sanduhr aus Anhang VII oder die Worte „Mindestens haltbar bis“. Wenn nötig kommen Hinweise zur Aufbewahrung dazu.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "So sieht es aus",
+    "items": [
+     {
+      "title": "Sanduhr-Symbol",
+      "sub": "Anhang VII, Nummer 3",
+      "icon": "hourglass"
+     },
+     {
+      "title": "oder: „Mindestens haltbar bis“",
+      "sub": "in Worten",
+      "icon": "doc"
+     },
+     {
+      "title": "Aufbewahrung",
+      "sub": "wenn nötig, ergänzt",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "Das Datum besteht aus Monat und Jahr oder aus Tag, Monat und Jahr, in dieser Reihenfolge. Pflicht ist es nur, wenn ein Produkt höchstens 30 Monate hält. Bei längerer Haltbarkeit tritt das offene Tiegel-Symbol an seine Stelle. Symbol oder Worte, beides ist erlaubt.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_time",
+   "data": {
+    "headline": "Wann es Pflicht ist",
+    "nodes": [
+     {
+      "date": "Form",
+      "text": "Monat und Jahr, oder Tag, Monat, Jahr"
+     },
+     {
+      "date": "≤ 30 M",
+      "text": "Datum vorgeschrieben"
+     },
+     {
+      "date": "> 30 M",
+      "text": "stattdessen offenes Tiegel-Symbol"
+     }
+    ],
+    "kicker": "Im Vergleich",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "In den USA ist das anders. Kosmetik braucht dort kein Verfallsdatum. Arzneimittel aber schon, und dazu zählen dort Sonnenschutzmittel. Make-up mit Lichtschutzfaktor gilt sogar als beides.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "EU und USA",
+    "left": {
+     "tag": "EU",
+     "title": "bis 30 Monate",
+     "rows": [
+      {
+       "text": "Datum mit Sanduhr"
+      },
+      {
+       "text": "sonst Tiegel-Symbol"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "right": {
+     "tag": "USA",
+     "title": "nur Arzneimittel",
+     "rows": [
+      {
+       "text": "Kosmetik: kein Datum",
+       "mark": "gap"
+      },
+      {
+       "text": "Sonnenschutz: mit Datum"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "kicker": "Laut Quelle"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "Für dich heißt das: Such nach Sanduhr oder den Worten „Mindestens haltbar bis“, lies Monat und Jahr, und achte auf Hinweise zur Aufbewahrung.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "So prüfst du es",
+    "items": [
+     {
+      "title": "Sanduhr suchen",
+      "sub": "oder die Worte",
+      "icon": "hourglass"
+     },
+     {
+      "title": "Monat und Jahr lesen",
+      "sub": "das Datum dahinter",
+      "icon": "doc"
+     },
+     {
+      "title": "Aufbewahrung beachten",
+      "sub": "wenn angegeben",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Im Alltag",
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Erst das Datum lesen, dann auftragen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Merksatz",
+    "rule": "Erst lesen, dann auftragen.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "jar",
+     "line1": "CREME"
+    },
+    "question": {
+     "text": "Sanduhr oder Tiegel auf deiner Creme?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung."
+   }
+  }
+ ]
+}

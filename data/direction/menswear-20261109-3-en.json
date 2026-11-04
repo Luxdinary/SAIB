@@ -1,0 +1,566 @@
+{
+ "video_id": "menswear-20261109-3-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "How long should a suit jacket be?",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema D01 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Konvention mit Spielraum, keine Aussage über Körpergröße oder Figur.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Jacket, length",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "length: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "too short or too long",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "back and front",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "knuckles: a guide",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "rule: fairly loose",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "a frame, not a rule",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "seat covered",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "How long should a suit jacket be? The hem just covers your seat, say Suitsupply and T.M. Lewin; Proper Cloth adds reference points at the back and front and calls the rule fairly loose.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "suitjacket",
+   "suit",
+   "fit",
+   "styletips"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://suitsupply.com/en-de/journal/how-it-should-fit.html",
+   "title": "Suitsupply, How it should fit: der Saum soll das Gesäß nur knapp bedecken; darüber zu kurz, deutlich darunter zu lang",
+   "checked_at": "2026-11-01",
+   "label": "Suitsupply, Journal"
+  },
+  {
+   "id": "S2",
+   "url": "https://propercloth.com/reference/advance-tips-for-tailored-jacket-fit/",
+   "title": "Proper Cloth, Advanced tips for tailored jacket fit: hinten bis zum Ansatz des Gesäßes, vorn bis zum Ende des Hosenschlitzes; Regel 'fairly loose', kürzer moderner, länger klassischer",
+   "checked_at": "2026-11-01",
+   "label": "Proper Cloth, Reference"
+  },
+  {
+   "id": "S3",
+   "url": "https://tmlewin.co.uk/blogs/the-fitting-room/how-a-suit-should-fit",
+   "title": "T.M. Lewin, How a suit should fit: Saum bedeckt das Gesäß; Fingerknöchel als gängiges Bild, 'depends on style'",
+   "checked_at": "2026-11-01",
+   "label": "T.M. Lewin, Fitting Room"
+  }
+ ],
+ "unverified": [
+  "Daumen-Regel: in keiner Primärquelle gefunden, nicht im Video.",
+  "Rückenlänge vom Schneider nicht änderbar (Proper Cloth, Änderungsseite): Seite nicht in den Recherche-URLs, nicht im Video."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "How long should a jacket be?",
+   "on_screen": "How long should a jacket be?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Jacket length by feel? There is a reference point.",
+   "on_screen": "Jacket length by feel? There is a reference point.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Proper Cloth calls the length rule fairly loose",
+   "on_screen": "Proper Cloth calls the length rule fairly loose",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Hem above your seat: the jacket is too short",
+   "on_screen": "Hem above your seat: the jacket is too short",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Turn the jacket around and you will see it",
+   "on_screen": "Turn the jacket around and you will see it",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko von vorn, Lupe auf dem Saum",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage aus dem Titel, die Lupe zeigt den Saum."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "A jacket that is too short gets noticed. So does one that is too long. So how long should a suit jacket be?",
+   "data": {
+    "question": "How long should a jacket be?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "target": "quarters",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:short",
+    "loupe_at": "w:short",
+    "nie_at": "w:how",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "The answer is at the back. Turn the jacket around. Suitsupply puts it simply: the hem should just cover your seat. If it ends above, the jacket is too short. If it falls well below, it is too long.",
+   "data": {
+    "headline": "Where does the hem end?",
+    "left": {
+     "title": "Front",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "strain": false
+     },
+     "tag": "the hem at the front"
+    },
+    "right": {
+     "title": "Back",
+     "object": {
+      "kind": "jacket_back",
+      "vents": "centre"
+     },
+     "target": "hem",
+     "tag": "seat just covered",
+     "pulses": [
+      {
+       "target": "hem",
+       "at": "w:short",
+       "tone": "red"
+      },
+      {
+       "target": "hem",
+       "at": "w:long",
+       "tone": "red"
+      }
+     ]
+    },
+    "left_at": 0.3,
+    "left_tag_at": "w:answer",
+    "right_at": "w:Turn",
+    "right_tag_at": "w:cover",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Suitsupply"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Proper Cloth gives you two reference points. At the back, the hem reaches the base of your seat. At the front, it ends roughly where your trouser fly ends. That way you can check the length from both sides.",
+   "data": {
+    "headline": "Two reference points",
+    "backdrop": true,
+    "hold_end": true,
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket_back",
+       "vents": "centre"
+      },
+      "at": 0.0,
+      "title": "Back",
+      "tags": [
+       {
+        "spot": "hem",
+        "text": "to the seat's base",
+        "sub": "says Proper Cloth",
+        "tone": "always",
+        "at": "w:base"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:front",
+      "title": "Front",
+      "tags": [
+       {
+        "spot": "hem",
+        "text": "to the fly's end",
+        "sub": "where the fly ends",
+        "tone": "always",
+        "at": "w:fly"
+       }
+      ],
+      "focus_at": "w:both"
+     }
+    ]
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "T.M. Lewin adds a common rule of thumb: let your arms hang, and the hem sits roughly level with your knuckles. But even there, it says this depends on style.",
+   "data": {
+    "headline": "The hand as a guide?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "cuff": 14,
+     "strain": false
+    },
+    "target": "cuff",
+    "zoom": 1.4,
+    "label": "Knuckles: just a guide",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:rule",
+    "zoom_at": "w:arms",
+    "flip_at": "w:hem",
+    "label_at": "w:knuckles"
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 330,
+     "y": 990,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:rule"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 11,
+   "spoken": "How strict is this? Proper Cloth calls the rule fairly loose. A shorter jacket looks more modern, a longer one more classic. So the rule of thumb is a frame, not an exact measurement.",
+   "data": {
+    "headline": "How strict is this?",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Leeway",
+      "tags": [
+       {
+        "spot": "waist",
+        "text": "rule: fairly loose",
+        "sub": "says Proper Cloth",
+        "tone": "sometimes",
+        "at": "w:loose"
+       },
+       {
+        "spot": "pocket",
+        "text": "shorter: modern",
+        "sub": "a style choice",
+        "tone": "sometimes",
+        "at": "w:shorter"
+       },
+       {
+        "spot": "quarters",
+        "text": "longer: classic",
+        "sub": "a style choice",
+        "tone": "sometimes",
+        "at": "w:longer"
+       }
+      ],
+      "focus_at": "w:frame"
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "In short: at the back, the hem just covers your seat, as Suitsupply and T.M. Lewin put it. At the front, it ends roughly where the fly ends. Within that frame, your style decides.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Back: seat covered",
+      "sub": "just, says Suitsupply",
+      "object": {
+       "kind": "jacket_back",
+       "vents": "centre"
+      },
+      "at": "w:back",
+      "ring": "hem",
+      "ring_at": "w:seat"
+     },
+     {
+      "title": "Front: end of the fly",
+      "sub": "according to Proper Cloth",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:front",
+      "ring": "hem",
+      "ring_at": "w:fly"
+     },
+     {
+      "title": "A frame, not a rule",
+      "sub": "shorter modern, longer classic",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:frame",
+      "ring": "cuff",
+      "ring_at": "w:style"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Turn around: the hem just covers your seat. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket_back",
+     "vents": "centre"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "hem",
+    "fix_at": "w:around",
+    "ring_at": "w:seat",
+    "statement_at": "w:seat",
+    "chip_at": "w:eye",
+    "statement": "Seat just covered.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

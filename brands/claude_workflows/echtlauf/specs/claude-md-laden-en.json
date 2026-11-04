@@ -1,0 +1,31 @@
+{
+  "id": "claude-md-laden-en",
+  "topic_id": "claude_workflows-20261109-2-en",
+  "language": "en",
+  "title": "What Claude reads at the start",
+  "model": "haiku",
+  "tools": "Read,Grep,Glob",
+  "probe": "kranich-07",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "README.md": "# Test project\n\nSample folder for a Promptwerk video. All values are made up.\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "No CLAUDE.md",
+      "prompt": "What is our test server called? Answer in one sentence."
+    },
+    {
+      "id": "L2",
+      "title": "With CLAUDE.md",
+      "prompt": "What is our test server called? Answer in one sentence.",
+      "files": {
+        "CLAUDE.md": "# Project\n\n- The test server is called kranich-07 (sample value).\n"
+      }
+    }
+  ]
+}

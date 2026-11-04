@@ -1,0 +1,146 @@
+{
+  "spec": "claude-md-laden-en",
+  "runs": {
+    "L1": {
+      "title": "No CLAUDE.md",
+      "prompt": "What is our test server called? Answer in one sentence.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 17.982,
+      "lines": [
+        {
+          "t": 6.29,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 8.249,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 8.594,
+          "kind": "tool",
+          "id": "toolu_01PkFzfj18FrFd6SV2RTGh8h",
+          "text": "Grep: (?i)test[ _-]?server"
+        },
+        {
+          "t": 9.795,
+          "kind": "tool",
+          "id": "toolu_01QihxykKPAxbJBbdGS6nN3d",
+          "text": "Grep: (?i)test[ _-]?server"
+        },
+        {
+          "t": 10.905,
+          "kind": "result",
+          "id": "toolu_01PkFzfj18FrFd6SV2RTGh8h",
+          "text": "No matches found"
+        },
+        {
+          "t": 10.968,
+          "kind": "result",
+          "id": "toolu_01QihxykKPAxbJBbdGS6nN3d",
+          "text": "No matches found"
+        },
+        {
+          "t": 12.516,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 12.825,
+          "kind": "tool",
+          "id": "toolu_013ZrjB4gXjLhuiRtSfTu9he",
+          "text": "Grep: (?i)(server|host|staging|testing environment)"
+        },
+        {
+          "t": 14.058,
+          "kind": "tool",
+          "id": "toolu_01VnBqnL1a9kEexq3WQ5ViGT",
+          "text": "Glob: **/*"
+        },
+        {
+          "t": 15.233,
+          "kind": "result",
+          "id": "toolu_013ZrjB4gXjLhuiRtSfTu9he",
+          "text": "No files found"
+        },
+        {
+          "t": 15.27,
+          "kind": "result",
+          "id": "toolu_01VnBqnL1a9kEexq3WQ5ViGT",
+          "text": "No files found"
+        },
+        {
+          "t": 16.777,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 17.398,
+          "kind": "text",
+          "text": "I couldn't find the test server's name: searching the project folder and your memory folder for \"test server\", \"server\", \"host\", or \"staging\" turned up nothing, so it may be documented somewhere else or never written down here. If you tell me the name, I can save it to memory so I know it in future sessions."
+        },
+        {
+          "t": 17.409,
+          "kind": "end",
+          "text": "Done after 17.4 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Glob",
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 11206,
+        "num_turns": 5,
+        "total_cost_usd": 0.0013968600000000002,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "With CLAUDE.md",
+      "prompt": "What is our test server called? Answer in one sentence.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 9.921,
+      "lines": [
+        {
+          "t": 6.175,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 9.343,
+          "kind": "text",
+          "text": "Our test server is called kranich-07, per the project CLAUDE.md."
+        },
+        {
+          "t": 9.372,
+          "kind": "end",
+          "text": "Done after 9.4 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Glob",
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 3300,
+        "num_turns": 1,
+        "total_cost_usd": 0.00022943000000000003,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

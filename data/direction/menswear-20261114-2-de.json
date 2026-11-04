@@ -1,0 +1,533 @@
+{
+ "video_id": "menswear-20261114-2-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Krawattenlänge: Die Spitze endet am Bund",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema A04 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S2; keine Zentimeter- oder Zollangaben, 'etwa am Bund' laut Recherche-Hinweis.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Krawatte, gebunden",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Spitze: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "zu kurz, zu lang",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "Regel: am Bund",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Blatt bis zum Gürtel",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Maß: dein Körper",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "etwa am Bund",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Spitze: am Bund",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Wie lang sollte eine Krawatte sein? Laut The Tie Bar trifft die Spitze die Oberkante von Gürtelschnalle oder Hosenbund. Drake's: das breite Blatt reicht mindestens bis zum Gürtel. Eine feste Zentimeterzahl gibt es nicht.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "krawatte",
+   "anzug",
+   "stilregeln",
+   "krawattenlänge"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.thetiebar.com/blogs/faqs/where-should-tie-length-be",
+   "title": "The Tie Bar (Krawattenhersteller), Where should tie length be: Spitze trifft die Oberkante von Gürtelschnalle oder Hosenbund, nie unter dem Bund, nie über dem Gürtel; Länge relativ zum Körper, dickere Knoten brauchen mehr Stoff",
+   "checked_at": "2026-11-01",
+   "label": "The Tie Bar, FAQ"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.drakes.com/blogs/news/the-drakes-guide-to-ties",
+   "title": "Drake's, The Drake's Guide to Ties: breites Blatt mindestens bis zum Gürtel, schmales Ende in die Schlaufe",
+   "checked_at": "2026-11-01",
+   "label": "Drake's, Guide to Ties"
+  }
+ ],
+ "unverified": [
+  "Oberkante oder Mitte der Schnalle: Ratgeber uneinheitlich; im Video 'etwa am Bund'.",
+  "Zollangaben der Tie Bar sind Hausmaße; nicht im Video."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Wo endet die Krawattenspitze?",
+   "on_screen": "Wo endet die Krawattenspitze?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Hemd mit Krawatte und Gürtel, Lupe auf der Krawattenspitze",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Krawattenlänge in Zentimetern? Gibt es nicht.",
+   "on_screen": "Krawattenlänge in Zentimetern? Gibt es nicht.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Krawatte und Gürtel, Lupe auf der Krawattenspitze",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Die richtige Länge misst du am Bund",
+   "on_screen": "Die richtige Länge misst du am Bund",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Krawatte und Gürtel, Lupe auf der Krawattenspitze",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Über dem Gürtel? Dann ist sie zu kurz.",
+   "on_screen": "Über dem Gürtel? Dann ist sie zu kurz.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Hemd mit Krawatte und Gürtel, Lupe auf der Krawattenspitze",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Zu kurz, zu lang, richtig: der Vergleich",
+   "on_screen": "Zu kurz, zu lang, richtig: der Vergleich",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Hemd mit Krawatte und Gürtel, Lupe auf der Krawattenspitze",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage nach dem Punkt, an dem die Spitze endet; das Video beantwortet sie Schritt für Schritt."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Die Krawatte ist gebunden. Aber wo genau soll ihre Spitze enden? Über dem Gürtel, darunter, oder genau dazwischen?",
+   "data": {
+    "question": "Wo endet die Krawattenspitze?",
+    "object": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 585
+    },
+    "target": "tie_tip",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Spitze",
+    "loupe_at": "w:Spitze",
+    "nie_at": "w:dazwischen",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 14,
+   "spoken": "Links ist sie zu kurz und hängt über dem Gürtel. Rechts ist sie zu lang und verschwindet unter dem Bund. Der Krawattenhersteller The Tie Bar schließt beides aus: nie über dem Gürtel, nie unter dem Bund.",
+   "data": {
+    "headline": "Zu kurz, zu lang",
+    "left": {
+     "title": "Zu kurz",
+     "object": {
+      "kind": "torso",
+      "hold": "belt",
+      "tie_tip": 500
+     },
+     "target": "tie_tip",
+     "tag": "hängt über dem Gürtel",
+     "pulses": [
+      {
+       "target": "belt",
+       "at": "w:nie",
+       "tone": "red"
+      }
+     ]
+    },
+    "right": {
+     "title": "Zu lang",
+     "object": {
+      "kind": "torso",
+      "hold": "belt",
+      "tie_tip": 665
+     },
+     "target": "tie_tip",
+     "tag": "unter dem Bund",
+     "pulses": [
+      {
+       "target": "waistband",
+       "at": "w:nie#2",
+       "tone": "red"
+      }
+     ]
+    },
+    "left_at": "w:Links",
+    "left_tag_at": "w:hängt",
+    "right_at": "w:Rechts",
+    "right_tag_at": "w:verschwindet",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Krawattenhersteller"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 10,
+   "spoken": "Die Regel der Tie Bar: Die Spitze trifft die Oberkante der Gürtelschnalle oder des Hosenbunds. Nicht höher und nicht tiefer. Sie endet also etwa am Bund.",
+   "data": {
+    "headline": "Wo genau?",
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 500
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 585
+    },
+    "target": "tie_tip",
+    "zoom": 1.4,
+    "label": "Spitze trifft den Bund",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Regel",
+    "error_at": "w:Tie",
+    "zoom_at": "w:Spitze",
+    "flip_at": "w:trifft",
+    "label_at": "w:Oberkante"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Oberkante"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 10,
+   "spoken": "Der Krawattenmacher Drake's formuliert es als Untergrenze: Das breite Blatt reicht mindestens bis zum Gürtel. Und das schmale Ende? Das darf hinten in die Schlaufe.",
+   "data": {
+    "headline": "Die Untergrenze",
+    "stages": [
+     {
+      "object": {
+       "kind": "torso",
+       "hold": "belt",
+       "tie_tip": 585
+      },
+      "at": 0.0,
+      "title": "Laut Drake's",
+      "tags": [
+       {
+        "spot": "tie_tip",
+        "text": "breites Blatt",
+        "sub": "bis zum Gürtel",
+        "tone": "always",
+        "at": "w:breite"
+       },
+       {
+        "spot": "placket",
+        "text": "schmales Ende",
+        "sub": "in die Schlaufe",
+        "tone": "sometimes",
+        "at": "w:schmale"
+       }
+      ],
+      "focus_at": "w:Schlaufe"
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Drake"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 14,
+   "spoken": "Eine feste Zentimeterzahl gibt es nicht. Laut The Tie Bar hängt die Länge vom Körper ab: vom Rumpf, von der Leibhöhe der Hose und vom Knoten. Ein dicker Knoten braucht mehr Stoff. Große Männer brauchen längere Krawatten.",
+   "data": {
+    "headline": "Keine feste Zahl",
+    "left": {
+     "title": "Dein Körper",
+     "object": {
+      "kind": "torso",
+      "hold": "belt",
+      "tie_tip": 585
+     },
+     "tag": "Rumpf und Leibhöhe",
+     "pulses": [
+      {
+       "target": "placket",
+       "at": "w:Rumpf"
+      },
+      {
+       "target": "waistband",
+       "at": "w:Leibhöhe"
+      }
+     ]
+    },
+    "right": {
+     "title": "Dein Knoten",
+     "object": {
+      "kind": "knot",
+      "knot": "windsor"
+     },
+     "target": "knot",
+     "tag": "dick heißt mehr Stoff",
+     "pulses": [
+      {
+       "target": "knot",
+       "at": "w:dicker"
+      }
+     ]
+    },
+    "left_at": "w:Körper",
+    "left_tag_at": "w:Leibhöhe",
+    "right_at": "w:Knoten",
+    "right_tag_at": "w:braucht",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Laut"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 13,
+   "spoken": "Kurz gesagt: Die Spitze endet etwa am Bund, nicht darüber und nicht darunter. Das breite Blatt reicht mindestens bis zum Gürtel. Und die richtige Länge misst du an deinem Körper, nicht in Zentimetern.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Etwa am Bund",
+      "sub": "Oberkante von Schnalle oder Bund",
+      "object": {
+       "kind": "torso",
+       "hold": "belt",
+       "tie_tip": 665
+      },
+      "at": "w:Spitze",
+      "then": {
+       "tie_tip": 585
+      },
+      "then_at": "w:etwa",
+      "ring": "tie_tip",
+      "ring_at": "w:Bund"
+     },
+     {
+      "title": "Mindestens zum Gürtel",
+      "sub": "Drake's, Krawattenmacher",
+      "object": {
+       "kind": "torso",
+       "hold": "belt",
+       "tie_tip": 585
+      },
+      "at": "w:breite",
+      "ring": "belt",
+      "ring_at": "w:Gürtel"
+     },
+     {
+      "title": "Maß ist dein Körper",
+      "sub": "Rumpf, Leibhöhe und Knoten",
+      "object": {
+       "kind": "knot",
+       "knot": "four_in_hand"
+      },
+      "at": "w:richtige",
+      "then": {
+       "knot": "windsor"
+      },
+      "then_at": "w:Körper"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Die Spitze trifft den Bund. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 665
+    },
+    "to": {
+     "kind": "torso",
+     "hold": "belt",
+     "tie_tip": 585
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "tie_tip",
+    "fix_at": "w:trifft",
+    "ring_at": "w:Bund",
+    "statement_at": "w:Bund",
+    "chip_at": "w:Blick",
+    "statement": "Spitze am Bund.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

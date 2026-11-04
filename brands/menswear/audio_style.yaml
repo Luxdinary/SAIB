@@ -1,0 +1,21 @@
+tts:
+  provider: gemini
+  model: gemini-2.5-flash-preview-tts
+  voices:
+    de: Orus
+    en: Algenib
+  speaking_rate: 1.33     # Gemini ignores it; calibrates the mock dry run to Gemini Orus (V2: 151 words = 53,4 s, 30.10.2026)
+  style_instruction:
+    de: Sprich ruhig und klar auf Deutsch, composed, knowledgeable, never snobbish.
+    en: Speak clearly in English, composed, knowledgeable, never snobbish.
+music:
+  mood: quiet jazz piano or soft strings, 60-70 bpm
+  file: null
+  license_proof: null
+  gain_db: -18
+  duck_db: -10
+loudness:
+  target_lufs: -16
+  true_peak_dbtp: -1.5
+sfx:
+  enabled: false

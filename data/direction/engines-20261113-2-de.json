@@ -1,0 +1,475 @@
+{
+  "video_id": "engines-20261113-2-de",
+  "brand_id": "engines",
+  "language": "de",
+  "title": "Direkteinspritzung kühlt die Ladung",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261113-2-de, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Verdampft Benzin erst im Zylinder, kühlt es die Luft. Das bringt Füllung und Klopfreserve, und es erlaubt mehr Verdichtung.",
+    "companion_text": "Folge Revlore: Motorentechnik verstehen, ein Bauteil nach dem anderen.",
+    "hashtags": [
+      "motorentechnik",
+      "direkteinspritzung",
+      "verdampfung",
+      "klopfen",
+      "ethanol"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, Vorlesung 7",
+      "title": "MIT 2.61, Vorlesung 7 (L7)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/ea6fff400434e4163a91c1579ccf7236_MIT2_61S17_lec7.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "US-DOE, Motortechnik",
+      "title": "US-DOE, Motortechnik (F2)",
+      "url": "https://www.fueleconomy.gov/feg/tech_engine_more.shtml",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "label": "MIT 2.61, Vorlesung 8",
+      "title": "MIT 2.61, Vorlesung 8 (L8)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Man muss es nur direkt hineinspritzen.",
+      "on_screen": "Kraftstoff, der kühlt",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Kann Kraftstoff einen Motor kühlen?",
+      "on_screen": "Direkteinspritzung kühlt die Ladung",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Direkteinspritzung kühlt die Ladung",
+      "on_screen": "Direkteinspritzung kühlt die Ladung",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Direkteinspritzung kühlt die Ladung",
+      "on_screen": "Direkteinspritzung kühlt die Ladung",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Direkteinspritzung kühlt die Ladung",
+      "on_screen": "Direkteinspritzung kühlt die Ladung",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Benzin kann die Luft im Zylinder kühlen. Man muss es nur direkt hineinspritzen.",
+      "data": {
+        "claim": "Kraftstoff, der kühlt",
+        "claim_lines": [
+          "Kraftstoff,",
+          "der kühlt"
+        ],
+        "claim_highlight": "kühlt",
+        "claim_at": 0.05,
+        "counters": false,
+        "injector": "direct",
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:kühlen",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_cutaway",
+      "spoken": "Bei der Direkteinspritzung verdampft der Kraftstoff erst im Zylinder. Zum Verdampfen braucht er Wärme, und die nimmt er der angesaugten Luft. Die Ladung wird kühler. Das ist derselbe Effekt wie die Verdunstungskälte auf nasser Haut.",
+      "data": {
+        "title": "Verdampfen kühlt",
+        "injector": "direct",
+        "notes": [
+          {
+            "text": "verdampft",
+            "at": "w:verdampft",
+            "side": "r",
+            "y": 900,
+            "to": [
+              540,
+              590
+            ]
+          },
+          {
+            "text": "Luft kühler",
+            "at": "w:kühler",
+            "side": "l",
+            "y": 760,
+            "to": [
+              480,
+              620
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Wärme",
+        "kicker": "2 · DAS PRINZIP",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_readout",
+      "spoken": "Wie stark, zeigt die Fachvorlesung für ein Gemisch mit Lambda eins. Isooktan, ein Benzinbestandteil, kühlt die Ladung um neunzehn Grad. Ethanol um achtzig Grad, Methanol sogar um hundertachtundzwanzig Grad. Ethanol kühlt also gut viermal so stark wie Isooktan.",
+      "data": {
+        "title": "Verdampfungskühlung",
+        "figure": "bars",
+        "bar_max": 135,
+        "lines_y": 1010,
+        "bars": [
+          {
+            "label": "Isooktan",
+            "value": 19,
+            "text": "−19 °C",
+            "at": "w:Isooktan"
+          },
+          {
+            "label": "Ethanol",
+            "value": 80,
+            "text": "−80 °C",
+            "at": "w:Ethanol"
+          },
+          {
+            "label": "Methanol",
+            "value": 128,
+            "text": "−128 °C",
+            "at": "w:Methanol"
+          }
+        ],
+        "lines": [
+          {
+            "text": "Gemisch mit λ = 1",
+            "hl": "λ = 1",
+            "at": "w:Lambda"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Fachvorlesung",
+        "kicker": "3 · WIE STARK",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rv_cutaway",
+      "spoken": "Kühlere Luft ist dichter. Es passt mehr Ladung in den Zylinder, und die Neigung zum Klopfen sinkt. Beides nennt die Vorlesung als Vorteil der Direkteinspritzung. Genau darauf bauen kleine Turbomotoren auf.",
+      "data": {
+        "title": "Mehr Füllung",
+        "injector": "direct",
+        "labels": [
+          "chamber"
+        ],
+        "labels_at": [
+          "w:Ladung"
+        ],
+        "notes": [
+          {
+            "text": "weniger Klopfen",
+            "at": "w:Klopfen",
+            "side": "l",
+            "y": 880,
+            "to": [
+              452,
+              536
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:dichter",
+        "kicker": "4 · DIE FOLGEN",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_readout",
+      "spoken": "Das US-Energieministerium schreibt: Kühlere Luft erlaubt eine höhere Verdichtung oder einen günstigeren Zündzeitpunkt. Den Verbrauchsvorteil beziffert die Behörde auf etwa ein Prozent. Laut Vorlesung lag der Marktanteil der Direkteinspritzung zwanzigdreizehn schon bei etwa vierzig Prozent.",
+      "data": {
+        "title": "Laut US-Energieministerium",
+        "figure": "bars",
+        "bar_max": 45,
+        "lines_y": 1010,
+        "bars": [
+          {
+            "label": "Verbrauchsvorteil (US-DOE)",
+            "value": 1,
+            "text": "≈ 1 %",
+            "at": "w:Verbrauchsvorteil"
+          },
+          {
+            "label": "Marktanteil 2013 (MIT)",
+            "value": 40,
+            "text": "≈ 40 %",
+            "at": "w:Marktanteil"
+          }
+        ],
+        "lines": [
+          {
+            "text": "kühlere Luft → mehr Verdichtung",
+            "hl": "mehr Verdichtung",
+            "at": "w:Verdichtung"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:US",
+        "kicker": "5 · DAS ERGEBNIS",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Verdampfen kühlt, kühle Luft ist dichter, das bringt Klopfreserve. Motorentechnik verstehen: Folge Revlore.",
+      "data": {
+        "injector": "direct",
+        "chips": [
+          {
+            "text": "verdampfen",
+            "at": "w:Verdampfen"
+          },
+          {
+            "text": "dichtere Luft",
+            "at": "w:dichter"
+          },
+          {
+            "text": "Klopfreserve",
+            "at": "w:Klopfreserve"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Motorentechnik verstehen",
+          "at": "w:Motorentechnik"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

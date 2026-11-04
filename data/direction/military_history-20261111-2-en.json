@@ -1,0 +1,549 @@
+{
+  "video_id": "military_history-20261111-2-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "PLUTO: A Fuel Pipeline Under the English Channel",
+  "notes": "Woche 1, Reihe Nachschub. Ingenieurleistung; keine Kampfbilder, Tarnung der Pumpstationen nur als kurioser Fakt.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://film.iwmcollections.org.uk/r/4558",
+      "title": "OPERATION PLUTO, Film WOY 314, RAF Film Production Unit 1944, Imperial War Museums",
+      "label": "IWM Film WOY 314",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.awm.gov.au/collection/C318968",
+      "title": "Section of 3 inch HAIS pipe-line used in Operation PLUTO, REL25150, Australian War Memorial",
+      "label": "Australian War Memorial",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Tatsächlich geförderte Gesamtmenge: nur Kapazität belegt, nicht verwendet.",
+    "Route Dungeness–Boulogne nur indirekt belegt; im Video nur Isle of Wight–Cherbourg."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you get fuel under the English Channel in 1944?",
+      "on_screen": "Fuel under the sea?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "A pipe across the sea must be rigid? PLUTO was wound like a cable.",
+      "on_screen": "A pipe like a cable",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "One floating drum carried 70 miles of pipe.",
+      "on_screen": "70 miles on one drum",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Without a pipeline, every litre depends on ships.",
+      "on_screen": "Everything by ship?",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 3,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "",
+      "why": {
+        "truth": "nicht belegt, nicht wählbar"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a pipe unwind from a giant drum.",
+      "on_screen": "Unwind, don't lay",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you get fuel under the English Channel in 1944?",
+      "data": {
+        "question": "Fuel under the English Channel?",
+        "question_em": "under",
+        "card_title": "Operation PLUTO",
+        "card_meta": "ENGLISH CHANNEL · 1944",
+        "card_no": "FILE 12",
+        "stamp": "1944",
+        "drawing": "pluto_drum.svg",
+        "packet_label": "Pipeline",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:1944",
+        "packet_at": "w:fuel",
+        "em_at": "w:under"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "In early April 1942, Lord Mountbatten names the need: a petrol pipeline across the Channel. Research starts soon after, and on 4 April 1943 the first pumping trial succeeds.",
+      "data": {
+        "mode": "map",
+        "headline": "From need to trial",
+        "places": [
+          {
+            "label": "England",
+            "code": "coast",
+            "x": 600,
+            "y": 80,
+            "at": "w:Mountbatten"
+          },
+          {
+            "label": "France",
+            "code": "coast",
+            "x": 190,
+            "y": 500,
+            "rx": 165,
+            "ry": 95,
+            "at": "w:Channel"
+          }
+        ],
+        "route_at": "w:pipeline",
+        "route_label": "pipeline wanted",
+        "route_label_at": "w:Research",
+        "wait_at": "w:soon",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "4 Apr 1943: trial",
+        "chip_at": "w:pumping",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Pipeline",
+        "packet_at": "w:need",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "first trial",
+        "line_label_at": "w:succeeds",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:layers",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "The first pipe, HAIS, is a lead tube wrapped in layers of cotton, jute, paper and steel, built like a submarine cable. In 1943 its diameter grows from two to three inches.",
+      "data": {
+        "headline": "A pipe built like a cable",
+        "drawing": "pluto_drum.svg",
+        "sheet_title": "SHEET 2 · HAIS CROSS-SECTION",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Lead tube inside",
+            "x": 200,
+            "y": 300,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:lead"
+          },
+          {
+            "label": "Cotton, jute, paper",
+            "x": 300,
+            "y": 250,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:cotton"
+          },
+          {
+            "label": "Steel outside",
+            "x": 340,
+            "y": 330,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:steel"
+          },
+          {
+            "label": "2 → 3 inches",
+            "x": 200,
+            "y": 150,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:diameter"
+          }
+        ],
+        "zoom": {
+          "x": 200,
+          "y": 300,
+          "scale": 1.12,
+          "at": "w:layers",
+          "back_at": "w:1943",
+          "grow": "up"
+        },
+        "headline_lines": 2,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "The second type is called HAMEL: a steel pipe by Hammick and Ellis. Its sections are welded automatically into strings three quarters of a mile long.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Two pipe types",
+        "left": {
+          "tag": "HAIS",
+          "title": "Lead pipe",
+          "at": 0.3,
+          "rows": [
+            "layered like a cable",
+            "2, then 3 inches"
+          ]
+        },
+        "right": {
+          "tag": "HAMEL",
+          "title": "Steel pipe",
+          "at": "w:HAMEL",
+          "rows": [
+            {
+              "text": "Hammick & Ellis",
+              "at": "w:Hammick"
+            },
+            {
+              "text": "strings of ¾ mile",
+              "at": "w:strings"
+            }
+          ]
+        },
+        "verdict": "Welded automatically",
+        "verdict_at": "w:welded",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "It is laid from ships and floating drums. One drum, the Conundrum, carries about 70 miles of pipe. Line one runs from the Isle of Wight to Cherbourg.",
+      "data": {
+        "headline": "Unwound, not built",
+        "nodes": [
+          {
+            "label": "Drum",
+            "code": "Conundrum",
+            "at": "w:Conundrum"
+          },
+          {
+            "label": "Isle of Wight",
+            "code": "start",
+            "at": "w:Isle"
+          },
+          {
+            "label": "Cherbourg",
+            "code": "end",
+            "at": "w:Cherbourg"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": "Line no. 1"
+          }
+        ],
+        "count": {
+          "to": 70,
+          "label": "MILES",
+          "at": "w:70",
+          "until": "w:Line"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "Pumping begins on 12 August 1944. Eleven HAIS and six HAMEL lines are laid, with over 4500 tonnes of daily capacity.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1942 to 1944",
+        "items": [
+          {
+            "year": "1942",
+            "title": "Need stated",
+            "sub": "Mountbatten, April",
+            "at": 0.1
+          },
+          {
+            "year": "1943",
+            "title": "First pumping trial",
+            "sub": "4 April, Watermouth",
+            "at": 1.0
+          },
+          {
+            "year": "1944",
+            "title": "Pumping begins",
+            "sub": "11 HAIS + 6 HAMEL",
+            "at": "w:12",
+            "sub_at": "w:eleven"
+          }
+        ],
+        "end_at": "w:capacity",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "A section of the pipe is now in the Australian War Memorial, and the 1944 film is digitised by the Imperial War Museums. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "HAIS pipe section",
+        "card_meta": "REL25150",
+        "card_no": "FILE 12",
+        "stamp": "Museum",
+        "drawing": "pluto_drum.svg",
+        "statement": "PLUTO lives on as a pipe in a museum",
+        "statement_at": "w:section",
+        "stamp_at": "w:Memorial",
+        "note": "Film WOY 314, Imperial War Museums",
+        "note_at": "w:film",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Pipeline",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Idea: 1942",
+          "tone": "muted",
+          "offset": 2.2
+        },
+        {
+          "beat": "b2",
+          "text": "Need: stated",
+          "tone": "amber",
+          "offset": 1.7
+        },
+        {
+          "beat": "b3",
+          "text": "Pipe: HAIS",
+          "tone": "amber",
+          "offset": 1.7
+        },
+        {
+          "beat": "b4",
+          "text": "Pipe: HAMEL",
+          "tone": "amber",
+          "offset": 2.7
+        },
+        {
+          "beat": "b5",
+          "text": "Laying: drum",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b6",
+          "text": "Pumping: from 12 Aug 1944",
+          "tone": "muted",
+          "offset": 2.2
+        },
+        {
+          "beat": "b7",
+          "text": "Pipe section: in a museum",
+          "tone": "muted",
+          "offset": 11.0
+        }
+      ]
+    },
+    "description": "PLUTO 1944: fuel through pipes under the English Channel, built like a submarine cable and unwound from floating drums. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "engineering",
+      "logistics",
+      "history",
+      "pluto",
+      "historyoftechnology"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

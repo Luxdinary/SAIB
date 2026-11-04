@@ -1,0 +1,296 @@
+{
+  "video_id": "claude_workflows-20261115-1-en-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "A subagent with its own tools: what it may do and what not",
+  "notes": "Week 1, series Same task, different switch. Own English recording subagent-werkzeuge-en (second version): subagent pruefer with tools: Read versus tools: Read, Edit, twice each. The first version (--tools Agent) switched Read and Edit off for the whole session, subagents included; it is kept under recordings/_verworfen and not shown, because it shows a mistake in the setup, not the topic. Lines from inside the subagent are marked with ┆ in the frame.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "A subagent has its own tools. What happens when it is not allowed to do something?",
+      "on_screen": "What may the subagent do?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "SUB",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "question"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "A subagent may do whatever Claude may do? Not if its file says otherwise.",
+      "on_screen": "Can it do everything?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "SUB",
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "The subagent could only read, so it found the typos but could not save them.",
+      "on_screen": "Found, not saved",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Without edit rights, the work fell back to the main session.",
+      "on_screen": "Work falls back",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Two real runs: the same subagent, once with and once without Edit.",
+      "on_screen": "With and without Edit",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "structure"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "SUB",
+      "title": "Create custom subagents: each subagent runs in its own context window with a custom system prompt, specific tool access, and independent permissions; frontmatter field tools: tools the subagent can use, as a comma-separated string such as Read, Grep, Bash; inherits every tool available to subagents if omitted",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "checked_at": "2026-11-02",
+      "label": "Claude Code docs, Subagents"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/subagent-werkzeuge-en",
+      "checked_at": "2026-11-02",
+      "label": "Own recording",
+      "title": "Own recording subagent-werkzeuge-en, 2026-11-02: Claude Code 2.1.309, test folder with sample data, every run twice"
+    }
+  ],
+  "unverified": [
+    "In run 1 the main session had Edit itself and changed the file after the subagent could only read. Whether it would have solved it differently without its own edit rights was not tested.",
+    "The subagent ran in the background; its lines appear in the log between those of the main session."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "subagent-werkzeuge-en"
+    },
+    "short_title": "Subagenten EN",
+    "description": "Real run, recorded on Nov 2, 2026 with Claude Code 2.1.309 (model claude-haiku-5-5). The same task for the subagent pruefer, every run twice: with tools: Read it found the typos but could not save them, so the main session made the edit itself. With tools: Read, Edit the subagent fixed the file itself.",
+    "companion_text": "Base command per run: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Agent,Read,Edit. Subagent in .claude/agents/pruefer.md, run 1 with tools: Read, run 2 with tools: Read, Edit. Main session with --tools Agent,Read,Edit and --permission-mode acceptEdits. Lines from inside the subagent are marked with ┆ in the frame. Source: Claude Code docs, Subagents, retrieved Nov 2, 2026. Paths shortened in the frame (test folder = .). Behaviour can change with version and model. Not an official Anthropic channel.",
+    "hashtags": [
+      "claudecode",
+      "aiworkflow",
+      "coding",
+      "developer",
+      "subagents"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "SUB",
+        "R1"
+      ],
+      "spoken": "A subagent has its own tools. What happens when it is not allowed to do something? Two real runs with a subagent called pruefer, which means checker.",
+      "data": {
+        "run": "L1",
+        "question": "What may the subagent do?",
+        "type_word": "tools",
+        "chips_word": "Two",
+        "rec": "subagent-werkzeuge-en"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "SUB"
+      ],
+      "spoken": "The subagent is a file in the agents folder. Its header says which tools it may use: in run one only Read, in run two Read and Edit. According to the docs, every subagent has its own tool access and its own permissions.",
+      "data": {
+        "run": "L1",
+        "file": ".claude/agents/pruefer.md",
+        "highlight_text": "tools:",
+        "kicker": "Claude Code docs, Subagents",
+        "quote": "… with a custom system prompt, specific tool access, and independent permissions.",
+        "translation": "Its own prompt, its own tools, its own permissions.",
+        "highlight_word": "header",
+        "doc_word": "docs",
+        "translation_word": "permissions",
+        "rec": "subagent-werkzeuge-en"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "The task: fix two typos in text.md, and have the subagent do it, not the main session.",
+      "data": {
+        "run": "L1",
+        "show": "text.md",
+        "highlight_text": "tset",
+        "label": "Sample data, typos on purpose",
+        "view_word": "typos",
+        "highlight_word": "subagent",
+        "tag_word": "main",
+        "rec": "subagent-werkzeuge-en"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run one. Claude started pruefer in the background. The lines with the dotted bar come from the subagent. It read the file, but it was not allowed to write, so it could only report the typos. Claude then said it would fix them itself, and made the edit.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "text_rows": 3,
+        "stamp_true": "fixed",
+        "stamp_false": "not fixed",
+        "rec": "subagent-werkzeuge-en"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run two, pruefer with Edit. This time the subagent read the file and changed it itself. Claude reported the result and added that it had not opened the file to confirm the edits.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "text_rows": 3,
+        "stamp_true": "fixed",
+        "stamp_false": "not fixed",
+        "rec": "subagent-werkzeuge-en"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "SUB"
+      ],
+      "spoken": "Both runs ran twice, and the file was fixed at the end every time. The difference is who wrote it: in run one the main session, in run two the subagent. The limits in its file really applied.",
+      "data": {
+        "headline": "2 runs, twice each",
+        "probe_good": true,
+        "stamp_true": "fixed",
+        "stamp_false": "not fixed",
+        "titles": {
+          "L1": "Read only: Claude edits",
+          "L2": "Edit: subagent edits"
+        },
+        "note": "Own tools and permissions per subagent (per the docs).",
+        "note_source": "Claude Code docs, Subagents",
+        "rows_word": "Both",
+        "row_gap": 0.8,
+        "note_word": "difference",
+        "rec": "subagent-werkzeuge-en"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "So give a subagent exactly the tools its job needs, and no more. Follow Promptwerk for more Claude workflows, step by step.",
+      "data": {
+        "statement": "Give each subagent only the tools it needs.",
+        "claim": "Promptwerk · real runs",
+        "statement_word": "exactly",
+        "claim_word": "Follow",
+        "rec": "subagent-werkzeuge-en"
+      }
+    }
+  ]
+}

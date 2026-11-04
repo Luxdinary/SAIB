@@ -1,0 +1,95 @@
+{
+  "brand_id": "megaconstruction",
+  "brand_name": "Gigastruct",
+  "date": "2026-11-03",
+  "provider": "mock",
+  "model": "mock",
+  "dry_run": true,
+  "topics": [
+    {
+      "key": "nr:3",
+      "nr": "3",
+      "title": "Brenner Basistunnel: 230 km Röhren für 55 km Bahnstrecke",
+      "aufbau": "A",
+      "aufbau_note": "Aufbau B ist nicht gebaut oder passt nicht zum Thema, ersetzt durch A",
+      "langs": {
+        "de": {
+          "video_id": "megaconstruction-20261103-d2-de",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\megaconstruction-20261103-d2-de.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [
+            "Sprechtext 984 Zeichen (etwa 81 s Stimme), Ziel 855–983",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 7671,
+          "llm_tokens_out": 0,
+          "llm_tokens_cache": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "",
+          "dry_run_diag": "warning: hook beat text differs from candidate H2; using the beat text\nvoice: mock 74.5 s, 0.0000 USD\ntimings: 157 words via mock (none, 0 s)\n  b1  hook          gb_task           0.00 +10.87\n  b2  problem       gb_load          10.87 +10.45\n  b3  explanation   gb_principle     21.32 +10.62\n  b4  demonstration gb_build         31.95 +14.34\n  b5  insight       gb_calc          46.28 +12.87\n  b6  benefit       gb_proof         59.15 + 7.08\n  b7  close         gb_close         66.24 +11.21\nsound: on, palette tech, 47 cues (close 1, event 11, hook_end 1, plan 30, scene_change 4), music procedural/dark [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 0 errors, craft 15 warnings\n  [warn  ] NOT visual_cuts_rhythm: 57 visual events, median interval 1.0 s (target 1.2-8.0)\ndry run: ok (direction checks pass without video)",
+          "dry_run_repairs": 0,
+          "dry_run_done": true,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [],
+          "errors": []
+        },
+        "en": {
+          "video_id": "megaconstruction-20261103-d2-en",
+          "version": "D1",
+          "plan_path": "C:\\Automation\\faceless-network\\data\\direction\\megaconstruction-20261103-d2-en.D1.json",
+          "plan_ok": true,
+          "validation_errors": [],
+          "validation_warnings": [
+            "erster Beat beginnt nicht mit dem Text des gewählten Hooks",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 4798,
+          "llm_tokens_out": 0,
+          "llm_tokens_cache": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": 0,
+          "dry_run_note": "",
+          "dry_run_diag": "warning: hook beat text differs from candidate H2; using the beat text\nvoice: mock 73.1 s, 0.0000 USD\ntimings: 171 words via mock (none, 0 s)\n  b1  hook          gb_task           0.00 +10.65\n  b2  problem       gb_load          10.65 + 7.59\n  b3  explanation   gb_principle     18.23 + 9.65\n  b4  demonstration gb_build         27.88 +13.77\n  b5  insight       gb_calc          41.65 +13.77\n  b6  benefit       gb_proof         55.42 + 7.77\n  b7  close         gb_close         63.19 +12.87\nsound: on, palette tech, 46 cues (close 1, event 10, hook_end 1, plan 30, scene_change 4), music procedural/dark [plan.layout.sound]\nhyperframes check: lint 0 errors / layout 0 errors, craft 15 warnings\n  [warn  ] NOT visual_cuts_rhythm: 57 visual events, median interval 1.0 s (target 1.2-8.0)\ndry run: ok (direction checks pass without video)",
+          "dry_run_repairs": 0,
+          "dry_run_done": true,
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [],
+          "errors": []
+        }
+      },
+      "marked": false,
+      "notes": [],
+      "errors": []
+    }
+  ],
+  "skipped": [
+    "Nr. 1 · Große Mauer aus dem All sichtbar? NASA sagt: nein · Reihe Prüfstand · Aufbau D: im Redaktionsplan schon fertig (megaconstruction-20261109-1-de)",
+    "Nr. 2 · Fehmarnbelt-Tunnel: ein Tunnelelement wiegt mehr als sieben Eiffeltürme · Reihe Nachgerechnet · Aufbau A: im Redaktionsplan schon fertig (megaconstruction-20261109-2-de)"
+  ],
+  "errors": [],
+  "started_at": "2026-11-03T17:06:12+00:00",
+  "finished_at": "2026-11-03T17:07:01+00:00"
+}

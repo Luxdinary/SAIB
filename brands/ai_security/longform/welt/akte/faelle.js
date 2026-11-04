@@ -1,0 +1,100 @@
+// Kapitel 4 · „Was tun Sie? Zwei Fälle“ (neu für die Langfassung, 03.11.2026). Je Fall vier Bühnen:
+//   Fall    der Beispielbetrieb, Kamera im Raum, das Objekt des Falls kommt als Blatt herein, die heiklen Stellen färben sich bernstein
+//   Wahl    ein Weg gabelt sich in A, B und C (je eine Karte), darunter der Denkbalken
+//   Folge   der gewählte falsche Weg als Zeitleiste mit Uhrzeiten, der Endpunkt rot (nur dort Rot)
+//   Schritt dieselbe Gabel: C leuchtet blau bis zur grünen Lampe, A und B werden durchgestrichen, mit kurzem Grund
+// Situationen erfunden (Marker „Beispiel“ steht im Kopf), Mechanik und Schritt aus den Quellen des Plans.
+// Die Bausteine (bauGabel, fallAkt) stehen in fall-lib.js.
+const QUELLEN_F = {
+  S2: { de: 'Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, Version 1.0 vom 6. Mai 2024, Abschnitte 2.2, 2.4 und 3.1 · datenschutzkonferenz-online.de · Abruf 2026-10-18',
+        en: 'Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, version 1.0 of 6 May 2024, sections 2.2, 2.4 and 3.1 · datenschutzkonferenz-online.de · retrieved 2026-10-18' },
+  S3: { de: 'Datenschutzkonferenz, Orientierungshilfe „Künstliche Intelligenz und Datenschutz“, Version 1.0 vom 6. Mai 2024, Abschnitte 2.2, 2.4, 2.5 und 3.1 · Abruf 2026-10-18',
+        en: 'German data protection conference (DSK), Orientierungshilfe "Künstliche Intelligenz und Datenschutz", version 1.0 of 6 May 2024, sections 2.2, 2.4, 2.5 and 3.1 · retrieved 2026-10-18' },
+  S9: { de: 'Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, Version 1.0 vom 6. Mai 2024, Abschnitt 2.2, S. 10 · datenschutzkonferenz-online.de · Abruf 2026-10-18',
+        en: 'Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, version 1.0 of 6 May 2024, section 2.2, p. 10 · datenschutzkonferenz-online.de · retrieved 2026-10-18' },
+};
+
+// ---------- Fall 1: die Reklamation ----------
+fallAkt({
+  name: 'fall-1', seed: 21,
+  anker: [
+    ['start', { de: 'Zwei Fälle zum', en: 'Two cases for' }], ['fall', { de: 'Fall eins', en: 'Case one' }],
+    ['objekt', { de: 'Eine Kundin schickt', en: 'A customer sends' }], ['name', { de: 'mit Namen', en: 'with her name' }],
+    ['fotos', { de: 'drei Fotos', en: 'three photos' }], ['beschr', { de: 'genauen Beschreibung', en: 'detailed description' }],
+    ['privat', { de: 'privat auf dem Telefon', en: 'privately on the phone' }],
+    ['wahl', { de: 'Was tun Sie', en: 'What do you do' }], ['opt0', { de: 'Name und Anschrift löschen', en: 'delete the name' }],
+    ['opt1', { de: 'es geht ja nur', en: 'it is only about' }], ['opt2', { de: 'Nichts von der Kundin', en: 'paste nothing' }],
+    ['denk', { de: 'Überlegen Sie', en: 'Think about it' }],
+    ['folge', { de: 'Viele wählen A', en: 'Many choose A' }], ['f1', { de: 'Name und Anschrift gelöscht', en: 'address are deleted' }],
+    ['f2', { de: 'die Fotos und die Beschreibung', en: 'the photos and the description' }], ['f3', { de: 'privates Konto', en: 'private account' }],
+    ['m0', { de: 'Genau das meinen', en: 'That is exactly' }], ['f4', { de: 'bleibt erkennbar', en: 'remains identifiable' }],
+    ['schritt', { de: 'Richtig ist C', en: 'C is right' }], ['grund0', { de: 'A reicht', en: 'A is regularly' }], ['grund1', { de: 'B gibt alles', en: 'B passes everything' }],
+  ],
+  ende: { de: 'Fall zwei', en: 'Case two' },
+  ueber: { typ: 'schwarz', d: 0.9 },
+  blick: { f: [1540, 560], z: 1.0 }, blickNah: { f: [1300, 520], z: 1.25 }, tippen: 'figA',
+  objekt: { kicker: { de: 'E-MAIL · REKLAMATION', en: 'EMAIL · COMPLAINT' }, titel: { de: 'Steckdose Küche', en: 'Kitchen socket' },
+    von: [520, 240], nach: [1460, 420],
+    zeilen: [{ text: { de: 'Name und Anschrift der Kundin', en: "Customer's name and address" }, at: 'name', heikel: true },
+      { text: { de: 'drei Fotos aus der Wohnung', en: 'three photos from the flat' }, at: 'fotos', heikel: true },
+      { text: { de: 'Küche, zweiter Stock, Kind im Haushalt', en: 'kitchen, second floor, child at home' }, at: 'beschr', heikel: true }] },
+  pillen: [{ text: { de: 'privates Telefon', en: 'private phone' }, icon: 'phone', x: 1060, y: 470, at: 'privat' }],
+  optionen: [{ de: 'Name und Anschrift löschen, dann einfügen', en: 'Delete name and address, then paste' },
+    { de: 'Die Mail einfügen, es geht ja nur um eine Antwort', en: 'Paste the email, it is only a reply' },
+    { de: 'Nichts von der Kundin einfügen, im Zweifel fragen', en: 'Paste nothing from her, ask in case of doubt' }],
+  falsch: 0,
+  folge: [{ zeit: '14:06', text: { de: 'Name und Anschrift gelöscht', en: 'Name and address deleted' }, at: 'f1' },
+    { zeit: '14:06', text: { de: 'Fotos und Beschreibung bleiben drin', en: 'Photos and description stay in' }, ton: 'amber', at: 'f2' },
+    { zeit: '14:07', text: { de: 'Eingabe über ein privates Konto', en: 'Input via a private account' }, ton: 'amber', at: 'f3' },
+    { zeit: '', text: { de: 'Die Kundin bleibt erkennbar', en: 'The customer stays identifiable' }, at: 'f4' }],
+  gruende: [{ option: 0, text: { de: 'reicht regelmäßig nicht', en: 'regularly not enough' }, at: 'grund0' },
+    { option: 1, text: { de: 'privater Zugang, keine Regel', en: 'private access, no rule' }, at: 'grund1' }],
+  schritt: { titel: { de: 'Nicht einfügen, im Zweifel fragen', en: 'Paste nothing, ask in case of doubt' },
+    sub: { de: 'Antwort allgemein entwerfen, die Angaben der Kundin danach selbst ergänzen', en: "Draft the reply in general terms, add the customer's details yourself" } },
+  kopf: { kicker: { de: '4 · FALL 1 · NACHGESTELLT', en: '4 · CASE 1 · RE-ENACTED' }, titel: { de: 'Mittwoch, 14:05', en: 'Wednesday, 14:05' },
+    frage: { de: 'Die Reklamation', en: 'The complaint' },
+    folgeKicker: { de: '4 · WENN SIE A WÄHLEN · BEISPIEL', en: '4 · IF YOU CHOOSE A · EXAMPLE' }, folgeTitel: { de: 'Der Name ist weg, der Zusammenhang nicht', en: 'The name is gone, the context is not' } },
+  marken: [{ ab: 'm0', bis: 'schritt', art: 'fakt', quelle: 'S2' }, { ab: 'schritt', art: 'auslegung', quelle: 'S3' }],
+});
+
+// ---------- Fall 2: die Richtlinie in der Schublade ----------
+fallAkt({
+  name: 'fall-2', seed: 31,
+  anker: [
+    ['start', { de: 'Fall zwei', en: 'Case two' }], ['objekt', { de: 'vor einem Jahr', en: 'the owner finds' }],
+    ['z0', { de: 'aus einem Muster', en: 'AI policy' }], ['z1', { de: 'Kein Datum', en: 'No date' }], ['z2', { de: 'keine verantwortliche', en: 'no responsible' }],
+    ['z3', { de: 'niemand im Betrieb', en: 'nobody in the business' }],
+    ['wahl', { de: 'Was tun Sie', en: 'What do you do' }], ['opt0', { de: 'Ausdrucken', en: 'print it' }],
+    ['opt1', { de: 'Per E-Mail', en: 'send it to everyone' }], ['opt2', { de: 'Ein Datum setzen', en: 'set a date' }],
+    ['denk', { de: 'Überlegen Sie', en: 'Think about it' }],
+    ['folge', { de: 'B ist schnell', en: 'B is quick' }], ['f1', { de: 'um neun Uhr', en: 'everyone at nine' }],
+    ['f2', { de: 'Zwei Monteure', en: 'Two field staff' }], ['f3', { de: 'Wochen später', en: 'Weeks later' }], ['f4', { de: 'keinen Nachweis', en: 'no record' }],
+    ['schritt', { de: 'Richtig ist C', en: 'C is right' }], ['grund0', { de: 'Ein Aushang allein', en: 'A poster alone' }], ['grund1', { de: 'eine Mail an alle', en: 'an email to everyone' }],
+  ],
+  ende: { de: 'Der Generator ist', en: 'The generator is' },
+  ueber: { typ: 'schwarz', d: 0.9 },
+  blick: { f: [480, 560], z: 1.1 }, blickNah: { f: [430, 500], z: 1.3 }, tippen: null,
+  objekt: { kicker: { de: 'ORDNER · FUNDSTÜCK', en: 'FOLDER · FOUND' }, titel: { de: 'KI-Richtlinie, Vorjahr', en: 'AI policy, last year' },
+    von: [180, 760], nach: [560, 420],
+    zeilen: [{ text: { de: 'zwei Seiten, aus einem Muster', en: 'two pages, from a template' }, at: 'z0' },
+      { text: { de: 'kein Datum, ab dem sie gilt', en: 'no date from which it applies' }, at: 'z1', heikel: true },
+      { text: { de: 'keine verantwortliche Person', en: 'no responsible person' }, at: 'z2', heikel: true },
+      { text: { de: 'niemand kennt sie', en: 'nobody knows it' }, at: 'z3', heikel: true }] },
+  pillen: [],
+  optionen: [{ de: 'Ausdrucken und ans Schwarze Brett hängen', en: 'Print it and pin it on the board' },
+    { de: 'Per E-Mail an alle schicken', en: 'Send it to everyone by email' },
+    { de: 'Datum, Verantwortliche, Einweisung, Bestätigung', en: 'Date, responsible person, briefing, receipt' }],
+  falsch: 1,
+  folge: [{ zeit: '09:00', text: { de: 'Mail an alle, ohne Datum', en: 'Email to all, no date' }, at: 'f1' },
+    { zeit: '09:40', text: { de: 'Zwei Monteure lesen sie nicht', en: 'Two field staff do not read it' }, ton: 'amber', at: 'f2' },
+    { zeit: { de: 'Wochen später', en: 'Weeks later' }, text: { de: 'Ein Kunde fragt, was geregelt ist', en: 'A customer asks what is regulated' }, ton: 'amber', at: 'f3' },
+    { zeit: '', text: { de: 'Kein Nachweis, wer sie kennt', en: 'No record of who knows it' }, at: 'f4' }],
+  gruende: [{ option: 0, text: { de: 'kein Datum, kein Nachweis', en: 'no date, no record' }, at: 'grund0' },
+    { option: 1, text: { de: 'verschickt, nicht erteilt', en: 'sent, not issued' }, at: 'grund1' }],
+  schritt: { titel: { de: 'Vier Angaben, dann gilt sie', en: 'Four things, then it applies' },
+    sub: { de: 'Datum · verantwortliche Person · Weg der Bekanntgabe · Bestätigung je Person', en: 'Date · responsible person · way of announcing · receipt per person' } },
+  kopf: { kicker: { de: '4 · FALL 2 · NACHGESTELLT', en: '4 · CASE 2 · RE-ENACTED' }, titel: { de: 'Montag, 08:30', en: 'Monday, 08:30' },
+    frage: { de: 'Die Richtlinie in der Schublade', en: 'The policy in the drawer' },
+    folgeKicker: { de: '4 · WENN SIE B WÄHLEN · BEISPIEL', en: '4 · IF YOU CHOOSE B · EXAMPLE' }, folgeTitel: { de: 'Verschickt ist nicht erteilt', en: 'Sent is not issued' } },
+  marken: [{ ab: 'schritt', art: 'auslegung', quelle: 'S9' }],
+});

@@ -1,0 +1,545 @@
+{
+  "video_id": "megaconstruction-20261113-1-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Shanghai Tower: 632 m, a 120° twist and a 1,000-tonne damper",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Bauaufgabe. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261113-1-en.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.skyscrapercenter.com/building/shanghai-tower/56",
+      "title": "CTBUH Skyscraper Center: Shanghai Tower (632 m, 128 Stockwerke, 2015, 24 % weniger Windlast, 106 Aufzugskabinen bis 20,5 m/s, 420.000 m²)",
+      "label": "CTBUH, Shanghai Tower",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.thorntontomasetti.com/project/shanghai-tower",
+      "title": "Thornton Tomasetti: Shanghai Tower (Fassade 120°, 1.079 Bohrpfähle)",
+      "label": "Thornton Tomasetti",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.gensler.com/uploads/document/242/file/Shanghai_Tower_Facade_Design_Process_11_10_2011.pdf",
+      "title": "Gensler 2011: Facade Design Process (ca. 120°, bis 24 % Windlast, zwei Fassadenhäute, neun Zonen)",
+      "label": "Gensler, facade paper 2011",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "https://legacy.csce.ca/elf/apps/CONFERENCEVIEWER/conferences/2019/pdfs/PaperPDFversion_35_0228125147.pdf",
+      "title": "CSCE 2019, Konferenzbeitrag: 1.000-t-Pendeldämpfer mit Wirbelstromdämpfung seit 2016, Ziel rund 45 % weniger Beschleunigung",
+      "label": "CSCE 2019, damper",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Aufzug 20,5 m/s gilt für die schnellsten Anlagen, nicht alle 106 Kabinen.",
+    "Querschnitt im Modell schematisch (gerundetes Dreieck)."
+  ],
+  "hook": {
+    "id": "H2"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "The Shanghai Tower is 632 metres tall. And its facade twists through 120 degrees.",
+      "on_screen": "632 m tall, twisted 120°",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Shanghai Tower, really?",
+      "on_screen": "How big is the Shanghai Tower, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate the Shanghai Tower.",
+      "on_screen": "the Shanghai Tower: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Shanghai Tower depends on how it is built.",
+      "on_screen": "the Shanghai Tower: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Shanghai Tower take shape in the model.",
+      "on_screen": "the Shanghai Tower as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "How do you build 632 metres high without the wind gripping the tower too hard? The Shanghai Tower, finished in 2015 with 128 floors above ground, solved that task twice.",
+      "data": {
+        "kicker": "Task · Shanghai Tower",
+        "question": "632 metres against the wind: how?",
+        "question_at": 0.05,
+        "pins": [
+          {
+            "anchor": "top",
+            "text": "632 m",
+            "kind": "dim",
+            "at": "@632"
+          }
+        ],
+        "tag": {
+          "text": "Shanghai · finished 2015",
+          "at": "@Shanghai",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_principle",
+      "spoken": "Solution one is the shape. The tower narrows towards the top and twists by 120 degrees on the way. According to the designers, that cuts the wind load by 24 percent compared with a rectangular tower of the same height. Inside, two glass skins wrap nine zones with atriums.",
+      "data": {
+        "headline": "Solution 1: shape",
+        "note": "cross-section schematic",
+        "rule": {
+          "text": "Twist and taper: 24 % less wind load",
+          "at": "@24",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_build",
+      "spoken": "Solution two hangs at the top: since 2016 a 1,000 tonne pendulum damper has worked there, braked by eddy currents. According to a conference paper, it is meant to cut wind-induced acceleration by around 45 percent.",
+      "data": {
+        "headline": "Solution 2: pendulum",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Pendulum mass",
+            "qty": "1,000 t",
+            "at": "@1,000"
+          },
+          {
+            "pos": "2",
+            "part": "Eddy-current brake since",
+            "qty": "2016",
+            "at": "@2016"
+          },
+          {
+            "pos": "3",
+            "part": "Goal: less acceleration",
+            "qty": "≈ 45 %",
+            "at": "@45"
+          }
+        ]
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Add 106 lift cars, the fastest at up to 20.5 metres per second, and 1,079 bored piles at the bottom. A tower that twists so the wind grips it less. Follow Gigastruct for the next engineering task.",
+      "data": {
+        "statement": "Solved: shape plus pendulum",
+        "sheet": "SHEET 13",
+        "rows": [
+          [
+            "Task",
+            "632 m against the wind"
+          ],
+          [
+            "Solution 1",
+            "120° twist, −24 % wind load"
+          ],
+          [
+            "Solution 2",
+            "1,000 t pendulum"
+          ],
+          [
+            "Footing",
+            "1,079 bored piles"
+          ]
+        ],
+        "cta": {
+          "text": "Follow Gigastruct",
+          "at": "@Follow"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "TASK",
+        "IDEA",
+        "BUILD",
+        "MATHS",
+        "TEST"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 5
+      }
+    },
+    "description": "The Shanghai Tower in five numbers: 632 m, a 120° twist, 24% less wind load, a 1,000-tonne damper, 106 elevator cars. According to CTBUH, the designers and a technical paper.",
+    "companion_text": "Sources: CTBUH Skyscraper Center, Thornton Tomasetti, Gensler (2011), CSCE 2019. Stylised 3D model, cross-section schematic. Follow Gigastruct.",
+    "hashtags": [
+      "shanghaitower",
+      "skyscraper",
+      "wind",
+      "shanghai",
+      "engineering"
+    ],
+    "computations": [],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "prism",
+          "height": 600,
+          "width": 120,
+          "shape": "tri",
+          "levels": 72,
+          "twist": 120,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              0.4,
+              0.82
+            ],
+            [
+              0.8,
+              0.66
+            ],
+            [
+              1,
+              0.55
+            ]
+          ],
+          "spire": [
+            32,
+            30
+          ],
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "tmd",
+          "kind": "tmd",
+          "r": 6,
+          "plates": 24,
+          "t": 0.5,
+          "hang": 16,
+          "cables": 24,
+          "dampers": 8,
+          "pos": [
+            0,
+            545,
+            0
+          ]
+        },
+        {
+          "id": "wind",
+          "kind": "wind",
+          "count": 8,
+          "y0": 80,
+          "y1": 560,
+          "dist": 200,
+          "len": 90,
+          "w": 3,
+          "spread": 40,
+          "drift": 40,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "wind": 0
+          }
+        }
+      ],
+      "anchors": {
+        "twist": [
+          30,
+          300,
+          0
+        ],
+        "skin": [
+          -38,
+          220,
+          0
+        ],
+        "tmd": [
+          0,
+          545,
+          0
+        ],
+        "top": [
+          0,
+          600,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 6,
+            "el1": 9,
+            "fit0": 0.45,
+            "fit1": 0.5,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {
+            "wind.wind": 0.6
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 80,
+            "az1": 100,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.4,
+            "fit1": 0.45,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "wind.wind": [
+              [
+                0,
+                1
+              ],
+              [
+                "%0.45",
+                0.35
+              ],
+              [
+                "%0.8",
+                1
+              ]
+            ]
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "az0": 30,
+            "az1": 45,
+            "el0": 8,
+            "el1": 10,
+            "fit0": 0.7,
+            "fit1": 0.8,
+            "zone": 300,
+            "cy": 470,
+            "box": [
+              [
+                -14,
+                525,
+                -14
+              ],
+              [
+                14,
+                565,
+                14
+              ]
+            ]
+          },
+          "props": {
+            "tower.fade": 0.15,
+            "tmd.plates": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.5",
+                24
+              ]
+            ],
+            "tmd.swing": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.6",
+                0
+              ],
+              [
+                "%0.75",
+                1.5
+              ],
+              [
+                "%0.9",
+                -1.5
+              ],
+              [
+                "%1",
+                0
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 60,
+            "az1": 50,
+            "el0": 8,
+            "el1": 5,
+            "fit0": 0.45,
+            "fit1": 0.42,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

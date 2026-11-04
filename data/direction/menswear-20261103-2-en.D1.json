@@ -1,0 +1,583 @@
+{
+  "video_id": "menswear-20261103-2-en",
+  "brand_id": "menswear",
+  "language": "en",
+  "title": "Super 100s: what the number means and what it doesn't",
+  "layout": {
+    "format": "kreidestrich",
+    "series": "stoff",
+    "series_topic": "Super-Zahl",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 950,
+    "caption_bottom_px": 560,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.4,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "description": "Super 100s, Super 150s: the number on a suit label looks like a grade. Under the IWTO rule, it only gives an upper limit for the mean fibre diameter of the wool. On the cutting table you see what the number fixes and what it doesn't.",
+    "companion_text": "Suitwerk shows menswear in detail, drawn rather than claimed. No advertising, no product recommendation.",
+    "hashtags": [
+      "menswear",
+      "suitfabric",
+      "fabricguide",
+      "super100s",
+      "wool"
+    ],
+    "short_title": "Super 100s and the number",
+    "zone_lower_right_px": 940,
+    "sound_note": "Tailor's shop: chalk on cloth, metal click, paper rustle, fabric whoosh, soft closing chord.",
+    "sound": {
+      "palette": "paper",
+      "mood": "warm"
+    },
+    "sound_cues": [
+      {
+        "beat": "b1",
+        "at": "start",
+        "cue": "bett_ein"
+      },
+      {
+        "beat": "b1",
+        "at": "w:number",
+        "cue": "click"
+      },
+      {
+        "beat": "b1",
+        "at": "w:really",
+        "cue": "swipe_leise"
+      },
+      {
+        "beat": "b2",
+        "at": "w:but",
+        "cue": "stamp"
+      },
+      {
+        "beat": "b3",
+        "at": "w:18.75",
+        "cue": "tick"
+      },
+      {
+        "beat": "b3",
+        "at": "w:step",
+        "cue": "whoosh_leise"
+      },
+      {
+        "beat": "b4",
+        "at": "w:Measured",
+        "cue": "click"
+      },
+      {
+        "beat": "b5",
+        "at": "w:ceiling",
+        "cue": "stamp"
+      },
+      {
+        "beat": "b6",
+        "at": "w:nothing",
+        "cue": "swipe_leise"
+      },
+      {
+        "beat": "b7",
+        "at": "w:Follow",
+        "cue": "chime"
+      },
+      {
+        "beat": "b7",
+        "at": "end",
+        "cue": "bett_aus_schlussakkord"
+      }
+    ]
+  },
+  "assets": {
+    "folder": "assets/clips",
+    "background": {},
+    "hero": {},
+    "scrim": 0.0,
+    "note": "Fotos aus Higgsfield (Nano Banana), Nachweis brands/menswear/assets/higgsfield/testvideo/LICENSE.md und library/LICENSE.md; LAYER kopiert sie ins Projekt."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/product-specifications/f-6_fibre_quality_2016-1_22oct14_f.pdf",
+      "title": "Woolmark specification F-6: IWTO Super S system, table Super 80s to 250s, measured per IWTO-08 on the end product",
+      "checked_at": "2026-11-03",
+      "label": "Woolmark, specification F-6"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.law.cornell.edu/cfr/text/16/300.20a",
+      "title": "16 CFR 300.20a: mislabelling of Super 100's if the mean fibre diameter is above 18.75 µm",
+      "checked_at": "2026-11-03",
+      "label": "US regulation 16 CFR 300.20a"
+    },
+    {
+      "id": "S3",
+      "url": "https://cashmere.org/definition-cashmere-wool.php",
+      "title": "CCMI restates the IWTO code: Super only for pure virgin wool, value by maximum mean fibre diameter",
+      "checked_at": "2026-11-03",
+      "label": "CCMI: IWTO code on Super"
+    }
+  ],
+  "unverified": [
+    "Whether a higher Super number means better quality, a finer hand or more delicate cloth is not backed by the sources opened, so it is not in the script.",
+    "Claims about durability or weight of a fabric with a given Super number are not backed; the script only says that the rule checked sets nothing on this.",
+    "The values come from the Woolmark appendix (as of 1 July 2013); newer versions were not checked."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "What does the number after Super on the label mean?",
+      "on_screen": "Super 100s: what does it mean?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "Two fabric swatches with a label on the cutting table, a chalk question mark.",
+      "why": {
+        "truth": "A question, not a claim"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "The Super number is not a grade for the fabric.",
+      "on_screen": "Super number ≠ grade",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Chalk strikes through the word grade next to the number.",
+      "why": {
+        "truth": "S1 names only the fibre diameter as the criterion"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Super 100s only means: a fibre diameter of 18.75 microns at most.",
+      "on_screen": "18.75 µm at most",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "The number 18.75 µm in chalk next to a dark fabric swatch.",
+      "why": {
+        "truth": "Table in S1, value confirmed in S2"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "The number on the label is not a measured value of your fabric.",
+      "on_screen": "A limit, not a measurement",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "A label on a jacket, a chalk circle around the Super number.",
+      "why": {
+        "truth": "S2: mislabelled only if the average is above the limit"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Two labels, two Super numbers. What does the number really say?",
+      "on_screen": "What does the number say?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Two real fabric swatches on the cutting table, chalk puts a question mark between them.",
+      "why": {
+        "truth": "A question about two numbers, the answer follows from S1"
+      }
+    }
+  ],
+  "hook": {
+    "id": "H5",
+    "note": "Two real fabrics side by side, the question about the number carries the whole explanation."
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "kw_photo",
+      "spoken": "Two labels, two Super numbers. What does the number really say? It's not a grade, but a limit value.",
+      "data": {
+        "shots": [
+          {
+            "src": "testvideo/sw_tv_pair_light.jpg",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "pan": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "clip": "testvideo/sw_tv_k1_pair.mp4"
+          },
+          {
+            "src": "library/sw_real_swatch_fan.jpg",
+            "at": "w:number",
+            "zoom": [
+              1.04,
+              1.16
+            ],
+            "pan": [
+              0,
+              0,
+              -20,
+              0
+            ]
+          },
+          {
+            "src": "library/sw_real_threadcounter.jpg",
+            "at": "w:limit",
+            "zoom": [
+              1.04,
+              1.14
+            ],
+            "pan": [
+              0,
+              0,
+              20,
+              0
+            ]
+          }
+        ],
+        "dim": 0.22,
+        "question": {
+          "text": "What does the number say?",
+          "at": 0.2
+        },
+        "chalk_at": "w:really",
+        "source": "Source: Woolmark: specification F-6 · retrieved 03.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "kw_hook",
+      "spoken": "Super 100s and Super 150s sound like a ranking. But the rule names only one quantity: the mean fibre diameter. The Super system belongs to the IWTO, and Woolmark administers it.",
+      "data": {
+        "question": "A ranking of fabrics?",
+        "question_at": "w:Super",
+        "chalk_at": "w:ranking",
+        "swatches": [
+          {
+            "label": "Super 100s",
+            "kind": "plain"
+          },
+          {
+            "label": "Super 150s",
+            "kind": "plain"
+          }
+        ],
+        "labels_at": "w:150s",
+        "neq_at": "w:but",
+        "source": "Source: Woolmark F-6; 16 CFR 300.20a · retrieved 03.11.2026",
+        "backdrop": {
+          "src": "library/sw_mood_cuttingtable.jpg",
+          "dim": 0.5
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "kw_flip",
+      "spoken": "Super 100s means: 18.75 microns at most. Super 150s means: 16.25 microns at most. With each step of ten, the limit gets 0.5 microns finer.",
+      "data": {
+        "left": {
+          "kind": "plain",
+          "title": "Super 100s",
+          "front": "18.75 µm at most",
+          "back": "A limit, not a measurement"
+        },
+        "right": {
+          "kind": "plain",
+          "title": "Super 150s",
+          "front": "16.25 µm at most",
+          "back": "0.5 µm finer per step"
+        },
+        "flip_at": "w:step",
+        "left_at": "w:18.75",
+        "right_at": "w:16.25",
+        "arrow_at": "w:finer",
+        "source": "Source: Woolmark: specification F-6, table · retrieved 03.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "kw_photo",
+      "spoken": "Both fabrics lie side by side. You can see the weave, but not the fibre diameter. Measured on the finished product, and Super applies only to pure virgin wool.",
+      "data": {
+        "shots": [
+          {
+            "src": "library/sw_real_threadcounter.jpg",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "pan": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "src": "library/sw_fabric_worsted_plain.jpg",
+            "at": "w:weave",
+            "zoom": [
+              1.04,
+              1.16
+            ],
+            "pan": [
+              0,
+              0,
+              -20,
+              0
+            ]
+          },
+          {
+            "src": "library/sw_real_yarn.jpg",
+            "at": "w:diameter",
+            "zoom": [
+              1.04,
+              1.14
+            ],
+            "pan": [
+              0,
+              0,
+              20,
+              0
+            ]
+          }
+        ],
+        "dim": 0.3,
+        "question": {
+          "text": "Weave or fibre?",
+          "at": 0.2
+        },
+        "chalk_at": "w:Measured",
+        "source": "Source: Woolmark F-6; CCMI (IWTO code) · retrieved 03.11.2026"
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "kw_flip",
+      "spoken": "So the number is a ceiling, not a measured value of this fabric. The fabric may be finer. The specification provides no measurement tolerance. In the US, a label is false if the average is above the limit.",
+      "data": {
+        "left": {
+          "kind": "plain",
+          "title": "Label",
+          "front": "Super 100s",
+          "back": "Ceiling 18.75 µm"
+        },
+        "right": {
+          "kind": "plain",
+          "title": "Fabric",
+          "front": "mean diameter",
+          "back": "equal or finer"
+        },
+        "flip_at": "w:finer",
+        "left_at": "w:ceiling",
+        "right_at": "w:measured",
+        "arrow_at": "w:average",
+        "source": "Source: Woolmark F-6; 16 CFR 300.20a · retrieved 03.11.2026"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "kw_photo",
+      "spoken": "Nothing about weight or weave appears in this rule. That is the whole content of the number. This is how you read the label more closely.",
+      "data": {
+        "shots": [
+          {
+            "src": "library/sw_real_wardrobe.jpg",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "pan": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "src": "library/sw_real_three_patterns.jpg",
+            "at": "w:weave",
+            "zoom": [
+              1.04,
+              1.16
+            ],
+            "pan": [
+              0,
+              0,
+              -20,
+              0
+            ]
+          },
+          {
+            "src": "testvideo/sw_tv_jacket_front.jpg",
+            "at": "w:label",
+            "zoom": [
+              1.04,
+              1.14
+            ],
+            "pan": [
+              0,
+              0,
+              20,
+              0
+            ]
+          }
+        ],
+        "dim": 0.25,
+        "question": {
+          "text": "Only the diameter",
+          "at": 0.2
+        },
+        "chalk_at": "w:nothing",
+        "source": "Source: Woolmark: specification F-6 · retrieved 03.11.2026"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "kw_close",
+      "spoken": "Read your label: if it says Super and a number, that's an upper limit in microns. It says nothing more. Follow Suitwerk for menswear with an eye for detail.",
+      "data": {
+        "kinds": [
+          "plain",
+          "twill"
+        ],
+        "chip": {
+          "text": "Super 100s: 18.75 µm at most",
+          "at": "w:label"
+        },
+        "lines": [
+          {
+            "text": "Super: upper limit",
+            "at": "w:Super"
+          },
+          {
+            "text": "Unit: microns",
+            "at": "w:microns"
+          }
+        ],
+        "rule": {
+          "text": "Number = limit, not measured",
+          "at": "w:nothing"
+        },
+        "sign_at": "w:Follow",
+        "claim": "Menswear with an eye for detail.",
+        "source": "Source: Woolmark: specification F-6 · retrieved 03.11.2026",
+        "sign_note": "Test: read the label",
+        "shots": [
+          {
+            "src": "testvideo/sw_tv_jacket_threequarter.jpg",
+            "at": "w:Read",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "pan": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "dim": 0.3,
+            "clip": "testvideo/sw_tv_k3_jacket.mp4"
+          },
+          {
+            "src": "testvideo/sw_tv_lapel_dark.jpg",
+            "at": "w:Follow",
+            "zoom": [
+              1.0,
+              1.0
+            ],
+            "dim": 0.6,
+            "clip": "testvideo/sw_tv_k4_lapel.mp4"
+          }
+        ],
+        "swatch_photos": [
+          "library/sw_fabric_worsted_plain.jpg",
+          "testvideo/sw_tv_fabric_twill_face.jpg"
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "notes": "English version from the same scenes as menswear-20261103-2-de; text localised, not rewritten."
+}

@@ -1,0 +1,553 @@
+{
+ "video_id": "menswear-20261110-3-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Einreiher oder Zweireiher: der Überschlag erklärt",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema B02 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S2; 'in der Regel' statt 'immer', keine allgemeine Regel zur Knopfstellung.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Sakko, zweireihig",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Zweireiher: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "offen geht, aber",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "zum Schließen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "außen unten: offen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Knopfstellung offen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "in der Regel zu",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "geschlossen",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Einreiher oder Zweireiher? Beim Zweireiher überlappen die Vorderteile. Anderson & Sheppard schneidet ihn zum Schließen, Moss erlaubt ihn offen und lässt den äußeren untersten Knopf offen.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "zweireiher",
+   "sakko",
+   "anzug",
+   "stilregeln"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.anderson-sheppard.co.uk/thenotebook/why-i-prefer-double-breasteds/",
+   "title": "Anderson & Sheppard, Why I prefer double-breasteds: zum geschlossenen Tragen gemacht; Überschlag anpassbar für mehr oder weniger Hemd; Schnitt und Anprobe müssen Bewegung im geschlossenen Zustand erlauben",
+   "checked_at": "2026-11-01",
+   "label": "Anderson & Sheppard"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.moss.co.uk/inside-pocket/post/spotlight-on-the-double-breasted-suit",
+   "title": "Moss, Spotlight on the double-breasted suit: offen tragen geht, Linien sind für geschlossen entworfen; traditionell bis zu acht Knöpfe, Moss nimmt sechs; äußeren untersten Knopf nicht schließen",
+   "checked_at": "2026-11-01",
+   "label": "Moss, Inside Pocket"
+  }
+ ],
+ "unverified": [
+  "Welche Knöpfe genau schließen: hängt von der Knopfstellung ab, keine allgemeine Regel in den Quellen.",
+  "Offen getragener Zweireiher: keine eigene Zeichnung; 'offen' ist im Bild nur an den Knöpfen zu sehen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Zweireiher: offen oder zu?",
+   "on_screen": "Zweireiher: offen oder zu?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Zweireiher offen tragen? Geht, aber er ist anders gedacht.",
+   "on_screen": "Zweireiher offen tragen? Geht, aber er ist anders gedacht.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Traditionelle Zweireiher hatten bis zu acht Knöpfe",
+   "on_screen": "Traditionelle Zweireiher hatten bis zu acht Knöpfe",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Den äußeren untersten Knopf lässt du offen",
+   "on_screen": "Den äußeren untersten Knopf lässt du offen",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Wie viel Hemd zeigt dein Zweireiher?",
+   "on_screen": "Wie viel Hemd zeigt dein Zweireiher?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die Frage offen oder zu, die Lupe auf dem äußeren untersten Knopf."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Zwei Knopfreihen, und die Vorderteile überlappen. Darfst du einen Zweireiher offen tragen, oder gehört er zu?",
+   "data": {
+    "question": "Zweireiher: offen oder zu?",
+    "object": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "target": "button:1",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Knopfreihen",
+    "loupe_at": "w:Knopfreihen",
+    "nie_at": "w:offen",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "Beim Einreiher treffen sich die Vorderteile in der Mitte. Beim Zweireiher überlappen sie, mit zwei Knopfreihen. Moss sagt: Offen tragen geht. Aber die senkrechten Linien sind für den geschlossenen Zustand entworfen.",
+   "data": {
+    "headline": "Mitte oder Überschlag?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "target": "break",
+    "zoom": 1.4,
+    "label": "Linien: für geschlossen",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:Einreiher",
+    "zoom_at": "w:Mitte",
+    "flip_at": "w:Zweireiher",
+    "label_at": "w:Linien"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Moss"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Für Anderson and Sheppard ist der Zweireiher zum geschlossenen Tragen gemacht. Der Überschlag lässt sich anpassen, um mehr oder weniger Hemd zu zeigen. Schnitt und Anprobe müssen dafür Bewegung im geschlossenen Zustand erlauben.",
+   "data": {
+    "headline": "So ist er gedacht",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Geschlossen",
+      "tags": [
+       {
+        "spot": "button:0",
+        "text": "zum Schließen",
+        "sub": "so geschnitten",
+        "tone": "always",
+        "at": "w:geschlossenen"
+       },
+       {
+        "spot": "break",
+        "text": "Überschlag",
+        "sub": "mehr oder weniger Hemd",
+        "tone": "always",
+        "at": "w:Überschlag"
+       },
+       {
+        "spot": "waist",
+        "text": "Bewegung",
+        "sub": "auch geschlossen",
+        "tone": "always",
+        "at": "w:Bewegung"
+       }
+      ]
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Anderson"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 10,
+   "spoken": "Und wie schließt du ihn? Moss arbeitet mit sechs Knöpfen, traditionell waren es bis zu acht. Den äußeren untersten Knopf schließt du laut Moss nicht, er bleibt offen.",
+   "data": {
+    "headline": "Welcher bleibt offen?",
+    "from": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0,
+      1
+     ],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "target": "button:1",
+    "zoom": 1.5,
+    "label": "außen unten: offen",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:schließt",
+    "all_at": "w:sechs",
+    "zoom_at": "w:äußeren",
+    "error_at": "w:untersten",
+    "flip_at": "w:nicht",
+    "label_at": "w:bleibt"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 360,
+     "y": 917,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:sechs"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Beide Häuser sind sich also nah, aber nicht gleich. Anderson and Sheppard schneidet für geschlossen, Moss lässt dir die Wahl. Welche Knöpfe genau zu sind, hängt von der Knopfstellung ab; eine allgemeine Regel geben die Quellen nicht.",
+   "data": {
+    "headline": "Zwei Häuser, eine Linie",
+    "left": {
+     "title": "Der Schneider",
+     "object": {
+      "kind": "jacket",
+      "variant": "db6",
+      "fastened": [
+       0
+      ],
+      "strain": false
+     },
+     "target": "button:0",
+     "tag": "zum Schließen gemacht"
+    },
+    "right": {
+     "title": "Der Ausstatter",
+     "object": {
+      "kind": "jacket",
+      "variant": "db6",
+      "fastened": [],
+      "strain": false
+     },
+     "tag": "offen geht auch",
+     "tag2": "je nach Knopfstellung",
+     "tag2_at": "w:Knopfstellung",
+     "pulses": [
+      {
+       "target": "button:0",
+       "at": "w:Knöpfe",
+       "tone": "amber"
+      }
+     ]
+    },
+    "left_at": "w:Anderson",
+    "left_tag_at": "w:geschlossen",
+    "right_at": "w:Moss",
+    "right_tag_at": "w:Wahl",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Anderson"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "Kurz gesagt: Der Zweireiher ist laut Anderson and Sheppard in der Regel zum Schließen gedacht. Offen tragen geht laut Moss. Und den äußeren untersten Knopf lässt du offen.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "In der Regel zu",
+      "sub": "so geschnitten, laut A&S",
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:Zweireiher",
+      "ring": "button:0",
+      "ring_at": "w:Schließen"
+     },
+     {
+      "title": "Offen geht",
+      "sub": "Linien für geschlossen (Moss)",
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:Offen",
+      "then": {
+       "fastened": []
+      },
+      "then_at": "w:Moss"
+     },
+     {
+      "title": "Außen unten: offen",
+      "sub": "der äußere unterste Knopf",
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0,
+        1
+       ],
+       "strain": false
+      },
+      "at": "w:äußeren",
+      "then": {
+       "fastened": [
+        0
+       ]
+      },
+      "then_at": "w:offen#2"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Zwei Reihen, ein Überschlag, und in der Regel geschlossen getragen. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "from_fastened": [],
+    "to_fastened": [
+     0
+    ],
+    "target": "button:0",
+    "fix_at": "w:Regel",
+    "ring_at": "w:geschlossen",
+    "statement_at": "w:getragen",
+    "chip_at": "w:Blick",
+    "statement": "In der Regel: zu.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

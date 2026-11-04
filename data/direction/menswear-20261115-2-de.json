@@ -1,0 +1,575 @@
+{
+ "video_id": "menswear-20261115-2-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Hosenbruch: kein, halb oder voll",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema D04 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S4; keine Stufe als allgemein richtig, die Häuser nennen verschiedene Ideale (Marker 'unsicher' in b2).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Hose, Saum",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Bruch: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "Häuser uneinig",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Stufen: kein, halb",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "voll oder ohne",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Loafer: wirkt anders",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Stilfrage",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Bruch passt zum Bein",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Hosenbruch: kein, halb oder voll? Proper Cloth beschreibt die Stufen, Moss koppelt sie an den Schnitt, Hackett nennt den halben Bruch ideal, Suitsupply den Bruch klassisch und ohne Bruch modern. Eine Stilfrage.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "anzughose",
+   "hosenbruch",
+   "stilregeln",
+   "anzug"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://propercloth.com/reference/what-is-pant-break/",
+   "title": "Proper Cloth, What is pant break: kein Bruch = Saum berührt den Schuh; halber Bruch = etwas Stoff staut sich, keine Socke sichtbar; voller Bruch = deutliche Falte, weitere Fußweite, am traditionellsten; gilt für Schnürschuhe, beim Loafer anders",
+   "checked_at": "2026-11-01",
+   "label": "Proper Cloth"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.moss.co.uk/inside-pocket/post/the-suit-fit-guide",
+   "title": "Moss, The Suit Fit Guide: Slim ohne Bruch, Tailored weicher Bruch (höchstens eine Falte), Regular und Relaxed ausgeprägter Bruch",
+   "checked_at": "2026-11-01",
+   "label": "Moss, Fit Guide"
+  },
+  {
+   "id": "S3",
+   "url": "https://suitsupply.com/en-de/journal/how-it-should-fit.html",
+   "title": "Suitsupply, How it should fit: klassisch ein Bruch, modern ohne Bruch bis zur Schuhoberkante",
+   "checked_at": "2026-11-01",
+   "label": "Suitsupply"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.hackett.com/intl/en/men/b/trousers/suit-trousers/",
+   "title": "Hackett, Suit Trousers: halber Bruch als idealer Saumabschluss, Saum liegt leicht auf dem Schuh, eine saubere Falte",
+   "checked_at": "2026-11-01",
+   "label": "Hackett"
+  }
+ ],
+ "unverified": [
+  "Ideale der Häuser widersprechen sich (Hackett halber Bruch, Suitsupply klassisch ein Bruch / modern ohne); im Video als offen markiert.",
+  "Loafer: Zeichnung zeigt nur Schnürschuhe."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Kein, halb oder voll: Welcher Bruch?",
+   "on_screen": "Kein, halb oder voll: Welcher Bruch?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Hosenbein mit Schuh, Lupe auf der Falte am Saum",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Den einen richtigen Hosenbruch gibt es nicht",
+   "on_screen": "Den einen richtigen Hosenbruch gibt es nicht",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "visual": "Hosenbein mit Schuh, Lupe auf der Falte am Saum",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Beim Loafer wirkt derselbe Bruch anders",
+   "on_screen": "Beim Loafer wirkt derselbe Bruch anders",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "visual": "Hosenbein mit Schuh, Lupe auf der Falte am Saum",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Sieht man beim halben Bruch die Socke? Nein.",
+   "on_screen": "Sieht man beim halben Bruch die Socke? Nein.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "visual": "Hosenbein mit Schuh, Lupe auf der Falte am Saum",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Drei Stufen am Hosensaum im Vergleich",
+   "on_screen": "Drei Stufen am Hosensaum im Vergleich",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Hosenbein mit Schuh, Lupe auf der Falte am Saum",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage nach der richtigen Stufe; die Antwort ist: Stilfrage, an den Schnitt gekoppelt."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Unten am Schuh wirft die Hose eine kleine Falte. Oder gar keine. Oder eine tiefe. Welche ist die richtige?",
+   "data": {
+    "question": "Kein, halb oder voll: Welcher Bruch?",
+    "object": {
+     "kind": "legs",
+     "break": "slight",
+     "shoe": "oxford"
+    },
+    "target": "break",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Falte",
+    "loupe_at": "w:Falte",
+    "nie_at": "w:richtige",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Die Häuser sind sich nicht einig. Hackett nennt den halben Bruch den idealen Abschluss, mit einer sauberen Falte. Suitsupply sagt: Klassisch ist ein Bruch. Modern endet die Hose ohne Bruch an der Schuhoberkante.",
+   "data": {
+    "headline": "Wer hat recht?",
+    "left": {
+     "title": "Laut Hackett",
+     "object": {
+      "kind": "legs",
+      "break": "slight",
+      "shoe": "oxford"
+     },
+     "target": "break",
+     "tag": "halber Bruch: ideal",
+     "pulses": [
+      {
+       "target": "break",
+       "at": "w:Falte",
+       "tone": "amber"
+      }
+     ]
+    },
+    "right": {
+     "title": "Laut Suitsupply",
+     "object": {
+      "kind": "legs",
+      "break": "none",
+      "shoe": "oxford"
+     },
+     "target": "hem",
+     "tag": "modern: ohne Bruch",
+     "tag2": "klassisch: ein Bruch",
+     "tag2_at": "w:Klassisch",
+     "pulses": [
+      {
+       "target": "hem",
+       "at": "w:Schuhoberkante",
+       "tone": "amber"
+      }
+     ]
+    },
+    "left_at": "w:Hackett",
+    "left_tag_at": "w:idealen",
+    "right_at": "w:Suitsupply",
+    "right_tag_at": "w:Modern",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S4",
+    "S3"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "unsicher",
+    "marker_at": "w:einig"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 11,
+   "spoken": "Proper Cloth beschreibt die Stufen genauer. Kein Bruch heißt: Der Saum berührt gerade eben den Schuh. Halber Bruch heißt: Etwas Stoff staut sich auf, und keine Socke ist zu sehen.",
+   "data": {
+    "headline": "Die Stufen",
+    "stages": [
+     {
+      "object": {
+       "kind": "legs",
+       "break": "none",
+       "shoe": "oxford"
+      },
+      "at": 0.0,
+      "title": "Kein Bruch",
+      "tags": [
+       {
+        "spot": "hem",
+        "text": "berührt den Schuh",
+        "sub": "der Saum",
+        "tone": "always",
+        "at": "w:berührt"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "legs",
+       "break": "slight",
+       "shoe": "oxford"
+      },
+      "at": "w:Halber",
+      "title": "Halber Bruch",
+      "tags": [
+       {
+        "spot": "break",
+        "text": "Stoff staut sich",
+        "sub": "etwas, eine Falte",
+        "tone": "always",
+        "at": "w:staut"
+       },
+       {
+        "spot": "sock",
+        "text": "keine Socke",
+        "sub": "bleibt verdeckt",
+        "tone": "always",
+        "at": "w:Socke"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Der volle Bruch wirft eine deutliche Falte, dazu kommt eine weitere Fußweite. Proper Cloth nennt ihn die traditionellste Form. Moss ordnet ihn Regular und Relaxed zu. Die schmale Slim-Hose endet dagegen ohne Bruch.",
+   "data": {
+    "headline": "Voll oder ohne",
+    "left": {
+     "title": "Voller Bruch",
+     "object": {
+      "kind": "legs",
+      "break": "full",
+      "shoe": "oxford"
+     },
+     "target": "break",
+     "tag": "deutliche Falte, weit",
+     "pulses": [
+      {
+       "target": "break",
+       "at": "w:deutliche"
+      }
+     ]
+    },
+    "right": {
+     "title": "Slim",
+     "object": {
+      "kind": "legs",
+      "break": "none",
+      "shoe": "oxford"
+     },
+     "target": "hem",
+     "tag": "ohne Bruch, laut Moss",
+     "pulses": [
+      {
+       "target": "hem",
+       "at": "w:ohne"
+      }
+     ]
+    },
+    "left_at": "w:volle",
+    "left_tag_at": "w:Fußweite",
+    "right_at": "w:Slim",
+    "right_tag_at": "w:endet",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Proper"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "Moss gibt der Tailored-Hose einen weichen Bruch mit höchstens einer Falte. Und Proper Cloth schreibt: Die Stufen gelten für Schnürschuhe. Beim Loafer ist die Kappe hinten niedriger, der Bruch wirkt dort anders.",
+   "data": {
+    "headline": "Zwei Hinweise",
+    "stages": [
+     {
+      "object": {
+       "kind": "legs",
+       "break": "slight",
+       "shoe": "oxford"
+      },
+      "at": 0.0,
+      "title": "Am Schuh",
+      "tags": [
+       {
+        "spot": "break",
+        "text": "weicher Bruch",
+        "sub": "Tailored, laut Moss",
+        "tone": "always",
+        "at": "w:weichen"
+       },
+       {
+        "spot": "lacing",
+        "text": "nur Schnürschuh",
+        "sub": "beim Loafer anders",
+        "tone": "sometimes",
+        "at": "w:Schnürschuhe"
+       }
+      ]
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Moss"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "Kurz gesagt: Kein Bruch passt zur schmalen Hose, der volle zur weiten, der halbe liegt dazwischen. Welche Stufe du wählst, ist eine Stilfrage, und die Häuser setzen verschiedene Ideale.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Kein Bruch",
+      "sub": "Saum berührt den Schuh",
+      "object": {
+       "kind": "legs",
+       "break": "none",
+       "shoe": "oxford"
+      },
+      "at": "w:Kein",
+      "ring": "hem",
+      "ring_at": "w:schmalen"
+     },
+     {
+      "title": "Voller Bruch",
+      "sub": "deutliche Falte, weite Hose",
+      "object": {
+       "kind": "legs",
+       "break": "full",
+       "shoe": "oxford"
+      },
+      "at": "w:volle",
+      "ring": "break",
+      "ring_at": "w:weiten"
+     },
+     {
+      "title": "Halber Bruch",
+      "sub": "eine Falte, keine Socke",
+      "object": {
+       "kind": "legs",
+       "break": "slight",
+       "shoe": "oxford"
+      },
+      "at": "w:halbe",
+      "ring": "break",
+      "ring_at": "w:dazwischen"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Kein, halb oder voll: Der Bruch folgt dem Bein. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "legs",
+     "break": "full",
+     "shoe": "oxford"
+    },
+    "to": {
+     "kind": "legs",
+     "break": "slight",
+     "shoe": "oxford"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "break",
+    "fix_at": "w:Bruch",
+    "ring_at": "w:Bein",
+    "statement_at": "w:Bein",
+    "chip_at": "w:Blick",
+    "statement": "Bruch folgt dem Bein.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

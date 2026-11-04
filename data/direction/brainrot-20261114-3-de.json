@@ -1,0 +1,466 @@
+{
+  "video_id": "brainrot-20261114-3-de",
+  "brand_id": "brainrot",
+  "language": "de",
+  "title": "Weiße Schokolade ist nicht gebleicht – Plümo und die Waschschüssel",
+  "notes": "Zonkfruit Vorlage 1.0, Produktion Woche 1 (01.11.2026), Reihe D. Aufbau wie das freigegebene Testvideo Q1 (Erdbeere keine Beere). Nur Aussagen aus den Kalenderquellen.",
+  "hook": {
+    "id": "H1",
+    "note": "erster Kandidat der Themenspezifikation"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "misconception",
+      "spoken": "Weiße Schokolade ist nicht gebleicht. Ich hab's mit dunkler probiert. Mit Seife.",
+      "on_screen": "Weiß, aber *nicht* gebleicht.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "dunkle Tafel fliegt zur Labortür, Stempel IRRTUM",
+      "why": {
+        "truth": "21 CFR 163.124: aus Kakaofett, Milchzutaten und Süßungsmitteln, frei von Farbstoffen; von Bleiche keine Rede",
+        "visual": "dunkle Tafel mit Stempel ist sofort lesbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wird weiße Schokolade eigentlich gebleicht?",
+      "on_screen": "Weiße Schoko: *gebleicht*?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Tafel neben Waschschüssel"
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Weiße Schokolade muss in den USA mindestens 20 Prozent Kakaofett haben.",
+      "on_screen": "Mind. *20 % Kakaofett*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Balken Kakaofett"
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wer beim Quiz sagt, weiße Schokolade sei gebleicht, verliert den Punkt.",
+      "on_screen": "Gebleicht? *Punkt weg.*",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Quizkarte"
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Ich wasch eine dunkle Tafel, bis sie weiß ist. Schau.",
+      "on_screen": "Dunkle Tafel im *Waschgang*.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Plümo mit Tafel und Schüssel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.law.cornell.edu/cfr/text/21/163.124",
+      "title": "Cornell LII, 21 CFR 163.124 White chocolate (US standard of identity): solid or semiplastic food prepared by intimately mixing and grinding cacao fat with optional dairy ingredients and optional nutritive carbohydrate sweeteners; not less than 20 % cacao fat, 14 % total milk solids, 3.5 % milkfat, not more than 55 % nutritive carbohydrate sweetener; white chocolate shall be free of coloring material",
+      "checked_at": "2026-11-01",
+      "label": "US-Norm 21 CFR 163.124 (LII)"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title21-vol2/xml/CFR-2024-title21-vol2-sec163-124.xml",
+      "title": "US Government Publishing Office, govinfo, 21 CFR 163.124 (edition 2024-04-01): white chocolate is prepared by intimately mixing and grinding cacao fat with dairy ingredients and nutritive carbohydrate sweeteners; not less than 20 % cacao fat, 3.5 % milkfat, 14 % total milk solids, not more than 55 % sweetener",
+      "checked_at": "2026-11-01",
+      "label": "US-Regierung, govinfo (2024)"
+    }
+  ],
+  "unverified": [],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 500,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.4,
+    "progress_y": 1550,
+    "ai_label_bottom_px": 318,
+    "status_y": 1440,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Plümo dachte, weiße Schokolade ist gebleichte dunkle. Falsch: Laut US-Norm (21 CFR 163.124) wird sie aus Kakaofett gemacht, mit Milchzutaten und Süßungsmitteln: mindestens 20 % Kakaofett, 14 % Milchtrockenmasse, 3,5 % Milchfett, und frei von Farbstoffen.",
+    "companion_text": "Zonkfruit: eine erfundene Frucht, echte Fakten. Folge Zonkfruit für mehr.",
+    "hashtags": [
+      "schokolade",
+      "lebensmittel",
+      "wusstestdu",
+      "funfact",
+      "zonkfruit",
+      "comedy"
+    ],
+    "platform_texts": {
+      "tiktok": {
+        "title": "Weiße Schokolade ist nicht gebleicht. Plümo hat es trotzdem probiert.",
+        "description": "Plümo dachte, weiße Schokolade ist gebleichte dunkle. Falsch: Laut US-Norm (21 CFR 163.124) wird sie aus Kakaofett gemacht, mit Milchzutaten und Süßungsmitteln: mindestens 20 % Kakaofett, 14 % Milchtrockenmasse, 3,5 % Milchfett, und frei von Farbstoffen.",
+        "hashtags": [
+          "schokolade",
+          "lebensmittel",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy"
+        ]
+      },
+      "instagram": {
+        "title": "Weiße Schokolade ist nicht gebleicht. Plümo hat es trotzdem probiert.",
+        "description": "Plümo dachte, weiße Schokolade ist gebleichte dunkle. Falsch: Laut US-Norm (21 CFR 163.124) wird sie aus Kakaofett gemacht, mit Milchzutaten und Süßungsmitteln: mindestens 20 % Kakaofett, 14 % Milchtrockenmasse, 3,5 % Milchfett, und frei von Farbstoffen.",
+        "hashtags": [
+          "schokolade",
+          "lebensmittel",
+          "wusstestdu",
+          "funfact",
+          "zonkfruit",
+          "comedy",
+          "reels"
+        ]
+      },
+      "youtube": {
+        "title": "Weiße Schokolade ist nicht gebleicht. Plümo hat es trotzdem probiert. #Shorts",
+        "description": "Plümo dachte, weiße Schokolade ist gebleichte dunkle. Falsch: Laut US-Norm (21 CFR 163.124) wird sie aus Kakaofett gemacht, mit Milchzutaten und Süßungsmitteln: mindestens 20 % Kakaofett, 14 % Milchtrockenmasse, 3,5 % Milchfett, und frei von Farbstoffen.",
+        "hashtags": [
+          "Shorts",
+          "schokolade",
+          "lebensmittel",
+          "wusstestdu",
+          "funfact"
+        ]
+      }
+    },
+    "status_bar": {
+      "file": "Plümo-Labor",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Weiße Schoko: gebleicht?",
+          "tone": "amber",
+          "offset": 0.5
+        },
+        {
+          "beat": "b1",
+          "text": "Bleiche: abgelehnt",
+          "tone": "pop",
+          "offset": 1.53
+        },
+        {
+          "beat": "b3",
+          "text": "Basis: Kakaofett",
+          "tone": "lime",
+          "offset": 4.2
+        },
+        {
+          "beat": "b4",
+          "text": "mind. 20 % Kakaofett",
+          "tone": "lime",
+          "offset": 7.76
+        },
+        {
+          "beat": "b5",
+          "text": "Farbstoff: keiner",
+          "tone": "lime",
+          "offset": 4.64
+        },
+        {
+          "beat": "b6",
+          "text": "Plümo: Farbe offen",
+          "tone": "amber",
+          "offset": 7.31
+        },
+        {
+          "beat": "b7",
+          "text": "Plümo: liegt kurz",
+          "tone": "muted",
+          "offset": 0.3
+        }
+      ]
+    }
+  },
+  "assets": {},
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "zonk_scan",
+      "spoken": "Weiße Schokolade ist nicht gebleicht. Ich hab's mit dunkler probiert. Mit Seife.",
+      "data": {
+        "mode": "hook",
+        "head": "Weiße Schokolade ist *nicht gebleicht*.",
+        "head_at": 0.2,
+        "sign": "PLÜMO-LABOR",
+        "items": [
+          {
+            "kind": "choco_dark"
+          }
+        ],
+        "stamp_reject": "IRRTUM",
+        "cue_scan": "Schokolade",
+        "cue_verdict": "nicht",
+        "cue_club": "dunkler",
+        "cue_know": "Seife"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "zonk_word",
+      "spoken": "Moment. Ich dachte, weiße Schokolade ist dunkle, nur gebleicht. Aber keine Farbe im Spiel. Die US-Norm sagt: frei von Farbstoffen. Ich war geschockt. Ich hab die dunkle Tafel gewaschen. Jetzt ist sie nass.",
+      "data": {
+        "word_a": "Weiß",
+        "word_b": "farbe",
+        "left": "Plümo: *gebleicht*",
+        "right": "Echt: *ohne Farbstoff*",
+        "cue_left": "dachte",
+        "cue_strike": "keine",
+        "cue_right": "Farbstoffen",
+        "cue_react": "Ich",
+        "item": "choco_dark",
+        "cue_shock": "geschockt",
+        "cue_item": "Tafel",
+        "cue_never": "nass"
+      },
+      "overlay": {
+        "marker": "fakt"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "zonk_diagram",
+      "spoken": "Was ist drin? Laut US-Lebensmittelnorm wird weiße Schokolade aus Kakaofett gemacht, fein gemischt und gemahlen. Dazu Milchzutaten und Süßungsmittel. Am Ende: fest oder halbfest. Ohne Hände zeig ich's mit dem Blatt.",
+      "data": {
+        "headline": "Was ist *drin*?",
+        "inner": "cocoa_butter",
+        "disc": [
+          "#8A5A2A",
+          "#FFF7DE",
+          "#F2DDAA"
+        ],
+        "cue_q": "drin",
+        "labels": [
+          {
+            "text": "Basis: *Kakaofett*",
+            "pos": "tr",
+            "cue": "Kakaofett"
+          },
+          {
+            "text": "+ *Milchzutaten*",
+            "pos": "l",
+            "cue": "Milchzutaten"
+          },
+          {
+            "text": "+ *Süßungsmittel*",
+            "pos": "b",
+            "cue": "Süßungsmittel"
+          }
+        ],
+        "cue_hands": "Hände",
+        "cue_leaf": "Blatt"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 730,
+          "seconds": 0.7
+        },
+        "marker_at": "w:Kakaofett"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "zonk_zoom",
+      "spoken": "Ganz genau. Vorgeschrieben sind mindestens 20 Prozent Kakaofett, 14 Prozent Milchtrockenmasse und 3,5 Prozent Milchfett. Das sind Mindestwerte. Klingt streng. Ich hab mich nachgemessen. Null Prozent Schokolade.",
+      "data": {
+        "kind": "choco_white",
+        "lens": "cocoa_butter",
+        "lens_bg": "#3A2414",
+        "cue_mag": "genau",
+        "callouts": [
+          {
+            "text": "mind. *20 %* Kakaofett",
+            "cue": "Kakaofett"
+          },
+          {
+            "text": "*14 %* Milchtrockenmasse",
+            "cue": "Milchtrockenmasse"
+          }
+        ],
+        "cue_nut": "Prozent",
+        "stamp": {
+          "text": "Mindestwerte!",
+          "cue": "Mindestwerte"
+        },
+        "cue_react": "nachgemessen",
+        "cue_fast": "Null"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Vorgeschrieben",
+        "marker_at": "w:Vorgeschrieben"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "zonk_compare",
+      "spoken": "Und die Obergrenze? Süßungsmittel höchstens 55 Prozent. Kakaofett mindestens 20. Farbstoff: gar keiner. Von Bleiche steht in der Norm kein Wort. Ich hab trotzdem gesucht. Mit Lupe. Zweimal.",
+      "data": {
+        "headline": "Was darf *rein*?",
+        "bars": [
+          {
+            "label": "Süßungsmittel",
+            "value": "≤ 55 %",
+            "h": 0.85,
+            "color": "#FF8A5C",
+            "cue": "Süßungsmittel"
+          },
+          {
+            "label": "Kakaofett",
+            "value": "≥ 20 %",
+            "h": 0.4,
+            "color": "#F2DDAA",
+            "kind": "cocoa_butter",
+            "cue": "Kakaofett"
+          },
+          {
+            "label": "Farbstoff",
+            "value": "0 %",
+            "h": 0.18,
+            "color": "#B7FF00",
+            "cue": "Farbstoff"
+          }
+        ],
+        "stamp": {
+          "text": "keine Bleiche!",
+          "cue": "Bleiche"
+        },
+        "cue_react": "gesucht"
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Süßungsmittel"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "zonk_scan",
+      "spoken": "Merke: Weiße Schokolade ist Kakaofett mit Milch und Süße, ohne Farbstoff. Gut, jetzt ich. Scanner läuft. Ergebnis: Farbe nicht ermittelbar. Ich bin wohl nicht gebleicht.",
+      "data": {
+        "mode": "unknown",
+        "sign": "PLÜMO-LABOR",
+        "merke": "*Kakaofett* + Milch + Süße, ohne Farbstoff.",
+        "display": "Farbe: nicht ermittelbar",
+        "plumps": "PLUMPS",
+        "cue_build": "Kakaofett",
+        "cue_go": "Gut",
+        "cue_scan": "Scanner",
+        "cue_result": "Ergebnis",
+        "cue_back": "wohl"
+      },
+      "overlay": {
+        "marker": "auslegung",
+        "marker_at": "w:Merke"
+      },
+      "source_ids": []
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "zonk_loop",
+      "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+      "data": {
+        "sign": "PLÜMO-LABOR",
+        "cta": "Mehr Zonkfruit? *Folgen.*",
+        "cue_cta": "Mehr",
+        "cue_up": "steh",
+        "cue_lie": "liegen",
+        "cue_ch": "Kanal"
+      },
+      "overlay": {
+        "marker": "none",
+        "head_until": "w:steh"
+      },
+      "source_ids": []
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+id: ai_security-20261113-3-de
+version: F2
+title: "Mythos: Phishing erkennt man an Fehlern"
+short: "Mythos Phishing-Fehler"
+reihe: "Was tust du?"
+note: "F2 im Format \"Was tust du?\", Mythos als falsche Option A. Beispielfall nachgestellt: Bank, Betrieb, Person, Uhrzeiten und Ablauf sind erfunden; Mechanik und Schritte aus S1 bis S4, am 02.11.2026 gelesen (S3 und S4 neu). Der alte Plan ai_security-20261113-3-de.json bleibt unverändert."
+description: "Eine Mail von der Bank, kein einziger Fehler. Was tust du? Ein nachgestellter Fall mit drei Antworten und dem, was NCSC, BSI und Microsoft wirklich raten."
+hashtags: [phishing, mythos, kisicherheit, kmu, wastustdu]
+sources:
+  - {id: S1, url: "https://www.ncsc.gov.uk/report/impact-of-ai-on-cyber-threat", title: "NCSC assessment: The near-term impact of AI on the cyber threat (24.01.2024)", checked_at: "2026-11-02", label: "NCSC, KI und Bedrohungslage"}
+  - {id: S2, url: "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Spam-Phishing-Co/Passwortdiebstahl-durch-Phishing/Wie-erkenne-ich-Phishing-in-E-Mails-und-auf-Webseiten/wie-erkenne-ich-phishing-in-e-mails-und-auf-webseiten_node.html", title: "BSI: Wie erkenne ich Phishing in E-Mails und auf Webseiten?", checked_at: "2026-11-02", label: "BSI, Phishing erkennen"}
+  - {id: S3, url: "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Wegweiser_Checklisten_Flyer/Checkliste_BSI_ProPK_Phishing.pdf?__blob=publicationFile&v=5", title: "BSI und Polizei (ProPK): Phishing – Checkliste für den Ernstfall (PDF)", checked_at: "2026-11-02", label: "BSI und Polizei, Checkliste Phishing"}
+  - {id: S4, url: "https://support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams-2ebf91bd-f94c-2a8a-e541-f5c800d18435", title: "Microsoft Support: Protect yourself from online scams and attacks", checked_at: "2026-11-02", label: "Microsoft, Schutz vor Betrug"}
+unverified:
+  - "Anteil KI-geschriebener Phishing-Mails: nicht verwendet (keine Zahl in den Quellen)."
+  - "Zahlen aus dem BSI-Cybersicherheitsmonitor 2026 (28 und 19 Prozent) in dieser Fassung nicht verwendet."
+  - "Ablauf im Beispielfall (Hausbank Beispiel, Frau Berger, Uhrzeiten, Eingabe der Zugangsdaten) ist erfunden und als Beispiel gekennzeichnet."
+  - "Dass eine Antwort auf die Mail (Option B) keine Prüfung ist, ist Scutorias Auslegung von S3 (Absenderadressen werden gefälscht, Echtheit telefonisch mit selbst herausgesuchter Nummer bestätigen); im Bild als Auslegung markiert."
+  - "Neu am 02.11.2026 geprüft: S3 (Institutionen bitten nicht per Mail, sensible Daten über einen Link zu ändern; Sperr-Notruf 116 116; Umsätze mit der Bank prüfen) und S4 (Seite selbst über eigenes Lesezeichen oder eingetippte Adresse aufrufen). Die Seite unter der S4-Adresse heißt inzwischen 'Protect yourself from online scams and attacks'."
+pick: demonstration
+hooks:
+  - {type: misconception, spoken: "Phishing erkennst du an schlechtem Deutsch? Mit KI klappt das nicht mehr.", screen: "Phishing = schlechtes Deutsch?", src: [S1]}
+  - {type: question, spoken: "Woran erkennst du eine Phishing-Mail ohne einen einzigen Fehler?", screen: "Phishing ohne Fehler. Und jetzt?"}
+  - {type: surprising_fact, spoken: "Laut BSI sind Tippfehler nur noch selten ein eindeutiger Hinweis auf Phishing.", screen: "Tippfehler? Selten ein Hinweis", src: [S2]}
+  - {type: concrete_risk, spoken: "Die fehlerfreie Mail von der Bank kann trotzdem gefälscht sein.", screen: "Fehlerfrei und trotzdem falsch", src: [S1, S2]}
+  - {type: demonstration, spoken: "Donnerstag, acht Uhr fünfundfünfzig. Eine Mail von eurer Bank, ohne jeden Fehler.", screen: "DO 08:55 · Kein einziger Fehler", visual: "Uhrzeit groß, die Bank-Mail kommt als Papierkarte herein, die Zeile mit der Drohung wird markiert"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Donnerstag, acht Uhr fünfundfünfzig. Eine Mail von eurer Hausbank: Bitte bestätigen Sie heute Ihre Zugangsdaten, sonst wird das Konto gesperrt."
+    d:
+      kicker: "Beispielfall · nachgestellt"
+      time: "DO 08:55"
+      place: "Buchhaltung einer Bäckerei"
+      mail_at: "@Hausbank"
+      mail: {from: "Hausbank Beispiel", addr: "service@hausbank-beispiel.example", time: "08:55", subject: "Sicherheitsprüfung fällig", lines: ["Sehr geehrte Frau Berger,", "bitte bestätigen Sie heute Ihre", "Zugangsdaten, sonst: Kontosperre."]}
+      highlight: {line: 2, label: "Drohung", at: "@Zugangsdaten"}
+  - f: problem
+    t: sc_inspect
+    s: "Du prüfst, wie gelernt. Sprache: fehlerfrei. Anrede: mit deinem Namen. Ton: höflich. Kein einziger Fehler. Nur: Laut NCSC schreibt KI Köder ohne die Fehler, an denen man Phishing erkannt hat."
+    src: [S1]
+    d:
+      kicker: "Was du prüfst"
+      headline: "Wo ist der Fehler?"
+      rows:
+        - {label: "Sprache", value: "fehlerfrei", verdict: "unauffällig", at: "@Sprache"}
+        - {label: "Anrede", value: "mit deinem Namen", verdict: "unauffällig", at: "@Anrede"}
+        - {label: "Ton", value: "höflich, sachlich", verdict: "unauffällig", at: "@Ton"}
+      finding: {text: "Kein einziger Fehler.", at: "@Kein"}
+      fact: {kind: fakt, text: "KI schreibt Köder ohne Fehler, die Phishing oft verraten.", source: "NCSC · Bewertung vom 24.01.2024", at: "@Laut"}
+  - f: problem
+    t: sc_choice
+    s: "Was tust du? A: Keine Fehler, also echt: Du öffnest den Link. B: Du antwortest und fragst nach. C: Du rufst die Bank-Seite selbst auf. Entscheide dich jetzt."
+    src: [S2]
+    d:
+      question: "Was tust du?"
+      options:
+        - {key: A, text: "Keine Fehler, also echt: Link öffnen", at: "@Fehler"}
+        - {key: B, text: "Auf die Mail antworten und fragen", at: "@antwortest"}
+        - {key: C, text: "Bank-Seite selbst aufrufen", at: "@Bank-Seite"}
+      think: {seconds: 2.6, at: "@Entscheide"}
+      hint: "Entscheide dich jetzt."
+  - f: demonstration
+    t: sc_timeline
+    s: "Spielen wir A durch. Der Link führt zu einer Login-Seite wie immer. Du gibst deine Zugangsdaten ein. Laut BSI greifen Täter genau dort Passwörter ab."
+    src: [S3]
+    d:
+      kicker: "Wahl A, durchgespielt"
+      tag: "Beispiel"
+      headline: "Du öffnest den Link"
+      items:
+        - {time: "DO 08:56", text: "Login-Seite wie immer", at: "@Login-Seite"}
+        - {time: "DO 08:57", text: "Zugangsdaten eingegeben", tone: amber, at: "@Zugangsdaten"}
+        - {time: "Danach", text: "Passwort beim Täter", tone: red, at: "@greifen"}
+      source: {kind: fakt, label: "BSI und Polizei · Checkliste Phishing", at: "@BSI"}
+  - f: insight
+    t: sc_step
+    s: "Richtig ist C. Laut BSI bitten seriöse Institutionen nicht per Mail darum, sensible Daten über einen Link zu ändern. Microsoft rät, die Seite selbst aufzurufen. A prüft nur die Form. B fragt genau den Absender, um den es geht."
+    src: [S3, S4]
+    d:
+      mode: rule
+      kicker: "Der eine Schritt"
+      card: {letter: C, title: "Bank-Seite selbst aufrufen", sub: "per Lesezeichen, nie über den Link", at: 0.2}
+      strikes:
+        - {text: "A: Keine Fehler, also echt", note: "prüft nur die Form", at: "@prüft"}
+        - {text: "B: Antwort an den Absender", note: "gleicher Absender", at: "@fragt"}
+      sources:
+        - {kind: fakt, label: "BSI · keine Datenänderung per Link"}
+        - {kind: fakt, label: "Microsoft · Seite selbst aufrufen"}
+        - {kind: auslegung, label: "B: Auslegung Scutoria"}
+      sources_at: "@BSI"
+  - f: insight
+    t: sc_step
+    s: "Schon eingegeben? Dann den Zugang sperren lassen, über den Sperr-Notruf eins eins sechs, eins eins sechs. Danach mit der Bank die Umsätze prüfen."
+    src: [S3]
+    d:
+      mode: fallback
+      kicker: "Schon eingegeben?"
+      card: {letter: "!", title: "Zugang sofort sperren", sub: "nicht abwarten", at: 0.2}
+      steps:
+        - {text: "Sperr-Notruf 116 116", at: "@Sperr-Notruf"}
+        - {text: "Mit der Bank Umsätze prüfen", at: "@Bank"}
+      sources:
+        - {kind: fakt, label: "BSI und Polizei · Checkliste Phishing"}
+      sources_at: "@sperren"
+  - f: close
+    t: sc_close
+    s: "Prüf die Absicht, nicht die Rechtschreibung. Was hättest du gewählt? Schreib es in die Kommentare."
+    d:
+      kicker: "Reihe · Was tust du?"
+      rule: "Absicht prüfen, nicht Tippfehler."
+      rule_at: 0.3
+      question: {text: "Was hättest du gewählt?", at: "@hättest"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Belegt. Datiert. Vorzeigbar."
+      disclaimer: "Quellenbasiert. Keine Rechtsberatung."

@@ -1,0 +1,481 @@
+{
+ "video_id": "engines-20261109-1-en",
+ "brand_id": "engines",
+ "language": "en",
+ "title": "The piston is not fastest at mid-stroke",
+ "notes": "Revlore format Zeitlupe (slow motion), pilot P1 EN (02.11.2026). Calendar engines-20261109-1-en, series Nachgemessen. Scenes zl_* from brands/engines/zeitlupe/scenes.py. Spoken text unchanged from the week-1 plan, voice reused (voice_engines-20261109-1-en_V1voice_gemini.wav).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Where is the piston fastest? Not at mid-stroke. The angled con rod shifts the peak forward, to about 70 degrees after TDC in typical car engines.",
+  "companion_text": "Schematic model: crank radius and rod length are model values (ratio 0.31), not a specific engine. Slow-motion factor and milliseconds refer to the example speed of 3000 rpm.",
+  "hashtags": [
+   "enginetech",
+   "piston",
+   "crankshaft",
+   "conrod",
+   "myth"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "MIT 2.61, lecture 8",
+   "title": "MIT 2.61, Vorlesung 8 (L8)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "NASA Glenn, bore and stroke",
+   "title": "NASA Glenn, Bohrung und Hub (N4)",
+   "url": "https://www.grc.nasa.gov/www/k-12/airplane/stroke.html",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "But that is exactly where the piston is not at its fastest.",
+   "on_screen": "Fastest at mid-stroke?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "The piston peaks before mid-stroke.",
+   "on_screen": "The piston is not fastest at mid-stroke",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Where is the piston fastest?",
+   "on_screen": "The piston is not fastest at mid-stroke",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "The piston is not fastest at mid-stroke",
+   "on_screen": "The piston is not fastest at mid-stroke",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "The piston is not fastest at mid-stroke",
+   "on_screen": "The piston is not fastest at mid-stroke",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Most people guess mid-stroke, where the crank points sideways. But that is exactly where the piston is not at its fastest.",
+   "data": {
+    "claim": "Fastest at mid-stroke?",
+    "claim_lines": [
+     "Fastest at",
+     "mid-stroke?"
+    ],
+    "claim_highlight": "mid-stroke",
+    "claim_at": 0.0,
+    "slow_at": "w:mid",
+    "mid_at": "w:mid",
+    "strike_at": "w:not",
+    "theta": [
+     [
+      "w:mid",
+      0
+     ],
+     [
+      "w:sideways",
+      90
+     ],
+     [
+      "w:But",
+      90
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "source": "MIT 2.61, lecture 8 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zl_strobe",
+   "spoken": "Watch the blue arrow next to the cylinder. It shows how fast the piston is moving right now. At the top and at the bottom it stops for a moment, and in between it speeds up. The longer the arrow, the higher the speed.",
+   "data": {
+    "theta": [
+     [
+      0,
+      360
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "arrow_at": "w:arrow",
+    "zero_top_at": "w:top",
+    "zero_bottom_at": "w:bottom",
+    "gap_at": "w:between",
+    "source": "NASA Glenn, bore and stroke · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zl_trace",
+   "spoken": "If the piston followed a pure sine wave, its peak would sit exactly at ninety degrees of crank angle, right at mid-stroke. That is the dashed line.",
+   "data": {
+    "theta": [
+     [
+      0,
+      1080
+     ],
+     [
+      1,
+      1440
+     ]
+    ],
+    "dial": false,
+    "series": [
+     {
+      "kind": "sine",
+      "mode": "draw",
+      "at": "w:sine"
+     }
+    ],
+    "marks": [
+     {
+      "x": 90,
+      "label": "90° mid-stroke",
+      "at": "w:ninety",
+      "color": "steel",
+      "side": "r",
+      "y": -0.95
+     }
+    ]
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "explanation",
+   "scene_type": "zl_cause",
+   "spoken": "The reason is the con rod. It runs at an angle and links the piston to the crank pin. In the upper half of the stroke, that angle pulls the piston down even faster. In the lower half, the same angle slows it down earlier.",
+   "data": {
+    "theta": [
+     [
+      0,
+      1440
+     ],
+     [
+      "w:upper",
+      1800
+     ],
+     [
+      "w:lower",
+      1890
+     ],
+     [
+      1,
+      1980
+     ]
+    ],
+    "ticks_shown": true,
+    "rod_at": "w:rod",
+    "beta_at": "w:angle",
+    "pins_at": "w:crank",
+    "sine_at": "w:upper",
+    "rod_off_at": "w:upper",
+    "notes": [
+     {
+      "text": "piston ahead",
+      "at": "w:faster",
+      "x": 790,
+      "y": 655,
+      "anchor": "end",
+      "color": "accent"
+     },
+     {
+      "text": "slows earlier",
+      "at": "w:slows",
+      "x": 770,
+      "y": 905,
+      "anchor": "end",
+      "color": "accent"
+     },
+     {
+      "text": "at 90°: 58 % instead of 50 %",
+      "at": "w:lower",
+      "x": 108,
+      "y": 1095,
+      "color": "text"
+     }
+    ],
+    "source": "MIT 2.61, lecture 8 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zl_trace",
+   "spoken": "According to the engineering lecture, the peak in typical car engines sits at about seventy degrees after top dead centre. In our model it is seventy-four degrees, clearly before mid-stroke. So the curve is not symmetrical: a quick start at the top, a gentler finish at the bottom.",
+   "data": {
+    "theta": [
+     [
+      0,
+      1980
+     ],
+     [
+      "w:centre",
+      2160
+     ],
+     [
+      "w:seventyfour",
+      2234
+     ],
+     [
+      "w:symmetrical",
+      2340
+     ],
+     [
+      1,
+      2520
+     ]
+    ],
+    "dial": false,
+    "series": [
+     {
+      "kind": "sine",
+      "mode": "show"
+     },
+     {
+      "kind": "real",
+      "mode": "live"
+     }
+    ],
+    "marks": [
+     {
+      "x": 90,
+      "label": "90° mid-stroke",
+      "at": 0.0,
+      "color": "steel",
+      "side": "r",
+      "y": -0.95
+     },
+     {
+      "x": 74,
+      "label": "74°",
+      "at": "w:seventyfour",
+      "color": "accent",
+      "side": "l",
+      "y": -0.95
+     }
+    ],
+    "curve_notes": [
+     {
+      "text": "quick start",
+      "x": 6,
+      "y": -0.3,
+      "at": "w:quick",
+      "color": "accent"
+     },
+     {
+      "text": "gentle finish",
+      "x": 6,
+      "y": -0.6,
+      "at": "w:gentler",
+      "color": "accent"
+     }
+    ],
+    "notes": [
+     {
+      "text": "Lecture:",
+      "at": "w:engineering",
+      "x": 600,
+      "y": 560,
+      "color": "text"
+     },
+     {
+      "text": "car ~70° after TDC",
+      "at": "w:seventy",
+      "x": 600,
+      "y": 604,
+      "color": "accent"
+     }
+    ],
+    "source": "MIT 2.61, lecture 8 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Stop at the top, stop at the bottom, top speed before mid-stroke. Understand engines: follow Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      2520
+     ],
+     [
+      0.3,
+      2700
+     ],
+     [
+      0.5,
+      3060
+     ],
+     [
+      "w:Understand",
+      3780
+     ],
+     [
+      1,
+      9780
+     ]
+    ],
+    "real_at": "w:Understand",
+    "rows": [
+     {
+      "text": "TDC: standstill",
+      "hl": "standstill",
+      "at": "w:top"
+     },
+     {
+      "text": "BDC: standstill",
+      "hl": "standstill",
+      "at": "w:bottom"
+     },
+     {
+      "text": "Peak 74° after TDC (model)",
+      "hl": "74°",
+      "at": "w:speed"
+     },
+     {
+      "text": "at 3000 rpm: after 4.1 ms",
+      "hl": "4.1 ms",
+      "at": "w:mid"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · understand engines",
+     "hl": "REVLORE",
+     "at": "w:Understand"
+    },
+    "source": "MIT 2.61, lecture 8 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

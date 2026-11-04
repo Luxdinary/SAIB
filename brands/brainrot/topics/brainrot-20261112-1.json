@@ -1,0 +1,730 @@
+{
+ "topic": "brainrot-20261112-1",
+ "series": "A",
+ "short": {
+  "de": "Regentropfen Broetchen",
+  "en": "Regentropfen Broetchen"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.usgs.gov/special-topics/water-science-school/science/are-raindrops-shaped-teardrops",
+   "checked_at": "2026-11-01",
+   "title": "USGS Water Science School, Are raindrops shaped like teardrops?: popular culture draws teardrops; small raindrops (radius < 1 mm) are spherical, larger ones more like a hamburger bun; tug-of-war between surface tension and the air pressure pushing up against the bottom of the falling drop; fall velocity increases with size; larger than a radius of about 4.5 mm they become distorted like a parachute and break up into smaller drops",
+   "label": {
+    "de": "USGS Water Science School",
+    "en": "USGS Water Science School"
+   }
+  },
+  {
+   "id": "S2",
+   "url": "https://scied.ucar.edu/video/shape-raindrops",
+   "checked_at": "2026-11-01",
+   "title": "UCAR Center for Science Education, The Shape of Raindrops: raindrops are drawn as teardrops almost everywhere; a raindrop starts out round, as it falls the bottom meets more air pressure and it becomes flattened on the bottom with a curved top, like a hamburger bun; then a parachute shape before breaking apart into smaller, rounder drops",
+   "label": {
+    "de": "UCAR Science Education",
+    "en": "UCAR Science Education"
+   }
+  }
+ ],
+ "de": {
+  "title": "Regentropfen sehen aus wie Burgerbrötchen – Plümo und der Tränenhut",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "Regentropfen sind keine Tränen. Eher Burgerbrötchen. Ich hab nachgemessen.",
+    "on_screen": "Regentropfen? *Keine* Tränen.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Tränentropfen fliegt zur Faktentür, Stempel IRRTUM",
+    "why": {
+     "truth": "USGS und UCAR: kleine Tropfen sind rund, größere wie ein Hamburgerbrötchen, nicht tränenförmig",
+     "visual": "Tränenform an der Tür ist sofort lesbar"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "Welche Form hat ein Regentropfen wirklich?",
+    "on_screen": "Welche *Form* hat Regen?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Fragezeichen über einem Tropfen"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "Größere Regentropfen sehen aus wie ein Burgerbrötchen.",
+    "on_screen": "Regen wie *Brötchen*.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "Tropfen wird unten platt"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Wer Regen als Tränen malt, malt ihn falsch.",
+    "on_screen": "Tränenform? *Falsch gemalt.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "Bilderbuchtropfen wird durchgestrichen"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "Ich setz meinen Tränenhut auf und stell mich in den Regen. Schau.",
+    "on_screen": "Tränenhut im *Regen*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo mit Tränenhut"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Regentropfen sind keine Tränen. Eher Burgerbrötchen. Ich hab nachgemessen.",
+    "data": {
+     "mode": "hook",
+     "head": "Regentropfen? *Keine* Tränen.",
+     "head_at": 0.2,
+     "sign": "NUR FAKTEN",
+     "items": [
+      {
+       "kind": "raindrop_tear"
+      }
+     ],
+     "stamp_reject": "IRRTUM",
+     "cue_scan": "Regentropfen",
+     "cue_verdict": "keine",
+     "cue_club": "Burgerbrötchen",
+     "cue_know": "nachgemessen"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Moment. Ich dachte, Regen fällt in Tränenform. So wird er ja überall gemalt. Aber nein, größere Tropfen sehen eher aus wie ein Brötchen. Ich war geschockt. Ich hatte extra einen Tränenhut gebastelt. Passgenau.",
+    "data": {
+     "word_a": "Regen",
+     "word_b": "träne",
+     "left": "Plümo: *Tränenform*",
+     "right": "Echt: *Brötchenform*",
+     "cue_left": "dachte",
+     "cue_strike": "nein",
+     "cue_right": "Brötchen",
+     "cue_react": "Ich",
+     "item": "raindrop_tear",
+     "cue_shock": "geschockt",
+     "cue_item": "Tränenhut",
+     "cue_never": "Passgenau"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Wer drückt da? Am Tropfen ziehen zwei Kräfte wie beim Tauziehen. Die Oberflächenspannung des Wassers zieht ihn rund. Die Luft drückt von unten gegen den fallenden Tropfen. Ohne Hände zeig ich es mit dem Blatt.",
+    "data": {
+     "headline": "Wer *drückt* den Tropfen?",
+     "inner": "raindrop_bun",
+     "disc": [
+      "#1A4F80",
+      "#E8F7FF",
+      "#9FD4F5"
+     ],
+     "cue_q": "drückt",
+     "labels": [
+      {
+       "text": "Kräfte-*Tauziehen*",
+       "pos": "tr",
+       "cue": "Tauziehen"
+      },
+      {
+       "text": "Wasser zieht *rund*",
+       "pos": "l",
+       "cue": "Oberflächenspannung"
+      },
+      {
+       "text": "Luft drückt von *unten*",
+       "pos": "b",
+       "cue": "Luft"
+      }
+     ],
+     "cue_hands": "Hände",
+     "cue_leaf": "Blatt"
+    },
+    "overlay": {
+     "marker_at": "w:Oberflächenspannung"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Ganz genau. Kleine Tropfen, mit Radius unter einem Millimeter, sind kugelrund. Größere fallen schneller, werden unten platt und oben gewölbt. Wie ein Burgerbrötchen. Ich sag: lecker. Aber nass.",
+    "data": {
+     "kind": "raindrop_bun",
+     "lens": "raindrop_bun",
+     "lens_bg": "#0E2236",
+     "cue_mag": "genau",
+     "callouts": [
+      {
+       "text": "klein: *kugelrund*",
+       "cue": "Kleine"
+      },
+      {
+       "text": "größer: *Brötchen*",
+       "cue": "Größere"
+      }
+     ],
+     "cue_nut": "kugelrund",
+     "stamp": {
+      "text": "Burgerbrötchen!",
+      "cue": "Burgerbrötchen"
+     },
+     "cue_react": "lecker",
+     "cue_fast": "nass"
+    },
+    "overlay": {
+     "dim_at": "w:Kleine",
+     "marker_at": "w:Kleine"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Also: Unter einem Millimeter Radius bleibt er eine Kugel. Größere werden Brötchen. Ab etwa 4,5 Millimetern wird er wie ein Fallschirm und zerplatzt in kleinere, rundere Tropfen. Mein Tränenhut? Passt auf keinen.",
+    "data": {
+     "headline": "Und beim *Fallen*?",
+     "bars": [
+      {
+       "label": "Radius < 1 mm",
+       "value": "Kugel",
+       "h": 0.12,
+       "color": "#5FB8F0",
+       "cue": "Radius"
+      },
+      {
+       "label": "größer",
+       "value": "Brötchen",
+       "h": 0.55,
+       "color": "#B04A92",
+       "kind": "raindrop_bun",
+       "cue": "Größere"
+      },
+      {
+       "label": "ab ca. 4,5 mm",
+       "value": "platzt",
+       "h": 0.95,
+       "color": "#B7FF00",
+       "cue": "4,5"
+      }
+     ],
+     "stamp": {
+      "text": "Fallschirm!",
+      "cue": "Fallschirm"
+     },
+     "cue_react": "Tränenhut"
+    },
+    "overlay": {
+     "marker_at": "w:Radius"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Merke: Kleine Regentropfen sind rund, größere sehen aus wie Burgerbrötchen. Gut, jetzt ich. Scanner läuft. Ergebnis: Form nicht ermittelbar. Ich bin wohl einfach plümoförmig.",
+    "data": {
+     "mode": "unknown",
+     "sign": "NUR FAKTEN",
+     "merke": "Regentropfen: *rund* oder *Brötchen*.",
+     "display": "Form: nicht ermittelbar",
+     "plumps": "PLUMPS",
+     "cue_build": "rund",
+     "cue_go": "Gut",
+     "cue_scan": "Scanner",
+     "cue_result": "Ergebnis",
+     "cue_back": "wohl"
+    },
+    "overlay": {
+     "marker_at": "w:Merke"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+    "data": {
+     "sign": "NUR FAKTEN",
+     "cta": "Mehr Zonkfruit? *Folgen.*",
+     "cue_cta": "Mehr",
+     "cue_up": "steh",
+     "cue_lie": "liegen",
+     "cue_ch": "Kanal"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Regentropfen: Träne?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Tränenform: abgelehnt",
+    "tone": "pop",
+    "word": "keine"
+   },
+   {
+    "beat": "b3",
+    "text": "Zwei Kräfte: Tauziehen",
+    "tone": "lime",
+    "word": "Tauziehen"
+   },
+   {
+    "beat": "b4",
+    "text": "Klein: kugelrund",
+    "tone": "lime",
+    "word": "kugelrund"
+   },
+   {
+    "beat": "b5",
+    "text": "Ab 4,5 mm: zerplatzt",
+    "tone": "lime",
+    "word": "zerplatzt"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: Form offen",
+    "tone": "amber",
+    "word": "Ergebnis"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: liegt kurz",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "Regentropfen sind keine Tränen. Eher Burgerbrötchen.",
+   "description": "Plümo hat sich einen Tränenhut gebastelt. Dabei sind kleine Regentropfen kugelrund, größere werden beim Fallen unten platt und oben gewölbt, wie ein Burgerbrötchen. Ab etwa 4,5 Millimetern Radius verformen sie sich wie ein Fallschirm und zerplatzen in kleinere Tropfen.",
+   "hashtags": [
+    "regen",
+    "wetter",
+    "physik",
+    "wusstestdu",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ },
+ "en": {
+  "title": "Raindrops are buns, not teardrops – Plümo and the teardrop hat",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "Raindrops are not shaped like tears. More like burger buns. I measured.",
+    "on_screen": "Raindrops? *Not* teardrops.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "teardrop flies to the Fact Door, stamp NOPE",
+    "why": {
+     "truth": "USGS and UCAR: small drops are round, bigger ones like a hamburger bun, not teardrops",
+     "visual": "a teardrop at the door reads at once"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "What shape is a raindrop, really?",
+    "on_screen": "What *shape* is rain?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "question mark over a drop"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "Bigger raindrops look like a hamburger bun.",
+    "on_screen": "Rain like *buns*.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "visual": "drop flattens at the bottom"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Draw rain as teardrops and you draw it wrong.",
+    "on_screen": "Teardrops? *Drawn wrong.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "picture-book drop gets crossed out"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "I put on my teardrop hat and step into the rain. Watch.",
+    "on_screen": "Teardrop hat vs *rain*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo with a teardrop hat"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Raindrops are not shaped like tears. More like burger buns. I measured.",
+    "data": {
+     "mode": "hook",
+     "head": "Raindrops? *Not* teardrops.",
+     "head_at": 0.2,
+     "sign": "FACTS ONLY",
+     "items": [
+      {
+       "kind": "raindrop_tear"
+      }
+     ],
+     "stamp_reject": "NOPE",
+     "cue_scan": "Raindrops",
+     "cue_verdict": "not",
+     "cue_club": "burger",
+     "cue_know": "measured"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Wait. I thought rain falls as teardrops. That's how it's drawn everywhere. But no, bigger drops look like a burger bun. I was shocked. I'd made a teardrop hat. Perfect fit.",
+    "data": {
+     "word_a": "Rain",
+     "word_b": "tear",
+     "left": "Plümo: *teardrops*",
+     "right": "Real: *burger buns*",
+     "cue_left": "thought",
+     "cue_strike": "no",
+     "cue_right": "burger",
+     "cue_react": "I",
+     "item": "raindrop_tear",
+     "cue_shock": "shocked",
+     "cue_item": "teardrop",
+     "cue_never": "Perfect"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Who squishes it? Two forces play tug-of-war. The surface tension of the water pulls it round. The air pushes up against the bottom of the falling drop. No hands, so I point with my leaf.",
+    "data": {
+     "headline": "Who *squishes* the drop?",
+     "inner": "raindrop_bun",
+     "disc": [
+      "#1A4F80",
+      "#E8F7FF",
+      "#9FD4F5"
+     ],
+     "cue_q": "squish",
+     "labels": [
+      {
+       "text": "a *tug-of-war*",
+       "pos": "tr",
+       "cue": "tug"
+      },
+      {
+       "text": "water pulls *round*",
+       "pos": "l",
+       "cue": "surface"
+      },
+      {
+       "text": "air pushes from *below*",
+       "pos": "b",
+       "cue": "air"
+      }
+     ],
+     "cue_hands": "hands",
+     "cue_leaf": "leaf"
+    },
+    "overlay": {
+     "marker_at": "w:surface"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Closer. Small drops, under one millimeter radius, are little spheres. Bigger drops fall faster and get flattened underneath, curved on top. The page really says: hamburger bun. I say: snack. A wet one.",
+    "data": {
+     "kind": "raindrop_bun",
+     "lens": "raindrop_bun",
+     "lens_bg": "#0E2236",
+     "cue_mag": "Closer",
+     "callouts": [
+      {
+       "text": "small: *spheres*",
+       "cue": "Small"
+      },
+      {
+       "text": "bigger: *bun*",
+       "cue": "Bigger"
+      }
+     ],
+     "cue_nut": "spheres",
+     "stamp": {
+      "text": "Hamburger bun!",
+      "cue": "hamburger"
+     },
+     "cue_react": "snack",
+     "cue_fast": "wet"
+    },
+    "overlay": {
+     "dim_at": "w:Small",
+     "marker_at": "w:Small"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Under one millimeter radius: sphere. Bigger: bun. Past about 4.5 millimeters, it turns parachute-shaped and bursts into smaller, rounder drops. My teardrop hat? Fits none.",
+    "data": {
+     "headline": "And on the *way down*?",
+     "bars": [
+      {
+       "label": "radius < 1 mm",
+       "value": "sphere",
+       "h": 0.12,
+       "color": "#5FB8F0",
+       "cue": "radius"
+      },
+      {
+       "label": "bigger",
+       "value": "bun",
+       "h": 0.55,
+       "color": "#B04A92",
+       "kind": "raindrop_bun",
+       "cue": "Bigger"
+      },
+      {
+       "label": "from ~4.5 mm",
+       "value": "bursts",
+       "h": 0.95,
+       "color": "#B7FF00",
+       "cue": "4.5"
+      }
+     ],
+     "stamp": {
+      "text": "Parachute!",
+      "cue": "parachute"
+     },
+     "cue_react": "teardrop"
+    },
+    "overlay": {
+     "marker_at": "w:radius"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Remember: small raindrops are round, bigger ones look like burger buns. Right, my turn. Scanner on. Result: shape unknown. I guess I'm just Plümo-shaped.",
+    "data": {
+     "mode": "unknown",
+     "sign": "FACTS ONLY",
+     "merke": "Raindrops: *round* or *bun*.",
+     "display": "Shape: unknown",
+     "plumps": "FLOP",
+     "cue_build": "round",
+     "cue_go": "Right",
+     "cue_scan": "Scanner",
+     "cue_result": "Result",
+     "cue_back": "guess"
+    },
+    "overlay": {
+     "marker_at": "w:Remember"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "I'll just lie here for a bit. More Zonkfruit? Follow the channel. I'll get up in a minute.",
+    "data": {
+     "sign": "FACTS ONLY",
+     "cta": "More Zonkfruit? *Follow.*",
+     "cue_cta": "More",
+     "cue_up": "get",
+     "cue_lie": "lie",
+     "cue_ch": "channel"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Raindrops: teardrops?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Teardrop: rejected",
+    "tone": "pop",
+    "word": "not"
+   },
+   {
+    "beat": "b3",
+    "text": "Two forces: tug-of-war",
+    "tone": "lime",
+    "word": "tug"
+   },
+   {
+    "beat": "b4",
+    "text": "Small: spheres",
+    "tone": "lime",
+    "word": "spheres"
+   },
+   {
+    "beat": "b5",
+    "text": "Past 4.5 mm: bursts",
+    "tone": "lime",
+    "word": "bursts"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: shape unknown",
+    "tone": "amber",
+    "word": "Result"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: lying down",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "Raindrops aren't teardrops. More like burger buns.",
+   "description": "Plümo made himself a teardrop hat. But small raindrops are round, and bigger ones get flattened underneath and curved on top as they fall, like a hamburger bun. Past a radius of about 4.5 millimeters they turn parachute-shaped and burst into smaller drops.",
+   "hashtags": [
+    "rain",
+    "weather",
+    "science",
+    "didyouknow",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ }
+}

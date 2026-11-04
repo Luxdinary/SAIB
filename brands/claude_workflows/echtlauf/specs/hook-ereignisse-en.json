@@ -1,0 +1,140 @@
+{
+  "id": "hook-ereignisse-en",
+  "topic_id": "claude_workflows-20261118-2-en",
+  "language": "en",
+  "title": "4 hook events you should know",
+  "model": "haiku",
+  "tools": "Read",
+  "probe": "PostToolUse",
+  "probe_where": "file:ereignisse.log",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "notiz.txt": "Shopping list: bread, milk\n",
+    ".claude/hooks/log.js": "// appends the hook event name (argument) as a new line to ereignisse.log\nconst fs = require(\"fs\");\nconst path = require(\"path\");\nconst dir = process.env.CLAUDE_PROJECT_DIR || process.cwd();\nfs.appendFileSync(path.join(dir, \"ereignisse.log\"), process.argv[2] + \"\\n\");\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Reading a file",
+      "prompt": "Read notiz.txt and name the first line. Reply in English.",
+      "permission_mode": "acceptEdits",
+      "settings": {
+        "hooks": {
+          "SessionStart": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" SessionStart"
+                }
+              ]
+            }
+          ],
+          "UserPromptSubmit": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" UserPromptSubmit"
+                }
+              ]
+            }
+          ],
+          "PreToolUse": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" PreToolUse"
+                }
+              ]
+            }
+          ],
+          "PostToolUse": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" PostToolUse"
+                }
+              ]
+            }
+          ],
+          "Stop": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" Stop"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "L2",
+      "title": "Just a question",
+      "prompt": "What is 2 plus 3? Reply in English.",
+      "permission_mode": "acceptEdits",
+      "settings": {
+        "hooks": {
+          "SessionStart": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" SessionStart"
+                }
+              ]
+            }
+          ],
+          "UserPromptSubmit": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" UserPromptSubmit"
+                }
+              ]
+            }
+          ],
+          "PreToolUse": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" PreToolUse"
+                }
+              ]
+            }
+          ],
+          "PostToolUse": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" PostToolUse"
+                }
+              ]
+            }
+          ],
+          "Stop": [
+            {
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/log.js\" Stop"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

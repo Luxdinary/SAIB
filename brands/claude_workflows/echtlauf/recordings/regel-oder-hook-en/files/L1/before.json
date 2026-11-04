@@ -1,0 +1,5 @@
+{
+  ".claude/hooks/waechter.js": "// PreToolUse hook with its own logic: only blocks switching debug on\nlet d = \"\";\nprocess.stdin.on(\"data\", c => d += c).on(\"end\", () => {\n  const i = JSON.parse(d).tool_input || {};\n  const neu = (i.new_string || \"\") + (i.content || \"\");\n  if (/\"debug\"\\s*:\\s*true/.test(neu)) {\n    console.error(\"Blocked by hook: debug must not be switched on.\");\n    process.exit(2);\n  }\n  process.exit(0);\n});\n",
+  ".claude/settings.json": "{\n  \"permissions\": {\n    \"deny\": [\n      \"Edit(./config.json)\",\n      \"Write(./config.json)\"\n    ]\n  }\n}\n",
+  "config.json": "{\n  \"port\": 3000,\n  \"debug\": false\n}\n"
+}

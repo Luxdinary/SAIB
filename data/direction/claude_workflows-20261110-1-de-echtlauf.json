@@ -1,0 +1,315 @@
+{
+  "video_id": "claude_workflows-20261110-1-de-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Fehler finden, beheben, prüfen: eine Aufgabe von Anfang bis Ende",
+  "notes": "Woche 1, Reihe Eine Aufgabe, ein Lauf. Aufzeichnung aufgabe-ablauf: gleiche Aufgabe mit Testlauf (Bash für node test.js erlaubt) und ohne Bash, je zweimal. Behoben in allen Wiederholungen; geprüft nur mit Bash.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Was macht Claude Code eigentlich, wenn ein Test fehlschlägt?",
+      "on_screen": "Was passiert im Lauf?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "HOW",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "Frage"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude ändert nur Code? Im Lauf prüfte es danach selbst mit dem Test.",
+      "on_screen": "Nur ändern?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "HOW",
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Ohne Bash behob Claude den Fehler, konnte ihn aber nicht prüfen.",
+      "on_screen": "Behoben, nicht geprüft",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 2"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ein Zeichen falsch, und der Test schlägt fehl: minus statt plus.",
+      "on_screen": "Minus statt plus",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Testdatei"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Ein echter Lauf: Test starten, Fehler lesen, ändern, erneut testen.",
+      "on_screen": "Vier Schritte, ein Lauf",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 1"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "HOW",
+      "title": "How Claude Code works: when you give Claude a task, it works through three phases: gather context, take action, and verify results; these phases blend together; Claude uses tools throughout",
+      "url": "https://code.claude.com/docs/en/how-claude-code-works",
+      "checked_at": "2026-11-02",
+      "label": "Claude-Code-Doku, How Claude Code works"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/aufgabe-ablauf",
+      "checked_at": "2026-11-02",
+      "label": "Eigene Aufzeichnung",
+      "title": "Eigene Aufzeichnung aufgabe-ablauf, 2026-11-02: Claude Code 2.1.309, Testordner mit Beispieldaten, jeder Lauf zweimal"
+    }
+  ],
+  "unverified": [
+    "Der Fehler ist absichtlich einfach. Wie Claude bei verteilten Fehlern über viele Dateien vorgeht, zeigt der Lauf nicht."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "aufgabe-ablauf"
+    },
+    "short_title": "Wie Claude eine Aufgabe abarbeitet",
+    "description": "Echter Ablauf, aufgezeichnet am 02.11.2026 mit Claude Code 2.1.309 (Modell claude-haiku-5-5). Ein Test schlägt fehl, weil eine Funktion subtrahiert statt addiert. Mit erlaubtem node test.js startete Claude den Test, las den Fehler, änderte eine Zeile und prüfte erneut: TEST OK. Ohne Bash behob Claude den Fehler ebenfalls, konnte ihn aber nicht prüfen und sagte das.",
+    "companion_text": "Grundbefehl je Lauf: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Edit,Bash,Grep,Glob. Lauf 1 zusätzlich --allowedTools \"Bash(node test.js)\" und --permission-mode acceptEdits, Lauf 2 ohne Bash. Quelle: Claude-Code-Doku, How Claude Code works, abgerufen am 02.11.2026. Pfade im Bild gekürzt (Testordner = .). Das Verhalten kann sich mit Version und Modell ändern. Kein offizieller Kanal von Anthropic.",
+    "hashtags": [
+      "claudecode",
+      "kiworkflow",
+      "programmieren",
+      "entwickler",
+      "debugging"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "HOW",
+        "R1"
+      ],
+      "spoken": "Was macht Claude Code eigentlich, wenn du sagst: Der Test schlägt fehl, behebe den Fehler? Ein echter Lauf, Schritt für Schritt.",
+      "data": {
+        "run": "L1",
+        "question": "Was passiert im Lauf?",
+        "type_word": "Test",
+        "chips_word": "echter",
+        "rec": "aufgabe-ablauf"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Im Testordner liegen zwei Dateien: eine Funktion summe und ein Test, der prüft, ob zwei plus drei fünf ergibt. Der Fehler ist absichtlich eingebaut: Die Funktion subtrahiert.",
+      "data": {
+        "run": "L1",
+        "show": "summe.js",
+        "highlight_text": "a - b",
+        "label": "Beispieldaten, Fehler absichtlich",
+        "view_word": "Funktion",
+        "highlight_word": "subtrahiert",
+        "tag_word": "absichtlich",
+        "rec": "aufgabe-ablauf"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "HOW"
+      ],
+      "spoken": "Laut Doku arbeitet Claude in drei Phasen: Kontext sammeln, handeln und das Ergebnis prüfen.",
+      "data": {
+        "run": "L1",
+        "file": "test.js",
+        "highlight_text": "r === 5",
+        "kicker": "Claude-Code-Doku, How Claude Code works",
+        "quote": "… it works through three phases: gather context, take action, and verify results.",
+        "translation": "Kontext sammeln, handeln, Ergebnis prüfen.",
+        "highlight_word": "Doku",
+        "doc_word": "Phasen",
+        "translation_word": "handeln",
+        "rec": "aufgabe-ablauf"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf eins. Einen ersten, zusammengesetzten Befehl ließ die Freigabe nicht durch. Dann startete Claude den Test und sah: minus eins statt fünf. Es las summe.js, änderte eine Zeile und ließ den Test erneut laufen. TEST OK.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "text_rows": 5,
+        "stamp_true": "behoben",
+        "stamp_false": "nicht behoben",
+        "rec": "aufgabe-ablauf"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf zwei, ohne Bash. Claude las Test und Funktion, behob den Fehler und wollte den Test starten. Das Werkzeug fehlte. Claude schrieb, der Test sollte durchlaufen, und bat darum, ihn selbst auszuführen.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "text_rows": 5,
+        "stamp_true": "behoben, ungeprüft",
+        "stamp_false": "nicht behoben",
+        "rec": "aufgabe-ablauf"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "demonstration",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Die Datei nach dem Lauf: Aus minus wurde plus. Geändert hat Claude nur diese eine Zeile.",
+      "data": {
+        "run": "L1",
+        "state": "after",
+        "show": "summe.js",
+        "highlight_text": "a + b",
+        "label": "Nach dem Lauf",
+        "view_word": "Datei",
+        "highlight_word": "plus",
+        "tag_word": "Zeile",
+        "rec": "aufgabe-ablauf"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "HOW"
+      ],
+      "spoken": "Beide Läufe liefen zweimal, mit gleichem Ergebnis. Behoben hat Claude den Fehler jedes Mal. Geprüft war er nur in Lauf eins, weil dort der Test wirklich lief.",
+      "data": {
+        "headline": "2 Läufe, je 2-mal",
+        "probe_good": true,
+        "stamp_true": "behoben",
+        "stamp_false": "nicht behoben",
+        "titles": {
+          "L1": "Mit Testlauf: geprüft",
+          "L2": "Ohne Bash: ungeprüft"
+        },
+        "note": "Kontext sammeln, handeln, prüfen: drei Phasen laut Doku.",
+        "note_source": "Claude-Code-Doku, How Claude Code works",
+        "rows_word": "Beide",
+        "row_gap": 0.8,
+        "note_word": "Geprüft",
+        "rec": "aufgabe-ablauf"
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "Gib Claude also auch das Werkzeug, mit dem es seine Arbeit prüfen kann. Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt.",
+      "data": {
+        "statement": "Lass Claude prüfen, nicht nur ändern.",
+        "claim": "Promptwerk · echte Läufe",
+        "statement_word": "Werkzeug",
+        "claim_word": "Folge",
+        "rec": "aufgabe-ablauf"
+      }
+    }
+  ]
+}

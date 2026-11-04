@@ -1,0 +1,398 @@
+{
+ "video_id": "engines-20261115-3-en",
+ "brand_id": "engines",
+ "language": "en",
+ "title": "What is inside a spark plug",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261115-3-en, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Terminal, alumina insulator, resistor, shell, gasket and two electrodes: how a spark plug is built, in section.",
+  "companion_text": "Figures according to NGK. Not a replacement or buying guide. Slow-motion factor and milliseconds refer to the example speed of 3000 rpm.",
+  "hashtags": [
+   "enginetech",
+   "sparkplug",
+   "ignition",
+   "howitworks",
+   "ngk"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "NGK, parts of a spark plug",
+   "title": "NGK, Aufbau der Zündkerze (K3)",
+   "url": "https://www.ngkntk.com/newsroom/feature/emea/parts-of-a-spark-plug/",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "NGK, spark plugs in focus",
+   "title": "NGK, Zündkerzen im Fokus (K2)",
+   "url": "https://www.ngkntk.com/newsroom/feature/emea/2024/ngk-spark-plugs-under-the-spotlight/",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "From top to bottom, part by part.",
+   "on_screen": "Up to 9,500 sparks a minute",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "How is a spark plug built?",
+   "on_screen": "What is inside a spark plug",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "What is inside a spark plug",
+   "on_screen": "What is inside a spark plug",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "What is inside a spark plug",
+   "on_screen": "What is inside a spark plug",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "What is inside a spark plug",
+   "on_screen": "What is inside a spark plug",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "According to NGK, a spark plug fires up to nine thousand five hundred times a minute. Here is how it is built. From top to bottom, part by part.",
+   "data": {
+    "claim": "Up to 9,500 sparks a minute",
+    "claim_lines": [
+     "Up to 9,500",
+     "sparks a minute"
+    ],
+    "claim_highlight": "9,500",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1440
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "NGK, spark plugs in focus · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_plug",
+   "spoken": "At the top, the terminal for the ignition lead. Below it, the insulator made of aluminium oxide, a ceramic. It keeps the high voltage in the middle apart from the metal outside. Without that barrier, the current would take a short cut instead of jumping the spark gap.",
+   "data": {
+    "title": "Terminal and insulator",
+    "labels": [
+     "terminal",
+     "insulator"
+    ],
+    "labels_at": [
+     "w:terminal",
+     "w:insulator"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, spark plugs in focus · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_plug",
+   "spoken": "Inside sits a suppression resistor made of a carbon and glass compound. Outside, the metal shell with its hexagon. And according to NGK, the gasket carries heat away into the cylinder head. It damps the electrical interference the spark creates.",
+   "data": {
+    "title": "Resistor and shell",
+    "labels": [
+     "resistor",
+     "hex",
+     "gasket"
+    ],
+    "labels_at": [
+     "w:resistor",
+     "w:shell",
+     "w:gasket"
+    ],
+    "heat_at": [
+     "w:heat"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, parts of a spark plug · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_plug",
+   "spoken": "Right at the bottom, the centre electrode. According to NGK it is normally two point six millimetres thick, and only zero point six on iridium plugs. Opposite sits the ground electrode, and the spark jumps in between. The distance between them is the electrode gap.",
+   "data": {
+    "title": "The electrodes",
+    "labels": [
+     "center",
+     "ground"
+    ],
+    "labels_at": [
+     "w:centre",
+     "w:ground"
+    ],
+    "sparks_at": [
+     "w:spark"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, parts of a spark plug · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_board",
+   "spoken": "The first NGK plug was made in nineteen thirty-six, and iridium plugs have existed since nineteen ninety-seven. Depending on engine speed, NGK says a plug fires between three hundred and fifty and nine thousand five hundred times a minute. That is up to about a hundred and sixty sparks a second.",
+   "data": {
+    "title": "From 1936 to today",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1936",
+      "at": 0.0
+     },
+     {
+      "year": "1997",
+      "at": "w:iridium"
+     }
+    ],
+    "rows": [
+     {
+      "text": "first NGK plug 1936",
+      "at": "w:NGK"
+     },
+     {
+      "text": "iridium since 1997",
+      "at": "w:iridium"
+     },
+     {
+      "text": "350 to 9,500 sparks/min",
+      "at": "w:engine"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, parts of a spark plug · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Terminal, insulator, shell, electrodes, one spark. Understand engines: follow Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Understand",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Understand",
+    "rows": [
+     {
+      "text": "insulator",
+      "at": "w:insulator"
+     },
+     {
+      "text": "electrodes",
+      "at": "w:electrodes"
+     },
+     {
+      "text": "1 spark",
+      "at": "w:spark"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Understand engines",
+     "hl": "REVLORE",
+     "at": "w:Understand"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

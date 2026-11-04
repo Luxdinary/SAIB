@@ -1,0 +1,560 @@
+{
+  "video_id": "military_history-20261110-2-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "H4: The Watch That Found Longitude",
+  "notes": "Woche 1, Reihe Karte, Zeit und Kurs. Navigationstechnik ohne Kampfbezug; Harrison nur als Name.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.rmg.co.uk/stories/topics/harrisons-clocks-longitude-problem",
+      "title": "Longitude found: the story of Harrison's timekeepers, Royal Museums Greenwich",
+      "label": "Royal Museums Greenwich",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.lindahall.org/john-harrison/",
+      "title": "Scientist of the Day – John Harrison, Linda Hall Library",
+      "label": "Linda Hall Library",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.rmg.co.uk/sites/default/files/import/media/pdf/H4.pdf",
+      "title": "Board of Longitude Explorers: H4 (ZAA0037), Royal Museums Greenwich",
+      "label": "RMG: Objektblatt H4",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Ob H4 den Preis verdient hätte, bewerten die Quellen unterschiedlich; im Video nur: offizieller Preis nie vergeben."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How does a ship find its longitude in 1761, in the middle of the ocean?",
+      "on_screen": "Where exactly is the ship?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Longitude needs the stars? Harrison needed an accurate watch.",
+      "on_screen": "A watch instead of stars",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "After two months at sea, H4 was only five seconds slow.",
+      "on_screen": "5 seconds in 2 months",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Without exact time, a ship cannot know its position.",
+      "on_screen": "No time, no position",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a timekeeper tick five times a second.",
+      "on_screen": "Five beats a second",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How does a ship find its longitude in 1761, in the middle of the ocean?",
+      "data": {
+        "question": "Where exactly is the ship, out on the ocean?",
+        "question_em": "Where exactly",
+        "card_title": "H4",
+        "card_meta": "GREENWICH · 1759",
+        "card_no": "FILE 19",
+        "stamp": "1761",
+        "drawing": "h4_watch.svg",
+        "packet_label": "Watch",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:1761",
+        "packet_at": "w:ship",
+        "em_at": "w:ocean"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "The Longitude Act of 1714 offers a prize: 20,000 pounds for an accuracy of 30 nautical miles. Know the exact time, and you know your longitude.",
+      "data": {
+        "mode": "map",
+        "headline": "A prize for longitude",
+        "places": [
+          {
+            "label": "London",
+            "code": "Act of 1714",
+            "x": 600,
+            "y": 80,
+            "at": "w:1714"
+          },
+          {
+            "label": "Ocean",
+            "code": "position?",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:accuracy"
+          }
+        ],
+        "route_at": "w:prize",
+        "route_label": "20,000 pounds",
+        "route_label_at": "w:20,000",
+        "wait_at": "w:time",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Target: 30 nautical miles",
+        "chip_at": "w:nautical",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Watch",
+        "packet_at": "w:Act",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "time = longitude",
+        "line_label_at": "w:longitude#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:watch",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "John Harrison, a trained carpenter, builds H4 after three large clocks: a watch that ticks five times a second. It is finished in 1759.",
+      "data": {
+        "headline": "A watch for the pocket",
+        "drawing": "h4_watch.svg",
+        "sheet_title": "SHEET 2 · H4",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "After H1, H2, H3",
+            "x": 100,
+            "y": 420,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:three"
+          },
+          {
+            "label": "Timekeeper H4",
+            "x": 230,
+            "y": 330,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:watch"
+          },
+          {
+            "label": "5 beats a second",
+            "x": 320,
+            "y": 380,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:five"
+          },
+          {
+            "label": "Finished 1759",
+            "x": 230,
+            "y": 100,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:1759"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 330,
+          "scale": 1.12,
+          "at": "w:watch",
+          "back_at": "w:1759",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "The test: on the 1761 voyage to Jamaica, H4 loses only five seconds in two months, about two miles of error. In 1764, to Barbados, it is ten miles.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Two trials at sea",
+        "left": {
+          "tag": "1761",
+          "title": "Jamaica",
+          "at": "w:Jamaica",
+          "rows": [
+            {
+              "text": "5 s in 2 months",
+              "at": "w:seconds"
+            },
+            {
+              "text": "≈ 2 miles of error",
+              "at": "w:error"
+            }
+          ]
+        },
+        "right": {
+          "tag": "1764",
+          "title": "Barbados",
+          "at": "w:Barbados",
+          "rows": [
+            {
+              "text": "10 miles of error",
+              "at": "w:ten"
+            }
+          ]
+        },
+        "verdict": "Within the limits of 1714",
+        "verdict_at": "w:miles#2",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "The money comes in instalments: 10,000 pounds, plus advances, and in 1773 another 8,750 pounds from Parliament. Harrison never receives the official prize.",
+      "data": {
+        "headline": "Money in instalments",
+        "nodes": [
+          {
+            "label": "£10,000",
+            "code": "payment",
+            "at": "w:10,000"
+          },
+          {
+            "label": "Advances",
+            "code": "£4,315",
+            "at": "w:advances"
+          },
+          {
+            "label": "Parliament 1773",
+            "code": "£8,750",
+            "at": "w:8,750"
+          },
+          {
+            "label": "Official prize",
+            "code": "never awarded",
+            "at": "w:never"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Watch",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "1714 the Act, 1759 the finished H4, 1761 the proof at sea.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1714 to 1761",
+        "items": [
+          {
+            "year": "1714",
+            "title": "Longitude Act",
+            "sub": "prize of 20,000 pounds",
+            "at": "w:1714"
+          },
+          {
+            "year": "1759",
+            "title": "H4 finished",
+            "sub": "5 beats a second",
+            "at": "w:1759"
+          },
+          {
+            "year": "1761",
+            "title": "Voyage to Jamaica",
+            "sub": "5 seconds in 2 months",
+            "at": "w:1761"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "The originals of H2, H3 and H4 are now at the Royal Observatory in Greenwich. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "H4",
+        "card_meta": "GREENWICH",
+        "card_no": "FILE 19",
+        "stamp": "1761",
+        "drawing": "h4_watch.svg",
+        "statement": "The watch that found longitude",
+        "statement_at": "w:H4",
+        "stamp_at": "w:Observatory",
+        "note": "Royal Observatory, Greenwich",
+        "note_at": "w:Greenwich",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Watch",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Position: unknown",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Prize: offered",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b3",
+          "text": "H4: finished 1759",
+          "tone": "amber",
+          "offset": 11.5
+        },
+        {
+          "beat": "b4",
+          "text": "Trial: Jamaica",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b5",
+          "text": "Prize: never awarded",
+          "tone": "muted",
+          "offset": 9.0
+        },
+        {
+          "beat": "b6",
+          "text": "Proof: 1761",
+          "tone": "muted",
+          "offset": 3.7
+        },
+        {
+          "beat": "b7",
+          "text": "H4: at Greenwich",
+          "tone": "muted",
+          "offset": 7.1
+        }
+      ]
+    },
+    "description": "The longitude problem: on the 1761 voyage to Jamaica, Harrison's H4 was only five seconds slow after two months. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "navigation",
+      "longitude",
+      "clock",
+      "history",
+      "seafaring"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

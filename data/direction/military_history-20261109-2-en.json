@@ -1,0 +1,558 @@
+{
+  "video_id": "military_history-20261109-2-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Hadrian's Wall in Numbers",
+  "notes": "Woche 1, Reihe Gebaut für den Ernstfall. Bauwerk und Bauorganisation. Zählweise der Kastelle nach English Heritage (16).",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.english-heritage.org.uk/faqs-hadrians-wall/",
+      "title": "Hadrian's Wall FAQs, English Heritage",
+      "label": "English Heritage",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.vindolanda.com/blog/fact-file-hadrians-wall",
+      "title": "Fact File: Hadrian's Wall, The Vindolanda Trust, 2022",
+      "label": "Vindolanda Trust",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Länge 73 Meilen (English Heritage) oder 74 Meilen/118 km (Vindolanda Trust); im Video 73 Meilen.",
+    "16 Kastelle (English Heritage) oder 15 nachträglich angebaute (Vindolanda Trust); im Video 16."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you build a wall right across a country, to a fixed grid?",
+      "on_screen": "A wall built to a grid?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "A wall is just a wall? This one follows a fixed module of milecastles and turrets.",
+      "on_screen": "More than a wall",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Every Roman mile had a milecastle, 80 of them, numbered.",
+      "on_screen": "80 numbered milecastles",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Planned three metres wide, often built much narrower.",
+      "on_screen": "Plan and reality",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch one module of wall repeat 80 times.",
+      "on_screen": "One module, 80 times",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you build a wall right across a country, to a fixed grid?",
+      "data": {
+        "question": "A wall across a country, built to a grid?",
+        "question_em": "to a grid",
+        "card_title": "Hadrian's Wall",
+        "card_meta": "BRITAIN · FROM AD 122",
+        "card_no": "FILE 17",
+        "stamp": "122",
+        "drawing": "hadrian_module.svg",
+        "packet_label": "Mile",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:country",
+        "packet_at": "w:wall",
+        "em_at": "w:grid"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "From AD 122, Emperor Hadrian has a frontier built: from Wallsend on the Tyne to Bowness on the Solway, right across northern England. Building takes at least six years.",
+      "data": {
+        "mode": "map",
+        "headline": "From coast to coast",
+        "places": [
+          {
+            "label": "Wallsend",
+            "code": "Tyne, east",
+            "x": 600,
+            "y": 80,
+            "at": "w:Wallsend"
+          },
+          {
+            "label": "Bowness",
+            "code": "Solway, west",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Bowness"
+          }
+        ],
+        "route_at": "w:across",
+        "route_label": "across northern England",
+        "route_label_at": "w:northern",
+        "wait_at": "w:Building",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "from AD 122",
+        "chip_at": "w:122",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Mile",
+        "packet_at": "w:frontier",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "at least 6 years of work",
+        "line_label_at": "w:six",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Roman",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "The building principle is a module: a milecastle every Roman mile, with two turrets between them. In front lies a ditch more than eight metres wide.",
+      "data": {
+        "headline": "One module per mile",
+        "drawing": "hadrian_module.svg",
+        "sheet_title": "SHEET 2 · ONE MILE",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Milecastle",
+            "x": 85,
+            "y": 230,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:milecastle"
+          },
+          {
+            "label": "2 turrets between",
+            "x": 265,
+            "y": 225,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:turrets"
+          },
+          {
+            "label": "Wall up to 4.6 m high",
+            "x": 380,
+            "y": 265,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:module"
+          },
+          {
+            "label": "Ditch: 8.2 m wide",
+            "x": 380,
+            "y": 345,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:ditch"
+          }
+        ],
+        "zoom": {
+          "x": 250,
+          "y": 260,
+          "scale": 1.12,
+          "at": "w:Roman",
+          "back_at": "w:ditch",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "The wall was planned three metres wide. It was built at 2.4 metres or less. Almost all the work was done by soldiers from three legions.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Plan and build",
+        "left": {
+          "tag": "Plan",
+          "title": "3 m wide",
+          "at": "w:planned",
+          "rows": [
+            "10 Roman feet"
+          ]
+        },
+        "right": {
+          "tag": "Built",
+          "title": "2.4 m or less",
+          "at": "w:built",
+          "rows": [
+            {
+              "text": "8 Roman feet",
+              "at": "w:2.4"
+            }
+          ]
+        },
+        "verdict": "Built by 3 legions",
+        "verdict_at": "w:legions",
+        "dim_left_at": "w:2.4",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "In numbers: 80 milecastles, numbered from zero at Wallsend to 80 at Bowness, plus 156 turrets and 16 forts. In total, 73 miles.",
+      "data": {
+        "headline": "In numbers",
+        "nodes": [
+          {
+            "label": "Milecastle 0",
+            "code": "Wallsend",
+            "at": "w:zero"
+          },
+          {
+            "label": "Milecastle 80",
+            "code": "Bowness",
+            "at": "w:Bowness"
+          },
+          {
+            "label": "156 turrets",
+            "code": "2 per mile",
+            "at": "w:156"
+          },
+          {
+            "label": "16 forts",
+            "code": "along it",
+            "at": "w:16"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "count": {
+          "to": 80,
+          "label": "MILECASTLES",
+          "at": "w:80",
+          "until": "w:total"
+        },
+        "total": {
+          "to": 73,
+          "pre": "",
+          "label": "MILES",
+          "at": "w:73"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "Building begins in 122. Around 143, the Antonine Wall rises further north, and in 1987 Hadrian's Wall becomes World Heritage.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 122 to 1987",
+        "items": [
+          {
+            "year": "122",
+            "title": "Building begins",
+            "sub": "under Emperor Hadrian",
+            "at": "w:122"
+          },
+          {
+            "year": "143",
+            "title": "Antonine Wall",
+            "sub": "further north",
+            "at": "w:143"
+          },
+          {
+            "year": "1987",
+            "title": "UNESCO World Heritage",
+            "sub": "Hadrian's Wall",
+            "at": "w:1987"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "The frontier lasted almost 300 years. Today most of the wall belongs to private owners, and English Heritage looks after about twenty sections. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Hadrian's Wall",
+        "card_meta": "TODAY",
+        "card_no": "FILE 17",
+        "stamp": "Heritage",
+        "drawing": "hadrian_module.svg",
+        "statement": "A frontier for almost 300 years",
+        "statement_at": "w:300",
+        "stamp_at": "w:Today",
+        "note": "English Heritage: about 20 sections",
+        "note_at": "w:sections",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Mile",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Site: open",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b2",
+          "text": "Building: from 122",
+          "tone": "amber",
+          "offset": 1.2
+        },
+        {
+          "beat": "b3",
+          "text": "Module: 1 mile",
+          "tone": "amber",
+          "offset": 2.7
+        },
+        {
+          "beat": "b4",
+          "text": "Width: 2.4 m",
+          "tone": "amber",
+          "offset": 5.6
+        },
+        {
+          "beat": "b5",
+          "text": "Milecastles: 80",
+          "tone": "muted",
+          "offset": 1.2
+        },
+        {
+          "beat": "b6",
+          "text": "World Heritage: 1987",
+          "tone": "muted",
+          "offset": 7.1
+        },
+        {
+          "beat": "b7",
+          "text": "Sections: about 20",
+          "tone": "muted",
+          "offset": 11.0
+        }
+      ]
+    },
+    "description": "Hadrian's Wall in numbers: 73 miles, 80 milecastles, 156 turrets, 16 forts, built by three legions from AD 122. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "hadrianswall",
+      "romans",
+      "history",
+      "engineering",
+      "worldheritage"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

@@ -1,0 +1,353 @@
+{
+ "video_id": "ai_security-20261114-2-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "NIS2: does it apply to my business?",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Gilt das für uns?\". F2 EN (localised from the DE spec), series Does this apply to us? Example case staged: firm, customer, email and time are invented. Rules from S1 to S3, re-read 02.11.2026; German specifics (BSI scope check, BSIG supply-chain rules) are labelled as German. No legal verdict, no legal advice: the answer ends with a check, interpretation and a pointer to legal advice. The old plan ai_security-20261114-2-en.json stays unchanged.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Your biggest customer writes: we're implementing NIS2, please confirm. Does it apply to you now? A staged case with three answers and what the European Commission and Germany's BSI say. Not legal advice.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on IT and AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "nis2",
+   "cybersecurity",
+   "smallbusiness",
+   "supplychain",
+   "doesthisapply"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive",
+   "title": "European Commission: NIS2 Directive – securing network and information systems",
+   "checked_at": "2026-11-02",
+   "label": "European Commission, NIS2"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/BSI-Portal/NIS-2-Betroffenheitspruefung/nis-2-betroffenheitspruefung_node.html",
+   "title": "BSI: NIS-2-Betroffenheitsprüfung",
+   "checked_at": "2026-11-02",
+   "label": "BSI (Germany), NIS2 scope check"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/NIS-2-Infopakete/NIS-2-Lieferkette/NIS-2-Lieferkette_node.html",
+   "title": "BSI: Sichere Lieferkette (#nis2know)",
+   "checked_at": "2026-11-02",
+   "label": "BSI (Germany), secure supply chain"
+  }
+ ],
+ "unverified": [
+  "Exact thresholds (staff, turnover): not named; checked via a scope check.",
+  "National laws outside Germany: not covered in detail; only the fact that member states had to transpose NIS2 into national law (S1).",
+  "No legal advice; whether the example firm is covered is deliberately not answered.",
+  "Example case (electrical contractor, Example Energy, the confirmation request) is invented and marked as an example.",
+  "Newly checked 02.11.2026 (S3): under Germany's BSIG, not every supplier is indirectly obliged; covered entities must hold their suppliers to matching security requirements. Applying this to the example firm is interpretation.",
+  "European Commission proposal of 20.01.2026 for targeted NIS2 amendments (S1): not used."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "NIS2 is only for big companies? Then why is your customer asking you about it?",
+   "on_screen": "Only big firms? Then why ask you?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "NIS2 applies to every business? As a rule, it doesn't.",
+   "on_screen": "NIS2 for everyone?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "NIS2 covers eighteen critical sectors across the EU.",
+   "on_screen": "18 sectors, not every business",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One compromised supplier can bring down IT systems, says Germany's BSI.",
+   "on_screen": "One supplier, whole systems",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Thursday, 11:20 a.m. Your biggest customer writes: we're implementing NIS2.",
+   "on_screen": "THU 11:20 · The customer asks about NIS2",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "clock, the customer's email arrives as a paper card, the line about service providers is marked",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Thursday, 11:20 a.m. An email from the energy company, your biggest customer: We're implementing NIS2. Please confirm our rules for service providers. Does that apply to you now?",
+   "data": {
+    "kicker": "Example case · staged",
+    "time": "THU 11:20",
+    "place": "Office, electrical contractor",
+    "mail_at": "@energy",
+    "mail": {
+     "from": "Procurement, Example Energy",
+     "addr": "procurement@energy.example",
+     "time": "11:20",
+     "subject": "NIS2: your confirmation",
+     "lines": [
+      "We're implementing NIS2.",
+      "Please confirm our rules",
+      "for service providers."
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "providers",
+     "at": "@providers"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "You're a small business. Your trade: electrical work. Your customer: an energy company. Sounds like: this doesn't affect us. According to the European Commission, NIS2 applies as a rule to medium-sized and large entities in eighteen critical sectors.",
+   "data": {
+    "kicker": "What you know",
+    "headline": "What do you know?",
+    "rows": [
+     {
+      "label": "Size",
+      "value": "small business",
+      "verdict": "known",
+      "at": "@small"
+     },
+     {
+      "label": "Trade",
+      "value": "electrical work",
+      "verdict": "known",
+      "at": "@trade"
+     },
+     {
+      "label": "Customer",
+      "value": "energy company",
+      "verdict": "check",
+      "at": "@customer"
+     }
+    ],
+    "finding": {
+     "text": "Sounds like: no.",
+     "at": "@Sounds"
+    },
+    "fact": {
+     "kind": "fakt",
+     "text": "NIS2: mostly medium and large entities, 18 sectors.",
+     "source": "European Commission · NIS2",
+     "at": "@According"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "sc_choice",
+   "spoken": "What do you reply? A: We're too small, this doesn't affect us. B: So now we're covered by NIS2 too. C: Check first, then clarify with the customer. Remember your choice.",
+   "data": {
+    "question": "What do you reply?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Too small, doesn't affect us",
+      "at": "@small"
+     },
+     {
+      "key": "B",
+      "text": "Now we're covered by NIS2 too",
+      "at": "@covered"
+     },
+     {
+      "key": "C",
+      "text": "Check first, then ask the customer",
+      "at": "@Check"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Remember"
+    },
+    "hint": "Remember your choice."
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "C is the safe route. In Germany, the BSI offers a scope check with a questionnaire, as a first assessment that isn't legally binding. On A: covered customers must hold their suppliers to security requirements. On B: the law there doesn't automatically oblige every supplier. NIS2 is national law in each EU country; for your case, get legal advice.",
+   "data": {
+    "mode": "rule",
+    "kicker": "The one step",
+    "card": {
+     "letter": "C",
+     "title": "Check first, then answer",
+     "sub": "use a scope check, e.g. the BSI's",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Doesn't affect us",
+      "note": "supply chain counts",
+      "at": "@covered"
+     },
+     {
+      "text": "B: Covered by NIS2 now",
+      "note": "not automatically",
+      "at": "@law"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "BSI · scope check, supply chain"
+     },
+     {
+      "kind": "auslegung",
+      "label": "Applied to you: Scutoria's reading"
+     },
+     {
+      "kind": "unsicher",
+      "label": "Your case: legally open"
+     }
+    ],
+    "sources_at": "@BSI"
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Many aren't covered directly, but feel it through customers. Check first, then answer. What would you have picked? Tell me in the comments.",
+   "data": {
+    "kicker": "Series · Does this apply to us?",
+    "rule": "Check first, then answer.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "What would you have picked?",
+     "at": "@What"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice."
+   },
+   "source_ids": []
+  }
+ ]
+}

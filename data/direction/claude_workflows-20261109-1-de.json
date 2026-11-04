@@ -1,0 +1,606 @@
+{
+  "video_id": "claude_workflows-20261109-1-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Mythos: Je länger die CLAUDE.md, desto besser",
+  "notes": "Produktion Woche 1 (01.11.2026), Plan-Agent A: Thema 09.11. Thema 1 (M1), Reihe Mythos-Check. Q1-Aufbau nach claude_workflows-20261109-3-de. Quellen am 01.11.2026 als Markdown abgerufen (best-practices.md, memory.md). Leitobjekt CLAUDE.md (Hook-Tab, Statusleiste). Keine Terminal-Szene, weil der Terminal-Marker immer rot ist und hier kein Fehler gezeigt wird. Bewusst ohne /init (Thema 09.11.-2) und ohne Hooks (Thema 09.11.-3).",
+  "hook": {
+    "id": "H2",
+    "note": "Mythos-Format: Behauptung als Frage, die Doku widerspricht (memory: longer files reduce adherence)."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Schreibst du alles in die CLAUDE.md, damit Claude nichts vergisst?",
+      "on_screen": "Alles in die CLAUDE.md?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Editor mit wachsender CLAUDE.md",
+      "why": {
+        "curiosity": "Antwort naheliegend"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Je länger die CLAUDE.md, desto besser befolgt Claude sie? Die Doku sagt das Gegenteil.",
+      "on_screen": "Je länger, desto besser?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Editor mit langer CLAUDE.md, Marker auf dem Release-Ablauf, Frage",
+      "why": {
+        "truth": "memory: Longer files consume more context and reduce adherence",
+        "curiosity": "Widerspruch zur Intuition"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Jede Zeile deiner CLAUDE.md kostet Claude bei jeder Aufgabe ein wenig Aufmerksamkeit.",
+      "on_screen": "Jede Zeile kostet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Zeilen leuchten nacheinander auf",
+      "why": {
+        "visual": "wenig Handlung"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Deine wichtigste Regel steht in Zeile dreihundert. Vielleicht geht sie genau dort unter.",
+      "on_screen": "Regel in Zeile 300?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Scrollen zu einer tiefen Zeile",
+      "why": {
+        "truth": "best-practices: the line gets lost, wenn die Datei lang ist; Zeilennummer ist ein Beispielwert"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie du eine lange CLAUDE.md in wenigen Schritten kürzt.",
+      "on_screen": "So kürzt du die CLAUDE.md",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Schritte /doctor, .claude/rules/, Skill",
+      "why": {
+        "curiosity": "kein Widerspruch"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Best practices for Claude Code: Keep CLAUDE.md short (every line takes a little of Claude's attention on every task; what belongs in it); Put team procedures in skills; /doctor, /doctor prompt-audit; .claude/rules/ with paths",
+      "url": "https://code.claude.com/docs/en/best-practices",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Best Practices"
+    },
+    {
+      "id": "S2",
+      "title": "How Claude remembers your project: Write effective instructions (target under 200 lines; longer files consume more context and reduce adherence); My CLAUDE.md is too large (/doctor proposes trims)",
+      "url": "https://code.claude.com/docs/en/memory",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Memory"
+    }
+  ],
+  "unverified": [
+    "Ab welcher Länge Claude Regeln in der Praxis übersieht: nicht belegt; die Doku nennt nur das Ziel unter 200 Zeilen und dass längere Dateien die Befolgung verringern.",
+    "Wie /doctor seine Kürzungsvorschläge im Terminal genau darstellt: nicht geprüft, im Video nicht gezeigt.",
+    "Die Zeilen der CLAUDE.md und der Release-Ablauf im Hook sind Beispielwerte (Beispiel-Chip)."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "CLAUDE.md",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "CLAUDE.md: wächst",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Ziel: unter 200 Zeilen",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "lädt: jede Sitzung",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Inhalt: nur das Nötige",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Abläufe: in Skills",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Kürzen: /doctor",
+          "tone": "accent"
+        },
+        {
+          "beat": "b7",
+          "text": "CLAUDE.md: kurz",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Je länger die CLAUDE.md, desto besser? Laut Claude-Code-Dokumentation nicht: Ziel sind unter 200 Zeilen pro Datei, längere Dateien verbrauchen mehr Kontext und werden weniger zuverlässig befolgt. Drin bleibt, was Claude nicht aus dem Code ablesen kann; Abläufe kommen in Skills, Ordnerregeln nach .claude/rules/.",
+    "companion_text": "Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk. Grundlage: Claude-Code-Dokumentation (Best Practices, Memory), abgerufen am 01.11.2026. Editor und Terminal sind eine animierte Darstellung, keine Bildschirmaufnahme. Grenze: Eine kurze CLAUDE.md bleibt Kontext; eine Garantie, dass Claude sich daran hält, gibt es laut Doku nicht. Regeln ohne Ausnahme gehören in Hooks oder Deny-Regeln.",
+    "hashtags": [
+      "claudecode",
+      "claudemd",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "Mythos lange CLAUDE.md"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Je länger die CLAUDE.md, desto besser befolgt Claude sie? Die Doku sagt das Gegenteil.",
+      "data": {
+        "question": "Je länger, desto besser?",
+        "chip": "noch eine Zeile?",
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          }
+        ],
+        "file": "CLAUDE.md",
+        "lines": [
+          [
+            [
+              "com",
+              "# Projektregeln"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Tests: npm test"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Ordnerstruktur erklärt …"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "kw",
+              "Release"
+            ],
+            [
+              "",
+              " in 14 Schritten:"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "",
+              "1. Version erhöhen …"
+            ]
+          ]
+        ],
+        "focus_line": 3,
+        "zoom": 1.08,
+        "mark_word": "länger",
+        "env_word": "CLAUDE",
+        "click_word": "besser",
+        "question_word": "desto",
+        "chip_word": "Gegenteil"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:länger"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Auf der Memory-Seite der Dokumentation steht: Ziel sind unter zweihundert Zeilen pro Datei. Längere Dateien verbrauchen mehr Kontext und werden weniger zuverlässig befolgt.",
+      "data": {
+        "kicker": "Claude Code Docs · Memory",
+        "page_title": "How Claude remembers your project",
+        "quotes": [
+          "target under 200 lines per CLAUDE.md file",
+          "Longer files consume more context and reduce adherence."
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Länger: weniger zuverlässig befolgt",
+        "page_word": "Memory",
+        "quote1_word": "zweihundert",
+        "quote2_word": "Längere",
+        "translation_word": "zuverlässig"
+      },
+      "overlay": {
+        "title": "Kurz schlägt lang",
+        "marker_at": "w:Ziel",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Der Grund: Claude Code lädt die CLAUDE.md in jede Sitzung. Jede Zeile kostet bei jeder Aufgabe ein wenig Aufmerksamkeit, egal ob sie gerade passt.",
+      "data": {
+        "headline": "",
+        "gate": 1,
+        "chip": "jede Zeile zählt",
+        "nodes": [
+          {
+            "label": "Sitzung startet"
+          },
+          {
+            "label": "CLAUDE.md",
+            "hook": true
+          },
+          {
+            "label": "Aufgabe: Bugfix"
+          },
+          {
+            "label": "Aufgabe: Tests"
+          },
+          {
+            "label": "Aufgabe: Doku"
+          }
+        ],
+        "travel_word": "jede",
+        "travel_end_word": "egal",
+        "gate_word": "kostet",
+        "shell_chip": "lädt komplett",
+        "shell_word": "lädt"
+      },
+      "overlay": {
+        "title": "Jede Zeile, jede Aufgabe",
+        "marker_at": "w:Grund",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Drin bleibt nur, was Claude nicht selbst aus dem Code ablesen kann: die genauen Befehle für Tests und Typcheck, irreführende Stellen, Entscheidungen, die nirgends im Repo stehen, und alles, was du schon zweimal korrigiert hast.",
+      "data": {
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          }
+        ],
+        "lines": [
+          [
+            [
+              "com",
+              "# Befehle"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Ein Test: "
+            ],
+            [
+              "str",
+              "pnpm vitest run <datei>"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Typcheck: "
+            ],
+            [
+              "str",
+              "pnpm tsc --noEmit"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# Konventionen"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Fehler über src/lib/errors.ts"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "src/legacy/ ist aktiv, nicht kopieren"
+            ]
+          ],
+          [
+            [
+              "com",
+              "# Fallstricke"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Integrationstests: DATABASE_URL"
+            ]
+          ]
+        ],
+        "focus_line": 5,
+        "pre_line": 1,
+        "line_h": 54,
+        "zoom": 1.08,
+        "callout": "steht nicht im Code",
+        "callout_num": "1",
+        "typed_word": "Code",
+        "pre_word": "Befehle",
+        "mark_word": "irreführende",
+        "click_word": "Entscheidungen",
+        "callout_word": "zweimal"
+      },
+      "overlay": {
+        "title": "Was drin bleibt",
+        "example": true,
+        "marker_at": "w:Drin",
+        "dim_at": "w:Entscheidungen",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Erkenntnis: Mehr Text heißt nicht mehr Wirkung. Ein langer Ablauf wie dein Release gehört in einen Skill. Den liest Claude erst ganz, wenn die Aufgabe ihn braucht.",
+      "data": {
+        "top": {
+          "title": "CLAUDE.md · lang",
+          "verdict": "verdünnt",
+          "rows": [
+            "Release-Ablauf drin",
+            "lädt bei jeder Aufgabe"
+          ]
+        },
+        "bottom": {
+          "title": "CLAUDE.md · kurz",
+          "verdict": "wirkt",
+          "rows": [
+            "nur das Nötige",
+            "Ablauf im Skill"
+          ]
+        },
+        "top_word": "Mehr",
+        "bottom_word": "Ablauf"
+      },
+      "overlay": {
+        "title": "Weniger wirkt mehr",
+        "marker": "auslegung",
+        "marker_at": "w:Erkenntnis",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "So kürzt du: Slash doctor schlägt Streichungen vor, prompt-audit findet veraltete und widersprüchliche Anweisungen. Regeln für einen Ordner kommen nach .claude/rules, Abläufe in einen Skill.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Kürzungen vorschlagen",
+            "code": "/doctor",
+            "at_word": "doctor"
+          },
+          {
+            "title": "Widersprüche finden",
+            "code": "/doctor prompt-audit",
+            "at_word": "prompt"
+          },
+          {
+            "title": "Ordnerregeln auslagern",
+            "code": ".claude/rules/",
+            "at_word": "Regeln"
+          },
+          {
+            "title": "Abläufe als Skill",
+            "code": ".claude/skills/<name>/SKILL.md",
+            "at_word": "Abläufe"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "In vier Schritten kürzen",
+        "marker": "fakt",
+        "marker_at": "w:kürzt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Kurz und konkret schlägt lang und vollständig. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "CLAUDE.md: kurz",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "/doctor"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  Vorschlag: Ordnerstruktur streichen"
+          }
+        ],
+        "statement": "Kurz und konkret schlägt lang und vollständig.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Kurz",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

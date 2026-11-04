@@ -1,0 +1,65 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [],
+          "exit": 0,
+          "input_tokens": 4744,
+          "output_tokens": 682,
+          "num_turns": 1,
+          "duration_s": 6.2
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [],
+          "exit": 0,
+          "input_tokens": 4744,
+          "output_tokens": 529,
+          "num_turns": 1,
+          "duration_s": 3.3
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "mcp__claude-code-docs__query_docs_filesystem_claude_code_docs",
+            "mcp__claude-code-docs__search_claude_code_docs"
+          ],
+          "exit": 0,
+          "input_tokens": 28255,
+          "output_tokens": 519,
+          "num_turns": 3,
+          "duration_s": 20.8
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "mcp__claude-code-docs__query_docs_filesystem_claude_code_docs",
+            "mcp__claude-code-docs__search_claude_code_docs"
+          ],
+          "exit": 0,
+          "input_tokens": 26560,
+          "output_tokens": 516,
+          "num_turns": 3,
+          "duration_s": 12.7
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

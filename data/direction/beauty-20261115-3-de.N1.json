@@ -1,0 +1,404 @@
+{
+ "video_id": "beauty-20261115-3-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "„Mineralischer Sonnenschutz ist immer ohne Nano“",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261115-3-de.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (tube), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Titandioxid und Zinkoxid sind auch als Nanomaterial zugelassen; dann steht (nano) in der Liste. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Immer ohne Nano? Diese Zulassung kommt nicht einfach so. Vor der Zulassung von Farbstoffen, Konservierern und UV-Filtern, auch als Nano, bewertet der wissenschaftliche Ausschuss SCCS die vorgelegten Daten.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-products-specific-topics/nanomaterials_en",
+   "title": "Europäische Kommission: Nanomaterials (Cosmetics)",
+   "checked_at": "2026-11-01",
+   "label": "EU-Kommission: Nanomaterialien"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Mineralischer Sonnenschutz ist immer ohne Nano. Das stimmt so nicht.",
+   "on_screen": "Immer ohne Nano?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Titandioxid und Zinkoxid sind in der EU auch als Nanomaterial als UV-Filter zugelassen.",
+   "on_screen": "Titandioxid und Zinkoxid sind in der EU auch als Nanomateria",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Steckt in mineralischem Sonnenschutz manchmal Nano?",
+   "on_screen": "Steckt in mineralischem Sonnenschutz manchmal Nano?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer „mineralisch“ für „ohne Nano“ hält, liest die Zutatenliste nicht zu Ende.",
+   "on_screen": "Wer „mineralisch“ für „ohne Nano“ hält, liest die Zutatenlis",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, woran du Nano in der Liste der Bestandteile erkennst.",
+   "on_screen": "Schau, woran du Nano in der Liste der Bestandteile erkennst.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Mineralischer Sonnenschutz ist immer ohne Nano. Das stimmt so nicht.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Immer ohne Nano?",
+    "badge": "Mythos?",
+    "kicker": "Unter der Lupe · Sonnenschutz",
+    "product": {
+     "kind": "tube",
+     "line1": "MINERALISCH",
+     "line2": "LSF",
+     "big": "30"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "Was ist Nano überhaupt? Laut Verordnung ein unlösliches oder biologisch beständiges, absichtlich hergestelltes Material mit einer oder mehreren äußeren Abmessungen oder einer inneren Struktur zwischen 1 und 100 Nanometern.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Was Nano heißt",
+    "zoom": "(nano)",
+    "flip": false,
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 2 Absatz 1 k",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "unlöslich oder biologisch beständig"
+     },
+     {
+      "text": "absichtlich hergestellt"
+     },
+     {
+      "text": "1 bis 100 Nanometer",
+      "value": "nm"
+     }
+    ],
+    "kicker": "Worum es geht",
+    "product": {
+     "kind": "tube",
+     "line1": "MINERALISCH",
+     "line2": "LSF",
+     "big": "30"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "UV-Filter dürfen in der EU nur verwendet werden, wenn sie zugelassen sind, auch als Nanomaterial. Laut EU-Kommission sind bisher vier UV-Filter als Nano zugelassen, darunter Titandioxid und Zinkoxid. Dazu ist Carbon Black als Nano-Farbstoff zugelassen.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_list",
+   "data": {
+    "headline": "Vier UV-Filter als Nano",
+    "caption": "laut EU-Kommission zugelassen",
+    "rows": [
+     {
+      "label": "Titandioxid",
+      "value": "nano"
+     },
+     {
+      "label": "Zinkoxid",
+      "value": "nano"
+     },
+     {
+      "label": "MBBT",
+      "value": "nano"
+     },
+     {
+      "label": "Tris-Biphenyl Triazine",
+      "value": "nano"
+     }
+    ],
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "tube",
+     "line1": "MINERALISCH",
+     "line2": "LSF",
+     "big": "30"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "Ob in deinem Produkt Nano steckt, zeigt die Liste der Bestandteile. Nanomaterialien stehen dort mit dem Wort nano in Klammern hinter dem Namen.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "Die Kennzeichnung",
+    "left": {
+     "tag": "ohne Zusatz",
+     "title": "TITANIUM DIOXIDE",
+     "rows": [
+      {
+       "text": "nicht als Nano"
+      }
+     ],
+     "product": {
+      "kind": "tube"
+     }
+    },
+    "right": {
+     "tag": "mit Zusatz",
+     "title": "… (nano)",
+     "rows": [
+      {
+       "text": "Nanomaterial"
+      },
+      {
+       "text": "Pflicht laut Artikel 19"
+      }
+     ],
+     "product": {
+      "kind": "tube"
+     }
+    },
+    "kicker": "Im Vergleich"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "Diese Zulassung kommt nicht einfach so. Vor der Zulassung von Farbstoffen, Konservierern und UV-Filtern, auch als Nano, bewertet der wissenschaftliche Ausschuss SCCS die vorgelegten Daten.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Erst bewertet, dann zugelassen",
+    "zoom": "(nano)",
+    "flip": true,
+    "doc": {},
+    "rows": [
+     {
+      "text": "SCCS prüft die Daten"
+     },
+     {
+      "text": "dann Zulassung durch die Kommission"
+     },
+     {
+      "text": "gilt auch für Nano-Formen"
+     }
+    ],
+    "kicker": "Laut Quelle",
+    "product": {
+     "kind": "tube",
+     "line1": "MINERALISCH",
+     "line2": "LSF",
+     "big": "30"
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "Für dich heißt das: Mineralisch sagt nichts über die Teilchengröße. Wenn dir das wichtig ist, such in der Liste nach dem Zusatz nano in Klammern.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "So prüfst du es",
+    "items": [
+     {
+      "title": "Liste der Bestandteile",
+      "sub": "unter Ingredients",
+      "icon": "doc"
+     },
+     {
+      "title": "nach (nano) suchen",
+      "sub": "hinter dem Namen",
+      "icon": "check"
+     },
+     {
+      "title": "mineralisch ≠ ohne Nano",
+      "sub": "Kennzeichnung entscheidet",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Im Alltag",
+    "product": {
+     "kind": "tube",
+     "line1": "MINERALISCH",
+     "line2": "LSF",
+     "big": "30"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Erst die Liste lesen, dann auftragen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Merksatz",
+    "rule": "Erst lesen, dann auftragen.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "tube",
+     "line1": "MINERALISCH",
+     "line2": "LSF",
+     "big": "30"
+    },
+    "question": {
+     "text": "Steht (nano) auf deiner Liste?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung."
+   }
+  }
+ ]
+}

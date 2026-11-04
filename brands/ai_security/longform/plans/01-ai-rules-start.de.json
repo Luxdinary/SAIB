@@ -1,0 +1,1855 @@
+{
+ "video_id": "yt01-ai-rules-start-de",
+ "slug": "01-ai-rules-start",
+ "lang": "de",
+ "title": "Ihre Belegschaft nutzt schon KI. Womit die Regeln anfangen.",
+ "short_title": "KI-Regeln",
+ "version": "Fassung 3 (Langvideo), Entwurf 2026-11-02. Freigegebener Wortlaut aus SKRIPTE/01-ai-rules-start.de.md Fassung 2 (Stefan, 29.10. und 01.11.2026) unverändert; neu und zur Freigabe: Kaltstart (c0s0), Überblick (c0s2), Kapitel 4 (c4) und die Überleitungen, im Feld new=true markiert.",
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Richtlinie (EU) 2016/943, Art. 2 Abs. 1 Buchst. a bis c · EUR-Lex · Abruf 2026-10-18; § 26b Abs. 1 Z 3 UWG · ris.bka.gv.at; § 2 Nr. 1 Buchst. b GeschGehG · gesetze-im-internet.de · Abruf 2026-10-23",
+   "short": "RL (EU) 2016/943 Art. 2 · § 26b UWG · § 2 GeschGehG · Abruf 18./23.10.2026"
+  },
+  {
+   "id": "S2",
+   "label": "Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, Version 1.0 vom 6. Mai 2024, Abschnitte 2.2, 2.4 und 3.1 · datenschutzkonferenz-online.de · Abruf 2026-10-18",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 2.2, 2.4, 3.1 · Abruf 18.10.2026"
+  },
+  {
+   "id": "S3",
+   "label": "Datenschutzkonferenz, Orientierungshilfe „Künstliche Intelligenz und Datenschutz“, Version 1.0 vom 6. Mai 2024, Abschnitte 2.2, 2.4, 2.5 und 3.1 · Abruf 2026-10-18",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 2.2–3.1 · Abruf 18.10.2026"
+  },
+  {
+   "id": "S4",
+   "label": "Verordnung (EU) 2024/1689, Art. 4 und Art. 113 Buchst. a, konsolidierte Fassung vom 27. Juli 2026; Verordnung (EU) 2026/1744, Art. 1 Nr. 5 · EUR-Lex · Abruf 2026-10-23",
+   "short": "VO (EU) 2024/1689 Art. 4, 113 · VO (EU) 2026/1744 · Abruf 23.10.2026"
+  },
+  {
+   "id": "S5",
+   "label": "Europäische Kommission, AI literacy, questions and answers, Stand 20. Oktober 2026 · digital-strategy.ec.europa.eu · Abruf 2026-10-23",
+   "short": "EU-Kommission, AI literacy Q&A, Stand 20.10.2026 · Abruf 23.10.2026"
+  },
+  {
+   "id": "S6",
+   "label": "Verordnung (EU) 2024/1689, Art. 3 Nr. 3, 4 und 60, Art. 50, Art. 113, konsolidierte Fassung vom 27. Juli 2026 · EUR-Lex · Abruf 2026-10-23",
+   "short": "VO (EU) 2024/1689 Art. 3, 50, 113 · Abruf 23.10.2026"
+  },
+  {
+   "id": "S7",
+   "label": "Verordnung (EU) 2016/679, Art. 24 Abs. 1 · EUR-Lex · Abruf 2026-10-19",
+   "short": "DSGVO Art. 24 Abs. 1 · Abruf 19.10.2026"
+  },
+  {
+   "id": "S8",
+   "label": "Verordnung (EU) 2024/1689, Art. 4; Verordnung (EU) 2016/679, Art. 24 Abs. 1; Richtlinie (EU) 2016/943, Art. 2 Abs. 1 Buchst. c · EUR-Lex · Abruf 2026-10-18 und 2026-10-19",
+   "short": "KI-VO Art. 4 · DSGVO Art. 24 · RL 2016/943 Art. 2 · Abruf 18./19.10.2026"
+  },
+  {
+   "id": "S9",
+   "label": "Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, Version 1.0 vom 6. Mai 2024, Abschnitt 2.2, S. 10 · datenschutzkonferenz-online.de · Abruf 2026-10-18",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 2.2, S. 10 · Abruf 18.10.2026"
+  },
+  {
+   "id": "S10",
+   "label": "BSI, Generative KI-Modelle, Chancen und Risiken für Industrie und Behörden, Version 2.0 vom 17. Januar 2025, Maßnahme M16, S. 49 · bsi.bund.de · Abruf 2026-10-18",
+   "short": "BSI, Generative KI-Modelle 2.0, M16, S. 49 · Abruf 18.10.2026"
+  },
+  {
+   "id": "S11",
+   "label": "Wirtschaftskammer Österreich, KI-Guidelines für KMU, 3. Auflage, April 2026, S. 14 bis 27 · wko.at · Abruf 2026-10-23",
+   "short": "WKO, KI-Guidelines für KMU, 3. Aufl. 2026 · Abruf 23.10.2026"
+  },
+  {
+   "id": "S12",
+   "label": "Datenschutzbehörde, Künstliche Intelligenz und Datenschutz · dsb.gv.at · Abruf 2026-10-23; RIS, Bundesgesetzblatt, Volltextsuche · Abruf 2026-10-23; KI-MIG vom 22. Juli 2026 (BGBl. 2026 I Nr. 223), §§ 2, 6, 8, 15 · gesetze-im-internet.de · Abruf 2026-10-23",
+   "short": "DSB · RIS · KI-MIG (BGBl. 2026 I Nr. 223) · Abruf 23.10.2026"
+  },
+  {
+   "id": "S13",
+   "label": "Verordnung (EU) 2016/679, Art. 88 Abs. 1 · Abruf 2026-10-23; Datenschutzkonferenz, Orientierungshilfe vom 6. Mai 2024, Abschnitt 1.12, S. 8 · Abruf 2026-10-18; Datenschutzkonferenz, Orientierungshilfe vom 6. Mai 2024, Abschnitt 2.2, S. 10 · Abruf 2026-10-23",
+   "short": "DSGVO Art. 88 · DSK OH 2024, Abschn. 1.12, 2.2 · Abruf 18./23.10.2026"
+  }
+ ],
+ "chapters": [
+  {
+   "id": "c0",
+   "num": "",
+   "title": "Nutzt Ihre Belegschaft schon KI?",
+   "kicker": "SCUTORIA · KI-REGELN",
+   "card": false,
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_office_night.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Beispielfall · nachgestellt",
+      "time": "DI 09:12",
+      "place": "Büro, Muster Elektrotechnik e.U. (erfunden)",
+      "obj": {
+       "label": "Textassistent · Neuer Chat",
+       "from": "Eingabe",
+       "subject": "Angebot Wohnanlage Nord",
+       "lines": [
+        "Schreib mir ein Angebot für die Elektro-",
+        "installation, 24 Wohnungen. Kunde:",
+        "Hausverwaltung Beispiel GmbH, Ansprech-",
+        "partnerin und Preise aus der Mail unten."
+       ]
+      },
+      "obj_at": "@Textassistenten",
+      "highlight": {
+       "line": 2,
+       "label": "Kundendaten",
+       "at": "@entschieden"
+      }
+     },
+     "say": [
+      {
+       "text": "Dienstag, neun Uhr zwölf, in einem kleinen Elektrobetrieb. Jemand im Büro öffnet einen Textassistenten, um ein Angebot zu entwerfen, und fügt die Mail des Kunden gleich mit ein. Es funktioniert. Entschieden hat das niemand.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Die Frage dieses Videos",
+      "text": "Nutzt Ihre Belegschaft schon *KI-Tools*, ohne dass der Betrieb etwas entschieden hat?",
+      "sub": "Welcher Schritt zuerst kommt, und was eine Richtlinie leistet und was nicht.",
+      "sub_at": "@Dieses"
+     },
+     "say": [
+      {
+       "text": "Nutzt Ihre Belegschaft schon KI-Tools, ohne dass der Betrieb etwas entschieden hat?"
+      },
+      {
+       "text": "Dieses Video zeigt, welcher Schritt zuerst kommt und was eine Richtlinie leistet und was nicht."
+      }
+     ]
+    },
+    {
+     "type": "chapters",
+     "new": true,
+     "data": {
+      "headline": "In diesem Video",
+      "items": [
+       {
+        "num": "1",
+        "title": "Die Lage im kleinen Betrieb",
+        "at": "@Lage"
+       },
+       {
+        "num": "2",
+        "title": "Sechs Schritte in Reihenfolge",
+        "at": "@sechs"
+       },
+       {
+        "num": "3",
+        "title": "Verlangt ein Gesetz eine Richtlinie?",
+        "at": "@Gesetz"
+       },
+       {
+        "num": "4",
+        "title": "Was tun Sie? Zwei Fälle",
+        "at": "@Fälle"
+       },
+       {
+        "num": "5",
+        "title": "Der Beispielbetrieb",
+        "at": "@Beispielbetrieb"
+       },
+       {
+        "num": "6",
+        "title": "Was die Dokumente nicht sind",
+        "at": "@nicht"
+       },
+       {
+        "num": "7",
+        "title": "Freies Memo und Toolkit",
+        "at": "@Memo"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Wir gehen in dieser Reihenfolge vor: die Lage, die sechs Schritte, die Frage, ob ein Gesetz eine Richtlinie verlangt, zwei Fälle, in denen Sie selbst entscheiden, der Beispielbetrieb, was die Dokumente nicht sind, und am Ende das freie Memo."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "kaltstart.js",
+    "teil-1.js",
+    "ueberblick.js"
+   ],
+   "inserts": [
+    {
+     "at": "",
+     "dur": 3.0,
+     "file": "yt/t01_hands_typing.mp4",
+     "start": 0.0
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "num": "1",
+   "title": "Die Lage im kleinen Betrieb",
+   "kicker": "1 · Die Lage",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_workshop_bench.mp4",
+     "data": {
+      "kicker": "Eine typische Lage",
+      "text": "Es funktioniert, also macht es die nächste Person auch. *Entschieden* hat das niemand.",
+      "sub": "Ein Betrieb ohne IT-Abteilung, irgendwo in der EU.",
+      "sub_at": "@Betrieb"
+     },
+     "say": [
+      {
+       "text": "Nehmen Sie eine typische Lage. Ein Betrieb ohne IT-Abteilung, irgendwo in der EU. Jemand im Büro öffnet einen Textassistenten, um ein Angebot zu entwerfen. Es funktioniert, also macht die nächste Person es auch. Entschieden hat das niemand."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Drei Antworten auf eine Frage",
+      "note": "Um die *mittlere* geht es in diesem Video.",
+      "note_at": "@mittlere",
+      "doc": {
+       "label": "Start-Memo · scutoria.com",
+       "title": "Nutzt Ihre Belegschaft heute KI-Tools bei der Arbeit?",
+       "lines": [
+        {
+         "text": "Ja, mit betrieblichen Konten, die der Betrieb eingerichtet hat",
+         "at": "@betrieblichen"
+        },
+        {
+         "text": "Ja, mit privaten Konten, oder wir wissen es nicht",
+         "at": "@privaten",
+         "mark": "open",
+         "mark_at": "@mittlere"
+        },
+        {
+         "text": "Nein, soweit wir wissen",
+         "at": "@Nein"
+        },
+        {
+         "text": "Schriftliche Regeln: ein paar Sätze oder eine E-Mail",
+         "at": "@Schriftliche",
+         "mark": "open"
+        },
+        {
+         "text": "Einweisung: informell, ohne Nachweis",
+         "at": "@Einweisung",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das freie Start-Memo fragt, ob Ihre Belegschaft heute KI-Tools bei der Arbeit nutzt, und bietet drei Antworten an. Ja, mit betrieblichen Konten, die der Betrieb eingerichtet hat. Ja, mit privaten Konten, oder wir wissen es nicht. Nein, soweit wir wissen. Um die mittlere Antwort geht es in diesem Video. Schriftliche Regeln: ein paar Sätze oder eine E-Mail. Einweisung: informell, ohne Nachweis."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Daraus folgen drei Dinge",
+      "items": [
+       {
+        "title": "Entschieden wird an der Tastatur",
+        "sub": "nicht vom Betrieb",
+        "at": "@hineinkommt"
+       },
+       {
+        "title": "Niemand kann sagen, was die Regel war",
+        "sub": "wenn etwas schiefgeht",
+        "at": "@schiefgeht"
+       },
+       {
+        "title": "Es gibt nichts zu zeigen",
+        "sub": "wenn Kunde, Versicherer oder Belegschaft fragen",
+        "at": "@Kunde"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Daraus folgen drei Dinge. Was in die Tools hineinkommt, wird an der Tastatur entschieden, nicht vom Betrieb. Wenn etwas schiefgeht, kann niemand sagen, was die Regel war. Und wenn ein Kunde, ein Versicherer oder die eigene Belegschaft fragt, was geregelt ist, gibt es nichts zu zeigen."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Wann ist etwas ein *Geschäftsgeheimnis*?",
+      "doc": {
+       "label": "Richtlinie (EU) 2016/943 · Art. 2",
+       "title": "Drei Bedingungen",
+       "lines": [
+        {
+         "text": "a  geheim, nicht allgemein bekannt",
+         "at": "@drei"
+        },
+        {
+         "text": "b  von kommerziellem Wert, weil geheim",
+         "at": "@Bedingungen"
+        },
+        {
+         "text": "c  Gegenstand angemessener Geheimhaltungsmaßnahmen",
+         "at": "@dritte",
+         "mark": "hl",
+         "mark_at": "@angemessener"
+        },
+        {
+         "text": "Österreich: § 26b UWG · Deutschland: § 2 GeschGehG",
+         "at": "@Österreich"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Ein Grund, warum das zählt, ist das Geschäftsgeheimnis. Nach der Geschäftsgeheimnis-Richtlinie ist eine Information nur dann ein Geschäftsgeheimnis, wenn sie drei Bedingungen erfüllt, und die dritte lautet: Sie war Gegenstand angemessener Geheimhaltungsmaßnahmen. Österreich und Deutschland haben dieselbe Voraussetzung in ihrem nationalen Recht.",
+       "marker": "fakt",
+       "source": "S1"
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Namen und Anschriften zu entfernen reicht regelmäßig nicht, der Personenbezug lässt sich aus dem *Zusammenhang* herstellen.",
+      "origin": "Sinngemäß nach: Datenschutzkonferenz, Orientierungshilfe KI und Datenschutz, 6. Mai 2024"
+     },
+     "say": [
+      {
+       "text": "Und die deutschen Datenschutzaufsichtsbehörden halten fest: Namen und Anschriften aus einer Eingabe zu entfernen, reicht regelmäßig nicht, weil sich der Personenbezug aus dem Zusammenhang herstellen lässt.",
+       "marker": "fakt",
+       "source": "S2"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "bg": "yt/lib_office_shelf.mp4",
+     "data": {
+      "kicker": "Unsere Auslegung",
+      "text": "Ein Papier in der Schublade ist *dokumentiert*, aber nie erteilt worden.",
+      "sub": "Womit also anfangen? Nicht mit dem längsten Dokument.",
+      "sub_at": "@Womit"
+     },
+     "say": [
+      {
+       "text": "Manche Betriebe haben ein Dokument. Unsere Auslegung: Ein Papier in der Schublade ist dokumentiert, aber nie erteilt worden. Darauf kommen wir zurück.",
+       "marker": "auslegung"
+      },
+      {
+       "text": "Womit also anfangen? Nicht mit dem längsten Dokument."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-2.js"
+   ],
+   "inserts": [
+    {
+     "at": "funktioniert, also",
+     "dur": 4.0,
+     "file": "yt/t01_electrician_back.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "num": "2",
+   "title": "Sechs Schritte in Reihenfolge",
+   "kicker": "2 · Womit Sie anfangen",
+   "scenes": [
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Die Reihenfolge des Memos",
+      "items": [
+       {
+        "title": "Bestand aufnehmen",
+        "at": "@Reihenfolge"
+       },
+       {
+        "title": "Betriebliche Konten und die eine Seite",
+        "at": "@Reihenfolge+0.6"
+       },
+       {
+        "title": "Die Richtlinie",
+        "at": "@Reihenfolge+1.2"
+       },
+       {
+        "title": "Einweisung und Nachweis",
+        "at": "@Reihenfolge+1.8"
+       },
+       {
+        "title": "Kennzeichnungs-Check und datierte Seite",
+        "at": "@Reihenfolge+2.4"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Das freie Memo stellt sieben Fragen und nennt dann den einen Schritt, der zuerst kommt. Wir gehen seine Reihenfolge durch, denn auf die Reihenfolge kommt es an."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Schritt eins: *Bestand* aufnehmen",
+      "note": "„Unklar“ ist ein zulässiger Eintrag: ein Befund, kein Versäumnis.",
+      "note_at": "@Unklar",
+      "doc": {
+       "label": "Bestand · Beispiel",
+       "title": "Eine Zeile je Tool",
+       "lines": [
+        {
+         "text": "Textassistent · Büro · betriebliches Konto",
+         "at": "@Welche"
+        },
+        {
+         "text": "Übersetzungs-App · Montage · privates Konto",
+         "at": "@Konten",
+         "mark": "open"
+        },
+        {
+         "text": "Bildgenerator · Marketing · unklar",
+         "at": "@Unklar",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Schritt eins: Bestand aufnehmen. Welche Tools werden tatsächlich benutzt, mit welchen Konten? Eine Zeile je Tool. „Unklar“ ist ein zulässiger Eintrag: ein Befund, kein Versäumnis."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "bg": "yt/lib_screen_blur.mp4",
+     "data": {
+      "headline": "Schritt zwei: der *Zugang*",
+      "left": {
+       "title": "Privates Konto",
+       "tone": "amber",
+       "rows": [
+        {
+         "text": "Profil der einzelnen Person",
+         "at": "@Profile"
+        },
+        {
+         "text": "Training mit Eingaben unklar",
+         "at": "@Trainingszwecken"
+        }
+       ]
+      },
+      "right": {
+       "title": "Betriebliches Konto",
+       "tone": "blue",
+       "at": "@betriebliche",
+       "rows": [
+        {
+         "text": "Training mit Eingaben abgeschaltet",
+         "at": "@abgeschaltetem"
+        },
+        {
+         "text": "Funktionsadresse, kein Personenname",
+         "at": "@Funktionsadresse"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Schritt zwei, und bei privaten oder unbekannten Konten setzt das Memo ihn an die erste Stelle: betriebliche Konten für die freigegebenen Tools, mit abgeschaltetem Training mit Eingaben, unter einer Funktionsadresse des Betriebs, ohne Personennamen. Keine privaten Konten für die Arbeit."
+      },
+      {
+       "text": "Die deutschen Datenschutzaufsichtsbehörden raten, dass Beschäftigte nicht mit privaten Accounts arbeiten müssen sollten, weil Profile einzelner Beschäftigter entstehen können, und dass Accounts so eingestellt werden, dass keine Eingaben zu Trainingszwecken verarbeitet werden.",
+       "marker": "fakt",
+       "source": "S3"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Unsere Auslegung",
+      "text": "Die Regel muss *Tool und Zugangsweg* nennen.",
+      "sub": "Sonst erlaubt sie stillschweigend den privaten Zugang."
+     },
+     "say": [
+      {
+       "text": "Unsere Auslegung: Eine Regel, die nur das Tool nennt, erlaubt stillschweigend die Nutzung über den privaten Zugang. Die Regel muss Tool und Zugangsweg nennen.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Die *eine Seite* zum Aushängen",
+      "doc": {
+       "label": "Aushang · Was nie in ein KI-Tool kommt",
+       "title": "Über welchen Zugang auch immer",
+       "lines": [
+        {
+         "text": "Angaben, mit denen Kunden, Beschäftigte oder Bewerber erkennbar sind",
+         "at": "@Angaben"
+        },
+        {
+         "text": "Zugangsdaten und Passwörter",
+         "at": "@Zugangsdaten"
+        },
+        {
+         "text": "Kalkulationen, Preise, Verträge, Kundenlisten",
+         "at": "@Kalkulationen"
+        },
+        {
+         "text": "Gesundheitsangaben",
+         "at": "@Gesundheitsangaben"
+        },
+        {
+         "text": "Unterlagen Dritter unter Vertraulichkeit",
+         "at": "@Unterlagen"
+        },
+        {
+         "text": "Im Zweifel nichts eingeben, eine benannte Person fragen",
+         "at": "@Zweifelsregel",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Und hängen Sie die eine Seite aus. Sie sagt, was nie in ein Tool hineinkommt, über welchen Zugang auch immer: Angaben, mit denen ein Kunde, eine beschäftigte Person oder ein Bewerber erkennbar ist; Zugangsdaten und Passwörter; Kalkulationen, Preise, Verträge, Kundenlisten und andere vertrauliche Informationen; Gesundheitsangaben; Unterlagen Dritter, die unter Vertraulichkeit übergeben wurden. Die Liste schließt mit der Zweifelsregel: Im Zweifel wird nichts eingegeben, sondern eine benannte Person gefragt."
+      },
+      {
+       "text": "Unsere Auslegung: Eine Aufzählung ohne Zweifelsregel ist unvollständig, weil kein Katalog alle Fälle trifft.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_documents_desk.mp4",
+     "data": {
+      "headline": "Schritt drei: die *Richtlinie*",
+      "note": "Neun Regelbereiche, von der Leitung unterschrieben.",
+      "note_at": "@unterschrieben",
+      "doc": {
+       "label": "KI-Nutzungsrichtlinie · Muster",
+       "title": "Neun Regelbereiche",
+       "lines": [
+        {
+         "text": "1 Zugelassene Tools und Zugänge",
+         "at": "@zugelassene"
+        },
+        {
+         "text": "2 Zulässige und unzulässige Verwendungen",
+         "at": "@zulässige"
+        },
+        {
+         "text": "3 Was nie hinein darf · 4 Unvermeidbarer Personenbezug",
+         "at": "@Personenbezug"
+        },
+        {
+         "text": "5 Prüfung vor Verwendung · 6 Freigabe nach außen",
+         "at": "@Prüfung"
+        },
+        {
+         "text": "7 Kennzeichnung · 8 Meldung von Vorfällen",
+         "at": "@Kennzeichnung"
+        },
+        {
+         "text": "9 Zuständigkeit für Zweifelsfälle",
+         "at": "@Zuständigkeit"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Schritt drei: die Richtlinie selbst. Neun Regelbereiche: zugelassene Tools und Zugänge; zulässige und unzulässige Verwendungen; was nie hinein darf; der Umgang mit unvermeidbarem Personenbezug; die Prüfung vor Verwendung; die Freigabe von Schriftstücken, die den Betrieb verlassen; Kennzeichnung; Meldung von Vorfällen; Zuständigkeit für Zweifelsfälle. Von der Leitung unterschrieben."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Vier Angaben machen eine *Regel*",
+      "items": [
+       {
+        "title": "Ein Datum, ab dem sie gilt",
+        "at": "@Datum"
+       },
+       {
+        "title": "Eine benannte verantwortliche Person",
+        "at": "@benannte"
+       },
+       {
+        "title": "Ein nachvollziehbarer Weg der Bekanntgabe",
+        "at": "@nachvollziehbarer"
+       },
+       {
+        "title": "Eine Bestätigung je Person",
+        "sub": "Geltungsbeginn nach der Einweisung",
+        "at": "@Bestätigung"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Unsere Auslegung: Vier Angaben machen aus einem Text eine geltende Regelung. Ein Datum, ab dem sie gilt. Eine benannte verantwortliche Person. Ein nachvollziehbarer Weg der Bekanntgabe. Und eine Bestätigung, dass jede Person sie erhalten hat. Keine Quelle nennt diese vier. Sie folgen aus der Formulierung der Aufsicht, dass Weisungen erteilt und dokumentiert werden sollen. Und der Geltungsbeginn liegt nach der Einweisung: Eine Regelung, die niemand kennt, ist schlechter als keine.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Schritt vier: *Einweisung* und Nachweis",
+      "doc": {
+       "label": "Nachweis Einweisung · Beispiel",
+       "title": "Datum · Inhalte · Teilnehmende",
+       "lines": [
+        {
+         "text": "Datum der Einweisung",
+         "at": "@Datum"
+        },
+        {
+         "text": "Inhalte: Richtlinie, eine Seite, Zweifelsfälle",
+         "at": "@Inhalte"
+        },
+        {
+         "text": "Wer dabei war, mit Bestätigung",
+         "at": "@dabei"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Schritt vier: die Einweisung, und der Nachweis dazu: Datum, Inhalte, wer dabei war."
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Maßnahmen, um die Entwicklung der *KI-Kompetenz* des Personals zu unterstützen. Ein bestimmtes Niveau muss niemand garantieren.",
+      "origin": "Sinngemäß nach: Verordnung (EU) 2024/1689, Art. 4; gilt seit 02.02.2025, Wortlaut seit 27.07.2026"
+     },
+     "say": [
+      {
+       "text": "Artikel vier der KI-Verordnung verlangt von Anbietern und Betreibern Maßnahmen, um die Entwicklung der KI-Kompetenz ihres Personals zu unterstützen. Ein bestimmtes Niveau muss für niemanden garantiert werden. Der Artikel gilt seit 2. Februar 2025, sein heutiger Wortlaut seit 27. Juli 2026.",
+       "marker": "fakt",
+       "source": "S4"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Was zur Einweisung *belegt* ist",
+      "left": {
+       "title": "Fakt",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "Kein Zertifikat nötig",
+         "at": "@Zertifikat"
+        },
+        {
+         "text": "Internes Verzeichnis der Schulungen",
+         "at": "@Verzeichnis"
+        }
+       ]
+      },
+      "right": {
+       "title": "Lücke",
+       "tone": "red",
+       "at": "@Wie",
+       "rows": [
+        {
+         "text": "Wie oft wiederholen?",
+         "at": "@wiederholt"
+        },
+        {
+         "text": "Wie lange aufbewahren?",
+         "at": "@aufbewahrt"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die Europäische Kommission schreibt, ein Zertifikat sei nicht nötig; Organisationen können ein internes Verzeichnis der Schulungen führen. Das ist ein Leitfaden, kein Gesetz.",
+       "marker": "fakt",
+       "source": "S5"
+      },
+      {
+       "text": "Wie oft die Einweisung wiederholt und wie lange der Nachweis aufbewahrt wird: Dafür haben wir keine Quelle gefunden. Den Rhythmus setzt der Betrieb.",
+       "marker": "luecke"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Schritt fünf",
+      "text": "Der *Kennzeichnungs-Check* nach Artikel 50.",
+      "sub": "Kein Fall? Dann ein datierter Vermerk: derzeit kein Fall."
+     },
+     "say": [
+      {
+       "text": "Schritt fünf: der Kennzeichnungs-Check nach Artikel fünfzig der KI-Verordnung, der seit 2. August 2026 gilt. Kommt nichts, was Sie veröffentlichen oder für Kunden betreiben, aus einem KI-System, ist der Nachweis ein datierter Vermerk: derzeit kein Fall. Die drei Betreiberfälle bekommen ein eigenes Video.",
+       "marker": "fakt",
+       "source": "S6"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_documents_desk.mp4",
+     "data": {
+      "headline": "Schritt sechs: *datieren*",
+      "doc": {
+       "label": "Stand · eine Seite",
+       "title": "Was geregelt ist, was offen ist",
+       "lines": [
+        {
+         "text": "Geregelt: Konten, eine Seite, Richtlinie",
+         "at": "@geregelt",
+         "mark": "ok"
+        },
+        {
+         "text": "Offen: mit Termin",
+         "at": "@offen",
+         "mark": "open"
+        },
+        {
+         "text": "Verantwortlich: benannte Person",
+         "at": "@verantwortlich"
+        },
+        {
+         "text": "Nächste Überprüfung: Datum",
+         "at": "@Überprüfung"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Schritt sechs: datieren. Eine Seite: was geregelt ist, was offen ist, wer verantwortlich ist, wann die nächste Überprüfung ist."
+      },
+      {
+       "text": "Wo personenbezogene Daten im Spiel sind, steht die Überprüfung in der DSGVO selbst: Die technischen und organisatorischen Maßnahmen des Verantwortlichen werden erforderlichenfalls überprüft und aktualisiert.",
+       "marker": "fakt",
+       "source": "S7"
+      },
+      {
+       "text": "Eine Frist für diese Überprüfung: Dafür haben wir keine Quelle gefunden. Das Toolkit bietet sechs oder zwölf Monate an und empfiehlt keines von beiden.",
+       "marker": "luecke"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Die Reihenfolge",
+      "items": [
+       {
+        "title": "Bestand",
+        "at": "@Bestand"
+       },
+       {
+        "title": "Konten und die eine Seite",
+        "at": "@Konten"
+       },
+       {
+        "title": "Richtlinie",
+        "at": "@Richtlinie"
+       },
+       {
+        "title": "Einweisung",
+        "at": "@Einweisung"
+       },
+       {
+        "title": "Kennzeichnung, datierte Seite",
+        "at": "@Kennzeichnungs-Check"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Das ist die Reihenfolge: Bestand, Konten und die eine Seite, die Richtlinie, die Einweisung, der Kennzeichnungs-Check, die datierte Seite."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-3a.js",
+    "teil-3b.js",
+    "teil-3c.js"
+   ],
+   "inserts": [
+    {
+     "at": "hängen Sie die eine Seite",
+     "dur": 4.0,
+     "file": "yt/t01_pin_notice.mp4"
+    },
+    {
+     "at": "Von der Leitung unterschrieben",
+     "dur": 3.5,
+     "file": "yt/t01_hand_signing.mp4"
+    },
+    {
+     "at": "Schritt vier",
+     "dur": 4.0,
+     "file": "yt/t01_briefing_back.start.png"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "num": "3",
+   "title": "Verlangt ein Gesetz eine Richtlinie?",
+   "kicker": "3 · Was gilt",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "kicker": "Die Frage hinter alldem",
+      "text": "Verlangt irgendein Gesetz eine *schriftliche Richtlinie*?"
+     },
+     "say": [
+      {
+       "text": "Jetzt die Frage hinter alldem: Verlangt irgendein Gesetz eine schriftliche Richtlinie?"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Unsere Auslegung: *nein*. Drei Artikel kommen dem am nächsten.",
+      "left": {
+       "title": "Was sie verlangen",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "KI-VO Art. 4: Maßnahmen zur KI-Kompetenz",
+         "at": "@vier"
+        },
+        {
+         "text": "DSGVO Art. 24: technische und organisatorische Maßnahmen",
+         "at": "@vierundzwanzig"
+        },
+        {
+         "text": "RL 2016/943: angemessene Geheimhaltung",
+         "at": "@Geschäftsgeheimnis-Richtlinie"
+        }
+       ]
+      },
+      "right": {
+       "title": "Was keiner sagt",
+       "tone": "violet",
+       "at": "@Keiner",
+       "rows": [
+        {
+         "text": "„Richtlinie“",
+         "at": "@Keiner"
+        },
+        {
+         "text": "Üblicher Weg, alle drei zu erfüllen",
+         "at": "@übliche"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Unsere Auslegung: nein. Weder die KI-Verordnung noch die DSGVO enthält eine Bestimmung, die einen Betrieb ausdrücklich verpflichtet, eine schriftliche KI-Nutzungsrichtlinie zu führen. Drei Artikel kommen dem am nächsten. Artikel vier der KI-Verordnung verlangt Maßnahmen, die die KI-Kompetenz unterstützen. Artikel vierundzwanzig Absatz eins der DSGVO verlangt vom Verantwortlichen technische und organisatorische Maßnahmen. Die Geschäftsgeheimnis-Richtlinie schützt Informationen nur, wenn angemessene Geheimhaltungsmaßnahmen getroffen wurden. Keiner sagt „Richtlinie“. Eine Richtlinie ist der übliche Weg, alle drei zugleich zu erfüllen, keine eigene Pflicht.",
+       "marker": "auslegung",
+       "source": "S8"
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Klare interne Weisungen erteilen und dokumentieren: ob, unter welchen Voraussetzungen und zu welchen Zwecken welche KI-Anwendungen eingesetzt werden dürfen.",
+      "origin": "Sinngemäß nach: Datenschutzkonferenz, Orientierungshilfe KI und Datenschutz, 6. Mai 2024, Abschnitt 2.2"
+     },
+     "say": [
+      {
+       "text": "Warum dann eine schreiben? Weil drei Stellen sie empfehlen."
+      },
+      {
+       "text": "Die deutschen Datenschutzaufsichtsbehörden sagen in ihrer Orientierungshilfe vom 6. Mai 2024, dass klare interne Weisungen erteilt und dokumentiert werden sollten, ob, unter welchen Voraussetzungen und zu welchen konkreten Zwecken welche KI-Anwendungen eingesetzt werden dürfen.",
+       "marker": "fakt",
+       "source": "S9"
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "Festlegen, welche KI-Modelle wofür benutzt werden dürfen, welche *Eingaben* zulässig sind und wie Ausgaben weiterverwendet werden, verbindlich.",
+      "origin": "Sinngemäß nach: BSI, Generative KI-Modelle, Version 2.0, Maßnahme M16"
+     },
+     "say": [
+      {
+       "text": "Von der technischen Seite sagt das BSI in Deutschland dasselbe. Seine Maßnahme M sechzehn verlangt, dass Arbeitgeber festlegen, welche KI-Modelle und Anwendungen wofür benutzt werden dürfen, welche Eingaben zulässig sind und wie Ausgaben weiterverwendet werden, verbindlich, zum Beispiel in Richtlinien.",
+       "marker": "fakt",
+       "source": "S10"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Wirtschaftskammer Österreich",
+      "text": "Ein kostenloses *Muster* mit zehn Paragrafen.",
+      "sub": "Mehrere Stellen sind seit der Änderungsverordnung vom 8. Juli 2026 überholt.",
+      "sub_at": "@Mehrere"
+     },
+     "say": [
+      {
+       "text": "Die Wirtschaftskammer Österreich veröffentlicht in ihren KI-Guidelines für KMU, dritte Auflage, April 2026, ein kostenloses Muster einer KI-Richtlinie mit zehn nummerierten Paragrafen. Mehrere Stellen sind seit der Änderungsverordnung vom 8. Juli 2026 überholt.",
+       "marker": "fakt",
+       "source": "S11"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Unsere Auslegung",
+      "text": "Fachlicher Stand, *kein Recht*.",
+      "sub": "Die beste veröffentlichte Begründung, die wir gefunden haben."
+     },
+     "say": [
+      {
+       "text": "Unsere Auslegung: Diese drei Stellen sind deutsch und österreichisch. Ihre Empfehlungen sind fachlicher Stand, kein Recht, und binden außerhalb ihrer Länder niemanden. Sie sind trotzdem die beste veröffentlichte Begründung, die wir gefunden haben, und die neun Regelbereiche der Richtlinie folgen ihnen.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "headline": "Was *offen* ist",
+      "left": {
+       "title": "Geheimhaltung",
+       "tone": "amber",
+       "rows": [
+        {
+         "text": "Gilt eine Richtlinie als angemessene Maßnahme?",
+         "at": "@angemessene"
+        },
+        {
+         "text": "Im Einzelfall entschieden",
+         "at": "@Einzelfall"
+        }
+       ]
+      },
+      "right": {
+       "title": "Aufsicht Art. 4",
+       "tone": "amber",
+       "at": "@ebenfalls",
+       "rows": [
+        {
+         "text": "Deutschland: Bundesnetzagentur, seit 29.07.2026",
+         "at": "@Bundesnetzagentur"
+        },
+        {
+         "text": "Österreich: keine amtliche Quelle (Stand 23.10.)",
+         "at": "@Österreich"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das ist offen: ob eine Richtlinie als angemessene Geheimhaltungsmaßnahme gilt. Eine Gerichtsentscheidung dazu wurde nicht gesucht. Ohne Regel fehlt jeder Anhaltspunkt für eine Maßnahme; mit Regel kann der Betrieb zeigen, dass er eine getroffen hat. Ob sie angemessen ist, wird im Einzelfall entschieden.",
+       "marker": "unsicher",
+       "source": "S1"
+      },
+      {
+       "text": "Das ist ebenfalls offen: welche Behörde Artikel vier in Ihrem Land beaufsichtigt. Deutschland hat die Bundesnetzagentur benannt, durch ein Gesetz, das seit 29. Juli 2026 in Kraft ist. Für Österreich nennt zum Stand 23. Oktober 2026 keine amtliche Quelle die Marktüberwachungsbehörde. Die Pflichten gelten trotzdem.",
+       "marker": "unsicher",
+       "source": "S12"
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-4.js"
+   ],
+   "inserts": [
+    {
+     "at": "Warum dann eine schreiben",
+     "dur": 4.0,
+     "file": "yt/t01_owner_reading.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "num": "4",
+   "title": "Was tun Sie? Zwei Fälle",
+   "kicker": "4 · Was tun Sie?",
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/lib_office_night.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Fall 1 · nachgestellt",
+      "time": "MI 14:05",
+      "place": "Büro, Reklamation einer Kundin",
+      "obj": {
+       "label": "E-Mail · Reklamation",
+       "from": "kundin@beispiel.example",
+       "subject": "Steckdose Küche ohne Funktion",
+       "lines": [
+        "Name und Anschrift der Kundin",
+        "Drei Fotos aus ihrer Wohnung",
+        "Beschreibung: Küche, zweiter Stock,",
+        "Mieterin seit 2019, Kind im Haushalt"
+       ]
+      },
+      "obj_at": "@Reklamation",
+      "highlight": {
+       "line": 1,
+       "label": "Zusammenhang",
+       "at": "@privat"
+      }
+     },
+     "say": [
+      {
+       "text": "Zwei Fälle zum Mitentscheiden. Beide sind erfunden, die Regeln dahinter nicht. Fall eins. Mittwoch, vierzehn Uhr fünf. Eine Kundin schickt eine Reklamation, mit Namen, Anschrift, drei Fotos aus ihrer Wohnung und einer genauen Beschreibung. Die Büroleitung will schnell eine höfliche Antwort und hat den Textassistenten privat auf dem Telefon.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Name und Anschrift löschen, dann die Mail einfügen",
+        "at": "@löschen"
+       },
+       {
+        "key": "B",
+        "text": "Die Mail einfügen, es geht ja nur um eine Antwort",
+        "at": "@einfügen,"
+       },
+       {
+        "key": "C",
+        "text": "Nicht einfügen: allgemein entwerfen, im Zweifel fragen",
+        "at": "@Nichts"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: Name und Anschrift löschen und dann die Mail einfügen. B: Die Mail einfügen, es geht ja nur um eine Antwort. C: Nichts von der Kundin einfügen, die Antwort allgemein entwerfen lassen und im Zweifel die benannte Person fragen. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie A wählen",
+      "headline": "Der Name ist weg, der Zusammenhang nicht",
+      "items": [
+       {
+        "time": "14:06",
+        "text": "Name und Anschrift gelöscht",
+        "tone": "neutral",
+        "at": "@gelöscht"
+       },
+       {
+        "time": "14:06",
+        "text": "Fotos und Beschreibung bleiben drin",
+        "tone": "amber",
+        "at": "@Fotos"
+       },
+       {
+        "time": "14:07",
+        "text": "Eingabe über ein privates Konto",
+        "tone": "amber",
+        "at": "@privates"
+       },
+       {
+        "time": "",
+        "text": "Die Kundin bleibt erkennbar",
+        "tone": "red",
+        "at": "@erkennbar"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Viele wählen A, und es klingt vernünftig. Im Beispiel sind Name und Anschrift gelöscht, aber die Fotos und die Beschreibung der Wohnung bleiben drin, und die Eingabe läuft über ein privates Konto.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "Genau das meinen die deutschen Datenschutzaufsichtsbehörden: Namen und Anschriften zu entfernen, reicht regelmäßig nicht, weil sich der Personenbezug aus dem Zusammenhang herstellen lässt. Die Kundin bleibt erkennbar.",
+       "marker": "fakt",
+       "source": "S2"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Nicht einfügen, im Zweifel fragen",
+       "sub": "Die Antwort allgemein entwerfen lassen und die Angaben der Kundin selbst ergänzen.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Name löschen",
+        "note": "reicht regelmäßig nicht",
+        "at": "@reicht"
+       },
+       {
+        "key": "B",
+        "text": "Einfach einfügen",
+        "note": "privates Konto, keine Regel",
+        "at": "@privaten"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C. Die Antwort lässt sich ohne die Angaben der Kundin entwerfen; Namen und Einzelheiten ergänzt die Büroleitung danach selbst. A reicht regelmäßig nicht, und B gibt alles über einen privaten Zugang weiter, für den es keine Regel gibt.",
+       "marker": "auslegung",
+       "source": "S3"
+      },
+      {
+       "text": "Darum steht die Zweifelsregel auf der einen Seite: Im Zweifel wird nichts eingegeben, sondern eine benannte Person gefragt.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "case",
+     "bg": "yt/lib_documents_desk.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Fall 2 · nachgestellt",
+      "time": "MO 08:30",
+      "place": "Büro der Inhaberin",
+      "obj": {
+       "label": "Ordner · Fundstück",
+       "from": "KI-Richtlinie, 2 Seiten",
+       "subject": "Fassung vom Vorjahr, aus einem Muster",
+       "lines": [
+        "Kein Datum, ab dem sie gilt",
+        "Keine verantwortliche Person",
+        "Nie bekanntgegeben",
+        "Niemand hat sie unterschrieben"
+       ]
+      },
+      "obj_at": "@KI-Richtlinie",
+      "highlight": {
+       "line": 2,
+       "label": "Nie erteilt",
+       "at": "@kennt"
+      }
+     },
+     "say": [
+      {
+       "text": "Fall zwei. Montag, acht Uhr dreißig. Die Inhaberin findet beim Aufräumen eine KI-Richtlinie, zwei Seiten, vor einem Jahr aus einem Muster übernommen. Kein Datum, keine verantwortliche Person, und niemand im Betrieb kennt sie.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "Was tun Sie?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Ausdrucken und ans Schwarze Brett hängen",
+        "at": "@Ausdrucken"
+       },
+       {
+        "key": "B",
+        "text": "Per E-Mail an alle schicken, erledigt",
+        "at": "@E-Mail"
+       },
+       {
+        "key": "C",
+        "text": "Datum, Verantwortliche, Einweisung, Bestätigung",
+        "at": "@Datum"
+       }
+      ],
+      "think": {
+       "at": "@Überlegen",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "Was tun Sie? A: Ausdrucken und ans Schwarze Brett hängen. B: Per E-Mail an alle schicken. C: Ein Datum setzen, eine verantwortliche Person benennen, die Regel in einer Einweisung bekanntgeben und den Erhalt bestätigen lassen. Überlegen Sie kurz."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "Wenn Sie B wählen",
+      "headline": "Verschickt ist nicht erteilt",
+      "items": [
+       {
+        "time": "09:00",
+        "text": "Mail an alle, ohne Datum und Zuständigkeit",
+        "tone": "neutral",
+        "at": "@Neun"
+       },
+       {
+        "time": "09:40",
+        "text": "Zwei Monteure auf der Baustelle lesen sie nicht",
+        "tone": "amber",
+        "at": "@Baustelle"
+       },
+       {
+        "time": "Wochen später",
+        "text": "Ein Kunde fragt, was geregelt ist",
+        "tone": "amber",
+        "at": "@Wochen"
+       },
+       {
+        "time": "",
+        "text": "Kein Nachweis, wer sie kennt",
+        "tone": "red",
+        "at": "@Nachweis"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "B ist schnell. Im Beispiel geht die Mail um neun Uhr an alle, ohne Datum und ohne Zuständigkeit. Zwei Monteure sind auf der Baustelle und lesen sie nicht. Wochen später fragt ein Kunde, was geregelt ist, und der Betrieb hat keinen Nachweis, wer die Regel kennt.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "Der eine Schritt",
+      "card": {
+       "letter": "C",
+       "title": "Vier Angaben, dann gilt sie",
+       "sub": "Datum, verantwortliche Person, Weg der Bekanntgabe, Bestätigung je Person.",
+       "at": "@Richtig"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Aushang allein",
+        "note": "kein Datum, kein Nachweis",
+        "at": "@Aushang"
+       },
+       {
+        "key": "B",
+        "text": "Mail an alle",
+        "note": "verschickt, nicht erteilt",
+        "at": "@Mail"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Richtig ist C, nach unserer Auslegung von vorhin. Die Aufsicht sagt, Weisungen sollen erteilt und dokumentiert werden. Ein Aushang allein hat kein Datum und keinen Nachweis, eine Mail an alle ist verschickt, aber nicht erteilt. Erst mit den vier Angaben wird aus dem Fundstück eine Regel.",
+       "marker": "auslegung",
+       "source": "S9"
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "faelle.js"
+   ],
+   "inserts": [
+    {
+     "at": "drei Fotos",
+     "dur": 3.5,
+     "file": "yt/t01_socket_photos.start.png"
+    },
+    {
+     "at": "Die Inhaberin findet",
+     "dur": 2.9,
+     "file": "yt/t01_drawer_hand.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "num": "5",
+   "title": "Der Beispielbetrieb",
+   "kicker": "5 · Der Beispielbetrieb",
+   "scenes": [
+    {
+     "type": "paper",
+     "bg": "yt/lib_workshop_bench.mp4",
+     "data": {
+      "headline": "Muster Elektrotechnik e.U.",
+      "note": "Erfunden, damit keine echte Person vorkommt.",
+      "doc": {
+       "label": "Beispielbetrieb · erfunden",
+       "title": "Österreich, 10 bis 49 Beschäftigte",
+       "lines": [
+        {
+         "text": "Inhaberin, zugleich Leitung",
+         "at": "@Inhaberin"
+        },
+        {
+         "text": "Büro, Montagepersonal, ein Lehrling",
+         "at": "@Montagepersonal"
+        },
+        {
+         "text": "3 im Büro nutzen einen Textassistenten",
+         "at": "@Drei"
+        },
+        {
+         "text": "2 Monteure: privat auf dem Telefon",
+         "at": "@Monteure",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Der Generator ist mit einem erfundenen Betrieb vorbelegt, damit keine echte Person vorkommt. Muster Elektrotechnik: ein Elektrotechnikbetrieb in Österreich mit zehn bis neunundvierzig Beschäftigten. Eine Inhaberin, die zugleich die Leitung ist, Büro, Montagepersonal und ein Lehrling. Drei Personen im Büro benutzen einen Textassistenten für Angebote, Zusammenfassungen und Übersetzungen. Zwei Monteure haben ihn sich privat auf dem Telefon eingerichtet. Niemand hier ist echt.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Ergebnis im Memo",
+      "text": "Die Lampe steht auf Rot, weil die Konten privat sind.",
+      "sub": "Erster Schritt: betriebliche Konten, Training aus, und die eine Seite aushängen.",
+      "sub_at": "@erste"
+     },
+     "say": [
+      {
+       "text": "Geben Sie diese Lage in das Memo ein, und die Lampe steht auf Rot, weil die Konten privat sind. Der erste Schritt lautet: Richten Sie betriebliche Konten ein, bei denen das Training mit Eingaben abgeschaltet ist, und hängen Sie die eine Seite aus: was nie in ein Tool darf."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Paragraf eins: *Tools und Zugang*",
+      "note": "„Wie bisher“ ist hier keine Antwort.",
+      "note_at": "@bisher",
+      "doc": {
+       "label": "Muster D1 · KI-Nutzungsrichtlinie",
+       "title": "§ 1 Zugelassene Tools und Zugänge",
+       "lines": [
+        {
+         "text": "Textassistent über betriebliches Konto",
+         "at": "@Paragraf"
+        },
+        {
+         "text": "Monteure: Zugang über betriebliches Konto, oder",
+         "at": "@Entweder"
+        },
+        {
+         "text": "dienstliche Nutzung privat endet mit Geltungsbeginn",
+         "at": "@endet",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "In der Richtlinie nennt Paragraf eins die Tools und den Zugang. Für die zwei Monteure heißt das: Entweder bekommen sie Zugang über ein betriebliches Konto, oder die dienstliche Nutzung auf dem privaten Telefon endet mit dem Geltungsbeginn. „Wie bisher“ ist hier keine Antwort."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Paragraf zwei und drei",
+      "left": {
+       "title": "§ 2 Verwendungen",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "Entwürfe für Angebote",
+         "at": "@Entwürfe"
+        },
+        {
+         "text": "Zusammenfassungen von Herstellertexten",
+         "at": "@Herstellertexten"
+        },
+        {
+         "text": "Übersetzungen, Formulierungshilfe",
+         "at": "@Übersetzungen"
+        },
+        {
+         "text": "Ausgeschlossen: Bewerbungen, Beurteilung",
+         "at": "@Bewerbungen"
+        }
+       ]
+      },
+      "right": {
+       "title": "§ 3 Nie hinein, zusätzlich",
+       "tone": "red",
+       "at": "@drei",
+       "rows": [
+        {
+         "text": "Kalkulationsblätter je Auftrag",
+         "at": "@Kalkulationsblätter"
+        },
+        {
+         "text": "Zutrittscodes zu Kundenobjekten",
+         "at": "@Zutrittscodes"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Paragraf zwei nennt die Verwendungen, die tatsächlich vorkommen: Entwürfe für Angebote, Zusammenfassungen von Herstellertexten, Übersetzungen für die zwei Monteure, Formulierungshilfe bei Mängelrügen. Alles, was Bewerbungen oder die Beurteilung einzelner Beschäftigter betrifft, ist ausgeschlossen. Paragraf drei ergänzt die Liste dessen, was nie hinein darf, um zwei Punkte: die Kalkulationsblätter je Auftrag und die Zutrittscodes zu Kundenobjekten."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_documents_desk.mp4",
+     "data": {
+      "headline": "Die eine Seite und die *Nachweisseite*",
+      "doc": {
+       "label": "Muster D7 · Nachweisseite",
+       "title": "Datiert, mit Dokumentnummer",
+       "lines": [
+        {
+         "text": "Aushang D2: nimmt seinen Inhalt aus der Richtlinie",
+         "at": "@Aushang"
+        },
+        {
+         "text": "Nutzungsrichtlinie · Geregelt",
+         "at": "@Nachweisseite",
+         "mark": "ok"
+        },
+        {
+         "text": "Einweisung · Geplant",
+         "at": "@Geregelt",
+         "mark": "open"
+        },
+        {
+         "text": "Wiedervorlage: 12 Monate und bei Anlass",
+         "at": "@Wiedervorlage"
+        },
+        {
+         "text": "Offene Punkte: aufgeführt, nicht versteckt",
+         "at": "@versteckt",
+         "mark": "hl"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Die eine Seite nimmt ihren Inhalt aus der Richtlinie, damit Aushang und Richtlinie sich nicht widersprechen können: was nie hinein darf, mit Ankreuzfeldern für die Einweisung; was vor der Verwendung geprüft wird; wer gefragt wird und wohin Vorfälle gemeldet werden."
+      },
+      {
+       "text": "Und die Nachweisseite: eine Seite, datiert, mit Dokumentnummer, je Nachweis eine Zeile mit dem Stand Geregelt, Geplant oder Offen. Der Beispielbetrieb hat die Wiedervorlage nach zwölf Monaten und bei jedem Anlass gewählt. Offene Punkte werden aufgeführt, nicht versteckt."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-5.js"
+   ],
+   "inserts": [
+    {
+     "at": "Zwei Monteure haben",
+     "dur": 4.0,
+     "file": "yt/t01_electrician_back.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "num": "6",
+   "title": "Was die Dokumente nicht sind",
+   "kicker": "6 · Was es nicht ist",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "kicker": "Keine Rechtsberatung",
+      "text": "Die Dokumente zeigen, was Sie *entschieden* haben.",
+      "sub": "Seit wann, für welche Tools, und wer davon weiß."
+     },
+     "say": [
+      {
+       "text": "Es ist keine Rechtsberatung, und kein Dokument behauptet, dass Ihr Betrieb eine Vorschrift erfüllt. Die Dokumente zeigen, was Sie entschieden haben, seit wann, für welche Tools und wer davon weiß."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "17 Punkte, *8 offen*. Diese betreffen das Video:",
+      "items": [
+       {
+        "title": "Welche Behörde in Österreich beaufsichtigt",
+        "at": "@Behörde"
+       },
+       {
+        "title": "Wie oft einweisen, wie lange aufbewahren",
+        "at": "@oft"
+       },
+       {
+        "title": "Ist eine Richtlinie angemessene Geheimhaltung?",
+        "at": "@Geheimhaltungsmaßnahme"
+       },
+       {
+        "title": "Bindet sie freie Mitarbeit und Dienstleister?",
+        "at": "@freie"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Das Handbuch des Toolkits führt siebzehn Punkte zum Stand 23. Oktober 2026. Acht bleiben offen, und wir nennen die, die dieses Video berühren. Welche Behörde in Österreich beaufsichtigt. Wie oft die Einweisung wiederholt und wie lange der Nachweis aufbewahrt wird. Ob eine Richtlinie eine angemessene Geheimhaltungsmaßnahme ist. Ob die Richtlinie freie Mitarbeit und Dienstleister bindet."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Zwei Punkte genauer",
+      "left": {
+       "title": "Dienstleister",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "Art. 4 erfasst auch Auftragnehmer",
+         "at": "@Auftragnehmer"
+        },
+        {
+         "text": "Wie die Richtlinie sie bindet: Vertragsrecht",
+         "at": "@Vertragsrecht"
+        }
+       ]
+      },
+      "right": {
+       "title": "Betriebsrat",
+       "tone": "amber",
+       "at": "@Betriebsrats",
+       "rows": [
+        {
+         "text": "Beteiligung nach nationalem Arbeitsrecht",
+         "at": "@Arbeitsrecht"
+        },
+        {
+         "text": "Vor der Beschaffung klären",
+         "at": "@Beschaffung"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Zum letzten Punkt: Die Kommission schreibt, dass Artikel vier auch Auftragnehmer und Dienstleister unter dem Weisungsbereich erfasst; wie eine Richtlinie sie bindet, ist Vertragsrecht, und das haben wir nicht erhoben.",
+       "marker": "fakt",
+       "source": "S5"
+      },
+      {
+       "text": "Das ist offen: ob ein KI-Tool die Beteiligung des Betriebsrats auslöst. Das ist nationales Arbeitsrecht, und ein Betrieb mit Betriebsrat klärt es mit einer Fachperson vor der Beschaffung, nicht danach.",
+       "marker": "unsicher",
+       "source": "S13"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Kein amtlicher Katalog",
+      "text": "Ihr Betrieb *entscheidet*. Die Dokumente zeigen, was er entschieden hat."
+     },
+     "say": [
+      {
+       "text": "Und die neun Regelbereiche sind kein amtlicher Katalog. Ein Betrieb kann Bereiche zusammenlegen oder ergänzen, ohne dass etwas fehlt, was eine Quelle verlangt. Ihr Betrieb entscheidet. Die Dokumente zeigen, was er entschieden hat."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-6.js"
+   ],
+   "inserts": []
+  },
+  {
+   "id": "c7",
+   "num": "7",
+   "title": "Freies Memo und Toolkit",
+   "kicker": "7 · Memo und Toolkit",
+   "end_seconds": 20.0,
+   "scenes": [
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Für den ersten Schritt: das *freie Memo*",
+      "note": "Für ein gelesenes Memo wird nichts gespeichert.",
+      "note_at": "@gespeichert",
+      "doc": {
+       "label": "scutoria.com/de/memos/wo-anfangen",
+       "title": "Womit fangen wir bei KI-Regeln an?",
+       "lines": [
+        {
+         "text": "Sieben Fragen",
+         "at": "@Sieben"
+        },
+        {
+         "text": "Ihre Lage und der eine Schritt, der zuerst kommt",
+         "at": "@Lage"
+        },
+        {
+         "text": "Der Plan in Reihenfolge, jede Aussage mit Quelle",
+         "at": "@Plan"
+        },
+        {
+         "text": "PDF per E-Mail",
+         "at": "@PDF"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Für den ersten Schritt in Ihrem eigenen Betrieb: Das Memo ist frei auf scutoria.com; der Link steht in der Beschreibung. Sieben Fragen, dann ein datiertes Memo: Ihre Lage, der eine Schritt, der zuerst kommt, der Plan in Reihenfolge, jede Aussage mit Quelle. Sie lesen es hier; das PDF kommt per E-Mail. Für ein gelesenes Memo wird nichts gespeichert; die Antworten stehen nur in der Adresse der Ergebnisseite."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "KI-Richtlinien-Toolkit",
+      "text": "34 Fragen, *sieben datierte Dokumente*.",
+      "sub": "Handbuch vor dem Kauf lesbar · 199 Euro im Jahr · die ersten zehn Käufer zahlen 99",
+      "sub_at": "@Handbuch"
+     },
+     "say": [
+      {
+       "text": "Wenn Sie die Dokumente wollen: Das KI-Richtlinien-Toolkit macht aus vierunddreißig Fragen, mit dem Beispielbetrieb vorbelegt, sieben datierte Dokumente, von der Nutzungsrichtlinie und der einen Seite zum Aushängen bis zum Plan der Inkraftsetzung mit fünfzehn Schritten und der Nachweisseite, als PDF, DOCX und XLSX. Das Handbuch mit jeder Quelle ist vor dem Kauf lesbar. Das Toolkit kostet 199 Euro im Jahr. Die ersten zehn Käufer zahlen 99."
+      }
+     ]
+    },
+    {
+     "type": "close",
+     "data": {
+      "rule": "Hier ist Scutoria. Synthetische Stimme, Quellen am Bildschirm.",
+      "memo": {
+       "label": "Freies Memo: Womit fangen wir bei KI-Regeln an?",
+       "url": "scutoria.com/de/memos/wo-anfangen",
+       "at": "@Skript"
+      },
+      "toolkit": {
+       "label": "Als Nächstes: Der Sicherheitsfragebogen",
+       "url": "Video 02",
+       "at": "@Nächstes"
+      },
+      "claim": "Belegt. Datiert. Vorzeigbar.",
+      "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+     },
+     "say": [
+      {
+       "text": "Hier ist Scutoria. Die Stimme, die Sie hören, ist synthetisch. Das Skript wurde mit einem KI-Tool entworfen und von uns Satz für Satz geprüft. Jede Zahl und jede Rechtsaussage trägt ihre Quelle am Bildschirm. Quellenbasiert, keine Rechtsberatung."
+      },
+      {
+       "text": "Als Nächstes: Ihr Kunde schickt einen Sicherheitsfragebogen, und wie Sie ehrlich antworten."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-7.js"
+   ],
+   "inserts": [
+    {
+     "at": "Sieben Fragen, dann",
+     "dur": 3.5,
+     "file": "yt/t01_hands_typing.mp4"
+    }
+   ]
+  }
+ ],
+ "reels": [
+  {
+   "id": "r1",
+   "chapter": "c1",
+   "title": "Drei Antworten auf eine Frage",
+   "kicker": "Aus Video 01 · KI-Regeln",
+   "scenes": [
+    "c1s0",
+    "c1s1",
+    "c1s2",
+    "c1s3"
+   ],
+   "inserts": [
+    {
+     "at": "funktioniert, also",
+     "dur": 4.0,
+     "file": "yt/t01_electrician_back.mp4"
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "chapter": "c2",
+   "title": "Die eine Seite zum Aushängen",
+   "kicker": "Aus Video 01 · KI-Regeln",
+   "scenes": [
+    "c2s2",
+    "c2s3",
+    "c2s4"
+   ],
+   "inserts": [
+    {
+     "at": "hängen Sie die eine Seite",
+     "dur": 4.0,
+     "file": "yt/t01_pin_notice.mp4"
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "chapter": "c2",
+   "title": "Vier Angaben machen eine Regel",
+   "kicker": "Aus Video 01 · KI-Regeln",
+   "scenes": [
+    "c2s6",
+    "c2s7",
+    "c2s8",
+    "c2s9"
+   ],
+   "inserts": [
+    {
+     "at": "eine Bestätigung, dass",
+     "dur": 3.5,
+     "file": "yt/t01_hand_signing.mp4"
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "chapter": "c3",
+   "title": "Verlangt ein Gesetz eine Richtlinie?",
+   "kicker": "Aus Video 01 · KI-Regeln",
+   "scenes": [
+    "c3s1",
+    "c3s2",
+    "c3s3"
+   ],
+   "inserts": [
+    {
+     "at": "Warum dann eine schreiben",
+     "dur": 4.0,
+     "file": "yt/t01_owner_reading.mp4"
+    }
+   ]
+  },
+  {
+   "id": "r5",
+   "chapter": "c4",
+   "title": "Was tun Sie? Die Kundenmail",
+   "kicker": "Aus Video 01 · Was tun Sie?",
+   "scenes": [
+    "c4s0",
+    "c4s1",
+    "c4s2",
+    "c4s3"
+   ],
+   "inserts": [
+    {
+     "at": "drei Fotos",
+     "dur": 3.5,
+     "file": "yt/t01_socket_photos.start.png"
+    }
+   ]
+  },
+  {
+   "id": "r6",
+   "chapter": "c6",
+   "title": "Was die Dokumente nicht sind",
+   "kicker": "Aus Video 01 · Was tun Sie?",
+   "scenes": [
+    "c6s0",
+    "c6s1",
+    "c6s2"
+   ],
+   "inserts": [
+    {
+     "at": "Die Dokumente zeigen",
+     "dur": 3.5,
+     "file": "yt/t01_hand_signing.mp4"
+    }
+   ]
+  }
+ ],
+ "mode": "welt",
+ "welt_libs": [
+  "fall-lib.js"
+ ]
+}

@@ -1,0 +1,64 @@
+{
+  "brand_id": "engines",
+  "brand_name": "Revlore",
+  "date": "2026-11-03",
+  "provider": "mock",
+  "model": "mock",
+  "dry_run": true,
+  "topics": [
+    {
+      "key": "nr:25",
+      "nr": "25",
+      "title": "Abgasrückführung: Abgas gegen Stickoxide",
+      "aufbau": "B",
+      "aufbau_note": "Aufbau B nach Wechselregel gewählt",
+      "langs": {
+        "de": {
+          "video_id": "engines-20261103-1-de",
+          "version": "D1",
+          "plan_path": "",
+          "plan_ok": false,
+          "validation_errors": [
+            "beat b2: Szenentyp 'zt_mcb' nicht erlaubt (erlaubt: ['zl_cause', 'zl_hook', 'zl_realtime', 'zl_strobe', 'zl_trace', 'zt_curve', 'zt_photo'])",
+            "beat b3: Szenentyp 'zt_mcb' nicht erlaubt (erlaubt: ['zl_cause', 'zl_hook', 'zl_realtime', 'zl_strobe', 'zl_trace', 'zt_curve', 'zt_photo'])",
+            "beat b3 rows[1].at: Anker 'w:beim#2' braucht Vorkommen Nr. 2, gefunden 1",
+            "beat b4: Szenentyp 'zt_mcb' nicht erlaubt (erlaubt: ['zl_cause', 'zl_hook', 'zl_realtime', 'zl_strobe', 'zl_trace', 'zt_curve', 'zt_photo'])",
+            "Sprechtext 1218 Zeichen, erlaubt 1024–1179 (Ziel 1102)"
+          ],
+          "validation_warnings": [
+            "story: no demonstration beat",
+            "story: no benefit beat",
+            "layout.short_title fehlt (Kurztitel wird aus dem Titel gebildet)"
+          ],
+          "llm_calls": 1,
+          "llm_tokens_in": 17915,
+          "llm_tokens_out": 0,
+          "llm_usd": 0.0,
+          "dry_run_exit": null,
+          "dry_run_note": "",
+          "voice": "",
+          "render_exit": null,
+          "status": "",
+          "duration_s": null,
+          "sfx_stem_peak": null,
+          "overlaps": null,
+          "small_text": null,
+          "export_folder": "",
+          "csv_written": false,
+          "cost_usd_variable": null,
+          "notes": [],
+          "errors": []
+        }
+      },
+      "marked": false,
+      "notes": [],
+      "errors": [
+        "kein gültiger deutscher Plan"
+      ]
+    }
+  ],
+  "skipped": [],
+  "errors": [],
+  "started_at": "2026-11-03T16:12:01+00:00",
+  "finished_at": "2026-11-03T16:12:01+00:00"
+}

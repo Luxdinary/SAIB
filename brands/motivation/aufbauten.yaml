@@ -1,0 +1,34 @@
+# Bildaufbauten Gritwerk (motivation) für den Tagesläufer. Entwurf der Tagesläufer-Sitzung 03.11.2026, geprüft und korrigiert
+# von der Gritwerk-Sitzung am 03.11.2026 (gegen Code und Plan T1): C nur teilweise gebaut, Bildpfade, Hinweise je Aufbau.
+# Vorlage: config/aufbauten.vorlage.yaml. Szenencode in brands/motivation/laborbuch/scenes.py (lb_*). Konzeptplan 03.11.:
+# A und C gebaut; B (lb_versus), D (lb_task) und E (lb_number) noch zu bauen.
+aufbauten:
+  - kuerzel: A
+    name: Nachstellung
+    gebaut: true
+    szenentypen: [lb_photo, lb_hook, lb_split, lb_replicate, lb_verdict, lb_try, lb_setup, lb_measure, lb_result]
+    beispielplan: data/direction/motivation-20261109-1-de.T1.json
+    beispielplan_en: data/direction/motivation-20261109-1-en.T1.json
+    hinweis: "Versuch als KI-Nachstellung (Hände und Menschen von hinten, nie Gesichter) im Fenster der Szene lb_photo mit Hinweis-Nadeln (pins: x, y, label, side, at) und fester Zeile KI-Nachstellung; lb_split: Clip oder Bild oben, Messinstrument (Stoppuhren) unten; Laborbuchseite nur für Zahlen. Bild- und Clipnamen ohne Pfad in data.image / data.clip: gesucht wird erst in assets/higgsfield/testvideo, dann in library. Clips sind 8 s ohne Ton; ohne clip_len kürzer als die Szene zeigt der Plan das letzte Bild (Datei *_last.jpg als image). Ton-Cues in layout.sound_cues (beat, word oder at, cue, gain_db), Geräusche höchstens -18 dBFS (brand.yaml sound). Text der Szenen: sprechtext in beats[].spoken muss Wort für Wort der gesprochene Text sein; Zeitanker \"@Wort\" nur für Wörter, die im Beat wirklich vorkommen."
+  - kuerzel: B
+    name: Gegenüberstellung
+    gebaut: false
+    szenentypen: []
+    hinweis: "zwei Bedingungen nebeneinander über das ganze Video (lb_versus); laut Konzeptplan noch zu bauen"
+  - kuerzel: C
+    name: Hält das?
+    gebaut: true     # Kern gebaut (lb_replicate); der Lesesaal-Hintergrund über ganze Szenen ist noch nicht gebaut
+    szenentypen: [lb_hook, lb_photo, lb_replicate, lb_verdict, lb_try]
+    beispielplan: data/direction/motivation-20261109-1-de.T1.json
+    beispielplan_en: data/direction/motivation-20261109-1-en.T1.json
+    hinweis: "Original gegen Wiederholungen auf einer Effektachse (lb_replicate: je Studie eine Zeile mit Punkt und Intervall, Nullmarke, nur Werte aus den Studien), danach lb_verdict mit Stempel Hält / Gemischt / Nicht bestätigt / Offen. Der Beispielplan zeigt den Kern, aber noch in Aufbau A (Nachstellungs-Szenen davor); kein eigener Archiv-Hintergrund: Bild als lb_photo-Fenster mit Bild aus der Bibliothek (gw_readingroom.jpg oder gw_real_lecture_hall.jpg) einsetzen."
+  - kuerzel: D
+    name: Mitmachen
+    gebaut: false
+    szenentypen: []
+    hinweis: "Aufgabe im Vollbild mit Countdown (lb_task); laut Konzeptplan noch zu bauen"
+  - kuerzel: E
+    name: Kleingedrucktes
+    gebaut: false
+    szenentypen: []
+    hinweis: "berühmte Zahl unter der Lupe, Kette der Herkunft (lb_number); laut Konzeptplan noch zu bauen"

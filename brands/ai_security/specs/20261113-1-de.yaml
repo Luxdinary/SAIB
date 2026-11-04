@@ -1,0 +1,100 @@
+id: ai_security-20261113-1-de
+version: F2
+title: "Backup: eine Kopie gehört offline"
+short: "Backup offline"
+reihe: "Fünf Minuten, die gefehlt haben"
+note: "F2 im Format \"Was tust du?\", rückwärts erzählt. Beispielfall nachgestellt: Betrieb, Person, Uhrzeiten und Ablauf sind erfunden; Mechanik (Erpressersoftware verschlüsselt angeschlossene Laufwerke und verbundene Cloud-Speicher) und Schritt (eine Kopie offline, Platte trennen) aus S1 und S2, am 02.11.2026 erneut gelesen. Der alte Plan ai_security-20261113-1-de.json bleibt unverändert."
+description: "Montagmorgen, nichts geht mehr auf, auch die Backup-Platte nicht. Wir spulen zurück bis zu dem Handgriff, der gefehlt hat. Ein nachgestellter Fall mit dem einen Schritt, den das britische NCSC rät."
+hashtags: [backup, ransomware, datensicherung, kmu, fuenfminuten]
+sources:
+  - {id: S1, url: "https://www.ncsc.gov.uk/blog-post/offline-backups-in-an-online-world", title: "NCSC blog: Offline backups in an online world", checked_at: "2026-11-02", label: "NCSC, Offline-Backups"}
+  - {id: S2, url: "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/always-back-up-your-most-important-data", title: "NCSC: Top tips for staying secure online – Backing up your data", checked_at: "2026-11-02", label: "NCSC, Daten sichern"}
+unverified:
+  - "Konkrete Backup-Produkte: nicht genannt."
+  - "Ablauf im Beispielfall (Montag 07:40, Sonntagnacht, Freitag 18:05, Mail von Jana) ist erfunden und als Beispiel gekennzeichnet."
+  - "Dass Option A (zweite Platte am Rechner) und B (ständig synchronisierter Cloud-Ordner) nicht schützen, ist Scutorias Auslegung von S1 (angeschlossene Laufwerke und verbundene Cloud-Speicher wurden mitverschlüsselt); im Bild als Auslegung markiert."
+  - "3-2-1-Regel und regelmäßiges Testen (S1) in dieser Fassung nicht verwendet, damit es bei einem Schritt bleibt."
+pick: demonstration
+hooks:
+  - {type: question, spoken: "Was bleibt dir, wenn auch dein Backup verschlüsselt ist?", screen: "Backup auch verschlüsselt. Was nun?"}
+  - {type: misconception, spoken: "Du hast ein Backup, also bist du sicher? Nicht, wenn es angeschlossen ist.", screen: "Backup da = sicher?", src: [S1]}
+  - {type: surprising_fact, spoken: "Das NCSC sah Erpressersoftware, die auch Backup-Laufwerke verschlüsselte.", screen: "Auch das Backup verschlüsselt", src: [S1]}
+  - {type: concrete_risk, spoken: "Dein Backup hängt am Rechner? Dann kann Erpressersoftware es mitverschlüsseln.", screen: "Backup-Platte am Rechner?", src: [S1, S2]}
+  - {type: demonstration, spoken: "Montag, sieben Uhr vierzig. Keine Datei geht mehr auf, auch nicht das Backup.", screen: "MO 07:40 · Auch das Backup ist weg", visual: "Uhrzeit groß, die Mail der Kollegin kommt als Papierkarte herein, die Backup-Zeile wird markiert"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Montag, sieben Uhr vierzig. Jana schreibt: Keine Datei geht mehr auf. Auch die Backup-Platte am Rechner ist verschlüsselt."
+    d:
+      kicker: "Beispielfall · nachgestellt"
+      time: "MO 07:40"
+      place: "Büro einer Hausverwaltung"
+      mail_at: "@Jana"
+      mail: {from: "Jana (Büro)", addr: "jana@hausverwaltung.example", time: "07:40", subject: "Nichts geht mehr auf", lines: ["Morgen, keine Datei öffnet sich.", "Auch die Backup-Platte am PC:", "alles verschlüsselt."]}
+      highlight: {line: 1, label: "auch Backup", at: "@Backup"}
+  - f: problem
+    t: sc_inspect
+    s: "Dabei war alles eingerichtet. Ein Backup, jeden Abend, automatisch. Ziel: eine USB-Platte, immer am Rechner. Nur: Laut NCSC kann Erpressersoftware auf angeschlossene Laufwerke übergreifen."
+    src: [S2]
+    d:
+      kicker: "Was ihr hattet"
+      headline: "Backup war doch da?"
+      rows:
+        - {label: "Backup", value: "jeden Abend automatisch", verdict: "unauffällig", at: "@Backup"}
+        - {label: "Ziel", value: "USB-Platte", verdict: "unauffällig", at: "@Ziel"}
+        - {label: "Anschluss", value: "immer am Rechner", verdict: "bequem", at: "@immer"}
+      finding: {text: "Alles eingerichtet.", at: "@Nur"}
+      fact: {kind: fakt, text: "Schadsoftware kann auf angeschlossene Laufwerke übergreifen.", source: "NCSC · Daten sichern", at: "@Laut"}
+  - f: problem
+    t: sc_timeline
+    s: "Spulen wir zurück. Sonntagnacht startet die Erpressersoftware und verschlüsselt alles, auch die Platte. Freitag, achtzehn Uhr fünf: Die Sicherung ist fertig, die Platte bleibt dran. Genau hier fehlte ein Handgriff."
+    src: [S1]
+    d:
+      kicker: "Zurückgespult"
+      tag: "Beispiel"
+      headline: "Zurück bis zum Moment"
+      items:
+        - {time: "MO 07:40", text: "Daten und Backup verschlüsselt", tone: red, at: 0.3}
+        - {time: "SO 02:10", text: "Erpressersoftware startet", tone: amber, at: "@Sonntagnacht"}
+        - {time: "FR 18:05", text: "Sicherung fertig. Platte bleibt.", tone: amber, at: "@Freitag"}
+      source: {kind: fakt, label: "NCSC · angeschlossene Laufwerke", at: 1.0}
+  - f: explanation
+    t: sc_choice
+    s: "Was änderst du? A: Eine zweite Platte dazu, auch am Rechner. B: Dazu ein Cloud-Ordner, ständig synchron. C: Die Platte nach jeder Sicherung abziehen. Entscheide dich jetzt."
+    src: [S1]
+    d:
+      question: "Was änderst du?"
+      options:
+        - {key: A, text: "Zweite Platte, auch am Rechner", at: "@zweite"}
+        - {key: B, text: "Cloud-Ordner, ständig synchron", at: "@Cloud"}
+        - {key: C, text: "Platte nach der Sicherung abziehen", at: "@abziehen"}
+      think: {seconds: 2.6, at: "@Entscheide"}
+      hint: "Entscheide dich jetzt."
+  - f: insight
+    t: sc_step
+    s: "Richtig ist C. Die Regel des NCSC: Zu jeder Zeit ist mindestens ein Backup offline. Ein Laufwerk, das gerade nicht gebraucht wird, wird getrennt. A und B hängen weiter dran. Das NCSC sah sogar verbundene Cloud-Speicher mitverschlüsselt."
+    src: [S1, S2]
+    d:
+      mode: rule
+      kicker: "Der eine Schritt"
+      card: {letter: C, title: "Eine Kopie immer offline", sub: "Platte nach jeder Sicherung abziehen", at: 0.2}
+      strikes:
+        - {text: "A: Zweite Platte am Rechner", note: "auch verbunden", at: "@A"}
+        - {text: "B: Cloud, ständig synchron", note: "auch verbunden", at: "@hängen"}
+      sources:
+        - {kind: fakt, label: "NCSC · eine Kopie offline"}
+        - {kind: fakt, label: "NCSC · Laufwerk trennen"}
+        - {kind: auslegung, label: "A und B: Auslegung Scutoria"}
+      sources_at: "@NCSC"
+  - f: close
+    t: sc_close
+    s: "Ein Backup schützt erst, wenn eine Kopie offline ist. Also: Platte ab nach jeder Sicherung. Was hättest du gewählt? Schreib es in die Kommentare."
+    d:
+      kicker: "Reihe · Fünf Minuten"
+      rule: "Eine Kopie gehört offline."
+      rule_at: 0.3
+      question: {text: "Was hättest du gewählt?", at: "@hättest"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Belegt. Datiert. Vorzeigbar."
+      disclaimer: "Quellenbasiert. Keine Rechtsberatung."

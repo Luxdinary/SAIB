@@ -1,0 +1,103 @@
+id: ai_security-20261114-1-en
+version: F2
+title: "The fake Microsoft support call"
+short: "Falscher Microsoft-Anruf EN"
+reihe: "Was tust du?"
+note: "F2 EN (localised from the DE spec). Example case staged: firm, caller, times and sequence are invented; Microsoft only appears as the impersonated name, the way Microsoft itself describes the scam. Mechanism and step from S1 and S2, re-read 02.11.2026. No emergency step, because the sources' text names none. The old plan ai_security-20261114-1-en.json stays unchanged."
+description: "A friendly caller from 'Microsoft support' wants access to your computer. What do you do? A staged case with three answers and the one step Microsoft and Germany's BSI advise."
+hashtags: [techsupportscam, microsoft, socialengineering, smallbusiness, whatwouldyoudo]
+sources:
+  - {id: S1, url: "https://support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams-2ebf91bd-f94c-2a8a-e541-f5c800d18435", title: "Microsoft Support: Protect yourself from online scams and attacks (section Tech support scams)", checked_at: "2026-11-02", label: "Microsoft, tech support scams"}
+  - {id: S2, url: "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Social-Engineering/social-engineering_node.html", title: "BSI: Social Engineering – der Mensch als Schwachstelle", checked_at: "2026-11-02", label: "BSI (Germany), social engineering"}
+unverified:
+  - "Loss figures: not used."
+  - "Specific remote tools: not named."
+  - "The old plan's lines on spoofed caller ID, money for an unneeded fix and payment in cryptocurrency or gift cards are no longer in the text of the Microsoft page on 02.11.2026 (now 'Protect yourself from online scams and attacks'): not used."
+  - "The sequence of the example case (times, slow PC, the caller's requests) is invented and marked as an example."
+  - "That a name and staff number (option B) prove nothing is Scutoria's interpretation of S2 (deception about identity); marked as interpretation on screen. 'Your own IT provider' stands for Microsoft's 'trusted advisor'."
+  - "Emergency steps after granting remote access: Microsoft only points to a video, not used."
+pick: demonstration
+hooks:
+  - {type: question, spoken: "Microsoft calls: your computer has errors. What do you do?", screen: "Microsoft is calling. Now what?"}
+  - {type: misconception, spoken: "A call from Microsoft support must be real? Microsoft doesn't cold call.", screen: "Microsoft calling = genuine?", src: [S1]}
+  - {type: surprising_fact, spoken: "Genuine Microsoft error messages never include a phone number.", screen: "Error message with a hotline? Never", src: [S1]}
+  - {type: concrete_risk, spoken: "One call from 'support', and a stranger is controlling your computer.", screen: "A stranger at your computer", src: [S1]}
+  - {type: demonstration, spoken: "Tuesday, 10:47 a.m. Microsoft support is on the phone.", screen: "TUE 10:47 · Microsoft on the phone?", visual: "clock, the incoming call arrives as a paper card, the request for remote access is marked"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Tuesday, 10:47 a.m. The phone rings. A friendly man from Microsoft support: We can see errors on your PC. Please install a program for remote access."
+    d:
+      kicker: "Example case · staged"
+      time: "TUE 10:47"
+      place: "Office of a haulage firm"
+      mail_at: "@phone"
+      mail: {from: "Call: Microsoft Support", addr: "incoming call", time: "10:47", subject: "Errors on your PC", lines: ["We can see errors on your PC.", "Please install a program now", "for remote access."]}
+      highlight: {line: 2, label: "remote access", at: "@install"}
+  - f: problem
+    t: sc_inspect
+    s: "You listen carefully. The name: Microsoft. The tone: calm and competent. The problem: your PC really is slow. All plausible. But Microsoft says: unless you contact it first, it won't call you to offer support."
+    src: [S1]
+    d:
+      kicker: "What you check"
+      headline: "Does it sound real?"
+      rows:
+        - {label: "Caller", value: "Microsoft support", verdict: "sounds real", at: "@name"}
+        - {label: "Tone", value: "calm, competent", verdict: "looks fine", at: "@tone"}
+        - {label: "Problem", value: "PC is slow", verdict: "possible", at: "@problem"}
+      finding: {text: "All plausible.", at: "@plausible"}
+      fact: {kind: fakt, text: "Microsoft won't call you to offer support unasked.", source: "Microsoft Support · scam advice", at: "@says"}
+  - f: problem
+    t: sc_choice
+    s: "What do you do? A: You allow access, but watch closely. B: You ask for his name and staff number. C: You hang up and call your own IT provider. Remember your choice."
+    src: [S1]
+    d:
+      question: "What do you do?"
+      options:
+        - {key: A, text: "Allow access, watch closely", at: "@allow"}
+        - {key: B, text: "Ask for name and staff number", at: "@ask"}
+        - {key: C, text: "Hang up, call your own IT", at: "@hang"}
+      think: {seconds: 2.6, at: "@Remember"}
+      hint: "Remember your choice."
+  - f: demonstration
+    t: sc_timeline
+    s: "Let's play out A. The program runs, he controls your computer and shows you so-called errors. Then he wants your password. According to Microsoft, scammers steal information or install malware while they do this."
+    src: [S1]
+    d:
+      kicker: "Choice A, played out"
+      tag: "Example"
+      headline: "You just watch"
+      items:
+        - {time: "TUE 10:49", text: "Remote access running", at: "@program"}
+        - {time: "TUE 10:52", text: "He shows so-called errors", tone: amber, at: "@so-called"}
+        - {time: "TUE 10:55", text: "He wants your password", tone: amber, at: "@password"}
+        - {time: "Meanwhile", text: "Data stolen, malware on board", tone: red, at: "@steal"}
+      source: {kind: fakt, label: "Microsoft · remote access by scammers", at: "@Microsoft"}
+  - f: insight
+    t: sc_step
+    s: "The right answer is C. Microsoft advises: hang up on unsolicited support calls, and if you're worried, call someone you trust. Germany's BSI adds: no passwords on the phone. A hands him the computer. B proves nothing, names are easy to invent."
+    src: [S1, S2]
+    d:
+      mode: rule
+      kicker: "The one step"
+      card: {letter: C, title: "Hang up, call your own IT", sub: "remote access only for your own IT", at: 0.2}
+      strikes:
+        - {text: "A: Allow access, but watch", note: "he controls the PC", at: "@hands"}
+        - {text: "B: Ask for name and number", note: "proves nothing", at: "@proves"}
+      sources:
+        - {kind: fakt, label: "Microsoft · hang up"}
+        - {kind: fakt, label: "BSI · no passwords on the phone"}
+        - {kind: auslegung, label: "B: Scutoria's reading"}
+      sources_at: "@Microsoft"
+  - f: close
+    t: sc_close
+    s: "An unexpected support call? Hanging up is allowed. What would you have picked? Tell me in the comments."
+    d:
+      kicker: "Series · What would you do?"
+      rule: "Hanging up is allowed."
+      rule_at: 0.3
+      question: {text: "What would you have picked?", at: "@What"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Sourced. Dated. Ready to show."
+      disclaimer: "Source-based. No legal advice."

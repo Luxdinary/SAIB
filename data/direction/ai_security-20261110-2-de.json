@@ -1,0 +1,487 @@
+{
+ "video_id": "ai_security-20261110-2-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Dein Website-Chat ist eine KI? Dann muss er es sagen",
+ "notes": "Scutoria Vorlage Fassung B 1.0 (30.10.2026): Higgsfield-Clips als Hintergrund je Szenentyp, kein Hero (kein Dokument-Thema). Roter Faden: der Website-Chat des Betriebs. Neu geschrieben nach Hook- und Story-Engine; Aussagen gegen Art. 50, Kommissionsleitlinien C(2026) 5054 und FAQ geprueft. Neue ID im Kalender 09.11.–06.12.2026 (A01); Inhalt wie V3 (Note 1,7), Stimme aus V1 wiederverwendet.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Website-Chat",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "KI-Hinweis: fehlt",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Pflicht: seit 2. August 2026",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "Rolle: Anbieter?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Hinweis: beim ersten Kontakt",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "KI-Bilder: Deepfake?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Kennzeichnung: offen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Live: gesperrt bis KI-Hinweis",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Dein Website-Chat antwortet mit KI? Seit 2. August 2026 gelten die Transparenzregeln des AI Act: Chatbots müssen sich zu erkennen geben, echt wirkende KI-Bilder sind zu kennzeichnen.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "aiact",
+   "kikennzeichnung",
+   "kleinunternehmen",
+   "chatbot",
+   "kisicherheit"
+  ],
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, lanes, dataroom, lanes, split, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems",
+   "title": "Commission Guidelines on the transparency obligations under Article 50 AI Act, C(2026) 5054, 20.07.2026 (Rn. 2, 6-7, 11-12, 19, 29, 32-34, 42, 113, Beispiele fuer Nicht-Deepfakes)",
+   "checked_at": "2026-10-30",
+   "label": "EU-Kommission, Leitlinien Art. 50"
+  },
+  {
+   "id": "S2",
+   "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+   "title": "AI Act, Article 50: Transparency obligations for providers and deployers of certain AI systems (AI Act Service Desk, European Commission)",
+   "checked_at": "2026-10-30",
+   "label": "KI-VO Art. 50"
+  },
+  {
+   "id": "S3",
+   "url": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+   "title": "Transparency obligations under Article 50 of the AI Act - FAQ (European Commission): anwendbar ab 2. August 2026",
+   "checked_at": "2026-10-30",
+   "label": "EU-Kommission, FAQ Art. 50"
+  },
+  {
+   "id": "S4",
+   "url": "https://docs.upload-post.com/api/upload-video",
+   "title": "Upload-Post API - Upload video: is_aigc (TikTok), is_ai_generated (Instagram), containsSyntheticMedia (YouTube)",
+   "checked_at": "2026-10-30",
+   "label": "Upload-Post, API-Doku"
+  }
+ ],
+ "unverified": [
+  "Übergangsfrist bis 2. Dezember 2026 für maschinenlesbare Markierung nach Art. 50(2) (Anbieter generativer Systeme vor dem 2. August 2026): nicht verwendet.",
+  "Ob das Plattform-Label allein die Offenlegung nach Art. 50(4) erfüllt: nicht behauptet; nur als praktischer Schritt genannt.",
+  "Bußgeldhöhen: nicht verwendet.",
+  "Digital Omnibus (VO 2026/1744): ändert Art. 50 laut Sekundärquellen nicht; nicht im Video."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Dein Website-Chat antwortet mit KI. Weiß dein Kunde das?",
+   "on_screen": "Weiß dein Kunde, dass hier KI antwortet?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Kundenfrage fliegt in den Website-Chat, Warnmarke 'KI?'",
+   "why": {
+    "truth": "Frage, keine Behauptung; Pflicht aus Art. 50(1) belegt",
+    "visual": "Chatfenster ist das Objekt des ganzen Videos"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "KI kennzeichnen müssen nur Konzerne? Das ist der Denkfehler.",
+   "on_screen": "Nur Konzerne müssen KI kennzeichnen?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Aussage mit Fragezeichen",
+   "why": {
+    "truth": "Leitlinien Rn. 12 und 19: beruflicher Einsatz genügt; Anbieterpflicht nicht größenabhängig"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Seit August 2026 muss ein KI-Chat sagen, dass er eine KI ist.",
+   "on_screen": "Seit August 2026: KI-Chat muss sich zeigen",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "visual": "Datum und Chatfenster",
+   "why": {
+    "truth": "Ausnahme 'offensichtlich' bleibt, daher 4"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein KI-Foto deines Ladens, das echt wirkt, kann ein Deepfake sein.",
+   "on_screen": "KI-Foto vom eigenen Laden: Deepfake?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Foto-Karte mit Fragezeichen",
+   "why": {
+    "truth": "Definition Art. 3(60): ähnelt existierenden Orten und wirkt echt"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, was in diesem Chatfenster fehlt.",
+   "on_screen": "Was fehlt in diesem Chat?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "Chat ohne KI-Hinweis",
+   "why": {
+    "clarity": "ohne Ton unklar, worum es geht"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Frage mit höchster Bewertung; Chatfenster ist zugleich der rote Faden."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Dein Website-Chat antwortet mit KI. Weiß dein Kunde das?",
+   "data": {
+    "question": "Weiß dein Kunde, dass hier KI antwortet?",
+    "doc_label": "Kundenfrage",
+    "chat_title": "Website-Chat",
+    "bot_line": "Hallo! Wie kann ich helfen?",
+    "typed": "Habt ihr morgen offen?",
+    "badge": "KI?",
+    "fly_at": 0.3,
+    "question_at": 2.0
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 10,
+   "spoken": "Seit dem zweiten August 2026 gelten die Transparenzregeln des AI Act. Sie treffen nicht nur Konzerne, sondern auch Betriebe, die KI beruflich einsetzen.",
+   "data": {
+    "headline": "Seit 2. August 2026: Transparenz",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "KI-System",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n1",
+      "label": "Dein Betrieb",
+      "icon": "&#9783;"
+     },
+     {
+      "id": "n2",
+      "label": "Kunde",
+      "icon": "&#9823;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "beruflich genutzt"
+     },
+     {
+      "label": "Kontakt"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 6.0,
+     "label": "Erfährt er es?"
+    }
+   },
+   "source_ids": [
+    "S3",
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "Für den Chat gilt: Menschen müssen erfahren, dass sie mit einer KI sprechen. Die Pflicht trifft den Anbieter. Hast du den Chat selbst gebaut und betreibst ihn unter deinem Namen, bist das laut EU-Kommission du.",
+   "data": {
+    "headline": "Wer muss den Hinweis geben?",
+    "file_label": "Website-Chat",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Eigener Chat",
+      "sub": "selbst gebaut, eigener Name",
+      "at": 0.6
+     },
+     {
+      "title": "Gekaufter Chat",
+      "sub": "Anbieter ist der Hersteller",
+      "at": 1.0
+     }
+    ],
+    "approval": "Hinweis im Chat sichtbar?",
+    "approval_at": 8.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "Der Hinweis muss klar erkennbar sein, spätestens beim ersten Kontakt. Eine Ausnahme gibt es nur, wenn für einen aufmerksamen Menschen offensichtlich ist, dass er mit einer KI spricht.",
+   "data": {
+    "headline": "Artikel 50: wie und wann",
+    "file_label": "Website-Chat",
+    "card": {
+     "title": "Der KI-Hinweis",
+     "rows": [
+      {
+       "text": "klar und erkennbar",
+       "ok": null
+      },
+      {
+       "text": "spätestens beim ersten Kontakt",
+       "ok": null
+      },
+      {
+       "text": "Ausnahme: wenn offensichtlich",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "offen: ist es offensichtlich?",
+    "row_step": 3.0,
+    "risk_open": true,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 15,
+   "spoken": "Zweite Regel: Deepfakes. Zeigst du beruflich KI-Bilder oder -Videos, die echten Personen oder Orten ähneln und echt wirken, musst du sie kennzeichnen. Erkennbar gezeichnete oder unmögliche Szenen fallen laut Leitlinien meist nicht darunter.",
+   "data": {
+    "headline": "KI-Bilder: wann kennzeichnen?",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 8.0,
+    "left": {
+     "title": "Kennzeichnen",
+     "rows": [
+      {
+       "text": "ähnelt echten Personen, Orten",
+       "ok": null
+      },
+      {
+       "text": "wirkt echt",
+       "ok": null
+      },
+      {
+       "text": "beruflich veröffentlicht",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "Meist kein Deepfake",
+     "rows": [
+      {
+       "text": "erkennbar gezeichnet",
+       "ok": null
+      },
+      {
+       "text": "offensichtlich unmöglich",
+       "ok": null
+      },
+      {
+       "text": "Grenzfall: einzeln prüfen",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 13,
+   "spoken": "Für deinen Betrieb heißt das: im Chat sofort sagen, dass eine KI antwortet. Echt wirkende KI-Bilder kennzeichnen. Und beim Hochladen das KI-Label setzen, das TikTok, Instagram und YouTube anbieten.",
+   "data": {
+    "headline": "Drei Schritte für deinen Betrieb",
+    "items": [
+     {
+      "title": "Chat: KI-Hinweis zuerst",
+      "sub": "im ersten Fenster, klar lesbar",
+      "at": 2.0
+     },
+     {
+      "title": "KI-Bilder kennzeichnen",
+      "sub": "wenn sie echt wirken",
+      "at": 4.6
+     },
+     {
+      "title": "KI-Label beim Hochladen",
+      "sub": "TikTok, Instagram, YouTube",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S4"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Erst kennzeichnen, dann live schalten. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Erst kennzeichnen, dann live",
+    "file_label": "Website-Chat",
+    "button": "Live schalten",
+    "block_text": "Live erst mit KI-Hinweis",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,349 @@
+{
+ "video_id": "engines-20261126-1-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Die Formel hinter der Verdichtung",
+ "notes": "Beispielplan Aufbau C (Kennlinie: zt_photo + zt_chart, nur Daten, kein eigenes Modell), Konzeptplan Nr. 38. Erstellt 04.11.2026 von der Revlore-Sitzung; Sprechtext nicht vertont und nicht freigegeben (Probelauf mit stummer Stimme). Quellen aus dem Kalender engines-20261126-1-de (Faktencheck 01.11.2026).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "zeitlupe",
+  "explainer": false,
+  "description": "Im idealen Gleichraum-Prozess ist der Wirkungsgrad eins minus eins durch Verdichtung hoch Gamma minus eins. Wir zeichnen die Kurve und lesen drei Punkte ab.",
+  "companion_text": "Idealwerte des Gleichraum-Prozesses mit Gamma = 1,4 (Luft), ohne Verluste; kein echter Motor erreicht sie. Die Kurve ist aus der Formel gerechnet.",
+  "hashtags": [
+   "technik",
+   "motor",
+   "verdichtung",
+   "wirkungsgrad",
+   "nachgerechnet"
+  ],
+  "sound": {
+   "palette": "tech",
+   "mood": "tech",
+   "levels": {
+    "sfx_peak_db": -18
+   }
+  }
+ },
+ "assets": {
+  "folder": "assets/higgsfield/testvideo",
+  "hero": {
+   "b1": "rl_t_piston.mp4",
+   "b3": "rl_t_piston.mp4",
+   "b4": "rl_t_piston.mp4"
+  },
+  "scrim": 0.2
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "label": "MIT 2.61, Vorlesung 3",
+   "title": "MIT 2.61 Internal Combustion Engines, Vorlesung 3, S. 3: eta = 1 - 1/rc^(gamma-1); S. 5 Grenzen",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e9421a34d0cd5c5fc4fc81365975503e_MIT2_61S17_lec3.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "NASA Glenn, Motorvergleich",
+   "title": "NASA Glenn, Engine Compression: Verdichtungsverhältnis",
+   "url": "https://www.grc.nasa.gov/WWW/k-12/airplane/engcomp.html",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Frage mit klarer Antwort, im Bild als Kurve."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Mehr Verdichtung, mehr Wirkungsgrad? Im idealen Motor stimmt das.",
+   "on_screen": "Mehr Verdichtung, mehr Wirkungsgrad?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Normwerte S1, zwei Auslöser S2",
+    "visual": "Zeitraffer und Zeitlupe am Modell"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Wie viel bringt ein höheres Verdichtungsverhältnis wirklich?",
+   "on_screen": "Sofort oder später?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "Alltagssprache, aber ungenau (Sicherung statt Leitungsschutzschalter)"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "demonstration",
+   "spoken": "Eine Formel mit drei Zeichen sagt, wie viel Verdichtung bringt.",
+   "on_screen": "Zwei Auslöser",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "curiosity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "misconception",
+   "spoken": "Mehr Verdichtung macht nicht jeden Motor besser.",
+   "on_screen": "Kein Draht, der durchbrennt",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "gilt für den Leitungsschutzschalter, nicht für die Schmelzsicherung; braucht Erklärung"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "concrete_risk",
+   "spoken": "Zu viel Verdichtung bremst den Benziner mit Klopfen.",
+   "on_screen": "Zu spät?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "relevance": "Risiko-Rahmung, aber keine Schadensdramatik gewollt"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zt_photo",
+   "spoken": "Mehr Verdichtung, mehr Wirkungsgrad? Im idealen Motor stimmt das, und die Formel dahinter ist kurz.",
+   "data": {
+    "claim_lines": [
+     "Mehr Verdichtung,",
+     "mehr Wirkungsgrad?"
+    ],
+    "claim_highlight": "Wirkungsgrad",
+    "claim_at": 0.02,
+    "source": "MIT 2.61, Vorlesung 3 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Zuerst, was Verdichtung heißt. Der Kolben fährt nach oben und drückt das Gemisch auf einen Bruchteil seines Raums zusammen. Das Verhältnis aus dem Raum vorher und dem Raum nachher ist das Verdichtungsverhältnis. Bei 10 zu 1 steckt das Gemisch am Ende in einem Zehntel des Raums.",
+   "data": {
+    "title": "Verdichten",
+    "labels": [
+     "chamber"
+    ],
+    "labels_at": [
+     "w:Raum"
+    ],
+    "theta": [
+     [
+      0,
+      200
+     ],
+     [
+      1,
+      355
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Verdichtung · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zt_chart",
+   "spoken": "Im idealen Gleichraum-Prozess ist der Wirkungsgrad eins minus eins durch Verdichtung hoch Gamma minus eins. Für Luft ist Gamma etwa 1,4. Bei einer Verdichtung von 8 zu 1 ergibt das 56,5 Prozent, bei 10 zu 1 schon 60,2 Prozent und bei 14 zu 1 sind es 65,2 Prozent. Die Kurve steigt, wird aber flacher: Von 8 auf 10 gewinnst du 3,7 Prozentpunkte, von 10 auf 14 noch 5 für vier Stufen mehr. Das sind Idealwerte ohne Verluste, kein echter Motor erreicht sie.",
+   "data": {
+    "photo": true,
+    "ground_at": "w:Gleichraum-Prozess",
+    "x": {
+     "min": 4,
+     "max": 16,
+     "label": "Verdichtungsverhältnis",
+     "ticks": [
+      [
+       4,
+       "4"
+      ],
+      [
+       8,
+       "8"
+      ],
+      [
+       12,
+       "12"
+      ],
+      [
+       16,
+       "16"
+      ]
+     ]
+    },
+    "y": {
+     "min": 40,
+     "max": 75,
+     "label": "idealer Wirkungsgrad in %",
+     "ticks": [
+      [
+       40,
+       "40"
+      ],
+      [
+       50,
+       "50"
+      ],
+      [
+       60,
+       "60"
+      ],
+      [
+       70,
+       "70"
+      ]
+     ]
+    },
+    "series": [
+     {
+      "formula": "100*(1-1/x**(g-1))",
+      "params": {
+       "g": 1.4
+      },
+      "from": "w:eins",
+      "to": "w:14",
+      "text": "Gamma = 1,4"
+     }
+    ],
+    "points": [
+     {
+      "x": 8,
+      "y": 56.5,
+      "text": "8:1 → 56,5 %",
+      "at": "w:8",
+      "up": false
+     },
+     {
+      "x": 10,
+      "y": 60.2,
+      "text": "10:1 → 60,2 %",
+      "at": "w:10",
+      "up": false
+     },
+     {
+      "x": 14,
+      "y": 65.2,
+      "text": "14:1 → 65,2 %",
+      "at": "w:14",
+      "side": "l",
+      "hot": true
+     }
+    ],
+    "bands": [
+     {
+      "x0": 8,
+      "x1": 10,
+      "text": "+3,7",
+      "at": "w:gewinnst"
+     },
+     {
+      "x0": 10,
+      "x1": 14,
+      "text": "+5,0",
+      "at": "w:noch"
+     }
+    ],
+    "source": "MIT 2.61, Vorlesung 3, S. 3"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "close",
+   "scene_type": "zt_photo",
+   "spoken": "Mehr Verdichtung hilft also, bis das Klopfen bremst. Idealwerte bleiben Idealwerte, und die Kurve zeigt, wie schnell der Gewinn kleiner wird.",
+   "data": {
+    "brand": {
+     "text": "REVLORE · ZEITLUPE",
+     "hl": "REVLORE",
+     "at": "w:Klopfen"
+    },
+    "note": {
+     "text": "Idealwerte, kein echter Motor",
+     "at": "w:Idealwerte"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

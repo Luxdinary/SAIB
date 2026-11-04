@@ -1,0 +1,383 @@
+{
+ "video_id": "ai_security-20261111-2-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Mythos: Passwörter regelmäßig ändern",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Was tust du?\". Thema C02 (Mythos als Ausgangslage). Beispielfall nachgestellt; Aussagen aus S1 (NCSC), S2 (NIST SP 800-63B) und S3 (BSI), Faktenbasis aus dem Plan vom 01.11.2026.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Dein Rechner will schon wieder ein neues Passwort. Was tust du? Warum NIST und NCSC vom Wechsel nach Kalender abraten und wann Wechseln wirklich hilft.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur IT- und KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "passwort",
+   "mythos",
+   "itsicherheit",
+   "kmu",
+   "wastustdu"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ncsc.gov.uk/blog-post/problems-forcing-regular-password-expiry",
+   "title": "NCSC: The problems with forcing regular password expiry",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, Passwortwechsel"
+  },
+  {
+   "id": "S2",
+   "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+   "title": "NIST SP 800-63B: Authentication and Lifecycle Management",
+   "checked_at": "2026-11-01",
+   "label": "NIST SP 800-63B"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html",
+   "title": "BSI: Sichere Passwörter erstellen",
+   "checked_at": "2026-11-01",
+   "label": "BSI, Sichere Passwörter"
+  }
+ ],
+ "unverified": [
+  "Konkrete Wechselfristen in Firmen (z. B. 90 Tage): nicht genannt; im Beispielfall nur „wie jedes Quartal“.",
+  "Ablauf im Beispielfall (Datenleck, abgeleitetes Passwort) ist erfunden und als Beispiel gekennzeichnet; der Mechanismus (Ableitung aus dem alten Passwort) stammt aus S1."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Schon wieder ein neues Passwort? Was tust du?",
+   "on_screen": "Schon wieder ein neues Passwort?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Regelmäßig das Passwort wechseln? Genau davon raten NIST und NCSC ab.",
+   "on_screen": "Wechsel nach Kalender = sicher?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Das britische NCSC rät schon seit 2015 vom erzwungenen Passwortwechsel ab.",
+   "on_screen": "Abgeraten seit 2015",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer wechseln muss, wählt oft ein Passwort, das sich aus dem alten ableiten lässt.",
+   "on_screen": "Neu, aber ableitbar",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Montag, acht Uhr. Dein Rechner verlangt ein neues Passwort. Wie jedes Quartal.",
+   "on_screen": "MO 08:00 · Passwort läuft ab",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Montag, acht Uhr. Dein Rechner meldet: Dein Passwort läuft ab, bitte jetzt ein neues festlegen. Wie jedes Quartal.",
+   "data": {
+    "kicker": "Beispielfall · nachgestellt",
+    "time": "MO 08:00",
+    "place": "Büro einer Hausverwaltung",
+    "mail_at": "@Rechner",
+    "mail": {
+     "from": "IT-Hinweis (Beispiel)",
+     "addr": "it@hausverwaltung.example",
+     "time": "08:00",
+     "subject": "Passwort läuft ab",
+     "lines": [
+      "Dein Passwort läuft bald ab.",
+      "Bitte jetzt ein neues festlegen.",
+      "Wie jedes Quartal."
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "Kalender",
+     "at": "@Quartal"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "Was tust du? A: Du hängst an das alte Passwort eine Zahl an. B: Du denkst dir ein neues aus und schreibst es auf einen Zettel. C: Du fragst, warum ihr überhaupt nach Kalender wechselt. Entscheide dich jetzt.",
+   "data": {
+    "question": "Was tust du?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Altes Passwort plus eine Zahl",
+      "at": "@hängst"
+     },
+     {
+      "key": "B",
+      "text": "Neues ausdenken, auf einen Zettel",
+      "at": "@denkst"
+     },
+     {
+      "key": "C",
+      "text": "Die Kalender-Regel hinterfragen",
+      "at": "@fragst"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Entscheide"
+    },
+    "hint": "Entscheide dich jetzt."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "sc_inspect",
+   "spoken": "Was das britische NCSC dazu sagt: Wer wechseln muss, wählt oft ein Passwort, das dem alten ähnelt. Angreifer können es dann ableiten. Neue Passwörter werden eher aufgeschrieben oder vergessen. Und viele wählen ein schwächeres.",
+   "data": {
+    "kicker": "Laut NCSC",
+    "headline": "Was der Zwang bewirkt",
+    "rows": [
+     {
+      "label": "Ähnlich",
+      "value": "aus dem alten ableitbar",
+      "verdict": "Folge",
+      "at": "@ähnelt"
+     },
+     {
+      "label": "Zettel",
+      "value": "eher aufgeschrieben",
+      "verdict": "Folge",
+      "at": "@aufgeschrieben"
+     },
+     {
+      "label": "Schwächer",
+      "value": "leichter zu merken",
+      "verdict": "Folge",
+      "at": "@schwächeres"
+     }
+    ],
+    "fact": {
+     "kind": "fakt",
+     "text": "Erzwungener Wechsel macht Passwörter oft schwächer.",
+     "source": "NCSC · Passwortwechsel",
+     "at": 1.2
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "sc_timeline",
+   "spoken": "Spielen wir A durch. Dein altes Passwort taucht in einem Datenleck auf. Weil das neue ihm ähnelt, leitet ein Angreifer es ab. Er probiert es aus und ist drin. Der Wechsel nach Kalender hat nichts geschützt.",
+   "data": {
+    "kicker": "Wahl A, durchgespielt",
+    "tag": "Beispiel",
+    "headline": "Neu, aber ableitbar",
+    "items": [
+     {
+      "time": "MO 08:01",
+      "text": "Altes Passwort plus Zahl",
+      "at": 0.6
+     },
+     {
+      "time": "Später",
+      "text": "Altes Passwort im Datenleck",
+      "tone": "amber",
+      "at": "@Datenleck"
+     },
+     {
+      "time": "Danach",
+      "text": "Neues wird abgeleitet",
+      "at": "@leitet"
+     },
+     {
+      "time": "Dann",
+      "text": "Der Angreifer ist drin",
+      "tone": "red",
+      "at": "@drin"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "NCSC · ableitbare Passwörter",
+     "at": 1.0
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Richtig ist C. Das US-Normeninstitut NIST schreibt: Nutzer dürfen nicht zum regelmäßigen Wechsel gezwungen werden. Gewechselt wird, wenn es Hinweise gibt, dass das Passwort in fremde Hände geraten ist, etwa nach einem Datenleck oder nach einer Eingabe auf einer gefälschten Seite.",
+   "data": {
+    "mode": "rule",
+    "kicker": "Der eine Schritt",
+    "card": {
+     "letter": "C",
+     "title": "Wechseln bei Verdacht",
+     "sub": "nicht nach Kalender",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Altes plus Zahl",
+      "note": "ableitbar",
+      "at": 3.5
+     },
+     {
+      "text": "B: Neues auf dem Zettel",
+      "note": "aufgeschrieben",
+      "at": 5.0
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "NIST SP 800-63B"
+     },
+     {
+      "kind": "fakt",
+      "label": "NCSC · Passwortwechsel"
+     }
+    ],
+    "sources_at": "@NIST"
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Wechseln bei Verdacht, nicht nach Kalender. Was hättest du gewählt? Schreib es in die Kommentare.",
+   "data": {
+    "kicker": "Reihe · Was tust du?",
+    "rule": "Wechseln bei Verdacht.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Was hättest du gewählt?",
+     "at": "@Was"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+   },
+   "source_ids": []
+  }
+ ]
+}

@@ -1,0 +1,553 @@
+{
+ "video_id": "menswear-20261110-3-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Single or double-breasted: the wrap explained",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema B02 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S2; 'in der Regel' statt 'immer', keine allgemeine Regel zur Knopfstellung.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Double-breasted",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "double: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "open works, but",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "made to close",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "outer bottom: open",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "stance: open question",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "generally closed",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "closed",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Single or double-breasted? On a double-breasted jacket the fronts overlap. Anderson & Sheppard cut it to be closed, Moss allows it open and leaves the outer bottom button undone.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "doublebreasted",
+   "suitjacket",
+   "suit",
+   "styletips"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.anderson-sheppard.co.uk/thenotebook/why-i-prefer-double-breasteds/",
+   "title": "Anderson & Sheppard, Why I prefer double-breasteds: zum geschlossenen Tragen gemacht; Überschlag anpassbar für mehr oder weniger Hemd; Schnitt und Anprobe müssen Bewegung im geschlossenen Zustand erlauben",
+   "checked_at": "2026-11-01",
+   "label": "Anderson & Sheppard"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.moss.co.uk/inside-pocket/post/spotlight-on-the-double-breasted-suit",
+   "title": "Moss, Spotlight on the double-breasted suit: offen tragen geht, Linien sind für geschlossen entworfen; traditionell bis zu acht Knöpfe, Moss nimmt sechs; äußeren untersten Knopf nicht schließen",
+   "checked_at": "2026-11-01",
+   "label": "Moss, Inside Pocket"
+  }
+ ],
+ "unverified": [
+  "Welche Knöpfe genau schließen: hängt von der Knopfstellung ab, keine allgemeine Regel in den Quellen.",
+  "Offen getragener Zweireiher: keine eigene Zeichnung; 'offen' ist im Bild nur an den Knöpfen zu sehen."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Double-breasted: open or closed?",
+   "on_screen": "Double-breasted: open or closed?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Wear a double-breasted open? You can, but it is meant closed.",
+   "on_screen": "Wear a double-breasted open? You can, but it is meant closed.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Traditional double-breasteds had up to eight buttons",
+   "on_screen": "Traditional double-breasteds had up to eight buttons",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "The outer bottom button stays undone",
+   "on_screen": "The outer bottom button stays undone",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "How much shirt does your double-breasted show?",
+   "on_screen": "How much shirt does your double-breasted show?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Zweireiher, Lupe auf dem äußeren untersten Knopf",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die Frage offen oder zu, die Lupe auf dem äußeren untersten Knopf."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Two rows of buttons, and the fronts overlap. Can you wear a double-breasted jacket open, or does it belong closed?",
+   "data": {
+    "question": "Double-breasted: open or closed?",
+    "object": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "target": "button:1",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:rows",
+    "loupe_at": "w:rows",
+    "nie_at": "w:open",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "On a single-breasted jacket, the fronts meet in the middle. On a double-breasted one, they overlap, with two rows of buttons. Moss says wearing it open is fine. But its vertical lines are designed to be seen closed.",
+   "data": {
+    "headline": "Middle or overlap?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "target": "break",
+    "zoom": 1.4,
+    "label": "Lines designed for closed",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:single",
+    "zoom_at": "w:middle",
+    "flip_at": "w:double",
+    "label_at": "w:vertical"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Moss"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "For Anderson and Sheppard, the double-breasted jacket is made to be worn closed. The overlap can be adjusted to show more or less shirt. So the cut and the fitting must allow movement while it is closed.",
+   "data": {
+    "headline": "How it is meant",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": 0.0,
+      "title": "Closed",
+      "tags": [
+       {
+        "spot": "button:0",
+        "text": "made to close",
+        "sub": "cut that way",
+        "tone": "always",
+        "at": "w:closed"
+       },
+       {
+        "spot": "break",
+        "text": "the overlap",
+        "sub": "more or less shirt",
+        "tone": "always",
+        "at": "w:overlap"
+       },
+       {
+        "spot": "waist",
+        "text": "movement",
+        "sub": "even when closed",
+        "tone": "always",
+        "at": "w:movement"
+       }
+      ]
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Anderson"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 10,
+   "spoken": "So how do you fasten it? Moss works with six buttons; traditional ones had up to eight. The outer bottom button, says Moss, you do not fasten. It stays open.",
+   "data": {
+    "headline": "Which one stays open?",
+    "from": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0,
+      1
+     ],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "target": "button:1",
+    "zoom": 1.5,
+    "label": "Outer bottom button: open",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:fasten",
+    "all_at": "w:six",
+    "zoom_at": "w:outer",
+    "error_at": "w:bottom",
+    "flip_at": "w:not",
+    "label_at": "w:stays"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 360,
+     "y": 917,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:six"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "So the two houses are close, but not identical. Anderson and Sheppard cut for closed, Moss leaves you the choice. Which buttons exactly you fasten depends on the button stance; the sources give no general rule.",
+   "data": {
+    "headline": "Two houses, one line",
+    "left": {
+     "title": "The tailor",
+     "object": {
+      "kind": "jacket",
+      "variant": "db6",
+      "fastened": [
+       0
+      ],
+      "strain": false
+     },
+     "target": "button:0",
+     "tag": "made to be closed"
+    },
+    "right": {
+     "title": "The outfitter",
+     "object": {
+      "kind": "jacket",
+      "variant": "db6",
+      "fastened": [],
+      "strain": false
+     },
+     "tag": "open works too",
+     "tag2": "depends on button stance",
+     "tag2_at": "w:stance",
+     "pulses": [
+      {
+       "target": "button:0",
+       "at": "w:buttons",
+       "tone": "amber"
+      }
+     ]
+    },
+    "left_at": "w:Anderson",
+    "left_tag_at": "w:closed",
+    "right_at": "w:Moss",
+    "right_tag_at": "w:choice",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Anderson"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "In short: for Anderson and Sheppard, a double-breasted jacket is generally meant to be closed. Moss says open works. And the outer bottom button stays undone.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Generally closed",
+      "sub": "cut that way, says A&S",
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:double",
+      "ring": "button:0",
+      "ring_at": "w:closed"
+     },
+     {
+      "title": "Open works",
+      "sub": "lines meant for closed (Moss)",
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "strain": false
+      },
+      "at": "w:Moss",
+      "then": {
+       "fastened": []
+      },
+      "then_at": "w:works"
+     },
+     {
+      "title": "Outer bottom: open",
+      "sub": "the outer bottom button",
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0,
+        1
+       ],
+       "strain": false
+      },
+      "at": "w:outer",
+      "then": {
+       "fastened": [
+        0
+       ]
+      },
+      "then_at": "w:undone"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Two rows, one overlap, and generally worn closed. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [],
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "db6",
+     "fastened": [
+      0
+     ],
+     "strain": false
+    },
+    "from_fastened": [],
+    "to_fastened": [
+     0
+    ],
+    "target": "button:0",
+    "fix_at": "w:generally",
+    "ring_at": "w:closed",
+    "statement_at": "w:closed",
+    "chip_at": "w:eye",
+    "statement": "Generally: closed.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

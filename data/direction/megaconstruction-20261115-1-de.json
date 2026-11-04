@@ -1,0 +1,683 @@
+{
+  "video_id": "megaconstruction-20261115-1-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Kölnbreinsperre: Österreichs höchste Staumauer auf 1.902 Metern",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261115-1-de. Thema: koelnbrein. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Kölnbreinsperre",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Speicher gefüllt",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "200 m hoch",
+          "tone": "accent",
+          "at": "@200"
+        },
+        {
+          "beat": "b3",
+          "text": "Krone 626 m",
+          "tone": "accent",
+          "at": "@626"
+        },
+        {
+          "beat": "b4",
+          "text": "1,5 × Stephansdom",
+          "tone": "accent",
+          "at": "@anderthalbmal"
+        },
+        {
+          "beat": "b5",
+          "text": "200 Mio. m³",
+          "tone": "green",
+          "at": "@200"
+        }
+      ]
+    },
+    "description": "Die Kölnbreinsperre im Maltatal ist Österreichs höchste Staumauer: 200 m hoch, 626 m breit, auf 1.902 m Seehöhe – und hält 200 Mio. m³ Wasser.",
+    "companion_text": "Gerechnet: 200 m ÷ 136,4 m = 1,47. Quellen: VERBUND (Besucherzentrum Malta, Kraftwerksgruppe Malta), Dompfarre St. Stephan. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "kölnbreinsperre",
+      "maltatal",
+      "staumauer",
+      "kärnten",
+      "wasserkraft"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "200 m ÷ 136,4 m = 1,47",
+        "result": "knapp anderthalbmal so hoch wie der Südturm",
+        "sources": [
+          "S1",
+          "S4"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "626 m ÷ 200 m = 3,13",
+        "result": "Krone gut dreimal so breit wie die Mauer hoch",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "dam",
+          "kind": "dam",
+          "radius": 400,
+          "angle": 103,
+          "height": 200,
+          "t": 14,
+          "water_l": 900,
+          "water_w": 1200,
+          "water_x": 460,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "level": 0.92
+          }
+        },
+        {
+          "id": "flankN",
+          "kind": "box",
+          "size": [
+            1400,
+            260,
+            900
+          ],
+          "color": "compare",
+          "pos": [
+            150,
+            0,
+            760
+          ]
+        },
+        {
+          "id": "flankS",
+          "kind": "box",
+          "size": [
+            1400,
+            260,
+            900
+          ],
+          "color": "compare",
+          "pos": [
+            150,
+            0,
+            -760
+          ]
+        },
+        {
+          "id": "steph",
+          "kind": "prism",
+          "height": 136.4,
+          "width": 22,
+          "levels": 24,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              0.5,
+              0.9
+            ],
+            [
+              0.55,
+              0.6
+            ],
+            [
+              1,
+              0.04
+            ]
+          ],
+          "color": "model",
+          "pos": [
+            -160,
+            0,
+            0
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "crest": [
+          0,
+          205,
+          0
+        ],
+        "arch": [
+          -40,
+          150,
+          200
+        ],
+        "water": [
+          400,
+          180,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -120,
+                0,
+                -320
+              ],
+              [
+                50,
+                210,
+                320
+              ]
+            ],
+            "az0": 200,
+            "az1": 190,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.85,
+            "fit1": 0.95,
+            "cy": 840
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -120,
+                0,
+                -320
+              ],
+              [
+                50,
+                210,
+                320
+              ]
+            ],
+            "az0": 180,
+            "az1": 172,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.9,
+            "fit1": 0.95,
+            "cy": 840
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -120,
+                0,
+                -320
+              ],
+              [
+                400,
+                210,
+                320
+              ]
+            ],
+            "az0": 230,
+            "az1": 215,
+            "el0": 40,
+            "el1": 32,
+            "fit0": 0.9,
+            "fit1": 0.95,
+            "cy": 860
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -180,
+                0,
+                -320
+              ],
+              [
+                50,
+                210,
+                320
+              ]
+            ],
+            "az0": 182,
+            "az1": 178,
+            "el0": 2,
+            "el1": 4,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "cy": 840
+          },
+          "props": {
+            "steph.visible": 1
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -120,
+                0,
+                -500
+              ],
+              [
+                800,
+                210,
+                500
+              ]
+            ],
+            "az0": 150,
+            "az1": 140,
+            "el0": 34,
+            "el1": 40,
+            "fit0": 0.95,
+            "fit1": 0.9,
+            "cy": 880
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [],
+            "box": [
+              [
+                -120,
+                0,
+                -320
+              ],
+              [
+                50,
+                210,
+                320
+              ]
+            ],
+            "az0": 205,
+            "az1": 215,
+            "el0": 14,
+            "el1": 20,
+            "fit0": 0.9,
+            "fit1": 0.85,
+            "cy": 860
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://visit.verbund.com/de/malta",
+      "title": "VERBUND, Besucherzentrum Malta: Kölnbreinsperre 200 m hoch, 626 m breit, 1.902 m Seehöhe",
+      "label": "VERBUND, visit Malta",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.verbund.com/de/privat/themenwelten/strom-aus-wasserkraft/woher-kommt-der-strom-malta",
+      "title": "VERBUND: Woher kommt der Strom – Malta (Speicher Kölnbrein 200 Mio. m³; höchste Staumauer Österreichs, eine der höchsten Bogenmauern Europas)",
+      "label": "VERBUND, Kraftwerksgruppe Malta",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.stephanskirche.at/faq.php",
+      "title": "Dompfarre St. Stephan: FAQ (Südturm 136,4 m)",
+      "label": "Dompfarre St. Stephan, FAQ",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Betonvolumen und Baujahre: nicht auf den geöffneten VERBUND-Seiten.",
+    "Krümmung und Talform im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "200 Meter Beton halten 200 Millionen Kubikmeter Wasser. Auf 1.902 Metern Seehöhe.",
+      "on_screen": "200 m Mauer, 200 Mio. m³ Wasser",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Kölnbreinsperre wirklich?",
+      "on_screen": "Wie groß ist die Kölnbreinsperre wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen die Kölnbreinsperre.",
+      "on_screen": "die Kölnbreinsperre: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Kölnbreinsperre schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Kölnbreinsperre: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Kölnbreinsperre im Modell entsteht.",
+      "on_screen": "die Kölnbreinsperre im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "200 Meter Beton halten 200 Millionen Kubikmeter Wasser. Auf 1.902 Metern Seehöhe.",
+      "data": {
+        "kicker": "So wird's gebaut · Kölnbrein",
+        "question": "200 m Mauer, 200 Mio. m³ Wasser",
+        "question_at": "@200",
+        "number": {
+          "value": "1.902",
+          "unit": "m",
+          "at_word": "1.902",
+          "y": 640
+        },
+        "badge": {
+          "text": "Kölnbreinsperre",
+          "at_word": "Seehöhe",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Auf"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "Die Kölnbreinsperre im Maltatal ist laut VERBUND Österreichs höchste Staumauer: 200 Meter hoch. Sie liegt auf 1.902 Metern Seehöhe.",
+      "data": {
+        "headline": "Österreichs höchste Staumauer",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "200",
+            "unit": "m",
+            "label": "hoch",
+            "at_word": "200"
+          },
+          {
+            "value": "1.902",
+            "unit": "m",
+            "label": "Seehöhe",
+            "at_word": "1.902"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "2 · Maltatal",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gs_section",
+      "spoken": "Die Mauer ist gekrümmt, eine Bogenmauer, laut Betreiber eine der höchsten in Europa. Ihre Krone ist 626 Meter breit.",
+      "data": {
+        "headline": "Eine Mauer im Bogen",
+        "note": "Modell schematisch",
+        "note_dy": 190,
+        "dims": [
+          {
+            "anchor": "crest",
+            "text": "626 m",
+            "at_word": "626"
+          }
+        ],
+        "callouts": [
+          {
+            "anchor": "arch",
+            "text": "Bogenmauer",
+            "side": "up",
+            "at_word": "Bogenmauer"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "3 · Bogenmauer",
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gs_compare",
+      "spoken": "Zum Vergleich: Der Südturm des Stephansdoms misst laut Dompfarre 136,4 Meter. 200 durch 136,4 ergibt 1,47. Die Mauer ist also knapp anderthalbmal so hoch. Und ihre Krone ist gut dreimal so breit, wie die Mauer hoch ist.",
+      "data": {
+        "headline": "Mauer gegen Stephansdom",
+        "a": {
+          "label": "Kölnbreinsperre",
+          "value": 200,
+          "unit": "m"
+        },
+        "b": {
+          "label": "Südturm Stephansdom",
+          "value": 136.4,
+          "unit": "m"
+        },
+        "decimals": 1,
+        "bars_dy": 430,
+        "row_h": 108,
+        "order": "ba",
+        "b_at": "@Südturm",
+        "a_at": "@200",
+        "result_at": "@anderthalbmal"
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "overlay": {
+        "kicker": "4 · Nachgerechnet",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "Dahinter liegt der Kölnbreinspeicher mit 200 Millionen Kubikmetern Wasser, für die Kraftwerksgruppe Malta von VERBUND.",
+      "data": {
+        "headline": "Wasser für die Kraftwerksgruppe",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "200",
+            "unit": "Mio. m³",
+            "label": "Speicherinhalt",
+            "at_word": "200"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · Speicher",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "Österreichs höchste Staumauer: 200 Meter hoch, 626 Meter breit, auf über 1.900 Metern. Folge Gigastruct, dann siehst du das nächste Bauwerk.",
+      "data": {
+        "mode": "closing",
+        "statement": "Österreichs höchste Mauer.",
+        "chip": {
+          "text": "Folge Gigastruct",
+          "at_word": "Folge",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "6 · Ergebnis",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

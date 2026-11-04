@@ -1,0 +1,553 @@
+{
+  "video_id": "military_history-20261112-3-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Dazzle Camouflage: Did the Zigzag Work?",
+  "notes": "Woche 1, Reihe Mythos geprüft. U-Boot-Krieg nur als Hintergrund, keine Gewaltbilder; Treffgenauigkeitsrechnung der Studie bewusst weggelassen.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0020233",
+      "title": "Scott-Samuel, Baddeley, Palmer, Cuthill: Dazzle Camouflage Affects Speed Perception, PLoS ONE 6(6) e20233, 2011",
+      "label": "PLoS ONE 2011",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-12160",
+      "title": "John Everett: A Convoy of the First World War (BHC0668), Royal Museums Greenwich",
+      "label": "RMG: BHC0668",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Museumstext: Dazzle habe Schiffe schwerer anzumessen gemacht; die Studie nennt das untested. Im Video nur der Studienbefund."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Can a loud zigzag paint scheme protect a ship precisely because it stands out?",
+      "on_screen": "Protection by standing out?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Camouflage means hiding? Dazzle meant to stand out and deceive.",
+      "on_screen": "Camouflage by standing out",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "In the lab, zigzag looks about seven percent slower.",
+      "on_screen": "7 percent slower?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "In 1918 the Admiralty could not prove a clear effect.",
+      "on_screen": "No clear result",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a pattern make motion look slower.",
+      "on_screen": "A pattern that slows",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Can a loud zigzag paint scheme protect a ship precisely because it stands out?",
+      "data": {
+        "question": "Protection by standing out?",
+        "question_em": "standing out",
+        "card_title": "Dazzle paint",
+        "card_meta": "FIRST WORLD WAR",
+        "card_no": "FILE 21",
+        "stamp": "1918",
+        "drawing": "dazzle_ship.svg",
+        "packet_label": "Pattern",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:ship",
+        "packet_at": "w:zigzag",
+        "em_at": "w:stands"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "In the First World War, the painter Norman Wilkinson proposes painting ships with zigzag lines. The pattern is meant to disguise course, size and speed.",
+      "data": {
+        "mode": "map",
+        "headline": "Deceive, don't hide",
+        "places": [
+          {
+            "label": "Ship",
+            "code": "zigzag",
+            "x": 600,
+            "y": 80,
+            "at": "w:ships"
+          },
+          {
+            "label": "Observer",
+            "code": "at a distance",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:course"
+          }
+        ],
+        "route_at": "w:zigzag",
+        "route_label": "Course? Speed?",
+        "route_label_at": "w:lines",
+        "wait_at": "w:painting",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Idea: Norman Wilkinson",
+        "chip_at": "w:Wilkinson",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Pattern",
+        "packet_at": "w:painter",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Deception, not hiding",
+        "line_label_at": "w:speed",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:asymmetric",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "Each side of a ship gets a different, asymmetric pattern. A painting by John Everett from around 1918 shows such ships in convoy.",
+      "data": {
+        "headline": "Each side different",
+        "drawing": "dazzle_ship.svg",
+        "sheet_title": "SHEET 2 · PAINT SCHEME",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Different on each side",
+            "x": 200,
+            "y": 340,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:pattern"
+          },
+          {
+            "label": "Asymmetric",
+            "x": 300,
+            "y": 270,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:asymmetric"
+          },
+          {
+            "label": "Painting, c. 1918",
+            "x": 350,
+            "y": 210,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:painting"
+          },
+          {
+            "label": "Ships in convoy",
+            "x": 150,
+            "y": 200,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:convoy"
+          }
+        ],
+        "zoom": {
+          "x": 300,
+          "y": 320,
+          "scale": 1.12,
+          "at": "w:asymmetric",
+          "back_at": "w:convoy",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "Did it work? An Admiralty analysis in 1918 gives no clear answer. A study from 2011 tests the patterns in the lab, on a screen.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Two tests",
+        "left": {
+          "tag": "1918",
+          "title": "Admiralty",
+          "at": "w:Admiralty",
+          "rows": [
+            {
+              "text": "no clear answer",
+              "at": "w:answer"
+            }
+          ]
+        },
+        "right": {
+          "tag": "2011",
+          "title": "Lab study",
+          "at": "w:2011",
+          "rows": [
+            {
+              "text": "patterns on a screen",
+              "at": "w:screen"
+            }
+          ]
+        },
+        "verdict": "First measured in 2011",
+        "verdict_at": "w:screen",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "Five patterns are tested at two speeds. Only at high contrast and fast motion do zigzag and check appear about seven percent slower.",
+      "data": {
+        "headline": "The experiment",
+        "nodes": [
+          {
+            "label": "5 patterns",
+            "code": "stripes, check",
+            "at": "w:patterns"
+          },
+          {
+            "label": "2 speeds",
+            "code": "3,33 / 20 °/s",
+            "at": "w:speeds"
+          },
+          {
+            "label": "High contrast",
+            "code": "100 %",
+            "at": "w:contrast"
+          },
+          {
+            "label": "Zigzag, check",
+            "code": "7 % slower",
+            "at": "w:check"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "total": {
+          "to": 7,
+          "pre": "≈",
+          "label": "% SLOWER",
+          "at": "w:percent"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "Around 1918 the painting, in 1918 the analysis with no clear result, and in 2011 the lab measurement.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1918 to 2011",
+        "items": [
+          {
+            "year": "1918",
+            "title": "Everett's painting",
+            "sub": "ships in dazzle paint",
+            "at": "w:1918"
+          },
+          {
+            "year": "1918",
+            "title": "Analysis",
+            "sub": "no clear result",
+            "at": "w:1918#2"
+          },
+          {
+            "year": "2011",
+            "title": "Lab study",
+            "sub": "PLoS ONE",
+            "at": "w:2011"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "For ships in the world wars, the study finds no evidence. Everett's painting is now in the National Maritime Museum collection in Greenwich. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Dazzle",
+        "card_meta": "BHC0668",
+        "card_no": "FILE 21",
+        "stamp": "No proof",
+        "drawing": "dazzle_ship.svg",
+        "statement": "An effect in the lab, no proof at sea",
+        "statement_at": "w:ships",
+        "stamp_at": "w:evidence",
+        "note": "National Maritime Museum, Greenwich",
+        "note_at": "w:Greenwich",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Pattern",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Aim: deceive",
+          "tone": "muted",
+          "offset": 6.1
+        },
+        {
+          "beat": "b2",
+          "text": "Idea: Wilkinson",
+          "tone": "amber",
+          "offset": 4.2
+        },
+        {
+          "beat": "b3",
+          "text": "Pattern: per side",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b4",
+          "text": "Analysis: unclear",
+          "tone": "amber",
+          "offset": 5.6
+        },
+        {
+          "beat": "b5",
+          "text": "Lab: ≈ 7 %",
+          "tone": "muted",
+          "offset": 10.5
+        },
+        {
+          "beat": "b6",
+          "text": "Measured: 2011",
+          "tone": "muted",
+          "offset": 7.1
+        },
+        {
+          "beat": "b7",
+          "text": "At sea: no evidence",
+          "tone": "muted",
+          "offset": 5.1
+        }
+      ]
+    },
+    "description": "Myth checked: dazzle paint was meant to disguise a ship's course and speed. In the lab, zigzags look about 7 % slower; for ships there is no evidence. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "myth",
+      "camouflage",
+      "perception",
+      "history",
+      "dazzle"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

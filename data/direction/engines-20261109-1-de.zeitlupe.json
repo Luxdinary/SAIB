@@ -1,0 +1,481 @@
+{
+ "video_id": "engines-20261109-1-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Der Kolben ist nicht in der Hubmitte am schnellsten",
+ "notes": "Revlore Format Zeitlupe, Pilot P1 (02.11.2026). Kalender engines-20261109-1-de, Reihe Nachgemessen (bisher Mythos-Check). Szenen zl_* aus brands/engines/zeitlupe/scenes.py. Sprechtext unverändert aus dem Woche-1-Plan, Stimme wiederverwendet (voice_engines-20261109-1-de_V1voice_gemini.wav). Format-Bibel: OneDrive Business/02 Marke/Revlore/Format-Bibel.md.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Wo ist der Kolben am schnellsten? Nicht in der Hubmitte. Das schräge Pleuel verschiebt das Maximum nach vorn, bei typischen Pkw-Motoren auf etwa 70 Grad nach OT.",
+  "companion_text": "Schematisches Modell: Kurbelradius und Pleuellänge sind Modellwerte (Verhältnis 0,31), kein bestimmter Motor. Zeitlupenfaktor und Millisekunden beziehen sich auf die Beispieldrehzahl 3000/min.",
+  "hashtags": [
+   "motorentechnik",
+   "kolben",
+   "kurbeltrieb",
+   "pleuel",
+   "mythos"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "MIT 2.61, Vorlesung 8",
+   "title": "MIT 2.61, Vorlesung 8 (L8)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "NASA Glenn, Bohrung und Hub",
+   "title": "NASA Glenn, Bohrung und Hub (N4)",
+   "url": "https://www.grc.nasa.gov/www/k-12/airplane/stroke.html",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Aber genau dort ist der Kolben gar nicht am schnellsten.",
+   "on_screen": "Am schnellsten in der Hubmitte?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Der Kolben erreicht sein Tempo vor der Hubmitte.",
+   "on_screen": "Der Kolben ist nicht in der Hubmitte am schnellsten",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "question",
+   "spoken": "Wo ist der Kolben am schnellsten?",
+   "on_screen": "Der Kolben ist nicht in der Hubmitte am schnellsten",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Der Kolben ist nicht in der Hubmitte am schnellsten",
+   "on_screen": "Der Kolben ist nicht in der Hubmitte am schnellsten",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Der Kolben ist nicht in der Hubmitte am schnellsten",
+   "on_screen": "Der Kolben ist nicht in der Hubmitte am schnellsten",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Die meisten tippen auf die Hubmitte, also dort, wo die Kurbel quer steht. Aber genau dort ist der Kolben gar nicht am schnellsten.",
+   "data": {
+    "claim": "Am schnellsten in der Hubmitte?",
+    "claim_lines": [
+     "Am schnellsten",
+     "in der Hubmitte?"
+    ],
+    "claim_highlight": "Hubmitte",
+    "claim_at": 0.0,
+    "slow_at": "w:Hubmitte",
+    "mid_at": "w:Hubmitte",
+    "strike_at": "w:nicht",
+    "theta": [
+     [
+      "w:Hubmitte",
+      0
+     ],
+     [
+      "w:quer",
+      90
+     ],
+     [
+      "w:Aber",
+      90
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "source": "MIT 2.61, Vorlesung 8 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zl_strobe",
+   "spoken": "Schau auf den blauen Pfeil neben dem Zylinder. Er zeigt, wie schnell sich der Kolben gerade bewegt. Oben und unten steht er kurz still, dazwischen wird er schnell. Je länger der Pfeil, desto höher das Tempo.",
+   "data": {
+    "theta": [
+     [
+      0,
+      360
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "arrow_at": "w:Pfeil",
+    "zero_top_at": "w:Oben",
+    "zero_bottom_at": "w:unten",
+    "gap_at": "w:dazwischen",
+    "source": "NASA Glenn, Bohrung und Hub · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zl_trace",
+   "spoken": "Würde der Kolben einer reinen Sinuskurve folgen, läge sein Maximum genau bei neunzig Grad Kurbelwinkel, also in der Hubmitte. Das ist die gestrichelte Linie.",
+   "data": {
+    "theta": [
+     [
+      0,
+      1080
+     ],
+     [
+      1,
+      1440
+     ]
+    ],
+    "dial": false,
+    "series": [
+     {
+      "kind": "sine",
+      "mode": "draw",
+      "at": "w:Sinuskurve"
+     }
+    ],
+    "marks": [
+     {
+      "x": 90,
+      "label": "90° Hubmitte",
+      "at": "w:neunzig",
+      "color": "steel",
+      "side": "r",
+      "y": -0.95
+     }
+    ]
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "explanation",
+   "scene_type": "zl_cause",
+   "spoken": "Der Grund ist das Pleuel. Es steht schräg und verbindet den Kolben mit dem Kurbelzapfen. In der oberen Hubhälfte zieht diese Schräglage den Kolben zusätzlich nach unten. In der unteren Hälfte bremst sie ihn dagegen früher ab.",
+   "data": {
+    "theta": [
+     [
+      0,
+      1440
+     ],
+     [
+      "w:oberen",
+      1800
+     ],
+     [
+      "w:unteren",
+      1890
+     ],
+     [
+      1,
+      1980
+     ]
+    ],
+    "ticks_shown": true,
+    "rod_at": "w:Pleuel",
+    "beta_at": "w:schräg",
+    "pins_at": "w:Kurbelzapfen",
+    "sine_at": "w:oberen",
+    "rod_off_at": "w:oberen",
+    "notes": [
+     {
+      "text": "Kolben voraus",
+      "at": "w:zusätzlich",
+      "x": 790,
+      "y": 655,
+      "anchor": "end",
+      "color": "accent"
+     },
+     {
+      "text": "bremst früher",
+      "at": "w:bremst",
+      "x": 770,
+      "y": 905,
+      "anchor": "end",
+      "color": "accent"
+     },
+     {
+      "text": "bei 90°: 58 % statt 50 %",
+      "at": "w:unteren",
+      "x": 108,
+      "y": 1095,
+      "color": "text"
+     }
+    ],
+    "source": "MIT 2.61, Vorlesung 8 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zl_trace",
+   "spoken": "Laut Fachvorlesung liegt das Maximum bei typischen Pkw-Motoren etwa bei siebzig Grad nach dem oberen Totpunkt. In unserem Modell sind es vierundsiebzig Grad, klar vor der Hubmitte. Die Kurve ist also nicht symmetrisch: schneller Antritt oben, sanfteres Auslaufen unten.",
+   "data": {
+    "theta": [
+     [
+      0,
+      1980
+     ],
+     [
+      "w:Totpunkt",
+      2160
+     ],
+     [
+      "w:vierundsiebzig",
+      2234
+     ],
+     [
+      "w:symmetrisch",
+      2340
+     ],
+     [
+      1,
+      2520
+     ]
+    ],
+    "dial": false,
+    "series": [
+     {
+      "kind": "sine",
+      "mode": "show"
+     },
+     {
+      "kind": "real",
+      "mode": "live"
+     }
+    ],
+    "marks": [
+     {
+      "x": 90,
+      "label": "90° Hubmitte",
+      "at": 0.0,
+      "color": "steel",
+      "side": "r",
+      "y": -0.95
+     },
+     {
+      "x": 74,
+      "label": "74°",
+      "at": "w:vierundsiebzig",
+      "color": "accent",
+      "side": "l",
+      "y": -0.95
+     }
+    ],
+    "curve_notes": [
+     {
+      "text": "schneller Antritt",
+      "x": 6,
+      "y": -0.3,
+      "at": "w:Antritt",
+      "color": "accent"
+     },
+     {
+      "text": "sanftes Auslaufen",
+      "x": 6,
+      "y": -0.6,
+      "at": "w:Auslaufen",
+      "color": "accent"
+     }
+    ],
+    "notes": [
+     {
+      "text": "Fachvorlesung:",
+      "at": "w:Fachvorlesung",
+      "x": 600,
+      "y": 560,
+      "color": "text"
+     },
+     {
+      "text": "Pkw ~70° nach OT",
+      "at": "w:siebzig",
+      "x": 600,
+      "y": 604,
+      "color": "accent"
+     }
+    ],
+    "source": "MIT 2.61, Vorlesung 8 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Oben Stillstand, unten Stillstand, das Spitzentempo vor der Hubmitte. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      2520
+     ],
+     [
+      0.3,
+      2700
+     ],
+     [
+      0.5,
+      3060
+     ],
+     [
+      "w:Motorentechnik",
+      3780
+     ],
+     [
+      1,
+      9780
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "OT: Stillstand",
+      "hl": "Stillstand",
+      "at": "w:Oben"
+     },
+     {
+      "text": "UT: Stillstand",
+      "hl": "Stillstand",
+      "at": "w:unten"
+     },
+     {
+      "text": "Maximum 74° nach OT (Modell)",
+      "hl": "74°",
+      "at": "w:Spitzentempo"
+     },
+     {
+      "text": "bei 3000/min: nach 4,1 ms",
+      "hl": "4,1 ms",
+      "at": "w:Hubmitte"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    },
+    "source": "MIT 2.61, Vorlesung 8 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

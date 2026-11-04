@@ -1,0 +1,475 @@
+{
+  "video_id": "engines-20261113-2-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "Direct injection cools the charge",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261113-2-en, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "When petrol only evaporates inside the cylinder, it cools the air. That brings more charge and knock margin, and it allows more compression.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.",
+    "hashtags": [
+      "enginetech",
+      "directinjection",
+      "evaporation",
+      "knock",
+      "ethanol"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, lecture 7",
+      "title": "MIT 2.61, Vorlesung 7 (L7)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/ea6fff400434e4163a91c1579ccf7236_MIT2_61S17_lec7.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "US DOE, engine technologies",
+      "title": "US-DOE, Motortechnik (F2)",
+      "url": "https://www.fueleconomy.gov/feg/tech_engine_more.shtml",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "label": "MIT 2.61, lecture 8",
+      "title": "MIT 2.61, Vorlesung 8 (L8)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "You just have to inject it directly.",
+      "on_screen": "Fuel that cools",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Can fuel cool an engine?",
+      "on_screen": "Direct injection cools the charge",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Direct injection cools the charge",
+      "on_screen": "Direct injection cools the charge",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Direct injection cools the charge",
+      "on_screen": "Direct injection cools the charge",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Direct injection cools the charge",
+      "on_screen": "Direct injection cools the charge",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Petrol can cool the air inside the cylinder. You just have to inject it directly.",
+      "data": {
+        "claim": "Fuel that cools",
+        "claim_lines": [
+          "Fuel",
+          "that cools"
+        ],
+        "claim_highlight": "cools",
+        "claim_at": 0.05,
+        "counters": false,
+        "injector": "direct",
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:cool",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_cutaway",
+      "spoken": "With direct injection, the fuel only evaporates inside the cylinder. Evaporating needs heat, and it takes that heat from the incoming air. The charge gets cooler. It is the same effect as the chill of water evaporating on wet skin. The spray you see here is that fuel.",
+      "data": {
+        "title": "Evaporation cools",
+        "injector": "direct",
+        "notes": [
+          {
+            "text": "evaporates",
+            "at": "w:evaporates",
+            "side": "r",
+            "y": 900,
+            "to": [
+              540,
+              590
+            ]
+          },
+          {
+            "text": "air cooler",
+            "at": "w:cooler",
+            "side": "l",
+            "y": 760,
+            "to": [
+              480,
+              620
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:heat",
+        "kicker": "2 · THE PRINCIPLE",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_readout",
+      "spoken": "How much, the engineering lecture shows for a mixture at lambda one. Isooctane, a component of petrol, cools the charge by nineteen degrees. Ethanol by eighty degrees, and methanol by as much as a hundred and twenty-eight. So ethanol cools about four times as much as isooctane.",
+      "data": {
+        "title": "Evaporative cooling",
+        "figure": "bars",
+        "bar_max": 135,
+        "lines_y": 1010,
+        "bars": [
+          {
+            "label": "isooctane",
+            "value": 19,
+            "text": "−19 °C",
+            "at": "w:Isooctane"
+          },
+          {
+            "label": "Ethanol",
+            "value": 80,
+            "text": "−80 °C",
+            "at": "w:Ethanol"
+          },
+          {
+            "label": "Methanol",
+            "value": 128,
+            "text": "−128 °C",
+            "at": "w:methanol"
+          }
+        ],
+        "lines": [
+          {
+            "text": "mixture at λ = 1",
+            "hl": "λ = 1",
+            "at": "w:lambda"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:lecture",
+        "kicker": "3 · HOW MUCH",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S3"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rv_cutaway",
+      "spoken": "Cooler air is denser. More charge fits into the cylinder, and the tendency to knock goes down. The lecture names both as advantages of direct injection. Small turbocharged engines build on exactly that. That is a double benefit.",
+      "data": {
+        "title": "More charge",
+        "injector": "direct",
+        "labels": [
+          "chamber"
+        ],
+        "labels_at": [
+          "w:charge"
+        ],
+        "notes": [
+          {
+            "text": "less knock",
+            "at": "w:knock",
+            "side": "l",
+            "y": 880,
+            "to": [
+              452,
+              536
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:denser",
+        "kicker": "4 · THE EFFECTS",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_readout",
+      "spoken": "The US Department of Energy writes that cooler air allows a higher compression ratio or better spark timing. The agency puts the fuel saving at about one percent. According to the lecture, direct injection already had a market share of about forty percent in twenty thirteen.",
+      "data": {
+        "title": "According to the US DOE",
+        "figure": "bars",
+        "bar_max": 45,
+        "lines_y": 1010,
+        "bars": [
+          {
+            "label": "fuel saving (US DOE)",
+            "value": 1,
+            "text": "≈ 1 %",
+            "at": "w:saving"
+          },
+          {
+            "label": "market share 2013 (MIT)",
+            "value": 40,
+            "text": "≈ 40 %",
+            "at": "w:market"
+          }
+        ],
+        "lines": [
+          {
+            "text": "cooler air → more compression",
+            "hl": "more compression",
+            "at": "w:compression"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Department",
+        "kicker": "5 · THE RESULT",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Evaporation cools, cool air is denser, and that buys knock margin. Understand engines: follow Revlore.",
+      "data": {
+        "injector": "direct",
+        "chips": [
+          {
+            "text": "evaporate",
+            "at": "w:Evaporation"
+          },
+          {
+            "text": "denser air",
+            "at": "w:denser"
+          },
+          {
+            "text": "knock margin",
+            "at": "w:margin"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

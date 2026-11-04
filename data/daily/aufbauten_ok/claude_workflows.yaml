@@ -1,0 +1,92 @@
+# Bildaufbauten Promptwerk (claude_workflows) für den Tagesläufer.
+# Erster Entwurf: Tagesläufer-Sitzung, 03.11.2026. Geprüft und korrigiert: Promptwerk-Sitzung, 03.11.2026 abends
+# (Szenencode, Aufzeichnungen, Konzeptplan). Szenencode: brands/claude_workflows/echtlauf/scenes.py (rec_*).
+# Jedes Thema braucht eine vorhandene Aufzeichnung in echtlauf/recordings/ (der Tagesläufer zeichnet nichts auf).
+#
+# Was der Entwurf falsch hatte:
+#  - rec_table, rec_diff und rec_split lesen eine CSV-Datei und die Zeilenzahl der Ergebnisdatei (outcome `rows`). Das gibt es nur
+#    in der Aufzeichnung kunden-dubletten (DE und EN). Für alle anderen Aufzeichnungen taugen sie nicht.
+#  - Als Beispielplan stand überall der Dubletten-Plan, obwohl er nur Aufbau A zeigt.
+#  - Es fehlten die Konzeptplan-Nummern je Aufbau und der Pfad je Aufzeichnung. Ohne Eintrag unter `themen` gilt ein Thema
+#    laut Tagesläufer als „braucht Modell oder Aufbau“.
+#
+# Pflicht für jeden Plan dieser Marke (steht nicht im Beispielplan jedes Aufbaus):
+#  - layout.format "echtlauf", layout.echtlauf.recording "<Aufzeichnungs-ID>"; EN-Fassung mit der -en-Aufzeichnung.
+#  - Ton: layout.sound und layout.sound_cues wie im Dubletten-Plan (Palette tech, Stimmung tech, Bett -14 dB).
+#  - Fotos nur als rec_photo mit "src": "library/<Datei>" (brands/claude_workflows/assets/higgsfield/library/, 29 Bilder,
+#    jede mit Lizenzzeile); ein Clip nur zusammen mit seinem Startbild. Höchstens 2 neue Credits je Thema, sonst Bibliothek.
+#  - Vertonung DE: nicht über den Standard der Pipeline, sondern brands/claude_workflows/echtlauf/voice_tts.py mit
+#    "--say Claude=Klohd", danach render_direction.py mit --reuse-voice auf storage/direction/voice_<video_id>_<Version>_gemini.wav.
+#    Sonst spricht die Stimme "Cloud" (Whisper, 03.11.). Vertonung EN: Stimme Kore wie DE, ohne --say.
+#  - Alle Zahlen und Zeilen im Terminal kommen aus der Aufzeichnung; Sprechtext nennt nur, was das Protokoll zeigt.
+aufbauten:
+  - kuerzel: A
+    name: Vorher-nachher
+    gebaut: true
+    szenentypen: [rec_photo, rec_setup, rec_replay, rec_answer, rec_protokoll, rec_table, rec_diff]
+    beispielplan: data/direction/claude_workflows-20261103-tv-de-echtlauf.json
+    beispielplan_en: data/direction/claude_workflows-20261103-tv-en-echtlauf.json
+    hinweis: >-
+      Reihe Eine Aufgabe, ein Lauf. Foto, Ausgangsdatei, Lauf, Ergebnisdatei, Antwortkarte, Schlussfoto.
+      Mit rec_table und rec_diff (Datei als Liste, Zeilenstreifen und Zähler) nur bei einer CSV-Aufzeichnung mit outcome `rows`
+      (kunden-dubletten, schon produziert, Beispielplan). Für eine Datei anderer Art (aufgabe-ablauf: summe.js) steht stattdessen
+      rec_setup mit "state": "before" und später "state": "after" und "show": "<Datei>"; rec_diff entfällt.
+    themen: [4, 19, 52]
+  - kuerzel: B
+    name: Duell mit Stempel
+    gebaut: true
+    szenentypen: [rec_auftrag, rec_setup, rec_rule, rec_replay, rec_result, rec_protokoll, rec_photo]
+    beispielplan: data/direction/claude_workflows-20261110-2-de-echtlauf.json
+    beispielplan_en: data/direction/claude_workflows-20261110-2-en-echtlauf.json
+    hinweis: >-
+      Reihe Hält das? Einstieg Terminal (rec_auftrag: Frage, Befehl tippt sich, offene Läufe als Chips), kein Foto am Anfang.
+      Dann Regeldatei mit Doku-Zitat (rec_rule), die Läufe nacheinander mit Urteilsstempel aus outcome.json (rec_replay),
+      Ergebnistafel (rec_result), Protokollkarte (rec_protokoll). Ein Schlussfoto (rec_photo) ist erlaubt.
+      Der Beispielplan ist der Pilot im Stand vom 02.11. (ohne Foto und Ton): Ton und Foto-Schluss nach dem Dubletten-Plan ergänzen.
+      Der Pilot (Nr. 5) liegt im alten Stand schon als `2026-11-10 Pilot Deny-Regeln` vor.
+    themen: [3, 5, 8, 9, 10, 22]
+  - kuerzel: C
+    name: Doku gegen Protokoll
+    gebaut: true
+    szenentypen: [rec_rule, rec_replay, rec_answer, rec_result, rec_photo]
+    beispielplan: data/direction/claude_workflows-20261109-1-de-echtlauf.json
+    beispielplan_en: data/direction/claude_workflows-20261109-1-en-echtlauf.json
+    hinweis: >-
+      Reihe Doku gegen Wirklichkeit. Ein reines Zitat-Bild gibt es nicht: rec_rule zeigt die Regeldatei (Parameter "file", bei
+      claude-md-lang die CLAUDE.md mit "max_rows") und darunter Zitat mit Quelle und Übersetzung. Danach Lauf, Antwortkarte mit
+      markierter Stelle (rec_answer), Ergebnistafel, Foto erst am Schluss. Der Beispielplan ist der Plan zum selben Thema
+      im Stand vom 02.11.; Ton und Foto nach dem Dubletten-Plan ergänzen.
+    themen: [1, 17]
+  - kuerzel: D
+    name: Zwei Schalter
+    gebaut: true
+    szenentypen: [rec_photo, rec_replay, rec_result, rec_answer, rec_protokoll]
+    beispielplan: data/direction/claude_workflows-20261111-1-de-echtlauf.json
+    beispielplan_en: data/direction/claude_workflows-20261111-1-en-echtlauf.json
+    hinweis: >-
+      Reihe Gleicher Auftrag, anderer Schalter. Foto-Einstieg, beide Läufe nacheinander als rec_replay, Ergebnistafel mit Messwert
+      ("metric": "input_tokens" oder "duration_s" und "metric_unit"), Antwortkarte des auffälligeren Laufs. rec_split (geteiltes
+      Bild) gibt es nur für die CSV-Aufzeichnung kunden-dubletten und ist hier nicht verwendbar. Der Beispielplan (kontext-suche)
+      ist im Stand vom 02.11.; Foto-Einstieg und Ton nach dem Dubletten-Plan ergänzen.
+    themen: [2, 6, 7, 11, 23]
+
+# Aufzeichnungen: Pfad, Thema, Aufbau, Läufe. Pfade relativ zu brands/claude_workflows/echtlauf/recordings/ (EN: Endung -en).
+# Alle Läufe zweimal aufgezeichnet und gleich (all_reproducible). Datum der Aufzeichnung 02.11.2026, kunden-dubletten 03.11.2026, Nr. 17, 19, 22, 23 am 04.11.2026.
+# altplan = Plan im Stand vom 02.11. (null: es gibt noch keinen, der Plan entsteht neu) (alte Szenen, ohne Foto und Ton); sein Sprechtext darf nur übernommen werden, wo er zum Protokoll passt.
+aufzeichnungen:
+  - {nr: 1,  id: claude-md-lang,        id_en: claude-md-lang-en,        topic_id: claude_workflows-20261109-1-de, aufbau: C, laeufe: [L1, L2],         altplan: data/direction/claude_workflows-20261109-1-de-echtlauf.json}
+  - {nr: 2,  id: claude-md-laden,       id_en: claude-md-laden-en,       topic_id: claude_workflows-20261109-2-de, aufbau: D, laeufe: [L1, L2],         altplan: data/direction/claude_workflows-20261109-2-de-echtlauf.json}
+  - {nr: 3,  id: hook-env,              id_en: hook-env-en,              topic_id: claude_workflows-20261109-3-de, aufbau: B, laeufe: [L1, L2, L3, L4], altplan: data/direction/claude_workflows-20261109-3-de-echtlauf.json}
+  - {nr: 4,  id: aufgabe-ablauf,        id_en: aufgabe-ablauf-en,        topic_id: claude_workflows-20261110-1-de, aufbau: A, laeufe: [L1, L2],         altplan: data/direction/claude_workflows-20261110-1-de-echtlauf.json}
+  - {nr: 5,  id: deny-env,              id_en: deny-env-en,              topic_id: claude_workflows-20261110-2-de, aufbau: B, laeufe: [L1, L2, L3, L4], altplan: data/direction/claude_workflows-20261110-2-de-echtlauf.json}
+  - {nr: 6,  id: kontext-suche,         id_en: kontext-suche-en,         topic_id: claude_workflows-20261111-1-de, aufbau: D, laeufe: [L1, L2],         altplan: data/direction/claude_workflows-20261111-1-de-echtlauf.json}
+  - {nr: 7,  id: mcp-docs,              id_en: mcp-docs-en,              topic_id: claude_workflows-20261113-1-de, aufbau: D, laeufe: [L1, L2],         altplan: data/direction/claude_workflows-20261113-1-de-echtlauf.json}
+  - {nr: 8,  id: format-hook,           id_en: format-hook-en,           topic_id: claude_workflows-20261114-3-de, aufbau: B, laeufe: [L1, L2],         altplan: data/direction/claude_workflows-20261114-3-de-echtlauf.json}
+  - {nr: 9,  id: subagent-werkzeuge,    id_en: subagent-werkzeuge-en,    topic_id: claude_workflows-20261115-1-de, aufbau: B, laeufe: [L1, L2],         altplan: data/direction/claude_workflows-20261115-1-de-echtlauf.json}
+  - {nr: 10, id: werkzeuge-freigabe,    id_en: werkzeuge-freigabe-en,    topic_id: claude_workflows-20261115-2-de, aufbau: B, laeufe: [L1, L2, L3],     altplan: data/direction/claude_workflows-20261115-2-de-echtlauf.json}
+  - {nr: 11, id: regel-oder-hook,       id_en: regel-oder-hook-en,       topic_id: claude_workflows-20261115-3-de, aufbau: D, laeufe: [L1, L2, L3],     altplan: data/direction/claude_workflows-20261115-3-de-echtlauf.json}
+  - {nr: 52, id: kunden-dubletten,      id_en: kunden-dubletten-en,      topic_id: claude_workflows-testvideo-2026-11-de, aufbau: A, laeufe: [L1, L2], altplan: data/direction/claude_workflows-20261103-tv-de-echtlauf.json, hinweis: "schon produziert (Testvideo, freigegeben 03.11.)"}
+  - {nr: 17, id: grossbuchstaben,       id_en: grossbuchstaben-en,       topic_id: claude_workflows-20261116-1-de, aufbau: C, laeufe: [L1, L2],         altplan: null, hinweis: "Ergebnis in beiden Läufen und Wiederholungen gleich: der Satz am Ende steht jedes Mal da, WICHTIG ändert hier nichts. Nur das sagen, mehr beweisen zwei Läufe nicht. Regel steht in einer CLAUDE.md mit 24 Zeilen: rec_rule mit file CLAUDE.md und max_rows."}
+  - {nr: 19, id: eigener-subagent,      id_en: eigener-subagent-en,      topic_id: claude_workflows-20261117-2-de, aufbau: A, laeufe: [L1, L2],         altplan: null, hinweis: "DE: mit Subagent-Datei ruft Claude den Subagenten auf (Agent) und pruefung.txt entsteht, ohne Datei nicht. EN: in beiden Läufen und Wiederholungen KEIN Aufruf des Subagenten, die EN-Aufzeichnung zeigt also ein anderes Ergebnis als DE; der EN-Sprechtext darf den DE-Text nicht übersetzen, sondern muss das Protokoll erzählen. pruefung.txt enthält einen Sandbox-Pfad (nicht wörtlich zeigen, sondern über rec_answer)."}
+  - {nr: 22, id: hook-ereignisse,       id_en: hook-ereignisse-en,       topic_id: claude_workflows-20261118-2-de, aufbau: B, laeufe: [L1, L2],         altplan: null, hinweis: "ereignisse.log nach dem Lauf (rec_setup state after, show ereignisse.log): Lauf 1 mit Datei lesen SessionStart, UserPromptSubmit, PreToolUse, PostToolUse, Stop; Lauf 2 nur eine Frage ohne PreToolUse und PostToolUse. Probe PostToolUse."}
+  - {nr: 23, id: rules-ordner,          id_en: rules-ordner-en,          topic_id: claude_workflows-20261118-3-de, aufbau: D, laeufe: [L1, L2],         altplan: null, hinweis: "Regel .claude/rules/tests.md mit paths tests/**: Arbeit in tests/ schreibt die Zeile TEST-REGEL (DE) beziehungsweise TEST-RULE (EN) an den Dateianfang, Arbeit in src/ nicht. Probe je Lauf in einer anderen Datei, outcome probe_hit steht je Lauf."}

@@ -1,0 +1,641 @@
+{
+  "video_id": "claude_workflows-20261115-1-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Subagenten – ein eigenes Kontextfenster pro Aufgabe",
+  "notes": "Woche 1 (Plan-Agent D, 01.11.2026). Reihe Grundlagen, Thema G6. Leitobjekt code-reviewer.md (Beispiel-Subagent aus der Doku). Grenze laut Doku genannt: gleiche Nutzungslimits, Anlaufzeit. Quellen am 01.11.2026 als Markdown geöffnet. Alle Oberflächen animiert.",
+  "hook": {
+    "id": "H1",
+    "note": "Frage mit höchster Bewertung; die lange Leseliste zeigt das Problem."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Dreißig Dateien prüfen: Landet alles in deinem Gespräch, oder übernimmt das ein Subagent?",
+      "on_screen": "Alles ins Gespräch?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Verlauf mit vielen Read-Zeilen, Marker, Frage",
+      "why": {
+        "truth": "Frage; Antwort in der Subagents-Seite",
+        "visual": "lange Liste macht das Problem sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Ein Subagent sieht dein ganzes Gespräch? Laut Doku startet er frisch.",
+      "on_screen": "Sieht er alles? Nein.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Text",
+      "why": {
+        "visual": "wenig Handlung"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Ein Subagent liest dreißig Dateien, und bei dir kommt nur die Zusammenfassung an.",
+      "on_screen": "Nur die Zusammenfassung kommt an",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "zwei Fenster",
+      "why": {
+        "truth": "Zahl dreißig ist ein Beispiel"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Jede Datei, die Claude liest, landet in deinem Kontext.",
+      "on_screen": "Dein Kontext läuft voll",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Kontext füllt sich",
+      "why": {
+        "truth": "zugespitzt"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie ein Subagent die Arbeit übernimmt und nur das Ergebnis zurückgibt.",
+      "on_screen": "Arbeit raus, Ergebnis zurück",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Ablaufschiene",
+      "why": {
+        "curiosity": "schwächer als die Frage"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Create custom subagents (Claude Code Docs): own context window, custom system prompt, specific tool access, independent permissions; returns only the summary; what loads at startup; same usage limits; may need time to gather context; .claude/agents/, ~/.claude/agents/; code-reviewer example",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Subagents"
+    },
+    {
+      "id": "S2",
+      "title": "Extend Claude Code (Claude Code Docs): Skill vs Subagent; subagent uses a separate window; main conversation only receives a summary",
+      "url": "https://code.claude.com/docs/en/features-overview",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Erweiterungen"
+    }
+  ],
+  "unverified": [
+    "Wie Claude Code einen Subagenten-Aufruf im Terminal genau anzeigt: nicht geprüft; Abschluss-Terminal animiert, Zeile Agent(code-reviewer) als Beispiel.",
+    "Die Zahl dreißig Dateien und die Dateinamen im Hook sind Beispiele.",
+    "Eigene Subagenten laden laut Doku trotzdem CLAUDE.md und Git-Status; im Video nur „ohne deinen Gesprächsverlauf“, nicht „ohne alles“."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Subagent",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Hauptkontext: füllt sich",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "eigenes Kontextfenster",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "Auftrag: delegiert",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Subagent: angelegt",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "zurück: nur Ergebnis",
+          "tone": "accent"
+        },
+        {
+          "beat": "b6",
+          "text": "Limits: zählen mit",
+          "tone": "amber"
+        },
+        {
+          "beat": "b7",
+          "text": "Subagent: angelegt",
+          "tone": "accent"
+        },
+        {
+          "beat": "b8",
+          "text": "Hauptkontext: schlank",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Ein Subagent arbeitet laut Claude-Code-Dokumentation in seinem eigenen Kontextfenster, mit eigenem Systemprompt, eigenen Werkzeugen und Rechten, und gibt nur die Zusammenfassung zurück. So legst du einen an und das kostet er.",
+    "companion_text": "Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk. Grundlage: Claude-Code-Doku (Create custom subagents, Extend Claude Code), abgerufen am 01.11.2026. Editor und Terminal sind eine animierte Darstellung, keine Bildschirmaufnahme; code-reviewer.md ist das Beispiel aus der Doku. Grenzen laut Doku: Die Anfragen eines Subagenten zählen zu denselben Nutzungslimits wie dein Hauptgespräch, und weil er frisch startet, braucht er womöglich Zeit, um Kontext zu sammeln.",
+    "hashtags": [
+      "claudecode",
+      "subagents",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "Subagenten"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Dreißig Dateien prüfen: Landet alles in deinem Gespräch, oder übernimmt das ein Subagent?",
+      "data": {
+        "question": "Alles ins Gespräch oder ein Subagent?",
+        "chip": "Kontext?",
+        "tabs": [
+          {
+            "name": "Verlauf",
+            "active": true
+          },
+          "code-reviewer.md"
+        ],
+        "file": "code-reviewer.md",
+        "lines": [
+          [
+            [
+              "com",
+              "# Gesprächsverlauf"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Read(src/auth.js)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Read(src/api.js)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Read(src/user.js)"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "  "
+            ],
+            [
+              "kw",
+              "… 27 weitere Dateien"
+            ]
+          ]
+        ],
+        "focus_line": 4,
+        "zoom": 1.1,
+        "mark_word": "dreißig",
+        "click_word": "prüfen",
+        "question_word": "Landet",
+        "chip_word": "Gespräch",
+        "env_word": "Subagent"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Landet"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Laut Doku läuft jeder Subagent in seinem eigenen Kontextfenster. Er erledigt die Arbeit dort und gibt nur die Zusammenfassung zurück.",
+      "data": {
+        "kicker": "Claude Code Docs · Subagents",
+        "page_title": "Create custom subagents",
+        "quotes": [
+          "Each subagent runs in its own context window",
+          "does that work in its own context and returns only the summary"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Eigener Kontext, zurück nur das Fazit.",
+        "page_word": "Doku",
+        "quote1_word": "eigenen",
+        "quote2_word": "erledigt",
+        "translation_word": "Zusammenfassung"
+      },
+      "overlay": {
+        "title": "Ein Fenster pro Aufgabe",
+        "marker_at": "w:eigenen",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Der Ablauf: Claude schreibt einen Auftrag. Der Subagent startet frisch, ohne deinen Gesprächsverlauf, arbeitet für sich und meldet dann das Ergebnis zurück.",
+      "data": {
+        "headline": "",
+        "gate": 2,
+        "chip": "startet frisch",
+        "nodes": [
+          {
+            "label": "Hauptgespräch"
+          },
+          {
+            "label": "Auftrag",
+            "tag": "Zusammenfassung"
+          },
+          {
+            "label": "Subagent",
+            "hook": true
+          },
+          {
+            "label": "Ergebnis"
+          },
+          {
+            "label": "Hauptgespräch"
+          }
+        ],
+        "travel_word": "Auftrag",
+        "gate_word": "frisch",
+        "travel_end_word": "meldet"
+      },
+      "overlay": {
+        "title": "So läuft die Übergabe",
+        "marker_at": "w:Auftrag",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Einen eigenen schreibst du als Markdown-Datei. Oben die Beschreibung, wann Claude delegiert, dann die erlaubten Werkzeuge. Der Text darunter ist sein Systemprompt.",
+      "data": {
+        "tabs": [
+          {
+            "name": "code-reviewer.md",
+            "active": true
+          }
+        ],
+        "focus_line": 3,
+        "pre_line": 2,
+        "callout": "nur Read, Glob und Grep",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "punc",
+              "---"
+            ]
+          ],
+          [
+            [
+              "key",
+              "name"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "code-reviewer"
+            ]
+          ],
+          [
+            [
+              "key",
+              "description"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "Reviews code for quality…"
+            ]
+          ],
+          [
+            [
+              "key",
+              "tools"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "Read, Glob, Grep"
+            ]
+          ],
+          [
+            [
+              "key",
+              "model"
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "sonnet"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "---"
+            ]
+          ],
+          [
+            [
+              "",
+              "You are a code reviewer. When invoked,"
+            ]
+          ],
+          [
+            [
+              "",
+              "analyze the code and provide specific,"
+            ]
+          ],
+          [
+            [
+              "",
+              "actionable feedback …"
+            ]
+          ]
+        ],
+        "line_h": 50,
+        "zoom": 1.08,
+        "typed_word": "Markdown",
+        "pre_word": "Beschreibung",
+        "mark_word": "erlaubten",
+        "click_word": "Werkzeuge",
+        "callout_word": "Systemprompt"
+      },
+      "overlay": {
+        "title": "Eine Subagent-Datei",
+        "example": true,
+        "marker_at": "w:Markdown",
+        "dim_at": "w:Werkzeuge",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Der Unterschied: Ohne Subagent landet jede gelesene Datei in deinem Verlauf. Mit Subagent bleibt sie in seinem Fenster, du bekommst nur das Ergebnis.",
+      "data": {
+        "top": {
+          "title": "ohne Subagent",
+          "verdict": "voll",
+          "rows": [
+            "jede Datei im Verlauf",
+            "Kontext füllt sich"
+          ]
+        },
+        "bottom": {
+          "title": "mit Subagent",
+          "verdict": "schlank",
+          "rows": [
+            "Arbeit im eigenen Fenster",
+            "zurück: nur das Ergebnis"
+          ]
+        },
+        "top_word": "Ohne",
+        "bottom_word": "Mit"
+      },
+      "overlay": {
+        "title": "Voll oder schlank",
+        "marker": "auslegung",
+        "marker_at": "w:Unterschied",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Gratis ist das nicht: Seine Anfragen zählen zu denselben Nutzungslimits wie dein Hauptgespräch. Und weil er frisch startet, braucht er womöglich Zeit, um Kontext zu sammeln.",
+      "data": {
+        "kicker": "Claude Code Docs · Subagents",
+        "page_title": "Create custom subagents",
+        "quotes": [
+          "count toward the same usage limits as your main conversation",
+          "starts fresh and may need time to gather context"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Zählt zum Limit, braucht Anlaufzeit.",
+        "page_word": "Gratis",
+        "quote1_word": "zählen",
+        "quote2_word": "frisch",
+        "translation_word": "Zeit"
+      },
+      "overlay": {
+        "title": "Was er kostet",
+        "marker_at": "w:zählen",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "So legst du einen an: für ein Projekt im Ordner .claude/agents, für alle Projekte im selben Ordner in deinem Home-Verzeichnis. Dazu name, description und tools.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Nur dieses Projekt",
+            "code": ".claude/agents/",
+            "at_word": "Projekt"
+          },
+          {
+            "title": "Alle deine Projekte",
+            "code": "~/.claude/agents/",
+            "at_word": "alle"
+          },
+          {
+            "title": "Kopf ausfüllen",
+            "code": "name · description · tools",
+            "at_word": "Dazu"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "In drei Schritten",
+        "marker": "fakt",
+        "marker_at": "w:Projekt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Ein Subagent arbeitet im eigenen Fenster, zurück kommt nur das Ergebnis. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "Hauptkontext: schlank",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Agent(code-reviewer)"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  ↳ zurück: nur das Ergebnis"
+          }
+        ],
+        "statement": "Eigenes Fenster. Zurück kommt nur das Ergebnis.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Subagent",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

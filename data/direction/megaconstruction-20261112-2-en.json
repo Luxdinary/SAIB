@@ -1,0 +1,809 @@
+{
+  "video_id": "megaconstruction-20261112-2-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Panama Canal: how a Neopanamax lock saves 60% of its water",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261112-2-en. Thema: panamalock. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Neopanamax",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "lockage under way",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "427 × 55 × 18.3 m",
+          "tone": "accent",
+          "at": "@427"
+        },
+        {
+          "beat": "b3",
+          "text": "water in the basins",
+          "tone": "accent",
+          "at": "@basins"
+        },
+        {
+          "beat": "b3",
+          "text": "up to 60 % back",
+          "tone": "green",
+          "at": "@60"
+        },
+        {
+          "beat": "b4",
+          "text": "127 m to spare",
+          "tone": "green",
+          "at": "@127"
+        },
+        {
+          "beat": "b5",
+          "text": "in service since 2016",
+          "tone": "green",
+          "at": "@2007"
+        }
+      ]
+    },
+    "description": "The Neopanamax locks of the Panama Canal reuse up to 60% of their water – with water-saving basins beside each chamber. Explained step by step.",
+    "companion_text": "Calculated: 427 m − 299.98 m = 127 m. Sources: Panama Canal Authority (expansion, 2016 inauguration). Stylised 3D model, basin count schematic. Follow Gigastruct.",
+    "hashtags": [
+      "panamacanal",
+      "locks",
+      "water",
+      "shipping",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "427 m − 299,98 m = 127 m; 427 ÷ 299,98 = 1,42",
+        "result": "127 m frei",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -2,
+            0
+          ]
+        },
+        {
+          "id": "wallN",
+          "kind": "box",
+          "size": [
+            460,
+            24,
+            10
+          ],
+          "color": "model",
+          "pos": [
+            0,
+            -2,
+            32.5
+          ]
+        },
+        {
+          "id": "wallS",
+          "kind": "box",
+          "size": [
+            460,
+            24,
+            10
+          ],
+          "color": "model",
+          "pos": [
+            0,
+            -2,
+            -32.5
+          ]
+        },
+        {
+          "id": "chamber",
+          "kind": "box",
+          "size": [
+            427,
+            1,
+            55
+          ],
+          "color": "water",
+          "pos": [
+            0,
+            -2,
+            0
+          ],
+          "props": {
+            "sy": 18
+          }
+        },
+        {
+          "id": "ship",
+          "kind": "box",
+          "size": [
+            300,
+            18,
+            48
+          ],
+          "color": "boat",
+          "pos": [
+            -40,
+            4,
+            0
+          ]
+        },
+        {
+          "id": "bas0",
+          "kind": "box",
+          "size": [
+            130,
+            1,
+            70
+          ],
+          "color": "water",
+          "pos": [
+            -140,
+            0,
+            -95
+          ],
+          "props": {
+            "sy": 2
+          }
+        },
+        {
+          "id": "bas1",
+          "kind": "box",
+          "size": [
+            130,
+            1,
+            70
+          ],
+          "color": "water",
+          "pos": [
+            0,
+            0,
+            -95
+          ],
+          "props": {
+            "sy": 2
+          }
+        },
+        {
+          "id": "bas2",
+          "kind": "box",
+          "size": [
+            130,
+            1,
+            70
+          ],
+          "color": "water",
+          "pos": [
+            140,
+            0,
+            -95
+          ],
+          "props": {
+            "sy": 2
+          }
+        }
+      ],
+      "anchors": {
+        "len": [
+          0,
+          23,
+          30
+        ],
+        "wid": [
+          215,
+          23,
+          0
+        ],
+        "dep": [
+          215,
+          8,
+          -28
+        ],
+        "basin": [
+          0,
+          2,
+          -95
+        ],
+        "ship": [
+          -40,
+          26,
+          0
+        ],
+        "free": [
+          170,
+          18,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS",
+              "bas0",
+              "bas2"
+            ],
+            "az0": 50,
+            "az1": 40,
+            "el0": 28,
+            "el1": 22,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "cy": 840
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS"
+            ],
+            "az0": 80,
+            "az1": 70,
+            "el0": 30,
+            "el1": 26,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "cy": 840
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS",
+              "bas0",
+              "bas2"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 40,
+            "el1": 34,
+            "fit0": 0.9,
+            "fit1": 0.95,
+            "cy": 860
+          },
+          "props": {
+            "chamber.sy": [
+              [
+                0,
+                18
+              ],
+              [
+                "%0.25",
+                18
+              ],
+              [
+                "%0.55",
+                8
+              ],
+              [
+                "%0.75",
+                8
+              ],
+              [
+                "%0.95",
+                16
+              ]
+            ],
+            "ship.y": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.25",
+                0
+              ],
+              [
+                "%0.55",
+                -10
+              ],
+              [
+                "%0.75",
+                -10
+              ],
+              [
+                "%0.95",
+                -2
+              ]
+            ],
+            "bas0.sy": [
+              [
+                0,
+                2
+              ],
+              [
+                "%0.25",
+                2
+              ],
+              [
+                "%0.55",
+                9
+              ],
+              [
+                "%0.75",
+                9
+              ],
+              [
+                "%0.95",
+                3
+              ]
+            ],
+            "bas1.sy": [
+              [
+                0,
+                2
+              ],
+              [
+                "%0.25",
+                2
+              ],
+              [
+                "%0.55",
+                9
+              ],
+              [
+                "%0.75",
+                9
+              ],
+              [
+                "%0.95",
+                3
+              ]
+            ],
+            "bas2.sy": [
+              [
+                0,
+                2
+              ],
+              [
+                "%0.25",
+                2
+              ],
+              [
+                "%0.55",
+                9
+              ],
+              [
+                "%0.75",
+                9
+              ],
+              [
+                "%0.95",
+                3
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS"
+            ],
+            "az0": 90,
+            "az1": 95,
+            "el0": 55,
+            "el1": 60,
+            "fit0": 0.95,
+            "fit1": 0.95,
+            "cy": 900
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS",
+              "bas0",
+              "bas2"
+            ],
+            "az0": 30,
+            "az1": 45,
+            "el0": 20,
+            "el1": 26,
+            "fit0": 0.95,
+            "fit1": 0.9,
+            "cy": 880
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS",
+              "bas0",
+              "bas2"
+            ],
+            "az0": 120,
+            "az1": 110,
+            "el0": 26,
+            "el1": 30,
+            "fit0": 0.95,
+            "fit1": 0.9,
+            "cy": 880
+          },
+          "props": {
+            "ship.x": [
+              [
+                0,
+                0
+              ],
+              [
+                "%1",
+                140
+              ]
+            ]
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://pancanal.com/en/discover-the-expanded-canal/",
+      "title": "Autoridad del Canal de Panamá: Discover the expanded canal (Kammer 427 × 55 × 18,3 m; bis zu 60 % Wasserwiederverwendung durch Wassersparbecken)",
+      "label": "ACP, Expanded Canal",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://pancanal.com/en/game-changer-inauguration-of-the-expanded-panama-canal-ushers-in-new-era-of-global-trade/",
+      "title": "ACP: Inauguration 26.06.2016; 5,25 Mrd. US$; Baubeginn 2007; COSCO Shipping Panama 299,98 × 48,25 m",
+      "label": "ACP, Eröffnung 2016",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Anzahl der Sparbecken je Kammer: Quellen zählen unterschiedlich, im Modell schematisch.",
+    "Hubhöhe je Stufe und Torgewichte: nicht in den geöffneten Quellen."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Every time a ship passes, this lock can reuse up to 60 percent of its water.",
+      "on_screen": "Up to 60 % of the water reused",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Neopanamax lock, really?",
+      "on_screen": "How big is the Neopanamax lock, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate the Neopanamax lock.",
+      "on_screen": "the Neopanamax lock: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Neopanamax lock depends on how it is built.",
+      "on_screen": "the Neopanamax lock: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Neopanamax lock take shape in the model.",
+      "on_screen": "the Neopanamax lock as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "Every time a ship passes, this lock can reuse up to 60 percent of its water. Here is how.",
+      "data": {
+        "kicker": "How it's built · Panama Canal",
+        "question": "Up to 60 % of the water reused",
+        "question_at": "@Every",
+        "number": {
+          "value": "60",
+          "unit": "%",
+          "at_word": "percent",
+          "y": 640
+        },
+        "badge": {
+          "text": "Neopanamax lock",
+          "at_word": "Here",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Here"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "The Panama Canal's new locks have been in service since 26 June 2016. A single chamber is 427 metres long, 55 metres wide and 18.3 metres deep.",
+      "data": {
+        "headline": "One Neopanamax chamber",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "427",
+            "unit": "m",
+            "label": "long",
+            "at_word": "427"
+          },
+          {
+            "value": "55",
+            "unit": "m",
+            "label": "wide",
+            "at_word": "55"
+          },
+          {
+            "value": "18.3",
+            "unit": "m",
+            "label": "deep",
+            "at_word": "18.3"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "2 · The chamber",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "gs_phases",
+      "spoken": "Next to every chamber sit water-saving basins. When the chamber is emptied, part of the water flows into those basins. For the next filling, it comes back from there. That way, up to 60 percent can be used again.",
+      "data": {
+        "headline": "Saving water in three steps",
+        "rail_dy": 210,
+        "steps": [
+          {
+            "label": "Empty the chamber",
+            "sub": "the water level drops",
+            "at_word": "emptied"
+          },
+          {
+            "label": "Into the basins",
+            "sub": "water is stored",
+            "at_word": "basins"
+          },
+          {
+            "label": "Next filling",
+            "sub": "the water comes back",
+            "at_word": "filling"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "3 · Saving water",
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "seconds": 0.7,
+          "x": 540,
+          "y": 960
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gs_compare",
+      "spoken": "The first ship through, the COSCO Shipping Panama, was 299.98 metres long. In a chamber 427 metres long, that left 127 metres to spare.",
+      "data": {
+        "headline": "Chamber vs. first ship",
+        "a": {
+          "label": "Chamber",
+          "value": 427,
+          "unit": "m"
+        },
+        "b": {
+          "label": "COSCO Shipping Panama",
+          "value": 299.98,
+          "unit": "m"
+        },
+        "decimals": 1,
+        "bars_dy": 430,
+        "row_h": 108,
+        "order": "ba",
+        "b_at": "@COSCO",
+        "a_at": "@427",
+        "result_at": "@127"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · Calculated",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "According to the canal authority, the expansion cost 5.25 billion US dollars. Construction began in 2007.",
+      "data": {
+        "headline": "The expansion",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "5.25",
+            "unit": "bn $",
+            "label": "cost",
+            "at_word": "5.25"
+          },
+          {
+            "value": "2007",
+            "unit": "",
+            "label": "construction start",
+            "at_word": "2007"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · Expansion",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "A basin beside the chamber, and up to 60 percent of the water can be used again. Follow Gigastruct for the next megastructure.",
+      "data": {
+        "mode": "closing",
+        "statement": "Up to 60 % reused.",
+        "chip": {
+          "text": "Follow Gigastruct",
+          "at_word": "Follow",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "6 · Verdict",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+ "video_id": "beauty-20261110-3-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "SPF: four categories on the label",
+ "notes": "Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Neben der Zahl soll eine von vier Kategorien stehen, niedrig, mittel, hoch oder sehr hoch, mindestens ebenso auffällig. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Sunscreen",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "SPF 30: which level?",
+     "tone": "amber",
+     "offset": 2.2
+    },
+    {
+     "beat": "b2",
+     "text": "Number and category",
+     "tone": "muted"
+    },
+    {
+     "beat": "b3",
+     "text": "6 to 50+",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "low to very high",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "equally visible",
+     "tone": "muted"
+    },
+    {
+     "beat": "b6",
+     "text": "Read the category",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Read first, then apply",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "What does the number mean? And here's the key point: the category should be at least as visible as the number. It's not meant to be small print.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.3,
+  "note": "Hintergrund aus LAYER (brands/beauty/scenes.py), keine Clips, wie Testvideo Q1."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32006H0647",
+   "title": "Empfehlung 2006/647/EG der Kommission über die Wirksamkeit von Sonnenschutzmitteln und diesbezügliche Herstellerangaben",
+   "checked_at": "2026-11-01",
+   "label": "Recommendation 2006/647/EC"
+  },
+  {
+   "id": "S2",
+   "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-products-specific-topics/sunscreen-products_en",
+   "title": "Europäische Kommission: Sunscreen products",
+   "checked_at": "2026-11-01",
+   "label": "EU Commission: sunscreen"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Next to the number on your sunscreen, the EU wants a word: one of four categories.",
+   "on_screen": "What does the number mean?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Do you know which protection category SPF 30 belongs to?",
+   "on_screen": "Do you know which protection category SPF 30 belongs to?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "The number is enough. The EU recommendation says a category belongs next to it.",
+   "on_screen": "The number is enough. The EU recommendation says a category ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Look only at the number, and you miss what the level means.",
+   "on_screen": "Look only at the number, and you miss what the level means.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch how the EU sorts sun protection factors into four levels.",
+   "on_screen": "Watch how the EU sorts sun protection factors into four leve",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "dw_hook",
+   "spoken": "Next to the number on your sunscreen, the EU wants a word: one of four categories.",
+   "data": {
+    "obj": "tube",
+    "title": "SPF 30",
+    "sub": "sunscreen",
+    "glyph": "sun",
+    "gtext": "high",
+    "focus": "glyph",
+    "question": "What does the number mean?",
+    "badge": "Category?"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "none",
+    "vignette": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "dw_facts",
+   "spoken": "The European Commission has recommended this since 2006. Sunscreen efficacy should be shown in a simple, clear and meaningful way. So every number should belong to a category: low, medium, high or very high. Each category should match a standardised level of protection against UVB and UVA.",
+   "data": {
+    "headline": "Number plus word",
+    "doc": {
+     "act": "Recommendation 2006/647/EC",
+     "ref": "Points 13 and 14",
+     "tag": "EU"
+    },
+    "rows": [
+     {
+      "text": "simple and clear"
+     },
+     {
+      "text": "four categories"
+     },
+     {
+      "text": "every number has its level"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "dw_bars",
+   "spoken": "The table is clear. SPF 6 and 10 count as low. 15, 20 and 25 as medium. 30 and 50 as high. And 50 plus as very high.",
+   "data": {
+    "headline": "Four levels",
+    "caption": "Recommended labels, Recommendation 2006/647/EC",
+    "icon": false,
+    "rows": [
+     {
+      "label": "low",
+      "value": "6 · 10",
+      "w": 1
+     },
+     {
+      "label": "medium",
+      "value": "15 – 25",
+      "w": 2
+     },
+     {
+      "label": "high",
+      "value": "30 · 50",
+      "w": 3
+     },
+     {
+      "label": "very high",
+      "value": "50+",
+      "w": 4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "dw_versus",
+   "spoken": "The numbers are deliberately limited. Instead of lots of values, only a few should appear on labels, so products are easier to compare. A measured value between 30 and 49.9, for example, is labelled as 30. From a measured value of 60, it's labelled 50 plus.",
+   "data": {
+    "headline": "Fewer numbers",
+    "mode": "compare",
+    "left": {
+     "tag": "measured",
+     "title": "30 to 49.9",
+     "rows": [
+      {
+       "text": "value from the test"
+      }
+     ]
+    },
+    "right": {
+     "tag": "label",
+     "title": "30",
+     "rows": [
+      {
+       "text": "category: high"
+      },
+      {
+       "text": "easier to compare"
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "dw_facts",
+   "spoken": "And here's the key point: the category should be at least as visible as the number. It's not meant to be small print.",
+   "data": {
+    "headline": "Just as big",
+    "rows": [
+     {
+      "text": "category at least as visible as the number"
+     },
+     {
+      "text": "not small print"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "dw_steps",
+   "spoken": "For you, that means: don't just read the number, read the word next to it. It tells you at a glance which protection level the product is in.",
+   "data": {
+    "headline": "How to read it",
+    "items": [
+     {
+      "title": "Find the number",
+      "sub": "for example 30",
+      "icon": "sun"
+     },
+     {
+      "title": "Read the word",
+      "sub": "low, medium, high, very high",
+      "icon": "doc"
+     },
+     {
+      "title": "Compare levels",
+      "sub": "instead of guessing numbers",
+      "icon": "scale"
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    },
+    "marker": "fakt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "spoken": "Read the category first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "data": {
+    "domain": "Dewlane",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice.",
+    "brand_at": "w:Beauty",
+    "button": "Apply",
+    "headline": "Read first, then apply",
+    "block_text": "Read the category first",
+    "done_text": "Category read"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "marker": "none",
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

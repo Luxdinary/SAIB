@@ -1,0 +1,566 @@
+{
+  "video_id": "military_history-20261112-1-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "The Cassini Map: France Measured in Triangles",
+  "notes": "Woche 1, Reihe Karte, Zeit und Kurs. Quellen nennen keine militärische Nutzung; keine solche Behauptung im Skript.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.ign.fr/files/default/2024-11/CP-BnF-Gallica-IGN-Carte-Cassini.pdf",
+      "title": "Une nouvelle version interactive de la carte de Cassini, Pressemitteilung BnF und IGN, 28.11.2024",
+      "label": "BnF/IGN 2024",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://rmg.co.uk/collections/objects/rmgc-object-1116604",
+      "title": "Tableau d'Assemblage: Carte des grands triangles, PBH8042(178), Royal Museums Greenwich",
+      "label": "RMG: Dreiecksnetz",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.paris.fr/evenements/la-carte-de-france-de-cassini-une-encyclopedie-du-territoire-118002",
+      "title": "La carte de France de Cassini, une encyclopédie du territoire, Ville de Paris 2026",
+      "label": "Ville de Paris",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Blattzahl 180 (BnF/IGN) oder 181 (Ville de Paris); im Video keine Blattzahl.",
+    "Zahl der Dreiecke in keiner Quelle; nicht genannt."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you measure a whole kingdom without satellites or aircraft?",
+      "on_screen": "Measuring a kingdom?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Old maps were guesswork? This one rested on a network of triangles.",
+      "on_screen": "Guessed or measured?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Put together, this map is eleven metres wide.",
+      "on_screen": "A map 11 metres wide",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "No accurate map, no planning.",
+      "on_screen": "Planning without a map?",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 3,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "",
+      "why": {
+        "truth": "nicht belegt, nicht wählbar"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch church towers become a network of triangles.",
+      "on_screen": "Church towers as survey points",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you measure a whole kingdom without satellites or aircraft?",
+      "data": {
+        "question": "Measuring a kingdom without aircraft?",
+        "question_em": "without aircraft",
+        "card_title": "Carte de Cassini",
+        "card_meta": "FRANCE · 1756–1815",
+        "card_no": "FILE 14",
+        "stamp": "1:86400",
+        "drawing": "cassini_triangles.svg",
+        "packet_label": "Map sheet",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:kingdom",
+        "packet_at": "w:satellites",
+        "em_at": "w:aircraft"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "The Paris Academy of Sciences is founded in 1666, the Observatory in 1667. In 1668 the first measurements begin, a project lasting over a century.",
+      "data": {
+        "mode": "map",
+        "headline": "A project from Paris",
+        "places": [
+          {
+            "label": "Paris",
+            "code": "est. 1667",
+            "x": 600,
+            "y": 80,
+            "at": "w:Observatory"
+          },
+          {
+            "label": "Kingdom",
+            "code": "to be surveyed",
+            "x": 190,
+            "y": 500,
+            "rx": 175,
+            "ry": 100,
+            "at": "w:measurements"
+          }
+        ],
+        "route_at": "w:1667",
+        "route_label": "first measurements",
+        "route_label_at": "w:1668",
+        "wait_at": "w:project",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Academy since 1666",
+        "chip_at": "w:1666",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Map sheet",
+        "packet_at": "w:Academy",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "over a century",
+        "line_label_at": "w:century",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S3",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:network",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "The principle is called triangulation. Fixed points such as towers, church spires and hills are linked into triangles. Measured angles turn them into a network across the whole country.",
+      "data": {
+        "headline": "Triangulation",
+        "drawing": "cassini_triangles.svg",
+        "sheet_title": "SHEET 2 · TRIANGLE NETWORK",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Church spire",
+            "x": 230,
+            "y": 40,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:church"
+          },
+          {
+            "label": "Hill",
+            "x": 320,
+            "y": 290,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:hills"
+          },
+          {
+            "label": "Triangle",
+            "x": 250,
+            "y": 400,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:triangles"
+          },
+          {
+            "label": "Network across the land",
+            "x": 420,
+            "y": 440,
+            "lx": 500,
+            "ly": 400,
+            "at": "w:network"
+          }
+        ],
+        "zoom": {
+          "x": 250,
+          "y": 300,
+          "scale": 1.12,
+          "at": "w:angles",
+          "back_at": "w:country",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "An overview sheet shows the large triangles. The map itself has a scale of 1 to 86,400, split into many sheets of 21 folding panels each.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Network and map",
+        "left": {
+          "tag": "Overview",
+          "title": "Large triangles",
+          "at": "w:overview",
+          "rows": [
+            {
+              "text": "network as the base",
+              "at": "w:triangles"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Map",
+          "title": "1:86.400",
+          "at": "w:scale",
+          "rows": [
+            {
+              "text": "many sheets",
+              "at": "w:sheets"
+            },
+            {
+              "text": "21 folding panels each",
+              "at": "w:21"
+            }
+          ]
+        },
+        "verdict": "Measured, not guessed",
+        "verdict_at": "w:folding",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "Four generations of the Cassini family work on it. Put together, the map measures about eleven metres wide and twelve metres high.",
+      "data": {
+        "headline": "Four generations",
+        "nodes": [
+          {
+            "label": "Cassini I",
+            "code": "generation 1",
+            "at": "w:Four"
+          },
+          {
+            "label": "Cassini II",
+            "code": "generation 2",
+            "at": "w:generations"
+          },
+          {
+            "label": "Cassini III",
+            "code": "generation 3",
+            "at": "w:family"
+          },
+          {
+            "label": "Cassini IV",
+            "code": "generation 4",
+            "at": "w:work"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Map sheet",
+        "total": {
+          "to": 11,
+          "pre": "about",
+          "label": "METRES WIDE",
+          "at": "w:eleven"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "1668 brings the first measurements, in 1790 the map becomes the basis for the new départements, and in 1815 it is complete.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1668 to 1815",
+        "items": [
+          {
+            "year": "1668",
+            "title": "First measurements",
+            "sub": "Abbé Picard",
+            "at": "w:1668"
+          },
+          {
+            "year": "1790",
+            "title": "Départements",
+            "sub": "map as the basis",
+            "at": "w:1790"
+          },
+          {
+            "year": "1815",
+            "title": "Map complete",
+            "sub": "first map of the whole kingdom",
+            "at": "w:1815",
+            "sub_at": "w:complete"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "Today the map is digitised. On the Géoportail it can be laid over modern maps, and the Archives nationales in Paris are showing it in an exhibition. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Carte de Cassini",
+        "card_meta": "TODAY",
+        "card_no": "FILE 14",
+        "stamp": "Online",
+        "drawing": "cassini_triangles.svg",
+        "statement": "The old triangles now sit over aerial maps",
+        "statement_at": "w:Géoportail",
+        "stamp_at": "w:digitised",
+        "note": "Exhibition at the Archives nationales, Paris",
+        "note_at": "w:exhibition",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Map sheet",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Sheet: blank",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Survey: from 1668",
+          "tone": "amber",
+          "offset": 7.1
+        },
+        {
+          "beat": "b3",
+          "text": "Network: triangles",
+          "tone": "amber",
+          "offset": 8.5
+        },
+        {
+          "beat": "b4",
+          "text": "Scale: 1:86,400",
+          "tone": "amber",
+          "offset": 8.1
+        },
+        {
+          "beat": "b5",
+          "text": "Generations: 4",
+          "tone": "amber",
+          "offset": 0.7
+        },
+        {
+          "beat": "b6",
+          "text": "Map: until 1815",
+          "tone": "muted",
+          "offset": 9.0
+        },
+        {
+          "beat": "b7",
+          "text": "Map: online",
+          "tone": "muted",
+          "offset": 3.7
+        }
+      ]
+    },
+    "description": "The Cassini map: France measured through a network of triangles between church towers and hills, at a scale of 1:86,400. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "cartography",
+      "surveying",
+      "history",
+      "france",
+      "cassini"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

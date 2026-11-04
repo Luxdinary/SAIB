@@ -1,0 +1,584 @@
+{
+  "video_id": "megaconstruction-20261115-2-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Eiffel Tower: 18,038 parts built in 26 months",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Damals gelöst. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261115-2-en.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://artsandculture.google.com/story/the-construction-of-the-eiffel-tower-tour-eiffel/UgWBgIpO0RsA8A?hl=en",
+      "title": "SETE (Betreiber) bei Google Arts & Culture: The construction of the Eiffel Tower (26.01.1887–31.03.1889; 2 Jahre, 2 Monate, 5 Tage; 18.038 Teile; 2,5 Mio. Nieten; 150–300 Arbeiter, 150 im Werk Levallois-Perret)",
+      "label": "SETE, Google Arts & Culture",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/eiffel-tower",
+      "title": "ASCE: Eiffel Tower (18.038 Teile, 2,5 Mio. Nieten; im Werk verschraubt, zerlegt, vor Ort vernietet; ursprünglich 300 m; höchstes Bauwerk bis 1930)",
+      "label": "ASCE, Eiffel Tower",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "SE",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (1.083 ft = 330 m; 10.100 t gesamt; 7.300 t Metallgerüst)",
+      "label": "SETE (Eiffel Tower), Key figures",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Zweites Startdatum (1. Juli 1887, Montage) nicht verwendet; die 2 Jahre, 2 Monate, 5 Tage passen zum 26.01.1887.",
+    "Bauablauf im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "18,038 metal parts and two and a half million rivets.",
+      "on_screen": "18,038 parts in 26 months",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Eiffel Tower, really?",
+      "on_screen": "How big is the Eiffel Tower, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate the Eiffel Tower.",
+      "on_screen": "the Eiffel Tower: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Eiffel Tower depends on how it is built.",
+      "on_screen": "the Eiffel Tower: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Eiffel Tower take shape in the model.",
+      "on_screen": "the Eiffel Tower as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "18,038 metal parts and two and a half million rivets. How do you turn them into a tower in just over 26 months? That was the task in Paris.",
+      "data": {
+        "kicker": "Solved back then · Eiffel Tower",
+        "question": "18,038 parts in just over 26 months?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Paris · 1887 to 1889",
+          "at": "@Paris",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "Back then: work on the foundations began on 26 January 1887. The tower was finished on 31 March 1889, after two years, two months and five days.",
+      "data": {
+        "headline": "Back then",
+        "load": {
+          "label": "Metal parts",
+          "value": "18,038",
+          "unit": "",
+          "sub": "plus 2.5 million rivets",
+          "at": "@26",
+          "dy": 540
+        },
+        "goal": {
+          "key": "DONE",
+          "text": "31 March 1889",
+          "at": "@31",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "The solution was prefabrication. At the works in Levallois-Perret the parts were bolted together as a test, then taken apart and brought to the site. Only there were they finally riveted.",
+      "data": {
+        "headline": "The solution",
+        "note": "sequence schematic",
+        "pins": [
+          {
+            "anchor": "low",
+            "text": "Riveted on site",
+            "at": "@riveted",
+            "side": "up"
+          }
+        ],
+        "rule": {
+          "text": "Bolt at the works, rivet on site.",
+          "at": "@apart",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "Between 150 and 300 men worked on site, with another 150 at the works. The metal frame weighs 7,300 tonnes, says the operator.",
+      "data": {
+        "headline": "How it was built",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Workers on site",
+            "qty": "150–300",
+            "at": "@site"
+          },
+          {
+            "pos": "2",
+            "part": "Workers at the works",
+            "qty": "150",
+            "at": "@works"
+          },
+          {
+            "pos": "3",
+            "part": "Metal frame, tonnes",
+            "qty": "7,300",
+            "at": "@7,300"
+          },
+          {
+            "pos": "4",
+            "part": "Metal parts",
+            "qty": "18,038",
+            "at": "@tonnes"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "SE"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Let's check: two years, two months and five days is just over 26 months. And 2.5 million rivets divided by 18,038 parts is about 139 rivets per part on average.",
+      "data": {
+        "headline": "Checked",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "2 years × 12 + 2 months (+ 5 days)",
+            "a": {
+              "value": 24,
+              "unit": "",
+              "show": "2 × 12"
+            },
+            "op": "+",
+            "b": {
+              "value": 2,
+              "unit": ""
+            },
+            "unit": "months",
+            "expect": 26,
+            "at": "@two",
+            "result_at": "@26"
+          },
+          {
+            "label": "Rivets ÷ parts (average)",
+            "a": {
+              "value": 2500000,
+              "unit": "",
+              "show": "2,500,000"
+            },
+            "op": "÷",
+            "b": {
+              "value": 18038,
+              "unit": ""
+            },
+            "unit": "",
+            "round": 1,
+            "decimals": 0,
+            "prefix": "≈ ",
+            "expect": 139,
+            "at": "@rivets",
+            "result_at": "@139"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Originally 300 metres tall, it was the tallest structure in the world until 1930. Follow Gigastruct for the next engineering task.",
+      "data": {
+        "statement": "Solved: prefabrication",
+        "sheet": "SHEET 19",
+        "rows": [
+          [
+            "Task",
+            "18,038 parts in 26 months"
+          ],
+          [
+            "Solution",
+            "bolted at works, riveted on site"
+          ],
+          [
+            "Built",
+            "1887 to 1889"
+          ],
+          [
+            "Record",
+            "tallest structure until 1930"
+          ]
+        ],
+        "cta": {
+          "text": "Follow Gigastruct",
+          "at": "@Follow"
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "TASK",
+        "THEN",
+        "SOLUTION",
+        "BUILD",
+        "TODAY"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 4,
+        "b6": 5
+      }
+    },
+    "description": "The Eiffel Tower was finished in 2 years, 2 months and 5 days: 18,038 prefabricated parts and 2.5 million rivets. How series production made it possible.",
+    "companion_text": "Calculated: 26.01.1887 to 31.03.1889 = 26 months; 2,500,000 ÷ 18,038 = 138.6 rivets per part. Sources: SETE (Google Arts & Culture, key figures), ASCE. Stylised 3D model. Follow Gigastruct.",
+    "hashtags": [
+      "eiffeltower",
+      "paris",
+      "engineeringhistory",
+      "rivets",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "26.01.1887 + 2 J + 2 M + 5 T = 31.03.1889; 2 × 12 + 2 = 26 Monate",
+        "result": "gut 26 Monate",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "2.500.000 ÷ 18.038 = 138,6",
+        "result": "rund 139 Nieten je Teil",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "tower",
+          "kind": "tower",
+          "height": 300,
+          "base": 125,
+          "count": 1,
+          "color": "model",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "anchors": {
+        "top": [
+          0,
+          300,
+          0
+        ],
+        "mid": [
+          20,
+          120,
+          20
+        ],
+        "low": [
+          55,
+          30,
+          55
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 45,
+            "az1": 35,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {
+            "tower.build": [
+              [
+                0,
+                0.3
+              ],
+              [
+                "%1",
+                0.6
+              ]
+            ]
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 88,
+            "az1": 92,
+            "el0": 4,
+            "el1": 6,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {
+            "tower.build": 0.1
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 30,
+            "az1": 40,
+            "el0": 10,
+            "el1": 12,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "tower.build": [
+              [
+                0,
+                0.2
+              ],
+              [
+                "%1",
+                0.5
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 50,
+            "az1": 35,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {
+            "tower.build": [
+              [
+                0,
+                0.5
+              ],
+              [
+                "%0.9",
+                1
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 12,
+            "el1": 16,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "tower"
+            ],
+            "az0": 25,
+            "az1": 15,
+            "el0": 6,
+            "el1": 4,
+            "fit0": 0.5,
+            "fit1": 0.55,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

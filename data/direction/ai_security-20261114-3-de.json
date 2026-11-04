@@ -1,0 +1,457 @@
+{
+ "video_id": "ai_security-20261114-3-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Ein Passwortmanager fürs Team",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema B06, Reihe Fünf-Minuten-Schutz. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Passwörter im Team. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Passwörter im Team",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Passwörter: mehrfach genutzt",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Ein Leck: alle Konten",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Tresor: eingerichtet?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Funktionen: genutzt?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Masterpasswort: stark?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Manager: heute starten",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Gleiches Passwort: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Ein eigenes starkes Passwort für jedes Konto, ohne sich eines merken zu müssen: Was BSI und NCSC zu Passwortmanagern sagen und worauf es beim Masterpasswort ankommt.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "passwortmanager",
+   "passwort",
+   "kmu",
+   "itsicherheit",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/Passwort-Manager/passwort-manager_node.html",
+   "title": "BSI: Passwörter verwalten mit dem Passwort-Manager",
+   "checked_at": "2026-11-01",
+   "label": "BSI, Passwort-Manager"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers",
+   "title": "NCSC: Top tips for staying secure online – Managing your passwords",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, Passwörter verwalten"
+  }
+ ],
+ "unverified": [
+  "Einzelne Produkte: bewusst nicht genannt."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Wie viele Passwörter merkt sich dein Team, und wie viele davon sind gleich?",
+   "on_screen": "Wie viele davon sind gleich?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Ein gutes Passwort für alles reicht? Laut BSI nicht.",
+   "on_screen": "Ein Passwort für alles?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Ein Passwortmanager kann warnen, wenn eine Seite nicht zur gespeicherten Adresse passt.",
+   "on_screen": "Er warnt vor falschen Seiten",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein geknacktes Passwort, und die Täter kommen in jedes Konto, das es nutzt.",
+   "on_screen": "Ein Passwort, alle Konten?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wie ein Passwortmanager ein neues Passwort erzeugt.",
+   "on_screen": "So entsteht ein starkes Passwort",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Wie viele Passwörter merkt sich dein Team, und wie viele davon sind gleich?",
+   "data": {
+    "question": "Wie viele davon sind gleich?",
+    "doc_label": "Passwortliste",
+    "chat_title": "Passwörter im Team",
+    "bot_line": "3 Konten, 1 Passwort",
+    "typed": "Firma2026!",
+    "badge": "Gleich?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 12,
+   "spoken": "Das BSI warnt: Wird ein Passwort für viele Konten genutzt und einmal geknackt, kommen Kriminelle in alle diese Konten. Am sichersten ist deshalb für jedes Konto ein eigenes, starkes Passwort.",
+   "data": {
+    "headline": "Ein Passwort, viele Konten",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Ein geknacktes Passwort",
+      "icon": "&#9888;"
+     },
+     {
+      "id": "n1",
+      "label": "E-Mail, Shop, Cloud",
+      "icon": "&#9783;"
+     },
+     {
+      "id": "n2",
+      "label": "Täter überall drin",
+      "icon": "&#9823;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "passt zu"
+     },
+     {
+      "label": "öffnet"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 7.5,
+     "label": "Alle Konten offen?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Genau dafür gibt es Passwortmanager. Laut BSI verwahren sie Benutzernamen und Passwörter verschlüsselt, geschützt durch ein komplexes Masterpasswort. Wie ein Notizbuch in einer abgeschlossenen Schublade.",
+   "data": {
+    "headline": "Was ein Passwortmanager ist",
+    "file_label": "Passwörter im Team",
+    "card": {
+     "title": "Laut BSI",
+     "rows": [
+      {
+       "text": "Passwörter verschlüsselt",
+       "ok": null
+      },
+      {
+       "text": "ein Masterpasswort",
+       "ok": null
+      },
+      {
+       "text": "wie eine verschlossene Schublade",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "Dazu kommen Helfer im Alltag: Der Manager erzeugt starke Passwörter, füllt sie beim Anmelden aus und kann warnen, wenn eine Seite nicht zur gespeicherten Adresse passt. Das NCSC empfiehlt Passwortmanager ausdrücklich.",
+   "data": {
+    "headline": "Im Kopf oder im Manager",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.0,
+    "left": {
+     "title": "Im Kopf",
+     "rows": [
+      {
+       "text": "wenige, oft gleich",
+       "ok": "open"
+      },
+      {
+       "text": "auf Zetteln notiert",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Im Manager",
+     "rows": [
+      {
+       "text": "je Konto ein eigenes",
+       "ok": null
+      },
+      {
+       "text": "erzeugt und füllt aus",
+       "ok": null
+      },
+      {
+       "text": "warnt bei falscher Adresse",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Das BSI nennt auch Nachteile: Ist das Masterpasswort vergessen, sind im schlimmsten Fall alle Daten weg. Und gelingt ein Angriff auf den Manager, können alle Passwörter auf einmal gestohlen werden. Das Masterpasswort muss also stark sein.",
+   "data": {
+    "headline": "Das Masterpasswort",
+    "file_label": "Passwörter im Team",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Lang und einmalig",
+      "sub": "nur für den Tresor",
+      "at": 0.6
+     },
+     {
+      "title": "Kurz oder wiederverwendet",
+      "sub": "alles in Gefahr",
+      "at": 1.0
+     }
+    ],
+    "approval": "Masterpasswort sicher?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Dein Fünf-Minuten-Schutz: Wählt einen Passwortmanager fürs Team. Fangt mit dem E-Mail-Konto an und gebt ihm ein neues, eigenes Passwort. Und schützt den Tresor mit einem langen Masterpasswort plus zweitem Faktor.",
+   "data": {
+    "headline": "Fünf Minuten zum Start",
+    "items": [
+     {
+      "title": "Manager auswählen",
+      "sub": "einer fürs ganze Team",
+      "at": 2.0
+     },
+     {
+      "title": "E-Mail zuerst",
+      "sub": "neues, eigenes Passwort",
+      "at": 4.8
+     },
+     {
+      "title": "Tresor absichern",
+      "sub": "langes Masterpasswort",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Ein Tresor statt hundert Zettel. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Ein Tresor statt Zettel",
+    "file_label": "Passwörter im Team",
+    "button": "Speichern",
+    "block_text": "Kein Passwort doppelt",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

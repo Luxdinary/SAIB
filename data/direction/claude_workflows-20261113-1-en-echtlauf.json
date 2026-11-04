@@ -1,0 +1,272 @@
+{
+  "video_id": "claude_workflows-20261113-1-en-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "One MCP server, really connected: the Claude Code docs server",
+  "notes": "Week 1, series Same task, different switch. Own English recording mcp-docs-en: same question without and with --mcp-config (docs server, HTTP, no sign-in), twice each. Instead of claude mcp add (writes to ~/.claude.json), the same entry was passed as mcp.json in the test folder.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "What does an MCP server change about an answer from Claude Code?",
+      "on_screen": "What does an MCP server add?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "MCP",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "question"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude knows everything about Claude Code? Without the server it answered from memory.",
+      "on_screen": "Does it know?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "With the server, Claude searched the current docs instead of its training data.",
+      "on_screen": "Docs, not memory",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 2"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Every connected server takes up space in the context, per the docs.",
+      "on_screen": "Servers cost context",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "MCP"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "MCP quickstart"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Two real runs: without and with the docs server.",
+      "on_screen": "Without and with",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "structure"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "MCP",
+      "title": "Connect to MCP servers: claude mcp add --transport http claude-code-docs https://code.claude.com/docs/mcp; the docs server doesn't require authentication; the tool call in Claude's output is labeled with the server name; each connected server takes some space in Claude's context window because its tool names and server instructions load into every session",
+      "url": "https://code.claude.com/docs/en/mcp-quickstart",
+      "checked_at": "2026-11-02",
+      "label": "Claude Code docs, MCP quickstart"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/mcp-docs-en",
+      "checked_at": "2026-11-02",
+      "label": "Own recording",
+      "title": "Own recording mcp-docs-en, 2026-11-02: Claude Code 2.1.309, test folder with sample data, every run twice"
+    }
+  ],
+  "unverified": [
+    "The run uses --mcp-config with a file in the test folder instead of claude mcp add, so no setting is written to Stefan's profile. The entry (name, type http, URL) is the same as in the docs example.",
+    "Whether the answer in run 1 is correct was not checked; Claude itself said it could not verify it."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "mcp-docs-en"
+    },
+    "short_title": "MCP-Server verbinden EN",
+    "description": "Real run, recorded on Nov 2, 2026 with Claude Code 2.1.309 (model claude-haiku-5-5). Same question about MCP_TIMEOUT, every run twice: without the server, Claude answered from its own knowledge and said it could not verify it. With the Claude Code docs server, it searched with the server's tools and answered from the docs.",
+    "companion_text": "Base command per run: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read. Run 2 also --mcp-config mcp.json and --allowedTools mcp__claude-code-docs. mcp.json: {\"mcpServers\": {\"claude-code-docs\": {\"type\": \"http\", \"url\": \"https://code.claude.com/docs/mcp\"}}}. Source: Claude Code docs, MCP quickstart, retrieved Nov 2, 2026. Paths shortened in the frame (test folder = .). Behaviour can change with version and model. Not an official Anthropic channel.",
+    "hashtags": [
+      "claudecode",
+      "aiworkflow",
+      "coding",
+      "developer",
+      "mcp"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "MCP",
+        "R1"
+      ],
+      "spoken": "What does an MCP server change about an answer from Claude Code? Two real runs with the docs server for Claude Code, same question both times.",
+      "data": {
+        "run": "L2",
+        "question": "What does an MCP server add?",
+        "type_word": "answer",
+        "chips_word": "Two",
+        "rec": "mcp-docs-en"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "MCP"
+      ],
+      "spoken": "The server is a small piece of configuration: a name, the type http and the address. It needs no sign-in. Instead of claude mcp add, the entry sits in a file in the test folder, so nothing lands in your own profile. According to the docs, you can tell it was used because the tool call carries the server's name.",
+      "data": {
+        "run": "L2",
+        "file": "mcp.json",
+        "highlight_text": "url",
+        "kicker": "Claude Code docs, MCP quickstart",
+        "quote": "The tool call in Claude's output is labeled with the server name.",
+        "translation": "The tool call carries the server's name.",
+        "highlight_word": "address",
+        "doc_word": "docs",
+        "translation_word": "carries",
+        "rec": "mcp-docs-en"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run one, no server. Claude called no tool, said it could not query the server, and answered from its own knowledge, adding that this was not verified against the docs.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "text_rows": 5,
+        "stamp_true": "server used",
+        "stamp_false": "no server",
+        "rec": "mcp-docs-en"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run two, with the server. Claude searched through the server's tools. One search hit a work limit, so it narrowed the search to a few pages. The answer: the wait at startup, in milliseconds, thirty seconds by default. The whole run took about thirty two seconds.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "text_rows": 4,
+        "stamp_true": "server used",
+        "stamp_false": "no server",
+        "rec": "mcp-docs-en"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "MCP"
+      ],
+      "spoken": "Both runs ran twice, with the same result. Only with the server did its name appear in the tool calls. According to the docs, every connected server takes up some space in the context, even when it is not used.",
+      "data": {
+        "headline": "2 runs, twice each",
+        "probe_good": true,
+        "stamp_true": "server used",
+        "stamp_false": "no server",
+        "note": "Remove unused servers: they cost context (per the docs).",
+        "note_source": "Claude Code docs, MCP quickstart",
+        "rows_word": "Both",
+        "row_gap": 0.8,
+        "note_word": "space",
+        "rec": "mcp-docs-en"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "An MCP server is quick to connect. Check the tool call to see whether it was really used. Follow Promptwerk for more Claude workflows, step by step.",
+      "data": {
+        "statement": "The tool call tells you the server was used.",
+        "claim": "Promptwerk · real runs",
+        "statement_word": "tool",
+        "claim_word": "Follow",
+        "rec": "mcp-docs-en"
+      }
+    }
+  ]
+}

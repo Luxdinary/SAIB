@@ -1,0 +1,111 @@
+id: ai_security
+name: Scutoria
+niche: AI and security for small businesses
+style: scutoria_brand
+phase: 2
+enabled: true
+languages:
+- de
+- en
+primary_language: de
+risk_default: medium
+rules:
+- no fear-mongering, no exploit instructions, no invented incidents or statistics
+- link to Scutoria products only with paid-partnership flags where required
+design_source: 'Verbindliches Designsystem: C:\Users\Stefa\OneDrive\scutoria\design\project\ (tokens.json v1, README.md Markenbuch, assets/Logos, fonts/manrope). Kopie der Tokens in brands/ai_security/tokens.json, Stand 2026-10-30. Nur dort aendern, hier nachziehen.'
+palette:
+  bg: '#0b1120'            # ground (dark)
+  surface: '#121b2f'       # surface
+  surface_raised: '#19243b'
+  text: '#e9eef8'          # ink
+  muted: '#a1adc4'         # ink-muted
+  hairline: 'rgba(226,232,246,0.12)'
+  border_control: 'rgba(226,232,246,0.34)'
+  accent: '#4f8cff'        # the one accent (links, icons, Scutum mark, fact marker)
+  accent_strong: '#6a9dff'
+  accent_tint: 'rgba(79,140,255,0.12)'
+  button: '#2f6be6'
+  on_accent: '#ffffff'
+  signal_amber: '#ffd166'  # open questions, "Unsicher"
+  signal_red: '#ff6b6b'    # block, "Luecke"
+  signal_green: '#2ec4b6'  # only success / "Geregelt"
+  on_signal: '#0a0c10'
+  paper: '#fbfbfd'
+  paper_ink: '#141a24'
+  marker_fact: '#4f8cff'
+  marker_interpretation: '#b07cff'
+  marker_uncertain: '#ffd166'
+  marker_gap: '#ff6b6b'
+  scheme: dark
+fonts:
+  display:
+    family: Manrope
+    weight: 800
+    file: brands/ai_security/assets/fonts/manrope/manrope-latin-wght-normal.woff2
+    extra_files:
+    - brands/ai_security/assets/fonts/manrope/manrope-latin-ext-wght-normal.woff2
+    license: OFL-1.1
+    license_file: brands/ai_security/assets/fonts/manrope/LICENSE-manrope.txt
+  body:
+    family: Manrope
+    weight: 400
+    file: brands/ai_security/assets/fonts/manrope/manrope-latin-wght-normal.woff2
+    license: OFL-1.1
+    license_file: brands/ai_security/assets/fonts/manrope/LICENSE-manrope.txt
+  mono:
+    family: IBM Plex Mono
+    weight: 500
+    file: brands/ai_security/assets/fonts/ibmplexmono/IBMPlexMono-Medium.ttf
+    license: OFL-1.1
+    license_file: brands/ai_security/assets/fonts/ibmplexmono/OFL.txt
+    source: 'https://github.com/google/fonts/tree/main/ofl/ibmplexmono (OFL-1.1), heruntergeladen 2026-10-30'
+logo:
+  file: brands/ai_security/assets/logo/scutum-mark.svg
+  file_on_paper: brands/ai_security/assets/logo/scutum-mark-ink.svg
+  wordmark_text: SCUTORIA          # text, Manrope 700, uppercase, letter-spacing 0.18em; no image wordmark exists
+  clear_space: one shield width
+  rules: never recolour, fill, rotate or add effects; min 20 px; watermark at most once below 5 % opacity
+motif: scutum
+tempo: calm
+bg_pattern: hairline-grid
+flat: true                         # no glow, no gradients, no light cones; flat ground, paper sheet as the only light
+layout: shared 9:16 layout, see docs/design-system.md and docs/direction-system.md
+audience: owners and office staff of small businesses in DACH and the English-speaking
+  world who use AI tools without a security team
+tone: calm, concrete, no fear-mongering; always end with one thing to do today
+address: du   # Stefan, 2026-10-30: videos keep the informal 'du' although the brand book uses 'Sie' for products and the website
+claim:
+  de: Belegt. Datiert. Vorzeigbar.
+  en: Sourced. Dated. Ready to show.
+disclaimer:
+  de: Quellenbasiert. Keine Rechtsberatung.
+  en: Source-based. No legal advice.
+ai_label:
+  de: KI-generiert
+  en: AI-generated
+format:                            # case format "Was tust du?" (2026-11-02, pilot, awaiting Stefan's approval)
+  name: Was tust du?
+  version: 0.1-pilot
+  bible: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Scutoria\Format-Bibel.md'
+  scenes: brands/ai_security/scenes.py   # sc_case (hook), sc_inspect, sc_choice, sc_timeline, sc_step (rule|fallback), sc_close
+  series: ["Was tust du?", "Vor dem Upload", "Fünf Minuten, die gefehlt haben", "Gilt das für uns?"]
+  plan_layout: {explainer: false, outro: false, caption_mode: phrases, caption_max_words: 4, caption_width_px: 800, zone_top: 290, zone_h: 950, zone_lower_right_px: 940, caption_bottom_px: 540, progress_y: 1534, ai_label_bottom_px: 318}   # R5 (Prüfrunde 03.11.2026): zone to y 1240, everything left of x 940
+  rules:
+  - the case is marked "Beispielfall · nachgestellt"; companies, people and domains are invented (.example)
+  - mechanism, advice and numbers only from sources; invented steps of the case are marked Beispiel and listed in unverified
+  - exactly one right step, doable today; emergency steps only when a source names them
+  - no status bar, no explainer layer, no file as red thread; the clock and the object of the case carry the video
+explainer:                         # old format (Fassung B, week-1 plans); new-format plans switch it off with layout.explainer: false
+  enabled: true
+  voice_tag: {de: "KI-GENERIERT · SYNTHETISCHE STIMME", en: "AI-GENERATED · SYNTHETIC VOICE"}
+  ai_label_in_tag: true            # bottom AI label moves into the voice tag (frees the bottom row)
+  source_layout: inline            # marker and source in one row below the status bar
+  opening: {de: "Synthetische Stimme · Quellen am Bildschirm · Keine Rechtsberatung", en: "Synthetic voice · Sources on screen · Not legal advice"}
+  opening_seconds: 3.5
+  source_y: 1548                   # Scutoria: scenes reach y ~1260, captions ~1380, status bar 1440-1524, progress 1534; row 1548-1610 is free
+  colors: {fakt: "#4f8cff", auslegung: "#9b6bff", unsicher: "#ffd166", luecke: "#ff6b6b", beispiel: "#8a93a6"}
+production:                        # export texts (scripts/export_production_folder.py); de keeps the built-in Scutoria sentence
+  closing_sentence:
+    de: "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur IT- und KI-Sicherheit im Betrieb."
+    en: "More information: https://scutoria.com · Follow Scutoria for more tips on IT and AI security at work."
+  domain: scutoria.com

@@ -1,0 +1,34 @@
+{
+  "id": "eigener-subagent",
+  "topic_id": "claude_workflows-20261117-2-de",
+  "language": "de",
+  "title": "Einen eigenen Subagenten bauen",
+  "model": "haiku",
+  "tools": "Agent,Read,Write",
+  "probe": "PRUEFPROTOKOLL-7",
+  "probe_where": "file:pruefung.txt",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "rechnung.txt": "Rechnung 2026-117\nPosten: 3 x 12,50 = 37,50\nPosten: 2 x 8,00 = 17,00\nSumme: 55,00\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Mit Subagent-Datei",
+      "prompt": "Prüfe, ob die Summe in rechnung.txt stimmt.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        ".claude/agents/rechnungspruefer.md": "---\nname: rechnungspruefer\ndescription: Prüft Rechnungen auf Rechenfehler. Verwende ihn immer, wenn eine Rechnung geprüft werden soll.\ntools: Read, Write\n---\nDu prüfst die genannte Rechnung. Rechne jeden Posten und die Summe nach. Schreibe das Ergebnis in die Datei pruefung.txt, die erste Zeile lautet genau PRUEFPROTOKOLL-7.\n"
+      }
+    },
+    {
+      "id": "L2",
+      "title": "Ohne Subagent-Datei",
+      "prompt": "Prüfe, ob die Summe in rechnung.txt stimmt.",
+      "permission_mode": "acceptEdits"
+    }
+  ]
+}

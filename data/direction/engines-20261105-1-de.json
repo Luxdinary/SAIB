@@ -1,0 +1,634 @@
+{
+  "video_id": "engines-20261105-1-de",
+  "brand_id": "engines",
+  "language": "de",
+  "title": "Warum jeder Zylinder nur bei jeder zweiten Umdrehung zündet",
+  "notes": "Revlore Vorlage 0.9 (nur Claude Code, 30.10.2026), Fassung V2 mit Erklärschicht (Schnitt- und Layout-Vorlage, 30.10.2026). Roter Faden: Zylinder 1 im Schnitt und die Arbeitsspiel-Leiste (0-720 Grad Kurbelwinkel). Kinematik gerechnet (Kurbeltrieb R 100, L 320), Steuerzeiten IVO 10 vOT, IVC 40 nUT, EVO 40 vUT, EVC 10 nOT (innerhalb S2), Zuendung 30 vOT (Beispiel S3), Nockenwellen gleichsinnig mit halber Drehzahl (S1, S5). Qualitätsrunde Q1 (31.10.2026): Hintergrund mit Tiefe, Motor mit Ansaug- und Abgaskrümmer auf ca. 90 % der Breite, Titel mittig unter dem Kicker, Beschriftungen als Karten, Push-in je Szene, Arbeitsspiel-Leiste mit Zyl.-1-Kachel in allen Szenen; Sprechtext unverändert (Stimme V2 Gemini wiederverwendet).",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Warum zündet ein Zylinder im Viertaktmotor nur bei jeder zweiten Umdrehung? Vier Takte, zwei Umdrehungen der Kurbelwelle, eine der Nockenwelle: das Arbeitsspiel im Schnittmodell.",
+    "companion_text": "Folge Revlore: Motorentechnik verstehen, ein Bauteil nach dem anderen.\nSchematisches Modell: Steuerzeiten und Zündzeitpunkt sind typische Werte aus der Fachliteratur, kein bestimmter Motor. Zähnezahlen sind Beispielwerte.",
+    "hashtags": [
+      "motorentechnik",
+      "viertakter",
+      "nockenwelle",
+      "kurbelwelle",
+      "autotechnik"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "NASA Glenn, Viertaktmotor",
+      "title": "NASA Glenn Research Center: Four Stroke Internal Combustion Engine (Ansaug-, Verdichtungs-, Arbeits-, Ausstoßtakt; Ventilstellungen; \"the crankshaft makes two revolutions for every one revolution of the cams\")",
+      "url": "https://www.grc.nasa.gov/www/k-12/airplane/engopt.html",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "label": "MIT 2.61, Vorlesung 8",
+      "title": "MIT OpenCourseWare 2.61 Internal Combustion Engines (Spring 2017), Lecture 8 Gas exchange processes, Folie 1 \"Typical valve timing diagram\": IVO -15 bis 0 Grad nOT, EVC 0 bis 15 nOT, IVC 30 bis 50 nUT, EVO 30 bis 50 vUT",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/6ec38b3fc5493e328115e0a49a565f35_MIT2_61S17_lec8.pdf",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S3",
+      "label": "MIT 2.61, Vorlesung 9",
+      "title": "MIT OpenCourseWare 2.61, Lecture 9 SI engine combustion, Folie 7 \"Spark timing effects\": Verbrennungslage über den Zündzeitpunkt, MBT-Beispiel 30 Grad vor OT (Fig. 9-3)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S4",
+      "label": "MIT 2.61, Vorlesung 2",
+      "title": "MIT OpenCourseWare 2.61, Lecture 2 Engine operating characteristics, Folie 2: n_R = 2 Kurbelwellenumdrehungen je Arbeitstakt beim Viertakter (1 beim Zweitakter)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/cf3aaf55ae71710c9bfd3056515b9b67_MIT2_61S17_lec2.pdf",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S5",
+      "label": "Schaeffler, Steuertrieb",
+      "title": "Schaeffler: Steuertrieb - der Taktgeber im Motor (Qualität ist Mehrwert, AAMPACT e.V., 06.12.2017): synchronisiert Kurbel- und Nockenwelle; Zahnriemen- und Kettentrieb",
+      "url": "https://qualitaet-ist-mehrwert.de/teile-news/kfz/steuertrieb-der-taktgeber-im-motor/",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Steuerzeiten im Modell (IVO 10 Grad vOT, IVC 40 nUT, EVO 40 vUT, EVC 10 nOT) sind typische Werte innerhalb der Spannen aus S2, nicht die eines bestimmten Motors; im Video nur 'öffnet', 'schließt', 'kurz vor dem unteren Totpunkt'.",
+    "Zündzeitpunkt 30 Grad vOT ist das MBT-Beispiel aus S3; real abhängig von Drehzahl, Last und weiteren Größen. Im Video nur 'kurz vor dem oberen Totpunkt'.",
+    "Zähnezahlen 20 und 40 sind Beispielwerte (im Bild als Beispiel markiert); belegt ist nur das Verhältnis 2:1 (S1).",
+    "Folgen eines Zahnriemenrisses, Wechselintervalle: nicht verwendet (keine Wartungsaussage).",
+    "Zweitakter (Arbeitstakt jede Umdrehung, S4): nicht im Video, späteres Thema.",
+    "Direkteinspritzung oder Saugrohreinspritzung (ob beim Ansaugen Luft oder Gemisch einströmt): nicht unterschieden; gesprochen nur 'frische Luft strömt ein'."
+  ],
+  "hook": {
+    "id": "H1",
+    "note": "Überraschender, belegter Sachverhalt mit sichtbarem Beweis: die beiden Zähler laufen 4 zu 2 auseinander."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Im Viertaktmotor zündet jeder Zylinder nur bei jeder zweiten Umdrehung.",
+      "on_screen": "Zündung nur bei jeder zweiten Umdrehung",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "visual": "laufender Schnittmotor, Zähler Umdrehungen 0-4 und Zündungen 0-2",
+      "why": {
+        "truth": "S1 (zwei Kurbelwellenumdrehungen je Nockenumdrehung), S4 (n_R = 2)",
+        "visual": "Zähler machen das Verhältnis sichtbar",
+        "curiosity": "klingt nach Verschwendung"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Warum dreht die Nockenwelle nur halb so schnell wie die Kurbelwelle?",
+      "on_screen": "Warum dreht die Nockenwelle halb so schnell?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "zwei Räder am Steuertrieb, das große dreht halb so schnell",
+      "why": {
+        "clarity": "setzt voraus, dass man die Nockenwelle kennt"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Ein Zylinder zündet bei jeder Umdrehung? Im Viertakter nur bei jeder zweiten.",
+      "on_screen": "Zündet er bei jeder Umdrehung? Nein.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S4"
+      ],
+      "visual": "Zündzähler bleibt bei jeder zweiten Umdrehung stehen",
+      "why": {
+        "truth": "nur für Viertakter; Zweitakter zünden jede Umdrehung (S4)"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Läuft der Steuertrieb nicht synchron, öffnen die Ventile zur falschen Zeit.",
+      "on_screen": "Ventile zur falschen Zeit offen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S5"
+      ],
+      "visual": "Steuermarken laufen auseinander",
+      "why": {
+        "relevance": "zieht Richtung Schadensfall und Wartung, die die Marke nicht berät"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau einem Zylinder zwei Umdrehungen lang ins Innere.",
+      "on_screen": "Zwei Umdrehungen im Inneren eines Zylinders",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Schnittmodell in Zeitlupe",
+      "why": {
+        "curiosity": "zeigt, verspricht aber keine Überraschung"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "duration_hint": 5,
+      "spoken": "Im Viertaktmotor zündet jeder Zylinder nur bei jeder zweiten Umdrehung.",
+      "data": {
+        "claim": "Zündung nur bei jeder zweiten Umdrehung",
+        "claim_lines": [
+          "Zündung nur bei jeder",
+          "zweiten Umdrehung"
+        ],
+        "claim_highlight": "zweiten",
+        "claim_at": 0.05,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1440
+          ]
+        ]
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:zweiten",
+        "source": false
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_exploded",
+      "duration_hint": 7,
+      "spoken": "Der Grund: Ein Arbeitsspiel braucht vier Hübe des Kolbens. Und jeder Hub ist eine halbe Umdrehung der Kurbelwelle.",
+      "data": {
+        "title": "4 Hübe = 1 Arbeitsspiel",
+        "assemble_at": "w:Und",
+        "dims_at": "w:Hub",
+        "fade_out": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            "w:jeder",
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "count_at": "w:vier"
+      },
+      "overlay": {
+        "kicker": "2 · DER GRUND",
+        "marker": "fakt",
+        "marker_at": "w:Arbeitsspiel"
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "duration_hint": 6,
+      "spoken": "Takt eins, Ansaugen: Das Einlassventil öffnet, der Kolben fährt nach unten, frische Luft strömt ein.",
+      "data": {
+        "mode": "intake",
+        "title": "Ansaugen",
+        "fade_in": false,
+        "labels": [
+          "vin",
+          "piston"
+        ],
+        "labels_at": [
+          "w:Einlassventil",
+          "w:Kolben"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            180
+          ]
+        ],
+        "notes": [
+          {
+            "text": "Frischluft",
+            "at": "w:Luft",
+            "side": "l",
+            "y": 640,
+            "to": [
+              280,
+              425
+            ]
+          }
+        ]
+      },
+      "overlay": {
+        "kicker": "3 · TAKT 1 VON 4",
+        "marker": "fakt",
+        "marker_at": "w:Einlassventil",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "duration_hint": 6,
+      "spoken": "Takt zwei, Verdichten: Das Einlassventil schließt, der Kolben fährt hoch und presst die Füllung zusammen.",
+      "data": {
+        "mode": "compression",
+        "title": "Verdichten",
+        "fade_in": false,
+        "fade_out": false,
+        "labels": [
+          "chamber"
+        ],
+        "labels_at": [
+          "w:Füllung"
+        ],
+        "theta": [
+          [
+            0,
+            180
+          ],
+          [
+            "w:schließt",
+            220
+          ],
+          [
+            1,
+            325
+          ]
+        ],
+        "notes": [
+          {
+            "text": "Einlass zu",
+            "at": "w:schließt",
+            "side": "l",
+            "y": 760,
+            "to": [
+              452,
+              432
+            ]
+          },
+          {
+            "text": "Druck steigt",
+            "at": "w:presst",
+            "side": "r",
+            "y": 900,
+            "to": [
+              540,
+              560
+            ]
+          }
+        ]
+      },
+      "overlay": {
+        "kicker": "4 · TAKT 2 VON 4",
+        "marker": "fakt",
+        "marker_at": "w:schließt"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "duration_hint": 8,
+      "spoken": "Takt drei, Arbeiten: Kurz vor dem oberen Totpunkt zündet die Kerze. Der Druck treibt den Kolben nach unten. Nur dieser Takt liefert Arbeit.",
+      "data": {
+        "mode": "power",
+        "title": "Arbeiten",
+        "fade_out": false,
+        "labels": [
+          {
+            "key": "plug",
+            "side": "l",
+            "y": 640
+          }
+        ],
+        "labels_at": [
+          "w:Kerze"
+        ],
+        "stroke_dims": true,
+        "dims_at": "w:Totpunkt",
+        "theta": [
+          [
+            0,
+            325
+          ],
+          [
+            "w:zündet",
+            330
+          ],
+          [
+            1,
+            490
+          ]
+        ],
+        "notes": [
+          {
+            "text": "liefert Arbeit",
+            "at": "w:liefert",
+            "side": "l",
+            "y": 880,
+            "to": [
+              480,
+              640
+            ]
+          }
+        ]
+      },
+      "overlay": {
+        "kicker": "5 · TAKT 3 VON 4",
+        "marker": "fakt",
+        "marker_at": "w:Totpunkt"
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "duration_hint": 6,
+      "spoken": "Takt vier, Ausstoßen: Kurz vor dem unteren Totpunkt öffnet das Auslassventil. Der Kolben schiebt das Abgas hinaus.",
+      "data": {
+        "mode": "exhaust",
+        "title": "Ausstoßen",
+        "fade_out": false,
+        "labels": [
+          "vex"
+        ],
+        "labels_at": [
+          "w:Auslassventil"
+        ],
+        "theta": [
+          [
+            0,
+            490
+          ],
+          [
+            "w:öffnet",
+            500
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "notes": [
+          {
+            "text": "Abgas",
+            "at": "w:Abgas",
+            "side": "r",
+            "y": 780,
+            "color": "exhaust",
+            "to": [
+              850,
+              425
+            ]
+          }
+        ]
+      },
+      "overlay": {
+        "kicker": "6 · TAKT 4 VON 4",
+        "marker": "fakt",
+        "marker_at": "w:öffnet"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b7",
+      "function": "demonstration",
+      "scene_type": "rv_drive",
+      "duration_hint": 11,
+      "spoken": "Jedes Ventil öffnet also nur einmal in zwei Umdrehungen. Darum treibt die Kurbelwelle die Nockenwelle über Zahnriemen oder Kette an, mit halber Drehzahl. Das Nockenwellenrad hat deshalb doppelt so viele Zähne.",
+      "data": {
+        "title": "Steuertrieb 2 : 1",
+        "teeth_crank": 20,
+        "teeth_cam": 40,
+        "note": "",
+        "note_at": "w:doppelt",
+        "fade_in": false,
+        "fade_out": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "half_at": "w:halber"
+      },
+      "overlay": {
+        "kicker": "7 · STEUERTRIEB",
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:Darum",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "id": "b8",
+      "function": "insight",
+      "scene_type": "rv_readout",
+      "duration_hint": 8,
+      "spoken": "Rechne nach: Bei dreitausend Umdrehungen pro Minute zündet jeder Zylinder fünfzehnhundert Mal pro Minute. Das sind fünfundzwanzig Zündungen pro Sekunde.",
+      "data": {
+        "title": "Nachgerechnet",
+        "fade_in": false,
+        "fade_out": false,
+        "gauge_max": 7,
+        "gauge_value": 3,
+        "gauge_unit": "× 1000 U/min",
+        "gauge_at": "w:dreitausend",
+        "lines": [
+          {
+            "text": "3000 U/min ÷ 2 = 1500 Zündungen/min",
+            "hl": "1500",
+            "at": "w:fünfzehnhundert"
+          },
+          {
+            "text": "1500 ÷ 60 s = 25 Zündungen/s",
+            "hl": "25",
+            "at": "w:fünfundzwanzig"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ]
+      },
+      "overlay": {
+        "kicker": "8 · DER KERN",
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:dreitausend",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "id": "b9",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "duration_hint": 7,
+      "spoken": "Vier Takte, zwei Umdrehungen, eine Zündung. Motorentechnik verstehen: Folge Revlore.",
+      "data": {
+        "mode": "close",
+        "fade_in": false,
+        "fade_out": false,
+        "chips": [
+          {
+            "text": "4 Takte",
+            "at": "w:Vier"
+          },
+          {
+            "text": "2 Umdrehungen",
+            "at": "w:zwei"
+          },
+          {
+            "text": "1 Zündung",
+            "at": "w:eine"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Motorentechnik verstehen",
+          "at": "w:Motorentechnik"
+        },
+        "theta": [
+          [
+            0,
+            360
+          ],
+          [
+            1,
+            1440
+          ]
+        ]
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "spec": "mcp-docs",
+  "runs": {
+    "L1": {
+      "title": "Ohne Server",
+      "prompt": "Schlag mit dem Server claude-code-docs nach, was MCP_TIMEOUT bewirkt. Antworte in zwei Sätzen.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 19.506,
+      "lines": [
+        {
+          "t": 12.901,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 17.513,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 18.747,
+          "kind": "text",
+          "text": "Ich kann den MCP-Server `claude-code-docs` in dieser Sitzung nicht abfragen, weil kein entsprechendes Tool verfügbar ist. Aus meinem Trainingswissen: `MCP_TIMEOUT` legt fest, wie lange Claude Code auf den Start eines MCP-Servers wartet (in Millisekunden), und die Tool-Laufzeit wird separat über `MCP_TOOL_TIMEOUT` gesteuert. Ob das mit der aktuellen Doku übereinstimmt, konnte ich nicht prüfen. Starte Claude Code mit verbundenem MCP-Server neu oder prüfe mit `/mcp`, ob der Server geladen ist, dann wiederhole ich die Abfrage."
+        },
+        {
+          "t": 18.812,
+          "kind": "end",
+          "text": "Ende nach 18.8 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 6153,
+        "num_turns": 1,
+        "total_cost_usd": 0.0009723,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Mit Server",
+      "prompt": "Schlag mit dem Server claude-code-docs nach, was MCP_TIMEOUT bewirkt. Antworte in zwei Sätzen.",
+      "settings": null,
+      "allowed_tools": [
+        "mcp__claude-code-docs"
+      ],
+      "wall": 30.088,
+      "lines": [
+        {
+          "t": 8.749,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 10.521,
+          "kind": "tool",
+          "id": "toolu_01RsxXQuEWz2CAPcEbPhac4w",
+          "text": "mcp__claude-code-docs__search_claude_code_docs: {\"query\": \"MCP_TIMEOUT environment variable\"}"
+        },
+        {
+          "t": 10.764,
+          "kind": "tool",
+          "id": "toolu_01KZKPgTarzkEkkJysE3VpKx",
+          "text": "mcp__claude-code-docs__query_docs_filesystem_claude_code_docs: {\"command\": \"rg -n \\\"MCP_TIMEOUT\\\" /\"}"
+        },
+        {
+          "t": 11.976,
+          "kind": "result",
+          "id": "toolu_01RsxXQuEWz2CAPcEbPhac4w",
+          "text": "<persisted-output>\nOutput too large (80.8KB). Full output saved to: ~\\.claude\\projects\\C--Automation-promptwerk-sandbox-mcp-docs\\02e821b7-188f-4392-ba98-0425e2e0efcc\\tool-results\\toolu_01RsxXQuEWz2CAPcEbPhac4w.json\n\n… (7 weitere Zeilen)"
+        },
+        {
+          "t": 26.59,
+          "kind": "result",
+          "id": "toolu_01KZKPgTarzkEkkJysE3VpKx",
+          "text": "exit: 0\n--- stdout ---\n/de/agent-sdk/mcp.mdx:159:Claude Code beginnt beim Start der Sitzung, Ihre MCP-Server zu verbinden, und sendet die [Init-Nachricht](#error-handling), sobald die Wartezeit für den ersten Turn, falls vorhanden, endet. Wie lange der erste Turn auf einen Server wartet, hängt davon ab, wo Sie ihn konfiguriert haben. Wenn Sie `permissionPromptToolName` setzen, wartet der erste Turn immer auf den Server dieses Tools, bis zu `MCP_TIMEOUT`, unabhängig davon, wo Sie ihn konfiguriert haben.\n… (82 weitere Zeilen)"
+        },
+        {
+          "t": 28.857,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 29.466,
+          "kind": "text",
+          "text": "`MCP_TIMEOUT` legt in Millisekunden fest, wie lange Claude Code beim Start auf die Verbindung zu einem MCP-Server wartet, und der Standardwert ist 30 Sekunden. Kommt die Verbindung in dieser Zeit nicht zustande, schlägt sie fehl, sodass du etwa mit `MCP_TIMEOUT=60000 claude` das Limit erhöhen kannst."
+        },
+        {
+          "t": 29.51,
+          "kind": "end",
+          "text": "Ende nach 29.5 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "mcp__claude-code-docs__query_docs_filesystem_claude_code_docs",
+          "mcp__claude-code-docs__search_claude_code_docs",
+          "mcp__claude-code-docs__submit_feedback"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 20822,
+        "num_turns": 3,
+        "total_cost_usd": 0.00459758,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

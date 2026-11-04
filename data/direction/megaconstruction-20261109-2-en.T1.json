@@ -1,0 +1,1315 @@
+{
+  "video_id": "megaconstruction-20261109-2-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Fehmarnbelt tunnel: one element outweighs seven Eiffel Towers",
+  "notes": "Testvideo Neustart 2026-11 (Konzept 02 Marke\\Gigastruct\\Testvideo-Konzept 2026-11.md), gebaut mit tools/testvideo_fehmarn.py aus dem Plan P1 (en, Text unverändert). Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Bauaufgabe. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261109-2-en.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-10-30). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://femern.com/media/03kk5d0x/2608_factsheet_fehmarnbelt-tunnel_august2026.pdf",
+      "title": "Femern A/S: Fact sheet on the Fehmarnbelt tunnel, August 2026 (ca. 18 km; 79 Standardelemente je 217 m, 73.500 t; 10 Spezialelemente; Rinne Ø 12 m tief, Ø 100 m breit; Bau Schritt für Schritt; Schotten machen Elemente schwimmfähig, Becken wie eine Schleuse geflutet; Mai 2026 erstes Element mit IVY 1, IVY 2 und fünf Schleppern, seither zwei weitere; Zug 7 min, Auto 10 min, Fähre 45 min ohne Warte- und Ladezeit)",
+      "checked_at": "2026-10-30",
+      "label": "Femern A/S, Factsheet 8/2026"
+    },
+    {
+      "id": "S2",
+      "url": "https://femern.com/da/presse/nyheder/forste-del-af-femern-baelt-tunnelen-er-saenket-ned-pa-havbunden/",
+      "title": "Femern A/S, Nyhed 07.05.2026: Første del af Femern Bælt-tunnelen er sænket ned på havbunden (89 Elemente; Absenkung ab 5. Mai 12:00, gut 14 Stunden; fünf Röhren: zwei Autobahn, zwei Bahn, eine Technik; 217 m, über 73.500 t; bis 40 m unter der Wasseroberfläche; 18 km, längster Absenktunnel der Welt)",
+      "checked_at": "2026-10-30",
+      "label": "Femern A/S, news 7.5.2026"
+    },
+    {
+      "id": "S3",
+      "url": "https://femern.com/press/news/casting-of-first-element",
+      "title": "Femern A/S, News 10.07.2023: Casting of first element (79 Standardelemente 217 m lang, 42 m breit, 9 m hoch; neun Segmente zu etwa 24 m; Fabrik bei Rødbyhavn)",
+      "checked_at": "2026-10-30",
+      "label": "Femern A/S, news 10.7.2023"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.toureiffel.paris/en/the-monument/key-figures",
+      "title": "SETE (Betreiber des Eiffelturms): Key figures (Total weight 10,100 tons; Weight of the metal frame 7,300 tons; Current height 1083 feet)",
+      "checked_at": "2026-10-30",
+      "label": "SETE (Eiffel Tower), Key figures"
+    }
+  ],
+  "unverified": [
+    "Anordnung und Maße der fünf Röhren im Querschnitt: in den Bauherrenquellen nur als 'zwei Autobahn, zwei Bahn, eine Technik' beschrieben; im Modell schematisch, im Bild als 'Querschnitt schematisch' gekennzeichnet.",
+    "Stand nach August 2026 (weitere abgesenkte Elemente): nicht ermittelt; im Video ausdrücklich 'Stand August 2026'.",
+    "Eröffnungstermin: ältere Bauherrenmeldung (2023) nennt 2029, Factsheet August 2026 nennt keinen Termin; nicht verwendet.",
+    "Einheit 'tons' auf der Eiffelturm-Seite (metrische Tonnen oder US short tons): nicht eindeutig; die Aussage 'mehr als sieben' gilt in beiden Lesarten (siehe C1).",
+    "Tiefe der Absenkung beim ersten Element im Einzelnen: nicht verwendet; nur 'bis 40 m unter der Wasseroberfläche' als Modellmaß."
+  ],
+  "hook": {
+    "id": "H2"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "This concrete block weighs more than seven Eiffel Towers. And yet it floats.",
+      "on_screen": "Heavier than 7 Eiffel Towers. And it floats.",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ],
+      "visual": "Tunnelelement treibt an der Wasseroberfläche, Schotten orange, Zahl 73.500 t erscheint",
+      "why": {
+        "truth": "73.500 t ÷ 10.100 t = 7,28 (C1); schwimmfähig durch Schotten laut Factsheet",
+        "curiosity": "Widerspruch schwer und schwimmt",
+        "visual": "das Objekt des ganzen Videos"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How do you put 73,500 tonnes of concrete on the floor of the Fehmarnbelt?",
+      "on_screen": "How do 73,500 tonnes reach the seabed?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Element über der Rinne, Kamera taucht ab",
+      "why": {
+        "truth": "Frage, Gewicht aus S1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "This tunnel is not bored. It is cast on land and sunk into the sea.",
+      "on_screen": "Not bored. Cast on land and sunk.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Bohrer durchgestrichen, Element sinkt",
+      "why": {
+        "truth": "Absenktunnel laut S1/S2",
+        "curiosity": "Annahme 'Tunnel = Bohren' ist verbreitet, aber nicht belegt"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "One element, 73,500 tonnes: the first lowering took more than 14 hours.",
+      "on_screen": "14 hours for one element",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Element hängt unter den Pontons",
+      "why": {
+        "truth": "14 Stunden belegt (S2); 'zentimeterweise' ist Deutung, daher 4"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a 217 metre element float out and sink to the seabed.",
+      "on_screen": "217 m: floated out, sunk down",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "visual": "Segmente wachsen aus dem Boden",
+      "why": {
+        "truth": "S1, S3"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "How do you get 73,500 tonnes of concrete onto the seabed? The Fehmarnbelt tunnel faces that 79 times, once per standard element.",
+      "data": {
+        "kicker": "Engineering task · Fehmarnbelt",
+        "question": "How do 73,500 tonnes reach the seabed?",
+        "question_at": 0.05,
+        "tag": {
+          "text": "Denmark – Germany · 89 elements",
+          "at": "@Fehmarnbelt",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "A standard element is 217 metres long, 42 wide and 9 high. Yet it has to float to reach the site.",
+      "data": {
+        "headline": "The load case",
+        "load": {
+          "label": "One standard element",
+          "value": "73,500",
+          "unit": "t",
+          "sub": "217 × 42 × 9 m",
+          "at": "@standard",
+          "dy": 540,
+          "enter": "swipe"
+        },
+        "goal": {
+          "text": "Float it to the site",
+          "at": "@float",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "The solution: a hollow body. Bulkheads close the ends, then the basin is flooded like a lock, and the element floats up.",
+      "data": {
+        "headline": "The principle",
+        "note": "schematic",
+        "rule": {
+          "text": "Seal the ends, flood the basin: it floats.",
+          "at": "@flooded",
+          "dy": 660
+        },
+        "note_out": "@Bulkheads-0.15"
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "It is cast on land in nine segments. Inside are five tubes: two for the motorway, two for rail, one for services. Five tugs and two immersion pontoons take it to the trench.",
+      "data": {
+        "headline": "How it is built",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Segments, cast on land",
+            "qty": "9",
+            "at": "@nine"
+          },
+          {
+            "pos": "2",
+            "part": "Tubes: road, rail, services",
+            "qty": "5",
+            "at": "@five"
+          },
+          {
+            "pos": "3",
+            "part": "Tugs",
+            "qty": "5",
+            "at": "@tugs"
+          },
+          {
+            "pos": "4",
+            "part": "Immersion pontoons",
+            "qty": "2",
+            "at": "@pontoons"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Let's check: the whole Eiffel Tower weighs 10,100 tonnes, says its operator. 73,500 divided by 10,100 is about 7.3. And each of the nine segments is about 24 metres long.",
+      "data": {
+        "headline": "Checked",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "Element ÷ whole Eiffel Tower",
+            "a": {
+              "value": 73500,
+              "unit": "t"
+            },
+            "op": "÷",
+            "b": {
+              "value": 10100,
+              "unit": "t"
+            },
+            "unit": "×",
+            "round": 0.1,
+            "decimals": 1,
+            "prefix": "≈ ",
+            "expect": 7.3,
+            "at": "@73,500",
+            "result_at": "@7.3"
+          },
+          {
+            "label": "Length of one segment",
+            "a": {
+              "value": 217,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 9
+            },
+            "unit": "m",
+            "round": 0.1,
+            "decimals": 1,
+            "prefix": "≈ ",
+            "expect": 24.1,
+            "at": "@nine",
+            "result_at": "@24"
+          }
+        ],
+        "scale": {
+          "title": "Balance · schematic",
+          "left": "1 element · 73,500 t",
+          "right": "7 × Eiffel Tower",
+          "left_t": 73500,
+          "unit_t": 10100,
+          "count": 7,
+          "at": "@Eiffel",
+          "dy": 96
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "benefit",
+      "scene_type": "gb_proof",
+      "spoken": "The test came on 5 May 2026: the first element was lowered into place. It took just over 14 hours.",
+      "data": {
+        "headline": "The test",
+        "stamp": {
+          "date": "5 MAY 2026",
+          "event": "First element lowered",
+          "at": "@May",
+          "dy": 150
+        },
+        "clock": {
+          "hours": 14,
+          "end_text": "just over 14 h",
+          "label": "Lowering",
+          "at": "@lowered",
+          "until": "@just",
+          "dy": 480
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "As of August 2026, three elements lie on the seabed and 86 are still to come. Follow Gigastruct for the next engineering task.",
+      "data": {
+        "statement": "Solved: concrete that floats",
+        "sheet": "SHEET 03",
+        "rows": [
+          [
+            "Task",
+            "73,500 t to the seabed"
+          ],
+          [
+            "Solution",
+            "Hollow body, bulkheads"
+          ],
+          [
+            "Status",
+            "3 of 89 on the seabed"
+          ],
+          [
+            "Date",
+            "August 2026"
+          ]
+        ],
+        "cta": {
+          "text": "Follow Gigastruct",
+          "at": "@Follow"
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "TASK",
+        "IDEA",
+        "BUILD",
+        "MATHS",
+        "TEST"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 0,
+        "b3": 1,
+        "b4": 2,
+        "b5": 3,
+        "b6": 4,
+        "b7": 5
+      }
+    },
+    "description": "A standard Fehmarnbelt tunnel element is 217 metres long and weighs 73,500 tonnes, more than seven Eiffel Towers. How it is cast on land, towed out floating and lowered onto the seabed. Status: Femern A/S fact sheet, August 2026.",
+    "companion_text": "Calculated: 73,500 t ÷ 10,100 t (total weight of the Eiffel Tower per its operator) = 7.28. 89 − 3 = 86 elements still to go (status August 2026). Stylised 3D models, schematic cross-section.",
+    "hashtags": [
+      "fehmarnbelt",
+      "tunnel",
+      "megaproject",
+      "civilengineering",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "what": "Gewicht Standardelement im Verhältnis zum Gesamtgewicht des Eiffelturms",
+        "calculation": "73.500 t ÷ 10.100 t = 7,277",
+        "result": "mehr als das Siebenfache (7,3×)",
+        "sources": [
+          "S1",
+          "S4"
+        ],
+        "robustness": "Die Betreiberseite nennt '10,100 tons' ohne Einheitenzusatz. Gelesen als US short tons (10.100 × 0,90718 = 9.162,5 t) ergäbe sich 73.500 ÷ 9.162,5 = 8,02. 'Mehr als sieben' gilt in beiden Lesarten."
+      },
+      {
+        "id": "C2",
+        "what": "Fehlende Elemente Stand August 2026",
+        "calculation": "89 − 3 = 86",
+        "result": "86",
+        "sources": [
+          "S1",
+          "S2"
+        ],
+        "note": "Factsheet August 2026: erstes Element im Mai 2026, seither zwei weitere; insgesamt 89 Elemente (79 Standard, 10 Spezial)."
+      },
+      {
+        "id": "C3",
+        "what": "Segmentlänge zur Kontrolle",
+        "calculation": "217 m ÷ 9 Segmente = 24,1 m",
+        "result": "passt zur Bauherrenangabe 'approximately 24m'",
+        "sources": [
+          "S3"
+        ]
+      },
+      {
+        "id": "C4",
+        "what": "Fahrzeit Fähre gegen Zug",
+        "calculation": "45 min ÷ 7 min = 6,4",
+        "result": "nicht im Video verwendet, nur Kontrolle",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "id": "C9",
+        "calculation": "73.500 t ÷ 10.100 t = 7,28; 217 m ÷ 9 = 24,1 m",
+        "result": "im Rechenblatt (Format Bauaufgabe)",
+        "sources": [
+          "S1",
+          "S3",
+          "S4"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        700,
+        5200
+      ],
+      "objects": [
+        {
+          "id": "seabed",
+          "kind": "seabed",
+          "size": 60000,
+          "trench_w": 100,
+          "trench_d": 12,
+          "pos": [
+            9628.65,
+            -28,
+            0
+          ]
+        },
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 1800,
+          "grid": 24,
+          "pos": [
+            0,
+            -9,
+            0
+          ],
+          "props": {
+            "visible": 0
+          }
+        },
+        {
+          "id": "water",
+          "kind": "water",
+          "size": 60000,
+          "pos": [
+            9628.65,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "element",
+          "kind": "element",
+          "length": 217,
+          "width": 42,
+          "height": 9,
+          "segments": 9,
+          "gap": 0.45,
+          "pos": [
+            0,
+            -40,
+            0
+          ],
+          "tubes": [
+            {
+              "x": 6.3,
+              "w": 10.6,
+              "h": 6.4,
+              "y": 1.3,
+              "r": 0.8
+            },
+            {
+              "x": 17.7,
+              "w": 10.6,
+              "h": 6.4,
+              "y": 1.3,
+              "r": 0.8
+            },
+            {
+              "x": 25.1,
+              "w": 2.6,
+              "h": 6.6,
+              "y": 1.2
+            },
+            {
+              "x": 30.5,
+              "w": 6.6,
+              "h": 6.8,
+              "y": 1.1,
+              "r": 1.2
+            },
+            {
+              "x": 37.9,
+              "w": 6.6,
+              "h": 6.8,
+              "y": 1.1,
+              "r": 1.2
+            }
+          ],
+          "props": {
+            "reveal": 9,
+            "cut": 0,
+            "bulkheads": 0,
+            "highlight": 1
+          }
+        },
+        {
+          "id": "chain",
+          "kind": "chain",
+          "count": 89,
+          "length": 217,
+          "width": 42,
+          "height": 9,
+          "gap": 0.6,
+          "pos": [
+            0,
+            -40,
+            0
+          ],
+          "props": {
+            "visible": 0,
+            "reveal": 89,
+            "done": 0,
+            "lead": 0
+          }
+        },
+        {
+          "id": "land_dk",
+          "kind": "land",
+          "size_x": 6000,
+          "size_z": 30000,
+          "height": 30,
+          "depth": 26,
+          "pos": [
+            22657.3,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "land_de",
+          "kind": "land",
+          "size_x": 6000,
+          "size_z": 30000,
+          "height": 30,
+          "depth": 26,
+          "pos": [
+            -3400,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "tugs",
+          "kind": "boat",
+          "count": 5,
+          "length": 30,
+          "width": 11,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "positions": [
+            [
+              175,
+              0,
+              -30,
+              0.25
+            ],
+            [
+              175,
+              0,
+              30,
+              -0.25
+            ],
+            [
+              -170,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              62,
+              0.2
+            ],
+            [
+              0,
+              0,
+              -62,
+              -0.2
+            ]
+          ],
+          "props": {
+            "visible": 0
+          }
+        },
+        {
+          "id": "pontoons",
+          "kind": "pontoon",
+          "xs": [
+            -55,
+            55
+          ],
+          "length": 36,
+          "width": 58,
+          "deck_y": 6,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "visible": 0,
+            "cable": 6
+          }
+        },
+        {
+          "id": "towers",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 7,
+          "spacing": 150,
+          "platforms": [
+            [
+              0.174,
+              0.62
+            ],
+            [
+              0.35,
+              0.36
+            ]
+          ],
+          "pos": [
+            60,
+            -9,
+            -330
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "len": [
+          70,
+          -31,
+          -21
+        ],
+        "wid": [
+          109.5,
+          -30.2,
+          0
+        ],
+        "hgt": [
+          109.5,
+          -35.5,
+          21.5
+        ],
+        "road": [
+          108.6,
+          -35.4,
+          9.0
+        ],
+        "tech": [
+          108.6,
+          -35.2,
+          -4.1
+        ],
+        "rail": [
+          108.6,
+          -35.3,
+          -13.2
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "element"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 14,
+            "el1": 10,
+            "fit0": 0.75,
+            "fit1": 0.82,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {
+            "seabed.visible": 0,
+            "element.cut": 0,
+            "element.y": 32,
+            "element.highlight": 1
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "element"
+            ],
+            "az0": 80,
+            "az1": 95,
+            "el0": 8,
+            "el1": 12,
+            "fit0": 0.7,
+            "fit1": 0.78,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {
+            "seabed.visible": 0,
+            "element.cut": 0,
+            "element.y": 32,
+            "element.highlight": 1
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "element"
+            ],
+            "az0": 25,
+            "az1": 35,
+            "el0": 22,
+            "el1": 18,
+            "fit0": 0.7,
+            "fit1": 0.78,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "seabed.visible": 0,
+            "element.cut": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.25",
+                0.8
+              ]
+            ],
+            "element.y": [
+              [
+                0,
+                -40
+              ],
+              [
+                "%0.55",
+                -40
+              ],
+              [
+                "%0.9",
+                2
+              ]
+            ],
+            "element.bulkheads": 1,
+            "water.opacity": 1
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "element"
+            ],
+            "az0": 50,
+            "az1": 30,
+            "el0": 18,
+            "el1": 14,
+            "fit0": 0.7,
+            "fit1": 0.78,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {
+            "seabed.visible": 0,
+            "element.cut": 0.8,
+            "element.reveal": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.5",
+                9
+              ]
+            ],
+            "tugs.visible": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.6",
+                1
+              ]
+            ],
+            "pontoons.visible": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.7",
+                1
+              ]
+            ]
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "element"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.7,
+            "fit1": 0.78,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {
+            "seabed.visible": 0,
+            "element.cut": 0,
+            "element.y": 32,
+            "towers.visible": 1,
+            "tugs.visible": 0,
+            "pontoons.visible": 0
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "element"
+            ],
+            "az0": 30,
+            "az1": 45,
+            "el0": 12,
+            "el1": 8,
+            "fit0": 0.7,
+            "fit1": 0.78,
+            "zone": 260,
+            "cy": 680
+          },
+          "props": {
+            "seabed.visible": 1,
+            "element.cut": 0,
+            "element.y": [
+              [
+                0,
+                -10
+              ],
+              [
+                "%0.8",
+                -40
+              ]
+            ],
+            "pontoons.visible": 1,
+            "pontoons.cable": [
+              [
+                0,
+                6
+              ],
+              [
+                "%0.8",
+                36
+              ]
+            ]
+          }
+        },
+        "b7": {
+          "cam": {
+            "target": [
+              "element"
+            ],
+            "az0": 20,
+            "az1": 10,
+            "el0": 20,
+            "el1": 28,
+            "fit0": 0.6,
+            "fit1": 0.5,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {
+            "seabed.visible": 1,
+            "element.cut": 0,
+            "element.visible": 0,
+            "chain.visible": 1,
+            "chain.done": 3,
+            "chain.lead": 3
+          }
+        }
+      }
+    },
+    "media_folder": "assets/higgsfield/fehmarnbelt",
+    "media": [
+      {
+        "beat": "b1",
+        "kind": "video",
+        "file": "clips/gs_fb_clip_tow.mp4",
+        "from": 0,
+        "to": "@Fehmarnbelt",
+        "box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "enter": "cut",
+        "exit": "wipe",
+        "shade": 0.55,
+        "move": {
+          "scale": [
+            1.3,
+            1.3
+          ],
+          "y": [
+            400,
+            400
+          ]
+        },
+        "marks": [
+          {
+            "x0": 200,
+            "y0": 1054,
+            "x1": 690,
+            "y1": 490,
+            "text": "217 m",
+            "at": "@concrete",
+            "out": "@Fehmarnbelt-1.0",
+            "tpos": 0.72
+          }
+        ]
+      },
+      {
+        "beat": "b2",
+        "kind": "video",
+        "file": "clips/gs_fb_clip_hall.mp4",
+        "from": 0,
+        "to": "@Yet",
+        "box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "enter": "swipe",
+        "exit": "wipe",
+        "shade": 0.68
+      },
+      {
+        "beat": "b3",
+        "kind": "image",
+        "file": "gs_fb_bulkhead.png",
+        "from": "@Bulkheads-0.15",
+        "to": "@then",
+        "box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "enter": "fade",
+        "exit": "cut",
+        "shade": 0.45,
+        "move": {
+          "scale": [
+            1.0,
+            1.06
+          ]
+        },
+        "marks": [
+          {
+            "x0": 365,
+            "y0": 590,
+            "x1": 950,
+            "y1": 590,
+            "text": "Bulkhead",
+            "at": "@Bulkheads+0.2"
+          }
+        ]
+      },
+      {
+        "beat": "b3",
+        "kind": "video",
+        "file": "clips/gs_fb_clip_flood.mp4",
+        "from": "@then",
+        "to": "%1",
+        "box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "enter": "swipe",
+        "exit": "fade",
+        "shade": 0.45
+      },
+      {
+        "beat": "b4",
+        "kind": "strip",
+        "files": [
+          "gs_fb_rebar.png",
+          "gs_fb_tube_inside.png"
+        ],
+        "from": 0,
+        "to": "@five",
+        "box": [
+          36,
+          36,
+          1008,
+          1848
+        ],
+        "tile_w": 700,
+        "enter": "fade",
+        "exit": "wipe",
+        "shade": 0.5
+      },
+      {
+        "beat": "b6",
+        "kind": "video",
+        "file": "clips/gs_fb_clip_pontoon.mp4",
+        "from": 0,
+        "to": "@first-0.2",
+        "box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "enter": "fade",
+        "exit": "cut",
+        "shade": 0.5
+      },
+      {
+        "beat": "b6",
+        "kind": "video",
+        "file": "clips/gs_fb_clip_underwater.mp4",
+        "from": "@first-0.2",
+        "to": "%1",
+        "box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "enter": "cut",
+        "exit": "fade",
+        "shade": 0.5
+      },
+      {
+        "beat": "b7",
+        "kind": "image",
+        "file": "gs_fb_sea_dawn.png",
+        "from": 0,
+        "to": "@three",
+        "box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "enter": "fade",
+        "exit": "wipe",
+        "shade": 0.35,
+        "move": {
+          "scale": [
+            1.0,
+            1.05
+          ]
+        }
+      }
+    ],
+    "sound": {
+      "palette": "tech",
+      "mood": "dark",
+      "levels": {
+        "sfx_peak_db": -18
+      }
+    },
+    "sound_cues": [
+      {
+        "beat": "b1",
+        "at": 0.05,
+        "cue": "whoosh2"
+      },
+      {
+        "beat": "b1",
+        "word": "concrete",
+        "cue": "paper"
+      },
+      {
+        "beat": "b1",
+        "at": 6.42,
+        "cue": "swipe2"
+      },
+      {
+        "beat": "b1",
+        "word": "Fehmarnbelt",
+        "cue": "click"
+      },
+      {
+        "beat": "b2",
+        "at": 5.95,
+        "cue": "swipe2"
+      },
+      {
+        "beat": "b2",
+        "word": "standard",
+        "cue": "thud"
+      },
+      {
+        "beat": "b2",
+        "word": "float",
+        "cue": "click"
+      },
+      {
+        "beat": "b3",
+        "word": "Bulkheads",
+        "cue": "stamp_leise"
+      },
+      {
+        "beat": "b3",
+        "word": "then",
+        "cue": "whoosh"
+      },
+      {
+        "beat": "b3",
+        "word": "flooded",
+        "cue": "click"
+      },
+      {
+        "beat": "b4",
+        "word": "nine",
+        "cue": "click"
+      },
+      {
+        "beat": "b4",
+        "at": 3.47,
+        "cue": "swipe2"
+      },
+      {
+        "beat": "b4",
+        "word": "five",
+        "cue": "click"
+      },
+      {
+        "beat": "b4",
+        "word": "tugs",
+        "cue": "click"
+      },
+      {
+        "beat": "b4",
+        "word": "pontoons",
+        "cue": "click"
+      },
+      {
+        "beat": "b5",
+        "at": 2.25,
+        "cue": "tick"
+      },
+      {
+        "beat": "b5",
+        "at": 2.57,
+        "cue": "tick"
+      },
+      {
+        "beat": "b5",
+        "at": 2.89,
+        "cue": "tick"
+      },
+      {
+        "beat": "b5",
+        "at": 3.21,
+        "cue": "tick"
+      },
+      {
+        "beat": "b5",
+        "at": 3.53,
+        "cue": "tick"
+      },
+      {
+        "beat": "b5",
+        "at": 3.85,
+        "cue": "tick"
+      },
+      {
+        "beat": "b5",
+        "at": 4.17,
+        "cue": "tick"
+      },
+      {
+        "beat": "b5",
+        "word": "73,500",
+        "cue": "paper"
+      },
+      {
+        "beat": "b5",
+        "word": "7.3",
+        "cue": "stamp_leise"
+      },
+      {
+        "beat": "b5",
+        "word": "nine",
+        "cue": "paper"
+      },
+      {
+        "beat": "b5",
+        "word": "24",
+        "cue": "stamp_leise"
+      },
+      {
+        "beat": "b6",
+        "word": "May",
+        "cue": "stamp"
+      },
+      {
+        "beat": "b6",
+        "word": "first",
+        "cue": "thud"
+      },
+      {
+        "beat": "b7",
+        "at": 1.47,
+        "cue": "swipe2"
+      },
+      {
+        "beat": "b7",
+        "word": "Follow",
+        "cue": "click"
+      }
+    ]
+  }
+}

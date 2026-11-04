@@ -1,0 +1,162 @@
+{
+  "spec": "format-hook-en",
+  "runs": {
+    "L1": {
+      "title": "No hook",
+      "prompt": "Add a function double(x) to app.js that returns x * 2, and export it.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 12.889,
+      "lines": [
+        {
+          "t": 6.929,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 8.751,
+          "kind": "tool",
+          "id": "toolu_01FWzVQawqepG6WioPBBwwdN",
+          "text": "Read: .\\app.js"
+        },
+        {
+          "t": 8.811,
+          "kind": "result",
+          "id": "toolu_01FWzVQawqepG6WioPBBwwdN",
+          "text": "1\tfunction greet(name) {\n2\t  return \"Hello \" + name;\n3\t}\n… (3 more lines)"
+        },
+        {
+          "t": 10.569,
+          "kind": "tool",
+          "id": "toolu_01WhJrDEj4EdPZNKveDWZ9uT",
+          "text": "Edit: .\\app.js"
+        },
+        {
+          "t": 10.634,
+          "kind": "result",
+          "id": "toolu_01WhJrDEj4EdPZNKveDWZ9uT",
+          "text": "The file .\\app.js has been updated successfully. (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 12.291,
+          "kind": "text",
+          "text": "I added `double(x)` to `app.js`, returning `x * 2`, and added it to the existing `module.exports` alongside `greet`. I didn't run anything, since the file has no test setup and the change is a single line of arithmetic."
+        },
+        {
+          "t": 12.309,
+          "kind": "end",
+          "text": "Done after 12.3 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Edit",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 5423,
+        "num_turns": 3,
+        "total_cost_usd": 0.00097168,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "With PostToolUse hook",
+      "prompt": "Add a function double(x) to app.js that returns x * 2, and export it.",
+      "settings": {
+        "hooks": {
+          "PostToolUse": [
+            {
+              "matcher": "Edit|Write",
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/format.js\""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "allowed_tools": [],
+      "wall": 13.004,
+      "lines": [
+        {
+          "t": 6.931,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 8.08,
+          "kind": "tool",
+          "id": "toolu_018YzSUUxcWiVoeteYxYhHno",
+          "text": "Read: .\\app.js"
+        },
+        {
+          "t": 8.151,
+          "kind": "result",
+          "id": "toolu_018YzSUUxcWiVoeteYxYhHno",
+          "text": "1\tfunction greet(name) {\n2\t  return \"Hello \" + name;\n3\t}\n… (3 more lines)"
+        },
+        {
+          "t": 9.343,
+          "kind": "tool",
+          "id": "toolu_011CXZUF7jXp5tgrMgSmfoWx",
+          "text": "Edit: .\\app.js"
+        },
+        {
+          "t": 9.683,
+          "kind": "result",
+          "id": "toolu_011CXZUF7jXp5tgrMgSmfoWx",
+          "text": "The file .\\app.js has been updated successfully. (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 10.841,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 10.981,
+          "kind": "tool",
+          "id": "toolu_01WNfPzxgi24bPK9kJCMoMKY",
+          "text": "Read: .\\app.js"
+        },
+        {
+          "t": 11.003,
+          "kind": "result",
+          "id": "toolu_01WNfPzxgi24bPK9kJCMoMKY",
+          "text": "1\t// formatted with format.js\n2\tfunction greet(name) {\n3\t  return 'Hello ' + name;\n… (8 more lines)"
+        },
+        {
+          "t": 12.427,
+          "kind": "text",
+          "text": "I added `double(x)` to `app.js`, which returns `x * 2`, and exported it alongside `greet` as `module.exports = { greet, double }`.\n\nA PostToolUse hook ran a formatter on the file after my edit. It added a `// formatted with format.js` header comment and switched `greet`'s string from double quotes to single quotes. I left those changes in place since they come from your formatter setup, not from me. I didn't run the code."
+        },
+        {
+          "t": 12.443,
+          "kind": "end",
+          "text": "Done after 12.4 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Edit",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 5566,
+        "num_turns": 4,
+        "total_cost_usd": 0.0005735600000000001,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

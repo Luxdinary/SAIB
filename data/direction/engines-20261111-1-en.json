@@ -1,0 +1,475 @@
+{
+  "video_id": "engines-20261111-1-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "Petrol versus diesel: spark or heat",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261111-1-en, Reihe Gegenübergestellt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Petrol engines ignite a premixed charge with a spark, diesels inject into hot air and burn like a candle. The difference in a cutaway model.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.",
+    "hashtags": [
+      "enginetech",
+      "diesel",
+      "petrol",
+      "ignition",
+      "comparison"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, lecture 9",
+      "title": "MIT 2.61, Vorlesung 9 (L9)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "US DOE AFDC, gasoline cars",
+      "title": "US-DOE AFDC, Benzinmotor (A1)",
+      "url": "https://afdc.energy.gov/vehicles/how-do-gasoline-cars-work",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "label": "US DOE AFDC, diesel vehicles",
+      "title": "US-DOE AFDC, Dieselmotor (A2)",
+      "url": "https://afdc.energy.gov/vehicles/how-do-diesel-cars-work",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Take a close look.",
+      "on_screen": "Spark or heat?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "surprising_fact",
+      "spoken": "A diesel has no spark plug.",
+      "on_screen": "Petrol versus diesel: spark or heat",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Petrol versus diesel: spark or heat",
+      "on_screen": "Petrol versus diesel: spark or heat",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Petrol versus diesel: spark or heat",
+      "on_screen": "Petrol versus diesel: spark or heat",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Petrol versus diesel: spark or heat",
+      "on_screen": "Petrol versus diesel: spark or heat",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Petrol and diesel engines look almost the same in a cutaway. The big difference is how the charge ignites. Take a close look.",
+      "data": {
+        "claim": "Spark or heat?",
+        "claim_lines": [
+          "Spark",
+          "or heat?"
+        ],
+        "claim_highlight": "heat",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:ignites",
+        "source": false
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_board",
+      "spoken": "On the left a petrol engine, on the right a diesel. The petrol engine ignites with a spark from the spark plug. The diesel has no spark plug: its fuel ignites by itself in the hot, compressed air. Same pistons, same valves, a different way to light the fire.",
+      "data": {
+        "title": "Petrol and diesel",
+        "mode": "compare",
+        "left": {
+          "title": "Petrol",
+          "engine": {
+            "fuel": "petrol",
+            "injector": "port"
+          },
+          "rows": [
+            "spark",
+            "spark plug"
+          ],
+          "at": "w:left"
+        },
+        "right": {
+          "title": "Diesel",
+          "engine": {
+            "fuel": "diesel"
+          },
+          "rows": [
+            "self-ignition",
+            "injector"
+          ],
+          "at": "w:right"
+        },
+        "rows_at": [
+          "w:spark",
+          "w:itself"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:spark",
+        "kicker": "2 · TWO PRINCIPLES",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "spoken": "In a petrol engine, air and fuel are already mixed when the spark arrives. The engineering lecture calls this a premixed flame. It spreads out from the spark through the ready mixture. The spark is just the starting signal. In the picture, the injector sits in the intake port.",
+      "data": {
+        "title": "Premixed flame",
+        "injector": "port",
+        "labels": [
+          {
+            "key": "plug",
+            "side": "l",
+            "y": 640
+          }
+        ],
+        "labels_at": [
+          "w:spark"
+        ],
+        "notes": [
+          {
+            "text": "already mixed",
+            "at": "w:mixed",
+            "side": "r",
+            "y": 900,
+            "to": [
+              560,
+              520
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:premixed",
+        "kicker": "3 · PETROL",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "spoken": "In a diesel, the fuel is only injected into the hot, compressed air. It burns wherever it is mixing with air at that moment. The lecture compares this diffusion flame to a candle. There is no spark plug in this cylinder head at all.",
+      "data": {
+        "title": "Diffusion flame",
+        "fuel": "diesel",
+        "notes": [
+          {
+            "text": "Injector",
+            "at": "w:injected",
+            "side": "r",
+            "y": 640,
+            "to": [
+              540,
+              420
+            ]
+          },
+          {
+            "text": "like a candle",
+            "at": "w:candle",
+            "side": "l",
+            "y": 880,
+            "color": "fire",
+            "to": [
+              500,
+              590
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:diffusion",
+        "kicker": "4 · DIESEL"
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_board",
+      "spoken": "That is the core of it: premixed flame against diffusion flame, spark against heat. That is why one needs a spark plug and the other does not. Many more differences follow from this, and we will show them one by one in this series.",
+      "data": {
+        "title": "The difference",
+        "mode": "compare",
+        "left": {
+          "title": "Petrol",
+          "rows": [
+            "premixed flame",
+            "spark ignites",
+            "spark plug"
+          ],
+          "at": 0.02
+        },
+        "right": {
+          "title": "Diesel",
+          "rows": [
+            "diffusion flame",
+            "heat ignites",
+            "no spark plug"
+          ],
+          "at": 0.05
+        },
+        "rows_at": [
+          "w:premixed",
+          "w:spark",
+          "w:needs"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:core",
+        "kicker": "5 · THE CORE",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Spark or heat, premixed or candle flame. Understand engines: follow Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "spark",
+            "at": "w:Spark"
+          },
+          {
+            "text": "heat",
+            "at": "w:heat"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

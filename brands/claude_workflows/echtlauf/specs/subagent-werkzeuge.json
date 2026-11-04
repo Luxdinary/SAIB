@@ -1,0 +1,37 @@
+{
+  "id": "subagent-werkzeuge",
+  "topic_id": "claude_workflows-20261115-1-de",
+  "language": "de",
+  "title": "Ein Subagent mit eigenen Werkzeugen",
+  "model": "haiku",
+  "tools": "Agent,Read,Edit",
+  "probe": "ein Test",
+  "probe_where": "file:text.md",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "text.md": "Das ist ein Tset mit zwei Fehlrn.\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Subagent: nur Read",
+      "prompt": "Lass den Subagenten pruefer die Tippfehler in text.md korrigieren.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        ".claude/agents/pruefer.md": "---\nname: pruefer\ndescription: Korrigiert Tippfehler in Textdateien.\ntools: Read\n---\nDu korrigierst Tippfehler in der genannten Datei direkt in der Datei und meldest kurz, was du geändert hast.\n"
+      }
+    },
+    {
+      "id": "L2",
+      "title": "Subagent: Read, Edit",
+      "prompt": "Lass den Subagenten pruefer die Tippfehler in text.md korrigieren.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        ".claude/agents/pruefer.md": "---\nname: pruefer\ndescription: Korrigiert Tippfehler in Textdateien.\ntools: Read, Edit\n---\nDu korrigierst Tippfehler in der genannten Datei direkt in der Datei und meldest kurz, was du geändert hast.\n"
+      }
+    }
+  ]
+}

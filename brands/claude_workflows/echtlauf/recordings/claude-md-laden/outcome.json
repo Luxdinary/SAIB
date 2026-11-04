@@ -1,0 +1,64 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [
+            "Glob",
+            "Grep"
+          ],
+          "exit": 0,
+          "input_tokens": 20254,
+          "output_tokens": 820,
+          "num_turns": 5,
+          "duration_s": 11.3
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [
+            "Grep"
+          ],
+          "exit": 0,
+          "input_tokens": 13093,
+          "output_tokens": 560,
+          "num_turns": 3,
+          "duration_s": 5.8
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [],
+          "exit": 0,
+          "input_tokens": 6436,
+          "output_tokens": 58,
+          "num_turns": 1,
+          "duration_s": 1.1
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [],
+          "exit": 0,
+          "input_tokens": 6436,
+          "output_tokens": 55,
+          "num_turns": 1,
+          "duration_s": 1.3
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

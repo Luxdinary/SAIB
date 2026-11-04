@@ -1,0 +1,130 @@
+{
+  "spec": "mcp-docs-en",
+  "runs": {
+    "L1": {
+      "title": "No server",
+      "prompt": "Use the claude-code-docs server to look up what MCP_TIMEOUT does. Answer in two sentences.",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 12.218,
+      "lines": [
+        {
+          "t": 7.297,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 10.937,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 11.606,
+          "kind": "text",
+          "text": "I couldn't query the claude-code-docs server because its tool isn't available in this session, and I don't have a way to load it. From my own knowledge, not verified against the docs, MCP_TIMEOUT is an environment variable that sets how long Claude Code waits for an MCP server to start up, in milliseconds. If you need the exact default and wording, check the server in a session where it's connected, or I can search a local copy of the docs if you point me to one."
+        },
+        {
+          "t": 11.639,
+          "kind": "end",
+          "text": "Done after 11.6 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 4398,
+        "num_turns": 1,
+        "total_cost_usd": 0.0008966,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "With server",
+      "prompt": "Use the claude-code-docs server to look up what MCP_TIMEOUT does. Answer in two sentences.",
+      "settings": null,
+      "allowed_tools": [
+        "mcp__claude-code-docs"
+      ],
+      "wall": 32.683,
+      "lines": [
+        {
+          "t": 7.584,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 8.649,
+          "kind": "tool",
+          "id": "toolu_0121U1j6VurfPAN8tLoc1we7",
+          "text": "mcp__claude-code-docs__search_claude_code_docs: {\"query\": \"MCP_TIMEOUT environment variable\"}"
+        },
+        {
+          "t": 11.764,
+          "kind": "result",
+          "id": "toolu_0121U1j6VurfPAN8tLoc1we7",
+          "text": "<persisted-output>\nOutput too large (80.8KB). Full output saved to: ~\\.claude\\projects\\C--Automation-promptwerk-sandbox-mcp-docs-en\\37583ac5-3ad2-4f5e-834a-1094a2118f5d\\tool-results\\toolu_0121U1j6VurfPAN8tLoc1we7.json\n\n… (7 more lines)"
+        },
+        {
+          "t": 13.862,
+          "kind": "tool",
+          "id": "toolu_01PRiteLFg1otRCFUNx4bctH",
+          "text": "mcp__claude-code-docs__query_docs_filesystem_claude_code_docs: {\"command\": \"rg -n \\\"MCP_TIMEOUT\\\" / | head -40\"}"
+        },
+        {
+          "t": 28.98,
+          "kind": "result",
+          "id": "toolu_01PRiteLFg1otRCFUNx4bctH",
+          "text": "exit: 0\n--- stderr ---\nbash: search: matching work limit exceeded (10000)"
+        },
+        {
+          "t": 30.091,
+          "kind": "tool",
+          "id": "toolu_01TRyRECUKGYzqShu3fWBDMa",
+          "text": "mcp__claude-code-docs__query_docs_filesystem_claude_code_docs: {\"command\": \"rg -n -C 2 \\\"MCP_TIMEOUT\\\" /en/mcp-quickstart.mdx /en/mcp.mdx /en/s"
+        },
+        {
+          "t": 30.563,
+          "kind": "result",
+          "id": "toolu_01TRyRECUKGYzqShu3fWBDMa",
+          "text": "exit: 0\n--- stdout ---\n/en/mcp-quickstart.mdx-75-\n… (33 more lines)"
+        },
+        {
+          "t": 31.493,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 32.094,
+          "kind": "text",
+          "text": "`MCP_TIMEOUT` sets how long Claude Code waits for an MCP server to start, in milliseconds; the default is 30 seconds, and you can raise it with something like `MCP_TIMEOUT=60000 claude`. It applies to startup only, separate from `MCP_TOOL_TIMEOUT`, which governs tool call execution. (Source: [mcp-quickstart](/en/mcp-quickstart) and [mcp](/en/mcp) docs.)"
+        },
+        {
+          "t": 32.131,
+          "kind": "end",
+          "text": "Done after 32.1 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "mcp__claude-code-docs__query_docs_filesystem_claude_code_docs",
+          "mcp__claude-code-docs__search_claude_code_docs",
+          "mcp__claude-code-docs__submit_feedback"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 24584,
+        "num_turns": 4,
+        "total_cost_usd": 0.00179334,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

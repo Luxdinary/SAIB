@@ -1,0 +1,454 @@
+{
+ "video_id": "ai_security-20261115-1-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Copilot im Firmenkonto: Was mit deinen Eingaben passiert",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema E02, Reihe KI im Büro. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Copilot im Betrieb. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Copilot im Betrieb",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Eingabe: wohin?",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Vertrag: wie E-Mail",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Training: ausgeschlossen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Freigaben: zu weit?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Regeln: übernommen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Freigaben: heute prüfen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Offene Ordner: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Was passiert mit dem, was du in Microsoft Copilot eintippst? Laut Microsoft gelten im Geschäftsangebot dieselben Vertragszusagen wie für E-Mails, und Copilot sieht nur, was du sehen darfst.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "copilot",
+   "microsoft365",
+   "kiimbuero",
+   "datenschutz",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+   "title": "Microsoft Learn: Enterprise data protection in Microsoft Copilot and Microsoft Copilot Chat",
+   "checked_at": "2026-11-01",
+   "label": "Microsoft, Datenschutz im Copilot"
+  },
+  {
+   "id": "S2",
+   "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy",
+   "title": "Microsoft Learn: Data, Privacy, and Security for Microsoft Copilot",
+   "checked_at": "2026-11-01",
+   "label": "Microsoft, Copilot-Datenschutz"
+  }
+ ],
+ "unverified": [
+  "Regeln für private Microsoft-Konten: nicht behauptet.",
+  "Lizenzdetails und Preise: nicht genannt."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Du tippst ein Angebot in Copilot. Wo landet das eigentlich?",
+   "on_screen": "Wo landet deine Eingabe?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Alles, was du Copilot sagst, trainiert die KI? Im Geschäftsangebot laut Microsoft nicht.",
+   "on_screen": "Trainiert Copilot mit dir?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Copilot zeigt dir nur Firmendaten, die du ohnehin sehen darfst.",
+   "on_screen": "Nur, was du sehen darfst",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Eine falsch freigegebene Datei findet Copilot für jeden mit Zugriff.",
+   "on_screen": "Falsche Freigabe, schnell gefunden",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, welchen Weg eine Copilot-Eingabe nimmt.",
+   "on_screen": "Der Weg einer Eingabe",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Du tippst ein Angebot in Copilot. Wo landet das eigentlich?",
+   "data": {
+    "question": "Wo landet deine Eingabe?",
+    "doc_label": "Angebot.docx",
+    "chat_title": "Copilot im Betrieb",
+    "bot_line": "Ich fasse das Angebot zusammen",
+    "typed": "Fasse das Angebot zusammen",
+    "badge": "Wohin?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Microsoft nennt das Enterprise Data Protection. Für Copilot im Geschäftsangebot gelten dieselben Vertragszusagen wie für deine E-Mails in Exchange und deine Dateien in SharePoint. Grundlage sind der Datenschutzzusatz und die Produktbedingungen.",
+   "data": {
+    "headline": "Enterprise Data Protection",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Deine Eingabe",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n1",
+      "label": "Copilot",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n2",
+      "label": "Gleiche Vertragszusagen",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "Firmenkonto"
+     },
+     {
+      "label": "wie E-Mail, Dateien"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 9.0,
+     "label": "Vertrag statt Hoffnung"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Konkret sagt Microsoft: Eingaben, Antworten und die Daten, auf die Copilot zugreift, werden nicht zum Training der Basismodelle genutzt. Die Daten sind verschlüsselt und zwischen den Kunden getrennt.",
+   "data": {
+    "headline": "Was Microsoft zusagt",
+    "file_label": "Copilot im Betrieb",
+    "card": {
+     "title": "Im Geschäftsangebot",
+     "rows": [
+      {
+       "text": "kein Training der Basismodelle",
+       "ok": null
+      },
+      {
+       "text": "verschlüsselt gespeichert",
+       "ok": null
+      },
+      {
+       "text": "Kunden voneinander getrennt",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "Der wichtigste Punkt für kleine Betriebe: Copilot zeigt nur Firmendaten, auf die die Person mindestens Leserechte hat. Microsoft rät deshalb, die Berechtigungen etwa in SharePoint sauber zu setzen. Was zu weit freigegeben ist, findet Copilot schneller.",
+   "data": {
+    "headline": "Was Copilot sieht",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.5,
+    "left": {
+     "title": "Copilot zeigt",
+     "rows": [
+      {
+       "text": "was du sehen darfst",
+       "ok": null
+      },
+      {
+       "text": "deine Freigaben",
+       "ok": null
+      }
+     ]
+    },
+    "right": {
+     "title": "Darum prüfen",
+     "rows": [
+      {
+       "text": "zu weit freigegebene Ordner",
+       "ok": "open"
+      },
+      {
+       "text": "Rechte in SharePoint",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Außerdem übernimmt Copilot deine Einstellungen: Vertraulichkeitsbezeichnungen, Aufbewahrungsregeln und Protokolle. Und Microsoft nennt Schutz gegen schädliche Inhalte und gegen Prompt Injection.",
+   "data": {
+    "headline": "Deine Regeln gelten weiter",
+    "file_label": "Copilot im Betrieb",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Bezeichnungen gesetzt",
+      "sub": "Copilot beachtet sie",
+      "at": 0.6
+     },
+     {
+      "title": "Keine Regeln",
+      "sub": "nichts zu beachten",
+      "at": 1.0
+     }
+    ],
+    "approval": "Vertraulich markiert?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Dein Schritt für heute: Nutze Copilot für Firmendaten nur im Geschäftskonto deines Betriebs. Prüf vorher, welche Ordner zu weit freigegeben sind. Und markiere Vertrauliches als vertraulich.",
+   "data": {
+    "headline": "Vor dem Copilot-Start",
+    "items": [
+     {
+      "title": "Nur im Firmenkonto",
+      "sub": "für Firmendaten",
+      "at": 2.0
+     },
+     {
+      "title": "Freigaben aufräumen",
+      "sub": "wer sieht welchen Ordner?",
+      "at": 4.8
+     },
+     {
+      "title": "Vertrauliches markieren",
+      "sub": "Bezeichnungen setzen",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Erst Freigaben aufräumen, dann Copilot fragen. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Erst aufräumen, dann fragen",
+    "file_label": "Copilot im Betrieb",
+    "button": "Copilot fragen",
+    "block_text": "Erst Freigaben prüfen",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

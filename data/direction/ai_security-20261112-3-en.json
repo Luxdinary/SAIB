@@ -1,0 +1,457 @@
+{
+ "video_id": "ai_security-20261112-3-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "A traffic light for what goes into AI tools",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema E06, Reihe KI im Büro. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: AI chat at work. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "AI chat at work",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Input: unchecked",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Personal data: checked?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Name removed: not enough",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Light: amber or red?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Business account: yes?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Light: introduce today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Red data: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Which data may go into which AI tool? A simple traffic light based on guidance from Germany's data protection authorities: public, internal, personal.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "dataprotection",
+   "aiatwork",
+   "gdpr",
+   "smallbusiness",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf",
+   "title": "Datenschutzkonferenz (DSK): Orientierungshilfe Künstliche Intelligenz und Datenschutz, Version 1.0, 06.05.2024",
+   "checked_at": "2026-11-01",
+   "label": "German DPAs (DSK), AI guidance"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/KI/Generative_KI-Modelle.html",
+   "title": "BSI: Generative KI-Modelle – Chancen und Risiken für Industrie und Behörden (21.01.2025)",
+   "checked_at": "2026-11-01",
+   "label": "BSI (Germany), generative AI"
+  }
+ ],
+ "unverified": [
+  "The traffic light is Scutoria's framing, not an official rule.",
+  "No legal advice on legal bases."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Can this go into the AI chat? This traffic light decides in seconds.",
+   "on_screen": "Can this go into the AI chat?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Delete the names and it's anonymous? German regulators say that often isn't enough.",
+   "on_screen": "Name removed = anonymous?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "DSK: Namen entfernen reicht regelmäßig nicht"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Even asking AI to draft a reference letter can involve personal data.",
+   "on_screen": "A reference letter: personal data?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A customer list pasted into the wrong AI tool takes one second.",
+   "on_screen": "Customer list in the wrong tool?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch which colour these three texts get.",
+   "on_screen": "Green, amber or red?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Can this go into the AI chat? A simple traffic light decides it in seconds.",
+   "data": {
+    "question": "Can this go into the AI chat?",
+    "doc_label": "Customers.xlsx",
+    "chat_title": "AI chat at work",
+    "bot_line": "How can I help?",
+    "typed": "Summarise this list",
+    "badge": "Allowed?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Germany's data protection authorities, in their joint guidance, say: if you process personal data in AI applications and pass it on to providers, you need a legal basis. That applies in a small business too.",
+   "data": {
+    "headline": "What the regulators say",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Your input",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n1",
+      "label": "AI provider",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n2",
+      "label": "People in the data",
+      "icon": "&#9823;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "passed on"
+     },
+     {
+      "label": "affects"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Legal basis?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "And deleting names often isn't enough. According to the guidance, the link to a person can come from the context. Their example: a reference letter for a customer adviser at one particular car dealership.",
+   "data": {
+    "headline": "Anonymous is harder than it looks",
+    "file_label": "AI chat at work",
+    "card": {
+     "title": "According to the DSK",
+     "rows": [
+      {
+       "text": "removing names often fails",
+       "ok": "open"
+      },
+      {
+       "text": "the context can identify",
+       "ok": "open"
+      },
+      {
+       "text": "example: reference letter",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 15,
+   "spoken": "You can turn this into a traffic light. Green: public material, such as text from your website. Amber: internal material like quotes, only in tools with a business account. Red: data about customers or staff, only with a clear legal basis.",
+   "data": {
+    "headline": "The data traffic light",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.5,
+    "left": {
+     "title": "Green and amber",
+     "rows": [
+      {
+       "text": "green: public text",
+       "ok": null
+      },
+      {
+       "text": "amber: quotes, internal",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Red",
+     "rows": [
+      {
+       "text": "customers, staff",
+       "ok": "open"
+      },
+      {
+       "text": "only with a legal basis",
+       "ok": "open"
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Two points from the guidance help with amber: employers should provide their own devices and accounts for work use of AI. And tools that don't use inputs for training are preferable.",
+   "data": {
+    "headline": "What helps with amber",
+    "file_label": "AI chat at work",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Business account",
+      "sub": "provided by the firm",
+      "at": 0.6
+     },
+     {
+      "title": "Personal account",
+      "sub": "no control",
+      "at": 1.0
+     }
+    ],
+    "approval": "Training switched off?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Your step for today: put the traffic light on the team board. Green is fine, amber only in the business account, red only after checking with someone responsible. Germany's BSI also points to new security risks of generative AI.",
+   "data": {
+    "headline": "The traffic light for the team",
+    "items": [
+     {
+      "title": "Green: go ahead",
+      "sub": "public content",
+      "at": 2.0
+     },
+     {
+      "title": "Amber: business account",
+      "sub": "training off",
+      "at": 4.8
+     },
+     {
+      "title": "Red: ask first",
+      "sub": "customers, staff",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Colour first, then the chat. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Colour first, then the chat",
+    "file_label": "AI chat at work",
+    "button": "Paste",
+    "block_text": "Red: not without checking",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

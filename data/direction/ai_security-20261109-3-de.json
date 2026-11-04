@@ -1,0 +1,485 @@
+{
+ "video_id": "ai_security-20261109-3-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Passkeys: das Login, das auf der falschen Seite nichts verrät",
+ "notes": "Scutoria Vorlage Fassung B 1.0 (30.10.2026): Higgsfield-Clips als Hintergrund je Szenentyp, kein Hero (kein Dokument-Thema). Roter Faden: der Login der Firmen-E-Mail. Neu geschrieben nach Hook- und Story-Engine; Aussagen gegen FIDO Alliance und BSI geprüft. Keine UI-Demo, daher keine Bildschirmaufnahme nötig. Neue ID im Kalender 09.11.–06.12.2026 (B01); Inhalt unverändert, Stimme aus V1 wiederverwendet.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "status_bar": {
+   "file": "Firmen-E-Mail",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Anmeldung: nur Passwort",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Phishing: Passwort abgreifbar",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Passkey: verfügbar?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Passkey: nichts zum Abgreifen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Backup: offen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Umstieg: heute prüfen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Falsche Seite: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Ein starkes Passwort hilft nicht, wenn es auf einer gefälschten Seite landet. Passkeys ersetzen das Passwort, und laut BSI halten sie der breiten Masse bekannter Phishing-Angriffe stand.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "passkeys",
+   "phishing",
+   "kleinunternehmen",
+   "itsicherheit",
+   "login"
+  ],
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_flow_lanes.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: lanes, dataroom, desk, split, lanes, calm, negate (roter Rahmen nur unter der Sperre)."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://fidoalliance.org/passkeys/",
+   "title": "Passkeys (FIDO Alliance): 'A passkey is an authentication credential based on FIDO standards', phishing-resistant, no shared secrets, unlocked like the device, password replacement",
+   "checked_at": "2026-10-30",
+   "label": "FIDO Alliance, Passkeys"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/dok/1107470",
+   "title": "BSI: Passkeys - anmelden ohne Passwort (immun gegen die breite Masse bekannter Phishing-Angriffe; jeder Passkey schützt genau einen Account; Wiederherstellung über Backup oder Cloud-Synchronisation)",
+   "checked_at": "2026-10-30",
+   "label": "BSI, Passkeys"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/dok/1032220",
+   "title": "BSI: Vergleich gängiger Verfahren der 2FA (Passkey-Verfahren resistent gegen übliches Phishing; E-Mail-, SMS-TAN und TOTP schützen nicht vor Phishing in Echtzeit)",
+   "checked_at": "2026-10-30",
+   "label": "BSI, Vergleich 2FA-Verfahren"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260130_Aendere-dein-Passwort-Tag.html",
+   "title": "BSI-Pressemitteilung 30.01.2026: prüfen, wo der Umstieg auf Passkeys möglich ist, sonst Zwei-Faktor-Authentisierung",
+   "checked_at": "2026-10-30",
+   "label": "BSI, Pressemitteilung 30.01.2026"
+  },
+  {
+   "id": "S5",
+   "url": "https://www.bsi.bund.de/dok/1108092",
+   "title": "BSI: Die Kryptografie hinter Passkey (privater Schlüssel verbleibt beim Nutzer; Client prüft bei jeder Anmeldung die Website)",
+   "checked_at": "2026-10-30",
+   "label": "BSI, Kryptografie hinter Passkeys"
+  }
+ ],
+ "unverified": [
+  "Anteil der Dienste mit Passkey-Unterstützung: nicht verwendet.",
+  "Aussagen zu bestimmten Anbietern (Banken, E-Mail-Dienste) und ob sie Passkeys anbieten: nicht verwendet, nur Prüfauftrag.",
+  "NCSC-Empfehlungen zu MFA-Typen: Unterseite nicht abrufbar (404), daher nicht verwendet.",
+  "Absolute Aussage 'Passkeys sind nicht phishbar': vermieden; BSI sagt 'immun gegen die breite Masse bekannter Phishing-Angriffe'."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "concrete_risk",
+   "spoken": "Dein bestes Passwort hilft nichts, wenn du es auf einer gefälschten Seite eintippst.",
+   "on_screen": "Und wenn die Seite gefälscht ist?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "Passwort fliegt in ein Login-Fenster, Warnmarke 'Falsche Seite?'",
+   "why": {
+    "truth": "BSI: Passwort und auch SMS/TOTP schützen nicht vor Echtzeit-Phishing",
+    "visual": "Login-Fenster ist der rote Faden"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Was, wenn dein Firmen-Login gar kein Passwort mehr bräuchte?",
+   "on_screen": "Login ohne Passwort?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "leeres Passwortfeld",
+   "why": {
+    "curiosity": "wirkt wie Werbung"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Starkes Passwort, alles sicher? Gegen Phishing hilft das wenig.",
+   "on_screen": "Starkes Passwort = sicher?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "visual": "Passwortfeld mit Fragezeichen",
+   "why": {
+    "truth": "Stärke schützt vor Erraten, nicht vor Eintippen auf falscher Seite; 'wenig' ist Auslegung"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "surprising_fact",
+   "spoken": "Ein Passkey ist laut BSI immun gegen die meisten bekannten Phishing-Angriffe.",
+   "on_screen": "BSI: Passkey hält Phishing stand",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Zitatkarte",
+   "why": {
+    "visual": "abstrakt"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, was passiert, wenn dein Passwort auf der falschen Seite landet.",
+   "on_screen": "Passwort auf der falschen Seite",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Login-Fenster",
+   "why": {
+    "clarity": "kündigt an, statt zu zeigen"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Konkretes Risiko mit höchster Bewertung; das Login-Fenster ist zugleich der rote Faden."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Dein bestes Passwort hilft nichts, wenn du es auf einer gefälschten Seite eintippst.",
+   "data": {
+    "question": "Und wenn die Seite gefälscht ist?",
+    "doc_label": "Passwort",
+    "chat_title": "Anmeldung",
+    "bot_line": "Bitte Passwort eingeben",
+    "typed": "••••••••••",
+    "badge": "Falsche Seite?",
+    "fly_at": 0.3,
+    "question_at": 2.4
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 11,
+   "spoken": "Genau so funktioniert Phishing: Die Seite sieht echt aus, das Passwort geht an Angreifer. Und laut BSI schützen auch Codes per SMS, E-Mail oder App nicht vor Phishing in Echtzeit.",
+   "data": {
+    "headline": "So funktioniert Phishing",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Gefälschte Seite",
+      "icon": "&#9888;"
+     },
+     {
+      "id": "n1",
+      "label": "Angreifer",
+      "icon": "&#9823;"
+     },
+     {
+      "id": "n2",
+      "label": "Dein echtes Konto",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "Passwort + Code"
+     },
+     {
+      "label": "meldet sich an"
+     }
+    ],
+    "packet_at": 1.4,
+    "highlight": {
+     "node": 0,
+     "at": 7.5,
+     "label": "Echt oder gefälscht?"
+    }
+   },
+   "source_ids": [
+    "S3"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "Die Alternative heißt Passkey. Er ersetzt das Passwort. Laut FIDO Alliance entsperrst du ihn wie dein Gerät: mit Fingerabdruck, Gesicht oder PIN.",
+   "data": {
+    "headline": "Was ein Passkey ist",
+    "file_label": "Firmen-E-Mail",
+    "card": {
+     "title": "Der Passkey",
+     "rows": [
+      {
+       "text": "ersetzt das Passwort",
+       "ok": null
+      },
+      {
+       "text": "liegt auf deinem Gerät",
+       "ok": null
+      },
+      {
+       "text": "entsperrt per Finger, Gesicht, PIN",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.6,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 15,
+   "spoken": "Der Unterschied: Beim Passkey gibt es nichts, das du eintippst. Der geheime Schlüssel bleibt auf deinem Gerät, und das Gerät prüft bei jeder Anmeldung, ob die Seite echt ist. Eine gefälschte Seite bekommt nichts.",
+   "data": {
+    "headline": "Passwort oder Passkey",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 4.2,
+    "left": {
+     "title": "Passwort",
+     "rows": [
+      {
+       "text": "wird eingetippt",
+       "ok": null
+      },
+      {
+       "text": "landet auch auf falschen Seiten",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Passkey",
+     "rows": [
+      {
+       "text": "nichts zum Eintippen",
+       "ok": null
+      },
+      {
+       "text": "Schlüssel bleibt auf dem Gerät",
+       "ok": null
+      },
+      {
+       "text": "Gerät prüft die echte Seite",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S5"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "Bietet ein Dienst noch keinen Passkey an, rät das BSI zur Zwei-Faktor-Anmeldung. Und für den Fall, dass das Gerät verloren geht, brauchst du ein Backup oder die Synchronisation über die Cloud.",
+   "data": {
+    "headline": "Und wenn es noch nicht geht?",
+    "file_label": "Firmen-E-Mail",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Passkey verfügbar",
+      "sub": "jetzt umsteigen",
+      "at": 0.6
+     },
+     {
+      "title": "Noch kein Passkey",
+      "sub": "Zwei-Faktor einschalten",
+      "at": 1.0
+     }
+    ],
+    "approval": "Backup bei Geräteverlust?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S4",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Darum heute: Prüfe bei E-Mail, Bank und Cloud-Speicher deines Betriebs, ob es Passkeys gibt. Schalte sie dort zuerst ein. Und sichere für jedes Konto den Weg zurück.",
+   "data": {
+    "headline": "Drei Schritte für heute",
+    "items": [
+     {
+      "title": "E-Mail, Bank, Cloud prüfen",
+      "sub": "Wo gibt es schon Passkeys?",
+      "at": 2.0
+     },
+     {
+      "title": "Passkey einschalten",
+      "sub": "dort zuerst",
+      "at": 5.2
+     },
+     {
+      "title": "Rückweg sichern",
+      "sub": "Backup oder Synchronisation",
+      "at": 7.6
+     }
+    ]
+   },
+   "source_ids": [
+    "S4",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Heute prüfen, wo der Passkey geht. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Heute prüfen: wo geht Passkey?",
+    "file_label": "Firmen-E-Mail",
+    "button": "Anmelden",
+    "block_text": "Falsche Seite: kein Passkey",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 5.1,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

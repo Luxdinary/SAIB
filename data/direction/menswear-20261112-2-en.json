@@ -1,0 +1,572 @@
+{
+ "video_id": "menswear-20261112-2-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "White tie: what goes with the tailcoat",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema E02 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Wiener Ballregeln nicht verallgemeinert (meist genügt Smoking), keine Rangfolge der Dresscodes als Fakt.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "White tie",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "white tie: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "dinner suit: not enough",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "tails: worn open",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "white: waistcoat, bow",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "mostly: dinner suit",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "tails, white, braids",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "white tie complete",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "What belongs to white tie? Debrett's describes a tailcoat with silk lapels, trousers with two braids, a white Marcella waistcoat, a wing collar and a white bow tie. The Vienna Opera Ball requires exactly that; at most balls, says austria.info, a dinner suit will do.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "whitetie",
+   "tailcoat",
+   "operaball",
+   "dresscode"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://debretts.com/etiquette-category/events-and-dress-codes/",
+   "title": "Debrett's, Events and Dress Codes (White Tie): schwarzer einreihiger Frack mit seidenen steigenden Revers, offen getragen; Hose mit zwei Borten an der Außennaht; tief ausgeschnittene weiße Marcella-Weste; weißes Marcella-Hemd mit gestärktem, abnehmbarem Kläppchenkragen, Doppelmanschetten und Studs; schmale weiße handgebundene Fliege; schwarze Lack- oder hochglanzpolierte Schnürschuhe; Zylinder und Stock heute nur noch auf der Bühne",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.opernball.at/en/the-evening/",
+   "title": "Wiener Opernball, offizielle Seite: Herren tragen schwarzen Frack, weißes Frackhemd, weiße Fliege und schwarze Lackschuhe; Galauniform alternativ erlaubt",
+   "checked_at": "2026-11-01",
+   "label": "Wiener Opernball"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.austria.info/en-us/inspiration/ball-season/",
+   "title": "austria.info, Ballsaison: Frack mit weißer Fliege bei einigen Bällen Pflicht (Opernball, Philharmonikerball, Techniker Cercle), bei den meisten Bällen genügt ein Smoking",
+   "checked_at": "2026-11-01",
+   "label": "austria.info, Ballsaison"
+  }
+ ],
+ "unverified": [
+  "Galauniform als Alternative am Opernball (S2): belegt, aus Zeitgründen nicht im Video.",
+  "Schwarze Fliege tragen in Wien nur Kellner (austria.info): bewusst weggelassen.",
+  "Doppelmanschetten, Studs und Schuhe (S1): belegt, nur teils gesprochen; Schuhe ohne eigene Zeichnung."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "White tie: what goes with tails?",
+   "on_screen": "White tie: what goes with tails?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "A dinner suit at the Opera Ball? Tails are required.",
+   "on_screen": "A dinner suit at the Opera Ball? Tails are required.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Top hat and cane? Debrett's says only on stage now.",
+   "on_screen": "Top hat and cane? Debrett's says only on stage now.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A black bow at the Opera Ball? The rule says white.",
+   "on_screen": "A black bow at the Opera Ball? The rule says white.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "From dinner suit to tailcoat in one picture",
+   "on_screen": "From dinner suit to tailcoat in one picture",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Frack mit weißer Weste, Lupe auf der weißen Fliege",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die Einladung als Ausgangslage, die Lupe auf der weißen Fliege."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "The invitation says white tie. That means tails. But what really belongs, and what no longer does?",
+   "data": {
+    "question": "White tie: what goes with tails?",
+    "object": {
+     "kind": "tailcoat"
+    },
+    "target": "bow",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:tails",
+    "loupe_at": "w:tails",
+    "nie_at": "w:longer",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "You know black tie: dinner jacket, black bow tie. For the Vienna Opera Ball, that is not enough. The official site asks for a black tailcoat, a white shirt, a white bow tie and black patent shoes.",
+   "data": {
+    "headline": "Is a dinner suit enough?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "to": {
+     "kind": "tailcoat"
+    },
+    "target": "neck",
+    "zoom": 1.45,
+    "label": "Opera Ball: tails, white tie",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:dinner",
+    "zoom_at": "w:Vienna",
+    "error_at": "w:enough",
+    "flip_at": "w:tailcoat",
+    "label_at": "w:patent"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:official"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "Debrett's, the British authority on etiquette, describes the tailcoat precisely: black and single-breasted, with silk-faced peak lapels, and worn open. The trousers carry two lines of braid down the outside seam.",
+   "data": {
+    "headline": "The tailcoat",
+    "stages": [
+     {
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": 0.0,
+      "title": "Says Debrett's",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "silk facings",
+        "sub": "peak lapels",
+        "tone": "always",
+        "at": "w:silk"
+       },
+       {
+        "spot": "front",
+        "text": "worn open",
+        "sub": "single-breasted",
+        "tone": "always",
+        "at": "w:open"
+       },
+       {
+        "spot": "trousers",
+        "text": "two braids",
+        "sub": "on the outside seam",
+        "tone": "always",
+        "at": "w:braid"
+       }
+      ]
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Beneath, it turns white. On the left, black tie with a black bow. On the right, white tie: a low-cut white Marcella waistcoat, a stiff, detachable wing collar, and a narrow white bow, tied by hand.",
+   "data": {
+    "headline": "Black or white?",
+    "left": {
+     "title": "Black tie",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak",
+      "dinner": true,
+      "neck": "bow",
+      "strain": false
+     },
+     "target": "neck",
+     "tag": "a black bow tie",
+     "pulses": [
+      {
+       "target": "neck",
+       "at": "w:bow"
+      }
+     ]
+    },
+    "right": {
+     "title": "White tie",
+     "object": {
+      "kind": "tailcoat"
+     },
+     "tag": "white waistcoat and bow",
+     "pulses": [
+      {
+       "target": "waistcoat",
+       "at": "w:waistcoat"
+      },
+      {
+       "target": "collar",
+       "at": "w:wing"
+      },
+      {
+       "target": "bow",
+       "at": "w:narrow"
+      }
+     ]
+    },
+    "left_at": "w:left",
+    "left_tag_at": "w:bow",
+    "right_at": "w:right",
+    "right_tag_at": "w:Marcella",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 700,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Marcella"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "Does every ball need tails? According to austria.info, only some, such as the Opera Ball. At most, a dinner suit is enough. And top hat and cane? Debrett's says these days, only on stage.",
+   "data": {
+    "headline": "At every ball?",
+    "stages": [
+     {
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": 0.0,
+      "title": "Some balls",
+      "tags": [
+       {
+        "spot": "tails",
+        "text": "tails required",
+        "sub": "e.g. the Opera Ball",
+        "tone": "always",
+        "at": "w:only"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "at": "w:most",
+      "title": "Most balls",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "dinner suit: fine",
+        "sub": "says austria.info",
+        "tone": "sometimes",
+        "at": "w:enough"
+       },
+       {
+        "spot": "hem",
+        "text": "top hat, cane",
+        "sub": "only on stage",
+        "tone": "never",
+        "at": "w:top"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S3",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:austria"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "In short: the tailcoat is black, single-breasted and worn open, the trousers have two braids. Waistcoat and bow tie are white, the bow tied by hand. And tails are required only at some balls.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Tails: worn open",
+      "sub": "single-breasted, two braids",
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": "w:tailcoat",
+      "ring": "front",
+      "ring_at": "w:open"
+     },
+     {
+      "title": "White: waistcoat, bow",
+      "sub": "the bow tied by hand",
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": "w:Waistcoat",
+      "ring": "bow",
+      "ring_at": "w:hand"
+     },
+     {
+      "title": "Required: some balls",
+      "sub": "otherwise a dinner suit will do",
+      "object": {
+       "kind": "tailcoat"
+      },
+      "at": "w:required",
+      "then": {
+       "kind": "jacket",
+       "variant": "sb1",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak",
+       "dinner": true,
+       "neck": "bow",
+       "strain": false
+      },
+      "then_at": "w:balls"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "From dinner suit to tailcoat and white bow tie: that is white tie. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "to": {
+     "kind": "tailcoat"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "bow",
+    "fix_at": "w:tailcoat",
+    "ring_at": "w:white#2",
+    "statement_at": "w:white#2",
+    "chip_at": "w:eye",
+    "statement": "White tie, complete.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

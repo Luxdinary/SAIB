@@ -1,0 +1,570 @@
+{
+  "video_id": "military_history-20261114-1-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "550 km of Frontier: The Limes as a Building System",
+  "notes": "Woche 1, Reihe Gebaut für den Ernstfall. Bauwerk und Grenzsystem; UNESCO-Seite war nicht abrufbar, daher DLK und KuLaDig.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.deutsche-limeskommission.de/index.php?id=4",
+      "title": "Welterbe FRE: Allgemeines, Deutsche Limeskommission",
+      "label": "Deutsche Limeskommission",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.kuladig.de/Objektansicht/O-135501-20150813-34",
+      "title": "Rekonstruierte Limespalisade bei Hohenstein-Steckenroth, KuLaDig (Thomas Becker, hessenARCHÄOLOGIE 2015)",
+      "label": "KuLaDig: Palisade",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.kuladig.de/Objektansicht/P-TB-20110317-0001",
+      "title": "Obergermanisch-Raetischer Limes in Hessen, KuLaDig nach Hessischem Landesamt für Denkmalpflege 2011",
+      "label": "KuLaDig: Limes Hessen",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Zahl der Türme: ca. 900 (DLK) oder mehr als 900 (KuLaDig); im Video rund 900."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you build a frontier 550 kilometres long, from the Rhine to the Danube?",
+      "on_screen": "550 km of frontier, how?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "The Limes was one long stone wall? Mostly it was palisade, ditch and bank.",
+      "on_screen": "Not one long wall",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Along the Main, the river itself was the frontier for 52 kilometres.",
+      "on_screen": "A river as the frontier",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "No built frontier, no customs control.",
+      "on_screen": "Frontier and customs",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch how palisade, ditch and bank fit together.",
+      "on_screen": "Palisade, ditch, bank",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you build a frontier 550 kilometres long, from the Rhine to the Danube?",
+      "data": {
+        "question": "550 kilometres of frontier, but how?",
+        "question_em": "but how",
+        "card_title": "Limes",
+        "card_meta": "RHINE TO DANUBE",
+        "card_no": "FILE 25",
+        "stamp": "550 km",
+        "drawing": "limes_section.svg",
+        "packet_label": "Frontier",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:550",
+        "packet_at": "w:frontier",
+        "em_at": "w:Danube"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "The Upper German-Raetian Limes runs from the Rhine north of Koblenz to the Danube near Kelheim. It is Germany's largest archaeological monument.",
+      "data": {
+        "mode": "map",
+        "headline": "From Rhine to Danube",
+        "places": [
+          {
+            "label": "Rhine",
+            "code": "near Koblenz",
+            "x": 600,
+            "y": 80,
+            "at": "w:Rhine"
+          },
+          {
+            "label": "Danube",
+            "code": "near Kelheim",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Danube"
+          }
+        ],
+        "route_at": "w:runs",
+        "route_label": "550 km land frontier",
+        "route_label_at": "w:Koblenz",
+        "wait_at": "w:Kelheim",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "largest monument",
+        "chip_at": "w:monument",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Frontier",
+        "packet_at": "w:Limes",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "Rhine to Danube",
+        "line_label_at": "w:Germany's",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:oak",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "Around AD 120 a palisade of split oak trunks stands here, smooth side facing out. Bank and ditch come later, at the end of the second century at the earliest.",
+      "data": {
+        "headline": "Timber, then earth",
+        "drawing": "limes_section.svg",
+        "sheet_title": "SHEET 2 · CROSS-SECTION",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Palisade: split oak",
+            "x": 95,
+            "y": 290,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:palisade"
+          },
+          {
+            "label": "Smooth side outward",
+            "x": 40,
+            "y": 350,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:smooth"
+          },
+          {
+            "label": "Ditch, later",
+            "x": 210,
+            "y": 470,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:ditch"
+          },
+          {
+            "label": "Bank, later",
+            "x": 320,
+            "y": 390,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Bank"
+          }
+        ],
+        "zoom": {
+          "x": 150,
+          "y": 380,
+          "scale": 1.12,
+          "at": "w:oak",
+          "back_at": "w:second",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "The frontier looks different by province. In Upper Germany: palisade, ditch and bank. In Raetia: palisade and a stone wall.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Two provinces, two builds",
+        "left": {
+          "tag": "Upper Germany",
+          "title": "Timber and earth",
+          "at": "w:Upper",
+          "rows": [
+            {
+              "text": "palisade, ditch, bank",
+              "at": "w:bank"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Raetia",
+          "title": "Timber and stone",
+          "at": "w:Raetia",
+          "rows": [
+            {
+              "text": "palisade, stone wall",
+              "at": "w:stone"
+            }
+          ]
+        },
+        "verdict": "One system, two builds",
+        "verdict_at": "w:stone",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "In numbers: 550 kilometres, around 900 watchtowers, 120 forts. Only along the Main does the river replace the built frontier, for 52 kilometres.",
+      "data": {
+        "headline": "In numbers",
+        "nodes": [
+          {
+            "label": "550 km",
+            "code": "length",
+            "at": "w:550"
+          },
+          {
+            "label": "≈ 900 watchtowers",
+            "code": "around",
+            "at": "w:900"
+          },
+          {
+            "label": "120 forts",
+            "code": "along it",
+            "at": "w:120"
+          },
+          {
+            "label": "52 km on the Main",
+            "code": "river frontier",
+            "at": "w:Main"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": null,
+        "count": {
+          "to": 900,
+          "label": "TOWERS",
+          "at": "w:900",
+          "until": "w:Main"
+        },
+        "total": {
+          "to": 52,
+          "pre": "",
+          "label": "KM RIVER",
+          "at": "w:52"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "It is expanded under Hadrian around 120, under Antoninus Pius around 160, and under Septimius Severus. Border traffic with customs runs until the mid third century.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 120 to the 3rd century",
+        "items": [
+          {
+            "year": "120",
+            "title": "Hadrian",
+            "sub": "palisade",
+            "at": "w:120"
+          },
+          {
+            "year": "160",
+            "title": "Antoninus Pius",
+            "sub": "expansion",
+            "at": "w:160"
+          },
+          {
+            "year": "3. Jh.",
+            "title": "Border traffic",
+            "sub": "with customs to mid 3rd c.",
+            "at": "w:mid",
+            "sub_at": "w:customs"
+          }
+        ],
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "Since 15 July 2005 the Limes has been World Heritage. Near Hohenstein-Steckenroth, a reconstructed ten-metre stretch of palisade has stood since 2010. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Limes",
+        "card_meta": "RHINE TO DANUBE",
+        "card_no": "FILE 25",
+        "stamp": "2005",
+        "drawing": "limes_section.svg",
+        "statement": "550 km of frontier, now World Heritage",
+        "statement_at": "w:Heritage",
+        "stamp_at": "w:2005",
+        "note": "Reconstruction near Hohenstein, 2010",
+        "note_at": "w:reconstructed",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Frontier",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Length: 550 km",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Line: Rhine–Danube",
+          "tone": "amber",
+          "offset": 6.6
+        },
+        {
+          "beat": "b3",
+          "text": "Palisade: c. 120",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b4",
+          "text": "Build: 2 types",
+          "tone": "amber",
+          "offset": 2.7
+        },
+        {
+          "beat": "b5",
+          "text": "Towers: ≈ 900",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b6",
+          "text": "Traffic: customs",
+          "tone": "muted",
+          "offset": 9.5
+        },
+        {
+          "beat": "b7",
+          "text": "World Heritage: 2005",
+          "tone": "muted",
+          "offset": 1.7
+        }
+      ]
+    },
+    "description": "The Upper German-Raetian Limes: 550 km from the Rhine to the Danube, around 900 towers, 120 forts, palisade, ditch and bank. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "limes",
+      "romans",
+      "worldheritage",
+      "history",
+      "archaeology"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

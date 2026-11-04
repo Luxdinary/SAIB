@@ -1,0 +1,103 @@
+id: ai_security-20261114-1-de
+version: F2
+title: "Der falsche Microsoft-Anruf"
+short: "Falscher Microsoft-Anruf"
+reihe: "Was tust du?"
+note: "F2 im Format \"Was tust du?\". Beispielfall nachgestellt: Betrieb, Anrufer, Uhrzeiten und Ablauf sind erfunden; Microsoft wird nur als vorgetäuschter Absender gezeigt, so wie Microsoft die Masche selbst beschreibt. Mechanik und Schritt aus S1 und S2, am 02.11.2026 erneut gelesen. Kein Notfallschritt, weil die Quellen im Text keinen nennen. Der alte Plan ai_security-20261114-1-de.json bleibt unverändert."
+description: "Ein freundlicher Anrufer vom angeblichen Microsoft-Support will auf deinen Rechner. Was tust du? Ein nachgestellter Fall mit drei Antworten und dem einen Schritt, den Microsoft und BSI raten."
+hashtags: [supportbetrug, microsoft, socialengineering, kmu, wastustdu]
+sources:
+  - {id: S1, url: "https://support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams-2ebf91bd-f94c-2a8a-e541-f5c800d18435", title: "Microsoft Support: Protect yourself from online scams and attacks (Abschnitt Tech support scams)", checked_at: "2026-11-02", label: "Microsoft, Support-Betrug"}
+  - {id: S2, url: "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Social-Engineering/social-engineering_node.html", title: "BSI: Social Engineering – der Mensch als Schwachstelle", checked_at: "2026-11-02", label: "BSI, Social Engineering"}
+unverified:
+  - "Schadenszahlen: nicht verwendet."
+  - "Bestimmte Fernwartungsprogramme: nicht genannt."
+  - "Aussagen des alten Plans zu gefälschter Rufnummer, Geld für unnötige Reparatur sowie Zahlung per Kryptowährung oder Geschenkkarten stehen am 02.11.2026 nicht mehr im Text der Microsoft-Seite (Seite inzwischen 'Protect yourself from online scams and attacks'): nicht verwendet."
+  - "Ablauf im Beispielfall (Uhrzeiten, langsamer PC, Fragen des Anrufers) ist erfunden und als Beispiel gekennzeichnet."
+  - "Dass Name und Personalnummer (Option B) nichts beweisen, ist Scutorias Auslegung von S2 (Täuschung über die Identität); im Bild als Auslegung markiert. 'Euer IT-Dienstleister' steht für Microsofts 'trusted advisor'."
+  - "Notfallschritte nach erteiltem Fernzugriff: Microsoft verweist nur auf ein Video, nicht verwendet."
+pick: demonstration
+hooks:
+  - {type: question, spoken: "Microsoft ruft an, dein Rechner habe Fehler. Was tust du?", screen: "Microsoft ruft an. Was tust du?"}
+  - {type: misconception, spoken: "Ein Anruf vom Microsoft-Support ist echt? Unaufgefordert ruft Microsoft nicht an.", screen: "Microsoft ruft an = echt?", src: [S1]}
+  - {type: surprising_fact, spoken: "Echte Fehlermeldungen von Microsoft enthalten nie eine Telefonnummer.", screen: "Fehlermeldung mit Hotline? Nie", src: [S1]}
+  - {type: concrete_risk, spoken: "Ein Anruf vom angeblichen Support, und ein Fremder steuert deinen Rechner.", screen: "Fremder am eigenen Rechner", src: [S1]}
+  - {type: demonstration, spoken: "Dienstag, zehn Uhr siebenundvierzig. Der Microsoft-Support ist am Telefon.", screen: "DI 10:47 · Microsoft am Telefon?", visual: "Uhrzeit groß, die Anrufanzeige kommt als Papierkarte herein, die Bitte um Fernzugriff wird markiert"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Dienstag, zehn Uhr siebenundvierzig. Das Telefon klingelt. Ein freundlicher Mann vom Microsoft-Support: Wir sehen Fehler auf Ihrem PC. Bitte installieren Sie ein Programm für den Fernzugriff."
+    d:
+      kicker: "Beispielfall · nachgestellt"
+      time: "DI 10:47"
+      place: "Büro einer Spedition"
+      mail_at: "@Telefon"
+      mail: {from: "Anruf: Microsoft Support", addr: "eingehender Anruf", time: "10:47", subject: "Fehler auf Ihrem PC", lines: ["Wir sehen Fehler auf Ihrem PC.", "Bitte installieren Sie jetzt", "ein Programm für Fernzugriff."]}
+      highlight: {line: 2, label: "Fernzugriff", at: "@installieren"}
+  - f: problem
+    t: sc_inspect
+    s: "Du hörst hin. Der Name: Microsoft. Der Ton: ruhig und kompetent. Das Problem: Der PC ist ja wirklich langsam. Alles plausibel. Doch Microsoft schreibt: Ohne deine Anfrage ruft Microsoft nicht wegen Support an."
+    src: [S1]
+    d:
+      kicker: "Was du prüfst"
+      headline: "Klingt das echt?"
+      rows:
+        - {label: "Anrufer", value: "Microsoft-Support", verdict: "klingt echt", at: "@Name"}
+        - {label: "Ton", value: "ruhig, kompetent", verdict: "unauffällig", at: "@Ton"}
+        - {label: "Problem", value: "PC ist langsam", verdict: "möglich", at: "@Problem"}
+      finding: {text: "Alles plausibel.", at: "@plausibel"}
+      fact: {kind: fakt, text: "Microsoft ruft nicht unaufgefordert wegen Support an.", source: "Microsoft Support · Betrugsschutz", at: "@schreibt"}
+  - f: problem
+    t: sc_choice
+    s: "Was tust du? A: Du erlaubst den Zugriff, schaust aber genau zu. B: Du fragst nach Namen und Personalnummer. C: Du legst auf und rufst euren eigenen IT-Dienstleister an. Entscheide dich jetzt."
+    src: [S1]
+    d:
+      question: "Was tust du?"
+      options:
+        - {key: A, text: "Zugriff erlauben, genau zuschauen", at: "@erlaubst"}
+        - {key: B, text: "Nach Namen und Personalnummer fragen", at: "@fragst"}
+        - {key: C, text: "Auflegen, eigene IT anrufen", at: "@legst"}
+      think: {seconds: 2.6, at: "@Entscheide"}
+      hint: "Entscheide dich jetzt."
+  - f: demonstration
+    t: sc_timeline
+    s: "Spielen wir A durch. Das Programm läuft, er steuert deinen Rechner und zeigt dir angebliche Fehler. Dann will er dein Passwort. Laut Microsoft stehlen Betrüger dabei Daten oder installieren Schadsoftware."
+    src: [S1]
+    d:
+      kicker: "Wahl A, durchgespielt"
+      tag: "Beispiel"
+      headline: "Du schaust nur zu"
+      items:
+        - {time: "DI 10:49", text: "Fernzugriff läuft", at: "@Programm"}
+        - {time: "DI 10:52", text: "Er zeigt angebliche Fehler", tone: amber, at: "@angebliche"}
+        - {time: "DI 10:55", text: "Er will dein Passwort", tone: amber, at: "@Passwort"}
+        - {time: "Währenddessen", text: "Daten weg, Schadsoftware drauf", tone: red, at: "@stehlen"}
+      source: {kind: fakt, label: "Microsoft · Fernzugriff durch Betrüger", at: "@Microsoft"}
+  - f: insight
+    t: sc_step
+    s: "Richtig ist C. Microsoft rät: Bei unaufgefordertem Support-Anruf auflegen, bei Sorgen jemanden fragen, dem du vertraust. Das BSI ergänzt: Passwörter nie am Telefon. A gibt ihm den Rechner. B beweist nichts, Namen lassen sich erfinden."
+    src: [S1, S2]
+    d:
+      mode: rule
+      kicker: "Der eine Schritt"
+      card: {letter: C, title: "Auflegen, selbst IT anrufen", sub: "Fernzugriff nur für eure eigene IT", at: 0.2}
+      strikes:
+        - {text: "A: Zugriff, aber zuschauen", note: "er steuert den Rechner", at: "@gibt"}
+        - {text: "B: Namen und Nummer fragen", note: "beweist nichts", at: "@beweist"}
+      sources:
+        - {kind: fakt, label: "Microsoft · auflegen"}
+        - {kind: fakt, label: "BSI · Passwörter nie am Telefon"}
+        - {kind: auslegung, label: "B: Auslegung Scutoria"}
+      sources_at: "@Microsoft"
+  - f: close
+    t: sc_close
+    s: "Unerwarteter Support-Anruf? Auflegen ist erlaubt. Was hättest du gewählt? Schreib es in die Kommentare."
+    d:
+      kicker: "Reihe · Was tust du?"
+      rule: "Auflegen ist erlaubt."
+      rule_at: 0.3
+      question: {text: "Was hättest du gewählt?", at: "@hättest"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Belegt. Datiert. Vorzeigbar."
+      disclaimer: "Quellenbasiert. Keine Rechtsberatung."

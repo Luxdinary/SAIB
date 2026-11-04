@@ -1,0 +1,1629 @@
+{
+ "video_id": "yt02-security-questionnaire-en",
+ "slug": "02-security-questionnaire",
+ "lang": "en",
+ "title": "Your customer sent a security questionnaire. How to answer honestly.",
+ "short_title": "Security questionnaire",
+ "version": "Version 3 (long video), draft 2026-11-02. Approved wording from SKRIPTE/02-security-questionnaire.en.md version 2 (Stefan, 29 Oct and 1 Nov 2026) unchanged; new and for approval: cold open (c0s0), overview (c0s2), chapter 4 (c4), transitions and the last sentence (pointer to video 04 instead of the walk-through, because 03 waits for the website), marked new=true.",
+ "sources": [
+  {
+   "id": "H0",
+   "label": "Security Evidence Toolkit, handbook of 23 October 2026, section 0 · scutoria.com",
+   "short": "Scutoria, Security Evidence handbook, 23 Oct 2026, sec. 0",
+   "checked": true
+  },
+  {
+   "id": "H1",
+   "label": "Security Evidence Toolkit, handbook of 23 October 2026, section 1 · scutoria.com",
+   "short": "Scutoria, Security Evidence handbook, 23 Oct 2026, sec. 1",
+   "checked": true
+  },
+  {
+   "id": "H3",
+   "label": "Security Evidence Toolkit, handbook of 23 October 2026, section 3 · scutoria.com",
+   "short": "Scutoria, Security Evidence handbook, 23 Oct 2026, sec. 3",
+   "checked": true
+  },
+  {
+   "id": "H6",
+   "label": "Security Evidence Toolkit, handbook of 23 October 2026, section 6 · scutoria.com",
+   "short": "Scutoria, Security Evidence handbook, 23 Oct 2026, sec. 6",
+   "checked": true
+  },
+  {
+   "id": "H6b",
+   "label": "Security Evidence Toolkit, handbook of 23 October 2026, section 6, points 6.6 and 6.22 · scutoria.com",
+   "short": "Scutoria, handbook, sec. 6, points 6.6 and 6.22",
+   "checked": true
+  },
+  {
+   "id": "N1",
+   "label": "Directive (EU) 2022/2555, Art. 21(1), (2)(d) and (3) · EUR-Lex · retrieved 2026-10-19",
+   "short": "NIS2 Dir. (EU) 2022/2555 Art. 21 · retrieved 19 Oct 2026"
+  },
+  {
+   "id": "G32",
+   "label": "Regulation (EU) 2016/679, Art. 32(1)(a) to (d) · EUR-Lex · retrieved 2026-10-23",
+   "short": "GDPR Art. 32(1) · retrieved 23 Oct 2026"
+  },
+  {
+   "id": "N2",
+   "label": "Directive (EU) 2022/2555, Art. 21(1) second subparagraph; Implementing Regulation (EU) 2024/2690, Art. 2(2) second subparagraph and recital 5; NISG 2026, § 32(3); NISV 2026, § 4 · retrieved 2026-10-23",
+   "short": "NIS2 Art. 21 · Impl. Reg. 2024/2690 Art. 2 · NISG § 32 · NISV § 4 · retrieved 23 Oct 2026"
+  },
+  {
+   "id": "N3",
+   "label": "Directive (EU) 2022/2555, Art. 21(4); Implementing Regulation (EU) 2024/2690, Annex 2.2.1; NISG 2026, § 33(3) · retrieved 2026-10-19",
+   "short": "NIS2 Art. 21(4) · Impl. Reg. Annex 2.2.1 · NISG § 33 · retrieved 19 Oct 2026"
+  },
+  {
+   "id": "N4",
+   "label": "NISG 2026, § 45(1) point 3 and (4) point 8 · ris.bka.gv.at · retrieved 2026-10-23",
+   "short": "NISG 2026 § 45 · retrieved 23 Oct 2026"
+  },
+  {
+   "id": "N5",
+   "label": "BSI-Gesetz of 2 December 2025, BGBl. 2025 I No. 301, last amended on 23 July 2026, BGBl. 2026 I No. 226 · gesetze-im-internet.de · retrieved 2026-10-23; NISG 2026, BGBl. I No. 94/2025 of 23 December 2025, § 32(4), § 33(1) · ris.bka.gv.at · retrieved 2026-10-19",
+   "short": "NISG 2026 § 32(4), § 33(1) · retrieved 19/23 Oct 2026"
+  },
+  {
+   "id": "N6",
+   "label": "Commission Implementing Regulation (EU) 2024/2690 of 17 October 2024, Annex points 5.1.4 and 5.2 · EUR-Lex · retrieved 2026-10-19",
+   "short": "Impl. Reg. (EU) 2024/2690 Annex 5.1.4, 5.2 · retrieved 19 Oct 2026"
+  },
+  {
+   "id": "N7",
+   "label": "NISV 2026, BGBl. II No. 290/2026 of 1 October 2026, § 2 · ris.bka.gv.at · retrieved 2026-10-19",
+   "short": "NISV 2026 § 2 · retrieved 19 Oct 2026"
+  },
+  {
+   "id": "P1",
+   "label": "Security Evidence Toolkit, product page, document D5 · scutoria.com/toolkits/security-evidence",
+   "short": "Scutoria, Security Evidence product page, D5",
+   "checked": true
+  },
+  {
+   "id": "M1",
+   "label": "Scutoria, memo \"Does NIS2 apply to us?\" · scutoria.com/memos/nis2",
+   "short": "Scutoria, memo NIS2",
+   "checked": true
+  },
+  {
+   "id": "P2",
+   "label": "Security Evidence Toolkit, product page · scutoria.com/toolkits/security-evidence",
+   "short": "Scutoria, Security Evidence product page",
+   "checked": true
+  }
+ ],
+ "chapters": [
+  {
+   "id": "c0",
+   "num": "",
+   "title": "A questionnaire has arrived",
+   "kicker": "SCUTORIA · SECURITY QUESTIONNAIRE",
+   "card": false,
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/shot02_questionnaire_desk.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Example case · re-enacted",
+      "time": "FRI 16:40",
+      "place": "Office, Example Electrical Ltd (fictional)",
+      "obj": {
+       "label": "Email · Purchasing",
+       "from": "purchasing@largecustomer.example",
+       "subject": "Supplier questionnaire on information security",
+       "lines": [
+        "47 questions, due back by Wednesday",
+        "MFA, backups, updates, incidents",
+        "Training, your own providers",
+        "Please have it signed by the management"
+       ]
+      },
+      "obj_at": "@questionnaire",
+      "highlight": {
+       "line": 0,
+       "label": "Deadline",
+       "at": "@Wednesday"
+      }
+     },
+     "say": [
+      {
+       "text": "Friday, twenty to five in the afternoon. A larger customer sends a questionnaire on information security. Due back by Wednesday. The IT provider is not available again until next week.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "The question of this video",
+      "text": "Has your customer sent a *security questionnaire*?",
+      "sub": "Why it comes, why “not yet, with a date” is complete, and what a self-declaration looks like.",
+      "sub_at": "@Why"
+     },
+     "say": [
+      {
+       "text": "Has your customer sent a security questionnaire? A deadline, no IT department."
+      },
+      {
+       "text": "Why it comes, why \"not yet, with a date\" is a complete answer, what a self-declaration looks like."
+      }
+     ]
+    },
+    {
+     "type": "chapters",
+     "new": true,
+     "data": {
+      "headline": "In this video",
+      "items": [
+       {
+        "num": "1",
+        "title": "What usually goes wrong",
+        "at": "@wrong"
+       },
+       {
+        "num": "2",
+        "title": "Five steps",
+        "at": "@five"
+       },
+       {
+        "num": "3",
+        "title": "The sources behind “not yet”",
+        "at": "@sources"
+       },
+       {
+        "num": "4",
+        "title": "What do you do? Two cases",
+        "at": "@cases"
+       },
+       {
+        "num": "5",
+        "title": "The example business",
+        "at": "@example"
+       },
+       {
+        "num": "6",
+        "title": "What it is not",
+        "at": "@all"
+       },
+       {
+        "num": "7",
+        "title": "Free memo and toolkit",
+        "at": "@memo"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "We go like this: what usually goes wrong, the five steps, the sources behind the answer \"not yet\", two cases in which you decide, the example business, what all of this is not, and at the end the free memo."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "kaltstart-02.js",
+    "teil-1.js",
+    "ueberblick-02.js"
+   ],
+   "inserts": [
+    {
+     "start": 0.0,
+     "dur": 3.5,
+     "file": "yt/shot02_questionnaire_desk.start.png"
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "num": "1",
+   "title": "What usually goes wrong",
+   "kicker": "1 · The situation",
+   "scenes": [
+    {
+     "type": "paper",
+     "bg": "yt/lib_office_night.mp4",
+     "data": {
+      "headline": "The situation in many small businesses",
+      "doc": {
+       "label": "Questionnaire · Information security",
+       "title": "Topics of the questions",
+       "lines": [
+        {
+         "text": "Multi-factor authentication",
+         "at": "@multi"
+        },
+        {
+         "text": "Backup and restore",
+         "at": "@backups"
+        },
+        {
+         "text": "Updates",
+         "at": "@updates"
+        },
+        {
+         "text": "Incidents",
+         "at": "@incidents"
+        },
+        {
+         "text": "Training · your own providers",
+         "at": "@training"
+        },
+        {
+         "text": "Deadline: due back by …",
+         "at": "@date",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "The situation is the same in many small businesses. A larger customer sends a document with questions about information security: multi-factor authentication, backups, updates, incidents, training, your own providers. There is a date by which it is due. There is no IT department. The office manager opens it, the external IT provider is out on a job, and the questions use words nobody in the business uses every day."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Two things usually happen next",
+      "left": {
+       "title": "First",
+       "tone": "amber",
+       "rows": [
+        {
+         "text": "The IT provider answers the technology",
+         "at": "@IT"
+        },
+        {
+         "text": "Responsibility, emergency plan, briefing stay blank",
+         "at": "@responsible"
+        }
+       ]
+      },
+      "right": {
+       "title": "Second",
+       "tone": "red",
+       "at": "@second",
+       "rows": [
+        {
+         "text": "“Yes” ticked everywhere",
+         "at": "@ticks"
+        },
+        {
+         "text": "because “yes” seems to be what the customer wants",
+         "at": "@wants"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Two things usually happen next. The first: the questionnaire goes to the IT provider, who answers the technical questions and leaves the rest blank. Who is responsible, where the emergency plan is, whether staff have been briefed: those are not technical questions, and nobody answers them. The second: someone ticks \"yes\" everywhere, because \"yes\" seems to be what the customer wants."
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "none",
+      "verbatim": false,
+      "text": "An honest *“not yet”* tells the customer more than a “yes” that falls apart at the first follow-up question.",
+      "origin": "Paraphrased from: Scutoria, Security Evidence Toolkit handbook, 23 October 2026, section 0"
+     },
+     "say": [
+      {
+       "text": "The handbook of our toolkit puts it this way: a questionnaire that gets an honest \"not yet\" learns more than from a \"yes\" that falls apart at the first follow-up question. A customer who asks for your last restore test record and gets none has learned something about every other \"yes\" on the form.",
+       "source": "H0"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Four kinds of requests",
+      "items": [
+       {
+        "title": "Questionnaire from a larger customer",
+        "sub": "topic of this video",
+        "at": "@questionnaire"
+       },
+       {
+        "title": "Contract with security clauses",
+        "sub": "often follows the questionnaire",
+        "at": "@contract"
+       },
+       {
+        "title": "Application form of a cyber insurer",
+        "at": "@application"
+       },
+       {
+        "title": "Label or certificate",
+        "at": "@label"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Four kinds of requests arrive at small businesses: a questionnaire from a larger customer, a contract with security clauses, the application form of a cyber insurer, and the wish to show a label or a certificate. This video is about the first, and about the contract that often follows it.",
+       "source": "H1"
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-2.js"
+   ],
+   "inserts": [
+    {
+     "at": "on a job",
+     "dur": 4.0,
+     "file": "yt/t01_electrician_back.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "num": "2",
+   "title": "Five steps",
+   "kicker": "2 · What the business does",
+   "scenes": [
+    {
+     "type": "steps",
+     "bg": "yt/lib_documents_desk.mp4",
+     "data": {
+      "headline": "All five work *without a toolkit*",
+      "items": [
+       {
+        "title": "Understand who is asking and why",
+        "at": "@five"
+       },
+       {
+        "title": "Four answers, nothing else",
+        "at": "@five+0.6"
+       },
+       {
+        "title": "Measure by your size",
+        "at": "@five+1.2"
+       },
+       {
+        "title": "Evidence",
+        "at": "@toolkit"
+       },
+       {
+        "title": "Send as a self-declaration",
+        "at": "@faster"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "What the business does, in five steps. All five work without any toolkit; ours only makes them faster."
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "*Supply chain* security, including relationships with direct suppliers, taking their cybersecurity practices into account.",
+      "origin": "Paraphrased from: Directive (EU) 2022/2555 (NIS2), Art. 21(2)(d) and (3)"
+     },
+     "say": [
+      {
+       "text": "Step one: understand who is asking and why. A customer covered by the NIS two Directive must take appropriate and proportionate measures in at least ten areas, and one of them is supply chain security, including the relationship with its direct suppliers. When it decides which measures are appropriate, it must take into account the cybersecurity practices of those suppliers.",
+       "marker": "fakt",
+       "source": "N1"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Our interpretation: *that is the questionnaire.*",
+      "left": {
+       "title": "The Directive binds",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "the customer: consider your practices",
+         "at": "@obliges"
+        },
+        {
+         "text": "questions follow its ten areas",
+         "at": "@ten"
+        }
+       ]
+      },
+      "right": {
+       "title": "What binds you",
+       "tone": "violet",
+       "at": "@binds",
+       "rows": [
+        {
+         "text": "the contract that follows",
+         "at": "@contract"
+        },
+        {
+         "text": "with personal data: the GDPR",
+         "at": "@GDPR"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Our interpretation: that is the questionnaire. The Directive does not tell the customer what to ask you; it obliges the customer to consider your practices, and a questionnaire is the cheapest way to do that for hundreds of suppliers at once. So the questions follow the customer's own ten areas, and your answers can follow them too. The Directive binds the customer, not you. What binds you is the contract that follows, and, wherever you handle personal data, the GDPR itself.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "GDPR Article 32",
+      "text": "Being able to *restore data* in a timely manner after an incident.",
+      "sub": "And a process for regularly testing the measures.",
+      "sub_at": "@regularly-0.5"
+     },
+     "say": [
+      {
+       "text": "Article thirty-two of the GDPR requires every controller and processor to take appropriate technical and organisational measures, among them the ability to restore personal data in a timely manner after an incident, and a process for regularly testing the measures.",
+       "marker": "fakt",
+       "source": "G32"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "bg": "yt/lib_screen_blur.mp4",
+     "data": {
+      "headline": "Step two: *four answers*",
+      "items": [
+       {
+        "title": "In place",
+        "at": "@In"
+       },
+       {
+        "title": "Partly",
+        "at": "@Partly"
+       },
+       {
+        "title": "Not yet, with a date",
+        "sub": "gap, date, person: complete",
+        "at": "@Not"
+       },
+       {
+        "title": "Not applicable, with a reason",
+        "at": "@applicable"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Step two: answer every question with one of four answers. In place. Partly. Not yet, with a date. Not applicable, with a reason. Nothing else. Not \"yes\" when it is \"partly\", and not a blank when it is \"not yet\". An answer like \"not yet, by the end of the quarter, responsible: the office manager with the IT provider\" is complete. It names a gap, a date and a person.",
+       "source": "H0"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Step three",
+      "text": "Measure by your *own size*.",
+      "sub": "Measures by size and risk exposure; document why a requirement is not appropriate.",
+      "sub_at": "@Implementing"
+     },
+     "say": [
+      {
+       "text": "Step three: measure by your size. The Directive ties the measures to the size of the entity and to its exposure to risk. The Implementing Regulation repeats that and lets an entity document why a requirement is not appropriate for it.",
+       "marker": "fakt",
+       "source": "N2"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Our interpretation on *proportionality*",
+      "left": {
+       "title": "What applies",
+       "tone": "violet",
+       "rows": [
+        {
+         "text": "written for your customer, not for you",
+         "at": "@customer"
+        },
+        {
+         "text": "it may ask more of you than of itself",
+         "at": "@asking"
+        }
+       ]
+      },
+      "right": {
+       "title": "What you may say",
+       "tone": "blue",
+       "at": "@good",
+       "rows": [
+        {
+         "text": "Measure us by our size",
+         "at": "@measured"
+        },
+        {
+         "text": "No SOC, no pentest, no certification needed",
+         "at": "@security"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Our interpretation: proportionality is written for your customer, not for its suppliers, and no law stops a customer from asking more of you than of itself. But a customer that must justify its own measures by its size has a good reason to accept your answers measured by your size, and you may say so, in the first paragraph of your cover letter. Nothing in our toolkit asks a small business for a security operations centre, penetration tests or a certification.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/shot02_evidence_folder.mp4",
+     "data": {
+      "headline": "Step four: *evidence*",
+      "note": "What is missing gets a date.",
+      "note_at": "@action",
+      "doc": {
+       "label": "Evidence list · example",
+       "title": "One dated document per answer",
+       "lines": [
+        {
+         "text": "Account list: one table",
+         "at": "@account"
+        },
+        {
+         "text": "MFA settings: one screenshot per system",
+         "at": "@Screenshots"
+        },
+        {
+         "text": "Written rules: two pages, signed",
+         "at": "@written"
+        },
+        {
+         "text": "Backup, copy out of reach: screenshot and sentence",
+         "at": "@backup"
+        },
+        {
+         "text": "Restore test: date, duration, result",
+         "at": "@restore"
+        },
+        {
+         "text": "Emergency card · update check · incident log · briefing",
+         "at": "@emergency"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Step four: evidence. An on-site audit of a ten-person supplier is rare. What the reviewer wants is a dated document per answer that could be shown if someone asked. Most of these exist already or take an hour or less. The account list with daily and administrator accounts: one table. Screenshots of the MFA settings: one per system. The written rules: two pages, signed. The backup settings and the place of the copy out of reach: one screenshot and one sentence. The restore test: one line with date, duration and result. The emergency card: printed, dated, posted. The update check: one line per month. The incident log: one page, started. The attendance list of the briefing: date, topics, names. What you cannot show on the day goes into the evidence list with the date from your action plan, and the cover letter says so.",
+       "source": "H3"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Step five: send as a *self-declaration*",
+      "items": [
+       {
+        "title": "Answers with status and date",
+        "sub": "signed by the management",
+        "at": "@answers"
+       },
+       {
+        "title": "Evidence as numbered attachments",
+        "at": "@evidence"
+       },
+       {
+        "title": "Cover letter: gaps with their dates",
+        "sub": "questions mapped to your sections",
+        "at": "@cover"
+       },
+       {
+        "title": "Freeze a dated copy",
+        "sub": "and note when you review it",
+        "at": "@freeze"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Step five: send it as a self-declaration, not as a filled-in form. The answers with their status and date, signed by the management. The evidence, numbered as attachments. And a cover letter that names the gaps with their dates in plain words and maps the customer's questions to your sections. Then freeze a dated copy in your evidence folder and note when you will review it."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-3a.js",
+    "teil-3b.js"
+   ],
+   "inserts": [
+    {
+     "at": "Step four",
+     "dur": 4.0,
+     "file": "yt/shot02_evidence_folder.start.png"
+    },
+    {
+     "at": "Step five",
+     "dur": 3.5,
+     "file": "yt/t01_hand_signing.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "num": "3",
+   "title": "The sources behind “not yet”",
+   "kicker": "3 · What applies",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "kicker": "The core claim",
+      "text": "*“Not yet, with a date”* is a complete answer."
+     },
+     "say": [
+      {
+       "text": "Now the sources behind the core claim of this video: that \"not yet, with a date\" is a complete answer."
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "verbatim": false,
+      "text": "An entity that finds it does not comply takes *corrective measures* without undue delay. Austria: audit report with deficiencies and action plan.",
+      "origin": "Paraphrased from: NIS2 Art. 21(4); Impl. Reg. (EU) 2024/2690, Annex 2.2.1; NISG 2026, § 33(3)"
+     },
+     "say": [
+      {
+       "text": "Fact. The NIS two Directive obliges an entity that finds it does not comply with the measures to take, without undue delay, all necessary, appropriate and proportionate corrective measures. Austria's NIS Act of 2026 expects an audit report with the identified deficiencies and an action plan to remedy them.",
+       "marker": "fakt",
+       "source": "N3"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Austria, NISG 2026 § 45",
+      "left": {
+       "title": "Not an offence",
+       "tone": "neutral",
+       "rows": [
+        {
+         "text": "A gap known only from the self-declaration",
+         "at": "@self"
+        }
+       ]
+      },
+      "right": {
+       "title": "An offence of its own",
+       "tone": "red",
+       "at": "@Knowingly",
+       "rows": [
+        {
+         "text": "knowingly false statements in the self-declaration",
+         "at": "@false"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Fact. Austria makes the point in its penalty provisions. Failing to implement the measures is an offence only insofar as the authority did not learn of it solely from the entity's own self-declaration. Knowingly false statements in a self-declaration are an offence of their own.",
+       "marker": "fakt",
+       "source": "N4"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Our interpretation",
+      "text": "A documented gap with a plan is the *normal state*.",
+      "sub": "The false answer is punished, not the reported gap.",
+      "sub_at": "@spares"
+     },
+     "say": [
+      {
+       "text": "Our interpretation: the law treats a documented gap with a plan as a normal state. Austria even spares the gap that an entity reports itself, and punishes the false answer instead. A supplier that writes \"not yet, planned by the end of the quarter, responsible: the office manager with the IT provider\" gives the customer what the customer must produce for itself. That is the whole reasoning behind the four answers and the action plan.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "data": {
+      "kicker": "Austria",
+      "tag": false,
+      "headline": "Your questionnaire as *raw material*",
+      "items": [
+       {
+        "time": "Registration",
+        "text": "Duty for essential and important entities",
+        "tone": "neutral",
+        "at": "@essential"
+       },
+       {
+        "time": "within 12 months",
+        "text": "Self-declaration to the authority",
+        "tone": "blue",
+        "at": "@structured"
+       },
+       {
+        "time": "2026",
+        "text": "Your customer asks you",
+        "tone": "amber",
+        "at": "@2026"
+       },
+       {
+        "time": "2027",
+        "text": "it sends its self-declaration",
+        "tone": "neutral",
+        "at": "@2027"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Fact, for Austria. The Austrian act requires essential and important entities to send the authority a structured self-declaration within twelve months of the registration duty arising, in particular on the security of their supply chains.",
+       "marker": "fakt",
+       "source": "N5"
+      },
+      {
+       "text": "Our interpretation: for an Austrian customer, your questionnaire is the raw material of its own self-declaration. Whoever asks you in 2026 is collecting what it has to send to the authority in 2027. That explains the tone and the deadlines of the requests; it does not make your answers a filing with the authority.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/shot02_contract_clause.mp4",
+     "data": {
+      "headline": "The *contract* behind the questionnaire",
+      "doc": {
+       "label": "Impl. Reg. (EU) 2024/2690 · Annex 5.1.4",
+       "title": "Eight contents",
+       "lines": [
+        {
+         "text": "Cybersecurity requirements",
+         "at": "@cybersecurity"
+        },
+        {
+         "text": "Training and, where appropriate, certifications",
+         "at": "@training"
+        },
+        {
+         "text": "Background checks",
+         "at": "@background"
+        },
+        {
+         "text": "Report incidents without undue delay",
+         "at": "@incidents",
+         "mark": "hl"
+        },
+        {
+         "text": "Right to audit or to audit reports",
+         "at": "@right"
+        },
+        {
+         "text": "Vulnerabilities · subcontracting · end of contract",
+         "at": "@vulnerabilities"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Fact, on the contract that follows the questionnaire. For digital providers across the Union, the Commission's Implementing Regulation of 17 October 2024 says what goes into their contracts with suppliers: cybersecurity requirements; training and, where appropriate, certifications of the supplier's staff; background checks; an obligation to report incidents without undue delay; the right to audit or to receive audit reports; an obligation to handle vulnerabilities; requirements on subcontracting; and obligations at the end of the contract. Eight contents.",
+       "marker": "fakt",
+       "source": "N6"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Austria and the Union",
+      "text": "These eight contents are the *pattern of the clauses* you will see.",
+      "sub": "Auditors of German customers outside the digital sectors read the same text too.",
+      "sub_at": "@German"
+     },
+     "say": [
+      {
+       "text": "In Austria, the regulation of the cybersecurity authority of 1 October 2026 applies the same Annex to every essential and important entity.",
+       "marker": "fakt",
+       "source": "N7"
+      },
+      {
+       "text": "Our interpretation: those eight contents are the pattern of the clauses you will see, from digital providers anywhere in the Union and from every NIS two customer in Austria. A German customer outside the digital sectors is not bound to the Annex by law, but its auditors and lawyers read the same text.",
+       "marker": "auslegung"
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "What is *open*",
+      "left": {
+       "title": "No official model",
+       "tone": "red",
+       "rows": [
+        {
+         "text": "Model supplier questionnaire searched, none found",
+         "at": "@official"
+        }
+       ]
+      },
+      "right": {
+       "title": "Not searched",
+       "tone": "red",
+       "at": "@court",
+       "rows": [
+        {
+         "text": "What “without undue delay” means for small suppliers",
+         "at": "@without"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "And what is open. We looked for an official model supplier questionnaire and found none; the questions in our toolkit follow the sources named at each question. Whether a court has ruled on what \"without undue delay\" means for a small supplier: not searched. Both points stand in section six of the handbook.",
+       "marker": "luecke",
+       "source": "H6b"
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-4.js"
+   ],
+   "inserts": [
+    {
+     "at": "Fact, on the contract",
+     "dur": 4.0,
+     "file": "yt/shot02_contract_clause.start.png"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "num": "4",
+   "title": "What do you do? Two cases",
+   "kicker": "4 · What do you do?",
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/shot02_questionnaire_desk.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Case 1 · re-enacted",
+      "time": "MON 10:15",
+      "place": "Office, question 23 of 47",
+      "obj": {
+       "label": "Questionnaire · Question 23",
+       "from": "Backup and restore",
+       "subject": "Is the restore from backup tested regularly?",
+       "lines": [
+        "[ ] Yes    [ ] No",
+        "Please attach evidence",
+        "The backup runs every night",
+        "It has never been tested"
+       ]
+      },
+      "obj_at": "@question",
+      "highlight": {
+       "line": 3,
+       "label": "never tested",
+       "at": "@never"
+      }
+     },
+     "say": [
+      {
+       "text": "Two cases for you to decide. Both are invented, the sources behind them are not. Case one. Monday, quarter past ten, question twenty-three: is the restore from backup tested regularly? The backup runs every night. It has never been tested.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "What do you do?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Tick “yes”, the backup does run",
+        "at": "@tick"
+       },
+       {
+        "key": "B",
+        "text": "Leave the field blank",
+        "at": "@leave"
+       },
+       {
+        "key": "C",
+        "text": "“Not yet”, with a date and a responsible person",
+        "at": "@date"
+       }
+      ],
+      "think": {
+       "at": "@Think",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "What do you do? A: tick yes, the backup does run. B: leave the field blank. C: not yet, with a date for the first test and a responsible person. Think about it for a moment."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "If you choose A",
+      "headline": "A “yes” that falls apart when asked",
+      "items": [
+       {
+        "time": "Wednesday",
+        "text": "Questionnaire back with “yes”",
+        "tone": "neutral",
+        "at": "@Wednesday"
+       },
+       {
+        "time": "two weeks later",
+        "text": "The customer asks for the test record",
+        "tone": "amber",
+        "at": "@asks"
+       },
+       {
+        "time": "",
+        "text": "There is none",
+        "tone": "amber",
+        "at": "@none"
+       },
+       {
+        "time": "",
+        "text": "Every other “yes” is in doubt",
+        "tone": "red",
+        "at": "@every"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "A is convenient. In the example, the questionnaire goes back on Wednesday with yes. Two weeks later the customer asks for the record of the last test, and there is none.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "That is exactly what the handbook warns about: a customer who asks for the record and gets none has learned something about every other yes on the form.",
+       "source": "H0"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "The one step",
+      "card": {
+       "letter": "C",
+       "title": "“Not yet, with a date”",
+       "sub": "First test by a set date, a named person. Afterwards: date, duration, result.",
+       "at": "@C"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "“Yes” without a test",
+        "note": "falls apart at the first follow-up",
+        "at": "@falls"
+       },
+       {
+        "key": "B",
+        "text": "Blank field",
+        "note": "says nothing, looks like an omission",
+        "at": "@blank"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "C is right. The answer names the gap, a date and a person, and that is complete. A falls apart at the first follow-up question, and the blank field tells the customer nothing at all. Whoever then does the test records it in one line: date, duration, result.",
+       "marker": "auslegung",
+       "source": "H3"
+      }
+     ]
+    },
+    {
+     "type": "case",
+     "bg": "yt/shot02_contract_clause.mp4",
+     "new": true,
+     "data": {
+      "kicker": "Case 2 · re-enacted",
+      "time": "THU 09:00",
+      "place": "Owner's office, framework contract",
+      "obj": {
+       "label": "Framework contract · Security annex",
+       "from": "Large customer (fictional)",
+       "subject": "§ 7 Information security",
+       "lines": [
+        "Report security incidents without undue delay",
+        "Customer's right to audit",
+        "Handle vulnerabilities",
+        "Signature by Friday"
+       ]
+      },
+      "obj_at": "@framework",
+      "highlight": {
+       "line": 0,
+       "label": "Who reports?",
+       "at": "@undue"
+      }
+     },
+     "say": [
+      {
+       "text": "Case two. Thursday, nine o'clock. After the questionnaire comes the framework contract, with an annex on security: report incidents without undue delay, a right of the customer to audit, handle vulnerabilities. Signature by Friday.",
+       "marker": "beispiel"
+      }
+     ]
+    },
+    {
+     "type": "choice",
+     "new": true,
+     "data": {
+      "question": "What do you do?",
+      "options": [
+       {
+        "key": "A",
+        "text": "Sign, it is in every contract anyway",
+        "at": "@sign"
+       },
+       {
+        "key": "B",
+        "text": "Have the annex struck out",
+        "at": "@struck"
+       },
+       {
+        "key": "C",
+        "text": "Compare, settle reporting, discuss open points first",
+        "at": "@compare"
+       }
+      ],
+      "think": {
+       "at": "@Think",
+       "seconds": 2.5
+      }
+     },
+     "say": [
+      {
+       "text": "What do you do? A: sign, it is in every contract anyway. B: have the annex struck out. C: compare the clauses with the eight contents, settle who in the business reports an incident and how, and discuss open points before signing. Think about it for a moment."
+      }
+     ]
+    },
+    {
+     "type": "timeline",
+     "new": true,
+     "data": {
+      "kicker": "If you choose A",
+      "headline": "Signed, but nobody is responsible",
+      "items": [
+       {
+        "time": "Friday",
+        "text": "Contract signed",
+        "tone": "neutral",
+        "at": "@Friday"
+       },
+       {
+        "time": "Saturday",
+        "text": "A mailbox in the business is taken over",
+        "tone": "amber",
+        "at": "@Saturday"
+       },
+       {
+        "time": "Monday",
+        "text": "Who reports? To whom? By when?",
+        "tone": "amber",
+        "at": "@Monday"
+       },
+       {
+        "time": "",
+        "text": "“Without undue delay” has passed",
+        "tone": "red",
+        "at": "@passed"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "A is quick. In the example, the contract is signed on Friday. On Saturday a mailbox in the business is taken over. On Monday the office manager wonders who reports, to whom and by when, and without undue delay has already passed.",
+       "marker": "beispiel"
+      },
+      {
+       "text": "What without undue delay means exactly for a small supplier, we have not searched. What is clear: without a named reporting path, it gets late.",
+       "marker": "luecke"
+      }
+     ]
+    },
+    {
+     "type": "step",
+     "new": true,
+     "data": {
+      "kicker": "The one step",
+      "card": {
+       "letter": "C",
+       "title": "Compare before signing",
+       "sub": "Check the eight contents, name a reporting path, clarify the unclear with a specialist.",
+       "at": "@C"
+      },
+      "strikes": [
+       {
+        "key": "A",
+        "text": "Simply sign",
+        "note": "a duty with nobody responsible",
+        "at": "@duty"
+       },
+       {
+        "key": "B",
+        "text": "Strike the annex",
+        "note": "the customer needs it for itself",
+        "at": "@needs"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "C is right, by our interpretation. The eight contents are the pattern your customer must meet itself; it will hardly strike them out, because it needs them for itself. Signing without anyone responsible turns the clause into a duty nobody can fulfil. So compare, set the reporting path with a name and a number, and clarify anything unclear with a specialist before signing. That is not legal advice, just the order.",
+       "marker": "auslegung",
+       "source": "N6"
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "faelle-02.js"
+   ],
+   "inserts": [
+    {
+     "at": "The backup runs",
+     "dur": 3.5,
+     "file": "yt/shot02_backup_drive.start.png"
+    },
+    {
+     "at": "Signature by Friday",
+     "dur": 3.0,
+     "file": "yt/t01_hand_signing.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "num": "5",
+   "title": "The example business",
+   "kicker": "5 · The example business",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_workshop_bench.mp4",
+     "data": {
+      "kicker": "Fictional",
+      "text": "Example Electrical Ltd: a customer has sent it a *questionnaire*.",
+      "sub": "No person and no business in it is real."
+     },
+     "say": [
+      {
+       "text": "The example business in our toolkit is fictional: an electrical contractor with ten to forty-nine staff in Austria. No person and no business in it is real. A customer has sent it a questionnaire.",
+       "marker": "beispiel",
+       "source": "H0"
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "A realistic *mixed picture*",
+      "doc": {
+       "label": "Self-declaration · example business",
+       "title": "Answers with status",
+       "lines": [
+        {
+         "text": "MFA on email: in place",
+         "at": "@email",
+         "mark": "ok"
+        },
+        {
+         "text": "MFA on the cloud console: not yet, with a date",
+         "at": "@cloud",
+         "mark": "open"
+        },
+        {
+         "text": "Daily backup, no copy out of reach: partly",
+         "at": "@partly",
+         "mark": "open"
+        },
+        {
+         "text": "Restore test: not yet, with a date",
+         "at": "@restore",
+         "mark": "open"
+        },
+        {
+         "text": "Emergency plan: none",
+         "at": "@emergency",
+         "mark": "risk"
+        },
+        {
+         "text": "An old workshop computer",
+         "at": "@workshop",
+         "mark": "risk"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Its answers show a realistic mixed picture. Multi-factor authentication on email: in place. On the cloud console: not yet, with a date. A daily backup: yes, but no copy out of reach, so: partly. A restore test: never done, so: not yet, with a date. An emergency plan: none. And an old workshop computer."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "bg": "yt/lib_documents_desk.mp4",
+     "data": {
+      "headline": "The *self-declaration*",
+      "note": "Nothing in it says “all good”.",
+      "note_at": "@Nothing",
+      "doc": {
+       "label": "D1 · Self-declaration",
+       "title": "Nine sections and an overview",
+       "lines": [
+        {
+         "text": "Every field with status and date",
+         "at": "@field"
+        },
+        {
+         "text": "Signature line for the management",
+         "at": "@signature"
+        },
+        {
+         "text": "Cover letter: the answers of a small business",
+         "at": "@cover",
+         "mark": "hl"
+        },
+        {
+         "text": "Which gaps have which dates",
+         "at": "@gaps"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "On screen is the self-declaration this produces. Nine sections, one overview table, every field with its status and its date, a signature line for the management. Nothing in it says \"all good\". It says what is in place today, what is partly there, and what has a date.",
+       "source": "H0"
+      },
+      {
+       "text": "The cover letter says the same in plain words: that the answers are those of a small business, and which gaps have which dates."
+      }
+     ]
+    },
+    {
+     "type": "compare",
+     "data": {
+      "headline": "Mapping and *evidence list*",
+      "left": {
+       "title": "D5 · Mapping table",
+       "tone": "blue",
+       "rows": [
+        {
+         "text": "18 typical questions",
+         "at": "@eighteen"
+        },
+        {
+         "text": "10 areas from NIS2 Art. 21(2)",
+         "at": "@ten"
+        },
+        {
+         "text": "per question, the section of the self-declaration",
+         "at": "@section"
+        }
+       ]
+      },
+      "right": {
+       "title": "Evidence list",
+       "tone": "amber",
+       "at": "@evidence",
+       "rows": [
+        {
+         "text": "numbers only what exists",
+         "at": "@numbers"
+        },
+        {
+         "text": "the rest: question number, date, sentence",
+         "at": "@keeps"
+        },
+        {
+         "text": "a dated picture, not a promise",
+         "at": "@dated"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Below it, the mapping table: eighteen typical questions of a questionnaire and the ten areas of Article twenty-one, paragraph two, of the NIS two Directive, each pointed to the section of the self-declaration that answers it.",
+       "source": "P1"
+      },
+      {
+       "text": "The evidence list numbers only what exists, such as the screenshot of the MFA setting on email. What does not exist keeps its question number and gets a date and a sentence on how it will arise, such as the restore test: one line with date, duration and result. Open points are listed, not hidden. That is what the customer receives: a dated picture, not a promise.",
+       "source": "H3"
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-5.js"
+   ],
+   "inserts": [
+    {
+     "at": "Its answers show",
+     "dur": 4.0,
+     "file": "yt/t01_hands_typing.mp4"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "num": "6",
+   "title": "What it is not",
+   "kicker": "6 · What it is not",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/lib_archive_shelf.mp4",
+     "data": {
+      "kicker": "No audit, no certificate",
+      "text": "The documents show what you have in place on a given *date*.",
+      "sub": "What you will do by when, and who answers for it."
+     },
+     "say": [
+      {
+       "text": "What this toolkit is not. It is not legal advice, not an audit and not a certificate, and no document claims that your business is secure or complies with a law. The documents show what you have in place on a given date, what you will do by when, and who answers for it."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Four *markers*",
+      "items": [
+       {
+        "title": "Fact",
+        "sub": "read at the original source, with retrieval date",
+        "at": "@Fact"
+       },
+       {
+        "title": "Interpretation",
+        "sub": "our conclusion, open to argument",
+        "at": "@Interpretation"
+       },
+       {
+        "title": "Uncertain",
+        "sub": "sources contradict each other or the law is open",
+        "at": "@Uncertain"
+       },
+       {
+        "title": "Gap",
+        "sub": "no source answers it, you decide",
+        "at": "@Gap"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Every statement that matters in the handbook carries one of four markers. Fact: read at the original source, with retrieval date. Interpretation: our conclusion, open to argument. Uncertain: sources contradict each other or the law is open. Gap: no source answers it, so you decide and the field stays open on purpose."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Handbook, section 6",
+      "text": "23 points, *13 open*.",
+      "sub": "No certificate, no label: a self-declaration with evidence.",
+      "sub_at": "@Does"
+     },
+     "say": [
+      {
+       "text": "Every uncertainty is listed with its status: twenty-three points as of 23 October 2026, thirteen of them still open, in section six of the handbook.",
+       "source": "H6"
+      },
+      {
+       "text": "Does it give you a certificate or a label? No. It gives you a self-declaration with evidence, which is what most customers and insurers ask for first. And which answer is true, your business decides; the toolkit writes it down, with a date."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-6.js"
+   ],
+   "inserts": []
+  },
+  {
+   "id": "c7",
+   "num": "7",
+   "title": "Free memo and toolkit",
+   "kicker": "7 · Memo and toolkit",
+   "end_seconds": 20.0,
+   "scenes": [
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Start without buying anything",
+      "note": "The PDF comes by email.",
+      "note_at": "@PDF",
+      "doc": {
+       "label": "scutoria.com/memos/nis2",
+       "title": "Does NIS2 apply to us?",
+       "lines": [
+        {
+         "text": "Five questions: sector, size, special cases",
+         "at": "@five"
+        },
+        {
+         "text": "A dated memo, every statement sourced",
+         "at": "@dated"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "If you want to start without buying anything: the free memo \"Does NIS two apply to us?\" asks five questions about sector, size and special cases and gives you a dated memo with every statement sourced. You read it on the page; the PDF comes by email. It is free on scutoria.com; the link is in the description.",
+       "source": "M1"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Security Evidence Toolkit",
+      "text": "47 questions, *seven dated documents*.",
+      "sub": "Handbook readable before you buy · 199 euros per year · the first ten buyers pay 99",
+      "sub_at": "@199"
+     },
+     "say": [
+      {
+       "text": "The handbook of the Security Evidence Toolkit, thirty-seven pages, is readable before you buy; the link is in the description. The toolkit itself asks forty-seven questions, with the example business prefilled, and turns your answers into seven dated documents: the self-declaration, the action plan, the emergency card, the evidence list, the cover letter with the mapping, the clause checklist and the evidence summary. The toolkit costs 199 euros per year. The first ten buyers pay 99.",
+       "source": "P2"
+      }
+     ]
+    },
+    {
+     "type": "close",
+     "new": true,
+     "data": {
+      "rule": "This is Scutoria. Synthetic voice, sources on screen.",
+      "memo": {
+       "label": "Free memo: Does NIS2 apply to us?",
+       "url": "scutoria.com/memos/nis2",
+       "at": "@script"
+      },
+      "toolkit": {
+       "label": "Next: What never goes into an AI tool",
+       "url": "Video 04",
+       "at": "@Next"
+      },
+      "claim": "Sourced. Dated. Ready to show.",
+      "disclaimer": "Source-based. No legal advice."
+     },
+     "say": [
+      {
+       "text": "This is Scutoria. The voice you hear is synthetic. The script was drafted with an AI tool, then checked by us, sentence by sentence. Every number and every legal statement carries its source on screen. Source-based, no legal advice."
+      },
+      {
+       "text": "Next on this channel: what never goes into an AI tool, five kinds of data and the rule of doubt."
+      }
+     ]
+    }
+   ],
+   "welt_acts": [
+    "teil-7.js"
+   ],
+   "inserts": []
+  }
+ ],
+ "reels": [
+  {
+   "id": "r1",
+   "chapter": "c1",
+   "title": "Two things that usually go wrong",
+   "kicker": "From video 02 · Questionnaire",
+   "scenes": [
+    "c1s0",
+    "c1s1",
+    "c1s2"
+   ]
+  },
+  {
+   "id": "r2",
+   "chapter": "c2",
+   "title": "Four answers, nothing else",
+   "kicker": "From video 02 · Questionnaire",
+   "scenes": [
+    "c2s4",
+    "c2s5",
+    "c2s6"
+   ]
+  },
+  {
+   "id": "r3",
+   "chapter": "c2",
+   "title": "Evidence in an hour",
+   "kicker": "From video 02 · Questionnaire",
+   "scenes": [
+    "c2s7",
+    "c2s8"
+   ]
+  },
+  {
+   "id": "r4",
+   "chapter": "c3",
+   "title": "The gap with a plan is normal",
+   "kicker": "From video 02 · Questionnaire",
+   "scenes": [
+    "c3s1",
+    "c3s2",
+    "c3s3"
+   ]
+  },
+  {
+   "id": "r5",
+   "chapter": "c4",
+   "title": "What do you do? Question 23",
+   "kicker": "From video 02 · What do you do?",
+   "scenes": [
+    "c4s0",
+    "c4s1",
+    "c4s2",
+    "c4s3"
+   ]
+  },
+  {
+   "id": "r6",
+   "chapter": "c4",
+   "title": "What do you do? The contract clause",
+   "kicker": "From video 02 · What do you do?",
+   "scenes": [
+    "c4s4",
+    "c4s5",
+    "c4s6",
+    "c4s7"
+   ]
+  }
+ ],
+ "mode": "welt",
+ "welt_dir": "video-02",
+ "welt_data": [
+  "quellen.js"
+ ],
+ "welt_libs": [
+  "bausteine.js",
+  "fall-lib.js"
+ ]
+}

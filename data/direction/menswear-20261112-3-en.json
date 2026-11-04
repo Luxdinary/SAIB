@@ -1,0 +1,564 @@
+{
+ "video_id": "menswear-20261112-3-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Suit socks: match the trousers, not the shoes",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema A03 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S3; Länge: Falke Kniestrumpf, Suitsupply Crew, beides genannt; Kontrast nicht verboten.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Socks",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "socks: trousers? shoes?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "seated: skin shows",
+     "tone": "red"
+    },
+    {
+     "beat": "b3",
+     "text": "rule: like the trousers",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "black: dark socks",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "length: crew, knee",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "trousers, long, chosen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "socks: like the trousers",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Socks with a suit: Falke and Suitsupply match them to the trousers, not the shoes, and Marks & Spencer covers navy and black. Plus the length for sitting down and a deliberate contrast.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "socks",
+   "suit",
+   "styletips",
+   "businessattire"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.falke.com/sk_en/journal/knee-high-guide-men/",
+   "title": "Falke, Knee-high guide for men: im Business feine, blickdichte Kniestrümpfe im Ton der Hose; Socken eher zur Hose als zum Schuh abstimmen oder bewusst kontrastieren",
+   "checked_at": "2026-11-01",
+   "label": "Falke, Kniestrumpf-Ratgeber"
+  },
+  {
+   "id": "S2",
+   "url": "https://suitsupply.com/en-us/men/accessories/socks",
+   "title": "Suitsupply, Socken (FAQ): Sockenfarbe zur Hose statt zum Schuh; Crew-Länge bedeckt beim Sitzen ausreichend",
+   "checked_at": "2026-11-01",
+   "label": "Suitsupply, Socken-FAQ"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.marksandspencer.com/content/guide-to-suit-colour-combinations",
+   "title": "Marks & Spencer, Guide to suit colour combinations: zum blauen Anzug Socken passend zur Hose, zum schwarzen dunkle Socken, nichts zu Grelles",
+   "checked_at": "2026-11-01",
+   "label": "M&S, Anzugfarben"
+  }
+ ],
+ "unverified": [
+  "Sockenfarbe in der Zeichnung fest (Navy); Blau/Schwarz und der Schlusswechsel Schuhton -> Hosenton nur als Stoffmuster gezeigt.",
+  "Bunte Socken: nicht verboten, Falke nennt Kontrast als Möglichkeit; keine Farbempfehlung im Video."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Trousers or shoes?",
+   "on_screen": "Trousers or shoes?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Bein im Sitzen, Lupe auf der Socke",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Socks to match the shoes? Better the trousers.",
+   "on_screen": "Socks to match the shoes? Better the trousers.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Bein im Sitzen, Lupe auf der Socke",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The trousers pick the sock colour, not the shoes",
+   "on_screen": "The trousers pick the sock colour, not the shoes",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Bein im Sitzen, Lupe auf der Socke",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Short socks show skin the moment you sit",
+   "on_screen": "Short socks show skin the moment you sit",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Bein im Sitzen, Lupe auf der Socke",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "What shows when you sit down",
+   "on_screen": "What shows when you sit down",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Bein im Sitzen, Lupe auf der Socke",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Farbfrage am Detail, das erst im Sitzen auffällt."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Dark suit, brown shoes. And the socks? Do you match them to the shoes, or to the trousers?",
+   "data": {
+    "question": "Trousers or shoes?",
+    "object": {
+     "kind": "legs",
+     "seated": true,
+     "sock": "long",
+     "shoe": "oxford"
+    },
+    "target": "sock",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:socks",
+    "loupe_at": "w:socks",
+    "nie_at": "w:trousers",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 12,
+   "spoken": "It matters most once you are seated. Standing, your trousers almost hide the socks. Sit down, the hem rides up, and the socks come into view. If they are too short, so does bare skin.",
+   "data": {
+    "headline": "Standing or seated?",
+    "from": {
+     "kind": "legs",
+     "break": "slight",
+     "shoe": "oxford"
+    },
+    "to": {
+     "kind": "legs",
+     "seated": true,
+     "sock": "short",
+     "shoe": "oxford"
+    },
+    "target": "sock",
+    "zoom": 1.4,
+    "label": "Seated: the socks show",
+    "backdrop": true,
+    "hold_end": true,
+    "pointer_at": "w:matters",
+    "zoom_at": "w:most",
+    "flip_at": "w:Sit",
+    "label_at": "w:view",
+    "error_at": "w:skin"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 751,
+     "y": 879,
+     "seconds": 0.7
+    },
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Sit"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 14,
+   "spoken": "The rule of thumb comes from the sock maker Falke and from Suitsupply: match your socks to the trousers, not to the shoes. For business, Falke suggests fine, opaque socks in the tone of the trousers. A deliberate contrast is still an option.",
+   "data": {
+    "headline": "The rule of thumb",
+    "stages": [
+     {
+      "object": {
+       "kind": "legs",
+       "seated": true,
+       "sock": "long",
+       "shoe": "oxford"
+      },
+      "at": 0.0,
+      "title": "Socks to trousers",
+      "tags": [
+       {
+        "spot": "crease",
+        "text": "Trousers set it",
+        "sub": "not the shoes",
+        "tone": "always",
+        "at": "w:trousers"
+       },
+       {
+        "spot": "sock",
+        "text": "trouser tone",
+        "sub": "fine and opaque",
+        "tone": "always",
+        "at": "w:fine"
+       },
+       {
+        "spot": "shoe",
+        "text": "Contrast: chosen",
+        "sub": "an option, says Falke",
+        "tone": "sometimes",
+        "at": "w:contrast"
+       }
+      ],
+      "focus_at": "w:option"
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Falke"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 10,
+   "spoken": "Marks and Spencer gets specific. With a navy suit, pick socks that match the trousers. With a black suit, go for dark socks. And with either one: nothing too loud.",
+   "data": {
+    "headline": "Which suit?",
+    "left": {
+     "title": "Navy",
+     "object": {
+      "kind": "swatch",
+      "weave": "worsted",
+      "colour": "#26344D"
+     },
+     "tag": "socks like the trousers",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:loud"
+      }
+     ]
+    },
+    "right": {
+     "title": "Black",
+     "object": {
+      "kind": "swatch",
+      "weave": "worsted",
+      "colour": "#17181C"
+     },
+     "tag": "dark socks",
+     "pulses": [
+      {
+       "target": "center",
+       "at": "w:loud"
+      }
+     ]
+    },
+    "left_at": "w:navy",
+    "left_tag_at": "w:socks",
+    "right_at": "w:black",
+    "right_tag_at": "w:dark",
+    "hold_end": true
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "marker": "fakt",
+    "marker_at": "w:Marks"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 12,
+   "spoken": "That leaves the length. Socks that are too short show skin when you sit. Suitsupply finds crew length enough, while Falke recommends knee-highs for business. Either way, your leg stays covered when you sit down.",
+   "data": {
+    "headline": "How long?",
+    "stages": [
+     {
+      "object": {
+       "kind": "legs",
+       "seated": true,
+       "sock": "short",
+       "shoe": "oxford"
+      },
+      "at": 0.0,
+      "title": "Too short",
+      "tags": [
+       {
+        "spot": "sock",
+        "text": "skin when seated",
+        "sub": "leg not covered",
+        "tone": "never",
+        "at": "w:skin"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "legs",
+       "seated": true,
+       "sock": "long",
+       "shoe": "oxford"
+      },
+      "at": "w:Suitsupply",
+      "title": "Long enough",
+      "tags": [
+       {
+        "spot": "sock",
+        "text": "crew length",
+        "sub": "enough, says Suitsupply",
+        "tone": "sometimes",
+        "at": "w:crew"
+       },
+       {
+        "spot": "crease",
+        "text": "knee-high",
+        "sub": "Falke, for business",
+        "tone": "sometimes",
+        "at": "w:knee"
+       }
+      ],
+      "focus_at": "w:covered"
+     }
+    ],
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S2",
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Suitsupply"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 11,
+   "spoken": "In short: your socks follow the trousers, not the shoes. They are long enough for the moment you sit down. And if you want a contrast, you choose it on purpose.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Colour: like the trousers",
+      "sub": "Falke, Suitsupply, M&S",
+      "object": {
+       "kind": "legs",
+       "seated": true,
+       "sock": "long",
+       "shoe": "oxford"
+      },
+      "at": "w:socks",
+      "ring": "sock",
+      "ring_at": "w:trousers"
+     },
+     {
+      "title": "Long enough to sit",
+      "sub": "crew or knee-high",
+      "object": {
+       "kind": "legs",
+       "seated": true,
+       "sock": "short",
+       "shoe": "oxford"
+      },
+      "at": "w:long",
+      "then": {
+       "kind": "legs",
+       "seated": true,
+       "sock": "long",
+       "shoe": "oxford"
+      },
+      "then_at": "w:sit"
+     },
+     {
+      "title": "Contrast: on purpose",
+      "sub": "an option, says Falke",
+      "object": {
+       "kind": "legs",
+       "seated": true,
+       "sock": "long",
+       "shoe": "oxford"
+      },
+      "at": "w:contrast",
+      "ring": "sock",
+      "ring_at": "w:purpose"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Not the tone of the shoes, but the tone of the trousers. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "swatch",
+     "weave": "twill",
+     "colour": "#4A3324"
+    },
+    "to": {
+     "kind": "swatch",
+     "weave": "twill",
+     "colour": "#26344D"
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "center",
+    "fix_at": "w:but",
+    "ring_at": "w:trousers",
+    "statement_at": "w:trousers",
+    "chip_at": "w:eye",
+    "statement": "The tone of the trousers.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

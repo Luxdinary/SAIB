@@ -1,0 +1,21 @@
+tts:
+  provider: gemini
+  model: gemini-2.5-flash-preview-tts
+  voices:
+    de: Charon
+    en: Charon
+  speaking_rate: 1.0
+  style_instruction:
+    de: Sprich ruhig und klar auf Deutsch, calm, concrete, no fear-mongering.
+    en: Speak clearly in English, calm, concrete, no fear-mongering.
+music:
+  mood: calm cinematic pulse, low synth, 80 bpm, no vocals
+  file: null
+  license_proof: null
+  gain_db: -18
+  duck_db: -10
+loudness:
+  target_lufs: -16
+  true_peak_dbtp: -1.5
+sfx:
+  enabled: false

@@ -1,0 +1,395 @@
+{
+ "video_id": "engines-20261114-2-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Heiß oder kalt: der Wärmewert der Zündkerze",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261114-2-de, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Die Zündkerze ist das heißeste Teil im Brennraum. Warum sie heiß genug zum Selbstreinigen sein muss und was der Wärmewert beschreibt.",
+  "companion_text": "Keine Kauf- oder Wechselempfehlung: Die passende Kerze legt der Motorhersteller fest. Zeitlupenfaktor und Millisekunden beziehen sich auf die Beispieldrehzahl 3000/min.",
+  "hashtags": [
+   "motorentechnik",
+   "zündkerze",
+   "wärmewert",
+   "zündung",
+   "ngk"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "NGK, Zündkerzen-Fragen",
+   "title": "NGK, Zündkerzen-Fragen (K1)",
+   "url": "https://www.ngkntk.com/newsroom/blog/emea/you-asked-google-ngk-spark-plug-answers-part-2-spark-plugs/",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "MIT 2.61, Vorlesung 18",
+   "title": "MIT 2.61, Vorlesung 18 (L18)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/df96f507776900c0dde50a4b50f422ce_MIT2_61S17_lec18.pdf",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Heißer als Auslassventil und Kolbenboden.",
+   "on_screen": "Das heißeste Teil",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Was bedeutet der Wärmewert einer Zündkerze?",
+   "on_screen": "Heiß oder kalt: der Wärmewert der Zündkerze",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Heiß oder kalt: der Wärmewert der Zündkerze",
+   "on_screen": "Heiß oder kalt: der Wärmewert der Zündkerze",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Heiß oder kalt: der Wärmewert der Zündkerze",
+   "on_screen": "Heiß oder kalt: der Wärmewert der Zündkerze",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Heiß oder kalt: der Wärmewert der Zündkerze",
+   "on_screen": "Heiß oder kalt: der Wärmewert der Zündkerze",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Die Zündkerze ist laut Fachvorlesung das heißeste Teil im Brennraum. Heißer als Auslassventil und Kolbenboden.",
+   "data": {
+    "claim": "Das heißeste Teil",
+    "claim_lines": [
+     "Das heißeste",
+     "Teil im Motor"
+    ],
+    "claim_highlight": "heißeste",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "MIT 2.61, Vorlesung 18 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_plug",
+   "spoken": "Der Fuß des Isolators sitzt mitten im Feuer. Er muss heiß genug werden, um Ablagerungen selbst abzubrennen. Laut NGK braucht eine Kerze dafür etwa vierhundertfünfzig Grad. Ist sie zu kalt, bleiben Ablagerungen hängen.",
+   "data": {
+    "title": "Selbstreinigung",
+    "labels": [
+     "nose",
+     "center"
+    ],
+    "labels_at": [
+     "w:Isolators",
+     "w:Ablagerungen"
+    ],
+    "sparks_at": [
+     0.1
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, Zündkerzen-Fragen · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_plug",
+   "spoken": "Zu heiß darf sie aber auch nicht werden. Die Wärme fließt über Isolator und Gehäuse in den Zylinderkopf ab. Wie schnell eine Kerze ihre Wärme abgibt, beschreibt der Wärmewert. Laut Vorlesung liegt die Zündkerze dabei vor Auslassventil, Kolbenboden und Zylinderkopf.",
+   "data": {
+    "title": "Wärme abgeben",
+    "labels": [
+     "insulator",
+     "hex",
+     "thread"
+    ],
+    "labels_at": [
+     "w:Isolator",
+     "w:Gehäuse",
+     "w:Zylinderkopf"
+    ],
+    "heat_at": [
+     "w:fließt"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, Zündkerzen-Fragen · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_plug",
+   "spoken": "Bei NGK steht eine niedrige Wärmewertzahl für eine heiße Kerze, eine hohe Zahl für eine kalte. Üblich sind Werte von fünf bis zehn. Eine heiße Kerze hält ihre Wärme länger, eine kalte gibt sie schneller ab.",
+   "data": {
+    "title": "Wärmewert",
+    "mode": "compare",
+    "labels_at": [
+     "w:heiße",
+     "w:kalte"
+    ],
+    "heat_at": [
+     "w:hält"
+    ],
+    "sparks_at": [
+     0.05
+    ],
+    "left_label": "heiß",
+    "right_label": "kalt",
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, Zündkerzen-Fragen · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Leistungsstarke Motoren brauchen laut NGK eher kalte Kerzen, kleine Motoren eher heiße. Welche Kerze in einen Motor gehört, steht in der Vorgabe des Herstellers. Das ist eine Auslegungsfrage, kein Tuningtipp.",
+   "data": {
+    "title": "Kalt oder heiß",
+    "labels": [
+     {
+      "key": "plug",
+      "side": "l",
+      "y": 640
+     }
+    ],
+    "labels_at": [
+     "w:Kerzen"
+    ],
+    "notes": [
+     {
+      "text": "Herstellervorgabe",
+      "at": "w:Vorgabe",
+      "side": "r",
+      "y": 900,
+      "to": [
+       540,
+       400
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NGK, Zündkerzen-Fragen · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Heiß genug zum Reinigen, kühl genug für den Brennraum. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "≈ 450 °C",
+      "at": "w:Reinigen"
+     },
+     {
+      "text": "Wärmewert",
+      "at": "w:kühl"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

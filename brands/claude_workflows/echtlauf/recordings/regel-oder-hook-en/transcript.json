@@ -1,0 +1,261 @@
+{
+  "spec": "regel-oder-hook-en",
+  "runs": {
+    "L1": {
+      "title": "Rule, change port",
+      "prompt": "In config.json, set port to 8080.",
+      "settings": {
+        "permissions": {
+          "deny": [
+            "Edit(./config.json)",
+            "Write(./config.json)"
+          ]
+        }
+      },
+      "allowed_tools": [],
+      "wall": 17.645,
+      "lines": [
+        {
+          "t": 11.557,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 14.121,
+          "kind": "tool",
+          "id": "toolu_01HAbFyt3TDF5MHkp5caVMXV",
+          "text": "Read: .\\config.json"
+        },
+        {
+          "t": 14.169,
+          "kind": "result",
+          "id": "toolu_01HAbFyt3TDF5MHkp5caVMXV",
+          "text": "1\t{\n2\t  \"port\": 3000,\n3\t  \"debug\": false\n… (2 more lines)"
+        },
+        {
+          "t": 15.159,
+          "kind": "tool",
+          "id": "toolu_015Ld2oGQgbfTLaj7M1S7xnK",
+          "text": "Edit: .\\config.json"
+        },
+        {
+          "t": 15.166,
+          "kind": "denied",
+          "id": "toolu_015Ld2oGQgbfTLaj7M1S7xnK",
+          "text": "<tool_use_error>File is in a directory that is denied by your permission settings.</tool_use_error>"
+        },
+        {
+          "t": 16.275,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 17.023,
+          "kind": "text",
+          "text": "I couldn't change the port. The edit to `config.json` was blocked by a permission rule that denies edits in this directory. I haven't tried another way to write the file, since that would get around the restriction.\n\nThe file currently has `\"port\": 3000`. To make the change, either:\n\n- Allow edits to `.\\config.json` in your permission settings, and I'll retry, or\n- Change line 2 yourself to `\"port\": 8080,`."
+        },
+        {
+          "t": 17.053,
+          "kind": "end",
+          "text": "Done after 17.1 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Edit",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 5527,
+        "num_turns": 3,
+        "total_cost_usd": 0.0010612,
+        "is_error": false,
+        "permission_denials": 1
+      }
+    },
+    "L2": {
+      "title": "Hook, change port",
+      "prompt": "In config.json, set port to 8080.",
+      "settings": {
+        "hooks": {
+          "PreToolUse": [
+            {
+              "matcher": "Edit|Write",
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/waechter.js\""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "allowed_tools": [],
+      "wall": 15.336,
+      "lines": [
+        {
+          "t": 9.096,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 10.261,
+          "kind": "tool",
+          "id": "toolu_01ACdQXkvUDDGX6ceXxS315j",
+          "text": "Read: .\\config.json"
+        },
+        {
+          "t": 10.332,
+          "kind": "result",
+          "id": "toolu_01ACdQXkvUDDGX6ceXxS315j",
+          "text": "1\t{\n2\t  \"port\": 3000,\n3\t  \"debug\": false\n… (2 more lines)"
+        },
+        {
+          "t": 11.977,
+          "kind": "tool",
+          "id": "toolu_01MAjzwnFbmp5EV1ATN1MK2Y",
+          "text": "Edit: .\\config.json"
+        },
+        {
+          "t": 13.619,
+          "kind": "result",
+          "id": "toolu_01MAjzwnFbmp5EV1ATN1MK2Y",
+          "text": "The file .\\config.json has been updated successfully. (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 14.328,
+          "kind": "text",
+          "text": "In `config.json`, `port` is now `8080` (it was `3000`). I didn't change `debug`."
+        },
+        {
+          "t": 14.469,
+          "kind": "end",
+          "text": "Done after 14.5 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Edit",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 5506,
+        "num_turns": 3,
+        "total_cost_usd": 0.00033528000000000003,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L3": {
+      "title": "Hook, debug on",
+      "prompt": "In config.json, set debug to true.",
+      "settings": {
+        "hooks": {
+          "PreToolUse": [
+            {
+              "matcher": "Edit|Write",
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/waechter.js\""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "allowed_tools": [],
+      "wall": 20.996,
+      "lines": [
+        {
+          "t": 11.816,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 13.994,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 14.001,
+          "kind": "tool",
+          "id": "toolu_01UQUpn1477U7LddNk6P4jWA",
+          "text": "Read: .\\config.json"
+        },
+        {
+          "t": 14.247,
+          "kind": "result",
+          "id": "toolu_01UQUpn1477U7LddNk6P4jWA",
+          "text": "1\t{\n2\t  \"port\": 3000,\n3\t  \"debug\": false\n… (2 more lines)"
+        },
+        {
+          "t": 15.467,
+          "kind": "tool",
+          "id": "toolu_01CMZj7XwkHTisj49khKdBC1",
+          "text": "Edit: .\\config.json"
+        },
+        {
+          "t": 16.097,
+          "kind": "denied",
+          "id": "toolu_01CMZj7XwkHTisj49khKdBC1",
+          "text": "PreToolUse:Edit hook error: [node \"$CLAUDE_PROJECT_DIR/.claude/hooks/waechter.js\"]: Blocked by hook: debug must not be switched on."
+        },
+        {
+          "t": 18.052,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 18.056,
+          "kind": "tool",
+          "id": "toolu_01FxwypVGit2groTtySys5ST",
+          "text": "Read: .\\.claude\\hooks\\waechter.js"
+        },
+        {
+          "t": 18.129,
+          "kind": "result",
+          "id": "toolu_01FxwypVGit2groTtySys5ST",
+          "text": "1\t// PreToolUse hook with its own logic: only blocks switching debug on\n2\tlet d = \"\";\n3\tprocess.stdin.on(\"data\", c => d += c).on(\"end\", () => {\n… (9 more lines)"
+        },
+        {
+          "t": 19.065,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 20.293,
+          "kind": "text",
+          "text": "I didn't change `config.json`. A project hook blocked the edit: `.claude/hooks/waechter.js` rejects any edit that sets `\"debug\": true` with the message \"debug must not be switched on.\" The file is still `\"debug\": false`.\n\nI could get around this by writing the file through another tool or a shell command, but the hook is a deliberate guardrail in this project, so I won't bypass it. Your options:\n\n- **Change it yourself:** set `\"debug\": true` in `config.json` by hand. The hook only runs on Claude's edits.\n- **Remove or relax the hook:** if you want me to make the change, edit or remove the matching entry in `.claude/settings` (or the hook script) so the rule no longer applies, then I can make the edit.\n\nTell me which you'd like."
+        },
+        {
+          "t": 20.335,
+          "kind": "end",
+          "text": "Done after 20.3 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Edit",
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 8681,
+        "num_turns": 4,
+        "total_cost_usd": 0.0009504400000000001,
+        "is_error": false,
+        "permission_denials": 1
+      }
+    }
+  }
+}

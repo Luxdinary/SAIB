@@ -1,0 +1,390 @@
+{
+ "video_id": "beauty-20261115-1-en",
+ "brand_id": "beauty",
+ "language": "en",
+ "title": "“Best before” and the hourglass",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261115-1-en.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (jar), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Hält ein Produkt höchstens 30 Monate, steht ein Datum mit Sanduhr oder den Worten „Mindestens haltbar bis“, als Monat und Jahr oder Tag, Monat, Jahr. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). Englische Fassung sprachlich angepasst.",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "What's the hourglass for? The US is different. Cosmetics there don't need expiration dates. Drugs do, and in the US sunscreens are drugs. Make-up with an SPF even counts as both.",
+  "companion_text": "Dewlane explains ingredients, labels and routines with sources. No product recommendations, not medical advice. Follow Dewlane for more beauty knowledge.",
+  "hashtags": [
+   "cosmetics",
+   "skincare",
+   "ingredients",
+   "beautyknowledge",
+   "euregulation"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "Regulation (EC) 1223/2009"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.fda.gov/cosmetics/cosmetics-labeling/shelf-life-and-expiration-dating-cosmetics",
+   "title": "U.S. FDA: Shelf Life and Expiration Dating of Cosmetics",
+   "checked_at": "2026-11-01",
+   "label": "FDA: Shelf life"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What does the little hourglass on some cosmetic packs mean?",
+   "on_screen": "What's the hourglass for?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "In the EU, a best-before date on cosmetics is only required for products lasting up to 30 months.",
+   "on_screen": "In the EU, a best-before date on cosmetics is only required ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Every cream has an expiry date. In the EU, only products lasting up to 30 months need one.",
+   "on_screen": "Every cream has an expiry date. In the EU, only products las",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Miss the tiny hourglass, and you miss the date next to it.",
+   "on_screen": "Miss the tiny hourglass, and you miss the date next to it.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch how a best-before date is written on cosmetics.",
+   "on_screen": "Watch how a best-before date is written on cosmetics.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "What does the little hourglass on some cosmetic packs mean?",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "What's the hourglass for?",
+    "badge": "Date?",
+    "kicker": "Close-up",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "It belongs to the date of minimum durability. Under Article 19 of the EU cosmetics regulation, that's the date until which a product, stored properly, keeps doing its original job and stays safe. The rule covers both the container and the packaging.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Date of minimum durability",
+    "zoom": "30 months",
+    "flip": false,
+    "doc": {
+     "act": "Regulation (EC) 1223/2009",
+     "ref": "Article 19(1)(c)",
+     "tag": "EU law"
+    },
+    "rows": [
+     {
+      "text": "until this date: original function"
+     },
+     {
+      "text": "when stored properly"
+     }
+    ],
+    "kicker": "The issue",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "Before the date comes either the hourglass from Annex VII, or the words “best used before the end of”. Storage conditions are added where needed.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "What it looks like",
+    "items": [
+     {
+      "title": "Hourglass symbol",
+      "sub": "Annex VII, point 3",
+      "icon": "hourglass"
+     },
+     {
+      "title": "or the words",
+      "sub": "“best used before the end of”",
+      "icon": "doc"
+     },
+     {
+      "title": "Storage",
+      "sub": "added where needed",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Close-up",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "The date is month and year, or day, month and year, in that order. It's only required if a product lasts 30 months or less. If it lasts longer, the open-jar symbol takes its place. Symbol or words: either is allowed.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_time",
+   "data": {
+    "headline": "When it's required",
+    "nodes": [
+     {
+      "date": "Format",
+      "text": "month and year, or day, month, year"
+     },
+     {
+      "date": "≤ 30 M",
+      "text": "date required"
+     },
+     {
+      "date": "> 30 M",
+      "text": "open-jar symbol instead"
+     }
+    ],
+    "kicker": "Side by side",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "The US is different. Cosmetics there don't need expiration dates. Drugs do, and in the US sunscreens are drugs. Make-up with an SPF even counts as both. There, drugs have to stay safe and effective until their expiration date.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "EU and US",
+    "left": {
+     "tag": "EU",
+     "title": "up to 30 months",
+     "rows": [
+      {
+       "text": "date with hourglass"
+      },
+      {
+       "text": "otherwise open jar"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "right": {
+     "tag": "US",
+     "title": "drugs only",
+     "rows": [
+      {
+       "text": "cosmetics: no date",
+       "mark": "gap"
+      },
+      {
+       "text": "sunscreen: dated"
+      }
+     ],
+     "product": {
+      "kind": "jar"
+     }
+    },
+    "kicker": "Per source"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "For you, that means: look for the hourglass or the words, read the month and year, and check for any storage instructions.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "How to check",
+    "items": [
+     {
+      "title": "Find the hourglass",
+      "sub": "or the words",
+      "icon": "hourglass"
+     },
+     {
+      "title": "Read month and year",
+      "sub": "the date after it",
+      "icon": "doc"
+     },
+     {
+      "title": "Mind the storage",
+      "sub": "if it's given",
+      "icon": "shield"
+     }
+    ],
+    "kicker": "Everyday use",
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Read the date first, then apply. Beauty knowledge, clearly explained: follow Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Key point",
+    "rule": "Read first, then apply.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "jar",
+     "line1": "CREAM"
+    },
+    "question": {
+     "text": "Hourglass or open jar on yours?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Knowledge, not promises.",
+    "disclaimer": "Not medical advice."
+   }
+  }
+ ]
+}

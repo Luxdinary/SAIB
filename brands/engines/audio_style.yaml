@@ -1,0 +1,21 @@
+tts:
+  provider: gemini
+  model: gemini-2.5-flash-preview-tts
+  voices:
+    de: Iapetus            # Gemini prebuilt voice "Clear"; Scutoria uses Charon, so the brands sound different
+    en: Iapetus
+  speaking_rate: 1.0
+  style_instruction:
+    de: Sprich ruhig, klar und sachlich auf Deutsch, wie ein Ingenieur, der einem interessierten Freund etwas zeigt. Fachbegriffe deutlich.
+    en: Speak calmly, clearly and factually, like an engineer showing an interested friend how something works.
+music:
+  mood: none yet (no licensed source); later low mechanical ambience at -18 dB
+  file: null
+  license_proof: null
+  gain_db: -18
+  duck_db: -10
+loudness:
+  target_lufs: -16
+  true_peak_dbtp: -1.5
+sfx:
+  enabled: false

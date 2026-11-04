@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<title>Scutoria Video 02</title>
+<!--
+  Video 02 „Ihr Kunde schickt einen Sicherheitsfragebogen. So antworten Sie ehrlich.“ als animierte Erklärwelt.
+  Aufbau: woerter-<lang>.js (Wortzeiten aus ../woerter.py), marken.js (../marken.py), quellen.js (quellen.py)
+  → ../lib/welt.js, betrieb.js, dokumente.js (Bausteine) → bausteine.js (was Video 02 zusätzlich braucht) → teil-*.js (je Skriptabschnitt ein Akt).
+  Sprache über ?lang=de oder ?lang=en. render(t) ist eine reine Funktion der Zeit; ../rendern.mjs nimmt Bild für Bild auf.
+-->
+<style>
+@font-face{font-family:"Manrope";src:url("../../../../site/public/fonts/manrope-latin-wght-normal.woff2") format("woff2");font-weight:200 800}
+@font-face{font-family:"Manrope";src:url("../../../../site/public/fonts/manrope-latin-ext-wght-normal.woff2") format("woff2");font-weight:200 800;unicode-range:U+0100-024F,U+1E00-1EFF}
+@font-face{font-family:"IBM Plex Mono";src:url("../../../../site/public/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");font-weight:400}
+@font-face{font-family:"IBM Plex Mono";src:url("../../../../site/public/fonts/ibm-plex-mono-latin-ext-400-normal.woff2") format("woff2");font-weight:400;unicode-range:U+0100-024F,U+1E00-1EFF}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#0b1120}
+svg{display:block}
+</style></head><body>
+<svg id="stage" width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<script>
+// Reihenfolge zählt: Die Akte werden in Sprechreihenfolge gebaut, weil die Wortanker der Reihe nach gesucht werden.
+const TEILE = ['teil-1.js', 'teil-2.js', 'teil-3a.js', 'teil-3b.js', 'teil-4.js', 'teil-5.js', 'teil-6.js', 'teil-7.js'];
+const SPRACHE = new URLSearchParams(location.search).get('lang') || 'de';
+function lade(src) { return new Promise((ok, nein) => { const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = () => nein(new Error('fehlt: ' + src)); document.body.appendChild(s); }); }
+window.ready = (async () => {
+  await lade(`woerter-${SPRACHE}.js`);
+  await lade('marken.js');
+  await lade('quellen.js');
+  for (const b of ['../lib/welt.js', '../lib/betrieb.js', '../lib/dokumente.js', 'bausteine.js']) await lade(b);
+  for (const t of TEILE) { try { await lade(t); } catch (e) { console.log(e.message); } }
+  await Promise.all([document.fonts.load('800 40px Manrope'), document.fonts.load('600 20px Manrope'), document.fonts.load('400 20px "IBM Plex Mono"')]);
+  await document.fonts.ready;
+  aufbauen();
+  window.AKTE_NAMEN = AKTE.map((a) => a.name);
+  render(0);
+  return true;
+})();
+</script>
+</body></html>

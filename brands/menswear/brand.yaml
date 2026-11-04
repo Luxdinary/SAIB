@@ -1,0 +1,73 @@
+id: menswear
+name: Suitwerk
+niche: suits and menswear
+style: quiet_luxury
+phase: 4
+enabled: false
+languages:
+- de
+- en
+primary_language: de
+risk_default: low
+rules:
+- affiliate links only with product knowledge and disclosure
+# Vorlage Suitwerk 0.9 (2026-10-30): see OneDrive\Business\02 Marke\Suitwerk\Vorlage Suitwerk.md
+palette:
+  bg: '#172337'
+  accent: '#D4B483'
+  text: '#F2EEE6'
+  surface: '#273245'
+  muted: '#9AA0A8'
+  scheme: dark
+  hairline: 'rgba(212,180,131,0.35)'
+  signal_amber: '#E8A33D'       # amber = open/unclear only (was the gold accent until 30.10.2026)
+  signal_red: '#C9776B'
+  on_signal: '#172337'
+fonts:
+  display:
+    family: Playfair Display
+    weight: 600
+    file: assets/fonts/playfairdisplay/PlayfairDisplay[wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/playfairdisplay/OFL.txt
+  body:
+    family: Inter
+    weight: 400
+    file: assets/fonts/inter/Inter[opsz,wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/inter/OFL.txt
+  mono:
+    family: Inter
+    weight: 500
+    file: assets/fonts/inter/Inter[opsz,wght].ttf
+    license: OFL-1.1
+motif: jacket-line-illustration
+tempo: slow
+bg_pattern: fabric-gradient
+flat: true
+logo:
+  file: brands/menswear/assets/logo/suitwerk-mark.svg
+  wordmark_text: Suitwerk
+  logo_height_px: 40
+explainer:                         # Schnitt- und Layout-Vorlage (Stefan, 30.10.2026), Hochformat; fn.render.explainer
+  enabled: true
+  voice_tag: {de: "SYNTHETISCHE STIMME", en: "SYNTHETIC VOICE"}
+  opening: {de: "Synthetische Stimme · Quellen am Bildschirm · Stilregeln sind Konvention", en: "Synthetic voice · Sources on screen · Style rules are convention"}
+  opening_seconds: 3.5
+  source_y: 1120                   # scenes end by y 1100 (zone 290+810), source bar to ~1240, captions from ~1310, status bar 1440
+  # fixed meaning: fakt = active colour (gold, the jacket line), unsicher = amber (open), luecke = red (risk),
+  # auslegung = violet, erreicht = green (reached state; used by brands/menswear/scenes.py, not by the renderer)
+  colors: {fakt: "#D4B483", auslegung: "#A58BE0", unsicher: "#E8A33D", luecke: "#C9776B", beispiel: "#9AA0A8", erreicht: "#8DBE96"}
+# scene types: brands/menswear/scenes.py (suitwerk_hook, suitwerk_fitting, suitwerk_ladder, suitwerk_compare, suitwerk_takeaway)
+production:
+  closing_sentence:
+    de: Folge Suitwerk für Herrenstil mit Blick fürs Detail.
+    en: Follow Suitwerk for menswear with an eye for detail.
+  domain: null            # no confirmed website yet
+layout: shared 9:16 layout, see docs/design-system.md
+audience: men who want to dress well without following trends; international and DACH
+tone: composed, knowledgeable, never snobbish; short sentences
+address: du
+ai_label:
+  de: KI-generiert
+  en: AI-generated

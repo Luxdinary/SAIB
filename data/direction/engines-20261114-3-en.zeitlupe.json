@@ -1,0 +1,382 @@
+{
+ "video_id": "engines-20261114-3-en",
+ "brand_id": "engines",
+ "language": "en",
+ "title": "How to read a p-V diagram",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261114-3-en, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "In a pressure-volume diagram, the enclosed area is the work of one cycle. How to read it, using the ideal Otto cycle.",
+  "companion_text": "Ideal Otto cycle, schematic (compression ratio 10 : 1 as an example). Slow-motion factor and milliseconds refer to the example speed of 3000 rpm.",
+  "hashtags": [
+   "enginetech",
+   "thermodynamics",
+   "ottocycle",
+   "diagram",
+   "howto"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "NASA Glenn, Otto cycle",
+   "title": "NASA Glenn, Otto-Prozess (N2)",
+   "url": "https://www.grc.nasa.gov/www/k-12/airplane/otto.html",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "MIT 2.61, lecture 3",
+   "title": "MIT 2.61, Vorlesung 3 (L3)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e9421a34d0cd5c5fc4fc81365975503e_MIT2_61S17_lec3.pdf",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Here is how to read it.",
+   "on_screen": "Work is an area",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Where is an engine's work?",
+   "on_screen": "How to read a p-V diagram",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "How to read a p-V diagram",
+   "on_screen": "How to read a p-V diagram",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "How to read a p-V diagram",
+   "on_screen": "How to read a p-V diagram",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "How to read a p-V diagram",
+   "on_screen": "How to read a p-V diagram",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "The work of an engine is an area. You just have to look for it in the right diagram. Here is how to read it.",
+   "data": {
+    "claim": "Work is an area",
+    "claim_lines": [
+     "Work is",
+     "an area"
+    ],
+    "claim_highlight": "area",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "NASA Glenn, Otto cycle · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_chart",
+   "spoken": "In a p-V diagram, pressure in the cylinder goes up the side and volume goes along the bottom. Each stroke draws a line. During compression the volume shrinks and the pressure rises. On the far left is top dead centre with the smallest volume, on the far right bottom dead centre.",
+   "data": {
+    "title": "Pressure over volume",
+    "kind": "pv",
+    "series_at": [
+     "w:compression"
+    ],
+    "series_only": [
+     0
+    ],
+    "legend": true,
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Otto cycle · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Then combustion. In NASA's ideal Otto cycle it happens very fast, at constant volume: the pressure jumps straight up. After that the gas expands and pushes the piston down. The NASA model assumes no friction and no heat loss, an ideal case.",
+   "data": {
+    "title": "Same space, more pressure",
+    "labels": [
+     {
+      "key": "plug",
+      "side": "l",
+      "y": 640
+     },
+     "chamber"
+    ],
+    "labels_at": [
+     "w:combustion",
+     "w:volume"
+    ],
+    "notes": [
+     {
+      "text": "pressure jumps",
+      "at": "w:jumps",
+      "side": "l",
+      "y": 880,
+      "color": "fire",
+      "to": [
+       540,
+       560
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      300
+     ],
+     [
+      1,
+      500
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Otto cycle · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_chart",
+   "spoken": "Together they form a closed loop. The enclosed area is the work of one cycle, as NASA puts it. Multiply by the cycles per second and you get power. A bigger loop means more work per cycle.",
+   "data": {
+    "title": "Area = work",
+    "kind": "pv",
+    "series_at": [
+     0.0,
+     0.08,
+     0.16,
+     0.24
+    ],
+    "area_at": "w:area",
+    "draw_seconds": 0.8,
+    "fade_in": false,
+    "fade_out": false,
+    "source": "NASA Glenn, Otto cycle · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_readout",
+   "spoken": "The engineering lecture does the sums: compression costs only about a sixth of what expansion gives back. That is why so much work is left over at the end. Compression is the investment, expansion is the return.",
+   "data": {
+    "title": "Compression versus expansion",
+    "figure": "bars",
+    "bar_max": 6.5,
+    "lines_y": 1000,
+    "bars": [
+     {
+      "label": "expansion",
+      "value": 6,
+      "text": "6 parts",
+      "at": "w:expansion"
+     },
+     {
+      "label": "compression",
+      "value": 1,
+      "text": "1 part",
+      "at": "w:sixth"
+     }
+    ],
+    "lines": [
+     {
+      "text": "compression ≈ ⅙ of expansion",
+      "hl": "⅙",
+      "at": "w:left"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, lecture 3 · retrieved 2026-11-01"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Compress, burn, expand: the area is the work. Understand engines: follow Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Understand",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Understand",
+    "rows": [
+     {
+      "text": "area",
+      "at": "w:area"
+     },
+     {
+      "text": "= work",
+      "at": "w:work"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Understand engines",
+     "hl": "REVLORE",
+     "at": "w:Understand"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

@@ -1,0 +1,582 @@
+{
+  "video_id": "military_history-20261111-1-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Neuf-Brisach: Vauban's Octagon Town Drawn from Scratch",
+  "notes": "Woche 1, Reihe Gebaut für den Ernstfall. Bauwerk und Planung; Belagerungen 1870 und 1945 bewusst weggelassen, Bastionen nur als Bauform.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://whc.unesco.org/en/list/1283/",
+      "title": "Fortifications of Vauban, UNESCO World Heritage Centre",
+      "label": "UNESCO: Vauban",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://sites-vauban.org/en/node/7805",
+      "title": "Neuf-Brisach, Réseau des sites majeurs de Vauban",
+      "label": "Réseau Vauban",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://sites-vauban.org/sites/default/files/sites-vauban/Neuf-Brisach.pdf",
+      "title": "Inventaire des sites fortifiés par Vauban – Neuf-Brisach, Réseau Vauban 2015",
+      "label": "Inventaire Vauban 2015",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Bauzeit: Inventar 1698–1703, Website Steinbauten Ende 1700 fertig; im Video nur Baubeginn 1698 und Steinbau ab 1699.",
+    "Ein oder zwei Kanäle (Website: zwei, Inventar: Kanal von Rouffach); im Video nur der Kanal von Rouffach."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "How do you plan a whole fortress town on an empty plain, block by block?",
+      "on_screen": "A town from the drawing board?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Fortresses grew over centuries? Neuf-Brisach was built to a single plan.",
+      "on_screen": "Grown or planned?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Vauban drew three designs, and the king chose the most expensive one.",
+      "on_screen": "Three designs, the priciest wins",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Without Breisach, the Rhine crossing lay open.",
+      "on_screen": "A river without cover",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch an octagon turn into a town plan.",
+      "on_screen": "From octagon to town",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S3"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "How do you plan a whole fortress town on an empty plain, block by block?",
+      "data": {
+        "question": "A fortress town from the drawing board?",
+        "question_em": "drawing board",
+        "card_title": "Neuf-Brisach",
+        "card_meta": "ALSACE · FROM 1698",
+        "card_no": "FILE 11",
+        "stamp": "1698",
+        "drawing": "neuf_brisach_plan.svg",
+        "packet_label": "Plan",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:plain",
+        "packet_at": "w:block",
+        "em_at": "w:fortress"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "In 1697 France must return Breisach, leaving the river crossing unprotected. Vauban draws three designs, and the king picks the largest and most expensive.",
+      "data": {
+        "mode": "map",
+        "headline": "A crossing left open",
+        "places": [
+          {
+            "label": "Breisach",
+            "code": "returned 1697",
+            "x": 600,
+            "y": 80,
+            "at": "w:Breisach"
+          },
+          {
+            "label": "Neuf-Brisach",
+            "code": "newly planned",
+            "x": 190,
+            "y": 500,
+            "rx": 175,
+            "ry": 95,
+            "at": "w:Vauban"
+          }
+        ],
+        "route_at": "w:river",
+        "route_label": "Rhine unprotected",
+        "route_label_at": "w:unprotected",
+        "wait_at": "w:three",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "3 designs · the priciest",
+        "chip_at": "w:expensive",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Plan",
+        "packet_at": "w:king",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "new fortress",
+        "line_label_at": "w:largest",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:eight",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "The plan is an octagon with a double ring of walls. Eight demi-lunes lie in front, and four gates lead inside, named after Belfort, Colmar, Strasbourg and Basel.",
+      "data": {
+        "headline": "An octagon, ringed twice",
+        "drawing": "neuf_brisach_plan.svg",
+        "sheet_title": "SHEET 2 · GROUND PLAN",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Double ring of walls",
+            "x": 425,
+            "y": 230,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:double"
+          },
+          {
+            "label": "8 demi-lunes",
+            "x": 440,
+            "y": 310,
+            "lx": 500,
+            "ly": 200,
+            "at": "w:demi"
+          },
+          {
+            "label": "4 gates",
+            "x": 380,
+            "y": 460,
+            "lx": 500,
+            "ly": 330,
+            "at": "w:gates"
+          },
+          {
+            "label": "Gate names: Belfort etc.",
+            "x": 230,
+            "y": 95,
+            "lx": 500,
+            "ly": 430,
+            "at": "w:Belfort"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 310,
+          "scale": 1.12,
+          "at": "w:Eight",
+          "back_at": "w:Belfort",
+          "grow": "up"
+        },
+        "headline_lines": 2,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "Inside, a grid: 48 blocks of ten plots around an empty parade ground, planned for 340 houses and 3500 residents, with four wells at the corners.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Walls outside, grid inside",
+        "left": {
+          "tag": "Outside",
+          "title": "The ring",
+          "at": "w:Inside",
+          "rows": [
+            "octagon, doubled",
+            "8 demi-lunes, 4 gates"
+          ]
+        },
+        "right": {
+          "tag": "Inside",
+          "title": "The grid",
+          "at": "w:48",
+          "rows": [
+            {
+              "text": "48 blocks of 10 plots",
+              "at": "w:plots"
+            },
+            {
+              "text": "340 houses, 3,500 residents",
+              "at": "w:340"
+            },
+            {
+              "text": "4 wells on the square",
+              "at": "w:wells"
+            }
+          ]
+        },
+        "dim_left_at": "w:plots",
+        "verdict": "A town cast in one piece",
+        "verdict_at": "w:corners",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "Earthworks begin in 1698. Sandstone comes from the Vosges, some 30 kilometres away, along the specially dug Rouffach canal. From 1699 the stone walls rise.",
+      "data": {
+        "headline": "How the stone arrived",
+        "nodes": [
+          {
+            "label": "Earthworks",
+            "code": "1698",
+            "at": "w:Earthworks"
+          },
+          {
+            "label": "Vosges",
+            "code": "sandstone",
+            "at": "w:Vosges"
+          },
+          {
+            "label": "Rouffach canal",
+            "code": "dug",
+            "at": "w:Rouffach"
+          },
+          {
+            "label": "Stone walls",
+            "code": "from 1699",
+            "at": "w:1699"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Stone",
+        "count": {
+          "to": 3,
+          "label": "DESIGNS",
+          "at": 0.1,
+          "until": "w:sandstone"
+        },
+        "total": {
+          "to": 30,
+          "pre": "c.",
+          "label": "KM AWAY",
+          "at": "w:kilometres"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "In short: 1697 the reason, 1698 the start, and since 2008 World Heritage, with eleven other Vauban sites.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1697 to 2008",
+        "items": [
+          {
+            "year": "1697",
+            "title": "Breisach handed back",
+            "sub": "Rhine crossing unprotected",
+            "at": "w:1697"
+          },
+          {
+            "year": "1698",
+            "title": "Building starts",
+            "sub": "earthworks, then stone",
+            "at": "w:1698"
+          },
+          {
+            "year": "2008",
+            "title": "UNESCO World Heritage",
+            "sub": "with 11 other site groups",
+            "at": "w:2008",
+            "sub_at": "w:eleven"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "The walls still stand complete and are now a walking path. In the Belfort gate, a museum shows a model of the town at a scale of 1 to 600. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Neuf-Brisach",
+        "card_meta": "TODAY",
+        "card_no": "FILE 11",
+        "stamp": "1:600",
+        "drawing": "neuf_brisach_plan.svg",
+        "statement": "The ring still stands: now a walking path",
+        "statement_at": "w:walking",
+        "sign": "Porte de Belfort",
+        "sign_at": "w:gate",
+        "stamp_at": "w:scale",
+        "note": "Relief model, copy in the Musée Vauban",
+        "note_at": "w:model",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Plan",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Plan: blank sheet",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Design: 3 options",
+          "tone": "amber",
+          "offset": 6.6
+        },
+        {
+          "beat": "b3",
+          "text": "Ring: octagon",
+          "tone": "amber",
+          "offset": 2.2
+        },
+        {
+          "beat": "b4",
+          "text": "Grid: 48 blocks",
+          "tone": "amber",
+          "offset": 1.7
+        },
+        {
+          "beat": "b5",
+          "text": "Building: from 1698",
+          "tone": "amber",
+          "offset": 1.7
+        },
+        {
+          "beat": "b6",
+          "text": "World Heritage: 2008",
+          "tone": "muted",
+          "offset": 5.1
+        },
+        {
+          "beat": "b7",
+          "text": "Ring: intact",
+          "tone": "muted",
+          "offset": 0.7
+        }
+      ]
+    },
+    "description": "How do you plan a whole fortress town? Vauban's Neuf-Brisach: an octagon, a double ring of walls, 48 blocks on a grid. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "fortification",
+      "vauban",
+      "history",
+      "townplanning",
+      "worldheritage"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

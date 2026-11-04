@@ -1,0 +1,5 @@
+{
+  ".claude/hooks/format.js": "// Small sample formatter for the video (not Prettier):\n// turns double quotes into single quotes and adds a header line.\nconst fs = require(\"fs\");\nlet d = \"\";\nprocess.stdin.on(\"data\", c => d += c).on(\"end\", () => {\n  const p = (JSON.parse(d).tool_input || {}).file_path || \"\";\n  if (!p.endsWith(\".js\")) process.exit(0);\n  let s = fs.readFileSync(p, \"utf8\").replace(/\"/g, \"'\");\n  if (!s.startsWith(\"// formatted\")) s = \"// formatted with format.js\\n\" + s;\n  fs.writeFileSync(p, s);\n});\n",
+  ".claude/settings.json": "{\n  \"hooks\": {\n    \"PostToolUse\": [\n      {\n        \"matcher\": \"Edit|Write\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"node \\\"$CLAUDE_PROJECT_DIR/.claude/hooks/format.js\\\"\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+  "app.js": "function greet(name) {\n  return \"Hello \" + name;\n}\n\nmodule.exports = { greet };\n"
+}

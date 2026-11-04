@@ -1,0 +1,144 @@
+{
+  "spec": "kunden-dubletten",
+  "runs": {
+    "L1": {
+      "title": "Vager Auftrag",
+      "prompt": "Entferne doppelte Kunden aus kunden.csv und speichere das Ergebnis als bereinigt.csv. Wie viele Kunden bleiben übrig?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 21.681,
+      "lines": [
+        {
+          "t": 7.487,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 9.033,
+          "kind": "tool",
+          "id": "toolu_01T1yhVXSEmp6oVcQx2SHxtd",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 9.097,
+          "kind": "result",
+          "id": "toolu_01T1yhVXSEmp6oVcQx2SHxtd",
+          "text": "1\tName;E-Mail;Ort\n2\tGasthaus Brunner;tisch@gasthaus-brunner.at;Bad Ischl\n3\tGruber & Söhne;Office@Gruber.at;Steyr\n… (39 weitere Zeilen)"
+        },
+        {
+          "t": 14.504,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 16.919,
+          "kind": "tool",
+          "id": "toolu_019YL9w2AKSVNMPv683WQDG4",
+          "text": "Write: .\\bereinigt.csv"
+        },
+        {
+          "t": 16.994,
+          "kind": "result",
+          "id": "toolu_019YL9w2AKSVNMPv683WQDG4",
+          "text": "File created successfully at: .\\bereinigt.csv (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 18.315,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 20.957,
+          "kind": "text",
+          "text": "Es bleiben **31 Kunden** übrig. Das Ergebnis liegt in `bereinigt.csv` im selben Ordner wie `kunden.csv`, mit derselben Kopfzeile und dem Trennzeichen `;`.\n\nIch habe 9 Zeilen entfernt. Als Duplikat gilt ein Eintrag, dessen E-Mail-Adresse (ohne Groß-/Kleinschreibung und Leerzeichen) schon vorher vorkam. Der erste Eintrag bleibt erhalten:\n\n| Entfernte Zeile | Duplikat von Zeile | Kunde |\n|---|---|---|\n| 6 | 3 | Gruber & Söhne (nur Groß-/Kleinschreibung der E-Mail unterscheidet sich) |\n| 17 | 2 | Gasthaus Brunner |\n| 20 | 12 | Pichler Elektro |\n| 26 | 9 | Café Lindner |\n| 27 | 14 | Bauer IT |\n| 31 | 15 | Bäckerei Huber |\n| 32 | 10 | Mueller GmbH (Schreibweise ohne Umlaut, gleiche E-Mail und Ort) |\n| 33 | 23 | Anna Berger (E-Mail hatte ein Leerzeichen am Ende) |\n| 34 | 19 | Pfeiffer Autohaus |\n\nZwei Entscheidungen, die du prüfen solltest:\n- **Mueller GmbH (Zeile 32)** habe ich über die gleiche E-Mail-Adresse und den gleichen Ort als Dublette gewertet, obwohl der Name anders geschrieben ist. Falls das zwei verschiedene Kunden sind, fehlt Zeile 32 in der Bereinigung.\n- **Gleicher Name, andere E-Mail** habe ich nicht gefunden. Ich habe also keine Zeile nur wegen eines gleichen Namens entfernt."
+        },
+        {
+          "t": 21.01,
+          "kind": "end",
+          "text": "Ende nach 21.0 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 13624,
+        "num_turns": 3,
+        "total_cost_usd": 0.0029183699999999996,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Genauer Auftrag",
+      "prompt": "Entferne doppelte Kunden aus kunden.csv und speichere das Ergebnis als bereinigt.csv. Zwei Zeilen sind derselbe Kunde, wenn die E-Mail gleich ist, ohne Unterschied zwischen Groß- und Kleinschreibung und ohne Leerzeichen am Rand. Wie viele Kunden bleiben übrig?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 15.662,
+      "lines": [
+        {
+          "t": 5.006,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 5.935,
+          "kind": "tool",
+          "id": "toolu_012Jt4rBFBZ2m7bMNVtixoKv",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 6.0,
+          "kind": "result",
+          "id": "toolu_012Jt4rBFBZ2m7bMNVtixoKv",
+          "text": "1\tName;E-Mail;Ort\n2\tGasthaus Brunner;tisch@gasthaus-brunner.at;Bad Ischl\n3\tGruber & Söhne;Office@Gruber.at;Steyr\n… (39 weitere Zeilen)"
+        },
+        {
+          "t": 9.907,
+          "kind": "think",
+          "text": "denkt nach (Inhalt ausgeblendet)"
+        },
+        {
+          "t": 12.309,
+          "kind": "tool",
+          "id": "toolu_01CxsEYQna9g8LxZ9Nsar9RP",
+          "text": "Write: .\\bereinigt.csv"
+        },
+        {
+          "t": 12.33,
+          "kind": "result",
+          "id": "toolu_01CxsEYQna9g8LxZ9Nsar9RP",
+          "text": "File created successfully at: .\\bereinigt.csv (file state is current in your context — no need to Read it back)"
+        },
+        {
+          "t": 15.097,
+          "kind": "text",
+          "text": "Es bleiben **31 Kunden** übrig. Das Ergebnis liegt in `.\\bereinigt.csv`.\n\nAus den 40 Datenzeilen habe ich 9 Dubletten entfernt. Als Vergleich dient die E-Mail, kleingeschrieben und ohne Leerzeichen am Rand. Behalten habe ich jeweils das erste Vorkommen:\n\n| Entfernte Zeile | Kunde | Dublette von Zeile |\n|---|---|---|\n| 6 | Gruber & Söhne | 3 |\n| 17 | Gasthaus Brunner | 2 |\n| 20 | Pichler Elektro | 12 |\n| 26 | Café Lindner | 9 |\n| 27 | Bauer IT | 14 |\n| 31 | Bäckerei Huber | 15 |\n| 32 | Mueller GmbH | 10 |\n| 33 | Anna Berger | 23 |\n| 34 | Pfeiffer Autohaus | 19 |\n\nDie Kopfzeile `Name;E-Mail;Ort` ist erhalten. Die Spalten und Zeichen (Umlaute, `&`) habe ich unverändert übernommen. Ich habe die Datei nicht mit einem Skript erzeugt, sondern von Hand geschrieben. Ich habe die Zeilen aber einzeln gegen die Originalliste geprüft."
+        },
+        {
+          "t": 15.108,
+          "kind": "end",
+          "text": "Ende nach 15.1 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read",
+          "Write"
+        ],
+        "permission_mode": "acceptEdits",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 10137,
+        "num_turns": 3,
+        "total_cost_usd": 0.00224108,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

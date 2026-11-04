@@ -1,0 +1,621 @@
+{
+ "video_id": "menswear-20261109-2-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Revers: fallend, steigend oder Schal",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema B01 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S4; 'meist' statt 'immer', keine Herkunft der Reversformen.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Revers",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Revers: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "fallend oder steigend",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Einreiher: fallend",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "Smoking: zwei Formen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "auch am Einreiher",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "drei Formen",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "Schal: Dinnerjacket",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Fallend, steigend oder Schal: was die Reversform über ein Sakko sagt. Nach Moss, Anderson & Sheppard, Debrett's und Woolmark, mit dem Blick aufs Dinnerjacket.",
+  "companion_text": "Folge Suitwerk für Herrenstil mit Blick fürs Detail. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "revers",
+   "sakko",
+   "smoking",
+   "stilregeln"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://moss.co.uk/inside-pocket/post/everything-you-need-to-know-about-lapels",
+   "title": "Moss, Everything you need to know about lapels: die meisten Einreiher und Blazer haben fallendes Revers, Schalkragen meist nur am Dinnerjacket, steigendes Revers ist die angezogenere Variante",
+   "checked_at": "2026-11-01",
+   "label": "Moss, Inside Pocket"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.anderson-sheppard.co.uk/thenotebook/linen-checked-jacket-with-peak-lapel/",
+   "title": "Anderson & Sheppard, Linen checked jacket with peak lapel: steigendes Revers meist am Zweireiher, im Vergleich zum fallenden recht formell",
+   "checked_at": "2026-11-01",
+   "label": "Anderson & Sheppard"
+  },
+  {
+   "id": "S3",
+   "url": "https://debretts.com/deconstructing-dress-codes/",
+   "title": "Debrett's, Deconstructing Dress Codes: Dinnerjacket mit seidenbelegtem steigendem Revers oder Schalkragen, ein- oder zweireihig",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.woolmark.com/ko/z.archive/archive-industry/suiting/black-tie-dress-code-explained/",
+   "title": "Woolmark, Black tie dress code explained: steigendes Revers ist der formellste Stil, ein- wie zweireihig; Schalkragen als feine Variante",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Black Tie"
+  }
+ ],
+ "unverified": [
+  "Herkunft der Reversformen: nicht belegt, nicht im Video.",
+  "Kariertes Leinensakko mit steigendem Revers: nur gesprochen (S2), keine eigene Zeichnung."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Fallend, steigend oder Schal?",
+   "on_screen": "Fallend, steigend oder Schal?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Steigendes Revers? Nicht nur am Zweireiher.",
+   "on_screen": "Steigendes Revers? Nicht nur am Zweireiher.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S4"
+   ],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Den Schalkragen siehst du meist nur am Smoking",
+   "on_screen": "Den Schalkragen siehst du meist nur am Smoking",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Schal am Tagesanzug? Moss kennt ihn vom Dinnerjacket.",
+   "on_screen": "Schal am Tagesanzug? Moss kennt ihn vom Dinnerjacket.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Eine Kerbe am Kragen, und das Sakko wirkt anders",
+   "on_screen": "Eine Kerbe am Kragen, und das Sakko wirkt anders",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die drei Namen als Frage, die Lupe zeigt die Kerbe."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Drei Reversformen, und jede sagt etwas anderes über dein Sakko. Fallend, steigend oder Schal: Woran erkennst du, wofür sie stehen?",
+   "data": {
+    "question": "Fallend, steigend oder Schal?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "lapel": "notch"
+    },
+    "target": "notch",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Fallend",
+    "loupe_at": "w:Fallend",
+    "nie_at": "w:Woran",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Zwei Sakkos, gleicher Schnitt, nur das Revers ist anders. Links hat es eine Kerbe am Kragen, das ist fallend. Rechts zeigen die Spitzen nach oben, das ist steigend. Laut Moss ist das steigende Revers die angezogenere Variante.",
+   "data": {
+    "headline": "Kerbe oder Spitze?",
+    "left": {
+     "title": "Fallend",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "lapel": "notch"
+     },
+     "target": "notch",
+     "tag": "Kerbe am Kragen",
+     "pulses": [
+      {
+       "target": "notch",
+       "at": "w:fallend"
+      }
+     ]
+    },
+    "right": {
+     "title": "Steigend",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak"
+     },
+     "tag": "die angezogenere Variante",
+     "pulses": [
+      {
+       "target": "notch",
+       "at": "w:Spitzen"
+      }
+     ]
+    },
+    "left_at": "w:Links",
+    "left_tag_at": "w:Kerbe",
+    "right_at": "w:Rechts",
+    "right_tag_at": "w:Moss",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Moss"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "Wo sitzt welches Revers? Laut Moss haben die meisten Einreiher und Blazer ein fallendes Revers. Das steigende findet sich laut Anderson and Sheppard meist am Zweireiher und gilt im Vergleich als recht formell.",
+   "data": {
+    "headline": "Wo sitzt welches?",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "notch"
+      },
+      "at": 0.0,
+      "title": "Einreiher",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "fallend",
+        "sub": "Einreiher, Blazer",
+        "tone": "always",
+        "at": "w:Einreiher"
+       },
+       {
+        "spot": "lapel_r",
+        "text": "der Normalfall",
+        "sub": "laut Moss",
+        "tone": "always",
+        "at": "w:fallendes"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak"
+      },
+      "at": "w:steigende",
+      "title": "Zweireiher",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "steigend",
+        "sub": "meist am Zweireiher",
+        "tone": "always",
+        "at": "w:Zweireiher"
+       },
+       {
+        "spot": "lapel_r",
+        "text": "recht formell",
+        "sub": "Anderson & Sheppard",
+        "tone": "always",
+        "at": "w:formell"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Moss"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "Beim Dinnerjacket wird die Auswahl kleiner. Debrett's nennt seidenbelegtes steigendes Revers oder Schalkragen, ein- oder zweireihig. Den Schalkragen sieht man laut Moss normalerweise nur dort.",
+   "data": {
+    "headline": "Und am Smoking?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "shawl",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "target": "lapel",
+    "zoom": 1.4,
+    "label": "Schal: meist am Dinnerjacket",
+    "hold_end": true,
+    "pointer_at": "w:Dinnerjacket",
+    "zoom_at": "w:Debrett",
+    "flip_at": "w:Schalkragen",
+    "label_at": "w:Moss"
+   },
+   "source_ids": [
+    "S3",
+    "S1"
+   ],
+   "overlay": {
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Meist heißt aber nicht immer. Woolmark nennt das steigende Revers beim Smoking den formellsten Stil, einreihig wie zweireihig. Anderson and Sheppard zeigt es sogar an einem karierten Leinensakko. Steigend heißt also nicht automatisch Zweireiher.",
+   "data": {
+    "headline": "Nur am Zweireiher?",
+    "left": {
+     "title": "Einreihig",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak",
+      "dinner": true,
+      "neck": "bow",
+      "strain": false
+     },
+     "target": "notch",
+     "tag": "formellster Stil",
+     "pulses": [
+      {
+       "target": "notch",
+       "at": "w:formellsten"
+      }
+     ]
+    },
+    "right": {
+     "title": "Zweireihig",
+     "object": {
+      "kind": "jacket",
+      "variant": "db6",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak",
+      "dinner": true,
+      "neck": "bow",
+      "strain": false
+     },
+     "tag": "nicht nur hier",
+     "pulses": [
+      {
+       "target": "notch",
+       "at": "w:Anderson"
+      }
+     ]
+    },
+    "left_at": "w:Meist",
+    "left_tag_at": "w:einreihig",
+    "right_at": "w:zweireihig",
+    "right_tag_at": "w:automatisch",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S4",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Woolmark"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "Kurz gesagt: Fallend ist der Normalfall an Einreihern und Blazern. Steigend wirkt formeller und sitzt meist am Zweireiher. Und den Schalkragen siehst du meist nur am Dinnerjacket.",
+   "data": {
+    "headline": "Kurz gesagt",
+    "items": [
+     {
+      "title": "Fallend: Normalfall",
+      "sub": "Einreiher und Blazer, laut Moss",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "notch"
+      },
+      "at": "w:Fallend",
+      "ring": "notch",
+      "ring_at": "w:Normalfall"
+     },
+     {
+      "title": "Steigend: formeller",
+      "sub": "meist am Zweireiher",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak"
+      },
+      "at": "w:Steigend",
+      "then": {
+       "variant": "db6"
+      },
+      "then_at": "w:Zweireiher"
+     },
+     {
+      "title": "Schal: Dinnerjacket",
+      "sub": "dort mit Seide belegt",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "shawl"
+      },
+      "at": "w:Schalkragen",
+      "then": {
+       "variant": "sb1",
+       "dinner": true,
+       "neck": "bow"
+      },
+      "then_at": "w:Dinnerjacket"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:gesagt"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Fallend als Normalfall, steigend formeller, Schal fürs Dinnerjacket. Mehr Blick fürs Detail: Folge Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "lapel": "shawl"
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "shawl",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "lapel",
+    "fix_at": "w:Schal",
+    "ring_at": "w:Dinnerjacket",
+    "statement_at": "w:Dinnerjacket",
+    "chip_at": "w:Blick",
+    "statement": "Schal: Black Tie.",
+    "chip": "Suitwerk · Blick fürs Detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

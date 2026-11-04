@@ -1,0 +1,259 @@
+{
+ "video_id": "yt-probe-01-de",
+ "slug": "01-ai-rules-start",
+ "lang": "de",
+ "title": "Ihre Belegschaft nutzt schon KI. Womit die Regeln anfangen.",
+ "note": "Probe-Render 02.11.2026: Kaltstart (neuer Entwurf, nur Situation) und Kapitel 1 mit dem freigegebenen Wortlaut aus SKRIPTE/01-ai-rules-start.de.md (Fassung 2), Abschnitte 1 und 2.",
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Richtlinie (EU) 2016/943, Art. 2 Abs. 1 Buchst. a bis c · EUR-Lex · Abruf 2026-10-18; § 26b Abs. 1 Z 3 UWG · ris.bka.gv.at; § 2 Nr. 1 Buchst. b GeschGehG · gesetze-im-internet.de · Abruf 2026-10-23",
+   "short": "RL (EU) 2016/943 Art. 2 · § 26b UWG · § 2 GeschGehG · Abruf 18./23.10.2026"
+  },
+  {
+   "id": "S2",
+   "label": "Datenschutzkonferenz, Orientierungshilfe Künstliche Intelligenz und Datenschutz, Version 1.0 vom 6. Mai 2024, Abschnitte 2.2, 2.4 und 3.1 · datenschutzkonferenz-online.de · Abruf 2026-10-18",
+   "short": "DSK, OH KI und Datenschutz 2024, Abschn. 2.2, 2.4, 3.1 · Abruf 18.10.2026"
+  }
+ ],
+ "chapters": [
+  {
+   "id": "c0",
+   "num": "",
+   "title": "Nutzt Ihre Belegschaft schon KI?",
+   "kicker": "SCUTORIA · KI-REGELN",
+   "card": false,
+   "scenes": [
+    {
+     "type": "case",
+     "bg": "yt/probe_office.start.png",
+     "data": {
+      "kicker": "Beispielfall · nachgestellt",
+      "time": "DI 09:12",
+      "place": "Büro, Muster Elektrotechnik e.U. (erfunden)",
+      "obj": {
+       "label": "Textassistent · Neuer Chat",
+       "from": "Eingabe",
+       "subject": "Angebot Wohnanlage Nord",
+       "lines": [
+        "Schreib mir ein Angebot für die Elektro-",
+        "installation, 24 Wohnungen, Kunde:",
+        "Hausverwaltung Beispiel GmbH, Ansprech-",
+        "partnerin und Preise aus der Mail unten."
+       ]
+      },
+      "obj_at": "@Textassistenten",
+      "highlight": {
+       "line": 2,
+       "label": "Kundendaten",
+       "at": "@entschieden"
+      }
+     },
+     "say": [
+      {
+       "text": "Dienstag, neun Uhr zwölf, in einem kleinen Elektrobetrieb. Jemand im Büro öffnet einen Textassistenten, um ein Angebot zu entwerfen, und fügt die Mail des Kunden gleich mit ein. Es funktioniert. Entschieden hat das niemand."
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "data": {
+      "kicker": "Die Frage dieses Videos",
+      "text": "Nutzt Ihre Belegschaft schon *KI-Tools*, ohne dass der Betrieb etwas entschieden hat?",
+      "sub": "Welcher Schritt zuerst kommt, und was eine Richtlinie leistet und was nicht.",
+      "sub_at": "@Dieses"
+     },
+     "say": [
+      {
+       "text": "Nutzt Ihre Belegschaft schon KI-Tools, ohne dass der Betrieb etwas entschieden hat?"
+      },
+      {
+       "text": "Dieses Video zeigt, welcher Schritt zuerst kommt und was eine Richtlinie leistet und was nicht."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "num": "1",
+   "title": "Die Lage im kleinen Betrieb",
+   "kicker": "1 · Die Lage",
+   "scenes": [
+    {
+     "type": "statement",
+     "bg": "yt/probe_workshop.start.png",
+     "data": {
+      "kicker": "Eine typische Lage",
+      "text": "Es funktioniert, also macht es die nächste Person auch. *Entschieden* hat das niemand.",
+      "sub": "Ein Betrieb ohne IT-Abteilung, irgendwo in der EU.",
+      "sub_at": "@Betrieb"
+     },
+     "say": [
+      {
+       "text": "Nehmen Sie eine typische Lage. Ein Betrieb ohne IT-Abteilung, irgendwo in der EU. Jemand im Büro öffnet einen Textassistenten, um ein Angebot zu entwerfen. Es funktioniert, also macht die nächste Person es auch. Entschieden hat das niemand."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Drei Antworten auf eine Frage",
+      "note": "Um die *mittlere* geht es in diesem Video.",
+      "note_at": "@mittlere",
+      "doc": {
+       "label": "Start-Memo · scutoria.com",
+       "title": "Nutzt Ihre Belegschaft heute KI-Tools bei der Arbeit?",
+       "lines": [
+        {
+         "text": "Ja, mit betrieblichen Konten, die der Betrieb eingerichtet hat",
+         "at": "@betrieblichen"
+        },
+        {
+         "text": "Ja, mit privaten Konten, oder wir wissen es nicht",
+         "at": "@privaten",
+         "mark": "open",
+         "mark_at": "@mittlere"
+        },
+        {
+         "text": "Nein, soweit wir wissen",
+         "at": "@Nein"
+        },
+        {
+         "text": "Schriftliche Regeln: ein paar Sätze oder eine E-Mail",
+         "at": "@Schriftliche",
+         "mark": "open"
+        },
+        {
+         "text": "Einweisung: informell, ohne Nachweis",
+         "at": "@Einweisung",
+         "mark": "open"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Das freie Start-Memo fragt, ob Ihre Belegschaft heute KI-Tools bei der Arbeit nutzt, und bietet drei Antworten an. Ja, mit betrieblichen Konten, die der Betrieb eingerichtet hat. Ja, mit privaten Konten, oder wir wissen es nicht. Nein, soweit wir wissen. Um die mittlere Antwort geht es in diesem Video. Schriftliche Regeln: ein paar Sätze oder eine E-Mail. Einweisung: informell, ohne Nachweis."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "data": {
+      "headline": "Daraus folgen drei Dinge",
+      "items": [
+       {
+        "title": "Entschieden wird an der Tastatur",
+        "sub": "nicht vom Betrieb",
+        "at": "@hineinkommt"
+       },
+       {
+        "title": "Niemand kann sagen, was die Regel war",
+        "sub": "wenn etwas schiefgeht",
+        "at": "@schiefgeht"
+       },
+       {
+        "title": "Es gibt nichts zu zeigen",
+        "sub": "Kunde, Versicherer, Belegschaft fragen",
+        "at": "@Kunde"
+       }
+      ]
+     },
+     "say": [
+      {
+       "text": "Daraus folgen drei Dinge. Was in die Tools hineinkommt, wird an der Tastatur entschieden, nicht vom Betrieb. Wenn etwas schiefgeht, kann niemand sagen, was die Regel war. Und wenn ein Kunde, ein Versicherer oder die eigene Belegschaft fragt, was geregelt ist, gibt es nichts zu zeigen."
+      }
+     ]
+    },
+    {
+     "type": "paper",
+     "data": {
+      "headline": "Wann ist etwas ein *Geschäftsgeheimnis*?",
+      "doc": {
+       "label": "Richtlinie (EU) 2016/943 · Art. 2",
+       "title": "Drei Bedingungen",
+       "lines": [
+        {
+         "text": "a  geheim, nicht allgemein bekannt",
+         "at": "@drei"
+        },
+        {
+         "text": "b  von kommerziellem Wert, weil geheim",
+         "at": "@Bedingungen"
+        },
+        {
+         "text": "c  Gegenstand angemessener Geheimhaltungsmaßnahmen",
+         "at": "@dritte",
+         "mark": "hl",
+         "mark_at": "@angemessener"
+        },
+        {
+         "text": "Österreich: § 26b UWG · Deutschland: § 2 GeschGehG",
+         "at": "@Österreich"
+        }
+       ]
+      }
+     },
+     "say": [
+      {
+       "text": "Ein Grund, warum das zählt, ist das Geschäftsgeheimnis. Nach der Geschäftsgeheimnis-Richtlinie ist eine Information nur dann ein Geschäftsgeheimnis, wenn sie drei Bedingungen erfüllt, und die dritte lautet: Sie war Gegenstand angemessener Geheimhaltungsmaßnahmen. Österreich und Deutschland haben dieselbe Voraussetzung in ihrem nationalen Recht.",
+       "marker": "fakt",
+       "source": "S1"
+      }
+     ]
+    },
+    {
+     "type": "quote",
+     "data": {
+      "kind": "fakt",
+      "text": "Namen und Anschriften zu entfernen reicht regelmäßig nicht, der Personenbezug lässt sich aus dem *Zusammenhang* herstellen.",
+      "origin": "Sinngemäß nach: Datenschutzkonferenz, Orientierungshilfe KI und Datenschutz, 6. Mai 2024",
+      "verbatim": false
+     },
+     "say": [
+      {
+       "text": "Und die deutschen Datenschutzaufsichtsbehörden halten fest: Namen und Anschriften aus einer Eingabe zu entfernen, reicht regelmäßig nicht, weil sich der Personenbezug aus dem Zusammenhang herstellen lässt.",
+       "marker": "fakt",
+       "source": "S2"
+      }
+     ]
+    },
+    {
+     "type": "statement",
+     "bg": "yt/probe_office.start.png",
+     "data": {
+      "kicker": "Unsere Auslegung",
+      "text": "Ein Papier in der Schublade ist *dokumentiert*, aber nie erteilt worden.",
+      "sub": "Womit also anfangen? Nicht mit dem längsten Dokument.",
+      "sub_at": "@Womit",
+      "at": "@Papier"
+     },
+     "say": [
+      {
+       "text": "Manche Betriebe haben ein Dokument. Unsere Auslegung: Ein Papier in der Schublade ist dokumentiert, aber nie erteilt worden. Darauf kommen wir zurück.",
+       "marker": "auslegung"
+      },
+      {
+       "text": "Womit also anfangen? Nicht mit dem längsten Dokument."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "reels": [
+  {
+   "id": "r1",
+   "chapter": "c1",
+   "title": "Drei Antworten",
+   "kicker": "Aus Video 01 · KI-Regeln",
+   "scenes": [
+    "c1s0",
+    "c1s1",
+    "c1s2",
+    "c1s3"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,461 @@
+{
+ "video_id": "ai_security-20261111-2-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Mythos: Passwörter regelmäßig ändern",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema C02, Reihe Mythos-Check. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Passwort-Richtlinie. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Passwort-Richtlinie",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Regel: Wechsel nach Kalender",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Neues Passwort: ähnlich?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Folge: eher schwächer",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "NIST: kein Pflichtwechsel",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "Wechsel: bei Verdacht",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Regel: heute prüfen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Kalenderwechsel: gestrichen",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Passwortwechsel nach Kalender gilt als sicher. NIST und NCSC raten davon ab: Gewechselt wird bei Verdacht. Warum, und was stattdessen hilft.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "passwort",
+   "mythos",
+   "nist",
+   "itsicherheit",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_hook_dataroom.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: dataroom, lanes, desk, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ncsc.gov.uk/blog-post/problems-forcing-regular-password-expiry",
+   "title": "NCSC blog: The problems with forcing regular password expiry",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, Passwortwechsel"
+  },
+  {
+   "id": "S2",
+   "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+   "title": "NIST Special Publication 800-63B (Digital Identity Guidelines, Authentication), Abschnitt Passwörter",
+   "checked_at": "2026-11-01",
+   "label": "NIST SP 800-63B"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/sichere-passwoerter-erstellen_node.html",
+   "title": "BSI: Sichere Passwörter erstellen",
+   "checked_at": "2026-11-01",
+   "label": "BSI, Sichere Passwörter"
+  }
+ ],
+ "unverified": [
+  "Konkrete Wechselfristen in Firmen (z. B. 90 Tage): nicht genannt."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Regelmäßig das Passwort wechseln? Genau davon raten NIST und NCSC ab.",
+   "on_screen": "Passwort regelmäßig wechseln?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "NCSC 2015 und NIST: kein Pflichtwechsel"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Wie sieht dein neues Passwort aus, wenn du wechseln musst?",
+   "on_screen": "Und wie heißt das neue Passwort?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Schon 2015 hat das britische NCSC vom Pflichtwechsel abgeraten.",
+   "on_screen": "Seit 2015: kein Pflichtwechsel",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "NCSC Password Guidance 2015"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Erzwungene Wechsel führen oft zu Passwörtern, die man erraten kann.",
+   "on_screen": "Pflichtwechsel, leichtes Passwort?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, was aus Sommer2026 nach dem Wechsel wird.",
+   "on_screen": "Sommer2026 wird zu ...?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Regelmäßig das Passwort wechseln? Genau davon raten NIST und NCSC ab.",
+   "data": {
+    "question": "Passwort regelmäßig wechseln?",
+    "doc_label": "Erinnerung",
+    "chat_title": "Passwortregel",
+    "bot_line": "Ihr Passwort läuft ab",
+    "typed": "Neues Passwort eingeben",
+    "badge": "Sicher?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Viele Betriebe erzwingen den Passwortwechsel nach Kalender. Das britische NCSC hat schon 2015 ausdrücklich davon abgeraten. Der Grund: Wer wechseln muss, wählt oft ein neues Passwort, das dem alten ähnelt.",
+   "data": {
+    "headline": "Was der Pflichtwechsel bewirkt",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Wechsel nach Kalender",
+      "icon": "&#8635;"
+     },
+     {
+      "id": "n1",
+      "label": "Neues Passwort",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n2",
+      "label": "Ähnlich wie das alte",
+      "icon": "&#9888;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "erzwingt"
+     },
+     {
+      "label": "Ergebnis"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Leicht abzuleiten"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "Das NCSC nennt die Folgen: Angreifer können das neue Passwort oft aus dem alten ableiten. Neue Passwörter werden eher aufgeschrieben oder vergessen. Und viele wählen ein schwächeres, das sie sich merken können.",
+   "data": {
+    "headline": "Was das NCSC beobachtet",
+    "file_label": "Passwort-Richtlinie",
+    "card": {
+     "title": "Folgen des Pflichtwechsels",
+     "rows": [
+      {
+       "text": "aus dem alten ableitbar",
+       "ok": "open"
+      },
+      {
+       "text": "öfter aufgeschrieben",
+       "ok": "open"
+      },
+      {
+       "text": "eher schwächer gewählt",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "Auch das US-Normeninstitut NIST ist eindeutig. In seiner Richtlinie SP 800-63B steht: Nutzer dürfen nicht zum regelmäßigen Wechsel gezwungen werden. Gewechselt wird, wenn es Hinweise gibt, dass das Passwort kompromittiert ist.",
+   "data": {
+    "headline": "Mythos und Richtlinie",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.0,
+    "left": {
+     "title": "Mythos",
+     "rows": [
+      {
+       "text": "Wechsel nach Kalender",
+       "ok": "open"
+      },
+      {
+       "text": "gleiche Frist für alle",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "NIST SP 800-63B",
+     "rows": [
+      {
+       "text": "kein Pflichtwechsel nach Zeit",
+       "ok": null
+      },
+      {
+       "text": "Wechsel bei Kompromittierung",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "Wann also wechseln? Immer dann, wenn es Hinweise gibt, dass das Passwort in fremde Hände geraten ist. Zum Beispiel nach einem gemeldeten Datenleck oder nach einer Eingabe auf einer gefälschten Seite.",
+   "data": {
+    "headline": "Wann wechseln?",
+    "file_label": "Passwort-Richtlinie",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Kein Hinweis",
+      "sub": "Passwort bleibt",
+      "at": 0.6
+     },
+     {
+      "title": "Hinweis auf ein Leck",
+      "sub": "sofort wechseln",
+      "at": 1.0
+     }
+    ],
+    "approval": "Passwort kompromittiert?",
+    "approval_at": 6.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 13,
+   "spoken": "Dein Schritt für heute: Prüf, ob in deinem Betrieb noch eine Regel zum Wechsel nach Kalender gilt. Setze stattdessen auf lange, eigene Passwörter für jedes Konto. Das BSI sagt dazu: Je länger, desto besser.",
+   "data": {
+    "headline": "Was stattdessen hilft",
+    "items": [
+     {
+      "title": "Kalender-Regel prüfen",
+      "sub": "gilt sie noch im Betrieb?",
+      "at": 2.0
+     },
+     {
+      "title": "Lange, eigene Passwörter",
+      "sub": "je Konto ein anderes",
+      "at": 4.8
+     },
+     {
+      "title": "Wechsel bei Verdacht",
+      "sub": "statt nach Datum",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Wechseln bei Verdacht, nicht nach Kalender. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Wechsel nur bei Verdacht",
+    "file_label": "Passwort-Richtlinie",
+    "button": "Ablaufdatum",
+    "block_text": "Kein Pflichtwechsel ohne Anlass",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

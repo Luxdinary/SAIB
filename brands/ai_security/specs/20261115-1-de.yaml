@@ -1,0 +1,102 @@
+id: ai_security-20261115-1-de
+version: F2
+title: "Copilot im Firmenkonto: Was mit deinen Eingaben passiert"
+short: "Copilot im Firmenkonto"
+reihe: "Vor dem Upload"
+note: "F2 im Format \"Was tust du?\", Reihe Vor dem Upload. Beispielfall nachgestellt: Betrieb, Person, Datei, Uhrzeiten und Ablauf sind erfunden; Microsoft 365 Copilot wird genannt, weil das Thema es nennt. Zusagen (Vertragsbedingungen, Verschlüsselung, kein Training der Basismodelle) und Berechtigungsmodell aus S1 und S2, am 02.11.2026 erneut gelesen. Der alte Plan ai_security-20261115-1-de.json bleibt unverändert."
+description: "Du willst ein Kundenangebot in Copilot geben, im Firmenkonto. Lernt die KI damit? Ein nachgestellter Fall mit drei Antworten und dem, was Microsoft selbst dokumentiert, auch zu euren Freigaben."
+hashtags: [copilot, microsoft365, kiimbuero, datenschutz, vordemupload]
+sources:
+  - {id: S1, url: "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection", title: "Microsoft Learn: Enterprise data protection in Microsoft Copilot and Microsoft Copilot Chat", checked_at: "2026-11-02", label: "Microsoft, Datenschutz im Copilot"}
+  - {id: S2, url: "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy", title: "Microsoft Learn: Data, Privacy, and Security for Microsoft Copilot", checked_at: "2026-11-02", label: "Microsoft, Copilot-Datenschutz"}
+unverified:
+  - "Regeln für private Microsoft-Konten: nicht behauptet."
+  - "Lizenzdetails und Preise: nicht genannt; die konkreten Kontrollen hängen laut S1 vom Abonnement ab."
+  - "Ablauf im Beispielfall (Mia, Angebot der Beispiel GmbH, Kalkulation im Chef-Ordner, Ordner seit Jahren für alle freigegeben) ist erfunden und als Beispiel gekennzeichnet."
+  - "Dass Namen-Schwärzen (Option B) das Freigabe-Problem nicht löst, ist Scutorias Auslegung von S2 (Copilot nutzt Inhalte, auf die die Person Zugriff hat); im Bild als Auslegung markiert."
+  - "Websuche-Anfragen über Bing laufen laut S1 unter anderen Bedingungen: in dieser Fassung nicht behandelt."
+pick: demonstration
+hooks:
+  - {type: question, spoken: "Du gibst ein Kundenangebot in Copilot ein. Wo landet das eigentlich?", screen: "Angebot in Copilot. Wohin damit?"}
+  - {type: misconception, spoken: "Alles, was du Copilot sagst, trainiert die KI? Im Firmenkonto laut Microsoft nicht.", screen: "Copilot lernt mit?", src: [S1]}
+  - {type: surprising_fact, spoken: "Copilot zeigt nur Firmendaten, die du ohnehin sehen darfst.", screen: "Nur, was du sehen darfst", src: [S2]}
+  - {type: concrete_risk, spoken: "Ein zu weit freigegebener Ordner, und Copilot zitiert daraus.", screen: "Zu weit freigegeben?", src: [S2]}
+  - {type: demonstration, spoken: "Freitag, zehn Uhr zwanzig. Mia will ein Kundenangebot in Copilot geben.", screen: "FR 10:20 · Kundenangebot in Copilot?", visual: "Uhrzeit groß, das Copilot-Fenster kommt als Papierkarte herein, die Zeile 'mit ähnlichen vergleichen' wird markiert"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Freitag, zehn Uhr zwanzig. Mia will Copilot nutzen: Fass das Angebot für die Beispiel GmbH zusammen und vergleich es mit ähnlichen Angeboten. Sie zögert: Ist das sicher?"
+    d:
+      kicker: "Beispielfall · nachgestellt"
+      time: "FR 10:20"
+      place: "Sekretariat eines Planungsbüros"
+      mail_at: "@Copilot"
+      mail: {from: "Copilot Chat · Firmenkonto", addr: "Eingabe von Mia (Büro)", time: "10:20", subject: "Angebot vergleichen", lines: ["Fass das Angebot zusammen:", "Angebot_Beispiel_GmbH.docx", "und vergleich es mit ähnlichen."]}
+      highlight: {line: 2, label: "eure Dateien", at: "@ähnlichen"}
+  - f: problem
+    t: sc_inspect
+    s: "Ihr prüft. Konto: euer Firmenkonto. Training: Laut Microsoft trainieren Eingaben keine Basismodelle. Speicher: verschlüsselt, von anderen Kunden getrennt. Alles geregelt. Nur: Copilot nutzt auch Dokumente, auf die die Person Zugriff hat."
+    src: [S1, S2]
+    d:
+      kicker: "Was ihr prüft"
+      headline: "Wohin geht die Eingabe?"
+      rows:
+        - {label: "Konto", value: "Firmenkonto", verdict: "unauffällig", at: "@Konto"}
+        - {label: "Training", value: "laut Microsoft nein", verdict: "unauffällig", at: "@Training"}
+        - {label: "Speicher", value: "verschlüsselt, getrennt", verdict: "unauffällig", at: "@Speicher"}
+      finding: {text: "Alles geregelt.", at: "@Alles"}
+      fact: {kind: fakt, text: "Copilot nutzt Dokumente, auf die die Person Zugriff hat.", source: "Microsoft Learn · Copilot-Datenschutz", at: "@Nur"}
+  - f: problem
+    t: sc_choice
+    s: "Was tust du zuerst? A: Lieber lassen, die KI lernt sonst mit. B: Kundennamen rausnehmen, dann los. C: Erst prüfen, wer bei euch welche Ordner sehen darf. Entscheide dich jetzt."
+    src: [S1, S2]
+    d:
+      question: "Was tust du zuerst?"
+      options:
+        - {key: A, text: "Lieber lassen, die KI lernt mit", at: "@lassen"}
+        - {key: B, text: "Kundennamen raus, dann los", at: "@Kundennamen"}
+        - {key: C, text: "Erst prüfen: wer sieht welche Ordner", at: "@prüfen"}
+      think: {seconds: 2.6, at: "@Entscheide"}
+      hint: "Entscheide dich jetzt."
+  - f: demonstration
+    t: sc_timeline
+    s: "Spielen wir B durch. Mia fragt ohne Namen. Copilot sucht in euren Dateien nach ähnlichen Angeboten. Die Antwort zitiert auch eine Kalkulation aus dem Chef-Ordner. Der ist seit Jahren für alle freigegeben."
+    src: [S2]
+    d:
+      kicker: "Wahl B, durchgespielt"
+      tag: "Beispiel"
+      headline: "Namen raus, Frage ab"
+      items:
+        - {time: "FR 10:21", text: "Frage ohne Kundennamen", at: "@ohne"}
+        - {time: "FR 10:21", text: "Copilot sucht in euren Dateien", tone: amber, at: "@sucht"}
+        - {time: "FR 10:22", text: "Antwort zitiert Chef-Kalkulation", tone: amber, at: "@zitiert"}
+        - {time: "Seit Jahren", text: "Ordner für alle freigegeben", tone: red, at: "@seit"}
+      source: {kind: fakt, label: "Microsoft · Zugriff nach Berechtigung", at: 1.0}
+  - f: insight
+    t: sc_step
+    s: "Richtig ist C. Microsoft rät, Berechtigungen etwa in SharePoint so zu setzen, dass nur die Richtigen Zugriff haben. Zu A: Laut Microsoft kein Training. Zu B: Copilot sieht weiter alles, was die Person sehen darf."
+    src: [S1, S2]
+    d:
+      mode: rule
+      kicker: "Der eine Schritt"
+      card: {letter: C, title: "Erst Freigaben prüfen", sub: "wer sieht welche Ordner?", at: 0.2}
+      strikes:
+        - {text: "A: Lieber lassen", note: "kein Training laut MS", at: "@Laut"}
+        - {text: "B: Nur Namen rausnehmen", note: "Freigaben bleiben", at: "@sieht"}
+      sources:
+        - {kind: fakt, label: "Microsoft · Berechtigungen setzen"}
+        - {kind: fakt, label: "Microsoft · kein Training"}
+        - {kind: auslegung, label: "B: Auslegung Scutoria"}
+      sources_at: "@Microsoft"
+  - f: close
+    t: sc_close
+    s: "Erst Freigaben aufräumen, dann Copilot fragen. Was hättest du gewählt? Schreib es in die Kommentare."
+    d:
+      kicker: "Reihe · Vor dem Upload"
+      rule: "Erst Freigaben, dann Copilot."
+      rule_at: 0.3
+      question: {text: "Was hättest du gewählt?", at: "@hättest"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Belegt. Datiert. Vorzeigbar."
+      disclaimer: "Quellenbasiert. Keine Rechtsberatung."

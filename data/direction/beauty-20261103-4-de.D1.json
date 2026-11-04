@@ -1,0 +1,494 @@
+{
+  "video_id": "beauty-20261103-4-de",
+  "brand_id": "beauty",
+  "language": "de",
+  "title": "„Aluminium im Deo ist gefährlich“",
+  "layout": {
+    "zone_top": 330,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.4,
+    "description": "Ist Aluminium im Deo gefährlich? Das BfR hält gesundheitliche Beeinträchtigungen über die Haut für unwahrscheinlich. Wir zeigen, was die Quellen sagen und was offen bleibt. Mit erfundenem, neutralem Produkt.",
+    "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung.",
+    "hashtags": [
+      "kosmetik",
+      "deo",
+      "aluminium",
+      "hautpflege",
+      "beautywissen"
+    ],
+    "progress_y": 1548,
+    "ai_label_bottom_px": 430,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "format": "nahaufnahme",
+    "explainer": false,
+    "zone_lower_right_px": 930,
+    "stamp": "KI-Bilder · erfundenes Produkt · kein Produkttest",
+    "short_title": "Aluminium im Deo",
+    "media": [
+      {
+        "beat": "b1",
+        "at": 0,
+        "file": "library/dl_prod_spray.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      },
+      {
+        "beat": "b2",
+        "at": 0,
+        "file": "library/dl_real_deo_pair.jpg",
+        "kind": "image",
+        "move": "right",
+        "tag": "ki"
+      },
+      {
+        "beat": "b3",
+        "at": 0,
+        "file": "library/dl_real_two_bottles.jpg",
+        "kind": "image",
+        "move": "left",
+        "tag": "ki"
+      },
+      {
+        "beat": "b4",
+        "at": 0,
+        "file": "library/dl_real_shelf.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      },
+      {
+        "beat": "b5",
+        "at": 0,
+        "file": "library/dl_real_tube_back.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      },
+      {
+        "beat": "b6",
+        "at": 0,
+        "file": "library/dl_real_magnifier.jpg",
+        "kind": "image",
+        "move": "right",
+        "tag": "ki"
+      },
+      {
+        "beat": "b7",
+        "at": 0,
+        "file": "library/dl_real_shelf.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      },
+      {
+        "beat": "b8",
+        "at": 0,
+        "file": "library/dl_prod_spray.jpg",
+        "kind": "image",
+        "move": "in",
+        "tag": "ki"
+      }
+    ],
+    "sound": {
+      "palette": "soft",
+      "mood": "warm",
+      "music": "procedural"
+    }
+  },
+  "assets": {
+    "folder": "assets/clips",
+    "background": {},
+    "hero": {},
+    "scrim": 0.0,
+    "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/fragen-und-antworten-zur-bfr-neubewertung-vom-20-juli-2020-von-aluminium-in-antitranspirantien/",
+      "title": "BfR: Fragen und Antworten zur Neubewertung von Aluminium in Antitranspirantien (Abschnitt Bewertung)",
+      "checked_at": "2026-11-03",
+      "label": "BfR Aluminium in Antitranspirantien"
+    },
+    {
+      "id": "S2",
+      "url": "https://health.ec.europa.eu/publications/safety-aluminium-cosmetic-products-submission-ii_en",
+      "title": "SCCS: Safety of aluminium in cosmetic products, Submission II (Publikationsseite)",
+      "checked_at": "2026-11-03",
+      "label": "SCCS Aluminium Submission II"
+    }
+  ],
+  "unverified": [
+    "Konkrete Höchstkonzentrationen je Produktart und die aktuelle SCCS-Fassung SCCS/1662/23 sind aus den vorliegenden Quellenangaben nicht belegt und werden nicht genannt.",
+    "Die BfR-Aktualisierung 2023 ist aus den vorliegenden Quellenangaben nicht belegt und wird nicht genannt."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Ist Aluminium im Deo ein Problem? Das BfR sieht das über die Haut als unwahrscheinlich.",
+      "on_screen": "Aluminium im Deo: Problem?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Neutrales Spray auf der Bühne, Frage im Bild",
+      "why": {
+        "truth": "Aussage direkt aus S1"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Aluminium im Deo ist gefährlich. Das hörst du oft. Die Quellen sehen es differenzierter.",
+      "on_screen": "Aluminium im Deo gefährlich?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Neutrales Spray mit Fragezeichen-Badge",
+      "why": {
+        "truth": "S1 und S2 prüfen die Frage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Auch die EU-Kommission lässt Aluminium in Kosmetik wissenschaftlich prüfen.",
+      "on_screen": "Aluminium: wer prüft das?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Dokumentkarte mit Titel der Prüfung",
+      "why": {
+        "curiosity": "weniger zugespitzt"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Du sprühst täglich Deo auf die Haut. Was sagt das BfR zu Aluminium darin?",
+      "on_screen": "Täglich Deo: was sagt das BfR?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Spray vor Hintergrund, Frage im Bild",
+      "why": {
+        "truth": "Alltag, Aussage aus S1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau auf die Packung. Dort steht, welche Stoffe im Deo stecken.",
+      "on_screen": "Was steht auf der Packung?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [],
+      "visual": "Packungsrückseite unter der Lupe",
+      "why": {
+        "visual": "sichtbar, aber wenig Spannung"
+      }
+    }
+  ],
+  "hook": {
+    "id": "H2",
+    "note": "klarer Denkfehler, belegbar mit S1 und S2, Spray im Bild"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "spoken": "Aluminium im Deo ist gefährlich. Das hörst du oft. Die Quellen sehen es differenzierter.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "scene_type": "nh_hook",
+      "data": {
+        "question": "Aluminium im Deo gefährlich?",
+        "badge": "Mythos?",
+        "kicker": "Direkter Vergleich · Mythos",
+        "product": {
+          "kind": "spray",
+          "line1": "DEO"
+        },
+        "question_at": 0.25,
+        "photo": true
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "spoken": "Das Bundesinstitut für Risikobewertung, kurz BfR, hat Aluminium in Antitranspirantien neu bewertet. Es geht um die Frage, ob Aluminium über die Haut aufgenommen wird und der Gesundheit schaden kann. Die Neubewertung stammt vom 20. Juli 2020.",
+      "source_ids": [
+        "S1"
+      ],
+      "scene_type": "nh_facts",
+      "data": {
+        "headline": "Die Frage an das BfR",
+        "zoom": "ALUMINIUM",
+        "flip": false,
+        "doc": {
+          "act": "BfR: Aluminium im Deo",
+          "ref": "Fragen und Antworten"
+        },
+        "rows": [
+          {
+            "text": "Neubewertung vom 20. Juli 2020"
+          },
+          {
+            "text": "Thema: Antitranspirantien"
+          },
+          {
+            "text": "Frage: Aufnahme über die Haut"
+          }
+        ],
+        "kicker": "Worum es geht",
+        "product": {
+          "kind": "spray",
+          "line1": "DEO"
+        },
+        "photo": true
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "spoken": "Das BfR hält gesundheitliche Beeinträchtigungen durch Aluminium aus Deos über die Haut für unwahrscheinlich. So steht es in den Fragen und Antworten des Instituts. Links siehst du die Angabe auf der Packung, rechts den Beleg.",
+      "source_ids": [
+        "S1"
+      ],
+      "scene_type": "nh_versus",
+      "data": {
+        "headline": "Zwei Karten, kein Sieger",
+        "kicker": "Packungsangabe · Beleg",
+        "cards": [
+          {
+            "tag": "Packungsangabe",
+            "title": "Aluminiumsalz",
+            "text": "steht in der Zutatenliste"
+          },
+          {
+            "tag": "Beleg",
+            "title": "BfR-Einschätzung",
+            "text": "über die Haut unwahrscheinlich"
+          }
+        ],
+        "photo": true
+      }
+    },
+    {
+      "id": "b4",
+      "function": "explanation",
+      "spoken": "Auch die EU-Kommission hat Aluminium in Kosmetik wissenschaftlich prüfen lassen. Der Ausschuss SCCS hat dazu eine Stellungnahme veröffentlicht. Zwei Stellen prüfen die Frage unabhängig voneinander.",
+      "source_ids": [
+        "S2"
+      ],
+      "scene_type": "nh_list",
+      "data": {
+        "headline": "Zwei Stellen prüfen",
+        "kicker": "Wer bewertet",
+        "caption": "Beide Stellen veröffentlichen Texte",
+        "rows": [
+          {
+            "label": "BfR",
+            "value": "D"
+          },
+          {
+            "label": "SCCS",
+            "value": "EU"
+          }
+        ],
+        "photo": true
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "spoken": "Schau also auf die Zutatenliste. Dort erkennst du, ob ein Aluminiumsalz enthalten ist. Du liest die Angabe und ordnest sie mit den Quellen ein.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "scene_type": "nh_lens",
+      "data": {
+        "kicker": "Unter der Lupe",
+        "headline": "Die Zutatenliste",
+        "product": {
+          "kind": "spray",
+          "line1": "DEO"
+        },
+        "zoom": {
+          "text": "INCI",
+          "at": 0.5
+        },
+        "section": {
+          "at": 1.5,
+          "label": "Zutatenliste",
+          "film_label": "Packungsangabe"
+        },
+        "value": {
+          "text": "Aluminium?",
+          "sub": "nur lesen, nicht raten",
+          "at": 3.0
+        },
+        "check": {
+          "text": "Quelle prüfen",
+          "at": 4.5
+        },
+        "photo": true
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "spoken": "Ob ein Stoff auf der Packung steht, sagt noch nichts über ein Risiko. Das beurteilen die Fachstellen anhand von Daten. Das BfR sieht hier über die Haut keine Beeinträchtigung als wahrscheinlich an.",
+      "source_ids": [
+        "S1"
+      ],
+      "scene_type": "nh_steps",
+      "data": {
+        "headline": "Lesen, einordnen",
+        "kicker": "Merkschritte",
+        "steps": [
+          {
+            "title": "Zutatenliste lesen",
+            "sub": "Angabe auf der Packung"
+          },
+          {
+            "title": "Quelle öffnen",
+            "sub": "BfR und SCCS"
+          },
+          {
+            "title": "Dann urteilen",
+            "sub": "nicht umgekehrt"
+          }
+        ],
+        "photo": true
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "spoken": "So brauchst du keine Schlagzeile, um die Frage zu klären. Du hast die Packung und zwei offene Quellen. Damit kannst du Behauptungen selbst einordnen.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "scene_type": "nh_versus",
+      "data": {
+        "headline": "Dein Vorteil",
+        "kicker": "Packungsangabe · Beleg",
+        "cards": [
+          {
+            "tag": "Packungsangabe",
+            "title": "Zutatenliste",
+            "text": "selbst nachlesen"
+          },
+          {
+            "tag": "Beleg",
+            "title": "BfR und SCCS",
+            "text": "offen einsehbar"
+          }
+        ],
+        "photo": true
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "spoken": "Erst lesen, dann urteilen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+      "source_ids": [],
+      "scene_type": "nh_close",
+      "data": {
+        "kicker": "Merksatz",
+        "rule": "Erst lesen, dann urteilen.",
+        "rule_at": 0.2,
+        "product": {
+          "kind": "spray",
+          "line1": "DEO"
+        },
+        "question": {
+          "text": "Was steht auf deinem Deo?",
+          "at": 1.6
+        },
+        "sign_at": "@Beauty",
+        "claim": "Wissen statt Versprechen.",
+        "disclaimer": "Keine medizinische Beratung.",
+        "photo": true
+      }
+    }
+  ],
+  "notes": "Tagesläufer-Prototyp (2026-11-03). Tagesläufer-Prototyp (2026-11-03). Erstellt nach Konzeptplan Nr. 6 und Kalender-Eintrag; Aussagen nur aus den zwei Quellen der Liste, Höchstkonzentrationen bewusst nicht genannt.",
+  "sound_cues": [
+    {
+      "beat": "b1",
+      "at": "start",
+      "cue": "bett_ein"
+    },
+    {
+      "beat": "b1",
+      "at": "w:Aluminium",
+      "cue": "pop"
+    },
+    {
+      "beat": "b3",
+      "at": "w:Das",
+      "cue": "swipe"
+    },
+    {
+      "beat": "b5",
+      "at": "w:Schau",
+      "cue": "click"
+    },
+    {
+      "beat": "b7",
+      "at": "w:So",
+      "cue": "chime"
+    },
+    {
+      "beat": "b8",
+      "at": "end",
+      "cue": "bett_aus_schlussakkord"
+    }
+  ]
+}

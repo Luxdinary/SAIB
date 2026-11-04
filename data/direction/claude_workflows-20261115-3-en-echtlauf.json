@@ -1,0 +1,319 @@
+{
+  "video_id": "claude_workflows-20261115-3-en-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Permission rule or hook? Three real runs against a config file",
+  "notes": "Week 1, series Does it hold?. Risk per calendar: medium. Own English recording regel-oder-hook-en: deny rule on config.json versus a PreToolUse hook with its own logic (blocks only debug: true), twice each.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Permission rule or hook: which one blocks Claude Code more precisely?",
+      "on_screen": "Rule or hook?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "PER",
+        "HOO",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "question"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "A deny rule only blocks the dangerous part? It blocked the harmless port, too.",
+      "on_screen": "Only the dangerous part?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "The hook let the port change through and only blocked debug.",
+      "on_screen": "Port yes, debug no",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "runs 2 and 3"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "With a deny rule, even a harmless port change was refused.",
+      "on_screen": "Everything blocked",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "run 1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Three real runs: one rule, one hook, two edits.",
+      "on_screen": "Three runs",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "structure"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "PER",
+      "title": "Configure permissions: permission rules are enforced by Claude Code, not by the model; approval table: read-only (file reads, Grep) no, Bash commands yes except a built-in set of read-only commands, file modification yes; to inspect the full command text with your own logic before it runs, use a PreToolUse hook; PreToolUse hook decisions don't bypass permission rules",
+      "url": "https://code.claude.com/docs/en/permissions",
+      "checked_at": "2026-11-02",
+      "label": "Claude Code docs, Permissions"
+    },
+    {
+      "id": "HOO",
+      "title": "Automate actions with hooks: hooks give deterministic control, certain actions always happen rather than relying on the LLM to choose to run them; a PreToolUse hook that exits with code 2 blocks the edit; hooks can format files after edits",
+      "url": "https://code.claude.com/docs/en/hooks-guide",
+      "checked_at": "2026-11-02",
+      "label": "Claude Code docs, Hooks"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/regel-oder-hook-en",
+      "checked_at": "2026-11-02",
+      "label": "Own recording",
+      "title": "Own recording regel-oder-hook-en, 2026-11-02: Claude Code 2.1.309, test folder with sample data, every run twice"
+    }
+  ],
+  "unverified": [
+    "The hook is a small sample script (waechter.js); it only checks the text of the edit for \"debug\": true.",
+    "The denial in run 1 talks about a directory although the rule names a file; not interpreted, only shown."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "regel-oder-hook-en"
+    },
+    "short_title": "Regel oder Hook EN",
+    "description": "Real run, recorded on Nov 2, 2026 with Claude Code 2.1.309 (model claude-haiku-5-5). Three runs, each twice: the deny rule on config.json already blocked a harmless port change. A PreToolUse hook with its own logic let the port change through and only blocked switching debug on.",
+    "companion_text": "Base command per run: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Edit,Write. Run 1: {\"permissions\": {\"deny\": [\"Edit(./config.json)\", \"Write(./config.json)\"]}}. Runs 2 and 3: PreToolUse hook, matcher Edit|Write, node .claude/hooks/waechter.js (exit code 2 when the edit contains \"debug\": true). All runs with --permission-mode acceptEdits. Source: Claude Code docs, Permissions and Hooks, retrieved Nov 2, 2026. Paths shortened in the frame (test folder = .). Behaviour can change with version and model. Not an official Anthropic channel.",
+    "hashtags": [
+      "claudecode",
+      "aiworkflow",
+      "coding",
+      "developer",
+      "security"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "PER",
+        "HOO",
+        "R1"
+      ],
+      "spoken": "Permission rule or hook: which one blocks Claude Code more precisely? Three real runs against one small config file.",
+      "data": {
+        "run": "L1",
+        "question": "Rule or hook?",
+        "type_word": "hook",
+        "chips_word": "Three",
+        "rec": "regel-oder-hook-en"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "PER"
+      ],
+      "spoken": "Option one is a deny rule: no edits to config.json at all. According to the docs, Claude Code enforces these rules itself. It does not leave them to the model.",
+      "data": {
+        "run": "L1",
+        "highlight_text": "Edit(./config.json)",
+        "kicker": "Claude Code docs, Permissions",
+        "quote": "Permission rules are enforced by Claude Code, not by the model.",
+        "translation": "Claude Code enforces rules, not the model.",
+        "highlight_word": "deny",
+        "doc_word": "docs",
+        "translation_word": "enforces",
+        "rec": "regel-oder-hook-en"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "PER",
+        "HOO"
+      ],
+      "spoken": "Option two is a hook with its own logic. It looks at the edit itself and only blocks it when the edit switches debug on. Everything else goes through.",
+      "data": {
+        "run": "L2",
+        "file": ".claude/hooks/waechter.js",
+        "highlight_text": "debug",
+        "max_rows": 7,
+        "kicker": "Claude Code docs, Permissions",
+        "quote": "… with your own logic before it runs, use a PreToolUse hook.",
+        "translation": "Your own logic before it runs: a PreToolUse hook.",
+        "highlight_word": "logic",
+        "doc_word": "edit",
+        "translation_word": "debug",
+        "rec": "regel-oder-hook-en"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run one, rule. I asked for a harmless port change. Reading worked, the edit was refused, and Claude did not look for a way around it. The message talked about a denied directory.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "text_rows": 5,
+        "stamp_true": "changed",
+        "stamp_false": "blocked",
+        "rec": "regel-oder-hook-en"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run two, hook, the same port change. The hook let the edit through. The port is now 8080, and debug was left alone.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "stamp_true": "changed",
+        "stamp_false": "blocked",
+        "rec": "regel-oder-hook-en"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Run three, hook, and this time debug should be switched on. The hook blocked it with its message. Claude read the hook script, left the file unchanged and did not try a way around it.",
+      "data": {
+        "run": "L3",
+        "probe_good": true,
+        "text_rows": 5,
+        "stamp_true": "changed",
+        "stamp_false": "blocked",
+        "rec": "regel-oder-hook-en"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "PER"
+      ],
+      "spoken": "All runs ran twice, with the same result. The rule blocks the whole file, harmless edits included. The hook decides by content. According to the docs, though, a hook's decision does not override a rule.",
+      "data": {
+        "headline": "3 runs, twice each",
+        "probe_good": true,
+        "stamp_true": "changed",
+        "stamp_false": "blocked",
+        "note": "Hook decisions don't bypass permission rules (per the docs).",
+        "note_source": "Claude Code docs, Permissions",
+        "rows_word": "All",
+        "row_gap": 0.7,
+        "note_word": "content",
+        "rec": "regel-oder-hook-en"
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "Rules for clear boundaries, hooks for decisions based on content. Follow Promptwerk for more Claude workflows, step by step.",
+      "data": {
+        "statement": "Rules for boundaries, hooks for content.",
+        "claim": "Promptwerk · real runs",
+        "statement_word": "Rules",
+        "claim_word": "Follow",
+        "rec": "regel-oder-hook-en"
+      }
+    }
+  ]
+}

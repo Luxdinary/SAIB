@@ -1,0 +1,433 @@
+{
+ "video_id": "engines-20261113-1-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "Saugrohr- gegen Direkteinspritzung",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261113-1-de, Reihe Gegenübergestellt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "Vor dem Einlassventil mit 3 bis 7 bar oder direkt im Brennraum mit bis zu 350 bar: Saugrohr- und Direkteinspritzung im Vergleich.",
+  "companion_text": "",
+  "hashtags": [
+   "motorentechnik",
+   "einspritzung",
+   "direkteinspritzung",
+   "benziner",
+   "vergleich"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "MIT 2.61, Vorlesung 7",
+   "title": "MIT 2.61, Vorlesung 7 (L7)",
+   "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/ea6fff400434e4163a91c1579ccf7236_MIT2_61S17_lec7.pdf",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "Bosch, Direkteinspritzung",
+   "title": "Bosch, Direkteinspritzung (B3)",
+   "url": "https://www.bosch-mobility.com/en/solutions/powertrain/gasoline/gasoline-direct-injection/",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Vor dem Ventil oder direkt im Zylinder?",
+   "on_screen": "Vor dem Ventil oder im Zylinder?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Direkteinspritzer arbeiten mit bis zu 350 bar.",
+   "on_screen": "Saugrohr- gegen Direkteinspritzung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Saugrohr- gegen Direkteinspritzung",
+   "on_screen": "Saugrohr- gegen Direkteinspritzung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Saugrohr- gegen Direkteinspritzung",
+   "on_screen": "Saugrohr- gegen Direkteinspritzung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Saugrohr- gegen Direkteinspritzung",
+   "on_screen": "Saugrohr- gegen Direkteinspritzung",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Wo der Kraftstoff auf die Luft trifft, verändert vieles im Benziner. Vor dem Ventil oder direkt im Zylinder?",
+   "data": {
+    "claim": "Vor dem Ventil oder im Zylinder?",
+    "claim_lines": [
+     "Vor dem Ventil",
+     "oder im Zylinder?"
+    ],
+    "claim_highlight": "im Zylinder?",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "injector": "direct",
+    "slow_at": 0.15,
+    "source": "MIT 2.61, Vorlesung 7 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_board",
+   "spoken": "Links die Saugrohreinspritzung: Die Düse spritzt in den Ansaugkanal, vor das Einlassventil. Rechts die Direkteinspritzung: Die Düse sitzt im Zylinderkopf und spritzt direkt in den Brennraum. Im Bild links sitzt die Düse im Saugrohr, rechts im Zylinderkopf.",
+   "data": {
+    "title": "Wo eingespritzt wird",
+    "mode": "compare",
+    "left": {
+     "title": "Saugrohr",
+     "engine": {
+      "fuel": "petrol",
+      "injector": "port"
+     },
+     "rows": [
+      "vor dem Ventil"
+     ],
+     "at": "w:Links"
+    },
+    "right": {
+     "title": "Direkt",
+     "engine": {
+      "fuel": "petrol",
+      "injector": "direct"
+     },
+     "rows": [
+      "im Brennraum"
+     ],
+     "at": "w:Rechts"
+    },
+    "rows_at": [
+     "w:Einlassventil"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 7 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_readout",
+   "spoken": "Der größte Unterschied ist der Druck. Laut Fachvorlesung arbeitet die Saugrohreinspritzung mit drei bis sieben bar, die Direkteinspritzung mit fünfzig bis zweihundertfünfzig. Bosch nennt für aktuelle Systeme bis zu dreihundertfünfzig bar.",
+   "data": {
+    "title": "Einspritzdruck",
+    "figure": "bars",
+    "bar_max": 360,
+    "lines_y": 1010,
+    "bars": [
+     {
+      "label": "Saugrohr (MIT)",
+      "value": 7,
+      "text": "3–7 bar",
+      "at": "w:Saugrohreinspritzung"
+     },
+     {
+      "label": "direkt (MIT)",
+      "value": 250,
+      "text": "50–250 bar",
+      "at": "w:Direkteinspritzung"
+     },
+     {
+      "label": "direkt (Bosch heute)",
+      "value": 350,
+      "text": "bis 350 bar",
+      "at": "w:Bosch"
+     }
+    ],
+    "lines": [],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 7 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "explanation",
+   "scene_type": "zlx_cutaway",
+   "spoken": "Mehr Druck bedeutet feinere Tropfen. Laut Vorlesung sind sie bei Direkteinspritzung zehn bis fünfzig Mikrometer groß, bei Saugrohreinspritzung achtzig bis zweihundert. Im Zylinder bleibt ihnen ja nur wenig Zeit zum Verdampfen. Je feiner, desto schneller verdampfen sie.",
+   "data": {
+    "title": "Feine Tropfen",
+    "injector": "direct",
+    "notes": [
+     {
+      "text": "direkt: 10–50 µm",
+      "at": "w:Direkteinspritzung",
+      "side": "r",
+      "y": 900,
+      "to": [
+       540,
+       590
+      ]
+     },
+     {
+      "text": "Saugrohr 80–200 µm",
+      "at": "w:Saugrohreinspritzung",
+      "side": "l",
+      "y": 760,
+      "to": [
+       300,
+       425
+      ]
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 7 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_board",
+   "spoken": "Die Vorlesung nennt für die Direkteinspritzung beides. Vorteil: Der verdampfende Kraftstoff kühlt die Ladung, das erlaubt mehr Verdichtung. Nachteil: höhere Kosten und mehr Partikel, etwa bei Volllast und beim Kaltstart.",
+   "data": {
+    "title": "Direkteinspritzung",
+    "mode": "compare",
+    "left": {
+     "title": "Vorteil",
+     "rows": [
+      "kühlere Ladung",
+      "mehr Verdichtung"
+     ],
+     "at": "w:Vorteil"
+    },
+    "right": {
+     "title": "Nachteil",
+     "rows": [
+      "höhere Kosten",
+      "mehr Partikel"
+     ],
+     "at": "w:Nachteil"
+    },
+    "rows_at": [
+     "w:kühlt",
+     "w:Partikel"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "MIT 2.61, Vorlesung 7 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Vor dem Ventil mit wenig Druck, im Zylinder mit viel Druck. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "3–7 bar",
+      "at": "w:Ventil"
+     },
+     {
+      "text": "bis 350 bar",
+      "at": "w:Zylinder"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    },
+    "injector": "direct"
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

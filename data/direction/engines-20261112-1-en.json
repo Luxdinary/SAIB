@@ -1,0 +1,452 @@
+{
+  "video_id": "engines-20261112-1-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "Work out engine displacement yourself",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261112-1-en, Reihe Nachgerechnet. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Displacement from bore and stroke: NASA's formula, worked out on the 1903 Wright engine and on Toyota's 2.0-litre petrol engine.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.",
+    "hashtags": [
+      "enginetech",
+      "displacement",
+      "maths",
+      "bore",
+      "stroke"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "NASA Glenn, bore and stroke",
+      "title": "NASA Glenn, Bohrung und Hub (N4)",
+      "url": "https://www.grc.nasa.gov/www/k-12/airplane/stroke.html",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "Toyota, Dynamic Force Engine",
+      "title": "Toyota, Dynamic Force Engine (T1)",
+      "url": "https://global.toyota/en/mobility/tnga/powertrain2018/engine/",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "You only need two measurements: bore and stroke.",
+      "on_screen": "Displacement, by hand",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How do you calculate displacement?",
+      "on_screen": "Work out engine displacement yourself",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Work out engine displacement yourself",
+      "on_screen": "Work out engine displacement yourself",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Work out engine displacement yourself",
+      "on_screen": "Work out engine displacement yourself",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Work out engine displacement yourself",
+      "on_screen": "Work out engine displacement yourself",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "You can work out an engine's displacement yourself with a single formula. You only need two measurements: bore and stroke.",
+      "data": {
+        "claim": "Displacement, by hand",
+        "claim_lines": [
+          "Displacement,",
+          "by hand"
+        ],
+        "claim_highlight": "by hand",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:bore",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_cutaway",
+      "spoken": "The bore is the diameter of the cylinder. The stroke is the distance the piston travels from top dead centre to bottom dead centre. The volume in between is the displacement of one cylinder. Both are usually given in millimetres.",
+      "data": {
+        "title": "Bore and stroke",
+        "stroke_dims": true,
+        "dims_at": "w:stroke",
+        "labels": [
+          "piston"
+        ],
+        "labels_at": [
+          "w:piston"
+        ],
+        "notes": [
+          {
+            "text": "Bore",
+            "at": "w:bore",
+            "side": "l",
+            "y": 640,
+            "to": [
+              540,
+              700
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            540
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:stroke",
+        "kicker": "2 · TWO MEASUREMENTS",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_readout",
+      "spoken": "NASA writes the formula like this: pi times stroke times bore squared, divided by four. In other words, the circle area of the bore times the distance the piston travels.",
+      "data": {
+        "title": "The formula",
+        "figure": "cylinder",
+        "lines_y": 1010,
+        "bore_at": "w:bore",
+        "stroke_at": "w:stroke",
+        "fill_at": "w:circle",
+        "lines": [
+          {
+            "text": "V = π × S × B² ÷ 4",
+            "hl": "B²",
+            "at": "w:divided"
+          },
+          {
+            "text": "circle area × stroke",
+            "hl": "circle area",
+            "at": "w:circle"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:NASA",
+        "kicker": "3 · THE FORMULA",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rv_board",
+      "spoken": "First example, also from NASA: the Wright brothers' engine of nineteen-oh-three had a four-inch bore and a four-inch stroke. That gives just over fifty cubic inches per cylinder, and about two hundred for all four. Bore and stroke are exactly the same on this engine: it is square.",
+      "data": {
+        "title": "The Wright engine",
+        "mode": "history",
+        "years": [
+          {
+            "year": "1903",
+            "at": 0.0
+          }
+        ],
+        "rows": [
+          {
+            "text": "bore 4 in, stroke 4 in",
+            "at": "w:bore"
+          },
+          {
+            "text": "50.26 in³ per cylinder",
+            "at": "w:cubic"
+          },
+          {
+            "text": "× 4 cylinders ≈ 201 in³",
+            "at": "w:four#3"
+          },
+          {
+            "text": "≈ 3.3 litres",
+            "at": "w:about"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Wright",
+        "kicker": "4 · EXAMPLE 1903",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_readout",
+      "spoken": "And a modern engine: Toyota's two-litre petrol engine has an eighty point five millimetre bore and a ninety-seven point six millimetre stroke. Four cylinders give almost exactly the stated one thousand nine hundred and eighty-six cubic centimetres. The stroke is longer than the bore: a long-stroke engine. You can do the same check for any engine.",
+      "data": {
+        "title": "Toyota 2.0 litre",
+        "figure": "cylinder",
+        "lines_y": 1010,
+        "bore_label": "B = 80.5 mm",
+        "stroke_label": "S = 97.6 mm",
+        "bore_at": "w:bore",
+        "stroke_at": "w:stroke",
+        "fill_at": "w:cylinders",
+        "lines": [
+          {
+            "text": "π × 9.76 × 8.05² ÷ 4 ≈ 496.7 cm³",
+            "hl": "496.7",
+            "at": "w:stroke"
+          },
+          {
+            "text": "× 4 ≈ 1987 cm³ (Toyota: 1986)",
+            "hl": "1987",
+            "at": "w:give"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Toyota",
+        "kicker": "5 · EXAMPLE TODAY",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Bore, stroke, pi over four, times the number of cylinders. Understand engines: follow Revlore.",
+      "data": {
+        "stroke_dims": true,
+        "dims_at": 0.02,
+        "chips": [
+          {
+            "text": "bore",
+            "at": "w:Bore"
+          },
+          {
+            "text": "stroke",
+            "at": "w:stroke"
+          },
+          {
+            "text": "× π ÷ 4",
+            "at": "w:pi"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "video_id": "engines-20261111-2-en",
+  "brand_id": "engines",
+  "language": "en",
+  "title": "Too early, too late, just right: spark timing",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261111-2-en, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Why the spark plug fires before top dead centre, what too early and too late mean, and why a few degrees cost less than you might think.",
+    "companion_text": "Follow Revlore: understand engines, one part at a time.\nPressure curves are schematic; spark timings are example values from MIT lecture 9. Not a tuning guide.",
+    "hashtags": [
+      "enginetech",
+      "ignition",
+      "sparktiming",
+      "knock",
+      "petrolengine"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "MIT 2.61, lecture 9",
+      "title": "MIT 2.61, Vorlesung 9 (L9)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/f8aec73c2e9233c4e8e3674d77428483_MIT2_61S17_lec9.pdf",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "Bosch, knock sensor",
+      "title": "Bosch, Klopfsensor (B5)",
+      "url": "https://www.bosch-mobility.com/en/solutions/sensors/knock-sensor/",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "But a lot less than you would think.",
+      "on_screen": "A few degrees late?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "When exactly does the spark plug fire?",
+      "on_screen": "Too early, too late, just right: spark timing",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Too early, too late, just right: spark timing",
+      "on_screen": "Too early, too late, just right: spark timing",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Too early, too late, just right: spark timing",
+      "on_screen": "Too early, too late, just right: spark timing",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Too early, too late, just right: spark timing",
+      "on_screen": "Too early, too late, just right: spark timing",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "If the plug fires a few degrees late, the engine loses torque. But a lot less than you would think.",
+      "data": {
+        "claim": "A few degrees late?",
+        "claim_lines": [
+          "A few degrees",
+          "too late?"
+        ],
+        "claim_highlight": "too late?",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:less",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_cutaway",
+      "spoken": "Combustion takes time. So the plug fires before top dead centre, and the highest pressure hits the piston just after it. As an example, the engineering lecture gives thirty degrees before top dead centre. That gives the flame time to spread before the piston moves away.",
+      "data": {
+        "title": "Before dead centre",
+        "stroke_dims": true,
+        "dims_at": "w:centre",
+        "labels": [
+          {
+            "key": "plug",
+            "side": "l",
+            "y": 640
+          }
+        ],
+        "labels_at": [
+          "w:plug"
+        ],
+        "notes": [
+          {
+            "text": "30° BTDC",
+            "at": "w:example",
+            "side": "l",
+            "y": 880,
+            "to": [
+              540,
+              500
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            250
+          ],
+          [
+            1,
+            420
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:lecture",
+        "kicker": "2 · THE TIMING",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 1010,
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_chart",
+      "spoken": "Here is the pressure in the cylinder, as a schematic. Fire too early and the pressure rises while the piston is still coming up. Fire too late and it only arrives once the piston is already heading down. These curves are a schematic, not a measurement.",
+      "data": {
+        "title": "Cylinder pressure",
+        "kind": "pressure",
+        "cases": [
+          {
+            "label": "too early",
+            "spark": -50,
+            "color": "steel",
+            "dash": "12 8"
+          },
+          {
+            "label": "optimal",
+            "spark": -30,
+            "color": "accent"
+          },
+          {
+            "label": "too late",
+            "spark": -10,
+            "color": "muted",
+            "dash": "4 8"
+          }
+        ],
+        "series_at": [
+          "w:pressure",
+          "w:early",
+          1.4,
+          "w:late"
+        ],
+        "marks": [
+          {
+            "x": 0,
+            "label": "OT",
+            "at": "w:coming",
+            "color": "steel",
+            "row": 3
+          }
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "example": true,
+        "marker_at": "w:early",
+        "kicker": "3 · THE PRESSURE",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rv_board",
+      "spoken": "According to the lecture, the curve around the optimum is flat. Five to seven degrees late costs only about one percent of torque. Too early, heat losses and the tendency to knock go up. Too late, work is wasted.",
+      "data": {
+        "title": "Too early, too late",
+        "mode": "compare",
+        "left": {
+          "title": "too early",
+          "rows": [
+            "more heat loss",
+            "knock tendency"
+          ],
+          "at": "w:early"
+        },
+        "right": {
+          "title": "too late",
+          "rows": [
+            "5–7°: ≈ 1 % less",
+            "work wasted"
+          ],
+          "at": "w:late"
+        },
+        "rows_at": [
+          "w:percent",
+          "w:wasted"
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:flat",
+        "kicker": "4 · THE COST",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_cutaway",
+      "spoken": "To keep the engine out of knock, a knock sensor on the crankcase listens in. When it detects knock, the control unit adjusts the spark timing, as Bosch describes it. That keeps the engine below its knock limit.",
+      "data": {
+        "title": "The knock sensor",
+        "knock": true,
+        "notes": [
+          {
+            "text": "Knock sensor",
+            "at": "w:sensor",
+            "side": "r",
+            "y": 1000,
+            "to": [
+              728,
+              960
+            ]
+          },
+          {
+            "text": "timing adjusted",
+            "at": "w:adjusts",
+            "side": "l",
+            "y": 760,
+            "to": [
+              540,
+              400
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            720
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Bosch",
+        "kicker": "5 · THE GUARD",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Too early risks knock, too late wastes work, the optimum sits in between. Understand engines: follow Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "too early",
+            "at": "w:early"
+          },
+          {
+            "text": "too late",
+            "at": "w:late"
+          },
+          {
+            "text": "optimum",
+            "at": "w:optimum"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Understand engines",
+          "at": "w:Understand"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none"
+      },
+      "source_ids": []
+    }
+  ]
+}

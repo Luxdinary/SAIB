@@ -1,0 +1,45 @@
+# Bildaufbauten Dewlane (beauty) für den Tagesläufer. Entwurf der Tagesläufer-Sitzung, korrigiert von der Dewlane-Sitzung am 03.11.2026.
+# Vorlage: config/aufbauten.vorlage.yaml. Szenencode in brands/beauty/nahaufnahme/scenes.py.
+# Gemeinsame Regeln aller Aufbauten:
+#  - Foto-Modus: layout.format "nahaufnahme", layout.media (Bild oder Clip je Beat-Abschnitt; Dateinamen relativ zu
+#    brands/beauty/assets/higgsfield, Bibliothek als "library/<datei>"), data.photo true in jedem Beat, layout.stamp
+#    ("KI-Bilder · erfundenes Produkt · kein Produkttest" / "AI images · invented product · not a product test"),
+#    layout.sound {palette soft, mood warm, music procedural}, layout.zone_top 330, zone_lower_right_px 930, ai_label_bottom_px 430.
+#  - tag je Bild: "ki" (KI-Bild) oder "hand" (KI-Bild · Veranschaulichung; Pflicht bei Bildern mit Händen oder Haut).
+#  - Bilder: zuerst Bibliothek (library/dl_prod_*, dl_real_*, dl_tex_*; Bilder mit Händen: dl_real_pump_palm, dl_real_dropper_fingertip,
+#    dl_real_shampoo_hands, dl_real_fingers_strand, dl_real_jar_spatula, dl_real_tube_back, dl_real_twophase_pad), dann das Testvideo-Material
+#    (dl_b1..dl_b9, dl_k1..dl_k4 direkt in assets/higgsfield). Höchstens 2 Credits je Thema für ein neues Bild (Rahmen 33 Credits bis 30.11.).
+#  - Texte: Feldlängen laut LIMITS in scenes.py; Belege als Chip "Fakt" mit Quelle und Stelle, Wirkung nur als "Schema nach Quelle · keine Messung".
+#  - Risiko hoch: jedes Video endet in HUMAN_REVIEW; Freigabe durch Stefan vor jeder Veröffentlichung.
+#  - Beispielpläne A: freigegebenes Testvideo. B, C, D: nur Trockenlauf geprüft (mock-Stimme, overlap_check ohne Befund, small_text leer),
+#    noch nicht gerendert; Stefan hat sie nicht gesehen. Gleiche Szenentypen kommen in mehreren Aufbauten vor; der Aufbau unterscheidet sich
+#    durch Bildfolge und Schwerpunkt, nicht durch eigene Szenentypen.
+aufbauten:
+  - kuerzel: A
+    name: Anwendung
+    gebaut: true
+    szenentypen: [nh_stage, nh_lens, nh_amount, nh_effect, nh_apply, nh_close]
+    beispielplan: data/direction/beauty-20261117-3-de.T1.json
+    beispielplan_en: data/direction/beauty-20261117-3-en.T1.json
+    hinweis: "Hände und Produkt vollflächig, Bilder und Clips mit Anwendung (Creme in den Löffel, am Unterarm verteilen), Zahl, Lupenring, Mengenkarte, Balkenschema, drei Hinweise mit Symbol. Freigegebenes Testvideo (Reihe Im Alltag angewendet)."
+  - kuerzel: B
+    name: Packung unter der Lupe
+    gebaut: true
+    szenentypen: [nh_hook, nh_facts, nh_list, nh_versus, nh_steps, nh_close]
+    beispielplan: data/direction/beauty-20261109-1-de.Bex.json
+    beispielplan_en: data/direction/beauty-20261109-1-en.Bex.json
+    hinweis: "Produktfoto groß mit langsamer Fahrt, Lupenring mit dem Stichwort der Packungsangabe, Belegzeilen, Liste, Schlussbild Produktgruppe (Reihe Unter der Lupe)."
+  - kuerzel: C
+    name: Nebeneinander
+    gebaut: true
+    szenentypen: [nh_hook, nh_facts, nh_list, nh_versus, nh_time, nh_steps, nh_close]
+    beispielplan: data/direction/beauty-20261109-3-de.Cex.json
+    beispielplan_en: data/direction/beauty-20261109-3-en.Cex.json
+    hinweis: "Zwei neutrale Produkte oder Aussagen nebeneinander in zwei Karten (Packungsangabe / Beleg), Realbilder wechseln zwischen den Produkten, kein Sieger (Reihe Direkter Vergleich)."
+  - kuerzel: D
+    name: Schritt für Schritt
+    gebaut: true
+    szenentypen: [nh_hook, nh_facts, nh_list, nh_versus, nh_time, nh_steps, nh_close]
+    beispielplan: data/direction/beauty-20261110-3-de.Dex.json
+    beispielplan_en: data/direction/beauty-20261110-3-en.Dex.json
+    hinweis: "Drei bis vier Bilder nacheinander mit klaren Schnitten, nummerierte Hinweise und Fristen auf der Schiene (Routine, Fristen, Kategorien; Reihen Beauty verständlich und Im Alltag angewendet)."

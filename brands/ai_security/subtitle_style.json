@@ -1,0 +1,35 @@
+{
+  "font_family": "Manrope",
+  "font_weight": 700,
+  "font_size_px": 56,
+  "min_font_size_px": 42,
+  "text_transform": "none",
+  "group_words": 3,
+  "style": "highlight-word",
+  "color": "#e9eef8",
+  "highlight_color": "#4f8cff",
+  "scrim": {
+    "color": "#121b2f",
+    "opacity": 0.0,
+    "padding_px": 18,
+    "radius_px": 12
+  },
+  "position": {
+    "anchor": "bottom",
+    "bottom_px": 540,
+    "max_width_px": 800,
+    "align": "center"
+  },
+  "line_height": 1.15,
+  "letter_spacing_em": 0,
+  "shadow": "0 2px 8px rgba(0,0,0,0.45)",
+  "enter": {
+    "kind": "fade-up",
+    "seconds": 0.12
+  },
+  "exit": {
+    "kind": "fade",
+    "seconds": 0.12
+  },
+  "note": "Deviation from tokens.json: the brand type scale is made for web pages (display 60 px); video captions on a 1080 px frame need 42-56 px to stay readable on a phone. Normal case, highlight word in accent, no glow."
+}

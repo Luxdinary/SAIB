@@ -1,0 +1,553 @@
+{
+  "video_id": "military_history-20261111-3-en",
+  "brand_id": "military_history",
+  "language": "en",
+  "title": "Chain Home: Radar from Bawdsey",
+  "notes": "Woche 1, Reihe Signal und Nachricht. Mess- und Funkprinzip, Masten, Stationen; keine Kampfdetails. Watson-Watt nur als Name.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://heritage.suffolk.gov.uk/Monument/MSF18066",
+      "title": "RAF Bawdsey, Chain Home Station CH26 (BAW 051), Suffolk Heritage Explorer",
+      "label": "Suffolk HER Bawdsey",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.lindahall.org/about/news/scientist-of-the-day/robert-watson-watt/",
+      "title": "Scientist of the Day – Robert Watson-Watt, Linda Hall Library",
+      "label": "Linda Hall Library",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Höhe der Sendemasten: 350, 358 oder 360 Fuß; im Video 350 Fuß laut Suffolk HER.",
+    "Inbetriebnahme: Mai 1937 oder 24.09.1937 (voll einsatzbereit); im Video Mai 1937 als erste Station."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Can a radio transmitter reveal an aircraft nobody can see?",
+      "on_screen": "An aircraft in a radio signal?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Radar came out of nowhere? It began with measuring the ionosphere.",
+      "on_screen": "Radar from the ionosphere?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "The first echo in 1935 came from an ordinary BBC transmitter.",
+      "on_screen": "A BBC transmitter as radar",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "An echo far weaker than the signal that made it.",
+      "on_screen": "A tiny echo",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 3,
+        "visual": 3
+      },
+      "source_ids": [],
+      "visual": "",
+      "why": {
+        "truth": "nicht belegt, nicht wählbar"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a radio wave come back.",
+      "on_screen": "The wave comes back",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Can a radio transmitter reveal an aircraft nobody can see?",
+      "data": {
+        "question": "An aircraft in a radio signal?",
+        "question_em": "radio signal",
+        "card_title": "Chain Home",
+        "card_meta": "BAWDSEY · 1937",
+        "card_no": "FILE 13",
+        "stamp": "1935",
+        "drawing": "chain_home_masts.svg",
+        "packet_label": "Echo",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:aircraft",
+        "packet_at": "w:reveal",
+        "em_at": "w:nobody"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · THE REASON"
+      },
+      "spoken": "From 1927 Robert Watson-Watt measures the ionosphere with radio waves. On 12 February 1935 he calculates that a metal aircraft reflects them. The echo would be tiny, but measurable.",
+      "data": {
+        "mode": "map",
+        "headline": "Calculated first",
+        "places": [
+          {
+            "label": "Transmitter",
+            "code": "radio wave",
+            "x": 600,
+            "y": 80,
+            "at": "w:radio"
+          },
+          {
+            "label": "Aircraft",
+            "code": "metal body",
+            "x": 190,
+            "y": 500,
+            "rx": 165,
+            "ry": 95,
+            "at": "w:aircraft"
+          }
+        ],
+        "route_at": "w:ionosphere",
+        "route_label": "wave out, echo back",
+        "route_label_at": "w:reflects",
+        "wait_at": "w:calculates",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "12 Feb 1935: calculation",
+        "chip_at": "w:February",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Echo",
+        "packet_at": "w:echo",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "tiny but measurable",
+        "line_label_at": "w:measurable",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:blip",
+        "kicker": "3 · THE TECHNOLOGY"
+      },
+      "spoken": "On 26 February 1935, a receiver near Daventry sits in the beam of a BBC transmitter. An aircraft flies through, and a blip appears on the oscilloscope: the echo.",
+      "data": {
+        "headline": "The Daventry test",
+        "drawing": "chain_home_masts.svg",
+        "sheet_title": "SHEET 2 · SEND AND RECEIVE",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "Transmitter",
+            "x": 130,
+            "y": 90,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:BBC"
+          },
+          {
+            "label": "Wave goes out",
+            "x": 300,
+            "y": 160,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:aircraft"
+          },
+          {
+            "label": "Echo returns",
+            "x": 450,
+            "y": 260,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:blip"
+          },
+          {
+            "label": "Receiver",
+            "x": 350,
+            "y": 400,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:echo"
+          }
+        ],
+        "zoom": {
+          "x": 380,
+          "y": 300,
+          "scale": 1.12,
+          "at": "w:blip",
+          "back_at": "w:echo",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · THE COMPARISON"
+      },
+      "spoken": "That turns into a station. At Bawdsey there are four steel transmitter masts, 350 feet tall, and four wooden receiver towers, 240 feet tall.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Send and listen",
+        "left": {
+          "tag": "Send",
+          "title": "4 steel masts",
+          "at": "w:transmitter",
+          "rows": [
+            {
+              "text": "350 feet tall",
+              "at": "w:350"
+            }
+          ]
+        },
+        "right": {
+          "tag": "Listen",
+          "title": "4 wooden towers",
+          "at": "w:receiver",
+          "rows": [
+            {
+              "text": "240 feet tall",
+              "at": "w:240"
+            }
+          ]
+        },
+        "verdict": "Bawdsey: station CH26",
+        "verdict_at": "w:wooden",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · THE POINT"
+      },
+      "spoken": "Pulses give the distance, and the receiver towers give the direction. The result is a chain from Southampton to the Shetland Islands, reaching almost 100 miles.",
+      "data": {
+        "headline": "The chain",
+        "nodes": [
+          {
+            "label": "Pulses",
+            "code": "distance",
+            "at": "w:Pulses"
+          },
+          {
+            "label": "Phase",
+            "code": "direction",
+            "at": "w:direction"
+          },
+          {
+            "label": "Southampton",
+            "code": "south",
+            "at": "w:Southampton"
+          },
+          {
+            "label": "Shetland Islands",
+            "code": "north",
+            "at": "w:Shetland"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          },
+          {
+            "label": "stations along the coast"
+          }
+        ],
+        "packet_label": "Echo",
+        "total": {
+          "to": 100,
+          "pre": "almost",
+          "label": "MILES",
+          "at": "w:reaching"
+        },
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · THE TIMELINE"
+      },
+      "spoken": "1935 the first echo, 1936 the Air Ministry buys Bawdsey Manor, and in May 1937 the first Chain Home station starts operating.",
+      "data": {
+        "mode": "timeline",
+        "headline": "From 1935 to 1937",
+        "items": [
+          {
+            "year": "1935",
+            "title": "First echo",
+            "sub": "Daventry, 26 February",
+            "at": "w:1935"
+          },
+          {
+            "year": "1936",
+            "title": "Bawdsey Manor",
+            "sub": "bought by the Air Ministry",
+            "at": "w:1936"
+          },
+          {
+            "year": "1937",
+            "title": "First station",
+            "sub": "operating in May",
+            "at": "w:1937",
+            "sub_at": "w:operating"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · TODAY",
+        "marker_until": "w:Historical",
+        "head_until": "w:Historical"
+      },
+      "spoken": "At Bawdsey the brick transmitter block still stands. Next to it are the bases of the masts, and the manor house is now a school. Historical technology, plainly explained: follow Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Bawdsey",
+        "card_meta": "SUFFOLK · TODAY",
+        "card_no": "FILE 13",
+        "stamp": "Grade II",
+        "drawing": "chain_home_masts.svg",
+        "statement": "The transmitter block stands, the masts do not",
+        "statement_at": "w:transmitter",
+        "ghost_at": "w:bases",
+        "stamp_at": "w:brick",
+        "note": "Mast bases in the field",
+        "note_at": "w:masts",
+        "chip": "Follow Frontlore",
+        "chip_at": "w:follow"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Echo",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Signal: wanted",
+          "tone": "muted",
+          "offset": 1.2
+        },
+        {
+          "beat": "b2",
+          "text": "Echo: calculated",
+          "tone": "amber",
+          "offset": 11.5
+        },
+        {
+          "beat": "b3",
+          "text": "Echo: measured",
+          "tone": "amber",
+          "offset": 3.7
+        },
+        {
+          "beat": "b4",
+          "text": "Station: Bawdsey",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b5",
+          "text": "Chain: along the coast",
+          "tone": "amber",
+          "offset": 8.5
+        },
+        {
+          "beat": "b6",
+          "text": "Bawdsey: operating",
+          "tone": "muted",
+          "offset": 7.1
+        },
+        {
+          "beat": "b7",
+          "text": "Transmitter block: survives",
+          "tone": "muted",
+          "offset": 2.2
+        }
+      ]
+    },
+    "description": "In 1935 a BBC transmitter showed the echo of an aircraft for the first time. That became Chain Home, tall masts along the coast. Stylized drawings, no original footage.",
+    "companion_text": "Historical technology, plainly explained: follow Frontlore.",
+    "hashtags": [
+      "radar",
+      "radio",
+      "historyoftechnology",
+      "history",
+      "chainhome"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

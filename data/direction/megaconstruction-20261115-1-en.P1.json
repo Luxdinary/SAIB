@@ -1,0 +1,635 @@
+{
+  "video_id": "megaconstruction-20261115-1-en",
+  "brand_id": "megaconstruction",
+  "language": "en",
+  "title": "Kölnbrein Dam: Austria's tallest dam at 1,902 metres",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Bauaufgabe. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261115-1-en.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-10-30). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://visit.verbund.com/de/malta",
+      "title": "VERBUND, Besucherzentrum Malta: Kölnbreinsperre 200 m hoch, 626 m breit, 1.902 m Seehöhe",
+      "label": "VERBUND, visit Malta",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.verbund.com/de/privat/themenwelten/strom-aus-wasserkraft/woher-kommt-der-strom-malta",
+      "title": "VERBUND: Woher kommt der Strom – Malta (Speicher Kölnbrein 200 Mio. m³; höchste Staumauer Österreichs, eine der höchsten Bogenmauern Europas)",
+      "label": "VERBUND, Kraftwerksgruppe Malta",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.stephanskirche.at/faq.php",
+      "title": "Dompfarre St. Stephan: FAQ (Südturm 136,4 m)",
+      "label": "St. Stephen's parish, FAQ",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Betonvolumen und Baujahre: nicht auf den geöffneten VERBUND-Seiten.",
+    "Krümmung und Talform im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "200 metres of concrete hold back 200 million cubic metres of water, at 1,902 metres up.",
+      "on_screen": "200 m of wall, 200 million m³ of water",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "How big is the Kölnbrein Dam, really?",
+      "on_screen": "How big is the Kölnbrein Dam, really?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Most people underestimate the Kölnbrein Dam.",
+      "on_screen": "the Kölnbrein Dam: bigger than you think",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "What can go wrong with the Kölnbrein Dam depends on how it is built.",
+      "on_screen": "the Kölnbrein Dam: how it is built",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch the Kölnbrein Dam take shape in the model.",
+      "on_screen": "the Kölnbrein Dam as a 3D model",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "How do you hold back 200 million cubic metres of water at 1,902 metres above sea level? That is the engineering task of the Kölnbrein dam in Austria.",
+      "data": {
+        "kicker": "Task · Kölnbrein dam",
+        "question": "How do you hold 200 million m³?",
+        "question_at": 0.05,
+        "pins": [
+          {
+            "anchor": "crest",
+            "text": "200 m",
+            "kind": "dim",
+            "at": "@Kölnbrein"
+          }
+        ],
+        "tag": {
+          "text": "Malta valley · 1,902 m up",
+          "at": "@Austria",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "Behind the wall lies the Kölnbrein reservoir with 200 million cubic metres of water, for VERBUND's Malta power plant group. All that water pushes against the wall.",
+      "data": {
+        "headline": "The load case",
+        "load": {
+          "label": "Kölnbrein reservoir",
+          "value": "200",
+          "unit": "million m³",
+          "sub": "Malta plant group, VERBUND",
+          "at": "@200",
+          "dy": 540
+        },
+        "goal": {
+          "text": "Hold the water safely",
+          "at": "@pushes",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "The solution: a curved wall, an arch dam. According to the operator, it is one of the highest arch dams in Europe.",
+      "data": {
+        "headline": "The principle",
+        "note": "curvature schematic",
+        "pins": [
+          {
+            "anchor": "arch",
+            "text": "Arch",
+            "at": "@arch",
+            "side": "up"
+          }
+        ],
+        "rule": {
+          "text": "The wall is curved: an arch dam.",
+          "at": "@curved",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "The result is a wall that VERBUND calls Austria's highest dam: 200 metres tall, with a crest 626 metres wide, at 1,902 metres above sea level.",
+      "data": {
+        "headline": "How it was built",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Height of the wall",
+            "qty": "200 m",
+            "at": "@200"
+          },
+          {
+            "pos": "2",
+            "part": "Width of the crest",
+            "qty": "626 m",
+            "at": "@626"
+          },
+          {
+            "pos": "3",
+            "part": "Above sea level",
+            "qty": "1,902 m",
+            "at": "@1,902"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Let's check: the south tower of St. Stephen's Cathedral in Vienna measures 136.4 metres. 200 divided by 136.4 is 1.47. And the crest is a good three times as wide as the wall is tall.",
+      "data": {
+        "headline": "Checked",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "Wall ÷ St. Stephen's south tower",
+            "a": {
+              "value": 200,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 136.4,
+              "unit": "m"
+            },
+            "unit": "×",
+            "round": 0.01,
+            "decimals": 2,
+            "expect": 1.47,
+            "at": "@136.4",
+            "result_at": "@1.47"
+          },
+          {
+            "label": "Crest width ÷ wall height",
+            "a": {
+              "value": 626,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 200,
+              "unit": "m"
+            },
+            "unit": "×",
+            "round": 0.01,
+            "decimals": 2,
+            "prefix": "≈ ",
+            "expect": 3.13,
+            "at": "@crest",
+            "result_at": "@three"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Austria's highest dam: 200 metres tall, 626 metres wide, at more than 1,900 metres. Follow Gigastruct for the next engineering task.",
+      "data": {
+        "statement": "Solved: an arch of concrete",
+        "sheet": "SHEET 18",
+        "rows": [
+          [
+            "Task",
+            "Hold 200 million m³"
+          ],
+          [
+            "Solution",
+            "Arch dam, 200 m tall"
+          ],
+          [
+            "Crest",
+            "626 m wide"
+          ],
+          [
+            "Location",
+            "1,902 m above sea level"
+          ]
+        ],
+        "cta": {
+          "text": "Follow Gigastruct",
+          "at": "@Follow"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "TASK",
+        "IDEA",
+        "BUILD",
+        "MATHS",
+        "TEST"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 0,
+        "b3": 1,
+        "b4": 2,
+        "b5": 3,
+        "b6": 5
+      }
+    },
+    "description": "The Kölnbrein Dam in Austria's Malta valley is the country's tallest dam: 200 m high, 626 m wide, 1,902 m above sea level – holding 200 million m³ of water.",
+    "companion_text": "Calculated: 200 m ÷ 136.4 m = 1.47. Sources: VERBUND (Malta visitor centre, Malta power plant group), St. Stephen's parish. Stylised 3D model. Follow Gigastruct.",
+    "hashtags": [
+      "koelnbreindam",
+      "austria",
+      "archdam",
+      "hydropower",
+      "engineering"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "200 m ÷ 136,4 m = 1,47",
+        "result": "knapp anderthalbmal so hoch wie der Südturm",
+        "sources": [
+          "S1",
+          "S4"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "626 m ÷ 200 m = 3,13",
+        "result": "Krone gut dreimal so breit wie die Mauer hoch",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "dam",
+          "kind": "dam",
+          "radius": 400,
+          "angle": 103,
+          "height": 200,
+          "t": 14,
+          "water_l": 900,
+          "water_w": 1200,
+          "water_x": 460,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "level": 0.92
+          }
+        },
+        {
+          "id": "flankN",
+          "kind": "box",
+          "size": [
+            1400,
+            260,
+            900
+          ],
+          "color": "compare",
+          "pos": [
+            150,
+            0,
+            760
+          ]
+        },
+        {
+          "id": "flankS",
+          "kind": "box",
+          "size": [
+            1400,
+            260,
+            900
+          ],
+          "color": "compare",
+          "pos": [
+            150,
+            0,
+            -760
+          ]
+        },
+        {
+          "id": "steph",
+          "kind": "prism",
+          "height": 136.4,
+          "width": 22,
+          "levels": 24,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              0.5,
+              0.9
+            ],
+            [
+              0.55,
+              0.6
+            ],
+            [
+              1,
+              0.04
+            ]
+          ],
+          "color": "model",
+          "pos": [
+            -160,
+            0,
+            0
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "crest": [
+          0,
+          205,
+          0
+        ],
+        "arch": [
+          -40,
+          150,
+          200
+        ],
+        "water": [
+          400,
+          180,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 200,
+            "az1": 190,
+            "el0": 16,
+            "el1": 20,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 160,
+            "az1": 170,
+            "el0": 12,
+            "el1": 16,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {
+            "dam.level": [
+              [
+                0,
+                0.6
+              ],
+              [
+                "%0.8",
+                0.92
+              ]
+            ]
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 270,
+            "az1": 260,
+            "el0": 50,
+            "el1": 60,
+            "fit0": 0.7,
+            "fit1": 0.8,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 200,
+            "az1": 215,
+            "el0": 18,
+            "el1": 14,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {}
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 180,
+            "az1": 170,
+            "el0": 8,
+            "el1": 10,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {
+            "steph.visible": 1
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 210,
+            "az1": 200,
+            "el0": 20,
+            "el1": 24,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

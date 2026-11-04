@@ -1,0 +1,457 @@
+{
+ "video_id": "ai_security-20261114-3-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "A password manager for the team",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema B06, Reihe Fünf-Minuten-Schutz. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Team passwords. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Team passwords",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Passwords: reused",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "One leak: every account",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Vault: set up?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Features: in use?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Master password: strong?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Manager: start today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Reused password: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "A strong, separate password for every account without remembering any: what the BSI and the NCSC say about password managers, and why the master password matters.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "passwordmanager",
+   "passwords",
+   "smallbusiness",
+   "cybersecurity",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_hook_dataroom.mp4",
+   "file_beside": "bg_flow_lanes.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_flow_lanes.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_negate_pulse.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, dataroom, lanes, split, lanes, calm, negate."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/Passwort-Manager/passwort-manager_node.html",
+   "title": "BSI: Passwörter verwalten mit dem Passwort-Manager",
+   "checked_at": "2026-11-01",
+   "label": "BSI (Germany), password managers"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers",
+   "title": "NCSC: Top tips for staying secure online – Managing your passwords",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, managing passwords"
+  }
+ ],
+ "unverified": [
+  "Specific products: deliberately not named."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "How many passwords does your team remember, and how many are the same?",
+   "on_screen": "How many are the same?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "One good password for everything is enough? Not according to the BSI.",
+   "on_screen": "One password for all?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "A password manager can warn you when a site doesn't match the saved address.",
+   "on_screen": "It warns about fake sites",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One cracked password, and criminals get into every account that uses it.",
+   "on_screen": "One password, every account?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch a password manager create a new password.",
+   "on_screen": "How a strong password is made",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "How many passwords does your team remember, and how many of them are the same?",
+   "data": {
+    "question": "How many are the same?",
+    "doc_label": "Password list",
+    "chat_title": "Team passwords",
+    "bot_line": "3 accounts, 1 password",
+    "typed": "Company2026!",
+    "badge": "Same?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 12,
+   "spoken": "Germany's BSI warns: if one password is used for many accounts and gets cracked, criminals can get into all of them. The safest approach is a separate, strong password for every account.",
+   "data": {
+    "headline": "One password, many accounts",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "One cracked password",
+      "icon": "&#9888;"
+     },
+     {
+      "id": "n1",
+      "label": "Email, shop, cloud",
+      "icon": "&#9783;"
+     },
+     {
+      "id": "n2",
+      "label": "Criminals everywhere",
+      "icon": "&#9823;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "fits"
+     },
+     {
+      "label": "opens"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 7.5,
+     "label": "All accounts open?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 13,
+   "spoken": "That's what password managers are for. According to the BSI, they store usernames and passwords encrypted, protected by one complex master password. Like a notebook locked in a drawer.",
+   "data": {
+    "headline": "What a password manager is",
+    "file_label": "Team passwords",
+    "card": {
+     "title": "According to the BSI",
+     "rows": [
+      {
+       "text": "passwords encrypted",
+       "ok": null
+      },
+      {
+       "text": "one master password",
+       "ok": null
+      },
+      {
+       "text": "like a locked drawer",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 14,
+   "spoken": "On top of that, there's everyday help: the manager creates strong passwords, fills them in when you log in, and can warn you when a site doesn't match the saved address. The NCSC explicitly encourages password managers.",
+   "data": {
+    "headline": "In your head or in a manager",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 7.0,
+    "left": {
+     "title": "In your head",
+     "rows": [
+      {
+       "text": "few, often the same",
+       "ok": "open"
+      },
+      {
+       "text": "written on notes",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "In a manager",
+     "rows": [
+      {
+       "text": "a separate one per account",
+       "ok": null
+      },
+      {
+       "text": "creates and fills them",
+       "ok": null
+      },
+      {
+       "text": "warns on a wrong address",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 12,
+   "spoken": "The BSI also names the downsides: forget the master password, and in the worst case all the data is gone. And if an attack on the manager succeeds, all passwords can be stolen at once. So the master password has to be strong.",
+   "data": {
+    "headline": "The master password",
+    "file_label": "Team passwords",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Long and unique",
+      "sub": "only for the vault",
+      "at": 0.6
+     },
+     {
+      "title": "Short or reused",
+      "sub": "everything at risk",
+      "at": 1.0
+     }
+    ],
+    "approval": "Master password safe?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Your five-minute fix: choose one password manager for the team. Start with the email account and give it a new, separate password. And protect the vault with a long master password plus a second factor.",
+   "data": {
+    "headline": "Five minutes to start",
+    "items": [
+     {
+      "title": "Pick a manager",
+      "sub": "one for the whole team",
+      "at": 2.0
+     },
+     {
+      "title": "Email first",
+      "sub": "new, separate password",
+      "at": 4.8
+     },
+     {
+      "title": "Secure the vault",
+      "sub": "long master password",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "One vault instead of a hundred notes. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "One vault, not notes",
+    "file_label": "Team passwords",
+    "button": "Save password",
+    "block_text": "No password used twice",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

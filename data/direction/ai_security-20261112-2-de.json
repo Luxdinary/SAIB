@@ -1,0 +1,456 @@
+{
+ "video_id": "ai_security-20261112-2-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Quishing: der falsche QR-Code",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema D04, Reihe So läuft die Masche. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: QR-Code. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "QR-Code",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Code: überklebt?",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Ziel: gefälschte Seite",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Adresse: unsichtbar",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Adresse: Tippfehler?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Zahlung: über Code?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Prüfen: vor dem Öffnen",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Unbekannte Seite: gesperrt",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Falsche QR-Codes auf Parkautomaten, an Ladesäulen, in Briefen: So läuft Quishing laut Verbraucherzentrale und FBI, und so prüfst du einen Code, bevor du zahlst.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "quishing",
+   "qrcode",
+   "betrug",
+   "phishing",
+   "kisicherheit"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_hook_dataroom.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: dataroom, lanes, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.verbraucherzentrale.de/wissen/digitale-welt/phishingradar/quishing-falsche-qrcodes-in-mails-briefen-oepnv-und-strassenverkehr-98612",
+   "title": "Verbraucherzentrale: Quishing – falsche QR-Codes in Mails, Briefen, ÖPNV und Straßenverkehr (Stand 23.10.2025)",
+   "checked_at": "2026-11-01",
+   "label": "Verbraucherzentrale, Quishing"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ic3.gov/PSA/2022/PSA220118",
+   "title": "FBI IC3 PSA I-011822-PSA: Cybercriminals Tampering with QR Codes to Steal Victim Funds (18.01.2022)",
+   "checked_at": "2026-11-01",
+   "label": "FBI IC3, QR-Warnung"
+  }
+ ],
+ "unverified": [
+  "Fallzahlen zu Quishing: nicht verwendet.",
+  "Empfehlung für Scanner-Apps: bewusst nicht gegeben (Quellen widersprechen sich)."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Woher weißt du, wohin ein QR-Code dich schickt?",
+   "on_screen": "Wohin führt dieser QR-Code?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Ein QR-Code auf einem Automaten ist offiziell? Nicht unbedingt.",
+   "on_screen": "Code am Automaten = offiziell?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Kriminelle verschicken sogar falsche Strafzettel mit QR-Code.",
+   "on_screen": "Falscher Strafzettel mit QR-Code",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Ein Aufkleber auf dem Parkautomaten, und deine Zahlung landet bei Betrügern.",
+   "on_screen": "Aufkleber drauf, Zahlung weg?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "VZ: überklebte Codes an Parkautomaten; IC3: Aufkleber über Original"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau genau hin: Dieser QR-Code klebt auf einem anderen.",
+   "on_screen": "Hier klebt Code auf Code",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H4",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "Ein Aufkleber auf dem Parkautomaten, und deine Zahlung landet bei Betrügern.",
+   "data": {
+    "question": "Aufkleber drauf, Zahlung weg?",
+    "doc_label": "QR-Code",
+    "chat_title": "Parken bezahlen",
+    "bot_line": "Bitte Kartendaten eingeben",
+    "typed": "Code gescannt",
+    "badge": "Echt?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Die Verbraucherzentrale nennt die Masche Quishing. Kriminelle überkleben QR-Codes an Parkautomaten und Ladesäulen, verschicken falsche Bank-Briefe und verteilen falsche Strafzettel. Ziel sind gefälschte Seiten, die Daten oder Geld abgreifen.",
+   "data": {
+    "headline": "So läuft Quishing",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Falscher QR-Code",
+      "icon": "&#9888;"
+     },
+     {
+      "id": "n1",
+      "label": "Gefälschte Seite",
+      "icon": "&#9998;"
+     },
+     {
+      "id": "n2",
+      "label": "Daten oder Geld",
+      "icon": "&#9783;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "Scan"
+     },
+     {
+      "label": "Eingabe"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 1,
+     "at": 8.0,
+     "label": "Seite echt?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "Das Problem: Einem QR-Code sieht man nicht an, wohin er führt. Und nicht jedes Smartphone zeigt die Adresse an, bevor es eine Seite öffnet. Manche öffnen sie sofort.",
+   "data": {
+    "headline": "Warum Quishing funktioniert",
+    "file_label": "QR-Code",
+    "card": {
+     "title": "Der QR-Code",
+     "rows": [
+      {
+       "text": "Ziel nicht sichtbar",
+       "ok": "open"
+      },
+      {
+       "text": "manches Handy öffnet sofort",
+       "ok": "open"
+      },
+      {
+       "text": "Adresse vorher prüfen",
+       "ok": null
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none",
+    "risk_open": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "Das FBI rät: Nach dem Scannen die Adresse prüfen. Gefälschte Adressen ähneln der echten, mit Tippfehlern oder vertauschten Buchstaben. Und bei Codes auf Automaten schauen, ob ein Aufkleber über dem Original klebt.",
+   "data": {
+    "headline": "Woran du es erkennst",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.5,
+    "left": {
+     "title": "Verdächtig",
+     "rows": [
+      {
+       "text": "Aufkleber über dem Code",
+       "ok": "open"
+      },
+      {
+       "text": "Adresse mit Tippfehler",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Prüfen",
+     "rows": [
+      {
+       "text": "Adresse nach dem Scan lesen",
+       "ok": null
+      },
+      {
+       "text": "Zahlung auf bekannter Seite",
+       "ok": null
+      }
+     ]
+    },
+    "risk_open": true
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "Beim Bezahlen geht das FBI noch weiter: Zahle lieber nicht über eine Seite aus einem QR-Code. Tippe stattdessen eine bekannte Adresse selbst ein. Und lade keine App über einen QR-Code, sondern nur aus dem App-Store.",
+   "data": {
+    "headline": "Bezahlen per QR-Code?",
+    "file_label": "QR-Code",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Adresse selbst eintippen",
+      "sub": "bekannte Seite",
+      "at": 0.6
+     },
+     {
+      "title": "Seite aus dem Code",
+      "sub": "lieber nicht zahlen",
+      "at": 1.0
+     }
+    ],
+    "approval": "Zahlweg geprüft?",
+    "approval_at": 7.0,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 12,
+   "spoken": "Für dich und dein Team heißt das: Vor dem Öffnen die Adresse lesen. Bei Automaten nach Aufklebern schauen. Und Briefe mit QR-Code, die Geld wollen, über die bekannte Telefonnummer prüfen.",
+   "data": {
+    "headline": "Drei Prüfschritte",
+    "items": [
+     {
+      "title": "Adresse lesen",
+      "sub": "vor dem Öffnen",
+      "at": 2.0
+     },
+     {
+      "title": "Aufkleber suchen",
+      "sub": "an Automat und Säule",
+      "at": 4.8
+     },
+     {
+      "title": "Brief mit Code?",
+      "sub": "über bekannte Nummer prüfen",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Erst lesen, dann scannen, dann zahlen. Mehr KI-Sicherheit für deinen Betrieb: Folge Scutoria.",
+   "data": {
+    "headline": "Erst lesen, dann zahlen",
+    "file_label": "QR-Code",
+    "button": "Jetzt zahlen",
+    "block_text": "Zahlung nur auf bekannter Seite",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

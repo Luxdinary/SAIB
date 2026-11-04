@@ -1,0 +1,290 @@
+{
+  "video_id": "claude_workflows-20261115-2-de-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Welche Werkzeuge brauchen eine Freigabe? Drei echte Läufe ohne Zustimmung",
+  "notes": "Woche 1, Reihe Hält das?. Aufzeichnung werkzeuge-freigabe (zweite Fassung): Read, Write und Bash ohne Freigabe (Standardmodus), je zweimal. In der ersten Fassung prüfte Lauf 3 die Antwort auf die Skriptausgabe; Claude las aber nur den Quelltext und nannte die Ausgabe, der Prüfwert traf also fälschlich. Die zweite Fassung prüft, ob das Skript die Datei lief.txt anlegt. Erste Fassung unter recordings/_verworfen.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Welche Werkzeuge darf Claude Code ohne deine Freigabe benutzen?",
+      "on_screen": "Was geht ohne Freigabe?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "PER",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "Frage"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude Code darf auf deinem Rechner alles? Ohne Freigabe nur lesen.",
+      "on_screen": "Darf es alles?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "PER",
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Läufe 2 und 3"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Ohne Freigabe las Claude das Skript, statt es zu starten.",
+      "on_screen": "Gelesen statt gestartet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 3"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Eine Datei anlegen? Ohne Freigabe entstand sie nicht.",
+      "on_screen": "Nicht angelegt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 2"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Drei echte Läufe: lesen, schreiben, ein Skript starten.",
+      "on_screen": "Lesen, schreiben, starten",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Aufbau"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "PER",
+      "title": "Configure permissions: permission rules are enforced by Claude Code, not by the model; approval table: read-only (file reads, Grep) no, Bash commands yes except a built-in set of read-only commands, file modification yes; to inspect the full command text with your own logic before it runs, use a PreToolUse hook; PreToolUse hook decisions don't bypass permission rules",
+      "url": "https://code.claude.com/docs/en/permissions",
+      "checked_at": "2026-11-02",
+      "label": "Claude-Code-Doku, Permissions"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/werkzeuge-freigabe",
+      "checked_at": "2026-11-02",
+      "label": "Eigene Aufzeichnung",
+      "title": "Eigene Aufzeichnung werkzeuge-freigabe, 2026-11-02: Claude Code 2.1.309, Testordner mit Beispieldaten, jeder Lauf zweimal"
+    }
+  ],
+  "unverified": [
+    "Gezeigt ist der Standardmodus ohne jede Freigabe. Andere Modi (zum Beispiel acceptEdits) und erlaubte Befehle ändern das Ergebnis; sie sind hier nicht Teil des Versuchs."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "werkzeuge-freigabe"
+    },
+    "short_title": "Werkzeuge und Freigabe",
+    "description": "Echter Ablauf, aufgezeichnet am 02.11.2026 mit Claude Code 2.1.309 (Modell claude-haiku-5-5). Drei Läufe ohne jede Freigabe, jeder zweimal: Lesen mit Read ging. Eine Datei mit Write anlegen ging nicht. Ein Skript mit Bash starten ging nicht, Claude las stattdessen den Quelltext. Das deckt sich mit der Tabelle in der Doku.",
+    "companion_text": "Grundbefehl je Lauf: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Read,Write,Bash. Alle Läufe mit --tools Read,Write,Bash, ohne --allowedTools und ohne --permission-mode (Standard). Das Skript zeige.js legt beim Start lief.txt an; daran wird geprüft, ob es lief. Quelle: Claude-Code-Doku, Permissions, abgerufen am 02.11.2026. Pfade im Bild gekürzt (Testordner = .). Das Verhalten kann sich mit Version und Modell ändern. Kein offizieller Kanal von Anthropic.",
+    "hashtags": [
+      "claudecode",
+      "kiworkflow",
+      "programmieren",
+      "entwickler",
+      "sicherheit"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "PER",
+        "R1"
+      ],
+      "spoken": "Welche Werkzeuge darf Claude Code ohne deine Freigabe benutzen? Drei echte Läufe ohne jede Zustimmung: lesen, schreiben, ein Skript starten.",
+      "data": {
+        "run": "L1",
+        "question": "Was geht ohne Freigabe?",
+        "type_word": "Werkzeuge",
+        "chips_word": "Drei",
+        "rec": "werkzeuge-freigabe"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Im Testordner liegen eine Notiz und ein kleines Skript. Das Skript schreibt beim Start die Datei lief.txt. So ist sichtbar, ob es wirklich lief, und nicht nur, was Claude darüber sagt.",
+      "data": {
+        "run": "L3",
+        "show": "zeige.js",
+        "highlight_text": "writeFileSync",
+        "label": "Beispieldaten",
+        "view_word": "Skript",
+        "highlight_word": "lief.txt",
+        "tag_word": "sichtbar",
+        "rec": "werkzeuge-freigabe"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf eins, lesen. Claude las notiz.txt mit Read und nannte die erste Zeile. Keine Rückfrage, keine Sperre.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "stamp_true": "ausgeführt",
+        "stamp_false": "Freigabe fehlt",
+        "rec": "werkzeuge-freigabe"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf zwei, schreiben. Claude schaute zuerst nach, ob gruss.txt schon existiert, und wollte die Datei dann mit Write anlegen. Das Schreiben war nicht freigegeben, die Datei entstand nicht.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "stamp_true": "ausgeführt",
+        "stamp_false": "Freigabe fehlt",
+        "rec": "werkzeuge-freigabe"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf drei, ein Skript starten. Der Bash-Befehl brauchte eine Freigabe und lief nicht. Claude las stattdessen das Skript und beschrieb, was es tun würde. Die Datei lief.txt entstand nicht.",
+      "data": {
+        "run": "L3",
+        "probe_good": true,
+        "text_rows": 6,
+        "stamp_true": "ausgeführt",
+        "stamp_false": "Freigabe fehlt",
+        "rec": "werkzeuge-freigabe"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "PER"
+      ],
+      "spoken": "Alle drei Läufe liefen zweimal, mit gleichem Ergebnis. Lesen ging ohne Freigabe, Schreiben und Bash nicht. So steht es auch in der Tabelle der Doku.",
+      "data": {
+        "headline": "3 Läufe, je 2-mal",
+        "probe_good": true,
+        "stamp_true": "ausgeführt",
+        "stamp_false": "Freigabe fehlt",
+        "titles": {
+          "L1": "Read: Datei lesen",
+          "L2": "Write: Datei anlegen",
+          "L3": "Bash: Skript starten"
+        },
+        "note": "Lesen: ohne Freigabe. Bash, Dateiänderung: mit Freigabe (laut Doku).",
+        "note_source": "Claude-Code-Doku, Permissions",
+        "rows_word": "Alle",
+        "row_gap": 0.7,
+        "note_word": "Tabelle",
+        "rec": "werkzeuge-freigabe"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "Lesen darf Claude also sofort. Für Schreiben und Befehle brauchst du eine Freigabe oder eine Regel. Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt.",
+      "data": {
+        "statement": "Lesen sofort, Schreiben und Bash mit Freigabe.",
+        "claim": "Promptwerk · echte Läufe",
+        "statement_word": "Lesen",
+        "claim_word": "Folge",
+        "rec": "werkzeuge-freigabe"
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+id: ai_security-20261109-1-de
+version: F2
+title: "Mythos: Wir sind zu klein für Angreifer"
+reihe: "Was tust du?"
+short: "Mythos zu klein"
+note: "Thema C01, Mythos als falsche Option. Beispielfall nachgestellt; Aussagen aus S1 (BSI KMU), S2 (UK Cyber Security Breaches Survey 2025) und S3 (BSI Zwei-Faktor), Faktenbasis aus dem Plan vom 01.11.2026. Das alte Video im Format Fassung B bleibt liegen."
+description: "Eine Phishing-Mail im Sammelpostfach, und dein erster Gedanke: Wir sind doch viel zu klein. Was tust du? Warum das BSI das anders sieht und welcher eine Schritt heute hilft."
+hashtags: [mythos, phishing, kmu, itsicherheit, wastustdu]
+sources:
+  - {id: S1, url: "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/KMU/KMU_node.html", title: "BSI: Informationen für kleine und mittlere Unternehmen", checked_at: "2026-11-01", label: "BSI, Seite für KMU"}
+  - {id: S2, url: "https://www.gov.uk/government/statistics/cyber-security-breaches-survey-2025/cyber-security-breaches-survey-2025", title: "UK Government: Cyber Security Breaches Survey 2025", checked_at: "2026-11-01", label: "UK-Regierung, Breaches Survey 2025"}
+  - {id: S3, url: "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Zwei-Faktor-Authentisierung/zwei-faktor-authentisierung_node.html", title: "BSI: Zwei-Faktor-Authentisierung", checked_at: "2026-11-01", label: "BSI, Zwei-Faktor"}
+unverified:
+  - "Übertragbarkeit der britischen Zahlen auf Deutschland oder Österreich: nicht behauptet."
+  - "Schadenshöhen: nicht verwendet."
+  - "Ablauf im Beispielfall (Sammelpostfach, Kollegin gibt Passwort ein) ist erfunden und als Beispiel gekennzeichnet; die Folgen (Kundendaten abgegriffen, weitere Angriffe) stammen aus S1."
+  - "Dass Warten bis zum Vorfall zu spät ist (Option B), ist Scutorias Auslegung, im Bild markiert."
+pick: demonstration
+hooks:
+  - {type: question, spoken: "Wir sind doch viel zu klein für Angreifer. Oder?", screen: "Zu klein für Angreifer?"}
+  - {type: misconception, spoken: "Wir sind zu klein für Hacker? Das BSI sieht das anders.", screen: "Zu klein = sicher?", src: [S1]}
+  - {type: surprising_fact, spoken: "35 Prozent der britischen Kleinstbetriebe haben 2025 Phishing-Angriffe erkannt.", screen: "35 % der Kleinstbetriebe", src: [S2]}
+  - {type: concrete_risk, spoken: "Angreifer suchen kleine Betriebe meist nicht aus. Sie treffen sie trotzdem.", screen: "Nicht ausgesucht, trotzdem getroffen", src: [S1]}
+  - {type: demonstration, spoken: "Montag, sieben Uhr fünfzig. Im Sammelpostfach liegt eine Mail: Postfach fast voll.", screen: "MO 07:50 · Postfach fast voll?"}
+beats:
+  - f: hook
+    t: sc_case
+    s: "Montag, sieben Uhr fünfzig. In eurem Sammelpostfach liegt eine Mail: Postfach fast voll, bitte hier bestätigen. Dein erster Gedanke: Wer will schon was von uns? Wir sind neun Leute."
+    d:
+      kicker: "Beispielfall · nachgestellt"
+      time: "MO 07:50"
+      place: "Büro einer Zimmerei mit neun Leuten"
+      mail_at: 0.6
+      mail: {from: "Postfach-Service (Beispiel)", addr: "service@mail-hilfe.example", time: "07:48", subject: "Postfach fast voll", lines: ["Ihr Speicher ist fast voll.", "Bitte hier bestätigen,", "sonst gehen Mails verloren."]}
+      highlight: {line: 1, label: "Link", at: "@bestätigen"}
+  - f: problem
+    t: sc_choice
+    s: "Was tust du? A: Nichts, uns meint ja keiner. B: Ihr kümmert euch darum, wenn wirklich etwas passiert. C: Du schaltest heute für das Postfach die Zwei-Faktor-Anmeldung ein. Entscheide dich jetzt."
+    src: [S1]
+    d:
+      question: "Was tust du?"
+      options:
+        - {key: A, text: "Nichts, uns meint keiner", at: "@Nichts"}
+        - {key: B, text: "Erst wenn etwas passiert", at: "@kümmert"}
+        - {key: C, text: "Heute Zwei-Faktor einschalten", at: "@schaltest"}
+      think: {seconds: 2.4, at: "@Entscheide"}
+      hint: "Entscheide dich jetzt."
+  - f: explanation
+    t: sc_inspect
+    s: "Laut BSI werden kleine Betriebe meist nicht gezielt ausgesucht. Sie geraten in Angriffe, die großflächig und automatisiert laufen. Die britische Regierung zählt für 2025: 35 Prozent der Kleinstbetriebe haben Phishing-Angriffe erkannt."
+    src: [S1, S2]
+    d:
+      kicker: "Was die Quellen sagen"
+      headline: "Wie Angriffe treffen"
+      rows:
+        - {label: "Auswahl", value: "meist nicht gezielt", verdict: "BSI", at: "@gezielt"}
+        - {label: "Methode", value: "breit, automatisiert", verdict: "BSI", at: "@großflächig"}
+        - {label: "Phishing", value: "35 % der Kleinstbetriebe", verdict: "UK 2025", at: "@Prozent"}
+      fact: {kind: fakt, text: "Kleine Betriebe geraten in breite, automatisierte Angriffe.", source: "BSI · Seite für KMU", at: 1.4}
+  - f: demonstration
+    t: sc_timeline
+    s: "Spielen wir A durch. Die Mail ging an sehr viele Postfächer, eures ist eins davon. Eine Kollegin klickt und gibt ihr Passwort ein. Laut BSI greifen Täter dann Daten von Kunden ab und nutzen sie für weitere Angriffe."
+    src: [S1]
+    d:
+      kicker: "Wahl A, durchgespielt"
+      tag: "Beispiel"
+      headline: "Uns meint ja keiner"
+      items:
+        - {time: "MO 07:50", text: "Mail an sehr viele Postfächer", at: "@Postfächer"}
+        - {time: "MO 09:12", text: "Kollegin gibt ihr Passwort ein", tone: amber, at: "@klickt"}
+        - {time: "Danach", text: "Kundendaten abgegriffen", tone: red, at: "@greifen"}
+        - {time: "Später", text: "Weitere Angriffe mit den Daten", at: "@weitere"}
+      source: {kind: fakt, label: "BSI · Folgen für KMU", at: 1.0}
+  - f: insight
+    t: sc_step
+    s: "Richtig ist C. Das BSI rät, die Zwei-Faktor-Anmeldung einzuschalten, sobald ein Dienst sie anbietet, gerade beim E-Mail-Konto. Dann reicht ein abgegriffenes Passwort allein nicht. A setzt auf Glück, B wartet, bis es zu spät ist."
+    src: [S3, S1]
+    d:
+      mode: rule
+      kicker: "Der eine Schritt"
+      card: {letter: C, title: "Zwei-Faktor fürs Postfach", sub: "heute, nicht erst nach dem Vorfall", at: 0.2}
+      strikes:
+        - {text: "A: Nichts tun", note: "Angriffe laufen breit", at: "@Glück"}
+        - {text: "B: Erst nach dem Vorfall", note: "dann zu spät", at: "@wartet"}
+      sources:
+        - {kind: fakt, label: "BSI · Zwei-Faktor einschalten"}
+        - {kind: fakt, label: "BSI · Seite für KMU"}
+        - {kind: auslegung, label: "B: Auslegung Scutoria"}
+      sources_at: "@BSI"
+  - f: close
+    t: sc_close
+    s: "Klein heißt nicht unsichtbar. Was hättest du gewählt? Schreib es in die Kommentare."
+    d:
+      kicker: "Reihe · Was tust du?"
+      rule: "Klein heißt nicht unsichtbar."
+      rule_at: 0.3
+      question: {text: "Was hättest du gewählt?", at: "@Was"}
+      domain: "scutoria.com"
+      domain_at: 1.2
+      claim: "Belegt. Datiert. Vorzeigbar."
+      disclaimer: "Quellenbasiert. Keine Rechtsberatung."

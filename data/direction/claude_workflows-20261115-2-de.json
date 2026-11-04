@@ -1,0 +1,653 @@
+{
+  "video_id": "claude_workflows-20261115-2-de",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Die Werkzeuge von Claude Code",
+  "notes": "Woche 1 (Plan-Agent D, 01.11.2026). Reihe Werkzeugkiste, Thema W12. Nur Werkzeugnamen aus der Tabelle der tools-reference (Read, Grep, Glob, Edit, Write, Bash, WebFetch). Freigabe-Angaben gelten laut Doku für den Modus Manual innerhalb des Arbeitsordners; im Auto-Modus entscheidet ein Klassifikator. Leitobjekt settings.json. Quellen am 01.11.2026 als Markdown geöffnet.",
+  "hook": {
+    "id": "H1",
+    "note": "Frage mit höchster Bewertung; die Werkzeugzeilen der Sitzung führen direkt in die Liste."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Claude liest, ändert und führt Befehle aus. Bei welchen Werkzeugen fragt es dich vorher?",
+      "on_screen": "Welche Werkzeuge fragen vorher?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Sitzung mit Read, Grep, Edit, Bash; Marker auf Edit",
+      "why": {
+        "truth": "Frage; Antwort in der Werkzeugtabelle",
+        "visual": "vier Werkzeugzeilen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude Code fragt vor jeder Aktion? Lesen läuft im Modus Manual ohne Rückfrage.",
+      "on_screen": "Fragt es immer?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Text",
+      "why": {
+        "truth": "nur innerhalb des Arbeitsordners"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Auf macOS und Linux sucht Claude Code standardmäßig über Bash, nicht mit Grep.",
+      "on_screen": "Grep fehlt standardmäßig",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Werkzeugliste",
+      "why": {
+        "relevance": "Detail"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Wer nicht weiß, welches Werkzeug fragt, erlaubt schnell zu viel.",
+      "on_screen": "Zu viel erlaubt?",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "abstrakt",
+      "why": {
+        "truth": "Wertung, kein Doku-Satz"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, welche Werkzeuge Claude Code ohne Rückfrage nutzt.",
+      "on_screen": "Ohne Rückfrage: welche?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "Liste",
+      "why": {
+        "curiosity": "schwächer als die Frage"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Tools reference (Claude Code Docs): built-in tools table with Permission required (Manual mode, inside working directory); Read/Grep/Glob prompt outside the working directory; Bash read-only commands without prompting; Glob and Grep absent by default on macOS, Linux, WSL; tool names in permission rules; permissions.allow, Bash(npm run *)",
+      "url": "https://code.claude.com/docs/en/tools-reference",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Werkzeuge"
+    },
+    {
+      "id": "S2",
+      "title": "How Claude Code works (Claude Code Docs): tools make Claude Code agentic; five categories; Manual mode asks before file edits and shell commands; allow specific commands in .claude/settings.json",
+      "url": "https://code.claude.com/docs/en/how-claude-code-works",
+      "checked_at": "2026-11-01",
+      "label": "Claude-Code-Doku, Funktionsweise"
+    }
+  ],
+  "unverified": [
+    "Wie die Rückfrage für Bash in Claude Code genau aussieht: hier nicht aus den Kalenderquellen übernommen; das Terminal zeigt eine animierte, deutsch beschriftete Darstellung ohne Originaltext.",
+    "Im Auto-Modus (laut how-claude-code-works ab v2.1.283 Startmodus im Terminal) entscheidet ein Klassifikator statt der Rückfrage; das Video spricht ausdrücklich vom Modus Manual.",
+    "WebFetch fragt laut permissions-Seite nicht bei vorab freigegebenen Doku-Domains; die Seite ist keine Kalenderquelle dieses Themas, daher nur „Freigabe laut Werkzeugtabelle“.",
+    "Die Werkzeugaufrufe im Hook (Read(src/app.js) usw.) sind Beispiele."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "settings.json",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Freigaben: unklar",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Werkzeuge: feste Namen",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "Read · Grep · Glob: frei",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Bash: fragt",
+          "tone": "amber"
+        },
+        {
+          "beat": "b5",
+          "text": "Ändern, Bash: fragen",
+          "tone": "amber"
+        },
+        {
+          "beat": "b6",
+          "text": "außerhalb: fragt immer",
+          "tone": "amber"
+        },
+        {
+          "beat": "b7",
+          "text": "allow: eingetragen",
+          "tone": "accent"
+        },
+        {
+          "beat": "b8",
+          "text": "npm run *: erlaubt",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Read, Grep, Glob, Edit, Write, Bash, WebFetch: welche eingebauten Werkzeuge Claude Code hat und welche laut Doku im Modus Manual eine Freigabe brauchen. Dazu zwei Grenzen und wie du einen Befehl dauerhaft erlaubst.",
+    "companion_text": "Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk. Grundlage: Claude-Code-Doku (Tools reference, How Claude Code works), abgerufen am 01.11.2026. Terminal und Editor sind eine animierte Darstellung, keine Bildschirmaufnahme. Grenzen laut Doku: Die Spalte „Permission required“ gilt für den Modus Manual und Pfade im Arbeitsordner; außerhalb fragen auch Read, Grep und Glob. Bash führt eine eingebaute Liste reiner Lesebefehle ohne Rückfrage aus. Auf macOS, Linux und WSL fehlen Grep und Glob standardmäßig, dann sucht Claude über Bash. Im Auto-Modus entscheidet ein Klassifikator über die meisten Rückfragen.",
+    "hashtags": [
+      "claudecode",
+      "werkzeuge",
+      "kiworkflow",
+      "programmieren",
+      "entwickler"
+    ],
+    "short_title": "Werkzeuge von Claude Code"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Claude liest, ändert und führt Befehle aus. Bei welchen Werkzeugen fragt es dich vorher?",
+      "data": {
+        "question": "Welche Werkzeuge fragen vorher?",
+        "chip": "Freigabe?",
+        "tabs": [
+          {
+            "name": "Sitzung",
+            "active": true
+          },
+          "settings.json"
+        ],
+        "file": "settings.json",
+        "lines": [
+          [
+            [
+              "com",
+              "# Werkzeuge dieser Sitzung"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Read(src/app.js)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Grep(login)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Edit(src/app.js)"
+            ]
+          ],
+          [
+            [
+              "acc",
+              "● "
+            ],
+            [
+              "",
+              "Bash(npm test)"
+            ]
+          ]
+        ],
+        "focus_line": 3,
+        "zoom": 1.1,
+        "mark_word": "ändert",
+        "click_word": "Befehle",
+        "question_word": "Bei",
+        "chip_word": "fragt",
+        "env_word": "Werkzeugen"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:Bei"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Die Doku listet die eingebauten Werkzeuge mit festen Namen. Genau diese Namen nutzt du in Berechtigungsregeln, Hook-Matchern und Subagenten.",
+      "data": {
+        "kicker": "Claude Code Docs · Tools",
+        "page_title": "Tools reference",
+        "quotes": [
+          "built-in tools that help it understand and modify your codebase",
+          "The tool names are the exact strings you use in permission rules"
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Diese Namen gelten in Regeln und Hooks.",
+        "page_word": "Doku",
+        "quote1_word": "eingebauten",
+        "quote2_word": "Genau",
+        "translation_word": "Berechtigungsregeln"
+      },
+      "overlay": {
+        "title": "Feste Namen",
+        "marker_at": "w:eingebauten",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Im Modus Manual fragen drei davon nicht, solange es um deinen Arbeitsordner geht: Read liest Dateien, Grep durchsucht Inhalte, Glob findet Dateien nach Muster.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Dateien lesen",
+            "code": "Read",
+            "at_word": "Read"
+          },
+          {
+            "title": "Inhalte durchsuchen",
+            "code": "Grep",
+            "at_word": "Grep"
+          },
+          {
+            "title": "Dateien nach Muster finden",
+            "code": "Glob",
+            "at_word": "Glob"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "Ohne Rückfrage",
+        "marker": "fakt",
+        "marker_at": "w:Manual",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Anders bei Bash: Will Claude npm test ausführen, fragt es dich. Erst nach deinem Ja läuft der Befehl. Nur eingebaute Lesebefehle laufen ohne Frage.",
+      "data": {
+        "title": "claude · demo-projekt",
+        "focus_line": 2,
+        "stamp": "Freigabe",
+        "annotation": "Lesebefehle laufen ohne Frage",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Führ die Tests aus"
+              ]
+            ],
+            "at_word": "Anders"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Bash(npm test)"
+              ]
+            ],
+            "at_word": "npm"
+          },
+          {
+            "kind": "err",
+            "text": "  Freigabe nötig",
+            "at_word": "fragt"
+          },
+          {
+            "kind": "dim",
+            "text": "  wartet auf dein Ja",
+            "at_word": "Erst"
+          }
+        ],
+        "mark_word": "fragt",
+        "click_word": "deinem",
+        "stamp_word": "läuft",
+        "annotation_word": "Nur",
+        "height": 500,
+        "top": 20
+      },
+      "overlay": {
+        "title": "Bash fragt vorher",
+        "example": true,
+        "marker_at": "w:Bash",
+        "dim_at": "w:deinem",
+        "vignette": true,
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Eine Freigabe brauchen laut Tabelle Edit für Änderungen, Write für neue Dateien, Bash für Befehle und WebFetch für Webseiten.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Dateien gezielt ändern",
+            "code": "Edit",
+            "at_word": "Edit"
+          },
+          {
+            "title": "Anlegen, überschreiben",
+            "code": "Write",
+            "at_word": "Write"
+          },
+          {
+            "title": "Shell-Befehle ausführen",
+            "code": "Bash",
+            "at_word": "Bash"
+          },
+          {
+            "title": "Webseite abrufen",
+            "code": "WebFetch",
+            "at_word": "WebFetch"
+          }
+        ]
+      },
+      "overlay": {
+        "title": "Mit Rückfrage",
+        "marker": "fakt",
+        "marker_at": "w:Freigabe",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Zwei Grenzen nennt die Doku: Außerhalb des Arbeitsordners fragen auch Read, Grep und Glob. Und auf macOS, Linux und WSL fehlen Grep und Glob standardmäßig.",
+      "data": {
+        "kicker": "Claude Code Docs · Tools",
+        "page_title": "Tools reference",
+        "quotes": [
+          "still prompt for paths outside the working directory",
+          "Absent by default on macOS, Linux, and WSL."
+        ],
+        "translation_label": "Auf Deutsch",
+        "translation": "Außerhalb des Ordners fragen auch sie.",
+        "page_word": "Doku",
+        "quote1_word": "Außerhalb",
+        "translation_word": "fragen",
+        "quote2_word": "macOS"
+      },
+      "overlay": {
+        "title": "Zwei Grenzen",
+        "marker_at": "w:Außerhalb",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "spoken": "Soll Claude einen Befehl nicht jedes Mal erfragen, trägst du ihn in der settings.json unter permissions allow ein, zum Beispiel alle npm-run-Skripte. Dann läuft er ohne Rückfrage.",
+      "data": {
+        "tabs": [
+          {
+            "name": ".claude/settings.json",
+            "active": true
+          }
+        ],
+        "focus_line": 3,
+        "pre_line": 2,
+        "callout": "läuft ohne Rückfrage",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "punc",
+              "{"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "key",
+              "\"permissions\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"allow\""
+            ],
+            [
+              "punc",
+              ": ["
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "str",
+              "\"Bash(npm run *)\""
+            ]
+          ],
+          [
+            [
+              "punc",
+              "    ]"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "  }"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "}"
+            ]
+          ]
+        ],
+        "line_h": 56,
+        "zoom": 1.1,
+        "typed_word": "erfragen",
+        "pre_word": "allow",
+        "mark_word": "Beispiel",
+        "click_word": "npm",
+        "callout_word": "Dann"
+      },
+      "overlay": {
+        "title": "Dauerhaft erlauben",
+        "example": true,
+        "marker_at": "w:settings",
+        "dim_at": "w:npm",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Lesen läuft ohne Frage, Ändern und Befehle brauchen dein Ja. Mehr Claude-Workflows Schritt für Schritt: Folge Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": "npm run *: erlaubt",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Bash(npm run build)"
+              ]
+            ]
+          },
+          {
+            "kind": "dim",
+            "text": "  erlaubt: Bash(npm run *)"
+          }
+        ],
+        "statement": "Lesen ohne Frage. Ändern und Befehle mit Freigabe.",
+        "brand": "Promptwerk",
+        "claim": "Claude-Workflows Schritt für Schritt",
+        "statement_word": "Lesen",
+        "brand_word": "Mehr"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

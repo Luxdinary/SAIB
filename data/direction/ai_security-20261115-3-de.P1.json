@@ -1,0 +1,430 @@
+{
+ "video_id": "ai_security-20261115-3-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Neue Bankverbindung per Mail? Erst anrufen",
+ "notes": "Pilot P1 des Scutoria-Fallformats \"Was tust du?\" (Format-Bibel: OneDrive\\Business\\02 Marke\\Scutoria\\Format-Bibel.md), Reihe \"Was tust du?\", Thema D02 aus dem Kalender. Beispielfall nachgestellt: Betrieb, Lieferant, Uhrzeiten und Ablauf sind erfunden; Mechanik (übernommene Postfächer) und Empfehlungen (zweiter Kanal, Rückruf, Rückruf der Überweisung, Anzeige) aus S1 und S2, am 02.11.2026 erneut gelesen. Ohne Erklärschicht und Statusleiste. Der alte Plan ai_security-20261115-3-de.json bleibt unverändert.",
+ "layout": {
+  "explainer": false,
+  "zone_top": 290,
+  "zone_h": 950,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "description": "Dein Lieferant meldet per Mail eine neue Bankverbindung, von seiner echten Adresse. Was tust du? Ein nachgestellter Fall mit drei Antworten und dem einen Schritt, den FBI und Polizei raten.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "rechnungsbetrug",
+   "bec",
+   "buchhaltung",
+   "kmu",
+   "wastustdu"
+  ],
+  "zone_lower_right_px": 940
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.ic3.gov/PSA/2024/PSA240911",
+   "title": "FBI IC3 PSA I-091124-PSA: Business Email Compromise – The $55 Billion Scam (11.09.2024)",
+   "checked_at": "2026-11-02",
+   "label": "FBI IC3, Warnung vom 11.09.2024"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.berlin.de/polizei/aufgaben/praevention/betrug/artikel.693958.php",
+   "title": "Polizei Berlin: Geschäftsführer-Schwindel (CEO-Fraud)",
+   "checked_at": "2026-11-02",
+   "label": "Polizei Berlin, CEO-Fraud"
+  }
+ ],
+ "unverified": [
+  "Häufigkeit der Masche in Deutschland und Österreich: nicht verwendet.",
+  "Ablauf im Beispielfall (Uhrzeiten, Antwort des Täters, Mahnung Wochen später) ist erfunden und als Beispiel gekennzeichnet, keine Tatsachenbehauptung.",
+  "Dass Antwort und Signatur-Nummer kein zweiter Kanal sind, ist Scutorias Auslegung von S1 (secondary channels) und im Bild als Auslegung markiert."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Dein Lieferant hat plötzlich eine neue Bankverbindung. Was tust du?",
+   "on_screen": "Neue IBAN. Was tust du?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "Frage groß, ohne Fall",
+   "why": {
+    "truth": "Situation, keine Behauptung"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Echte Absenderadresse heißt echte Mail? Nicht unbedingt.",
+   "on_screen": "Echte Adresse = echte Mail?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "S1: compromises legitimate business or personal email accounts"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Laut FBI läuft diese Masche häufig über echte, übernommene Postfächer.",
+   "on_screen": "Echte Postfächer, falsche Absicht",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "S1 Definition"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Eine Mail mit neuer Bankverbindung, und die nächste Zahlung geht an Fremde.",
+   "on_screen": "Neue IBAN per Mail?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "S1: requests for changes in account information"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Dienstag, neun Uhr zwölf. Dein Holzlieferant meldet eine neue Bankverbindung.",
+   "on_screen": "DI 09:12 · Neue Bankverbindung",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "Uhrzeit groß, die Mail kommt als Papierkarte herein, die geänderte Zeile wird markiert",
+   "why": {
+    "truth": "nachgestellter Beispielfall, im Bild als Beispielfall markiert",
+    "visual": "Fall statt Erklärung, Kern des neuen Formats"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des neuen Formats; Wahrheit 5, weil als Beispielfall gekennzeichnet."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "duration_hint": 7.5,
+   "spoken": "Dienstag, neun Uhr zwölf. Dein Holzlieferant schreibt: Wir haben eine neue Bankverbindung, bitte ab sofort dorthin zahlen.",
+   "data": {
+    "kicker": "Beispielfall · nachgestellt",
+    "time": "DI 09:12",
+    "place": "Buchhaltung einer Tischlerei",
+    "mail_at": "@Holzlieferant",
+    "mail": {
+     "from": "Holzhandel Beispiel GmbH",
+     "addr": "rechnung@holzhandel.example",
+     "time": "09:12",
+     "subject": "Neue Bankverbindung",
+     "lines": [
+      "Guten Morgen, ab sofort bitte",
+      "nur noch auf unser neues Konto:",
+      "IBAN DE•• •••• •••• 4471"
+     ]
+    },
+    "highlight": {
+     "line": 1,
+     "label": "geändert",
+     "at": "@Bankverbindung"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "duration_hint": 14,
+   "spoken": "Du schaust genau hin. Der Absender: seine echte Adresse. Der Ton: wie immer. Die Rechnung im Anhang: stimmt. Nichts fällt auf. Und genau das ist der Punkt: Laut FBI läuft diese Masche häufig über echte, übernommene Postfächer.",
+   "data": {
+    "kicker": "Was du prüfst",
+    "headline": "Alles wie immer?",
+    "rows": [
+     {
+      "label": "Absender",
+      "value": "bekannte Adresse",
+      "verdict": "unauffällig",
+      "at": "@Absender"
+     },
+     {
+      "label": "Ton",
+      "value": "wie immer",
+      "verdict": "unauffällig",
+      "at": "@Ton"
+     },
+     {
+      "label": "Anhang",
+      "value": "Rechnung stimmt",
+      "verdict": "unauffällig",
+      "at": "@Rechnung"
+     }
+    ],
+    "finding": {
+     "text": "Nichts fällt auf.",
+     "at": "@Nichts"
+    },
+    "fact": {
+     "kind": "fakt",
+     "text": "Die Masche läuft häufig über echte, übernommene Postfächer.",
+     "source": "FBI IC3 · Warnung vom 11.09.2024",
+     "at": "@Laut"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "duration_hint": 11,
+   "spoken": "Was tust du? A: Du antwortest auf die Mail und fragst nach. B: Du rufst die Nummer aus seiner Signatur an. C: Du rufst die Nummer aus euren eigenen Unterlagen an. Merk dir deine Wahl.",
+   "data": {
+    "question": "Was tust du?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Auf die Mail antworten",
+      "at": "@antwortest"
+     },
+     {
+      "key": "B",
+      "text": "Nummer aus der Signatur anrufen",
+      "at": "@rufst"
+     },
+     {
+      "key": "C",
+      "text": "Nummer aus euren Unterlagen anrufen",
+      "at": "@euren"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Merk"
+    },
+    "hint": "Merk dir deine Wahl."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "sc_timeline",
+   "duration_hint": 12.5,
+   "spoken": "Spielen wir A durch. Deine Rückfrage landet im selben Postfach. Ist es übernommen, antwortet der Täter: Ja, stimmt so. Du überweist. Wochen später mahnt dein echter Lieferant die offene Rechnung an.",
+   "data": {
+    "kicker": "Wahl A, durchgespielt",
+    "tag": "Beispiel",
+    "headline": "Du fragst per Mail nach",
+    "items": [
+     {
+      "time": "DI 09:14",
+      "text": "Deine Rückfrage geht raus",
+      "at": "@Rückfrage"
+     },
+     {
+      "time": "DI 09:31",
+      "text": "Antwort: Ja, stimmt so.",
+      "tone": "amber",
+      "at": "@antwortet"
+     },
+     {
+      "time": "FR 10:05",
+      "text": "Du überweist",
+      "at": "@überweist"
+     },
+     {
+      "time": "Wochen später",
+      "text": "Der echte Lieferant mahnt",
+      "tone": "red",
+      "at": "@Wochen"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "FBI IC3 · übernommene Postfächer",
+     "at": 1.0
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "duration_hint": 11.5,
+   "spoken": "Richtig ist C. Das FBI rät, geänderte Kontodaten über einen zweiten Kanal zu prüfen. Die Polizei rät zum Rückruf. A und B sind kein zweiter Kanal: Beide hängen an derselben Mail.",
+   "data": {
+    "mode": "rule",
+    "kicker": "Der eine Schritt",
+    "card": {
+     "letter": "C",
+     "title": "Rückruf, bekannte Nummer",
+     "sub": "aus euren Unterlagen, nie aus der Mail",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Antwort auf die Mail",
+      "note": "kein zweiter Kanal",
+      "at": "@A"
+     },
+     {
+      "text": "B: Nummer aus der Signatur",
+      "note": "kein zweiter Kanal",
+      "at": "@B"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "FBI IC3 · zweiter Kanal"
+     },
+     {
+      "kind": "fakt",
+      "label": "Polizei Berlin · Rückruf"
+     },
+     {
+      "kind": "auslegung",
+      "label": "A und B: Auslegung Scutoria"
+     }
+    ],
+    "sources_at": "@FBI"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "duration_hint": 9,
+   "spoken": "Und wenn das Geld schon weg ist? Dann zählt Zeit. Sofort die Bank anrufen und einen Rückruf der Überweisung verlangen. Dann Anzeige bei der Polizei.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "Schon überwiesen?",
+    "card": {
+     "letter": "!",
+     "title": "Dann zählt Zeit",
+     "sub": "sofort handeln, nicht abwarten",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "Bank: Überweisung zurückrufen",
+      "at": "@Bank"
+     },
+     {
+      "text": "Anzeige bei der Polizei",
+      "at": "@Anzeige"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "FBI IC3 · Polizei Berlin"
+     }
+    ],
+    "sources_at": "@Zeit"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "sc_close",
+   "duration_hint": 8,
+   "spoken": "Neue Bankverbindung per Mail? Erst anrufen, mit der Nummer, die du schon hast. Was hättest du gewählt? Schreib es in die Kommentare.",
+   "data": {
+    "kicker": "Reihe · Was tust du?",
+    "rule": "Neue IBAN? Erst anrufen.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Was hättest du gewählt?",
+     "at": "@hättest"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+   },
+   "source_ids": []
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash",
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 44626,
+          "output_tokens": 823,
+          "num_turns": 7,
+          "duration_s": 16.3
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash",
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 35118,
+          "output_tokens": 590,
+          "num_turns": 5,
+          "duration_s": 9.5
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash",
+            "Edit",
+            "Glob",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 28402,
+          "output_tokens": 861,
+          "num_turns": 6,
+          "duration_s": 7.1
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": true,
+          "tools_used": [
+            "Bash",
+            "Edit",
+            "Glob",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 28389,
+          "output_tokens": 843,
+          "num_turns": 6,
+          "duration_s": 9.1
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

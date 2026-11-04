@@ -1,0 +1,443 @@
+{
+  "video_id": "motivation-20261110-1-en",
+  "brand_id": "motivation",
+  "language": "en",
+  "title": "Tracking progress: what 138 experiments found",
+  "notes": "Gritwerk Vorlage 1.0, Produktion Woche 1 (Stefan, 01.11.2026). Kalender motivation-20261110-1-en, Reihe Nachgerechnet (C01). Aussagen nur aus den Kalenderquellen (Abruf 2026-11-01).",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 3,
+    "source_y": 1130,
+    "status_bar": {
+      "file": "Tick it",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Does ticking help?",
+          "tone": "amber",
+          "offset": 2.6
+        },
+        {
+          "beat": "b2",
+          "text": "138 studies, 19,951 people",
+          "tone": "muted"
+        },
+        {
+          "beat": "b3",
+          "text": "goal attainment: d = 0.40",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "an average, no promise",
+          "tone": "muted"
+        },
+        {
+          "beat": "b5",
+          "text": "Plan: tick at night",
+          "tone": "muted"
+        },
+        {
+          "beat": "b6",
+          "text": "today: day 1",
+          "tone": "accent",
+          "offset": 1.0
+        }
+      ]
+    },
+    "description": "Does it help to track your own progress? A meta-analysis of 138 randomised studies with almost 20,000 people found an average effect on goal attainment of d = 0.40, larger when progress was written down. What the number means and what it doesn't.",
+    "companion_text": "Every method with a source.",
+    "hashtags": [
+      "goals",
+      "habits",
+      "psychology",
+      "research",
+      "gritwerk"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26479070/",
+      "title": "Harkin, Webb, Chang, Prestwich, Conner, Kellar, Benn, Sheeran, 2016, Does monitoring goal progress promote goal attainment? A meta-analysis of the experimental evidence, Psychological Bulletin 142(2), 198-229",
+      "checked_at": "2026-11-01",
+      "label": "Harkin et al. 2016"
+    },
+    {
+      "id": "S2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19916637/",
+      "title": "Michie, Abraham, Whittington, McAteer, Gupta, 2009, Effective techniques in healthy eating and physical activity interventions: a meta-regression, Health Psychology 28(6), 690-701",
+      "checked_at": "2026-11-01",
+      "label": "Michie et al. 2009"
+    }
+  ],
+  "unverified": [
+    "Nicht im Video: Nicht sagen: Aufschreiben führt sicher zum Ziel; jeder erreicht damit mehr; keine Gesundheits-, Ernährungs- oder Bewegungstipps; die Michie-Zahlen (0,31, 0,42) nicht auf andere Ziele übertragen; keine Prozentversprechen aus d+ = 0,40 ableiten.",
+    "Grenzen: Mittelwert über sehr verschiedene Ziele und Interventionen, kein Wert für den Einzelfall; Zusammenfassung von Studien, nicht ein Experiment; die zweite Quelle betrifft nur Bewegungs- und Ernährungsziele in Gesundheitsstudien (deshalb Risiko medium, im Video keine Gesundheitsaussagen); Verzerrung durch unveröffentlichte Studien wurde hier nicht geprüft (nur Abstracts gelesen)."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Does it actually help to keep track of your progress?",
+      "on_screen": "Does ticking boxes help?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "Gewohnheitskarte mit Stempel und Frage",
+      "why": {
+        "choice": "eigener Hook, an den Quellen geprüft"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "What do studies really show about “Tracking progress”?",
+      "on_screen": "",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "demonstration",
+      "spoken": "Watch what the habit card looks like for this.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Relying on a catchphrase means planning past the evidence.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "misconception",
+      "spoken": "A popular line on this only partly survives a check.",
+      "on_screen": "",
+      "scores": {
+        "clarity": 3,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 2
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "note": "Alternative, schwächer"
+      }
+    }
+  ],
+  "hook": {
+    "id": "H1",
+    "note": "Eigener Hook mit der höchsten Bewertung."
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gritwerk_tracker",
+      "duration_hint": 8,
+      "spoken": "Does it actually help to keep track of your progress? A hundred and thirty-eight studies give a measurable answer.",
+      "data": {
+        "cue": "When my evening routine starts",
+        "action": "tick one box",
+        "counter_label": "Day",
+        "boxes": 28,
+        "cols": 7,
+        "question": "Does ticking boxes help?",
+        "fill_to": 9,
+        "fill_at": "w:track",
+        "fill_dur": 1.6,
+        "stamp": "Worth it?",
+        "stamp_at": "w:progress",
+        "question_at": "w:Does",
+        "rest_at": "w:measurable",
+        "goal": "138 studies"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:hundred"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "explanation",
+      "scene_type": "gritwerk_paper",
+      "duration_hint": 15,
+      "spoken": "In 2016, a team led by Benjamin Harkin pooled a hundred and thirty-eight experiments with almost twenty thousand participants. In every one of them, chance decided who was asked to monitor their progress and who was not.",
+      "data": {
+        "headline": "The meta-analysis",
+        "tag": "Meta-analysis",
+        "cite": "Harkin et al. 2016",
+        "claim": "Does monitoring progress help people reach their goals?",
+        "claim_at": "w:2016",
+        "rows": [
+          {
+            "k": "Studies",
+            "v": "138, all randomised",
+            "at": "w:experiments"
+          },
+          {
+            "k": "People",
+            "v": "19,951",
+            "at": "w:twenty"
+          },
+          {
+            "k": "Compared",
+            "v": "monitoring or not",
+            "at": "w:chance"
+          }
+        ],
+        "plate": true
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "2 · THE STUDY",
+        "marker": "fakt",
+        "marker_at": "w:2016",
+        "transition": {
+          "type": "iris",
+          "x": 880,
+          "y": 730,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "gritwerk_bars",
+      "duration_hint": 15,
+      "spoken": "The result: the interventions got people to check their progress much more often. And goal attainment rose by an average of zero point four. The effect was largest when progress was written down or made public.",
+      "data": {
+        "headline": "What changed",
+        "caption": "Effect size d, average across all studies",
+        "bars": [
+          {
+            "label": "Checked more",
+            "value": 1.98,
+            "text": "1.98",
+            "tone": "muted",
+            "at": "w:often"
+          },
+          {
+            "label": "Goals reached",
+            "value": 0.4,
+            "text": "0.40",
+            "at": "w:attainment"
+          }
+        ],
+        "scale_max": 2.2,
+        "note": "Strongest when written down or public",
+        "note_at": "w:written"
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "3 · THE COMPARISON",
+        "marker": "fakt",
+        "marker_at": "w:result",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gritwerk_paper",
+      "duration_hint": 16,
+      "spoken": "Some context: zero point four is an average across very different goals, not your personal odds. A second analysis of health studies also found self-monitoring to be the key technique, but its numbers apply only to those studies.",
+      "data": {
+        "headline": "What it means",
+        "tag": "Caveat",
+        "cite": "Harkin 2016 · Michie 2009",
+        "claim": "An average across many goals, not your personal odds.",
+        "claim_at": "w:context",
+        "rows": [
+          {
+            "k": "Average",
+            "v": "across very different goals",
+            "at": "w:average"
+          },
+          {
+            "k": "Second",
+            "v": "analysis: a similar picture",
+            "at": "w:analysis"
+          },
+          {
+            "k": "Limit",
+            "v": "numbers don't transfer",
+            "at": "w:numbers"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · THE CAVEAT",
+        "marker": "fakt",
+        "marker_at": "w:context",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gritwerk_plan",
+      "duration_hint": 14,
+      "spoken": "Write your progress down instead of keeping it in your head. When your evening routine starts, tick one box on your card as soon as your step is done. Today, the first box is up.",
+      "data": {
+        "layout": "month",
+        "weeks": 4,
+        "days": 7,
+        "cue": "When my evening routine starts",
+        "action": "tick one box",
+        "cue_ph": "Cue?",
+        "action_ph": "Action?",
+        "headline": "Try it like this",
+        "cue_at": "w:evening",
+        "action_at": "w:tick",
+        "tick_at": "w:box#2",
+        "steps": [
+          {
+            "title": "Cue: evening routine",
+            "at": "w:evening"
+          },
+          {
+            "title": "Step done?",
+            "at": "w:done"
+          },
+          {
+            "title": "Tick the box",
+            "at": "w:tick"
+          }
+        ],
+        "plate": true
+      },
+      "source_ids": [],
+      "overlay": {
+        "kicker": "5 · YOUR PLAN",
+        "marker": "auslegung",
+        "marker_at": "w:Write",
+        "transition": {
+          "type": "iris",
+          "x": 540,
+          "y": 820,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gritwerk_close",
+      "duration_hint": 6,
+      "spoken": "Today is box one. More methods with sources: follow Gritwerk.",
+      "data": {
+        "layout": "month",
+        "weeks": 4,
+        "days": 7,
+        "cue": "When my evening routine starts",
+        "action": "tick one box",
+        "counter_label": "Day",
+        "card_at": 0.1,
+        "tick_at": "w:box",
+        "chip": "Tomorrow: box 2",
+        "chip_at": "w:one",
+        "name": "Gritwerk",
+        "name_at": "w:methods",
+        "mark_at": "w:Gritwerk",
+        "claim": "Method, not slogans.",
+        "disclaimer": "Study-based. No therapy or health advice."
+      },
+      "source_ids": [],
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

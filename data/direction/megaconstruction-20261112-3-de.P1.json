@@ -1,0 +1,595 @@
+{
+  "video_id": "megaconstruction-20261112-3-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "625 m über dem Fluss: fast zwei Eiffeltürme übereinander",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Nachgerechnet. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261112-3-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-11-01). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.crec.cn/zgztywz/cs11/10210606/2025101115574085550/index.html",
+      "title": "China Railway Engineering Group (CREC): Huajiang Grand Canyon Bridge – 625 m Fahrbahn über Wasser, 1.420 m Spannweite, 2.890 m Länge",
+      "label": "CREC, Huajiang-Brücke",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://english.news.cn/20250117/36b7f3e726fb4ff48218285a5fa4818f/c.html",
+      "title": "Xinhua, 17.01.2025: 625 m über dem Beipan-Fluss, 1.420 m, 2.890 m",
+      "label": "Xinhua, 01/2025",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.chinadaily.com.cn/a/202509/29/WS68d9bfa2a310f735438b2ca6.html",
+      "title": "China Daily, 29.09.2025: für den Verkehr geöffnet am 28.09.2025",
+      "label": "China Daily, 09/2025",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.paris.fr/pages/la-tour-eiffel-fete-ses-130-ans-6554",
+      "title": "Ville de Paris: Eiffelturm 330 m seit 15.03.2022",
+      "label": "Ville de Paris, Eiffelturm",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Die 625 m sind Fahrbahnhöhe über dem Wasser, nicht Bauwerkshöhe.",
+    "Turmhöhen und Schluchtform im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Die Fahrbahn dieser Brücke liegt 625 Meter über dem Fluss.",
+      "on_screen": "625 m über dem Fluss",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Huajiang-Brücke wirklich?",
+      "on_screen": "Wie groß ist die Huajiang-Brücke wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen die Huajiang-Brücke.",
+      "on_screen": "die Huajiang-Brücke: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Huajiang-Brücke schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Huajiang-Brücke: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Huajiang-Brücke im Modell entsteht.",
+      "on_screen": "die Huajiang-Brücke im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Die Fahrbahn dieser Brücke liegt 625 Meter über dem Fluss. Ist das wirklich fast doppelt so hoch wie der Eiffelturm?",
+      "data": {
+        "kicker": "Nachgerechnet · Huajiang-Brücke",
+        "question": "Fast zwei Eiffeltürme über dem Fluss?",
+        "question_at": 0.05,
+        "pins": [
+          {
+            "anchor": "deck",
+            "text": "625 m",
+            "kind": "dim",
+            "at": "@625"
+          }
+        ],
+        "tag": {
+          "text": "China · offen seit 28.09.2025",
+          "at": "@Eiffelturm",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_build",
+      "spoken": "Die Daten: Es ist die Huajiang-Grand-Canyon-Brücke über den Beipan-Fluss. Die Hauptspannweite misst 1.420 Meter, die ganze Brücke 2.890. Eine einzige Öffnung von fast anderthalb Kilometern. Seit dem 28. September 2025 fahren dort Autos.",
+      "data": {
+        "headline": "Die Daten",
+        "table_title": "Datenblatt",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Fahrbahn über dem Wasser",
+            "qty": "625 m",
+            "at": "@Daten"
+          },
+          {
+            "pos": "2",
+            "part": "Hauptspannweite",
+            "qty": "1.420 m",
+            "at": "@1.420"
+          },
+          {
+            "pos": "3",
+            "part": "Gesamtlänge",
+            "qty": "2.890 m",
+            "at": "@2.890"
+          },
+          {
+            "pos": "4",
+            "part": "Für den Verkehr offen",
+            "qty": "9/2025",
+            "at": "@September"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_calc",
+      "spoken": "Die Rechnung: Der Eiffelturm ist 330 Meter hoch. 625 geteilt durch 330 ergibt 1,89. Zwei Eiffeltürme übereinander reichen also knapp über die Fahrbahn.",
+      "data": {
+        "headline": "Die Rechnung",
+        "sheet_dy": 470,
+        "calcs": [
+          {
+            "label": "Fahrbahnhöhe ÷ Eiffelturm",
+            "a": {
+              "value": 625,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 330,
+              "unit": "m"
+            },
+            "unit": "×",
+            "round": 0.01,
+            "decimals": 2,
+            "expect": 1.89,
+            "at": "@625",
+            "result_at": "@1,89"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_principle",
+      "spoken": "Wichtig für den Vergleich: Die 625 Meter sind der Abstand von der Fahrbahn bis zum Wasser, nicht die Höhe des Bauwerks. Der Vergleich gilt also für die Luft unter der Fahrbahn. Es ist eine Hängebrücke mit einer einzigen Hauptöffnung über die Schlucht.",
+      "data": {
+        "headline": "Der Vergleich",
+        "note": "Schlucht schematisch",
+        "pins": [
+          {
+            "anchor": "mid",
+            "text": "Luft bis zum Fluss",
+            "at": "@Abstand",
+            "side": "up"
+          }
+        ],
+        "rule": {
+          "text": "625 m = Fahrbahn bis Wasser, nicht Bauhöhe",
+          "at": "@Bauwerks",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Ergebnis: stimmt. Gemessen von der Fahrbahn bis zum Fluss: fast zwei Eiffeltürme Luft unter den Reifen. Folge Gigastruct für die nächste Rechnung.",
+      "data": {
+        "statement": "Ergebnis: stimmt, 1,89-mal",
+        "sheet": "BLATT 12",
+        "rows": [
+          [
+            "Fahrbahn",
+            "625 m über dem Wasser"
+          ],
+          [
+            "Eiffelturm",
+            "330 m"
+          ],
+          [
+            "Verhältnis",
+            "1,89"
+          ],
+          [
+            "Spannweite",
+            "1.420 m"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "BEHAUPTUNG",
+        "DATEN",
+        "RECHNUNG",
+        "VERGLEICH",
+        "ERGEBNIS"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 1,
+        "b3": 2,
+        "b4": 3,
+        "b5": 5
+      }
+    },
+    "description": "Die Fahrbahn der Huajiang-Grand-Canyon-Brücke liegt 625 m über dem Fluss – fast doppelt so hoch wie der Eiffelturm. Nachgerechnet.",
+    "companion_text": "Gerechnet: 625 m ÷ 330 m = 1,89. Quellen: CREC, Xinhua, China Daily, Ville de Paris. Stilisiertes 3D-Modell, Schlucht schematisch. Folge Gigastruct.",
+    "hashtags": [
+      "huajiang",
+      "brücke",
+      "china",
+      "rekord",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "625 m ÷ 330 m = 1,89 (mit 324 m: 1,93)",
+        "result": "fast doppelt so hoch",
+        "sources": [
+          "S1",
+          "S4"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "river",
+          "kind": "box",
+          "size": [
+            200,
+            3,
+            6000
+          ],
+          "color": "water",
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cliffW",
+          "kind": "box",
+          "size": [
+            1500,
+            600,
+            2400
+          ],
+          "color": "compare",
+          "pos": [
+            -1460,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cliffE",
+          "kind": "box",
+          "size": [
+            1500,
+            600,
+            2400
+          ],
+          "color": "compare",
+          "pos": [
+            1460,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "bridge",
+          "kind": "bridge",
+          "type": "suspension",
+          "x0": -1445,
+          "x1": 1445,
+          "deck_y": 625,
+          "deck_w": 28,
+          "deck_t": 12,
+          "towers": [
+            -710,
+            710
+          ],
+          "tower_h": 150,
+          "tower_w": 20,
+          "ground_y": 600,
+          "sag_min": 6,
+          "cable_r": 3,
+          "pos": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "e1",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 1,
+          "pos": [
+            0,
+            0,
+            260
+          ],
+          "props": {
+            "visible": 0
+          }
+        },
+        {
+          "id": "e2",
+          "kind": "tower",
+          "height": 330,
+          "base": 125,
+          "count": 1,
+          "pos": [
+            0,
+            330,
+            260
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "mid": [
+          0,
+          312,
+          0
+        ],
+        "deck": [
+          0,
+          640,
+          14
+        ],
+        "span": [
+          -350,
+          640,
+          14
+        ],
+        "tower": [
+          710,
+          760,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 70,
+            "az1": 55,
+            "el0": 6,
+            "el1": 10,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 85,
+            "az1": 95,
+            "el0": 10,
+            "el1": 8,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {}
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 88,
+            "az1": 92,
+            "el0": 2,
+            "el1": 4,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {
+            "e1.visible": 1,
+            "e2.visible": 1
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 40,
+            "az1": 30,
+            "el0": 14,
+            "el1": 18,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {
+            "e1.visible": 1,
+            "e2.visible": 1
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "bridge"
+            ],
+            "az0": 60,
+            "az1": 50,
+            "el0": 10,
+            "el1": 14,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

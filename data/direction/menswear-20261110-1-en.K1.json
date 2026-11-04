@@ -1,0 +1,338 @@
+{
+ "video_id": "menswear-20261110-1-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Fabric weight: what the number really measures",
+ "notes": "Woche 1 im Format Kreidestrich (K1), Reihe Unter dem Fadenzähler, Kalenderthema menswear-20261110-1 (Stoffkunde C01). Neuer Sprechtext ohne Firmennamen; Quelle S1 im Originaltext gelesen (S. 10). Alter Plan menswear-20261110-1-en.json bleibt unverändert.",
+ "layout": {
+  "format": "kreidestrich",
+  "series": "stoff",
+  "explainer": false,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 560,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "series_topic": "Weight",
+  "description": "350 grams of what? Fabric weight means grams per linear metre, across the full width. From 100 grams of shirting to 700 grams of coat cloth, typical for a worsted suit: 350 grams. Illustration, source: Woolmark, Introduction to Wovenwear.",
+  "companion_text": "Suitwerk shows menswear in detail, drawn rather than claimed. No advertising, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "suitfabric",
+   "fabricknowledge",
+   "fabricweight",
+   "worsted"
+  ]
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Kreidestrich, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "checked_at": "2026-11-02",
+   "title": "The Woolmark Company: Introduction to Wovenwear (Training Manual), S. 10 (fabric weight: 700 g/linear metre heavy coat fabrics down to 100 g/linear metre ladies shirting; typical average for worsted menswear 350 g/linear metre; Merino Cool < 250 g/linear metre; weights decreased with central heating and air conditioning)",
+   "label": "Woolmark, Introduction to Wovenwear"
+  }
+ ],
+ "unverified": [
+  "Gewicht je Quadratmeter: nicht genannt; Woolmark nennt nur Gramm je laufendem Meter, die Webbreite ist nicht angegeben.",
+  "Wärme eines Stoffs nach Gewicht: nicht verwendet (keine Quelle im Handbuch).",
+  "Unzen je Yard: nicht verwendet.",
+  "Die Waage im Bild ist eine Darstellung, keine Messung."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "What is behind this label on the cloth?",
+   "on_screen": "What is behind it?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "question"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Most people read this number wrong.",
+   "on_screen": "Read it wrong?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 3,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "not measurable, below the gate"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The answer is in the thread, not the label.",
+   "on_screen": "The answer is in the thread",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "vague"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "If you only read the label, you miss the cloth.",
+   "on_screen": "Only the label?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "no real risk"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Put the cloth on the scale: 350 grams, but of what?",
+   "on_screen": "350 grams of what?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Stoffstreifen auf der Waage, die Anzeige zählt bis 350",
+   "why": {
+    "truth": "shown, not claimed",
+    "visual": "core of the Kreidestrich format"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Vorführung im Format Kreidestrich."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "kw_weigh",
+   "duration_hint": 7,
+   "spoken": "Many suit fabrics come with a weight, for example 350 grams. But 350 grams of what? And is that a lot or a little? Put the cloth on the scale.",
+   "data": {
+    "question": {
+     "text": "350 grams of what?",
+     "at": "w:But"
+    },
+    "value": 350,
+    "unit": "g",
+    "weigh_at": "w:scale",
+    "kind": "twill",
+    "source": "Woolmark: Introduction to Wovenwear, p. 10 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "kw_weigh",
+   "duration_hint": 13,
+   "spoken": "Woolmark gives fabric weight in grams per linear metre. That means one metre of length, the way the cloth comes off the roll, across the full width. So not a square metre. How heavy that strip is therefore also depends on the width.",
+   "data": {
+    "title": {
+     "text": "Grams per linear metre",
+     "at": 0.1
+    },
+    "value": 350,
+    "unit": "g",
+    "weigh_at": 0.4,
+    "readout_label": "per linear metre",
+    "readout_at": "w:linear",
+    "len_at": "w:length",
+    "len_label": "1 metre",
+    "width_at": "w:width",
+    "width_label": "full width",
+    "kind": "twill",
+    "source": "Woolmark: Introduction to Wovenwear, p. 10 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "demonstration",
+   "scene_type": "kw_range",
+   "duration_hint": 13,
+   "spoken": "The same manual shows the range: from 100 grams for light ladies' shirting up to 700 grams for heavy coat cloth. For a men's worsted suit, 350 grams is typical. So a heavy coat cloth weighs twice as much.",
+   "data": {
+    "title": {
+     "text": "From light to heavy",
+     "at": 0.1
+    },
+    "unit": "g",
+    "min": 0,
+    "max": 800,
+    "step": 50,
+    "label_every": 2,
+    "marks": [
+     {
+      "value": 100,
+      "label": "Shirting",
+      "sub": "ladies'",
+      "at": "w:shirting",
+      "up": true
+     },
+     {
+      "value": 700,
+      "label": "Coat cloth",
+      "sub": "heavy",
+      "at": "w:coat",
+      "up": true
+     },
+     {
+      "value": 350,
+      "label": "Suit",
+      "sub": "worsted, typical",
+      "at": "w:suit",
+      "up": false,
+      "tone": "green"
+     }
+    ],
+    "note": {
+     "text": "700 = 2 × 350",
+     "at": "w:twice"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, p. 10 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "kw_range",
+   "duration_hint": 12,
+   "spoken": "According to Woolmark, fabric weights have fallen over the years, because central heating and air conditioning make rooms more comfortable. For cool, light merino fabrics, Woolmark names less than 250 grams. Wool growers have responded with finer wool for lighter fabrics.",
+   "data": {
+    "title": {
+     "text": "Getting lighter",
+     "at": 0.1
+    },
+    "unit": "g",
+    "min": 0,
+    "max": 800,
+    "step": 50,
+    "label_every": 2,
+    "marks": [
+     {
+      "value": 350,
+      "label": "Suit",
+      "sub": "typical",
+      "at": 0.3,
+      "up": true
+     }
+    ],
+    "drift": {
+     "from": 500,
+     "to": 300,
+     "label": "lighter over the years",
+     "at": "w:fallen"
+    },
+    "band": {
+     "from": 0,
+     "to": 250,
+     "label": "cool merino cloth: under 250 g",
+     "at": "w:less"
+    },
+    "source": "Woolmark: Introduction to Wovenwear, p. 10 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "close",
+   "scene_type": "kw_close",
+   "duration_hint": 13,
+   "spoken": "Remember: the number on the swatch means grams per linear metre. For a worsted suit, 350 grams is typical. Next time you see a swatch, check whether the number is on it. Follow Suitwerk for menswear with an eye for detail.",
+   "data": {
+    "kinds": [
+     "plain",
+     "twill"
+    ],
+    "chip": {
+     "text": "Worsted suit: typically 350 g per metre",
+     "at": "w:worsted"
+    },
+    "lines": [
+     {
+      "text": "light: under 250 g",
+      "at": 0.6
+     },
+     {
+      "text": "suit: 350 g",
+      "at": 1.2
+     }
+    ],
+    "rule": {
+     "text": "Grams per linear metre",
+     "at": "w:means"
+    },
+    "sign_at": "w:Follow",
+    "claim": "Menswear with an eye for detail.",
+    "sign_note": "Look for the number",
+    "source": "Woolmark: Introduction to Wovenwear, p. 10 · accessed 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  }
+ ]
+}

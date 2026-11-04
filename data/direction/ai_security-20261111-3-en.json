@@ -1,0 +1,452 @@
+{
+ "video_id": "ai_security-20261111-3-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "Automatic updates: switch them on once",
+ "notes": "Woche 1 (Produktion 01.11.2026), Thema B03, Reihe Fünf-Minuten-Schutz. Scutoria Vorlage Fassung B 1.0, Erklärschicht; kein Hero. Roter Faden: Work laptop. Aussagen nur aus den Quellen des Kalenders (abgerufen 2026-11-01).",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Work laptop",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "Update: postponed",
+     "tone": "amber",
+     "offset": 2.4
+    },
+    {
+     "beat": "b2",
+     "text": "Hole: open",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "Patch: available",
+     "tone": "amber"
+    },
+    {
+     "beat": "b4",
+     "text": "Automatic: off",
+     "tone": "amber"
+    },
+    {
+     "beat": "b5",
+     "text": "Pop-up: genuine?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "Automatic: on today",
+     "tone": "amber"
+    },
+    {
+     "beat": "b7",
+     "text": "Postponing: blocked",
+     "tone": "red",
+     "offset": 0.9
+    }
+   ]
+  },
+  "description": "Updates close security holes. The NCSC calls them one of the most important and quickest things you can do. Turn automatic updates on once, and spot fake ones.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "updates",
+   "cybersecurity",
+   "smallbusiness",
+   "patching",
+   "aisecurity"
+  ]
+ },
+ "assets": {
+  "background": {
+   "cinematic_hook": "bg_ui_desk.mp4",
+   "data_flow": "bg_flow_lanes.mp4",
+   "file_beside": "bg_ui_desk.mp4",
+   "comparison": "bg_compare_split.mp4",
+   "file_fork": "bg_hook_dataroom.mp4",
+   "key_takeaway": "bg_takeaway_calm.mp4",
+   "file_close": "bg_outro_orbit.mp4"
+  },
+  "hero": {},
+  "scrim": 0.55,
+  "note": "Vorlage Scutoria Fassung B 1.0; Clipfolge: desk, lanes, desk, split, dataroom, calm, orbit."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Updates-Browser-Open-Source-Software/Wichtige-Softwareupdates/wichtige-softwareupdates_node.html",
+   "title": "BSI: Softwareupdates – ein Grundpfeiler der IT-Sicherheit",
+   "checked_at": "2026-11-01",
+   "label": "BSI (Germany), updates"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/install-the-latest-software-and-app-updates",
+   "title": "NCSC: Top tips for staying secure online – Install the latest software and app updates",
+   "checked_at": "2026-11-01",
+   "label": "NCSC, install updates"
+  }
+ ],
+ "unverified": [
+  "Menu paths for specific systems: not named."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "When did you last click remind me later on an update?",
+   "on_screen": "Update postponed again?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Updates just add features? Mostly they close holes.",
+   "on_screen": "Just new features?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Germany's BSI calls updates one of the most effective defences against online attacks.",
+   "on_screen": "One of the most effective defences",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "BSI: Patches eines der wirksamsten Mittel"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One open security hole is enough to let malware in.",
+   "on_screen": "One hole is enough",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Watch what happens after you click later.",
+   "on_screen": "And then: later?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Hook mit höchster Bewertung und Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "cinematic_hook",
+   "duration_hint": 5,
+   "spoken": "When did you last click remind me later on an update?",
+   "data": {
+    "question": "Update postponed again?",
+    "doc_label": "Security update",
+    "chat_title": "Work laptop",
+    "bot_line": "Update ready",
+    "typed": "Remind me later",
+    "badge": "Later?",
+    "fly_at": 0.3,
+    "question_at": 2.2
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "data_flow",
+   "duration_hint": 13,
+   "spoken": "Updates close security holes. Germany's BSI defines them as weaknesses in software that let attackers, for example, slip in malicious programs and take control of other people's systems.",
+   "data": {
+    "headline": "What a security hole is",
+    "nodes": [
+     {
+      "id": "n0",
+      "label": "Open hole",
+      "icon": "&#9888;"
+     },
+     {
+      "id": "n1",
+      "label": "Malware",
+      "icon": "&#9881;"
+     },
+     {
+      "id": "n2",
+      "label": "Your laptop",
+      "icon": "&#9635;"
+     }
+    ],
+    "edges": [
+     {
+      "label": "gets exploited"
+     },
+     {
+      "label": "takes over"
+     }
+    ],
+    "packet_at": 1.2,
+    "highlight": {
+     "node": 2,
+     "at": 8.0,
+     "label": "Control lost?"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "file_beside",
+   "duration_hint": 12,
+   "spoken": "An update closes exactly these holes. The BSI calls these patches one of the most effective defences against attacks from the internet. And on installing updates later, its answer is: absolutely not.",
+   "data": {
+    "headline": "What an update does",
+    "file_label": "Work laptop",
+    "card": {
+     "title": "According to the BSI",
+     "rows": [
+      {
+       "text": "closes security holes",
+       "ok": null
+      },
+      {
+       "text": "effective against attacks",
+       "ok": null
+      },
+      {
+       "text": "later? absolutely not",
+       "ok": "open"
+      }
+     ]
+    },
+    "tag": "",
+    "row_step": 2.8,
+    "file_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 540,
+     "y": 640,
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "comparison",
+   "duration_hint": 13,
+   "spoken": "The UK's NCSC counts updates among the most important and quickest things you can do. It advises turning on automatic updates in your device settings. Then you don't have to remember.",
+   "data": {
+    "headline": "Manual or automatic",
+    "mode": "versus",
+    "left_at": 0.4,
+    "right_at": 6.0,
+    "left": {
+     "title": "Manual",
+     "rows": [
+      {
+       "text": "prompt dismissed",
+       "ok": "open"
+      },
+      {
+       "text": "hole stays open longer",
+       "ok": "open"
+      }
+     ]
+    },
+    "right": {
+     "title": "Automatic",
+     "rows": [
+      {
+       "text": "installs without reminders",
+       "ok": null
+      },
+      {
+       "text": "nothing to remember",
+       "ok": null
+      }
+     ]
+    }
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "overlay": {}
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "file_fork",
+   "duration_hint": 13,
+   "spoken": "But be careful: according to the BSI, criminals also disguise malware as updates, with fake warning emails and pop-ups on websites. Only install updates when the notice arrives in the usual, familiar way.",
+   "data": {
+    "headline": "Real or fake update?",
+    "file_label": "Work laptop",
+    "paths_at": 0.3,
+    "routes": [
+     {
+      "title": "Notice in the system",
+      "sub": "the usual way",
+      "at": 0.6
+     },
+     {
+      "title": "Pop-up in the browser",
+      "sub": "fake update?",
+      "at": 1.0
+     }
+    ],
+    "approval": "Is it from the vendor?",
+    "approval_at": 6.5,
+    "risk_open": true,
+    "file_marker": "none",
+    "route_marker": "none"
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "key_takeaway",
+   "duration_hint": 13,
+   "spoken": "Your five-minute fix: turn on automatic updates on computers and phones. Check browsers and important apps as well. And watch for notices that support for a device is ending.",
+   "data": {
+    "headline": "Five minutes for updates",
+    "items": [
+     {
+      "title": "Turn on automatic",
+      "sub": "computers and phones",
+      "at": 2.0
+     },
+     {
+      "title": "Browsers and apps",
+      "sub": "check them too",
+      "at": 4.8
+     },
+     {
+      "title": "Watch for end of support",
+      "sub": "don't dismiss the notice",
+      "at": 7.4
+     }
+    ]
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "marker": "auslegung"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "file_close",
+   "duration_hint": 8,
+   "spoken": "Switch it on once, then stop worrying about it. More AI security for your business: follow Scutoria.",
+   "data": {
+    "headline": "Switch it on once",
+    "file_label": "Work laptop",
+    "button": "Remind me later",
+    "block_text": "Don't postpone the update",
+    "block_at": 0.8,
+    "domain": "scutoria.com",
+    "domain_at": 2.0,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice.",
+    "file_marker": "none"
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false
+   }
+  }
+ ]
+}

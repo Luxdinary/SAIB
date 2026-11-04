@@ -1,0 +1,621 @@
+{
+ "video_id": "menswear-20261109-2-en",
+ "brand_id": "menswear",
+ "language": "en",
+ "title": "Notch, peak or shawl: what the lapel says",
+ "notes": "Suitwerk Woche 1 (Vorlage 1.0). Thema B01 aus menswear_2026-11.research.json. Nur Aussagen aus S1-S4; 'meist' statt 'immer', keine Herkunft der Reversformen.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "status_y": 1440,
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "status_bar": {
+   "file": "Lapels",
+   "states": [
+    {
+     "beat": "b1",
+     "text": "lapel: ?",
+     "tone": "amber"
+    },
+    {
+     "beat": "b2",
+     "text": "notch or peak",
+     "tone": "amber"
+    },
+    {
+     "beat": "b3",
+     "text": "single: notch",
+     "tone": "muted"
+    },
+    {
+     "beat": "b4",
+     "text": "dinner: two styles",
+     "tone": "muted"
+    },
+    {
+     "beat": "b5",
+     "text": "peak: single too",
+     "tone": "amber"
+    },
+    {
+     "beat": "b6",
+     "text": "three styles",
+     "tone": "muted"
+    },
+    {
+     "beat": "b7",
+     "text": "shawl: dinner jacket",
+     "tone": "green"
+    }
+   ]
+  },
+  "description": "Notch, peak or shawl: what the lapel says about a jacket. Based on Moss, Anderson & Sheppard, Debrett's and Woolmark, with a look at the dinner jacket.",
+  "companion_text": "Follow Suitwerk for menswear with an eye for detail. No ads, no product recommendations.",
+  "hashtags": [
+   "menswear",
+   "lapels",
+   "suitjacket",
+   "blacktie",
+   "styletips"
+  ]
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://moss.co.uk/inside-pocket/post/everything-you-need-to-know-about-lapels",
+   "title": "Moss, Everything you need to know about lapels: die meisten Einreiher und Blazer haben fallendes Revers, Schalkragen meist nur am Dinnerjacket, steigendes Revers ist die angezogenere Variante",
+   "checked_at": "2026-11-01",
+   "label": "Moss, Inside Pocket"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.anderson-sheppard.co.uk/thenotebook/linen-checked-jacket-with-peak-lapel/",
+   "title": "Anderson & Sheppard, Linen checked jacket with peak lapel: steigendes Revers meist am Zweireiher, im Vergleich zum fallenden recht formell",
+   "checked_at": "2026-11-01",
+   "label": "Anderson & Sheppard"
+  },
+  {
+   "id": "S3",
+   "url": "https://debretts.com/deconstructing-dress-codes/",
+   "title": "Debrett's, Deconstructing Dress Codes: Dinnerjacket mit seidenbelegtem steigendem Revers oder Schalkragen, ein- oder zweireihig",
+   "checked_at": "2026-11-01",
+   "label": "Debrett's, Dress Codes"
+  },
+  {
+   "id": "S4",
+   "url": "https://www.woolmark.com/ko/z.archive/archive-industry/suiting/black-tie-dress-code-explained/",
+   "title": "Woolmark, Black tie dress code explained: steigendes Revers ist der formellste Stil, ein- wie zweireihig; Schalkragen als feine Variante",
+   "checked_at": "2026-11-01",
+   "label": "Woolmark, Black Tie"
+  }
+ ],
+ "unverified": [
+  "Herkunft der Reversformen: nicht belegt, nicht im Video.",
+  "Kariertes Leinensakko mit steigendem Revers: nur gesprochen (S2), keine eigene Zeichnung."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Notch, peak or shawl?",
+   "on_screen": "Notch, peak or shawl?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Peak lapels? Not only on double-breasted.",
+   "on_screen": "Peak lapels? Not only on double-breasted.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2",
+    "S4"
+   ],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "The shawl collar mostly lives on dinner jackets",
+   "on_screen": "The shawl collar mostly lives on dinner jackets",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "A shawl on a day suit? Moss knows it from dinner jackets.",
+   "on_screen": "A shawl on a day suit? Moss knows it from dinner jackets.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "One notch at the collar changes the whole jacket",
+   "on_screen": "One notch at the collar changes the whole jacket",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [],
+   "visual": "Sakko mit fallendem Revers, Lupe auf der Kerbe am Kragen",
+   "why": {}
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Die drei Namen als Frage, die Lupe zeigt die Kerbe."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "suitwerk_hook",
+   "duration_hint": 6,
+   "spoken": "Three lapel styles, each with its own message. Notch, peak or shawl: how do you read them?",
+   "data": {
+    "question": "Notch, peak or shawl?",
+    "object": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "lapel": "notch"
+    },
+    "target": "notch",
+    "badge": "?",
+    "question_at": 0.3,
+    "badge_at": "w:Notch",
+    "loupe_at": "w:Notch",
+    "nie_at": "w:how",
+    "hold_end": true
+   },
+   "source_ids": [],
+   "overlay": {}
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Two jackets, same cut, different lapels. On the left, a notch where lapel meets collar. On the right, the points rise upwards: that is a peak. According to Moss, the peak is the dressier option.",
+   "data": {
+    "headline": "Notch or peak?",
+    "left": {
+     "title": "Notch",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "lapel": "notch"
+     },
+     "target": "notch",
+     "tag": "a notch at the collar",
+     "pulses": [
+      {
+       "target": "notch",
+       "at": "w:collar"
+      }
+     ]
+    },
+    "right": {
+     "title": "Peak",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb2",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak"
+     },
+     "tag": "the dressier option",
+     "pulses": [
+      {
+       "target": "notch",
+       "at": "w:points"
+      }
+     ]
+    },
+    "left_at": "w:left",
+    "left_tag_at": "w:notch",
+    "right_at": "w:right",
+    "right_tag_at": "w:Moss",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "iris",
+     "x": 742,
+     "y": 872,
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Moss"
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "suitwerk_ladder",
+   "duration_hint": 13,
+   "spoken": "Where does each belong? Moss says most single-breasted jackets and blazers have a notch lapel. The peak, according to Anderson and Sheppard, is mostly found on double-breasted jackets, and is quite formal by comparison.",
+   "data": {
+    "headline": "Where does each belong?",
+    "stages": [
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "notch"
+      },
+      "at": 0.0,
+      "title": "Single-breasted",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "notch",
+        "sub": "jackets and blazers",
+        "tone": "always",
+        "at": "w:blazers"
+       },
+       {
+        "spot": "lapel_r",
+        "text": "the usual case",
+        "sub": "according to Moss",
+        "tone": "always",
+        "at": "w:notch"
+       }
+      ]
+     },
+     {
+      "object": {
+       "kind": "jacket",
+       "variant": "db6",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak"
+      },
+      "at": "w:peak",
+      "title": "Double-breasted",
+      "tags": [
+       {
+        "spot": "lapel",
+        "text": "peak",
+        "sub": "mostly double-breasted",
+        "tone": "always",
+        "at": "w:double"
+       },
+       {
+        "spot": "lapel_r",
+        "text": "quite formal",
+        "sub": "Anderson & Sheppard",
+        "tone": "always",
+        "at": "w:formal"
+       }
+      ]
+     }
+    ],
+    "backdrop": true
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Moss"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "suitwerk_fitting",
+   "duration_hint": 11,
+   "spoken": "On a dinner jacket the choice narrows. Debrett's lists a silk-faced peak lapel or a shawl collar, single or double-breasted. And Moss says you will normally only see the shawl on a dinner jacket.",
+   "data": {
+    "headline": "And on a dinner jacket?",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "peak",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "shawl",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "target": "lapel",
+    "zoom": 1.4,
+    "label": "Shawl: mostly dinner jackets",
+    "hold_end": true,
+    "pointer_at": "w:dinner",
+    "zoom_at": "w:Debrett",
+    "flip_at": "w:shawl",
+    "label_at": "w:Moss"
+   },
+   "source_ids": [
+    "S3",
+    "S1"
+   ],
+   "overlay": {
+    "vignette": true,
+    "marker": "fakt",
+    "marker_at": "w:Debrett"
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "suitwerk_compare",
+   "duration_hint": 13,
+   "spoken": "Mostly does not mean always. Woolmark calls the peak the most formal style for a dinner jacket, single or double-breasted. Anderson and Sheppard even show one on a checked linen jacket. So a peak does not automatically mean double-breasted.",
+   "data": {
+    "headline": "Only double-breasted?",
+    "left": {
+     "title": "Single",
+     "object": {
+      "kind": "jacket",
+      "variant": "sb1",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak",
+      "dinner": true,
+      "neck": "bow",
+      "strain": false
+     },
+     "target": "notch",
+     "tag": "the most formal style",
+     "pulses": [
+      {
+       "target": "notch",
+       "at": "w:formal"
+      }
+     ]
+    },
+    "right": {
+     "title": "Double",
+     "object": {
+      "kind": "jacket",
+      "variant": "db6",
+      "fastened": [
+       0
+      ],
+      "lapel": "peak",
+      "dinner": true,
+      "neck": "bow",
+      "strain": false
+     },
+     "tag": "not only here",
+     "pulses": [
+      {
+       "target": "notch",
+       "at": "w:Anderson"
+      }
+     ]
+    },
+    "left_at": "w:Mostly",
+    "left_tag_at": "w:single",
+    "right_at": "w:double",
+    "right_tag_at": "w:automatically",
+    "backdrop": true,
+    "hold_end": true
+   },
+   "source_ids": [
+    "S4",
+    "S2"
+   ],
+   "overlay": {
+    "transition": {
+     "type": "blende",
+     "seconds": 0.7
+    },
+    "marker": "fakt",
+    "marker_at": "w:Woolmark"
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 10,
+   "spoken": "In short: the notch is the usual choice on single-breasted jackets and blazers. The peak is dressier and mostly sits on a double-breasted jacket. And the shawl collar you will mostly see only on a dinner jacket.",
+   "data": {
+    "headline": "In short",
+    "items": [
+     {
+      "title": "Notch: the usual case",
+      "sub": "single-breasted, blazers (Moss)",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "notch"
+      },
+      "at": "w:notch",
+      "ring": "notch",
+      "ring_at": "w:usual"
+     },
+     {
+      "title": "Peak: dressier",
+      "sub": "mostly double-breasted",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "peak"
+      },
+      "at": "w:peak",
+      "then": {
+       "variant": "db6"
+      },
+      "then_at": "w:double"
+     },
+     {
+      "title": "Shawl: dinner jacket",
+      "sub": "silk-faced there",
+      "object": {
+       "kind": "jacket",
+       "variant": "sb2",
+       "fastened": [
+        0
+       ],
+       "lapel": "shawl"
+      },
+      "at": "w:shawl",
+      "then": {
+       "variant": "sb1",
+       "dinner": true,
+       "neck": "bow"
+      },
+      "then_at": "w:dinner"
+     }
+    ],
+    "hold_end": true
+   },
+   "source_ids": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "overlay": {
+    "marker": "auslegung",
+    "marker_at": "w:short"
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "suitwerk_takeaway",
+   "duration_hint": 6,
+   "spoken": "Notch as the norm, peak for formality, shawl for the dinner jacket. For more eye for detail: follow Suitwerk.",
+   "data": {
+    "mode": "closing",
+    "from": {
+     "kind": "jacket",
+     "variant": "sb2",
+     "fastened": [
+      0
+     ],
+     "lapel": "shawl"
+    },
+    "to": {
+     "kind": "jacket",
+     "variant": "sb1",
+     "fastened": [
+      0
+     ],
+     "lapel": "shawl",
+     "dinner": true,
+     "neck": "bow",
+     "strain": false
+    },
+    "from_fastened": [
+     0
+    ],
+    "to_fastened": [
+     0
+    ],
+    "target": "lapel",
+    "fix_at": "w:shawl",
+    "ring_at": "w:dinner",
+    "statement_at": "w:dinner",
+    "chip_at": "w:eye",
+    "statement": "Shawl: black tie.",
+    "chip": "Suitwerk · An eye for detail",
+    "backdrop": true,
+    "from_strain": false
+   },
+   "source_ids": [],
+   "overlay": {
+    "head": false,
+    "transition": {
+     "type": "iris",
+     "x": 206,
+     "y": 1036,
+     "seconds": 0.7
+    }
+   }
+  }
+ ]
+}

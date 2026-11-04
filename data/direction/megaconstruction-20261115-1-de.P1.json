@@ -1,0 +1,635 @@
+{
+  "video_id": "megaconstruction-20261115-1-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Kölnbreinsperre: Österreichs höchste Staumauer auf 1.902 Metern",
+  "notes": "Format \"Bauaufgabe\" (Format-Bibel 1.0, freigegeben 02.11.2026), Reihe Bauaufgabe. Woche 1, gebaut mit tools/bauaufgabe_build.py aus megaconstruction-20261115-1-de.json (Quellen, Modell, Hook-Kandidaten; Quellen geprüft 2026-10-30). Alter Plan unverändert.",
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://visit.verbund.com/de/malta",
+      "title": "VERBUND, Besucherzentrum Malta: Kölnbreinsperre 200 m hoch, 626 m breit, 1.902 m Seehöhe",
+      "label": "VERBUND, visit Malta",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.verbund.com/de/privat/themenwelten/strom-aus-wasserkraft/woher-kommt-der-strom-malta",
+      "title": "VERBUND: Woher kommt der Strom – Malta (Speicher Kölnbrein 200 Mio. m³; höchste Staumauer Österreichs, eine der höchsten Bogenmauern Europas)",
+      "label": "VERBUND, Kraftwerksgruppe Malta",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.stephanskirche.at/faq.php",
+      "title": "Dompfarre St. Stephan: FAQ (Südturm 136,4 m)",
+      "label": "Dompfarre St. Stephan, FAQ",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Betonvolumen und Baujahre: nicht auf den geöffneten VERBUND-Seiten.",
+    "Krümmung und Talform im Modell schematisch."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "200 Meter Beton halten 200 Millionen Kubikmeter Wasser. Auf 1.902 Metern Seehöhe.",
+      "on_screen": "200 m Mauer, 200 Mio. m³ Wasser",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Kölnbreinsperre wirklich?",
+      "on_screen": "Wie groß ist die Kölnbreinsperre wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen die Kölnbreinsperre.",
+      "on_screen": "die Kölnbreinsperre: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Kölnbreinsperre schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Kölnbreinsperre: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Kölnbreinsperre im Modell entsteht.",
+      "on_screen": "die Kölnbreinsperre im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gb_task",
+      "spoken": "Wie hält man 200 Millionen Kubikmeter Wasser auf 1.902 Metern Seehöhe? Das ist die Bauaufgabe der Kölnbreinsperre in Kärnten.",
+      "data": {
+        "kicker": "Bauaufgabe · Kölnbreinsperre",
+        "question": "Wie hält man 200 Mio. m³ Wasser?",
+        "question_at": 0.05,
+        "pins": [
+          {
+            "anchor": "crest",
+            "text": "200 m",
+            "kind": "dim",
+            "at": "@Kölnbreinsperre"
+          }
+        ],
+        "tag": {
+          "text": "Maltatal · 1.902 m Seehöhe",
+          "at": "@Kärnten",
+          "y": 1010
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gb_load",
+      "spoken": "Hinter der Mauer liegt der Kölnbreinspeicher mit 200 Millionen Kubikmetern Wasser, für die Kraftwerksgruppe Malta von VERBUND. Dieses Wasser drückt gegen die Mauer.",
+      "data": {
+        "headline": "Der Lastfall",
+        "load": {
+          "label": "Speicher Kölnbrein",
+          "value": "200",
+          "unit": "Mio. m³",
+          "sub": "Kraftwerksgruppe Malta, VERBUND",
+          "at": "@200",
+          "dy": 540
+        },
+        "goal": {
+          "text": "Das Wasser sicher halten",
+          "at": "@drückt",
+          "dy": 420
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "gb_principle",
+      "spoken": "Die Lösung: eine gekrümmte Mauer, eine Bogenmauer. Laut Betreiber ist sie eine der höchsten Bogenmauern in Europa.",
+      "data": {
+        "headline": "Das Prinzip",
+        "note": "Krümmung schematisch",
+        "pins": [
+          {
+            "anchor": "arch",
+            "text": "Bogen",
+            "at": "@Bogenmauer",
+            "side": "up"
+          }
+        ],
+        "rule": {
+          "text": "Die Mauer ist gekrümmt: eine Bogenmauer.",
+          "at": "@gekrümmte",
+          "dy": 660
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "gb_build",
+      "spoken": "Gebaut wurde eine Mauer, die laut VERBUND Österreichs höchste Staumauer ist: 200 Meter hoch, mit einer 626 Meter breiten Krone, auf 1.902 Metern Seehöhe.",
+      "data": {
+        "headline": "So wurde sie gebaut",
+        "rows": [
+          {
+            "pos": "1",
+            "part": "Höhe der Mauer",
+            "qty": "200 m",
+            "at": "@200"
+          },
+          {
+            "pos": "2",
+            "part": "Breite der Krone",
+            "qty": "626 m",
+            "at": "@626"
+          },
+          {
+            "pos": "3",
+            "part": "Seehöhe",
+            "qty": "1.902 m",
+            "at": "@1.902"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "gb_calc",
+      "spoken": "Nachgerechnet: Der Südturm des Stephansdoms misst laut Dompfarre 136,4 Meter. 200 durch 136,4 ergibt 1,47. Die Mauer ist also knapp anderthalbmal so hoch. Und die Krone ist gut dreimal so breit, wie die Mauer hoch ist.",
+      "data": {
+        "headline": "Nachgerechnet",
+        "sheet_dy": 440,
+        "calcs": [
+          {
+            "label": "Mauer ÷ Südturm Stephansdom",
+            "a": {
+              "value": 200,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 136.4,
+              "unit": "m"
+            },
+            "unit": "×",
+            "round": 0.01,
+            "decimals": 2,
+            "expect": 1.47,
+            "at": "@136,4",
+            "result_at": "@1,47"
+          },
+          {
+            "label": "Kronenbreite ÷ Mauerhöhe",
+            "a": {
+              "value": 626,
+              "unit": "m"
+            },
+            "op": "÷",
+            "b": {
+              "value": 200,
+              "unit": "m"
+            },
+            "unit": "×",
+            "round": 0.01,
+            "decimals": 2,
+            "prefix": "≈ ",
+            "expect": 3.13,
+            "at": "@Krone",
+            "result_at": "@dreimal"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gb_close",
+      "spoken": "Österreichs höchste Staumauer: 200 Meter hoch, 626 Meter breit, auf über 1.900 Metern. Folge Gigastruct für die nächste Bauaufgabe.",
+      "data": {
+        "statement": "Gelöst: ein Bogen aus Beton",
+        "sheet": "BLATT 18",
+        "rows": [
+          [
+            "Aufgabe",
+            "200 Mio. m³ halten"
+          ],
+          [
+            "Lösung",
+            "Bogenmauer, 200 m hoch"
+          ],
+          [
+            "Krone",
+            "626 m breit"
+          ],
+          [
+            "Lage",
+            "1.902 m Seehöhe"
+          ]
+        ],
+        "cta": {
+          "text": "Folge Gigastruct",
+          "at": "@Folge"
+        }
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "layout": {
+    "format": "bauaufgabe",
+    "explainer": false,
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "chapters": {
+      "labels": [
+        "AUFGABE",
+        "PRINZIP",
+        "BAU",
+        "RECHNUNG",
+        "PROBE"
+      ],
+      "beats": {
+        "b1": 0,
+        "b2": 0,
+        "b3": 1,
+        "b4": 2,
+        "b5": 3,
+        "b6": 5
+      }
+    },
+    "description": "Die Kölnbreinsperre im Maltatal ist Österreichs höchste Staumauer: 200 m hoch, 626 m breit, auf 1.902 m Seehöhe – und hält 200 Mio. m³ Wasser.",
+    "companion_text": "Gerechnet: 200 m ÷ 136,4 m = 1,47. Quellen: VERBUND (Besucherzentrum Malta, Kraftwerksgruppe Malta), Dompfarre St. Stephan. Stilisiertes 3D-Modell. Folge Gigastruct.",
+    "hashtags": [
+      "kölnbreinsperre",
+      "maltatal",
+      "staumauer",
+      "kärnten",
+      "wasserkraft"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "200 m ÷ 136,4 m = 1,47",
+        "result": "knapp anderthalbmal so hoch wie der Südturm",
+        "sources": [
+          "S1",
+          "S4"
+        ]
+      },
+      {
+        "id": "C2",
+        "calculation": "626 m ÷ 200 m = 3,13",
+        "result": "Krone gut dreimal so breit wie die Mauer hoch",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "id": "dam",
+          "kind": "dam",
+          "radius": 400,
+          "angle": 103,
+          "height": 200,
+          "t": 14,
+          "water_l": 900,
+          "water_w": 1200,
+          "water_x": 460,
+          "pos": [
+            0,
+            0,
+            0
+          ],
+          "props": {
+            "level": 0.92
+          }
+        },
+        {
+          "id": "flankN",
+          "kind": "box",
+          "size": [
+            1400,
+            260,
+            900
+          ],
+          "color": "compare",
+          "pos": [
+            150,
+            0,
+            760
+          ]
+        },
+        {
+          "id": "flankS",
+          "kind": "box",
+          "size": [
+            1400,
+            260,
+            900
+          ],
+          "color": "compare",
+          "pos": [
+            150,
+            0,
+            -760
+          ]
+        },
+        {
+          "id": "steph",
+          "kind": "prism",
+          "height": 136.4,
+          "width": 22,
+          "levels": 24,
+          "profile": [
+            [
+              0,
+              1
+            ],
+            [
+              0.5,
+              0.9
+            ],
+            [
+              0.55,
+              0.6
+            ],
+            [
+              1,
+              0.04
+            ]
+          ],
+          "color": "model",
+          "pos": [
+            -160,
+            0,
+            0
+          ],
+          "props": {
+            "visible": 0
+          }
+        }
+      ],
+      "anchors": {
+        "crest": [
+          0,
+          205,
+          0
+        ],
+        "arch": [
+          -40,
+          150,
+          200
+        ],
+        "water": [
+          400,
+          180,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 200,
+            "az1": 190,
+            "el0": 16,
+            "el1": 20,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 560,
+            "cy": 830
+          },
+          "props": {}
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 160,
+            "az1": 170,
+            "el0": 12,
+            "el1": 16,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 545
+          },
+          "props": {
+            "dam.level": [
+              [
+                0,
+                0.6
+              ],
+              [
+                "%0.8",
+                0.92
+              ]
+            ]
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 270,
+            "az1": 260,
+            "el0": 50,
+            "el1": 60,
+            "fit0": 0.7,
+            "fit1": 0.8,
+            "zone": 330,
+            "cy": 560
+          },
+          "props": {}
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 200,
+            "az1": 215,
+            "el0": 18,
+            "el1": 14,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 470
+          },
+          "props": {}
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 180,
+            "az1": 170,
+            "el0": 8,
+            "el1": 10,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 560
+          },
+          "props": {
+            "steph.visible": 1
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "dam"
+            ],
+            "az0": 210,
+            "az1": 200,
+            "el0": 20,
+            "el1": 24,
+            "fit0": 0.8,
+            "fit1": 0.9,
+            "zone": 300,
+            "cy": 520
+          },
+          "props": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "spec": "kontext-suche-en",
+  "runs": {
+    "L1": {
+      "title": "Read only",
+      "prompt": "According to kunden.csv, which city is customer K-4711 in?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 24.422,
+      "lines": [
+        {
+          "t": 16.454,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 17.884,
+          "kind": "tool",
+          "id": "toolu_01CRqFsu4EtKfRC9JWXopnoA",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 18.661,
+          "kind": "result",
+          "id": "toolu_01CRqFsu4EtKfRC9JWXopnoA",
+          "text": "1\tcustomer;city;orders\n2\tK-1000;Linz;52\n3\tK-1001;Graz;76\n… (1771 more lines)"
+        },
+        {
+          "t": 19.803,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 20.003,
+          "kind": "text",
+          "text": "The first page only covers up to K-2772, so I'll search the file for K-4711 directly."
+        },
+        {
+          "t": 20.47,
+          "kind": "tool",
+          "id": "toolu_01Kc3y2PmNdR97kZwgfdqvHg",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 20.553,
+          "kind": "result",
+          "id": "toolu_01Kc3y2PmNdR97kZwgfdqvHg",
+          "text": "4700\tK-5698;Krems;87\n4701\tK-5699;Leoben;68\n4702\tK-5700;Bregenz;51\n… (22 more lines)"
+        },
+        {
+          "t": 22.2,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 22.309,
+          "kind": "text",
+          "text": "The file is sequential (K-n sits on line n−998), so K-4711 should be near line 3713."
+        },
+        {
+          "t": 22.711,
+          "kind": "tool",
+          "id": "toolu_015wWmQH6ino5nTk3nxdCALs",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 22.835,
+          "kind": "result",
+          "id": "toolu_015wWmQH6ino5nTk3nxdCALs",
+          "text": "3708\tK-4706;Krems;12\n3709\tK-4707;Bregenz;7\n3710\tK-4708;Dornbirn;46\n… (7 more lines)"
+        },
+        {
+          "t": 23.587,
+          "kind": "text",
+          "text": "Customer K-4711 is in **Zwettl**, with 42 orders (line 3713 of `kunden.csv`)."
+        },
+        {
+          "t": 23.649,
+          "kind": "end",
+          "text": "Done after 23.6 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 7357,
+        "num_turns": 4,
+        "total_cost_usd": 0.00705045,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    },
+    "L2": {
+      "title": "Read and Grep",
+      "prompt": "According to kunden.csv, which city is customer K-4711 in?",
+      "settings": null,
+      "allowed_tools": [],
+      "wall": 19.063,
+      "lines": [
+        {
+          "t": 7.96,
+          "kind": "init",
+          "text": "Start: claude-haiku-5-5"
+        },
+        {
+          "t": 10.193,
+          "kind": "tool",
+          "id": "toolu_016Z1hMjLyVZ3P57H61YH1PW",
+          "text": "Grep: K-4711"
+        },
+        {
+          "t": 11.535,
+          "kind": "tool",
+          "id": "toolu_01AcrvCqd4AeEmWukesahPsE",
+          "text": "Grep: ^(id|kunden_?id|kundennummer|customer_?id|kunde)[^\\n]*"
+        },
+        {
+          "t": 13.085,
+          "kind": "result",
+          "id": "toolu_016Z1hMjLyVZ3P57H61YH1PW",
+          "text": "kunden.csv:3713:K-4711;Zwettl;42"
+        },
+        {
+          "t": 13.174,
+          "kind": "result",
+          "id": "toolu_01AcrvCqd4AeEmWukesahPsE",
+          "text": "No matches found"
+        },
+        {
+          "t": 15.195,
+          "kind": "think",
+          "text": "thinking (content hidden)"
+        },
+        {
+          "t": 15.368,
+          "kind": "text",
+          "text": "The search found one match at line 3713. I'll check the header to confirm which column holds the city."
+        },
+        {
+          "t": 15.593,
+          "kind": "tool",
+          "id": "toolu_01Wu1UPjsq8QcBDTKtK1BRNQ",
+          "text": "Read: .\\kunden.csv"
+        },
+        {
+          "t": 15.678,
+          "kind": "result",
+          "id": "toolu_01Wu1UPjsq8QcBDTKtK1BRNQ",
+          "text": "1\tcustomer;city;orders\n2\tK-1000;Linz;52\n3\tK-1001;Graz;76"
+        },
+        {
+          "t": 18.309,
+          "kind": "text",
+          "text": "Customer K-4711 is in **Zwettl**. The row in `kunden.csv` (line 3713) is `K-4711;Zwettl;42`, and the header `customer;city;orders` confirms that the second column is the city."
+        },
+        {
+          "t": 18.359,
+          "kind": "end",
+          "text": "Done after 18.4 s"
+        }
+      ],
+      "meta": {
+        "model": "claude-haiku-5-5",
+        "tools": [
+          "Grep",
+          "Read"
+        ],
+        "permission_mode": "default",
+        "claude_code_version": "2.1.309",
+        "duration_ms": 10440,
+        "num_turns": 4,
+        "total_cost_usd": 0.00128808,
+        "is_error": false,
+        "permission_denials": 0
+      }
+    }
+  }
+}

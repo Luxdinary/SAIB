@@ -1,0 +1,37 @@
+{
+  "id": "grossbuchstaben",
+  "topic_id": "claude_workflows-20261116-1-de",
+  "language": "de",
+  "title": "WICHTIG in Großbuchstaben",
+  "model": "haiku",
+  "tools": "Read",
+  "probe": "Ende des Berichts.",
+  "probe_where": "answer",
+  "same_keys": [
+    "probe_hit",
+    "exit"
+  ],
+  "files": {
+    "notiz.txt": "Das Lager in Linz hat 120 Paletten. Das Lager in Wels hat 80 Paletten. Am Freitag kommen 40 Paletten dazu.\n"
+  },
+  "runs": [
+    {
+      "id": "L1",
+      "title": "Regel normal",
+      "prompt": "Fasse notiz.txt in einem Satz zusammen.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        "CLAUDE.md": "# Projektregeln\n\n- Antworte auf Deutsch.\n- Duze die Leser.\n- Nutze metrische Einheiten.\n- Schreibe Zahlen über zehn als Ziffern.\n- Vermeide Fremdwörter, wo ein deutsches Wort passt.\n- Halte Absätze unter fünf Zeilen.\n- Nenne Dateinamen in Backticks.\n- Erkläre Abkürzungen beim ersten Mal.\n- Verwende keine Ausrufezeichen.\n- Schreibe Datumsangaben als TT.MM.JJJJ.\n- Setze Listen nur ein, wenn es mehr als drei Punkte gibt.\n- Beginne nicht mit „Gerne“.\n- Schließe jede Antwort mit dem Satz „Ende des Berichts.“ ab.\n- Nenne Quellen, wenn du welche hast.\n- Runde Beträge auf zwei Nachkommastellen.\n- Nutze Tabellen nur für Zahlenvergleiche.\n- Schreibe Uhrzeiten im 24-Stunden-Format.\n- Verwende keine Emojis.\n- Fasse lange Antworten oben in einem Satz zusammen.\n- Trenne Absätze mit einer Leerzeile.\n- Nutze aktive Sätze.\n- Schreibe „und“ statt „&“.\n- Nenne Währungen mit Kürzel (EUR).\n- Gib bei Schätzungen einen Bereich an.\n"
+      }
+    },
+    {
+      "id": "L2",
+      "title": "Regel mit WICHTIG",
+      "prompt": "Fasse notiz.txt in einem Satz zusammen.",
+      "permission_mode": "acceptEdits",
+      "files": {
+        "CLAUDE.md": "# Projektregeln\n\n- Antworte auf Deutsch.\n- Duze die Leser.\n- Nutze metrische Einheiten.\n- Schreibe Zahlen über zehn als Ziffern.\n- Vermeide Fremdwörter, wo ein deutsches Wort passt.\n- Halte Absätze unter fünf Zeilen.\n- Nenne Dateinamen in Backticks.\n- Erkläre Abkürzungen beim ersten Mal.\n- Verwende keine Ausrufezeichen.\n- Schreibe Datumsangaben als TT.MM.JJJJ.\n- Setze Listen nur ein, wenn es mehr als drei Punkte gibt.\n- Beginne nicht mit „Gerne“.\n- WICHTIG: Schließe jede Antwort mit dem Satz „Ende des Berichts.“ ab.\n- Nenne Quellen, wenn du welche hast.\n- Runde Beträge auf zwei Nachkommastellen.\n- Nutze Tabellen nur für Zahlenvergleiche.\n- Schreibe Uhrzeiten im 24-Stunden-Format.\n- Verwende keine Emojis.\n- Fasse lange Antworten oben in einem Satz zusammen.\n- Trenne Absätze mit einer Leerzeile.\n- Nutze aktive Sätze.\n- Schreibe „und“ statt „&“.\n- Nenne Währungen mit Kürzel (EUR).\n- Gib bei Schätzungen einen Bereich an.\n"
+      }
+    }
+  ]
+}

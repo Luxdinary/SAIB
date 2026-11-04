@@ -1,0 +1,720 @@
+{
+ "topic": "brainrot-20261113-3",
+ "series": "E",
+ "short": {
+  "de": "Groesste Einzelbluete",
+  "en": "Groesste Einzelbluete"
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://arboretum.harvard.edu/frequently-asked-questions-about-the-titan-arum-or-corpse-flower/",
+   "checked_at": "2026-11-01",
+   "title": "Arnold Arboretum of Harvard University, FAQ titan arum: Rafflesia arnoldii, native to the tropical rain forests of southeast Asia including Sumatra and Borneo, produces the world's largest single flower at about a meter in width; the titan arum's flowers are tiny, it is the world's largest unbranched inflorescence and can grow 8 to 10 feet (3 meters) in height",
+   "label": {
+    "de": "Harvard Arboretum",
+    "en": "Harvard Arboretum"
+   }
+  },
+  {
+   "id": "S2",
+   "url": "https://www.obga.ox.ac.uk/article/chasing-plants-in-search-of-rafflesia",
+   "checked_at": "2026-11-01",
+   "title": "Oxford Botanic Garden, Chasing plants: in search of Rafflesia: Rafflesia arnoldii from the rainforests of Indonesian Sumatra produces the largest single flower in the world, over a metre across; Rafflesia has no roots, leaves or stems, lives inside a tropical vine and appears only to bloom; the flowers emit a stench of rotting meat that attracts flies, which cross pollinate the flowers",
+   "label": {
+    "de": "Oxford Botanic Garden",
+    "en": "Oxford Botanic Garden"
+   }
+  },
+  {
+   "id": "S3",
+   "url": "http://manoa.hawaii.edu/lifesciences/faculty/carr/rafflesi.htm",
+   "checked_at": "2026-11-01",
+   "title": "University of Hawaii at Manoa, Rafflesia (G. Carr): the flowers of R. arnoldii, up to a meter across, are the largest of any angiosperm",
+   "label": {
+    "de": "Univ. of Hawaii",
+    "en": "Univ. of Hawaii"
+   }
+  }
+ ],
+ "de": {
+  "title": "Die größte Einzelblüte der Welt – Plümo legt sich zum Vergleich hinein",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "Größte Einzelblüte der Welt? Nicht ich. Die Rafflesia, etwa einen Meter breit.",
+    "on_screen": "Größte Blüte? *Nicht* ich.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "visual": "Rafflesia fliegt zur Rekordtür, Stempel IRRTUM",
+    "why": {
+     "truth": "Harvard, Oxford und Hawaii: Rafflesia arnoldii bildet die größte Einzelblüte, etwa einen Meter breit",
+     "visual": "Riesenblüte an der Tür ist sofort lesbar"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "Welche Pflanze hat die größte Einzelblüte der Welt?",
+    "on_screen": "Größte *Einzelblüte*?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "Fragezeichen über der Rekordtür"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "Die größte Einzelblüte der Welt stinkt nach verrottendem Fleisch.",
+    "on_screen": "Rekordblüte *stinkt*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "Fliege kreist über der Blüte"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Wer beim Quiz die Titanwurz als größte Einzelblüte nennt, verliert den Punkt.",
+    "on_screen": "Titanwurz? *Punkt weg.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 2
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "Quizkarte"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "Ich leg mich zum Vergleich in die Riesenblüte. Schau.",
+    "on_screen": "Plümo in der *Riesenblüte*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo liegt in der Rafflesia"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "spoken": "Größte Einzelblüte der Welt? Nicht ich. Die Rafflesia, etwa einen Meter breit.",
+    "data": {
+     "mode": "hook",
+     "head": "Größte Blüte? *Nicht* ich.",
+     "head_at": 0.2,
+     "sign": "REKORDHALLE",
+     "items": [
+      {
+       "kind": "rafflesia"
+      }
+     ],
+     "stamp_reject": "IRRTUM",
+     "cue_scan": "Größte",
+     "cue_verdict": "Nicht",
+     "cue_club": "Rafflesia",
+     "cue_know": "Meter"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Moment. Ich dachte, ich bin die prächtigste Blüte im Garten. Aber nein, ich bin gar keine Blüte. Der Rekord gehört der Rafflesia. Ich war geschockt. Die Rafflesia nicht.",
+    "data": {
+     "word_a": "Plümo",
+     "word_b": "blüte",
+     "left": "Plümo: *Prachtblüte*",
+     "right": "Echt: *Rafflesia*",
+     "cue_left": "dachte",
+     "cue_strike": "nein",
+     "cue_right": "Rekord",
+     "cue_react": "Ich",
+     "item": "rafflesia",
+     "cue_shock": "geschockt",
+     "cue_item": "Rafflesia",
+     "cue_never": "nicht"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "Wie lebt sie? Im Regenwald von Sumatra. Rafflesien haben keine Wurzeln, Blätter oder Stängel. Sie leben in einer tropischen Kletterpflanze und zeigen sich nur zum Blühen. Ohne Hände zeig ich es mit dem Blatt.",
+    "data": {
+     "headline": "Wie lebt *sie*?",
+     "inner": "rafflesia",
+     "disc": [
+      "#7A1508",
+      "#FFE2C8",
+      "#F0A080"
+     ],
+     "cue_q": "lebt",
+     "labels": [
+      {
+       "text": "Regenwald, *Sumatra*",
+       "pos": "tr",
+       "cue": "Sumatra"
+      },
+      {
+       "text": "keine *Wurzeln*",
+       "pos": "l",
+       "cue": "Wurzeln"
+      },
+      {
+       "text": "Wirt: *Kletterpflanze*",
+       "pos": "b",
+       "cue": "Kletterpflanze"
+      }
+     ],
+     "cue_hands": "Hände",
+     "cue_leaf": "Blatt"
+    },
+    "overlay": {
+     "marker_at": "w:Wurzeln"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Ganz genau. Die Blüten stinken nach verrottendem Fleisch. Das lockt Fliegen an, die dort Eier ablegen wollen. Dabei bestäuben sie die Blüten. Ein fieser Trick. Ich hab gerochen. Nase aus.",
+    "data": {
+     "kind": "rafflesia",
+     "lens": "fly",
+     "lens_bg": "#2C1638",
+     "cue_mag": "genau",
+     "callouts": [
+      {
+       "text": "stinkt nach *Aas*",
+       "cue": "stinken"
+      },
+      {
+       "text": "Fliegen *bestäuben*",
+       "cue": "bestäuben"
+      }
+     ],
+     "cue_nut": "Fleisch",
+     "stamp": {
+      "text": "Fliegen-Trick!",
+      "cue": "Trick"
+     },
+     "cue_react": "gerochen",
+     "cue_fast": "Nase"
+    },
+    "overlay": {
+     "dim_at": "w:stinken",
+     "marker_at": "w:stinken"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Und die Titanwurz? Bis zu drei Meter hoch. Aber keine Einzelblüte, sondern ein Blütenstand aus vielen winzigen Blüten. Die Rafflesia ist eine einzige Blüte, etwa einen Meter breit. Ich bin null Blüten.",
+    "data": {
+     "headline": "Und die *Titanwurz*?",
+     "bars": [
+      {
+       "label": "Titanwurz",
+       "value": "bis 3 m",
+       "h": 0.95,
+       "color": "#B04A92",
+       "cue": "Titanwurz"
+      },
+      {
+       "label": "Rafflesia",
+       "value": "ca. 1 m",
+       "h": 0.33,
+       "color": "#B7FF00",
+       "kind": "rafflesia",
+       "cue": "Rafflesia"
+      }
+     ],
+     "stamp": {
+      "text": "1 Blüte!",
+      "cue": "einzige"
+     },
+     "cue_react": "null"
+    },
+    "overlay": {
+     "marker_at": "w:Titanwurz"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Merke: Die Rafflesia hat die größte Einzelblüte der Welt. Gut, jetzt ich. Scanner läuft. Ergebnis: Blüte nicht ermittelbar. Ich bin wohl Knospe.",
+    "data": {
+     "mode": "unknown",
+     "sign": "REKORDHALLE",
+     "merke": "Größte Einzelblüte: *Rafflesia*.",
+     "display": "Blüte: nicht ermittelbar",
+     "plumps": "PLUMPS",
+     "cue_build": "Rafflesia",
+     "cue_go": "Gut",
+     "cue_scan": "Scanner",
+     "cue_result": "Ergebnis",
+     "cue_back": "wohl"
+    },
+    "overlay": {
+     "marker_at": "w:Merke"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "Ich bleib dann mal liegen. Mehr Zonkfruit? Folge dem Kanal. Ich steh gleich wieder auf.",
+    "data": {
+     "sign": "REKORDHALLE",
+     "cta": "Mehr Zonkfruit? *Folgen.*",
+     "cue_cta": "Mehr",
+     "cue_up": "steh",
+     "cue_lie": "liegen",
+     "cue_ch": "Kanal"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Größte Blüte: Plümo?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Plümo: abgelehnt",
+    "tone": "pop",
+    "word": "Nicht"
+   },
+   {
+    "beat": "b3",
+    "text": "Keine Wurzeln, keine Blätter",
+    "tone": "lime",
+    "word": "Wurzeln"
+   },
+   {
+    "beat": "b4",
+    "text": "Lockt Fliegen mit Gestank",
+    "tone": "lime",
+    "word": "Fliegen"
+   },
+   {
+    "beat": "b5",
+    "text": "Titanwurz: viele Blüten",
+    "tone": "lime",
+    "word": "winzigen"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: Blüte offen",
+    "tone": "amber",
+    "word": "Ergebnis"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: liegt kurz",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "Die größte Einzelblüte der Welt ist nicht Plümo. Es ist die Rafflesia.",
+   "description": "Plümo hielt sich für die prächtigste Blüte im Garten. Den Rekord hält Rafflesia arnoldii aus Sumatra: etwa einen Meter breit, ohne Wurzeln, Blätter und Stängel, und sie lockt Fliegen mit Aasgeruch. Die Titanwurz ist höher, aber ein Blütenstand aus vielen winzigen Blüten.",
+   "hashtags": [
+    "rafflesia",
+    "pflanzen",
+    "rekord",
+    "wusstestdu",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ },
+ "en": {
+  "title": "The world's biggest single flower – Plümo lies down inside",
+  "hooks": [
+   {
+    "type": "misconception",
+    "spoken": "World's biggest single flower? Not me. It's the rafflesia, about a meter wide.",
+    "on_screen": "Biggest flower? *Not* me.",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 5
+    },
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "visual": "rafflesia flies to the record door, stamp NOPE",
+    "why": {
+     "truth": "Harvard, Oxford and Hawaii: Rafflesia arnoldii has the largest single flower, about a meter wide",
+     "visual": "a giant flower at the door reads at once"
+    }
+   },
+   {
+    "type": "question",
+    "spoken": "Which plant has the biggest single flower in the world?",
+    "on_screen": "Biggest *single flower*?",
+    "scores": {
+     "clarity": 5,
+     "relevance": 4,
+     "curiosity": 4,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "question mark over the record door"
+   },
+   {
+    "type": "surprising_fact",
+    "spoken": "The world's biggest single flower stinks of rotting meat.",
+    "on_screen": "Record flower *stinks*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 5,
+     "truth": 5,
+     "visual": 3
+    },
+    "source_ids": [
+     "S2"
+    ],
+    "visual": "fly circles the flower"
+   },
+   {
+    "type": "concrete_risk",
+    "spoken": "Name the titan arum as the biggest single flower at quiz night and you lose the point.",
+    "on_screen": "Titan arum? *Point lost.*",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 3,
+     "truth": 4,
+     "visual": 2
+    },
+    "source_ids": [
+     "S1"
+    ],
+    "visual": "quiz card"
+   },
+   {
+    "type": "demonstration",
+    "spoken": "I lie down inside the giant flower to compare. Watch.",
+    "on_screen": "Plümo in the *giant flower*.",
+    "scores": {
+     "clarity": 4,
+     "relevance": 3,
+     "curiosity": 4,
+     "truth": 4,
+     "visual": 5
+    },
+    "source_ids": [],
+    "visual": "Plümo lying in the rafflesia"
+   }
+  ],
+  "beats": [
+   {
+    "function": "hook",
+    "scene_type": "zonk_scan",
+    "source_ids": [
+     "S1",
+     "S2",
+     "S3"
+    ],
+    "spoken": "World's biggest single flower? Not me. It's the rafflesia, about a meter wide.",
+    "data": {
+     "mode": "hook",
+     "head": "Biggest flower? *Not* me.",
+     "head_at": 0.2,
+     "sign": "RECORD HALL",
+     "items": [
+      {
+       "kind": "rafflesia"
+      }
+     ],
+     "stamp_reject": "NOPE",
+     "cue_scan": "biggest",
+     "cue_verdict": "Not",
+     "cue_club": "rafflesia",
+     "cue_know": "meter"
+    }
+   },
+   {
+    "function": "problem",
+    "scene_type": "zonk_word",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "Wait. I thought I was the finest flower in the garden. But no, I'm not even a flower. The record belongs to the rafflesia. I was shocked. The rafflesia was not.",
+    "data": {
+     "word_a": "Plümo",
+     "word_b": "rose",
+     "left": "Plümo: *finest flower*",
+     "right": "Real: *rafflesia*",
+     "cue_left": "thought",
+     "cue_strike": "no",
+     "cue_right": "record",
+     "cue_react": "I",
+     "item": "rafflesia",
+     "cue_shock": "shocked",
+     "cue_item": "rafflesia",
+     "cue_never": "not"
+    }
+   },
+   {
+    "function": "explanation",
+    "scene_type": "zonk_diagram",
+    "source_ids": [
+     "S1",
+     "S2"
+    ],
+    "spoken": "How does it live? In the rainforests of Sumatra. No roots, no leaves, no stems. It lives inside a tropical vine and only shows up to bloom. No hands, so I point with my leaf.",
+    "data": {
+     "headline": "How does it *live*?",
+     "inner": "rafflesia",
+     "disc": [
+      "#7A1508",
+      "#FFE2C8",
+      "#F0A080"
+     ],
+     "cue_q": "live",
+     "labels": [
+      {
+       "text": "rainforest, *Sumatra*",
+       "pos": "tr",
+       "cue": "Sumatra"
+      },
+      {
+       "text": "no *roots*, no *leaves*",
+       "pos": "l",
+       "cue": "roots"
+      },
+      {
+       "text": "host: a *tropical vine*",
+       "pos": "b",
+       "cue": "vine"
+      }
+     ],
+     "cue_hands": "hands",
+     "cue_leaf": "leaf"
+    },
+    "overlay": {
+     "marker_at": "w:roots"
+    }
+   },
+   {
+    "function": "demonstration",
+    "scene_type": "zonk_zoom",
+    "source_ids": [
+     "S2"
+    ],
+    "spoken": "Closer. The flowers stink of rotting meat. That lures flies looking to lay eggs. Along the way, they pollinate the flowers. Sneaky trick. One sniff. Nose off.",
+    "data": {
+     "kind": "rafflesia",
+     "lens": "fly",
+     "lens_bg": "#2C1638",
+     "cue_mag": "Closer",
+     "callouts": [
+      {
+       "text": "smells like *rotting meat*",
+       "cue": "stink"
+      },
+      {
+       "text": "flies *pollinate*",
+       "cue": "pollinate"
+      }
+     ],
+     "cue_nut": "meat",
+     "stamp": {
+      "text": "Fly trick!",
+      "cue": "trick"
+     },
+     "cue_react": "sniff",
+     "cue_fast": "Nose"
+    },
+    "overlay": {
+     "dim_at": "w:stink",
+     "marker_at": "w:stink"
+    }
+   },
+   {
+    "function": "insight",
+    "scene_type": "zonk_compare",
+    "source_ids": [
+     "S1"
+    ],
+    "spoken": "And the titan arum? Up to three meters tall. But not a single flower: a cluster of many tiny flowers. The rafflesia is one single flower, about a meter wide. I'm zero flowers.",
+    "data": {
+     "headline": "And the *titan arum*?",
+     "bars": [
+      {
+       "label": "titan arum",
+       "value": "up to 3 m",
+       "h": 0.95,
+       "color": "#B04A92",
+       "cue": "titan"
+      },
+      {
+       "label": "rafflesia",
+       "value": "about 1 m",
+       "h": 0.33,
+       "color": "#B7FF00",
+       "kind": "rafflesia",
+       "cue": "rafflesia"
+      }
+     ],
+     "stamp": {
+      "text": "1 flower!",
+      "cue": "single"
+     },
+     "cue_react": "zero"
+    },
+    "overlay": {
+     "marker_at": "w:titan"
+    }
+   },
+   {
+    "function": "benefit",
+    "scene_type": "zonk_scan",
+    "spoken": "Remember: rafflesia has the world's biggest single flower. Right, my turn. Scanner on. Result: bloom unknown. I guess I'm a bud.",
+    "data": {
+     "mode": "unknown",
+     "sign": "RECORD HALL",
+     "merke": "Biggest single flower: *rafflesia*.",
+     "display": "Bloom: unknown",
+     "plumps": "FLOP",
+     "cue_build": "rafflesia",
+     "cue_go": "Right",
+     "cue_scan": "Scanner",
+     "cue_result": "Result",
+     "cue_back": "guess"
+    },
+    "overlay": {
+     "marker_at": "w:Remember"
+    }
+   },
+   {
+    "function": "close",
+    "scene_type": "zonk_loop",
+    "spoken": "I'll just lie here for a bit. More Zonkfruit? Follow the channel. I'll get up in a minute.",
+    "data": {
+     "sign": "RECORD HALL",
+     "cta": "More Zonkfruit? *Follow.*",
+     "cue_cta": "More",
+     "cue_up": "get",
+     "cue_lie": "lie",
+     "cue_ch": "channel"
+    }
+   }
+  ],
+  "status": [
+   {
+    "beat": "b1",
+    "text": "Biggest flower: Plümo?",
+    "tone": "amber",
+    "offset": 0.5
+   },
+   {
+    "beat": "b1",
+    "text": "Plümo: rejected",
+    "tone": "pop",
+    "word": "Not"
+   },
+   {
+    "beat": "b3",
+    "text": "No roots, no leaves",
+    "tone": "lime",
+    "word": "roots"
+   },
+   {
+    "beat": "b4",
+    "text": "Lures flies with a stench",
+    "tone": "lime",
+    "word": "flies"
+   },
+   {
+    "beat": "b5",
+    "text": "Titan arum: many flowers",
+    "tone": "lime",
+    "word": "tiny"
+   },
+   {
+    "beat": "b6",
+    "text": "Plümo: bloom unknown",
+    "tone": "amber",
+    "word": "Result"
+   },
+   {
+    "beat": "b7",
+    "text": "Plümo: lying down",
+    "tone": "muted",
+    "offset": 0.3
+   }
+  ],
+  "post": {
+   "title": "The world's biggest single flower isn't Plümo. It's the rafflesia.",
+   "description": "Plümo thought he was the finest flower in the garden. The record belongs to Rafflesia arnoldii from Sumatra: about a meter wide, no roots, leaves or stems, and it lures flies with a smell of rotting meat. The titan arum is taller, but it is a cluster of many tiny flowers.",
+   "hashtags": [
+    "rafflesia",
+    "plants",
+    "record",
+    "didyouknow",
+    "zonkfruit",
+    "comedy"
+   ]
+  }
+ }
+}

@@ -1,0 +1,809 @@
+{
+  "video_id": "megaconstruction-20261112-2-de",
+  "brand_id": "megaconstruction",
+  "language": "de",
+  "title": "Panamakanal: So spart eine Neopanamax-Schleuse 60 % Wasser",
+  "notes": "Gigastruct Woche 1 (01.11.2026), Vorlage 1.0, Kalender megaconstruction-20261112-2-de. Thema: panamalock. Stilisierte 3D-Modelle aus Grundkörpern, schematisch; Zahlen nur aus den Quellen des Kalenders.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 3.5,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Neopanamax",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Schleusung läuft",
+          "tone": "accent",
+          "offset": 0.3
+        },
+        {
+          "beat": "b2",
+          "text": "427 × 55 × 18,3 m",
+          "tone": "accent",
+          "at": "@427"
+        },
+        {
+          "beat": "b3",
+          "text": "Wasser in den Sparbecken",
+          "tone": "accent",
+          "at": "@Becken"
+        },
+        {
+          "beat": "b3",
+          "text": "bis zu 60 % zurück",
+          "tone": "green",
+          "at": "@60"
+        },
+        {
+          "beat": "b4",
+          "text": "127 m frei",
+          "tone": "green",
+          "at": "@127"
+        },
+        {
+          "beat": "b5",
+          "text": "in Betrieb seit 2016",
+          "tone": "green",
+          "at": "@2007"
+        }
+      ]
+    },
+    "description": "Die Neopanamax-Schleusen des Panamakanals verwenden bis zu 60 % ihres Wassers wieder – mit Wassersparbecken neben jeder Kammer. Schritt für Schritt erklärt.",
+    "companion_text": "Gerechnet: 427 m − 299,98 m = 127 m. Quellen: Autoridad del Canal de Panamá (Erweiterung, Eröffnung 2016). Stilisiertes 3D-Modell, Beckenzahl schematisch. Folge Gigastruct.",
+    "hashtags": [
+      "panamakanal",
+      "schleuse",
+      "wasser",
+      "schifffahrt",
+      "ingenieurskunst"
+    ],
+    "computations": [
+      {
+        "id": "C1",
+        "calculation": "427 m − 299,98 m = 127 m; 427 ÷ 299,98 = 1,42",
+        "result": "127 m frei",
+        "sources": [
+          "S1",
+          "S2"
+        ]
+      }
+    ],
+    "model3d": {
+      "fov": 46,
+      "fog": [
+        900,
+        9000
+      ],
+      "objects": [
+        {
+          "id": "ground",
+          "kind": "ground",
+          "size": 60000,
+          "grid": 200,
+          "pos": [
+            0,
+            -2,
+            0
+          ]
+        },
+        {
+          "id": "wallN",
+          "kind": "box",
+          "size": [
+            460,
+            24,
+            10
+          ],
+          "color": "model",
+          "pos": [
+            0,
+            -2,
+            32.5
+          ]
+        },
+        {
+          "id": "wallS",
+          "kind": "box",
+          "size": [
+            460,
+            24,
+            10
+          ],
+          "color": "model",
+          "pos": [
+            0,
+            -2,
+            -32.5
+          ]
+        },
+        {
+          "id": "chamber",
+          "kind": "box",
+          "size": [
+            427,
+            1,
+            55
+          ],
+          "color": "water",
+          "pos": [
+            0,
+            -2,
+            0
+          ],
+          "props": {
+            "sy": 18
+          }
+        },
+        {
+          "id": "ship",
+          "kind": "box",
+          "size": [
+            300,
+            18,
+            48
+          ],
+          "color": "boat",
+          "pos": [
+            -40,
+            4,
+            0
+          ]
+        },
+        {
+          "id": "bas0",
+          "kind": "box",
+          "size": [
+            130,
+            1,
+            70
+          ],
+          "color": "water",
+          "pos": [
+            -140,
+            0,
+            -95
+          ],
+          "props": {
+            "sy": 2
+          }
+        },
+        {
+          "id": "bas1",
+          "kind": "box",
+          "size": [
+            130,
+            1,
+            70
+          ],
+          "color": "water",
+          "pos": [
+            0,
+            0,
+            -95
+          ],
+          "props": {
+            "sy": 2
+          }
+        },
+        {
+          "id": "bas2",
+          "kind": "box",
+          "size": [
+            130,
+            1,
+            70
+          ],
+          "color": "water",
+          "pos": [
+            140,
+            0,
+            -95
+          ],
+          "props": {
+            "sy": 2
+          }
+        }
+      ],
+      "anchors": {
+        "len": [
+          0,
+          23,
+          30
+        ],
+        "wid": [
+          215,
+          23,
+          0
+        ],
+        "dep": [
+          215,
+          8,
+          -28
+        ],
+        "basin": [
+          0,
+          2,
+          -95
+        ],
+        "ship": [
+          -40,
+          26,
+          0
+        ],
+        "free": [
+          170,
+          18,
+          0
+        ]
+      },
+      "shots": {
+        "b1": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS",
+              "bas0",
+              "bas2"
+            ],
+            "az0": 50,
+            "az1": 40,
+            "el0": 28,
+            "el1": 22,
+            "fit0": 0.9,
+            "fit1": 1.0,
+            "cy": 840
+          }
+        },
+        "b2": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS"
+            ],
+            "az0": 80,
+            "az1": 70,
+            "el0": 30,
+            "el1": 26,
+            "fit0": 0.95,
+            "fit1": 1.0,
+            "cy": 840
+          }
+        },
+        "b3": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS",
+              "bas0",
+              "bas2"
+            ],
+            "az0": 70,
+            "az1": 60,
+            "el0": 40,
+            "el1": 34,
+            "fit0": 0.9,
+            "fit1": 0.95,
+            "cy": 860
+          },
+          "props": {
+            "chamber.sy": [
+              [
+                0,
+                18
+              ],
+              [
+                "%0.25",
+                18
+              ],
+              [
+                "%0.55",
+                8
+              ],
+              [
+                "%0.75",
+                8
+              ],
+              [
+                "%0.95",
+                16
+              ]
+            ],
+            "ship.y": [
+              [
+                0,
+                0
+              ],
+              [
+                "%0.25",
+                0
+              ],
+              [
+                "%0.55",
+                -10
+              ],
+              [
+                "%0.75",
+                -10
+              ],
+              [
+                "%0.95",
+                -2
+              ]
+            ],
+            "bas0.sy": [
+              [
+                0,
+                2
+              ],
+              [
+                "%0.25",
+                2
+              ],
+              [
+                "%0.55",
+                9
+              ],
+              [
+                "%0.75",
+                9
+              ],
+              [
+                "%0.95",
+                3
+              ]
+            ],
+            "bas1.sy": [
+              [
+                0,
+                2
+              ],
+              [
+                "%0.25",
+                2
+              ],
+              [
+                "%0.55",
+                9
+              ],
+              [
+                "%0.75",
+                9
+              ],
+              [
+                "%0.95",
+                3
+              ]
+            ],
+            "bas2.sy": [
+              [
+                0,
+                2
+              ],
+              [
+                "%0.25",
+                2
+              ],
+              [
+                "%0.55",
+                9
+              ],
+              [
+                "%0.75",
+                9
+              ],
+              [
+                "%0.95",
+                3
+              ]
+            ]
+          }
+        },
+        "b4": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS"
+            ],
+            "az0": 90,
+            "az1": 95,
+            "el0": 55,
+            "el1": 60,
+            "fit0": 0.95,
+            "fit1": 0.95,
+            "cy": 900
+          }
+        },
+        "b5": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS",
+              "bas0",
+              "bas2"
+            ],
+            "az0": 30,
+            "az1": 45,
+            "el0": 20,
+            "el1": 26,
+            "fit0": 0.95,
+            "fit1": 0.9,
+            "cy": 880
+          }
+        },
+        "b6": {
+          "cam": {
+            "target": [
+              "wallN",
+              "wallS",
+              "bas0",
+              "bas2"
+            ],
+            "az0": 120,
+            "az1": 110,
+            "el0": 26,
+            "el1": 30,
+            "fit0": 0.95,
+            "fit1": 0.9,
+            "cy": 880
+          },
+          "props": {
+            "ship.x": [
+              [
+                0,
+                0
+              ],
+              [
+                "%1",
+                140
+              ]
+            ]
+          }
+        }
+      },
+      "default_cam": {
+        "p0": [
+          400,
+          200,
+          400
+        ],
+        "l0": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://pancanal.com/en/discover-the-expanded-canal/",
+      "title": "Autoridad del Canal de Panamá: Discover the expanded canal (Kammer 427 × 55 × 18,3 m; bis zu 60 % Wasserwiederverwendung durch Wassersparbecken)",
+      "label": "ACP, Expanded Canal",
+      "checked_at": "2026-10-30"
+    },
+    {
+      "id": "S2",
+      "url": "https://pancanal.com/en/game-changer-inauguration-of-the-expanded-panama-canal-ushers-in-new-era-of-global-trade/",
+      "title": "ACP: Inauguration 26.06.2016; 5,25 Mrd. US$; Baubeginn 2007; COSCO Shipping Panama 299,98 × 48,25 m",
+      "label": "ACP, Eröffnung 2016",
+      "checked_at": "2026-10-30"
+    }
+  ],
+  "unverified": [
+    "Anzahl der Sparbecken je Kammer: Quellen zählen unterschiedlich, im Modell schematisch.",
+    "Hubhöhe je Stufe und Torgewichte: nicht in den geöffneten Quellen."
+  ],
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Jede Schleusung kann bis zu 60 Prozent ihres Wassers wiederverwenden. So geht das.",
+      "on_screen": "Bis zu 60 % Wasser wiederverwendet",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell des Bauwerks, Zahl erscheint",
+      "why": {
+        "truth": "aus den Quellen des Plans"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wie groß ist die Neopanamax-Schleuse wirklich?",
+      "on_screen": "Wie groß ist die Neopanamax-Schleuse wirklich?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "Die meisten unterschätzen die Neopanamax-Schleuse.",
+      "on_screen": "die Neopanamax-Schleuse: größer als gedacht",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Was bei die Neopanamax-Schleuse schiefgehen kann, entscheidet die Bauweise.",
+      "on_screen": "die Neopanamax-Schleuse: die Bauweise entscheidet",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau zu, wie die Neopanamax-Schleuse im Modell entsteht.",
+      "on_screen": "die Neopanamax-Schleuse im 3D-Modell",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "3D-Modell",
+      "why": {
+        "truth": "allgemeine, belegbare Aussage"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "gs_hook",
+      "spoken": "Jede Schleusung kann bis zu 60 Prozent ihres Wassers wiederverwenden. So geht das.",
+      "data": {
+        "kicker": "So wird's gebaut · Panamakanal",
+        "question": "Bis zu 60 % Wasser wiederverwendet",
+        "question_at": "@Jede",
+        "number": {
+          "value": "60",
+          "unit": "%",
+          "at_word": "Prozent",
+          "y": 640
+        },
+        "badge": {
+          "text": "Neopanamax-Schleuse",
+          "at_word": "So",
+          "y": 1000
+        }
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:So"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "gs_numbers",
+      "spoken": "Die neuen Schleusen des Panamakanals sind seit dem 26. Juni 2016 in Betrieb. Eine Kammer ist 427 Meter lang, 55 Meter breit und 18,3 Meter tief.",
+      "data": {
+        "headline": "Eine Neopanamax-Kammer",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "427",
+            "unit": "m",
+            "label": "lang",
+            "at_word": "427"
+          },
+          {
+            "value": "55",
+            "unit": "m",
+            "label": "breit",
+            "at_word": "55"
+          },
+          {
+            "value": "18,3",
+            "unit": "m",
+            "label": "tief",
+            "at_word": "18,3"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "2 · Die Kammer",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "demonstration",
+      "scene_type": "gs_phases",
+      "spoken": "Neben jeder Kammer liegen Wassersparbecken. Wird die Kammer geleert, fließt ein Teil des Wassers in diese Becken. Bei der nächsten Füllung kommt es von dort zurück. So lassen sich bis zu 60 Prozent wiederverwenden.",
+      "data": {
+        "headline": "Wasser sparen in drei Schritten",
+        "rail_dy": 210,
+        "steps": [
+          {
+            "label": "Kammer leeren",
+            "sub": "Wasser sinkt",
+            "at_word": "geleert"
+          },
+          {
+            "label": "In die Sparbecken",
+            "sub": "Wasser wird zwischengespeichert",
+            "at_word": "Becken"
+          },
+          {
+            "label": "Nächste Füllung",
+            "sub": "Wasser kommt zurück",
+            "at_word": "Füllung"
+          }
+        ]
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "3 · Wasser sparen",
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "seconds": 0.7,
+          "x": 540,
+          "y": 960
+        }
+      }
+    },
+    {
+      "id": "b4",
+      "function": "insight",
+      "scene_type": "gs_compare",
+      "spoken": "Das erste Schiff, die COSCO Shipping Panama, war 299,98 Meter lang. In der 427 Meter langen Kammer blieben 127 Meter frei.",
+      "data": {
+        "headline": "Kammer gegen erstes Schiff",
+        "a": {
+          "label": "Kammer",
+          "value": 427,
+          "unit": "m"
+        },
+        "b": {
+          "label": "COSCO Shipping Panama",
+          "value": 299.98,
+          "unit": "m"
+        },
+        "decimals": 1,
+        "bars_dy": 430,
+        "row_h": 108,
+        "order": "ba",
+        "b_at": "@COSCO",
+        "a_at": "@427",
+        "result_at": "@127"
+      },
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "4 · Nachgerechnet",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "benefit",
+      "scene_type": "gs_numbers",
+      "spoken": "Gekostet hat die Erweiterung laut Kanalbehörde 5,25 Milliarden US-Dollar. Baubeginn war 2007.",
+      "data": {
+        "headline": "Die Erweiterung",
+        "tiles_dy": 610,
+        "items": [
+          {
+            "value": "5,25",
+            "unit": "Mrd. $",
+            "label": "Kosten",
+            "at_word": "5,25"
+          },
+          {
+            "value": "2007",
+            "unit": "",
+            "label": "Baubeginn",
+            "at_word": "2007"
+          }
+        ]
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "kicker": "5 · Erweiterung",
+        "marker": "fakt"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "gs_numbers",
+      "spoken": "Ein Becken neben der Kammer, und bis zu 60 Prozent des Wassers lassen sich wiederverwenden. Folge Gigastruct, dann siehst du das nächste Bauwerk.",
+      "data": {
+        "mode": "closing",
+        "statement": "Bis zu 60 % wiederverwendet.",
+        "chip": {
+          "text": "Folge Gigastruct",
+          "at_word": "Folge",
+          "dy": 300
+        }
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "overlay": {
+        "kicker": "6 · Ergebnis",
+        "marker": "fakt"
+      }
+    }
+  ]
+}

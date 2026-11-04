@@ -1,0 +1,751 @@
+{
+  "video_id": "claude_workflows-20261109-3-en",
+  "brand_id": "claude_workflows",
+  "language": "en",
+  "title": "Hooks – rules Claude Code can't talk its way around",
+  "notes": "Produktion Woche 1 (01.11.2026): englische Fassung von claude_workflows-20261109-3-de, sprachlich angepasst, gleiche Quellen und Szenen (Q1). Erste Messung der englischen Gemini-Sprechgeschwindigkeit.",
+  "hook": {
+    "id": "H1",
+    "note": "Question with the highest score; the CLAUDE.md line leads straight into the guiding object (.env)."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Your CLAUDE.md says: never touch the .env file. Is that a rule, or just a polite request?",
+      "on_screen": "A rule, or just a request?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "Editor with CLAUDE.md, marker on the rule line, click, zoom, question",
+      "why": {
+        "truth": "a question, not a claim; the answer is on the memory page"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Claude has to follow your CLAUDE.md? According to the docs, it's context.",
+      "on_screen": "CLAUDE.md = must? No: context.",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "equation crossed out",
+      "why": {
+        "visual": "little action"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "The docs say it plainly: CLAUDE.md is context, not enforced configuration.",
+      "on_screen": "Context, not enforced configuration",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "docs page with marker",
+      "why": {
+        "curiosity": "sounds like documentation"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "One line in CLAUDE.md is not a lock on your .env.",
+      "on_screen": "Not a lock on your .env",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": ".env tab with an open padlock",
+      "why": {
+        "truth": "the lock image is pointed; core: no guarantee of strict compliance"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Watch a hook stop an edit to your .env.",
+      "on_screen": "Watch a hook stop the edit",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 4,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "visual": "terminal, Edit(.env), Blocked",
+      "why": {
+        "truth": "flow documented; animation, not a recording"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Automate actions with hooks (Claude Code Docs): deterministic control; PreToolUse can block; exit code 2; Block edits to protected files; Configure hook location; /hooks",
+      "url": "https://code.claude.com/docs/en/hooks-guide",
+      "checked_at": "2026-10-30",
+      "label": "Claude Code docs, hooks"
+    },
+    {
+      "id": "S2",
+      "title": "How Claude remembers your project (Claude Code Docs): context, not enforced configuration; no guarantee of strict compliance; PreToolUse hook to block",
+      "url": "https://code.claude.com/docs/en/memory",
+      "checked_at": "2026-10-30",
+      "label": "Claude Code docs, memory"
+    }
+  ],
+  "unverified": [
+    "How Claude Code shows a blocked edit in the terminal exactly: not checked (CLI login expired on 30.10.2026). The terminal scenes are labelled as an animation.",
+    "The docs script uses jq; it was checked locally only in a node variant (exit code 2 for a .env path). Not claimed in the video.",
+    "That Claude often ignores CLAUDE.md rules: not documented, not used (only: no guarantee).",
+    "Edits through Bash commands are not caught by the matcher Edit|Write; mentioned in the description, not shown as full protection."
+  ],
+  "layout": {
+    "zone_top": 372,
+    "zone_h": 728,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": ".env",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Rule: only in CLAUDE.md",
+          "tone": "amber",
+          "offset": 1.4
+        },
+        {
+          "beat": "b2",
+          "text": "Protection: not enforced",
+          "tone": "amber"
+        },
+        {
+          "beat": "b3",
+          "text": "Hook: planned",
+          "tone": "muted"
+        },
+        {
+          "beat": "b4",
+          "text": "Hook: registered",
+          "tone": "accent"
+        },
+        {
+          "beat": "b5",
+          "text": "Edit: blocked",
+          "tone": "ok",
+          "offset": 4.0
+        },
+        {
+          "beat": "b6",
+          "text": "Edit/Write: locked",
+          "tone": "ok"
+        },
+        {
+          "beat": "b8",
+          "text": "Edit/Write: locked",
+          "tone": "ok"
+        }
+      ]
+    },
+    "description": "Your CLAUDE.md says: never touch the .env. According to the Claude Code docs, that's context, not enforced configuration. A PreToolUse hook blocks the edit every time: the script exits with code 2 and Claude gets the reason back.",
+    "companion_text": "More Claude workflows, step by step: follow Promptwerk. Example based on the Claude Code docs (Block edits to protected files); the terminal scenes are an animation, not a screen recording. Note: the matcher Edit|Write only covers those two tools. Changes made through Bash commands need their own rule.",
+    "hashtags": [
+      "claudecode",
+      "hooks",
+      "aiworkflow",
+      "coding",
+      "developers"
+    ],
+    "short_title": "Hooks"
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "pw_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Your CLAUDE.md says: never touch the .env file. Is that a rule, or just a polite request?",
+      "data": {
+        "question": "A rule, or just a request?",
+        "chip": "just a request?",
+        "tabs": [
+          {
+            "name": "CLAUDE.md",
+            "active": true
+          },
+          ".env"
+        ],
+        "lines": [
+          [
+            [
+              "com",
+              "# Project rules"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Run tests before commits"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Never touch the "
+            ],
+            [
+              "kw",
+              ".env"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "No new dependencies"
+            ]
+          ],
+          [
+            [
+              "dim",
+              "- "
+            ],
+            [
+              "",
+              "Answer in English"
+            ]
+          ]
+        ],
+        "focus_line": 2,
+        "mark_at": 1.5,
+        "click_at": 2.4,
+        "question_at": 3.4,
+        "zoom": 1.1,
+        "mark_word": "never",
+        "click_word": "touch",
+        "question_word": "Is",
+        "env_word": ".env",
+        "chip_word": "just"
+      },
+      "overlay": {
+        "marker": "none",
+        "example": true,
+        "marker_at": "w:rule"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "pw_doc",
+      "source_ids": [
+        "S2"
+      ],
+      "spoken": "Anthropic's docs are clear: Claude treats CLAUDE.md as context, not enforced configuration. Claude tries to follow it, but there's no guarantee of strict compliance.",
+      "data": {
+        "kicker": "Claude Code Docs · Memory",
+        "page_title": "How Claude remembers your project",
+        "quotes": [
+          "Claude treats them as context, not enforced configuration.",
+          "there's no guarantee of strict compliance"
+        ],
+        "translation_label": "In short",
+        "translation": "Claude tries. No guarantee.",
+        "quote1_at": 1.4,
+        "translation_at": 3.2,
+        "quote1_word": "context",
+        "translation_word": "tries",
+        "quote2_word": "guarantee",
+        "page_word": "docs"
+      },
+      "overlay": {
+        "title": "Context, not enforcement",
+        "marker_at": "w:context",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "pw_flow",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "A hook works differently. It's a shell command that Claude Code itself runs at fixed points in its workflow. Whether it runs isn't up to the model.",
+      "data": {
+        "headline": "",
+        "gate": 1,
+        "chip": "can block",
+        "nodes": [
+          {
+            "label": "UserPromptSubmit"
+          },
+          {
+            "label": "PreToolUse",
+            "hook": true
+          },
+          {
+            "label": "Edit / Write",
+            "tag": "tool"
+          },
+          {
+            "label": "PostToolUse"
+          },
+          {
+            "label": "Stop"
+          }
+        ],
+        "gate_word": "Whether",
+        "travel_word": "fixed",
+        "shell_chip": "shell command",
+        "shell_word": "shell"
+      },
+      "overlay": {
+        "marker_at": "w:shell",
+        "transition": {
+          "type": "iris",
+          "x": 241,
+          "y": 452,
+          "seconds": 0.7
+        },
+        "title": "Hooks run at fixed points"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "pw_editor",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "In your project's settings.json, you register a script under PreToolUse. With the matcher Edit or Write, it runs before Claude changes a file with those tools.",
+      "data": {
+        "tabs": [
+          {
+            "name": ".claude/settings.json",
+            "active": true
+          },
+          ".env"
+        ],
+        "focus_line": 3,
+        "callout": "runs before Edit and Write",
+        "callout_num": "1",
+        "lines": [
+          [
+            [
+              "punc",
+              "{"
+            ]
+          ],
+          [
+            [
+              "",
+              "  "
+            ],
+            [
+              "key",
+              "\"hooks\""
+            ],
+            [
+              "punc",
+              ": {"
+            ]
+          ],
+          [
+            [
+              "",
+              "    "
+            ],
+            [
+              "key",
+              "\"PreToolUse\""
+            ],
+            [
+              "punc",
+              ": [{"
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "key",
+              "\"matcher\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"Edit|Write\""
+            ],
+            [
+              "punc",
+              ","
+            ]
+          ],
+          [
+            [
+              "",
+              "      "
+            ],
+            [
+              "key",
+              "\"hooks\""
+            ],
+            [
+              "punc",
+              ": [{"
+            ]
+          ],
+          [
+            [
+              "",
+              "        "
+            ],
+            [
+              "key",
+              "\"type\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"command\""
+            ],
+            [
+              "punc",
+              ","
+            ]
+          ],
+          [
+            [
+              "",
+              "        "
+            ],
+            [
+              "key",
+              "\"command\""
+            ],
+            [
+              "punc",
+              ": "
+            ],
+            [
+              "str",
+              "\"…/protect-files.sh\""
+            ]
+          ],
+          [
+            [
+              "punc",
+              "      }]"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "    }]"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "  }"
+            ]
+          ],
+          [
+            [
+              "punc",
+              "}"
+            ]
+          ]
+        ],
+        "mark_word": "matcher",
+        "click_word": "Write",
+        "callout_word": "before",
+        "typed_word": "register",
+        "zoom": 1.08,
+        "line_h": 44,
+        "pre_line": 2,
+        "pre_word": "PreToolUse"
+      },
+      "overlay": {
+        "title": "Register the hook",
+        "example": true,
+        "marker_at": "w:PreToolUse",
+        "dim_at": "w:Write",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "pw_terminal",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "Now, if Claude tries to edit the .env, the script checks the path and exits with code two. The edit is blocked, and Claude gets the reason back.",
+      "data": {
+        "title": "claude · demo-projekt",
+        "focus_line": 3,
+        "stamp": "exit 2",
+        "annotation": "The reason goes back to Claude",
+        "lines": [
+          {
+            "kind": "prompt",
+            "text": [
+              [
+                "acc",
+                "> "
+              ],
+              [
+                "",
+                "Add a comment to the .env"
+              ]
+            ],
+            "at_word": "Now"
+          },
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Edit(.env)"
+              ]
+            ],
+            "at_word": "edit"
+          },
+          {
+            "kind": "dim",
+            "text": "  PreToolUse-Hook: protect-files.sh",
+            "at_word": "checks"
+          },
+          {
+            "kind": "err",
+            "text": "  Blocked: …/.env matches",
+            "at_word": "exits"
+          },
+          {
+            "kind": "err",
+            "text": "  protected pattern '.env'",
+            "at_word": "code"
+          }
+        ],
+        "mark_word": "code",
+        "stamp_word": "two",
+        "click_word": "blocked",
+        "annotation_word": "reason",
+        "height": 540,
+        "file": ".env",
+        "file_open_word": ".env",
+        "file_word": "blocked",
+        "top": 20
+      },
+      "overlay": {
+        "title": "The hook kicks in",
+        "example": true,
+        "marker_at": "w:checks",
+        "dim_at": "w:blocked",
+        "vignette": true,
+        "transition": {
+          "type": "iris",
+          "x": 400,
+          "y": 610,
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "pw_compare",
+      "source_ids": [
+        "S2",
+        "S1"
+      ],
+      "spoken": "That's the difference: CLAUDE.md is read, a hook is executed. It applies no matter what Claude decides.",
+      "data": {
+        "top": {
+          "title": "CLAUDE.md",
+          "verdict": "Request",
+          "rows": [
+            "is read",
+            "Claude decides"
+          ]
+        },
+        "bottom": {
+          "title": "PreToolUse hook",
+          "verdict": "Rule",
+          "rows": [
+            "is executed",
+            "blocks with exit 2"
+          ]
+        },
+        "bottom_at": 2.3,
+        "bottom_word": "hook",
+        "top_word": "CLAUDE.md",
+        "lock_word": "applies"
+      },
+      "overlay": {
+        "title": "Request or rule",
+        "marker": "auslegung",
+        "marker_at": "w:difference",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    },
+    {
+      "id": "b7",
+      "function": "benefit",
+      "scene_type": "pw_steps",
+      "source_ids": [
+        "S1"
+      ],
+      "spoken": "To set it up: create the script from the example in the docs, register it in settings.json, then check it with slash hooks.",
+      "data": {
+        "headline": "",
+        "steps": [
+          {
+            "title": "Create the script",
+            "code": ".claude/hooks/protect-files.sh",
+            "at_word": "create"
+          },
+          {
+            "title": "Register in settings.json",
+            "code": "PreToolUse · Edit|Write",
+            "at_word": "register"
+          },
+          {
+            "title": "Check that it's loaded",
+            "code": "/hooks",
+            "at_word": "slash"
+          }
+        ]
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:create",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "title": "In three steps"
+      }
+    },
+    {
+      "id": "b8",
+      "function": "close",
+      "scene_type": "pw_close",
+      "source_ids": [],
+      "spoken": "Requests go in CLAUDE.md, prohibitions go in a hook. More Claude workflows, step by step: follow Promptwerk.",
+      "data": {
+        "title": "claude",
+        "badge": ".env: Edit blocked",
+        "lines": [
+          {
+            "kind": "tool",
+            "text": [
+              [
+                "acc",
+                "● "
+              ],
+              [
+                "",
+                "Edit(.env)"
+              ]
+            ]
+          },
+          {
+            "kind": "err",
+            "text": "  Blocked: protected pattern '.env'"
+          }
+        ],
+        "statement": "Requests go in CLAUDE.md. Prohibitions go in a hook.",
+        "brand": "Promptwerk",
+        "claim": "Claude workflows, step by step",
+        "statement_at": 0.3,
+        "brand_at": 3.6,
+        "statement_word": "Requests",
+        "brand_word": "More"
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      }
+    }
+  ]
+}

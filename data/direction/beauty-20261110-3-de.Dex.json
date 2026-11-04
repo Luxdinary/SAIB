@@ -1,0 +1,471 @@
+{
+ "video_id": "beauty-20261110-3-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "Lichtschutzfaktor: vier Kategorien",
+ "notes": "Beispielplan Aufbau D (03.11.2026, Dewlane-Sitzung): N1-Plan 20261110-3 DE mit Realbildern aus brands/beauty/assets/higgsfield/library (Foto-Modus). Nur Trockenlauf geprüft, nicht gerendert. Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261110-3-de.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (tube), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Neben der Zahl soll eine von vier Kategorien stehen, niedrig, mittel, hoch oder sehr hoch, mindestens ebenso auffällig. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Was heißt die Zahl? Wichtig: Die Kategorie soll mindestens ebenso gut sichtbar sein wie die Zahl. Sie ist also kein Kleingedrucktes.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930,
+  "stamp": "KI-Bilder · erfundenes Produkt · kein Produkttest",
+  "media": [
+   {
+    "beat": "b1",
+    "at": 0,
+    "file": "library/dl_prod_tube.jpg",
+    "kind": "image",
+    "move": "in",
+    "tag": "ki"
+   },
+   {
+    "beat": "b2",
+    "at": 0,
+    "file": "library/dl_real_tube_back.jpg",
+    "kind": "image",
+    "move": "right",
+    "tag": "ki"
+   },
+   {
+    "beat": "b3",
+    "at": 0,
+    "file": "library/dl_real_beach_towel.jpg",
+    "kind": "image",
+    "move": "left",
+    "tag": "ki"
+   },
+   {
+    "beat": "b4",
+    "at": 0,
+    "file": "library/dl_tex_film.jpg",
+    "kind": "image",
+    "move": "in",
+    "tag": "ki"
+   },
+   {
+    "beat": "b5",
+    "at": 0,
+    "file": "library/dl_real_spray_backlit.jpg",
+    "kind": "image",
+    "move": "up",
+    "tag": "ki"
+   },
+   {
+    "beat": "b6",
+    "at": 0,
+    "file": "library/dl_real_fingers_strand.jpg",
+    "kind": "image",
+    "move": "in",
+    "tag": "hand"
+   },
+   {
+    "beat": "b7",
+    "at": 0,
+    "file": "library/dl_prod_tube.jpg",
+    "kind": "image",
+    "move": "in",
+    "tag": "ki"
+   }
+  ],
+  "sound": {
+   "palette": "soft",
+   "mood": "warm",
+   "music": "procedural"
+  }
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32006H0647",
+   "title": "Empfehlung 2006/647/EG der Kommission über die Wirksamkeit von Sonnenschutzmitteln und diesbezügliche Herstellerangaben",
+   "checked_at": "2026-11-01",
+   "label": "Empfehlung 2006/647/EG"
+  },
+  {
+   "id": "S2",
+   "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-products-specific-topics/sunscreen-products_en",
+   "title": "Europäische Kommission: Sunscreen products",
+   "checked_at": "2026-11-01",
+   "label": "EU-Kommission: Sonnenschutz"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Neben der Zahl auf deinem Sonnenschutz soll ein Wort stehen: eine von vier Kategorien.",
+   "on_screen": "Was heißt die Zahl?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Weißt du, zu welcher Schutzkategorie LSF 30 gehört?",
+   "on_screen": "Weißt du, zu welcher Schutzkategorie LSF 30 gehört?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Die Zahl allein reicht. Laut EU-Empfehlung gehört eine Kategorie daneben.",
+   "on_screen": "Die Zahl allein reicht. Laut EU-Empfehlung gehört eine Kateg",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer nur auf die Zahl schaut, übersieht, was die Stufe bedeutet.",
+   "on_screen": "Wer nur auf die Zahl schaut, übersieht, was die Stufe bedeut",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, wie die EU Lichtschutzfaktoren in vier Stufen ordnet.",
+   "on_screen": "Schau, wie die EU Lichtschutzfaktoren in vier Stufen ordnet.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Neben der Zahl auf deinem Sonnenschutz soll ein Wort stehen: eine von vier Kategorien.",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Was heißt die Zahl?",
+    "badge": "Kategorie?",
+    "kicker": "Unter der Lupe · Sonnenschutz",
+    "product": {
+     "kind": "tube",
+     "line1": "SONNENSCHUTZ",
+     "line2": "LSF",
+     "big": "30"
+    },
+    "question_at": 0.25,
+    "photo": true
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "Das empfiehlt die EU-Kommission seit 2006. Die Wirksamkeit soll einfach, eindeutig und aussagekräftig angegeben werden. Darum soll jede Zahl einer Kategorie zugeordnet sein: niedrig, mittel, hoch oder sehr hoch. Jede Kategorie soll einem genormten Schutzgrad gegen UVB- und UVA-Strahlung entsprechen.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Zahl plus Wort",
+    "zoom": "LSF 30",
+    "flip": false,
+    "doc": {
+     "act": "Empfehlung 2006/647/EG",
+     "ref": "Nummern 13 und 14",
+     "tag": "EU"
+    },
+    "rows": [
+     {
+      "text": "einfach und eindeutig"
+     },
+     {
+      "text": "vier Kategorien"
+     },
+     {
+      "text": "jede Zahl hat ihre Stufe"
+     }
+    ],
+    "kicker": "Worum es geht",
+    "product": {
+     "kind": "tube",
+     "line1": "SONNENSCHUTZ",
+     "line2": "LSF",
+     "big": "30"
+    },
+    "photo": true
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "Die Tabelle dazu ist klar. LSF 6 und 10 gelten als niedrig. 15, 20 und 25 als mittel. 30 und 50 als hoch. Und 50 plus als sehr hoch.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_list",
+   "data": {
+    "headline": "Vier Stufen",
+    "caption": "Empfohlene Angaben, Empfehlung 2006/647/EG",
+    "rows": [
+     {
+      "label": "niedrig",
+      "value": "6 · 10"
+     },
+     {
+      "label": "mittel",
+      "value": "15 – 25"
+     },
+     {
+      "label": "hoch",
+      "value": "30 · 50"
+     },
+     {
+      "label": "sehr hoch",
+      "value": "50+"
+     }
+    ],
+    "kicker": "Unter der Lupe",
+    "product": {
+     "kind": "tube",
+     "line1": "SONNENSCHUTZ",
+     "line2": "LSF",
+     "big": "30"
+    },
+    "photo": true
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "Die Zahlen sind dabei begrenzt. Statt vieler Werte sollen nur wenige auf dem Etikett stehen, damit man Produkte leichter vergleichen kann. Ein gemessener Wert zwischen 30 und 49,9 wird zum Beispiel als 30 angegeben. Ab einem gemessenen Wert von 60 steht 50 plus.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "Wenige Zahlen",
+    "left": {
+     "tag": "gemessen",
+     "title": "30 bis 49,9",
+     "rows": [
+      {
+       "text": "Wert aus dem Test"
+      }
+     ],
+     "product": {
+      "kind": "tube"
+     }
+    },
+    "right": {
+     "tag": "Etikett",
+     "title": "30",
+     "rows": [
+      {
+       "text": "Kategorie hoch"
+      },
+      {
+       "text": "leichter vergleichbar"
+      }
+     ],
+     "product": {
+      "kind": "tube"
+     }
+    },
+    "kicker": "Im Vergleich",
+    "photo": true
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "Wichtig: Die Kategorie soll mindestens ebenso gut sichtbar sein wie die Zahl. Sie ist also kein Kleingedrucktes.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Gleich groß",
+    "zoom": "LSF 30",
+    "flip": true,
+    "doc": {},
+    "rows": [
+     {
+      "text": "Kategorie mindestens so sichtbar wie die Zahl"
+     },
+     {
+      "text": "kein Kleingedrucktes"
+     }
+    ],
+    "kicker": "Laut Quelle",
+    "product": {
+     "kind": "tube",
+     "line1": "SONNENSCHUTZ",
+     "line2": "LSF",
+     "big": "30"
+    },
+    "photo": true
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "Für dich heißt das: Lies nicht nur die Zahl, sondern auch das Wort daneben. Es sagt dir in einem Blick, in welche Schutzstufe das Produkt fällt.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "So liest du es",
+    "items": [
+     {
+      "title": "Zahl finden",
+      "sub": "zum Beispiel 30",
+      "icon": "check"
+     },
+     {
+      "title": "Wort daneben",
+      "sub": "niedrig, mittel, hoch, sehr hoch",
+      "icon": "doc"
+     },
+     {
+      "title": "Stufe vergleichen",
+      "sub": "statt Zahlen raten",
+      "icon": "check"
+     }
+    ],
+    "kicker": "Im Alltag",
+    "product": {
+     "kind": "tube",
+     "line1": "SONNENSCHUTZ",
+     "line2": "LSF",
+     "big": "30"
+    },
+    "photo": true
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Erst die Kategorie lesen, dann auftragen. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Merksatz",
+    "rule": "Erst lesen, dann auftragen.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "tube",
+     "line1": "SONNENSCHUTZ",
+     "line2": "LSF",
+     "big": "30"
+    },
+    "question": {
+     "text": "Welche Kategorie steht auf deiner Tube?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung.",
+    "photo": true
+   }
+  }
+ ]
+}

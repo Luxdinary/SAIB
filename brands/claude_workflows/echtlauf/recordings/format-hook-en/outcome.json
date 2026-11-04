@@ -1,0 +1,71 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16437,
+          "output_tokens": 309,
+          "num_turns": 3,
+          "duration_s": 5.4
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": false,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 16437,
+          "output_tokens": 300,
+          "num_turns": 3,
+          "duration_s": 6.4
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 22561,
+          "output_tokens": 479,
+          "num_turns": 4,
+          "duration_s": 5.6
+        },
+        {
+          "probe_in_answer": true,
+          "probe_hit": true,
+          "tool_errors": false,
+          "tools_used": [
+            "Edit",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 22595,
+          "output_tokens": 534,
+          "num_turns": 4,
+          "duration_s": 8.4
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

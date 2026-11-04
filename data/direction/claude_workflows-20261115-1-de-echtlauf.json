@@ -1,0 +1,296 @@
+{
+  "video_id": "claude_workflows-20261115-1-de-echtlauf",
+  "brand_id": "claude_workflows",
+  "language": "de",
+  "title": "Ein Subagent mit eigenen Werkzeugen: was er darf und was nicht",
+  "notes": "Woche 1, Reihe Gleicher Auftrag, anderer Schalter. Aufzeichnung subagent-werkzeuge (zweite Fassung): Subagent pruefer mit tools: Read gegen tools: Read, Edit, je zweimal. Die erste Fassung (--tools Agent) schaltete Read und Edit für die ganze Sitzung ab, auch für Subagenten; sie liegt unter recordings/_verworfen und wird nicht gezeigt, weil sie einen Fehler im Versuchsaufbau zeigt, nicht das Thema. Zeilen aus dem Subagenten sind im Bild mit ┆ markiert.",
+  "hook": {
+    "id": "H1"
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Ein Subagent hat eigene Werkzeuge. Was passiert, wenn er etwas nicht darf?",
+      "on_screen": "Was darf der Subagent?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 5,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "SUB",
+        "R1"
+      ],
+      "visual": "rec_auftrag",
+      "why": {
+        "truth": "Frage"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Ein Subagent darf alles, was Claude darf? Nicht, wenn seine Datei es anders sagt.",
+      "on_screen": "Darf er alles?",
+      "scores": {
+        "clarity": 4,
+        "relevance": 5,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "SUB",
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Der Subagent durfte nur lesen und lieferte eine Korrekturliste statt einer Änderung.",
+      "on_screen": "Nur eine Liste",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Ohne Edit-Recht blieb die Arbeit an der Hauptsitzung hängen.",
+      "on_screen": "Arbeit bleibt hängen",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Lauf 1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Zwei echte Läufe: derselbe Subagent, einmal mit, einmal ohne Edit.",
+      "on_screen": "Mit und ohne Edit",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "R1"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "Aufbau"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "SUB",
+      "title": "Create custom subagents: each subagent runs in its own context window with a custom system prompt, specific tool access, and independent permissions; frontmatter field tools: tools the subagent can use, as a comma-separated string such as Read, Grep, Bash; inherits every tool available to subagents if omitted",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "checked_at": "2026-11-02",
+      "label": "Claude-Code-Doku, Subagents"
+    },
+    {
+      "id": "R1",
+      "url": "file:brands/claude_workflows/echtlauf/recordings/subagent-werkzeuge",
+      "checked_at": "2026-11-02",
+      "label": "Eigene Aufzeichnung",
+      "title": "Eigene Aufzeichnung subagent-werkzeuge, 2026-11-02: Claude Code 2.1.309, Testordner mit Beispieldaten, jeder Lauf zweimal"
+    }
+  ],
+  "unverified": [
+    "In Lauf 1 hatte die Hauptsitzung selbst Edit und änderte die Datei, nachdem der Subagent nur lesen durfte. Ob sie das ohne eigenes Edit-Recht anders gelöst hätte, wurde nicht getestet.",
+    "Der Subagent lief im Hintergrund; seine Zeilen erscheinen im Protokoll zwischen denen der Hauptsitzung."
+  ],
+  "layout": {
+    "format": "echtlauf",
+    "explainer": false,
+    "zone_top": 300,
+    "zone_h": 950,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "zone_lower_right_px": 940,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "echtlauf": {
+      "recording": "subagent-werkzeuge"
+    },
+    "short_title": "Subagenten",
+    "description": "Echter Ablauf, aufgezeichnet am 02.11.2026 mit Claude Code 2.1.309 (Modell claude-haiku-5-5). Derselbe Auftrag an den Subagenten pruefer, jeder Lauf zweimal: Mit tools: Read las er die Datei und lieferte nur eine Korrekturliste, die Hauptsitzung änderte danach selbst. Mit tools: Read, Edit korrigierte der Subagent die Datei selbst.",
+    "companion_text": "Grundbefehl je Lauf: claude -p \"<Prompt>\" --model haiku --output-format stream-json --verbose --setting-sources project,local --strict-mcp-config --disable-slash-commands --no-session-persistence --tools Agent,Read,Edit. Subagent in .claude/agents/pruefer.md, Lauf 1 mit tools: Read, Lauf 2 mit tools: Read, Edit. Hauptsitzung mit --tools Agent,Read,Edit und --permission-mode acceptEdits. Zeilen aus dem Subagenten sind im Bild mit ┆ markiert. Quelle: Claude-Code-Doku, Subagents, abgerufen am 02.11.2026. Pfade im Bild gekürzt (Testordner = .). Das Verhalten kann sich mit Version und Modell ändern. Kein offizieller Kanal von Anthropic.",
+    "hashtags": [
+      "claudecode",
+      "kiworkflow",
+      "programmieren",
+      "entwickler",
+      "subagenten"
+    ]
+  },
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rec_auftrag",
+      "source_ids": [
+        "SUB",
+        "R1"
+      ],
+      "spoken": "Ein Subagent hat eigene Werkzeuge. Was passiert, wenn er etwas nicht darf? Zwei echte Läufe mit dem Subagenten pruefer.",
+      "data": {
+        "run": "L1",
+        "question": "Was darf der Subagent?",
+        "type_word": "Werkzeuge",
+        "chips_word": "Zwei",
+        "rec": "subagent-werkzeuge"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rec_rule",
+      "source_ids": [
+        "SUB"
+      ],
+      "spoken": "Der Subagent ist eine Datei im Ordner agents. Im Kopf steht, welche Werkzeuge er nutzen darf: in Lauf eins nur Read, in Lauf zwei Read und Edit. Laut Doku hat jeder Subagent eigene Werkzeuge und eigene Rechte.",
+      "data": {
+        "run": "L1",
+        "file": ".claude/agents/pruefer.md",
+        "highlight_text": "tools:",
+        "kicker": "Claude-Code-Doku, Subagents",
+        "quote": "… with a custom system prompt, specific tool access, and independent permissions.",
+        "translation": "Eigener Systemprompt, eigene Werkzeuge, eigene Rechte.",
+        "highlight_word": "Werkzeuge",
+        "doc_word": "Doku",
+        "translation_word": "Rechte",
+        "rec": "subagent-werkzeuge"
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rec_setup",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Die Aufgabe: zwei Tippfehler in text.md korrigieren, und zwar durch den Subagenten.",
+      "data": {
+        "run": "L1",
+        "show": "text.md",
+        "highlight_text": "Tset",
+        "label": "Beispieldaten, Fehler absichtlich",
+        "view_word": "Tippfehler",
+        "highlight_word": "korrigieren",
+        "tag_word": "Subagenten",
+        "rec": "subagent-werkzeuge"
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf eins. Claude startete pruefer im Hintergrund. Die Zeilen mit der gestrichelten Linie stammen vom Subagenten. Er las die Datei, durfte aber nicht schreiben und lieferte nur eine Korrekturliste. Daraufhin änderte Claude die Datei selbst.",
+      "data": {
+        "run": "L1",
+        "probe_good": true,
+        "text_rows": 3,
+        "stamp_true": "korrigiert",
+        "stamp_false": "nicht korrigiert",
+        "rec": "subagent-werkzeuge"
+      }
+    },
+    {
+      "id": "b5",
+      "function": "demonstration",
+      "scene_type": "rec_replay",
+      "source_ids": [
+        "R1"
+      ],
+      "spoken": "Lauf zwei, pruefer mit Edit. Diesmal änderte der Subagent die Datei selbst. Claude meldete das Ergebnis und schrieb dazu, dass es die Datei nicht selbst nachgelesen hatte.",
+      "data": {
+        "run": "L2",
+        "probe_good": true,
+        "text_rows": 3,
+        "stamp_true": "korrigiert",
+        "stamp_false": "nicht korrigiert",
+        "rec": "subagent-werkzeuge"
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "rec_result",
+      "source_ids": [
+        "R1",
+        "SUB"
+      ],
+      "spoken": "Beide Läufe liefen zweimal, und die Datei war am Ende jedes Mal korrigiert. Der Unterschied liegt darin, wer geschrieben hat: in Lauf eins die Hauptsitzung, in Lauf zwei der Subagent. Seine Grenzen galten wirklich.",
+      "data": {
+        "headline": "2 Läufe, je 2-mal",
+        "probe_good": true,
+        "stamp_true": "korrigiert",
+        "stamp_false": "nicht korrigiert",
+        "titles": {
+          "L1": "Nur Read: Claude ändert",
+          "L2": "Edit: Subagent ändert"
+        },
+        "note": "Eigene Werkzeuge und Rechte je Subagent (laut Doku).",
+        "note_source": "Claude-Code-Doku, Subagents",
+        "rows_word": "Beide",
+        "row_gap": 0.8,
+        "note_word": "Unterschied",
+        "rec": "subagent-werkzeuge"
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "rec_protokoll",
+      "source_ids": [],
+      "spoken": "Gib einem Subagenten also genau die Werkzeuge, die seine Aufgabe braucht. Folge Promptwerk für weitere Claude-Workflows Schritt für Schritt.",
+      "data": {
+        "statement": "Jedem Subagenten nur die nötigen Werkzeuge.",
+        "claim": "Promptwerk · echte Läufe",
+        "statement_word": "genau",
+        "claim_word": "Folge",
+        "rec": "subagent-werkzeuge"
+      }
+    }
+  ]
+}

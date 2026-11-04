@@ -1,0 +1,28 @@
+[beauty] Thema Nr. 6 · „Aluminium im Deo ist gefährlich“ · Reihe Direkter Vergleich · Aufbau C · Tag 06.11. -> beauty-20261103-2-de / beauty-20261103-2-en Fassung D1
+[beauty] plan de (round 0): Prompt 19109 Zeichen (System 17581, Aufgabe 1528)
+[beauty] plan de (round 0): claude_cli claude-sonnet-5-5 in=4 out=4693 cache=10047 Abo, kein Einzelpreis (CLI-Schätzung 0.18807775000000002 USD); Modelle claude-haiku-4-5-20251001,claude-sonnet-5-5; 1 Turn(s); 25653 ms; rate_limit allowed_warning
+[beauty] DE-Plan Runde 0: 1 Fehler: Sprechtext 1006 Zeichen = etwa 60 s Stimme, Video außerhalb 65–90 s; Ziel 1276 Zeichen (1187–1366)
+[beauty] plan de (round 1): Prompt 29310 Zeichen (System 17581, Aufgabe 11729)
+[beauty] plan de (round 1): claude_cli claude-sonnet-5-5 in=4 out=5084 cache=15269 Abo, kein Einzelpreis (CLI-Schätzung 0.23460324999999999 USD); Modelle claude-haiku-4-5-20251001,claude-sonnet-5-5; 1 Turn(s); 24594 ms; rate_limit allowed_warning
+[beauty] plan en (round 0): Prompt 12023 Zeichen (System 1873, Aufgabe 10150)
+[beauty] plan en (round 0): claude_cli claude-sonnet-5-5 in=4 out=4384 cache=6120 Abo, kein Einzelpreis (CLI-Schätzung 0.152693 USD); Modelle claude-haiku-4-5-20251001,claude-sonnet-5-5; 1 Turn(s); 21095 ms; rate_limit allowed_warning
+[beauty] EN-Plan Runde 0: 2 Fehler: beat b2 data.check.text: 36 Zeichen > 30; beat b5 data.schema: 45 Zeichen > 44
+[beauty] plan en (round 1): Prompt 23039 Zeichen (System 1873, Aufgabe 21166)
+[beauty] plan en (round 1): claude_cli claude-sonnet-5-5 in=4 out=4381 cache=10991 Abo, kein Einzelpreis (CLI-Schätzung 0.18683475 USD); Modelle claude-haiku-4-5-20251001,claude-sonnet-5-5; 1 Turn(s); 20484 ms; rate_limit allowed_warning
+# Tagesläufer 2026-11-03
+
+## Dewlane (beauty) · Modell claude_cli claude-sonnet-5-5 · Trockenlauf
+- übersprungen: Nr. 1 · INCI-Liste lesen: Was ganz vorne steht · Reihe Unter der Lupe · Aufbau B · Tag 04.11.: reserviert für die Marken-Sitzung (Tag 04.11.)
+- übersprungen: Nr. 62 · Nachcremen verlängert den Schutz nicht · Reihe Im Alltag angewendet · Aufbau A · Tag 04.11.: reserviert für die Marken-Sitzung (Tag 04.11.)
+- übersprungen: Nr. 3 · „Parabene sind verboten“ · Reihe Direkter Vergleich · Aufbau C · Tag 05.11.: reserviert für die Marken-Sitzung (Tag 05.11.)
+- übersprungen: Nr. 46 · „Wasserfest“: 40 oder 80 Minuten · Reihe Im Alltag angewendet · Aufbau D · Tag 05.11.: reserviert für die Marken-Sitzung (Tag 05.11.)
+- Nr. 6 „Aluminium im Deo ist gefährlich“ · Aufbau C
+  - de: beauty-20261103-2-de-D1 · Plan ok · Modell 2 Aufruf(e), 8 ein / 9777 aus / 25316 Cache Token · Trockenlauf Exit 1
+    - Fehler: Trockenlauf Exit 1: ["ValueError: could not convert string to float: 'Höchstwerte'"]
+    - Trockenlauf: Mock-Länge 99.3 s (keine echte Stimme); Prüfung als Auszug 99 s
+  - en: beauty-20261103-2-en-D1 · Plan ok · Modell 2 Aufruf(e), 8 ein / 8765 aus / 17111 Cache Token · Trockenlauf Exit 1
+    - Fehler: Trockenlauf Exit 1: ["ValueError: could not convert string to float: 'Maximum values'"]
+    - Trockenlauf: Mock-Länge 95.3 s (keine echte Stimme); Prüfung als Auszug 95 s
+
+Zusammenfassung: C:\Automation\faceless-network\data\daily\runs\2026-11-03_summary.md
+exit 1

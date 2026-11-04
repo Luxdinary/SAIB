@@ -1,0 +1,425 @@
+{
+ "video_id": "engines-20261113-3-de",
+ "brand_id": "engines",
+ "language": "de",
+ "title": "1902: die Zündung, die das Auto zuverlässig machte",
+ "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261113-3-de, Reihe Motorgeschichte. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1. | Zeitlupe-Format (02.11.2026): automatisch umgestellt mit brands/engines/zeitlupe/convert_plan.py, Sprechtext unverändert.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "description": "1902 stellte Gottlob Honold bei Bosch die Hochspannungs-Magnetzündung mit Zündkerze vor. Die Geschichte nach den Bosch-Archivseiten.",
+  "companion_text": "Daten laut Bosch-Geschichtsseiten (abgerufen 01.11.2026). Zeitlupenfaktor und Millisekunden beziehen sich auf die Beispieldrehzahl 3000/min.",
+  "hashtags": [
+   "motorgeschichte",
+   "bosch",
+   "zündkerze",
+   "zündung",
+   "erfindung"
+  ],
+  "format": "zeitlupe",
+  "explainer": false
+ },
+ "assets": {},
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Bosch, Geschichte 1886-1905",
+   "title": "Bosch, Geschichte 1886-1905 (BO_1886)",
+   "url": "https://www.bosch.com/stories/1886-1905-from-first-workshop-to-factory/",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S2",
+   "label": "Bosch, Meilensteine",
+   "title": "Bosch, Meilensteine (B6)",
+   "url": "https://www.bosch-mobility.com/en/company/milestones/",
+   "checked_at": "2026-11-01"
+  },
+  {
+   "id": "S3",
+   "label": "Bosch, Magnetzündung",
+   "title": "Bosch, Magnetzündung (BO_MAG)",
+   "url": "https://www.bosch.com/stories/bosch-magneto-ignition/",
+   "checked_at": "2026-11-01"
+  }
+ ],
+ "unverified": [],
+ "hook": {
+  "id": "H1",
+  "note": "Stärkster belegbarer Hook."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "Und die Geschichte beginnt mit einem Nachbau.",
+   "on_screen": "Hochspannung seit 1902",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "truth": "Aussage aus den Plan-Quellen",
+    "visual": "im Schnittmodell sichtbar"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Seit wann gibt es die Zündkerze?",
+   "on_screen": "1902: die Zündung, die das Auto zuverlässig machte",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "1902: die Zündung, die das Auto zuverlässig machte",
+   "on_screen": "1902: die Zündung, die das Auto zuverlässig machte",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "1902: die Zündung, die das Auto zuverlässig machte",
+   "on_screen": "1902: die Zündung, die das Auto zuverlässig machte",
+   "scores": {
+    "clarity": 4,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "1902: die Zündung, die das Auto zuverlässig machte",
+   "on_screen": "1902: die Zündung, die das Auto zuverlässig machte",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "why": {
+    "clarity": "schwächer als H1"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zl_hook",
+   "spoken": "Die Grundidee jeder Zündkerze in deinem Motor stammt aus dem Jahr neunzehnhundertzwei. Und die Geschichte beginnt mit einem Nachbau.",
+   "data": {
+    "claim": "Hochspannung seit 1902",
+    "claim_lines": [
+     "Hochspannung",
+     "seit 1902"
+    ],
+    "claim_highlight": "1902",
+    "claim_at": 0.05,
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      1080
+     ]
+    ],
+    "slow_at": 0.15,
+    "source": "Bosch, Geschichte 1886-1905 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zlx_board",
+   "spoken": "Achtzehnhundertsiebenundachtzig baut Robert Bosch eine Niederspannungs-Magnetzündung nach. Zehn Jahre später sitzt sie zum ersten Mal in einem Auto, in einem Dreirad von De Dion-Bouton. Bis dahin hat Bosch rund tausend solcher Zündapparate gebaut.",
+   "data": {
+    "title": "Niederspannung",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1887",
+      "at": 0.0
+     },
+     {
+      "year": "1897",
+      "at": "w:später"
+     }
+    ],
+    "rows": [
+     {
+      "text": "Niederspannungs-Magnetzündung",
+      "at": "w:Niederspannungs"
+     },
+     {
+      "text": "erstes Auto: De Dion-Bouton",
+      "at": "w:Dreirad"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Bosch, Geschichte 1886-1905 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zlx_board",
+   "spoken": "Neunzehnhundertzwei stellt Boschs Ingenieur Gottlob Honold die Hochspannungs-Magnetzündung mit Zündkerze vor. Bosch meldet sie im selben Jahr zum Patent an. Auf diesem Schritt baut jede heutige Zündkerze auf.",
+   "data": {
+    "title": "Hochspannung",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1902",
+      "at": 0.0
+     }
+    ],
+    "doc": {
+     "head": "BOSCH · 1902",
+     "lines": [
+      "Hochspannungs-",
+      "Magnetzündung"
+     ],
+     "stamp": "1902",
+     "at": "w:Honold"
+    },
+    "rows": [
+     {
+      "text": "mit Zündkerze",
+      "at": "w:Zündkerze"
+     },
+     {
+      "text": "Patentanmeldung 1902",
+      "at": "w:Patent"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Bosch, Geschichte 1886-1905 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "zlx_plug",
+   "spoken": "Hohe Spannung lässt einen Funken über den Spalt zwischen zwei Elektroden springen. Und das musste schnell gehen: Frühe Motoren liefen laut Bosch mit etwa hundert Umdrehungen pro Minute, Automotoren mit bis zu tausend. Bei tausend Umdrehungen bleibt für jeden Funken nur ein Bruchteil einer Sekunde.",
+   "data": {
+    "title": "Ein Funke im Spalt",
+    "labels": [
+     "center",
+     "ground"
+    ],
+    "labels_at": [
+     "w:Elektroden",
+     0.3
+    ],
+    "sparks_at": [
+     "w:Funken",
+     "w:Automotoren"
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      720
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Bosch, Magnetzündung · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S3"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zlx_board",
+   "spoken": "Neunzehnhundertdrei gewinnt Camille Jenatzy das Gordon-Bennett-Rennen mit Bosch-Zündung. Bis neunzehnhundertzwölf baut Bosch laut eigener Darstellung eine Million Zündapparate. Aus der Werkstatt ist eine Fabrik geworden.",
+   "data": {
+    "title": "Eine Million",
+    "mode": "history",
+    "years": [
+     {
+      "year": "1903",
+      "at": 0.0
+     },
+     {
+      "year": "1912",
+      "at": "w:Million"
+     }
+    ],
+    "rows": [
+     {
+      "text": "Jenatzy siegt mit Bosch-Zündung",
+      "at": "w:Jenatzy"
+     },
+     {
+      "text": "1 Million Zündapparate",
+      "at": "w:Million"
+     }
+    ],
+    "theta": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      360
+     ]
+    ],
+    "fade_in": false,
+    "fade_out": false,
+    "source": "Bosch, Geschichte 1886-1905 · abgerufen 01.11.2026"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S3"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zl_realtime",
+   "spoken": "Erst Niederspannung, dann Hochspannung mit Zündkerze, bis heute. Motorentechnik verstehen: Folge Revlore.",
+   "data": {
+    "theta": [
+     [
+      0,
+      0.0
+     ],
+     [
+      0.3,
+      180.0
+     ],
+     [
+      0.5,
+      540.0
+     ],
+     [
+      "w:Motorentechnik",
+      1260.0
+     ],
+     [
+      1,
+      7260.0
+     ]
+    ],
+    "real_at": "w:Motorentechnik",
+    "rows": [
+     {
+      "text": "1887",
+      "at": "w:Niederspannung"
+     },
+     {
+      "text": "1902",
+      "at": "w:Hochspannung"
+     }
+    ],
+    "brand": {
+     "text": "REVLORE · Motorentechnik verstehen",
+     "hl": "REVLORE",
+     "at": "w:Motorentechnik"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

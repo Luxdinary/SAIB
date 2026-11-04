@@ -1,0 +1,534 @@
+{
+  "video_id": "military_history-20261115-1-de",
+  "brand_id": "military_history",
+  "language": "de",
+  "title": "Bailey-Brücke: Stahl für sechs Mann",
+  "notes": "Woche 1, Reihe Gebaut für den Ernstfall. Pioniertechnik nur als Bau und Reparatur; keine Kampfszenen. Gewicht eines Paneels in keiner Quelle.",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://collection.sciencemuseumgroup.org.uk/people/cp89848/bailey-sir-donald-coleman",
+      "title": "Bailey, Sir Donald Coleman, Science Museum Group Collection",
+      "label": "Science Museum Group",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.gracesguide.co.uk/Bailey_Bridge",
+      "title": "Bailey Bridge, Grace's Guide to British Industrial History",
+      "label": "Grace's Guide",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [
+    "Gewicht eines Paneels: keine Quelle, nicht genannt.",
+    "650 Firmen und 2.000 Brücken stammen aus Grace's Guide, nicht gegengeprüft."
+  ],
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "question",
+      "spoken": "Wie baut man eine Brücke aus Teilen, die sechs Mann heben können?",
+      "on_screen": "Eine Brücke für sechs Mann?",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "misconception",
+      "spoken": "Brücken baut man vor Ort aus Stahlträgern? Diese kam als Baukasten.",
+      "on_screen": "Brücke aus dem Baukasten",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "surprising_fact",
+      "spoken": "Jedes Paneel passte auf einen Drei-Tonnen-Lastwagen.",
+      "on_screen": "Ein Paneel, ein Lkw",
+      "scores": {
+        "clarity": 5,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 4
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "Das Ministerium wollte den Entwurf zuerst nicht.",
+      "on_screen": "Zuerst abgelehnt",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 4,
+        "truth": 5,
+        "visual": 3
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "Schau, wie Paneele zu einer Brücke werden.",
+      "on_screen": "Paneel für Paneel",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S2"
+      ],
+      "visual": "",
+      "why": {
+        "truth": "aus den geöffneten Quellen"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "cinematic_hook",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "none"
+      },
+      "spoken": "Wie baut man eine Brücke aus Teilen, die sechs Mann heben können?",
+      "data": {
+        "question": "Eine Brücke aus Teilen für sechs Mann?",
+        "question_em": "sechs Mann",
+        "card_title": "Bailey-Brücke",
+        "card_meta": "ENGLAND · AB 1941",
+        "card_no": "AKTE 28",
+        "stamp": "10 × 5",
+        "drawing": "bailey_panel.svg",
+        "packet_label": "Paneel",
+        "card_at": 0.05,
+        "draw_at": 0.4,
+        "question_at": 0.15,
+        "stamp_at": "w:Brücke",
+        "packet_at": "w:Teilen",
+        "em_at": "w:sechs"
+      }
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "2 · DER ANLASS"
+      },
+      "spoken": "1936 skizziert der Bauingenieur Donald Bailey eine Brücke aus genormten, verschweißten Fachwerkpaneelen. Das Kriegsministerium zeigt zunächst kein Interesse.",
+      "data": {
+        "mode": "map",
+        "headline": "Eine Skizze von 1936",
+        "places": [
+          {
+            "label": "Christchurch",
+            "code": "Entwurf 1936",
+            "x": 600,
+            "y": 80,
+            "at": "w:1936"
+          },
+          {
+            "label": "War Office",
+            "code": "kein Interesse",
+            "x": 190,
+            "y": 500,
+            "rx": 170,
+            "ry": 95,
+            "at": "w:Kriegsministerium"
+          }
+        ],
+        "route_at": "w:skizziert",
+        "route_label": "genormte Paneele",
+        "route_label_at": "w:genormten",
+        "wait_at": "w:zunächst",
+        "route_label_xy": [
+          470,
+          330
+        ],
+        "chip": "Idee: Donald Bailey",
+        "chip_at": "w:Bauingenieur",
+        "chip_xy": [
+          350,
+          560
+        ],
+        "packet_label": "Paneel",
+        "packet_at": "w:Fachwerkpaneelen",
+        "packet_xy": [
+          594,
+          176
+        ],
+        "masts": 0,
+        "line_label": "noch kein Auftrag",
+        "line_label_at": "w:Interesse",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "ui_demo",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 300,
+          "y": 900,
+          "seconds": 0.7
+        },
+        "vignette": true,
+        "dim_at": "w:Sechs",
+        "kicker": "3 · DIE TECHNIK"
+      },
+      "spoken": "Ein Paneel misst zehn mal fünf Fuß, also etwa drei mal eineinhalb Meter. Sechs Mann können es heben, und jedes passt auf einen gewöhnlichen Drei-Tonnen-Lastwagen.",
+      "data": {
+        "headline": "Ein Paneel, 10 × 5 Fuß",
+        "drawing": "bailey_panel.svg",
+        "sheet_title": "BLATT 2 · PANEEL",
+        "draw_at": 0.1,
+        "draw_seconds": 1.6,
+        "callouts": [
+          {
+            "label": "10 Fuß ≈ 3,05 m",
+            "x": 230,
+            "y": 90,
+            "lx": 500,
+            "ly": 60,
+            "at": "w:zehn"
+          },
+          {
+            "label": "5 Fuß ≈ 1,52 m",
+            "x": 15,
+            "y": 215,
+            "lx": 500,
+            "ly": 170,
+            "at": "w:fünf"
+          },
+          {
+            "label": "6 Mann heben es",
+            "x": 230,
+            "y": 215,
+            "lx": 500,
+            "ly": 280,
+            "at": "w:Sechs"
+          },
+          {
+            "label": "Passt auf einen 3-t-Lkw",
+            "x": 240,
+            "y": 455,
+            "lx": 500,
+            "ly": 390,
+            "at": "w:Drei-Tonnen-Lastwagen"
+          }
+        ],
+        "zoom": {
+          "x": 230,
+          "y": 215,
+          "scale": 1.12,
+          "at": "w:Sechs",
+          "back_at": "w:Drei-Tonnen-Lastwagen",
+          "grow": "up"
+        },
+        "headline_lines": 1,
+        "sheet_h": 620,
+        "draw_scale": 0.9,
+        "draw_top": 30
+      }
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "comparison",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "4 · DER VERGLEICH"
+      },
+      "spoken": "Der Vorteil: kleine Teile, die viele kleine Maschinenbaubetriebe fertigen können. Am Ende sind es 650 Firmen.",
+      "data": {
+        "mode": "versus_fl",
+        "headline": "Klein gedacht, groß gebaut",
+        "left": {
+          "tag": "Teil",
+          "title": "Klein und genormt",
+          "at": "w:Teile",
+          "rows": [
+            "10 × 5 Fuß"
+          ]
+        },
+        "right": {
+          "tag": "Fertigung",
+          "title": "650 Firmen",
+          "at": "w:650",
+          "rows": [
+            "viele kleine Betriebe"
+          ]
+        },
+        "verdict": "Eine Brücke aus dem Baukasten",
+        "verdict_at": "w:Firmen",
+        "headline_lines": 2
+      }
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "data_flow",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "kicker": "5 · DER KERN"
+      },
+      "spoken": "1941 kommt der Auftrag, im Dezember 1941 erreichen die ersten Lieferungen die Armee. Bis 1947 entstehen rund 2000 Bailey-Brücken.",
+      "data": {
+        "headline": "Vom Auftrag zur Serie",
+        "nodes": [
+          {
+            "label": "Auftrag",
+            "code": "1941",
+            "at": "w:Auftrag"
+          },
+          {
+            "label": "Lieferung",
+            "code": "Dez. 1941",
+            "at": "w:Dezember"
+          },
+          {
+            "label": "≈ 2.000 Brücken",
+            "code": "bis 1947",
+            "at": "w:2000"
+          }
+        ],
+        "edges": [
+          {
+            "label": ""
+          },
+          {
+            "label": ""
+          }
+        ],
+        "packet_label": "Paneel",
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b6",
+      "function": "insight",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "iris",
+          "x": 231,
+          "y": 1000,
+          "seconds": 0.7
+        },
+        "kicker": "6 · DIE ZEIT"
+      },
+      "spoken": "1936 der Entwurf, 1941 die Serie, 1947 rund 2000 Brücken, über 1500 davon in Nordwesteuropa.",
+      "data": {
+        "mode": "timeline",
+        "headline": "Von 1936 bis 1947",
+        "items": [
+          {
+            "year": "1936",
+            "title": "Entwurf",
+            "sub": "verschweißte Paneele",
+            "at": "w:1936"
+          },
+          {
+            "year": "1941",
+            "title": "Serienlieferung",
+            "sub": "ab Dezember",
+            "at": "w:1941"
+          },
+          {
+            "year": "1947",
+            "title": "≈ 2.000 Brücken",
+            "sub": "über 1.500 in NW-Europa",
+            "at": "w:1947",
+            "sub_at": "w:1500"
+          }
+        ],
+        "headline_lines": 1
+      }
+    },
+    {
+      "id": "b7",
+      "function": "close",
+      "scene_type": "key_takeaway",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "overlay": {
+        "marker": "fakt",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        },
+        "kicker": "7 · HEUTE",
+        "marker_until": "w:Historische",
+        "head_until": "w:Historische"
+      },
+      "spoken": "Nach dem Krieg werden Paneele zivil genutzt, viele Brücken bleiben in Betrieb. Das Science Museum zeigt ein Modell einer Reparatur in Italien von 1944. Historische Technik, sachlich erklärt: Folge Frontlore.",
+      "data": {
+        "mode": "closing",
+        "card_title": "Bailey-Brücke",
+        "card_meta": "SCIENCE MUSEUM",
+        "card_no": "AKTE 28",
+        "stamp": "Modell",
+        "drawing": "bailey_panel.svg",
+        "statement": "Ein Baukasten, der blieb",
+        "statement_at": "w:zivil",
+        "stamp_at": "w:Modell",
+        "note": "Modell: Castel del Rio, Italien, 1944",
+        "note_at": "w:Italien",
+        "chip": "Folge Frontlore",
+        "chip_at": "w:Folge"
+      }
+    }
+  ],
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 540,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "status_y": 1440,
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1548,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "status_bar": {
+      "file": "Paneel",
+      "states": [
+        {
+          "beat": "b1",
+          "text": "Bauteil: gesucht",
+          "tone": "muted",
+          "offset": 3.2
+        },
+        {
+          "beat": "b2",
+          "text": "Entwurf: 1936",
+          "tone": "amber",
+          "offset": 0.2
+        },
+        {
+          "beat": "b3",
+          "text": "Maß: 10 × 5 Fuß",
+          "tone": "amber",
+          "offset": 3.2
+        },
+        {
+          "beat": "b4",
+          "text": "Fertigung: 650 Firmen",
+          "tone": "amber",
+          "offset": 7.1
+        },
+        {
+          "beat": "b5",
+          "text": "Lieferung: 12/1941",
+          "tone": "muted",
+          "offset": 2.7
+        },
+        {
+          "beat": "b6",
+          "text": "Brücken: ≈ 2.000",
+          "tone": "muted",
+          "offset": 4.2
+        },
+        {
+          "beat": "b7",
+          "text": "Modell: Science Museum",
+          "tone": "muted",
+          "offset": 6.6
+        }
+      ]
+    },
+    "description": "Die Bailey-Brücke: genormte Stahlpaneele von 10 × 5 Fuß, von sechs Mann zu heben, auf einem 3-t-Lkw zu transportieren. Stilisierte Darstellung, keine Originalaufnahmen.",
+    "companion_text": "Historische Technik, sachlich erklärt: Folge Frontlore.",
+    "hashtags": [
+      "brückenbau",
+      "ingenieurskunst",
+      "geschichte",
+      "bailey",
+      "technikgeschichte"
+    ]
+  },
+  "hook": {
+    "id": "H1",
+    "note": ""
+  }
+}

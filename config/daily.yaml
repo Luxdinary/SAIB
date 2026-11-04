@@ -1,0 +1,250 @@
+# Tagesläufer (scripts/daily_runner.py, src/fn/daily): automatic daily production per brand over a model API.
+# Decision Stefan 03.11.2026 ("Sonnet + Tagesläufer"): script and direction come from the API, not from Claude Code sessions.
+# Paths under `business_relative` keys are relative to OneDrive\Business (fn.config.mirror_dir().parent); the others to the repository.
+
+month_plan:                                # scripts/month_planner.py (docs/daily-runner.md section 6)
+  report_dir: "C:/Users/Stefa/AppData/Roaming/Claude/side-session-notes/local_f160c170-73b7-4b0e-8ef5-fede189d0eb3"   # copy of the report for the Hauptsitzung, if the folder exists
+
+defaults:
+  topics_per_day: 2
+  languages: [de, en]
+  version_prefix: D                      # render versions D1, D2 ... (Fassung)
+  flash_requests_per_brand_per_day: 4    # Gemini Flash TTS: 2 topics x DE/EN; no retries on length errors
+  pro_fallback: false                    # use the Pro voice (voices.yaml fallback_model) when the Flash budget is used up
+  source_check: true                     # HTTP reachability of the plan's source URLs (sets checked_at)
+  mark_konzeptplan: true                 # append a "Tagesläufer: produziert" marker to the topic row
+  write_csv: true                        # one row per exported video in 04 Redaktionsplan\Redaktionsplan.csv
+  target_voice_seconds: 76               # voice length to aim for (video = 0.4 s lead + voice + 2.4-2.6 s tail, allowed 65-90 s)
+  length_tolerance: 0.07                 # +/- share of the target character count given to the model
+  render_script: scripts/render_direction.py
+  render_args: []
+  dry_run_timeout_s: 900
+  render_timeout_s: 5400
+  llm:
+    # Stefan, 03.11.2026, 16:50 Wien: "Wir machen es über den normalen Ultra-Plan" -> no API key. Default provider is the
+    # Claude Code CLI headless (`claude -p --model claude-sonnet-5-5 --output-format json --tools ""`, stored claude.ai login,
+    # prompt via stdin, no session). Tokens are logged per video; there is no price per token ("Abo, kein Einzelpreis").
+    # Gemini writes no scripts (voices only). `anthropic` stays selectable for a later API key.
+    provider: claude_cli                 # claude_cli | anthropic | mock
+    claude_model: claude-sonnet-5-5
+    cli_effort: low                      # low | medium | high | xhigh | max | null = CLI default. Measured 03.11.: default 37 k, medium 19 k, low 4.7 k output tokens per DE plan; low needed one repair round (validation catches it)
+    cli_timeout_s: 1800
+    anthropic_model: claude-sonnet-5-5
+    repair_rounds: 2                     # validation errors are sent back to the model this many times
+    price_usd_per_million:               # only for provider anthropic; claude-sonnet-5-5 figures from third-party pricing pages
+      claude-sonnet-5-5: {input: 2.0, output: 10.0}   # (anotherwrapper, pricepertoken, apidog, read 03.11.2026), not checked against platform.claude.com
+  format_bible_max_chars: 1500           # trimmed Format-Bibel in the prompt (sections Abgrenzung, Offene Punkte, Übernahme, Produktion je Video are dropped)
+  flash_global_cap: 100                  # Gemini Flash TTS: 100 requests per day for all sessions together (quota resets at midnight Pacific)
+  flash_global_reserve: 12               # left free for the brand sessions and the main session
+  dry_run_repairs: 2                     # renderer findings of the dry run go back to the model this many times (DE and EN each)
+  reserved_days: []                      # Hauptsitzung 03.11., nach Stefans Freigabe: keine Reel-Sitzung produziert mehr selbst, nichts ist reserviert (vorher 04.11. und 05.11.; Zeilen mit "reserviert" gibt es in den Konzeptplänen nicht)
+  en_example: false                      # add the brand's approved EN plan to the translation prompt (more tokens)
+
+brands:
+  engines:
+    name: Revlore
+    enabled: true
+    konzeptplan: "04 Redaktionsplan/Konzeptplan Revlore (ab November 2026).md"
+    format_bible: "02 Marke/Revlore/Format-Bibel.md"
+    testvideo_concept: "02 Marke/Revlore/Testvideo-Konzept 2026-11.md"
+    example_plan: {de: data/direction/engines-20261104-1-de.T1.json, en: data/direction/engines-20261104-1-en.T1.json}
+    # Hauptsitzung 03.11.2026: Revlore ist Technik-Kanal. Technik-Themen (Nr. 75–126) zuerst, Motor-Themen höchstens jedes dritte
+    # Thema (`limited_heading`). Produziert wird nur, was ein gebauter Bildaufbau der Revlore-Sitzung nennt:
+    # brands/engines/aufbauten.yaml (`gebaut: true`, `themen: [{nr, quellen, hinweis}]`, `szenentypen`, `beispielplan`).
+    # Alle anderen Themen meldet der Tagesläufer als "braucht Modell" (Liste über `--list-topics`), für die Revlore-Sitzung.
+    # zt_mcb ist das Modell des Sicherungsautomaten.
+    scene_types: [zt_photo, zt_curve]    # general types; the Aufbau adds its own (aufbauten.yaml szenentypen)
+    hook_types: [zt_photo]
+    material_folders: [assets/higgsfield/library, assets/higgsfield/testvideo]
+    material_hint: >-
+      Fotos und Clips kommen über `assets` wie im Beispielplan: `assets.folder` = "assets/higgsfield/library" und
+      `assets.hero` = {beat_id: "<datei>"} je Beat mit Realbild (zt_photo im Hook und im Schluss, Einschübe). Nur Dateinamen aus
+      der Materialliste (Testvideo-Dateien mit Präfix "testvideo/"). Standbilder (.jpg) wandelt der Tagesläufer selbst in
+      30-s-Clips mit langsamer Kamerafahrt um (0 Credits). Das Innere zeigt nie ein KI-Bild, sondern das gerechnete Modell des Aufbaus.
+    render_args: ["--assets"]
+    chars_per_second: {de: 14.5, en: 16.2}
+    topic_source:
+      kind: table_order
+      tables: ["Technik-Themen", "Motor-Themen"]   # both tables; which numbers run decides brands/engines/aufbauten.yaml (Revlore-Sitzung)
+      limited_heading: {contains: "Motor", every: 3}   # table heading with "Motor": at most one such topic in any 3 consecutive topics
+      require_aufbau_topics: true        # only topics named by a built Aufbau in brands/engines/aufbauten.yaml
+      require_sources: true              # sources from aufbauten.yaml (themen[].quellen) or the calendar
+    aufbau:
+      available: []                      # none until brands/engines/aufbauten.yaml exists (read at run time)
+      default: null
+      note: "Bildaufbauten und Themenzuordnung kommen aus brands/engines/aufbauten.yaml (Revlore-Sitzung)"
+  menswear:
+    name: Suitwerk
+    enabled: true
+    konzeptplan: "04 Redaktionsplan/Konzeptplan Suitwerk (ab November 2026).md"
+    format_bible: "02 Marke/Suitwerk/Format-Bibel.md"
+    testvideo_concept: "02 Marke/Suitwerk/Testvideo-Konzept 2026-11.md"
+    example_plan: {de: data/direction/menswear-20261202-3-de.T1.json, en: data/direction/menswear-20261202-3-en.T1.json}
+    scene_types: [kw_photo, kw_hook, kw_weave, kw_draft, kw_flip, kw_close, kw_weigh, kw_range, kw_fibre, kw_yarn, kw_finish]
+    hook_types: [kw_photo, kw_hook, kw_weigh]
+    material_folders: [assets/higgsfield/library, assets/higgsfield/testvideo]
+    material_hint: >-
+      Fotos stehen in den Szenendaten wie im Beispiel: `shots[].src`, `backdrop.src`, `left/right.front|back`, `swatch_photos`
+      als "library/<datei>" oder "testvideo/<datei>", Clips als `clip` ("testvideo/<datei>.mp4"). `assets` wie im Beispiel.
+      Pflicht: realer Anzug oder realer Stoff im Hook und im Schluss (Bilder aus der Liste), Kreide-Erklärung darüber.
+    chars_per_second: {de: 14.5, en: 14.2}
+    topic_source:
+      kind: day_table
+      day_table_marker: "Thema 1 (Aufbau)"
+      tables: ["Vorschläge"]
+      then_nrs: [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 56, 57, 58, 59, 60, 61, 62, 63, 64]
+      require_sources: true
+      # Suitwerk-Sitzung (aufbauten.yaml, 03.11.): warp_up() zeichnet nur Leinwand und Köper; diese Muster brauchen neuen Code
+      # (und Flanell/Fresko haben nur Herstellerquellen). Themen mit diesen Wörtern im Titel überspringt der Tagesläufer.
+      exclude_title_words: [Fischgrat, Hahnentritt, Glencheck, Seersucker, Atlas, Panama, Flanell, Fresko]
+    aufbau:
+      available: [A, B, C, D, E]
+      default: A
+  ai_security:
+    name: Scutoria
+    enabled: true
+    konzeptplan: "04 Redaktionsplan/Konzeptplan Scutoria (ab November 2026).md"
+    format_bible: "02 Marke/Scutoria/Format-Bibel.md"
+    testvideo_concept: "02 Marke/Scutoria/Testvideo-Konzept Reels 2026-11.md"
+    example_plan: {de: data/direction/ai_security-20261110-1-de.T1.json, en: data/direction/ai_security-20261110-1-en.T1.json}
+    scene_types: [sb_screen, sb_lens, sb_freeze, sb_montage, sb_action, sc_close]
+    hook_types: [sb_screen]
+    material_folders: [assets/higgsfield/test2611, assets/higgsfield/yt]
+    material_hint: >-
+      Bilder und Clips je Beat in `data.media.shots` wie im Beispiel ("test2611/<datei>" für Standbild `still` und Clip `clip`);
+      nur Dateien aus der Materialliste; keine Bibliothek. Cues in `data.cues` mit "@Wort"-Ankern.
+    chars_per_second: {de: 16.1, en: 15.0}
+    topic_source:
+      kind: day_table
+      day_table_marker: "| Tag | Thema 1 | Thema 2 |"
+      tables: ["Vorschläge"]
+      exclude_format_words: ["Langvideo", "16:9"]
+      require_sources: true
+    aufbau:
+      available: [A]
+      default: A
+      note: "B „In der Hand“, C „Rückwärts“, D „Prüftisch“ sind noch nicht gebaut (Konzeptplan 03.11.); A übernimmt und das steht in der Veröffentlichung.md"
+  claude_workflows:
+    name: Promptwerk
+    enabled: true
+    konzeptplan: "04 Redaktionsplan/Konzeptplan Promptwerk (ab November 2026).md"
+    format_bible: "02 Marke/Promptwerk/Format-Bibel.md"
+    testvideo_concept: "02 Marke/Promptwerk/Testvideo-Konzept 2026-11.md"
+    example_plan: {de: data/direction/claude_workflows-20261103-tv-de-echtlauf.json, en: data/direction/claude_workflows-20261103-tv-en-echtlauf.json}
+    scene_types: [rec_photo, rec_table, rec_replay, rec_diff, rec_answer, rec_split, rec_auftrag, rec_setup, rec_rule, rec_result, rec_protokoll]
+    hook_types: [rec_photo, rec_auftrag]
+    material_folders: [assets/higgsfield/library, assets/higgsfield]
+    material_hint: >-
+      Fotos in `data.shots[].src` als "library/<datei>" (Realbild-Bibliothek) oder "tv_<datei>" (Testvideo-Material), Clips als
+      `clip`; jede rec_* Szene liest die Aufzeichnung aus `layout.echtlauf.recording` (Pflicht, nur vorhandene Aufzeichnungen).
+      Das Terminal ist eine echte Aufzeichnung; KI-Bilder nur vom Arbeitsplatz, nie vom Bildschirm.
+    chars_per_second: {de: 15.7, en: 14.8}
+    voice_pre:
+      de: [brands/claude_workflows/echtlauf/voice_tts.py, "--say", "Claude=Klohd"]   # German voice with TTS-only spelling, then --reuse-voice
+    topic_source:
+      kind: day_table
+      day_table_marker: "Thema 1 (Aufbau)"
+      tables: ["Vorschläge"]
+      require_sources: false
+      require_recording: true
+      # Konzeptplan Nr. -> recording id in brands/claude_workflows/echtlauf/recordings/ (DE; EN = "<id>-en"); checked 03.11.2026 against the spec files
+      recordings: {}
+    aufbau:
+      available: [A, B, C, D]
+      default: A
+  megaconstruction:
+    name: Gigastruct
+    enabled: true
+    konzeptplan: "04 Redaktionsplan/Konzeptplan Gigastruct (ab November 2026).md"
+    format_bible: "02 Marke/Gigastruct/Format-Bibel.md"
+    testvideo_concept: "02 Marke/Gigastruct/Testvideo-Konzept 2026-11.md"
+    example_plan: {de: data/direction/megaconstruction-20261109-2-de.T1.json, en: data/direction/megaconstruction-20261109-2-en.T1.json}
+    scene_types: [gb_task, gb_load, gb_principle, gb_build, gb_calc, gb_proof, gb_close]
+    hook_types: [gb_task]
+    material_folders: [assets/higgsfield/library, assets/higgsfield/fehmarnbelt]
+    material_hint: >-
+      Realbilder und Clips in `layout.media` wie im Beispiel (`file` relativ zu `layout.media_folder`; nur Dateien aus der Liste),
+      3D-Modell in `layout.model3d` (Objekte aus Grundkörpern, Kamera je Beat, Wortanker "@Wort+0.5"), Rechnungen in
+      `layout.computations` und `gb_calc.calcs` (Ergebnisse rechnet der Renderer; `expect` = der gesprochene Wert).
+    render_script: brands/megaconstruction/render/render_gigastruct.py
+    example_keep_layout_keys: [model3d, media, computations]   # the 3D model, media and calculations are the core of a Gigastruct plan
+    chars_per_second: {de: 12.1, en: 11.4}
+    topic_source:
+      kind: table_order
+      tables: ["Vorschläge"]
+      require_sources: true
+    aufbau:
+      available: [A]
+      default: A
+      note: "B Schnitt, C Baustellenbuch, D Prüfstand sind noch nicht gebaut; A Aufmaß übernimmt (Tauschen laut Konzeptplan erlaubt)"
+  motivation:
+    name: Gritwerk
+    enabled: true
+    konzeptplan: "04 Redaktionsplan/Konzeptplan Gritwerk (ab November 2026).md"
+    format_bible: "02 Marke/Gritwerk/Format-Bibel.md"
+    testvideo_concept: "02 Marke/Gritwerk/Testvideo-Konzept 2026-11.md"
+    example_plan: {de: data/direction/motivation-20261109-1-de.T1.json, en: data/direction/motivation-20261109-1-en.T1.json}
+    scene_types: [lb_photo, lb_hook, lb_split, lb_replicate, lb_verdict, lb_try, lb_setup, lb_measure, lb_result]
+    hook_types: [lb_photo, lb_hook]
+    material_folders: [assets/higgsfield/library, assets/higgsfield/testvideo]
+    material_hint: >-
+      Bilder in `lb_photo.image` / `lb_split.image` und Clips in `clip` wie im Beispiel (Pfadform wie dort, nur Dateien aus der Liste);
+      Hintergrund und Laborbuchseite kommen aus dem LAYER. `layout.laborbuch` (no, study, status) und `layout.risk_level` wie im Beispiel.
+    chars_per_second: {de: 15.9, en: 14.3}
+    topic_source:
+      kind: day_table
+      day_table_marker: "Thema 1 (Aufbau)"
+      tables: ["Vorschläge"]
+      require_sources: true
+    aufbau:
+      available: [A, C]
+      default: A
+      note: "B Gegenüberstellung, D Mitmachen, E Kleingedrucktes sind noch nicht gebaut; A oder C übernimmt"
+  military_history:
+    name: Frontlore
+    enabled: true
+    konzeptplan: "04 Redaktionsplan/Konzeptplan Frontlore (ab November 2026).md"
+    format_bible: "02 Marke/Frontlore/Format-Bibel.md"
+    testvideo_concept: "02 Marke/Frontlore/Testvideo-Konzept 2026-11.md"
+    example_plan: {de: data/direction/military_history-20261109-1-de.testvideo.json, en: data/direction/military_history-20261109-1-en.testvideo.json}
+    scene_types: [fr_task, fr_model, fr_solution, fr_protocol, fr_example, fr_stages, fr_finding, fr_means]
+    hook_types: [fr_task]
+    material_folders: [assets/higgsfield/library, assets/higgsfield/testvideo]
+    material_hint: >-
+      Bilder und Clips je Beat in `data.media` wie im Beispiel (nur Dateien aus der Liste: Karten, Tische, Papiere, Realbilder,
+      Testvideo-Material), Zeitlineal in `layout.ruler`, Cues in `data.cues`. Jedes realistische Bild trägt den Stempel KI-REKONSTRUKTION.
+    chars_per_second: {de: 14.2, en: 12.7}
+    topic_source:
+      kind: day_table
+      day_table_marker: "| Tag | Thema 1 | Aufbau | Thema 2 | Aufbau |"
+      tables: ["Vorschläge"]
+      require_sources: true
+    aufbau:
+      available: [A, B, C, D]
+      default: A
+  beauty:
+    name: Dewlane
+    enabled: true
+    konzeptplan: "04 Redaktionsplan/Konzeptplan Dewlane (ab November 2026).md"
+    format_bible: "02 Marke/Dewlane/Format-Bibel.md"
+    testvideo_concept: "02 Marke/Dewlane/Testvideo-Konzept 2026-11.md"
+    example_plan: {de: data/direction/beauty-20261117-3-de.T1.json, en: data/direction/beauty-20261117-3-en.T1.json}
+    scene_types: [nh_stage, nh_hook, nh_lens, nh_amount, nh_effect, nh_apply, nh_close, nh_facts, nh_list, nh_steps, nh_time, nh_versus]
+    hook_types: [nh_stage, nh_hook]
+    material_folders: [assets/higgsfield/library, assets/higgsfield]
+    material_hint: >-
+      Bild oder Clip je Beat in `layout.media[]` wie im Beispiel (`file` = Dateiname aus der Liste, Bibliothek mit Präfix "library/"),
+      `photo`/`product` in den Szenendaten wie dort; `layout.stamp` und die Trennung Packungsangabe / Beleg / KI-Bild bleiben.
+    chars_per_second: {de: 16.8, en: 14.9}
+    topic_source:
+      kind: day_table
+      day_table_marker: "| Tag | Nr. | Thema | Aufbau |"
+      tables: ["Vorschläge"]
+      require_sources: true
+    aufbau:
+      available: [A, B, C, D]
+      default: A
+  brainrot:
+    name: Tintora
+    enabled: false
+    reason: "eigener Renderer (brands/brainrot/renderer), Serie Juna mit Kling-Clips je Reel, keine Bibliothek, Credits nicht freigegeben; nicht über die Regie-Kette produzierbar (Bestandsaufnahme 03.11.2026)"

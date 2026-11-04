@@ -1,0 +1,384 @@
+{
+ "video_id": "ai_security-20261114-3-en",
+ "brand_id": "ai_security",
+ "language": "en",
+ "title": "A password manager for the team",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Fünf Minuten, die gefehlt haben\". F2 EN (localised from the DE spec), told backwards. Example case staged: firm, portal, times and sequence are invented; mechanism (one cracked password opens every account that uses it; access to the email account lets criminals reset other passwords) and steps from S1 to S3, read 02.11.2026 (S3 new). The old plan ai_security-20261114-3-en.json stays unchanged.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Monday morning: your wholesaler password has been changed, and it wasn't you. We rewind to the decision that was missing. A staged case with the one step the NCSC and Germany's BSI recommend.",
+  "companion_text": "More information: https://scutoria.com · Follow Scutoria for more tips on IT and AI security at work. Source-based. No legal advice.",
+  "hashtags": [
+   "passwordmanager",
+   "passwords",
+   "smallbusiness",
+   "cybersecurity",
+   "fiveminutefix"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Sichere-Passwoerter-erstellen/Passwort-Manager/passwort-manager_node.html",
+   "title": "BSI: Passwörter verwalten mit dem Passwort-Manager",
+   "checked_at": "2026-11-02",
+   "label": "BSI (Germany), password managers"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers",
+   "title": "NCSC: Top tips for staying secure online – Managing your passwords",
+   "checked_at": "2026-11-02",
+   "label": "NCSC, managing your passwords"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Wegweiser_Checklisten_Flyer/Checkliste_BSI_ProPK_Phishing.pdf?__blob=publicationFile&v=5",
+   "title": "BSI und Polizei (ProPK): Phishing – Checkliste für den Ernstfall (PDF)",
+   "checked_at": "2026-11-02",
+   "label": "BSI and German police, checklist"
+  }
+ ],
+ "unverified": [
+  "Specific products: deliberately not named.",
+  "The sequence of the example case (wholesaler portal, Sunday 11:14 p.m., password cracked elsewhere, decision years ago) is invented and marked as an example.",
+  "Newly checked 02.11.2026: S1 (access to an email account lets criminals take over other services by resetting passwords; second factor for important accounts such as email), S2 (two-step verification on the password manager too; strong, separate password for email) and S3 (new password, end all active sessions, check other accounts; the checklist covers handed-over login details and is applied here to a taken-over account).",
+  "The NCSC names two-step verification as the most important first step; this video centres on the password manager and mentions the second factor only to protect the manager."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "How many passwords does your team remember, and how many of them are the same?",
+   "on_screen": "How many passwords are the same?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "One strong password for everything is enough? Not according to the BSI.",
+   "on_screen": "One strong password for all?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Get into your email, and criminals can reset your other passwords, says the BSI.",
+   "on_screen": "Lose email, lose everything",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "One cracked password, and criminals get into every account that uses it.",
+   "on_screen": "One password, every account open",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Monday, 7:50 a.m. Your password has been changed, and it wasn't you.",
+   "on_screen": "MON 07:50 · Password changed. Not by you.",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "clock, the portal's email arrives as a paper card, the line 'Wasn't you?' is marked",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Monday, 7:50 a.m. An email from your wholesaler: your password has been changed. It wasn't you. And you use the same password for your email account.",
+   "data": {
+    "kicker": "Example case · staged",
+    "time": "MON 07:50",
+    "place": "Office of a garden centre",
+    "mail_at": "@wholesaler",
+    "mail": {
+     "from": "Garden Supplies Example",
+     "addr": "account@gardensupplies.example",
+     "time": "07:50",
+     "subject": "Password changed",
+     "lines": [
+      "Your password was changed",
+      "on Sunday at 11:14 p.m.",
+      "Wasn't you?"
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "not you",
+     "at": "@wasn't"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_timeline",
+   "spoken": "Let's rewind. Sunday night, someone logs in with your password. Weeks ago, it was cracked somewhere else. And years ago you decided: one strong password for every account. According to the BSI, criminals can then get into all of them.",
+   "data": {
+    "kicker": "Rewound",
+    "tag": "Example",
+    "headline": "One password, many accounts",
+    "items": [
+     {
+      "time": "MON 07:50",
+      "text": "Portal password changed",
+      "tone": "red",
+      "at": 0.3
+     },
+     {
+      "time": "SUN 23:14",
+      "text": "Someone else logs in",
+      "tone": "amber",
+      "at": "@Sunday"
+     },
+     {
+      "time": "Weeks ago",
+      "text": "Cracked somewhere else",
+      "tone": "amber",
+      "at": "@Weeks"
+     },
+     {
+      "time": "Years ago",
+      "text": "One password for everything",
+      "tone": "amber",
+      "at": "@years"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "BSI · one password, every account",
+     "at": "@BSI"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "sc_choice",
+   "spoken": "What do you change? A: An even stronger password, again for everything. B: Just change the portal password. C: A password manager, one password per account. Remember your choice.",
+   "data": {
+    "question": "What do you change?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Stronger password, for everything",
+      "at": "@stronger"
+     },
+     {
+      "key": "B",
+      "text": "Change just the portal password",
+      "at": "@Just"
+     },
+     {
+      "key": "C",
+      "text": "Password manager, one per account",
+      "at": "@manager"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Remember"
+    },
+    "hint": "Remember your choice."
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "The right answer is C. The BSI says a separate, strong password for every account is safest. A password manager remembers them, protected by a master password and a second factor. Start with your email account. A and B leave the other accounts open.",
+   "data": {
+    "mode": "rule",
+    "kicker": "The one step",
+    "card": {
+     "letter": "C",
+     "title": "A password manager for all",
+     "sub": "one per account, email first",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Stronger, but for all",
+      "note": "one leak opens all",
+      "at": "@leave-0.6"
+     },
+     {
+      "text": "B: Just the portal",
+      "note": "email stays open",
+      "at": "@leave"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "BSI · one password per account"
+     },
+     {
+      "kind": "fakt",
+      "label": "NCSC · manager with 2-step"
+     }
+    ],
+    "sources_at": "@BSI"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Already taken over? Set a new password straight away and end all active sessions. Then check where the same password is still in use.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "Already happened?",
+    "card": {
+     "letter": "!",
+     "title": "Secure it now",
+     "sub": "don't wait",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "New password, end all sessions",
+      "at": "@new"
+     },
+     {
+      "text": "Same password? Change everywhere",
+      "at": "@check"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "BSI and police · checklist"
+     }
+    ],
+    "sources_at": "@straight"
+   },
+   "source_ids": [
+    "S3"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "One password per account: those are the five minutes that were missing. What would you have picked? Tell me in the comments.",
+   "data": {
+    "kicker": "Series · Five minutes",
+    "rule": "One account, one password.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "What would you have picked?",
+     "at": "@What"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Sourced. Dated. Ready to show.",
+    "disclaimer": "Source-based. No legal advice."
+   },
+   "source_ids": []
+  }
+ ]
+}

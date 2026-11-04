@@ -1,0 +1,99 @@
+id: beauty
+name: Dewlane
+niche: beauty and skincare knowledge
+style: luxury_editorial
+brand_version: '0.9'               # template draft 2026-10-30; 1.0 only after Stefan's approval
+template_doc: 'C:\Users\Stefa\OneDrive\Business\02 Marke\Dewlane\Vorlage Dewlane.md'
+phase: 5
+enabled: false
+languages:
+- de
+- en
+primary_language: de
+risk_default: high
+rules:
+- ingredient and routine knowledge only; no efficacy claims, no before/after, no fake
+  tests
+- goal is ad partners for beauty products; media kit required before any paid content
+- no product recommendations, no brand names as recommendation, no AI faces or artificial skin as proof
+# Palette: light luxury editorial. Ivory ground from the Phase-1 draft kept; text, accent and muted darkened
+# so that every text colour reaches WCAG 4.5:1 on ivory (draft: accent 2.4:1, muted 2.5:1, text 6.9:1).
+# The draft rose #C98F93 stays as 'blush' for shapes and background clips only, never for text.
+palette:
+  bg: '#F8F3EF'            # ivory ground
+  surface: '#FFFCF9'       # porcelain cards (text 11.8:1)
+  text: '#4A2F34'          # deep mauve (10.9:1 on bg)
+  muted: '#7E6468'         # secondary labels (4.9:1 on bg)
+  accent: '#9B5560'        # deep rose: highlight word, lines, numbers (4.9:1 on bg)
+  blush: '#C98F93'         # decorative only (drops, swirls, logo lane)
+  hairline: '#E8D9D4'
+  button: '#4A2F34'
+  on_accent: '#F8F3EF'
+  signal_amber: '#946420'  # honey: open questions, "Unsicher" (5.0:1 on surface, white text on it 5.1:1)
+  on_signal: '#FFFFFF'
+  signal_red: '#8E2F45'    # berry: the one stop at the end (7.8:1)
+  signal_green: '#4F7A62'  # sage: only for "geregelt"
+  paper: '#FFFFFF'         # the INCI label card (red thread)
+  paper_ink: '#4A2F34'
+  scheme: light
+fonts:
+  display:
+    family: Playfair Display
+    weight: 500
+    file: assets/fonts/playfairdisplay/PlayfairDisplay[wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/playfairdisplay/OFL.txt
+  body:
+    family: Inter
+    weight: 400
+    file: assets/fonts/inter/Inter[opsz,wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/inter/OFL.txt
+  mono:                    # no monospace in an editorial look: labels use Inter
+    family: Inter
+    weight: 500
+    file: assets/fonts/inter/Inter[opsz,wght].ttf
+    license: OFL-1.1
+    license_file: assets/fonts/inter/OFL.txt
+logo:
+  file: brands/beauty/assets/logo/dewlane-mark.svg
+  wordmark_text: DEWLANE     # text in Playfair Display, uppercase, letter-spacing 0.18em (renderer style for brand marks)
+  logo_height_px: 40
+  rules: drawn by Claude Code 2026-10-30, no third-party material; never recolour or add effects
+motif: dew-drop
+tempo: gentle
+bg_pattern: petal-gradient
+flat: true                   # no glow, no light cones; calm camera (max 2 %), one-time motion
+layout: shared 9:16 layout, see docs/design-system.md and docs/direction-system.md
+audience: people who want to understand skincare ingredients and routines without
+  being sold to
+tone: knowledgeable, gentle, honest about uncertainty
+address: du
+claim:
+  de: Wissen statt Versprechen.
+  en: Knowledge, not promises.
+disclaimer:
+  de: Keine medizinische Beratung.
+  en: Not medical advice.
+ai_label:
+  de: KI-generiert
+  en: AI-generated
+production:                # read by scripts/export_production_folder.py
+  closing_sentence:
+    de: "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung. Keine medizinische Beratung."
+    en: "Dewlane explains ingredients, labels and routines with sources. No product recommendation. Not medical advice."
+  ai_note:                 # format Nahaufnahme (02.11.2026): voice synthetic, pictures animated from code
+    de: "KI-generiertes Video: synthetische Stimme, KI-Bilder und Animation. Erfundenes Produkt ohne Marke, kein Produkttest."
+    en: "AI-generated video: synthetic voice, AI images and animation. Invented product without a brand, not a product test."
+  domain: null             # no domain secured yet (dewlane.com/.at/.io free per Marken.md, not registered)
+scenes: brands/beauty/scenes.py   # Dewlane Q1 (31.10.2026): seven own scenes around the INCI label, word anchors, LAYER background with depth
+explainer:                         # Schnitt- und Layout-Vorlage (Stefan, 30.10.2026), Hochformat; fn.render.explainer
+  enabled: true
+  voice_tag: {de: "SYNTHETISCHE STIMME", en: "SYNTHETIC VOICE"}
+  opening: {de: "Synthetische Stimme · Quellen am Bildschirm · Keine medizinische Beratung", en: "Synthetic voice · Sources on screen · Not medical advice"}
+  opening_seconds: 3.5
+  source_y: 1112                   # scene zone ends 1100, two-line captions start ~1250, status bar 1440, platform text from 1600
+  # fixed meaning, tuned to the light palette: fakt = accent (deep rose, also the in-scene fact squares),
+  # unsicher = honey (signal_amber), luecke = berry (signal_red, also the in-scene gap circles), auslegung = violet
+  colors: {fakt: "#9B5560", auslegung: "#7A5AC8", unsicher: "#946420", luecke: "#8E2F45", beispiel: "#8a93a6"}
+  vignette_color: "rgba(74,47,52,0.10)"   # Q1: soft mauve edge shade for the hook close-up; stronger tints push the voice tag and AI label under WCAG AA

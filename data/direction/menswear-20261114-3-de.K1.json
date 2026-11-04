@@ -1,0 +1,308 @@
+{
+ "video_id": "menswear-20261114-3-de",
+ "brand_id": "menswear",
+ "language": "de",
+ "title": "Tweed: fertig erst nach dem Webstuhl",
+ "notes": "Woche 1 im Format Kreidestrich (K1), Reihe Unter dem Fadenzähler, Kalenderthema menswear-20261114-3 (Stoffkunde C04), Thema auf Tweed eingegrenzt. Quellen S1, S2 im Originaltext gelesen. Alter Plan bleibt unverändert.",
+ "layout": {
+  "format": "kreidestrich",
+  "series": "stoff",
+  "explainer": false,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 560,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "outro": false,
+  "tail_seconds": 2.4,
+  "progress_y": 1548,
+  "ai_label_bottom_px": 318,
+  "series_topic": "Tweed",
+  "description": "Ein Tweed ist nach dem Weben noch nicht fertig: Er wird gewaschen, gewalkt, leicht verfilzt, getrocknet und geschoren. Warum Wolle verfilzt: Ihre Fasern tragen Schuppen. Illustration, Quellen: Harris Tweed Authority (The Process), Woolmark, Introduction to Wovenwear.",
+  "companion_text": "Suitwerk zeigt Herrenstil im Detail, gezeichnet statt behauptet. Keine Werbung, keine Produktempfehlung.",
+  "hashtags": [
+   "herrenmode",
+   "stoffkunde",
+   "tweed",
+   "wolle",
+   "sakko"
+  ]
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Kreidestrich, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/_licensee-portal/learn-about-wool/training-manuals/intro-to-wovenwear.pdf",
+   "checked_at": "2026-11-02",
+   "title": "The Woolmark Company: Introduction to Wovenwear (Training Manual), S. 5 (scale structure is the cause of felting; milling is the early stage of felting and an important step for the handle of many woven wool fabrics) and S. 6 (Harris Tweed listed as woollen)",
+   "label": "Woolmark, Introduction to Wovenwear"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.harristweed.org/the-process/",
+   "checked_at": "2026-11-02",
+   "label": "Harris Tweed Authority, The Process",
+   "title": "Harris Tweed Authority: The Process (after weaving: scoured in soapy water and soda, milled and given a certain amount of felting; after drying cropped to remove dead hairs; inspected and stamped with the Orb certification mark)"
+  }
+ ],
+ "unverified": [
+  "Thema geändert: Kalendertitel 'Flanell, Tweed, Fresko'. Flanell nur mit Weberei-Quellen belegt, Fresko ist ein geschützter Name einer Weberei; beides entfällt nach Format-Regel 6 und 7.",
+  "Schrumpfmaß beim Walken: nicht genannt; das Bild verkleinert schematisch.",
+  "Das Orb-Zeichen wird nicht gezeigt (Markenzeichen), nur 'geprüft'."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was steckt hinter dieser Angabe am Stoff?",
+   "on_screen": "Was steckt dahinter?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "question"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "misconception",
+   "spoken": "Die meisten lesen diese Zahl falsch.",
+   "on_screen": "Falsch gelesen?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 3,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "not measurable, below the gate"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Die Antwort liegt im Faden, nicht im Etikett.",
+   "on_screen": "Die Antwort im Faden",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": "vague"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer nur das Etikett liest, versteht den Stoff nicht.",
+   "on_screen": "Nur das Etikett?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 3,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 2
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": "no real risk"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Derselbe Tweed vor und nach dem Walken.",
+   "on_screen": "Derselbe Stoff?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Glattes und gewalktes Stoffmuster, der Fadenzähler zeigt die Oberfläche",
+   "why": {
+    "truth": "shown, not claimed",
+    "visual": "core of the Kreidestrich format"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Vorführung im Format Kreidestrich."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "kw_hook",
+   "duration_hint": 9,
+   "spoken": "Links ein Tweed, wie er vom Webstuhl kommt. Rechts derselbe Stoff, fertig. Er sieht anders aus und fühlt sich anders an. Dazwischen liegen Wasser, Seife und viel Bewegung.",
+   "data": {
+    "question": "Derselbe Stoff?",
+    "question_at": 0.2,
+    "chalk_at": "w:Webstuhl",
+    "swatches": [
+     {
+      "kind": "twill",
+      "label": "vom Webstuhl"
+     },
+     {
+      "kind": "twill",
+      "label": "fertig",
+      "fuzz": true
+     }
+    ],
+    "labels_at": "w:Rechts",
+    "neq_at": "w:anders",
+    "lens_at": "w:Dazwischen",
+    "lens2_at": "w:Bewegung",
+    "source": "Harris Tweed Authority, The Process · Abruf 02.11.2026"
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "explanation",
+   "scene_type": "kw_finish",
+   "duration_hint": 15,
+   "spoken": "Ein Beispiel ist Harris Tweed. Er wird laut der Harris Tweed Authority zu Hause auf Tretwebstühlen gewebt, nicht in der Fabrik. Nach dem Weben wird das Tuch in Seifenwasser und Soda gewaschen. Dann wird es gewalkt und leicht verfilzt. Warum Wolle das kann? Ihre Fasern tragen feine Schuppen. Laut Woolmark sind sie die Ursache fürs Verfilzen.",
+   "data": {
+    "title": {
+     "text": "Nach dem Webstuhl",
+     "at": 0.1
+    },
+    "stages": [
+     {
+      "kind": "woven",
+      "label": "vom Webstuhl",
+      "at": 0.3
+     },
+     {
+      "kind": "milled",
+      "label": "gewaschen, gewalkt",
+      "at": "w:gewalkt"
+     },
+     {
+      "kind": "milled",
+      "label": "Schuppen: Grund fürs Verfilzen",
+      "at": "w:Schuppen"
+     }
+    ],
+    "source": "Harris Tweed Authority; Woolmark S. 5 · Abruf 02.11.2026"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "demonstration",
+   "scene_type": "kw_finish",
+   "duration_hint": 12,
+   "spoken": "Nach dem Trocknen wird das Tuch geschoren. So verschwinden lose Haare von der Oberfläche. Zum Schluss prüft ein Inspektor das Tuch, erst dann bekommt es das Prüfzeichen.",
+   "data": {
+    "title": {
+     "text": "Geschoren und geprüft",
+     "at": 0.1
+    },
+    "start_state": "milled",
+    "stages": [
+     {
+      "kind": "milled",
+      "label": "getrocknet",
+      "at": 0.2
+     },
+     {
+      "kind": "cropped",
+      "label": "geschoren",
+      "at": "w:geschoren"
+     },
+     {
+      "kind": "checked",
+      "label": "geprüft",
+      "at": "w:Inspektor"
+     }
+    ],
+    "source": "Harris Tweed Authority, The Process · Abruf 02.11.2026"
+   },
+   "source_ids": [
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "close",
+   "scene_type": "kw_close",
+   "duration_hint": 14,
+   "spoken": "Merk dir: Tweed wird erst nach dem Webstuhl fertig, gewaschen, gewalkt und geschoren. Das Walken ist laut Woolmark ein wichtiger Schritt für den Griff vieler Wollstoffe. Fühl beim nächsten Tweed über die Oberfläche. Folge Suitwerk für Herrenstil mit Blick fürs Detail.",
+   "data": {
+    "kinds": [
+     "twill",
+     "twill"
+    ],
+    "fuzz": [
+     1
+    ],
+    "chip": {
+     "text": "Walken: wichtig für den Griff",
+     "at": "w:Walken"
+    },
+    "lines": [
+     {
+      "text": "vom Webstuhl: offen",
+      "at": 0.6
+     },
+     {
+      "text": "fertig: dicht",
+      "at": 1.2
+     }
+    ],
+    "rule": {
+     "text": "Gewaschen, gewalkt, geschoren",
+     "at": "w:gewaschen"
+    },
+    "sign_at": "w:Folge",
+    "claim": "Herrenstil mit Blick fürs Detail.",
+    "sign_note": "Über die Oberfläche fühlen",
+    "source": "Woolmark: Introduction to Wovenwear, S. 5 · Abruf 02.11.2026"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  }
+ ]
+}

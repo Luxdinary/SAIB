@@ -1,0 +1,423 @@
+{
+ "video_id": "ai_security-20261115-2-de",
+ "brand_id": "ai_security",
+ "language": "de",
+ "title": "Mythos: Das Schloss heißt, die Seite ist echt",
+ "notes": "Format \"Was tust du?\" (Format-Bibel 1.0), Reihe \"Was tust du?\". F2 im Format \"Was tust du?\", Mythos als falsche Option A. Beispielfall nachgestellt: Bank, Betrieb, Adresse, Uhrzeiten und Ablauf sind erfunden; die Adresse folgt dem Muster aus dem BSI-Beispiel (Bankname mit ungewöhnlichen Zeichen davor). Mechanik und Schritte aus S1 bis S3, am 02.11.2026 gelesen (S3 neu). Der alte Plan ai_security-20261115-2-de.json bleibt unverändert.",
+ "layout": {
+  "explainer": false,
+  "outro": false,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "caption_width_px": 800,
+  "zone_top": 290,
+  "zone_h": 950,
+  "zone_lower_right_px": 940,
+  "caption_bottom_px": 540,
+  "progress_y": 1534,
+  "ai_label_bottom_px": 318,
+  "caption_transform": "none",
+  "tail_seconds": 2.4,
+  "description": "Login-Seite eurer Bank, oben das Schloss. Also echt? Ein nachgestellter Fall mit drei Antworten und dem, was das Chrome-Team und das BSI zum Schloss sagen.",
+  "companion_text": "Mehr Informationen: https://scutoria.com · Folge Scutoria für weitere Tipps zur IT- und KI-Sicherheit im Betrieb. Quellenbasiert. Keine Rechtsberatung.",
+  "hashtags": [
+   "phishing",
+   "https",
+   "mythos",
+   "browser",
+   "wastustdu"
+  ]
+ },
+ "assets": {
+  "background": {
+   "sc_case": "bg_ui_desk.mp4",
+   "sc_choice": "bg_compare_split.mp4",
+   "sc_close": "bg_outro_orbit.mp4",
+   "sc_inspect": "bg_hook_dataroom.mp4",
+   "sc_step": "bg_takeaway_calm.mp4",
+   "sc_timeline": "bg_flow_lanes.mp4"
+  },
+  "hero": {},
+  "scrim": 0.62,
+  "note": "Higgsfield-Clips aus brands/ai_security/assets/higgsfield (Lizenz in LICENSE.md), je Szenentyp ein Clip."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://blog.chromium.org/2023/05/an-update-on-lock-icon.html",
+   "title": "Chromium Blog: An Update on the Lock Icon (02.05.2023)",
+   "checked_at": "2026-11-02",
+   "label": "Chromium-Blog, Schloss-Symbol"
+  },
+  {
+   "id": "S2",
+   "url": "https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Cyber-Sicherheitslage/Methoden-der-Cyber-Kriminalitaet/Spam-Phishing-Co/Passwortdiebstahl-durch-Phishing/Wie-erkenne-ich-Phishing-in-E-Mails-und-auf-Webseiten/wie-erkenne-ich-phishing-in-e-mails-und-auf-webseiten_node.html",
+   "title": "BSI: Wie erkenne ich Phishing in E-Mails und auf Webseiten?",
+   "checked_at": "2026-11-02",
+   "label": "BSI, Phishing erkennen"
+  },
+  {
+   "id": "S3",
+   "url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Wegweiser_Checklisten_Flyer/Checkliste_BSI_ProPK_Phishing.pdf?__blob=publicationFile&v=5",
+   "title": "BSI und Polizei (ProPK): Phishing – Checkliste für den Ernstfall (PDF)",
+   "checked_at": "2026-11-02",
+   "label": "BSI und Polizei, Checkliste Phishing"
+  }
+ ],
+ "unverified": [
+  "Darstellung in anderen Browsern: nicht behauptet.",
+  "Die Zahl aus der Chrome-Studie von 2021 (11 Prozent) in dieser Fassung nicht verwendet.",
+  "Ablauf im Beispielfall (Bank Beispiel, Adresse 135x-bank-beispiel.example, Lastschrift, TAN-Abfrage, Uhrzeiten) ist erfunden und als Beispiel gekennzeichnet.",
+  "Neu am 02.11.2026 geprüft: S2 (TAN-Abfrage ohne eigene Transaktion ist ein klares Indiz für eine gefälschte Seite) und S3 (Kriminelle greifen auf gefälschten Seiten Passwörter ab; Sperr-Notruf 116 116; Umsätze mit der Bank prüfen)."
+ ],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "misconception",
+   "spoken": "Das Schloss im Browser heißt, die Seite ist echt? Genau das stimmt nicht.",
+   "on_screen": "Schloss = echte Seite?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Was genau sagt dir das kleine Schloss in der Adresszeile?",
+   "on_screen": "Was sagt dir das Schloss?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H3",
+   "type": "surprising_fact",
+   "spoken": "Laut Chrome-Team zeigen fast alle Phishing-Seiten ebenfalls das Schloss.",
+   "on_screen": "Phishing-Seiten mit Schloss",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Eine gefälschte Login-Seite mit Schloss, und deine Zugangsdaten sind weg.",
+   "on_screen": "Schloss da, Daten weg",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S3"
+   ],
+   "visual": "",
+   "why": {
+    "truth": ""
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Mittwoch, sechzehn Uhr vierzig. Die Login-Seite eurer Bank, oben das Schloss.",
+   "on_screen": "MI 16:40 · Login mit Schloss",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [],
+   "visual": "Uhrzeit groß, die Login-Seite kommt als Papierkarte herein, die Zeile mit dem Schloss wird markiert",
+   "why": {
+    "truth": ""
+   }
+  }
+ ],
+ "hook": {
+  "id": "H5",
+  "note": "Fall-Einstieg des Formats; Wahrheit mindestens 4."
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "sc_case",
+   "spoken": "Mittwoch, sechzehn Uhr vierzig. Ein Link aus einer Mail öffnet die Login-Seite eurer Bank. Oben in der Adresszeile: das Schloss.",
+   "data": {
+    "kicker": "Beispielfall · nachgestellt",
+    "time": "MI 16:40",
+    "place": "Buchhaltung eines Cafés",
+    "mail_at": "@Login-Seite",
+    "mail": {
+     "from": "Login · Bank Beispiel",
+     "addr": "https://135x-bank-beispiel.example",
+     "time": "16:40",
+     "subject": "Anmeldung Online-Banking",
+     "lines": [
+      "Bitte melden Sie sich an,",
+      "um die Lastschrift zu prüfen.",
+      "Verbindung: sicher (Schloss)"
+     ]
+    },
+    "highlight": {
+     "line": 2,
+     "label": "Schloss",
+     "at": "@Adresszeile"
+    }
+   },
+   "source_ids": []
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "sc_inspect",
+   "spoken": "Du prüfst. Das Schloss: da. Die Adresse: beginnt mit https. Das Design: wie immer. Wirkt sicher. Doch laut Chrome-Team zeigen fast alle Phishing-Seiten ebenfalls das Schloss.",
+   "data": {
+    "kicker": "Was du prüfst",
+    "headline": "Alles sicher?",
+    "rows": [
+     {
+      "label": "Schloss",
+      "value": "vorhanden",
+      "verdict": "unauffällig",
+      "at": "@Schloss"
+     },
+     {
+      "label": "Adresse",
+      "value": "beginnt mit https",
+      "verdict": "unauffällig",
+      "at": "@Adresse"
+     },
+     {
+      "label": "Design",
+      "value": "wie immer",
+      "verdict": "unauffällig",
+      "at": "@Design"
+     }
+    ],
+    "finding": {
+     "text": "Wirkt sicher.",
+     "at": "@Wirkt"
+    },
+    "fact": {
+     "kind": "fakt",
+     "text": "Fast alle Phishing-Seiten zeigen auch das Schloss.",
+     "source": "Chromium-Blog · 02.05.2023",
+     "at": "@laut"
+    }
+   },
+   "source_ids": [
+    "S1"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "problem",
+   "scene_type": "sc_choice",
+   "spoken": "Was tust du? A: Das Schloss ist da, also meldest du dich an. B: Du prüfst das Zertifikat: gültig. C: Du liest die Adresse, Zeichen für Zeichen. Entscheide dich jetzt.",
+   "data": {
+    "question": "Was tust du?",
+    "options": [
+     {
+      "key": "A",
+      "text": "Schloss ist da, also anmelden",
+      "at": "@meldest"
+     },
+     {
+      "key": "B",
+      "text": "Zertifikat anklicken: gültig",
+      "at": "@Zertifikat"
+     },
+     {
+      "key": "C",
+      "text": "Adresse lesen, Zeichen für Zeichen",
+      "at": "@liest"
+     }
+    ],
+    "think": {
+     "seconds": 2.6,
+     "at": "@Entscheide"
+    },
+    "hint": "Entscheide dich jetzt."
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "scene_type": "sc_timeline",
+   "spoken": "Spielen wir A durch. Du meldest dich an. Dann will die Seite eine TAN, obwohl du nichts überweist. Laut BSI ein klares Zeichen für eine Fälschung, und deine Zugangsdaten sind schon weg.",
+   "data": {
+    "kicker": "Wahl A, durchgespielt",
+    "tag": "Beispiel",
+    "headline": "Schloss da, du meldest dich an",
+    "items": [
+     {
+      "time": "MI 16:41",
+      "text": "Anmeldung auf der Seite",
+      "at": "@meldest"
+     },
+     {
+      "time": "MI 16:42",
+      "text": "Seite will eine TAN",
+      "tone": "amber",
+      "at": "@TAN"
+     },
+     {
+      "time": "Danach",
+      "text": "Zugangsdaten beim Täter",
+      "tone": "red",
+      "at": "@Zugangsdaten"
+     }
+    ],
+    "source": {
+     "kind": "fakt",
+     "label": "BSI · TAN ohne Auftrag = Fälschung",
+     "at": "@BSI"
+    }
+   },
+   "source_ids": [
+    "S2",
+    "S3"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Richtig ist C. Das BSI rät, jeden Link vor dem Aufruf zu prüfen. Verdächtig: der Bankname mit ungewöhnlichen Zahlen davor. Zu A: Das Schloss zeigt nur eine verschlüsselte Verbindung. Zu B: Zertifikate besorgen sich auch Betrüger.",
+   "data": {
+    "mode": "rule",
+    "kicker": "Der eine Schritt",
+    "card": {
+     "letter": "C",
+     "title": "Adresse lesen, nicht Schloss",
+     "sub": "Bankname plus fremde Zeichen? Stopp.",
+     "at": 0.2
+    },
+    "strikes": [
+     {
+      "text": "A: Schloss da, also echt",
+      "note": "nur verschlüsselt",
+      "at": "@Schloss"
+     },
+     {
+      "text": "B: Zertifikat gültig",
+      "note": "haben Betrüger auch",
+      "at": "@Zertifikate"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "BSI · Links vor dem Aufruf prüfen"
+     },
+     {
+      "kind": "fakt",
+      "label": "Chromium · Schloss heißt nicht echt"
+     }
+    ],
+    "sources_at": "@BSI"
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "insight",
+   "scene_type": "sc_step",
+   "spoken": "Schon angemeldet? Dann den Zugang sofort sperren lassen, über den Sperr-Notruf eins eins sechs, eins eins sechs. Danach mit der Bank die Umsätze prüfen.",
+   "data": {
+    "mode": "fallback",
+    "kicker": "Schon angemeldet?",
+    "card": {
+     "letter": "!",
+     "title": "Zugang sofort sperren",
+     "sub": "nicht abwarten",
+     "at": 0.2
+    },
+    "steps": [
+     {
+      "text": "Sperr-Notruf 116 116",
+      "at": "@Sperr-Notruf"
+     },
+     {
+      "text": "Mit der Bank Umsätze prüfen",
+      "at": "@Bank"
+     }
+    ],
+    "sources": [
+     {
+      "kind": "fakt",
+      "label": "BSI und Polizei · Checkliste Phishing"
+     }
+    ],
+    "sources_at": "@sofort"
+   },
+   "source_ids": [
+    "S3"
+   ]
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "scene_type": "sc_close",
+   "spoken": "Verschlüsselt heißt nicht echt. Was hättest du gewählt? Schreib es in die Kommentare.",
+   "data": {
+    "kicker": "Reihe · Was tust du?",
+    "rule": "Verschlüsselt heißt nicht echt.",
+    "rule_at": 0.3,
+    "question": {
+     "text": "Was hättest du gewählt?",
+     "at": "@hättest"
+    },
+    "domain": "scutoria.com",
+    "domain_at": 1.2,
+    "claim": "Belegt. Datiert. Vorzeigbar.",
+    "disclaimer": "Quellenbasiert. Keine Rechtsberatung."
+   },
+   "source_ids": []
+  }
+ ]
+}

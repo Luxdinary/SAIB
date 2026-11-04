@@ -1,0 +1,409 @@
+{
+  "video_id": "engines-20261114-3-de",
+  "brand_id": "engines",
+  "language": "de",
+  "title": "So liest du ein p-V-Diagramm",
+  "notes": "Revlore Vorlage 1.0, Woche 1 (Produktion 01.11.2026). Kalender engines-20261114-3-de, Reihe Im Schnitt. Szenen aus brands/engines/scenes.py, Qualitätsmaßstab Testvideo Q1.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 468,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "description": "Im Druck-Volumen-Diagramm ist die eingeschlossene Fläche die Arbeit eines Arbeitsspiels. So liest du es, am idealen Otto-Prozess.",
+    "companion_text": "Folge Revlore: Motorentechnik verstehen, ein Bauteil nach dem anderen.\nIdealer Otto-Prozess, schematisch (Verdichtung 10 : 1 als Beispiel).",
+    "hashtags": [
+      "motorentechnik",
+      "thermodynamik",
+      "ottoprozess",
+      "diagramm",
+      "anleitung"
+    ]
+  },
+  "assets": {},
+  "sources": [
+    {
+      "id": "S1",
+      "label": "NASA Glenn, Otto-Prozess",
+      "title": "NASA Glenn, Otto-Prozess (N2)",
+      "url": "https://www.grc.nasa.gov/www/k-12/airplane/otto.html",
+      "checked_at": "2026-11-01"
+    },
+    {
+      "id": "S2",
+      "label": "MIT 2.61, Vorlesung 3",
+      "title": "MIT 2.61, Vorlesung 3 (L3)",
+      "url": "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e9421a34d0cd5c5fc4fc81365975503e_MIT2_61S17_lec3.pdf",
+      "checked_at": "2026-11-01"
+    }
+  ],
+  "unverified": [],
+  "hook": {
+    "id": "H1",
+    "note": "Stärkster belegbarer Hook."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Man muss sie nur im richtigen Diagramm suchen.",
+      "on_screen": "Arbeit ist eine Fläche",
+      "scores": {
+        "clarity": 5,
+        "relevance": 4,
+        "curiosity": 5,
+        "truth": 5,
+        "visual": 5
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "truth": "Aussage aus den Plan-Quellen",
+        "visual": "im Schnittmodell sichtbar"
+      }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Wo steckt die Arbeit eines Motors?",
+      "on_screen": "So liest du ein p-V-Diagramm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H3",
+      "type": "misconception",
+      "spoken": "So liest du ein p-V-Diagramm",
+      "on_screen": "So liest du ein p-V-Diagramm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H4",
+      "type": "concrete_risk",
+      "spoken": "So liest du ein p-V-Diagramm",
+      "on_screen": "So liest du ein p-V-Diagramm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 3,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    },
+    {
+      "id": "H5",
+      "type": "demonstration",
+      "spoken": "So liest du ein p-V-Diagramm",
+      "on_screen": "So liest du ein p-V-Diagramm",
+      "scores": {
+        "clarity": 4,
+        "relevance": 4,
+        "curiosity": 3,
+        "truth": 4,
+        "visual": 3
+      },
+      "source_ids": [
+        "S1"
+      ],
+      "why": {
+        "clarity": "schwächer als H1"
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "rv_hook",
+      "spoken": "Die Arbeit eines Motors ist eine Fläche. Man muss sie nur im richtigen Diagramm suchen.",
+      "data": {
+        "claim": "Arbeit ist eine Fläche",
+        "claim_lines": [
+          "Arbeit ist",
+          "eine Fläche"
+        ],
+        "claim_highlight": "Fläche",
+        "claim_at": 0.05,
+        "counters": false,
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Fläche",
+        "source": false
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "rv_chart",
+      "spoken": "Im p-V-Diagramm steht nach oben der Druck im Zylinder, nach rechts das Volumen. Jeder Takt zeichnet eine Linie. Beim Verdichten wird das Volumen kleiner, und der Druck steigt. Ganz links liegt der obere Totpunkt mit dem kleinsten Volumen, ganz rechts der untere.",
+      "data": {
+        "title": "Druck über Volumen",
+        "kind": "pv",
+        "series_at": [
+          "w:Verdichten"
+        ],
+        "series_only": [
+          0
+        ],
+        "legend": true,
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Druck",
+        "kicker": "2 · DIE ACHSEN",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "rv_cutaway",
+      "spoken": "Dann die Verbrennung. Im idealen Otto-Prozess der NASA geschieht sie sehr schnell, bei gleichem Volumen: Der Druck springt senkrecht nach oben. Danach dehnt sich das Gas aus und drückt den Kolben nach unten. Das NASA-Modell rechnet ohne Reibung und ohne Wärmeverlust, also ideal.",
+      "data": {
+        "title": "Gleicher Raum, mehr Druck",
+        "labels": [
+          {
+            "key": "plug",
+            "side": "l",
+            "y": 640
+          },
+          "chamber"
+        ],
+        "labels_at": [
+          "w:Verbrennung",
+          "w:Volumen"
+        ],
+        "notes": [
+          {
+            "text": "Druck springt",
+            "at": "w:springt",
+            "side": "l",
+            "y": 880,
+            "color": "fire",
+            "to": [
+              540,
+              560
+            ]
+          }
+        ],
+        "theta": [
+          [
+            0,
+            300
+          ],
+          [
+            1,
+            500
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Otto",
+        "kicker": "3 · DIE VERBRENNUNG",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b4",
+      "function": "demonstration",
+      "scene_type": "rv_chart",
+      "spoken": "Zusammen ergibt sich eine geschlossene Schleife. Die eingeschlossene Fläche ist die Arbeit eines Arbeitsspiels, so steht es bei der NASA. Mal die Arbeitsspiele pro Sekunde ergibt die Leistung. Größere Schleife, mehr Arbeit pro Arbeitsspiel.",
+      "data": {
+        "title": "Fläche = Arbeit",
+        "kind": "pv",
+        "series_at": [
+          0.0,
+          0.08,
+          0.16,
+          0.24
+        ],
+        "area_at": "w:Fläche",
+        "draw_seconds": 0.8,
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:NASA",
+        "kicker": "4 · DIE FLÄCHE",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "b5",
+      "function": "insight",
+      "scene_type": "rv_readout",
+      "spoken": "Die Fachvorlesung rechnet vor: Die Verdichtung kostet nur etwa ein Sechstel dessen, was die Expansion zurückgibt. Darum bleibt unterm Strich so viel Arbeit übrig. Verdichten ist die Investition, Expandieren der Ertrag.",
+      "data": {
+        "title": "Verdichten gegen Expandieren",
+        "figure": "bars",
+        "bar_max": 6.5,
+        "lines_y": 1000,
+        "bars": [
+          {
+            "label": "Expansion",
+            "value": 6,
+            "text": "6 Teile",
+            "at": "w:Expansion"
+          },
+          {
+            "label": "Verdichtung",
+            "value": 1,
+            "text": "1 Teil",
+            "at": "w:Sechstel"
+          }
+        ],
+        "lines": [
+          {
+            "text": "Verdichtung ≈ ⅙ der Expansion",
+            "hl": "⅙",
+            "at": "w:Strich"
+          }
+        ],
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            360
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "marker": "fakt",
+        "marker_at": "w:Fachvorlesung",
+        "kicker": "5 · DAS VERHÄLTNIS",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "id": "b6",
+      "function": "close",
+      "scene_type": "rv_cutaway",
+      "spoken": "Verdichten, verbrennen, entspannen: Die Fläche ist die Arbeit. Motorentechnik verstehen: Folge Revlore.",
+      "data": {
+        "chips": [
+          {
+            "text": "Fläche",
+            "at": "w:Fläche"
+          },
+          {
+            "text": "= Arbeit",
+            "at": "w:Arbeit"
+          }
+        ],
+        "cta": {
+          "brand": "Revlore",
+          "title": "Motorentechnik verstehen",
+          "at": "w:Motorentechnik"
+        },
+        "theta": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1080
+          ]
+        ],
+        "fade_in": false,
+        "fade_out": false
+      },
+      "overlay": {
+        "head": false,
+        "marker": "none",
+        "transition": {
+          "type": "blende",
+          "seconds": 0.7
+        }
+      },
+      "source_ids": []
+    }
+  ]
+}

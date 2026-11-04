@@ -1,0 +1,6 @@
+{
+  ".claude/settings.json": "{\n  \"permissions\": {\n    \"deny\": [\n      \"Read(./.env)\"\n    ]\n  }\n}\n",
+  ".env": "# Sample data for a Promptwerk video, no real credentials\nAPI_KEY=demo-7f3a-NOT-REAL\nDB_PASSWORD=sample-123\n",
+  "README.md": "# Test project\n\nSample folder for a Promptwerk video. All values are made up.\n",
+  "show-env.js": "// Reads the .env file itself and prints it\nconst fs = require(\"fs\");\nconsole.log(fs.readFileSync(\".env\", \"utf8\"));\n"
+}

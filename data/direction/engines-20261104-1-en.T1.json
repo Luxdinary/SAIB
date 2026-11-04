@@ -1,0 +1,529 @@
+{
+ "video_id": "engines-20261104-1-en",
+ "brand_id": "engines",
+ "language": "en",
+ "title": "Two trip units in one circuit breaker",
+ "notes": "English version of the Revlore test video T1 (Technik-Kanal, approved by Stefan 03.11.2026). Same scenes, material and cues as engines-20261104-1-de.T1.json, text translated. Revlore Technik-Kanal, Testvideo T1 (Neustart 03.11.2026). Konzept: OneDrive Business/02 Marke/Revlore/Testvideo-Konzept 2026-11.md, Konzeptplan Nr. 75, Reihe Ein Schalter, zwei Schriebe. Szenen zt_* aus brands/engines/zeitlupe/scenes.py Abschnitt 7. Fotos und Clips aus brands/engines/assets/higgsfield/library (Nachweis LICENSE.md dort). Zeiten im Bild sind Normgrenzen (Siemens-Tabelle), keine erfundenen Ereigniszeiten. Ton-Cues in layout.sound_cues fuer die Tonebene des gemeinsamen Renderers.",
+ "layout": {
+  "zone_top": 290,
+  "zone_h": 810,
+  "caption_bottom_px": 488,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.6,
+  "progress_y": 1556,
+  "ai_label_bottom_px": 318,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "zeitlupe",
+  "explainer": false,
+  "description": "A miniature circuit breaker has two trip units: a bimetal strip that bends slowly on overload, and a coil that opens at once on a short circuit. We show both on their own time scale, as a time-lapse and in slow motion.",
+  "companion_text": "Schematic model of a miniature circuit breaker after a BBC patent (1986), not a specific product. Time-lapse and slow motion refer to the limits in the standard (1.45 times the rated current: trip within 1 h; characteristic B from 5 times the rated current: under 0.1 s). The course of the trip curve between these points is schematic. Work on electrical installations belongs in the hands of a qualified electrician.",
+  "hashtags": [
+   "engineering",
+   "electrical",
+   "circuitbreaker",
+   "howitworks",
+   "slowmotion"
+  ],
+  "sound_cues": [
+   {
+    "beat": "b1",
+    "at": "start",
+    "cue": "bett_ein",
+    "note": "Musikbett tech, unter der Stimme abgesenkt"
+   },
+   {
+    "beat": "b2",
+    "at": "w:Under",
+    "cue": "swipe",
+    "note": "Röntgenblende"
+   },
+   {
+    "beat": "b2",
+    "at": "w:bimetal",
+    "cue": "click",
+    "gain_db": -6,
+    "note": "Beschriftung"
+   },
+   {
+    "beat": "b2",
+    "at": "w:coil",
+    "cue": "click",
+    "gain_db": -6,
+    "note": "Beschriftung"
+   },
+   {
+    "beat": "b2",
+    "at": "w:latch",
+    "cue": "click",
+    "gain_db": -6,
+    "note": "Beschriftung"
+   },
+   {
+    "beat": "b2",
+    "at": "w:contacts",
+    "cue": "click",
+    "gain_db": -6,
+    "note": "Beschriftung"
+   },
+   {
+    "beat": "b2",
+    "at": "w:arc",
+    "cue": "click",
+    "gain_db": -6,
+    "note": "Beschriftung"
+   },
+   {
+    "beat": "b3",
+    "at": "w:bimetal",
+    "cue": "riser",
+    "gain_db": -4,
+    "note": "Einstieg Zeitraffer"
+   },
+   {
+    "beat": "b3",
+    "at": "w:hour#2",
+    "cue": "stamp",
+    "note": "Bimetall löst aus, Hebel fällt"
+   },
+   {
+    "beat": "b4",
+    "at": "w:jumps",
+    "cue": "whoosh2",
+    "note": "gebremster Whoosh: Einstieg Zeitlupe"
+   },
+   {
+    "beat": "b4",
+    "at": "w:opens",
+    "cue": "stamp",
+    "note": "Kontakt öffnet"
+   },
+   {
+    "beat": "b5",
+    "at": "w:curve",
+    "cue": "swipe2",
+    "gain_db": -4,
+    "note": "Stift zeichnet die Kennlinie"
+   },
+   {
+    "beat": "b6",
+    "at": 3.3,
+    "cue": "stamp",
+    "note": "Hebel im Clip schnappt etwa 3,3 s nach Beat-Beginn"
+   },
+   {
+    "beat": "b6",
+    "at": "w:lever",
+    "cue": "whoosh",
+    "note": "zurück in Echtzeit"
+   },
+   {
+    "beat": "b6",
+    "at": "end",
+    "cue": "bett_aus_schlussakkord",
+    "note": "Schlussakkord"
+   }
+  ],
+  "sound": {
+   "palette": "tech",
+   "mood": "tech",
+   "levels": {
+    "sfx_peak_db": -18
+   }
+  }
+ },
+ "assets": {
+  "folder": "assets/higgsfield/testvideo",
+  "hero": {
+   "b1": "rl_t_panel.mp4",
+   "b2": "rl_t_macro_on.mp4",
+   "b3": "rl_t_kitchen.mp4",
+   "b6": "rl_t_trip.mp4"
+  },
+  "scrim": 0.2,
+  "note": "Testvideo T1: Clips und Standbilder vom 02./03.11.2026, abgeleitete 24-s-Hintergründe rl_t_*.mp4 (LICENSE.md)."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "label": "Siemens SENTRON MCB Configuration Manual 10/2010",
+   "title": "Siemens SENTRON Miniature Circuit Breakers, Configuration Manual 10/2010, table of tripping characteristics (A, B, C, D): 1.13 × In > 1 h, 1.45 × In < 1 h; B 3 × In > 0.1 s, 5 × In < 0.1 s; C 5 × In > 0.1 s, 10 × In < 0.1 s",
+   "url": "https://www.standardelectricsupply.com/userfiles/ad/documents/Sentron_5ST3_012_0HG_Catalog.pdf",
+   "checked_at": "2026-11-03"
+  },
+  {
+   "id": "S2",
+   "label": "Hager, miniature circuit breakers, tripping characteristics",
+   "title": "Hager, miniature circuit breakers: tripping characteristics and applications (time-delayed thermal release for overload, electromagnetic release for short circuit; B for homes, C for devices with higher inrush currents)",
+   "url": "https://asset.conrad.com/media10/add/160267/c1/-/de/000627112DS01/datasheet-627112-hager-mcn116-circuit-breaker-1-pin-16-a.pdf",
+   "checked_at": "2026-11-03"
+  },
+  {
+   "id": "S3",
+   "label": "Schneider Electric, FAQ FA369327",
+   "title": "Schneider Electric FAQ FA369327: IEC 60898-1, conventional non-tripping current 1.13 × In, tripping current 1.45 × In, conventional time 1 h",
+   "url": "https://www.se.com/za/en/faqs/FA369327",
+   "checked_at": "2026-11-02"
+  },
+  {
+   "id": "S4",
+   "label": "Patent DE3625425A1 (BBC 1986)",
+   "title": "DE3625425A1, miniature circuit breaker, BBC Brown Boveri (today ABB), filed 28.07.1986: thermobimetal, electromagnetic drive, latch, arc moves into the stack of extinguishing plates",
+   "url": "https://patents.google.com/patent/DE3625425A1/de",
+   "checked_at": "2026-11-03"
+  }
+ ],
+ "unverified": [
+  "Millisecond values below 0.1 s for the magnetic release: not supported, not used",
+  "Course of the trip curve between the points in the standard: shown as schematic only"
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "Contrast: takes its time versus at once, shown as two clocks."
+ },
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "surprising_fact",
+   "spoken": "On overload it takes its time, on a short circuit it doesn't.",
+   "on_screen": "Two trip units, two clocks",
+   "scores": {
+    "clarity": 5,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "why": {
+    "truth": "see German plan",
+    "visual": "see German plan"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "question",
+   "spoken": "Why does the breaker sometimes trip at once and sometimes only after a while?",
+   "on_screen": "At once or later?",
+   "scores": {
+    "clarity": 4,
+    "relevance": 5,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "clarity": "see German plan"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "demonstration",
+   "spoken": "This small switch holds two trip units.",
+   "on_screen": "Two trip units",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 5,
+    "visual": 4
+   },
+   "source_ids": [
+    "S2"
+   ],
+   "why": {
+    "curiosity": "see German plan"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "misconception",
+   "spoken": "A circuit breaker is not just a wire that burns through.",
+   "on_screen": "Not a wire that burns through",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S2",
+    "S4"
+   ],
+   "why": {
+    "truth": "see German plan"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "concrete_risk",
+   "spoken": "Without the second trip unit, a short circuit would be dealt with far too late.",
+   "on_screen": "Too late?",
+   "scores": {
+    "clarity": 3,
+    "relevance": 4,
+    "curiosity": 3,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "why": {
+    "relevance": "see German plan"
+   }
+  }
+ ],
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "scene_type": "zt_photo",
+   "spoken": "On overload it takes its time, on a short circuit it doesn't. This small switch holds two trip units, each with its own clock.",
+   "data": {
+    "claim_lines": [
+     "Two trip units,",
+     "two clocks"
+    ],
+    "claim_highlight": "two clocks",
+    "claim_at": 0.02,
+    "source": "Hager, circuit breakers · retrieved 2026-11-03"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "scene_type": "zt_mcb",
+   "spoken": "This is a miniature circuit breaker. It protects the cable in the wall. Under the housing sit a bimetal strip, a coil, a latch, the contacts and the arc plates.",
+   "data": {
+    "mode": "xray",
+    "scan_at": "w:Under",
+    "scan_s": 2.0,
+    "labels": [
+     {
+      "part": "bimetal",
+      "text": "Bimetal",
+      "at": "w:bimetal"
+     },
+     {
+      "part": "coil",
+      "text": "Coil",
+      "at": "w:coil"
+     },
+     {
+      "part": "latch",
+      "text": "Latch",
+      "at": "w:latch"
+     },
+     {
+      "part": "contact",
+      "text": "Contact",
+      "at": "w:contacts"
+     },
+     {
+      "part": "chute",
+      "text": "Arc plates",
+      "at": "w:arc"
+     }
+    ],
+    "source": "Patent DE3625425A1 (BBC 1986), simplified model"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S2",
+    "S4"
+   ]
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "scene_type": "zt_mcb",
+   "spoken": "First, overload. If too many devices hang on one circuit, more current flows than the cable can carry for long. The bimetal warms up and bends, very slowly. At 1.13 times the rated current, the standard says the breaker must not trip for an hour; at 1.45 times, it must trip within an hour.",
+   "data": {
+    "mode": "thermal",
+    "photo": true,
+    "ground_at": "w:bimetal",
+    "heat_from": "w:bimetal",
+    "trip_at": "w:hour#2",
+    "model_s": 3600,
+    "current": {
+     "text": "Overload",
+     "hl": "Overload",
+     "at": "w:bimetal"
+    },
+    "rows": [
+     {
+      "text": "1.13 × In: no trip for 1 h",
+      "hl": "1.13 × In",
+      "at": "w:At"
+     },
+     {
+      "text": "1.45 × In: trips within 1 h",
+      "hl": "1.45 × In",
+      "at": "w:at#2"
+     }
+    ],
+    "source": "Siemens SENTRON MCB, Configuration Manual 10/2010"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S3",
+    "S4"
+   ]
+  },
+  {
+   "id": "b4",
+   "function": "explanation",
+   "scene_type": "zt_mcb",
+   "spoken": "Then the short circuit. The current jumps to many times its value. The bimetal is too slow for that; now the coil opens the contact with its magnetic field. With characteristic B, this must happen in under a tenth of a second from five times the rated current. The arc runs into the arc plates.",
+   "data": {
+    "mode": "magnetic",
+    "jump_at": "w:jumps",
+    "strike_at": "w:opens",
+    "quench_at": "w:plates",
+    "model_s": 0.1,
+    "current": {
+     "text": "Short circuit",
+     "hl": "Short circuit",
+     "at": "w:short"
+    },
+    "rows": [
+     {
+      "text": "Characteristic B: from 5 × In",
+      "hl": "5 × In",
+      "at": "w:characteristic"
+     }
+    ],
+    "limit": {
+     "text": "< 0.1 s",
+     "at": "w:tenth"
+    },
+    "source": "Siemens SENTRON MCB, Configuration Manual 10/2010"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2",
+    "S4"
+   ]
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "scene_type": "zt_curve",
+   "spoken": "The trip curve shows both: at the top the slow bimetal, at the bottom the steep step of the coil. With characteristic C the step sits higher, at five to ten times, for devices with high inrush current.",
+   "data": {
+    "zones": [
+     {
+      "m0": 3,
+      "m1": 5,
+      "text": "B",
+      "at": "w:step"
+     },
+     {
+      "m0": 5,
+      "m1": 10,
+      "text": "C",
+      "at": "w:characteristic"
+     }
+    ],
+    "points": [
+     {
+      "m": 1.13,
+      "t": 3600,
+      "text": "1.13 × In: > 1 h",
+      "up": true,
+      "at": "w:top"
+     },
+     {
+      "m": 1.45,
+      "t": 3600,
+      "text": "1.45 × In: < 1 h",
+      "up": false,
+      "hot": true,
+      "at": "w:bimetal"
+     },
+     {
+      "m": 5,
+      "t": 0.1,
+      "text": "5 × In: < 0.1 s",
+      "up": true,
+      "at": "w:coil"
+     }
+    ],
+    "curve": {
+     "knots": [
+      [
+       1.13,
+       9000
+      ],
+      [
+       1.45,
+       2400
+      ],
+      [
+       2,
+       150
+      ],
+      [
+       3,
+       15
+      ],
+      [
+       3.4,
+       9
+      ],
+      [
+       3.4,
+       0.01
+      ]
+     ],
+     "from": "w:curve",
+     "to": "w:coil",
+     "text": "schematic course (B)"
+    },
+    "source": "Siemens SENTRON MCB, Configuration Manual 10/2010"
+   },
+   "overlay": {},
+   "source_ids": [
+    "S1",
+    "S2"
+   ]
+  },
+  {
+   "id": "b6",
+   "function": "close",
+   "scene_type": "zt_photo",
+   "spoken": "Two trip units, two time scales, one lever. And work on the installation belongs in the hands of a qualified electrician.",
+   "data": {
+    "brand": {
+     "text": "REVLORE · SLOW MOTION",
+     "hl": "REVLORE",
+     "at": "w:lever"
+    },
+    "note": {
+     "text": "Work on the installation: qualified electrician",
+     "at": "w:work"
+    }
+   },
+   "overlay": {},
+   "source_ids": []
+  }
+ ]
+}

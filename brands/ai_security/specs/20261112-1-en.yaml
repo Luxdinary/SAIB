@@ -1,0 +1,192 @@
+id: ai_security-20261112-1-en
+version: F2
+title: 'AI literacy: the duty that already applies'
+reihe: Gilt das für uns?
+short: KI-Kompetenz EN
+note: Topic A02, EN localisation. No legal advice. Example case staged; statements from S1 (European Commission AI literacy FAQ) and S2 (AI Act Art. 4).
+description: 'Your accountant asks: you use AI for your marketing copy? Then Article 4 of the EU AI Act applies to you. What that means, what you don''t need, and what to write down today.'
+hashtags:
+- aiact
+- ailiteracy
+- smallbusiness
+- aiatwork
+- doesthisapply
+sources:
+- id: S1
+  url: https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers
+  title: 'European Commission: AI Literacy – Questions & Answers'
+  checked_at: '2026-11-01'
+  label: European Commission, AI literacy FAQ
+- id: S2
+  url: https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4
+  title: 'AI Act, Article 4: AI literacy'
+  checked_at: '2026-11-01'
+  label: AI Act Art. 4
+unverified:
+- 'Fines for breaching Art. 4: not used.'
+- 'National authorities: not named.'
+- The accountant's email is invented (example case).
+- The EU AI Act applies to businesses in the EU; for viewers outside the EU it may not apply (stated in the description, not in the video).
+pick: demonstration
+hooks:
+- type: question
+  spoken: Your business uses AI. Does an EU duty already apply to you?
+  screen: Does this apply to us?
+- type: misconception
+  spoken: We only use AI, so the AI Act doesn't concern us? It does.
+  screen: Just users = not affected?
+  src:
+  - S2
+  - S1
+- type: surprising_fact
+  spoken: The EU duty of AI literacy has applied since February 2025.
+  screen: Applies since 2 Feb 2025
+  src:
+  - S2
+- type: concrete_risk
+  spoken: Your team writes marketing copy with ChatGPT? Then an EU duty applies to you.
+  screen: Marketing copy with AI?
+  src:
+  - S1
+- type: demonstration
+  spoken: Tuesday, 9:30 a.m. An email from your accountant about the AI Act.
+  screen: TUE 09:30 · Does this apply?
+beats:
+- f: hook
+  t: sc_case
+  s: 'Tuesday, 9:30 a.m. An email from your accountant: You use AI for your marketing copy, right? Then Article 4 of the EU AI Act applies to you.'
+  d:
+    kicker: Example case · staged
+    time: TUE 09:30
+    place: Owner of a bakery with three shops
+    mail_at: '@email'
+    mail:
+      from: Accountants Example
+      addr: advice@accountants.example
+      time: 09:30
+      subject: 'AI Act: does it apply?'
+      lines:
+      - You use AI for marketing copy?
+      - Then Article 4 of the AI Act
+      - applies to you. On your radar?
+    highlight:
+      line: 1
+      label: duty
+      at: '@Article'
+- f: problem
+  t: sc_inspect
+  s: What do you know about your business? You use AI, but you don't build any. Article 4 says providers and deployers must ensure AI literacy among their staff. A deployer is also anyone who simply uses
+    AI. The duty has applied since 2 February 2025.
+  src:
+  - S2
+  - S1
+  d:
+    kicker: What you know
+    headline: Does it mean you?
+    rows:
+    - label: Use
+      value: AI for marketing copy
+      verdict: 'yes'
+      at: '@use'
+    - label: Build
+      value: no AI of your own
+      verdict: 'no'
+      at: '@build'
+    - label: Role
+      value: deployer
+      verdict: per Art. 4
+      at: '@deployer'
+    fact:
+      kind: fakt
+      text: Art. 4 also covers deployers who simply use AI.
+      source: AI Act Art. 4 · since 2 Feb 2025
+      at: '@duty'
+- f: problem
+  t: sc_choice
+  s: 'What do you do? A: Nothing, you only use AI. B: You book an expensive certification. C: You write down which tools you use, and train the team on their risks. Remember your choice.'
+  src:
+  - S1
+  d:
+    question: What do you do?
+    options:
+    - key: A
+      text: Nothing, we only use AI
+      at: '@Nothing'
+    - key: B
+      text: Book a pricey certification
+      at: '@book'
+    - key: C
+      text: List the tools, train the team
+      at: '@write'
+    think:
+      seconds: 2.4
+      at: '@Remember'
+    hint: Remember your choice.
+- f: insight
+  t: sc_step
+  s: 'The right answer is C. The European Commission gives exactly this example: a business whose staff use ChatGPT for marketing copy is covered. You don''t need a certificate. An internal record of the
+    training is enough as proof.'
+  src:
+  - S1
+  d:
+    mode: rule
+    kicker: The one step
+    card:
+      letter: C
+      title: A list and training
+      sub: recorded internally, no certificate
+      at: 0.2
+    strikes:
+    - text: 'A: Do nothing'
+      note: users are covered
+      at: '@covered'
+    - text: 'B: Pricey certificate'
+      note: not needed
+      at: '@certificate'
+    sources:
+    - kind: fakt
+      label: European Commission · AI literacy FAQ
+    - kind: auslegung
+      label: Applied to your business
+    sources_at: '@European'
+- f: benefit
+  t: sc_step
+  s: 'The Commission names four questions as the minimum: What is AI and which tools do we use? Are we a provider or just a user? What are the risks of our tools? And what does each person need to know?
+    Since August 2026, the duty is supervised.'
+  src:
+  - S1
+  d:
+    mode: fallback
+    kicker: Four questions for the team
+    card:
+      letter: '?'
+      title: 'Training: four questions'
+      sub: according to the Commission
+      at: 0.2
+    steps:
+    - text: What is AI, which tools do we use?
+      at: '@What'
+      mark: q
+    - text: Provider or just a user?
+      at: '@Are'
+      mark: q
+    - text: What are our tools' risks?
+      at: '@risks'
+      mark: q
+    - text: What does each person need?
+      at: '@each'
+      mark: q
+- f: close
+  t: sc_close
+  s: Understand it first, then use it. Do you have your AI list yet? Tell me in the comments.
+  d:
+    kicker: Series · Does this apply to us?
+    rule: Understand first, then use.
+    rule_at: 0.3
+    question:
+      text: Got your AI list yet?
+      at: '@Do'
+    domain: scutoria.com
+    domain_at: 1.2
+    claim: Sourced. Dated. Ready to show.
+    disclaimer: Source-based. No legal advice.

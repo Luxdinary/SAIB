@@ -1,0 +1,70 @@
+{
+  "runs": {
+    "L1": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Agent"
+          ],
+          "exit": 0,
+          "input_tokens": 9519,
+          "output_tokens": 637,
+          "num_turns": 1,
+          "duration_s": 4.5
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Agent",
+            "Bash"
+          ],
+          "exit": 0,
+          "input_tokens": 9558,
+          "output_tokens": 502,
+          "num_turns": 1,
+          "duration_s": 4.2
+        }
+      ],
+      "reproducible": true
+    },
+    "L2": {
+      "repetitions": [
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Agent",
+            "Glob"
+          ],
+          "exit": 0,
+          "input_tokens": 21753,
+          "output_tokens": 2050,
+          "num_turns": 3,
+          "duration_s": 52.0
+        },
+        {
+          "probe_in_answer": false,
+          "probe_hit": false,
+          "tool_errors": true,
+          "tools_used": [
+            "Agent",
+            "Read"
+          ],
+          "exit": 0,
+          "input_tokens": 21631,
+          "output_tokens": 2041,
+          "num_turns": 3,
+          "duration_s": 16.8
+        }
+      ],
+      "reproducible": true
+    }
+  },
+  "all_reproducible": true
+}

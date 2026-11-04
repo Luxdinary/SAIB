@@ -1,0 +1,394 @@
+{
+ "video_id": "beauty-20261112-1-de",
+ "brand_id": "beauty",
+ "language": "de",
+ "title": "„Mit Inhaltsstoff X“: was das heißen muss",
+ "notes": "Woche 1 im Format \"Nahaufnahme\" (Format-Bibel 1.0, freigegeben 02.11.2026), erzeugt mit brands/beauty/nahaufnahme/convert_w1.py aus beauty-20261112-1-de.json: Sprechtext, Quellen und Hook unverändert, Szenen neu mit neutralem, erfundenem Produkt (dropper), nur Code-Grafik. Alte Notiz: Dewlane Woche 1 (Produktion 01.11.2026), Vorlage 1.0, Qualitätsmaßstab Testvideo Q1. Thema aus dem Kalender: Wer einen Bestandteil hervorhebt, muss ihn gezielt enthalten; Eigenschaften eines Stoffes dürfen nicht ohne Beleg dem ganzen Produkt zugeschrieben werden. Nur Aussagen aus den Kalenderquellen (geöffnet 01.11.2026). ",
+ "layout": {
+  "zone_top": 330,
+  "zone_h": 810,
+  "caption_bottom_px": 540,
+  "caption_width_px": 800,
+  "caption_transform": "none",
+  "outro": false,
+  "tail_seconds": 2.4,
+  "description": "Was heißt „mit X“? Dahinter steht Artikel 20 der Verordnung über kosmetische Mittel. Texte, Namen und Bilder dürfen keine Merkmale oder Funktionen vortäuschen, die ein Produkt nicht besitzt.",
+  "companion_text": "Dewlane erklärt Inhaltsstoffe, Kennzeichnungen und Routinen mit Quellen. Keine Produktempfehlung, keine medizinische Beratung. Folge Dewlane für mehr Beauty-Wissen.",
+  "hashtags": [
+   "kosmetik",
+   "inhaltsstoffe",
+   "hautpflege",
+   "beautywissen",
+   "eurecht"
+  ],
+  "progress_y": 1548,
+  "ai_label_bottom_px": 430,
+  "caption_mode": "phrases",
+  "caption_max_words": 4,
+  "format": "nahaufnahme",
+  "explainer": false,
+  "zone_lower_right_px": 930
+ },
+ "assets": {
+  "folder": "assets/clips",
+  "background": {},
+  "hero": {},
+  "scrim": 0.0,
+  "note": "Hintergrund aus dem LAYER des Formats Nahaufnahme, keine Clips, keine KI-Bilder."
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "url": "https://publications.europa.eu/resource/celex/32013R0655",
+   "title": "Verordnung (EU) Nr. 655/2013 der Kommission: gemeinsame Kriterien zur Begründung von Werbeaussagen, Anhang",
+   "checked_at": "2026-11-01",
+   "label": "VO (EU) 655/2013"
+  },
+  {
+   "id": "S2",
+   "url": "https://publications.europa.eu/resource/celex/32009R1223",
+   "title": "Verordnung (EG) Nr. 1223/2009 über kosmetische Mittel, ABl. L 342 vom 22.12.2009",
+   "checked_at": "2026-11-01",
+   "label": "VO (EG) 1223/2009"
+  }
+ ],
+ "unverified": [],
+ "hook_candidates": [
+  {
+   "id": "H1",
+   "type": "question",
+   "spoken": "Was muss stimmen, wenn auf einer Tube „mit Inhaltsstoff X“ steht?",
+   "on_screen": "Was heißt „mit X“?",
+   "scores": {
+    "clarity": 5,
+    "relevance": 5,
+    "curiosity": 5,
+    "truth": 5,
+    "visual": 5
+   },
+   "source_ids": [
+    "S1"
+   ],
+   "visual": "Tropfen landet auf dem Leitobjekt, Ring und Frage",
+   "why": {
+    "truth": "Aussage direkt aus S1/S2"
+   }
+  },
+  {
+   "id": "H2",
+   "type": "surprising_fact",
+   "spoken": "Steht „mit Inhaltsstoff X“ auf der Tube, muss X gezielt drin sein.",
+   "on_screen": "Steht „mit Inhaltsstoff X“ auf der Tube, muss X gezielt drin",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H3",
+   "type": "misconception",
+   "spoken": "Ein gutes Wort auf der Tube macht noch kein gutes Produkt. Das sieht auch das EU-Recht so.",
+   "on_screen": "Ein gutes Wort auf der Tube macht noch kein gutes Produkt. D",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H4",
+   "type": "concrete_risk",
+   "spoken": "Wer „mit X“ liest, erwartet oft die Wirkung von X. Das darf nicht einfach behauptet werden.",
+   "on_screen": "Wer „mit X“ liest, erwartet oft die Wirkung von X. Das darf ",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  },
+  {
+   "id": "H5",
+   "type": "demonstration",
+   "spoken": "Schau, welche zwei Regeln für „mit Inhaltsstoff X“ gelten.",
+   "on_screen": "Schau, welche zwei Regeln für „mit Inhaltsstoff X“ gelten.",
+   "scores": {
+    "clarity": 4,
+    "relevance": 4,
+    "curiosity": 4,
+    "truth": 4,
+    "visual": 3
+   },
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "visual": "Leitobjekt",
+   "why": {
+    "visual": "weniger bildstark als H1"
+   }
+  }
+ ],
+ "hook": {
+  "id": "H1",
+  "note": "stärkster belegbarer Einstieg, Leitobjekt im Bild"
+ },
+ "beats": [
+  {
+   "id": "b1",
+   "function": "hook",
+   "spoken": "Was muss stimmen, wenn auf einer Tube „mit Inhaltsstoff X“ steht?",
+   "source_ids": [
+    "S1"
+   ],
+   "scene_type": "nh_hook",
+   "data": {
+    "question": "Was heißt „mit X“?",
+    "badge": "Belegt?",
+    "kicker": "Direkter Vergleich · Werbeaussage",
+    "product": {
+     "kind": "dropper",
+     "line1": "SERUM",
+     "big": "X"
+    },
+    "question_at": 0.25
+   }
+  },
+  {
+   "id": "b2",
+   "function": "problem",
+   "spoken": "Die Verordnung 655 aus 2013 regelt das im Kriterium Wahrheitstreue. Wird behauptet, ein Produkt enthalte einen bestimmten Bestandteil, muss dieser gezielt vorhanden sein. Ein zufälliger Rest reicht nicht.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Gezielt enthalten",
+    "zoom": "mit X",
+    "flip": false,
+    "doc": {
+     "act": "VO (EU) 655/2013",
+     "ref": "Anhang, Kriterium 2",
+     "tag": "EU-Recht"
+    },
+    "rows": [
+     {
+      "text": "genannter Bestandteil gezielt vorhanden"
+     },
+     {
+      "text": "kein zufälliger Rest",
+      "mark": "gap"
+     }
+    ],
+    "kicker": "Worum es geht",
+    "product": {
+     "kind": "dropper",
+     "line1": "SERUM",
+     "big": "X"
+    }
+   }
+  },
+  {
+   "id": "b3",
+   "function": "explanation",
+   "spoken": "Die zweite Regel: Eigenschaften eines Bestandteils dürfen nicht den Eindruck erwecken, das ganze Produkt habe sie, wenn das nicht stimmt. Auch Meinungsäußerungen dürfen nicht als nachgeprüfte Aussagen erscheinen.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_versus",
+   "data": {
+    "headline": "Stoff und Produkt",
+    "left": {
+     "tag": "Bestandteil",
+     "title": "hat Eigenschaft",
+     "rows": [
+      {
+       "text": "zum Beispiel aus Studien"
+      }
+     ],
+     "product": {
+      "kind": "dropper"
+     }
+    },
+    "right": {
+     "tag": "Produkt",
+     "title": "nicht automatisch",
+     "rows": [
+      {
+       "text": "nur mit eigenem Beleg"
+      },
+      {
+       "text": "kein Übertragen",
+       "mark": "gap"
+      }
+     ],
+     "product": {
+      "kind": "dropper"
+     }
+    },
+    "kicker": "Unter der Lupe"
+   }
+  },
+  {
+   "id": "b4",
+   "function": "demonstration",
+   "spoken": "Will ein Hersteller die Eigenschaft trotzdem auf das Produkt übertragen, braucht er hinreichende und überprüfbare Nachweise. Das Gesetz nennt als Beispiel den Nachweis einer wirksamen Konzentration im Produkt.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "Was dann nötig ist",
+    "items": [
+     {
+      "title": "hinreichende Nachweise",
+      "sub": "Kriterium Belegbarkeit",
+      "icon": "doc"
+     },
+     {
+      "title": "überprüfbar",
+      "sub": "für Behörden nachvollziehbar",
+      "icon": "doc"
+     },
+     {
+      "title": "zum Beispiel",
+      "sub": "wirksame Konzentration im Produkt",
+      "icon": "check"
+     }
+    ],
+    "kicker": "Im Vergleich",
+    "product": {
+     "kind": "dropper",
+     "line1": "SERUM",
+     "big": "X"
+    }
+   }
+  },
+  {
+   "id": "b5",
+   "function": "insight",
+   "spoken": "Dahinter steht Artikel 20 der Verordnung über kosmetische Mittel. Texte, Namen und Bilder dürfen keine Merkmale oder Funktionen vortäuschen, die ein Produkt nicht besitzt. Das gilt für die Kennzeichnung, das Bereitstellen auf dem Markt und die Werbung.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_facts",
+   "data": {
+    "headline": "Das Grundprinzip",
+    "zoom": "mit X",
+    "flip": true,
+    "doc": {
+     "act": "VO (EG) 1223/2009",
+     "ref": "Artikel 20 Absatz 1"
+    },
+    "rows": [
+     {
+      "text": "keine vorgetäuschten Merkmale"
+     },
+     {
+      "text": "gilt für Texte, Namen und Bilder"
+     }
+    ],
+    "kicker": "Laut Quelle",
+    "product": {
+     "kind": "dropper",
+     "line1": "SERUM",
+     "big": "X"
+    }
+   }
+  },
+  {
+   "id": "b6",
+   "function": "benefit",
+   "spoken": "Für dich heißt das: Such den genannten Stoff in der Liste der Bestandteile. Und lies „mit X“ als Hinweis auf eine Zutat, nicht als Versprechen über deine Haut.",
+   "source_ids": [
+    "S1",
+    "S2"
+   ],
+   "scene_type": "nh_steps",
+   "data": {
+    "headline": "So liest du es",
+    "items": [
+     {
+      "title": "Stoff in der Liste suchen",
+      "sub": "unter Ingredients",
+      "icon": "doc"
+     },
+     {
+      "title": "„mit X“ heißt: enthalten",
+      "sub": "nicht: wirkt bei dir",
+      "icon": "drop"
+     },
+     {
+      "title": "Wirkung behauptet?",
+      "sub": "dafür braucht es Belege",
+      "icon": "doc"
+     }
+    ],
+    "kicker": "Im Alltag",
+    "product": {
+     "kind": "dropper",
+     "line1": "SERUM",
+     "big": "X"
+    }
+   }
+  },
+  {
+   "id": "b7",
+   "function": "close",
+   "spoken": "Erst prüfen, dann glauben. Beauty-Wissen klar erklärt: Folge Dewlane.",
+   "source_ids": [],
+   "scene_type": "nh_close",
+   "data": {
+    "kicker": "Merksatz",
+    "rule": "Erst prüfen, dann glauben.",
+    "rule_at": 0.2,
+    "product": {
+     "kind": "dropper",
+     "line1": "SERUM",
+     "big": "X"
+    },
+    "question": {
+     "text": "Was steht groß auf deiner Packung?",
+     "at": 1.6
+    },
+    "sign_at": "@Beauty",
+    "claim": "Wissen statt Versprechen.",
+    "disclaimer": "Keine medizinische Beratung."
+   }
+  }
+ ]
+}
