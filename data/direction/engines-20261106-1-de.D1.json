@@ -1,0 +1,198 @@
+{
+  "video_id": "engines-20261106-1-de",
+  "brand_id": "engines",
+  "language": "de",
+  "title": "Hydraulischer Wagenheber: kleiner Kolben, großer Kolben",
+  "notes": "Tagesproduktion 06.11.2026 ohne Claude-Abo. Konzeptplan Nr. 107, Aufbau F. Formel aus dem Hinweis in brands/engines/aufbauten.yaml. Quelle OpenStax 14.3, abgerufen 03.11.2026.",
+  "layout": {
+    "zone_top": 290,
+    "zone_h": 810,
+    "caption_bottom_px": 488,
+    "caption_width_px": 800,
+    "caption_transform": "none",
+    "outro": false,
+    "tail_seconds": 2.6,
+    "progress_y": 1556,
+    "ai_label_bottom_px": 318,
+    "caption_mode": "phrases",
+    "caption_max_words": 4,
+    "format": "zeitlupe",
+    "explainer": false,
+    "short_title": "Wagenheber Kraft und Weg",
+    "description": "Nach Pascals Prinzip ist der Druck auf beiden Kolben gleich. Die Kraft wächst mit der Fläche, der Weg schrumpft im selben Verhältnis. Im Idealfall bleibt die Arbeit gleich. Ein echter Wagenheber verliert durch Reibung.",
+    "companion_text": "Zwei Idealwerte ohne Reibung: Kraft mal Flächenverhältnis, Weg geteilt durch dasselbe Verhältnis. Das Produkt bleibt eins. Die Quelle belegt das Prinzip, die Kurve ist gerechnet.",
+    "hashtags": ["technik", "hydraulik", "wagenheber", "pascalsprinzip", "nachgerechnet"],
+    "sound": {
+      "palette": "tech",
+      "mood": "tech",
+      "levels": { "sfx_peak_db": -18 }
+    }
+  },
+  "assets": {
+    "folder": "assets/higgsfield/library",
+    "hero": {
+      "b1": "rl_real_brake_lift.jpg",
+      "b2": "rl_real_brake_lift.jpg",
+      "b4": "rl_real_piston.jpg"
+    },
+    "scrim": 0.2
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "label": "OpenStax, Physik 14.3",
+      "title": "OpenStax University Physics Bd. 1, 14.3: F1/A1 = F2/A2, kleinerer Weg, nicht mehr Arbeit",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/14-3-pascals-principle-and-hydraulics",
+      "checked_at": "2026-11-03"
+    }
+  ],
+  "unverified": [
+    "Die beiden Linien sind Idealwerte ohne Reibung, aus F2/F1 = A2/A1 und A1*s1 = A2*s2 gerechnet. Die Quelle belegt das Prinzip, keine Messwerte eines bestimmten Wagenhebers."
+  ],
+  "hook": {
+    "id": "H1",
+    "note": "Belegbares Verhältnis, im Bild als zwei Kurven zeigbar."
+  },
+  "hook_candidates": [
+    {
+      "id": "H1",
+      "type": "surprising_fact",
+      "spoken": "Zehnfache Fläche gibt zehnfache Kraft und ein Zehntel Weg.",
+      "on_screen": "Zehnfache Kraft, ein Zehntel Weg",
+      "scores": { "clarity": 5, "relevance": 5, "curiosity": 4, "truth": 5, "visual": 5 },
+      "source_ids": ["S1"],
+      "visual": "Zwei Kurven über dem Flächenverhältnis.",
+      "why": { "truth": "OpenStax 14.3: Kraftverhältnis gleich Flächenverhältnis, Weg umgekehrt." }
+    },
+    {
+      "id": "H2",
+      "type": "question",
+      "spoken": "Hebt der kleine Kolben das Auto wirklich mit weniger Kraft?",
+      "on_screen": "Weniger Kraft, längerer Weg?",
+      "scores": { "clarity": 5, "relevance": 5, "curiosity": 4, "truth": 5, "visual": 4 },
+      "source_ids": ["S1"],
+      "visual": "Foto einer Hebebühne, Frage als Zeile.",
+      "why": { "clarity": "Eine Frage, die das Video mit der Kurve beantwortet." }
+    },
+    {
+      "id": "H3",
+      "type": "demonstration",
+      "spoken": "Die Kurve zeigt die Kraft nach oben und den Weg nach unten.",
+      "on_screen": "Kraft rauf, Weg runter",
+      "scores": { "clarity": 5, "relevance": 5, "curiosity": 3, "truth": 5, "visual": 5 },
+      "source_ids": ["S1"],
+      "visual": "Diagramm mit zwei Linien.",
+      "why": { "visual": "Beide Linien entstehen aus der Formel im Bild." }
+    },
+    {
+      "id": "H4",
+      "type": "misconception",
+      "spoken": "Der Wagenheber schafft keine zusätzliche Arbeit.",
+      "on_screen": "Keine zusätzliche Arbeit",
+      "scores": { "clarity": 5, "relevance": 5, "curiosity": 4, "truth": 5, "visual": 4 },
+      "source_ids": ["S1"],
+      "visual": "Hinweis, dass das Produkt aus Kraft und Weg eins bleibt.",
+      "why": { "truth": "OpenStax: der kleinere Weg gleicht die größere Kraft aus." }
+    },
+    {
+      "id": "H5",
+      "type": "concrete_risk",
+      "spoken": "Ohne Reibung gerechnet. Ein echter Heber verliert einen Teil.",
+      "on_screen": "Idealwert, Reibung fehlt",
+      "scores": { "clarity": 4, "relevance": 4, "curiosity": 3, "truth": 4, "visual": 3 },
+      "source_ids": ["S1"],
+      "visual": "Kennzeichnung Idealwert neben der Kurve.",
+      "why": { "truth": "Die Quelle beschreibt den reibungsfreien Fall." }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b1",
+      "function": "hook",
+      "scene_type": "zt_photo",
+      "spoken": "Ein kleiner Kolben hebt ein ganzes Auto? Die Kraft wird größer, der Weg wird kleiner, und die Arbeit bleibt im Idealfall dieselbe.",
+      "data": {
+        "claim_lines": ["Kleiner Kolben,", "großes Auto?"],
+        "claim_highlight": "Auto",
+        "claim_at": 0.02,
+        "source": "OpenStax, Physik 14.3 · abgerufen 03.11.2026"
+      },
+      "overlay": {},
+      "source_ids": ["S1"]
+    },
+    {
+      "id": "b2",
+      "function": "problem",
+      "scene_type": "zt_photo",
+      "spoken": "Der Druck ist auf beiden Seiten gleich. Druck ist Kraft durch Fläche. Wächst die Fläche, wächst die Kraft im selben Maß. Der kleine Kolben muss dafür weiter laufen, sonst käme Arbeit aus dem Nichts. Genau dieses Tauschen ist der Wagenheber.",
+      "data": {
+        "claim_lines": ["Gleicher Druck,", "andere Fläche"],
+        "claim_highlight": "Druck",
+        "claim_at": "w:Druck",
+        "source": "OpenStax, Physik 14.3 · abgerufen 03.11.2026"
+      },
+      "overlay": {},
+      "source_ids": ["S1"]
+    },
+    {
+      "id": "b3",
+      "function": "explanation",
+      "scene_type": "zt_chart",
+      "spoken": "Im Diagramm ist das Flächenverhältnis die waagerechte Achse, von eins bis zwanzig. Ist die große Fläche zehnmal so groß, ist die Kraft zehnmal so groß, und der Weg am kleinen Kolben ist ein Zehntel. Die steigende Linie ist die Kraft, die fallende der Weg. Ihr Produkt bleibt eins. Das sind Idealwerte ohne Reibung. Ein echter Wagenheber gibt einen Teil an Reibung ab und hebt weniger, als die Linie sagt.",
+      "data": {
+        "photo": true,
+        "ground_at": "w:Diagramm",
+        "x": {
+          "min": 1,
+          "max": 20,
+          "log": true,
+          "label": "Flächenverhältnis",
+          "ticks": [[1, "1"], [2, "2"], [5, "5"], [10, "10"], [20, "20"]]
+        },
+        "y": {
+          "min": 0.05,
+          "max": 20,
+          "log": true,
+          "label": "Faktor Kraft oder Weg",
+          "ticks": [[0.05, "0,05"], [0.1, "0,1"], [1, "1"], [10, "10"], [20, "20"]]
+        },
+        "series": [
+          {
+            "formula": "x",
+            "from": "w:steigende",
+            "to": "w:Reibung",
+            "text": "Kraft × Verhältnis"
+          },
+          {
+            "formula": "1/x",
+            "from": "w:fallende",
+            "to": "w:Reibung",
+            "text": "Weg × 1/Verhältnis"
+          }
+        ],
+        "points": [
+          { "x": 10, "y": 10, "text": "10× Kraft", "at": "w:zehnmal", "hot": true },
+          { "x": 10, "y": 0.1, "text": "1/10 Weg", "at": "w:Zehntel", "up": false }
+        ],
+        "rules": [
+          { "y": 1, "text": "Faktor 1", "at": "w:Produkt" }
+        ],
+        "source": "OpenStax 14.3, Idealwerte"
+      },
+      "overlay": {},
+      "source_ids": ["S1"]
+    },
+    {
+      "id": "b4",
+      "function": "close",
+      "scene_type": "zt_photo",
+      "spoken": "Die Anlage erzeugt also keine zusätzliche Arbeit. Sie tauscht Kraft gegen Weg. Die Kurve ist gerechnet, die Quelle belegt das Prinzip. Die Zahl zehn ist nur ein Punkt, jedes andere Verhältnis liegt auf derselben Linie.",
+      "data": {
+        "brand": { "text": "REVLORE · ZEITLUPE", "hl": "REVLORE", "at": "w:Arbeit" },
+        "note": { "text": "Idealwerte, Reibung fehlt", "at": "w:gerechnet" }
+      },
+      "overlay": {},
+      "source_ids": []
+    }
+  ]
+}
